@@ -1,0 +1,43 @@
+{
+  "table_name": "classes",
+  "title": "Classes",
+  "description": "Set families (possibly parameterized)",
+  "columns": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier for the class",
+      "required": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Full name of the class",
+      "required": true
+    },
+    {
+      "name": "short_name",
+      "type": "string",
+      "description": "Short identifier for cross-referencing between tables",
+      "required": true
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "description": "Symbol representing the class",
+      "required": true
+    },
+    {
+      "name": "definition",
+      "type": "string",
+      "description": "Formal definition of the class",
+      "required": false
+    },
+    {
+      "name": "comments",
+      "type": "string",
+      "description": "Additional comments or notes about the class",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "table_name": "parameters",
+  "title": "Parameters",
+  "description": "Parameters measuring the size of set families",
+  "columns": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier for the parameter",
+      "required": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Full name of the parameter",
+      "required": true
+    },
+    {
+      "name": "short_name",
+      "type": "string",
+      "description": "Short identifier for cross-referencing between tables",
+      "required": true
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "description": "Symbol representing the parameter",
+      "required": true
+    },
+    {
+      "name": "definition",
+      "type": "string",
+      "description": "Formal definition of the parameter",
+      "required": false
+    },
+    {
+      "name": "comments",
+      "type": "string",
+      "description": "Additional comments or notes about the parameter",
+      "required": false
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "description": "Category or classification of the parameter",
+      "required": false
+    },
+    {
+      "name": "symmetric",
+      "type": "string",
+      "description": "Whether the parameter is symmetric, i.e. invariant under complementation",
+      "required": false
+    },
+    {
+      "name": "monotonic",
+      "type": "string",
+      "description": "Whether the parameter is monotonic, i.e. non-decreasing with respect to set inclusion",
+      "required": false
+    }
+  ]
+}

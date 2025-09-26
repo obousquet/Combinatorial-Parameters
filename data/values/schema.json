@@ -1,0 +1,55 @@
+{
+  "table_name": "values",
+  "title": "Values",
+  "description": "Values assigned to parameters for specific classes",
+  "columns": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier for the value",
+      "required": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Full name of the value",
+      "required": true
+    },
+    {
+      "name": "short_name",
+      "type": "string",
+      "description": "Short identifier for cross-referencing between tables",
+      "required": true
+    },
+    {
+      "name": "class_id",
+      "type": "string",
+      "description": "Unique identifier for the class",
+      "required": true
+    },
+    {
+      "name": "parameter_id",
+      "type": "string",
+      "description": "Unique identifier for the parameter",
+      "required": true
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "Value assigned to the parameter for the class",
+      "required": false
+    },
+    {
+      "name": "order",
+      "type": "string",
+      "description": "Omega notation for the value (if applicable)",
+      "required": false
+    },
+    {
+      "name": "details",
+      "type": "string",
+      "description": "Additional details or comments about the value",
+      "required": false
+    }
+  ]
+}

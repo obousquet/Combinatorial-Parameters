@@ -1,0 +1,55 @@
+{
+  "table_name": "relationships",
+  "title": "Relationships",
+  "description": "Relationships between parameters",
+  "columns": [
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Unique identifier for the relationship",
+      "required": true
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Full name of the relationship",
+      "required": true
+    },
+    {
+      "name": "short_name",
+      "type": "string",
+      "description": "Short identifier for cross-referencing between tables",
+      "required": true
+    },
+    {
+      "name": "parameter_1_id",
+      "type": "string",
+      "description": "Unique identifier for the first parameter",
+      "required": true
+    },
+    {
+      "name": "parameter_2_id",
+      "type": "string",
+      "description": "Unique identifier for the second parameter",
+      "required": true
+    },
+    {
+      "name": "relationship_type",
+      "type": "string",
+      "description": "Type of relationship (e.g., inequality, equivalence)",
+      "required": true
+    },
+    {
+      "name": "details",
+      "type": "string",
+      "description": "Additional details or comments about the relationship",
+      "required": false
+    },
+    {
+      "name": "witness",
+      "type": "string",
+      "description": "Class or example that demonstrates the relationship",
+      "required": false
+    }
+  ]
+}
