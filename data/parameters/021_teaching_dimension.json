@@ -1,0 +1,12 @@
+{
+  "id": 21,
+  "name": "Teaching Dimension",
+  "symbol": "$\\mathrm{TD}$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "teaching_dimension"
+}

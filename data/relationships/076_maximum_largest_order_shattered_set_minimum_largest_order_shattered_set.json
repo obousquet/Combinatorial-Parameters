@@ -1,0 +1,9 @@
+{
+  "id": 76,
+  "parameter_1_id": "#parameters/maximum_largest_order_shattered_set",
+  "parameter_2_id": "#parameters/minimum_largest_order_shattered_set",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "maximum_largest_order_shattered_set_minimum_largest_order_shattered_set",
+  "name": "Maximum Largest Order Shattered Set / Minimum Largest Order Shattered Set"
+}

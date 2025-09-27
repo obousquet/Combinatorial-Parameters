@@ -1,0 +1,8 @@
+{
+  "id": 88,
+  "parameter_1_id": "#parameters/membership_and_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/partial_equivalence_queries_complexity",
+  "relationship_type": "larger",
+  "short_name": "membership_and_equivalence_queries_complexity_partial_equivalence_queries_complexity",
+  "name": "Membership and Equivalence Queries Complexity / Partial Equivalence Queries Complexity"
+}

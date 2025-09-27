@@ -1,0 +1,13 @@
+{
+  "id": 11,
+  "name": "Log Shattering",
+  "symbol": "$\\log \\mathrm{sh}$",
+  "definition": "The **Log Shattering** of a family $\\mathcal{H}$ is the (binary) log of the number of its shattered sets, $$ \\log |sh{\\mathcal{H|}} $$",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": true,
+  "short_name": "log_shattering"
+}

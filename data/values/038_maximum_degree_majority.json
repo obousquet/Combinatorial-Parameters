@@ -1,0 +1,10 @@
+{
+  "id": 38,
+  "name": "Maximum Degree of Majority",
+  "short_name": "maximum_degree_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/maximum_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

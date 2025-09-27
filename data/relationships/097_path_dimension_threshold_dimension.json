@@ -1,0 +1,10 @@
+{
+  "id": 97,
+  "parameter_1_id": "#parameters/path_dimension",
+  "parameter_2_id": "#parameters/threshold_dimension",
+  "relationship_type": "larger",
+  "variant": "relative",
+  "details": "Definition",
+  "short_name": "path_dimension_threshold_dimension",
+  "name": "Path Dimension / Threshold Dimension"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 67,
+  "name": "Threshold Dimension of Singletons",
+  "short_name": "threshold_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/threshold_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

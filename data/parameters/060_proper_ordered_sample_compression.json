@@ -1,0 +1,12 @@
+{
+  "id": 60,
+  "name": "Proper Ordered Sample Compression",
+  "symbol": "$\\mathrm{pOSC}$",
+  "category": "compression",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "proper_ordered_sample_compression"
+}

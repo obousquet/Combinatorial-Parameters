@@ -1,0 +1,10 @@
+{
+  "id": 63,
+  "parameter_1_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "parameter_2_id": "#parameters/double_density_or_average_degree",
+  "relationship_type": "larger",
+  "variant": "p_monotonic",
+  "details": "Definition",
+  "short_name": "projected_double_density_or_projected_average_degree_double_density_or_average_degree",
+  "name": "Projected Double Density or Projected Average Degree / Double Density or Average Degree"
+}

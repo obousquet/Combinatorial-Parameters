@@ -1,0 +1,10 @@
+{
+  "id": 111,
+  "name": "Proper Equivalence Queries Complexity of Half-intervals",
+  "short_name": "proper_equivalence_queries_complexity_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/proper_equivalence_queries_complexity",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "details": ""
+}

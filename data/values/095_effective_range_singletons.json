@@ -1,0 +1,10 @@
+{
+  "id": 95,
+  "name": "Effective Range of Singletons",
+  "short_name": "effective_range_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

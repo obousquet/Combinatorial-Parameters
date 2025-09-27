@@ -1,0 +1,9 @@
+{
+  "id": 139,
+  "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/equivalence_queries_complexity",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "proper_equivalence_queries_complexity_equivalence_queries_complexity",
+  "name": "Proper Equivalence Queries Complexity / Equivalence Queries Complexity"
+}

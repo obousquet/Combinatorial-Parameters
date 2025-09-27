@@ -1,0 +1,13 @@
+{
+  "id": 42,
+  "name": "co-VC dimension",
+  "symbol": "$\\mathrm{coVC}$",
+  "definition": "The **coVC number** of a family $\\mathcal{H}$, denoted by $\\covcmod(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $\\mathcal{H}\\_{|S}$ contains a hollow $d$-star, i.e. there is a subset $T\\subset S$ such that $$ T\\notin \\mathcal{H}\\_{|S} \\,\\mbox{ and }\\, \\forall x\\in S,\\, T\\Delta \\{x\\} \\in \\mathcal{H}\\_{|S}\\,. $$",
+  "category": "holes",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "covc_dimension"
+}

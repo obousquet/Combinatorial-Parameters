@@ -1,0 +1,12 @@
+{
+  "id": 36,
+  "name": "Proper Stable Sample Compression",
+  "symbol": "$\\mathrm{psUSC}$",
+  "category": "compression",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "proper_stable_sample_compression"
+}

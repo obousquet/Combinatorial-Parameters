@@ -1,0 +1,8 @@
+{
+  "id": 91,
+  "parameter_1_id": "#parameters/unlabeled_sample_compression",
+  "parameter_2_id": "#parameters/labeled_sample_compression",
+  "relationship_type": "larger",
+  "short_name": "unlabeled_sample_compression_labeled_sample_compression",
+  "name": "Unlabeled sample compression / Labeled Sample Compression"
+}

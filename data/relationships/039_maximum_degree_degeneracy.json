@@ -1,0 +1,9 @@
+{
+  "id": 39,
+  "parameter_1_id": "#parameters/maximum_degree",
+  "parameter_2_id": "#parameters/degeneracy",
+  "relationship_type": "larger",
+  "details": "Definition and Monotonicity",
+  "short_name": "maximum_degree_degeneracy",
+  "name": "Maximum Degree / Degeneracy"
+}

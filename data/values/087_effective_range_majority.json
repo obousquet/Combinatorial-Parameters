@@ -1,0 +1,10 @@
+{
+  "id": 87,
+  "name": "Effective Range of Majority",
+  "short_name": "effective_range_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$n+1$",
+  "value_class": "omega_n",
+  "details": ""
+}

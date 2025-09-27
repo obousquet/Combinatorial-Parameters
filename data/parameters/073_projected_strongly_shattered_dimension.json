@@ -1,0 +1,12 @@
+{
+  "id": 73,
+  "name": "Projected Strongly Shattered Dimension",
+  "symbol": "$\\mathrm{ST}^p$",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "projected_strongly_shattered_dimension"
+}

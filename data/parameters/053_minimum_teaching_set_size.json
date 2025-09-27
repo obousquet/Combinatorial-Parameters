@@ -1,0 +1,12 @@
+{
+  "id": 53,
+  "name": "Minimum Teaching Set Size",
+  "symbol": "$\\mathrm{TS}_{\\min}$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "minimum_teaching_set_size"
+}

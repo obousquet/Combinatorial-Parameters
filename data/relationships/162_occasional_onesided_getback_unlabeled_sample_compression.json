@@ -1,0 +1,9 @@
+{
+  "id": 162,
+  "parameter_1_id": "#parameters/occasional_onesided_getback",
+  "parameter_2_id": "#parameters/unlabeled_sample_compression",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "occasional_onesided_getback_unlabeled_sample_compression",
+  "name": "Occasional One-Sided Getback / Unlabeled sample compression"
+}

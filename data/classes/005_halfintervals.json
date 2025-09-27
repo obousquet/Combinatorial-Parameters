@@ -1,0 +1,7 @@
+{
+  "id": 5,
+  "name": "Half-intervals",
+  "symbol": "\\{[i]\\}_{1\\le i\\le n}",
+  "definition": "Initial segments or thresholds.",
+  "short_name": "halfintervals"
+}

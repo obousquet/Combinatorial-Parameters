@@ -1,0 +1,8 @@
+{
+  "id": 147,
+  "parameter_1_id": "#parameters/oriented_diameter",
+  "parameter_2_id": "#parameters/hamming_radius",
+  "relationship_type": "larger_c",
+  "short_name": "oriented_diameter_hamming_radius",
+  "name": "Oriented Diameter / Hamming Radius"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 6,
+  "parameter_1_id": "#parameters/minimum_largest_order_shattered_set",
+  "parameter_2_id": "#parameters/interpolation_degree",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "minimum_largest_order_shattered_set_interpolation_degree",
+  "name": "Minimum Largest Order Shattered Set / Interpolation degree"
+}

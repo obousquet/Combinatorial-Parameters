@@ -1,0 +1,12 @@
+{
+  "id": 69,
+  "name": "Projected Minimum Degree",
+  "symbol": "$\\mathrm{d}^p_{\\min}$",
+  "category": "graph-based",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "projected_minimum_degree"
+}

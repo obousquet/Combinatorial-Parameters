@@ -1,0 +1,9 @@
+{
+  "id": 8,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/yang_dimension",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "effective_range_yang_dimension",
+  "name": "Effective Range / Yang dimension"
+}

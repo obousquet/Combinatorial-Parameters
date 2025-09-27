@@ -1,0 +1,9 @@
+{
+  "id": 128,
+  "parameter_1_id": "#parameters/interpolation_degree",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger_c",
+  "details": "Theorem",
+  "short_name": "interpolation_degree_log_size_ratio",
+  "name": "Interpolation degree / Log Size Ratio"
+}

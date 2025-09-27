@@ -1,0 +1,12 @@
+{
+  "id": 34,
+  "name": "Order Sample Compression",
+  "symbol": "$\\mathrm{OSC}$",
+  "category": "compression",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "order_sample_compression"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 71,
+  "name": "Dual Sign Rank",
+  "symbol": "$\\mathrm{DSR}$",
+  "definition": "The **dual sign rank** of a sign matrix $S$ is the maximum number $k$ such that there exist $k$ columns of $S$ such that any real matrix $M$ with signs $S$ has those column linearly independent.",
+  "category": "algebraic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "dual_sign_rank"
+}

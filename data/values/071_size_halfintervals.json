@@ -1,0 +1,10 @@
+{
+  "id": 71,
+  "name": "Size of Half-intervals",
+  "short_name": "size_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

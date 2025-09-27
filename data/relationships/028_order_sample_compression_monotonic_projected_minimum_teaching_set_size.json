@@ -1,0 +1,8 @@
+{
+  "id": 28,
+  "parameter_1_id": "#parameters/order_sample_compression",
+  "parameter_2_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "short_name": "order_sample_compression_monotonic_projected_minimum_teaching_set_size",
+  "name": "Order Sample Compression / Monotonic Projected Minimum Teaching Set Size"
+}

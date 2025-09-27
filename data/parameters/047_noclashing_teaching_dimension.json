@@ -1,0 +1,12 @@
+{
+  "id": 47,
+  "name": "No-Clashing Teaching Dimension",
+  "symbol": "$\\mathrm{NCTD}$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "noclashing_teaching_dimension"
+}

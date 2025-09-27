@@ -1,0 +1,10 @@
+{
+  "id": 103,
+  "name": "Littlestone Dimension of Half-intervals",
+  "short_name": "littlestone_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "details": ""
+}

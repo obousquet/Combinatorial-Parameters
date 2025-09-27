@@ -1,0 +1,9 @@
+{
+  "id": 41,
+  "parameter_1_id": "#parameters/maximum_degree",
+  "parameter_2_id": "#parameters/densest_subgraph_twice",
+  "relationship_type": "larger",
+  "details": "Definition and Monotonicity",
+  "short_name": "maximum_degree_densest_subgraph_twice",
+  "name": "Maximum Degree / Densest Subgraph (twice)"
+}

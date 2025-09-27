@@ -1,0 +1,13 @@
+{
+  "id": 77,
+  "name": "Distinguishing Range",
+  "symbol": "$\\mathrm{R}$",
+  "definition": "Minimum number of coordinates over which all concepts in the class can be distinguished.",
+  "category": "basic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "distinguishing_range"
+}

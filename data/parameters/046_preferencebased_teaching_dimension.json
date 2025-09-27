@@ -1,0 +1,12 @@
+{
+  "id": 46,
+  "name": "Preference-Based Teaching Dimension",
+  "symbol": "$\\mathrm{PBTD}$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "preferencebased_teaching_dimension"
+}

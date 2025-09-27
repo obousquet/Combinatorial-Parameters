@@ -1,0 +1,10 @@
+{
+  "id": 98,
+  "name": "Threshold Dimension of Singletons plus empty set",
+  "short_name": "threshold_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/threshold_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

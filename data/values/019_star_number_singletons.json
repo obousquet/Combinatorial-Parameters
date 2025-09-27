@@ -1,0 +1,10 @@
+{
+  "id": 19,
+  "name": "Star number of Singletons",
+  "short_name": "star_number_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/star_number",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "details": ""
+}

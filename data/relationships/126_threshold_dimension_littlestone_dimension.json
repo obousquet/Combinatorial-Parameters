@@ -1,0 +1,9 @@
+{
+  "id": 126,
+  "parameter_1_id": "#parameters/threshold_dimension",
+  "parameter_2_id": "#parameters/littlestone_dimension",
+  "relationship_type": "log",
+  "details": "Theorem",
+  "short_name": "threshold_dimension_littlestone_dimension",
+  "name": "Threshold Dimension / Littlestone Dimension"
+}

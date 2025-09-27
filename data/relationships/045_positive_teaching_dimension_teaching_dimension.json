@@ -1,0 +1,9 @@
+{
+  "id": 45,
+  "parameter_1_id": "#parameters/positive_teaching_dimension",
+  "parameter_2_id": "#parameters/teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "positive_teaching_dimension_teaching_dimension",
+  "name": "Positive Teaching Dimension / Teaching Dimension"
+}

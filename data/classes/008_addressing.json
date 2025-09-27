@@ -1,0 +1,7 @@
+{
+  "id": 8,
+  "name": "Addressing",
+  "symbol": "\\text{Add}",
+  "definition": "(see \\cite{maass1992lower}): define the addressing function $f(S)$ that maps the characteristic vector of the set $S$ to its value as a binary number, then the Addressing family is defined as $$\\mathcal{H}:= \\{ \\{f(S)+1\\\\}\\cup S : S \\subset \\{n+1,\\ldots,n+\\lfloor \\log n \\rfloor\\}}$$\n        In other words, we have singletons on $[n]$ followed by the index of the singleton encoded in binary. So this class has VC $\\lfloor\\log n\\rfloor$. Any parameter that is $p$-monotonic will be larger than its value for singletons on $[n]$ and than a full cube on $[\\log n]$. This class also has $coVC=\\Omega(n)$",
+  "short_name": "addressing"
+}

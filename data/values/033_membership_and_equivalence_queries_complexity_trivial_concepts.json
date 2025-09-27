@@ -1,0 +1,10 @@
+{
+  "id": 33,
+  "name": "Membership and Equivalence Queries Complexity of Trivial concepts",
+  "short_name": "membership_and_equivalence_queries_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/membership_and_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

@@ -1,0 +1,8 @@
+{
+  "id": 120,
+  "parameter_1_id": "#parameters/worst_mistakes",
+  "parameter_2_id": "#parameters/best_mistakes",
+  "relationship_type": "larger",
+  "short_name": "worst_mistakes_best_mistakes",
+  "name": "Worst Mistakes / Best Mistakes"
+}

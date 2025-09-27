@@ -1,0 +1,13 @@
+{
+  "id": 68,
+  "name": "Projected Double Density or Projected Average Degree",
+  "symbol": "$\\mathrm{dens}^p$",
+  "definition": "The **projected double density** of a concept class is defined as the maximum over all projections of the averaged degree of the $1$-inclusion graph.",
+  "category": "graph-based",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "projected_double_density_or_projected_average_degree"
+}

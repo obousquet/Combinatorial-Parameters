@@ -1,0 +1,9 @@
+{
+  "id": 9,
+  "parameter_1_id": "#parameters/largest_shattered_set",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "equivalence",
+  "details": "Definition",
+  "short_name": "largest_shattered_set_vc_dimension",
+  "name": "Largest Shattered Set / VC Dimension"
+}

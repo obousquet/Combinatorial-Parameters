@@ -1,0 +1,7 @@
+{
+  "id": 6,
+  "name": "Tagged Singletons",
+  "symbol": "\\text{Tag}",
+  "definition": "(see \\cite{maass1992lower}): Define the function $f(i):=\\min \\{\\ell: i\\le \\sum_{j=1}^\\ell n2^{-j} + \\lceil \\log n \\rceil + 1\\}$. The class of tagged singletons is defined as $$\n        \\mathcal{H}:=\\{\\emptyset\\} \\cup \\{\\{n+\\ell\\\\}:\\ell \\in [\\lceil\\log n\\rceil]} \\cup \\{\\{i,n+f(i)\\\\}:i\\in[n]}\n        $$\n\nSo we have the empty set, singletons on $[n+1, n+\\lceil\\log n\\rceil]$, and then singletons on $[n]$ with a tag such that more than half have the first tag, more than one fourth have the second tag and so on.",
+  "short_name": "tagged_singletons"
+}

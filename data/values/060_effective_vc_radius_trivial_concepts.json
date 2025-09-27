@@ -1,0 +1,10 @@
+{
+  "id": 60,
+  "name": "Effective VC Radius of Trivial concepts",
+  "short_name": "effective_vc_radius_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

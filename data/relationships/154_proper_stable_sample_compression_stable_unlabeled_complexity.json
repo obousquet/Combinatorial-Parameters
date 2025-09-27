@@ -1,0 +1,9 @@
+{
+  "id": 154,
+  "parameter_1_id": "#parameters/proper_stable_sample_compression",
+  "parameter_2_id": "#parameters/stable_unlabeled_complexity",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "proper_stable_sample_compression_stable_unlabeled_complexity",
+  "name": "Proper Stable Sample Compression / Stable Unlabeled Complexity"
+}

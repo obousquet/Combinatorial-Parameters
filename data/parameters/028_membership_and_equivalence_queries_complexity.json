@@ -1,0 +1,12 @@
+{
+  "id": 28,
+  "name": "Membership and Equivalence Queries Complexity",
+  "symbol": "$\\mathrm{Q}_\\mathrm{meq}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "membership_and_equivalence_queries_complexity"
+}

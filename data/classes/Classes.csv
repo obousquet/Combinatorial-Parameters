@@ -1,0 +1,17 @@
+ID,Name,Description,Symbol
+2616bf7f,Trivial concepts,Class containing the empty and the full concept.,"$\{\emptyset, [n]\}$"
+4716b4fd,Singletons,Singletons,$\{\{i\}\}_{1\le i\le n}$
+a6e947c1,Full Cube,"All concepts, i.e. the powerset of the range.",$\{S:S\subset [n]\}$
+33b7931e,Singletons plus empty set,All singletons and the empty set,$\{\{i\}\}_{1\le i\le n}\cup\{\emptyset\}$
+180d6d50,Half-intervals,Initial segments or thresholds.,$\{[i]\}_{1\le i\le n}$
+75fb5a45,Tagged Singletons,"(see \cite{maass1992lower}): Define the function $f(i):=\min \{\ell: i\le \sum_{j=1}^\ell n2^{-j} + \lceil \log n \rceil + 1\}$. The class of tagged singletons is defined as \[
+        \H\bydef\set*{\emptyset} \cup \set*{\{n+\ell\}:\ell \in [\lceil\log n\rceil]} \cup \set*{\{i,n+f(i)\}:i\in[n]}
+        \]
+
+So we have the empty set, singletons on $[n+1, n+\lceil\log n\rceil]$, and then singletons on $[n]$ with a tag such that more than half have the first tag, more than one fourth have the second tag and so on.",$\text{Tag}$
+1a118b92,Majority,"(see \cite{maass1992lower}): $\set*{S\subset [n+1]: n+1\in S\Leftrightarrow |S\backslash \{n+1\}|>n/2}$
+
+So we have all subsets of $[n]$ and an extra majority bit.",$\text{Maj}$
+0a63d08b,Addressing,"(see \cite{maass1992lower}): define the addressing function $f(S)$ that maps the characteristic vector of the set $S$ to its value as a binary number, then the Addressing family is defined as \[\H\bydef \set*{ \{f(S)+1\}\cup S : S \subset \{n+1,\ldots,n+\lfloor \log n \rfloor\}}\]
+        In other words, we have singletons on $[n]$ followed by the index of the singleton encoded in binary. So this class has VC $\lfloor\log n\rfloor$. Any parameter that is $p$-monotonic will be larger than its value for singletons on $[n]$ and than a full cube on $[\log n]$. This class also has $coVC=\Omega(n)$",$\text{Add}$
+536605eb,Blockwise-Addressing,"\cite{ben1997online}, page 54: the domain has $2.2^d+1$ elements $\{z,x_1,\ldots,x_{2^d},y_1,\ldots,y_{2^d}\}$ and $\H$ consists of $2.2^d$ functions $\{f_1,\ldots,f_{2^d},g_1,\ldots,g_{2^d}\}$ such that $f_i(z)=0$, $g_1(z)=1$, and $f_i(x_j)=g_i(y_j)=1_{i=j}$ and we split the elements $x_1,\ldots,x_{2^d}$ and $y_1,\ldots,y_{2^d}$ into $2^d/d$ blocks of size $d$. On each of the blocks the $2^d$ functions $f_1,\ldots,f_{2^d}$ take all $2^d$ possible combinations of values (but they are identical on each of the blocks, so $f_1$ is $0$ on all the $y_i$ and $f_{2^d}$ is equal to $1$ on all the $y_i$). We have $VC=d$, $RTD=2$ (always take $z$ and $x_i$ or $z$ and $y_i$), $M_{sd}\le 2$, but $osh_{min}=d=\Omega(\log n)$ (\olivier{proof?}) hence $M_{best}=\Omega(\log n)$. Do we have $Q_{par}=\Omega(\log n)$?",$\mathrm{bAdd}$

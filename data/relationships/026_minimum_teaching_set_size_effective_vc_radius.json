@@ -1,0 +1,8 @@
+{
+  "id": 26,
+  "parameter_1_id": "#parameters/minimum_teaching_set_size",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "larger",
+  "short_name": "minimum_teaching_set_size_effective_vc_radius",
+  "name": "Minimum Teaching Set Size / Effective VC Radius"
+}

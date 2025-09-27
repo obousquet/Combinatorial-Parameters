@@ -1,0 +1,12 @@
+{
+  "id": 54,
+  "name": "Maximum Teaching Set Size",
+  "symbol": "$\\mathrm{TS}_{\\max}$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "maximum_teaching_set_size"
+}

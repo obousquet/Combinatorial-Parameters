@@ -1,0 +1,10 @@
+{
+  "id": 82,
+  "parameter_1_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "parameter_2_id": "#parameters/monotonic_minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "variant": "p_monotonic",
+  "details": "Definition",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_monotonic_minimum_teaching_set_size",
+  "name": "Monotonic Projected Minimum Teaching Set Size / Monotonic Minimum Teaching Set Size"
+}

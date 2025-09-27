@@ -1,0 +1,10 @@
+{
+  "id": 24,
+  "name": "co-VC dimension of Full Cube",
+  "short_name": "covc_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

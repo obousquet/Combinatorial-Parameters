@@ -1,0 +1,9 @@
+{
+  "id": 35,
+  "parameter_1_id": "#parameters/log_shattering",
+  "parameter_2_id": "#parameters/effective_range",
+  "relationship_type": "log",
+  "details": "Effective range is the number of shattered singletons",
+  "short_name": "log_shattering_effective_range",
+  "name": "Log Shattering / Effective Range"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 57,
+  "name": "Order Sample Compression of Trivial concepts",
+  "short_name": "order_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

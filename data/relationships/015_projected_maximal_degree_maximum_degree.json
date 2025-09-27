@@ -1,0 +1,10 @@
+{
+  "id": 15,
+  "parameter_1_id": "#parameters/projected_maximal_degree",
+  "parameter_2_id": "#parameters/maximum_degree",
+  "relationship_type": "larger",
+  "variant": "p_monotonic",
+  "details": "Definition",
+  "short_name": "projected_maximal_degree_maximum_degree",
+  "name": "Projected Maximal Degree / Maximum Degree"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 26,
+  "name": "co-VC dimension of Singletons",
+  "short_name": "covc_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

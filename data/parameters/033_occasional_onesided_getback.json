@@ -1,0 +1,12 @@
+{
+  "id": 33,
+  "name": "Occasional One-Sided Getback",
+  "symbol": "$\\mathrm{M}_{\\mathrm{o1g}}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "occasional_onesided_getback"
+}

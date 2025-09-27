@@ -1,0 +1,9 @@
+{
+  "id": 135,
+  "parameter_1_id": "#parameters/random_proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/random_equivalence_queries_complexity",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "random_proper_equivalence_queries_complexity_random_equivalence_queries_complexity",
+  "name": "Random Proper Equivalence Queries Complexity / Random Equivalence Queries Complexity"
+}

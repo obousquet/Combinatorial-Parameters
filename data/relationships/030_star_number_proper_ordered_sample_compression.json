@@ -1,0 +1,8 @@
+{
+  "id": 30,
+  "parameter_1_id": "#parameters/star_number",
+  "parameter_2_id": "#parameters/proper_ordered_sample_compression",
+  "relationship_type": "larger",
+  "short_name": "star_number_proper_ordered_sample_compression",
+  "name": "Star number / Proper Ordered Sample Compression"
+}

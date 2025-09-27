@@ -1,0 +1,13 @@
+{
+  "id": 48,
+  "name": "Log Size",
+  "symbol": "$\\log \\mathrm{H}$",
+  "definition": "The **Log Size** of a family $\\mathcal{H}$ is simply the (binary) log of its cardinality, $$ \\log |\\mathcal{H|} $$",
+  "category": "basic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": true,
+  "short_name": "log_size"
+}

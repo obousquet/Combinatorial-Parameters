@@ -1,0 +1,8 @@
+{
+  "id": 71,
+  "parameter_1_id": "#parameters/projected_vc_radius",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "equivalence",
+  "short_name": "projected_vc_radius_vc_dimension",
+  "name": "Projected VC Radius / VC Dimension"
+}

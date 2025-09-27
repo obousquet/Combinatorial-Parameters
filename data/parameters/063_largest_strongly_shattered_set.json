@@ -1,0 +1,12 @@
+{
+  "id": 63,
+  "name": "Largest Strongly Shattered Set",
+  "symbol": "$\\mathrm{ST}$",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "largest_strongly_shattered_set"
+}

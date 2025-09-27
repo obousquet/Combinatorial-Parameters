@@ -1,0 +1,9 @@
+{
+  "id": 17,
+  "parameter_1_id": "#parameters/maximum_degree",
+  "parameter_2_id": "#parameters/minimum_degree",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "maximum_degree_minimum_degree",
+  "name": "Maximum Degree / Minimum Degree"
+}

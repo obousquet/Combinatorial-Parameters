@@ -1,0 +1,8 @@
+{
+  "id": 102,
+  "parameter_1_id": "#parameters/selfdirected_queries_complexity",
+  "parameter_2_id": "#parameters/recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "short_name": "selfdirected_queries_complexity_recursive_teaching_dimension",
+  "name": "Self-Directed Queries Complexity / Recursive Teaching Dimension"
+}

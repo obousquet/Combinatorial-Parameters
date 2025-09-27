@@ -1,0 +1,12 @@
+{
+  "id": 81,
+  "name": "$k$-Littlestone Dimension ($k\\ge3$)",
+  "symbol": "$\\mathrm{L}_k$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "klittlestone_dimension_kge3"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 51,
+  "name": "Random Equivalence Queries Complexity",
+  "symbol": "$\\mathrm{Q}_{\\mathrm{req}}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "random_equivalence_queries_complexity"
+}

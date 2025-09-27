@@ -1,0 +1,7 @@
+{
+  "id": 9,
+  "name": "Blockwise-Addressing",
+  "symbol": "\\mathrm{bAdd}",
+  "definition": "\\cite{ben1997online}, page 54: the domain has $2.2^d+1$ elements $\\{z,x_1,\\ldots,x_{2^d},y_1,\\ldots,y_{2^d}\\}$ and $\\mathcal{H}$ consists of $2.2^d$ functions $\\{f_1,\\ldots,f_{2^d},g_1,\\ldots,g_{2^d}\\}$ such that $f_i(z)=0$, $g_1(z)=1$, and $f_i(x_j)=g_i(y_j)=1_{i=j}$ and we split the elements $x_1,\\ldots,x_{2^d}$ and $y_1,\\ldots,y_{2^d}$ into $2^d/d$ blocks of size $d$. On each of the blocks the $2^d$ functions $f_1,\\ldots,f_{2^d}$ take all $2^d$ possible combinations of values (but they are identical on each of the blocks, so $f_1$ is $0$ on all the $y_i$ and $f_{2^d}$ is equal to $1$ on all the $y_i$). We have $VC=d$, $RTD=2$ (always take $z$ and $x_i$ or $z$ and $y_i$), $M_{sd}\\le 2$, but $osh_{min}=d=\\Omega(\\log n)$ (\\olivier{proof?}) hence $M_{best}=\\Omega(\\log n)$. Do we have $Q_{par}=\\Omega(\\log n)$?",
+  "short_name": "blockwiseaddressing"
+}

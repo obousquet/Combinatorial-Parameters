@@ -1,0 +1,10 @@
+{
+  "id": 12,
+  "parameter_1_id": "#parameters/degeneracy",
+  "parameter_2_id": "#parameters/minimum_degree",
+  "relationship_type": "larger",
+  "variant": "monotonic",
+  "details": "Definition",
+  "short_name": "degeneracy_minimum_degree",
+  "name": "Degeneracy / Minimum Degree"
+}

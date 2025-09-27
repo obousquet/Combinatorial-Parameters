@@ -1,0 +1,7 @@
+{
+  "id": 3,
+  "name": "Full Cube",
+  "symbol": "\\{S:S\\subset [n]\\}",
+  "definition": "All concepts, i.e. the powerset of the range.",
+  "short_name": "full_cube"
+}

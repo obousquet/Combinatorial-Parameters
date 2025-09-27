@@ -1,0 +1,12 @@
+{
+  "id": 66,
+  "name": "Projected Maximal Degree",
+  "symbol": "$\\mathrm{d}^p_{\\max}$",
+  "category": "graph-based",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "projected_maximal_degree"
+}

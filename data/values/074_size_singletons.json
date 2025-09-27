@@ -1,0 +1,10 @@
+{
+  "id": 74,
+  "name": "Size of Singletons",
+  "short_name": "size_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

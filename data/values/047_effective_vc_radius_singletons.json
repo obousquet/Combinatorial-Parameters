@@ -1,0 +1,10 @@
+{
+  "id": 47,
+  "name": "Effective VC Radius of Singletons",
+  "short_name": "effective_vc_radius_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

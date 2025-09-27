@@ -1,0 +1,10 @@
+{
+  "id": 46,
+  "name": "Proper Ordered Sample Compression of Singletons",
+  "short_name": "proper_ordered_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/proper_ordered_sample_compression",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "details": ""
+}

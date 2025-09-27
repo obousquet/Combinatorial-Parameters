@@ -1,0 +1,8 @@
+{
+  "id": 89,
+  "parameter_1_id": "#parameters/partial_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/selfdirected_queries_complexity",
+  "relationship_type": "larger",
+  "short_name": "partial_equivalence_queries_complexity_selfdirected_queries_complexity",
+  "name": "Partial Equivalence Queries Complexity / Self-Directed Queries Complexity"
+}

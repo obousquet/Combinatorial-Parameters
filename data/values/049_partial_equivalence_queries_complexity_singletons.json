@@ -1,0 +1,10 @@
+{
+  "id": 49,
+  "name": "Partial Equivalence Queries Complexity of Singletons",
+  "short_name": "partial_equivalence_queries_complexity_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/partial_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

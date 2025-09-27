@@ -1,0 +1,13 @@
+{
+  "id": 43,
+  "name": "Sign Rank",
+  "symbol": "$\\mathrm{SR}$",
+  "definition": "The **sign rank** of a sign matrix $S$ is the maximum number $k$ such for all real matrix $M$ whose signs are $S$, $M$ has rank at least $k$.",
+  "category": "algebraic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "sign_rank"
+}

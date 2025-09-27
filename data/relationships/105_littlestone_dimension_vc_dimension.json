@@ -1,0 +1,10 @@
+{
+  "id": 105,
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "witness": "#classes/halfintervals",
+  "short_name": "littlestone_dimension_vc_dimension",
+  "name": "Littlestone Dimension / VC Dimension"
+}

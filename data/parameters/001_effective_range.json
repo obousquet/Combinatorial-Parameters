@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "name": "Effective Range",
+  "symbol": "$\\mathrm{E}$",
+  "definition": "The **effective range** $E(\\mathcal{H})$ of a family $\\mathcal{H}$ is the number of elements that can be distinguished by members of $\\mathcal{H}$: $$ E(\\mathcal{H}):= |\\{x:x\\in\\mathcal{X\\|,\\, \\exists h_1,h_2\\in\\mathcal{H},\\, x\\in h_1 \\Delta h_2}} $$",
+  "category": "basic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": true,
+  "short_name": "effective_range"
+}

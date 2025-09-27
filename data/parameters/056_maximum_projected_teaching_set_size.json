@@ -1,0 +1,12 @@
+{
+  "id": 56,
+  "name": "Maximum Projected Teaching Set Size",
+  "symbol": "$\\mathrm{TS}_{\\max}^p$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "maximum_projected_teaching_set_size"
+}

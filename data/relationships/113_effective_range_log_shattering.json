@@ -1,0 +1,8 @@
+{
+  "id": 113,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "larger",
+  "short_name": "effective_range_log_shattering",
+  "name": "Effective Range / Log Shattering"
+}

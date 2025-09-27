@@ -1,0 +1,8 @@
+{
+  "id": 36,
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
+  "relationship_type": "sqrt",
+  "short_name": "vc_dimension_monotone_recursive_teaching_dimension",
+  "name": "VC Dimension / Monotone Recursive Teaching Dimension"
+}

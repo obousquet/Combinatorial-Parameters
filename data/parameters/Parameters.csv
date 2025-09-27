@@ -1,0 +1,82 @@
+ID,Name,Symbol,Description,Definition,Bit-flipping stable,Monotonic,p-Monotonic,Doubly monotonic,Strictly monotonic,Notes,References,Category
+153f0f89,Effective Range,$\mathrm{E}$,,"The {\em effective range} $E(\H)$ of a family $\H$ is the number of elements that can be distinguished by members of $\H$: \[ E(\H)\bydef \abs*{\set*{x:x\in\X,\, \exists h_1,h_2\in\H,\, x\in h_1 \Delta h_2}} \]",TRUE,TRUE,TRUE,TRUE,TRUE,,,Basic
+153f0f8a,Size,$\mathrm{H}$,,"The {\em size} of a family $\H$ is simply the  cardinality, \[  \abs*{\H} \]",TRUE,TRUE,TRUE,TRUE,TRUE,,,Basic
+153f0f8b,Oriented Diameter,$\mathrm{D}^+$,,"The {\em oriented diameter} $\mathrm{D}^+(\H)$ of a family $\H$ is defined as \[ \mathrm{D}^+(\H)\bydef \max\set*{\abs*{S}: \set*{\emptyset, S}\subset \H_{|S}} \]",FALSE,TRUE,TRUE,TRUE,FALSE,,,Basic
+153f0f8c,Diameter,$\mathrm{D}$,,"The {\em diameter} $D(\H)$ of a family $\H$ is the largest distance between two elements of the family, i.e. \[ D(\H)\bydef \max_{h_1,h_2\in\H} \abs*{h_1\Delta h_2} \]",TRUE,TRUE,TRUE,TRUE,FALSE,The diameter is equal to the strict diameter dimension.,,Basic
+153f0f8d,Hamming Radius,$\mathrm{B}$,,"The {\em Hamming Radius} $B(\H)$ of a family $\H$ is the smallest radius of an enclosing Hamming ball, defined as \[ B(\H)\bydef \min\set*{d: \exists T\subset \X,\, \forall h\in \H,\, |h\Delta T|\le d} \]",TRUE,TRUE,TRUE,TRUE,FALSE,,,Basic
+153f0f88,Threshold Dimension,$\mathrm{T}$,,"The {\em Threshold dimension} of a family $\H$, denoted by $T(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains thresholds, i.e. there is an ordering $x_1,\ldots,x_d$ of the elements of $S$ such that \[ \forall 0\le k\le d,\, \set*{x_1,\ldots,x_k} \in \H_{|S}\,. \]",FALSE,TRUE,TRUE,TRUE,FALSE,"Note that this means $\H_{|S}$ contains a $d+1$-chain, i.e. $d+1$ sets $S_1,\ldots,S_{d+1}$ such that $S_1\subset \ldots\subset S_{d+1}$.",,Basic
+153f0f87,Path Dimension,$\mathrm{P}$,,"The {\em Path dimension} of a family $\H$, denoted by $P(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains a full path, i.e. there is an ordering $x_1,\ldots,x_d$ of the elements of $S$ and a subset $T\subset S$ such that \[ \forall 0\le k\le d,\, T\Delta \set*{x_1,\ldots,x_k} \in \H_{|S}\,. \]",TRUE,TRUE,TRUE,TRUE,FALSE,,,Basic
+2dc3ac6d,Densest Subgraph (twice),$\mathrm{dens}^*$,,The \emph{densest subgraph dimension} of a concept class is equal to twice the density of the densest subgraph (a.k.a. \emph{subgraph density}) of its $1$-inclusion graph.,TRUE,TRUE,FALSE,FALSE,FALSE,The densest subgraph is dual to the lowest outdegree orientation.,,Graph-based
+68a3ca5f,Double Density or Average Degree,$\mathrm{dens}$,,"The \emph{double-density} of a concept class is defined as twice the density of its $1$-inclusion graph, i.e twice the ratio of edges to vertices, or equivalently the average degree.",TRUE,FALSE,FALSE,FALSE,FALSE,,,Graph-based
+6192ffa2,Minimum Degree,$\mathrm{d}_{\min}$,,The \emph{minimum degree} of a concept class is defined as the minimum degree of its $1$-inclusion graph.,TRUE,FALSE,FALSE,FALSE,FALSE,,,Graph-based
+5f7dc155,Log Shattering,$\log \mathrm{sh}$,,"The {\em Log Shattering} of a family $\H$ is the (binary) log of the number of its shattered sets, \[ \log \abs*{sh{\H}} \]",TRUE,TRUE,TRUE,TRUE,TRUE,,,Shattering
+f88df4d0,VC Dimension,$\mathrm{VC}$,Vapnik-Chervonenkis Dimension,"The {\em VC dimension} of a family $\H$, denoted by $\VC(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $S$ is shattered by $\H$, i.e.  \[ \abs*{\H_{|S}} = 2^{\abs*{S}}\,. \]",TRUE,TRUE,TRUE,TRUE,FALSE,,,Shattering
+ef387d04,Effective VC Radius,$\mathrm{VCR}$,,"For a family $\H\subset 2^\X$, we define the {\em effective VC radius} as the largest integer $k$ such that all subsets of size $k$ of the effective range of $\H$, i.e. $\bigcup \{h\Delta h': h,h'\in \H\}$ are shattered by $\H$.",TRUE,TRUE,FALSE,FALSE,FALSE,,,Shattering
+e671ee81,Yang dimension,$\mathrm{Y}$,Projective dimension of the cuboplex,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Algebraic
+61cdb597,Interpolation degree,$\mathrm{intdeg}$,Minimum degree of an interpolating polynomial,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Algebraic
+7554a71b,Unlabeled sample compression,$\mathrm{USC}$,Minimum size of an unlabeled sample compression scheme,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Compression
+47012a6f,Recursive Teaching Dimension,$\mathrm{RTD}$,,,TRUE,TRUE,FALSE,FALSE,,,,Teaching and Hitting
+ac3ab35f,Littlestone Dimension,$\mathrm{L}$,,,TRUE,TRUE,TRUE,TRUE,TRUE,,,Queries
+a7cd6d6a,Star number,$\mathrm{S}$,,"The {\em Star dimension} of a family $\H$, denoted by $S(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains a $d$-star, i.e. there is a subset $T\subset S$ such that \[ T\in \H_{|S} \,\mbox{ and }\, \forall x\in S,\, T\Delta \set*{x} \in \H_{|S}\,. \]",TRUE,TRUE,TRUE,TRUE,FALSE,,,Teaching and Hitting
+468888a4,Monotone Recursive Teaching Dimension,$\mathrm{RTD}^p$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Teaching and Hitting
+0cd330f8,Teaching Dimension,$\mathrm{TD}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+858e433d,Hitting Size,$\mathrm{HT}$,,,FALSE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+e881cce1,Relative Hitting Size,$\mathrm{RHT}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+50a9f180,Membership Query Complexity,$\mathrm{Q}_m$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Queries
+8afe19fe,Proper Equivalence Queries Complexity,$\mathrm{Q}_{\mathrm{peq}}$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Queries
+18e90a51,Majority Complexity,$\mathrm{Maj}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
+ec9a579a,Membership and Proper Equivalence Queries Complexity,$\mathrm{Q}_{\mathrm{mpeq}}$,,,TRUE,FALSE,FALSE,FALSE,FALSE,,,Queries
+25081cc4,Membership and Equivalence Queries Complexity,$\mathrm{Q}_\mathrm{meq}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,\cite{maas1992lower},Queries
+95f72111,Worst Mistakes,$\mathrm{M}_{\mathrm{worst}}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Queries
+7e2124d7,Best Mistakes,$\mathrm{M}_{\mathrm{best}}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Queries
+f8f68517,Partial Equivalence Queries Complexity,$\mathrm{Q}_{\mathrm{par}}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Queries
+0b13cf6c,Self-Directed Queries Complexity,$\mathrm{M}_{\mathrm{sd}}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Queries
+b45faff5,Occasional One-Sided Getback,$\mathrm{M}_{\mathrm{o1g}}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
+23db588b,Order Sample Compression,$\mathrm{OSC}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Compression
+3cb760c9,Stable Unlabeled Complexity,$\mathrm{sUSC}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Compression
+817bc2e0,Proper Stable Sample Compression,$\mathrm{psUSC}$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Compression
+98e4d25a,Proper Unlabeled Sample Compression,$\mathrm{pUSC}$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Compression
+ace4e018,Labeled Sample Compression,$\mathrm{LSC}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Compression
+9829d0c6,Stable Labeled Sample Compression,$\mathrm{sLSC}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Compression
+50975596,Proper Labeled Sample Compression,$\mathrm{pLSC}$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Compression
+69d47998,Proper Stable Labeled Sample Compression,$\mathrm{psLSC}$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Compression
+797018d0,co-VC dimension,$\mathrm{coVC}$,,"The {\em coVC number} of a family $\H$, denoted by $\covcmod(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains a hollow $d$-star, i.e. there is a subset $T\subset S$ such that \[ T\notin \H_{|S} \,\mbox{ and }\, \forall x\in S,\, T\Delta \set*{x} \in \H_{|S}\,. \]",TRUE,FALSE,TRUE,FALSE,FALSE,,,Holes and Homology
+609eceac,Sign Rank,$\mathrm{SR}$,,"The \emph{sign rank} of a sign matrix $S$ is the maximum number $k$ such for all real matrix $M$ whose signs are $S$, $M$ has rank at least $k$.",TRUE,TRUE,TRUE,TRUE,FALSE,,,Algebraic
+b5da2b31,Equivalence Queries Complexity,$\mathrm{Q}_{\mathrm{eq}}$,,,TRUE,TRUE,TRUE,TRUE,TRUE,,,Queries
+5ac98464,Positive Teaching Dimension,$\mathrm{TD}^+$,,,FALSE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+42967b01,Preference-Based Teaching Dimension,$\mathrm{PBTD}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+8d32b955,No-Clashing Teaching Dimension,$\mathrm{NCTD}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+736f01b1,Log Size,$\log \mathrm{H}$,,"The {\em Log Size} of a family $\H$ is simply the (binary) log of its cardinality, \[ \log \abs*{\H} \]",TRUE,TRUE,TRUE,TRUE,TRUE,,,Basic
+effb1f47,Log Size Ratio,$\frac{\log (\mathrm{H}-1)}{\log (n+1)}$,,"The {\em Log Size Ratio} of a family $\H$ is the ratio of the log of its cardinality to the log of the effective range, \[ \log \frac{\abs*{\H}-1}{\log (n+1)} \]",TRUE,TRUE,TRUE,TRUE,FALSE,,,Basic
+8eba857a,Random Proper Equivalence Queries Complexity,$\mathrm{Q}_{\mathrm{rpeq}}$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Queries
+0ac3d645,Random Equivalence Queries Complexity,$\mathrm{Q}_{\mathrm{req}}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
+677c5d54,Projected Membership Queries Complexity,$\mathrm{Q}_{\mathrm{m}}^p$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
+f6196a91,Minimum Teaching Set Size,$\mathrm{TS}_{\min}$,,,TRUE,FALSE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+193eb40b,Maximum Teaching Set Size,$\mathrm{TS}_{\max}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+b8e04827,Minimum Projected Teaching Set Size,$\mathrm{TS}_{\min}^p$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Teaching and Hitting
+abc1e623,Maximum Projected Teaching Set Size,$\mathrm{TS}_{\max}^p$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Teaching and Hitting
+19ba3dbe,Monotonic Minimum Teaching Set Size,$\mathrm{TS}_{\min}^*$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+aec871f9,Monotonic Projected Minimum Teaching Set Size,$\mathrm{TS}_{\min}^{*p}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Teaching and Hitting
+56f8c183,Information Complexity,$\mathrm{IC}$,,,TRUE,TRUE,,,,,https://arxiv.org/abs/2206.13257,Basic
+c5c8d306,Proper Ordered Sample Compression,$\mathrm{pOSC}$,,,TRUE,FALSE,TRUE,FALSE,FALSE,,,Compression
+2ad917e5,Largest Shattered Set,$\mathrm{SH}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Shattering
+3df34125,Minimum Largest Order Shattered Set,$\mathrm{OSH}_{\min}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Shattering
+20d65b4d,Largest Strongly Shattered Set,$\mathrm{ST}$,,,TRUE,TRUE,FALSE,FALSE,FALSE,,,Shattering
+37a07ee4,Degeneracy,$\mathrm{d}^*_{\min}$,,"The \emph{degeneracy} of a concept class is defined as the degeneracy of its $1$-inclusion graph, i.e. the maximum over induced subgraphs of the minimum degree.",TRUE,TRUE,FALSE,FALSE,FALSE,,,Graph-based
+d65b1577,Maximum Degree,$\mathrm{d}_{\max}$,,The \emph{maximum degree} of a concept class is defined as the maximum degree of its $1$-inclusion graph.,TRUE,TRUE,FALSE,FALSE,FALSE,,,Graph-based
+f8417a3c,Projected Maximal Degree,$\mathrm{d}^p_{\max}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Graph-based
+,,,,,,,,,,,,
+5db1dc79,Projected Double Density or Projected Average Degree,$\mathrm{dens}^p$,,The \emph{projected double density} of a concept class is defined as the maximum over all projections of the averaged degree of the $1$-inclusion graph.,TRUE,TRUE,TRUE,TRUE,FALSE,,,Graph-based
+44ac5c8c,Projected Minimum Degree,$\mathrm{d}^p_{\min}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Graph-based
+,,,,,,,,,,,,
+15329c0a,Dual Sign Rank,$\mathrm{DSR}$,,The \emph{dual sign rank} of a sign matrix $S$ is the maximum number $k$ such that there exist $k$ columns of $S$ such that any real matrix $M$ with signs $S$ has those column linearly independent.,TRUE,TRUE,TRUE,TRUE,FALSE,,"From ""Sign Rank versus VC dimension"", Alon, Moran, Yehudayoff",Algebraic
+dcab7b9c,Projected VC Radius,$\mathrm{VCR}^p$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Shattering
+94b27f3e,Projected Strongly Shattered Dimension,$\mathrm{ST}^p$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Shattering
+dc6df2ea,Maximum Largest Order Shattered Set,$\mathrm{OSH}_{\max}$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Shattering
+9289f6cb,Maximum Positive Degree,$\mathrm{d}^+_{\max}$,,The \emph{Maximum Positive Degree} of a concept class is the maximum dominance of its $1$-inclusion graph (where dominance is the number of neighbors that are smaller with respect to inclusion).,FALSE,TRUE,FALSE,FALSE,FALSE,,,Graph-based
+24146bbb,Positive No-Clashing Teaching Dimension,$\mathrm{NCTD}^+$,,,FALSE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+02cce113,Distinguishing Range,$\mathrm{R}$,,Minimum number of coordinates over which all concepts in the class can be distinguished.,TRUE,TRUE,FALSE,FALSE,FALSE,,,Basic
+1dd9f740,Positive Recursive Teaching Dimension,$\mathrm{RTD}^+$,,,FALSE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
+df84e955,2-Littlestone Dimension,$\mathrm{L}_2$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
+5584a06e,3-Littlestone Dimension,$\mathrm{L}_3$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
+0b91817a,$k$-Littlestone Dimension ($k\ge3$),$\mathrm{L}_k$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries

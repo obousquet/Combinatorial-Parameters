@@ -1,0 +1,10 @@
+{
+  "id": 128,
+  "name": "Threshold Dimension of Majority",
+  "short_name": "threshold_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/threshold_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

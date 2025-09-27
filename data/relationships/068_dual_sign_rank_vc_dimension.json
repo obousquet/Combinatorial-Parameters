@@ -1,0 +1,9 @@
+{
+  "id": 68,
+  "parameter_1_id": "#parameters/dual_sign_rank",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "Proposition 1 in Alon, Moran, Yehudayoff",
+  "short_name": "dual_sign_rank_vc_dimension",
+  "name": "Dual Sign Rank / VC Dimension"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 143,
+  "parameter_1_id": "#parameters/3littlestone_dimension",
+  "parameter_2_id": "#parameters/klittlestone_dimension_kge3",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "3littlestone_dimension_klittlestone_dimension_kge3",
+  "name": "3-Littlestone Dimension / $k$-Littlestone Dimension ($k\\ge3$)"
+}

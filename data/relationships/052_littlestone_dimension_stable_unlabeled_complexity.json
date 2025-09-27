@@ -1,0 +1,8 @@
+{
+  "id": 52,
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/stable_unlabeled_complexity",
+  "relationship_type": "larger",
+  "short_name": "littlestone_dimension_stable_unlabeled_complexity",
+  "name": "Littlestone Dimension / Stable Unlabeled Complexity"
+}

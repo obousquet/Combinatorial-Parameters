@@ -1,0 +1,13 @@
+{
+  "id": 14,
+  "name": "Yang dimension",
+  "symbol": "$\\mathrm{Y}$",
+  "description": "Projective dimension of the cuboplex",
+  "category": "algebraic",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "yang_dimension"
+}

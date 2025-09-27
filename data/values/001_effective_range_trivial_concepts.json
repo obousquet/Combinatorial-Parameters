@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "name": "Effective Range of Trivial concepts",
+  "short_name": "effective_range_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

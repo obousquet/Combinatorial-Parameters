@@ -1,0 +1,12 @@
+{
+  "id": 18,
+  "name": "Littlestone Dimension",
+  "symbol": "$\\mathrm{L}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": true,
+  "short_name": "littlestone_dimension"
+}

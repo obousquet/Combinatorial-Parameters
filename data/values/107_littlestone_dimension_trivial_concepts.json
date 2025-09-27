@@ -1,0 +1,10 @@
+{
+  "id": 107,
+  "name": "Littlestone Dimension of Trivial concepts",
+  "short_name": "littlestone_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_n",
+  "details": ""
+}

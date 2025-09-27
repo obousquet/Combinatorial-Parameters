@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "parameter_1_id": "#parameters/minimum_largest_order_shattered_set",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "larger",
+  "details": "Sandwich Theorem",
+  "short_name": "minimum_largest_order_shattered_set_largest_strongly_shattered_set",
+  "name": "Minimum Largest Order Shattered Set / Largest Strongly Shattered Set"
+}

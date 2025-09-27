@@ -1,0 +1,10 @@
+{
+  "id": 44,
+  "name": "Log Shattering of Singletons",
+  "short_name": "log_shattering_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "details": ""
+}

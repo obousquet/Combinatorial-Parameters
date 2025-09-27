@@ -1,0 +1,12 @@
+{
+  "id": 41,
+  "name": "Proper Stable Labeled Sample Compression",
+  "symbol": "$\\mathrm{psLSC}$",
+  "category": "compression",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "proper_stable_labeled_sample_compression"
+}

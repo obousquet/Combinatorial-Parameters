@@ -1,0 +1,12 @@
+{
+  "id": 50,
+  "name": "Random Proper Equivalence Queries Complexity",
+  "symbol": "$\\mathrm{Q}_{\\mathrm{rpeq}}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "random_proper_equivalence_queries_complexity"
+}

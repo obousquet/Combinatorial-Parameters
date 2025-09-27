@@ -4,52 +4,75 @@
   "description": "Values assigned to parameters for specific classes",
   "columns": [
     {
-      "name": "id",
-      "type": "string",
-      "description": "Unique identifier for the value",
-      "required": true
+        "name": "id",
+        "type": "integer",
+        "label": "ID",
+        "description": "Unique identifier for the equation",
+        "required": true,
+        "rendered": false
     },
     {
-      "name": "name",
-      "type": "string",
-      "description": "Full name of the value",
-      "required": true
+        "name": "name",
+        "type": "string",
+        "label": "Name",
+        "description": "Full name of the value",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "short_name",
-      "type": "string",
-      "description": "Short identifier for cross-referencing between tables",
-      "required": true
+        "name": "short_name",
+        "type": "string",
+        "label": "Short Name",
+        "description": "Short identifier for cross-referencing between tables",
+        "required": true,
+        "rendered": false
     },
     {
-      "name": "class_id",
-      "type": "string",
-      "description": "Unique identifier for the class",
-      "required": true
+        "name": "class_id",
+        "type": "string",
+        "label": "Class",
+        "description": "Unique identifier for the class",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "parameter_id",
-      "type": "string",
-      "description": "Unique identifier for the parameter",
-      "required": true
+        "name": "parameter_id",
+        "type": "string",
+        "label": "Parameter",
+        "description": "Unique identifier for the parameter",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "value",
-      "type": "string",
-      "description": "Value assigned to the parameter for the class",
-      "required": false
+        "name": "value",
+        "type": "string",
+        "label": "Value",
+        "description": "Value assigned to the parameter for the class",
+        "required": false,
+        "rendered": true
     },
     {
-      "name": "order",
-      "type": "string",
-      "description": "Omega notation for the value (if applicable)",
-      "required": false
+        "name": "value_class",
+        "type": "enum",
+        "label": "Order",
+        "description": "Omega notation for the value (if applicable)",
+        "required": false,
+        "rendered": true,
+        "enum": [
+            { "value": "omega_1", "display_name": "$\\Omega(1)$" },
+            { "value": "omega_log_n", "display_name": "$\\Omega(\\log n)$" },
+            { "value": "omega_n", "display_name": "$\\Omega(n)$" },
+            { "value": "omega_n_log_n", "display_name": "$\\Omega(n \\log n)$" },
+            { "value": "omega_n_squared", "display_name": "$\\Omega(n^2)$" }
+        ]
     },
     {
-      "name": "details",
-      "type": "string",
-      "description": "Additional details or comments about the value",
-      "required": false
+        "name": "details",
+        "type": "string",
+        "label": "Details",
+        "description": "Additional details or comments about the value",
+        "required": false,
+        "rendered": true
     }
   ]
 }

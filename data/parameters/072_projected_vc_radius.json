@@ -1,0 +1,12 @@
+{
+  "id": 72,
+  "name": "Projected VC Radius",
+  "symbol": "$\\mathrm{VCR}^p$",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "projected_vc_radius"
+}

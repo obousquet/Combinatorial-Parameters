@@ -1,0 +1,12 @@
+{
+  "id": 23,
+  "name": "Relative Hitting Size",
+  "symbol": "$\\mathrm{RHT}$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "relative_hitting_size"
+}

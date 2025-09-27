@@ -1,0 +1,12 @@
+{
+  "id": 45,
+  "name": "Positive Teaching Dimension",
+  "symbol": "$\\mathrm{TD}^+$",
+  "category": "teaching",
+  "symmetric": false,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "positive_teaching_dimension"
+}

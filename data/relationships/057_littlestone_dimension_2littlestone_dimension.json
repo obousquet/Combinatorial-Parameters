@@ -1,0 +1,9 @@
+{
+  "id": 57,
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/2littlestone_dimension",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "littlestone_dimension_2littlestone_dimension",
+  "name": "Littlestone Dimension / 2-Littlestone Dimension"
+}

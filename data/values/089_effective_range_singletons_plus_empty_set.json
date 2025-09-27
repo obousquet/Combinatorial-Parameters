@@ -1,0 +1,10 @@
+{
+  "id": 89,
+  "name": "Effective Range of Singletons plus empty set",
+  "short_name": "effective_range_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

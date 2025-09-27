@@ -1,0 +1,9 @@
+{
+  "id": 61,
+  "parameter_1_id": "#parameters/maximum_degree",
+  "parameter_2_id": "#parameters/maximum_positive_degree",
+  "relationship_type": "larger",
+  "variant": "relative",
+  "short_name": "maximum_degree_maximum_positive_degree",
+  "name": "Maximum Degree / Maximum Positive Degree"
+}

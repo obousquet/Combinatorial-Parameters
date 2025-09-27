@@ -1,0 +1,9 @@
+{
+  "id": 109,
+  "parameter_1_id": "#parameters/recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "recursive_teaching_dimension_effective_vc_radius",
+  "name": "Recursive Teaching Dimension / Effective VC Radius"
+}

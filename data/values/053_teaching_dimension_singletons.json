@@ -1,0 +1,10 @@
+{
+  "id": 53,
+  "name": "Teaching Dimension of Singletons",
+  "short_name": "teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_log_n",
+  "details": ""
+}

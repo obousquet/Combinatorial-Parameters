@@ -5,39 +5,71 @@
   "columns": [
     {
       "name": "id",
-      "type": "string",
-      "description": "Unique identifier for the class",
-      "required": true
+      "type": "integer",
+      "label": "ID",
+      "description": "Unique identifier for the equation",
+      "required": true,
+      "rendered": false
     },
     {
       "name": "name",
       "type": "string",
+      "label": "Name",
       "description": "Full name of the class",
-      "required": true
+      "required": true,
+      "rendered": true
     },
     {
       "name": "short_name",
       "type": "string",
+      "label": "Short Name",
       "description": "Short identifier for cross-referencing between tables",
-      "required": true
+      "required": true,
+      "rendered": false
     },
     {
       "name": "symbol",
-      "type": "string",
+      "type": "latex",
+      "label": "Symbol",
       "description": "Symbol representing the class",
-      "required": true
+      "required": true,
+      "rendered": true
     },
     {
       "name": "definition",
-      "type": "string",
+      "type": "text",
+      "label": "Definition",
       "description": "Formal definition of the class",
-      "required": false
+      "required": false,
+      "rendered": true
     },
     {
       "name": "comments",
-      "type": "string",
+      "type": "text",
+      "label": "Comments",
       "description": "Additional comments or notes about the class",
-      "required": false
+      "required": false,
+      "rendered": true
+    },
+    {
+      "name": "related_values",
+      "type": "reference",
+      "label": "Related Values",
+      "description": "Known values for this class (if any)",
+      "required": false,
+      "rendered": true,
+      "table": "values",
+      "column": "class_id"
+    },
+    {
+      "name": "related_relationships",
+      "type": "reference",
+      "label": "Related Relationships",
+      "description": "Relationships in which this class appears (if any)",
+      "required": false,
+      "rendered": true,
+      "table": "relationships",
+      "column": "witness"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "id": 26,
+  "name": "Majority Complexity",
+  "symbol": "$\\mathrm{Maj}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "majority_complexity"
+}

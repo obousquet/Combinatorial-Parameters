@@ -1,0 +1,10 @@
+{
+  "id": 106,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/diameter",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "witness": "#classes/singletons",
+  "short_name": "effective_range_diameter",
+  "name": "Effective Range / Diameter"
+}

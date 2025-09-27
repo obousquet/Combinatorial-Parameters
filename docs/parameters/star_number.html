@@ -1,0 +1,71 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <link rel="stylesheet" href="../styles.css">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
+    </head>
+    <body>
+        <header>
+            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../classes/index.html">Classes</a>
+                <a href="../parameters/index.html">Parameters</a>
+                <a href="../relationships/index.html">Relationships</a>
+                <a href="../values/index.html">Values</a>
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="index.html">&larr; Back to Parameters Table</a></div>
+    <div class="table-card" id="math-19" style="position:relative;">
+        
+        <h3><a href="star_number.html" class="table-title-link">Star number</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Star number</p>
+<p><strong>Symbol: </strong>$\mathrm{S}$</p>
+<strong>Definition:</strong><div class="text-field"><p>The <strong>Star dimension</strong> of a family $\mathcal{H}$, denoted by $S(\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\subset \mathcal{X}$, of size $d$ such that $\mathcal{H}_{|S}$ contains a $d$-star, i.e. there is a subset $T\subset S$ such that $$ T\in \mathcal{H}_{|S} \,\mbox{ and }\, \forall x\in S,\, T\Delta {x} \in \mathcal{H}_{|S}\,. $$</p></div>
+
+
+<p><strong>Category:</strong> Teaching and Hitting</p>
+<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Monotonic:</strong> Yes</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
+<p><strong>Strictly Monotonic:</strong> No</p>
+<p><strong>Values:</strong><ul class='fields-list'><li><a href='../values/star_number_majority.html'>Star number of Majority</a></li><li><a href='../values/star_number_addressing.html'>Star number of Addressing</a></li><li><a href='../values/star_number_tagged_singletons.html'>Star number of Tagged Singletons</a></li><li><a href='../values/star_number_full_cube.html'>Star number of Full Cube</a></li><li><a href='../values/star_number_singletons_plus_empty_set.html'>Star number of Singletons plus empty set</a></li><li><a href='../values/star_number_singletons.html'>Star number of Singletons</a></li><li><a href='../values/star_number_trivial_concepts.html'>Star number of Trivial concepts</a></li><li><a href='../values/star_number_halfintervals.html'>Star number of Half-intervals</a></li></ul></p>
+<p><strong>Relationships (as Parameter 1):</strong><ul class='fields-list'><li><a href='../relationships/star_number_maximum_projected_teaching_set_size.html'>Star number / Maximum Projected Teaching Set Size</a></li><li><a href='../relationships/star_number_proper_ordered_sample_compression.html'>Star number / Proper Ordered Sample Compression</a></li></ul></p>
+<p><strong>Relationships (as Parameter 2):</strong><ul class='fields-list'><li><a href='../relationships/projected_maximal_degree_star_number.html'>Projected Maximal Degree / Star number</a></li><li><a href='../relationships/projected_membership_queries_complexity_star_number.html'>Projected Membership Queries Complexity / Star number</a></li></ul></p>
+
+        </div>
+    </div>
+    
+        </main>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                if (window.MathJax) {
+                    MathJax.typesetPromise();
+                }
+            });
+        </script>
+    </body>
+    </html>
+    

@@ -1,0 +1,9 @@
+{
+  "id": 144,
+  "parameter_1_id": "#parameters/membership_query_complexity",
+  "parameter_2_id": "#parameters/log_size",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "membership_query_complexity_log_size",
+  "name": "Membership Query Complexity / Log Size"
+}

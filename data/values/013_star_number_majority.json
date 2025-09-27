@@ -1,0 +1,10 @@
+{
+  "id": 13,
+  "name": "Star number of Majority",
+  "short_name": "star_number_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/star_number",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

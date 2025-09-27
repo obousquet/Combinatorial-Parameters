@@ -1,0 +1,12 @@
+{
+  "id": 62,
+  "name": "Minimum Largest Order Shattered Set",
+  "symbol": "$\\mathrm{OSH}_{\\min}$",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "minimum_largest_order_shattered_set"
+}

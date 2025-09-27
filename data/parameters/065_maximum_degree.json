@@ -1,0 +1,13 @@
+{
+  "id": 65,
+  "name": "Maximum Degree",
+  "symbol": "$\\mathrm{d}_{\\max}$",
+  "definition": "The **maximum degree** of a concept class is defined as the maximum degree of its $1$-inclusion graph.",
+  "category": "graph-based",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "maximum_degree"
+}

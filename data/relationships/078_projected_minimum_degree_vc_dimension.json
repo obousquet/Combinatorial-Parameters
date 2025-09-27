@@ -1,0 +1,9 @@
+{
+  "id": 78,
+  "parameter_1_id": "#parameters/projected_minimum_degree",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "equivalence",
+  "details": "Project on the largest shattered set.",
+  "short_name": "projected_minimum_degree_vc_dimension",
+  "name": "Projected Minimum Degree / VC Dimension"
+}

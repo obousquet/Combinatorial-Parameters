@@ -1,0 +1,13 @@
+{
+  "id": 3,
+  "name": "Oriented Diameter",
+  "symbol": "$\\mathrm{D}^+$",
+  "definition": "The **oriented diameter** $\\mathrm{D}^+(\\mathcal{H})$ of a family $\\mathcal{H}$ is defined as $$ \\mathrm{D}^+(\\mathcal{H}):= \\max\\{|S\\|: \\{\\emptyset, S\\}\\subset \\mathcal{H}\\_{|S}} $$",
+  "category": "basic",
+  "symmetric": false,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "oriented_diameter"
+}

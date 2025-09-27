@@ -1,0 +1,10 @@
+{
+  "id": 97,
+  "name": "Oriented Diameter of Full Cube",
+  "short_name": "oriented_diameter_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/oriented_diameter",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

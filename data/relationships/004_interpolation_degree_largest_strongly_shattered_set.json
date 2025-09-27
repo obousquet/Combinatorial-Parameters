@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "parameter_1_id": "#parameters/interpolation_degree",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "interpolation_degree_largest_strongly_shattered_set",
+  "name": "Interpolation degree / Largest Strongly Shattered Set"
+}

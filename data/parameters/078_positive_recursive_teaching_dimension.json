@@ -1,0 +1,12 @@
+{
+  "id": 78,
+  "name": "Positive Recursive Teaching Dimension",
+  "symbol": "$\\mathrm{RTD}^+$",
+  "category": "teaching",
+  "symmetric": false,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "positive_recursive_teaching_dimension"
+}

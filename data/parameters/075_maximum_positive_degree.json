@@ -1,0 +1,13 @@
+{
+  "id": 75,
+  "name": "Maximum Positive Degree",
+  "symbol": "$\\mathrm{d}^+_{\\max}$",
+  "definition": "The **Maximum Positive Degree** of a concept class is the maximum dominance of its $1$-inclusion graph (where dominance is the number of neighbors that are smaller with respect to inclusion).",
+  "category": "graph-based",
+  "symmetric": false,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "maximum_positive_degree"
+}

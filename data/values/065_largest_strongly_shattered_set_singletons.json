@@ -1,0 +1,10 @@
+{
+  "id": 65,
+  "name": "Largest Strongly Shattered Set of Singletons",
+  "short_name": "largest_strongly_shattered_set_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "details": ""
+}

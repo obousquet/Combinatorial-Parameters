@@ -1,0 +1,8 @@
+{
+  "id": 25,
+  "parameter_1_id": "#parameters/random_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "short_name": "random_equivalence_queries_complexity_vc_dimension",
+  "name": "Random Equivalence Queries Complexity / VC Dimension"
+}

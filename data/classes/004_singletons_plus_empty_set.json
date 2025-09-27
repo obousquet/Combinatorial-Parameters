@@ -1,0 +1,7 @@
+{
+  "id": 4,
+  "name": "Singletons plus empty set",
+  "symbol": "\\{\\{i\\}\\}_{1\\le i\\le n}\\cup\\{\\emptyset\\}",
+  "definition": "All singletons and the empty set",
+  "short_name": "singletons_plus_empty_set"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 146,
+  "parameter_1_id": "#parameters/diameter",
+  "parameter_2_id": "#parameters/hamming_radius",
+  "relationship_type": "larger",
+  "short_name": "diameter_hamming_radius",
+  "name": "Diameter / Hamming Radius"
+}

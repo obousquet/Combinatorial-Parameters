@@ -1,0 +1,9 @@
+{
+  "id": 80,
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/densest_subgraph_twice",
+  "relationship_type": "larger",
+  "details": "Down shifting lemma and Monotonicity",
+  "short_name": "vc_dimension_densest_subgraph_twice",
+  "name": "VC Dimension / Densest Subgraph (twice)"
+}

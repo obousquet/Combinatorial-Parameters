@@ -1,0 +1,13 @@
+{
+  "id": 10,
+  "name": "Minimum Degree",
+  "symbol": "$\\mathrm{d}_{\\min}$",
+  "definition": "The **minimum degree** of a concept class is defined as the minimum degree of its $1$-inclusion graph.",
+  "category": "graph-based",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "minimum_degree"
+}

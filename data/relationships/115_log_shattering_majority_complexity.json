@@ -1,0 +1,8 @@
+{
+  "id": 115,
+  "parameter_1_id": "#parameters/log_shattering",
+  "parameter_2_id": "#parameters/majority_complexity",
+  "relationship_type": "larger",
+  "short_name": "log_shattering_majority_complexity",
+  "name": "Log Shattering / Majority Complexity"
+}

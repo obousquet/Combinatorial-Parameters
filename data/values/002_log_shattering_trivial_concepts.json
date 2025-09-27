@@ -1,0 +1,10 @@
+{
+  "id": 2,
+  "name": "Log Shattering of Trivial concepts",
+  "short_name": "log_shattering_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "details": ""
+}

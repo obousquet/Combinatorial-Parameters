@@ -1,0 +1,10 @@
+{
+  "id": 12,
+  "name": "Recursive Teaching Dimension of Trivial concepts",
+  "short_name": "recursive_teaching_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

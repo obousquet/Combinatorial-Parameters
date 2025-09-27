@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "parameter_1_id": "#parameters/best_mistakes",
+  "parameter_2_id": "#parameters/minimum_largest_order_shattered_set",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "best_mistakes_minimum_largest_order_shattered_set",
+  "name": "Best Mistakes / Minimum Largest Order Shattered Set"
+}

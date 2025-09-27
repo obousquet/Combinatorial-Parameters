@@ -1,0 +1,7 @@
+{
+  "id": 7,
+  "name": "Majority",
+  "symbol": "\\text{Maj}",
+  "definition": "(see \\cite{maass1992lower}): $\\{S\\subset [n+1]: n+1\\in S\\Leftrightarrow |S\\backslash \\{n+1\\\\}|>n/2}$\n\nSo we have all subsets of $[n]$ and an extra majority bit.",
+  "short_name": "majority"
+}

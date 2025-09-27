@@ -1,0 +1,9 @@
+{
+  "id": 16,
+  "parameter_1_id": "#parameters/densest_subgraph_twice",
+  "parameter_2_id": "#parameters/degeneracy",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "densest_subgraph_twice_degeneracy",
+  "name": "Densest Subgraph (twice) / Degeneracy"
+}

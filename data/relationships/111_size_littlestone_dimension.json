@@ -1,0 +1,10 @@
+{
+  "id": 111,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/littlestone_dimension",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "witness": "#classes/singletons",
+  "short_name": "size_littlestone_dimension",
+  "name": "Size / Littlestone Dimension"
+}

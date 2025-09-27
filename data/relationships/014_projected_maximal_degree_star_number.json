@@ -1,0 +1,8 @@
+{
+  "id": 14,
+  "parameter_1_id": "#parameters/projected_maximal_degree",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "equivalence",
+  "short_name": "projected_maximal_degree_star_number",
+  "name": "Projected Maximal Degree / Star number"
+}

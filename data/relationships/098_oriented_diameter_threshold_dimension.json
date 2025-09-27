@@ -1,0 +1,8 @@
+{
+  "id": 98,
+  "parameter_1_id": "#parameters/oriented_diameter",
+  "parameter_2_id": "#parameters/threshold_dimension",
+  "relationship_type": "larger",
+  "short_name": "oriented_diameter_threshold_dimension",
+  "name": "Oriented Diameter / Threshold Dimension"
+}

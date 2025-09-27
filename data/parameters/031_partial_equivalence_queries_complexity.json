@@ -1,0 +1,12 @@
+{
+  "id": 31,
+  "name": "Partial Equivalence Queries Complexity",
+  "symbol": "$\\mathrm{Q}_{\\mathrm{par}}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "partial_equivalence_queries_complexity"
+}

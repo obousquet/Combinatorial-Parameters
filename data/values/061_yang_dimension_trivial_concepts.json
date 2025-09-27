@@ -1,0 +1,10 @@
+{
+  "id": 61,
+  "name": "Yang dimension of Trivial concepts",
+  "short_name": "yang_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/yang_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

@@ -1,0 +1,9 @@
+{
+  "id": 33,
+  "parameter_1_id": "#parameters/threshold_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "threshold_dimension_vc_dimension",
+  "name": "Threshold Dimension / VC Dimension"
+}

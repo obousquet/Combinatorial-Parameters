@@ -1,0 +1,12 @@
+{
+  "id": 52,
+  "name": "Projected Membership Queries Complexity",
+  "symbol": "$\\mathrm{Q}_{\\mathrm{m}}^p$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "projected_membership_queries_complexity"
+}

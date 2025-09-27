@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "name": "Trivial concepts",
+  "symbol": "\\{\\emptyset, [n]\\}",
+  "definition": "Class containing the empty and the full concept.",
+  "short_name": "trivial_concepts"
+}

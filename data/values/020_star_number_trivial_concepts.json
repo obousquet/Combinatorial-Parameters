@@ -1,0 +1,10 @@
+{
+  "id": 20,
+  "name": "Star number of Trivial concepts",
+  "short_name": "star_number_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/star_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

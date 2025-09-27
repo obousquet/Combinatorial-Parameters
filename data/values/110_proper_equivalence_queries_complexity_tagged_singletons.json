@@ -1,0 +1,10 @@
+{
+  "id": 110,
+  "name": "Proper Equivalence Queries Complexity of Tagged Singletons",
+  "short_name": "proper_equivalence_queries_complexity_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/proper_equivalence_queries_complexity",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": ""
+}

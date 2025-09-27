@@ -1,0 +1,9 @@
+{
+  "id": 24,
+  "parameter_1_id": "#parameters/yang_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "Theorem",
+  "short_name": "yang_dimension_vc_dimension",
+  "name": "Yang dimension / VC Dimension"
+}

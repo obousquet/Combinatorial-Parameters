@@ -1,0 +1,8 @@
+{
+  "id": 122,
+  "parameter_1_id": "#parameters/log_size",
+  "parameter_2_id": "#parameters/majority_complexity",
+  "relationship_type": "larger",
+  "short_name": "log_size_majority_complexity",
+  "name": "Log Size / Majority Complexity"
+}

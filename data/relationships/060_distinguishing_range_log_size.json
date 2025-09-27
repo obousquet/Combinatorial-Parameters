@@ -1,0 +1,9 @@
+{
+  "id": 60,
+  "parameter_1_id": "#parameters/distinguishing_range",
+  "parameter_2_id": "#parameters/log_size",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "distinguishing_range_log_size",
+  "name": "Distinguishing Range / Log Size"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 27,
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Theorem",
+  "short_name": "teaching_dimension_recursive_teaching_dimension",
+  "name": "Teaching Dimension / Recursive Teaching Dimension"
+}

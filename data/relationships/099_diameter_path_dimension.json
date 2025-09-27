@@ -1,0 +1,8 @@
+{
+  "id": 99,
+  "parameter_1_id": "#parameters/diameter",
+  "parameter_2_id": "#parameters/path_dimension",
+  "relationship_type": "larger",
+  "short_name": "diameter_path_dimension",
+  "name": "Diameter / Path Dimension"
+}

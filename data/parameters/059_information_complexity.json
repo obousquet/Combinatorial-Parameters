@@ -1,0 +1,12 @@
+{
+  "id": 59,
+  "name": "Information Complexity",
+  "symbol": "$\\mathrm{IC}$",
+  "category": "basic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "information_complexity"
+}

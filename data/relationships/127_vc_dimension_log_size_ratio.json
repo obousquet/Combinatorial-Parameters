@@ -1,0 +1,9 @@
+{
+  "id": 127,
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger_c",
+  "details": "Theorem",
+  "short_name": "vc_dimension_log_size_ratio",
+  "name": "VC Dimension / Log Size Ratio"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "parameter_1_id": "#parameters/minimum_largest_order_shattered_set",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "minimum_largest_order_shattered_set_effective_vc_radius",
+  "name": "Minimum Largest Order Shattered Set / Effective VC Radius"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 42,
+  "name": "Maximum Degree of Singletons",
+  "short_name": "maximum_degree_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/maximum_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "details": ""
+}

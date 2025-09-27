@@ -1,0 +1,10 @@
+{
+  "id": 34,
+  "name": "Oriented Diameter of Singletons plus empty set",
+  "short_name": "oriented_diameter_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/oriented_diameter",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

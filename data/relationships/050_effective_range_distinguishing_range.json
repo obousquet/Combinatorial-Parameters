@@ -1,0 +1,8 @@
+{
+  "id": 50,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/distinguishing_range",
+  "relationship_type": "larger",
+  "short_name": "effective_range_distinguishing_range",
+  "name": "Effective Range / Distinguishing Range"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 30,
+  "name": "Best Mistakes",
+  "symbol": "$\\mathrm{M}_{\\mathrm{best}}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "best_mistakes"
+}

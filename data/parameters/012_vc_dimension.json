@@ -1,0 +1,14 @@
+{
+  "id": 12,
+  "name": "VC Dimension",
+  "symbol": "$\\mathrm{VC}$",
+  "definition": "The **VC dimension** of a family $\\mathcal{H}$, denoted by $\\VC(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $S$ is shattered by $\\mathcal{H}$, i.e.  $$ |\\mathcal{H|\\_{|S}} = 2^{|S|}\\,. $$",
+  "description": "Vapnik-Chervonenkis Dimension",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "vc_dimension"
+}

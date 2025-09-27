@@ -1,0 +1,10 @@
+{
+  "id": 45,
+  "name": "Order Sample Compression of Singletons",
+  "short_name": "order_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

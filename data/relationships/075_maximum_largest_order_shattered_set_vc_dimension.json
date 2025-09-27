@@ -1,0 +1,9 @@
+{
+  "id": 75,
+  "parameter_1_id": "#parameters/maximum_largest_order_shattered_set",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "equivalence",
+  "details": "Sandwich Theorem",
+  "short_name": "maximum_largest_order_shattered_set_vc_dimension",
+  "name": "Maximum Largest Order Shattered Set / VC Dimension"
+}

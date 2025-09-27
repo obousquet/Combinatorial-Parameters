@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "parameter_1_id": "#parameters/maximum_degree",
+  "parameter_2_id": "#parameters/double_density_or_average_degree",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "maximum_degree_double_density_or_average_degree",
+  "name": "Maximum Degree / Double Density or Average Degree"
+}

@@ -4,52 +4,89 @@
   "description": "Relationships between parameters",
   "columns": [
     {
-      "name": "id",
-      "type": "string",
-      "description": "Unique identifier for the relationship",
-      "required": true
+        "name": "id",
+        "type": "integer",
+        "label": "ID",
+        "description": "Unique identifier for the equation",
+        "required": true,
+        "rendered": false
     },
     {
-      "name": "name",
-      "type": "string",
-      "description": "Full name of the relationship",
-      "required": true
+        "name": "name",
+        "type": "string",
+        "label": "Name",
+        "description": "Full name of the relationship",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "short_name",
-      "type": "string",
-      "description": "Short identifier for cross-referencing between tables",
-      "required": true
+        "name": "short_name",
+        "type": "string",
+        "label": "Short Name",
+        "description": "Short identifier for cross-referencing between tables",
+        "required": true,
+        "rendered": false
     },
     {
-      "name": "parameter_1_id",
-      "type": "string",
-      "description": "Unique identifier for the first parameter",
-      "required": true
+        "name": "parameter_1_id",
+        "type": "string",
+        "label": "Parameter 1",
+        "description": "Unique identifier for the first parameter",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "parameter_2_id",
-      "type": "string",
-      "description": "Unique identifier for the second parameter",
-      "required": true
+        "name": "parameter_2_id",
+        "type": "string",
+        "label": "Parameter 2",
+        "description": "Unique identifier for the second parameter",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "relationship_type",
-      "type": "string",
-      "description": "Type of relationship (e.g., inequality, equivalence)",
-      "required": true
+        "name": "relationship_type",
+        "type": "enum",
+        "label": "Relationship Type",
+        "description": "Type of relationship (e.g., inequality, equivalence)",
+        "required": true,
+        "rendered": true,
+        "enum": [
+            { "value": "larger", "display_name": "$P_1\\ge P_2$" },
+            { "value": "larger_c", "display_name": "$P_1\\ge cP_2$" },
+            { "value": "equivalence", "display_name": "$P_1 = P_2$" },
+            { "value": "log", "display_name": "$P_1 \\ge c\\log P_2$" },
+            { "value": "sqrt", "display_name": "$P_1 \\ge c\\sqrt{P_2}$" },
+            { "value": "inv_log", "display_name": "$P_1 \\ge \\frac{cP_2}{\\log n}$" }
+        ]
     },
     {
-      "name": "details",
-      "type": "string",
-      "description": "Additional details or comments about the relationship",
-      "required": false
+        "name": "variant",
+        "type": "enum",
+        "label": "Variant",
+        "description": "Variant of the relationship (e.g., strict, non-strict)",
+        "required": true,
+        "rendered": true,
+        "enum": [
+            { "value": "monotonic", "display_name": "Monotonic" },
+            { "value": "p_monotonic", "display_name": "P-Monotonic" },
+            { "value": "relative", "display_name": "Relative" }
+        ]
     },
     {
-      "name": "witness",
-      "type": "string",
-      "description": "Class or example that demonstrates the relationship",
-      "required": false
+        "name": "details",
+        "type": "text",
+        "label": "Details",
+        "description": "Additional details or comments about the relationship",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "witness",
+        "type": "string",
+        "label": "Witness",
+        "description": "Class that demonstrates the relationship",
+        "required": false,
+        "rendered": true
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "id": 54,
+  "parameter_1_id": "#parameters/noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/densest_subgraph_twice",
+  "relationship_type": "larger",
+  "details": "Theorem (for density) and monotonicity",
+  "short_name": "noclashing_teaching_dimension_densest_subgraph_twice",
+  "name": "No-Clashing Teaching Dimension / Densest Subgraph (twice)"
+}

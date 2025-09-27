@@ -1,0 +1,10 @@
+{
+  "id": 72,
+  "parameter_1_id": "#parameters/projected_vc_radius",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "larger",
+  "variant": "p_monotonic",
+  "details": "Definition",
+  "short_name": "projected_vc_radius_effective_vc_radius",
+  "name": "Projected VC Radius / Effective VC Radius"
+}

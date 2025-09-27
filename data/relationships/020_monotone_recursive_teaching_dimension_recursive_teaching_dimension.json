@@ -1,0 +1,10 @@
+{
+  "id": 20,
+  "parameter_1_id": "#parameters/monotone_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "variant": "p_monotonic",
+  "details": "Definition",
+  "short_name": "monotone_recursive_teaching_dimension_recursive_teaching_dimension",
+  "name": "Monotone Recursive Teaching Dimension / Recursive Teaching Dimension"
+}

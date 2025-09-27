@@ -1,0 +1,10 @@
+{
+  "id": 123,
+  "name": "Log Size of Singletons plus empty set",
+  "short_name": "log_size_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/log_size",
+  "value": "$\\log(n+1)$",
+  "value_class": "omega_log_n",
+  "details": ""
+}

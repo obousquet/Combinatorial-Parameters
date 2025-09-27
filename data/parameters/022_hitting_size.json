@@ -1,0 +1,12 @@
+{
+  "id": 22,
+  "name": "Hitting Size",
+  "symbol": "$\\mathrm{HT}$",
+  "category": "teaching",
+  "symmetric": false,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "hitting_size"
+}

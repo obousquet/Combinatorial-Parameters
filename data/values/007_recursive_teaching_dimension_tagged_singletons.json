@@ -1,0 +1,10 @@
+{
+  "id": 7,
+  "name": "Recursive Teaching Dimension of Tagged Singletons",
+  "short_name": "recursive_teaching_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": ""
+}

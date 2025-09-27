@@ -1,0 +1,12 @@
+{
+  "id": 61,
+  "name": "Largest Shattered Set",
+  "symbol": "$\\mathrm{SH}$",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "largest_shattered_set"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 34,
+  "parameter_1_id": "#parameters/log_shattering",
+  "parameter_2_id": "#parameters/log_size",
+  "relationship_type": "larger",
+  "details": "Pajor Lemma",
+  "short_name": "log_shattering_log_size",
+  "name": "Log Shattering / Log Size"
+}

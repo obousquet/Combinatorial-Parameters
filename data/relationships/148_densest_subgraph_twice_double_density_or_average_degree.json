@@ -1,0 +1,10 @@
+{
+  "id": 148,
+  "parameter_1_id": "#parameters/densest_subgraph_twice",
+  "parameter_2_id": "#parameters/double_density_or_average_degree",
+  "relationship_type": "larger",
+  "variant": "monotonic",
+  "details": "Definition",
+  "short_name": "densest_subgraph_twice_double_density_or_average_degree",
+  "name": "Densest Subgraph (twice) / Double Density or Average Degree"
+}

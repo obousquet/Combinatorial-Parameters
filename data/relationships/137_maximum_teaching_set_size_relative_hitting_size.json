@@ -1,0 +1,8 @@
+{
+  "id": 137,
+  "parameter_1_id": "#parameters/maximum_teaching_set_size",
+  "parameter_2_id": "#parameters/relative_hitting_size",
+  "relationship_type": "equivalence",
+  "short_name": "maximum_teaching_set_size_relative_hitting_size",
+  "name": "Maximum Teaching Set Size / Relative Hitting Size"
+}

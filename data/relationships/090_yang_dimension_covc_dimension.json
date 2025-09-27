@@ -1,0 +1,8 @@
+{
+  "id": 90,
+  "parameter_1_id": "#parameters/yang_dimension",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "larger",
+  "short_name": "yang_dimension_covc_dimension",
+  "name": "Yang dimension / co-VC dimension"
+}

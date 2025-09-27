@@ -1,0 +1,12 @@
+{
+  "id": 29,
+  "name": "Worst Mistakes",
+  "symbol": "$\\mathrm{M}_{\\mathrm{worst}}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "worst_mistakes"
+}

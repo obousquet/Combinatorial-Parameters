@@ -1,0 +1,9 @@
+{
+  "id": 18,
+  "parameter_1_id": "#parameters/preferencebased_teaching_dimension",
+  "parameter_2_id": "#parameters/recursive_teaching_dimension",
+  "relationship_type": "equivalence",
+  "details": "(for finite classes)",
+  "short_name": "preferencebased_teaching_dimension_recursive_teaching_dimension",
+  "name": "Preference-Based Teaching Dimension / Recursive Teaching Dimension"
+}

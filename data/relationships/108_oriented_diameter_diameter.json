@@ -1,0 +1,9 @@
+{
+  "id": 108,
+  "parameter_1_id": "#parameters/oriented_diameter",
+  "parameter_2_id": "#parameters/diameter",
+  "relationship_type": "larger_c",
+  "details": "Lemma",
+  "short_name": "oriented_diameter_diameter",
+  "name": "Oriented Diameter / Diameter"
+}

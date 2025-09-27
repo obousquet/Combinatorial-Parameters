@@ -1,0 +1,9 @@
+{
+  "id": 40,
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/maximum_teaching_set_size",
+  "relationship_type": "equivalence",
+  "details": "Definition",
+  "short_name": "teaching_dimension_maximum_teaching_set_size",
+  "name": "Teaching Dimension / Maximum Teaching Set Size"
+}

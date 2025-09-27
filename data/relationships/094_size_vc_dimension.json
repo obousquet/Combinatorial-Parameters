@@ -1,0 +1,8 @@
+{
+  "id": 94,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "short_name": "size_vc_dimension",
+  "name": "Size / VC Dimension"
+}

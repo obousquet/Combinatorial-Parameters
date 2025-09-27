@@ -1,0 +1,13 @@
+{
+  "id": 2,
+  "name": "Size",
+  "symbol": "$\\mathrm{H}$",
+  "definition": "The **size** of a family $\\mathcal{H}$ is simply the  cardinality, $$  |\\mathcal{H|} $$",
+  "category": "basic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": true,
+  "short_name": "size"
+}

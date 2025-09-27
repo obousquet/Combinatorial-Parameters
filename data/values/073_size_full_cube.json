@@ -1,0 +1,10 @@
+{
+  "id": 73,
+  "name": "Size of Full Cube",
+  "short_name": "size_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/size",
+  "value": "$2^n$",
+  "value_class": "$\\Omega(2^n)$",
+  "details": ""
+}

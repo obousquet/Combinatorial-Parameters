@@ -1,0 +1,13 @@
+{
+  "id": 64,
+  "name": "Degeneracy",
+  "symbol": "$\\mathrm{d}^*_{\\min}$",
+  "definition": "The **degeneracy** of a concept class is defined as the degeneracy of its $1$-inclusion graph, i.e. the maximum over induced subgraphs of the minimum degree.",
+  "category": "graph-based",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "degeneracy"
+}

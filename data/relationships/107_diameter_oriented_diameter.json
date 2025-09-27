@@ -1,0 +1,10 @@
+{
+  "id": 107,
+  "parameter_1_id": "#parameters/diameter",
+  "parameter_2_id": "#parameters/oriented_diameter",
+  "relationship_type": "larger",
+  "variant": "relative",
+  "details": "Definition",
+  "short_name": "diameter_oriented_diameter",
+  "name": "Diameter / Oriented Diameter"
+}

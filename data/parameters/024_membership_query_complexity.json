@@ -1,0 +1,12 @@
+{
+  "id": 24,
+  "name": "Membership Query Complexity",
+  "symbol": "$\\mathrm{Q}_m$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "membership_query_complexity"
+}

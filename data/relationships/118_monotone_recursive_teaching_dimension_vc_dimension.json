@@ -1,0 +1,8 @@
+{
+  "id": 118,
+  "parameter_1_id": "#parameters/monotone_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "short_name": "monotone_recursive_teaching_dimension_vc_dimension",
+  "name": "Monotone Recursive Teaching Dimension / VC Dimension"
+}

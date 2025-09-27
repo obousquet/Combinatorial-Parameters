@@ -1,0 +1,9 @@
+{
+  "id": 95,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/path_dimension",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "size_path_dimension",
+  "name": "Size / Path Dimension"
+}

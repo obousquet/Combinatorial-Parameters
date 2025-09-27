@@ -1,0 +1,9 @@
+{
+  "id": 158,
+  "parameter_1_id": "#parameters/stable_labeled_sample_compression",
+  "parameter_2_id": "#parameters/labeled_sample_compression",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "stable_labeled_sample_compression_labeled_sample_compression",
+  "name": "Stable Labeled Sample Compression / Labeled Sample Compression"
+}

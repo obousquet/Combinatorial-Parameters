@@ -1,0 +1,9 @@
+{
+  "id": 62,
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "relationship_type": "larger",
+  "details": "Down Shifting and Monotonicity",
+  "short_name": "vc_dimension_projected_double_density_or_projected_average_degree",
+  "name": "VC Dimension / Projected Double Density or Projected Average Degree"
+}

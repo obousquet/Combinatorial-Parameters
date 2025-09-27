@@ -1,0 +1,12 @@
+{
+  "id": 74,
+  "name": "Maximum Largest Order Shattered Set",
+  "symbol": "$\\mathrm{OSH}_{\\max}$",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "maximum_largest_order_shattered_set"
+}

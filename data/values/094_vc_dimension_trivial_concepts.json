@@ -1,0 +1,10 @@
+{
+  "id": 94,
+  "name": "VC Dimension of Trivial concepts",
+  "short_name": "vc_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": ""
+}

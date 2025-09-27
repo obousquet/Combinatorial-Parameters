@@ -4,58 +4,148 @@
   "description": "Parameters measuring the size of set families",
   "columns": [
     {
-      "name": "id",
-      "type": "string",
-      "description": "Unique identifier for the parameter",
-      "required": true
+        "name": "id",
+        "type": "integer",
+        "label": "ID",
+        "description": "Unique identifier for the equation",
+        "required": true,
+        "rendered": false
     },
     {
-      "name": "name",
-      "type": "string",
-      "description": "Full name of the parameter",
-      "required": true
+        "name": "name",
+        "type": "string",
+        "label": "Name",
+        "description": "Full name of the parameter",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "short_name",
-      "type": "string",
-      "description": "Short identifier for cross-referencing between tables",
-      "required": true
+        "name": "short_name",
+        "type": "string",
+        "label": "Short Name",
+        "description": "Short identifier for cross-referencing between tables",
+        "required": true,
+        "rendered": false
     },
     {
-      "name": "symbol",
-      "type": "string",
-      "description": "Symbol representing the parameter",
-      "required": true
+        "name": "symbol",
+        "type": "string",
+        "label": "Symbol",
+        "description": "Symbol representing the parameter",
+        "required": true,
+        "rendered": true
     },
     {
-      "name": "definition",
-      "type": "string",
-      "description": "Formal definition of the parameter",
-      "required": false
+        "name": "definition",
+        "type": "text",
+        "label": "Definition",
+        "description": "Formal definition of the parameter",
+        "required": false,
+        "rendered": true
     },
     {
-      "name": "comments",
-      "type": "string",
-      "description": "Additional comments or notes about the parameter",
-      "required": false
+        "name": "description",
+        "type": "text",
+        "label": "Description",
+        "description": "Description of the parameter",
+        "required": false,
+        "rendered": true
     },
     {
-      "name": "category",
-      "type": "string",
-      "description": "Category or classification of the parameter",
-      "required": false
+        "name": "comments",
+        "type": "text",
+        "label": "Comments",
+        "description": "Additional comments or notes about the parameter",
+        "required": false,
+        "rendered": true
     },
     {
-      "name": "symmetric",
-      "type": "string",
-      "description": "Whether the parameter is symmetric, i.e. invariant under complementation",
-      "required": false
+        "name": "category",
+        "type": "enum",
+        "label": "Category",
+        "description": "Category or classification of the parameter",
+        "required": false,
+        "rendered": true,
+        "enum": [
+            { "value": "basic", "display_name": "Basic" },
+            { "value": "graph-based", "display_name": "Graph-based" },
+            { "value": "shattering", "display_name": "Shattering" },
+            { "value": "algebraic", "display_name": "Algebraic" },
+            { "value": "compression", "display_name": "Compression" },
+            { "value": "teaching", "display_name": "Teaching and Hitting" },
+            { "value": "queries", "display_name": "Queries" },
+            { "value": "holes", "display_name": "Holes and Homology" }
+        ]
     },
     {
-      "name": "monotonic",
-      "type": "string",
-      "description": "Whether the parameter is monotonic, i.e. non-decreasing with respect to set inclusion",
-      "required": false
+        "name": "symmetric",
+        "type": "boolean",
+        "label": "Symmetric",
+        "description": "Whether the parameter is symmetric, i.e. invariant under complementation",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "monotonic",
+        "type": "boolean",
+        "label": "Monotonic",
+        "description": "Whether the parameter is monotonic, i.e. non-decreasing with respect to set inclusion",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "p_monotonic",
+        "type": "boolean",
+        "label": "P-Monotonic",
+        "description": "Whether the parameter is p-monotonic, i.e. non-decreasing with respect to projections",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "doubly_monotonic",
+        "type": "boolean",
+        "label": "Doubly Monotonic",
+        "description": "Whether the parameter is doubly monotonic, i.e. non-decreasing with respect to both set inclusion and projections",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "strictly_monotonic",
+        "type": "boolean",
+        "label": "Strictly Monotonic",
+        "description": "Whether the parameter is strictly monotonic",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "related_values",
+        "type": "reference",
+        "label": "Values",
+        "description": "Known values for this parameter (if any)",
+        "required": false,
+        "rendered": true,
+        "table": "values",
+        "column": "parameter_id"
+    },
+    {
+        "name": "related_relationships_1",
+        "type": "reference",
+        "label": "Relationships (as Parameter 1)",
+        "description": "Relationships in which this parameter appears (if any) as the first parameter",
+        "required": false,
+        "rendered": true,
+        "table": "relationships",
+        "column": "parameter_1_id"
+    },
+    {
+        "name": "related_relationships_2",
+        "type": "reference",
+        "label": "Relationships (as Parameter 2)",
+        "description": "Relationships in which this parameter appears (if any) as the second parameter",
+        "required": false,
+        "rendered": true,
+        "table": "relationships",
+        "column": "parameter_2_id"
     }
   ]
 }

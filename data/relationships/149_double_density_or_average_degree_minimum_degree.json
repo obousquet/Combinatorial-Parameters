@@ -1,0 +1,9 @@
+{
+  "id": 149,
+  "parameter_1_id": "#parameters/double_density_or_average_degree",
+  "parameter_2_id": "#parameters/minimum_degree",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "double_density_or_average_degree_minimum_degree",
+  "name": "Double Density or Average Degree / Minimum Degree"
+}

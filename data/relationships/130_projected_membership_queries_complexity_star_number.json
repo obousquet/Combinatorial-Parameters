@@ -1,0 +1,9 @@
+{
+  "id": 130,
+  "parameter_1_id": "#parameters/projected_membership_queries_complexity",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "larger",
+  "details": "Lemma",
+  "short_name": "projected_membership_queries_complexity_star_number",
+  "name": "Projected Membership Queries Complexity / Star number"
+}

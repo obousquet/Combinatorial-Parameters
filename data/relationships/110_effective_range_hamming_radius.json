@@ -1,0 +1,10 @@
+{
+  "id": 110,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/hamming_radius",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "witness": "#classes/singletons",
+  "short_name": "effective_range_hamming_radius",
+  "name": "Effective Range / Hamming Radius"
+}

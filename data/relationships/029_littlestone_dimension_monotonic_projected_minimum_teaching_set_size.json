@@ -1,0 +1,8 @@
+{
+  "id": 29,
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "short_name": "littlestone_dimension_monotonic_projected_minimum_teaching_set_size",
+  "name": "Littlestone Dimension / Monotonic Projected Minimum Teaching Set Size"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 116,
+  "parameter_1_id": "#parameters/labeled_sample_compression",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "short_name": "labeled_sample_compression_vc_dimension",
+  "name": "Labeled Sample Compression / VC Dimension"
+}

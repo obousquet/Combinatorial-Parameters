@@ -1,0 +1,8 @@
+{
+  "id": 49,
+  "parameter_1_id": "#parameters/positive_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/positive_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "short_name": "positive_recursive_teaching_dimension_positive_noclashing_teaching_dimension",
+  "name": "Positive Recursive Teaching Dimension / Positive No-Clashing Teaching Dimension"
+}

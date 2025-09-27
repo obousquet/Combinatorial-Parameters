@@ -1,0 +1,13 @@
+{
+  "id": 16,
+  "name": "Unlabeled sample compression",
+  "symbol": "$\\mathrm{USC}$",
+  "description": "Minimum size of an unlabeled sample compression scheme",
+  "category": "compression",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "unlabeled_sample_compression"
+}

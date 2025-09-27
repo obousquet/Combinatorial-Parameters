@@ -1,0 +1,9 @@
+{
+  "id": 67,
+  "parameter_1_id": "#parameters/noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/double_density_or_average_degree",
+  "relationship_type": "larger_c",
+  "details": "Theorem 14 in \\cite{kirkpatrick19} actually larger than the ceiling of half the average degree.",
+  "short_name": "noclashing_teaching_dimension_double_density_or_average_degree",
+  "name": "No-Clashing Teaching Dimension / Double Density or Average Degree"
+}

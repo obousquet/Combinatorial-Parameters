@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "larger",
+  "variant": "p_monotonic",
+  "details": "Definition",
+  "witness": "#classes/addressing",
+  "short_name": "vc_dimension_effective_vc_radius",
+  "name": "VC Dimension / Effective VC Radius"
+}

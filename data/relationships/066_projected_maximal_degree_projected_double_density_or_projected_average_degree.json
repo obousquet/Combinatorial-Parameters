@@ -1,0 +1,9 @@
+{
+  "id": 66,
+  "parameter_1_id": "#parameters/projected_maximal_degree",
+  "parameter_2_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "projected_maximal_degree_projected_double_density_or_projected_average_degree",
+  "name": "Projected Maximal Degree / Projected Double Density or Projected Average Degree"
+}

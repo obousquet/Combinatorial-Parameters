@@ -1,0 +1,12 @@
+{
+  "id": 55,
+  "name": "Minimum Projected Teaching Set Size",
+  "symbol": "$\\mathrm{TS}_{\\min}^p$",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "minimum_projected_teaching_set_size"
+}

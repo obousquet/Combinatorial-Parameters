@@ -1,0 +1,10 @@
+{
+  "id": 22,
+  "name": "co-VC dimension of Tagged Singletons",
+  "short_name": "covc_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": ""
+}

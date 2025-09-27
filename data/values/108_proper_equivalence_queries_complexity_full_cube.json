@@ -1,0 +1,10 @@
+{
+  "id": 108,
+  "name": "Proper Equivalence Queries Complexity of Full Cube",
+  "short_name": "proper_equivalence_queries_complexity_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/proper_equivalence_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

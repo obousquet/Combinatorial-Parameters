@@ -1,0 +1,13 @@
+{
+  "id": 7,
+  "name": "Path Dimension",
+  "symbol": "$\\mathrm{P}$",
+  "definition": "The **Path dimension** of a family $\\mathcal{H}$, denoted by $P(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $\\mathcal{H}\\_{|S}$ contains a full path, i.e. there is an ordering $x_1,\\ldots,x_d$ of the elements of $S$ and a subset $T\\subset S$ such that $$ \\forall 0\\le k\\le d,\\, T\\Delta \\{x_1,\\ldots,x_k\\} \\in \\mathcal{H}\\_{|S}\\,. $$",
+  "category": "basic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "path_dimension"
+}

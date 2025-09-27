@@ -1,0 +1,14 @@
+{
+  "id": 8,
+  "name": "Densest Subgraph (twice)",
+  "symbol": "$\\mathrm{dens}^*$",
+  "definition": "The **densest subgraph dimension** of a concept class is equal to twice the density of the densest subgraph (a.k.a. **subgraph density**) of its $1$-inclusion graph.",
+  "comments": "The densest subgraph is dual to the lowest outdegree orientation.",
+  "category": "graph-based",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "densest_subgraph_twice"
+}

@@ -1,0 +1,8 @@
+{
+  "id": 131,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_membership_queries_complexity",
+  "relationship_type": "larger",
+  "short_name": "effective_range_projected_membership_queries_complexity",
+  "name": "Effective Range / Projected Membership Queries Complexity"
+}

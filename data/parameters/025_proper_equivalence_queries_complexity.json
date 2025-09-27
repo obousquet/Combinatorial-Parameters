@@ -1,0 +1,12 @@
+{
+  "id": 25,
+  "name": "Proper Equivalence Queries Complexity",
+  "symbol": "$\\mathrm{Q}_{\\mathrm{peq}}$",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "proper_equivalence_queries_complexity"
+}

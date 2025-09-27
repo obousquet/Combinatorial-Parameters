@@ -1,0 +1,12 @@
+{
+  "id": 38,
+  "name": "Labeled Sample Compression",
+  "symbol": "$\\mathrm{LSC}$",
+  "category": "compression",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "labeled_sample_compression"
+}

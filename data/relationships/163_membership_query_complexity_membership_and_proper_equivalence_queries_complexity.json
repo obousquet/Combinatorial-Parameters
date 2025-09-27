@@ -1,0 +1,9 @@
+{
+  "id": 163,
+  "parameter_1_id": "#parameters/membership_query_complexity",
+  "parameter_2_id": "#parameters/membership_and_proper_equivalence_queries_complexity",
+  "relationship_type": "larger",
+  "details": "Definition",
+  "short_name": "membership_query_complexity_membership_and_proper_equivalence_queries_complexity",
+  "name": "Membership Query Complexity / Membership and Proper Equivalence Queries Complexity"
+}

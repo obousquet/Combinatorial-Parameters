@@ -1,0 +1,9 @@
+{
+  "id": 43,
+  "parameter_1_id": "#parameters/distinguishing_range",
+  "parameter_2_id": "#parameters/membership_query_complexity",
+  "relationship_type": "larger",
+  "details": "It is sufficient to query all coordinates in the distinguishing range.",
+  "short_name": "distinguishing_range_membership_query_complexity",
+  "name": "Distinguishing Range / Membership Query Complexity"
+}

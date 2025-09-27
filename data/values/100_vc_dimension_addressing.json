@@ -1,0 +1,10 @@
+{
+  "id": 100,
+  "name": "VC Dimension of Addressing",
+  "short_name": "vc_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "details": ""
+}

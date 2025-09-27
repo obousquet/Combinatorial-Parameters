@@ -1,0 +1,13 @@
+{
+  "id": 13,
+  "name": "Effective VC Radius",
+  "symbol": "$\\mathrm{VCR}$",
+  "definition": "For a family $\\mathcal{H}\\subset 2^\\mathcal{X}$, we define the **effective VC radius** as the largest integer $k$ such that all subsets of size $k$ of the effective range of $\\mathcal{H}$, i.e. $\\bigcup \\{h\\Delta h': h,h'\\in \\mathcal{H}\\}$ are shattered by $\\mathcal{H}$.",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "effective_vc_radius"
+}

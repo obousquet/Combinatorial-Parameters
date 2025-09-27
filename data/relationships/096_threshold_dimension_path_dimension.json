@@ -1,0 +1,9 @@
+{
+  "id": 96,
+  "parameter_1_id": "#parameters/threshold_dimension",
+  "parameter_2_id": "#parameters/path_dimension",
+  "relationship_type": "larger_c",
+  "details": "Lemma",
+  "short_name": "threshold_dimension_path_dimension",
+  "name": "Threshold Dimension / Path Dimension"
+}

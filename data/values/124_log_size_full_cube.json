@@ -1,0 +1,10 @@
+{
+  "id": 124,
+  "name": "Log Size of Full Cube",
+  "short_name": "log_size_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/log_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

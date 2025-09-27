@@ -1,0 +1,8 @@
+{
+  "id": 56,
+  "parameter_1_id": "#parameters/maximum_positive_degree",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "larger_c",
+  "short_name": "maximum_positive_degree_largest_strongly_shattered_set",
+  "name": "Maximum Positive Degree / Largest Strongly Shattered Set"
+}

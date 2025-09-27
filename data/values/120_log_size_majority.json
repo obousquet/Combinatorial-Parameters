@@ -1,0 +1,10 @@
+{
+  "id": 120,
+  "name": "Log Size of Majority",
+  "short_name": "log_size_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/log_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": 49,
+  "name": "Log Size Ratio",
+  "symbol": "$\\frac{\\log (\\mathrm{H}-1)}{\\log (n+1)}$",
+  "definition": "The **Log Size Ratio** of a family $\\mathcal{H}$ is the ratio of the log of its cardinality to the log of the effective range, $$ \\log \\frac{|\\mathcal{H|}-1}{\\log (n+1)} $$",
+  "category": "basic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": false,
+  "short_name": "log_size_ratio"
+}

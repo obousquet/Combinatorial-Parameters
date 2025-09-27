@@ -1,0 +1,10 @@
+{
+  "id": 66,
+  "name": "Largest Strongly Shattered Set of Trivial concepts",
+  "short_name": "largest_strongly_shattered_set_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "details": ""
+}
