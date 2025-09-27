@@ -3,5 +3,6 @@
   "header": "Combinatorial Parameters Database",
   "subtitle": "Measuring the Size of Families of Sets",
   "description": "Welcome to the Combinatorial Parameters Database!",
-  "footer": "Generated with Python • Hosted on GitHub Pages"
+  "footer": "Generated with Python • Hosted on GitHub Pages",
+  "homepage": "https://github.com/obousquet/Combinatorial-Parameters/"
 }
