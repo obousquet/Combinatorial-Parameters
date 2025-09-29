@@ -2,7 +2,7 @@
 
 This repository contains a structured database of combinatorial parameters, classes, relationships, and values, organized for mathematical research and reference.
 
-Browse the database [https://obousquet.github.io/Combinatorial-Parameters](here).
+Browse the database [here](https://obousquet.github.io/Combinatorial-Parameters).
 
 ## Structure
 - `data/classes/` — Set families (possibly parameterized)
