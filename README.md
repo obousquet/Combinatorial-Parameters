@@ -13,11 +13,40 @@ Each subdirectory contains:
 - Generated JSON files for each entry
 
 ## Editing and Contributing
-To edit or extend the contents of this database, please refer to the documentation and tools provided in the repository:
 
-https://github.com/obousquet/math_database
+### Step-by-step Contribution Guide
 
-There you will find instructions, scripts, and best practices for editing, validating, and contributing new data.
+1. **Clone the repositories**
+	- First, clone the main database editor repository:
+	  ```bash
+	  git clone https://github.com/obousquet/math_database
+	  ```
+	- Then, clone this data repository:
+	  ```bash
+	  git clone https://github.com/obousquet/Combinatorial-Parameters
+	  ```
+
+2. **Install requirements**
+	- In the `math_database` repository, install the required Python packages:
+	  ```bash
+	  cd math_database
+	  pip install -r requirements.txt
+	  ```
+
+3. **Run the local editing server**
+	- Start the server, pointing it to the data directory of this repository:
+	  ```bash
+	  python3 server.py --data-dir=<path to Combinatorial-Parameters/data>
+	  ```
+
+4. **Edit the database locally**
+	- Open your browser and go to [http://localhost:8080](http://localhost:8080)
+	- You can now edit, add, or update entries in the database. All changes will be saved in the `data` directory of the `Combinatorial-Parameters` repository.
+
+5. **Contribute your changes**
+	- When you are ready, commit your changes in the `Combinatorial-Parameters` repository and make a pull request to share your updates.
+
+For more details, scripts, and best practices, see the documentation in [math_database](https://github.com/obousquet/math_database).
 
 ## License
 See the repository for licensing information.
