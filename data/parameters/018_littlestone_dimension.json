@@ -1,12 +1,15 @@
 {
   "id": 18,
   "name": "Littlestone Dimension",
+  "short_name": "littlestone_dimension",
   "symbol": "$\\mathrm{L}$",
+  "definition": "",
+  "description": "\\cite{littlestone1988learning}",
+  "comments": "",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": true,
-  "short_name": "littlestone_dimension"
+  "strictly_monotonic": true
 }
