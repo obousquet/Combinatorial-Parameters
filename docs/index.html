@@ -4,8 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://github.com/obousquet/Combinatorial-Parameters/">
         <title>Combinatorial Parameters</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles.css">
         
     <style>
     .nav-menu { display:inline-block; position:relative; margin-left:1em; }
@@ -31,32 +32,34 @@
     });
     </script>
     
+        
     </head>
     <body>
         <header>
-            <h1>Combinatorial Parameters Database</h1>
+            <h1>Combinatorial Parameters</h1>
             <p>Measuring the Size of Families of Sets</p>
             <nav>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
-            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="../graphs/hasse.html">Hasse Diagram</a></li></ul>
         </div>
     
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
-            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="parameters/index.html">Parameters</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="values/index.html">Values</a></li></ul>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="../classes/index.html">Classes</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../relationships/index.html">Relationships</a></li><li><a href="../values/index.html">Values</a></li></ul>
         </div>
     
             </nav>
         </header>
-        <main class="main-container">
-            <div class="intro">
-                <p>Welcome to the Combinatorial Parameters Database!</p>
-            </div>
-            <div class="tables-grid">
-                
+        <main class="table-container">
+            
+    <div class="intro">
+        <p>Welcome to the Combinatorial Parameters Database!</p>
+    </div>
+    <div class="tables-grid">
+        
         <div class="table-card">
             <h3><a href="classes/index.html">Classes</a></h3>
             <p>Set families (possibly parameterized)</p>
@@ -81,11 +84,13 @@
             <p class="record-count">164 records</p>
         </div>
         
-            </div>
+    </div>
+    
         </main>
         <footer>
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
+        
     </body>
     </html>
     
