@@ -5,6 +5,7 @@
   "description": "Welcome to the Combinatorial Parameters Database!",
   "footer": "Generated with Python • Hosted on GitHub Pages",
   "homepage": "https://github.com/obousquet/Combinatorial-Parameters/",
+  "deploy_url": "https://obousquet.github.io/Combinatorial-Parameters/",
   "graphs": [
     {
       "name": "Hasse Diagram",
