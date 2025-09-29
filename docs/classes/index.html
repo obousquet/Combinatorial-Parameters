@@ -33,7 +33,6 @@
     </script>
     
         
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
@@ -50,6 +49,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
             <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
@@ -181,7 +181,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>(see \cite{maass1992lower}): Define the function $f(i):=\min {\ell: i\le \sum_{j=1}^\ell n2^{-j} + \lceil \log n \rceil + 1}$. The class of tagged singletons is defined as $$
+<strong>Definition:</strong><div class="text-field"><p>(see <a href="bibliography.html#maass1992lower">[maass1992lower]</a>): Define the function $f(i):=\min {\ell: i\le \sum_{j=1}^\ell n2^{-j} + \lceil \log n \rceil + 1}$. The class of tagged singletons is defined as $$
         \mathcal{H}:={\emptyset} \cup {{n+\ell\}:\ell \in [\lceil\log n\rceil]} \cup {{i,n+f(i)\}:i\in[n]}
         $$</p>
 <p>So we have the empty set, singletons on $[n+1, n+\lceil\log n\rceil]$, and then singletons on $[n]$ with a tag such that more than half have the first tag, more than one fourth have the second tag and so on.</p></div>
@@ -204,7 +204,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>(see \cite{maass1992lower}): ${S\subset [n+1]: n+1\in S\Leftrightarrow |S\backslash {n+1\}|&gt;n/2}$</p>
+<strong>Definition:</strong><div class="text-field"><p>(see <a href="bibliography.html#maass1992lower">[maass1992lower]</a>): ${S\subset [n+1]: n+1\in S\Leftrightarrow |S\backslash {n+1\}|&gt;n/2}$</p>
 <p>So we have all subsets of $[n]$ and an extra majority bit.</p></div>
 
 <p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/star_number_majority.html'>Star number of Majority</a></li><li><a href='values/maximum_degree_majority.html'>Maximum Degree of Majority</a></li><li><a href='values/size_majority.html'>Size of Majority</a></li><li><a href='values/effective_range_majority.html'>Effective Range of Majority</a></li><li><a href='values/log_size_majority.html'>Log Size of Majority</a></li><li><a href='values/threshold_dimension_majority.html'>Threshold Dimension of Majority</a></li></ul></p>
@@ -225,7 +225,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>(see \cite{maass1992lower}): define the addressing function $f(S)$ that maps the characteristic vector of the set $S$ to its value as a binary number, then the Addressing family is defined as $$\mathcal{H}:= { {f(S)+1\}\cup S : S \subset {n+1,\ldots,n+\lfloor \log n \rfloor}}$$
+<strong>Definition:</strong><div class="text-field"><p>(see <a href="bibliography.html#maass1992lower">[maass1992lower]</a>): define the addressing function $f(S)$ that maps the characteristic vector of the set $S$ to its value as a binary number, then the Addressing family is defined as $$\mathcal{H}:= { {f(S)+1\}\cup S : S \subset {n+1,\ldots,n+\lfloor \log n \rfloor}}$$
         In other words, we have singletons on $[n]$ followed by the index of the singleton encoded in binary. So this class has VC $\lfloor\log n\rfloor$. Any parameter that is $p$-monotonic will be larger than its value for singletons on $[n]$ and than a full cube on $[\log n]$. This class also has $coVC=\Omega(n)$</p></div>
 
 <p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/recursive_teaching_dimension_addressing.html'>Recursive Teaching Dimension of Addressing</a></li><li><a href='values/star_number_addressing.html'>Star number of Addressing</a></li><li><a href='values/covc_dimension_addressing.html'>co-VC dimension of Addressing</a></li><li><a href='values/largest_strongly_shattered_set_addressing.html'>Largest Strongly Shattered Set of Addressing</a></li><li><a href='values/maximum_degree_addressing.html'>Maximum Degree of Addressing</a></li><li><a href='values/size_addressing.html'>Size of Addressing</a></li><li><a href='values/effective_range_addressing.html'>Effective Range of Addressing</a></li><li><a href='values/vc_dimension_addressing.html'>VC Dimension of Addressing</a></li><li><a href='values/littlestone_dimension_addressing.html'>Littlestone Dimension of Addressing</a></li><li><a href='values/proper_equivalence_queries_complexity_addressing.html'>Proper Equivalence Queries Complexity of Addressing</a></li><li><a href='values/log_size_addressing.html'>Log Size of Addressing</a></li><li><a href='values/threshold_dimension_addressing.html'>Threshold Dimension of Addressing</a></li></ul></p>
@@ -246,7 +246,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>\cite{ben1997online}, page 54: the domain has $2.2^d+1$ elements ${z,x_1,\ldots,x_{2^d},y_1,\ldots,y_{2^d}}$ and $\mathcal{H}$ consists of $2.2^d$ functions ${f_1,\ldots,f_{2^d},g_1,\ldots,g_{2^d}}$ such that $f_i(z)=0$, $g_1(z)=1$, and $f_i(x_j)=g_i(y_j)=1_{i=j}$ and we split the elements $x_1,\ldots,x_{2^d}$ and $y_1,\ldots,y_{2^d}$ into $2^d/d$ blocks of size $d$. On each of the blocks the $2^d$ functions $f_1,\ldots,f_{2^d}$ take all $2^d$ possible combinations of values (but they are identical on each of the blocks, so $f_1$ is $0$ on all the $y_i$ and $f_{2^d}$ is equal to $1$ on all the $y_i$). We have $VC=d$, $RTD=2$ (always take $z$ and $x_i$ or $z$ and $y_i$), $M_{sd}\le 2$, but $osh_{min}=d=\Omega(\log n)$ (\olivier{proof?}) hence $M_{best}=\Omega(\log n)$. Do we have $Q_{par}=\Omega(\log n)$?</p></div>
+<strong>Definition:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a>, page 54: the domain has $2.2^d+1$ elements ${z,x_1,\ldots,x_{2^d},y_1,\ldots,y_{2^d}}$ and $\mathcal{H}$ consists of $2.2^d$ functions ${f_1,\ldots,f_{2^d},g_1,\ldots,g_{2^d}}$ such that $f_i(z)=0$, $g_1(z)=1$, and $f_i(x_j)=g_i(y_j)=1_{i=j}$ and we split the elements $x_1,\ldots,x_{2^d}$ and $y_1,\ldots,y_{2^d}$ into $2^d/d$ blocks of size $d$. On each of the blocks the $2^d$ functions $f_1,\ldots,f_{2^d}$ take all $2^d$ possible combinations of values (but they are identical on each of the blocks, so $f_1$ is $0$ on all the $y_i$ and $f_{2^d}$ is equal to $1$ on all the $y_i$). We have $VC=d$, $RTD=2$ (always take $z$ and $x_i$ or $z$ and $y_i$), $M_{sd}\le 2$, but $osh_{min}=d=\Omega(\log n)$ (\olivier{proof?}) hence $M_{best}=\Omega(\log n)$. Do we have $Q_{par}=\Omega(\log n)$?</p></div>
 
 <p><strong>Related Values:</strong> <em>None</em></p>
 <p><strong>Related Relationships:</strong> <em>None</em></p>
@@ -268,9 +268,14 @@
                     const latex = eq.getAttribute('data-latex');
                     eq.innerHTML = '$$' + latex + '$$';
                 });
-                if (window.MathJax) {
-                    MathJax.typesetPromise();
-                }
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
             });
         </script>
     </body>

@@ -33,7 +33,6 @@
     </script>
     
         
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
@@ -50,6 +49,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
             <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
@@ -76,7 +76,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>(see \cite{maass1992lower}): ${S\subset [n+1]: n+1\in S\Leftrightarrow |S\backslash {n+1\}|&gt;n/2}$</p>
+<strong>Definition:</strong><div class="text-field"><p>(see <a href="bibliography.html#maass1992lower">[maass1992lower]</a>): ${S\subset [n+1]: n+1\in S\Leftrightarrow |S\backslash {n+1\}|&gt;n/2}$</p>
 <p>So we have all subsets of $[n]$ and an extra majority bit.</p></div>
 
 <p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/star_number_majority.html'>Star number of Majority</a></li><li><a href='values/maximum_degree_majority.html'>Maximum Degree of Majority</a></li><li><a href='values/size_majority.html'>Size of Majority</a></li><li><a href='values/effective_range_majority.html'>Effective Range of Majority</a></li><li><a href='values/log_size_majority.html'>Log Size of Majority</a></li><li><a href='values/threshold_dimension_majority.html'>Threshold Dimension of Majority</a></li></ul></p>
@@ -97,9 +97,14 @@
                     const latex = eq.getAttribute('data-latex');
                     eq.innerHTML = '$$' + latex + '$$';
                 });
-                if (window.MathJax) {
-                    MathJax.typesetPromise();
-                }
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
             });
         </script>
     </body>

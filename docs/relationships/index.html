@@ -33,7 +33,6 @@
     </script>
     
         
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
@@ -50,6 +49,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
             <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
@@ -1068,7 +1068,7 @@
 <p><strong>Parameter 2: </strong><a href="parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Theorem 14 in \cite{kirkpatrick19} actually larger than the ceiling of half the average degree.</p></div>
+<strong>Details:</strong><div class="text-field"><p>Theorem 14 in <a href="bibliography.html#kirkpatrick19">[kirkpatrick19]</a> actually larger than the ceiling of half the average degree.</p></div>
 
 
         </div>
@@ -2543,9 +2543,14 @@
                     const latex = eq.getAttribute('data-latex');
                     eq.innerHTML = '$$' + latex + '$$';
                 });
-                if (window.MathJax) {
-                    MathJax.typesetPromise();
-                }
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
             });
         </script>
     </body>

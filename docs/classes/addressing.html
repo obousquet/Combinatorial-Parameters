@@ -33,7 +33,6 @@
     </script>
     
         
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
@@ -50,6 +49,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
             <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
@@ -76,7 +76,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>(see \cite{maass1992lower}): define the addressing function $f(S)$ that maps the characteristic vector of the set $S$ to its value as a binary number, then the Addressing family is defined as $$\mathcal{H}:= { {f(S)+1\}\cup S : S \subset {n+1,\ldots,n+\lfloor \log n \rfloor}}$$
+<strong>Definition:</strong><div class="text-field"><p>(see <a href="bibliography.html#maass1992lower">[maass1992lower]</a>): define the addressing function $f(S)$ that maps the characteristic vector of the set $S$ to its value as a binary number, then the Addressing family is defined as $$\mathcal{H}:= { {f(S)+1\}\cup S : S \subset {n+1,\ldots,n+\lfloor \log n \rfloor}}$$
         In other words, we have singletons on $[n]$ followed by the index of the singleton encoded in binary. So this class has VC $\lfloor\log n\rfloor$. Any parameter that is $p$-monotonic will be larger than its value for singletons on $[n]$ and than a full cube on $[\log n]$. This class also has $coVC=\Omega(n)$</p></div>
 
 <p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/recursive_teaching_dimension_addressing.html'>Recursive Teaching Dimension of Addressing</a></li><li><a href='values/star_number_addressing.html'>Star number of Addressing</a></li><li><a href='values/covc_dimension_addressing.html'>co-VC dimension of Addressing</a></li><li><a href='values/largest_strongly_shattered_set_addressing.html'>Largest Strongly Shattered Set of Addressing</a></li><li><a href='values/maximum_degree_addressing.html'>Maximum Degree of Addressing</a></li><li><a href='values/size_addressing.html'>Size of Addressing</a></li><li><a href='values/effective_range_addressing.html'>Effective Range of Addressing</a></li><li><a href='values/vc_dimension_addressing.html'>VC Dimension of Addressing</a></li><li><a href='values/littlestone_dimension_addressing.html'>Littlestone Dimension of Addressing</a></li><li><a href='values/proper_equivalence_queries_complexity_addressing.html'>Proper Equivalence Queries Complexity of Addressing</a></li><li><a href='values/log_size_addressing.html'>Log Size of Addressing</a></li><li><a href='values/threshold_dimension_addressing.html'>Threshold Dimension of Addressing</a></li></ul></p>
@@ -97,9 +97,14 @@
                     const latex = eq.getAttribute('data-latex');
                     eq.innerHTML = '$$' + latex + '$$';
                 });
-                if (window.MathJax) {
-                    MathJax.typesetPromise();
-                }
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
             });
         </script>
     </body>

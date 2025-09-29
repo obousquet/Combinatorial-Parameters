@@ -33,7 +33,6 @@
     </script>
     
         
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
@@ -50,6 +49,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
             <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
@@ -71,7 +71,7 @@
         <p><strong>Name: </strong>VC Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{VC}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>VC dimension</strong> of a family $\mathcal{H}$, denoted by $\VC(\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\subset \mathcal{X}$, of size $d$ such that $S$ is shattered by $\mathcal{H}$, i.e.  $$ |\mathcal{H|_{|S}} = 2^{|S|}\,. $$</p></div>
-<strong>Description:</strong><div class="text-field"><p>Vapnik-Chervonenkis Dimension</p></div>
+<strong>Description:</strong><div class="text-field"><p>Vapnik-Chervonenkis Dimension <a href="bibliography.html#vc71">[vc71]</a>.</p></div>
 
 <p><strong>Category:</strong> Shattering</p>
 <p><strong>Symmetric:</strong> Yes</p>
@@ -98,9 +98,14 @@
                     const latex = eq.getAttribute('data-latex');
                     eq.innerHTML = '$$' + latex + '$$';
                 });
-                if (window.MathJax) {
-                    MathJax.typesetPromise();
-                }
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
             });
         </script>
     </body>
