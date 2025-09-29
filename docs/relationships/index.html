@@ -7,6 +7,31 @@
         <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="../styles.css">
         
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
@@ -23,10 +48,16 @@
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
-                <a href="../classes/index.html">Classes</a>
-                <a href="../parameters/index.html">Parameters</a>
-                <a href="../relationships/index.html">Relationships</a>
-                <a href="../values/index.html">Values</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="../graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="../classes/index.html">Classes</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../relationships/index.html">Relationships</a></li><li><a href="../values/index.html">Values</a></li></ul>
+        </div>
+    
             </nav>
         </header>
         <main class="table-container">
@@ -41,12 +72,12 @@
         <h3><a href="vc_dimension_effective_vc_radius.html" class="table-title-link">VC Dimension / Effective VC Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Effective VC Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/effective_vc_radius.html">Effective VC Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="../classes/addressing.html">Addressing</a></p>
+<p><strong>Witness: </strong><a href="/classes/addressing.html">Addressing</a></p>
 
         </div>
     </div>
@@ -56,8 +87,8 @@
         <h3><a href="largest_shattered_set_minimum_largest_order_shattered_set.html" class="table-title-link">Largest Shattered Set / Minimum Largest Order Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Largest Shattered Set / Minimum Largest Order Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/largest_shattered_set.html">Largest Shattered Set</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/largest_shattered_set.html">Largest Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Sandwich Theorem</p></div>
@@ -71,8 +102,8 @@
         <h3><a href="minimum_largest_order_shattered_set_largest_strongly_shattered_set.html" class="table-title-link">Minimum Largest Order Shattered Set / Largest Strongly Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Minimum Largest Order Shattered Set / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Sandwich Theorem</p></div>
@@ -86,8 +117,8 @@
         <h3><a href="interpolation_degree_largest_strongly_shattered_set.html" class="table-title-link">Interpolation degree / Largest Strongly Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Interpolation degree / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/interpolation_degree.html">Interpolation degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -101,8 +132,8 @@
         <h3><a href="minimum_largest_order_shattered_set_effective_vc_radius.html" class="table-title-link">Minimum Largest Order Shattered Set / Effective VC Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Minimum Largest Order Shattered Set / Effective VC Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/effective_vc_radius.html">Effective VC Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -116,8 +147,8 @@
         <h3><a href="minimum_largest_order_shattered_set_interpolation_degree.html" class="table-title-link">Minimum Largest Order Shattered Set / Interpolation degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Minimum Largest Order Shattered Set / Interpolation degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/interpolation_degree.html">Interpolation degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -131,8 +162,8 @@
         <h3><a href="best_mistakes_minimum_largest_order_shattered_set.html" class="table-title-link">Best Mistakes / Minimum Largest Order Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Best Mistakes / Minimum Largest Order Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -146,8 +177,8 @@
         <h3><a href="effective_range_yang_dimension.html" class="table-title-link">Effective Range / Yang dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Effective Range / Yang dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/yang_dimension.html">Yang dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/yang_dimension.html">Yang dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -161,8 +192,8 @@
         <h3><a href="largest_shattered_set_vc_dimension.html" class="table-title-link">Largest Shattered Set / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Largest Shattered Set / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/largest_shattered_set.html">Largest Shattered Set</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/largest_shattered_set.html">Largest Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -176,8 +207,8 @@
         <h3><a href="proper_stable_labeled_sample_compression_covc_dimension.html" class="table-title-link">Proper Stable Labeled Sample Compression / co-VC dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / co-VC dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/covc_dimension.html">co-VC dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -191,8 +222,8 @@
         <h3><a href="preferencebased_teaching_dimension_noclashing_teaching_dimension.html" class="table-title-link">Preference-Based Teaching Dimension / No-Clashing Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Preference-Based Teaching Dimension / No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -206,8 +237,8 @@
         <h3><a href="degeneracy_minimum_degree.html" class="table-title-link">Degeneracy / Minimum Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Degeneracy / Minimum Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/degeneracy.html">Degeneracy</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_degree.html">Minimum Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_degree.html">Minimum Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -221,8 +252,8 @@
         <h3><a href="maximum_degree_double_density_or_average_degree.html" class="table-title-link">Maximum Degree / Double Density or Average Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Degree / Double Density or Average Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_degree.html">Maximum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -236,8 +267,8 @@
         <h3><a href="projected_maximal_degree_star_number.html" class="table-title-link">Projected Maximal Degree / Star number</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Maximal Degree / Star number</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/star_number.html">Star number</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/star_number.html">Star number</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -251,8 +282,8 @@
         <h3><a href="projected_maximal_degree_maximum_degree.html" class="table-title-link">Projected Maximal Degree / Maximum Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Maximal Degree / Maximum Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/maximum_degree.html">Maximum Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -266,8 +297,8 @@
         <h3><a href="densest_subgraph_twice_degeneracy.html" class="table-title-link">Densest Subgraph (twice) / Degeneracy</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Densest Subgraph (twice) / Degeneracy</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/degeneracy.html">Degeneracy</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -281,8 +312,8 @@
         <h3><a href="maximum_degree_minimum_degree.html" class="table-title-link">Maximum Degree / Minimum Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Degree / Minimum Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_degree.html">Maximum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_degree.html">Minimum Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_degree.html">Minimum Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -296,8 +327,8 @@
         <h3><a href="preferencebased_teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Preference-Based Teaching Dimension / Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Preference-Based Teaching Dimension / Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>(for finite classes)</p></div>
@@ -311,8 +342,8 @@
         <h3><a href="relative_hitting_size_hitting_size.html" class="table-title-link">Relative Hitting Size / Hitting Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Relative Hitting Size / Hitting Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/hitting_size.html">Hitting Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/hitting_size.html">Hitting Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Relative</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -326,8 +357,8 @@
         <h3><a href="monotone_recursive_teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Monotone Recursive Teaching Dimension / Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Monotone Recursive Teaching Dimension / Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -341,8 +372,8 @@
         <h3><a href="maximum_projected_teaching_set_size_maximum_teaching_set_size.html" class="table-title-link">Maximum Projected Teaching Set Size / Maximum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Projected Teaching Set Size / Maximum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_projected_teaching_set_size.html">Maximum Projected Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_projected_teaching_set_size.html">Maximum Projected Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -356,8 +387,8 @@
         <h3><a href="star_number_maximum_projected_teaching_set_size.html" class="table-title-link">Star number / Maximum Projected Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Star number / Maximum Projected Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/star_number.html">Star number</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/maximum_projected_teaching_set_size.html">Maximum Projected Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/star_number.html">Star number</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/maximum_projected_teaching_set_size.html">Maximum Projected Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -371,8 +402,8 @@
         <h3><a href="maximum_projected_teaching_set_size_minimum_projected_teaching_set_size.html" class="table-title-link">Maximum Projected Teaching Set Size / Minimum Projected Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Projected Teaching Set Size / Minimum Projected Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_projected_teaching_set_size.html">Maximum Projected Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_projected_teaching_set_size.html">Minimum Projected Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_projected_teaching_set_size.html">Maximum Projected Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_projected_teaching_set_size.html">Minimum Projected Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -386,8 +417,8 @@
         <h3><a href="yang_dimension_vc_dimension.html" class="table-title-link">Yang dimension / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Yang dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/yang_dimension.html">Yang dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/yang_dimension.html">Yang dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
@@ -401,8 +432,8 @@
         <h3><a href="random_equivalence_queries_complexity_vc_dimension.html" class="table-title-link">Random Equivalence Queries Complexity / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Random Equivalence Queries Complexity / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -416,8 +447,8 @@
         <h3><a href="minimum_teaching_set_size_effective_vc_radius.html" class="table-title-link">Minimum Teaching Set Size / Effective VC Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Minimum Teaching Set Size / Effective VC Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/effective_vc_radius.html">Effective VC Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -431,8 +462,8 @@
         <h3><a href="teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Teaching Dimension / Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Teaching Dimension / Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/teaching_dimension.html">Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
@@ -446,8 +477,8 @@
         <h3><a href="order_sample_compression_monotonic_projected_minimum_teaching_set_size.html" class="table-title-link">Order Sample Compression / Monotonic Projected Minimum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Order Sample Compression / Monotonic Projected Minimum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/order_sample_compression.html">Order Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -461,8 +492,8 @@
         <h3><a href="littlestone_dimension_monotonic_projected_minimum_teaching_set_size.html" class="table-title-link">Littlestone Dimension / Monotonic Projected Minimum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / Monotonic Projected Minimum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -476,8 +507,8 @@
         <h3><a href="star_number_proper_ordered_sample_compression.html" class="table-title-link">Star number / Proper Ordered Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Star number / Proper Ordered Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/star_number.html">Star number</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/star_number.html">Star number</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -491,8 +522,8 @@
         <h3><a href="proper_ordered_sample_compression_order_sample_compression.html" class="table-title-link">Proper Ordered Sample Compression / Order Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Ordered Sample Compression / Order Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/order_sample_compression.html">Order Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -506,8 +537,8 @@
         <h3><a href="proper_ordered_sample_compression_proper_labeled_sample_compression.html" class="table-title-link">Proper Ordered Sample Compression / Proper Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Ordered Sample Compression / Proper Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -521,8 +552,8 @@
         <h3><a href="threshold_dimension_vc_dimension.html" class="table-title-link">Threshold Dimension / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Threshold Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/threshold_dimension.html">Threshold Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/threshold_dimension.html">Threshold Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -536,8 +567,8 @@
         <h3><a href="log_shattering_log_size.html" class="table-title-link">Log Shattering / Log Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Log Shattering / Log Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/log_shattering.html">Log Shattering</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/log_size.html">Log Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/log_shattering.html">Log Shattering</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/log_size.html">Log Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Pajor Lemma</p></div>
@@ -551,8 +582,8 @@
         <h3><a href="log_shattering_effective_range.html" class="table-title-link">Log Shattering / Effective Range</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Log Shattering / Effective Range</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/log_shattering.html">Log Shattering</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/log_shattering.html">Log Shattering</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
 <p><strong>Relationship Type:</strong> $P_1 \ge c\log P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Effective range is the number of shattered singletons</p></div>
@@ -566,8 +597,8 @@
         <h3><a href="vc_dimension_monotone_recursive_teaching_dimension.html" class="table-title-link">VC Dimension / Monotone Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Monotone Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 \ge c\sqrt{P_2}$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -581,8 +612,8 @@
         <h3><a href="vc_dimension_log_shattering.html" class="table-title-link">VC Dimension / Log Shattering</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Log Shattering</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/log_shattering.html">Log Shattering</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/log_shattering.html">Log Shattering</a></p>
 <p><strong>Relationship Type:</strong> $P_1 \ge \frac{cP_2}{\log n}$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -596,8 +627,8 @@
         <h3><a href="selfdirected_queries_complexity_littlestone_dimension.html" class="table-title-link">Self-Directed Queries Complexity / Littlestone Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Self-Directed Queries Complexity / Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 \ge \frac{cP_2}{\log n}$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -611,8 +642,8 @@
         <h3><a href="maximum_degree_degeneracy.html" class="table-title-link">Maximum Degree / Degeneracy</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Degree / Degeneracy</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_degree.html">Maximum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/degeneracy.html">Degeneracy</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition and Monotonicity</p></div>
@@ -626,8 +657,8 @@
         <h3><a href="teaching_dimension_maximum_teaching_set_size.html" class="table-title-link">Teaching Dimension / Maximum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Teaching Dimension / Maximum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/teaching_dimension.html">Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -641,8 +672,8 @@
         <h3><a href="maximum_degree_densest_subgraph_twice.html" class="table-title-link">Maximum Degree / Densest Subgraph (twice)</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Degree / Densest Subgraph (twice)</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_degree.html">Maximum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition and Monotonicity</p></div>
@@ -656,8 +687,8 @@
         <h3><a href="projected_minimum_degree_minimum_degree.html" class="table-title-link">Projected Minimum Degree / Minimum Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Minimum Degree / Minimum Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_degree.html">Minimum Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_degree.html">Minimum Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -671,8 +702,8 @@
         <h3><a href="distinguishing_range_membership_query_complexity.html" class="table-title-link">Distinguishing Range / Membership Query Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Distinguishing Range / Membership Query Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/distinguishing_range.html">Distinguishing Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/distinguishing_range.html">Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>It is sufficient to query all coordinates in the distinguishing range.</p></div>
@@ -686,8 +717,8 @@
         <h3><a href="positive_teaching_dimension_positive_noclashing_teaching_dimension.html" class="table-title-link">Positive Teaching Dimension / Positive No-Clashing Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Positive Teaching Dimension / Positive No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -701,8 +732,8 @@
         <h3><a href="positive_teaching_dimension_teaching_dimension.html" class="table-title-link">Positive Teaching Dimension / Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Positive Teaching Dimension / Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/teaching_dimension.html">Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -716,8 +747,8 @@
         <h3><a href="positive_noclashing_teaching_dimension_noclashing_teaching_dimension.html" class="table-title-link">Positive No-Clashing Teaching Dimension / No-Clashing Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Positive No-Clashing Teaching Dimension / No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -731,8 +762,8 @@
         <h3><a href="positive_recursive_teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Positive Recursive Teaching Dimension / Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Positive Recursive Teaching Dimension / Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -746,8 +777,8 @@
         <h3><a href="positive_teaching_dimension_positive_recursive_teaching_dimension.html" class="table-title-link">Positive Teaching Dimension / Positive Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Positive Teaching Dimension / Positive Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -761,8 +792,8 @@
         <h3><a href="positive_recursive_teaching_dimension_positive_noclashing_teaching_dimension.html" class="table-title-link">Positive Recursive Teaching Dimension / Positive No-Clashing Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Positive Recursive Teaching Dimension / Positive No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -776,8 +807,8 @@
         <h3><a href="effective_range_distinguishing_range.html" class="table-title-link">Effective Range / Distinguishing Range</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Effective Range / Distinguishing Range</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/distinguishing_range.html">Distinguishing Range</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/distinguishing_range.html">Distinguishing Range</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -791,8 +822,8 @@
         <h3><a href="positive_noclashing_teaching_dimension_maximum_positive_degree.html" class="table-title-link">Positive No-Clashing Teaching Dimension / Maximum Positive Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Positive No-Clashing Teaching Dimension / Maximum Positive Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -806,8 +837,8 @@
         <h3><a href="littlestone_dimension_stable_unlabeled_complexity.html" class="table-title-link">Littlestone Dimension / Stable Unlabeled Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / Stable Unlabeled Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -821,8 +852,8 @@
         <h3><a href="worst_mistakes_vc_dimension.html" class="table-title-link">Worst Mistakes / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Worst Mistakes / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -836,8 +867,8 @@
         <h3><a href="noclashing_teaching_dimension_densest_subgraph_twice.html" class="table-title-link">No-Clashing Teaching Dimension / Densest Subgraph (twice)</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>No-Clashing Teaching Dimension / Densest Subgraph (twice)</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem (for density) and monotonicity</p></div>
@@ -851,8 +882,8 @@
         <h3><a href="degeneracy_largest_strongly_shattered_set.html" class="table-title-link">Degeneracy / Largest Strongly Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Degeneracy / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/degeneracy.html">Degeneracy</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -866,8 +897,8 @@
         <h3><a href="maximum_positive_degree_largest_strongly_shattered_set.html" class="table-title-link">Maximum Positive Degree / Largest Strongly Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Positive Degree / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -881,8 +912,8 @@
         <h3><a href="littlestone_dimension_2littlestone_dimension.html" class="table-title-link">Littlestone Dimension / 2-Littlestone Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / 2-Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/2littlestone_dimension.html">2-Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/2littlestone_dimension.html">2-Littlestone Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -896,8 +927,8 @@
         <h3><a href="2littlestone_dimension_3littlestone_dimension.html" class="table-title-link">2-Littlestone Dimension / 3-Littlestone Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>2-Littlestone Dimension / 3-Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/2littlestone_dimension.html">2-Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/3littlestone_dimension.html">3-Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/2littlestone_dimension.html">2-Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/3littlestone_dimension.html">3-Littlestone Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -911,8 +942,8 @@
         <h3><a href="littlestone_dimension_random_equivalence_queries_complexity.html" class="table-title-link">Littlestone Dimension / Random Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / Random Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -926,8 +957,8 @@
         <h3><a href="distinguishing_range_log_size.html" class="table-title-link">Distinguishing Range / Log Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Distinguishing Range / Log Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/distinguishing_range.html">Distinguishing Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/log_size.html">Log Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/distinguishing_range.html">Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/log_size.html">Log Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -941,8 +972,8 @@
         <h3><a href="maximum_degree_maximum_positive_degree.html" class="table-title-link">Maximum Degree / Maximum Positive Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Degree / Maximum Positive Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_degree.html">Maximum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Relative</p>
 
@@ -956,8 +987,8 @@
         <h3><a href="vc_dimension_projected_double_density_or_projected_average_degree.html" class="table-title-link">VC Dimension / Projected Double Density or Projected Average Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Projected Double Density or Projected Average Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Down Shifting and Monotonicity</p></div>
@@ -971,8 +1002,8 @@
         <h3><a href="projected_double_density_or_projected_average_degree_double_density_or_average_degree.html" class="table-title-link">Projected Double Density or Projected Average Degree / Double Density or Average Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Double Density or Projected Average Degree / Double Density or Average Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -986,8 +1017,8 @@
         <h3><a href="projected_double_density_or_projected_average_degree_projected_minimum_degree.html" class="table-title-link">Projected Double Density or Projected Average Degree / Projected Minimum Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Double Density or Projected Average Degree / Projected Minimum Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1001,8 +1032,8 @@
         <h3><a href="projected_maximal_degree_projected_minimum_degree.html" class="table-title-link">Projected Maximal Degree / Projected Minimum Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Maximal Degree / Projected Minimum Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1016,8 +1047,8 @@
         <h3><a href="projected_maximal_degree_projected_double_density_or_projected_average_degree.html" class="table-title-link">Projected Maximal Degree / Projected Double Density or Projected Average Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Maximal Degree / Projected Double Density or Projected Average Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1031,8 +1062,8 @@
         <h3><a href="noclashing_teaching_dimension_double_density_or_average_degree.html" class="table-title-link">No-Clashing Teaching Dimension / Double Density or Average Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>No-Clashing Teaching Dimension / Double Density or Average Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem 14 in \cite{kirkpatrick19} actually larger than the ceiling of half the average degree.</p></div>
@@ -1046,8 +1077,8 @@
         <h3><a href="dual_sign_rank_vc_dimension.html" class="table-title-link">Dual Sign Rank / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Dual Sign Rank / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Proposition 1 in Alon, Moran, Yehudayoff</p></div>
@@ -1061,8 +1092,8 @@
         <h3><a href="vc_dimension_dual_sign_rank.html" class="table-title-link">VC Dimension / Dual Sign Rank</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Dual Sign Rank</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1076,8 +1107,8 @@
         <h3><a href="sign_rank_dual_sign_rank.html" class="table-title-link">Sign Rank / Dual Sign Rank</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Sign Rank / Dual Sign Rank</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/sign_rank.html">Sign Rank</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1091,8 +1122,8 @@
         <h3><a href="projected_vc_radius_vc_dimension.html" class="table-title-link">Projected VC Radius / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected VC Radius / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_vc_radius.html">Projected VC Radius</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_vc_radius.html">Projected VC Radius</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1106,8 +1137,8 @@
         <h3><a href="projected_vc_radius_effective_vc_radius.html" class="table-title-link">Projected VC Radius / Effective VC Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected VC Radius / Effective VC Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_vc_radius.html">Projected VC Radius</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_vc_radius.html">Projected VC Radius</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/effective_vc_radius.html">Effective VC Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1121,8 +1152,8 @@
         <h3><a href="projected_strongly_shattered_dimension_vc_dimension.html" class="table-title-link">Projected Strongly Shattered Dimension / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Strongly Shattered Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_strongly_shattered_dimension.html">Projected Strongly Shattered Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_strongly_shattered_dimension.html">Projected Strongly Shattered Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1136,8 +1167,8 @@
         <h3><a href="projected_strongly_shattered_dimension_largest_strongly_shattered_set.html" class="table-title-link">Projected Strongly Shattered Dimension / Largest Strongly Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Strongly Shattered Dimension / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_strongly_shattered_dimension.html">Projected Strongly Shattered Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_strongly_shattered_dimension.html">Projected Strongly Shattered Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1151,8 +1182,8 @@
         <h3><a href="maximum_largest_order_shattered_set_vc_dimension.html" class="table-title-link">Maximum Largest Order Shattered Set / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Largest Order Shattered Set / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_largest_order_shattered_set.html">Maximum Largest Order Shattered Set</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_largest_order_shattered_set.html">Maximum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Sandwich Theorem</p></div>
@@ -1166,8 +1197,8 @@
         <h3><a href="maximum_largest_order_shattered_set_minimum_largest_order_shattered_set.html" class="table-title-link">Maximum Largest Order Shattered Set / Minimum Largest Order Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Largest Order Shattered Set / Minimum Largest Order Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_largest_order_shattered_set.html">Maximum Largest Order Shattered Set</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_largest_order_shattered_set.html">Maximum Largest Order Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1181,8 +1212,8 @@
         <h3><a href="maximum_degree_largest_strongly_shattered_set.html" class="table-title-link">Maximum Degree / Largest Strongly Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Degree / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_degree.html">Maximum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1196,8 +1227,8 @@
         <h3><a href="projected_minimum_degree_vc_dimension.html" class="table-title-link">Projected Minimum Degree / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Minimum Degree / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Project on the largest shattered set.</p></div>
@@ -1211,8 +1242,8 @@
         <h3><a href="maximum_teaching_set_size_largest_strongly_shattered_set.html" class="table-title-link">Maximum Teaching Set Size / Largest Strongly Shattered Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Teaching Set Size / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1226,8 +1257,8 @@
         <h3><a href="vc_dimension_densest_subgraph_twice.html" class="table-title-link">VC Dimension / Densest Subgraph (twice)</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Densest Subgraph (twice)</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Down shifting lemma and Monotonicity</p></div>
@@ -1241,8 +1272,8 @@
         <h3><a href="monotonic_projected_minimum_teaching_set_size_minimum_projected_teaching_set_size.html" class="table-title-link">Monotonic Projected Minimum Teaching Set Size / Minimum Projected Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Monotonic Projected Minimum Teaching Set Size / Minimum Projected Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_projected_teaching_set_size.html">Minimum Projected Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_projected_teaching_set_size.html">Minimum Projected Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1256,8 +1287,8 @@
         <h3><a href="monotonic_projected_minimum_teaching_set_size_monotonic_minimum_teaching_set_size.html" class="table-title-link">Monotonic Projected Minimum Teaching Set Size / Monotonic Minimum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Monotonic Projected Minimum Teaching Set Size / Monotonic Minimum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1271,8 +1302,8 @@
         <h3><a href="minimum_projected_teaching_set_size_minimum_teaching_set_size.html" class="table-title-link">Minimum Projected Teaching Set Size / Minimum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Minimum Projected Teaching Set Size / Minimum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/minimum_projected_teaching_set_size.html">Minimum Projected Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/minimum_projected_teaching_set_size.html">Minimum Projected Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1286,8 +1317,8 @@
         <h3><a href="stable_unlabeled_complexity_unlabeled_sample_compression.html" class="table-title-link">Stable Unlabeled Complexity / Unlabeled sample compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Stable Unlabeled Complexity / Unlabeled sample compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1301,8 +1332,8 @@
         <h3><a href="stable_unlabeled_complexity_stable_labeled_sample_compression.html" class="table-title-link">Stable Unlabeled Complexity / Stable Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Stable Unlabeled Complexity / Stable Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1316,8 +1347,8 @@
         <h3><a href="majority_complexity_littlestone_dimension.html" class="table-title-link">Majority Complexity / Littlestone Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Majority Complexity / Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/majority_complexity.html">Majority Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1331,8 +1362,8 @@
         <h3><a href="littlestone_dimension_membership_and_equivalence_queries_complexity.html" class="table-title-link">Littlestone Dimension / Membership and Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / Membership and Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1346,8 +1377,8 @@
         <h3><a href="membership_and_equivalence_queries_complexity_partial_equivalence_queries_complexity.html" class="table-title-link">Membership and Equivalence Queries Complexity / Partial Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Membership and Equivalence Queries Complexity / Partial Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1361,8 +1392,8 @@
         <h3><a href="partial_equivalence_queries_complexity_selfdirected_queries_complexity.html" class="table-title-link">Partial Equivalence Queries Complexity / Self-Directed Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Partial Equivalence Queries Complexity / Self-Directed Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1376,8 +1407,8 @@
         <h3><a href="yang_dimension_covc_dimension.html" class="table-title-link">Yang dimension / co-VC dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Yang dimension / co-VC dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/yang_dimension.html">Yang dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/yang_dimension.html">Yang dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/covc_dimension.html">co-VC dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1391,8 +1422,8 @@
         <h3><a href="unlabeled_sample_compression_labeled_sample_compression.html" class="table-title-link">Unlabeled sample compression / Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Unlabeled sample compression / Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1406,8 +1437,8 @@
         <h3><a href="covc_dimension_effective_vc_radius.html" class="table-title-link">co-VC dimension / Effective VC Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>co-VC dimension / Effective VC Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/effective_vc_radius.html">Effective VC Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1421,8 +1452,8 @@
         <h3><a href="log_size_size.html" class="table-title-link">Log Size / Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Log Size / Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/log_size.html">Log Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/size.html">Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/log_size.html">Log Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/size.html">Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1 \ge c\log P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1436,8 +1467,8 @@
         <h3><a href="size_vc_dimension.html" class="table-title-link">Size / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Size / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/size.html">Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1451,8 +1482,8 @@
         <h3><a href="size_path_dimension.html" class="table-title-link">Size / Path Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Size / Path Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/size.html">Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/path_dimension.html">Path Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/path_dimension.html">Path Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1466,8 +1497,8 @@
         <h3><a href="threshold_dimension_path_dimension.html" class="table-title-link">Threshold Dimension / Path Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Threshold Dimension / Path Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/threshold_dimension.html">Threshold Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/path_dimension.html">Path Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/threshold_dimension.html">Threshold Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/path_dimension.html">Path Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -1481,8 +1512,8 @@
         <h3><a href="path_dimension_threshold_dimension.html" class="table-title-link">Path Dimension / Threshold Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Path Dimension / Threshold Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/path_dimension.html">Path Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/threshold_dimension.html">Threshold Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/path_dimension.html">Path Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/threshold_dimension.html">Threshold Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Relative</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1496,8 +1527,8 @@
         <h3><a href="oriented_diameter_threshold_dimension.html" class="table-title-link">Oriented Diameter / Threshold Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Oriented Diameter / Threshold Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/oriented_diameter.html">Oriented Diameter</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/threshold_dimension.html">Threshold Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/oriented_diameter.html">Oriented Diameter</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/threshold_dimension.html">Threshold Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1511,8 +1542,8 @@
         <h3><a href="diameter_path_dimension.html" class="table-title-link">Diameter / Path Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Diameter / Path Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/diameter.html">Diameter</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/path_dimension.html">Path Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/diameter.html">Diameter</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/path_dimension.html">Path Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1526,8 +1557,8 @@
         <h3><a href="equivalence_queries_complexity_littlestone_dimension.html" class="table-title-link">Equivalence Queries Complexity / Littlestone Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Equivalence Queries Complexity / Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/equivalence_queries_complexity.html">Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/equivalence_queries_complexity.html">Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1541,8 +1572,8 @@
         <h3><a href="recursive_teaching_dimension_interpolation_degree.html" class="table-title-link">Recursive Teaching Dimension / Interpolation degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Recursive Teaching Dimension / Interpolation degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/interpolation_degree.html">Interpolation degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1556,8 +1587,8 @@
         <h3><a href="selfdirected_queries_complexity_recursive_teaching_dimension.html" class="table-title-link">Self-Directed Queries Complexity / Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Self-Directed Queries Complexity / Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1571,8 +1602,8 @@
         <h3><a href="best_mistakes_selfdirected_queries_complexity.html" class="table-title-link">Best Mistakes / Self-Directed Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Best Mistakes / Self-Directed Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1586,12 +1617,12 @@
         <h3><a href="effective_range_vc_dimension.html" class="table-title-link">Effective Range / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Effective Range / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="../classes/singletons.html">Singletons</a></p>
+<p><strong>Witness: </strong><a href="/classes/singletons.html">Singletons</a></p>
 
         </div>
     </div>
@@ -1601,12 +1632,12 @@
         <h3><a href="littlestone_dimension_vc_dimension.html" class="table-title-link">Littlestone Dimension / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="../classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness: </strong><a href="/classes/halfintervals.html">Half-intervals</a></p>
 
         </div>
     </div>
@@ -1616,12 +1647,12 @@
         <h3><a href="effective_range_diameter.html" class="table-title-link">Effective Range / Diameter</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Effective Range / Diameter</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/diameter.html">Diameter</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/diameter.html">Diameter</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="../classes/singletons.html">Singletons</a></p>
+<p><strong>Witness: </strong><a href="/classes/singletons.html">Singletons</a></p>
 
         </div>
     </div>
@@ -1631,8 +1662,8 @@
         <h3><a href="diameter_oriented_diameter.html" class="table-title-link">Diameter / Oriented Diameter</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Diameter / Oriented Diameter</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/diameter.html">Diameter</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/oriented_diameter.html">Oriented Diameter</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/diameter.html">Diameter</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/oriented_diameter.html">Oriented Diameter</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Relative</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1646,8 +1677,8 @@
         <h3><a href="oriented_diameter_diameter.html" class="table-title-link">Oriented Diameter / Diameter</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Oriented Diameter / Diameter</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/oriented_diameter.html">Oriented Diameter</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/diameter.html">Diameter</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/oriented_diameter.html">Oriented Diameter</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/diameter.html">Diameter</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -1661,8 +1692,8 @@
         <h3><a href="recursive_teaching_dimension_effective_vc_radius.html" class="table-title-link">Recursive Teaching Dimension / Effective VC Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Recursive Teaching Dimension / Effective VC Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/effective_vc_radius.html">Effective VC Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -1676,12 +1707,12 @@
         <h3><a href="effective_range_hamming_radius.html" class="table-title-link">Effective Range / Hamming Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Effective Range / Hamming Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/hamming_radius.html">Hamming Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="../classes/singletons.html">Singletons</a></p>
+<p><strong>Witness: </strong><a href="/classes/singletons.html">Singletons</a></p>
 
         </div>
     </div>
@@ -1691,12 +1722,12 @@
         <h3><a href="size_littlestone_dimension.html" class="table-title-link">Size / Littlestone Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Size / Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/size.html">Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="../classes/singletons.html">Singletons</a></p>
+<p><strong>Witness: </strong><a href="/classes/singletons.html">Singletons</a></p>
 
         </div>
     </div>
@@ -1706,12 +1737,12 @@
         <h3><a href="size_yang_dimension.html" class="table-title-link">Size / Yang dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Size / Yang dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/size.html">Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/yang_dimension.html">Yang dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/yang_dimension.html">Yang dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
-<p><strong>Witness: </strong><a href="../classes/singletons.html">Singletons</a></p>
+<p><strong>Witness: </strong><a href="/classes/singletons.html">Singletons</a></p>
 
         </div>
     </div>
@@ -1721,8 +1752,8 @@
         <h3><a href="effective_range_log_shattering.html" class="table-title-link">Effective Range / Log Shattering</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Effective Range / Log Shattering</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/log_shattering.html">Log Shattering</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/log_shattering.html">Log Shattering</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1736,8 +1767,8 @@
         <h3><a href="size_proper_equivalence_queries_complexity.html" class="table-title-link">Size / Proper Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Size / Proper Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/size.html">Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1751,8 +1782,8 @@
         <h3><a href="log_shattering_majority_complexity.html" class="table-title-link">Log Shattering / Majority Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Log Shattering / Majority Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/log_shattering.html">Log Shattering</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/log_shattering.html">Log Shattering</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/majority_complexity.html">Majority Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1766,8 +1797,8 @@
         <h3><a href="labeled_sample_compression_vc_dimension.html" class="table-title-link">Labeled Sample Compression / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Labeled Sample Compression / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1781,8 +1812,8 @@
         <h3><a href="order_sample_compression_monotone_recursive_teaching_dimension.html" class="table-title-link">Order Sample Compression / Monotone Recursive Teaching Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Order Sample Compression / Monotone Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/order_sample_compression.html">Order Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1796,8 +1827,8 @@
         <h3><a href="monotone_recursive_teaching_dimension_vc_dimension.html" class="table-title-link">Monotone Recursive Teaching Dimension / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Monotone Recursive Teaching Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/monotone_recursive_teaching_dimension.html">Monotone Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1811,8 +1842,8 @@
         <h3><a href="littlestone_dimension_worst_mistakes.html" class="table-title-link">Littlestone Dimension / Worst Mistakes</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / Worst Mistakes</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/worst_mistakes.html">Worst Mistakes</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1826,8 +1857,8 @@
         <h3><a href="worst_mistakes_best_mistakes.html" class="table-title-link">Worst Mistakes / Best Mistakes</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Worst Mistakes / Best Mistakes</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/best_mistakes.html">Best Mistakes</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1841,8 +1872,8 @@
         <h3><a href="log_size_sign_rank.html" class="table-title-link">Log Size / Sign Rank</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Log Size / Sign Rank</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/log_size.html">Log Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/log_size.html">Log Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/sign_rank.html">Sign Rank</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1856,8 +1887,8 @@
         <h3><a href="log_size_majority_complexity.html" class="table-title-link">Log Size / Majority Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Log Size / Majority Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/log_size.html">Log Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/log_size.html">Log Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/majority_complexity.html">Majority Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1871,8 +1902,8 @@
         <h3><a href="hamming_radius_oriented_diameter.html" class="table-title-link">Hamming Radius / Oriented Diameter</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Hamming Radius / Oriented Diameter</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/hamming_radius.html">Hamming Radius</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/oriented_diameter.html">Oriented Diameter</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/oriented_diameter.html">Oriented Diameter</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1886,8 +1917,8 @@
         <h3><a href="hamming_radius_diameter.html" class="table-title-link">Hamming Radius / Diameter</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Hamming Radius / Diameter</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/hamming_radius.html">Hamming Radius</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/diameter.html">Diameter</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/diameter.html">Diameter</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1901,8 +1932,8 @@
         <h3><a href="teaching_dimension_relative_hitting_size.html" class="table-title-link">Teaching Dimension / Relative Hitting Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Teaching Dimension / Relative Hitting Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/teaching_dimension.html">Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -1916,8 +1947,8 @@
         <h3><a href="threshold_dimension_littlestone_dimension.html" class="table-title-link">Threshold Dimension / Littlestone Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Threshold Dimension / Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/threshold_dimension.html">Threshold Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/threshold_dimension.html">Threshold Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 \ge c\log P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
@@ -1931,8 +1962,8 @@
         <h3><a href="vc_dimension_log_size_ratio.html" class="table-title-link">VC Dimension / Log Size Ratio</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Log Size Ratio</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/log_size_ratio.html">Log Size Ratio</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/log_size_ratio.html">Log Size Ratio</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
@@ -1946,8 +1977,8 @@
         <h3><a href="interpolation_degree_log_size_ratio.html" class="table-title-link">Interpolation degree / Log Size Ratio</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Interpolation degree / Log Size Ratio</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/interpolation_degree.html">Interpolation degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/log_size_ratio.html">Log Size Ratio</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/log_size_ratio.html">Log Size Ratio</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
@@ -1961,8 +1992,8 @@
         <h3><a href="projected_membership_queries_complexity_membership_query_complexity.html" class="table-title-link">Projected Membership Queries Complexity / Membership Query Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Membership Queries Complexity / Membership Query Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> P-Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -1976,8 +2007,8 @@
         <h3><a href="projected_membership_queries_complexity_star_number.html" class="table-title-link">Projected Membership Queries Complexity / Star number</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Projected Membership Queries Complexity / Star number</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/star_number.html">Star number</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/star_number.html">Star number</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -1991,8 +2022,8 @@
         <h3><a href="effective_range_projected_membership_queries_complexity.html" class="table-title-link">Effective Range / Projected Membership Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Effective Range / Projected Membership Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2006,8 +2037,8 @@
         <h3><a href="size_projected_membership_queries_complexity.html" class="table-title-link">Size / Projected Membership Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Size / Projected Membership Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/size.html">Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2021,8 +2052,8 @@
         <h3><a href="log_size_random_proper_equivalence_queries_complexity.html" class="table-title-link">Log Size / Random Proper Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Log Size / Random Proper Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/log_size.html">Log Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/log_size.html">Log Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2036,8 +2067,8 @@
         <h3><a href="proper_equivalence_queries_complexity_random_proper_equivalence_queries_complexity.html" class="table-title-link">Proper Equivalence Queries Complexity / Random Proper Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Random Proper Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2051,8 +2082,8 @@
         <h3><a href="random_proper_equivalence_queries_complexity_random_equivalence_queries_complexity.html" class="table-title-link">Random Proper Equivalence Queries Complexity / Random Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity / Random Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2066,8 +2097,8 @@
         <h3><a href="recursive_teaching_dimension_monotonic_minimum_teaching_set_size.html" class="table-title-link">Recursive Teaching Dimension / Monotonic Minimum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Recursive Teaching Dimension / Monotonic Minimum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2081,8 +2112,8 @@
         <h3><a href="maximum_teaching_set_size_relative_hitting_size.html" class="table-title-link">Maximum Teaching Set Size / Relative Hitting Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Teaching Set Size / Relative Hitting Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2096,8 +2127,8 @@
         <h3><a href="proper_equivalence_queries_complexity_membership_and_proper_equivalence_queries_complexity.html" class="table-title-link">Proper Equivalence Queries Complexity / Membership and Proper Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Membership and Proper Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/membership_and_proper_equivalence_queries_complexity.html">Membership and Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/membership_and_proper_equivalence_queries_complexity.html">Membership and Proper Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2111,8 +2142,8 @@
         <h3><a href="proper_equivalence_queries_complexity_equivalence_queries_complexity.html" class="table-title-link">Proper Equivalence Queries Complexity / Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/equivalence_queries_complexity.html">Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/equivalence_queries_complexity.html">Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2126,8 +2157,8 @@
         <h3><a href="littlestone_dimension_occasional_onesided_getback.html" class="table-title-link">Littlestone Dimension / Occasional One-Sided Getback</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / Occasional One-Sided Getback</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2141,8 +2172,8 @@
         <h3><a href="monotonic_minimum_teaching_set_size_minimum_teaching_set_size.html" class="table-title-link">Monotonic Minimum Teaching Set Size / Minimum Teaching Set Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Monotonic Minimum Teaching Set Size / Minimum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2156,8 +2187,8 @@
         <h3><a href="membership_query_complexity_relative_hitting_size.html" class="table-title-link">Membership Query Complexity / Relative Hitting Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Membership Query Complexity / Relative Hitting Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2171,8 +2202,8 @@
         <h3><a href="3littlestone_dimension_klittlestone_dimension_kge3.html" class="table-title-link">3-Littlestone Dimension / $k$-Littlestone Dimension ($k\ge3$)</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>3-Littlestone Dimension / $k$-Littlestone Dimension ($k\ge3$)</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/3littlestone_dimension.html">3-Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/klittlestone_dimension_kge3.html">$k$-Littlestone Dimension ($k\ge3$)</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/3littlestone_dimension.html">3-Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/klittlestone_dimension_kge3.html">$k$-Littlestone Dimension ($k\ge3$)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2186,8 +2217,8 @@
         <h3><a href="membership_query_complexity_log_size.html" class="table-title-link">Membership Query Complexity / Log Size</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Membership Query Complexity / Log Size</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/log_size.html">Log Size</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/log_size.html">Log Size</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -2201,8 +2232,8 @@
         <h3><a href="membership_and_proper_equivalence_queries_complexity_membership_and_equivalence_queries_complexity.html" class="table-title-link">Membership and Proper Equivalence Queries Complexity / Membership and Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Membership and Proper Equivalence Queries Complexity / Membership and Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/membership_and_proper_equivalence_queries_complexity.html">Membership and Proper Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/membership_and_proper_equivalence_queries_complexity.html">Membership and Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2216,8 +2247,8 @@
         <h3><a href="diameter_hamming_radius.html" class="table-title-link">Diameter / Hamming Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Diameter / Hamming Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/diameter.html">Diameter</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/diameter.html">Diameter</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/hamming_radius.html">Hamming Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2231,8 +2262,8 @@
         <h3><a href="oriented_diameter_hamming_radius.html" class="table-title-link">Oriented Diameter / Hamming Radius</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Oriented Diameter / Hamming Radius</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/oriented_diameter.html">Oriented Diameter</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/oriented_diameter.html">Oriented Diameter</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/hamming_radius.html">Hamming Radius</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
 <p><strong>Variant:</strong> </p>
 
@@ -2246,8 +2277,8 @@
         <h3><a href="densest_subgraph_twice_double_density_or_average_degree.html" class="table-title-link">Densest Subgraph (twice) / Double Density or Average Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Densest Subgraph (twice) / Double Density or Average Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> Monotonic</p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2261,8 +2292,8 @@
         <h3><a href="double_density_or_average_degree_minimum_degree.html" class="table-title-link">Double Density or Average Degree / Minimum Degree</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Double Density or Average Degree / Minimum Degree</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/minimum_degree.html">Minimum Degree</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/minimum_degree.html">Minimum Degree</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2276,8 +2307,8 @@
         <h3><a href="vc_dimension_densest_subgraph_twice.html" class="table-title-link">VC Dimension / Densest Subgraph (twice)</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>VC Dimension / Densest Subgraph (twice)</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
@@ -2291,8 +2322,8 @@
         <h3><a href="proper_stable_sample_compression_proper_stable_labeled_sample_compression.html" class="table-title-link">Proper Stable Sample Compression / Proper Stable Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Stable Sample Compression / Proper Stable Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2306,8 +2337,8 @@
         <h3><a href="proper_unlabeled_sample_compression_proper_labeled_sample_compression.html" class="table-title-link">Proper Unlabeled Sample Compression / Proper Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Unlabeled Sample Compression / Proper Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2321,8 +2352,8 @@
         <h3><a href="proper_unlabeled_sample_compression_unlabeled_sample_compression.html" class="table-title-link">Proper Unlabeled Sample Compression / Unlabeled sample compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Unlabeled Sample Compression / Unlabeled sample compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2336,8 +2367,8 @@
         <h3><a href="proper_stable_sample_compression_stable_unlabeled_complexity.html" class="table-title-link">Proper Stable Sample Compression / Stable Unlabeled Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Stable Sample Compression / Stable Unlabeled Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2351,8 +2382,8 @@
         <h3><a href="proper_stable_labeled_sample_compression_stable_labeled_sample_compression.html" class="table-title-link">Proper Stable Labeled Sample Compression / Stable Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / Stable Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2366,8 +2397,8 @@
         <h3><a href="proper_stable_labeled_sample_compression_proper_labeled_sample_compression.html" class="table-title-link">Proper Stable Labeled Sample Compression / Proper Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / Proper Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2381,8 +2412,8 @@
         <h3><a href="proper_stable_sample_compression_proper_unlabeled_sample_compression.html" class="table-title-link">Proper Stable Sample Compression / Proper Unlabeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Stable Sample Compression / Proper Unlabeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2396,8 +2427,8 @@
         <h3><a href="stable_labeled_sample_compression_labeled_sample_compression.html" class="table-title-link">Stable Labeled Sample Compression / Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Stable Labeled Sample Compression / Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2411,8 +2442,8 @@
         <h3><a href="proper_equivalence_queries_complexity_proper_stable_sample_compression.html" class="table-title-link">Proper Equivalence Queries Complexity / Proper Stable Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Proper Stable Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -2426,8 +2457,8 @@
         <h3><a href="proper_labeled_sample_compression_labeled_sample_compression.html" class="table-title-link">Proper Labeled Sample Compression / Labeled Sample Compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Proper Labeled Sample Compression / Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2441,8 +2472,8 @@
         <h3><a href="occasional_onesided_getback_best_mistakes.html" class="table-title-link">Occasional One-Sided Getback / Best Mistakes</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Occasional One-Sided Getback / Best Mistakes</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/best_mistakes.html">Best Mistakes</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -2456,8 +2487,8 @@
         <h3><a href="occasional_onesided_getback_unlabeled_sample_compression.html" class="table-title-link">Occasional One-Sided Getback / Unlabeled sample compression</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Occasional One-Sided Getback / Unlabeled sample compression</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
@@ -2471,8 +2502,8 @@
         <h3><a href="membership_query_complexity_membership_and_proper_equivalence_queries_complexity.html" class="table-title-link">Membership Query Complexity / Membership and Proper Equivalence Queries Complexity</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Membership Query Complexity / Membership and Proper Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/membership_and_proper_equivalence_queries_complexity.html">Membership and Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/membership_and_proper_equivalence_queries_complexity.html">Membership and Proper Equivalence Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
@@ -2486,8 +2517,8 @@
         <h3><a href="klittlestone_dimension_kge3_vc_dimension.html" class="table-title-link">$k$-Littlestone Dimension ($k\ge3$) / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Littlestone Dimension ($k\ge3$) / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="../parameters/klittlestone_dimension_kge3.html">$k$-Littlestone Dimension ($k\ge3$)</a></p>
-<p><strong>Parameter 2: </strong><a href="../parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="/parameters/klittlestone_dimension_kge3.html">$k$-Littlestone Dimension ($k\ge3$)</a></p>
+<p><strong>Parameter 2: </strong><a href="/parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 <p><strong>Variant:</strong> </p>
 
