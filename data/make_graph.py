@@ -72,17 +72,20 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
                 "style": "solid",
                 "color": "#000000",
             })
+        label_ref = ''
         if r.get("witness"):
             _, w = cache.lookup(r["witness"])
             if w:
                 label = w.get("short_name", w.get("name", str(w["id"])))
+                label_ref = f'#classes/{w["id"]}'
                 arrow = copy.copy(arrow)
                 arrow["style"] = "solid"
         edges.append({
             "source": f'#parameters/{p1["id"]}',
             "target": f'#parameters/{p2["id"]}',
-            "ref": '',
+            "ref": f'#relationships/{r["id"]}',
             "label": label,
+            "label_ref": label_ref,
             **arrow
         })
     return {"nodes": nodes, "edges": edges}
