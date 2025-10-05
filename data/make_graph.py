@@ -38,6 +38,19 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         "dmon": "ellipse",
         "smon": "doublecircle"
     }
+    shape_values = {
+        "none": "No special properties", "sym": "Symmetric", "mon": "Monotonic", "pmon": "Piecewise Monotonic", "dmon": "Doubly Monotonic", "smon": "Strictly Monotonic"
+        }
+    arrow_values = {
+        "larger": "A ≥ B", "larger_c": "A ≥ cB", "equivalence": "A = B", "log": "A ≥ c log B", "sqrt": "A ≥ c√B", "inv_log": "A ≥ cB/log n"
+        }
+    cat_values = cache.get_enum_values("parameters", "category")
+    cat_values = {val: display for val, display in cat_values}
+
+    legend = [{"type": "node", "label": t, "text": cat_values[t], **v} for t, v in category_map.items()]
+    legend.extend([{"type": "node", "label": t, "text": shape_values[t], "shape": v} for t, v in shape_map.items()])
+    legend.extend([{"type": "edge", "label": t, "text": arrow_values[t], **v} for t, v in arrow_map.items()])
+
     # Add mathematician nodes
     for m in cache.get_table_entries("parameters"):
         category = m.get("category", "unknown")
@@ -88,4 +101,4 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             "label_ref": label_ref,
             **arrow
         })
-    return {"nodes": nodes, "edges": edges}
+    return {"nodes": nodes, "edges": edges, "legend": legend}
