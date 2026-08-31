@@ -6,6 +6,17 @@ import re
 
 LINEAR_TYPES = {"larger", "larger_c", "equivalence"}
 BASE_VARIANT = "base"
+# Exact identities eligible to be represented by one graph node.  This is
+# deliberately narrower than every relationship record marked ``equivalence``:
+# a qualified identity (for example one holding only for finite classes) must
+# remain an edge until the graph has a way to display its scope.
+COLLAPSIBLE_EQUIVALENCE_IDS = {
+    9,  # Largest shattered set = VC dimension (definition)
+    14, 22,  # Projected maximal degree = star number = maximum projected TS
+    40, 125, 137,  # Teaching dimension = relative hitting size = maximum TS
+    71, 73, 75, 78,  # Projected shattering/minimum-degree identities with VC
+    136,  # Recursive teaching dimension = monotonic minimum teaching-set size
+}
 
 
 def graph_label(name: str, max_line_length: int = 26) -> str:
@@ -64,6 +75,7 @@ def exact_equivalence_components(
         if (
             relationship["relationship_type"] == "equivalence"
             and variant_of(relationship) == BASE_VARIANT
+            and relationship["id"] in COLLAPSIBLE_EQUIVALENCE_IDS
         ):
             first, second = relation_endpoints(relationship)
             union(first, second)
@@ -80,6 +92,29 @@ def exact_equivalence_components(
         for parameter_ref in component
     }
     return dict(components), component_of
+
+
+def quotient_relationships(
+    relationships: List[Dict[str, Any]], component_of: Dict[str, str]
+) -> List[Dict[str, Any]]:
+    """Move displayed relationships to equality components before reduction.
+
+    Reducing first is unsound: two relations with endpoints identified by an
+    equality can each appear redundant through the other.  On the quotient,
+    duplicate component-to-component relations are reduced to one representative
+    without losing the resulting relation.
+    """
+    quotient = []
+    for relationship in relationships:
+        collapsed = copy.copy(relationship)
+        source = component_of[relationship["parameter_1_id"]]
+        target = component_of[relationship["parameter_2_id"]]
+        if source == target:
+            continue
+        collapsed["parameter_1_id"] = source
+        collapsed["parameter_2_id"] = target
+        quotient.append(collapsed)
+    return quotient
 
 
 def proof_adjacency(
@@ -282,13 +317,16 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     equivalence_components, equivalence_component_of = exact_equivalence_components(
         parameters, relationships
     )
+    collapsed_relationships = quotient_relationships(
+        relationships, equivalence_component_of
+    )
     parameters_by_ref = {
         f'#parameters/{parameter["short_name"]}': parameter
         for parameter in parameters
         if parameter.get("short_name")
     }
     relationships_by_variant: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
-    for relationship in relationships:
+    for relationship in collapsed_relationships:
         relationships_by_variant[variant_of(relationship)].append(relationship)
 
     # Only the reduced base linear graph defines vertical position.  Variant
@@ -350,8 +388,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
 
     displayed_edge_keys = set()
     for r, variant in displayed_relationships:
-        source_component = equivalence_component_of[r["parameter_1_id"]]
-        target_component = equivalence_component_of[r["parameter_2_id"]]
+        source_component, target_component = relation_endpoints(r)
         source = parameters_by_ref[source_component]
         target = parameters_by_ref[target_component]
         if source_component == target_component:
