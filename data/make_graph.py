@@ -34,6 +34,54 @@ def relation_endpoints(relationship: Dict[str, Any]) -> tuple[str, str]:
     return relationship["parameter_1_id"], relationship["parameter_2_id"]
 
 
+def exact_equivalence_components(
+    parameters: List[Dict[str, Any]], relationships: List[Dict[str, Any]]
+) -> tuple[Dict[str, List[str]], Dict[str, str]]:
+    """Group parameters joined by stated, base-variant exact equalities.
+
+    A constant-factor relationship is intentionally *not* an equality here.
+    Nor is an equality that is asserted only for a parameter variant: merging
+    such nodes would incorrectly identify the underlying parameters.
+    """
+    parent = {
+        f'#parameters/{parameter["short_name"]}': f'#parameters/{parameter["short_name"]}'
+        for parameter in parameters
+        if parameter.get("short_name")
+    }
+
+    def find(node: str) -> str:
+        while parent[node] != node:
+            parent[node] = parent[parent[node]]
+            node = parent[node]
+        return node
+
+    def union(first: str, second: str) -> None:
+        first_root, second_root = find(first), find(second)
+        if first_root != second_root:
+            parent[second_root] = first_root
+
+    for relationship in relationships:
+        if (
+            relationship["relationship_type"] == "equivalence"
+            and variant_of(relationship) == BASE_VARIANT
+        ):
+            first, second = relation_endpoints(relationship)
+            union(first, second)
+
+    components: Dict[str, List[str]] = defaultdict(list)
+    for parameter_ref in parent:
+        components[find(parameter_ref)].append(parameter_ref)
+    for component in components.values():
+        component.sort()
+
+    component_of = {
+        parameter_ref: component_root
+        for component_root, component in components.items()
+        for parameter_ref in component
+    }
+    return dict(components), component_of
+
+
 def proof_adjacency(
     relationships: List[Dict[str, Any]],
     target_type: str,
@@ -229,7 +277,16 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     legend.extend([{"type": "node", "label": t, "text": shape_values[t], "shape": v} for t, v in shape_map.items()])
     legend.extend([{"type": "edge", "label": t, "text": arrow_values[t], **v} for t, v in arrow_map.items()])
 
+    parameters = cache.get_table_entries("parameters")
     relationships = cache.get_table_entries("relationships")
+    equivalence_components, equivalence_component_of = exact_equivalence_components(
+        parameters, relationships
+    )
+    parameters_by_ref = {
+        f'#parameters/{parameter["short_name"]}': parameter
+        for parameter in parameters
+        if parameter.get("short_name")
+    }
     relationships_by_variant: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
     for relationship in relationships:
         relationships_by_variant[variant_of(relationship)].append(relationship)
@@ -244,8 +301,12 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     base_backbone = reduced_by_variant.get(BASE_VARIANT, [])
     ranks = hierarchy_ranks(base_backbone)
 
-    # Add parameter nodes.
-    for m in cache.get_table_entries("parameters"):
+    # Add one node for each exact-equality component.  The first record is the
+    # clickable representative; the combined label makes every identification
+    # visible without retaining equality arrows or loops.
+    for component in equivalence_components.values():
+        members = [parameters_by_ref[parameter_ref] for parameter_ref in component]
+        m = members[0]
         category = m.get("category", "unknown")
         color = category_map.get(category, {"color": "#AAAAAA", "fillcolor": "#F5F5F5"})
         mon_type = "none"
@@ -262,16 +323,19 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         shape = shape_map.get(mon_type, "box")
         node = {
             "id": f'#parameters/{m["id"]}',
-            "label": graph_label(m.get("name", m.get("short_name", str(m["id"])))),
+            "label": " /\\n".join(
+                graph_label(member.get("name", member.get("short_name", str(member["id"]))))
+                for member in members
+            ),
             "ref": f'#parameters/{m["id"]}',
             "type": "parameter",
             "shape": shape,
             **color,
             "style": "filled",
         }
-        relation_ref = f'#parameters/{m.get("short_name", m["id"])}'
-        if relation_ref in ranks:
-            node["rank"] = ranks[relation_ref]
+        member_ranks = [ranks[member_ref] for member_ref in component if member_ref in ranks]
+        if member_ranks:
+            node["rank"] = member_ranks[0]
         nodes.append(node)
 
     displayed_relationships = []
@@ -284,14 +348,24 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         ]
         displayed_relationships.extend((relationship, variant) for relationship in reduced_linear + nonlinear)
 
-    print(
-        "graph relationships: "
-        f"{len(relationships)} direct, {len(displayed_relationships)} displayed "
-        f"({len(base_backbone)} in the base linear backbone)"
-    )
+    displayed_edge_keys = set()
     for r, variant in displayed_relationships:
-        _, p1 = cache.lookup(r["parameter_1_id"])
-        _, p2 = cache.lookup(r["parameter_2_id"])
+        source_component = equivalence_component_of[r["parameter_1_id"]]
+        target_component = equivalence_component_of[r["parameter_2_id"]]
+        source = parameters_by_ref[source_component]
+        target = parameters_by_ref[target_component]
+        if source_component == target_component:
+            continue
+        edge_key = (
+            source_component,
+            target_component,
+            r["relationship_type"],
+            variant,
+            r.get("witness", ""),
+        )
+        if edge_key in displayed_edge_keys:
+            continue
+        displayed_edge_keys.add(edge_key)
         label = ''
         arrow = copy.copy(arrow_map.get(r.get("relationship_type", ""), {
                 "arrowhead": "normal",
@@ -307,8 +381,8 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
                 arrow = copy.copy(arrow)
                 arrow["style"] = "solid"
         edge = {
-            "source": f'#parameters/{p1["id"]}',
-            "target": f'#parameters/{p2["id"]}',
+            "source": f'#parameters/{source["id"]}',
+            "target": f'#parameters/{target["id"]}',
             "ref": f'#relationships/{r["id"]}',
             "label": label,
             "label_ref": label_ref,
@@ -317,9 +391,15 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         if variant != BASE_VARIANT or r["relationship_type"] not in LINEAR_TYPES:
             edge["constraint"] = False
         if label:
-            source_rank = ranks.get(r["parameter_1_id"])
-            target_rank = ranks.get(r["parameter_2_id"])
+            source_rank = ranks.get(source_component)
+            target_rank = ranks.get(target_component)
             if source_rank is not None and target_rank is not None and source_rank < target_rank:
                 edge["label_rank"] = (source_rank + target_rank) / 2
         edges.append(edge)
+    merged_nodes = sum(len(component) - 1 for component in equivalence_components.values())
+    print(
+        "graph relationships: "
+        f"{len(relationships)} direct, {len(edges)} displayed after collapsing "
+        f"{merged_nodes} exact-equality parameters ({len(base_backbone)} in the base linear backbone)"
+    )
     return {"nodes": nodes, "edges": edges, "legend": legend}
