@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "purpose": "Declares the single authoritative representation for information shared by the database website and LaTeX survey.",
+  "owners": {
+    "parameter_catalog": {
+      "authority": "database",
+      "source": "data/parameters/*.json",
+      "latex_output": "includes/generated/def_table.tex",
+      "generator": "sync/generate_latex_catalog.py --section parameter-table"
+    },
+    "class_catalog": {
+      "authority": "database",
+      "source": "data/classes/*.json",
+      "latex_output": null,
+      "status": "Mapped and checked; a generated LaTeX rendering has not yet replaced the hand-written class discussion."
+    },
+    "parameter_relationships": {
+      "authority": "database",
+      "source": "data/relationships/*.json",
+      "latex_output": null,
+      "status": "The website graph is derived from these facts. The survey's explanatory hierarchy remains editorial."
+    },
+    "parameter_values": {
+      "authority": "database",
+      "source": "data/values/*.json",
+      "latex_output": "includes/generated/val_table.tex",
+      "generator": "sync/generate_latex_catalog.py --section value-table"
+    },
+    "bibliography": {
+      "authority": "latex",
+      "source": "main.bib",
+      "database_output": null,
+      "status": "The website bibliography inventory is incomplete, so it must not yet be treated as independently authoritative."
+    },
+    "survey_narrative_and_proofs": {
+      "authority": "latex",
+      "source": "main.tex and included prose files",
+      "database_output": null
+    }
+  }
+}

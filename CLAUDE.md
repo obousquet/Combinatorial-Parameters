@@ -20,7 +20,8 @@ parameters, assigned values, and bibliography entries.
   the shared interactive graph renderer.
 - `~/latex/CombinatorialParameters` is the corresponding LaTeX survey. The
   database and LaTeX material should describe the same mathematical objects
-  and results, but there is currently no automated synchronization layer.
+  and results. `sync/ownership.json` declares which repository is authoritative
+  for each shared kind of information.
 
 ## Editing data
 
@@ -68,3 +69,32 @@ Before changing mathematical content, inspect the corresponding material in
 perform the corresponding update in the other one. Until a dedicated sync
 workflow exists, do not silently treat either representation as automatically
 authoritative over the other.
+
+`sync/latex_mapping.json` is the checked mapping from database parameters and
+classes to LaTeX definition labels. Validate it after changing either inventory:
+
+```bash
+python3 sync/validate_latex_mapping.py \
+  --data-dir data --latex-dir ~/latex/CombinatorialParameters
+```
+
+The database owns the structured parameter catalogue. Generate the LaTeX
+parameter and value-table includes from it rather than editing those generated
+files:
+
+```bash
+python3 sync/generate_latex_catalog.py \
+  --data-dir data \
+  --output ~/latex/CombinatorialParameters/includes/generated/def_table.tex
+
+python3 sync/generate_latex_catalog.py \
+  --data-dir data --section value-table \
+  --output ~/latex/CombinatorialParameters/includes/generated/val_table.tex
+```
+
+In CI or before committing the LaTeX repository, add `--check` to verify that
+the generated file has not drifted.
+
+The LaTeX survey continues to own its narrative, proofs, and bibliography.
+Do not extend generation to another shared section until its ownership is first
+recorded in `sync/ownership.json`.

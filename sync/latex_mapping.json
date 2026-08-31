@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "latex_repository": "~/latex/CombinatorialParameters",
+  "purpose": "Maps JSON database records to their LaTeX definition labels.",
+  "parameters": {
+    "default_label_template": "def:{short_name}",
+    "label_overrides": {
+      "densest_subgraph_twice": "def:densest_subgraph_(twice)",
+      "preferencebased_teaching_dimension": "def:preference-based_teaching_dimension",
+      "noclashing_teaching_dimension": "def:no-clashing_teaching_dimension",
+      "positive_noclashing_teaching_dimension": "def:positive_no-clashing_teaching_dimension",
+      "selfdirected_queries_complexity": "def:self-directed_queries_complexity",
+      "occasional_onesided_getback": "def:occasional_one-sided_getback",
+      "2littlestone_dimension": "def:2-littlestone_dimension",
+      "3littlestone_dimension": "def:3-littlestone_dimension",
+      "klittlestone_dimension_kge3": "def:k-littlestone_dimension_(kge3)",
+      "covc_dimension": "def:co-vc_dimension",
+      "recursive_teaching_dimension": "def:recursive_teaching_dimension_=_monotonic_minimum_teaching_set_size_=_preference-based_teaching_dimension",
+      "teaching_dimension": "def:teaching_dimension_=_relative_hitting_size_=_maximum_teaching_set_size",
+      "equivalence_queries_complexity": "def:equivalence_queries_complexity_=_littlestone_dimension",
+      "star_number": "def:star_number_=_maximum_projected_teaching_set_size_=_projected_maximal_degree",
+      "largest_shattered_set": "def:largest_shattered_set_=_vc_dimension_=_projected_vc_radius_=_projected_strongly_shattered_dimension_=_maximum_largest_order_shattered_set_=_projected_minimum_degree_=_projected_double_density_or_projected_average_degree"
+    },
+    "grouped_definitions": {
+      "def:recursive_teaching_dimension_=_monotonic_minimum_teaching_set_size_=_preference-based_teaching_dimension": [
+        "recursive_teaching_dimension",
+        "monotonic_minimum_teaching_set_size",
+        "preferencebased_teaching_dimension"
+      ],
+      "def:teaching_dimension_=_relative_hitting_size_=_maximum_teaching_set_size": [
+        "teaching_dimension",
+        "relative_hitting_size",
+        "maximum_teaching_set_size"
+      ],
+      "def:equivalence_queries_complexity_=_littlestone_dimension": [
+        "equivalence_queries_complexity",
+        "littlestone_dimension"
+      ],
+      "def:star_number_=_maximum_projected_teaching_set_size_=_projected_maximal_degree": [
+        "star_number",
+        "maximum_projected_teaching_set_size",
+        "projected_maximal_degree"
+      ],
+      "def:largest_shattered_set_=_vc_dimension_=_projected_vc_radius_=_projected_strongly_shattered_dimension_=_maximum_largest_order_shattered_set_=_projected_minimum_degree_=_projected_double_density_or_projected_average_degree": [
+        "largest_shattered_set",
+        "vc_dimension",
+        "projected_vc_radius",
+        "projected_strongly_shattered_dimension",
+        "maximum_largest_order_shattered_set",
+        "projected_minimum_degree",
+        "projected_double_density_or_projected_average_degree"
+      ]
+    },
+    "unmapped_database_ids": {
+      "67": "Placeholder record with an empty short name and no LaTeX definition.",
+      "70": "Placeholder record with an empty short name and no LaTeX definition."
+    }
+  },
+  "classes": {
+    "default_label_template": "cl:{short_name}",
+    "label_overrides": {
+      "halfintervals": "cl:half-intervals",
+      "blockwiseaddressing": "cl:blockwise-addressing"
+    }
+  }
+}
