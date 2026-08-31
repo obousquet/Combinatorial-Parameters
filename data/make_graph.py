@@ -342,8 +342,14 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     # Add one node for each exact-equality component.  The first record is the
     # clickable representative; the combined label makes every identification
     # visible without retaining equality arrows or loops.
-    for component in equivalence_components.values():
-        members = [parameters_by_ref[parameter_ref] for parameter_ref in component]
+    for component_root, component in equivalence_components.items():
+        # Use the union-find representative for the displayed node as well as
+        # every quotient edge.  Choosing the lexicographically first member
+        # here would create a node ID different from the endpoints below.
+        member_refs = [component_root] + [
+            parameter_ref for parameter_ref in component if parameter_ref != component_root
+        ]
+        members = [parameters_by_ref[parameter_ref] for parameter_ref in member_refs]
         m = members[0]
         category = m.get("category", "unknown")
         color = category_map.get(category, {"color": "#AAAAAA", "fillcolor": "#F5F5F5"})
