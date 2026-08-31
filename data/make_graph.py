@@ -14,7 +14,6 @@ COLLAPSIBLE_EQUIVALENCE_IDS = {
     9,  # Largest shattered set = VC dimension (definition)
     14, 22,  # Projected maximal degree = star number = maximum projected TS
     40, 125, 137,  # Teaching dimension = relative hitting size = maximum TS
-    71, 73, 75, 78,  # Projected shattering/minimum-degree identities with VC
     136,  # Recursive teaching dimension = monotonic minimum teaching-set size
 }
 
