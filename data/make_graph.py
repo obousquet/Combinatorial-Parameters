@@ -316,5 +316,10 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         }
         if variant != BASE_VARIANT or r["relationship_type"] not in LINEAR_TYPES:
             edge["constraint"] = False
+        if label:
+            source_rank = ranks.get(r["parameter_1_id"])
+            target_rank = ranks.get(r["parameter_2_id"])
+            if source_rank is not None and target_rank is not None and source_rank < target_rank:
+                edge["label_rank"] = (source_rank + target_rank) / 2
         edges.append(edge)
     return {"nodes": nodes, "edges": edges, "legend": legend}
