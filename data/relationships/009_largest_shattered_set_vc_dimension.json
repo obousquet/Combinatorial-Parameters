@@ -4,6 +4,8 @@
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "equivalence",
   "details": "Definition",
+  "status": "established",
+  "proof": "Both names denote the maximum cardinality of a subset shattered by the class; VC dimension is the standard name for this quantity.",
   "short_name": "largest_shattered_set_vc_dimension",
   "name": "Largest Shattered Set / VC Dimension"
 }
