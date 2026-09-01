@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/star_number",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Choose a base subset whose size is at least two away from the majority threshold. Flipping any one of its $n$ base coordinates then leaves the majority bit unchanged, giving all $n$ one-coordinate neighbours. No star can use more base coordinates.",
+  "references": "\\cite{maass1992lower}"
 }

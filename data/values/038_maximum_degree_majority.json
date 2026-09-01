@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/maximum_degree",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "At a base subset sufficiently far from the majority threshold, toggling any of the $n$ base coordinates leaves the majority bit fixed, so the corresponding concepts are 1-inclusion neighbours. The domain has only $n+1$ coordinates, and flipping the final majority coordinate alone never stays in the graph, giving maximum degree $n$.",
+  "references": "\\cite{maass1992lower}"
 }

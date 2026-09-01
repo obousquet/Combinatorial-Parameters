@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/threshold_dimension",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Projecting to the first $n$ coordinates gives the full cube, since every base subset occurs with its uniquely determined majority bit. Hence an arbitrary length-$n$ threshold chain is present, and no chain can use more than the $n$ projected coordinates.",
+  "references": "\\cite{maass1992lower}"
 }
