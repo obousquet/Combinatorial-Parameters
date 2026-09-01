@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/recursive_teaching_dimension",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "In any nontrivial subfamily of the cube, identifying a chosen concept requires fixing every coordinate on which another remaining concept can differ. For the full cube this is $n$, and this bound is attained at the initial stage."
 }

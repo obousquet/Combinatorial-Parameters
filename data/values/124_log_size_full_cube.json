@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/log_size",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The class has $2^n$ concepts, hence binary logarithmic size $n$."
 }

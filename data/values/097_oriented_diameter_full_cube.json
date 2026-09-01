@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/oriented_diameter",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The full cube contains both $\\emptyset$ and $[n]$, realizing the defining oriented pair on all $n$ coordinates."
 }

@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/threshold_dimension",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "For any ordering of the $n$ coordinates, every initial segment belongs to the cube, realizing a threshold chain of length $n$."
 }

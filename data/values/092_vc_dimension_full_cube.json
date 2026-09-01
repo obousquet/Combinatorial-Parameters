@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/vc_dimension",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "All $2^n$ labelings of the full domain occur in the class, so it is shattered. The domain has only $n$ coordinates."
 }

@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/largest_strongly_shattered_set",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The full domain is strongly shattered: the whole $n$-cube occurs in the class. No shattered set can have more than $n$ coordinates."
 }

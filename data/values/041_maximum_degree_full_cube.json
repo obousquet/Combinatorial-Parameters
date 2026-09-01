@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/maximum_degree",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Every vertex of the $n$-cube has one $1$-inclusion neighbor for each coordinate."
 }

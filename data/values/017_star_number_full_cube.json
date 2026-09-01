@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/star_number",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Around any cube vertex, flipping each of the $n$ coordinates gives all $n$ neighbors, hence an $n$-star. No star can use more coordinates than the domain."
 }

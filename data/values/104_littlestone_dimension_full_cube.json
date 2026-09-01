@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/littlestone_dimension",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Querying distinct coordinates along every root-to-leaf path gives a shattered tree of depth $n$. A deeper tree would require more than $n$ independent coordinates."
 }

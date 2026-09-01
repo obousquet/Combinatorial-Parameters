@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/size",
   "value": "$2^n$",
   "value_class": "$\\Omega(2^n)$",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Every subset of the $n$-element domain is a concept, giving $2^n$ concepts."
 }
