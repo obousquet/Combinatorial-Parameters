@@ -1,0 +1,13 @@
+{
+  "id": 152,
+  "name": "Diameter of Majority",
+  "short_name": "diameter_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/diameter",
+  "value": "$n+1$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "The concepts associated with the empty and full base subsets differ on every base coordinate and on the majority coordinate. This is the full $n+1$-coordinate diameter.",
+  "references": "\\cite{maass1992lower}"
+}

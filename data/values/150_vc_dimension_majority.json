@@ -1,0 +1,13 @@
+{
+  "id": 150,
+  "name": "VC Dimension of Majority",
+  "short_name": "vc_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "Projection to the first $n$ coordinates realizes every binary pattern, so those coordinates are shattered. The class has only $2^n$ concepts and therefore cannot shatter $n+1$ coordinates.",
+  "references": "\\cite{maass1992lower}"
+}
