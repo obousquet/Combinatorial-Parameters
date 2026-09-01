@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/log_size",
   "value": "$\\Omega(\\log n)$",
   "value_class": "omega_log_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Taking the binary logarithm of the exact class size $n+\\lceil\\log n\\rceil+1$ gives a quantity of order $\\log n$."
 }
