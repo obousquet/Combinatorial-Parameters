@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Every nontrivial projection is again a pair of complementary constant concepts and has recursive teaching dimension one; trivial projections have value zero."
 }

@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/hamming_radius",
   "value": "$\\left\\lceil \\frac{n}{2}\\right\\rceil$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "For a center $T\\subseteq[n]$, the two distances are $|T|$ and $n-|T|$. Their maximum is minimized by a balanced $T$, giving $\\lceil n/2\\rceil$."
 }

@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/effective_vc_radius",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The effective range is all of $[n]$. Every singleton is shattered, whereas no two-point subset is shattered because only two traces are available."
 }

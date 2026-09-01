@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/size",
   "value": "$2$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "By definition the class consists exactly of $\\emptyset$ and $[n]$."
 }

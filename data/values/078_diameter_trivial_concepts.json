@@ -4,7 +4,9 @@
   "short_name": "diameter_trivial_concepts",
   "class_id": "#classes/trivial_concepts",
   "parameter_id": "#parameters/diameter",
-  "value": "$\\left\\lceil \\frac{n}{2}\\right\\rceil$",
+  "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The only distinct pair is $\\emptyset,[n]$, whose symmetric difference has size $n$."
 }

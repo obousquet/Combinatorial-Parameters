@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/effective_range",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The two concepts $\\emptyset$ and $[n]$ disagree on every coordinate, so every coordinate lies in the effective range."
 }

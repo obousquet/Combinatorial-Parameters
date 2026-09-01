@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "At any coordinate, $\\emptyset$ has label $0$ and $[n]$ has label $1$, so one example teaches either concept. No empty teaching set distinguishes the two concepts."
 }

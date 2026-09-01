@@ -4,7 +4,9 @@
   "short_name": "log_shattering_trivial_concepts",
   "class_id": "#classes/trivial_concepts",
   "parameter_id": "#parameters/log_shattering",
-  "value": "$\\log n$",
+  "value": "$\\log(n+1)$",
   "value_class": "omega_log_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The shattered sets are exactly the empty set and the $n$ singleton subsets: a two-point set would require four traces, but the class has only two. Thus there are $n+1$ shattered sets."
 }

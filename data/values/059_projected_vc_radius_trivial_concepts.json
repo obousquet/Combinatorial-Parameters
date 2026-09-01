@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/projected_vc_radius",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Every nonempty projection is again the two complementary constant concepts, which shatter one point but no two points."
 }

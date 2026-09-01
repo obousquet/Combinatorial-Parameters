@@ -5,6 +5,8 @@
   "class_id": "#classes/trivial_concepts",
   "parameter_id": "#parameters/littlestone_dimension",
   "value": "$1$",
-  "value_class": "omega_n",
-  "details": ""
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "Either coordinate gives a shattered tree of depth one. After observing either label, only one of the two constant concepts remains, so no depth-two tree is shattered."
 }

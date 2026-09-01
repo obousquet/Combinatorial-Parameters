@@ -97,8 +97,8 @@
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The two concepts $\emptyset$ and $[n]$ disagree on every coordinate, so every coordinate lies in the effective range.</p></div>
 
 
         </div>
@@ -111,11 +111,11 @@
         <p><strong>Name: </strong>Log Shattering of Trivial concepts</p>
 <p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Parameter: </strong><a href="parameters/log_shattering.html">Log Shattering</a></p>
-<p><strong>Value: </strong>$\log n$</p>
+<p><strong>Value: </strong>$\log(n+1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The shattered sets are exactly the empty set and the $n$ singleton subsets: a two-point set would require four traces, but the class has only two. Thus there are $n+1$ shattered sets.</p></div>
 
 
         </div>
@@ -284,8 +284,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Any one coordinate distinguishes $\emptyset$ from $[n]$, so either concept can be removed with a teaching set of size one. A nonempty two-concept class cannot have teaching dimension zero.</p></div>
 
 
         </div>
@@ -335,8 +335,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>At any coordinate, $\emptyset$ has label $0$ and $[n]$ has label $1$, so one example teaches either concept. No empty teaching set distinguishes the two concepts.</p></div>
 
 
         </div>
@@ -607,8 +607,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every nontrivial projection is again a pair of complementary constant concepts and has recursive teaching dimension one; trivial projections have value zero.</p></div>
 
 
         </div>
@@ -624,8 +624,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A single coordinate distinguishes either concept, while the empty sample is consistent with both concepts.</p></div>
 
 
         </div>
@@ -811,8 +811,8 @@
 <p><strong>Value: </strong>$0$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The two vertices $\emptyset$ and $[n]$ differ in $n$ coordinates, so the $1$-inclusion graph has no edge (for $n&gt;1$).</p></div>
 
 
         </div>
@@ -1083,8 +1083,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every nonempty projection is again the two complementary constant concepts, which shatter one point but no two points.</p></div>
 
 
         </div>
@@ -1100,8 +1100,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The effective range is all of $[n]$. Every singleton is shattered, whereas no two-point subset is shattered because only two traces are available.</p></div>
 
 
         </div>
@@ -1202,8 +1202,8 @@
 <p><strong>Value: </strong>$0$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A nonempty strongly shattered set would yield a $1$-inclusion edge. The class has none, while the empty set is strongly shattered.</p></div>
 
 
         </div>
@@ -1389,8 +1389,8 @@
 <p><strong>Value: </strong>$\left\lceil \frac{n}{2}\right\rceil$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For a center $T\subseteq[n]$, the two distances are $|T|$ and $n-|T|$. Their maximum is minimized by a balanced $T$, giving $\lceil n/2\rceil$.</p></div>
 
 
         </div>
@@ -1403,11 +1403,11 @@
         <p><strong>Name: </strong>Diameter of Trivial concepts</p>
 <p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Parameter: </strong><a href="parameters/diameter.html">Diameter</a></p>
-<p><strong>Value: </strong>$\left\lceil \frac{n}{2}\right\rceil$</p>
+<p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The only distinct pair is $\emptyset,[n]$, whose symmetric difference has size $n$.</p></div>
 
 
         </div>
@@ -1423,8 +1423,8 @@
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restricting to all $n$ coordinates contains the pair $\emptyset,[n]$, which realizes the defining oriented pair on a set of size $n$.</p></div>
 
 
         </div>
@@ -1440,8 +1440,8 @@
 <p><strong>Value: </strong>$2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>By definition the class consists exactly of $\emptyset$ and $[n]$.</p></div>
 
 
         </div>
@@ -1678,8 +1678,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every singleton is shattered by the restrictions of $\emptyset$ and $[n]$. No two-point set is shattered because the class has only two concepts.</p></div>
 
 
         </div>
@@ -1897,10 +1897,10 @@
 <p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
 <p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Either coordinate gives a shattered tree of depth one. After observing either label, only one of the two constant concepts remains, so no depth-two tree is shattered.</p></div>
 
 
         </div>
@@ -2222,8 +2222,8 @@
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has two concepts, so its binary logarithmic size is $\log_2 2=1$.</p></div>
 
 
         </div>

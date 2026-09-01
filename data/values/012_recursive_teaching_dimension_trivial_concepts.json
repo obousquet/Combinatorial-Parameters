@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/recursive_teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Any one coordinate distinguishes $\\emptyset$ from $[n]$, so either concept can be removed with a teaching set of size one. A nonempty two-concept class cannot have teaching dimension zero."
 }

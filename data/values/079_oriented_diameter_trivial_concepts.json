@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/oriented_diameter",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Restricting to all $n$ coordinates contains the pair $\\emptyset,[n]$, which realizes the defining oriented pair on a set of size $n$."
 }
