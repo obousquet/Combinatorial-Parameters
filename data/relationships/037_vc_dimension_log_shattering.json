@@ -4,5 +4,6 @@
   "parameter_2_id": "#parameters/log_shattering",
   "relationship_type": "inv_log",
   "short_name": "vc_dimension_log_shattering",
-  "name": "VC Dimension / Log Shattering"
+  "name": "VC Dimension / Log Shattering",
+  "witness": "#classes/halfintervals"
 }

@@ -4,7 +4,9 @@
   "short_name": "oriented_diameter_halfintervals",
   "class_id": "#classes/halfintervals",
   "parameter_id": "#parameters/oriented_diameter",
-  "value": "$n$",
+  "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Restrict the two endpoint concepts $[1]$ and $[n]$ to coordinates 2 through $n$; their traces are the empty and full traces, respectively, on $n-1$ coordinates. No oriented pair can differ on more than the diameter $n-1$."
 }

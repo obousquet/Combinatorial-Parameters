@@ -1,0 +1,12 @@
+{
+  "id": 140,
+  "name": "Log Shattering of Half-intervals",
+  "short_name": "log_shattering_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "details": "",
+  "status": "established",
+  "proof": "The empty coordinate set is shattered, as is each singleton coordinate set from 2 through $n$. No two-point set is shattered by a chain, and coordinate 1 is constant. Thus there are exactly $n$ shattered sets."
+}

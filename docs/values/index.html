@@ -2287,11 +2287,11 @@
         <p><strong>Name: </strong>Oriented Diameter of Half-intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Parameter: </strong><a href="parameters/oriented_diameter.html">Oriented Diameter</a></p>
-<p><strong>Value: </strong>$n$</p>
+<p><strong>Value: </strong>$n-1$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
-<p><strong>Status:</strong> </p>
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict the two endpoint concepts $[1]$ and $[n]$ to coordinates 2 through $n$; their traces are the empty and full traces, respectively, on $n-1$ coordinates. No oriented pair can differ on more than the diameter $n-1$.</p></div>
 
 
         </div>
@@ -2394,6 +2394,91 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The shattered sets are exactly the empty set and the $n$ singleton coordinate sets. No two-point set is shattered because the doubleton trace is missing, giving $n+1$ shattered sets.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-137" style="position:relative;">
+        
+        <h3><a href="values/diameter_halfintervals.html" class="table-title-link">Diameter of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Diameter of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/diameter.html">Diameter</a></p>
+<p><strong>Value: </strong>$n-1$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The endpoint concepts $[1]$ and $[n]$ differ exactly on coordinates 2 through $n$. Every pair of nested initial segments differs on at most those $n-1$ coordinates.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-138" style="position:relative;">
+        
+        <h3><a href="values/hamming_radius_halfintervals.html" class="table-title-link">Hamming Radius of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hamming Radius of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Value: </strong>$\lceil(n-1)/2\rceil$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The endpoint concepts are at distance $n-1$, so every enclosing Hamming ball has radius at least $\lceil(n-1)/2\rceil$. An initial segment with a middle-sized endpoint attains this radius for every member of the chain.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-139" style="position:relative;">
+        
+        <h3><a href="values/path_dimension_halfintervals.html" class="table-title-link">Path Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Path Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/path_dimension.html">Path Dimension</a></p>
+<p><strong>Value: </strong>$n-1$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Successive initial segments from $[1]$ to $[n]$ form a path of length $n-1$, flipping one new coordinate at each step. A longer path would require more than the $n$ concepts in the class.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-140" style="position:relative;">
+        
+        <h3><a href="values/log_shattering_halfintervals.html" class="table-title-link">Log Shattering of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Log Shattering of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/log_shattering.html">Log Shattering</a></p>
+<p><strong>Value: </strong>$\log n$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The empty coordinate set is shattered, as is each singleton coordinate set from 2 through $n$. No two-point set is shattered by a chain, and coordinate 1 is constant. Thus there are exactly $n$ shattered sets.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-141" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_halfintervals.html" class="table-title-link">VC Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Any coordinate other than 1 is realized both positively and negatively by the chain. A two-point set cannot be shattered because the traces of a chain are totally ordered and therefore omit one incomparable pattern.</p></div>
 
 
         </div>

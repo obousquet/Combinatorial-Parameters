@@ -1,0 +1,12 @@
+{
+  "id": 138,
+  "name": "Hamming Radius of Half-intervals",
+  "short_name": "hamming_radius_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/hamming_radius",
+  "value": "$\\lceil(n-1)/2\\rceil$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "The endpoint concepts are at distance $n-1$, so every enclosing Hamming ball has radius at least $\\lceil(n-1)/2\\rceil$. An initial segment with a middle-sized endpoint attains this radius for every member of the chain."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 141,
+  "name": "VC Dimension of Half-intervals",
+  "short_name": "vc_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "Any coordinate other than 1 is realized both positively and negatively by the chain. A two-point set cannot be shattered because the traces of a chain are totally ordered and therefore omit one incomparable pattern."
+}

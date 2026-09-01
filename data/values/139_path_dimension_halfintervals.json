@@ -1,0 +1,12 @@
+{
+  "id": 139,
+  "name": "Path Dimension of Half-intervals",
+  "short_name": "path_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/path_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "Successive initial segments from $[1]$ to $[n]$ form a path of length $n-1$, flipping one new coordinate at each step. A longer path would require more than the $n$ concepts in the class."
+}

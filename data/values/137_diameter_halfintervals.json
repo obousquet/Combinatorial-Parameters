@@ -1,0 +1,12 @@
+{
+  "id": 137,
+  "name": "Diameter of Half-intervals",
+  "short_name": "diameter_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/diameter",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "The endpoint concepts $[1]$ and $[n]$ differ exactly on coordinates 2 through $n$. Every pair of nested initial segments differs on at most those $n-1$ coordinates."
+}
