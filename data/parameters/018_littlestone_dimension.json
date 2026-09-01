@@ -12,5 +12,6 @@
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": true
+  "strictly_monotonic": true,
+  "strict_c_monotonic": true
 }

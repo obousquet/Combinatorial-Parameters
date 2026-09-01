@@ -110,6 +110,22 @@
         "rendered": true
     },
     {
+        "name": "strict_c_monotonic",
+        "type": "boolean",
+        "label": "Strict C-Monotonic",
+        "description": "Whether the parameter is c-monotonic, is zero only on classes of size at most one, and strictly exceeds the smaller one-coordinate conditioned branch",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "tight_strict_c_monotonic",
+        "type": "boolean",
+        "label": "Tight Strict C-Monotonic",
+        "description": "Whether the parameter is strict c-monotonic and, when its two one-coordinate conditioned branches have the same value d, has value exactly d+1",
+        "required": false,
+        "rendered": true
+    },
+    {
         "name": "doubly_monotonic",
         "type": "boolean",
         "label": "Doubly Monotonic",
@@ -121,7 +137,7 @@
         "name": "strictly_monotonic",
         "type": "boolean",
         "label": "Strictly Monotonic",
-        "description": "Whether the parameter is strictly monotonic",
+        "description": "Whether the parameter is doubly monotonic, is zero only on classes of size at most one, and strictly exceeds the smaller one-coordinate conditioned branch",
         "required": false,
         "rendered": true
     },

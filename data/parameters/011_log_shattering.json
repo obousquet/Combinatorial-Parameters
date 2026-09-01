@@ -10,5 +10,6 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": true,
+  "strict_c_monotonic": true,
   "short_name": "log_shattering"
 }
