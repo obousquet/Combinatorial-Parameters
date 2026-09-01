@@ -10,5 +10,6 @@
   "doubly_monotonic": true,
   "strictly_monotonic": true,
   "strict_c_monotonic": true,
+  "tight_strict_c_monotonic": true,
   "short_name": "equivalence_queries_complexity"
 }

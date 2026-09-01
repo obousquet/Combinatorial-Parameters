@@ -121,7 +121,7 @@
         "name": "tight_strict_c_monotonic",
         "type": "boolean",
         "label": "Tight Strict C-Monotonic",
-        "description": "Whether the parameter is strict c-monotonic and, when its two one-coordinate conditioned branches have the same value d, has value exactly d+1",
+        "description": "Whether the parameter is strict c-monotonic and equals the maximum, over one-coordinate splits, of the larger branch value or one plus their common value when they are equal",
         "required": false,
         "rendered": true
     },
