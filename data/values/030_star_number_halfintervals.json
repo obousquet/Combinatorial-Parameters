@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/star_number",
   "value": "$2$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The 1-inclusion graph of the chain is a path: an internal initial segment has its two consecutive neighbours, and no concept has more."
 }

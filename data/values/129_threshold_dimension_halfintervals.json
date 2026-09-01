@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/threshold_dimension",
   "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The chain of initial segments from $[1]$ through $[n]$ gives a threshold sequence on $n-1$ successive changes. A longer threshold sequence would require more than the $n$ distinct concepts in the class."
 }

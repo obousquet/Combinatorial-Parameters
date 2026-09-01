@@ -4,7 +4,9 @@
   "short_name": "effective_range_halfintervals",
   "class_id": "#classes/halfintervals",
   "parameter_id": "#parameters/effective_range",
-  "value": "$n$",
+  "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Coordinate 1 belongs to every initial segment. For each coordinate $i>1$, consecutive initial segments $[i-1]$ and $[i]$ disagree at $i$. Hence exactly the $n-1$ coordinates from 2 through $n$ are effective."
 }

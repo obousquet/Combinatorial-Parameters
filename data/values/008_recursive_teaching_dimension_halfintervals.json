@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/recursive_teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The half-intervals form a chain. At every recursive stage, an endpoint of the remaining chain is identified by one labelled coordinate, so the minimum teaching-set size is one."
 }
