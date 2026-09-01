@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/log_size",
   "parameter_2_id": "#parameters/sign_rank",
   "relationship_type": "larger",
+  "details": "Invalid as stated.  If the rows are the concepts of an $N\\times N$ Hadamard sign matrix, then $|\\mathcal H|=N$ but its sign rank is at least $\\sqrt N$.",
+  "status": "refuted",
+  "proof": "Interpret the rows of an $N\\times N$ Hadamard matrix as concepts on its $N$ columns.  Forster's spectral lower bound gives sign rank at least $\\sqrt N$.  For arbitrarily large powers of two, $\\sqrt N>\\log_2N$, contradicting the displayed inequality.",
+  "references": "\\cite{forster2002linear}",
   "short_name": "log_size_sign_rank",
   "name": "Log Size / Sign Rank"
 }

@@ -313,13 +313,15 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     legend.extend([{"type": "edge", "label": t, "text": arrow_values[t], **v} for t, v in arrow_map.items()])
 
     parameters = cache.get_table_entries("parameters")
-    # Records awaiting verification are retained in the catalogue with their
-    # warning and counterexample, but must not create graph edges, influence
-    # equivalence collapse, or affect ranks in the Hasse-like diagram.
+    # Non-established records are retained in the catalogue with their warning
+    # and counterexample, but must not create graph edges, influence equality
+    # collapse, or affect ranks in the Hasse-like diagram.
     relationships = [
         relationship
         for relationship in cache.get_table_entries("relationships")
-        if relationship.get("status") != "needs_verification"
+        if relationship.get("status") not in {
+            "needs_verification", "conjectured", "open", "refuted"
+        }
     ]
     equivalence_components, equivalence_component_of = exact_equivalence_components(
         parameters, relationships

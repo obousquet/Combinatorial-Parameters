@@ -3,7 +3,9 @@
   "parameter_1_id": "#parameters/oriented_diameter",
   "parameter_2_id": "#parameters/diameter",
   "relationship_type": "larger_c",
-  "details": "Lemma",
+  "details": "Invalid as stated.  The family $\\mathcal H=\\{\\{1\\},\\{2\\}\\}$ has oriented diameter $0$ and diameter $2$.",
+  "status": "refuted",
+  "proof": "On its two-coordinate domain, this family has no projection containing both $\\varnothing$ and its full coordinate set, so $\\mathrm D^+(\\mathcal H)=0$.  Its two concepts differ on both coordinates, hence $\\mathrm D(\\mathcal H)=2$.  No positive universal constant can make the displayed inequality hold.",
   "short_name": "oriented_diameter_diameter",
   "name": "Oriented Diameter / Diameter"
 }

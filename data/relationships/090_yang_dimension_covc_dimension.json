@@ -3,6 +3,11 @@
   "parameter_1_id": "#parameters/yang_dimension",
   "parameter_2_id": "#parameters/covc_dimension",
   "relationship_type": "larger",
+  "details": "Contradicted by singletons: Yang dimension is $2\\log_2 n$, while co-VC dimension is $n$.",
+  "proof": "On Yang's delta-function realization of the singleton class, the recorded Yang dimension grows only logarithmically in n, while co-VC dimension equals n. For arbitrarily large n, the former is smaller, so the displayed universal inequality cannot be established as written.",
+  "witness": "#classes/singletons",
+  "references": "\\cite{yang2018homological}",
+  "status": "refuted",
   "short_name": "yang_dimension_covc_dimension",
   "name": "Yang dimension / co-VC dimension"
 }

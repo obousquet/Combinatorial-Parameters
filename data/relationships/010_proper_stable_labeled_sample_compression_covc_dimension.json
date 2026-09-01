@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/proper_stable_labeled_sample_compression",
   "parameter_2_id": "#parameters/covc_dimension",
   "relationship_type": "larger",
+  "details": "Contradicted by the trivial two-concept class: proper stable labeled compression is 1, whereas co-VC dimension is 2.",
+  "proof": "For the two constant concepts on a two-point domain, retaining one labeled example gives a proper stable labeled compression scheme, so the compression value is 1. The two traces form a hollow 2-star (the two mixed labelings are absent), so co-VC dimension is 2. Hence the stated universal inequality is false.",
+  "witness": "#classes/trivial_concepts",
+  "status": "refuted",
   "short_name": "proper_stable_labeled_sample_compression_covc_dimension",
   "name": "Proper Stable Labeled Sample Compression / co-VC dimension"
 }

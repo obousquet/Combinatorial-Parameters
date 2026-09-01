@@ -99,14 +99,39 @@
             { "value": "established", "display_name": "Established" },
             { "value": "conjectured", "display_name": "Conjectured" },
             { "value": "open", "display_name": "Open" },
-            { "value": "needs_verification", "display_name": "Needs verification" }
+            { "value": "needs_verification", "display_name": "Needs verification" },
+            { "value": "refuted", "display_name": "Refuted" }
         ]
     },
     {
         "name": "proof",
         "type": "text",
         "label": "Proof or Proof Sketch",
-        "description": "Concise argument supporting the relationship",
+        "description": "Concise argument supporting the relationship. Omit duplicated prose when latex_proof_label names the survey's canonical full proof.",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "latex_proof_label",
+        "type": "string",
+        "label": "LaTeX Proof Label",
+        "description": "Stable \\label name for the canonical full proof in the LaTeX survey",
+        "required": false,
+        "rendered": false
+    },
+    {
+        "name": "proof_source",
+        "type": "text",
+        "label": "Full Proof",
+        "description": "Location of the canonical full proof when it is maintained by the LaTeX survey",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "derivation",
+        "type": "text",
+        "label": "Derivation",
+        "description": "Structured-construction provenance, when this relationship is forced from another recorded relationship.",
         "required": false,
         "rendered": true
     },

@@ -4,7 +4,9 @@
   "parameter_2_id": "#parameters/hitting_size",
   "relationship_type": "larger",
   "variant": "relative",
-  "details": "Definition",
+  "details": "Needs a corrected scope or formulation: for the one-concept class $\\mathcal H=\\{h\\}$ with $h\\ne\\emptyset$, $\\mathrm{HT}(\\mathcal H)>0$ whereas $\\mathrm{RHT}(\\mathcal H)=0$ under the current definition.",
   "short_name": "relative_hitting_size_hitting_size",
-  "name": "Relative Hitting Size / Hitting Size"
+  "name": "Relative Hitting Size / Hitting Size",
+  "status": "refuted",
+  "proof": "The displayed unconditional inequality is not valid with the current definitions; the one-concept example above is a counterexample."
 }
