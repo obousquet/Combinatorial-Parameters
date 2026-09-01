@@ -1,0 +1,12 @@
+{
+  "id": 149,
+  "name": "Path Dimension of Singletons",
+  "short_name": "path_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/path_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "Restricting to any singleton coordinate gives both empty and full one-point traces. No two-step path occurs because no restriction contains a doubleton trace."
+}

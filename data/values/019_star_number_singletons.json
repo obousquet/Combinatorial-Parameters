@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/star_number",
   "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Restrict to any $n-1$ coordinates. The singleton outside that set becomes the empty trace, while the remaining singletons form its $n-1$ neighbours, giving an $(n-1)$-star. No restriction can yield a larger star."
 }

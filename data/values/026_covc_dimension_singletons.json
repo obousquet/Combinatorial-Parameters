@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/covc_dimension",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "On the full domain, the empty trace is missing while all $n$ of its one-coordinate neighbours, the singleton concepts, are present. This is a hollow $n$-star."
 }

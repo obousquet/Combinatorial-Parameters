@@ -1,0 +1,12 @@
+{
+  "id": 147,
+  "name": "Diameter of Singletons",
+  "short_name": "diameter_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/diameter",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "Any two distinct singleton concepts differ on exactly their two respective coordinates."
+}

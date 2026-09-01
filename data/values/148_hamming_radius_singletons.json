@@ -1,0 +1,12 @@
+{
+  "id": 148,
+  "name": "Hamming Radius of Singletons",
+  "short_name": "hamming_radius_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/hamming_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "The radius-one Hamming ball centred at the empty set contains every singleton. Radius zero cannot contain more than one concept."
+}
