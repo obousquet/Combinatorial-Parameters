@@ -8,5 +8,6 @@
   "p_monotonic": false,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "recursive_teaching_dimension"
+  "short_name": "recursive_teaching_dimension",
+  "origin_references": "Introduced as a teaching model in \\cite{zilles2011models}; its relation to VC dimension and sample compression is developed in \\cite{doliwa2014recursive}."
 }

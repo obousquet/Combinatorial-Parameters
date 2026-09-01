@@ -68,6 +68,14 @@
         "rendered": true
     },
     {
+        "name": "origin_references",
+        "type": "text",
+        "label": "Origin References",
+        "description": "Primary sources that introduced the parameter or its defining model, using shared citation keys",
+        "required": false,
+        "rendered": true
+    },
+    {
         "name": "category",
         "type": "enum",
         "label": "Category",

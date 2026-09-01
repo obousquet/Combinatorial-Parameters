@@ -6,6 +6,7 @@
   "definition": "",
   "description": "\\cite{littlestone1988learning}",
   "comments": "",
+  "origin_references": "\\cite{littlestone1988learning}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,

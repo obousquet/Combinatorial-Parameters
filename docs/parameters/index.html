@@ -96,6 +96,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>effective range</strong> $E(\mathcal{H})$ of a family $\mathcal{H}$ is the number of elements that can be distinguished by members of $\mathcal{H}$: $$ E(\mathcal{H}):= |{x:x\in\mathcal{X|,\, \exists h_1,h_2\in\mathcal{H},\, x\in h_1 \Delta h_2}} $$</p></div>
 
 
+
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -118,6 +119,7 @@
         <p><strong>Name: </strong>Size</p>
 <p><strong>Symbol: </strong>$\mathrm{H}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>size</strong> of a family $\mathcal{H}$ is simply the  cardinality, $$  |\mathcal{H|} $$</p></div>
+
 
 
 <p><strong>Category:</strong> Basic</p>
@@ -144,6 +146,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>oriented diameter</strong> $\mathrm{D}^+(\mathcal{H})$ of a family $\mathcal{H}$ is defined as $$ \mathrm{D}^+(\mathcal{H}):= \max{|S|: {\emptyset, S}\subset \mathcal{H}_{|S}} $$</p></div>
 
 
+
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> No</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -168,6 +171,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>diameter</strong> $D(\mathcal{H})$ of a family $\mathcal{H}$ is the largest distance between two elements of the family, i.e. $$ D(\mathcal{H}):= \max_{h_1,h_2\in\mathcal{H}} |h_1\Delta h_2| $$</p></div>
 
 <strong>Comments:</strong><div class="text-field"><p>The diameter is equal to the strict diameter dimension.</p></div>
+
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -190,6 +194,7 @@
         <p><strong>Name: </strong>Hamming Radius</p>
 <p><strong>Symbol: </strong>$\mathrm{B}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Hamming Radius</strong> $B(\mathcal{H})$ of a family $\mathcal{H}$ is the smallest radius of an enclosing Hamming ball, defined as $$ B(\mathcal{H}):= \min{d: \exists T\subset \mathcal{X},\, \forall h\in \mathcal{H},\, |h\Delta T|\le d} $$</p></div>
+
 
 
 <p><strong>Category:</strong> Basic</p>
@@ -216,6 +221,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Threshold dimension</strong> of a family $\mathcal{H}$, denoted by $T(\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\subset \mathcal{X}$, of size $d$ such that $\mathcal{H}_{|S}$ contains thresholds, i.e. there is an ordering $x_1,\ldots,x_d$ of the elements of $S$ such that $$ \forall 0\le k\le d,\, {x_1,\ldots,x_k} \in \mathcal{H}_{|S}\,. $$</p></div>
 
 <strong>Comments:</strong><div class="text-field"><p>Note that this means $\mathcal{H}_{|S}$ contains a $d+1$-chain, i.e. $d+1$ sets $S_1,\ldots,S_{d+1}$ such that $S_1\subset \ldots\subset S_{d+1}$.</p></div>
+
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> No</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -238,6 +244,7 @@
         <p><strong>Name: </strong>Path Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{P}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Path dimension</strong> of a family $\mathcal{H}$, denoted by $P(\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\subset \mathcal{X}$, of size $d$ such that $\mathcal{H}_{|S}$ contains a full path, i.e. there is an ordering $x_1,\ldots,x_d$ of the elements of $S$ and a subset $T\subset S$ such that $$ \forall 0\le k\le d,\, T\Delta {x_1,\ldots,x_k} \in \mathcal{H}_{|S}\,. $$</p></div>
+
 
 
 <p><strong>Category:</strong> Basic</p>
@@ -264,6 +271,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>densest subgraph dimension</strong> of a concept class is equal to twice the density of the densest subgraph (a.k.a. <strong>subgraph density</strong>) of its $1$-inclusion graph.</p></div>
 
 <strong>Comments:</strong><div class="text-field"><p>The densest subgraph is dual to the lowest outdegree orientation.</p></div>
+
 <p><strong>Category:</strong> Graph-based</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -286,6 +294,7 @@
         <p><strong>Name: </strong>Double Density or Average Degree</p>
 <p><strong>Symbol: </strong>$\mathrm{dens}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>double-density</strong> of a concept class is defined as twice the density of its $1$-inclusion graph, i.e twice the ratio of edges to vertices, or equivalently the average degree.</p></div>
+
 
 
 <p><strong>Category:</strong> Graph-based</p>
@@ -312,6 +321,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>minimum degree</strong> of a concept class is defined as the minimum degree of its $1$-inclusion graph.</p></div>
 
 
+
 <p><strong>Category:</strong> Graph-based</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -334,6 +344,7 @@
         <p><strong>Name: </strong>Log Shattering</p>
 <p><strong>Symbol: </strong>$\log \mathrm{sh}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Log Shattering</strong> of a family $\mathcal{H}$ is the (binary) log of the number of its shattered sets, $$ \log |sh{\mathcal{H|}} $$</p></div>
+
 
 
 <p><strong>Category:</strong> Shattering</p>
@@ -360,6 +371,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>VC dimension</strong> of a family $\mathcal{H}$, denoted by $\VC(\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\subset \mathcal{X}$, of size $d$ such that $S$ is shattered by $\mathcal{H}$, i.e.  $$ |\mathcal{H|_{|S}} = 2^{|S|}\,. $$</p></div>
 <strong>Description:</strong><div class="text-field"><p>Vapnik-Chervonenkis Dimension <a href="bibliography.html#vc71">[vc71]</a>.</p></div>
 
+
 <p><strong>Category:</strong> Shattering</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -382,6 +394,7 @@
         <p><strong>Name: </strong>Effective VC Radius</p>
 <p><strong>Symbol: </strong>$\mathrm{VCR}$</p>
 <strong>Definition:</strong><div class="text-field"><p>For a family $\mathcal{H}\subset 2^\mathcal{X}$, we define the <strong>effective VC radius</strong> as the largest integer $k$ such that all subsets of size $k$ of the effective range of $\mathcal{H}$, i.e. $\bigcup {h\Delta h': h,h'\in \mathcal{H}}$ are shattered by $\mathcal{H}$.</p></div>
+
 
 
 <p><strong>Category:</strong> Shattering</p>
@@ -408,6 +421,7 @@
 
 <strong>Description:</strong><div class="text-field"><p>Projective dimension of the cuboplex</p></div>
 
+
 <p><strong>Category:</strong> Algebraic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -431,6 +445,7 @@
 <p><strong>Symbol: </strong>$\mathrm{intdeg}$</p>
 
 <strong>Description:</strong><div class="text-field"><p>Minimum degree of an interpolating polynomial</p></div>
+
 
 <p><strong>Category:</strong> Algebraic</p>
 <p><strong>Symmetric:</strong> Yes</p>
@@ -456,6 +471,7 @@
 
 <strong>Description:</strong><div class="text-field"><p>Minimum size of an unlabeled sample compression scheme</p></div>
 
+
 <p><strong>Category:</strong> Compression</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -480,6 +496,7 @@
 
 
 
+<strong>Origin References:</strong><div class="text-field"><p>Introduced as a teaching model in <a href="bibliography.html#zilles2011models">[zilles2011models]</a>; its relation to VC dimension and sample compression is developed in <a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a>.</p></div>
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -504,6 +521,7 @@
 
 <strong>Description:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
 
+<strong>Origin References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -528,6 +546,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Star dimension</strong> of a family $\mathcal{H}$, denoted by $S(\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\subset \mathcal{X}$, of size $d$ such that $\mathcal{H}_{|S}$ contains a $d$-star, i.e. there is a subset $T\subset S$ such that $$ T\in \mathcal{H}_{|S} \,\mbox{ and }\, \forall x\in S,\, T\Delta {x} \in \mathcal{H}_{|S}\,. $$</p></div>
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -549,6 +568,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Monotone Recursive Teaching Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{RTD}^p$</p>
+
 
 
 
@@ -576,6 +596,7 @@
 
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -597,6 +618,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Hitting Size</p>
 <p><strong>Symbol: </strong>$\mathrm{HT}$</p>
+
 
 
 
@@ -624,6 +646,7 @@
 
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -645,6 +668,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Membership Query Complexity</p>
 <p><strong>Symbol: </strong>$\mathrm{Q}_m$</p>
+
 
 
 
@@ -672,6 +696,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -693,6 +718,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Majority Complexity</p>
 <p><strong>Symbol: </strong>$\mathrm{Maj}$</p>
+
 
 
 
@@ -720,6 +746,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -741,6 +768,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Membership and Equivalence Queries Complexity</p>
 <p><strong>Symbol: </strong>$\mathrm{Q}_\mathrm{meq}$</p>
+
 
 
 
@@ -768,6 +796,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -789,6 +818,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Best Mistakes</p>
 <p><strong>Symbol: </strong>$\mathrm{M}_{\mathrm{best}}$</p>
+
 
 
 
@@ -816,6 +846,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -837,6 +868,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Self-Directed Queries Complexity</p>
 <p><strong>Symbol: </strong>$\mathrm{M}_{\mathrm{sd}}$</p>
+
 
 
 
@@ -864,6 +896,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -885,6 +918,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Order Sample Compression</p>
 <p><strong>Symbol: </strong>$\mathrm{OSC}$</p>
+
 
 
 
@@ -912,6 +946,7 @@
 
 
 
+
 <p><strong>Category:</strong> Compression</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -933,6 +968,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Proper Stable Sample Compression</p>
 <p><strong>Symbol: </strong>$\mathrm{psUSC}$</p>
+
 
 
 
@@ -960,6 +996,7 @@
 
 
 
+
 <p><strong>Category:</strong> Compression</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -981,6 +1018,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Labeled Sample Compression</p>
 <p><strong>Symbol: </strong>$\mathrm{LSC}$</p>
+
 
 
 
@@ -1008,6 +1046,7 @@
 
 
 
+
 <p><strong>Category:</strong> Compression</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1029,6 +1068,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Proper Labeled Sample Compression</p>
 <p><strong>Symbol: </strong>$\mathrm{pLSC}$</p>
+
 
 
 
@@ -1056,6 +1096,7 @@
 
 
 
+
 <p><strong>Category:</strong> Compression</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -1078,6 +1119,7 @@
         <p><strong>Name: </strong>co-VC dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{coVC}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>coVC number</strong> of a family $\mathcal{H}$, denoted by $\covcmod(\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\subset \mathcal{X}$, of size $d$ such that $\mathcal{H}_{|S}$ contains a hollow $d$-star, i.e. there is a subset $T\subset S$ such that $$ T\notin \mathcal{H}_{|S} \,\mbox{ and }\, \forall x\in S,\, T\Delta {x} \in \mathcal{H}_{|S}\,. $$</p></div>
+
 
 
 <p><strong>Category:</strong> Holes and Homology</p>
@@ -1104,6 +1146,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>sign rank</strong> of a sign matrix $S$ is the maximum number $k$ such for all real matrix $M$ whose signs are $S$, $M$ has rank at least $k$.</p></div>
 
 
+
 <p><strong>Category:</strong> Algebraic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1125,6 +1168,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Equivalence Queries Complexity</p>
 <p><strong>Symbol: </strong>$\mathrm{Q}_{\mathrm{eq}}$</p>
+
 
 
 
@@ -1152,6 +1196,7 @@
 
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> No</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1173,6 +1218,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Preference-Based Teaching Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{PBTD}$</p>
+
 
 
 
@@ -1200,6 +1246,7 @@
 
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1222,6 +1269,7 @@
         <p><strong>Name: </strong>Log Size</p>
 <p><strong>Symbol: </strong>$\log \mathrm{H}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Log Size</strong> of a family $\mathcal{H}$ is simply the (binary) log of its cardinality, $$ \log |\mathcal{H|} $$</p></div>
+
 
 
 <p><strong>Category:</strong> Basic</p>
@@ -1248,6 +1296,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Log Size Ratio</strong> of a family $\mathcal{H}$ is the ratio of the log of its cardinality to the log of the effective range, $$ \log \frac{|\mathcal{H|}-1}{\log (n+1)} $$</p></div>
 
 
+
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1269,6 +1318,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity</p>
 <p><strong>Symbol: </strong>$\mathrm{Q}_{\mathrm{rpeq}}$</p>
+
 
 
 
@@ -1296,6 +1346,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1317,6 +1368,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Projected Membership Queries Complexity</p>
 <p><strong>Symbol: </strong>$\mathrm{Q}_{\mathrm{m}}^p$</p>
+
 
 
 
@@ -1344,6 +1396,7 @@
 
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -1365,6 +1418,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Teaching Set Size</p>
 <p><strong>Symbol: </strong>$\mathrm{TS}_{\max}$</p>
+
 
 
 
@@ -1392,6 +1446,7 @@
 
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> No</p>
@@ -1413,6 +1468,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Projected Teaching Set Size</p>
 <p><strong>Symbol: </strong>$\mathrm{TS}_{\max}^p$</p>
+
 
 
 
@@ -1440,6 +1496,7 @@
 
 
 
+
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1461,6 +1518,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Monotonic Projected Minimum Teaching Set Size</p>
 <p><strong>Symbol: </strong>$\mathrm{TS}_{\min}^{*p}$</p>
+
 
 
 
@@ -1488,6 +1546,7 @@
 
 
 
+
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1509,6 +1568,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Proper Ordered Sample Compression</p>
 <p><strong>Symbol: </strong>$\mathrm{pOSC}$</p>
+
 
 
 
@@ -1536,6 +1596,7 @@
 
 
 
+
 <p><strong>Category:</strong> Shattering</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1557,6 +1618,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Minimum Largest Order Shattered Set</p>
 <p><strong>Symbol: </strong>$\mathrm{OSH}_{\min}$</p>
+
 
 
 
@@ -1584,6 +1646,7 @@
 
 
 
+
 <p><strong>Category:</strong> Shattering</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1606,6 +1669,7 @@
         <p><strong>Name: </strong>Degeneracy</p>
 <p><strong>Symbol: </strong>$\mathrm{d}^*_{\min}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>degeneracy</strong> of a concept class is defined as the degeneracy of its $1$-inclusion graph, i.e. the maximum over induced subgraphs of the minimum degree.</p></div>
+
 
 
 <p><strong>Category:</strong> Graph-based</p>
@@ -1632,6 +1696,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>maximum degree</strong> of a concept class is defined as the maximum degree of its $1$-inclusion graph.</p></div>
 
 
+
 <p><strong>Category:</strong> Graph-based</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1656,6 +1721,7 @@
 
 
 
+
 <p><strong>Category:</strong> Graph-based</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1676,6 +1742,7 @@
         <h3>No Name</h3>
         <div class="table-details">
         
+
 
 
 
@@ -1704,6 +1771,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>projected double density</strong> of a concept class is defined as the maximum over all projections of the averaged degree of the $1$-inclusion graph.</p></div>
 
 
+
 <p><strong>Category:</strong> Graph-based</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1728,6 +1796,7 @@
 
 
 
+
 <p><strong>Category:</strong> Graph-based</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1748,6 +1817,7 @@
         <h3>No Name</h3>
         <div class="table-details">
         
+
 
 
 
@@ -1776,6 +1846,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>dual sign rank</strong> of a sign matrix $S$ is the maximum number $k$ such that there exist $k$ columns of $S$ such that any real matrix $M$ with signs $S$ has those column linearly independent.</p></div>
 
 
+
 <p><strong>Category:</strong> Algebraic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1797,6 +1868,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Projected VC Radius</p>
 <p><strong>Symbol: </strong>$\mathrm{VCR}^p$</p>
+
 
 
 
@@ -1824,6 +1896,7 @@
 
 
 
+
 <p><strong>Category:</strong> Shattering</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1845,6 +1918,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Maximum Largest Order Shattered Set</p>
 <p><strong>Symbol: </strong>$\mathrm{OSH}_{\max}$</p>
+
 
 
 
@@ -1872,6 +1946,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Maximum Positive Degree</strong> of a concept class is the maximum dominance of its $1$-inclusion graph (where dominance is the number of neighbors that are smaller with respect to inclusion).</p></div>
 
 
+
 <p><strong>Category:</strong> Graph-based</p>
 <p><strong>Symmetric:</strong> No</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1893,6 +1968,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Positive No-Clashing Teaching Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{NCTD}^+$</p>
+
 
 
 
@@ -1920,6 +1996,7 @@
 <strong>Definition:</strong><div class="text-field"><p>Minimum number of coordinates over which all concepts in the class can be distinguished.</p></div>
 
 
+
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1941,6 +2018,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Positive Recursive Teaching Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{RTD}^+$</p>
+
 
 
 
@@ -1968,6 +2046,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -1989,6 +2068,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>3-Littlestone Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{L}_3$</p>
+
 
 
 
@@ -2016,6 +2096,7 @@
 
 
 
+
 <p><strong>Category:</strong> Queries</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -2038,6 +2119,7 @@
         <p><strong>Name: </strong>Monotonic Yang Dimension</p>
 <p><strong>Symbol: </strong>$\mathrm{Y}^*$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>monotonic Yang dimension</strong> is the subfamily-monotonic version of Yang dimension: $$\mathrm{Y}^*(\mathcal{H}) := \max_{\mathcal{G}\subseteq\mathcal{H}} \mathrm{Y}(\mathcal{G}).$$</p></div>
+
 
 
 <p><strong>Category:</strong> Algebraic</p>
@@ -2063,6 +2145,7 @@
 <p><strong>Symbol: </strong>$\mathrm{XTD}$</p>
 <strong>Definition:</strong><div class="text-field"><p>The <strong>extended teaching dimension</strong> is $$\mathrm{XTD}(\mathcal{H}) := \max_{f\subseteq\mathcal{X}}\min\left{|S|:S\subseteq\mathcal{X},\;\left|{h\in\mathcal{H}:h\cap S=f\cap S}\right|\leq 1\right}.$$ Thus the target labeling $f$ need not belong to $\mathcal{H}$.</p></div>
 <strong>Description:</strong><div class="text-field"><p>Equivalently, it is the largest minimum size of a specifying set for an arbitrary labeling with respect to the class.</p></div>
+
 
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
