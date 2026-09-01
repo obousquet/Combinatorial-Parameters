@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/size",
   "value": "$n+1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The class consists of the $n$ singleton subsets of $[n]$ together with the empty subset."
 }

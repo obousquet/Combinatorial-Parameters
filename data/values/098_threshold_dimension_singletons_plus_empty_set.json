@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/threshold_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The empty set and any singleton give a threshold chain of length one. A chain of length two would contain a doubleton, which the class does not contain."
 }

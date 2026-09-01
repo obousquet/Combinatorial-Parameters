@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/recursive_teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Each singleton can be removed using its unique positive coordinate as a one-point teaching set; the empty concept is then the only remaining concept. Thus every recursive round has minimum teaching-set size one."
 }

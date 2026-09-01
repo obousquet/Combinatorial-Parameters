@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/effective_range",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "For every coordinate $i$, the empty concept and the singleton at $i$ disagree at $i$. Hence every coordinate is effective."
 }

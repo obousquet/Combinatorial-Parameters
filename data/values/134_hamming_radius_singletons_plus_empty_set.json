@@ -1,0 +1,12 @@
+{
+  "id": 134,
+  "name": "Hamming Radius of Singletons plus empty set",
+  "short_name": "hamming_radius_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/hamming_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "The Hamming ball of radius one centred at the empty set contains the empty set and every singleton. Radius zero cannot contain this nonconstant class."
+}

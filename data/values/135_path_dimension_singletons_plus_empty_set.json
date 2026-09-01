@@ -1,0 +1,12 @@
+{
+  "id": 135,
+  "name": "Path Dimension of Singletons plus empty set",
+  "short_name": "path_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/path_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "For distinct $i,j$, start at the singleton at $i$, flip $i$ to obtain the empty set, then flip $j$ to obtain its singleton: this is a path of length two. A third distinct coordinate would produce a doubleton after the next flip, which is absent from the class."
+}

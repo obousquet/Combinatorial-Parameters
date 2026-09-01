@@ -1,0 +1,12 @@
+{
+  "id": 133,
+  "name": "Diameter of Singletons plus empty set",
+  "short_name": "diameter_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/diameter",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "Two distinct singleton concepts have symmetric difference of size two. No two concepts in this class can differ on more than two coordinates."
+}

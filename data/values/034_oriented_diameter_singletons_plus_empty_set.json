@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/oriented_diameter",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The empty set and any singleton form an oriented pair on one coordinate. No oriented pair can differ on two coordinates, since the class contains no nonempty set of size two."
 }

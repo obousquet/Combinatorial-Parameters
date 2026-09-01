@@ -1,0 +1,12 @@
+{
+  "id": 136,
+  "name": "Log Shattering of Singletons plus empty set",
+  "short_name": "log_shattering_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$\\log(n+1)$",
+  "value_class": "omega_log_n",
+  "details": "",
+  "status": "established",
+  "proof": "The shattered sets are exactly the empty set and the $n$ singleton coordinate sets. No two-point set is shattered because the doubleton trace is missing, giving $n+1$ shattered sets."
+}

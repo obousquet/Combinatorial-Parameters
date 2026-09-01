@@ -4,5 +4,6 @@
   "parameter_2_id": "#parameters/proper_equivalence_queries_complexity",
   "relationship_type": "larger",
   "short_name": "size_proper_equivalence_queries_complexity",
-  "name": "Size / Proper Equivalence Queries Complexity"
+  "name": "Size / Proper Equivalence Queries Complexity",
+  "witness": "#classes/halfintervals"
 }

@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/proper_equivalence_queries_complexity",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Query the empty concept. If it is not the target, a counterexample is its unique positive coordinate, identifying the target singleton. One query is necessary for a non-singleton class."
 }

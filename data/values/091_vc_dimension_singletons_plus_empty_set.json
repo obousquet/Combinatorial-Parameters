@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/vc_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Every one-point set is shattered by the empty concept and its singleton. No two-point set is shattered because the required doubleton restriction is absent."
 }

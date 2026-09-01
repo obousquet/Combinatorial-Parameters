@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/covc_dimension",
   "value": "$2$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "On any two coordinates, the restrictions contain the empty set and both singletons but omit their doubleton, a hollow 2-star. A larger hollow star would require a missing set whose one-coordinate neighbours are all in the class, which is impossible because the class contains only sets of size at most one."
 }
