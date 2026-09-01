@@ -1,0 +1,11 @@
+{
+  "id": 185,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/threshold_dimension",
+  "relationship_type": "larger",
+  "name": "Effective Range / Threshold Dimension",
+  "short_name": "effective_range_threshold_dimension",
+  "status": "established",
+  "details": "Every coordinate of a nontrivial threshold trace is active.",
+  "proof": "A threshold trace on S contains concepts with different labels at every coordinate of S. Hence every coordinate of S belongs to the effective range, so \\(\\mathrm E(\\mathcal H)\\ge\\mathrm T(\\mathcal H)\\)."
+}

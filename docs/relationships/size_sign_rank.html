@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-43" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-192" style="position:relative;">
         
-        <h3><a href="parameters/sign_rank.html" class="table-title-link">Sign Rank</a></h3>
+        <h3><a href="relationships/size_sign_rank.html" class="table-title-link">Size / Sign Rank</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Sign Rank</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{SR}">
-            \[\mathrm{SR}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>sign rank</strong> of a sign matrix $S$ is the least rank of a real matrix $M$ whose sign pattern is $S$.</p></div>
+        <p><strong>Name: </strong>Size / Sign Rank</p>
+<p><strong>Parameter 1: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The rank of a matrix is at most its number of rows.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The incidence sign matrix of (\mathcal H) has (|\mathcal H|) rows. Any real matrix realizing its sign pattern has rank at most its number of rows, so minimizing this rank gives (\mathrm{SR}(\mathcal H)\le |\mathcal H|).</p></div>
 
 
-<strong>Origin References:</strong><div class="text-field"><p>This formulation and its connection with VC dimension are recorded in <a href="bibliography.html#alon2016sign">[alon2016sign]</a>.</p></div>
-<p><strong>Category:</strong> Algebraic</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/sign_rank_full_cube.html'>Sign Rank of Full Cube</a></li><li><a href='values/sign_rank_trivial_concepts.html'>Sign Rank of Trivial Concepts</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/sign_rank_dual_sign_rank.html" class="relationship-statement">$\mathrm{SR} \ge \mathrm{DSR}$</a></li><li><a href="relationships/log_size_sign_rank.html" class="relationship-statement">$\log \mathrm{H} \ge \mathrm{SR}$</a></li><li><a href="relationships/size_sign_rank.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{SR}$</a></li></ul></p></div>
+
 
         </div>
     </div>

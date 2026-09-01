@@ -1,0 +1,11 @@
+{
+  "id": 191,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/proper_stable_labeled_sample_compression",
+  "relationship_type": "larger",
+  "name": "Effective Range / Proper Stable Labeled Sample Compression",
+  "short_name": "effective_range_proper_stable_labeled_sample_compression",
+  "status": "established",
+  "details": "For finite concept classes.",
+  "proof": "The active-coordinate retention scheme is proper and consistent. It retains every active example, so removing an unretained (necessarily inactive) example does not change the retained sample or reconstruction; hence it is stable. Its size is at most \\(\\mathrm E(\\mathcal H)\\)."
+}

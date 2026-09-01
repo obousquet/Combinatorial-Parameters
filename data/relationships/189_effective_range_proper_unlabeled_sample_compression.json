@@ -1,0 +1,11 @@
+{
+  "id": 189,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/proper_unlabeled_sample_compression",
+  "relationship_type": "larger",
+  "name": "Effective Range / Proper Unlabeled Sample Compression",
+  "short_name": "effective_range_proper_unlabeled_sample_compression",
+  "status": "established",
+  "details": "For finite concept classes.",
+  "proof": "Retain all active-coordinate examples and reconstruct a fixed least class member consistent with them. The retained examples include their observed labels, so the reconstruction is proper and consistent; inactive examples are irrelevant. The retained size is at most \\(\\mathrm E(\\mathcal H)\\)."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 197,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/positive_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "name": "Effective Range / Positive Recursive Teaching Dimension",
+  "short_name": "effective_range_positive_recursive_teaching_dimension",
+  "status": "established",
+  "details": "For finite concept classes.",
+  "proof": "Repeatedly remove an inclusion-maximal concept. Its positive labels on all active coordinates distinguish it from every remaining concept: no remaining concept can contain it, and each differs on a positive coordinate. These samples have size at most \\(\\mathrm E(\\mathcal H)\\), yielding a positive recursive teaching sequence with that bound."
+}

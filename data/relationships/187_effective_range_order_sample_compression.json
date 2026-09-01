@@ -1,0 +1,11 @@
+{
+  "id": 187,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/order_sample_compression",
+  "relationship_type": "larger",
+  "name": "Effective Range / Order Sample Compression",
+  "short_name": "effective_range_order_sample_compression",
+  "status": "established",
+  "details": "For finite concept classes.",
+  "proof": "Fix an order of the class. Retain every example of the input sample whose coordinate is active, and decode to the least class member consistent with the retained sample. Inactive examples have the same label in every class member, so this remains consistent with the original sample. At most \\(\\mathrm E(\\mathcal H)\\) examples are retained."
+}

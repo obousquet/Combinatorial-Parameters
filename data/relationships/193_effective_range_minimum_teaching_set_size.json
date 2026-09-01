@@ -1,0 +1,11 @@
+{
+  "id": 193,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "name": "Effective Range / Minimum Teaching Set Size",
+  "short_name": "effective_range_minimum_teaching_set_size",
+  "status": "established",
+  "details": "Full active-coordinate samples identify every concept.",
+  "proof": "Two distinct concepts differ at an active coordinate. Thus the labels of any concept on the full effective range identify it within the class, giving it a teaching set of size at most \\(\\mathrm E(\\mathcal H)\\). In particular the minimum teaching-set size is at most that value."
+}

@@ -3727,6 +3727,306 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-184" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_oriented_diameter.html" class="table-title-link">Effective Range / Oriented Diameter</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Oriented Diameter</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/oriented_diameter.html">Oriented Diameter</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every coordinate in an oriented pair is active.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If an oriented pair (\emptyset,S) is realized in a projection, its two realizing concepts differ on every coordinate of S. Thus S is contained in the effective range. Maximizing gives (\mathrm E(\mathcal H)\ge\mathrm D^+(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-185" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_threshold_dimension.html" class="table-title-link">Effective Range / Threshold Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Threshold Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/threshold_dimension.html">Threshold Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every coordinate of a nontrivial threshold trace is active.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A threshold trace on S contains concepts with different labels at every coordinate of S. Hence every coordinate of S belongs to the effective range, so (\mathrm E(\mathcal H)\ge\mathrm T(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-186" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_monotone_recursive_teaching_dimension.html" class="table-title-link">Effective Range / Projected Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Projected Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every coordinate projection has at most (\mathrm E(\mathcal H)) active coordinates. In every nonempty subfamily of such a projection, the full active-coordinate sample teaches any chosen concept, so each recursive teaching stage has a teaching set of size at most (\mathrm E(\mathcal H)). Taking the maximum over projections proves the bound.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-187" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_order_sample_compression.html" class="table-title-link">Effective Range / Order Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Order Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix an order of the class. Retain every example of the input sample whose coordinate is active, and decode to the least class member consistent with the retained sample. Inactive examples have the same label in every class member, so this remains consistent with the original sample. At most (\mathrm E(\mathcal H)) examples are retained.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-188" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_stable_sample_compression.html" class="table-title-link">Effective Range / Proper Stable Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Stable Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain all active-coordinate examples of the sample and reconstruct the least consistent member of the class. This is proper, discarding inactive examples preserves consistency, and retaining every remaining example makes stability immediate. Its size is at most (\mathrm E(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-189" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_unlabeled_sample_compression.html" class="table-title-link">Effective Range / Proper Unlabeled Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Unlabeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain all active-coordinate examples and reconstruct a fixed least class member consistent with them. The retained examples include their observed labels, so the reconstruction is proper and consistent; inactive examples are irrelevant. The retained size is at most (\mathrm E(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-190" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_labeled_sample_compression.html" class="table-title-link">Effective Range / Proper Labeled Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Labeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain the labeled examples on every active coordinate and reconstruct a fixed least consistent member of the class. Inactive examples are common to all class members, so this is consistent with the original sample and proper. Its size is at most (\mathrm E(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-191" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_stable_labeled_sample_compression.html" class="table-title-link">Effective Range / Proper Stable Labeled Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Stable Labeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The active-coordinate retention scheme is proper and consistent. It retains every active example, so removing an unretained (necessarily inactive) example does not change the retained sample or reconstruction; hence it is stable. Its size is at most (\mathrm E(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-192" style="position:relative;">
+        
+        <h3><a href="relationships/size_sign_rank.html" class="table-title-link">Size / Sign Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size / Sign Rank</p>
+<p><strong>Parameter 1: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The rank of a matrix is at most its number of rows.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The incidence sign matrix of (\mathcal H) has (|\mathcal H|) rows. Any real matrix realizing its sign pattern has rank at most its number of rows, so minimizing this rank gives (\mathrm{SR}(\mathcal H)\le |\mathcal H|).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-193" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_minimum_teaching_set_size.html" class="table-title-link">Effective Range / Minimum Teaching Set Size</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Minimum Teaching Set Size</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Full active-coordinate samples identify every concept.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Two distinct concepts differ at an active coordinate. Thus the labels of any concept on the full effective range identify it within the class, giving it a teaching set of size at most (\mathrm E(\mathcal H)). In particular the minimum teaching-set size is at most that value.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-194" style="position:relative;">
+        
+        <h3><a href="relationships/size_dual_sign_rank.html" class="table-title-link">Size / Dual Sign Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size / Dual Sign Rank</p>
+<p><strong>Parameter 1: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>A linearly independent column set has size at most the number of rows.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every realizing matrix for the incidence sign matrix has (|\mathcal H|) rows. A set of linearly independent columns in such a matrix has size at most its rank, hence at most (|\mathcal H|). This applies to the fixed column set in the definition of dual sign rank.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-195" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_maximum_positive_degree.html" class="table-title-link">Effective Range / Maximum Positive Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Maximum Positive Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every edge of the 1-inclusion graph uses an active coordinate.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A smaller neighbor counted by the dominance of a concept differs from it on one coordinate. Such a coordinate is active. Therefore the positive degree of every vertex, and hence its maximum, is at most (\mathrm E(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-196" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_positive_noclashing_teaching_dimension.html" class="table-title-link">Effective Range / Positive No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Positive No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Assign each concept all of its positive active coordinates.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Assign h the positive examples on all active coordinates in h. For two distinct concepts, one has an active coordinate absent from the other; the positive sample of that concept is inconsistent with the other. Hence this assignment is non-clashing and has size at most (\mathrm E(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-197" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_positive_recursive_teaching_dimension.html" class="table-title-link">Effective Range / Positive Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Positive Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Repeatedly remove an inclusion-maximal concept. Its positive labels on all active coordinates distinguish it from every remaining concept: no remaining concept can contain it, and each differs on a positive coordinate. These samples have size at most (\mathrm E(\mathcal H)), yielding a positive recursive teaching sequence with that bound.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-198" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_ordered_sample_compression.html" class="table-title-link">Effective Range / Proper Ordered Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Ordered Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix an order of the class, retain every active-coordinate example, and decode to the least class member consistent with it. The decoder is proper and remains consistent with the full sample because inactive coordinates have a common label. This proper order-compression scheme retains at most (\mathrm E(\mathcal H)) examples.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

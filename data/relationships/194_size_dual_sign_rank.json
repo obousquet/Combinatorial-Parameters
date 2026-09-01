@@ -1,0 +1,11 @@
+{
+  "id": 194,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/dual_sign_rank",
+  "relationship_type": "larger",
+  "name": "Size / Dual Sign Rank",
+  "short_name": "size_dual_sign_rank",
+  "status": "established",
+  "details": "A linearly independent column set has size at most the number of rows.",
+  "proof": "Every realizing matrix for the incidence sign matrix has \\(|\\mathcal H|\\) rows. A set of linearly independent columns in such a matrix has size at most its rank, hence at most \\(|\\mathcal H|\\). This applies to the fixed column set in the definition of dual sign rank."
+}

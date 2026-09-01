@@ -1,0 +1,11 @@
+{
+  "id": 192,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/sign_rank",
+  "relationship_type": "larger",
+  "name": "Size / Sign Rank",
+  "short_name": "size_sign_rank",
+  "status": "established",
+  "details": "The rank of a matrix is at most its number of rows.",
+  "proof": "The incidence sign matrix of \\(\\mathcal H\\) has \\(|\\mathcal H|\\) rows. Any real matrix realizing its sign pattern has rank at most its number of rows, so minimizing this rank gives \\(\\mathrm{SR}(\\mathcal H)\\le |\\mathcal H|\\)."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 190,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/proper_labeled_sample_compression",
+  "relationship_type": "larger",
+  "name": "Effective Range / Proper Labeled Sample Compression",
+  "short_name": "effective_range_proper_labeled_sample_compression",
+  "status": "established",
+  "details": "For finite concept classes.",
+  "proof": "Retain the labeled examples on every active coordinate and reconstruct a fixed least consistent member of the class. Inactive examples are common to all class members, so this is consistent with the original sample and proper. Its size is at most \\(\\mathrm E(\\mathcal H)\\)."
+}
