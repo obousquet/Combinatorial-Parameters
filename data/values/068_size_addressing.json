@@ -4,7 +4,10 @@
   "short_name": "size_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/size",
-  "value": "$n$",
+  "value": "$2^{\\lfloor\\log n\\rfloor}$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "There is one concept for each subset of the $\\lfloor\\log n\\rfloor$ address coordinates, and distinct address subsets give distinct concepts. Hence the exact size is $2^{\\lfloor\\log n\\rfloor}$.",
+  "references": "\\cite{maass1992lower}"
 }
