@@ -62,10 +62,10 @@ def generate_parameter_table(data_dir: Path, mapping: dict) -> str:
     lines = [
         "% GENERATED from data/parameters by sync/generate_latex_catalog.py; do not edit.",
         "\\begin{center}",
-        "\\begin{longtable}{|p{1.4in}|p{2.7in}|l|c|c|c|c|c|c|}",
+        "\\begin{longtable}{|p{1.2in}|p{2.45in}|l|c|c|c|c|c|c|c|}",
         "\\caption{List of Combinatorial Parameters}\\\\",
         "\\hline",
-        "Symbol & Name & Def & $P^\\dagger$ & $P^*$ & $P^p$ & $P^{p*}$ & Str\\\\",
+        "Symbol & Name & Def & $P^\\dagger$ & $P^*$ & $P^p$ & $P^c$ & $P^{p*}$ & Str\\\\",
         "\\hline",
         "\\endhead",
     ]
@@ -78,7 +78,7 @@ def generate_parameter_table(data_dir: Path, mapping: dict) -> str:
         lines.extend(
             [
                 "\\multicolumn{2}{|c|}{{\\bf " + category_name + "}} & "
-                "\\multicolumn{6}{|l|}{Section \\ref{sec:" + category_name + "}}\\\\",
+                "\\multicolumn{7}{|l|}{Section \\ref{sec:" + category_name + "}}\\\\",
                 "\\hline",
             ]
         )
@@ -91,6 +91,7 @@ def generate_parameter_table(data_dir: Path, mapping: dict) -> str:
                     + " & " + marker(entry.get("symmetric"))
                     + " & " + marker(entry.get("monotonic"))
                     + " & " + marker(entry.get("p_monotonic"))
+                    + " & " + marker(entry.get("c_monotonic"))
                     + " & " + marker(entry.get("doubly_monotonic"))
                     + " & " + marker(entry.get("strictly_monotonic"))
                     + "\\\\",

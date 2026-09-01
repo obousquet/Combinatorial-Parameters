@@ -6,6 +6,7 @@
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
+  "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": false,
   "short_name": "2littlestone_dimension"

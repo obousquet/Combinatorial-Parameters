@@ -102,10 +102,18 @@
         "rendered": true
     },
     {
+        "name": "c_monotonic",
+        "type": "boolean",
+        "label": "C-Monotonic",
+        "description": "Whether the parameter is c-monotonic, i.e. P(H) is at least P(H_{S=y}) for every coordinate subset S and labeling y",
+        "required": false,
+        "rendered": true
+    },
+    {
         "name": "doubly_monotonic",
         "type": "boolean",
         "label": "Doubly Monotonic",
-        "description": "Whether the parameter is doubly monotonic, i.e. non-decreasing with respect to both set inclusion and projections",
+        "description": "Whether the parameter is doubly monotonic, i.e. monotonic with respect to both subfamilies and projections (and therefore conditioning)",
         "required": false,
         "rendered": true
     },
