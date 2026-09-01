@@ -3,6 +3,7 @@
   "parameter_1_id": "#parameters/covc_dimension",
   "parameter_2_id": "#parameters/effective_vc_radius",
   "relationship_type": "larger",
+  "witness": "#classes/singletons",
   "short_name": "covc_dimension_effective_vc_radius",
   "name": "co-VC dimension / Effective VC Radius"
 }

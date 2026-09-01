@@ -4,6 +4,7 @@
   "parameter_2_id": "#parameters/order_sample_compression",
   "relationship_type": "larger",
   "details": "Definition",
+  "witness": "#classes/singletons",
   "short_name": "proper_ordered_sample_compression_order_sample_compression",
   "name": "Proper Ordered Sample Compression / Order Sample Compression"
 }

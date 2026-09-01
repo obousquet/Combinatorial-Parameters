@@ -4,6 +4,7 @@
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
   "details": "Theorem",
+  "witness": "#classes/singletons",
   "short_name": "yang_dimension_vc_dimension",
   "name": "Yang dimension / VC Dimension"
 }

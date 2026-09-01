@@ -4,6 +4,7 @@
   "parameter_2_id": "#parameters/yang_dimension",
   "relationship_type": "larger",
   "details": "Lemma",
+  "witness": "#classes/trivial_concepts",
   "short_name": "effective_range_yang_dimension",
   "name": "Effective Range / Yang dimension"
 }
