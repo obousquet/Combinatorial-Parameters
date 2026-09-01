@@ -8,5 +8,6 @@
   "value_class": "omega_n",
   "details": "",
   "status": "established",
-  "proof": "The definition lists one empty concept, $\\lceil\\log n\\rceil$ tag singleton concepts, and one tagged two-point concept for each of the $n$ base coordinates. These concepts are distinct."
+  "proof": "The definition lists one empty concept, $\\lceil\\log n\\rceil$ tag singleton concepts, and one tagged two-point concept for each of the $n$ base coordinates. These concepts are distinct.",
+  "references": "\\cite{maass1992lower}"
 }
