@@ -73,6 +73,36 @@
         "description": "Additional details or comments about the value",
         "required": false,
         "rendered": true
+    },
+    {
+        "name": "status",
+        "type": "enum",
+        "label": "Status",
+        "description": "Epistemic status of this value statement",
+        "required": false,
+        "rendered": true,
+        "enum": [
+            { "value": "established", "display_name": "Established" },
+            { "value": "conjectured", "display_name": "Conjectured" },
+            { "value": "open", "display_name": "Open" },
+            { "value": "needs_verification", "display_name": "Needs verification" }
+        ]
+    },
+    {
+        "name": "proof",
+        "type": "text",
+        "label": "Proof or Derivation",
+        "description": "Concise proof, calculation, or derivation supporting the value",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "references",
+        "type": "text",
+        "label": "References",
+        "description": "Bibliographic support, using shared citation keys such as \\cite{key}",
+        "required": false,
+        "rendered": true
     }
   ]
 }

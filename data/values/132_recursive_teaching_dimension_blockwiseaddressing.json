@@ -1,0 +1,10 @@
+{
+  "id": 132,
+  "name": "Recursive Teaching Dimension of Blockwise-Addressing",
+  "short_name": "recursive_teaching_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$2$",
+  "status": "established",
+  "references": "\\cite{ben1997online}, p. 54"
+}
