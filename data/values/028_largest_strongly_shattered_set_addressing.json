@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/largest_strongly_shattered_set",
   "value": "$0$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Two distinct addressed concepts have different base singleton coordinates and different address words, hence differ on at least two coordinates. Thus the 1-inclusion graph has no edge, so no nonempty set is strongly shattered.",
+  "references": "\\cite{maass1992lower}"
 }

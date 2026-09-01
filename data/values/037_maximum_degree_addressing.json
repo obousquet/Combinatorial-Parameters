@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/maximum_degree",
   "value": "$0$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Distinct concepts have different addressed base coordinates and different address words, so their symmetric difference has size at least two. Therefore the 1-inclusion graph has no edge and maximum degree zero.",
+  "references": "\\cite{maass1992lower}"
 }
