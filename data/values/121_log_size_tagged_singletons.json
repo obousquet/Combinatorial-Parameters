@@ -4,7 +4,7 @@
   "short_name": "log_size_tagged_singletons",
   "class_id": "#classes/tagged_singletons",
   "parameter_id": "#parameters/log_size",
-  "value": "$\\Omega(\\log n)$",
+  "value": "$\\log(n+\\lceil\\log n\\rceil+1)$",
   "value_class": "omega_log_n",
   "details": "",
   "status": "established",
