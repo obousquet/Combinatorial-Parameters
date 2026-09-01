@@ -52,6 +52,14 @@
         "rendered": true
     },
     {
+        "name": "graph_summary",
+        "type": "text",
+        "label": "Graph Summary",
+        "description": "Concise explanation shown in interactive graph popups; use the full LaTeX catalogue definition for survey-level detail",
+        "required": false,
+        "rendered": false
+    },
+    {
         "name": "comments",
         "type": "text",
         "label": "Comments",

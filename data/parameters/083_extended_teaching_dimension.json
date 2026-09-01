@@ -4,6 +4,7 @@
   "symbol": "$\\mathrm{XTD}$",
   "definition": "The **extended teaching dimension** is $$\\mathrm{XTD}(\\mathcal{H}) := \\max_{f\\subseteq\\mathcal{X}}\\min\\left\\{|S|:S\\subseteq\\mathcal{X},\\;\\left|\\{h\\in\\mathcal{H}:h\\cap S=f\\cap S\\}\\right|\\leq 1\\right\\}.$$ Thus the target labeling $f$ need not belong to $\\mathcal{H}$.",
   "description": "Equivalently, it is the largest minimum size of a specifying set for an arbitrary labeling with respect to the class.",
+  "graph_summary": "Maximum, over arbitrary target labelings, of the minimum number of coordinates needed to leave at most one consistent hypothesis.",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
