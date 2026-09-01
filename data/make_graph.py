@@ -313,7 +313,14 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     legend.extend([{"type": "edge", "label": t, "text": arrow_values[t], **v} for t, v in arrow_map.items()])
 
     parameters = cache.get_table_entries("parameters")
-    relationships = cache.get_table_entries("relationships")
+    # Records awaiting verification are retained in the catalogue with their
+    # warning and counterexample, but must not create graph edges, influence
+    # equivalence collapse, or affect ranks in the Hasse-like diagram.
+    relationships = [
+        relationship
+        for relationship in cache.get_table_entries("relationships")
+        if relationship.get("status") != "needs_verification"
+    ]
     equivalence_components, equivalence_component_of = exact_equivalence_components(
         parameters, relationships
     )
@@ -329,9 +336,11 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     for relationship in collapsed_relationships:
         relationships_by_variant[variant_of(relationship)].append(relationship)
 
-    # Only the reduced base linear graph defines vertical position.  Variant
-    # relations and nonlinear bounds are still displayed, but are overlays:
-    # they cannot create false cycles or move a node to an unjustified rank.
+    # Only the reduced base linear graph defines vertical position.  The graph
+    # nevertheless displays every stated direct relationship: a direct linear
+    # fact which is redundant for the Hasse backbone is an overlay.  Otherwise
+    # the reduction would make an established database fact silently vanish
+    # from the picture.
     reduced_by_variant = {
         variant: reduced_linear_relations(variant_relationships)
         for variant, variant_relationships in relationships_by_variant.items()
@@ -385,15 +394,31 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     displayed_relationships = []
     for variant, variant_relationships in relationships_by_variant.items():
         reduced_linear = reduced_by_variant[variant]
+        reduced_ids = {relationship["id"] for relationship in reduced_linear}
+        # ``canonical_linear_relations`` also avoids drawing duplicate records
+        # with the same quotient endpoints and relationship type.  Retain all
+        # its non-backbone members as direct-fact overlays.
+        direct_linear_overlays = [
+            relationship
+            for relationship in canonical_linear_relations(variant_relationships)
+            if relationship["id"] not in reduced_ids
+        ]
         nonlinear = [
             relationship
             for relationship in variant_relationships
             if relationship["relationship_type"] not in LINEAR_TYPES
         ]
-        displayed_relationships.extend((relationship, variant) for relationship in reduced_linear + nonlinear)
+        displayed_relationships.extend(
+            (relationship, variant, True)
+            for relationship in reduced_linear
+        )
+        displayed_relationships.extend(
+            (relationship, variant, False)
+            for relationship in direct_linear_overlays + nonlinear
+        )
 
     displayed_edge_keys = set()
-    for r, variant in displayed_relationships:
+    for r, variant, constrains_layout in displayed_relationships:
         source_component, target_component = relation_endpoints(r)
         source = parameters_by_ref[source_component]
         target = parameters_by_ref[target_component]
@@ -431,7 +456,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             "label_ref": label_ref,
             **arrow
         }
-        if variant != BASE_VARIANT or r["relationship_type"] not in LINEAR_TYPES:
+        if not constrains_layout:
             edge["constraint"] = False
         if label:
             source_rank = ranks.get(source_component)
