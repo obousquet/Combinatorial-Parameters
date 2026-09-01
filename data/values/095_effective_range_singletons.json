@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/effective_range",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "For every coordinate $i$, singleton $\\{i\\}$ differs there from any other singleton, so every coordinate belongs to the effective range."
 }

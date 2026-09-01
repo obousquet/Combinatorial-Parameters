@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/maximum_degree",
   "value": "$0$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Distinct singleton concepts differ on exactly two coordinates, so the $1$-inclusion graph has no edge."
 }

@@ -4,7 +4,9 @@
   "short_name": "log_shattering_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/log_shattering",
-  "value": "$\\log n$",
+  "value": "$\\log(n+1)$",
   "value_class": "omega_log_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The empty set and every singleton subset are shattered. No two-point set is shattered, since the only available traces on it are the two singletons. Hence there are $n+1$ shattered sets."
 }

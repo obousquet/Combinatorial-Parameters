@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/size",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "There is one singleton concept for each of the $n$ coordinates."
 }

@@ -5,6 +5,8 @@
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/teaching_dimension",
   "value": "$1$",
-  "value_class": "omega_log_n",
-  "details": ""
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "The positive label at the unique point of a singleton identifies it. No target is identified by the empty sample."
 }

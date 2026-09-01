@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "After any projection, remove the remaining singleton concepts first, each with one positive example; the possible empty concept then remains alone. Thus every projection has recursive teaching dimension at most one."
 }

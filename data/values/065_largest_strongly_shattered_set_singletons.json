@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/largest_strongly_shattered_set",
   "value": "$0$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "A nonempty strongly shattered set would give a $1$-inclusion edge, but the singleton family has none. The empty set is strongly shattered."
 }

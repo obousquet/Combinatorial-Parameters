@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/recursive_teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Each singleton is uniquely specified by one positive example. Removing singleton concepts in any order therefore has teaching-set size one at every nontrivial stage."
 }
