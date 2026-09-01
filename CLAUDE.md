@@ -78,9 +78,10 @@ python3 sync/validate_latex_mapping.py \
   --data-dir data --latex-dir ~/latex/CombinatorialParameters
 ```
 
-The database owns the structured parameter catalogue. Generate the LaTeX
-parameter and value-table includes from it rather than editing those generated
-files:
+The database owns the structured catalogue and its LaTeX catalogue sources.
+The LaTeX checkout consumes generated copies; do not edit its
+`includes/generated/*`, `includes/defs.tex`, or `includes/cl_defs.tex` as
+sources. Generate all catalogue outputs from here:
 
 ```bash
 python3 sync/generate_latex_catalog.py \
@@ -90,11 +91,23 @@ python3 sync/generate_latex_catalog.py \
 python3 sync/generate_latex_catalog.py \
   --data-dir data --section value-table \
   --output ~/latex/CombinatorialParameters/includes/generated/val_table.tex
+
+python3 sync/generate_latex_catalog.py \
+  --data-dir data --section parameter-definitions \
+  --output ~/latex/CombinatorialParameters/includes/generated/parameter_definitions.tex
+
+python3 sync/generate_latex_catalog.py \
+  --data-dir data --section class-definitions \
+  --output ~/latex/CombinatorialParameters/includes/generated/class_definitions.tex
+
+python3 sync/generate_latex_catalog.py \
+  --data-dir data --section bibliography \
+  --output ~/latex/CombinatorialParameters/includes/generated/references.bib
 ```
 
 In CI or before committing the LaTeX repository, add `--check` to verify that
 the generated file has not drifted.
 
-The LaTeX survey continues to own its narrative, proofs, and bibliography.
-Do not extend generation to another shared section until its ownership is first
-recorded in `sync/ownership.json`.
+The LaTeX survey continues to own only its narrative, proofs, and document
+layout. Record any further shared section in `sync/ownership.json` before
+moving it into this workflow.

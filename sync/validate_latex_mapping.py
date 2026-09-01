@@ -60,15 +60,31 @@ def main() -> int:
     args = parser.parse_args()
 
     mapping = json.loads(args.mapping.read_text())
-    latex_labels = set(LABEL_PATTERN.findall((args.latex_dir / "includes" / "defs.tex").read_text()))
-    latex_labels.update(LABEL_PATTERN.findall((args.latex_dir / "includes" / "cl_defs.tex").read_text()))
+    # Definition sources are database-owned and copied into the LaTeX checkout.
+    # Read the authoritative files here so validation does not accidentally rely
+    # on a stale generated copy.
+    latex_labels = set()
+    for source in (
+        args.data_dir / "latex" / "parameter_definitions.tex",
+        args.data_dir / "latex" / "class_definitions.tex",
+    ):
+        if source.is_file():
+            latex_labels.update(LABEL_PATTERN.findall(source.read_text()))
 
-    errors = validate_table(records(args.data_dir, "parameters"), mapping["parameters"], latex_labels, "parameters")
-    errors.extend(validate_table(records(args.data_dir, "classes"), mapping["classes"], latex_labels, "classes"))
+    parameter_entries = records(args.data_dir, "parameters")
+    class_entries = records(args.data_dir, "classes")
+    errors = validate_table(parameter_entries, mapping["parameters"], latex_labels, "parameters")
+    errors.extend(validate_table(class_entries, mapping["classes"], latex_labels, "classes"))
     if errors:
         print("LaTeX mapping validation failed:", *errors, sep="\n- ", file=sys.stderr)
         return 1
-    print("LaTeX mapping valid: 79 mapped parameters, 2 documented placeholders, 9 mapped classes.")
+    placeholders = mapping["parameters"].get("unmapped_database_ids", {})
+    mapped_parameters = len(parameter_entries) - len(placeholders)
+    print(
+        "LaTeX mapping valid: "
+        f"{mapped_parameters} mapped parameters, {len(placeholders)} documented placeholders, "
+        f"{len(class_entries)} mapped classes."
+    )
     return 0
 
 

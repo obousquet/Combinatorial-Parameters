@@ -16,6 +16,19 @@ Each subdirectory contains:
 
 ## Editing and Contributing
 
+### Database-authoritative LaTeX catalogue
+
+The structured catalogue and its LaTeX sources are maintained in this
+repository. `data/latex/parameter_definitions.tex`,
+`data/latex/class_definitions.tex`, and `data/latex/references.bib` generate
+the corresponding inputs consumed by `~/latex/CombinatorialParameters`.
+The LaTeX repository owns only survey narrative, proofs, and layout.
+
+Use `sync/ownership.json` for the complete ownership map and regenerate the
+LaTeX outputs with `sync/generate_latex_catalog.py` after changing database
+content. `python3 sync/validate_latex_mapping.py` verifies the record-to-label
+mapping.
+
 ### Step-by-step Contribution Guide
 
 1. **Clone the repositories**

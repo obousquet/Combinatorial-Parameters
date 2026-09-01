@@ -1,0 +1,9 @@
+{
+  "id": 166,
+  "parameter_1_id": "#parameters/extended_teaching_dimension",
+  "parameter_2_id": "#parameters/teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Definition: the maximization defining $\\mathrm{XTD}$ includes targets in the class, for which specifying sets are teaching sets.",
+  "short_name": "extended_teaching_dimension_teaching_dimension",
+  "name": "Extended Teaching Dimension / Teaching Dimension"
+}

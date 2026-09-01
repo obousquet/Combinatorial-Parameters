@@ -8,11 +8,17 @@
       "latex_output": "includes/generated/def_table.tex",
       "generator": "sync/generate_latex_catalog.py --section parameter-table"
     },
+    "parameter_definitions": {
+      "authority": "database",
+      "source": "data/latex/parameter_definitions.tex",
+      "latex_output": "includes/generated/parameter_definitions.tex",
+      "generator": "sync/generate_latex_catalog.py --section parameter-definitions"
+    },
     "class_catalog": {
       "authority": "database",
       "source": "data/classes/*.json",
-      "latex_output": null,
-      "status": "Mapped and checked; a generated LaTeX rendering has not yet replaced the hand-written class discussion."
+      "latex_output": "includes/generated/class_definitions.tex",
+      "generator": "sync/generate_latex_catalog.py --section class-definitions"
     },
     "parameter_relationships": {
       "authority": "database",
@@ -27,10 +33,10 @@
       "generator": "sync/generate_latex_catalog.py --section value-table"
     },
     "bibliography": {
-      "authority": "latex",
-      "source": "main.bib",
-      "database_output": null,
-      "status": "The website bibliography inventory is incomplete, so it must not yet be treated as independently authoritative."
+      "authority": "database",
+      "source": "data/latex/references.bib",
+      "latex_output": "includes/generated/references.bib",
+      "generator": "sync/generate_latex_catalog.py --section bibliography"
     },
     "survey_narrative_and_proofs": {
       "authority": "latex",

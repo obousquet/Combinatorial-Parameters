@@ -164,6 +164,25 @@ def generate_value_table(data_dir: Path, mapping: dict) -> str:
     return "\n".join(lines)
 
 
+SOURCE_ASSETS = {
+    "parameter-definitions": "parameter_definitions.tex",
+    "class-definitions": "class_definitions.tex",
+    "bibliography": "references.bib",
+}
+
+
+def generate_source_asset(data_dir: Path, section: str) -> str:
+    """Return a database-owned LaTeX source asset verbatim.
+
+    These assets are kept under ``data/latex`` while their content is migrated
+    incrementally into record-level structured fields.  Copying through this
+    generator keeps the LaTeX checkout output-only from the first migration
+    step onward.
+    """
+    source = data_dir / "latex" / SOURCE_ASSETS[section]
+    return source.read_text()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
@@ -172,7 +191,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--section",
-        choices=["parameter-table", "value-table"],
+        choices=["parameter-table", "value-table", *SOURCE_ASSETS],
         default="parameter-table",
     )
     parser.add_argument("--output", type=Path, required=True)
@@ -188,7 +207,10 @@ def main() -> int:
         "parameter-table": generate_parameter_table,
         "value-table": generate_value_table,
     }
-    output = generators[args.section](args.data_dir, mapping)
+    if args.section in SOURCE_ASSETS:
+        output = generate_source_asset(args.data_dir, args.section)
+    else:
+        output = generators[args.section](args.data_dir, mapping)
     if args.check:
         if not args.output.is_file() or args.output.read_text() != output:
             print(f"Generated LaTeX is out of date: {args.output}")

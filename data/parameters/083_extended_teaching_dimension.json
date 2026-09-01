@@ -1,0 +1,15 @@
+{
+  "id": 83,
+  "name": "Extended Teaching Dimension",
+  "symbol": "$\\mathrm{XTD}$",
+  "definition": "The **extended teaching dimension** is $$\\mathrm{XTD}(\\mathcal{H}) := \\max_{f\\subseteq\\mathcal{X}}\\min\\left\\{|S|:S\\subseteq\\mathcal{X},\\;\\left|\\{h\\in\\mathcal{H}:h\\cap S=f\\cap S\\}\\right|\\leq 1\\right\\}.$$ Thus the target labeling $f$ need not belong to $\\mathcal{H}$.",
+  "description": "Equivalently, it is the largest minimum size of a specifying set for an arbitrary labeling with respect to the class.",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": false,
+  "c_monotonic": false,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "short_name": "extended_teaching_dimension"
+}

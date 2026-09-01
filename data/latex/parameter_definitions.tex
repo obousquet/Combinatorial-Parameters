@@ -1,0 +1,751 @@
+\subsection{Basic}\label{sec:Basic}
+\subsubsection{Effective Range}
+      
+      \begin{definition}[Effective Range - {$\mathrm{E}$}]\label{def:effective_range}
+      The {\em effective range} $E(\H)$ of a family $\H$ is the number of elements that can be distinguished by members of $\H$: \[ E(\H)\bydef \abs*{\set*{x:x\in\X,\, \exists h_1,h_2\in\H,\, x\in h_1 \Delta h_2}} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: SM
+      \end{itemize}
+\subsubsection{Size}
+      
+      \begin{definition}[Size - {$\mathrm{H}$}]\label{def:size}
+      The {\em size} of a family $\H$ is simply the  cardinality, \[  \abs*{\H} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: SM
+      \end{itemize}
+\subsubsection{Oriented Diameter}
+      
+      \begin{definition}[Oriented Diameter - {$\mathrm{D}^+$}]\label{def:oriented_diameter}
+      The {\em oriented diameter} $\mathrm{D}^+(\H)$ of a family $\H$ is defined as \[ \mathrm{D}^+(\H)\bydef \max\set*{\abs*{S}: \set*{\emptyset, S}\subset \H_{|S}} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: N
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Diameter}
+      
+      \begin{definition}[Diameter - {$\mathrm{D}$}]\label{def:diameter}
+      The {\em diameter} $D(\H)$ of a family $\H$ is the largest distance between two elements of the family, i.e. \[ D(\H)\bydef \max_{h_1,h_2\in\H} \abs*{h_1\Delta h_2} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf Notes}: The diameter is equal to the strict diameter dimension.
+\end{itemize}
+\subsubsection{Hamming Radius}
+      
+      \begin{definition}[Hamming Radius - {$\mathrm{B}$}]\label{def:hamming_radius}
+      The {\em Hamming Radius} $B(\H)$ of a family $\H$ is the smallest radius of an enclosing Hamming ball, defined as \[ B(\H)\bydef \min\set*{d: \exists T\subset \X,\, \forall h\in \H,\, |h\Delta T|\le d} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Threshold Dimension}
+      
+      \begin{definition}[Threshold Dimension - {$\mathrm{T}$}]\label{def:threshold_dimension}
+      The {\em Threshold dimension} of a family $\H$, denoted by $T(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains thresholds, i.e. there is an ordering $x_1,\ldots,x_d$ of the elements of $S$ such that \[ \forall 0\le k\le d,\, \set*{x_1,\ldots,x_k} \in \H_{|S}\,. \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: N
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf Notes}: Note that this means $\H_{|S}$ contains a $d+1$-chain, i.e. $d+1$ sets $S_1,\ldots,S_{d+1}$ such that $S_1\subset \ldots\subset S_{d+1}$.
+\end{itemize}
+\subsubsection{Path Dimension}
+      
+      \begin{definition}[Path Dimension - {$\mathrm{P}$}]\label{def:path_dimension}
+      The {\em Path dimension} of a family $\H$, denoted by $P(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains a full path, i.e. there is an ordering $x_1,\ldots,x_d$ of the elements of $S$ and a subset $T\subset S$ such that \[ \forall 0\le k\le d,\, T\Delta \set*{x_1,\ldots,x_k} \in \H_{|S}\,. \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Log Size}
+      
+      \begin{definition}[Log Size - {$\log \mathrm{H}$}]\label{def:log_size}
+      The {\em Log Size} of a family $\H$ is simply the (binary) log of its cardinality, \[ \log \abs*{\H} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: SM
+      \end{itemize}
+\subsubsection{Log Size Ratio}
+      
+      \begin{definition}[Log Size Ratio - {$\frac{\log (\mathrm{H}-1)}{\log (n+1)}$}]\label{def:log_size_ratio}
+      The {\em Log Size Ratio} of a family $\H$ is the ratio of the log of its cardinality to the log of the effective range, \[ \log \frac{\abs*{\H}-1}{\log (n+1)} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Information Complexity}
+      
+      \begin{definition}[Information Complexity - {$\mathrm{IC}$}]\label{def:information_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: nM
+      \item {\bf References}: https://arxiv.org/abs/2206.13257
+\end{itemize}
+\subsubsection{Distinguishing Range}
+      
+      \begin{definition}[Distinguishing Range - {$\mathrm{R}$}]\label{def:distinguishing_range}
+      Minimum number of coordinates over which all concepts in the class can be distinguished.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsection{Graph-based}\label{sec:Graph-based}
+\subsubsection{Densest Subgraph (twice)}
+      
+      \begin{definition}[Densest Subgraph (twice) - {$\mathrm{dens}^*$}]\label{def:densest_subgraph_(twice)}
+      The \emph{densest subgraph dimension} of a concept class is equal to twice the density of the densest subgraph (a.k.a. \emph{subgraph density}) of its $1$-inclusion graph.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \item {\bf Notes}: The densest subgraph is dual to the lowest outdegree orientation.
+\end{itemize}
+\subsubsection{Double Density or Average Degree}
+      
+      \begin{definition}[Double Density or Average Degree - {$\mathrm{dens}$}]\label{def:double_density_or_average_degree}
+      The \emph{double-density} of a concept class is defined as twice the density of its $1$-inclusion graph, i.e twice the ratio of edges to vertices, or equivalently the average degree.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: nM
+      \end{itemize}
+\subsubsection{Minimum Degree}
+      
+      \begin{definition}[Minimum Degree - {$\mathrm{d}_{\min}$}]\label{def:minimum_degree}
+      The \emph{minimum degree} of a concept class is defined as the minimum degree of its $1$-inclusion graph.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: nM
+      \end{itemize}
+\subsubsection{Degeneracy}
+      
+      \begin{definition}[Degeneracy - {$\mathrm{d}^*_{\min}$}]\label{def:degeneracy}
+      The \emph{degeneracy} of a concept class is defined as the degeneracy of its $1$-inclusion graph, i.e. the maximum over induced subgraphs of the minimum degree.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Maximum Degree}
+      
+      \begin{definition}[Maximum Degree - {$\mathrm{d}_{\max}$}]\label{def:maximum_degree}
+      The \emph{maximum degree} of a concept class is defined as the maximum degree of its $1$-inclusion graph.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Projected Maximal Degree}
+      
+      \begin{definition}[Projected Maximal Degree - {$\mathrm{d}^p_{\max}$}]\label{def:projected_maximal_degree}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Projected Double Density or Projected Average Degree}
+      
+      \begin{definition}[Projected Double Density or Projected Average Degree - {$\mathrm{dens}^p$}]\label{def:projected_double_density_or_projected_average_degree}
+      The \emph{projected double density} of a concept class is defined as the maximum over all projections of the averaged degree of the $1$-inclusion graph.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Projected Minimum Degree}
+      
+      \begin{definition}[Projected Minimum Degree - {$\mathrm{d}^p_{\min}$}]\label{def:projected_minimum_degree}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Maximum Positive Degree}
+      
+      \begin{definition}[Maximum Positive Degree - {$\mathrm{d}^+_{\max}$}]\label{def:maximum_positive_degree}
+      The \emph{Maximum Positive Degree} of a concept class is the maximum dominance of its $1$-inclusion graph (where dominance is the number of neighbors that are smaller with respect to inclusion).
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: N
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsection{Shattering}\label{sec:Shattering}
+\subsubsection{Log Shattering}
+      
+      \begin{definition}[Log Shattering - {$\log \mathrm{sh}$}]\label{def:log_shattering}
+      The {\em Log Shattering} of a family $\H$ is the (binary) log of the number of its shattered sets, \[ \log \abs*{sh{\H}} \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: SM
+      \end{itemize}
+\subsubsection{VC Dimension}
+      Vapnik-Chervonenkis Dimension
+      \begin{definition}[VC Dimension - {$\mathrm{VC}$}]\label{def:vc_dimension}
+      The {\em VC dimension} of a family $\H$, denoted by $\VC(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $S$ is shattered by $\H$, i.e.  \[ \abs*{\H_{|S}} = 2^{\abs*{S}}\,. \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Effective VC Radius}
+      
+      \begin{definition}[Effective VC Radius - {$\mathrm{VCR}$}]\label{def:effective_vc_radius}
+      For a family $\H\subset 2^\X$, we define the {\em effective VC radius} as the largest integer $k$ such that all subsets of size $k$ of the effective range of $\H$, i.e. $\bigcup \{h\Delta h': h,h'\in \H\}$ are shattered by $\H$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Minimum Largest Order Shattered Set}
+      
+      \begin{definition}[Minimum Largest Order Shattered Set - {$\mathrm{OSH}_{\min}$}]\label{def:minimum_largest_order_shattered_set}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Largest Strongly Shattered Set}
+      
+      \begin{definition}[Largest Strongly Shattered Set - {$\mathrm{ST}$}]\label{def:largest_strongly_shattered_set}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Projected VC Radius}
+      
+      \begin{definition}[Projected VC Radius - {$\mathrm{VCR}^p$}]\label{def:projected_vc_radius}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Projected Strongly Shattered Dimension}
+      
+      \begin{definition}[Projected Strongly Shattered Dimension - {$\mathrm{ST}^p$}]\label{def:projected_strongly_shattered_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Maximum Largest Order Shattered Set}
+      
+      \begin{definition}[Maximum Largest Order Shattered Set - {$\mathrm{OSH}_{\max}$}]\label{def:maximum_largest_order_shattered_set}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsection{Algebraic}\label{sec:Algebraic}
+\subsubsection{Yang dimension}
+      Projective dimension of the cuboplex
+      \begin{definition}[Yang dimension - {$\mathrm{Y}$}]\label{def:yang_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Monotonic Yang Dimension}
+      \begin{definition}[Monotonic Yang Dimension - {$\mathrm{Y}^*$}]\label{def:monotonic_yang_dimension}
+      The \emph{monotonic Yang dimension} is the subfamily-monotonic version of Yang dimension:
+      \[
+      \mathrm{Y}^*(\H)\bydef \max_{\G\subseteq\H}\mathrm{Y}(\G)\,.
+      \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Interpolation degree}
+      Minimum degree of an interpolating polynomial
+      \begin{definition}[Interpolation degree - {$\mathrm{intdeg}$}]\label{def:interpolation_degree}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Sign Rank}
+      
+      \begin{definition}[Sign Rank - {$\mathrm{SR}$}]\label{def:sign_rank}
+      The \emph{sign rank} of a sign matrix $S$ is the maximum number $k$ such for all real matrix $M$ whose signs are $S$, $M$ has rank at least $k$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Dual Sign Rank}
+      
+      \begin{definition}[Dual Sign Rank - {$\mathrm{DSR}$}]\label{def:dual_sign_rank}
+      The \emph{dual sign rank} of a sign matrix $S$ is the maximum number $k$ such that there exist $k$ columns of $S$ such that any real matrix $M$ with signs $S$ has those column linearly independent.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: From "Sign Rank versus VC dimension", Alon, Moran, Yehudayoff
+\end{itemize}
+\subsection{Compression}\label{sec:Compression}
+\subsubsection{Unlabeled sample compression}
+      Minimum size of an unlabeled sample compression scheme
+      \begin{definition}[Unlabeled sample compression - {$\mathrm{USC}$}]\label{def:unlabeled_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Order Sample Compression}
+      
+      \begin{definition}[Order Sample Compression - {$\mathrm{OSC}$}]\label{def:order_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Stable Unlabeled Complexity}
+      
+      \begin{definition}[Stable Unlabeled Complexity - {$\mathrm{sUSC}$}]\label{def:stable_unlabeled_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Proper Stable Sample Compression}
+      
+      \begin{definition}[Proper Stable Sample Compression - {$\mathrm{psUSC}$}]\label{def:proper_stable_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Proper Unlabeled Sample Compression}
+      
+      \begin{definition}[Proper Unlabeled Sample Compression - {$\mathrm{pUSC}$}]\label{def:proper_unlabeled_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Labeled Sample Compression}
+      
+      \begin{definition}[Labeled Sample Compression - {$\mathrm{LSC}$}]\label{def:labeled_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Stable Labeled Sample Compression}
+      
+      \begin{definition}[Stable Labeled Sample Compression - {$\mathrm{sLSC}$}]\label{def:stable_labeled_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Proper Labeled Sample Compression}
+      
+      \begin{definition}[Proper Labeled Sample Compression - {$\mathrm{pLSC}$}]\label{def:proper_labeled_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Proper Stable Labeled Sample Compression}
+      
+      \begin{definition}[Proper Stable Labeled Sample Compression - {$\mathrm{psLSC}$}]\label{def:proper_stable_labeled_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Proper Ordered Sample Compression}
+      
+      \begin{definition}[Proper Ordered Sample Compression - {$\mathrm{pOSC}$}]\label{def:proper_ordered_sample_compression}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsection{Teaching and Hitting}\label{sec:Teaching and Hitting}
+\subsubsection{Recursive Teaching Dimension = Monotonic Minimum Teaching Set Size = Preference-Based Teaching Dimension}
+      
+      \begin{definition}[Recursive Teaching Dimension = Monotonic Minimum Teaching Set Size = Preference-Based Teaching Dimension - {\begin{tabular}{l}$\mathrm{RTD} = \mathrm{TS}_{\min}^* = \mathrm{PBTD}$\end{tabular}}]\label{def:recursive_teaching_dimension_=_monotonic_minimum_teaching_set_size_=_preference-based_teaching_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Monotone Recursive Teaching Dimension}
+      
+      \begin{definition}[Monotone Recursive Teaching Dimension - {$\mathrm{RTD}^p$}]\label{def:monotone_recursive_teaching_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Teaching Dimension = Relative Hitting Size = Maximum Teaching Set Size}
+      
+      \begin{definition}[Teaching Dimension = Relative Hitting Size = Maximum Teaching Set Size - {\begin{tabular}{l}$\mathrm{TD} = \mathrm{RHT} = \mathrm{TS}_{\max}$\end{tabular}}]\label{def:teaching_dimension_=_relative_hitting_size_=_maximum_teaching_set_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Hitting Size}
+      
+      \begin{definition}[Hitting Size - {$\mathrm{HT}$}]\label{def:hitting_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: N
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Relative Hitting Size}
+      
+      \begin{definition}[Relative Hitting Size - {$\mathrm{RHT}$}]\label{def:relative_hitting_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Extended Teaching Dimension}
+      
+      \begin{definition}[Extended Teaching Dimension - {$\mathrm{XTD}$}]\label{def:extended_teaching_dimension}
+      A set $S\subseteq\X$ is a \emph{specifying set} for a labeling $f\subseteq\X$ with respect to $\H$ if at most one member of $\H$ agrees with $f$ on $S$.  The \emph{extended teaching dimension} is
+      \[
+      \mathrm{XTD}(\H)\bydef \max_{f\subseteq\X}\min\left\{|S|:S\subseteq\X,\ \left|\{h\in\H:h\cap S=f\cap S\}\right|\le 1\right\}.
+      \]
+      In contrast to teaching dimension, the labeling $f$ is allowed to lie outside $\H$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \item {\bf References}: \cite{hegedHus1995generalized}
+      \end{itemize}
+\subsubsection{Positive Teaching Dimension}
+      
+      \begin{definition}[Positive Teaching Dimension - {$\mathrm{TD}^+$}]\label{def:positive_teaching_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: N
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Preference-Based Teaching Dimension}
+      
+      \begin{definition}[Preference-Based Teaching Dimension - {$\mathrm{PBTD}$}]\label{def:preference-based_teaching_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{No-Clashing Teaching Dimension}
+      
+      \begin{definition}[No-Clashing Teaching Dimension - {$\mathrm{NCTD}$}]\label{def:no-clashing_teaching_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Minimum Teaching Set Size}
+      
+      \begin{definition}[Minimum Teaching Set Size - {$\mathrm{TS}_{\min}$}]\label{def:minimum_teaching_set_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: nM
+      \end{itemize}
+\subsubsection{Maximum Teaching Set Size}
+      
+      \begin{definition}[Maximum Teaching Set Size - {$\mathrm{TS}_{\max}$}]\label{def:maximum_teaching_set_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Minimum Projected Teaching Set Size}
+      
+      \begin{definition}[Minimum Projected Teaching Set Size - {$\mathrm{TS}_{\min}^p$}]\label{def:minimum_projected_teaching_set_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Maximum Projected Teaching Set Size}
+      
+      \begin{definition}[Maximum Projected Teaching Set Size - {$\mathrm{TS}_{\max}^p$}]\label{def:maximum_projected_teaching_set_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Monotonic Minimum Teaching Set Size}
+      
+      \begin{definition}[Monotonic Minimum Teaching Set Size - {$\mathrm{TS}_{\min}^*$}]\label{def:monotonic_minimum_teaching_set_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Monotonic Projected Minimum Teaching Set Size}
+      
+      \begin{definition}[Monotonic Projected Minimum Teaching Set Size - {$\mathrm{TS}_{\min}^{*p}$}]\label{def:monotonic_projected_minimum_teaching_set_size}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Positive No-Clashing Teaching Dimension}
+      
+      \begin{definition}[Positive No-Clashing Teaching Dimension - {$\mathrm{NCTD}^+$}]\label{def:positive_no-clashing_teaching_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: N
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Positive Recursive Teaching Dimension}
+      
+      \begin{definition}[Positive Recursive Teaching Dimension - {$\mathrm{RTD}^+$}]\label{def:positive_recursive_teaching_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: N
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsection{Queries}\label{sec:Queries}
+\subsubsection{Littlestone Dimension}
+      
+      \begin{definition}[Littlestone Dimension - {$\mathrm{L}$}]\label{def:littlestone_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: SM
+      \end{itemize}
+\subsubsection{Membership Query Complexity}
+      
+      \begin{definition}[Membership Query Complexity - {$\mathrm{Q}_m$}]\label{def:membership_query_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Proper Equivalence Queries Complexity}
+      
+      \begin{definition}[Proper Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{peq}}$}]\label{def:proper_equivalence_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Majority Complexity}
+      
+      \begin{definition}[Majority Complexity - {$\mathrm{Maj}$}]\label{def:majority_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Membership and Proper Equivalence Queries Complexity}
+      
+      \begin{definition}[Membership and Proper Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{mpeq}}$}]\label{def:membership_and_proper_equivalence_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: nM
+      \end{itemize}
+\subsubsection{Membership and Equivalence Queries Complexity}
+      
+      \begin{definition}[Membership and Equivalence Queries Complexity - {$\mathrm{Q}_\mathrm{meq}$}]\label{def:membership_and_equivalence_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: \cite{maas1992lower}
+\end{itemize}
+\subsubsection{Worst Mistakes}
+      
+      \begin{definition}[Worst Mistakes - {$\mathrm{M}_{\mathrm{worst}}$}]\label{def:worst_mistakes}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Best Mistakes}
+      
+      \begin{definition}[Best Mistakes - {$\mathrm{M}_{\mathrm{best}}$}]\label{def:best_mistakes}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Partial Equivalence Queries Complexity}
+      
+      \begin{definition}[Partial Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{par}}$}]\label{def:partial_equivalence_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Self-Directed Queries Complexity}
+      
+      \begin{definition}[Self-Directed Queries Complexity - {$\mathrm{M}_{\mathrm{sd}}$}]\label{def:self-directed_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Occasional One-Sided Getback}
+      
+      \begin{definition}[Occasional One-Sided Getback - {$\mathrm{M}_{\mathrm{o1g}}$}]\label{def:occasional_one-sided_getback}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Equivalence Queries Complexity = Littlestone Dimension}
+      
+      \begin{definition}[Equivalence Queries Complexity = Littlestone Dimension - {\begin{tabular}{l}$\mathrm{Q}_{\mathrm{eq}} = \mathrm{L}$\end{tabular}}]\label{def:equivalence_queries_complexity_=_littlestone_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: SM
+      \end{itemize}
+\subsubsection{Random Proper Equivalence Queries Complexity}
+      
+      \begin{definition}[Random Proper Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{rpeq}}$}]\label{def:random_proper_equivalence_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Random Equivalence Queries Complexity}
+      
+      \begin{definition}[Random Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{req}}$}]\label{def:random_equivalence_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Projected Membership Queries Complexity}
+      
+      \begin{definition}[Projected Membership Queries Complexity - {$\mathrm{Q}_{\mathrm{m}}^p$}]\label{def:projected_membership_queries_complexity}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{2-Littlestone Dimension}
+      
+      \begin{definition}[2-Littlestone Dimension - {$\mathrm{L}_2$}]\label{def:2-littlestone_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{3-Littlestone Dimension}
+      
+      \begin{definition}[3-Littlestone Dimension - {$\mathrm{L}_3$}]\label{def:3-littlestone_dimension}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{$k$-Littlestone Dimension ($k\ge3$)}
+      
+      \begin{definition}[$k$-Littlestone Dimension ($k\ge3$) - {$\mathrm{L}_k$}]\label{def:k-littlestone_dimension_(kge3)}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsection{Mixed}\label{sec:Mixed}
+\subsubsection{Star number = Maximum Projected Teaching Set Size = Projected Maximal Degree}
+      
+      \begin{definition}[Star number = Maximum Projected Teaching Set Size = Projected Maximal Degree - {\begin{tabular}{l}$\mathrm{S} = \mathrm{TS}_{\max}^p = \mathrm{d}^p_{\max}$\end{tabular}}]\label{def:star_number_=_maximum_projected_teaching_set_size_=_projected_maximal_degree}
+      The {\em Star dimension} of a family $\H$, denoted by $S(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains a $d$-star, i.e. there is a subset $T\subset S$ such that \[ T\in \H_{|S} \,\mbox{ and }\, \forall x\in S,\, T\Delta \set*{x} \in \H_{|S}\,. \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Largest Shattered Set = VC Dimension = Projected VC Radius = Projected Strongly Shattered Dimension = Maximum Largest Order Shattered Set = Projected Minimum Degree = Projected Double Density or Projected Average Degree}
+      
+      \begin{definition}[Largest Shattered Set = VC Dimension = Projected VC Radius = Projected Strongly Shattered Dimension = Maximum Largest Order Shattered Set = Projected Minimum Degree = Projected Double Density or Projected Average Degree - {\begin{tabular}{l}$\mathrm{SH} = \mathrm{VC} = \mathrm{VCR}^p$\\$= \mathrm{ST}^p = \mathrm{OSH}_{\max} = \mathrm{d}^p_{\min}$\\$= \mathrm{dens}^p$\end{tabular}}]\label{def:largest_shattered_set_=_vc_dimension_=_projected_vc_radius_=_projected_strongly_shattered_dimension_=_maximum_largest_order_shattered_set_=_projected_minimum_degree_=_projected_double_density_or_projected_average_degree}
+      
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsection{Holes and Homology}\label{sec:Holes and Homology}
+\subsubsection{co-VC dimension}
+      
+      \begin{definition}[co-VC dimension - {$\mathrm{coVC}$}]\label{def:co-vc_dimension}
+      The {\em coVC number} of a family $\H$, denoted by $\covcmod(\H)$, is the largest integer $d$ such that there exists a set $S\subset \X$, of size $d$ such that $\H_{|S}$ contains a hollow $d$-star, i.e. there is a subset $T\subset S$ such that \[ T\notin \H_{|S} \,\mbox{ and }\, \forall x\in S,\, T\Delta \set*{x} \in \H_{|S}\,. \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
