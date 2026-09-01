@@ -1,0 +1,13 @@
+{
+  "id": 179,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/monotonic_yang_dimension",
+  "relationship_type": "larger",
+  "details": "Consequence of the registered max-over-subfamilies construction.",
+  "status": "established",
+  "proof": "For every subfamily $\\mathcal G\\subseteq\\mathcal H$, $\\mathrm Y(\\mathcal G)\\le |\\mathcal G|\\le |\\mathcal H|$.  Taking the maximum over $\\mathcal G$ gives $\\mathrm Y^*(\\mathcal H)\\le |\\mathcal H|$.",
+  "derivation": "max_subfamilies from #relationships/size_yang_dimension",
+  "short_name": "size_monotonic_yang_dimension",
+  "name": "size / monotonic_yang_dimension",
+  "references": "\\cite{yang2018homological}"
+}

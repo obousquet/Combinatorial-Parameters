@@ -1,0 +1,12 @@
+{
+  "id": 183,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/information_complexity",
+  "relationship_type": "larger",
+  "details": "A finite class has a proper empirical-risk learner whose output carries at most its log-cardinality in information.",
+  "status": "established",
+  "proof": "Fix a deterministic proper empirical-risk minimizer with a fixed tie-breaking order on $\\mathcal H$.  Its output takes at most $|\\mathcal H|$ values, hence $I(S;\\mathcal A(S))\\le H(\\mathcal A(S))\\le\\log_2|\\mathcal H|\\le|\\mathcal H|$ (with value 0 for a singleton class).  Taking the infimum in the definition of information complexity preserves this upper bound.",
+  "references": "\\cite{pradeep2022information}",
+  "short_name": "size_information_complexity",
+  "name": "Size / Information Complexity"
+}
