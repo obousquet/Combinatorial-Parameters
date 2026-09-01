@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/effective_range",
   "value": "$n+1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Each of the first $n$ coordinates can be toggled between two concepts. The majority coordinate also changes by comparing subsets of sizes $\\lfloor n/2\\rfloor$ and $\\lfloor n/2\\rfloor+1$. Hence every one of the $n+1$ coordinates is effective.",
+  "references": "\\cite{maass1992lower}"
 }

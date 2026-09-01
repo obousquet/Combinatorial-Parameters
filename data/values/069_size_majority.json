@@ -5,6 +5,8 @@
   "class_id": "#classes/majority",
   "parameter_id": "#parameters/size",
   "value": "$2^n$",
-  "value_class": "$\\Omega(2^n)$",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Every subset of the first $n$ coordinates determines exactly one concept: the last coordinate is then fixed by whether that subset has strict majority. Thus the class has $2^n$ concepts.",
+  "references": "\\cite{maass1992lower}"
 }
