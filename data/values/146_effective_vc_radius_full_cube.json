@@ -1,0 +1,12 @@
+{
+  "id": 146,
+  "name": "Effective VC Radius of Full Cube",
+  "short_name": "effective_vc_radius_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "The effective range is the full domain and that entire domain is shattered by the cube. Hence the largest permitted radius is $n$."
+}

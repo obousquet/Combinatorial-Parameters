@@ -1,0 +1,12 @@
+{
+  "id": 142,
+  "name": "Diameter of Full Cube",
+  "short_name": "diameter_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/diameter",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "The empty and full subsets differ on all $n$ coordinates. No pair of subsets of an $n$-element domain can differ on more coordinates."
+}

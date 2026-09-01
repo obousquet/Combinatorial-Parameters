@@ -5,5 +5,6 @@
   "relationship_type": "larger_c",
   "details": "Theorem",
   "short_name": "vc_dimension_log_size_ratio",
-  "name": "VC Dimension / Log Size Ratio"
+  "name": "VC Dimension / Log Size Ratio",
+  "witness": "#classes/full_cube"
 }

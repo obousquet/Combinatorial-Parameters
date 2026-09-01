@@ -5,5 +5,6 @@
   "relationship_type": "larger",
   "details": "Definition",
   "short_name": "size_path_dimension",
-  "name": "Size / Path Dimension"
+  "name": "Size / Path Dimension",
+  "witness": "#classes/full_cube"
 }

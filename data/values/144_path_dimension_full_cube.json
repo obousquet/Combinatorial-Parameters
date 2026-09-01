@@ -1,0 +1,12 @@
+{
+  "id": 144,
+  "name": "Path Dimension of Full Cube",
+  "short_name": "path_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/path_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "Starting with the empty subset and adding the coordinates in any order gives a path of length $n$. A path dimension cannot exceed the number of domain coordinates."
+}

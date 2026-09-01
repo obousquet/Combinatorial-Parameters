@@ -1,0 +1,12 @@
+{
+  "id": 145,
+  "name": "Log Shattering of Full Cube",
+  "short_name": "log_shattering_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "",
+  "status": "established",
+  "proof": "Every subset of the $n$-element domain is shattered by the full cube, so there are $2^n$ shattered sets and their binary logarithm is $n$."
+}
