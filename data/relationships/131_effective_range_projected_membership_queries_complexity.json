@@ -4,5 +4,6 @@
   "parameter_2_id": "#parameters/projected_membership_queries_complexity",
   "relationship_type": "larger",
   "short_name": "effective_range_projected_membership_queries_complexity",
-  "name": "Effective Range / Projected Membership Queries Complexity"
+  "name": "Effective Range / Projected Membership Queries Complexity",
+  "witness": "#classes/trivial_concepts"
 }

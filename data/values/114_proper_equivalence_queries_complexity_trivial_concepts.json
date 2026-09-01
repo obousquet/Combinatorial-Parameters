@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/proper_equivalence_queries_complexity",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Query either of the two concepts. A failed equivalence query has a counterexample, which identifies the other constant concept."
 }

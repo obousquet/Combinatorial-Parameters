@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/membership_query_complexity",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "One membership query at any coordinate distinguishes the empty and full concepts."
 }

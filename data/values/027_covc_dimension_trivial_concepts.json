@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/covc_dimension",
   "value": "$2$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "On any two coordinates, the two traces are the empty and full two-point traces. Either of the other two traces is missing while both of its one-coordinate neighbours are present, giving a hollow 2-star. No larger hollow star is possible with only two traces."
 }

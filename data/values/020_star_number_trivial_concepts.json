@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/star_number",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Restrict to any one coordinate: the two complementary constant concepts form a 1-star. No restriction can contain a 2-star because it has only these two traces."
 }
