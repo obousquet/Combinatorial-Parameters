@@ -1777,12 +1777,12 @@
         <p><strong>Name: </strong>VC Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Value: </strong>$\log n$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
-<p><strong>Status:</strong> </p>
-
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The address coordinates realize every binary pattern, so they form a shattered set of size $\lfloor\log n\rfloor$. Since the class has exactly $2^{\lfloor\log n\rfloor}$ concepts, no larger set can be shattered.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
     </div>
@@ -1794,12 +1794,12 @@
         <p><strong>Name: </strong>Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\log n$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
-<p><strong>Status:</strong> </p>
-
-
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Querying the $\lfloor\log n\rfloor$ address coordinates in sequence yields a complete mistake tree: every address bit pattern labels one concept. A deeper tree would require more than the $2^{\lfloor\log n\rfloor}$ concepts in the class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
     </div>
