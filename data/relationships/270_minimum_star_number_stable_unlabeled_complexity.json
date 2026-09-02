@@ -5,7 +5,7 @@
   "relationship_type": "larger",
   "details": "Every finite binary class admits a stable unlabeled sample-compression scheme of size at most its minimum star number.",
   "status": "established",
-  "proof": "Theorem 22 in the cited paper constructs a stable, sample-consistent unlabeled compression scheme of size $\\mathrm S_{\\mathrm{min}}$. The optimum stable-unlabeled compression size is therefore no larger.",
+  "proof": "Theorem 23 in the cited paper constructs a stable, sample-consistent unlabeled compression scheme of size $\\mathrm S_{\\mathrm{min}}$. The optimum stable-unlabeled compression size is therefore no larger.",
   "references": "\\cite{hanneke2024star_eluder}",
   "short_name": "minimum_star_number_stable_unlabeled_complexity",
   "name": "Minimum Star Number / Stable Unlabeled Complexity"
