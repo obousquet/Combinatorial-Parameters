@@ -5,6 +5,8 @@
   "relationship_type": "larger",
   "details": "For finite nonempty concept classes, the maximum teaching-set size is at least the minimum teaching-set size.",
   "status": "established",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:max-min-teaching-set`.",
   "latex_proof_label": "lem:max-min-teaching-set",
   "short_name": "maximum_teaching_set_size_minimum_teaching_set_size",
