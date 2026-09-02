@@ -1,0 +1,12 @@
+{
+  "id": 742,
+  "name": "Proper Ordered Sample Compression of Full Cube",
+  "short_name": "proper_ordered_sample_compression_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/proper_ordered_sample_compression",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Proper ordered sample compression is a restriction of ordinary order sample compression, whose established full-cube value is $n$. Its established effective-range upper bound gives $\\mathrm{POSC}\\leq\\mathrm E$, while the full cube has effective range $n$. Thus $\\mathrm{POSC}=n$.",
+  "references": "\\cite{darnstadt2016order}"
+}
