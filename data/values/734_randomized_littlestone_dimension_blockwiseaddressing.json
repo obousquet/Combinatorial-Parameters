@@ -1,0 +1,11 @@
+{
+  "id": 734,
+  "name": "Randomized Littlestone Dimension of Blockwise-Addressing",
+  "short_name": "randomized_littlestone_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$\u005cfrac{d+1}{2}$",
+  "status": "established",
+  "proof": "The class has exactly $2^{d+1}$ concepts, so no shattered tree has expected random-branch depth exceeding d+1. The established complete Littlestone tree of depth d+1 has every branch that long, giving randomized value (d+1)/2.",
+  "references": "\u005ccite{filmus2023randomized,ben1997online}"
+}

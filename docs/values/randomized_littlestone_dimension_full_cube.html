@@ -71,11 +71,11 @@
         <p><strong>Name: </strong>Randomized Littlestone Dimension of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$n$</p>
+<p><strong>Value: </strong>$\frac n2$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The full cube has Littlestone dimension n. The general upper bound $\mathrm{RL}≤\mathrm L$ gives randomized Littlestone dimension at most n, while its complete depth-n tree has average branch length n and gives the matching lower bound.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The cube has a complete shattered tree of depth n, so its randomized value is at least n/2. Conversely, any shattered tree has at most $2^n$ leaves, and a random branch reaches a leaf with probability $2^{-d}$ at each leaf of depth d; its expected length is the entropy of this dyadic leaf distribution and is at most $\log_2(2^n)=n$. Thus the value is exactly n/2.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a></p></div>
 
         </div>

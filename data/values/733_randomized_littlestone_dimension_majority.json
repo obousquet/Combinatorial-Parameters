@@ -1,0 +1,12 @@
+{
+  "id": 733,
+  "name": "Randomized Littlestone Dimension of Majority",
+  "short_name": "randomized_littlestone_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$\u005cfrac n2$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The class has $2^n$ concepts, so the entropy bound gives expected random-branch depth at most n. Its n freely varying ordinary coordinates give a complete shattered tree of depth n. Thus randomized Littlestone dimension is n/2.",
+  "references": "\u005ccite{filmus2023randomized,maass1992lower}"
+}

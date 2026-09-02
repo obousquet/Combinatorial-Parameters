@@ -41,7 +41,7 @@
       "kind": "direct_argument"
     },
     "tight_strict_c_monotonic": {
-      "proof": "For the class consisting of the empty set and two singletons, split on the first coordinate. The two conditioned branches have values 1/2 and 0, while the whole class has value 3/4. Thus unequal branch values need not make the whole value equal to their maximum.",
+      "proof": "For the two constant hypotheses, either active coordinate has two singleton conditioned branches, both of randomized Littlestone value 0, whereas the whole class has value 1/2 rather than 1. Thus the equal-branch +1 requirement fails.",
       "kind": "counterexample"
     }
   }

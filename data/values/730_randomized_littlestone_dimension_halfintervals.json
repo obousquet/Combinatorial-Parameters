@@ -1,0 +1,13 @@
+{
+  "id": 730,
+  "name": "Randomized Littlestone Dimension of Half-intervals",
+  "short_name": "randomized_littlestone_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$\u005cfrac12\u005cbigl(k+\u005cfrac{n-2^k}{2^k}\u005cbigr)$",
+  "value_class": "omega_log_n",
+  "details": "Here $k=\u005clfloor\u005clog_2 n\u005crfloor$ and $n\u005cgeq1$.",
+  "status": "established",
+  "proof": "A threshold query partitions the feasible initial segments at any chosen cut, so shattered trees for this class are precisely binary comparison trees with n leaves. If $F(n)$ is the largest expected random-branch depth among such trees, then $F(1)=0$ and $F(n)=1+\u005cmax_{1\u005cleq a<n}(F(a)+F(n-a))/2$. Induction gives $F(n)=k+(n-2^k)/2^k$ for $k=\u005clfloor\u005clog_2 n\u005crfloor$. Dividing by two gives the stated randomized Littlestone value.",
+  "references": "\u005ccite{filmus2023randomized,littlestone1988learning}"
+}

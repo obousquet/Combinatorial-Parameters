@@ -4293,11 +4293,11 @@
         <p><strong>Name: </strong>Randomized Littlestone Dimension of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$n$</p>
+<p><strong>Value: </strong>$\frac n2$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The full cube has Littlestone dimension n. The general upper bound $\mathrm{RL}≤\mathrm L$ gives randomized Littlestone dimension at most n, while its complete depth-n tree has average branch length n and gives the matching lower bound.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The cube has a complete shattered tree of depth n, so its randomized value is at least n/2. Conversely, any shattered tree has at most $2^n$ leaves, and a random branch reaches a leaf with probability $2^{-d}$ at each leaf of depth d; its expected length is the entropy of this dyadic leaf distribution and is at most $\log_2(2^n)=n$. Thus the value is exactly n/2.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a></p></div>
 
         </div>
@@ -4350,6 +4350,91 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Each nontrivial query separates one singleton on its positive branch, leaving the empty concept and the other singletons on the negative branch. Querying all n coordinates therefore gives a comb with expected branch length $\sum_{j=0}^{n-1}2^{-j}=2-2^{1-n}$. Every shattered tree has at most these n successive splits, giving the matching upper bound. Divide by two.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-730" style="position:relative;">
+        
+        <h3><a href="values/randomized_littlestone_dimension_halfintervals.html" class="table-title-link">Randomized Littlestone Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized Littlestone Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\frac12\bigl(k+\frac{n-2^k}{2^k}\bigr)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>Here $k=\lfloor\log_2 n\rfloor$ and $n\geq1$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A threshold query partitions the feasible initial segments at any chosen cut, so shattered trees for this class are precisely binary comparison trees with n leaves. If $F(n)$ is the largest expected random-branch depth among such trees, then $F(1)=0$ and $F(n)=1+\max_{1\leq a<n}(F(a)+F(n-a))/2$. Induction gives $F(n)=k+(n-2^k)/2^k$ for $k=\lfloor\log_2 n\rfloor$. Dividing by two gives the stated randomized Littlestone value.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-731" style="position:relative;">
+        
+        <h3><a href="values/randomized_littlestone_dimension_universal_class.html" class="table-title-link">Randomized Littlestone Dimension of Universal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized Littlestone Dimension of Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\frac12\bigl(k+\frac{n-2^k}{2^k}\bigr)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>Here $k=\lfloor\log_2 n\rfloor$ and $n\geq1$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every subset of the n hypotheses can be selected by a domain point of the universal class. Hence every binary tree with n leaves is shattered, and no shattered tree can have more than n leaves. The optimal expected random-branch depth is therefore F(n)=k+(n-2^k)/2^k, by the binary-tree recurrence; divide by two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-732" style="position:relative;">
+        
+        <h3><a href="values/randomized_littlestone_dimension_addressing.html" class="table-title-link">Randomized Littlestone Dimension of Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized Littlestone Dimension of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\frac12\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Write d for $\lfloor\log_2 n\rfloor$. The class has exactly $2^d$ concepts, so every shattered tree has expected random-branch depth at most d by the entropy bound. Querying the d address coordinates gives a complete shattered tree of depth d, hence randomized value d/2.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-733" style="position:relative;">
+        
+        <h3><a href="values/randomized_littlestone_dimension_majority.html" class="table-title-link">Randomized Littlestone Dimension of Majority</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized Littlestone Dimension of Majority</p>
+<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
+<p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\frac n2$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has $2^n$ concepts, so the entropy bound gives expected random-branch depth at most n. Its n freely varying ordinary coordinates give a complete shattered tree of depth n. Thus randomized Littlestone dimension is n/2.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-734" style="position:relative;">
+        
+        <h3><a href="values/randomized_littlestone_dimension_blockwiseaddressing.html" class="table-title-link">Randomized Littlestone Dimension of Blockwise-Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized Littlestone Dimension of Blockwise-Addressing</p>
+<p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\frac{d+1}{2}$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly $2^{d+1}$ concepts, so no shattered tree has expected random-branch depth exceeding d+1. The established complete Littlestone tree of depth d+1 has every branch that long, giving randomized value (d+1)/2.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
     </div>

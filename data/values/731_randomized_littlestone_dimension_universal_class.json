@@ -1,0 +1,13 @@
+{
+  "id": 731,
+  "name": "Randomized Littlestone Dimension of Universal Class",
+  "short_name": "randomized_littlestone_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$\u005cfrac12\u005cbigl(k+\u005cfrac{n-2^k}{2^k}\u005cbigr)$",
+  "value_class": "omega_log_n",
+  "details": "Here $k=\u005clfloor\u005clog_2 n\u005crfloor$ and $n\u005cgeq1$.",
+  "status": "established",
+  "proof": "Every subset of the n hypotheses can be selected by a domain point of the universal class. Hence every binary tree with n leaves is shattered, and no shattered tree can have more than n leaves. The optimal expected random-branch depth is therefore F(n)=k+(n-2^k)/2^k, by the binary-tree recurrence; divide by two.",
+  "references": "\u005ccite{filmus2023randomized,chornomaz2025spherical}"
+}

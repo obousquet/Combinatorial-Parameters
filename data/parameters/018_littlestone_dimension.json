@@ -43,7 +43,7 @@
       "kind": "direct_argument"
     },
     "tight_strict_c_monotonic": {
-      "proof": "The defining Littlestone recurrence takes the larger branch value when branches differ and one plus their common value when they agree.",
+      "proof": "For every active one-coordinate split whose two Littlestone dimensions equal d, their complete depth-d shattered trees join below the split coordinate to give depth d+1; a deeper whole-class tree would force one branch to have dimension above d. Thus the whole value is exactly d+1.",
       "kind": "direct_argument"
     }
   }

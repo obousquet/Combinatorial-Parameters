@@ -4,7 +4,7 @@
   "parameter_2_id": "#parameters/littlestone_dimension",
   "relationship_type": "larger_c",
   "multiplicative_constant": "0.5",
-  "details": "For every binary concept class, $\u005cmathrm{RL}(\u005cmathcal H)≥\u005cfrac12\u005cmathrm L(\u005cmathcal H).",
+  "details": "For every binary concept class, $\u005cmathrm{RL}(\u005cmathcal H)\u005cgeq\u005cfrac12\u005cmathrm L(\u005cmathcal H).",
   "status": "established",
   "proof": "A complete shattered Littlestone tree of depth d has every branch of length d, hence average branch length d. It witnesses randomized Littlestone dimension at least d/2. Take the supremum over d.",
   "references": "\u005ccite{filmus2023randomized,littlestone1988learning}",

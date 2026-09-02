@@ -3,12 +3,12 @@
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/randomized_littlestone_dimension",
   "relationship_type": "larger",
-  "details": "For every binary concept class, $\u005cmathrm L(\u005cmathcal H)≥\u005cmathrm{RL}(\u005cmathcal H).",
+  "details": "For every binary concept class, $\u005cmathrm L(\u005cmathcal H)\u005cgeq\u005cmathrm{RL}(\u005cmathcal H).",
   "status": "established",
-  "proof": "Induct on the finite Littlestone dimension d. At the root of any shattered tree, the two restrictions have dimensions a,b at most d, and they cannot both equal d (otherwise their complete trees join to give dimension d+1). Thus a≤d and b≤d-1 after ordering. Induction bounds each subtree's randomized value by its Littlestone dimension, so the root tree has half its expected branch length at most 1/2+(a+b)/2≤d. Taking suprema proves the claim; the infinite case follows by truncation.",
+  "proof": "Induct on the finite Littlestone dimension d. At the root of any shattered tree, the two restrictions have dimensions a,b at most d, and they cannot both equal d (otherwise their complete trees join to give dimension d+1). Thus $a\u005cleq d$ and $b\u005cleq d-1$ after ordering. Induction bounds each subtree's randomized value by its Littlestone dimension, so the root tree has half its expected branch length at most $1/2+(a+b)/2\u005cleq d$. Taking suprema proves the claim; the infinite case follows by truncation.",
   "references": "\u005ccite{filmus2023randomized,littlestone1988learning}",
   "proof_source": "The randomized-tree definition is Definition 1 of \u005ccite{filmus2023randomized}; the comparison is a direct induction.",
-  "witness": "#classes/full_cube",
+  "witness": "#classes/singletons_plus_empty_set",
   "short_name": "littlestone_dimension_randomized_littlestone_dimension",
   "name": "Littlestone Dimension / Randomized Littlestone Dimension"
 }

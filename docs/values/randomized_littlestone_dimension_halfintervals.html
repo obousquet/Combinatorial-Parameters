@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,24 +63,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-285" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-730" style="position:relative;">
         
-        <h3><a href="relationships/randomized_littlestone_dimension_littlestone_dimension.html" class="table-title-link">Randomized Littlestone Dimension / Littlestone Dimension</a></h3>
+        <h3><a href="values/randomized_littlestone_dimension_halfintervals.html" class="table-title-link">Randomized Littlestone Dimension of Half-intervals</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Randomized Littlestone Dimension / Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-
-<p><strong>Multiplicative Constant: </strong>0.5</p>
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every binary concept class, $\mathrm{RL}(\mathcal H)\geq\frac12\mathrm L(\mathcal H).</p></div>
-<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+        <p><strong>Name: </strong>Randomized Littlestone Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\frac12\bigl(k+\frac{n-2^k}{2^k}\bigr)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>Here $k=\lfloor\log_2 n\rfloor$ and $n\geq1$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A complete shattered Littlestone tree of depth d has every branch of length d, hence average branch length d. It witnesses randomized Littlestone dimension at least d/2. Take the supremum over d.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Immediate from Definition 1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> and the ordinary shattered-tree definition.</p></div>
-
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A threshold query partitions the feasible initial segments at any chosen cut, so shattered trees for this class are precisely binary comparison trees with n leaves. If $F(n)$ is the largest expected random-branch depth among such trees, then $F(1)=0$ and $F(n)=1+\max_{1\leq a<n}(F(a)+F(n-a))/2$. Induction gives $F(n)=k+(n-2^k)/2^k$ for $k=\lfloor\log_2 n\rfloor$. Dividing by two gives the stated randomized Littlestone value.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
 
         </div>
