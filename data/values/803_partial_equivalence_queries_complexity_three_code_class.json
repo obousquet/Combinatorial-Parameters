@@ -1,0 +1,12 @@
+{
+  "id": 803,
+  "name": "Partial Equivalence Queries Complexity of the Three-Code Class",
+  "short_name": "partial_equivalence_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/partial_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A full Boolean hypothesis is an allowed partial-equivalence query. Use the full improper proposal $001$; its three possible counterexamples identify respectively $000,011,101$, as checked in $\\texttt{sync/verify\\_properness\\_separation.py}$. Thus one query suffices, while zero queries cannot identify a non-singleton class.",
+  "references": "\\cite{maass1992lower}"
+}
