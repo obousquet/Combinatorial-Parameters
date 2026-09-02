@@ -1,0 +1,12 @@
+{
+  "id": 822,
+  "name": "Teaching Dimension of Blockwise-Addressing",
+  "short_name": "teaching_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $f_i$, the two labeled examples $(z,0),(x_i,1)$ exclude every $g_j$ and every other $f_j$; symmetrically $(z,1),(y_i,1)$ teaches $g_i$. Thus $\\mathrm{TD}\\le2$. No one-coordinate sample teaches $f_i$: the $z$-label leaves all $f_j$; an $x$-coordinate either leaves another $f_j$ or agrees with some $g_j$; and a coordinate in a $y$-block is shared by $2^{d-1}$ of the $f_j$. Hence $\\mathrm{TD}=2$.",
+  "references": "Direct calculation from the Blockwise-Addressing construction in \\cite{ben1997online}."
+}

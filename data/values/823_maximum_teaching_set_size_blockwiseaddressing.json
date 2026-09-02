@@ -1,0 +1,12 @@
+{
+  "id": 823,
+  "name": "Maximum Teaching-Set Size of Blockwise-Addressing",
+  "short_name": "maximum_teaching_set_size_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Maximum teaching-set size is the classical teaching dimension. The direct Blockwise-Addressing teaching calculation gives $\\mathrm{TD}=2$, hence $\\mathrm{TS}_{\\max}=2$.",
+  "references": "Direct calculation from the Blockwise-Addressing construction in \\cite{ben1997online}."
+}
