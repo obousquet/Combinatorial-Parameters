@@ -9,4 +9,6 @@
   "references": "\\cite{chase2024dual}",
   "short_name": "radon_number_dual_vc_dimension",
   "name": "Radon Number / Dual VC Dimension"
+  ,"witness": "#classes/three_code_class"
+  ,"witness_strength": "strict"
 }

@@ -10,4 +10,6 @@
   "proof_source": "Corollary  in the cited paper (the sign-rank corollary immediately following the extremal-class theorem).",
   "short_name": "sign_rank_list_replicability",
   "name": "Sign Rank / List Replicability Number"
+  ,"witness": "#classes/singletons_plus_empty_set"
+  ,"witness_strength": "strict"
 }

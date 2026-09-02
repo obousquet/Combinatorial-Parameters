@@ -8,6 +8,8 @@
   "proof": "If $S=\\{x_1,\\ldots,x_d\\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies the 2-block constraint (indeed, it is level-constant everywhere). Hence $\\mathrm{B}_2(\\mathcal H)\\ge\\operatorname{VC}(\\mathcal H)$.",
   "latex_proof_label": "prop:block-littlestone-sandwich",
   "proof_source": "Proposition \\ref{prop:block-littlestone-sandwich} in the survey.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "2block_littlestone_dimension_vc_dimension",
   "name": "2-Block Littlestone Dimension / VC Dimension"
 }

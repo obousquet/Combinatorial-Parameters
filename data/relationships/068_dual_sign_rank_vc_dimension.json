@@ -9,4 +9,6 @@
   "status": "established",
   "proof": "This is the first inequality of Proposition 1, which identifies dual sign rank with the VC dimension of the matrix obtained by adjoining the negated rows.",
   "references": "\\cite{alon2016sign}"
+  ,"witness": "#classes/singletons_plus_empty_set"
+  ,"witness_strength": "strict"
 }
