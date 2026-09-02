@@ -1,0 +1,12 @@
+{
+  "id": 819,
+  "name": "Positive No-Clashing Teaching Dimension of the Three-Code Class",
+  "short_name": "positive_noclashing_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Give $000$ the empty sample and give $011,101$ respectively their positive examples $(x_1,1),(x_2,1)$. The latter two samples are inconsistent with $000$ and with each other, so this is a positive no-clashing map of width one. Width zero is impossible for a non-singleton class. Hence $\\mathrm{NCTD}^{+}=1$; the map is checked in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition; see \\cite{KSZ2019} for positive NCTD."
+}

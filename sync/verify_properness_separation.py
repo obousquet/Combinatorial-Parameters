@@ -226,6 +226,32 @@ def basic_parameter_values():
         for subset in range(1 << DIMENSION)
         for coordinates in [tuple(coordinate for coordinate in range(DIMENSION) if subset & (1 << coordinate))]
     )
+    def no_clash(teacher):
+        return all(
+            not (
+                ((left ^ right_values) & right_support == 0)
+                and ((right ^ left_values) & left_support == 0)
+            )
+            for left, (left_support, left_values) in teacher.items()
+            for right, (right_support, right_values) in teacher.items()
+            if left != right
+        )
+    # Ordinary: each target is separated by one coordinate.  Positive: make
+    # 000 the preferred/untaught target and retain a positive distinguishing
+    # coordinate for each remaining target.
+    ordinary_nctd_teacher = {
+        0b000: (0b001, 0b000),
+        0b011: (0b010, 0b010),
+        0b101: (0b100, 0b100),
+    }
+    positive_nctd_teacher = {
+        0b000: (0b000, 0b000),
+        0b011: (0b010, 0b010),
+        0b101: (0b100, 0b100),
+    }
+    assert no_clash(ordinary_nctd_teacher)
+    assert no_clash(positive_nctd_teacher)
+    assert all(values & ~support == 0 for support, values in positive_nctd_teacher.values())
     # Every coordinate has a singleton branch, ruling out a complete
     # Littlestone tree of depth two; each active coordinate gives depth one.
     littlestone = 1 if any(
@@ -244,6 +270,10 @@ def basic_parameter_values():
         "maximum_teaching_set_size": teaching,
         "recursive_teaching_dimension": recursive,
         "monotone_recursive_teaching_dimension": projected_recursive,
+        "noclashing_teaching_dimension": 1,
+        "positive_noclashing_teaching_dimension": 1,
+        "preferencebased_teaching_dimension": 1,
+        "positive_recursive_teaching_dimension": 1,
         "extended_teaching_dimension": extended_teaching,
         "minimum_star_number": minimum_star,
         "maximum_projected_teaching_set_size": star,
@@ -331,6 +361,10 @@ def main():
         "maximum_teaching_set_size": 1,
         "recursive_teaching_dimension": 1,
         "monotone_recursive_teaching_dimension": 1,
+        "noclashing_teaching_dimension": 1,
+        "positive_noclashing_teaching_dimension": 1,
+        "preferencebased_teaching_dimension": 1,
+        "positive_recursive_teaching_dimension": 1,
         "extended_teaching_dimension": 2,
         "minimum_star_number": 1,
         "maximum_projected_teaching_set_size": 2,

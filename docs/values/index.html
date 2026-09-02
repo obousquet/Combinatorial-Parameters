@@ -13041,6 +13041,74 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-818" style="position:relative;">
+        
+        <h3><a href="values/noclashing_teaching_dimension_three_code_class.html" class="table-title-link">No-Clashing Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>No-Clashing Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Assign respectively the one-point samples $(x_0,0),(x_1,1),(x_2,1)$ to $000,011,101$. Each sample is inconsistent with both other concepts, so no pair clashes. A zero-size teacher map on a non-singleton class makes every pair clash. Hence $\mathrm{NCTD}=1$; the map is checked in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition; see <a href="bibliography.html#KSZ2019">[KSZ2019]</a> for NCTD.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-819" style="position:relative;">
+        
+        <h3><a href="values/positive_noclashing_teaching_dimension_three_code_class.html" class="table-title-link">Positive No-Clashing Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive No-Clashing Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Give $000$ the empty sample and give $011,101$ respectively their positive examples $(x_1,1),(x_2,1)$. The latter two samples are inconsistent with $000$ and with each other, so this is a positive no-clashing map of width one. Width zero is impossible for a non-singleton class. Hence $\mathrm{NCTD}^{+}=1$; the map is checked in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition; see <a href="bibliography.html#KSZ2019">[KSZ2019]</a> for positive NCTD.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-820" style="position:relative;">
+        
+        <h3><a href="values/preferencebased_teaching_dimension_three_code_class.html" class="table-title-link">Preference-Based Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Preference-Based Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Use preference order $000\succ011\succ101$. The empty sample teaches the most preferred target; $(x_1,1)$ teaches $011$, and $(x_2,1)$ teaches $101$. Thus the value is at most one, and zero is impossible for a non-singleton class. Hence $\mathrm{PBTD}=1$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition; compare <a href="bibliography.html#gao2017preference">[gao2017preference]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-821" style="position:relative;">
+        
+        <h3><a href="values/positive_recursive_teaching_dimension_three_code_class.html" class="table-title-link">Positive Recursive Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Recursive Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Remove $011$ and $101$ first, using their positive one-point teaching samples $(x_1,1)$ and $(x_2,1)$, each unique among the current class. The remaining $000$ is removed with the empty sample. Thus positive RTD is at most one; it cannot be zero on a non-singleton class. Hence $\mathrm{RTD}^{+}=1$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition; see <a href="bibliography.html#fallat2023batch">[fallat2023batch]</a>.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

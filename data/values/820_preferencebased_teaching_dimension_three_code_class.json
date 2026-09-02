@@ -1,0 +1,12 @@
+{
+  "id": 820,
+  "name": "Preference-Based Teaching Dimension of the Three-Code Class",
+  "short_name": "preferencebased_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/preferencebased_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Use preference order $000\\succ011\\succ101$. The empty sample teaches the most preferred target; $(x_1,1)$ teaches $011$, and $(x_2,1)$ teaches $101$. Thus the value is at most one, and zero is impossible for a non-singleton class. Hence $\\mathrm{PBTD}=1$.",
+  "references": "Direct calculation from the class definition; compare \\cite{gao2017preference}."
+}

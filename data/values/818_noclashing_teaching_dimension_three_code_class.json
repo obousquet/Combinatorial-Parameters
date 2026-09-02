@@ -1,0 +1,12 @@
+{
+  "id": 818,
+  "name": "No-Clashing Teaching Dimension of the Three-Code Class",
+  "short_name": "noclashing_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Assign respectively the one-point samples $(x_0,0),(x_1,1),(x_2,1)$ to $000,011,101$. Each sample is inconsistent with both other concepts, so no pair clashes. A zero-size teacher map on a non-singleton class makes every pair clash. Hence $\\mathrm{NCTD}=1$; the map is checked in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition; see \\cite{KSZ2019} for NCTD."
+}
