@@ -89,6 +89,8 @@ def hamming_distance(first: str, second: str) -> int:
 def main() -> None:
     sizes = tuple(minimum_teaching_set_size(concept, CLASS) for concept in CLASS)
     assert sizes == EXPECTED_SIZES, (sizes, EXPECTED_SIZES)
+    assert min(sizes) == 2
+    assert max(sizes) == 4
     assert sum(sizes) == 40
     assert largest_star_dimension() == 4
     assert largest_star_dimension(hollow=True) == 4
@@ -106,6 +108,7 @@ def main() -> None:
         for centre in map("".join, product("01", repeat=5))
     ) == 4
     print(f"individual minimum teaching-set sizes: {sizes}")
+    print("minimum teaching-set size: 2; teaching dimension / maximum teaching-set size: 4")
     print("sum: 40; average teaching dimension: 40/13")
     print("star number: 4; co-VC dimension: 4; minimum star number: 3")
     print("size: 13; effective range: 5; VC dimension: 3; Littlestone dimension: 3")

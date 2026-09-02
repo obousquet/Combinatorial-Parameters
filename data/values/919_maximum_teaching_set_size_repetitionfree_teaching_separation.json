@@ -1,0 +1,12 @@
+{
+  "id": 919,
+  "name": "Maximum Teaching-Set Size of the Repetition-Free Teaching Separation Class",
+  "short_name": "maximum_teaching_set_size_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Maximum teaching-set size is the teaching dimension. The direct enumeration of this class's individual minimum teaching-set sizes has maximum four; it is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,kushilevitz1996witness}"
+}

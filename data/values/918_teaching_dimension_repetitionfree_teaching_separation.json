@@ -1,0 +1,12 @@
+{
+  "id": 918,
+  "name": "Teaching Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "teaching_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The individual minimum teaching-set sizes are $2,2,4,4,3,3,3,3,3,4,3,3,3$. Teaching dimension is their maximum, hence four; the exhaustive calculation is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,kushilevitz1996witness}"
+}

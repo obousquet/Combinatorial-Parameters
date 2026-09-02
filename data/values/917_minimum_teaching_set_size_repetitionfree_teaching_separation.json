@@ -1,0 +1,12 @@
+{
+  "id": 917,
+  "name": "Minimum Teaching-Set Size of the Repetition-Free Teaching Separation Class",
+  "short_name": "minimum_teaching_set_size_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Exhaustive inspection of coordinate subsets gives individual minimum teaching-set sizes $2,2,4,4,3,3,3,3,3,4,3,3,3$. Their minimum is two; the calculation is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,kushilevitz1996witness}"
+}
