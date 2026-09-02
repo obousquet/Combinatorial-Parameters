@@ -8,5 +8,7 @@
   "short_name": "densest_subgraph_twice_double_density_or_average_degree",
   "name": "Densest Subgraph (twice) / Double Density or Average Degree",
   "status": "established",
-  "proof": "The densest-subgraph parameter maximizes average degree over subgraphs.  The original graph is one candidate, so its average degree cannot be larger."
+  "proof": "The densest-subgraph parameter maximizes average degree over subgraphs.  The original graph is one candidate, so its average degree cannot be larger.",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict"
 }

@@ -7,5 +7,7 @@
   "short_name": "double_density_or_average_degree_minimum_degree",
   "name": "Double Density or Average Degree / Minimum Degree",
   "status": "established",
-  "proof": "The average vertex degree of a finite graph is at least its minimum vertex degree."
+  "proof": "The average vertex degree of a finite graph is at least its minimum vertex degree.",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict"
 }

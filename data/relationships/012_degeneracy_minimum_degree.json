@@ -9,5 +9,7 @@
   "name": "Degeneracy / Minimum Degree",
   "status": "established",
   "proof": "Degeneracy is the maximum, over induced subgraphs, of their minimum degrees.  Taking the original graph as one candidate gives at least its minimum degree.",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict",
   "references": "\\cite{haussler1988predicting,alon1992colorings}"
 }
