@@ -9,4 +9,6 @@
   "name": "Maximum Projected Teaching Set Size / Maximum Teaching Set Size",
   "status": "established",
   "proof": "The projected maximum teaching-set size maximizes over projections.  The full-domain projection is the original class, and hence supplies the ordinary maximum teaching-set size as a candidate."
+  ,"witness": "#classes/three_code_class"
+  ,"witness_strength": "strict"
 }

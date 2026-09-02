@@ -8,5 +8,7 @@
   "short_name": "minimum_projected_teaching_set_size_minimum_teaching_set_size",
   "name": "Minimum Projected Teaching Set Size / Minimum Teaching Set Size",
   "status": "established",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict",
   "proof": "The projected minimum teaching-set parameter maximizes the corresponding quantity over projections.  The full-domain projection recovers the original class and its minimum teaching-set size."
 }

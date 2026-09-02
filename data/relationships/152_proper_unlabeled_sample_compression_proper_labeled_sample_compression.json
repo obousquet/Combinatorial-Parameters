@@ -7,6 +7,8 @@
   "details": "Definition",
   "status": "established",
   "proof": "Every proper unlabeled scheme is a proper labeled scheme after allowing the retained labels to be stored. The latter model is less restrictive.",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict",
   "short_name": "proper_unlabeled_sample_compression_proper_labeled_sample_compression",
   "name": "Proper Unlabeled Sample Compression / Proper Labeled Sample Compression"
 }

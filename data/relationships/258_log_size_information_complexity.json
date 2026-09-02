@@ -7,6 +7,8 @@
   "status": "established",
   "proof": "Choose a deterministic proper empirical-risk minimizer with fixed tie-breaking. Its output lies in $\\mathcal H$, so $I(S;\\mathcal A(S))\\leq H(\\mathcal A(S))\\leq\\log_2|\\mathcal H|$. This learner is admissible in the infimum defining information complexity; then take the distribution and sample-size supremum.",
   "references": "\\cite{pradeep2022information}",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
   "short_name": "log_size_information_complexity",
   "name": "Log Size / Information Complexity"
 }
