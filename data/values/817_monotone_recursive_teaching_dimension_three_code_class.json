@@ -1,0 +1,12 @@
+{
+  "id": 817,
+  "name": "Projected Recursive Teaching Dimension of the Three-Code Class",
+  "short_name": "monotone_recursive_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The full class has recursive teaching dimension one. Each proper coordinate projection is either a singleton/two-concept class or a three-trace path, and its endpoints give a recursive teaching batch of size one. Thus every projection has RTD at most one, and the maximum is one. All projections are enumerated in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition; compare the projected variant in \\cite{doliwa2014recursive}."
+}

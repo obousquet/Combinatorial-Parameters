@@ -1,0 +1,12 @@
+{
+  "id": 815,
+  "name": "Maximum Teaching-Set Size of the Three-Code Class",
+  "short_name": "maximum_teaching_set_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "This is the classical teaching dimension. Each of $000,011,101$ is uniquely identified by its label respectively at $x_0,x_1,x_2$, so the maximum teaching-set size is one. The direct certificate is in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition."
+}

@@ -12990,6 +12990,57 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-815" style="position:relative;">
+        
+        <h3><a href="values/maximum_teaching_set_size_three_code_class.html" class="table-title-link">Maximum Teaching-Set Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Teaching-Set Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>This is the classical teaching dimension. Each of $000,011,101$ is uniquely identified by its label respectively at $x_0,x_1,x_2$, so the maximum teaching-set size is one. The direct certificate is in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-816" style="position:relative;">
+        
+        <h3><a href="values/recursive_teaching_dimension_three_code_class.html" class="table-title-link">Recursive Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursive Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>In the initial class, every concept already has a one-coordinate teaching set, so they may all form the first recursive batch. A non-singleton class cannot have recursive teaching dimension zero. Hence $\mathrm{RTD}=1$, verified by the residual-class recursion in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition; see the teaching-model definition in <a href="bibliography.html#zilles2011models">[zilles2011models]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-817" style="position:relative;">
+        
+        <h3><a href="values/monotone_recursive_teaching_dimension_three_code_class.html" class="table-title-link">Projected Recursive Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Recursive Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full class has recursive teaching dimension one. Each proper coordinate projection is either a singleton/two-concept class or a three-trace path, and its endpoints give a recursive teaching batch of size one. Thus every projection has RTD at most one, and the maximum is one. All projections are enumerated in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition; compare the projected variant in <a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a>.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

@@ -194,6 +194,38 @@ def basic_parameter_values():
             )
         )
     minimum_star = min(centred_star(target) for target in range(1 << DIMENSION))
+    def teaching_size(concept, family, dimension):
+        return min(
+            subset.bit_count()
+            for subset in range(1 << dimension)
+            if sum((concept ^ other) & subset == 0 for other in family) == 1
+        )
+    def recursive_teaching(family, dimension):
+        """The canonical simultaneous-batch recursion for finite families."""
+        remaining = set(family)
+        worst = 0
+        while remaining:
+            sizes = {concept: teaching_size(concept, remaining, dimension) for concept in remaining}
+            current = min(sizes.values())
+            worst = max(worst, current)
+            remaining.difference_update(concept for concept, size in sizes.items() if size == current)
+        return worst
+
+    def compact_trace(trace, coordinates):
+        return sum(
+            ((trace >> coordinate) & 1) << index
+            for index, coordinate in enumerate(coordinates)
+        )
+
+    recursive = recursive_teaching(CONCEPTS, DIMENSION)
+    projected_recursive = max(
+        recursive_teaching(
+            tuple(compact_trace(trace, coordinates) for trace in traces[subset]),
+            len(coordinates),
+        )
+        for subset in range(1 << DIMENSION)
+        for coordinates in [tuple(coordinate for coordinate in range(DIMENSION) if subset & (1 << coordinate))]
+    )
     # Every coordinate has a singleton branch, ruling out a complete
     # Littlestone tree of depth two; each active coordinate gives depth one.
     littlestone = 1 if any(
@@ -209,6 +241,9 @@ def basic_parameter_values():
         "vc_dimension": vc,
         "littlestone_dimension": littlestone,
         "teaching_dimension": teaching,
+        "maximum_teaching_set_size": teaching,
+        "recursive_teaching_dimension": recursive,
+        "monotone_recursive_teaching_dimension": projected_recursive,
         "extended_teaching_dimension": extended_teaching,
         "minimum_star_number": minimum_star,
         "maximum_projected_teaching_set_size": star,
@@ -293,6 +328,9 @@ def main():
         "vc_dimension": 1,
         "littlestone_dimension": 1,
         "teaching_dimension": 1,
+        "maximum_teaching_set_size": 1,
+        "recursive_teaching_dimension": 1,
+        "monotone_recursive_teaching_dimension": 1,
         "extended_teaching_dimension": 2,
         "minimum_star_number": 1,
         "maximum_projected_teaching_set_size": 2,

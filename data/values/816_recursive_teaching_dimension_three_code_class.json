@@ -1,0 +1,12 @@
+{
+  "id": 816,
+  "name": "Recursive Teaching Dimension of the Three-Code Class",
+  "short_name": "recursive_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "In the initial class, every concept already has a one-coordinate teaching set, so they may all form the first recursive batch. A non-singleton class cannot have recursive teaching dimension zero. Hence $\\mathrm{RTD}=1$, verified by the residual-class recursion in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition; see the teaching-model definition in \\cite{zilles2011models}."
+}
