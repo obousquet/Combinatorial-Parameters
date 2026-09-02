@@ -1,0 +1,12 @@
+{
+  "id": 908,
+  "name": "Projected Maximal Degree of the Repetition-Free Teaching Separation Class",
+  "short_name": "projected_maximal_degree_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/projected_maximal_degree",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projected maximal degree equals the star number. The direct exhaustive calculation for this class gives star number four, hence projected maximal degree four.",
+  "references": "\\cite{hanneke2015minimax,doliwa2014recursive}"
+}

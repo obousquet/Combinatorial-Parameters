@@ -1,0 +1,12 @@
+{
+  "id": 909,
+  "name": "Maximum Projected Teaching-Set Size of the Repetition-Free Teaching Separation Class",
+  "short_name": "maximum_projected_teaching_set_size_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/maximum_projected_teaching_set_size",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For finite concept classes, maximum projected teaching-set size equals the star number. The direct exhaustive calculation gives star number four for this class.",
+  "references": "\\cite{hanneke2015minimax,doliwa2014recursive}"
+}
