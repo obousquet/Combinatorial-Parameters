@@ -111,6 +111,51 @@ def randomized_littlestone_dimension(concepts: set[tuple[int, ...]]) -> Fraction
     return value(tuple(range(len(hypotheses))))
 
 
+def _sample_is_consistent(
+    sample: tuple[tuple[int, int], ...], hypothesis: tuple[int, ...]
+) -> bool:
+    return all(hypothesis[coordinate] == label for coordinate, label in sample)
+
+
+def noclashing_map(
+    concepts: set[tuple[int, ...]], maximum_size: int
+) -> list[tuple[tuple[int, int], ...]] | None:
+    """Return a width-bounded no-clashing map, or ``None`` if none exists."""
+    hypotheses = tuple(sorted(concepts))
+    dimension = len(hypotheses[0])
+    options = [
+        [
+            tuple((coordinate, hypothesis[coordinate]) for coordinate in support)
+            for size in range(maximum_size + 1)
+            for support in combinations(range(dimension), size)
+        ]
+        for hypothesis in hypotheses
+    ]
+    mapping: list[tuple[tuple[int, int], ...] | None] = [None] * len(hypotheses)
+
+    def extend(index: int) -> bool:
+        if index == len(hypotheses):
+            return True
+        for sample in options[index]:
+            if all(
+                assigned is None
+                or not (
+                    _sample_is_consistent(sample, hypotheses[other])
+                    and _sample_is_consistent(assigned, hypotheses[index])
+                )
+                for other, assigned in enumerate(mapping[:index])
+            ):
+                mapping[index] = sample
+                if extend(index + 1):
+                    return True
+                mapping[index] = None
+        return False
+
+    if not extend(0):
+        return None
+    return [sample for sample in mapping if sample is not None]
+
+
 def main() -> None:
     concepts = warmuth_c5()
     assert len(concepts) == 10
@@ -120,10 +165,14 @@ def main() -> None:
     assert covc == 4
     randomized_littlestone = randomized_littlestone_dimension(concepts)
     assert randomized_littlestone == Fraction(13, 8)
+    assert noclashing_map(concepts, 1) is None
+    nctd_map = noclashing_map(concepts, 2)
+    assert nctd_map is not None
+    assert max(map(len, nctd_map)) == 2
     print(
         "Warmuth C_5 minimum star number: "
         f"{value}; co-VC dimension: {covc}; randomized Littlestone dimension: "
-        f"{randomized_littlestone}"
+        f"{randomized_littlestone}; no-clashing teaching dimension: 2"
     )
 
 
