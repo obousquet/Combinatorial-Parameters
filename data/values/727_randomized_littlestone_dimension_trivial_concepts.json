@@ -1,0 +1,12 @@
+{
+  "id": 727,
+  "name": "Randomized Littlestone Dimension of Trivial Concepts",
+  "short_name": "randomized_littlestone_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$1/2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "One query separates the two constant hypotheses, producing a shattered tree whose two branches both have length one and hence randomized value one half. No branch can be extended after that separation, so every shattered tree has average branch length at most one.",
+  "references": "\u005ccite{filmus2023randomized}"
+}

@@ -1,0 +1,48 @@
+{
+  "id": 99,
+  "name": "Randomized Littlestone Dimension",
+  "short_name": "randomized_littlestone_dimension",
+  "symbol": "\u005cmathrm{RL}",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": true,
+  "strict_c_monotonic": true,
+  "tight_strict_c_monotonic": false,
+  "definition": "The **Randomized Littlestone Dimension** of $\u005cmathcal H$ is $\u005cmathrm{RL}(\u005cmathcal H)=\u005cfrac12\u005csup_T \u005cmathbb E_T$, where $T$ ranges over binary decision trees shattered by $\u005cmathcal H$ and $\u005cmathbb E_T$ is the root-to-leaf length when, at every internal node, the next edge is chosen uniformly at random.",
+  "graph_summary": "Half the largest average branch length of a binary tree shattered by the class.",
+  "origin_references": "Introduced by Filmus, Hanneke, Mehalel, and Moran \u005ccite{filmus2023randomized}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Every tree shattered by a subfamily is also shattered by the containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A tree shattered by a coordinate projection queries only retained coordinates; lifting its realizing projected hypotheses gives a tree shattered by the original class.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding subfamily and projection arguments establish both required forms of monotonicity.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "For a one-coordinate split, the whole class contains each conditioned branch as a subfamily. If their values differ it therefore exceeds the smaller one; if they agree, joining near-optimal trees below a root querying that coordinate raises the average-depth value by one half.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "The parameter is doubly monotonic, vanishes only on classes with at most one hypothesis, and is strictly c-monotonic by the tree-grafting argument.",
+      "kind": "direct_argument"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "For the class consisting of the empty set and two singletons, split on the first coordinate. The two conditioned branches have values 1/2 and 0, while the whole class has value 3/4. Thus unequal branch values need not make the whole value equal to their maximum.",
+      "kind": "counterexample"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": 729,
+  "name": "Randomized Littlestone Dimension of Singletons plus Empty Set",
+  "short_name": "randomized_littlestone_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$1-2^{-n}$",
+  "value_class": "omega_1",
+  "details": "For $n\u005cgeq1$.",
+  "status": "established",
+  "proof": "Each nontrivial query separates one singleton on its positive branch, leaving the empty concept and the other singletons on the negative branch. Querying all n coordinates therefore gives a comb with expected branch length $\u005csum_{j=0}^{n-1}2^{-j}=2-2^{1-n}$. Every shattered tree has at most these n successive splits, giving the matching upper bound. Divide by two.",
+  "references": "\u005ccite{filmus2023randomized}"
+}

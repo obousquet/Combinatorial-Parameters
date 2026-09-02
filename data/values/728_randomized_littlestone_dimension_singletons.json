@@ -1,0 +1,13 @@
+{
+  "id": 728,
+  "name": "Randomized Littlestone Dimension of Singletons",
+  "short_name": "randomized_littlestone_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$1-2^{1-n}$",
+  "value_class": "omega_1",
+  "details": "For $n\u005cgeq1$.",
+  "status": "established",
+  "proof": "At each nontrivial node, querying a coordinate separates exactly one remaining singleton from all the others. Querying n-1 distinct coordinates consecutively gives branch-length expectation $\u005csum_{j=0}^{n-2}2^{-j}=2-2^{2-n}$. Conversely every shattered tree has this comb form with at most n-1 internal nodes on its continuing branch. Dividing by two gives $1-2^{1-n}$.",
+  "references": "\u005ccite{filmus2023randomized}"
+}

@@ -6247,6 +6247,50 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-284" style="position:relative;">
+        
+        <h3><a href="relationships/littlestone_dimension_randomized_littlestone_dimension.html" class="table-title-link">Littlestone Dimension / Randomized Littlestone Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension / Randomized Littlestone Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every binary concept class, $\mathrm L(\mathcal H)≥\mathrm{RL}(\mathcal H).</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Induct on the finite Littlestone dimension d. At the root of any shattered tree, the two restrictions have dimensions a,b at most d, and they cannot both equal d (otherwise their complete trees join to give dimension d+1). Thus a≤d and b≤d-1 after ordering. Induction bounds each subtree's randomized value by its Littlestone dimension, so the root tree has half its expected branch length at most 1/2+(a+b)/2≤d. Taking suprema proves the claim; the infinite case follows by truncation.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>The randomized-tree definition is Definition 1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>; the comparison is a direct induction.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-285" style="position:relative;">
+        
+        <h3><a href="relationships/randomized_littlestone_dimension_littlestone_dimension.html" class="table-title-link">Randomized Littlestone Dimension / Littlestone Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized Littlestone Dimension / Littlestone Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+
+<p><strong>Multiplicative Constant: </strong>0.5</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every binary concept class, $\mathrm{RL}(\mathcal H)≥\frac12\mathrm L(\mathcal H).</p></div>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A complete shattered Littlestone tree of depth d has every branch of length d, hence average branch length d. It witnesses randomized Littlestone dimension at least d/2. Take the supremum over d.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Immediate from Definition 1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> and the ordinary shattered-tree definition.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

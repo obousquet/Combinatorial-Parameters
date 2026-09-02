@@ -702,7 +702,20 @@
 \subsubsection{Littlestone Dimension}
       
       \begin{definition}[Littlestone Dimension - {$\mathrm{L}$}]\label{def:littlestone_dimension}
+      A \emph{complete binary decision tree} has a domain point at every internal node and edges labeled $0$ and $1$.  It is \emph{shattered} by $\H$ if every root-to-leaf sequence of queried points and edge labels is realized by a member of $\H$.  The \emph{Littlestone dimension} $\mathrm L(\H)$ is the supremum of the common root-to-leaf depth of such complete shattered trees.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: SM
+      \end{itemize}
+\subsubsection{Randomized Littlestone Dimension}
       
+      \begin{definition}[Randomized Littlestone Dimension - {$\mathrm{RL}$}]\label{def:randomized_littlestone_dimension}
+      Let $T$ be a finite binary decision tree shattered by $\H$.  Starting at its root, choose independently and uniformly one of the two outgoing edges at each internal node, and let $E_T$ be the resulting root-to-leaf length.  The \emph{randomized Littlestone dimension} is
+      \[
+        \mathrm{RL}(\H) \bydef \frac12\sup_{T\text{ shattered by }\H} E_T.
+      \]
+      Thus it replaces the minimum branch length in the ordinary Littlestone definition by the average branch length, with the normalization that equals the optimal randomized realizable mistake bound.  This is the notion of Filmus, Hanneke, Mehalel, and Moran \cite{filmus2023randomized}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y

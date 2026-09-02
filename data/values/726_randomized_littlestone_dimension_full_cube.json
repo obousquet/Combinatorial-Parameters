@@ -1,0 +1,12 @@
+{
+  "id": 726,
+  "name": "Randomized Littlestone Dimension of Full Cube",
+  "short_name": "randomized_littlestone_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full cube has Littlestone dimension n. The general upper bound $\u005cmathrm{RL}≤\u005cmathrm L$ gives randomized Littlestone dimension at most n, while its complete depth-n tree has average branch length n and gives the matching lower bound.",
+  "references": "\u005ccite{littlestone1988learning,filmus2023randomized}"
+}
