@@ -1,0 +1,12 @@
+{
+  "id": 772,
+  "name": "Majority Complexity of Majority",
+  "short_name": "majority_complexity_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Majority complexity is at least Littlestone dimension and at most log size. Both established majority-class values equal $n$, so majority complexity is $n$.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}"
+}

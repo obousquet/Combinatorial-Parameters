@@ -1,0 +1,12 @@
+{
+  "id": 770,
+  "name": "Degeneracy of Addressing",
+  "short_name": "degeneracy_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Degeneracy is at least minimum degree and at most densest-subgraph twice. Both established addressing-class values are $0$, so the degeneracy is $0$.",
+  "references": "\\cite{haussler1988predicting,alon1992colorings,haussler1994predicting}"
+}

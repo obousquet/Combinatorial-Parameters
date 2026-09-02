@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-26" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-770" style="position:relative;">
         
-        <h3><a href="parameters/majority_complexity.html" class="table-title-link">Majority Complexity</a></h3>
+        <h3><a href="values/degeneracy_addressing.html" class="table-title-link">Degeneracy of Addressing</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Majority Complexity</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{Maj}">
-            \[\mathrm{Maj}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Majority Complexity</strong> of a finite class $\mathcal{H}$ is the number of queries used by the halving algorithm: at each stage it proposes the pointwise majority vote of the hypotheses still consistent with the answers received.</p></div>
+        <p><strong>Name: </strong>Degeneracy of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-
-<strong>Origin References:</strong><div class="text-field"><p>The query-complexity notation $\mathrm{LC}(\mathrm{Halving})$ and its lower-bound analysis appear in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
-<p><strong>Category:</strong> Queries</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> No</p>
-<p><strong>P-Monotonic:</strong> No</p>
-<p><strong>C-Monotonic:</strong> No</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> No</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/majority_complexity_addressing.html'>Majority Complexity of Addressing</a></li><li><a href='values/majority_complexity_trivial_concepts.html'>Majority Complexity of Trivial concepts</a></li><li><a href='values/majority_complexity_singletons.html'>Majority Complexity of Singletons</a></li><li><a href='values/majority_complexity_singletons_plus_empty_set.html'>Majority Complexity of Singletons plus empty set</a></li><li><a href='values/majority_complexity_full_cube.html'>Majority Complexity of Full Cube</a></li><li><a href='values/majority_complexity_blockwiseaddressing.html'>Majority Complexity of Blockwise Addressing</a></li><li><a href='values/majority_complexity_halfintervals.html'>Majority Complexity of Half-Intervals</a></li><li><a href='values/majority_complexity_majority.html'>Majority Complexity of Majority</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/majority_complexity_littlestone_dimension.html" class="relationship-statement">$\mathrm{Maj} \ge \mathrm{L}$</a></li><li><a href="relationships/log_shattering_majority_complexity.html" class="relationship-statement">$\log \mathrm{sh} \ge \mathrm{Maj}$</a></li><li><a href="relationships/log_size_majority_complexity.html" class="relationship-statement">$\log \mathrm{H} \ge \mathrm{Maj}$</a></li></ul></p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Degeneracy is at least minimum degree and at most densest-subgraph twice. Both established addressing-class values are $0$, so the degeneracy is $0$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#haussler1988predicting">[haussler1988predicting]</a> <a href="bibliography.html#alon1992colorings">[alon1992colorings]</a> <a href="bibliography.html#haussler1994predicting">[haussler1994predicting]</a></p></div>
 
         </div>
     </div>

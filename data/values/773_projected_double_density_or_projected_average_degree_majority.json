@@ -1,0 +1,12 @@
+{
+  "id": 773,
+  "name": "Projected Double Density of Majority",
+  "short_name": "projected_double_density_or_projected_average_degree_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Projected double density is at least projected minimum degree and at most projected maximal degree. The established majority-class values of both bounds are $n$, proving the value is $n$.",
+  "references": "\\cite{haussler1994predicting}"
+}

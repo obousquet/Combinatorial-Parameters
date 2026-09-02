@@ -1,0 +1,12 @@
+{
+  "id": 774,
+  "name": "Random Proper Equivalence Queries Complexity of Majority",
+  "short_name": "random_proper_equivalence_queries_complexity_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/random_proper_equivalence_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Random proper equivalence-query complexity is at least random equivalence-query complexity, whose established majority value is $n$. The established log-size upper bound is also $n$ for this class. Hence the value is $n$.",
+  "references": "\\cite{angluin2017random}"
+}
