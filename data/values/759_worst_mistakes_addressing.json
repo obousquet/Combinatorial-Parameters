@@ -1,0 +1,12 @@
+{
+  "id": 759,
+  "name": "Worst Mistakes of Addressing",
+  "short_name": "worst_mistakes_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$\\lfloor\\log n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Worst mistakes is at least VC dimension and at most Littlestone dimension. Both established addressing-class values are $\\lfloor\\log n\\rfloor$, giving the claimed equality.",
+  "references": "\\cite{ben1997online}"
+}

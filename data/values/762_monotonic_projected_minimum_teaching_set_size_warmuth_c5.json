@@ -1,0 +1,12 @@
+{
+  "id": 762,
+  "name": "Monotonic Projected Minimum Teaching Set Size of Warmuth C5",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The monotonic projected parameter dominates monotonic minimum teaching-set size, whose established C5 value is $3$. It is bounded above by Littlestone dimension, also $3$ for C5. Hence its value is $3$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 760,
+  "name": "Minimum Projected Teaching Set Size of Half-Intervals",
+  "short_name": "minimum_projected_teaching_set_size_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/minimum_projected_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Minimum projected teaching-set size dominates minimum teaching-set size, whose half-interval value is $1$. It is at most monotonic projected minimum teaching-set size, also $1$ on this class. Hence the value is $1$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

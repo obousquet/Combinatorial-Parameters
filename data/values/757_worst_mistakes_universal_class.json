@@ -1,0 +1,12 @@
+{
+  "id": 757,
+  "name": "Worst Mistakes of Universal Class",
+  "short_name": "worst_mistakes_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Worst mistakes is bounded below by VC dimension and above by Littlestone dimension. On the universal class the two established values are both $\\lfloor\\log_2 n\\rfloor$, so worst mistakes has that value.",
+  "references": "\\cite{ben1997online}"
+}

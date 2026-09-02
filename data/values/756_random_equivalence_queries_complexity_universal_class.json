@@ -1,0 +1,12 @@
+{
+  "id": 756,
+  "name": "Random Equivalence Queries Complexity of Universal Class",
+  "short_name": "random_equivalence_queries_complexity_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/random_equivalence_queries_complexity",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Random equivalence-query complexity is at least VC dimension and at most Littlestone dimension. Both established universal-class values equal $\\lfloor\\log_2 n\\rfloor$, proving equality.",
+  "references": "\\cite{angluin2017random,littlestone1988learning}"
+}
