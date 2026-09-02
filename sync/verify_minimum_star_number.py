@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Exact finite checks for Minimum Star Number benchmark values.
+"""Exact finite checks for Warmuth's C_5 star benchmark values.
 
-This currently verifies Warmuth's C_5 class directly from its cyclic
-``1001`` definition.  It enumerates every possible centre labeling and every
-coordinate subset, so the result is an exact implementation of the definition
-of the minimum star number.
+This verifies Warmuth's C_5 class directly from its cyclic ``1001``
+definition.  It enumerates every possible centre labeling and every coordinate
+subset, so the results are exact implementations of the minimum-star and
+hollow-star (co-VC) definitions.
 """
 
 from __future__ import annotations
@@ -60,12 +60,39 @@ def minimum_star_number(concepts: set[tuple[int, ...]]) -> int:
     )
 
 
+def hollow_star_number(concepts: set[tuple[int, ...]]) -> int:
+    """Return the largest hollow star occurring in a coordinate projection."""
+    dimension = len(next(iter(concepts)))
+    answer = 0
+    for size in range(dimension + 1):
+        for points in combinations(range(dimension), size):
+            traces = {
+                tuple(hypothesis[index] for index in points)
+                for hypothesis in concepts
+            }
+            for centre in product((0, 1), repeat=size):
+                if centre in traces:
+                    continue
+                if all(
+                    tuple(
+                        1 - centre[position] if index == position else centre[index]
+                        for index in range(size)
+                    )
+                    in traces
+                    for position in range(size)
+                ):
+                    answer = max(answer, size)
+    return answer
+
+
 def main() -> None:
     concepts = warmuth_c5()
     assert len(concepts) == 10
     value = minimum_star_number(concepts)
     assert value == 3
-    print(f"Warmuth C_5 minimum star number: {value}")
+    covc = hollow_star_number(concepts)
+    assert covc == 4
+    print(f"Warmuth C_5 minimum star number: {value}; co-VC dimension: {covc}")
 
 
 if __name__ == "__main__":

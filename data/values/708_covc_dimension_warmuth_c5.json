@@ -1,0 +1,12 @@
+{
+  "id": 708,
+  "name": "co-VC dimension of Warmuth's $C_5$ Class",
+  "short_name": "covc_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On four consecutive cyclic coordinates, the missing trace $0110$ has all four one-bit neighbours among the ten $C_5$ concepts, so it is a hollow 4-star.  The checked finite enumerator constructs the class directly from its cyclic $1001$ definition and checks every coordinate subset and missing center; it finds no hollow 5-star.  Hence $\\mathrm{coVC}(C_5)=4$.",
+  "references": "Direct finite calculation from the Warmuth class; see also \\cite{palvolgyi2021unlabeled,bousquet2020proper}."
+}

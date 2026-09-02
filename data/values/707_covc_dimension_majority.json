@@ -1,0 +1,12 @@
+{
+  "id": 707,
+  "name": "co-VC dimension of Majority",
+  "short_name": "covc_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$\\lfloor n/2\\rfloor+2$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Write a Majority concept as its $n$ base bits together with the majority bit.  On any $t=\\lfloor n/2\\rfloor+1$ base coordinates and the majority coordinate, the all-one base trace with majority bit 0 is absent, whereas flipping the majority bit or any base bit gives a realized trace; hence there is a hollow $(t+1)$-star.  Conversely, a projection omitting the majority coordinate is a full cube.  In a projection using it, suppose first that the missing majority bit is 0. Every selected base bit must be 1 (otherwise its flip cannot create a 0-majority extension), and the two majority inequalities before and after a flip force $t=\\lfloor n/2\\rfloor+1$.  If the missing bit is 1, all selected base bits must instead be 0; the same inequalities give $t=\\lceil n/2\\rceil$, which is no larger.  Thus no hollow star has dimension exceeding $\\lfloor n/2\\rfloor+2$.",
+  "references": "Direct calculation from the definition; the Majority class is from \\cite{maass1992lower}."
+}
