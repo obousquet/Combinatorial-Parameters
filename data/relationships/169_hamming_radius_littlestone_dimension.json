@@ -7,6 +7,8 @@
   "status": "established",
   "latex_proof_label": "lem:littlestone-hamming-radius",
   "proof_source": "LaTeX survey, Littlestone/Hamming-radius lemma (lem:littlestone-hamming-radius).",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
   "short_name": "hamming_radius_littlestone_dimension",
   "name": "Hamming Radius / Littlestone Dimension"
 }
