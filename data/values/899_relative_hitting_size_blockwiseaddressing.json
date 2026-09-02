@@ -1,0 +1,11 @@
+{
+  "id": 899,
+  "name": "Relative Hitting Size of Blockwise-Addressing",
+  "short_name": "relative_hitting_size_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$2$",
+  "status": "established",
+  "proof": "Relative hitting size is exactly teaching dimension by the standard teaching-set / relative-hitting-set equivalence.  The direct Blockwise-Addressing teaching calculation gives $\\mathrm{TD}=2$.",
+  "references": "\\cite{goldman1995complexity,shinohara1991teachability}"
+}

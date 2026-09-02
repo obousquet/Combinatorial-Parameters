@@ -8,6 +8,8 @@
   "proof": "For every subfamily $\\mathcal G\\subseteq\\mathcal H$, the Yang bound gives $\\mathrm Y(\\mathcal G)\\le\\mathrm E(\\mathcal G)$.  Effective range is monotonic under subfamilies, so $\\mathrm E(\\mathcal G)\\le\\mathrm E(\\mathcal H)$.  Taking the maximum over $\\mathcal G$ yields $\\mathrm Y^*(\\mathcal H)\\le\\mathrm E(\\mathcal H)$.",
   "references": "\\cite{yang2018homological}",
   "derivation": "max_subfamilies from #relationships/effective_range_yang_dimension",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
   "short_name": "effective_range_monotonic_yang_dimension",
   "name": "Effective Range / Monotonic Yang Dimension"
 }

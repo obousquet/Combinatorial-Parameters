@@ -1,0 +1,12 @@
+{
+  "id": 905,
+  "name": "co-VC Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "covc_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Enumerating coordinate projections and unrealizable centre traces gives a hollow star of dimension four, and no larger one on the five-coordinate domain. The exhaustive check is in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{bousquet2020proper,doliwa2014recursive}"
+}

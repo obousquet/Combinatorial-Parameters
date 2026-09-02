@@ -1,0 +1,12 @@
+{
+  "id": 898,
+  "name": "Maximum Projected Teaching-Set Size of Blockwise-Addressing",
+  "short_name": "maximum_projected_teaching_set_size_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/maximum_projected_teaching_set_size",
+  "value": "$2^d\\leq\\mathrm{TS}_{\\max}^p\\leq2^{d+1}-1$",
+  "details": "For the finite Blockwise-Addressing family; the lower endpoint is attained when $d=2$, and no general equality claim is made.",
+  "status": "established",
+  "proof": "The maximum projected teaching-set size equals the star number by Lemma~\\ref{lem:star-projected-teaching}.  Substitute the established Blockwise-Addressing star-number interval $2^d\\leq\\mathrm S\\leq2^{d+1}-1$.",
+  "references": "\\cite{hanneke2015minimax,ben1997online,bousquet2020proper}"
+}

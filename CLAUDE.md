@@ -92,6 +92,16 @@ python3 sync/audit_provenance.py --data-dir data
 # are deliberately skipped.
 python3 sync/audit_benchmark_consistency.py \
   --data-dir data --fail-on-contradiction
+
+# Reconstructs the Hasse reduction and ranks witnessless, structurally
+# important edges; use --all for the full research queue.
+python3 sync/audit_hasse_edges.py --data-dir data
+
+# Regression check for the graph's homogeneous transitive reduction.
+python3 sync/verify_hasse_reduction.py
+
+# Direct enumeration behind the repetition-free teaching separation value.
+python3 sync/verify_repetitionfree_teaching.py
 ```
 
 Validate the monotonicity metadata after changing parameter properties or an

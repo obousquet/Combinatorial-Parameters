@@ -1,0 +1,12 @@
+{
+  "id": 904,
+  "name": "Star Number of the Repetition-Free Teaching Separation Class",
+  "short_name": "star_number_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/star_number",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Enumerating every coordinate projection and every realizable centre trace gives a largest centred star of dimension four; no five-star is possible on the five-coordinate domain. The exhaustive check is in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{hanneke2015minimax,doliwa2014recursive}"
+}

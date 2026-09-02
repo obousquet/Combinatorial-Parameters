@@ -7,6 +7,8 @@
   "status": "established",
   "proof": "A Radon-independent set is, by definition, a subset of the hypothesis class.  Its cardinality is therefore at most $|\\mathcal H|$; maximizing over such sets gives the inequality.",
   "references": "\\cite{chase2024dual}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "short_name": "size_radon_number",
   "name": "Size / Radon Number"
 }

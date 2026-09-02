@@ -7,6 +7,8 @@
   "status": "established",
   "proof": "If a projected class contains a hollow $d$-star on S, then for each $x\\in S$ the star's realizable neighbours include labelings that differ at x.  Thus every x in S lies in the effective range, so $d\\le \\mathrm E(\\mathcal H)$.  Maximizing d gives $\\mathrm{coVC}(\\mathcal H)\\le\\mathrm E(\\mathcal H)$.",
   "references": "\\cite{bousquet2020proper}",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "effective_range_covc_dimension",
   "name": "Effective Range / co-VC Dimension"
 }

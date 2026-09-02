@@ -1,0 +1,12 @@
+{
+  "id": 900,
+  "name": "Preference-Based Teaching Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "preferencebased_teaching_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/preferencebased_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For finite classes, preference-based teaching dimension equals recursive teaching dimension.  The cited separation class has $\\mathrm{RTD}=2$.",
+  "references": "\\cite{gao2017preference,doliwa2014recursive}"
+}

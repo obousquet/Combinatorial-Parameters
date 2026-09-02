@@ -7,5 +7,7 @@
   "short_name": "effective_range_proper_stable_sample_compression",
   "status": "established",
   "details": "For finite concept classes.",
-  "proof": "Retain all active-coordinate examples of the sample and reconstruct the least consistent member of the class. This is proper, discarding inactive examples preserves consistency, and retaining every remaining example makes stability immediate. Its size is at most \\(\\mathrm E(\\mathcal H)\\)."
+  "proof": "Retain all active-coordinate examples of the sample and reconstruct the least consistent member of the class. This is proper, discarding inactive examples preserves consistency, and retaining every remaining example makes stability immediate. Its size is at most \\(\\mathrm E(\\mathcal H)\\).",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict"
 }

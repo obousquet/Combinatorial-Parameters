@@ -6,6 +6,8 @@
   "details": "A hitting set can select one coordinate from each nonempty concept.",
   "status": "established",
   "proof": "For each nonempty $h\\in\\mathcal H$, choose one element $x_h\\in h$.  The set of chosen elements meets every nonempty concept, so $\\mathrm{HT}(\\mathcal H)\\le |\\mathcal H|$.",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict",
   "short_name": "size_hitting_size",
   "name": "Size / Hitting Size"
 }

@@ -7,6 +7,8 @@
   "status": "established",
   "proof": "Maintain the version space of candidates. While it has two distinct concepts, choose a coordinate on which two candidates disagree and make a membership query there. Whichever answer is returned eliminates at least one candidate. After at most $|\\mathcal H|-1$ queries only the target remains.",
   "references": "\\cite{angluin1988queries}",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "size_membership_query_complexity",
   "name": "Size / Membership Query Complexity"
 }

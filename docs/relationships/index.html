@@ -1226,8 +1226,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Every coordinate needed to distinguish two concepts belongs to their effective range.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A coordinate outside the effective range has the same value in every concept, so deleting it cannot merge two restrictions.  A minimum distinguishing coordinate set may therefore be chosen inside the effective range, giving $\mathrm{R}(\mathcal{H})\le\mathrm{E}(\mathcal{H})$.</p></div>
 
@@ -3112,8 +3112,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Membership queries can eliminate at least one remaining candidate concept at each nonterminal step.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For any finite projection $\mathcal{G}$ of $\mathcal{H}$, repeatedly choose a coordinate on which two remaining concepts disagree.  The answer eliminates at least one candidate, so at most $|\mathcal{G}|-1\le |\mathcal{H}|-1$ queries suffice.  Hence $\mathrm{Q}_m^p(\mathcal{H})\le |\mathcal{H}|$.</p></div>
 
@@ -4193,8 +4193,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Consequence of the max-over-subfamilies construction of monotonic Yang dimension.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every subfamily $\mathcal G\subseteq\mathcal H$, the Yang bound gives $\mathrm Y(\mathcal G)\le\mathrm E(\mathcal G)$.  Effective range is monotonic under subfamilies, so $\mathrm E(\mathcal G)\le\mathrm E(\mathcal H)$.  Taking the maximum over $\mathcal G$ yields $\mathrm Y^*(\mathcal H)\le\mathrm E(\mathcal H)$.</p></div>
 
@@ -4216,8 +4216,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Consequence of the registered max-over-subfamilies construction.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every subfamily $\mathcal G\subseteq\mathcal H$, $\mathrm Y(\mathcal G)\le |\mathcal G|\le |\mathcal H|$.  Taking the maximum over $\mathcal G$ gives $\mathrm Y^*(\mathcal H)\le |\mathcal H|$.</p></div>
 
@@ -4239,8 +4239,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>A hitting set can select one coordinate from each nonempty concept.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each nonempty $h\in\mathcal H$, choose one element $x_h\in h$.  The set of chosen elements meets every nonempty concept, so $\mathrm{HT}(\mathcal H)\le |\mathcal H|$.</p></div>
 
@@ -4262,8 +4262,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>A hollow star can use only coordinates in the effective range.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a projected class contains a hollow $d$-star on S, then for each $x\in S$ the star's realizable neighbours include labelings that differ at x.  Thus every x in S lies in the effective range, so $d\le \mathrm E(\mathcal H)$.  Maximizing d gives $\mathrm{coVC}(\mathcal H)\le\mathrm E(\mathcal H)$.</p></div>
 
@@ -4285,8 +4285,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Effective range controls both the number of varying coordinates and class size.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>All concepts agree outside the effective range, hence $|\mathcal H|\le 2^{\mathrm E(\mathcal H)}$.  For a nonempty domain, $\log(n+1)\ge1$, so $\log(|\mathcal H|-1)/\log(n+1)\le\mathrm E(\mathcal H)$.</p></div>
 
@@ -4331,8 +4331,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Every coordinate in an oriented pair is active.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If an oriented pair (\emptyset,S) is realized in a projection, its two realizing concepts differ on every coordinate of S. Thus S is contained in the effective range. Maximizing gives (\mathrm E(\mathcal H)\ge\mathrm D^+(\mathcal H)).</p></div>
 
@@ -4423,8 +4423,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain all active-coordinate examples of the sample and reconstruct the least consistent member of the class. This is proper, discarding inactive examples preserves consistency, and retaining every remaining example makes stability immediate. Its size is at most (\mathrm E(\mathcal H)).</p></div>
 
@@ -4515,8 +4515,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>The rank of a matrix is at most its number of rows.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The incidence sign matrix of (\mathcal H) has (|\mathcal H|) rows. Any real matrix realizing its sign pattern has rank at most its number of rows, so minimizing this rank gives (\mathrm{SR}(\mathcal H)\le |\mathcal H|).</p></div>
 
@@ -4630,8 +4630,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Repeatedly remove an inclusion-maximal concept. Its positive labels on all active coordinates distinguish it from every remaining concept: no remaining concept can contain it, and each differs on a positive coordinate. These samples have size at most (\mathrm E(\mathcal H)), yielding a positive recursive teaching sequence with that bound.</p></div>
 
@@ -4653,8 +4653,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix an order of the class, retain every active-coordinate example, and decode to the least class member consistent with it. The decoder is proper and remains consistent with the full sample because inactive coordinates have a common label. This proper order-compression scheme retains at most (\mathrm E(\mathcal H)) examples.</p></div>
 
@@ -4952,8 +4952,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every prime $p$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>After deleting coordinates constant on the class, every relevant Yang-complex section lies in the boundary of the cross-polytope on $\mathrm E(\mathcal H)$ coordinates. Its homology has dimension at most $\mathrm E(\mathcal H)-1$ over every field, giving $\mathrm Y_p(\mathcal H)\leq\mathrm E(\mathcal H)$.</p></div>
 
@@ -5228,8 +5228,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Every point in an eluder witness is active, and the points in a witness sequence are distinct.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At each witnessing point the base and witness hypothesis disagree, so the point lies in the effective range. A repeated point cannot be independent after it has appeared, because agreement with the base on the earlier copy forces agreement at its later copy.</p></div>
 
@@ -5366,8 +5366,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every nonempty finite class, the stronger bound $\mathrm Q_m(\mathcal H)\leq|\mathcal H|-1$ holds.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Maintain the version space of candidates. While it has two distinct concepts, choose a coordinate on which two candidates disagree and make a membership query there. Whichever answer is returned eliminates at least one candidate. After at most $|\mathcal H|-1$ queries only the target remains.</p></div>
 
@@ -5412,8 +5412,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every prime $p$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Yang's canonical ideal has one minimal monomial generator for each concept. The Taylor resolution on $|\mathcal H|$ generators, valid over every field, has length at most $|\mathcal H|-1$ for a nonempty class. Thus $\mathrm Y_p(\mathcal H)\leq|\mathcal H|$ (and the empty class has value 0 by convention).</p></div>
 
@@ -6309,8 +6309,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $|\mathcal H|\geq\mathrm{Rad}(\mathcal H)$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A Radon-independent set is, by definition, a subset of the hypothesis class.  Its cardinality is therefore at most $|\mathcal H|$; maximizing over such sets gives the inequality.</p></div>
 
@@ -6516,8 +6516,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Every finite binary class satisfies $|\mathcal H|\geq\mathrm{coVC}(\mathcal H)$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:size-covc</code>.</p></div>

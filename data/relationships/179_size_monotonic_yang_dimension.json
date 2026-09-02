@@ -9,5 +9,7 @@
   "derivation": "max_subfamilies from #relationships/size_yang_dimension",
   "short_name": "size_monotonic_yang_dimension",
   "name": "size / monotonic_yang_dimension",
-  "references": "\\cite{yang2018homological}"
+  "references": "\\cite{yang2018homological}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded"
 }

@@ -8,5 +8,5 @@
   "definition": "The **average teaching dimension** of a finite class $\u005cmathcal H$ is the average, over $h\u005cin\u005cmathcal H$, of the minimum size of a teaching set for $h$ within $\u005cmathcal H$: $\u005cmathrm{TS}_{\u005cmathrm{avg}}(\u005cmathcal H)=|\u005cmathcal H|^{-1}\u005csum_{h\u005cin\u005cmathcal H}\u005cmathrm{TS}(h;\u005cmathcal H)$.",
   "graph_summary": "Mean, over concepts, of their minimum teaching-set sizes.",
   "description": "The average-case counterpart of teaching dimension.",
-  "origin_references": "\u005ccite{doliwa2014recursive}"
+  "origin_references": "An early systematic study is \\cite{kushilevitz1996witness}; the finite-class convention used here is also used in \\cite{doliwa2014recursive}."
 }

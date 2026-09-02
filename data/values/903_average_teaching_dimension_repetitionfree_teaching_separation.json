@@ -1,0 +1,12 @@
+{
+  "id": 903,
+  "name": "Average Teaching Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "average_teaching_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$\\frac{40}{13}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For the thirteen displayed strings in the class definition, exhaustive inspection of coordinate subsets gives the individual minimum teaching-set sizes $2,2,4,4,3,3,3,3,3,4,3,3,3$.  Their sum is $40$, so the average is $40/13$; the enumeration is checked by $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,kushilevitz1996witness}"
+}

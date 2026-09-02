@@ -6,6 +6,8 @@
   "status": "established",
   "details": "Every coordinate needed to distinguish two concepts belongs to their effective range.",
   "proof": "A coordinate outside the effective range has the same value in every concept, so deleting it cannot merge two restrictions.  A minimum distinguishing coordinate set may therefore be chosen inside the effective range, giving $\\mathrm{R}(\\mathcal{H})\\le\\mathrm{E}(\\mathcal{H})$.",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict",
   "short_name": "effective_range_distinguishing_range",
   "name": "Effective Range / Distinguishing Range"
 }

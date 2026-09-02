@@ -8,6 +8,8 @@
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:size-covc`.",
   "latex_proof_label": "lem:size-covc",
   "references": "\\cite{bousquet2020proper}",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "size_covc_dimension",
   "name": "Size / co-VC Dimension"
 }

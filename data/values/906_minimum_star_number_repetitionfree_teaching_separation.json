@@ -1,0 +1,12 @@
+{
+  "id": 906,
+  "name": "Minimum Star Number of the Repetition-Free Teaching Separation Class",
+  "short_name": "minimum_star_number_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every one of the $32$ possible centre labelings, enumerate the coordinate projections on which that centre is realized and the corresponding stars. The least resulting maximum is three, while the enumeration supplies a four-star for some centres. The exhaustive check is in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{hanneke2024star_eluder,doliwa2014recursive}"
+}

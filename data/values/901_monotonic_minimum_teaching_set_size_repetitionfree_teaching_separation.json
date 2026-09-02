@@ -1,0 +1,12 @@
+{
+  "id": 901,
+  "name": "Monotonic Minimum Teaching-Set Size of the Repetition-Free Teaching Separation Class",
+  "short_name": "monotonic_minimum_teaching_set_size_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/monotonic_minimum_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For finite classes, the max-over-subclasses minimum teaching-set size is exactly recursive teaching dimension.  The cited separation class has $\\mathrm{RTD}=2$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

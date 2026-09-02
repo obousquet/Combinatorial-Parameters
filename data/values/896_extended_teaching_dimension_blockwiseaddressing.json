@@ -1,0 +1,12 @@
+{
+  "id": 896,
+  "name": "Extended Teaching Dimension of Blockwise-Addressing",
+  "short_name": "extended_teaching_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$2^d\\leq\\mathrm{XTD}\\leq2^{d+1}-1$",
+  "details": "For the finite Blockwise-Addressing family; the lower endpoint is attained when $d=2$, and no general equality claim is made.",
+  "status": "established",
+  "proof": "For a finite binary class, $\\mathrm{XTD}=\\mathrm S$ by Hanneke--Yang's Theorem 13.  Apply this equality to the established Blockwise-Addressing star-number interval $2^d\\leq\\mathrm S\\leq2^{d+1}-1$.",
+  "references": "\\cite{hanneke2015minimax,ben1997online,bousquet2020proper}"
+}

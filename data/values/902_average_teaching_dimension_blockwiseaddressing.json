@@ -1,0 +1,12 @@
+{
+  "id": 902,
+  "name": "Average Teaching Dimension of Blockwise-Addressing",
+  "short_name": "average_teaching_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each $f_i$ is taught by $(z,0),(x_i,1)$ and each $g_i$ by $(z,1),(y_i,1)$.  No one-coordinate sample identifies any member of either family: at $z$ it leaves all members of that family, at a private coordinate it agrees with a member of the opposite family, and at a block coordinate its label occurs for multiple members of the same family.  Thus every individual minimum teaching-set size is two, and their average is two.",
+  "references": "\\cite{ben1997online,kushilevitz1996witness}"
+}

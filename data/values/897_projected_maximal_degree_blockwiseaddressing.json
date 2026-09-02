@@ -1,0 +1,12 @@
+{
+  "id": 897,
+  "name": "Projected Maximal Degree of Blockwise-Addressing",
+  "short_name": "projected_maximal_degree_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/projected_maximal_degree",
+  "value": "$2^d\\leq\\mathrm d^p_{\\max}\\leq2^{d+1}-1$",
+  "details": "For the finite Blockwise-Addressing family; the lower endpoint is attained when $d=2$, and no general equality claim is made.",
+  "status": "established",
+  "proof": "The projected maximal degree equals the star number by Lemma~\\ref{lem:star-projected-teaching}.  Substitute the established Blockwise-Addressing star-number interval $2^d\\leq\\mathrm S\\leq2^{d+1}-1$.",
+  "references": "\\cite{hanneke2015minimax,ben1997online,bousquet2020proper}"
+}

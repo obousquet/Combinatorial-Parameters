@@ -7,6 +7,8 @@
   "status": "established",
   "proof": "Yang's canonical ideal has one minimal monomial generator for each concept. The Taylor resolution on $|\\mathcal H|$ generators, valid over every field, has length at most $|\\mathcal H|-1$ for a nonempty class. Thus $\\mathrm Y_p(\\mathcal H)\\leq|\\mathcal H|$ (and the empty class has value 0 by convention).",
   "references": "\\cite{yang2018homological}",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
   "short_name": "size_characteristic_p_yang_dimension",
   "name": "Size / Characteristic-p Yang Dimension"
 }
