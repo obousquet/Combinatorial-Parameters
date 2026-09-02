@@ -1,0 +1,12 @@
+{
+  "id": 824,
+  "name": "Star Number of Blockwise-Addressing",
+  "short_name": "star_number_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/star_number",
+  "value": "$2^d\\leq\\mathrm S\\leq2^{d+1}-1$",
+  "details": "The lower endpoint is attained in the smallest admissible instance $d=2$; no general equality claim is made here.",
+  "status": "established",
+  "proof": "The established Blockwise-Addressing bound gives $\\mathrm{coVC}\\ge2^d+1$. The direct affine relation $\\mathrm S\\ge\\mathrm{coVC}-1$ therefore gives $\\mathrm S\\ge2^d$. Conversely any $r$-star uses its centre and $r$ distinct leaves, so $r\\le|\\mathcal H|-1=2^{d+1}-1$. This proves the displayed interval.",
+  "references": "Derived from the established Blockwise-Addressing co-VC bound and the direct star/co-VC and size/star relationships; see \\cite{ben1997online,bousquet2020proper}."
+}
