@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,25 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-99" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-286" style="position:relative;">
         
-        <h3><a href="parameters/randomized_littlestone_dimension.html" class="table-title-link">Randomized Littlestone Dimension</a></h3>
+        <h3><a href="relationships/randomized_kmistake_littlestone_dimension_randomized_littlestone_dimension.html" class="table-title-link">Randomized $k$-Mistake Littlestone Dimension / Randomized Littlestone Dimension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Randomized Littlestone Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{RL}">
-            \[\mathrm{RL}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Randomized Littlestone Dimension</strong> of $\mathcal H$ is $\mathrm{RL}(\mathcal H)=\frac12\sup_T \mathbb E_T$, where $T$ ranges over binary decision trees shattered by $\mathcal H$ and $\mathbb E_T$ is the root-to-leaf length when, at every internal node, the next edge is chosen uniformly at random.</p></div>
+        <p><strong>Name: </strong>Randomized $k$-Mistake Littlestone Dimension / Randomized Littlestone Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/randomized_kmistake_littlestone_dimension.html">Randomized $k$-Mistake Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
-<strong>Origin References:</strong><div class="text-field"><p>Introduced by Filmus, Hanneke, Mehalel, and Moran <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>.</p></div>
-<p><strong>Category:</strong> Queries</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Yes</p>
-<p><strong>Tight Strict C-Monotonic:</strong> No</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Yes</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/randomized_littlestone_dimension_full_cube.html'>Randomized Littlestone Dimension of Full Cube</a></li><li><a href='values/randomized_littlestone_dimension_trivial_concepts.html'>Randomized Littlestone Dimension of Trivial Concepts</a></li><li><a href='values/randomized_littlestone_dimension_singletons.html'>Randomized Littlestone Dimension of Singletons</a></li><li><a href='values/randomized_littlestone_dimension_singletons_plus_empty_set.html'>Randomized Littlestone Dimension of Singletons plus Empty Set</a></li><li><a href='values/randomized_littlestone_dimension_halfintervals.html'>Randomized Littlestone Dimension of Half-intervals</a></li><li><a href='values/randomized_littlestone_dimension_universal_class.html'>Randomized Littlestone Dimension of Universal Class</a></li><li><a href='values/randomized_littlestone_dimension_addressing.html'>Randomized Littlestone Dimension of Addressing</a></li><li><a href='values/randomized_littlestone_dimension_majority.html'>Randomized Littlestone Dimension of Majority</a></li><li><a href='values/randomized_littlestone_dimension_blockwiseaddressing.html'>Randomized Littlestone Dimension of Blockwise-Addressing</a></li><li><a href='values/randomized_littlestone_dimension_warmuth_c5.html'>Randomized Littlestone Dimension of Warmuth's $C_5$ Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/littlestone_dimension_randomized_littlestone_dimension.html" class="relationship-statement">$\mathrm{L} \ge \mathrm{RL}$</a></li><li><a href="relationships/randomized_littlestone_dimension_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL} \ge 0.5\mathrm{L}$</a></li><li><a href="relationships/randomized_kmistake_littlestone_dimension_randomized_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL}^{\mathrm{mist}}_k \ge \mathrm{RL}$</a></li></ul></p></div>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every integer $k\geq0$, $\mathrm{RL}^{\mathrm{mist}}_k(\mathcal H)\geq\mathrm{RL}(\mathcal H).</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every ordinarily shattered tree has zero disagreements on every branch and is therefore k-shattered. Its random-branch expectation is unchanged.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Immediate from the k-shattered-tree definition in Section 2.2.1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a></p></div>
 
         </div>
     </div>

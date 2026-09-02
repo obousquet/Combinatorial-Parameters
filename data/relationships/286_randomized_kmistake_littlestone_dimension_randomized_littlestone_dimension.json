@@ -1,0 +1,13 @@
+{
+  "id": 286,
+  "parameter_1_id": "#parameters/randomized_kmistake_littlestone_dimension",
+  "parameter_2_id": "#parameters/randomized_littlestone_dimension",
+  "relationship_type": "larger",
+  "details": "For every integer $k\u005cgeq0$, $\u005cmathrm{RL}^{\u005cmathrm{mist}}_k(\u005cmathcal H)\u005cgeq\u005cmathrm{RL}(\u005cmathcal H).",
+  "status": "established",
+  "proof": "Every ordinarily shattered tree has zero disagreements on every branch and is therefore k-shattered. Its random-branch expectation is unchanged.",
+  "references": "\u005ccite{filmus2023randomized}",
+  "proof_source": "Immediate from the k-shattered-tree definition in Section 2.2.1 of \u005ccite{filmus2023randomized}.",
+  "short_name": "randomized_kmistake_littlestone_dimension_randomized_littlestone_dimension",
+  "name": "Randomized $k$-Mistake Littlestone Dimension / Randomized Littlestone Dimension"
+}

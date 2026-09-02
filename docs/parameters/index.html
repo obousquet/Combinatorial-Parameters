@@ -2624,7 +2624,7 @@
 <p><strong>Doubly Monotonic:</strong> Yes</p>
 <p><strong>Strictly Monotonic:</strong> Yes</p>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/kmistake_littlestone_dimension_trivial_concepts.html'>$k$-Mistake Littlestone Dimension of Trivial Concepts</a></li><li><a href='values/kmistake_littlestone_dimension_full_cube.html'>$k$-Mistake Littlestone Dimension of Full Cube</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/kmistake_littlestone_dimension_littlestone_dimension.html" class="relationship-statement">$\mathrm{L}^{\mathrm{mist}}_k \ge \mathrm{L}$</a></li><li><a href="relationships/kmistake_littlestone_dimension_littlestone_dimension_affine.html" class="relationship-statement">$\mathrm{L}^{\mathrm{mist}}_k \ge \mathrm{L} + (k)$</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/kmistake_littlestone_dimension_littlestone_dimension.html" class="relationship-statement">$\mathrm{L}^{\mathrm{mist}}_k \ge \mathrm{L}$</a></li><li><a href="relationships/kmistake_littlestone_dimension_littlestone_dimension_affine.html" class="relationship-statement">$\mathrm{L}^{\mathrm{mist}}_k \ge \mathrm{L} + (k)$</a></li><li><a href="relationships/randomized_kmistake_littlestone_dimension_kmistake_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL}^{\mathrm{mist}}_k \ge 0.5\mathrm{L}^{\mathrm{mist}}_k$</a></li></ul></p></div>
 
         </div>
     </div>
@@ -3089,7 +3089,38 @@
 <p><strong>Doubly Monotonic:</strong> Yes</p>
 <p><strong>Strictly Monotonic:</strong> Yes</p>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/randomized_littlestone_dimension_full_cube.html'>Randomized Littlestone Dimension of Full Cube</a></li><li><a href='values/randomized_littlestone_dimension_trivial_concepts.html'>Randomized Littlestone Dimension of Trivial Concepts</a></li><li><a href='values/randomized_littlestone_dimension_singletons.html'>Randomized Littlestone Dimension of Singletons</a></li><li><a href='values/randomized_littlestone_dimension_singletons_plus_empty_set.html'>Randomized Littlestone Dimension of Singletons plus Empty Set</a></li><li><a href='values/randomized_littlestone_dimension_halfintervals.html'>Randomized Littlestone Dimension of Half-intervals</a></li><li><a href='values/randomized_littlestone_dimension_universal_class.html'>Randomized Littlestone Dimension of Universal Class</a></li><li><a href='values/randomized_littlestone_dimension_addressing.html'>Randomized Littlestone Dimension of Addressing</a></li><li><a href='values/randomized_littlestone_dimension_majority.html'>Randomized Littlestone Dimension of Majority</a></li><li><a href='values/randomized_littlestone_dimension_blockwiseaddressing.html'>Randomized Littlestone Dimension of Blockwise-Addressing</a></li><li><a href='values/randomized_littlestone_dimension_warmuth_c5.html'>Randomized Littlestone Dimension of Warmuth's $C_5$ Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/littlestone_dimension_randomized_littlestone_dimension.html" class="relationship-statement">$\mathrm{L} \ge \mathrm{RL}$</a></li><li><a href="relationships/randomized_littlestone_dimension_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL} \ge 0.5\mathrm{L}$</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/littlestone_dimension_randomized_littlestone_dimension.html" class="relationship-statement">$\mathrm{L} \ge \mathrm{RL}$</a></li><li><a href="relationships/randomized_littlestone_dimension_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL} \ge 0.5\mathrm{L}$</a></li><li><a href="relationships/randomized_kmistake_littlestone_dimension_randomized_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL}^{\mathrm{mist}}_k \ge \mathrm{RL}$</a></li></ul></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-100" style="position:relative;">
+        
+        <h3><a href="parameters/randomized_kmistake_littlestone_dimension.html" class="table-title-link">Randomized $k$-Mistake Littlestone Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized $k$-Mistake Littlestone Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathrm{RL}^{\mathrm{mist}}_k">
+            \[\mathrm{RL}^{\mathrm{mist}}_k\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>For an integer $k\geq0$, the <strong>Randomized $k$-Mistake Littlestone Dimension</strong> is $\mathrm{RL}^{\mathrm{mist}}_k(\mathcal H)=\frac12\sup_T\mathbb E_T$, where T ranges over binary decision trees whose every branch disagrees with some hypothesis in $\mathcal H$ on at most k queried labels, and $\mathbb E_T$ is the random root-to-leaf length.</p></div>
+
+
+<strong>Origin References:</strong><div class="text-field"><p>Introduced by Filmus, Hanneke, Mehalel, and Moran <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>.</p></div>
+<p><strong>Category:</strong> Queries</p>
+<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Monotonic:</strong> Yes</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
+<p><strong>C-Monotonic:</strong> Yes</p>
+<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/randomized_kmistake_littlestone_dimension_randomized_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL}^{\mathrm{mist}}_k \ge \mathrm{RL}$</a></li><li><a href="relationships/randomized_kmistake_littlestone_dimension_kmistake_littlestone_dimension.html" class="relationship-statement">$\mathrm{RL}^{\mathrm{mist}}_k \ge 0.5\mathrm{L}^{\mathrm{mist}}_k$</a></li></ul></p></div>
 
         </div>
     </div>

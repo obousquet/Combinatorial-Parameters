@@ -884,6 +884,19 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
       \end{itemize}
+\subsubsection{Randomized $k$-Mistake Littlestone Dimension}
+      
+      \begin{definition}[Randomized $k$-Mistake Littlestone Dimension - {$\mathrm{RL}^{\mathrm{mist}}_k$}]\label{def:randomized_kmistake_littlestone_dimension}
+      Fix $k\ge0$.  A binary decision tree is \emph{$k$-shattered} by $\H$ if every root-to-leaf labeled sequence disagrees with some $h\in\H$ on at most $k$ queried labels.  Let $E_T$ be the root-to-leaf length when a branch of $T$ is followed by independent uniform choices at every internal node.  The \emph{randomized $k$-mistake Littlestone dimension} is
+      \[
+        \mathrm{RL}^{\mathrm{mist}}_k(\H)\bydef\frac12\sup_{T\text{ $k$-shattered by }\H}E_T.
+      \]
+      It is the optimal expected mistake bound in the $k$-realizable online-learning setting of Filmus, Hanneke, Mehalel, and Moran \cite{filmus2023randomized}.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
 \subsubsection{Prefix-$k$ Littlestone Dimension}
       
       \begin{definition}[Prefix-$k$ Littlestone Dimension - {$\mathrm{PL}_k$}]\label{def:prefix_littlestone_dimension}
