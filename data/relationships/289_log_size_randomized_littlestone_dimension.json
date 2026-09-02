@@ -1,0 +1,14 @@
+{
+  "id": 289,
+  "parameter_1_id": "#parameters/log_size",
+  "parameter_2_id": "#parameters/randomized_littlestone_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "2",
+  "details": "For every nonempty finite binary concept class, $\\log_2|\\mathcal H|\\geq2\\,\\mathrm{RL}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Distinct leaves of a shattered tree require distinct realizing hypotheses, so it has at most $|\\mathcal H|$ leaves. A uniform random root-to-leaf walk reaches a leaf at depth d with probability $2^{-d}$; its expected depth is therefore the entropy of this leaf distribution, at most $\\log_2|\\mathcal H|$. Divide by two and take the supremum over shattered trees.",
+  "references": "\\cite{filmus2023randomized}",
+  "proof_source": "Definition 1 of \u005ccite{filmus2023randomized}, followed by the elementary leaf-entropy bound.",
+  "short_name": "log_size_randomized_littlestone_dimension",
+  "name": "Log Size / Randomized Littlestone Dimension"
+}
