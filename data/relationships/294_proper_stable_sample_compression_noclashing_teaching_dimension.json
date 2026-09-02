@@ -1,0 +1,13 @@
+{
+  "id": 294,
+  "name": "Proper Stable Sample Compression / No-Clashing Teaching Dimension",
+  "short_name": "proper_stable_sample_compression_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/proper_stable_sample_compression",
+  "parameter_2_id": "#parameters/noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "The stable-compression theorem applies directly; properness is an additional restriction.",
+  "status": "established",
+  "references": "\\cite{KSZ2019}",
+  "latex_proof_label": "thm:stable-comp-low-NCTD-star",
+  "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star."
+}
