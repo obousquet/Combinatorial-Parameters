@@ -29,12 +29,16 @@ def graph_label(name: str, max_line_length: int = 26) -> str:
     """
     name = re.sub(r"\s+(?:complexity|size)\s*$", "", name, flags=re.IGNORECASE)
     abbreviations = {
+        "sample compression": "SC",
         "projected": "Proj",
         "projection": "Proj",
         "maximum": "Max",
+        "maximal": "Max",
         "minimum": "Min",
         "monotonic": "Mon",
         "dimension": "Dim",
+        "equivalence": "Eq",
+        "membership": "Memb",
     }
     for long_form, short_form in abbreviations.items():
         name = re.sub(
