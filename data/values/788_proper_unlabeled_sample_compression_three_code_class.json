@@ -1,0 +1,12 @@
+{
+  "id": 788,
+  "name": "Proper Unlabeled Sample Compression of the Three-Code Class",
+  "short_name": "proper_unlabeled_sample_compression_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/proper_unlabeled_sample_compression",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A proper size-two scheme exists, as verified by exhaustive enumeration of all realizable partial samples and all unlabeled codes of size at most two. No proper size-one scheme exists: the same finite enumeration checks every possible compressor assignment and every reconstruction in $\\mathcal C_{\\triangle}$. The check is recorded in $\\texttt{sync/verify\\_properness\\_separation.py}$; it also verifies the matching improper size-one scheme.",
+  "references": ""
+}

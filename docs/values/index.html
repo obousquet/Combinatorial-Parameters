@@ -12514,6 +12514,40 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-787" style="position:relative;">
+        
+        <h3><a href="values/unlabeled_sample_compression_three_code_class.html" class="table-title-link">Unlabeled Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Unlabeled Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A size-one improper scheme reconstructs $011$ from the empty code, $000$ from $\{x_0\}$, $001$ from $\{x_1\}$, and $101$ from $\{x_2\}$. For a realizable partial sample, use the empty code if it is consistent with $011$; otherwise use $\{x_0\}$ when it contains $x_0=0$, use $\{x_1\}$ when it contains $x_1=0$, and use $\{x_2\}$ in the remaining case. Each stated reconstruction is consistent with its assigned sample. Size zero is impossible because the full samples $000$ and $011$ disagree, whereas a zero-size scheme has one fixed reconstruction. The exhaustive check in $\texttt{sync/verify\_properness\_separation.py}$ independently verifies this value.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-788" style="position:relative;">
+        
+        <h3><a href="values/proper_unlabeled_sample_compression_three_code_class.html" class="table-title-link">Proper Unlabeled Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Unlabeled Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A proper size-two scheme exists, as verified by exhaustive enumeration of all realizable partial samples and all unlabeled codes of size at most two. No proper size-one scheme exists: the same finite enumeration checks every possible compressor assignment and every reconstruction in $\mathcal C_{\triangle}$. The check is recorded in $\texttt{sync/verify\_properness\_separation.py}$; it also verifies the matching improper size-one scheme.</p></div>
+
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

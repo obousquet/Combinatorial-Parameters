@@ -1,0 +1,8 @@
+{
+  "id": 12,
+  "name": "Three-Code Class",
+  "short_name": "three_code_class",
+  "symbol": "\\mathcal C_{\\triangle}",
+  "definition": "On the three-point domain $\\{x_0,x_1,x_2\\}$, let $\\mathcal C_{\\triangle}=\\{000,011,101\\}$, where strings list the values at $x_2,x_1,x_0$ in that order.",
+  "comments": "A finite witness class used to separate proper from improper unlabeled compression."
+}

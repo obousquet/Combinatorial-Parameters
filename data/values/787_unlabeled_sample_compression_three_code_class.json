@@ -1,0 +1,12 @@
+{
+  "id": 787,
+  "name": "Unlabeled Sample Compression of the Three-Code Class",
+  "short_name": "unlabeled_sample_compression_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A size-one improper scheme reconstructs $011$ from the empty code, $000$ from $\\{x_0\\}$, $001$ from $\\{x_1\\}$, and $101$ from $\\{x_2\\}$. For a realizable partial sample, use the empty code if it is consistent with $011$; otherwise use $\\{x_0\\}$ when it contains $x_0=0$, use $\\{x_1\\}$ when it contains $x_1=0$, and use $\\{x_2\\}$ in the remaining case. Each stated reconstruction is consistent with its assigned sample. Size zero is impossible because the full samples $000$ and $011$ disagree, whereas a zero-size scheme has one fixed reconstruction. The exhaustive check in $\\texttt{sync/verify\\_properness\\_separation.py}$ independently verifies this value.",
+  "references": ""
+}
