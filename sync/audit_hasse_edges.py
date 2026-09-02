@@ -118,6 +118,9 @@ def audit(data_dir: Path) -> dict[str, Any]:
     by_variant: dict[str, list[Record]] = defaultdict(list)
     for relationship in quotient:
         by_variant[graph.variant_of(relationship)].append(relationship)
+    # Match the renderer's vertical ordering: base affine bounds contribute to
+    # rank closure even though only homogeneous facts are Hasse-reduced.
+    ranks = graph.hierarchy_ranks(by_variant.get(graph.BASE_VARIANT, []))
 
     result: dict[str, Any] = {
         "direct_established_relationships": len(relationships),
@@ -155,6 +158,8 @@ def audit(data_dir: Path) -> dict[str, Any]:
                 "variant": variant,
                 "source": source,
                 "target": target,
+                "source_rank": ranks.get(source),
+                "target_rank": ranks.get(target),
                 "has_witness": bool(record.get("witness")),
                 "witness_strength": record.get("witness_strength"),
                 "lost_reachability_pairs": lost_pairs,
@@ -208,6 +213,7 @@ def print_queue(title: str, rows: list[dict[str, Any]]) -> None:
         ) or "-"
         print(
             f"  #{row['id']:>3} impact={row['lost_reachability_pairs']:<3} witness={witness:<3} "
+            f"rank={row['source_rank']}→{row['target_rank']} "
             f"{row['source']} >= {row['target']} | strict-value leads: {candidates}"
         )
 
