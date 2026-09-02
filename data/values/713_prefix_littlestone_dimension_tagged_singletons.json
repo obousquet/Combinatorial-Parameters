@@ -1,0 +1,12 @@
+{
+  "id": 713,
+  "name": "Prefix-$k$ Littlestone Dimension of Tagged Singletons",
+  "short_name": "prefix_littlestone_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$\\mathrm{PL}_1=2,\\quad\\mathrm{PL}_k=1\\ (k\\ge2)$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The defining identity gives $\\mathrm{PL}_1=\\mathrm L=2$. For k at least two, a depth-two prefix-k tree is level-constant on its first two levels and hence would shatter two fixed coordinates. Since VC dimension is one, its depth is at most one; the VC witness realizes that depth.",
+  "references": "Directly from the prefix-tree definition and the VC/Littlestone calculations for this class in \\cite{maass1992lower}."
+}

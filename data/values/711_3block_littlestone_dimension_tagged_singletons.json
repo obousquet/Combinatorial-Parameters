@@ -1,0 +1,12 @@
+{
+  "id": 711,
+  "name": "3-Block Littlestone Dimension of Tagged Singletons",
+  "short_name": "3block_littlestone_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/3block_littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The depth-one VC witness gives the lower bound. Any depth-two 3-block tree already has a common second-level coordinate and would shatter two fixed coordinates, contradicting VC dimension one.",
+  "references": "Directly from the block-tree definition and the VC calculation for this class in \\cite{maass1992lower}."
+}

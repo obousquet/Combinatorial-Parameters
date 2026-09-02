@@ -1,0 +1,12 @@
+{
+  "id": 718,
+  "name": "2-Block Littlestone Dimension of Warmuth's $C_5$ Class",
+  "short_name": "2block_littlestone_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/2block_littlestone_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The depth-three Littlestone witness queries coordinates 0 and 1 on its first two levels, then coordinates 3,2,2,2 on the four branches. Its first block therefore satisfies the 2-block constraint, proving the lower bound. The ordinary Littlestone dimension is three, proving equality.",
+  "references": "Directly from the $C_5$ Littlestone witness; see \\cite{littlestone1988learning,palvolgyi2021unlabeled}."
+}

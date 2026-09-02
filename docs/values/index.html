@@ -12038,6 +12038,210 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-710" style="position:relative;">
+        
+        <h3><a href="values/2block_littlestone_dimension_tagged_singletons.html" class="table-title-link">2-Block Littlestone Dimension of Tagged Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>2-Block Littlestone Dimension of Tagged Singletons</p>
+<p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>VC dimension is one, which gives a depth-one level-constant tree. A 2-block tree of depth two has one common coordinate at its second level, so its four leaves realize all labelings on two fixed coordinates. This would give VC dimension at least two, which is impossible.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the VC calculation for this class in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-711" style="position:relative;">
+        
+        <h3><a href="values/3block_littlestone_dimension_tagged_singletons.html" class="table-title-link">3-Block Littlestone Dimension of Tagged Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>3-Block Littlestone Dimension of Tagged Singletons</p>
+<p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-one VC witness gives the lower bound. Any depth-two 3-block tree already has a common second-level coordinate and would shatter two fixed coordinates, contradicting VC dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the VC calculation for this class in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-712" style="position:relative;">
+        
+        <h3><a href="values/kblock_littlestone_dimension_tagged_singletons.html" class="table-title-link">$k$-Block Littlestone Dimension of Tagged Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Tagged Singletons</p>
+<p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For every fixed $k\ge2$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-one VC witness gives the lower bound. For every k at least two, the first two levels of a depth-two k-block tree use fixed coordinates and would shatter a two-point set, contradicting VC dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the VC calculation for this class in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-713" style="position:relative;">
+        
+        <h3><a href="values/prefix_littlestone_dimension_tagged_singletons.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of Tagged Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Tagged Singletons</p>
+<p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\mathrm{PL}_1=2,\quad\mathrm{PL}_k=1\ (k\ge2)$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The defining identity gives $\mathrm{PL}_1=\mathrm L=2$. For k at least two, a depth-two prefix-k tree is level-constant on its first two levels and hence would shatter two fixed coordinates. Since VC dimension is one, its depth is at most one; the VC witness realizes that depth.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the prefix-tree definition and the VC/Littlestone calculations for this class in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-714" style="position:relative;">
+        
+        <h3><a href="values/2block_littlestone_dimension_universal_class.html" class="table-title-link">2-Block Littlestone Dimension of Universal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>2-Block Littlestone Dimension of Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness labels every level by one domain point, so it is in particular a 2-block tree of depth $\lfloor\log_2 n\rfloor$. The ordinary Littlestone dimension gives the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-715" style="position:relative;">
+        
+        <h3><a href="values/3block_littlestone_dimension_universal_class.html" class="table-title-link">3-Block Littlestone Dimension of Universal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>3-Block Littlestone Dimension of Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness is level-constant and hence satisfies every 3-block constraint. The ordinary Littlestone dimension supplies the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-716" style="position:relative;">
+        
+        <h3><a href="values/kblock_littlestone_dimension_universal_class.html" class="table-title-link">$k$-Block Littlestone Dimension of Universal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>For every fixed $k\ge2$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness is horizontally constant on every level, hence is a k-block tree for every k. The ordinary Littlestone dimension gives the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-717" style="position:relative;">
+        
+        <h3><a href="values/prefix_littlestone_dimension_universal_class.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of Universal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>For every fixed $k\ge1$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness is horizontally constant on every level, so it satisfies every prefix constraint. The ordinary Littlestone dimension gives the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-718" style="position:relative;">
+        
+        <h3><a href="values/2block_littlestone_dimension_warmuth_c5.html" class="table-title-link">2-Block Littlestone Dimension of Warmuth's $C_5$ Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>2-Block Littlestone Dimension of Warmuth's $C_5$ Class</p>
+<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-three Littlestone witness queries coordinates 0 and 1 on its first two levels, then coordinates 3,2,2,2 on the four branches. Its first block therefore satisfies the 2-block constraint, proving the lower bound. The ordinary Littlestone dimension is three, proving equality.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the $C_5$ Littlestone witness; see <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-719" style="position:relative;">
+        
+        <h3><a href="values/3block_littlestone_dimension_warmuth_c5.html" class="table-title-link">3-Block Littlestone Dimension of Warmuth's $C_5$ Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>3-Block Littlestone Dimension of Warmuth's $C_5$ Class</p>
+<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>VC dimension two gives a depth-two level-constant tree. A depth-three 3-block tree has all three levels horizontally constant, so it would shatter three fixed coordinates, contradicting VC dimension two.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the $C_5$ VC calculation in <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-720" style="position:relative;">
+        
+        <h3><a href="values/kblock_littlestone_dimension_warmuth_c5.html" class="table-title-link">$k$-Block Littlestone Dimension of Warmuth's $C_5$ Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Warmuth's $C_5$ Class</p>
+<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Value: </strong>$\begin{cases}3&k=2,\\2&k\ge3.\end{cases}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For k=2 use the recorded depth-three 2-block witness. For k at least three, a depth-three k-block tree is level-constant on its first three levels and would shatter three coordinates, while VC dimension is two. The VC witness supplies depth two in every case.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the $C_5$ calculations in <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-721" style="position:relative;">
+        
+        <h3><a href="values/prefix_littlestone_dimension_warmuth_c5.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of Warmuth's $C_5$ Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Warmuth's $C_5$ Class</p>
+<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\begin{cases}3&k\le2,\\2&k\ge3.\end{cases}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For k=1 this is ordinary Littlestone dimension. For k=2, the recorded depth-three Littlestone witness has a common coordinate at its second level and is a prefix-2 tree. For k at least three, depth three would be level-constant on its first three levels and would shatter three coordinates, contradicting VC dimension two. The VC witness gives depth two.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the prefix-tree definition and the $C_5$ calculations in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a>.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

@@ -1,0 +1,12 @@
+{
+  "id": 719,
+  "name": "3-Block Littlestone Dimension of Warmuth's $C_5$ Class",
+  "short_name": "3block_littlestone_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/3block_littlestone_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "VC dimension two gives a depth-two level-constant tree. A depth-three 3-block tree has all three levels horizontally constant, so it would shatter three fixed coordinates, contradicting VC dimension two.",
+  "references": "Directly from the block-tree definition and the $C_5$ VC calculation in \\cite{palvolgyi2021unlabeled}."
+}

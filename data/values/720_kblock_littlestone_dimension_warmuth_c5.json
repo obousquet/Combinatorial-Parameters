@@ -1,0 +1,12 @@
+{
+  "id": 720,
+  "name": "$k$-Block Littlestone Dimension of Warmuth's $C_5$ Class",
+  "short_name": "kblock_littlestone_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "value": "$\\begin{cases}3&k=2,\\\\2&k\\ge3.\\end{cases}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For k=2 use the recorded depth-three 2-block witness. For k at least three, a depth-three k-block tree is level-constant on its first three levels and would shatter three coordinates, while VC dimension is two. The VC witness supplies depth two in every case.",
+  "references": "Directly from the block-tree definition and the $C_5$ calculations in \\cite{palvolgyi2021unlabeled}."
+}

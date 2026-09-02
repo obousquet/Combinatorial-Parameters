@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-79" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-716" style="position:relative;">
         
-        <h3><a href="parameters/2block_littlestone_dimension.html" class="table-title-link">2-Block Littlestone Dimension</a></h3>
+        <h3><a href="values/kblock_littlestone_dimension_universal_class.html" class="table-title-link">$k$-Block Littlestone Dimension of Universal Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>2-Block Littlestone Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{B}_2">
-            \[\mathrm{B}_2\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>2-Block Littlestone Dimension</strong> $\mathrm{B}_2(\mathcal{H})$ is the largest depth of a complete binary tree shattered by $\mathcal{H}$ in which, in every block of two consecutive levels, the first level is unrestricted and the two nodes on the second level have the same domain-point label. Equivalently, each block asks two coordinates before receiving their two labels, giving four branches, and successive blocks may depend on all preceding labels.</p></div>
-<strong>Description:</strong><div class="text-field"><p>Database-defined structural variant; no published origin is claimed.</p></div>
-
-
-<p><strong>Category:</strong> Queries</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/2block_littlestone_dimension_trivial_concepts.html'>2-Block Littlestone Dimension of Trivial Concepts</a></li><li><a href='values/2block_littlestone_dimension_full_cube.html'>2-Block Littlestone Dimension of Full Cube</a></li><li><a href='values/2block_littlestone_dimension_singletons.html'>2-Block Littlestone Dimension of Singletons</a></li><li><a href='values/2block_littlestone_dimension_singletons_plus_empty_set.html'>2-Block Littlestone Dimension of Singletons plus Empty Set</a></li><li><a href='values/2block_littlestone_dimension_majority.html'>2-Block Littlestone Dimension of Majority</a></li><li><a href='values/2block_littlestone_dimension_addressing.html'>2-Block Littlestone Dimension of Addressing</a></li><li><a href='values/2block_littlestone_dimension_tagged_singletons.html'>2-Block Littlestone Dimension of Tagged Singletons</a></li><li><a href='values/2block_littlestone_dimension_universal_class.html'>2-Block Littlestone Dimension of Universal Class</a></li><li><a href='values/2block_littlestone_dimension_warmuth_c5.html'>2-Block Littlestone Dimension of Warmuth's $C_5$ Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/littlestone_dimension_2block_littlestone_dimension.html" class="relationship-statement">$\mathrm{L} \ge \mathrm{B}_2$</a></li><li><a href="relationships/2block_littlestone_dimension_vc_dimension.html" class="relationship-statement">$\mathrm{B}_2 \ge \mathrm{VC}$</a></li></ul></p></div>
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>For every fixed $k\ge2$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness is horizontally constant on every level, hence is a k-block tree for every k. The ordinary Littlestone dimension gives the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
 
         </div>
     </div>
