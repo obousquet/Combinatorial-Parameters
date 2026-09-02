@@ -9,10 +9,10 @@
   "c_monotonic": true,
   "doubly_monotonic": null,
   "strictly_monotonic": null,
-  "definition": "The **No-Clashing Teaching Dimension** is the minimum possible maximum size of the samples in a teacher mapping that assigns one labeled sample to each concept, subject to no two distinct concepts being simultaneously consistent with the union of their assigned samples.",
-  "graph_summary": "Smallest maximum sample size of a non-clashing teacher mapping.",
+  "definition": "For a teacher map $T$ assigning every $h\\in\\mathcal H$ a labeled sample $T(h)$ consistent with $h$, a pair $h\\ne h'$ **clashes** when $T(h)$ is consistent with $h'$ and $T(h')$ is consistent with $h$. The **No-Clashing Teaching Dimension** is $\\min_T\\max_{h\\in\\mathcal H}|T(h)|$ over teacher maps with no clash.",
+  "graph_summary": "Least maximum sample size of a teacher map with no mutually consistent distinct pair.",
   "short_name": "noclashing_teaching_dimension",
-  "origin_references": "Introduced as the no-clashing teaching dimension in \\cite{KSZ2019}.",
+  "origin_references": "Introduced as the no-clashing teaching dimension in \\cite{KSZ2019}. This record uses the standard mutual-consistency definition; it makes no claimed VC-dimension upper bound.",
   "monotonicity_evidence": {
     "monotonic": {
       "proof": "Restricting a no-clashing teacher mapping to a subfamily preserves the no-clashing condition and cannot increase its maximum sample size.",

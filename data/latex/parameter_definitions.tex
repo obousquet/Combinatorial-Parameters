@@ -620,7 +620,17 @@
 \subsubsection{No-Clashing Teaching Dimension}
       
       \begin{definition}[No-Clashing Teaching Dimension - {$\mathrm{NCTD}$}]\label{def:no-clashing_teaching_dimension}
-      
+      Let $\mathcal H$ be a finite binary concept class.  A teacher map assigns
+      each $h\in\mathcal H$ a labeled sample $T(h)$ consistent with $h$.  Two
+      distinct concepts $h,h'$ \emph{clash} if $T(h)$ is consistent with $h'$
+      and $T(h')$ is consistent with $h$.  A map is \emph{no-clashing} if no
+      such pair exists.  Define
+      \[
+        \mathrm{NCTD}(\mathcal H)
+        =\min_{T\text{ no-clashing}}\max_{h\in\mathcal H}|T(h)|.
+      \]
+      This is the standard mutual-consistency condition; no upper bound by VC
+      dimension is part of the definition or asserted here.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -683,7 +693,10 @@
 \subsubsection{Positive No-Clashing Teaching Dimension}
       
       \begin{definition}[Positive No-Clashing Teaching Dimension - {$\mathrm{NCTD}^+$}]\label{def:positive_no-clashing_teaching_dimension}
-      
+      The positive no-clashing teaching dimension
+      $\mathrm{NCTD}^{+}(\mathcal H)$ is defined by the preceding minimum,
+      with the additional requirement that every sample $T(h)$ contains only
+      positive examples of $h$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: N

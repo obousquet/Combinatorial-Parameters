@@ -9,8 +9,8 @@
   "c_monotonic": true,
   "doubly_monotonic": null,
   "strictly_monotonic": null,
-  "definition": "The **Positive No-Clashing Teaching Dimension** is the no-clashing teaching dimension when every sample assigned by the teacher mapping is required to contain only positive examples of its target concept.",
-  "graph_summary": "No-clashing teaching dimension with positive-only teacher samples.",
+  "definition": "The **Positive No-Clashing Teaching Dimension** is no-clashing teaching dimension with the additional requirement that every assigned sample $T(h)$ contains only positive examples of its target $h$.",
+  "graph_summary": "NCTD with positive-only assigned samples.",
   "short_name": "positive_noclashing_teaching_dimension",
   "origin_references": "The positive no-clashing variant is defined in \\cite{KSZ2019}.",
   "monotonicity_evidence": {

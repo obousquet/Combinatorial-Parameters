@@ -1525,10 +1525,10 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>No-Clashing Teaching Dimension</strong> is the minimum possible maximum size of the samples in a teacher mapping that assigns one labeled sample to each concept, subject to no two distinct concepts being simultaneously consistent with the union of their assigned samples.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>For a teacher map $T$ assigning every $h\in\mathcal H$ a labeled sample $T(h)$ consistent with $h$, a pair $h\ne h'$ <strong>clashes</strong> when $T(h)$ is consistent with $h'$ and $T(h')$ is consistent with $h$. The <strong>No-Clashing Teaching Dimension</strong> is $\min_T\max_{h\in\mathcal H}|T(h)|$ over teacher maps with no clash.</p></div>
 
 
-<strong>Origin References:</strong><div class="text-field"><p>Introduced as the no-clashing teaching dimension in <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
+<strong>Origin References:</strong><div class="text-field"><p>Introduced as the no-clashing teaching dimension in <a href="bibliography.html#KSZ2019">[KSZ2019]</a>. This record uses the standard mutual-consistency definition; it makes no claimed VC-dimension upper bound.</p></div>
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
@@ -2362,7 +2362,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Positive No-Clashing Teaching Dimension</strong> is the no-clashing teaching dimension when every sample assigned by the teacher mapping is required to contain only positive examples of its target concept.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>The <strong>Positive No-Clashing Teaching Dimension</strong> is no-clashing teaching dimension with the additional requirement that every assigned sample $T(h)$ contains only positive examples of its target $h$.</p></div>
 
 
 <strong>Origin References:</strong><div class="text-field"><p>The positive no-clashing variant is defined in <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
