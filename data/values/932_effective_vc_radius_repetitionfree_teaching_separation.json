@@ -1,0 +1,12 @@
+{
+  "id": 932,
+  "name": "Effective VC Radius of the Repetition-Free Teaching Separation Class",
+  "short_name": "effective_vc_radius_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every pair of the five effective coordinates is shattered. The three-coordinate set $\\{0,1,2\\}$ realizes only six traces, so it is not shattered. Thus the all-effective-subsets shattering radius is two; this is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,vapnik1971uniform}"
+}

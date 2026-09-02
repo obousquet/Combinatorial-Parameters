@@ -65,6 +65,20 @@ def vc_dimension() -> int:
     return largest
 
 
+def effective_vc_radius() -> int:
+    """Compute the all-subsets shattering radius on the effective range."""
+    dimension = len(CLASS[0])
+    largest = 0
+    for size in range(dimension + 1):
+        if all(
+            len({"".join(concept[index] for index in coordinates) for concept in CLASS})
+            == 2**size
+            for coordinates in combinations(range(dimension), size)
+        ):
+            largest = size
+    return largest
+
+
 def littlestone_dimension(concepts: tuple[str, ...]) -> int:
     """Compute Littlestone dimension by the standard restriction recurrence."""
     dimension = len(CLASS[0])
@@ -139,6 +153,7 @@ def main() -> None:
     assert len(CLASS) == 13
     assert all({concept[index] for concept in CLASS} == {"0", "1"} for index in range(5))
     assert vc_dimension() == 3
+    assert effective_vc_radius() == 2
     assert littlestone_dimension(CLASS) == 3
     assert max(hamming_distance(first, second) for first in CLASS for second in CLASS) == 5
     assert min(
@@ -176,7 +191,7 @@ def main() -> None:
     print("minimum teaching-set size: 2; teaching dimension / maximum teaching-set size: 4")
     print("sum: 40; average teaching dimension: 40/13")
     print("star number: 4; co-VC dimension: 4; minimum star number: 3")
-    print("size: 13; effective range: 5; VC dimension: 3; Littlestone dimension: 3")
+    print("size: 13; effective range: 5; VC dimension: 3; effective VC radius: 2; Littlestone dimension: 3")
     print("diameter: 5; Hamming radius: 4")
     print("minimum/maximum degree: 1/3; average degree: 24/13; densest-subgraph value: 2")
     print("degeneracy: 2; largest strongly shattered set: 2")
