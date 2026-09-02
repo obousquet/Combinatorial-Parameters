@@ -1,0 +1,12 @@
+{
+  "id": 805,
+  "name": "Effective Range of the Three-Code Class",
+  "short_name": "effective_range_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "At each of the three coordinates, the defining words take both labels. Thus every coordinate is active, and the effective range is three. This is also checked directly in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition."
+}

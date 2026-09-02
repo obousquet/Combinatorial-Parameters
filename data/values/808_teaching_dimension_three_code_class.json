@@ -1,0 +1,12 @@
+{
+  "id": 808,
+  "name": "Teaching Dimension of the Three-Code Class",
+  "short_name": "teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $000,011,101$, respectively, the labels on $x_0,x_1,x_2$ uniquely identify the target among the three concepts. No non-singleton class has teaching dimension zero. Thus $\\mathrm{TD}=1$; the finite certificate is checked in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition."
+}

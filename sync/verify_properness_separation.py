@@ -132,6 +132,65 @@ def membership_query_one_fails():
     return True
 
 
+def basic_parameter_values():
+    """Compute the elementary finite parameters of ``C_triangle``.
+
+    The routine deliberately uses the definitions rather than the database
+    records, so it is a reproducible certificate for the accompanying value
+    entries.
+    """
+    traces = {
+        subset: {concept & subset for concept in CONCEPTS}
+        for subset in range(1 << DIMENSION)
+    }
+    vc = max(
+        subset.bit_count()
+        for subset, realized in traces.items()
+        if len(realized) == 1 << subset.bit_count()
+    )
+    covc = max(
+        subset.bit_count()
+        for subset, realized in traces.items()
+        if any(
+            center not in realized
+            and all((center ^ (1 << coordinate)) in realized for coordinate in range(DIMENSION) if subset & (1 << coordinate))
+            for center in range(1 << DIMENSION)
+            if center & ~subset == 0
+        )
+    )
+    star = max(
+        sum((center ^ (1 << coordinate)) in realized for coordinate in range(DIMENSION) if subset & (1 << coordinate))
+        for subset, realized in traces.items()
+        for center in realized
+    )
+    teaching = max(
+        min(
+            subset.bit_count()
+            for subset in range(1 << DIMENSION)
+            if sum((concept ^ other) & subset == 0 for other in CONCEPTS) == 1
+        )
+        for concept in CONCEPTS
+    )
+    # Every coordinate has a singleton branch, ruling out a complete
+    # Littlestone tree of depth two; each active coordinate gives depth one.
+    littlestone = 1 if any(
+        {((concept >> coordinate) & 1) for concept in CONCEPTS} == {0, 1}
+        for coordinate in range(DIMENSION)
+    ) else 0
+    return {
+        "size": len(CONCEPTS),
+        "effective_range": sum(
+            len({(concept >> coordinate) & 1 for concept in CONCEPTS}) == 2
+            for coordinate in range(DIMENSION)
+        ),
+        "vc_dimension": vc,
+        "littlestone_dimension": littlestone,
+        "teaching_dimension": teaching,
+        "star_number": star,
+        "covc_dimension": covc,
+    }
+
+
 def proper_stable_labeled_size_one_exists():
     """Check an explicit proper stable labelled scheme of size one.
 
@@ -201,6 +260,15 @@ def main():
     assert proper_stable_labeled_size_one_exists()
     assert proper_equivalence_one_query_fails()
     assert membership_query_one_fails()
+    assert basic_parameter_values() == {
+        "size": 3,
+        "effective_range": 3,
+        "vc_dimension": 1,
+        "littlestone_dimension": 1,
+        "teaching_dimension": 1,
+        "star_number": 2,
+        "covc_dimension": 3,
+    }
     # The improper query 001 has one distinct disagreement coordinate per target.
     proposal = 0b001
     responses = [

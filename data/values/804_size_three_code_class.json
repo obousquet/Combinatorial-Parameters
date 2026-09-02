@@ -1,0 +1,12 @@
+{
+  "id": 804,
+  "name": "Size of the Three-Code Class",
+  "short_name": "size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/size",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The defining list is $\\mathcal C_{\\triangle}=\\{000,011,101\\}$, whose three words are distinct; see the exhaustive certificate in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition."
+}

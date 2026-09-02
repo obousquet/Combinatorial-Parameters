@@ -1,0 +1,12 @@
+{
+  "id": 810,
+  "name": "co-VC Dimension of the Three-Code Class",
+  "short_name": "covc_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "In the full three-coordinate projection, the word $001$ is absent, while its three one-bit neighbours $000,011,101$ are precisely the class members. Hence it is a hollow three-star. No hollow star can have more than three leaves because its distinct realized neighbours would require more than the three available concepts. Thus $\\mathrm{coVC}=3$; the finite enumeration is in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition; compare the hollow-star formulation in \\cite{bousquet2020proper}."
+}

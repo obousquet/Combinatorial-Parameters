@@ -1,0 +1,12 @@
+{
+  "id": 806,
+  "name": "VC Dimension of the Three-Code Class",
+  "short_name": "vc_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every individual coordinate realizes both labels, so $\\mathrm{VC}\\geq1$. Each two-coordinate projection has exactly three traces, hence is not shattered; larger sets cannot be shattered either. Therefore $\\mathrm{VC}=1$. The exhaustive check is in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "Direct calculation from the class definition."
+}

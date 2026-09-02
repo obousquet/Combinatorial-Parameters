@@ -1,0 +1,12 @@
+{
+  "id": 807,
+  "name": "Littlestone Dimension of the Three-Code Class",
+  "short_name": "littlestone_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "An active coordinate gives a complete Littlestone tree of depth one. At every coordinate, one label is taken by exactly one of the three concepts, so one branch is a singleton and cannot support another split. No depth-two complete tree exists, hence $\\operatorname{Ldim}=1$.",
+  "references": "Direct calculation from the class definition."
+}
