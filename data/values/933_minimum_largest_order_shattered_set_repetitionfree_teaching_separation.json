@@ -1,0 +1,12 @@
+{
+  "id": 933,
+  "name": "Minimum Largest Order Shattered Set of the Repetition-Free Teaching Separation Class",
+  "short_name": "minimum_largest_order_shattered_set_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The effective VC radius is two, so every coordinate order has an order-shattered two-set. Standard downshifting in the coordinate order $(4,2,0,1,3)$ produces a downset whose largest face has size two. Thus the minimum over orders is exactly two; all 120 orders are checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{bollobas1995defect,doliwa2014recursive}"
+}

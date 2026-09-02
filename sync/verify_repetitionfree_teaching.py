@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 from functools import cache
-from itertools import combinations, product
+from itertools import combinations, permutations, product
 
 
 CLASS = (
@@ -77,6 +77,29 @@ def effective_vc_radius() -> int:
         ):
             largest = size
     return largest
+
+
+def downshift(concepts: set[str], coordinate: int) -> set[str]:
+    """Perform one standard downshift on a family of binary strings."""
+    shifted = set(concepts)
+    for concept in concepts:
+        if concept[coordinate] == "1":
+            lowered = concept[:coordinate] + "0" + concept[coordinate + 1:]
+            if lowered not in shifted:
+                shifted.remove(concept)
+                shifted.add(lowered)
+    return shifted
+
+
+def minimum_order_shattered_dimension() -> int:
+    """Minimize the largest shifted face over all coordinate orders."""
+    dimensions = []
+    for ordering in permutations(range(len(CLASS[0]))):
+        shifted = set(CLASS)
+        for coordinate in ordering:
+            shifted = downshift(shifted, coordinate)
+        dimensions.append(max(concept.count("1") for concept in shifted))
+    return min(dimensions)
 
 
 def littlestone_dimension(concepts: tuple[str, ...]) -> int:
@@ -154,6 +177,7 @@ def main() -> None:
     assert all({concept[index] for concept in CLASS} == {"0", "1"} for index in range(5))
     assert vc_dimension() == 3
     assert effective_vc_radius() == 2
+    assert minimum_order_shattered_dimension() == 2
     assert littlestone_dimension(CLASS) == 3
     assert max(hamming_distance(first, second) for first in CLASS for second in CLASS) == 5
     assert min(
@@ -196,6 +220,7 @@ def main() -> None:
     print("minimum/maximum degree: 1/3; average degree: 24/13; densest-subgraph value: 2")
     print("degeneracy: 2; largest strongly shattered set: 2")
     print("projected minimum degree: 3; projected average degree: 3")
+    print("minimum largest order-shattered-set size: 2")
 
 
 if __name__ == "__main__":

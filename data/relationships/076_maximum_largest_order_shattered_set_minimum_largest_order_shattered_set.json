@@ -6,6 +6,8 @@
   "details": "Definition",
   "status": "established",
   "proof": "Both parameters optimize the largest order-shattered-set size over the same set of domain orders; a maximum is at least the corresponding minimum.",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict",
   "short_name": "maximum_largest_order_shattered_set_minimum_largest_order_shattered_set",
   "name": "Maximum Largest Order Shattered Set / Minimum Largest Order Shattered Set"
 }
