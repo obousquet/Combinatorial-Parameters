@@ -1,0 +1,12 @@
+{
+  "id": 709,
+  "name": "co-VC dimension of Blockwise-Addressing",
+  "short_name": "covc_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$2^d+1\\leq\\mathrm{coVC}\\leq2^{d+1}$",
+  "details": "In particular, co-VC dimension is $\\Theta(2^d)$, linear in the size of this class and in its effective range.",
+  "status": "established",
+  "proof": "Put $m=2^d$.  Project to the selector z and all m x-coordinates.  The all-zero trace is absent.  Flipping x_i is realized by f_i, while flipping z is realized by the g_i whose d-bit x-block word is all zero.  This is a hollow $(m+1)$-star.  Conversely the class has exactly 2m concepts, and every hollow r-star needs r distinct hypotheses for its realized neighbours; hence $\\mathrm{coVC}\\leq2m$.",
+  "references": "Direct calculation from the Blockwise-Addressing construction in \\cite{ben1997online}; the hollow-star formulation is in \\cite{bousquet2020proper}."
+}

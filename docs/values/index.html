@@ -12021,6 +12021,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-709" style="position:relative;">
+        
+        <h3><a href="values/covc_dimension_blockwiseaddressing.html" class="table-title-link">co-VC dimension of Blockwise-Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>co-VC dimension of Blockwise-Addressing</p>
+<p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Value: </strong>$2^d+1\leq\mathrm{coVC}\leq2^{d+1}$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>In particular, co-VC dimension is $\Theta(2^d)$, linear in the size of this class and in its effective range.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Put $m=2^d$.  Project to the selector z and all m x-coordinates.  The all-zero trace is absent.  Flipping x_i is realized by f_i, while flipping z is realized by the g_i whose d-bit x-block word is all zero.  This is a hollow $(m+1)$-star.  Conversely the class has exactly 2m concepts, and every hollow r-star needs r distinct hypotheses for its realized neighbours; hence $\mathrm{coVC}\leq2m$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the Blockwise-Addressing construction in <a href="bibliography.html#ben1997online">[ben1997online]</a>; the hollow-star formulation is in <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a>.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>
