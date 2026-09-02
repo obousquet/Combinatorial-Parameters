@@ -1,0 +1,12 @@
+{
+  "id": 755,
+  "name": "Minimum Largest Order Shattered Set of Tagged Singletons",
+  "short_name": "minimum_largest_order_shattered_set_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Minimum largest order-shattered-set size is at least largest strongly shattered-set size and at most largest shattered-set size. Both established tagged-singleton values are $1$, so the minimum order value is $1$.",
+  "references": "\\cite{bollobas1995defect}"
+}

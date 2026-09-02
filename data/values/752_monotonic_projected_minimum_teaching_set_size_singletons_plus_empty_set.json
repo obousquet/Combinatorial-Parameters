@@ -1,0 +1,12 @@
+{
+  "id": 752,
+  "name": "Monotonic Projected Minimum Teaching Set Size of Singletons Plus Empty Set",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The monotonic projected parameter dominates monotonic minimum teaching-set size, whose established value here is $1$. It is at most Littlestone dimension, also $1$ for the singleton-plus-empty class. Thus the value is $1$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

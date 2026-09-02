@@ -1,0 +1,12 @@
+{
+  "id": 754,
+  "name": "Self-Directed Queries Complexity of Singletons Plus Empty Set",
+  "short_name": "selfdirected_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Self-directed query complexity lower-bounds recursive teaching dimension, whose established value is $1$ here. It is at most partial equivalence-query complexity, also $1$. Thus self-directed query complexity equals $1$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

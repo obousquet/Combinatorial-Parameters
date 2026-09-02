@@ -1,0 +1,12 @@
+{
+  "id": 751,
+  "name": "Monotonic Projected Minimum Teaching Set Size of Singletons",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The monotonic projected parameter is at least monotonic minimum teaching-set size, whose established singleton-class value is $1$. It is at most order sample compression, also $1$ on this class. Hence its value is $1$.",
+  "references": "\\cite{darnstadt2016order}"
+}
