@@ -8,5 +8,7 @@
   "status": "established",
   "details": "The arithmetic mean of the individual minimum teaching-set sizes is at least their minimum.",
   "proof": "Every individual minimum teaching-set size is at least $\\mathrm{TS}_{\\mathrm{min}}$. Averaging over all concepts gives $\\mathrm{TS}_{\\mathrm{avg}}\\ge\\mathrm{TS}_{\\mathrm{min}}$.",
-  "references": "\\cite{doliwa2014recursive}"
+  "references": "\\cite{doliwa2014recursive}",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict"
 }
