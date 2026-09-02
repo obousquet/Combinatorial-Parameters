@@ -8,6 +8,7 @@
   "proof": "Fix a hypothesis $h^*$ and follow the branch it realizes in any shattered Littlestone tree. At each node, shattering supplies a hypothesis realizing the branch that instead takes the opposite edge there. It agrees with $h^*$ at all earlier node labels and disagrees at the current node, so the nodes on the branch form an eluder witness of the same length.",
   "references": "\\cite{hanneke2024star_eluder}",
   "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
   "short_name": "combinatorial_eluder_dimension_littlestone_dimension",
   "name": "Combinatorial Eluder Dimension / Littlestone Dimension"
 }

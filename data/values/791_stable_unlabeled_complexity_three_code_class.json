@@ -1,0 +1,12 @@
+{
+  "id": 791,
+  "name": "Stable Unlabeled Complexity of the Three-Code Class",
+  "short_name": "stable_unlabeled_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The size-one improper unlabeled scheme recorded for $\\mathrm{USC}(\\mathcal C_{\\triangle})$ can be chosen stable. Exhaustive enumeration of every compressor assignment on the realizable partial samples verifies both consistency and the identity that deleting an unselected example leaves its code unchanged. Size zero is impossible because two full samples disagree and would have the same empty code. The check is recorded in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "\\cite{hanneke2021stable}"
+}

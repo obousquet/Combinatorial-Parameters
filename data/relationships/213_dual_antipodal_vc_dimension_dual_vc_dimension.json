@@ -8,6 +8,7 @@
   "proof": "For each labeling, ordinary dual shattering supplies a point inducing that labeling itself, which is one of the two patterns allowed by dual antipodal shattering.",
   "references": "\u005ccite{chornomaz2025spherical}",
   "witness": "#classes/full_cube",
+  "witness_strength": "strict",
   "short_name": "dual_antipodal_vc_dimension_dual_vc_dimension",
   "name": "Dual Antipodal VC Dimension / Dual VC Dimension"
 }

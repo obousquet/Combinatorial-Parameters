@@ -12514,6 +12514,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-795" style="position:relative;">
+        
+        <h3><a href="values/proper_labeled_sample_compression_three_code_class.html" class="table-title-link">Proper Labeled Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Labeled Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The explicit proper stable labeled size-one scheme checked in $\texttt{sync/verify\_properness\_separation.py}$ is in particular proper labeled. Size zero is impossible for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-787" style="position:relative;">
         
         <h3><a href="values/unlabeled_sample_compression_three_code_class.html" class="table-title-link">Unlabeled Sample Compression of the Three-Code Class</a></h3>
@@ -12578,6 +12595,91 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Relative hitting size is a definitional reformulation of maximum teaching-set size. The latter has established value n on the majority class, so relative hitting size is n as well.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a> <a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-791" style="position:relative;">
+        
+        <h3><a href="values/stable_unlabeled_complexity_three_code_class.html" class="table-title-link">Stable Unlabeled Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stable Unlabeled Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The size-one improper unlabeled scheme recorded for $\mathrm{USC}(\mathcal C_{\triangle})$ can be chosen stable. Exhaustive enumeration of every compressor assignment on the realizable partial samples verifies both consistency and the identity that deleting an unselected example leaves its code unchanged. Size zero is impossible because two full samples disagree and would have the same empty code. The check is recorded in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-792" style="position:relative;">
+        
+        <h3><a href="values/proper_stable_sample_compression_three_code_class.html" class="table-title-link">Proper Stable Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Stable Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Exhaustive enumeration of all proper stable unlabeled schemes on the realizable partial samples finds a size-two scheme and rules out every size-one scheme. The enumeration imposes sample consistency, reconstruction in $\mathcal C_{\triangle}$, and stability under deletion of an unselected example; it is recorded in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-793" style="position:relative;">
+        
+        <h3><a href="values/labeled_sample_compression_three_code_class.html" class="table-title-link">Labeled Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Labeled Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The explicit proper stable labeled size-one scheme checked in $\texttt{sync/verify\_properness\_separation.py}$ is in particular a labeled scheme. Size zero is impossible for a class containing two distinct concepts, because the empty code has one fixed reconstruction.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-794" style="position:relative;">
+        
+        <h3><a href="values/stable_labeled_sample_compression_three_code_class.html" class="table-title-link">Stable Labeled Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stable Labeled Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The explicit proper stable labeled size-one scheme checked in $\texttt{sync/verify\_properness\_separation.py}$ remains valid after dropping properness. Size zero is impossible for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-796" style="position:relative;">
+        
+        <h3><a href="values/proper_stable_labeled_sample_compression_three_code_class.html" class="table-title-link">Proper Stable Labeled Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The explicit code table in $\texttt{sync/verify\_properness\_separation.py}$ assigns every realizable partial sample a labeled subsample of size at most one. Its decoder always belongs to $\mathcal C_{\triangle}$, is sample-consistent, and the table directly checks stability under deletion of every unselected example. Size zero is impossible for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
 
         </div>
     </div>

@@ -4,10 +4,11 @@
   "parameter_2_id": "#parameters/log_size_ratio",
   "relationship_type": "larger_c",
   "status": "established",
-  "details": "Theorem",
+  "details": "Sauer--Shelah bound. The full cube gives an unbounded reverse-linear separation: $\\mathrm{VC}=n$ while $\\mathrm{LSR}=\\Theta(n/\\log n)$.",
   "proof": "Let $d=\\mathrm{VC}(\\mathcal H)$ and let $n$ be the domain size.  Sauer--Shelah gives $|\\mathcal H|\\le\\sum_{i=0}^{d}\\binom ni\\le(n+1)^d$.  Therefore $d\\ge\\log(|\\mathcal H|)/\\log(n+1)$, which is the asserted bound up to the harmless $-1$ normalization in Log Size Ratio.",
   "references": "\\cite{vapnik1971uniform}",
   "short_name": "vc_dimension_log_size_ratio",
   "name": "VC Dimension / Log Size Ratio",
-  "witness": "#classes/full_cube"
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded"
 }

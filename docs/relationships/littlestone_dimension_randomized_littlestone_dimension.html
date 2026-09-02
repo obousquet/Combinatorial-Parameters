@@ -77,6 +77,7 @@
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every binary concept class, $\mathrm L(\mathcal H)\geq\mathrm{RL}(\mathcal H).</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Induct on the finite Littlestone dimension d. At the root of any shattered tree, the two restrictions have dimensions a,b at most d, and they cannot both equal d (otherwise their complete trees join to give dimension d+1). Thus $a\leq d$ and $b\leq d-1$ after ordering. Induction bounds each subtree's randomized value by its Littlestone dimension, so the root tree has half its expected branch length at most $1/2+(a+b)/2\leq d$. Taking suprema proves the claim; the infinite case follows by truncation.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>The randomized-tree definition is Definition 1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>; the comparison is a direct induction.</p></div>

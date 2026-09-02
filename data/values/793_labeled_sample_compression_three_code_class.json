@@ -1,0 +1,12 @@
+{
+  "id": 793,
+  "name": "Labeled Sample Compression of the Three-Code Class",
+  "short_name": "labeled_sample_compression_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The explicit proper stable labeled size-one scheme checked in $\\texttt{sync/verify\\_properness\\_separation.py}$ is in particular a labeled scheme. Size zero is impossible for a class containing two distinct concepts, because the empty code has one fixed reconstruction.",
+  "references": "\\cite{FW1995}"
+}

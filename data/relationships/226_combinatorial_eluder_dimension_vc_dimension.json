@@ -8,6 +8,7 @@
   "proof": "If S={x_1,...,x_d} is shattered, choose as base a hypothesis with label 0 on S. At step i, shattering supplies a hypothesis that is 1 at x_i and 0 at every earlier x_j. These form a sequential eluder witness of length d.",
   "references": "\\cite{li2022understanding,vapnik1971uniform}",
   "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
   "short_name": "combinatorial_eluder_dimension_vc_dimension",
   "name": "Combinatorial Eluder Dimension / VC Dimension"
 }

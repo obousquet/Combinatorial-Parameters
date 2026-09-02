@@ -356,6 +356,24 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     legend = [{"type": "node", "label": t, "text": cat_values[t], **v} for t, v in category_map.items()]
     legend.extend([{"type": "node", "label": t, "text": shape_values[t], "shape": v} for t, v in shape_map.items()])
     legend.extend([{"type": "edge", "label": t, "text": arrow_values[t], **v} for t, v in arrow_map.items()])
+    legend.extend([
+        {
+            "type": "node",
+            "label": "C",
+            "text": "Strict-separation witness (refutes the reverse inequality)",
+            "shape": "box",
+            "color": "#888888",
+            "fillcolor": "#f0f0f0",
+        },
+        {
+            "type": "node",
+            "label": "C∞",
+            "text": "Unbounded-gap witness (rules out every reverse affine-linear bound)",
+            "shape": "doubleoctagon",
+            "color": "#D35400",
+            "fillcolor": "#FFF0D9",
+        },
+    ])
 
     parameters = cache.get_table_entries("parameters")
     # Non-established records are retained in the catalogue with their warning
@@ -497,14 +515,28 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
                 label_ref = f'#classes/{w["id"]}'
                 arrow = copy.copy(arrow)
                 arrow["style"] = "solid"
+        witness_strength = r.get("witness_strength")
         edge = {
             "source": f'#parameters/{source["id"]}',
             "target": f'#parameters/{target["id"]}',
             "ref": f'#relationships/{r["id"]}',
             "label": label,
             "label_ref": label_ref,
+            "witness_strength": witness_strength,
             **arrow
         }
+        if witness_strength == "unbounded":
+            edge.update({
+                "label_shape": "doubleoctagon",
+                "label_color": "#D35400",
+                "label_fillcolor": "#FFF0D9",
+            })
+        elif witness_strength == "strict":
+            edge.update({
+                "label_shape": "box",
+                "label_color": "#888888",
+                "label_fillcolor": "#f0f0f0",
+            })
         if not constrains_layout:
             edge["constraint"] = False
         if label:

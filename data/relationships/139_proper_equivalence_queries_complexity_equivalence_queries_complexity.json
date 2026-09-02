@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "For finite concept classes. Strict on the singleton class: $\\mathrm Q_{\\mathrm{peq}}=n-1$ while $\\mathrm Q_{\\mathrm{eq}}=1$.",
   "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
   "short_name": "proper_equivalence_queries_complexity_equivalence_queries_complexity",
   "name": "Proper Equivalence Queries Complexity / Equivalence Queries Complexity",
   "status": "established",

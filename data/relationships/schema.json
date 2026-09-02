@@ -105,6 +105,18 @@
         "rendered": true
     },
     {
+        "name": "witness_strength",
+        "type": "enum",
+        "label": "Witness Strength",
+        "description": "Whether the witness gives a strict counterexample to the reverse inequality, or an unbounded asymptotic gap that rules out every reverse affine-linear bound.",
+        "required": false,
+        "rendered": true,
+        "enum": [
+            { "value": "strict", "display_name": "Strict separation" },
+            { "value": "unbounded", "display_name": "Unbounded gap" }
+        ]
+    },
+    {
         "name": "status",
         "type": "enum",
         "label": "Status",
