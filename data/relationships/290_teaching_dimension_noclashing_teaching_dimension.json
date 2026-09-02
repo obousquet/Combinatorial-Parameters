@@ -1,0 +1,12 @@
+{
+  "id": 290,
+  "name": "Teaching Dimension / No-Clashing Teaching Dimension",
+  "short_name": "teaching_dimension_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Every globally identifying teaching map is no-clashing.",
+  "status": "established",
+  "proof": "For each $h\\in\\mathcal H$, choose a teaching set $T(h)$ of size at most $\\mathrm{TD}(\\mathcal H)$. If $h\\ne h'$, then $T(h)$ is inconsistent with $h'$ because it identifies $h$ uniquely in the whole class. Thus no pair can clash, and the same map witnesses $\\mathrm{NCTD}(\\mathcal H)\\leq\\mathrm{TD}(\\mathcal H)$.",
+  "references": "\\cite{goldman1995complexity,KSZ2019}"
+}
