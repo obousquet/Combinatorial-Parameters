@@ -4490,6 +4490,57 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-738" style="position:relative;">
+        
+        <h3><a href="values/random_equivalence_queries_complexity_full_cube.html" class="table-title-link">Random Equivalence Queries Complexity of Full Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Random Equivalence Queries Complexity of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full cube has VC dimension $n$, and the random-counterexample lower bound gives $\mathrm Q_{\mathrm{req}}\geq\mathrm{VC}$. Conversely, every equivalence-query strategy is valid against random counterexamples, so $\mathrm Q_{\mathrm{req}}\leq\mathrm L$; the full cube has Littlestone dimension $n$. Thus both bounds equal $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-739" style="position:relative;">
+        
+        <h3><a href="values/random_proper_equivalence_queries_complexity_full_cube.html" class="table-title-link">Random Proper Equivalence Queries Complexity of Full Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Proper random equivalence queries are a restriction of random equivalence queries, so $\mathrm Q_{\mathrm{rpeq}}\geq\mathrm Q_{\mathrm{req}}=n$ on the full cube. The established proper random-equivalence upper bound is $\mathrm Q_{\mathrm{rpeq}}\leq\log_2|\mathcal H|$, and the full cube has size $2^n$. Hence $\mathrm Q_{\mathrm{rpeq}}=n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-740" style="position:relative;">
+        
+        <h3><a href="values/selfdirected_queries_complexity_full_cube.html" class="table-title-link">Self-Directed Queries Complexity of Full Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Self-Directed Queries Complexity of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Query each of the $n$ coordinates once, making an arbitrary prediction at each query. This gives at most $n$ mistakes on the full cube. Conversely, self-directed query complexity is at least recursive teaching dimension, whose established full-cube value is $n$. Therefore the value is exactly $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-343" style="position:relative;">
         
         <h3><a href="values/sign_rank_full_cube.html" class="table-title-link">Sign Rank of Full Cube</a></h3>

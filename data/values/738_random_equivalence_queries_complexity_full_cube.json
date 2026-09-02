@@ -1,0 +1,12 @@
+{
+  "id": 738,
+  "name": "Random Equivalence Queries Complexity of Full Cube",
+  "short_name": "random_equivalence_queries_complexity_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/random_equivalence_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full cube has VC dimension $n$, and the random-counterexample lower bound gives $\\mathrm Q_{\\mathrm{req}}\\geq\\mathrm{VC}$. Conversely, every equivalence-query strategy is valid against random counterexamples, so $\\mathrm Q_{\\mathrm{req}}\\leq\\mathrm L$; the full cube has Littlestone dimension $n$. Thus both bounds equal $n$.",
+  "references": "\\cite{angluin2017random,littlestone1988learning}"
+}
