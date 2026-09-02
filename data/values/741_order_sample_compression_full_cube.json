@@ -1,0 +1,12 @@
+{
+  "id": 741,
+  "name": "Order Sample Compression of Full Cube",
+  "short_name": "order_sample_compression_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Order sample compression lower-bounds monotonic projected minimum teaching-set size, whose established full-cube value is $n$. Conversely, its established effective-range upper bound gives $\\mathrm{OSC}\\leq\\mathrm E$, and the full cube has effective range $n$. Hence $\\mathrm{OSC}=n$.",
+  "references": "\\cite{darnstadt2016order}"
+}
