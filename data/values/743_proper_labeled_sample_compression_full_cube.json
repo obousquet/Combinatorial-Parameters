@@ -1,0 +1,12 @@
+{
+  "id": 743,
+  "name": "Proper Labeled Sample Compression of Full Cube",
+  "short_name": "proper_labeled_sample_compression_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/proper_labeled_sample_compression",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Proper unlabeled compression is a restriction of proper labeled compression, so the latter is at least its established full-cube value $n$. The established effective-range upper bound gives $\\mathrm{pLSC}\\leq\\mathrm E$, and the full cube has effective range $n$. Thus $\\mathrm{pLSC}=n$.",
+  "references": "\\cite{bousquet2020proper,chalopin2022unlabeled}"
+}
