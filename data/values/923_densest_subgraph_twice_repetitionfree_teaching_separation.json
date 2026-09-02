@@ -1,0 +1,12 @@
+{
+  "id": 923,
+  "name": "Densest Subgraph (twice) of the Repetition-Free Teaching Separation Class",
+  "short_name": "densest_subgraph_twice_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The four concepts $01010,01011,01110,01111$ form a two-cube and thus have average degree two. Exhaustive inspection of all induced subgraphs finds none with larger average degree; this is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,haussler1988predicting}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 921,
+  "name": "Maximum Degree of the Repetition-Free Teaching Separation Class",
+  "short_name": "maximum_degree_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/maximum_degree",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The one-inclusion graph has degree sequence $1,1,3,3,2,2,1,3,2,2,1,2,1$, so its maximum degree is three. The enumeration is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,haussler1988predicting}"
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-64" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-923" style="position:relative;">
         
-        <h3><a href="parameters/degeneracy.html" class="table-title-link">Degeneracy</a></h3>
+        <h3><a href="values/densest_subgraph_twice_repetitionfree_teaching_separation.html" class="table-title-link">Densest Subgraph (twice) of the Repetition-Free Teaching Separation Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Degeneracy</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{d}^*_{\min}">
-            \[\mathrm{d}^*_{\min}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>degeneracy</strong> of a concept class is defined as the degeneracy of its $1$-inclusion graph, i.e. the maximum over induced subgraphs of the minimum degree.</p></div>
+        <p><strong>Name: </strong>Densest Subgraph (twice) of the Repetition-Free Teaching Separation Class</p>
+<p><strong>Class: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-<strong>Comments:</strong><div class="text-field"><p>Conditioning gives an induced subgraph of the $1$-inclusion graph, and degeneracy cannot increase on induced subgraphs.</p></div>
-<strong>Origin References:</strong><div class="text-field"><p>The minimum-degree deletion argument for one-inclusion graphs appears in <a href="bibliography.html#haussler1988predicting">[haussler1988predicting]</a>; see also the graph-orientation treatment in <a href="bibliography.html#alon1992colorings">[alon1992colorings]</a>.</p></div>
-<p><strong>Category:</strong> Graph-based</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> No</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> No</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/degeneracy_full_cube.html'>Degeneracy of Full Cube</a></li><li><a href='values/degeneracy_singletons.html'>Degeneracy of Singletons</a></li><li><a href='values/degeneracy_singletons_plus_empty_set.html'>Degeneracy of Singletons plus empty set</a></li><li><a href='values/degeneracy_halfintervals.html'>Degeneracy of Half-intervals</a></li><li><a href='values/degeneracy_trivial_concepts.html'>Degeneracy of Trivial concepts</a></li><li><a href='values/degeneracy_warmuth_c5.html'>Degeneracy of Warmuth's $C_5$ Class</a></li><li><a href='values/degeneracy_universal_class.html'>Degeneracy of Universal Class</a></li><li><a href='values/degeneracy_tagged_singletons.html'>Degeneracy of Tagged Singletons</a></li><li><a href='values/degeneracy_addressing.html'>Degeneracy of Addressing</a></li><li><a href='values/degeneracy_three_code_class.html'>Degeneracy of the Three-Code Class</a></li><li><a href='values/degeneracy_repetitionfree_teaching_separation.html'>Degeneracy of the Repetition-Free Teaching Separation Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/degeneracy_minimum_degree.html" class="relationship-statement">$\mathrm{d}^*_{\min} \ge \mathrm{d}_{\min}$ <span class="relationship-variant">(monotonic)</span></a></li><li><a href="relationships/densest_subgraph_twice_degeneracy.html" class="relationship-statement">$\mathrm{dens}^* \ge \mathrm{d}^*_{\min}$</a></li><li><a href="relationships/maximum_degree_degeneracy.html" class="relationship-statement">$\mathrm{d}_{\max} \ge \mathrm{d}^*_{\min}$</a></li><li><a href="relationships/degeneracy_largest_strongly_shattered_set.html" class="relationship-statement">$\mathrm{d}^*_{\min} \ge \mathrm{ST}$</a></li><li><a href="relationships/effective_range_degeneracy.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{d}^*_{\min}$</a></li></ul></p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The four concepts $01010,01011,01110,01111$ form a two-cube and thus have average degree two. Exhaustive inspection of all induced subgraphs finds none with larger average degree; this is checked in $\texttt{sync/verify\_repetitionfree\_teaching.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a> <a href="bibliography.html#haussler1988predicting">[haussler1988predicting]</a></p></div>
 
         </div>
     </div>

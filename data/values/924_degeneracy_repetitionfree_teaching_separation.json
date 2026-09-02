@@ -1,0 +1,12 @@
+{
+  "id": 924,
+  "name": "Degeneracy of the Repetition-Free Teaching Separation Class",
+  "short_name": "degeneracy_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The displayed two-cube has minimum degree two. Exhaustive inspection of every induced subgraph finds no subgraph with minimum degree above two, so the degeneracy is two; this is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,haussler1988predicting}"
+}

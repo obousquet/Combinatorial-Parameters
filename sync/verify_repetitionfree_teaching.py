@@ -86,6 +86,34 @@ def hamming_distance(first: str, second: str) -> int:
     return sum(left != right for left, right in zip(first, second))
 
 
+def one_inclusion_adjacency() -> tuple[frozenset[int], ...]:
+    """Return the adjacency sets of the class's one-inclusion graph."""
+    adjacency = [set() for _ in CLASS]
+    for left, right in combinations(range(len(CLASS)), 2):
+        if hamming_distance(CLASS[left], CLASS[right]) == 1:
+            adjacency[left].add(right)
+            adjacency[right].add(left)
+    return tuple(frozenset(neighbours) for neighbours in adjacency)
+
+
+def largest_contained_cube_dimension() -> int:
+    """Compute the largest strongly shattered coordinate set."""
+    dimension = len(CLASS[0])
+    largest = 0
+    for size in range(dimension + 1):
+        for coordinates in combinations(range(dimension), size):
+            complement = tuple(index for index in range(dimension) if index not in coordinates)
+            for fixed in product("01", repeat=len(complement)):
+                traces = {
+                    tuple(concept[index] for index in coordinates)
+                    for concept in CLASS
+                    if tuple(concept[index] for index in complement) == fixed
+                }
+                if len(traces) == 2**size:
+                    largest = max(largest, size)
+    return largest
+
+
 def main() -> None:
     sizes = tuple(minimum_teaching_set_size(concept, CLASS) for concept in CLASS)
     assert sizes == EXPECTED_SIZES, (sizes, EXPECTED_SIZES)
@@ -107,12 +135,33 @@ def main() -> None:
         max(hamming_distance(centre, concept) for concept in CLASS)
         for centre in map("".join, product("01", repeat=5))
     ) == 4
+    adjacency = one_inclusion_adjacency()
+    degrees = tuple(map(len, adjacency))
+    assert degrees == (1, 1, 3, 3, 2, 2, 1, 3, 2, 2, 1, 2, 1)
+    assert max(degrees) == 3 and min(degrees) == 1
+    assert sum(degrees) == 24
+    densest_average_degree = max(
+        sum(sum(neighbour in subset for neighbour in adjacency[vertex]) for vertex in subset)
+        / len(subset)
+        for size in range(1, len(CLASS) + 1)
+        for subset in combinations(range(len(CLASS)), size)
+    )
+    assert densest_average_degree == 2
+    degeneracy = max(
+        min(sum(neighbour in subset for neighbour in adjacency[vertex]) for vertex in subset)
+        for size in range(1, len(CLASS) + 1)
+        for subset in combinations(range(len(CLASS)), size)
+    )
+    assert degeneracy == 2
+    assert largest_contained_cube_dimension() == 2
     print(f"individual minimum teaching-set sizes: {sizes}")
     print("minimum teaching-set size: 2; teaching dimension / maximum teaching-set size: 4")
     print("sum: 40; average teaching dimension: 40/13")
     print("star number: 4; co-VC dimension: 4; minimum star number: 3")
     print("size: 13; effective range: 5; VC dimension: 3; Littlestone dimension: 3")
     print("diameter: 5; Hamming radius: 4")
+    print("minimum/maximum degree: 1/3; average degree: 24/13; densest-subgraph value: 2")
+    print("degeneracy: 2; largest strongly shattered set: 2")
 
 
 if __name__ == "__main__":

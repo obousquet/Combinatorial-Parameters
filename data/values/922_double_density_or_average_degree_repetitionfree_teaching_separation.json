@@ -1,0 +1,12 @@
+{
+  "id": 922,
+  "name": "Double Density of the Repetition-Free Teaching Separation Class",
+  "short_name": "double_density_or_average_degree_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$\\frac{24}{13}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The one-inclusion graph has thirteen vertices and twelve edges, hence average degree $2\\cdot12/13=24/13$. The edge enumeration is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,haussler1988predicting}"
+}
