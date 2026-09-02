@@ -7,5 +7,7 @@
   "short_name": "projected_maximal_degree_projected_double_density_or_projected_average_degree",
   "name": "Projected Maximal Degree / Projected Double Density or Projected Average Degree",
   "status": "established",
-  "proof": "For every projection, its maximum degree is at least its average degree.  Maximizing both quantities over projections preserves this inequality."
+  "proof": "For every projection, its maximum degree is at least its average degree.  Maximizing both quantities over projections preserves this inequality.",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict"
 }
