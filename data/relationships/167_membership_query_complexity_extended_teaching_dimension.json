@@ -4,6 +4,8 @@
   "parameter_2_id": "#parameters/extended_teaching_dimension",
   "relationship_type": "larger",
   "details": "A membership-query decision tree supplies a specifying set for every labeling. For finite classes with more than two concepts, Heged\u00fcs also proves $Q_m\\leq \\mathrm{XTD}\\log_2|\\mathcal{H}|$.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "membership_query_complexity_extended_teaching_dimension",
   "name": "Membership Query Complexity / Extended Teaching Dimension",
   "status": "established",

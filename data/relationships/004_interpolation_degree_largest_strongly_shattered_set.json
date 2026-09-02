@@ -7,6 +7,8 @@
   "details": "Lemma",
   "proof": "If $\\mathcal H$ contains a $d$-cube, restrict an interpolating polynomial to that cube.  Every real-valued function on the cube must then be representable; in particular its parity function requires degree $d$.  Hence $\\mathrm{intdeg}(\\mathcal H)\\ge\\mathrm{ST}(\\mathcal H)$.",
   "references": "\\cite{moran2015shattered}",
+  "witness": "#classes/addressing",
+  "witness_strength": "strict",
   "short_name": "interpolation_degree_largest_strongly_shattered_set",
   "name": "Interpolation degree / Largest Strongly Shattered Set"
 }

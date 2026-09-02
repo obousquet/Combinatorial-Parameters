@@ -8,6 +8,8 @@
   "proof": "The 3-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Therefore every tree counted by $\\mathrm{B}_3(\\mathcal H)$ is counted by $\\mathrm L(\\mathcal H)$, and $\\mathrm L(\\mathcal H)\\ge\\mathrm{B}_3(\\mathcal H)$.",
   "latex_proof_label": "prop:block-littlestone-sandwich",
   "proof_source": "Proposition \\ref{prop:block-littlestone-sandwich} in the survey.",
+  "witness": "#classes/tagged_singletons",
+  "witness_strength": "strict",
   "short_name": "littlestone_dimension_3block_littlestone_dimension",
   "name": "Littlestone Dimension / 3-Block Littlestone Dimension"
 }

@@ -4,6 +4,8 @@
   "parameter_2_id": "#parameters/minimum_projected_teaching_set_size",
   "relationship_type": "larger",
   "details": "For finite concept classes.",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "strict",
   "short_name": "maximum_projected_teaching_set_size_minimum_projected_teaching_set_size",
   "name": "Maximum Projected Teaching Set Size / Minimum Projected Teaching Set Size",
   "status": "established",

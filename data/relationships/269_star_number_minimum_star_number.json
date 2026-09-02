@@ -7,6 +7,8 @@
   "status": "established",
   "proof": "The minimum is over all centre labelings, including the labelings realized by hypotheses in the class; the ordinary star number is the maximum over those realizable centres.",
   "references": "\\cite{hanneke2024star_eluder}",
+  "witness": "#classes/repetitionfree_teaching_separation",
+  "witness_strength": "strict",
   "short_name": "star_number_minimum_star_number",
   "name": "Star Number / Minimum Star Number"
 }

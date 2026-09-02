@@ -1,6 +1,8 @@
 {
   "id": 199,
   "name": "Littlestone Dimension / $k$-Block Littlestone Dimension",
+  "witness": "#classes/tagged_singletons",
+  "witness_strength": "strict",
   "short_name": "littlestone_dimension_kblock_littlestone_dimension",
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/kblock_littlestone_dimension_kge2",
