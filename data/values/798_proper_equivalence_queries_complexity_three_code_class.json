@@ -1,0 +1,12 @@
+{
+  "id": 798,
+  "name": "Proper Equivalence Queries Complexity of the Three-Code Class",
+  "short_name": "proper_equivalence_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/proper_equivalence_queries_complexity",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "No proper first proposal identifies every target after one counterexample: the exhaustive response check in $\\texttt{sync/verify\\_properness\\_separation.py}$ finds, for each proposal in $\\mathcal C_{\\triangle}$, a disagreement coordinate compatible with at least two targets. Conversely, query any two class members; if both are rejected, the third member is forced. Thus the exact proper-query complexity is two.",
+  "references": "\\cite{angluin1988queries}"
+}

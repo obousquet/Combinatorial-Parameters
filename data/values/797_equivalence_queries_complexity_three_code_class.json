@@ -1,0 +1,12 @@
+{
+  "id": 797,
+  "name": "Equivalence Queries Complexity of the Three-Code Class",
+  "short_name": "equivalence_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Use the improper proposal $001$. Against the three targets $000,011,101$, its disagreement coordinate is respectively $x_0,x_1,x_2$, and each counterexample identifies the target uniquely. The verifier $\\texttt{sync/verify\\_properness\\_separation.py}$ checks these three response classes. Size zero is impossible for a non-singleton class.",
+  "references": "\\cite{angluin1988queries}"
+}

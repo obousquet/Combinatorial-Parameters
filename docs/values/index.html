@@ -12531,6 +12531,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-797" style="position:relative;">
+        
+        <h3><a href="values/equivalence_queries_complexity_three_code_class.html" class="table-title-link">Equivalence Queries Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Equivalence Queries Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/equivalence_queries_complexity.html">Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Use the improper proposal $001$. Against the three targets $000,011,101$, its disagreement coordinate is respectively $x_0,x_1,x_2$, and each counterexample identifies the target uniquely. The verifier $\texttt{sync/verify\_properness\_separation.py}$ checks these three response classes. Size zero is impossible for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-787" style="position:relative;">
         
         <h3><a href="values/unlabeled_sample_compression_three_code_class.html" class="table-title-link">Unlabeled Sample Compression of the Three-Code Class</a></h3>
@@ -12680,6 +12697,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The explicit code table in $\texttt{sync/verify\_properness\_separation.py}$ assigns every realizable partial sample a labeled subsample of size at most one. Its decoder always belongs to $\mathcal C_{\triangle}$, is sample-consistent, and the table directly checks stability under deletion of every unselected example. Size zero is impossible for a non-singleton class.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-798" style="position:relative;">
+        
+        <h3><a href="values/proper_equivalence_queries_complexity_three_code_class.html" class="table-title-link">Proper Equivalence Queries Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Equivalence Queries Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>No proper first proposal identifies every target after one counterexample: the exhaustive response check in $\texttt{sync/verify\_properness\_separation.py}$ finds, for each proposal in $\mathcal C_{\triangle}$, a disagreement coordinate compatible with at least two targets. Conversely, query any two class members; if both are rejected, the third member is forced. Thus the exact proper-query complexity is two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
 
         </div>
     </div>
