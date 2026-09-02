@@ -1,0 +1,12 @@
+{
+  "id": 776,
+  "name": "Positive No-Clashing Teaching Dimension of Warmuth's $C_5$ Class",
+  "short_name": "positive_noclashing_teaching_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The exact C5 verifier enumerates every target-consistent positive labeled sample of size at most one and rejects every positive no-clashing map of width one. It returns an explicit positive no-clashing map of width two, so $\\mathrm{NCTD}^{+}(C_5)=2$.",
+  "references": "\\cite{KSZ2019,palvolgyi2021unlabeled}"
+}

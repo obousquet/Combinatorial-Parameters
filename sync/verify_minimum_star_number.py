@@ -118,16 +118,23 @@ def _sample_is_consistent(
 
 
 def noclashing_map(
-    concepts: set[tuple[int, ...]], maximum_size: int
+    concepts: set[tuple[int, ...]], maximum_size: int, *, positive_only: bool = False
 ) -> list[tuple[tuple[int, int], ...]] | None:
-    """Return a width-bounded no-clashing map, or ``None`` if none exists."""
+    """Return a width-bounded (optionally positive) no-clashing map."""
     hypotheses = tuple(sorted(concepts))
     dimension = len(hypotheses[0])
     options = [
         [
             tuple((coordinate, hypothesis[coordinate]) for coordinate in support)
             for size in range(maximum_size + 1)
-            for support in combinations(range(dimension), size)
+            for support in combinations(
+                (
+                    coordinate
+                    for coordinate in range(dimension)
+                    if not positive_only or hypothesis[coordinate] == 1
+                ),
+                size,
+            )
         ]
         for hypothesis in hypotheses
     ]
@@ -169,10 +176,15 @@ def main() -> None:
     nctd_map = noclashing_map(concepts, 2)
     assert nctd_map is not None
     assert max(map(len, nctd_map)) == 2
+    assert noclashing_map(concepts, 1, positive_only=True) is None
+    positive_nctd_map = noclashing_map(concepts, 2, positive_only=True)
+    assert positive_nctd_map is not None
+    assert max(map(len, positive_nctd_map)) == 2
     print(
         "Warmuth C_5 minimum star number: "
         f"{value}; co-VC dimension: {covc}; randomized Littlestone dimension: "
-        f"{randomized_littlestone}; no-clashing teaching dimension: 2"
+        f"{randomized_littlestone}; no-clashing teaching dimension: 2; "
+        "positive no-clashing teaching dimension: 2"
     )
 
 
