@@ -1,0 +1,12 @@
+{
+  "id": 735,
+  "name": "Randomized Littlestone Dimension of Warmuth's $C_5$ Class",
+  "short_name": "randomized_littlestone_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$13/8$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Enumerate the ten cyclic $1001$ concepts and apply the finite randomized-tree recurrence $R(V)=\u005cmax_x(1+R(V_{x=0})+R(V_{x=1}))/2$ to every version space V. The exact dynamic program gives $R(C_5)=13/8$; the repository's C5 verifier checks this with rational arithmetic.",
+  "references": "\u005ccite{filmus2023randomized,palvolgyi2021unlabeled}"
+}

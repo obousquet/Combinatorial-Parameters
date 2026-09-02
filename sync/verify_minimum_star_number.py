@@ -9,6 +9,8 @@ hollow-star (co-VC) definitions.
 
 from __future__ import annotations
 
+from fractions import Fraction
+from functools import cache
 from itertools import combinations, product
 
 
@@ -85,6 +87,30 @@ def hollow_star_number(concepts: set[tuple[int, ...]]) -> int:
     return answer
 
 
+def randomized_littlestone_dimension(concepts: set[tuple[int, ...]]) -> Fraction:
+    """Compute half the maximum expected random-branch depth exactly.
+
+    For a finite class, an internal node may query any coordinate that splits
+    its current version space.  The two child trees are independent, giving
+    the recurrence ``R(V)=max_x (1+R(V_0)+R(V_1))/2``.  Fractions avoid any
+    rounding in the benchmark result.
+    """
+    hypotheses = tuple(sorted(concepts))
+    dimension = len(hypotheses[0])
+
+    @cache
+    def value(indices: tuple[int, ...]) -> Fraction:
+        best = Fraction(0)
+        for coordinate in range(dimension):
+            zeroes = tuple(index for index in indices if hypotheses[index][coordinate] == 0)
+            ones = tuple(index for index in indices if hypotheses[index][coordinate] == 1)
+            if zeroes and ones:
+                best = max(best, (1 + value(zeroes) + value(ones)) / 2)
+        return best
+
+    return value(tuple(range(len(hypotheses))))
+
+
 def main() -> None:
     concepts = warmuth_c5()
     assert len(concepts) == 10
@@ -92,7 +118,13 @@ def main() -> None:
     assert value == 3
     covc = hollow_star_number(concepts)
     assert covc == 4
-    print(f"Warmuth C_5 minimum star number: {value}; co-VC dimension: {covc}")
+    randomized_littlestone = randomized_littlestone_dimension(concepts)
+    assert randomized_littlestone == Fraction(13, 8)
+    print(
+        "Warmuth C_5 minimum star number: "
+        f"{value}; co-VC dimension: {covc}; randomized Littlestone dimension: "
+        f"{randomized_littlestone}"
+    )
 
 
 if __name__ == "__main__":
