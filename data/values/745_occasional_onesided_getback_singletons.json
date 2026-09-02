@@ -1,0 +1,12 @@
+{
+  "id": 745,
+  "name": "Occasional One-Sided Getback of Singletons",
+  "short_name": "occasional_onesided_getback_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/occasional_onesided_getback",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "O1G lower-bounds unlabeled sample compression, whose established singleton-class value is $1$. It is upper-bounded by Littlestone dimension, also $1$ for singletons. Thus the O1G value is $1$.",
+  "references": "\\cite{ben1997online,chalopin2022unlabeled}"
+}

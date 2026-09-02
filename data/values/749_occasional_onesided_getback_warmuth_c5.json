@@ -1,0 +1,12 @@
+{
+  "id": 749,
+  "name": "Occasional One-Sided Getback of Warmuth C5",
+  "short_name": "occasional_onesided_getback_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/occasional_onesided_getback",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "O1G lower-bounds unlabeled sample compression, whose established value on Warmuth's C5 class is $3$. It is upper-bounded by Littlestone dimension, also $3$ on C5. Thus the O1G value is $3$.",
+  "references": "\\cite{ben1997online,chalopin2022unlabeled}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 747,
+  "name": "Self-Directed Queries Complexity of Singletons",
+  "short_name": "selfdirected_queries_complexity_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Self-directed query complexity lower-bounds recursive teaching dimension, whose singleton-class value is $1$. It is at most partial equivalence-query complexity, also $1$ on this class. Hence its value is $1$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

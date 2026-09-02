@@ -1,0 +1,12 @@
+{
+  "id": 746,
+  "name": "Random Equivalence Queries Complexity of Singletons",
+  "short_name": "random_equivalence_queries_complexity_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/random_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Random equivalence-query complexity is at least VC dimension and at most Littlestone dimension. Both established singleton-class values equal $1$, hence the random equivalence-query value is $1$.",
+  "references": "\\cite{angluin2017random,littlestone1988learning}"
+}

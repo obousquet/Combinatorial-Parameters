@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-32" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-750" style="position:relative;">
         
-        <h3><a href="parameters/selfdirected_queries_complexity.html" class="table-title-link">Self-Directed Queries Complexity</a></h3>
+        <h3><a href="values/stable_unlabeled_complexity_warmuth_c5.html" class="table-title-link">Stable Unlabeled Complexity of Warmuth C5</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Self-Directed Queries Complexity</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{M}_{\mathrm{sd}}">
-            \[\mathrm{M}_{\mathrm{sd}}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Self-Directed Queries Complexity</strong> is the smallest worst-case number of mistakes of an online learner that adaptively chooses the next instance to be labeled, while an adversary supplies labels consistent with an unknown target in $\mathcal H$.</p></div>
+        <p><strong>Name: </strong>Stable Unlabeled Complexity of Warmuth C5</p>
+<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-
-<strong>Origin References:</strong><div class="text-field"><p>The self-directed learning model is introduced in <a href="bibliography.html#goldman1993learning">[goldman1993learning]</a> <a href="bibliography.html#goldman1994power">[goldman1994power]</a>.</p></div>
-<p><strong>Category:</strong> Queries</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Unspecified</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Unspecified</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/selfdirected_queries_complexity_full_cube.html'>Self-Directed Queries Complexity of Full Cube</a></li><li><a href='values/selfdirected_queries_complexity_singletons.html'>Self-Directed Queries Complexity of Singletons</a></li><li><a href='values/selfdirected_queries_complexity_trivial_concepts.html'>Self-Directed Queries Complexity of Trivial Concepts</a></li><li><a href='values/selfdirected_queries_complexity_blockwiseaddressing.html'>Self-Directed Queries Complexity of Blockwise-Addressing</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/selfdirected_queries_complexity_littlestone_dimension.html" class="relationship-statement">$\mathrm{M}_{\mathrm{sd}} \ge \frac{c\mathrm{L}}{\log n}$</a></li><li><a href="relationships/partial_equivalence_queries_complexity_selfdirected_queries_complexity.html" class="relationship-statement">$\mathrm{Q}_{\mathrm{par}} \ge \mathrm{M}_{\mathrm{sd}}$</a></li><li><a href="relationships/selfdirected_queries_complexity_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{M}_{\mathrm{sd}} \ge \mathrm{RTD}$</a></li><li><a href="relationships/best_mistakes_selfdirected_queries_complexity.html" class="relationship-statement">$\mathrm{M}_{\mathrm{best}} \ge \mathrm{M}_{\mathrm{sd}}$</a></li></ul></p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Stable unlabeled compression is at least unlabeled compression, whose established C5 value is $3$. It is at most Littlestone dimension, also $3$ on C5. Hence stable unlabeled complexity equals $3$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a> <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a> <a href="bibliography.html#chalopin2022unlabeled">[chalopin2022unlabeled]</a></p></div>
 
         </div>
     </div>

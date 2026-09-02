@@ -1,0 +1,12 @@
+{
+  "id": 750,
+  "name": "Stable Unlabeled Complexity of Warmuth C5",
+  "short_name": "stable_unlabeled_complexity_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Stable unlabeled compression is at least unlabeled compression, whose established C5 value is $3$. It is at most Littlestone dimension, also $3$ on C5. Hence stable unlabeled complexity equals $3$.",
+  "references": "\\cite{hanneke2021stable,bousquet2020proper,chalopin2022unlabeled}"
+}
