@@ -1,0 +1,13 @@
+{
+  "id": 288,
+  "parameter_1_id": "#parameters/kmistake_littlestone_dimension",
+  "parameter_2_id": "#parameters/randomized_kmistake_littlestone_dimension",
+  "relationship_type": "larger",
+  "details": "For every integer $k\\geq0$, $\\mathrm L^{\\mathrm{mist}}_k(\\mathcal H)\\geq\\mathrm{RL}^{\\mathrm{mist}}_k(\\mathcal H)$.",
+  "status": "established",
+  "proof": "A randomized learner may emulate any deterministic learner. Theorem 3 of Filmus--Hanneke--Mehalel--Moran identifies the respective optimal $k$-realizable mistake bounds with the two dimensions, giving the inequality.",
+  "references": "\\cite{filmus2023randomized}",
+  "proof_source": "Theorem 3 of \u005ccite{filmus2023randomized}, together with deterministic learners as a subclass of randomized learners.",
+  "short_name": "kmistake_littlestone_dimension_randomized_kmistake_littlestone_dimension",
+  "name": "$k$-Mistake Littlestone Dimension / Randomized $k$-Mistake Littlestone Dimension"
+}
