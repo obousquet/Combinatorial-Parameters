@@ -3,6 +3,7 @@
   "parameter_1_id": "#parameters/teaching_dimension",
   "parameter_2_id": "#parameters/maximum_teaching_set_size",
   "relationship_type": "equivalence",
+  "references": "\\cite{goldman1995complexity,shinohara1991teachability}",
   "details": "Definition",
   "status": "established",
   "proof": "Teaching dimension is defined as the maximum, over concepts in the class, of the size of a smallest teaching set. This is precisely the maximum teaching-set size.",

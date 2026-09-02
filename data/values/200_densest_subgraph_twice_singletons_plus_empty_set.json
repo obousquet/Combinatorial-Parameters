@@ -1,0 +1,11 @@
+{
+  "id": 200,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$\\frac{2n}{n+1}$",
+  "details": "For $n\\ge1$.",
+  "status": "established",
+  "proof": "The $n$-leaf star has average degree $2n/(n+1)$.  A substar with $k$ leaves has average degree $2k/(k+1)$, which is maximized at $k=n$.",
+  "name": "Densest Subgraph (twice) of Singletons plus empty set",
+  "short_name": "densest_subgraph_twice_singletons_plus_empty_set"
+}

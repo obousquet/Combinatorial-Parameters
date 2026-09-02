@@ -1,0 +1,11 @@
+{
+  "id": 551,
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "class_id": "#classes/universal_class",
+  "value": "$0$",
+  "status": "established",
+  "proof": "The 1-inclusion graph is edgeless: distinct universal hypotheses differ on $2^{n-1}$ coordinates, never exactly one. Hence its average degree is zero.",
+  "references": "\\cite{haussler1994predicting,chornomaz2025spherical}",
+  "short_name": "double_density_or_average_degree_universal_class",
+  "name": "Double Density or Average Degree of Universal Class"
+}

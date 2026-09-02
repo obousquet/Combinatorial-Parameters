@@ -1,0 +1,22 @@
+{
+  "id": 89,
+  "name": "Extremal-Extension VC Dimension",
+  "short_name": "extremal_extension_vc_dimension",
+  "symbol": "\u005cmathrm{VC}_{\u005cmathrm{extr}}",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "For a finite class $\u005cmathcal H$, the **extremal-extension VC dimension** $\u005cmathrm{VC}_{\u005cmathrm{extr}}(\u005cmathcal H)$ is the least $\u005cmathrm{VC}(\u005cmathcal E)$ among extremal (shattering-extremal) classes $\u005cmathcal E$ on the same domain with $\u005cmathcal H\u005csubseteq\u005cmathcal E$. Here extremal means that the number of shattered sets equals $|\u005cmathcal E|$.",
+  "graph_summary": "Least VC dimension of an extremal class containing the given finite class.",
+  "description": "Measures the VC cost of embedding a class into a shattering-extremal class.",
+  "origin_references": "Defined and used in \u005ccite{chornomaz2025spherical}.",
+  "monotonicity_evidence": {
+    "monotonic": {"proof": "Every extremal extension of a containing class is also an extremal extension of its subfamily.", "kind": "direct_argument"},
+    "p_monotonic": {"proof": "A projection of an extremal class is extremal and cannot have larger VC dimension; projecting an extremal extension gives one for the projection.", "kind": "direct_argument"},
+    "doubly_monotonic": {"proof": "The preceding extension and projection arguments establish both monotonicities.", "kind": "direct_argument"},
+    "c_monotonic": {"proof": "Conditioning is restriction to a subfamily followed by a projection, so it follows from double monotonicity.", "kind": "definitional_consequence"}
+  }
+}

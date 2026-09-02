@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/littlestone_dimension",
   "value": "$\\log n$",
   "value_class": "omega_log_n",
-  "details": ""
+  "details": "More precisely, it is $\\Theta(\\log_2 n)$ (with endpoint-rounding depending on whether the empty and full thresholds are included).",
+  "status": "established",
+  "proof": "A balanced binary-search tree on the ordered endpoints is shattered: at a queried coordinate, the target initial segment lies on exactly one side of that coordinate, and each branch retains an interval of feasible endpoints.  This gives depth $\\lfloor\\log_2 n\\rfloor$.  Conversely, a depth-$d$ shattered Littlestone tree has $2^d$ leaves realized by distinct concepts, while the class has only $n$ initial segments.  Hence $d\\le\\log_2 n$ and the value is logarithmic.",
+  "references": "\\cite{littlestone1988learning}"
 }

@@ -1,0 +1,12 @@
+{
+  "id": 460,
+  "name": "Interpolation Degree of Warmuth's $C_5$ Class",
+  "short_name": "interpolation_degree_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On the ten $C_5$ strings, the constant and five coordinate monomials have evaluation rank six, so degree one cannot interpolate every function on the class.  The constant, linear, and quadratic monomials have evaluation rank ten, the full number of concepts, and therefore span all functions on $C_5$.  Hence the interpolation degree is exactly two.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 354,
+  "name": "Minimum Largest Order Shattered Set of Half-intervals",
+  "short_name": "minimum_largest_order_shattered_set_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every coordinate order, the downshifted family is a nontrivial downset and hence contains a one-cube. The Half-interval class has VC dimension one, which forbids a two-cube after downshifting."
+}

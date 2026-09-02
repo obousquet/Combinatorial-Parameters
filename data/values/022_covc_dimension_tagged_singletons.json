@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/covc_dimension",
   "value": "$2$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "For an ordinary coordinate $i$ and its tag $t=n+f(i)$, the trace $\\{i\\}$ is absent on $\\{i,t\\}$, while its two one-coordinate neighbours $\\emptyset$ and $\\{i,t\\}$ are present.  This is a hollow two-star.  A missing singleton trace can have only its own tag as a doubleton neighbour; a missing doubleton trace cannot have a three-coordinate neighbour because every class member has size at most two; and the empty trace is always present.  Hence no hollow three-star occurs, so $\\mathrm{coVC}=2$.",
+  "references": "\\cite{maass1992lower}"
 }

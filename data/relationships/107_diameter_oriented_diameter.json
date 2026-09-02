@@ -4,7 +4,11 @@
   "parameter_2_id": "#parameters/oriented_diameter",
   "relationship_type": "larger",
   "variant": "relative",
-  "details": "Definition",
+  "details": "For finite concept classes, diameter dominates oriented diameter.",
+  "witness": "#classes/warmuth_c5",
+  "status": "established",
+  "latex_proof_label": "lem:elementary-parameter-hierarchy",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
   "short_name": "diameter_oriented_diameter",
   "name": "Diameter / Oriented Diameter"
 }

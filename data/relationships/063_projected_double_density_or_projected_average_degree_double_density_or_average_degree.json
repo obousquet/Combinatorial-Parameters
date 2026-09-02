@@ -4,7 +4,10 @@
   "parameter_2_id": "#parameters/double_density_or_average_degree",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
+  "witness": "#classes/singletons",
   "short_name": "projected_double_density_or_projected_average_degree_double_density_or_average_degree",
-  "name": "Projected Double Density or Projected Average Degree / Double Density or Average Degree"
+  "name": "Projected Double Density or Projected Average Degree / Double Density or Average Degree",
+  "status": "established",
+  "proof": "The projected double-density is the maximum average degree over projections.  The full-domain projection gives the original average degree as one candidate."
 }

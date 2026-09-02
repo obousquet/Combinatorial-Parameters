@@ -1,0 +1,11 @@
+{
+  "id": 501,
+  "name": "Dual VC Dimension of Singletons plus empty set",
+  "short_name": "dual_vc_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/dual_vc_dimension",
+  "value": "$1$",
+  "details": "For $n\u005cgeq2$.",
+  "status": "established",
+  "proof": "Each domain point corresponds in the dual to the singleton containing its own singleton hypothesis. These traces shatter one hypothesis but no pair, since no dual concept contains two singleton hypotheses."
+}

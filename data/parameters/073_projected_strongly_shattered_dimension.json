@@ -1,7 +1,7 @@
 {
   "id": 73,
   "name": "Projected Strongly Shattered Dimension",
-  "symbol": "$\\mathrm{ST}^p$",
+  "symbol": "\\mathrm{ST}^p",
   "category": "shattering",
   "symmetric": true,
   "monotonic": true,
@@ -9,5 +9,30 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": false,
-  "short_name": "projected_strongly_shattered_dimension"
+  "definition": "The **Projected Strongly Shattered Dimension** is the maximum largest-strongly-shattered-set size among all coordinate projections of $\\mathcal{H}$. Equivalently, it is the VC dimension of $\\mathcal{H}$.",
+  "graph_summary": "Largest strongly-shattered-set size among coordinate projections; equal to VC dimension.",
+  "origin_references": "The shattering/strong-shattering sandwich framework underlying this equality is due to \\cite{bollobas1995defect}.",
+  "short_name": "projected_strongly_shattered_dimension",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Projected strongly shattered dimension equals VC dimension. Every set shattered by a subfamily is also shattered by its containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Projected strongly shattered dimension equals VC dimension. Every set shattered by a projection is shattered by the original class on the same coordinates.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Projected strongly shattered dimension equals VC dimension. For $\\mathcal H=\\{000,001,011,100\\}$, conditioning the third coordinate gives two fibres of value 1, while the full class also has value 1.",
+      "kind": "counterexample"
+    }
+  }
 }

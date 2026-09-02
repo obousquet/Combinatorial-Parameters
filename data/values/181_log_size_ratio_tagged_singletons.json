@@ -1,0 +1,11 @@
+{
+  "id": 181,
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/log_size_ratio",
+  "value": "$\\frac{\\log(n+\\lceil\\log n\\rceil)}{\\log(n+\\lceil\\log n\\rceil+1)}$",
+  "details": "For $n\\ge2$; the domain has $n+\\lceil\\log n\\rceil$ points.",
+  "status": "established",
+  "proof": "The class consists of the empty concept, $\\lceil\\log n\\rceil$ tag singletons, and $n$ tagged concepts, hence has $n+\\lceil\\log n\\rceil+1$ concepts.  Substitution into the definition yields the stated expression.",
+  "name": "Log Size Ratio of Tagged Singletons",
+  "short_name": "log_size_ratio_tagged_singletons"
+}

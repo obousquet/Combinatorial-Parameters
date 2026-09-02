@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/partial_equivalence_queries_complexity",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Ask the partial-equivalence query that labels every coordinate $0$.  Every singleton target disagrees at its unique positive coordinate, which the counterexample reveals; one query identifies the target."
 }

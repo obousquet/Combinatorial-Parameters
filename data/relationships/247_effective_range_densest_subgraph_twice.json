@@ -1,0 +1,12 @@
+{
+  "id": 247,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/densest_subgraph_twice",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, the twice-density of every subgraph of its 1-inclusion graph is at most its effective range.",
+  "status": "established",
+  "proof": "In every induced subgraph, each vertex still has at most one neighbor per effective coordinate, hence degree at most \\mathrm E(\\mathcal H). Its average degree is therefore at most \\mathrm E(\\mathcal H). Maximizing over subgraphs gives \\mathrm{dens}^{*}(\\mathcal H)\\leq\\mathrm E(\\mathcal H).",
+  "references": "\\cite{haussler1994predicting}",
+  "short_name": "effective_range_densest_subgraph_twice",
+  "name": "Effective Range / Densest Subgraph (twice)"
+}

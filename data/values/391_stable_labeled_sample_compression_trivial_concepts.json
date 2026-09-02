@@ -1,0 +1,12 @@
+{
+  "id": 391,
+  "name": "Stable Labeled Sample Compression of Trivial concepts",
+  "short_name": "stable_labeled_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Fix an order of the domain and retain the least sampled coordinate.  Deleting any unselected sample point leaves this retained point and its reconstruction unchanged, so the size-one constant-concept scheme is stable.  Zero is impossible.",
+  "references": "\\cite{FW1995}"
+}

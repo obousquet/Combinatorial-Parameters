@@ -1,0 +1,1 @@
+{"id":252,"name":"Projected VC Radius of Singletons","short_name":"projected_vc_radius_singletons","class_id":"#classes/singletons","parameter_id":"#parameters/projected_vc_radius","value":"$1$","value_class":"omega_1","status":"established","proof":"Projected VC radius equals VC dimension. Singletons have established VC dimension one."}

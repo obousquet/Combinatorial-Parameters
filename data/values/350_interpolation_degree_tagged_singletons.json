@@ -1,0 +1,11 @@
+{
+  "id": 350,
+  "name": "Interpolation Degree of Tagged Singletons",
+  "short_name": "interpolation_degree_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The empty trace, the tag singletons, and the tagged pairs are affinely independent: subtracting each tag singleton from a pair with that tag yields the corresponding ordinary singleton direction. Thus affine-linear polynomials interpolate every function on the class, and degree zero is insufficient."
+}

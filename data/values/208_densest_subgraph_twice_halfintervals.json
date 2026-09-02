@@ -1,0 +1,11 @@
+{
+  "id": 208,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$\\frac{2(n-1)}{n}$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is the path on $n$ vertices, with average degree $2(n-1)/n$.  A subpath on $k$ vertices has average degree $2(k-1)/k$, increasing in $k$, so the whole path is densest.",
+  "name": "Densest Subgraph (twice) of Half-intervals",
+  "short_name": "densest_subgraph_twice_halfintervals"
+}

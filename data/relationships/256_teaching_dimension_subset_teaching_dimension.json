@@ -1,0 +1,13 @@
+{
+  "id": 256,
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/subset_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite concept class, $\\mathrm{TD}(\\mathcal H)\\geq\\mathrm{STD}(\\mathcal H)$.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "status": "established",
+  "proof": "An ordinary minimum teaching set is admissible at the first subset-teaching step because it is inconsistent with every competing concept. The subset-teaching iterations only permit further reductions, so their stabilized maximum cannot exceed ordinary teaching dimension.",
+  "references": "\\cite{zilles2011models}",
+  "short_name": "teaching_dimension_subset_teaching_dimension",
+  "name": "Teaching Dimension / Subset Teaching Dimension"
+}

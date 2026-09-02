@@ -1,0 +1,11 @@
+{
+  "id": 335,
+  "name": "Distinguishing Range of Half-intervals",
+  "short_name": "distinguishing_range_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For any retained coordinates, the traces of initial segments change only when an endpoint crosses a retained coordinate, producing at most one more trace than the number retained. Distinguishing all $n$ initial segments therefore needs at least $n-1$ coordinates. Coordinates $2,\\ldots,n$ attain this bound."
+}

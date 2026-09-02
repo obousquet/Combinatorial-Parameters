@@ -1,0 +1,15 @@
+{
+  "id": 211,
+  "parameter_1_id": "#parameters/yang_dimension",
+  "parameter_2_id": "#parameters/spherical_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "-\\tfrac12",
+  "details": "For every nonempty finite binary class, with Yang dimension computed over $\\mathbb F_2$, $\\mathrm{sd}(\\mathcal H)\\leq2\\,\\mathrm{Y}_{\\mathbb F_2}(\\mathcal H)-1$; equivalently $\\mathrm{Y}_{\\mathbb F_2}(\\mathcal H)\\geq(\\mathrm{sd}(\\mathcal H)+1)/2$.",
+  "status": "established",
+  "proof": "The antipodal realizable-distribution complex is the intersection of the Yang complex with its label flip. Its coindex is at most its Stiefel--Whitney height, then at most its Stanley--Reisner regularity minus one; the Kalai--Meshulam regularity inequality bounds that regularity by twice the Yang dimension.",
+  "proof_source": "Full proof in the local Yang-dimension draft: ~/latex/YangDim/drafts/spherical_dimension.tex, Theorem `thm:sd-vs-hd` (unpublished).",
+  "witness": "#classes/singletons",
+  "short_name": "yang_dimension_spherical_dimension_affine",
+  "name": "Yang Dimension / Spherical Dimension (affine)"
+}

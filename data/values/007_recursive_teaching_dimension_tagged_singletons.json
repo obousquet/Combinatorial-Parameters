@@ -4,7 +4,10 @@
   "short_name": "recursive_teaching_dimension_tagged_singletons",
   "class_id": "#classes/tagged_singletons",
   "parameter_id": "#parameters/recursive_teaching_dimension",
-  "value": "$2$",
+  "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "This corrects an inconsistent $2$ recorded in the legacy survey narrative: it follows from the database's explicit tagged-pair definition.",
+  "status": "established",
+  "proof": "In the first layer, every tagged pair $\\{i,n+f(i)\\}$ is uniquely taught by its positive ordinary coordinate $i$.  After removing those pairs, every tag singleton is uniquely taught by its positive tag coordinate; the empty concept is then alone.  Thus there is a recursive teaching plan of width one.  Since the initial class is nontrivial, width zero is impossible, so $\\mathrm{RTD}=1$.",
+  "references": "\\cite{maass1992lower}"
 }

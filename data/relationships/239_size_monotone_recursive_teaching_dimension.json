@@ -1,0 +1,12 @@
+{
+  "id": 239,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every nonempty finite class, the stronger bound $\\mathrm{RTD}^p(\\mathcal H)\\leq|\\mathcal H|-1$ holds.",
+  "status": "established",
+  "proof": "Every coordinate projection $\\mathcal H_{|S}$ has at most $|\\mathcal H|$ distinct concepts. Apply the recursive-teaching bound to each projection and take the defining maximum over S.",
+  "references": "\\cite{doliwa2014recursive}",
+  "short_name": "size_monotone_recursive_teaching_dimension",
+  "name": "Size / Projected Recursive Teaching Dimension"
+}

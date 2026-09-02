@@ -1,0 +1,11 @@
+{
+  "id": 705,
+  "name": "Equivalence Queries Complexity of Blockwise-Addressing",
+  "short_name": "equivalence_queries_complexity_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$d+1$",
+  "status": "established",
+  "proof": "For finite classes in the unrestricted equivalence-query model, equivalence-query complexity equals Littlestone dimension. Blockwise-addressing has the established Littlestone value d+1.",
+  "references": "\\cite{ben1997online,littlestone1988learning}"
+}

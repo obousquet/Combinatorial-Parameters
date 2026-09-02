@@ -1,0 +1,11 @@
+{
+  "id": 190,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$0$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Two distinct singleton concepts differ on two coordinates, so the original $1$-inclusion graph has no edges and every vertex has degree zero.",
+  "name": "Minimum Degree of Singletons",
+  "short_name": "minimum_degree_singletons"
+}

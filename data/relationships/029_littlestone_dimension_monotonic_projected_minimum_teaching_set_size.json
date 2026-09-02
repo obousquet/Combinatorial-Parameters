@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
   "relationship_type": "larger",
+  "details": "For finite concept classes; the right-hand side maximizes minimum teaching-set size over subclasses and coordinate projections.",
+  "proof": "Doliwa, Fan, Simon, and Zilles cite Kuhlmann's bound from minimum teaching-set size to self-directed learning, and prove that the optimal online mistake bound is twofold monotone (Corollary 8). The optimal online mistake bound is Littlestone dimension. Apply the bound to every subclass and projection, then take the maximum.",
+  "references": "\\cite{doliwa2014recursive}",
+  "status": "established",
   "short_name": "littlestone_dimension_monotonic_projected_minimum_teaching_set_size",
   "name": "Littlestone Dimension / Monotonic Projected Minimum Teaching Set Size"
 }

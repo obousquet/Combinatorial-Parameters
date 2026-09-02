@@ -1,0 +1,12 @@
+{
+  "id": 650,
+  "name": "Distinguishing Range of Universal Class",
+  "short_name": "distinguishing_range_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$\\lceil\\log_2 n\\rceil$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Any set of r domain points yields only $2^r$ distinct restrictions, so r must be at least $\\lceil\\log_2 n\\rceil$ to distinguish the n hypotheses. Conversely, encode i in $\\lceil\\log_2 n\\rceil$ bits and, for each bit position, choose the domain point A consisting of precisely the indices whose bit is one. The restrictions of the $u_i$ to these points are their distinct codes.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

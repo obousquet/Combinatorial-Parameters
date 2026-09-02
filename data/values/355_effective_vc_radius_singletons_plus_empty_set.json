@@ -1,0 +1,11 @@
+{
+  "id": 355,
+  "name": "Effective VC Radius of Singletons plus Empty Set",
+  "short_name": "effective_vc_radius_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every effective coordinate is shattered by the empty concept and its singleton. A two-coordinate trace misses the pattern with both coordinates positive, so radius two fails."
+}

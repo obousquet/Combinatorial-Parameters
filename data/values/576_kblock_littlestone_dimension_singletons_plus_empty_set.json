@@ -1,0 +1,10 @@
+{
+  "id": 576,
+  "name": "$k$-Block Littlestone Dimension of Singletons plus Empty Set",
+  "short_name": "kblock_littlestone_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "value": "$1$",
+  "status": "established",
+  "proof": "For every fixed $k\\geq2$, the established VC and Littlestone dimensions of singletons plus the empty set are both one. Proposition \\ref{prop:block-littlestone-sandwich} gives $1\\leq\\mathrm B_k\\leq1$."
+}

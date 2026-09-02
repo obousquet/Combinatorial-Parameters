@@ -1,12 +1,21 @@
 {
   "id": 62,
   "name": "Minimum Largest Order Shattered Set",
-  "symbol": "$\\mathrm{OSH}_{\\min}$",
+  "symbol": "\\mathrm{OSH}_{\\min}",
+  "definition": "For an order of the domain, let its order-shattered sets be those represented by cubes after downshifting in that order. The **Minimum Largest Order Shattered Set** is the minimum, over domain orders, of the largest cardinality of an order-shattered set.",
+  "graph_summary": "The smallest, over coordinate orders, of the largest order-shattered dimension.",
   "category": "shattering",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "minimum_largest_order_shattered_set"
+  "p_monotonic": null,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "short_name": "minimum_largest_order_shattered_set",
+  "origin_references": "Order shattering and its downshifting formulation are part of the shattering-extremal framework; see \\cite{bollobas1995defect}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For every fixed domain order, every order-shattered set of a subfamily remains order-shattered in a containing class.  Thus the largest such size cannot decrease for any order; taking the minimum over orders preserves the inequality.",
+      "kind": "direct_argument"
+    }
+  }
 }

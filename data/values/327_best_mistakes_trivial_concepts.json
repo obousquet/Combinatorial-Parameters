@@ -1,0 +1,12 @@
+{
+  "id": 327,
+  "name": "Best Mistakes of Trivial Concepts",
+  "short_name": "best_mistakes_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "At any coordinate the two constant concepts have opposite labels, so no learner can guarantee zero mistakes against both targets. After the first labeled presentation, the target is known, giving an upper bound of one.",
+  "references": "\\cite{ben1997online}"
+}

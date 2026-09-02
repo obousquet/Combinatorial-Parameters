@@ -1,0 +1,12 @@
+{
+  "id": 204,
+  "parameter_1_id": "#parameters/maximum_teaching_set_size",
+  "parameter_2_id": "#parameters/minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "details": "For finite nonempty concept classes, the maximum teaching-set size is at least the minimum teaching-set size.",
+  "status": "established",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:max-min-teaching-set`.",
+  "latex_proof_label": "lem:max-min-teaching-set",
+  "short_name": "maximum_teaching_set_size_minimum_teaching_set_size",
+  "name": "Maximum Teaching-Set Size / Minimum Teaching-Set Size"
+}

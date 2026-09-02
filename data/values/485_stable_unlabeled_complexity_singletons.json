@@ -1,0 +1,13 @@
+{
+  "id": 485,
+  "name": "Stable Unlabeled Complexity of Singletons",
+  "short_name": "stable_unlabeled_complexity_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a domain with at least two points.",
+  "status": "established",
+  "proof": "The stable-unlabeled construction from a conservative online learner has size at most the Littlestone dimension, which is one for singletons.  Stable unlabeled compression is at least ordinary unlabeled compression, whose value is one for this class.",
+  "references": "\\cite{hanneke2021stable,palvolgyi2021unlabeled}"
+}

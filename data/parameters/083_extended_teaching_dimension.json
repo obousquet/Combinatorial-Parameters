@@ -1,16 +1,49 @@
 {
   "id": 83,
   "name": "Extended Teaching Dimension",
-  "symbol": "$\\mathrm{XTD}$",
+  "symbol": "\\mathrm{XTD}",
   "definition": "The **extended teaching dimension** is $$\\mathrm{XTD}(\\mathcal{H}) := \\max_{f\\subseteq\\mathcal{X}}\\min\\left\\{|S|:S\\subseteq\\mathcal{X},\\;\\left|\\{h\\in\\mathcal{H}:h\\cap S=f\\cap S\\}\\right|\\leq 1\\right\\}.$$ Thus the target labeling $f$ need not belong to $\\mathcal{H}$.",
-  "description": "Equivalently, it is the largest minimum size of a specifying set for an arbitrary labeling with respect to the class.",
-  "graph_summary": "Maximum, over arbitrary target labelings, of the minimum number of coordinates needed to leave at most one consistent hypothesis.",
+  "description": "Equivalently, it is the largest minimum size of a specifying set for an arbitrary labeling with respect to the class. For finite binary classes it equals the star number.",
+  "graph_summary": "Maximum specifying-set size for an arbitrary target labeling; for finite binary classes, equal to the star number.",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "c_monotonic": false,
-  "doubly_monotonic": false,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "strict_c_monotonic": false,
+  "tight_strict_c_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "extended_teaching_dimension"
+  "short_name": "extended_teaching_dimension",
+  "origin_references": "Introduced in \\cite{hegedHus1995generalized}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "If $\\mathcal G\\subseteq\\mathcal H$, every specifying set for a target labeling with respect to $\\mathcal H$ is also specifying with respect to $\\mathcal G$, since the set of consistent hypotheses can only shrink. Minimize for each target and then maximize over targets.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "For finite binary classes, XTD equals Star Number by Theorem 13 of \\cite{hanneke2015minimax}; the latter is projection monotonic.",
+      "kind": "equivalence_transfer"
+    },
+    "c_monotonic": {
+      "proof": "For any target labeling on a conditioned fibre, extend it with the fixed labels.  A specifying set in the original class may discard fixed coordinates and still specifies the target in the fibre; hence XTD is c-monotonic.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "It is monotonic under both subfamilies and coordinate projections.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "For finite binary classes, XTD equals Star Number. The six-concept Star-Number counterexample $\\{001,010,011,100,101,110\\}$ has value 2 on the full class and both one-coordinate conditioned fibres, so strict c-monotonicity fails.",
+      "kind": "equivalence_transfer"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "Tight strict c-monotonicity implies strict c-monotonicity, which fails for XTD.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity implies strict c-monotonicity, which fails for XTD.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

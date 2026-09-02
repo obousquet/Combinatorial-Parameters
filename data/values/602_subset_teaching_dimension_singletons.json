@@ -1,0 +1,13 @@
+{
+  "id": 602,
+  "name": "Subset Teaching Dimension of Singletons",
+  "short_name": "subset_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The sole ordinary minimum teaching sample for singleton $\\{i\\}$ is $(i,1)$. This sample is contained in that target's teaching sample and in no other singleton's, so it remains a subset teaching sample at every iteration. The empty sample is contained in every target's sample, hence cannot identify one. Thus $\\mathrm{STD}=1$.",
+  "references": "\\cite{zilles2011models}"
+}

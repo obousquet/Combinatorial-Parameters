@@ -1,12 +1,23 @@
 {
   "id": 31,
   "name": "Partial Equivalence Queries Complexity",
-  "symbol": "$\\mathrm{Q}_{\\mathrm{par}}$",
+  "symbol": "\\mathrm{Q}_{\\mathrm{par}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "partial_equivalence_queries_complexity"
+  "c_monotonic": true,
+  "definition": "The **Partial Equivalence Queries Complexity** of $\\mathcal{H}$ is the minimum worst-case number of partial equivalence queries needed to identify an unknown target in $\\mathcal{H}$, where a query is a partial Boolean function and a negative reply supplies a point on which it disagrees with the target.",
+  "graph_summary": "Minimum worst-case number of partial equivalence queries needed to identify the target.",
+  "origin_references": "The partial-equivalence-query learning model is introduced in \\cite{maass1992lower}.",
+  "short_name": "partial_equivalence_queries_complexity",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A partial-equivalence-query strategy that identifies every target in $\\mathcal H$ remains a valid strategy for every target in a subfamily $\\mathcal G\\subseteq\\mathcal H$, with no additional queries.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Simulate a learner for the original class, extending each fibre hypothesis with the fixed labels.  Partial-equivalence answers restrict back to valid answers on the fibre.",
+      "kind": "direct_argument"
+    }
+  }
 }

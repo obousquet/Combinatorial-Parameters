@@ -1,0 +1,12 @@
+{
+  "id": 404,
+  "name": "Random Proper Equivalence Queries Complexity of Singletons plus empty set",
+  "short_name": "random_proper_equivalence_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/random_proper_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The empty hypothesis is itself in the class, so the preceding one-query strategy is proper.  A positive counterexample identifies the target singleton; zero queries do not distinguish all concepts.",
+  "references": "\\cite{maass1992lower}"
+}

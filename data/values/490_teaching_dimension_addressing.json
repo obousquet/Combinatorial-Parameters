@@ -1,0 +1,13 @@
+{
+  "id": 490,
+  "name": "Teaching Dimension of Addressing",
+  "short_name": "teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "Each addressing concept has a private positive primary coordinate.",
+  "proof": "For each concept, its addressed primary coordinate has label one only for that concept, so its single positive example teaches it. The nontrivial class has teaching dimension at least one.",
+  "references": "\\cite{maass1992lower}"
+}

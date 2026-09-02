@@ -1,0 +1,12 @@
+{
+  "id": 154,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For the all-zero target, querying $n-1$ zero coordinates leaves only the singleton on the remaining coordinate; fewer queries leave at least two singletons.  Any target having a positive coordinate is specified by that coordinate, while a target with at least two positive coordinates is excluded by querying two of them.  Thus, for $n\\ge2$, the maximum is $n-1$.",
+  "references": "\\cite{hegedHus1995generalized}",
+  "name": "Extended Teaching Dimension of Singletons",
+  "short_name": "extended_teaching_dimension_singletons"
+}

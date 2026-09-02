@@ -1,0 +1,11 @@
+{
+  "id": 359,
+  "name": "Effective VC Radius of Addressing",
+  "short_name": "effective_vc_radius_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every effective coordinate varies and so is shattered. Any two distinct primary coordinates never occur together in one addressing concept, so their trace misses $11$ and radius two fails."
+}

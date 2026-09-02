@@ -1,0 +1,10 @@
+{
+  "id": 415,
+  "name": "Projected Double Density or Projected Average Degree of Half-intervals",
+  "short_name": "projected_double_density_or_projected_average_degree_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$\\frac{2(n-1)}{n}$",
+  "status": "established",
+  "proof": "Every coordinate projection of the initial-segment class is a chain, so its $1$-inclusion graph is a path.  It has at most $n$ distinct vertices, whose average degree is at most $2(n-1)/n$.  The full projection is already a path on $n$ intervals (and so is a projection omitting the first coordinate), attaining this value."
+}

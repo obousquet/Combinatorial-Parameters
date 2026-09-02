@@ -4,7 +4,9 @@
   "short_name": "log_size_ratio_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/log_size_ratio",
-  "value": "$1$",
+  "value": "$\\frac{\\log(n-1)}{\\log(n+1)}$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The singleton class has $n$ concepts on a domain of size $n$, hence the definition gives $\\log(n-1)/\\log(n+1)$."
 }

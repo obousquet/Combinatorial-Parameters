@@ -4,7 +4,10 @@
   "parameter_2_id": "#parameters/recursive_teaching_dimension",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "monotone_recursive_teaching_dimension_recursive_teaching_dimension",
-  "name": "Monotone Recursive Teaching Dimension / Recursive Teaching Dimension"
+  "name": "Projected Recursive Teaching Dimension / Recursive Teaching Dimension",
+  "status": "established",
+  "proof": "The monotone/projection variant takes the maximum recursive teaching dimension over projections.  The full-domain projection is the original class, giving the inequality.",
+  "references": "\\cite{doliwa2014recursive}"
 }

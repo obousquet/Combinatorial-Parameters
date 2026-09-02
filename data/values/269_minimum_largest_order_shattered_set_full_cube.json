@@ -1,0 +1,11 @@
+{
+  "id": 269,
+  "name": "Minimum Largest Order Shattered Set of the Full Cube",
+  "short_name": "minimum_largest_order_shattered_set_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For every order of the domain, downshifting the full cube leaves the full cube. Thus the entire $n$-point domain is order-shattered for every order, and no larger set exists."
+}

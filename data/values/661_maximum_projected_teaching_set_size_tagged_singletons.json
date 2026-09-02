@@ -1,0 +1,12 @@
+{
+  "id": 661,
+  "name": "Maximum Projected Teaching Set Size of Tagged Singletons",
+  "short_name": "maximum_projected_teaching_set_size_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/maximum_projected_teaching_set_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Maximum projected teaching-set size equals the star number. Projecting tagged singletons to their n ordinary coordinates gives the empty concept and the n singleton leaves, an n-star. The established star-number computation gives the matching upper bound n.",
+  "references": "\\cite{hanneke2015minimax,maass1992lower}"
+}

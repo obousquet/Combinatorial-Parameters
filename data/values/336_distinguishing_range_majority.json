@@ -1,0 +1,11 @@
+{
+  "id": 336,
+  "name": "Distinguishing Range of Majority",
+  "short_name": "distinguishing_range_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "All $2^n$ labelings of the $n$ base coordinates occur, and the final majority coordinate is determined by them. Omitting a base coordinate identifies two concepts that differ only there, while the $n$ base coordinates distinguish every concept."
+}

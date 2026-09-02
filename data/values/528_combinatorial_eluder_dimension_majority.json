@@ -1,0 +1,13 @@
+{
+  "id": 528,
+  "name": "Combinatorial Eluder Dimension of Majority",
+  "short_name": "combinatorial_eluder_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$n+1$",
+  "value_class": "omega_n",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "Use the all-zero ordinary trace (whose majority bit is 0) as base.  Query the majority coordinate first and witness it with the all-one trace.  Then query the n ordinary coordinates, using the corresponding singleton traces as witnesses; for $n\\ge2$ these have majority bit 0 and agree with the base on all earlier queries.  This produces n+1 steps, and the effective range has exactly these n+1 coordinates.",
+  "references": "\\cite{li2022understanding,maass1992lower}"
+}

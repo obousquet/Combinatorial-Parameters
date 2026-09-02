@@ -1,0 +1,12 @@
+{
+  "id": 411,
+  "name": "Membership and Equivalence Queries Complexity of Singletons plus empty set",
+  "short_name": "membership_and_equivalence_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/membership_and_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Ask the equivalence query for the empty concept.  It succeeds for the empty target; otherwise the sole positive counterexample is the unique point of the target singleton.  Thus one query suffices, while zero cannot distinguish the nontrivial class.",
+  "references": "\\cite{angluin1988queries}"
+}

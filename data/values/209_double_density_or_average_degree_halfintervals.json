@@ -1,0 +1,11 @@
+{
+  "id": 209,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$\\frac{2(n-1)}{n}$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "The path on $n$ vertices has $n-1$ edges, so its average degree is $2(n-1)/n$.",
+  "name": "Double Density or Average Degree of Half-intervals",
+  "short_name": "double_density_or_average_degree_halfintervals"
+}

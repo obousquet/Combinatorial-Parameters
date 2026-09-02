@@ -1,13 +1,37 @@
 {
   "id": 13,
   "name": "Effective VC Radius",
-  "symbol": "$\\mathrm{VCR}$",
+  "symbol": "\\mathrm{VCR}",
   "definition": "For a family $\\mathcal{H}\\subset 2^\\mathcal{X}$, we define the **effective VC radius** as the largest integer $k$ such that all subsets of size $k$ of the effective range of $\\mathcal{H}$, i.e. $\\bigcup \\{h\\Delta h': h,h'\\in \\mathcal{H}\\}$ are shattered by $\\mathcal{H}$.",
   "category": "shattering",
   "symmetric": true,
-  "monotonic": true,
+  "monotonic": false,
   "p_monotonic": false,
+  "c_monotonic": false,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "effective_vc_radius"
+  "short_name": "effective_vc_radius",
+  "comments": "Not c-monotonic: $\\mathcal H=\\{000,001,010,100,110\\}$ has effective VC radius $1$, while conditioning the last coordinate to $0$ gives the full two-dimensional cube, of effective VC radius $2$.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Counterexample: $\\{000,010,100,110\\}$ is a two-cube (with a constant third coordinate), so its effective VC radius is 2. Adding $001$ activates the third coordinate, but the resulting class does not shatter the first-and-third-coordinate pair, so its effective VC radius falls to 1.",
+      "kind": "counterexample"
+    },
+    "c_monotonic": {
+      "proof": "Counterexample: H={000,001,010,100,110} has effective VC radius 1; conditioning its last coordinate to 0 gives the full two-cube, of effective VC radius 2.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{000,001,010,100,110\\}$ has effective VC radius 1, whereas projection to its first two coordinates is the full two-cube and has effective VC radius 2.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

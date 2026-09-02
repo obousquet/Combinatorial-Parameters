@@ -1,0 +1,12 @@
+{
+  "id": 406,
+  "name": "Projected Recursive Teaching Dimension of Singletons plus empty set",
+  "short_name": "monotone_recursive_teaching_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A coordinate projection is again a singleton-plus-empty class on a smaller domain.  Remove all singleton concepts using their unique positive coordinate, then the empty concept; each removal step has teaching-set size at most one.  A nontrivial projection rules out zero.",
+  "references": "\\cite{doliwa2014recursive}"
+}

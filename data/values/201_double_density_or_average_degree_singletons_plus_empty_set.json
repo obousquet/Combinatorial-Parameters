@@ -1,0 +1,11 @@
+{
+  "id": 201,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$\\frac{2n}{n+1}$",
+  "details": "For $n\\ge1$.",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is an $n$-leaf star with $n$ edges and $n+1$ vertices, hence average degree $2n/(n+1)$.",
+  "name": "Double Density or Average Degree of Singletons plus empty set",
+  "short_name": "double_density_or_average_degree_singletons_plus_empty_set"
+}

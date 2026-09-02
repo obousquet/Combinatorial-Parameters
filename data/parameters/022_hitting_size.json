@@ -1,12 +1,37 @@
 {
   "id": 22,
   "name": "Hitting Size",
-  "symbol": "$\\mathrm{HT}$",
+  "symbol": "\\mathrm{HT}",
+  "definition": "The **Hitting Size** of $\\mathcal{H}$ is the minimum size of a set $S$ that intersects every nonempty member of $\\mathcal{H}$.",
+  "graph_summary": "The smallest set of coordinates meeting every nonempty concept.",
   "category": "teaching",
   "symmetric": false,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": false,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "hitting_size"
+  "short_name": "hitting_size",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Any set hitting every nonempty member of a class also hits every nonempty member of a subfamily. Thus a subfamily has no larger minimum hitting-set size.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Counterexample: for H={{x,a},{x,b}}, {x} is a hitting set, whereas conditioning x=1 gives {{a},{b}}, whose hitting size is 2.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: for $\\mathcal H=\\{\\{x,a\\},\\{x,b\\}\\}$, $\\{x\\}$ is a hitting set. Projecting away x gives $\\{\\{a\\},\\{b\\}\\}$, whose only hitting set has size 2.",
+      "kind": "counterexample"
+    }
+  }
 }

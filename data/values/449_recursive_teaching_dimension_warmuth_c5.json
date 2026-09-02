@@ -1,0 +1,12 @@
+{
+  "id": 449,
+  "name": "Recursive Teaching Dimension of Warmuth's $C_5$ Class",
+  "short_name": "recursive_teaching_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every concept has teaching-set size three in the original class, so they may all be removed in one recursive-teaching layer of width three.  No width-two first layer is possible because no concept has a teaching set of size at most two initially.  Therefore the recursive teaching dimension is three.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

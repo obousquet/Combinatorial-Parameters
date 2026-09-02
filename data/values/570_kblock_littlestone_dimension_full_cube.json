@@ -1,0 +1,10 @@
+{
+  "id": 570,
+  "name": "$k$-Block Littlestone Dimension of Full Cube",
+  "short_name": "kblock_littlestone_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "value": "$n$",
+  "status": "established",
+  "proof": "For every fixed $k\\geq2$, the established VC and Littlestone dimensions of the full cube are both n. Proposition \\ref{prop:block-littlestone-sandwich} gives $\\mathrm{VC}\\leq\\mathrm B_k\\leq\\mathrm L$, hence $\\mathrm B_k=n$."
+}

@@ -1,0 +1,122 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Combinatorial-Parameters/">
+        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
+    </head>
+    <body>
+        <header>
+            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="parameters/index.html">Parameters</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="values/index.html">Values</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
+    <div class="table-card" id="math-86" style="position:relative;">
+        
+        <h3><a href="parameters/dual_vc_dimension.html" class="table-title-link">Dual VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dual VC Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathrm{VC}^{*}">
+            \[\mathrm{VC}^{*}\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>For $\mathcal H\subseteq2^{\mathcal X}$, let $\mathcal H^*=\{\x^*:x\in\mathcal X\}$ be the dual class on domain $\mathcal H$, where $x^*=\{h\in\mathcal H:x\in h\}$.  The <strong>dual VC dimension</strong> is $\mathrm{VC}^{*}(\mathcal H)=\mathrm{VC}(\mathcal H^*)$.</p></div>
+<strong>Description:</strong><div class="text-field"><p>The shattering dimension of the transposed incidence matrix.</p></div>
+
+<strong>Origin References:</strong><div class="text-field"><p>The dual shatter function and its dimension are classical; the standard VC/dual-VC comparison is due to Assouad, <a href="bibliography.html#assouad1983densite">[assouad1983densite]</a>.</p></div>
+<p><strong>Category:</strong> Shattering</p>
+<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Monotonic:</strong> Yes</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
+<p><strong>C-Monotonic:</strong> Yes</p>
+<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/dual_vc_dimension_warmuth_c5.html'>Dual VC Dimension of Warmuth's $C_5$ class</a></li><li><a href='values/dual_vc_dimension_universal_class.html'>Dual VC Dimension of Universal Class</a></li><li><a href='values/dual_vc_dimension_full_cube.html'>Dual VC Dimension of Full Cube</a></li><li><a href='values/dual_vc_dimension_trivial_concepts.html'>Dual VC Dimension of Trivial concepts</a></li><li><a href='values/dual_vc_dimension_singletons.html'>Dual VC Dimension of Singletons</a></li><li><a href='values/dual_vc_dimension_singletons_plus_empty_set.html'>Dual VC Dimension of Singletons plus empty set</a></li><li><a href='values/dual_vc_dimension_halfintervals.html'>Dual VC Dimension of Half-intervals</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/vc_dimension_dual_vc_dimension_log.html" class="relationship-statement">$\mathrm{VC} \ge \tfrac12\log \mathrm{VC}^{*}$</a></li><li><a href="relationships/dual_vc_dimension_vc_dimension_log.html" class="relationship-statement">$\mathrm{VC}^{*} \ge \tfrac12\log \mathrm{VC}$</a></li><li><a href="relationships/dual_antipodal_vc_dimension_dual_vc_dimension.html" class="relationship-statement">$\mathrm{VC}^{*a} \ge \mathrm{VC}^{*}$</a></li><li><a href="relationships/dual_vc_dimension_dual_antipodal_vc_dimension_affine.html" class="relationship-statement">$\mathrm{VC}^{*} \ge \tfrac12\mathrm{VC}^{*a} - (\tfrac12)$</a></li><li><a href="relationships/effective_range_dual_vc_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{VC}^{*} - (1)$</a></li><li><a href="relationships/minimum_star_number_dual_vc_dimension_affine.html" class="relationship-statement">$\mathrm{S}_{\mathrm{min}} \ge \tfrac12\mathrm{VC}^{*} - (1)$</a></li><li><a href="relationships/extremal_extension_vc_dimension_dual_vc_dimension_affine.html" class="relationship-statement">$\mathrm{VC}_{\mathrm{extr}} \ge \tfrac12\mathrm{VC}^{*} - (\tfrac12)$</a></li><li><a href="relationships/radon_number_dual_vc_dimension.html" class="relationship-statement">$\mathrm{Rad} \ge \mathrm{VC}^{*}$</a></li><li><a href="relationships/sign_rank_dual_vc_dimension.html" class="relationship-statement">$\mathrm{SR} \ge \mathrm{VC}^{*}$</a></li></ul></p></div>
+
+        </div>
+    </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
+    </body>
+    </html>
+    

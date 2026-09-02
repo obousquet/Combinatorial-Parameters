@@ -4,5 +4,8 @@
   "parameter_2_id": "#parameters/recursive_teaching_dimension",
   "relationship_type": "larger",
   "short_name": "selfdirected_queries_complexity_recursive_teaching_dimension",
-  "name": "Self-Directed Queries Complexity / Recursive Teaching Dimension"
+  "name": "Self-Directed Queries Complexity / Recursive Teaching Dimension",
+  "details": "For finite concept classes, $\\mathrm{SDC}(\\mathcal H)\\ge\\mathrm{RTD}(\\mathcal H)$.",
+  "status": "established",
+  "references": "\\cite{doliwa2014recursive}"
 }

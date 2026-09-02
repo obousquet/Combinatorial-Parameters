@@ -1,0 +1,11 @@
+{
+  "id": 219,
+  "name": "VC Dimension of Warmuth's $C_5$ class",
+  "short_name": "vc_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2$",
+  "status": "established",
+  "proof": "Every pair of positions is shattered, whereas every three-position trace misses one labeling: $000$ for three consecutive positions and $111$ for three non-consecutive positions.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

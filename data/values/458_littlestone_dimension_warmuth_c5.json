@@ -1,0 +1,12 @@
+{
+  "id": 458,
+  "name": "Littlestone Dimension of Warmuth's $C_5$ Class",
+  "short_name": "littlestone_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A depth-three shattered mistake tree is obtained by querying coordinate $0$, then coordinate $1$, and on the four resulting branches querying respectively $3,2,2,2$.  A shattered tree of depth four would require $2^4=16$ distinct concepts, while $C_5$ has only ten.  Hence its Littlestone dimension is exactly three.",
+  "references": "\\cite{littlestone1988learning,palvolgyi2021unlabeled}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 422,
+  "name": "Minimum Degree of Tagged Singletons",
+  "short_name": "minimum_degree_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each tagged pair $\\{i,n+f(i)\\}$ differs in one coordinate only from its tag singleton, and in at least two coordinates from every other class member, so it has degree one.  Every tag singleton is adjacent to $\\emptyset$, and $\\emptyset$ is adjacent to every tag singleton; therefore there are no isolated vertices.",
+  "references": "\\cite{maass1992lower}"
+}

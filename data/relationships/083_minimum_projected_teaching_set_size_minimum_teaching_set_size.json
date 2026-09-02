@@ -4,7 +4,9 @@
   "parameter_2_id": "#parameters/minimum_teaching_set_size",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "minimum_projected_teaching_set_size_minimum_teaching_set_size",
-  "name": "Minimum Projected Teaching Set Size / Minimum Teaching Set Size"
+  "name": "Minimum Projected Teaching Set Size / Minimum Teaching Set Size",
+  "status": "established",
+  "proof": "The projected minimum teaching-set parameter maximizes the corresponding quantity over projections.  The full-domain projection recovers the original class and its minimum teaching-set size."
 }

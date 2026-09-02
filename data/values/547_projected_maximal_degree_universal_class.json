@@ -1,0 +1,11 @@
+{
+  "id": 547,
+  "parameter_id": "#parameters/projected_maximal_degree",
+  "class_id": "#classes/universal_class",
+  "value": "$n-1$",
+  "status": "established",
+  "proof": "The singleton-subset projection in the star-number proof has a vertex of degree n-1. Conversely, every projected class has at most n vertices, so its maximum degree is at most n-1.",
+  "references": "\\cite{hanneke2015minimax,chornomaz2025spherical}",
+  "short_name": "projected_maximal_degree_universal_class",
+  "name": "Projected Maximal Degree of Universal Class"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 270,
+  "name": "Minimum Largest Order Shattered Set of Trivial Concepts",
+  "short_name": "minimum_largest_order_shattered_set_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every domain order, the two constant concepts remain the empty and full traces after downshifting. Every one-point set is order-shattered, while a two-point cube would require four traces and the class has only two."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 612,
+  "name": "Best Mistakes of Singletons plus Empty Set",
+  "short_name": "best_mistakes_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Present every coordinate and predict $0$. The empty target causes no mistake and each singleton target causes one positive label, which identifies it; hence one mistake suffices. At the first presented coordinate, an initial prediction of $0$ is falsified by its singleton target, while a prediction of $1$ is falsified by the empty target. Therefore one mistake is necessary.",
+  "references": "\\cite{ben1997online}"
+}

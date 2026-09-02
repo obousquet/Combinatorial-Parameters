@@ -76,7 +76,7 @@
 \subsubsection{Log Size Ratio}
       
       \begin{definition}[Log Size Ratio - {$\frac{\log (\mathrm{H}-1)}{\log (n+1)}$}]\label{def:log_size_ratio}
-      The {\em Log Size Ratio} of a family $\H$ is the ratio of the log of its cardinality to the log of the effective range, \[ \log \frac{\abs*{\H}-1}{\log (n+1)} \]
+      The {\em Log Size Ratio} of a family $\H$ over a domain of size $n$ is \[ \frac{\log(\abs*{\H}-1)}{\log(n+1)}. \]
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -85,7 +85,28 @@
 \subsubsection{Information Complexity}
       
       \begin{definition}[Information Complexity - {$\mathrm{IC}$}]\label{def:information_complexity}
-      
+      For a finite Boolean class $\mathcal H$, its \emph{information complexity} is
+      \[
+      \mathrm{IC}(\mathcal H)
+      =\sup_{m\geq1}\inf_{\mathcal A}\sup_{D}
+      I(S;\mathcal A(S)),
+      \]
+      where the infimum is over (possibly randomized, improper) algorithms
+      that PAC learn $\mathcal H$, $D$ ranges over realizable distributions,
+      and $S\sim D^m$.  It is monotone under both subfamilies and coordinate
+      projections: a learner for $\mathcal H$ can be used on a projected
+      sample and its output restricted to the retained coordinates.  If
+      $\operatorname{Ldim}(\mathcal H)=d$, then Pradeep, Nachum, and Gastpar
+      prove the quantitative bound
+      \[
+      \mathrm{IC}(\mathcal H)\leq
+      2^d+\log_2(d+1)+3+\frac{3}{e\ln 2}.
+      \]
+      In their model, the qualitative converse also holds for arbitrary
+      binary classes: information complexity is finite exactly when
+      Littlestone dimension is finite.
+      This is exponential in $d$, and hence is recorded as prose rather than
+      as one of the catalogue's affine or logarithmic relationship types.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -173,7 +194,7 @@
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
-      \item {\bf Monotonicity Type}: DM
+      \item {\bf Monotonicity Type}: pM
       \end{itemize}
 \subsubsection{Maximum Positive Degree}
       
@@ -203,6 +224,65 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
       \end{itemize}
+\subsubsection{Dual VC Dimension}
+      \begin{definition}[Dual VC Dimension - {$\mathrm{VC}^{*}$}]\label{def:dual_vc_dimension}
+      For $\H\subseteq 2^\X$, let $\H^*=\set*{x^*:x\in\X}$ be the dual class on domain $\H$, where $x^*=\set*{h\in\H:x\in h}$.  The \emph{dual VC dimension} is $\mathrm{VC}^{*}(\H)=\mathrm{VC}(\H^*)$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: \cite{assouad1983densite}
+      \end{itemize}
+\subsubsection{Dual Antipodal VC Dimension}
+      \begin{definition}[Dual Antipodal VC Dimension - {$\mathrm{VC}^{*a}$}]\label{def:dual_antipodal_vc_dimension}
+      A set of hypotheses $A\subseteq\H$ is dually antipodally shattered if, for every labeling $s:A\to\{0,1\}$, some point induces either $s$ or its bitwise complement on $A$.  The \emph{dual antipodal VC dimension} $\mathrm{VC}^{*a}(\H)$ is the largest size of such a set.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: \cite{chornomaz2025spherical}
+      \end{itemize}
+\subsubsection{Spherical Dimension}
+      \begin{definition}[Spherical Dimension - {$\mathrm{sd}$}]\label{def:spherical_dimension}
+      Let $\H$ be a finite binary class.  Write $\Delta_\H$ for its space of realizable distributions on labeled examples, and $\Delta_\H^{\mathrm{ant}}=\Delta_\H\cap(-\Delta_\H)$, where $-$ flips labels.  The \emph{spherical dimension} $\mathrm{sd}(\H)$ is the largest $d$ for which an antipodality-preserving continuous map $S^d\to\Delta_\H^{\mathrm{ant}}$ exists.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: \cite{chornomaz2025spherical}
+      \end{itemize}
+\subsubsection{Combinatorial Eluder Dimension}
+      \begin{definition}[Combinatorial Eluder Dimension - {$\mathrm{Edim}$}]\label{def:combinatorial_eluder_dimension}
+      For a binary class $\H$ and $h^*\in\H$, let $\mathrm{Edim}_{h^*}(\H)$ be the largest $m$ for which there are points $x_1,\ldots,x_m$ and hypotheses $h_1,\ldots,h_m\in\H$ satisfying $h_i(x_i)\ne h^*(x_i)$ and $h_i(x_j)=h^*(x_j)$ for every $j<i$.  The \emph{combinatorial eluder dimension} is $\mathrm{Edim}(\H)=\max_{h^*\in\H}\mathrm{Edim}_{h^*}(\H)$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: \cite{russo2013eluder,li2022understanding}
+      \end{itemize}
+\subsubsection{Extremal-Extension VC Dimension}
+      \begin{definition}[Extremal-Extension VC Dimension - {$\mathrm{VC}_{\mathrm{extr}}$}]\label{def:extremal_extension_vc_dimension}
+      For a finite class $\H$, let $\mathrm{VC}_{\mathrm{extr}}(\H)$ be the least VC dimension of an extremal (shattering-extremal) class $\E$ on the same domain that contains $\H$.  Here extremal means that the number of shattered sets of $\E$ equals $|\E|$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: \cite{chornomaz2025spherical}
+      \end{itemize}
+\subsubsection{SCO Dimension}
+      \begin{definition}[SCO Dimension - {$\mathrm{SCO}$}]\label{def:sco_dimension}
+      The SCO dimension $\mathrm{SCO}(\H)$ is the least $d$ for which, for some $\alpha>0$ and $0<\beta<1/2$, realizable learning of $\H$ admits an $(\alpha,\beta)$-reduction to a $d$-dimensional stochastic convex optimization problem: approximately optimizing its convex loss decodes to a hypothesis of error at most $\beta$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf References}: \cite{chornomaz2025spherical}
+      \end{itemize}
+\subsubsection{List Replicability Number}
+      \begin{definition}[List Replicability Number - {$\mathrm{LR}$}]\label{def:list_replicability}
+      A learner is $(\epsilon,L)$-list replicable for $\H$ if, for every $\delta>0$, some sample size makes its output lie with probability at least $1-\delta$ in a fixed list of $L$ hypotheses, all of error below $\epsilon$, for every realizable distribution.  Let $\mathrm{LR}(\H,\epsilon)$ be the least such $L$, and define $\mathrm{LR}(\H)=\lim_{\epsilon\to0}\mathrm{LR}(\H,\epsilon)$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf References}: \cite{chornomaz2025spherical}
+      \end{itemize}
 \subsubsection{Effective VC Radius}
       
       \begin{definition}[Effective VC Radius - {$\mathrm{VCR}$}]\label{def:effective_vc_radius}
@@ -215,7 +295,7 @@
 \subsubsection{Minimum Largest Order Shattered Set}
       
       \begin{definition}[Minimum Largest Order Shattered Set - {$\mathrm{OSH}_{\min}$}]\label{def:minimum_largest_order_shattered_set}
-      
+      For an order of the domain, let its order-shattered sets be those represented by cubes after downshifting in that order.  The \emph{minimum largest order shattered set} is the minimum, over domain orders, of the largest cardinality of an order-shattered set.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -224,7 +304,7 @@
 \subsubsection{Largest Strongly Shattered Set}
       
       \begin{definition}[Largest Strongly Shattered Set - {$\mathrm{ST}$}]\label{def:largest_strongly_shattered_set}
-      
+      The \emph{largest strongly shattered set} of $\H$ is the maximum size of a set $S$ for which $\H$ contains an $S$-cube: there is a set $T$ disjoint from $S$ such that $\set*{T\mathbin{\triangle} A:A\subseteq S}\subseteq\H$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -259,9 +339,45 @@
       \end{itemize}
 \subsection{Algebraic}\label{sec:Algebraic}
 \subsubsection{Yang dimension}
-      Projective dimension of the cuboplex
+      Default characteristic-two Yang dimension
       \begin{definition}[Yang dimension - {$\mathrm{Y}$}]\label{def:yang_dimension}
-      
+      Let $\Delta_{\mathcal H}$ be the simplicial complex of realizable partial labelings of a finite Boolean class $\mathcal H$.  In this catalogue, the \emph{Yang dimension} is computed over $\mathbb F_2$:
+      \[
+      \mathrm Y(\mathcal H)=\mathrm Y_2(\mathcal H)
+      :=\operatorname{pd}_{\mathbb F_2}(I^*_{\mathcal H})
+      =\operatorname{reg}_{\mathbb F_2}\mathbb F_2[\Delta_{\mathcal H}].
+      \]
+      Thus it is the length of a minimal free resolution of Yang's canonical ideal over $\mathbb F_2$.  It satisfies $\mathrm Y_0(\mathcal H)\leq\mathrm Y(\mathcal H)$.  The homological formula permits exceptions at torsion primes, but no explicit Boolean class separating $\mathrm Y_2$ from another characteristic is currently recorded.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Characteristic-p Yang Dimension}
+      \begin{definition}[Characteristic-p Yang Dimension - {$\mathrm{Y}_p$}]\label{def:characteristic_p_yang_dimension}
+      For each prime $p$, define
+      \[
+      \mathrm Y_p(\mathcal H):=\operatorname{pd}_{\mathbb F_p}(I^*_{\mathcal H})
+      =\operatorname{reg}_{\mathbb F_p}\mathbb F_p[\Delta_{\mathcal H}].
+      \]
+      Extension of scalars shows that the value depends only on the characteristic, not on the chosen field of characteristic $p$.  Universal coefficients give
+      \[
+      \mathrm Y_p(\mathcal H)\geq\mathrm Y_0(\mathcal H)
+      \]
+      for every prime $p$.  For a fixed finite class, equality holds outside a finite set of primes: the possible exceptional primes divide torsion in an integral homology group of one of the Hochster/interval complexes.  Thus the homological formula permits characteristic dependence.  No explicit Boolean class with $\mathrm Y_p\ne\mathrm Y_q$ is currently recorded, so neither a strict separation nor an ordering between distinct positive characteristics is asserted.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: pM
+      \end{itemize}
+\subsubsection{Characteristic-zero Yang Dimension}
+      \begin{definition}[Characteristic-zero Yang Dimension - {$\mathrm{Y}_0$}]\label{def:characteristic_zero_yang_dimension}
+      Define
+      \[
+      \mathrm Y_0(\mathcal H):=\operatorname{pd}_{\mathbb Q}(I^*_{\mathcal H})
+      =\operatorname{reg}_{\mathbb Q}\mathbb Q[\Delta_{\mathcal H}].
+      \]
+      This has the same value over every field of characteristic zero.  For every fixed finite class, it agrees with $\mathrm Y_p$ for all but finitely many primes $p$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -281,7 +397,7 @@
 \subsubsection{Interpolation degree}
       Minimum degree of an interpolating polynomial
       \begin{definition}[Interpolation degree - {$\mathrm{intdeg}$}]\label{def:interpolation_degree}
-      
+      The \emph{interpolation degree} of $\H$ is the smallest degree needed to interpolate every real-valued function on $\H$.  Equivalently, it is the minimum, over bases of $\mathbb{R}[x]/V(\H)$, of the largest degree of a basis element.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -290,7 +406,7 @@
 \subsubsection{Sign Rank}
       
       \begin{definition}[Sign Rank - {$\mathrm{SR}$}]\label{def:sign_rank}
-      The \emph{sign rank} of a sign matrix $S$ is the maximum number $k$ such for all real matrix $M$ whose signs are $S$, $M$ has rank at least $k$.
+      The \emph{sign rank} of a sign matrix $S$ is the least rank of a real matrix $M$ whose sign pattern is $S$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -299,7 +415,7 @@
 \subsubsection{Dual Sign Rank}
       
       \begin{definition}[Dual Sign Rank - {$\mathrm{DSR}$}]\label{def:dual_sign_rank}
-      The \emph{dual sign rank} of a sign matrix $S$ is the maximum number $k$ such that there exist $k$ columns of $S$ such that any real matrix $M$ with signs $S$ has those column linearly independent.
+      The \emph{dual sign rank} of a sign matrix $S$ is the largest $k$ for which some fixed $k$ columns are linearly independent in every real matrix $M$ whose sign pattern is $S$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -319,7 +435,12 @@
 \subsubsection{Order Sample Compression}
       
       \begin{definition}[Order Sample Compression - {$\mathrm{OSC}$}]\label{def:order_sample_compression}
-      
+      An \emph{order sample-compression scheme} is a labeled compression
+      scheme together with a well order of its decoded hypotheses such that
+      every sample is decoded to the least compatible hypothesis and is
+      compressed by a minimal teaching set relative to the earlier hypotheses.
+      The \emph{order sample-compression number} $\mathrm{OSC}(\mathcal H)$
+      is the smallest size of such a scheme for $\mathcal H$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -328,7 +449,11 @@
 \subsubsection{Stable Unlabeled Complexity}
       
       \begin{definition}[Stable Unlabeled Complexity - {$\mathrm{sUSC}$}]\label{def:stable_unlabeled_complexity}
-      
+      An unlabeled sample-compression scheme $(\kappa,\rho)$ is \emph{stable} if, for every realizable sample $S$ and every subsample $S'$ satisfying $\kappa(S)\subseteq S'\subseteq S$, its reconstructed hypothesis is unchanged:
+      \[
+          \rho(\kappa(S'))=\rho(\kappa(S)).
+      \]
+      The stable unlabeled complexity is the minimum size of such a scheme for $\mathcal H$; see \cite{bousquet2020proper,hanneke2021stable}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -337,7 +462,7 @@
 \subsubsection{Proper Stable Sample Compression}
       
       \begin{definition}[Proper Stable Sample Compression - {$\mathrm{psUSC}$}]\label{def:proper_stable_sample_compression}
-      
+      The proper stable sample-compression complexity is the minimum size of an unlabeled stable compression scheme $(\kappa,\rho)$ for $\mathcal H$ whose reconstruction $\rho(\kappa(S))$ belongs to $\mathcal H$ for every realizable sample $S$.  Stability means that $\rho(\kappa(S'))=\rho(\kappa(S))$ whenever $\kappa(S)\subseteq S'\subseteq S$; see \cite{bousquet2020proper,hanneke2021stable}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -346,7 +471,7 @@
 \subsubsection{Proper Unlabeled Sample Compression}
       
       \begin{definition}[Proper Unlabeled Sample Compression - {$\mathrm{pUSC}$}]\label{def:proper_unlabeled_sample_compression}
-      
+      The proper unlabeled sample-compression complexity is the minimum size of an unlabeled sample-compression scheme $(\kappa,\rho)$ for $\mathcal H$ whose reconstruction $\rho(\kappa(S))$ belongs to $\mathcal H$ for every realizable sample $S$; it is the proper-reconstruction restriction of the model in \cite{kuzmin2007unlabeled,palvolgyi2021unlabeled,chalopin2022unlabeled}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -355,7 +480,7 @@
 \subsubsection{Labeled Sample Compression}
       
       \begin{definition}[Labeled Sample Compression - {$\mathrm{LSC}$}]\label{def:labeled_sample_compression}
-      
+      The labeled sample-compression complexity of $\mathcal H$ is the smallest $k$ for which every realizable labeled sample has a subsample of at most $k$ labeled examples from which a reconstruction function returns a hypothesis consistent with the full sample; see \cite{FW1995}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -364,7 +489,7 @@
 \subsubsection{Stable Labeled Sample Compression}
       
       \begin{definition}[Stable Labeled Sample Compression - {$\mathrm{sLSC}$}]\label{def:stable_labeled_sample_compression}
-      
+      The stable labeled sample-compression complexity is the minimum size of a labeled compression scheme $(\kappa,\rho)$ for $\mathcal H$ such that $\rho(\kappa(S'))=\rho(\kappa(S))$ for every realizable sample $S$ and every $\kappa(S)\subseteq S'\subseteq S$; see \cite{bousquet2020proper,hanneke2021stable}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -373,7 +498,7 @@
 \subsubsection{Proper Labeled Sample Compression}
       
       \begin{definition}[Proper Labeled Sample Compression - {$\mathrm{pLSC}$}]\label{def:proper_labeled_sample_compression}
-      
+      The proper labeled sample-compression complexity is the minimum size of a labeled sample-compression scheme $(\kappa,\rho)$ for $\mathcal H$ whose reconstruction $\rho(\kappa(S))$ belongs to $\mathcal H$ for every realizable sample $S$; it is the proper-reconstruction restriction of the standard model in \cite{FW1995}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -382,7 +507,7 @@
 \subsubsection{Proper Stable Labeled Sample Compression}
       
       \begin{definition}[Proper Stable Labeled Sample Compression - {$\mathrm{psLSC}$}]\label{def:proper_stable_labeled_sample_compression}
-      
+      The proper stable labeled sample-compression complexity is the minimum size of a labeled sample-compression scheme for $\mathcal H$ that is proper and stable: its reconstruction belongs to $\mathcal H$ and satisfies $\rho(\kappa(S'))=\rho(\kappa(S))$ whenever $\kappa(S)\subseteq S'\subseteq S$; see \cite{bousquet2020proper,hanneke2021stable}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -391,7 +516,10 @@
 \subsubsection{Proper Ordered Sample Compression}
       
       \begin{definition}[Proper Ordered Sample Compression - {$\mathrm{pOSC}$}]\label{def:proper_ordered_sample_compression}
-      
+      The \emph{proper order sample-compression number} $\mathrm{pOSC}(\mathcal H)$
+      is the minimum size of an order sample-compression scheme for
+      $\mathcal H$ whose decoded hypotheses all belong to $\mathcal H$; see
+      \cite{darnstadt2016order} for the order-compression model.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -407,9 +535,9 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: M
       \end{itemize}
-\subsubsection{Monotone Recursive Teaching Dimension}
+\subsubsection{Projected Recursive Teaching Dimension}
       
-      \begin{definition}[Monotone Recursive Teaching Dimension - {$\mathrm{RTD}^p$}]\label{def:monotone_recursive_teaching_dimension}
+      \begin{definition}[Projected Recursive Teaching Dimension - {$\mathrm{RTD}^p$}]\label{def:monotone_recursive_teaching_dimension}
       
       \end{definition}
       \begin{itemize}
@@ -428,7 +556,7 @@
 \subsubsection{Hitting Size}
       
       \begin{definition}[Hitting Size - {$\mathrm{HT}$}]\label{def:hitting_size}
-      
+      The \emph{hitting size} of $\H$ is the minimum size of a set $S$ that intersects every nonempty member of $\H$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: N
@@ -437,7 +565,7 @@
 \subsubsection{Relative Hitting Size}
       
       \begin{definition}[Relative Hitting Size - {$\mathrm{RHT}$}]\label{def:relative_hitting_size}
-      
+      The \emph{relative hitting size} is $\max_{h\in\H}\mathrm{HT}(\set*{h'\mathbin{\triangle}h:h'\in\H})$; equivalently, it is the maximum teaching-set size.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -450,12 +578,12 @@
       \[
       \mathrm{XTD}(\H)\bydef \max_{f\subseteq\X}\min\left\{|S|:S\subseteq\X,\ \left|\{h\in\H:h\cap S=f\cap S\}\right|\le 1\right\}.
       \]
-      In contrast to teaching dimension, the labeling $f$ is allowed to lie outside $\H$.
+      In contrast to teaching dimension, the labeling $f$ is allowed to lie outside $\H$.  For finite binary classes, $mathrm{XTD}(H)=mathrm S(H)$ by cite{hanneke2015minimax}.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
-      \item {\bf Monotonicity Type}: M
-      \item {\bf References}: \cite{hegedHus1995generalized}
+      \item {\bf Monotonicity Type}: DM
+      \item {\bf References}: \cite{hegedHus1995generalized,hanneke2015minimax}
       \end{itemize}
 \subsubsection{Positive Teaching Dimension}
       
@@ -474,6 +602,20 @@
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Balbach Teaching Dimension}
+      \begin{definition}[Balbach Teaching Dimension - {$\mathrm{BTD}$}]\label{def:balbach_teaching_dimension}
+      Set $\mathrm{BTD}^{0}(h,\H)$ to the ordinary minimum teaching-set size of $h$. Inductively, $\mathrm{BTD}^{k+1}(h,\H)$ is the minimum teaching-set size of $h$ inside the subfamily of hypotheses whose $k$th value is at least that size. Once these values stabilize, the \emph{Balbach teaching dimension} is their maximum over $h\in\H$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf References}: \cite{balbach2008measuring}
+      \end{itemize}
+\subsubsection{Subset Teaching Dimension}
+      \begin{definition}[Subset Teaching Dimension - {$\mathrm{STD}$}]\label{def:subset_teaching_dimension}
+      Set $\mathrm{ST}^{0}(h,\H)$ to the ordinary minimum teaching-set size of $h$. Inductively, $\mathrm{ST}^{k+1}(h,\H)$ is the minimum teaching-set size of $h$ among hypotheses $h'$ whose previous teaching sample satisfies $\mathrm{ST}^{k}(h',\H)\subseteq\mathrm{ST}^{k}(h,\H)$. At stabilization, the \emph{Subset Teaching Dimension} is the maximum value over $h$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf References}: \cite{zilles2011models}
       \end{itemize}
 \subsubsection{No-Clashing Teaching Dimension}
       
@@ -596,7 +738,7 @@
 \subsubsection{Membership and Proper Equivalence Queries Complexity}
       
       \begin{definition}[Membership and Proper Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{mpeq}}$}]\label{def:membership_and_proper_equivalence_queries_complexity}
-      
+      Let $h^\star\in\mathcal H$ be unknown.  A learner may ask a \emph{membership query} at $x\in\mathcal X$ and receive $h^\star(x)$, or a \emph{proper equivalence query} $h\in\mathcal H$.  The latter is answered either by confirmation that $h=h^\star$, or by a counterexample $x\in\mathcal X$ with $h(x)\ne h^\star(x)$.  The parameter $\mathrm Q_{\mathrm{mpeq}}(\mathcal H)$ is the least worst-case total number of such queries required to identify $h^\star$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -605,12 +747,12 @@
 \subsubsection{Membership and Equivalence Queries Complexity}
       
       \begin{definition}[Membership and Equivalence Queries Complexity - {$\mathrm{Q}_\mathrm{meq}$}]\label{def:membership_and_equivalence_queries_complexity}
-      
+      Let $h^\star\in\mathcal H$ be unknown.  A learner may ask a membership query at $x\in\mathcal X$, receiving $h^\star(x)$, or an equivalence query consisting of an arbitrary Boolean hypothesis $h:\mathcal X\to\{0,1\}$.  An equivalence query is answered either by confirmation that $h=h^\star$, or by a counterexample $x$ satisfying $h(x)\ne h^\star(x)$.  Then $\mathrm Q_{\mathrm{meq}}(\mathcal H)$ is the least worst-case number of queries needed to identify $h^\star$.  Unlike in the proper model, the equivalence hypothesis need not belong to $\mathcal H$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
-      \item {\bf References}: \cite{maas1992lower}
+      \item {\bf References}: \cite{maass1992lower}
 \end{itemize}
 \subsubsection{Worst Mistakes}
       
@@ -633,7 +775,7 @@
 \subsubsection{Partial Equivalence Queries Complexity}
       
       \begin{definition}[Partial Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{par}}$}]\label{def:partial_equivalence_queries_complexity}
-      
+      A \emph{partial equivalence query} is a partial Boolean function $q:D\to\{0,1\}$, where $D\subseteq\mathcal X$.  Against an unknown target $h^\star\in\mathcal H$, the answer either reports that $q(x)=h^\star(x)$ for every $x\in D$, or supplies a counterexample $x\in D$ for which $q(x)\ne h^\star(x)$.  The parameter $\mathrm Q_{\mathrm{par}}(\mathcal H)$ is the least worst-case number of partial equivalence queries with which a learner identifies $h^\star$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -642,7 +784,7 @@
 \subsubsection{Self-Directed Queries Complexity}
       
       \begin{definition}[Self-Directed Queries Complexity - {$\mathrm{M}_{\mathrm{sd}}$}]\label{def:self-directed_queries_complexity}
-      
+      Let $h^\star\in\mathcal H$ be unknown.  At each round a learner chooses an as-yet-unqueried instance $x\in\mathcal X$, predicts a label, and is then told $h^\star(x)$.  The learner may choose later instances from the preceding answers.  The \emph{self-directed queries complexity} $\mathrm M_{\mathrm{sd}}(\mathcal H)$ is the least worst-case number of incorrect predictions before the target is identified.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -655,7 +797,7 @@
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
-      \item {\bf Monotonicity Type}: DM
+      \item {\bf Monotonicity Type}: M
       \end{itemize}
 \subsubsection{Equivalence Queries Complexity = Littlestone Dimension}
       
@@ -669,20 +811,20 @@
 \subsubsection{Random Proper Equivalence Queries Complexity}
       
       \begin{definition}[Random Proper Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{rpeq}}$}]\label{def:random_proper_equivalence_queries_complexity}
-      
+      Fix a known probability distribution $\mu$ on $\mathcal X$, with positive mass on every relevant disagreement set.  A learner proposes hypotheses $h\in\mathcal H$ against an unknown target $h^\star\in\mathcal H$.  If $h\ne h^\star$, the oracle returns $x$ sampled according to $\mu$ conditioned on the disagreement set $\{x:h(x)\ne h^\star(x)\}$.  The parameter $\mathrm Q_{\mathrm{rpeq}}(\mathcal H;\mu)$ is the least, over learners, of the worst-case expected number of queries needed to identify $h^\star$.  The qualifier ``proper'' requires every proposed hypothesis to lie in $\mathcal H$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
-      \item {\bf Monotonicity Type}: pM
+      \item {\bf Monotonicity Type}: unclassified (distribution-dependent)
       \end{itemize}
 \subsubsection{Random Equivalence Queries Complexity}
       
       \begin{definition}[Random Equivalence Queries Complexity - {$\mathrm{Q}_{\mathrm{req}}$}]\label{def:random_equivalence_queries_complexity}
-      
+      Fix a known probability distribution $\mu$ on $\mathcal X$, with positive mass on every relevant disagreement set.  In the random-counterexample equivalence-query model, a failed query $h$ against $h^\star\in\mathcal H$ receives an example sampled from $\mu$ conditioned on $\{x:h(x)\ne h^\star(x)\}$.  The parameter $\mathrm Q_{\mathrm{req}}(\mathcal H;\mu)$ is the least worst-case expected number of such queries needed to identify the target.  Here the queried Boolean hypothesis $h$ may be arbitrary, rather than a member of $\mathcal H$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
-      \item {\bf Monotonicity Type}: DM
+      \item {\bf Monotonicity Type}: M (for fixed $\mu$)
       \end{itemize}
 \subsubsection{Projected Membership Queries Complexity}
       
@@ -693,28 +835,46 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
       \end{itemize}
-\subsubsection{2-Littlestone Dimension}
+\subsubsection{2-Block Littlestone Dimension}
       
-      \begin{definition}[2-Littlestone Dimension - {$\mathrm{L}_2$}]\label{def:2-littlestone_dimension}
-      
+      \begin{definition}[2-Block Littlestone Dimension - {$\mathrm{B}_2$}]\label{def:2-block_littlestone_dimension}
+      A \emph{2-block Littlestone tree} is a complete binary tree with a domain point labeling every internal node, shattered by $\H$ in the ordinary Littlestone sense, such that in every two-level block the second-level labels are equal horizontally.  Equivalently, a block selects two coordinates before either label is revealed, and then has four branches indexed by their joint labels.  The \emph{2-block Littlestone dimension} $\mathrm{B}_2(\H)$ is the largest total number of queried coordinates along a root-to-leaf path.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
       \end{itemize}
-\subsubsection{3-Littlestone Dimension}
+\subsubsection{3-Block Littlestone Dimension}
       
-      \begin{definition}[3-Littlestone Dimension - {$\mathrm{L}_3$}]\label{def:3-littlestone_dimension}
-      
+      \begin{definition}[3-Block Littlestone Dimension - {$\mathrm{B}_3$}]\label{def:3-block_littlestone_dimension}
+      A \emph{3-block Littlestone tree} is an ordinarily shattered complete binary tree in which each three-level block has unrestricted labels at its first level and horizontally constant labels at each of its following two levels.  Equivalently, a block selects three coordinates before any of their labels is revealed, and then has eight branches indexed by their joint labels.  The \emph{3-block Littlestone dimension} $\mathrm{B}_3(\H)$ is the largest total number of queried coordinates along a root-to-leaf path.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
       \end{itemize}
-\subsubsection{$k$-Littlestone Dimension ($k\ge3$)}
+\subsubsection{$k$-Block Littlestone Dimension ($k\ge2$)}
       
-      \begin{definition}[$k$-Littlestone Dimension ($k\ge3$) - {$\mathrm{L}_k$}]\label{def:k-littlestone_dimension_(kge3)}
+      \begin{definition}[$k$-Block Littlestone Dimension ($k\ge2$) - {$\mathrm{B}_k$}]\label{def:k-block_littlestone_dimension_(kge2)}
+      Fix $k\ge2$.  Let $x_v$ label node $v\in\{0,1\}^{<d}$ of an ordinarily shattered complete binary tree.  It is a \emph{$k$-block Littlestone tree} when, for every $q\ge0$ and $1\le r<k$, all nodes at level $qk+r$ below the same node at level $qk$ have a common label.  Labels at the first level of each block are unrestricted.  Thus each block fixes $k$ coordinates before their joint label in $\{0,1\}^k$ is revealed.  The \emph{$k$-block Littlestone dimension} $\mathrm{B}_k(\H)$ is the largest depth $d$.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{$k$-Mistake Littlestone Dimension}
       
+      \begin{definition}[$k$-Mistake Littlestone Dimension - {$\mathrm{L}^{\mathrm{mist}}_k$}]\label{def:kmistake_littlestone_dimension}
+      For $k\ge0$, a labeled sequence is \emph{$k$-realizable} by $\H$ if some $h\in\H$ disagrees with it on at most $k$ queried labels.  A binary decision tree is $k$-shattered by $\H$ when each root-to-leaf branch is $k$-realizable.  The \emph{$k$-mistake Littlestone dimension} is the supremum, over all such trees, of their minimum root-to-leaf branch length.  Thus it is not a complete-tree depth in general.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Prefix-$k$ Littlestone Dimension}
+      
+      \begin{definition}[Prefix-$k$ Littlestone Dimension - {$\mathrm{PL}_k$}]\label{def:prefix_littlestone_dimension}
+      Fix $k\ge1$.  A \emph{prefix-$k$ Littlestone tree} is an ordinarily shattered complete binary tree in which the coordinate labels are horizontally constant on each of its first $\min\{k,d\}$ levels, where $d$ is its depth; all subsequent labels are unrestricted.  Its maximum possible depth is the \emph{prefix-$k$ Littlestone dimension} $\mathrm{PL}_k(\H)$.  In particular, $\mathrm{PL}_1(\H)=\mathrm L(\H)$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
@@ -730,14 +890,36 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
       \end{itemize}
-\subsubsection{Largest Shattered Set = VC Dimension = Projected VC Radius = Projected Strongly Shattered Dimension = Maximum Largest Order Shattered Set = Projected Minimum Degree = Projected Double Density or Projected Average Degree}
+\subsubsection{Largest Shattered Set = VC Dimension = Projected VC Radius = Projected Strongly Shattered Dimension = Maximum Largest Order Shattered Set}
       
-      \begin{definition}[Largest Shattered Set = VC Dimension = Projected VC Radius = Projected Strongly Shattered Dimension = Maximum Largest Order Shattered Set = Projected Minimum Degree = Projected Double Density or Projected Average Degree - {\begin{tabular}{l}$\mathrm{SH} = \mathrm{VC} = \mathrm{VCR}^p$\\$= \mathrm{ST}^p = \mathrm{OSH}_{\max} = \mathrm{d}^p_{\min}$\\$= \mathrm{dens}^p$\end{tabular}}]\label{def:largest_shattered_set_=_vc_dimension_=_projected_vc_radius_=_projected_strongly_shattered_dimension_=_maximum_largest_order_shattered_set_=_projected_minimum_degree_=_projected_double_density_or_projected_average_degree}
-      
+      \begin{definition}[Largest Shattered Set = VC Dimension = Projected VC Radius = Projected Strongly Shattered Dimension = Maximum Largest Order Shattered Set - {\begin{tabular}{l}$\mathrm{SH} = \mathrm{VC} = \mathrm{VCR}^p$\\$= \mathrm{ST}^p = \mathrm{OSH}_{\max}$\end{tabular}}]\label{def:largest_shattered_set_=_vc_dimension_=_projected_vc_radius_=_projected_strongly_shattered_dimension_=_maximum_largest_order_shattered_set}
+      The \emph{largest shattered set} is the maximum cardinality of a subset of the domain shattered by $\H$; equivalently, it is the VC dimension of $\H$.
       \end{definition}
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
+      \end{itemize}
+\subsubsection{Minimum Star Number}
+
+      \begin{definition}[Minimum Star Number - {$\mathrm{S}_{\mathrm{min}}$}]\label{def:minimum_star_number}
+      For a possibly unrealizable labeling $g:\X\to\{0,1\}$, let $S_g(\H)$ be the largest $d$ for which there are distinct points $x_1,\ldots,x_d$ and $h_0,\ldots,h_d\in\H$ such that $h_0(x_j)=g(x_j)$ for all $j$, while $h_i(x_j)=g(x_j)$ holds exactly when $j\ne i$ for each $i\ge1$.  The \emph{minimum star number} is
+      \[
+      \mathrm{S}_{\mathrm{min}}(\H)\bydef\inf_{g:\X\to\{0,1\}}S_g(\H).
+      \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \item {\bf References}: \cite{hanneke2024star_eluder}
+      \end{itemize}
+\subsubsection{Radon Number}
+
+      \begin{definition}[Radon Number - {$\mathrm{Rad}$}]\label{def:radon_number}
+      Associate to a finite binary class $\H$ the convexity space on ground set $\H$ whose convex sets are the version spaces $\{h\in\H:h|_S=y\}$ and their intersections.  A subset $\{h_1,\ldots,h_k\}\subseteq\H$ is \emph{Radon independent} if, for every nontrivial partition $I\sqcup J=[k]$, the convex hulls of $\{h_i:i\in I\}$ and $\{h_j:j\in J\}$ are disjoint.  The \emph{Radon number} $\mathrm{Rad}(\H)$ is the largest size of a Radon-independent subset.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf References}: \cite{chase2024dual}
       \end{itemize}
 \subsection{Holes and Homology}\label{sec:Holes and Homology}
 \subsubsection{co-VC dimension}

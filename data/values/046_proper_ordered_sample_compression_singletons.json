@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/proper_ordered_sample_compression",
   "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "The proper order-compression number of the singleton class is the separating example between proper and improper order compression.",
+  "status": "established",
+  "proof": "Darnst\u00e4dt--Doliwa--Simon--Zilles order the singleton hypotheses.  For the sample containing negative labels on all but one coordinate, the remaining singleton is the first compatible proper hypothesis only after all $n-1$ negatives are retained; any proper subsample instead reconstructs a later singleton inconsistent with one omitted negative label.  Thus every proper order scheme needs $n-1$.  Keeping those negatives gives the matching scheme.",
+  "references": "\\cite{darnstadt2016order}"
 }

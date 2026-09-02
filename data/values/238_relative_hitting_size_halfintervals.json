@@ -1,0 +1,11 @@
+{
+  "id": 238,
+  "name": "Relative Hitting Size of Half-intervals",
+  "short_name": "relative_hitting_size_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Relative hitting size is, by definition, the maximum teaching-set size. The established teaching dimension of half-intervals is two."
+}

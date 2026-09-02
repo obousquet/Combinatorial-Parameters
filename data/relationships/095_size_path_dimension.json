@@ -4,6 +4,8 @@
   "parameter_2_id": "#parameters/path_dimension",
   "relationship_type": "larger",
   "details": "Definition",
+  "status": "established",
+  "proof": "A full path on a set of size $d$ contains $d+1$ distinct projected concepts. Each is the projection of a distinct member of $\\mathcal H$, so $|\\mathcal H|\\ge d+1\\ge d$.",
   "short_name": "size_path_dimension",
   "name": "Size / Path Dimension",
   "witness": "#classes/full_cube"

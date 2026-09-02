@@ -1,0 +1,12 @@
+{
+  "id": 413,
+  "name": "Partial Equivalence Queries Complexity of Singletons plus empty set",
+  "short_name": "partial_equivalence_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/partial_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Ask the total partial-equivalence query labeling every coordinate zero.  A consistent reply identifies the empty target; otherwise the supplied disagreement is the unique positive coordinate of the singleton target.  A nontrivial class cannot be identified with zero queries.",
+  "references": "\\cite{maass1992lower}"
+}

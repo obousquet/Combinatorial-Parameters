@@ -1,0 +1,13 @@
+{
+  "id": 266,
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/littlestone_dimension",
+  "relationship_type": "larger",
+  "details": "For every binary concept class, combinatorial eluder dimension dominates Littlestone dimension. The half-interval family gives an unbounded separation: $\\mathrm{Edim}=n-1$ while $\\mathrm L=\\Theta(\\log n)$.",
+  "status": "established",
+  "proof": "Fix a hypothesis $h^*$ and follow the branch it realizes in any shattered Littlestone tree. At each node, shattering supplies a hypothesis realizing the branch that instead takes the opposite edge there. It agrees with $h^*$ at all earlier node labels and disagrees at the current node, so the nodes on the branch form an eluder witness of the same length.",
+  "references": "\\cite{hanneke2024star_eluder}",
+  "witness": "#classes/halfintervals",
+  "short_name": "combinatorial_eluder_dimension_littlestone_dimension",
+  "name": "Combinatorial Eluder Dimension / Littlestone Dimension"
+}

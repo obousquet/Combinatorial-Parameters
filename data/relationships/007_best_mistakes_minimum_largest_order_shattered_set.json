@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/best_mistakes",
   "parameter_2_id": "#parameters/minimum_largest_order_shattered_set",
   "relationship_type": "larger",
-  "details": "Lemma",
+  "details": "For finite concept classes; both quantities admit a fixed-order tree-rank formulation.",
+  "proof": "For a fixed domain order, Ben-David, Kushilevitz, and Mansour identify the optimal mistake count with the rank of the corresponding order-labeled consistency tree. An order-shattered set of size d yields a complete binary subtree of depth d in that tree, so its rank is at least d. Minimize over orders to obtain best mistakes at least the minimum largest order-shattered-set size.",
+  "references": "\\cite{ben1997online}",
+  "status": "established",
   "short_name": "best_mistakes_minimum_largest_order_shattered_set",
   "name": "Best Mistakes / Minimum Largest Order Shattered Set"
 }

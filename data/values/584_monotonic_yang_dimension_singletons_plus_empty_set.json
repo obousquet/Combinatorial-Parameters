@@ -1,0 +1,12 @@
+{
+  "id": 584,
+  "name": "Monotonic Yang Dimension of Singletons plus Empty Set",
+  "short_name": "monotonic_yang_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/monotonic_yang_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The singleton subfamily has Yang dimension $n-1$, giving the lower bound. Every subfamily has at most $n+1$ concepts, which alone gives only $n$; if it contains the all-zero function, Yang's delta-functions-plus-zero result gives value at most 1, while otherwise it is a subfamily of the singleton class and the generator-count bound gives at most $n-1$. Hence $\\mathrm Y^*=n-1$.",
+  "references": "\\cite{yang2018homological}; derived using the established delta-functions-plus-zero and generator-count bounds"
+}

@@ -31,7 +31,7 @@
       "name": "symbol",
       "type": "latex",
       "label": "Symbol",
-      "description": "Symbol representing the class",
+      "description": "Bare TeX symbol representing the class (without $...$ delimiters; renderers supply math mode)",
       "required": true,
       "rendered": true
     },

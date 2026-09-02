@@ -1,13 +1,39 @@
 {
   "id": 17,
   "name": "Recursive Teaching Dimension",
-  "symbol": "$\\mathrm{RTD}$",
+  "symbol": "\\mathrm{RTD}",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
+  "definition": "The **Recursive Teaching Dimension** of $\\mathcal{H}$ is the least $d$ for which its concepts can be removed in successive nonempty batches, each concept in a batch having a teaching set of size at most $d$ with respect to the concepts not removed earlier.",
+  "graph_summary": "Smallest worst-case teaching-set size in a recursive teaching sequence.",
   "short_name": "recursive_teaching_dimension",
-  "origin_references": "Introduced as a teaching model in \\cite{zilles2011models}; its relation to VC dimension and sample compression is developed in \\cite{doliwa2014recursive}."
+  "origin_references": "Introduced as a teaching model in \\cite{zilles2011models}; its relation to VC dimension and sample compression is developed in \\cite{doliwa2014recursive}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Zilles--Lange--Holte--Zinkevich prove that every subclass has no larger recursive teaching dimension (their Proposition 26, by restricting a canonical teaching plan).",
+      "kind": "citation",
+      "references": "\\cite{zilles2011models}"
+    },
+    "c_monotonic": {
+      "proof": "Restrict a recursive teaching order to the conditioned fibre and delete its fixed coordinates from each teaching set.  Every remaining batch still has no larger teaching sets.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{001,010,011,100\\}$ has $\\mathrm{RTD}=1$ (each concept can be removed with a one-coordinate teaching set). Projecting away the first coordinate yields the full two-cube, whose recursive teaching dimension is 2.",
+      "kind": "counterexample"
+    }
+  }
 }

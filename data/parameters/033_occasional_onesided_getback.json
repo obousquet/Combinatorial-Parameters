@@ -1,13 +1,22 @@
 {
   "id": 33,
   "name": "Occasional One-Sided Getback",
-  "symbol": "$\\mathrm{M}_{\\mathrm{o1g}}$",
+  "symbol": "\\mathrm{M}_{\\mathrm{o1g}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": true,
-  "c_monotonic": true,
-  "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "occasional_onesided_getback"
+  "p_monotonic": null,
+  "c_monotonic": null,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "definition": "The **Occasional One-Sided Getback** parameter is the favorable-sequence mistake bound when feedback may be withheld, and every feedback signal that is given only reports that the learner made a mistake; the signals remain consistent with a target concept in $\\mathcal H$.",
+  "graph_summary": "Favorable-sequence mistake bound with optional, mistake-only feedback.",
+  "short_name": "occasional_onesided_getback",
+  "origin_references": "The learner-chosen presentation and one-sided occasional-feedback model are discussed in \\cite{ben1997online}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Any favorable-sequence, one-sided-feedback strategy valid for every target in $\\mathcal H$ is still valid after restricting the set of possible targets to a subfamily.",
+      "kind": "direct_argument"
+    }
+  }
 }

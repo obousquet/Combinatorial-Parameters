@@ -1,0 +1,11 @@
+{
+  "id": 177,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/log_size_ratio",
+  "value": "$\\frac{\\log n}{\\log(n+1)}$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "This class has $n+1$ concepts on a domain of size $n$.  Substitution into $\\log(|\\mathcal H|-1)/\\log(n+1)$ gives $\\log n/\\log(n+1)$.",
+  "name": "Log Size Ratio of Singletons plus empty set",
+  "short_name": "log_size_ratio_singletons_plus_empty_set"
+}

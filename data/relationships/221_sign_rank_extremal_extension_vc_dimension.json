@@ -1,0 +1,13 @@
+{
+  "id": 221,
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/extremal_extension_vc_dimension",
+  "relationship_type": "larger",
+  "details": "A sign-rank realization supplies an embedding into an extremal class of the same VC dimension.",
+  "status": "established",
+  "proof": "As observed in Section B.5 of the cited paper, the standard homogeneous-hyperplane realization associated with sign rank yields an extremal extension whose VC dimension is at most the sign rank.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "witness": "#classes/full_cube",
+  "short_name": "sign_rank_extremal_extension_vc_dimension",
+  "name": "Sign Rank / Extremal-Extension VC Dimension"
+}

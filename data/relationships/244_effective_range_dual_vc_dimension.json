@@ -1,0 +1,14 @@
+{
+  "id": 244,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "For every finite binary class, the stronger counting bound $\\mathrm E(\\mathcal H)\\geq2^{\\mathrm{VC}^{*}(\\mathcal H)}-2$ holds. In particular $\\mathrm E(\\mathcal H)\\geq\\mathrm{VC}^{*}(\\mathcal H)-1$.",
+  "status": "established",
+  "proof": "If d concepts are shattered in the dual, the $2^d$ label patterns on them are realized by distinct coordinates. All patterns except the all-zero and all-one patterns are nonconstant on those concepts, hence their coordinates are effective. Thus $\\mathrm E\\geq2^d-2$. Since $2^d-2\\geq d-1$ for every d, this gives the recorded affine bound.",
+  "references": "\\cite{assouad1983densite}",
+  "short_name": "effective_range_dual_vc_dimension",
+  "name": "Effective Range / Dual VC Dimension"
+}

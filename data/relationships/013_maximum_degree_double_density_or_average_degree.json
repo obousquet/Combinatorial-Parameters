@@ -3,7 +3,11 @@
   "parameter_1_id": "#parameters/maximum_degree",
   "parameter_2_id": "#parameters/double_density_or_average_degree",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For every finite $1$-inclusion graph.",
+  "witness": "#classes/tagged_singletons",
   "short_name": "maximum_degree_double_density_or_average_degree",
-  "name": "Maximum Degree / Double Density or Average Degree"
+  "name": "Maximum Degree / Double Density or Average Degree",
+  "status": "established",
+  "proof": "The maximum vertex degree is at least the average vertex degree, which is the double-density parameter.",
+  "references": "\\cite{haussler1988predicting,haussler1994predicting}"
 }

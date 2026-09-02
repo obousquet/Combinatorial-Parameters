@@ -1,0 +1,11 @@
+{
+  "id": 234,
+  "name": "Relative Hitting Size of Trivial Concepts",
+  "short_name": "relative_hitting_size_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Relative hitting size is, by definition, the maximum teaching-set size. The established teaching dimension of the two trivial concepts is one."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 608,
+  "name": "Dual Antipodal VC Dimension of Trivial concepts",
+  "short_name": "dual_antipodal_vc_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/dual_antipodal_vc_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "Either constant hypothesis alone is dually antipodally shattered, since its one-bit trace and its complement cover both labels. For the two constants together, every point has the same trace $01$ (up to ordering), which covers only one of the two complementary pairs required for two hypotheses. Thus the value is one.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

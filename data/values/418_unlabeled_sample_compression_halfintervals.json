@@ -1,0 +1,13 @@
+{
+  "id": 418,
+  "name": "Unlabeled Sample Compression of Half-intervals",
+  "short_name": "unlabeled_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "After deleting the constant first coordinate, the chain of initial segments is a VC-dimension-one maximum class.",
+  "status": "established",
+  "proof": "The corrected unlabeled-compression construction for every maximum class has size equal to its VC dimension.  Applied to the effective-coordinate realization of this class, it gives size at most one.  The VC-dimension lower bound for unlabeled compression, together with $\\mathrm{VC}=1$, rules out size zero.",
+  "references": "\\cite{chalopin2022unlabeled,palvolgyi2021unlabeled}"
+}

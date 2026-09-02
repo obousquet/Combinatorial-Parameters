@@ -1,0 +1,12 @@
+{
+  "id": 630,
+  "name": "Radon Number of Halfintervals",
+  "short_name": "radon_number_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/radon_number",
+  "value": "2",
+  "value_class": "constant",
+  "status": "established",
+  "proof": "The halfintervals are linearly ordered by inclusion, and their version-space convexity is the ordinary interval convexity on this chain.  Every three distinct members have a middle one; the partition consisting of that middle member and the other two has intersecting convex hulls.  Any two distinct halfintervals are Radon independent, so the value is 2.",
+  "references": "\\cite{chase2024dual}"
+}

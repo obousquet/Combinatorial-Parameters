@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/membership_query_complexity",
   "parameter_2_id": "#parameters/log_size",
   "relationship_type": "larger",
-  "details": "Lemma",
+  "details": "For finite concept classes, membership-query complexity is at least log-size.",
+  "status": "established",
+  "latex_proof_label": "lem:membership-query-log-size",
+  "proof_source": "LaTeX survey, membership-query/log-size lemma (lem:membership-query-log-size).",
   "witness": "#classes/singletons",
   "short_name": "membership_query_complexity_log_size",
   "name": "Membership Query Complexity / Log Size"

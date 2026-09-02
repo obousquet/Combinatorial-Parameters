@@ -1,0 +1,12 @@
+{
+  "id": 597,
+  "name": "Worst Mistakes of Singletons plus empty set",
+  "short_name": "worst_mistakes_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Always predict $0$.  The empty target causes no mistake, while a singleton target causes exactly one, at its unique positive coordinate.  Zero mistakes are impossible because the empty target and any singleton disagree at that singleton's coordinate.",
+  "references": "\\cite{ben1997online}"
+}

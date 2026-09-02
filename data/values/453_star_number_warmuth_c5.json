@@ -1,0 +1,12 @@
+{
+  "id": 453,
+  "name": "Star Number of Warmuth's $C_5$ Class",
+  "short_name": "star_number_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/star_number",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Star number equals projected maximal degree.  The three-consecutive-coordinate projection of $C_5$ has a vertex of degree three, and no coordinate projection has larger degree.  Hence the star number is exactly three.",
+  "references": "\\cite{hanneke2015minimax,palvolgyi2021unlabeled}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 488,
+  "name": "Stable Labeled Sample Compression of Singletons plus Empty Set",
+  "short_name": "stable_labeled_sample_compression_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established stable unlabeled size-one scheme is also a stable labeled scheme.  Ordinary labeled compression has value one, giving the matching lower bound.",
+  "references": "\\cite{FW1995,hanneke2021stable}"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 466,
+  "name": "Littlestone Dimension of Majority",
+  "short_name": "littlestone_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "The class contains every labeling of its n ordinary coordinates, with the final coordinate determined by strict majority.",
+  "status": "established",
+  "proof": "Query the n ordinary coordinates in a fixed order. Every binary sequence of answers is realized by the concept whose ordinary-coordinate subset is that sequence, so this is a shattered tree of depth n. Conversely, a class of size $2^n$ cannot shatter a complete binary tree of depth greater than n: distinct leaves require distinct realizing concepts. Hence the Littlestone dimension is exactly n.",
+  "references": "\\cite{maass1992lower,littlestone1988learning}"
+}

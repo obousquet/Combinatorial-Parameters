@@ -1,0 +1,12 @@
+{
+  "id": 585,
+  "name": "Best Mistakes of Blockwise-Addressing",
+  "short_name": "best_mistakes_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$\\Theta(d)=\\Theta(\\log |\\mathcal X|)$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Example 2 of Ben-David--Kushilevitz--Mansour proves that every fixed presentation order admits an adversarial target forcing $\\Omega(d)$ mistakes.  Its general upper bound, together with the class size $2^{d+1}$, gives $O(d)$; hence the best fixed-order mistake bound is $\\Theta(d)=\\Theta(\\log|\\mathcal X|)$.",
+  "references": "\\cite{ben1997online}, Example 2"
+}

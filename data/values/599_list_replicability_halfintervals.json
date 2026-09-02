@@ -1,0 +1,13 @@
+{
+  "id": 599,
+  "name": "List Replicability Number of Half-intervals",
+  "short_name": "list_replicability_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/list_replicability",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The half-interval class is a proper extremal class of VC dimension one. The cited extremal-class theorem gives $\\mathrm{SCdim}=1$, and $\\mathrm{LR}=\\mathrm{SCdim}+1$ gives $\\mathrm{LR}=2$.",
+  "references": "\\cite{blondal2026simplicialcovering}"
+}

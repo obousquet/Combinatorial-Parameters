@@ -3,6 +3,11 @@
   "parameter_1_id": "#parameters/recursive_teaching_dimension",
   "parameter_2_id": "#parameters/interpolation_degree",
   "relationship_type": "larger",
+  "details": "A recursive teaching plan yields a triangular interpolation basis.",
+  "status": "established",
+  "proof": "Order the concepts by a recursive teaching plan of width $r=\\mathrm{RTD}(\\mathcal H)$.  For the teaching set $S_i$ of its $i$th concept $h_i$ among the remaining concepts, the product of literals agreeing with $h_i$ on $S_i$ has degree at most $r$, is nonzero at $h_i$, and vanishes at every later $h_j$.  These polynomials give an invertible triangular evaluation matrix, hence a degree-at-most-$r$ interpolation basis.",
+  "references": "\\cite{moran2015shattered}",
+  "witness": "#classes/warmuth_c5",
   "short_name": "recursive_teaching_dimension_interpolation_degree",
   "name": "Recursive Teaching Dimension / Interpolation degree"
 }

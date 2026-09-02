@@ -1,0 +1,11 @@
+{
+  "id": 165,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "By definition $\\mathrm{TS}_{\\max}=\\mathrm{TD}$, whose value on the two trivial concepts is $1$.",
+  "name": "Maximum Teaching Set Size of Trivial concepts",
+  "short_name": "maximum_teaching_set_size_trivial_concepts"
+}

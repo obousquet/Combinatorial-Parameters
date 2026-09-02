@@ -5,5 +5,7 @@
   "relationship_type": "equivalence",
   "details": "(for finite classes)",
   "short_name": "preferencebased_teaching_dimension_recursive_teaching_dimension",
-  "name": "Preference-Based Teaching Dimension / Recursive Teaching Dimension"
+  "name": "Preference-Based Teaching Dimension / Recursive Teaching Dimension",
+  "status": "established",
+  "references": "\\cite{gao2017preference}"
 }

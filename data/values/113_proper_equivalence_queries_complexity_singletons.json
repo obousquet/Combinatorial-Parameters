@@ -4,7 +4,9 @@
   "short_name": "proper_equivalence_queries_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/proper_equivalence_queries_complexity",
-  "value": "$n$",
+  "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Query singleton hypotheses.  For each wrong query, an adversary can return the queried coordinate as a negative counterexample, eliminating only that singleton.  After $n-1$ rejected hypotheses, the remaining singleton is forced, so $n-1$ queries are both necessary and sufficient."
 }

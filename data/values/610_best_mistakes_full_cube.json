@@ -1,0 +1,12 @@
+{
+  "id": 610,
+  "name": "Best Mistakes of Full Cube",
+  "short_name": "best_mistakes_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For any fixed favorable presentation order, predict arbitrarily on a coordinate's first occurrence and reuse its observed label thereafter, so at most one mistake is made at each of the $n$ coordinates. Conversely, the adversary chooses the target's label opposite to the learner's first prediction at every coordinate when it is first presented. These labels define a full-cube target and force $n$ mistakes. Thus the best-mistakes value is $n$.",
+  "references": "\\cite{ben1997online}"
+}

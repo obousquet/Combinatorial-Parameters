@@ -4,7 +4,10 @@
   "short_name": "projected_membership_queries_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/projected_membership_queries_complexity",
-  "value": "$n$",
+  "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "A projection to $k<n$ coordinates is the class consisting of the empty trace and its $k$ singleton traces, so identifying the empty trace requires $k$ negative membership answers; this is also sufficient.  The full projection is the original singleton class and needs $n-1$ queries.  Maximizing over projections therefore gives $n-1$.",
+  "references": "\\cite{angluin1988queries}"
 }

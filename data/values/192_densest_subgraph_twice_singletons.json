@@ -1,0 +1,11 @@
+{
+  "id": 192,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$0$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "The original $1$-inclusion graph is edgeless, as are all of its subgraphs, so their average degrees are zero.",
+  "name": "Densest Subgraph (twice) of Singletons",
+  "short_name": "densest_subgraph_twice_singletons"
+}

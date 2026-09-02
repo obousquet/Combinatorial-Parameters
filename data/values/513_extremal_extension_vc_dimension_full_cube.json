@@ -1,0 +1,12 @@
+{
+  "id": 513,
+  "name": "Extremal-Extension VC Dimension of Full Cube",
+  "short_name": "extremal_extension_vc_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/extremal_extension_vc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full cube is extremal, so it is its own extension and gives the upper bound $n$. The lower bound is its VC dimension $n$.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

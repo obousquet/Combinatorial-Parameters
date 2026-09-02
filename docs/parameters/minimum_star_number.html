@@ -1,0 +1,122 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Combinatorial-Parameters/">
+        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
+    </head>
+    <body>
+        <header>
+            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="parameters/index.html">Parameters</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="values/index.html">Values</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
+    <div class="table-card" id="math-97" style="position:relative;">
+        
+        <h3><a href="parameters/minimum_star_number.html" class="table-title-link">Minimum Star Number</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Star Number</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathrm{S}_{\mathrm{min}}">
+            \[\mathrm{S}_{\mathrm{min}}\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>For a finite binary class $\mathcal H$ and any (possibly unrealizable) labeling $g:\mathcal X\to\{0,1\}$, let $\mathrm S_g(\mathcal H)$ be the largest $d$ for which there are distinct points $x_1,\ldots,x_d$ and hypotheses $h_0,\ldots,h_d\in\mathcal H$ such that $h_0(x_j)=g(x_j)$ for all $j$, while $h_i(x_j)=g(x_j)$ holds exactly when $j\ne i$ for every $i\ge1$. The <strong>minimum star number</strong> is $\mathrm S_{\mathrm{min}}(\mathcal H)=\inf_g\mathrm S_g(\mathcal H)$.</p></div>
+<strong>Description:</strong><div class="text-field"><p>Hanneke's minimum-centred-star parameter. For finite binary classes it lies between VC dimension and the ordinary star number.</p></div>
+
+<strong>Origin References:</strong><div class="text-field"><p>Introduced by Hanneke in <a href="bibliography.html#hanneke2024star_eluder">[hanneke2024star_eluder]</a>.</p></div>
+<p><strong>Category:</strong> Teaching and Hitting</p>
+<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Monotonic:</strong> Yes</p>
+<p><strong>P-Monotonic:</strong> Unspecified</p>
+<p><strong>C-Monotonic:</strong> Unspecified</p>
+<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Doubly Monotonic:</strong> Unspecified</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/minimum_star_number_trivial_concepts.html'>Minimum Star Number of Trivial Concepts</a></li><li><a href='values/minimum_star_number_full_cube.html'>Minimum Star Number of Full Cube</a></li><li><a href='values/minimum_star_number_singletons_plus_empty_set.html'>Minimum Star Number of Singletons plus Empty Set</a></li><li><a href='values/minimum_star_number_halfintervals.html'>Minimum Star Number of Half-intervals</a></li><li><a href='values/minimum_star_number_majority.html'>Minimum Star Number of Majority</a></li><li><a href='values/minimum_star_number_singletons.html'>Minimum Star Number of Singletons</a></li><li><a href='values/minimum_star_number_tagged_singletons.html'>Minimum Star Number of Tagged Singletons</a></li><li><a href='values/minimum_star_number_warmuth_c5.html'>Minimum Star Number of Warmuth's $C_5$ Class</a></li><li><a href='values/minimum_star_number_universal_class.html'>Minimum Star Number of Universal Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/minimum_star_number_vc_dimension.html" class="relationship-statement">$\mathrm{S}_{\mathrm{min}} \ge \mathrm{VC}$</a></li><li><a href="relationships/star_number_minimum_star_number.html" class="relationship-statement">$\mathrm{S} \ge \mathrm{S}_{\mathrm{min}}$</a></li><li><a href="relationships/minimum_star_number_stable_unlabeled_complexity.html" class="relationship-statement">$\mathrm{S}_{\mathrm{min}} \ge \mathrm{sUSC}$</a></li><li><a href="relationships/minimum_star_number_dual_vc_dimension_affine.html" class="relationship-statement">$\mathrm{S}_{\mathrm{min}} \ge \tfrac12\mathrm{VC}^{*} - (1)$</a></li><li><a href="relationships/size_minimum_star_number.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{S}_{\mathrm{min}} + (1)$</a></li></ul></p></div>
+
+        </div>
+    </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
+    </body>
+    </html>
+    

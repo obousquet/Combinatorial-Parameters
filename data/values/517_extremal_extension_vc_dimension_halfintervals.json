@@ -1,0 +1,11 @@
+{
+  "id": 517,
+  "name": "Extremal-Extension VC Dimension of Half-intervals",
+  "short_name": "extremal_extension_vc_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/extremal_extension_vc_dimension",
+  "value": "$1$",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The chain of half-intervals has VC dimension one and has as many shattered sets as concepts (the empty set and its active singleton coordinates), so it is extremal and is its own extension."
+}

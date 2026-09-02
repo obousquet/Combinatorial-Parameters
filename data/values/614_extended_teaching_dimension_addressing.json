@@ -1,0 +1,12 @@
+{
+  "id": 614,
+  "name": "Extended Teaching Dimension of Addressing",
+  "short_name": "extended_teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Extended teaching dimension equals star number for finite binary classes. The established star number of Addressing is $n-1$, so $\\mathrm{XTD}=n-1$.",
+  "references": "\\cite{hanneke2015minimax,maass1992lower}"
+}

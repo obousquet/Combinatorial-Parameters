@@ -1,13 +1,19 @@
 {
   "id": 51,
   "name": "Random Equivalence Queries Complexity",
-  "symbol": "$\\mathrm{Q}_{\\mathrm{req}}$",
+  "symbol": "\\mathrm{Q}_{\\mathrm{req}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": true,
-  "c_monotonic": true,
-  "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "random_equivalence_queries_complexity"
+  "definition": "For a fixed known probability distribution $\\mu$ on the domain, assumed to give positive mass to every relevant disagreement set, the **Random Equivalence Queries Complexity** is the least worst-case expected number of arbitrary equivalence queries needed to identify a target in $\\mathcal H$, when a failed hypothesis receives a counterexample sampled from $\\mu$ conditioned on its disagreement set with the target. Thus the quantity is properly written $\\mathrm Q_{\\mathrm{req}}(\\mathcal H;\\mu)$.",
+  "graph_summary": "Expected arbitrary-equivalence-query complexity under a fixed known counterexample distribution $\\mu$.",
+  "comments": "This is distribution-dependent rather than a pure invariant of $\\mathcal H$.  No projection or conditioning comparison is asserted until a convention for transporting $\\mu$ is fixed.",
+  "origin_references": "Introduced by Angluin and Dohrn in \\cite{angluin2017random}.",
+  "short_name": "random_equivalence_queries_complexity",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Fix $\\mu$.  An arbitrary-equivalence strategy for $\\mathcal H$ can be used unchanged when the target is restricted to $\\mathcal G\\subseteq\\mathcal H$: for each proposed hypothesis and target, the random counterexample law depends only on their disagreement set and $\\mu$, not on the ambient class.",
+      "kind": "direct_argument"
+    }
+  }
 }

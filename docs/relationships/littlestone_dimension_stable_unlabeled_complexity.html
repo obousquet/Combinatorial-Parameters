@@ -72,12 +72,16 @@
 <p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
 <p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>A conservative optimal online learner yields stable compression from its mistake examples.</p></div>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Use a conservative online learner with mistake bound $\mathrm L(\mathcal H)$, such as the standard optimal algorithm, and cycle it through a realizable sample until a full pass is mistake-free.  Retain only the examples on which it made a mistake.  There are at most $\mathrm L(\mathcal H)$; their labels are recoverable from the learner's successive mistaken predictions, and removing any unretained example leaves the final predictor unchanged.  This gives a stable unlabeled compression scheme of that size.</p></div>
 
 
-<p><strong>Status:</strong> </p>
-
-
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
 
         </div>
     </div>

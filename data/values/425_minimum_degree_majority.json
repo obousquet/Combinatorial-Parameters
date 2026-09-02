@@ -1,0 +1,12 @@
+{
+  "id": 425,
+  "name": "Minimum Degree of Majority",
+  "short_name": "minimum_degree_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$\\left\\lfloor\\frac{n-1}{2}\\right\\rfloor$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is the $n$-cube on the base coordinates, except that every edge from layer $t=\\lfloor n/2\\rfloor$ to layer $t+1$ is removed because it changes the majority bit.  A vertex in layer $t$ has degree $t$, while one in layer $t+1$ has degree $n-t-1$; all other vertices retain degree $n$.  The minimum is therefore $\\min(t,n-t-1)=\\lfloor(n-1)/2\\rfloor$.",
+  "references": "\\cite{maass1992lower}"
+}

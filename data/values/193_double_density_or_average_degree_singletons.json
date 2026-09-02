@@ -1,0 +1,11 @@
+{
+  "id": 193,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$0$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Distinct singleton concepts differ on two coordinates, hence the $1$-inclusion graph is edgeless and has average degree zero.",
+  "name": "Double Density or Average Degree of Singletons",
+  "short_name": "double_density_or_average_degree_singletons"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 375,
+  "name": "Positive Recursive Teaching Dimension of Tagged Singletons",
+  "short_name": "positive_recursive_teaching_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/positive_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "First remove tagged pairs using their unique positive ordinary coordinate. Then remove tag singletons using their tag coordinate, and finally remove the empty concept. Every nonempty stage uses a positive sample of size at most one.",
+  "references": "\\cite{fallat2023batch}"
+}

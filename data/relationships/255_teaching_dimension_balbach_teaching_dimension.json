@@ -1,0 +1,13 @@
+{
+  "id": 255,
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/balbach_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite concept class, $\\mathrm{TD}(\\mathcal H)\\geq\\mathrm{BTD}(\\mathcal H)$.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "status": "established",
+  "proof": "At every Balbach iteration, an ordinary minimum teaching set for a target is still valid: it leaves no other consistent hypothesis, hence no other hypothesis surviving the size filter. Thus every iterated Balbach value is at most its ordinary teaching dimension; maximize at stabilization.",
+  "references": "\\cite{zilles2011models,balbach2008measuring}",
+  "short_name": "teaching_dimension_balbach_teaching_dimension",
+  "name": "Teaching Dimension / Balbach Teaching Dimension"
+}

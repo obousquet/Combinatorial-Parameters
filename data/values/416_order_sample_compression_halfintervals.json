@@ -1,0 +1,12 @@
+{
+  "id": 416,
+  "name": "Order Sample Compression of Half-intervals",
+  "short_name": "order_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Half-intervals have VC dimension one.  The order-compression construction for VC-dimension-one classes gives size at most one.  Size zero is impossible for this nontrivial class: an empty compression set has one fixed reconstruction and cannot be consistent with samples distinguishing two concepts.",
+  "references": "\\cite{darnstadt2016order}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 560,
+  "name": "Prefix-$k$ Littlestone Dimension of Trivial Concepts",
+  "short_name": "prefix_littlestone_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Either coordinate gives a prefix-$k$ shattered tree of depth one. The two constant concepts have Littlestone dimension one, and $\\mathrm{PL}_k\\leq\\mathrm L$, so the value is exactly one.",
+  "references": "Database-defined variant; the comparison $\\mathrm{PL}_k\\leq\\mathrm L$ is Proposition \\ref{prop:prefix-littlestone-order} in the survey"
+}

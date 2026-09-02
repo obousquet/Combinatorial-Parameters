@@ -1,0 +1,12 @@
+{
+  "id": 623,
+  "name": "Minimum Star Number of Singletons",
+  "short_name": "minimum_star_number_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$\\begin{cases}0&n=1,\\\\1&n\\geq2.\\end{cases}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $n=1$ there is one hypothesis, so no nonempty star exists. For $n\\ge2$, VC dimension one gives $\\mathrm S_{\\mathrm{min}}\\geq1$. For the all-one centre labeling, a centre hypothesis in the singleton class can agree with the centre on at most one selected coordinate, so every centred star has size at most one. Hence $\\mathrm S_{\\mathrm{min}}=1$.",
+  "references": "\\cite{hanneke2024star_eluder}"
+}

@@ -1,0 +1,122 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Combinatorial-Parameters/">
+        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
+    </head>
+    <body>
+        <header>
+            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="parameters/index.html">Parameters</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="values/index.html">Values</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
+    <div class="table-card" id="math-88" style="position:relative;">
+        
+        <h3><a href="parameters/dual_antipodal_vc_dimension.html" class="table-title-link">Dual Antipodal VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dual Antipodal VC Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathrm{VC}^{*a}">
+            \[\mathrm{VC}^{*a}\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>A set of hypotheses $A\subseteq\mathcal H$ is <strong>dually antipodally shattered</strong> if, for every labeling $s:A\to\{0,1\}$, some point $x$ induces either $s$ or its bitwise complement on $A$. The <strong>dual antipodal VC dimension</strong> $\mathrm{VC}^{*a}(\mathcal H)$ is the largest size of such a set; equivalently it is the antipodal VC dimension of $\mathcal H^*$.</p></div>
+<strong>Description:</strong><div class="text-field"><p>Antipodal relaxation of dual VC dimension; distinct from the older parameter named dual sign rank, which is antipodal VC dimension rather than its dual.</p></div>
+
+<strong>Origin References:</strong><div class="text-field"><p>The antipodal-shattering formulation and its dual are used explicitly in <a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a>; antipodal VC was introduced under the name dual sign rank in <a href="bibliography.html#alon2016sign">[alon2016sign]</a>.</p></div>
+<p><strong>Category:</strong> Shattering</p>
+<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Monotonic:</strong> Yes</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
+<p><strong>C-Monotonic:</strong> Yes</p>
+<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/dual_antipodal_vc_dimension_universal_class.html'>Dual Antipodal VC Dimension of Universal Class</a></li><li><a href='values/dual_antipodal_vc_dimension_full_cube.html'>Dual Antipodal VC Dimension of Full Cube</a></li><li><a href='values/dual_antipodal_vc_dimension_singletons.html'>Dual Antipodal VC Dimension of Singletons</a></li><li><a href='values/dual_antipodal_vc_dimension_singletons_plus_empty_set.html'>Dual Antipodal VC Dimension of Singletons plus Empty Set</a></li><li><a href='values/dual_antipodal_vc_dimension_halfintervals.html'>Dual Antipodal VC Dimension of Half-intervals</a></li><li><a href='values/dual_antipodal_vc_dimension_trivial_concepts.html'>Dual Antipodal VC Dimension of Trivial concepts</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/dual_antipodal_vc_dimension_dual_vc_dimension.html" class="relationship-statement">$\mathrm{VC}^{*a} \ge \mathrm{VC}^{*}$</a></li><li><a href="relationships/spherical_dimension_dual_antipodal_vc_dimension_affine.html" class="relationship-statement">$\mathrm{sd} \ge \mathrm{VC}^{*a} - (2)$</a></li><li><a href="relationships/dual_vc_dimension_dual_antipodal_vc_dimension_affine.html" class="relationship-statement">$\mathrm{VC}^{*} \ge \tfrac12\mathrm{VC}^{*a} - (\tfrac12)$</a></li><li><a href="relationships/effective_range_dual_antipodal_vc_dimension_affine.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{VC}^{*a} - (1)$</a></li><li><a href="relationships/list_replicability_dual_antipodal_vc_dimension_affine.html" class="relationship-statement">$\mathrm{LR} \ge \tfrac12\mathrm{VC}^{*a} + (\tfrac12)$</a></li></ul></p></div>
+
+        </div>
+    </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
+    </body>
+    </html>
+    

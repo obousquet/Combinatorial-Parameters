@@ -1,0 +1,12 @@
+{
+  "id": 410,
+  "name": "Extended Teaching Dimension of Half-intervals",
+  "short_name": "extended_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For an arbitrary target labeling, if its first label is zero then that one example excludes every initial segment; if its last label is one, that example isolates the full interval.  Otherwise a consecutive $1$-then-$0$ transition exists, and its two labeled coordinates isolate the corresponding initial segment.  Conversely, an interior initial segment has ordinary teaching dimension two, so XTD is two (for $n\\ge3$).",
+  "references": "\\cite{hegedHus1995generalized}"
+}

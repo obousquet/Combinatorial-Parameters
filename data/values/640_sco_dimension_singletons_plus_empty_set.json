@@ -1,0 +1,13 @@
+{
+  "id": 640,
+  "name": "SCO Dimension of Singletons plus Empty Set",
+  "short_name": "sco_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$2\\leq\\mathrm{SCO}\\leq3$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq3$.",
+  "status": "established",
+  "proof": "For $n\\geq3$, the established spherical dimension is 1, so Theorem 12 gives $\\mathrm{SCO}\\geq2$.  This class has VC dimension one, and the cited sign-rank theorem gives sign rank at most 3 for every VC-one sign matrix.  The sign-rank SCO reduction therefore gives $\\mathrm{SCO}\\leq3$.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign}"
+}

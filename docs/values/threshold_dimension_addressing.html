@@ -71,12 +71,12 @@
         <p><strong>Name: </strong>Threshold Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/threshold_dimension.html">Threshold Dimension</a></p>
-<p><strong>Value: </strong>$\lceil \log n\rceil$</p>
+<p><strong>Value: </strong>$\log_2 n+1$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
-<p><strong>Status:</strong> </p>
-
-
+<p><strong>Details: </strong>Under the standard convention $n=2^d$; this corrects an off-by-one in the legacy table.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projecting to the $d=\log_2 n$ address coordinates gives the full $d$-cube.  Its chain $\emptyset,\{a_1\},\ldots,\{a_1,\ldots,a_d\}$ is realized by the address concepts; adding the primary coordinate of the all-one address concept gives one further realized trace.  Hence the threshold dimension is at least $d+1$.  Conversely, the final trace of a threshold chain is contained in one addressing concept and so uses at most its $d$ address coordinates and its single primary coordinate.  Thus no chain has dimension exceeding $d+1$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
     </div>

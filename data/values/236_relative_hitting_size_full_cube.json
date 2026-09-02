@@ -1,0 +1,11 @@
+{
+  "id": 236,
+  "name": "Relative Hitting Size of the Full Cube",
+  "short_name": "relative_hitting_size_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Relative hitting size is, by definition, the maximum teaching-set size. The established teaching dimension of the full cube is $n$."
+}

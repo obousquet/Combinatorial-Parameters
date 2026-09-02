@@ -1,12 +1,38 @@
 {
   "id": 63,
   "name": "Largest Strongly Shattered Set",
-  "symbol": "$\\mathrm{ST}$",
+  "symbol": "\\mathrm{ST}",
+  "definition": "The **Largest Strongly Shattered Set** of $\\mathcal{H}$ is the maximum size of a set $S$ for which $\\mathcal{H}$ contains an $S$-cube: there is a set $T$ disjoint from $S$ such that $\\{T\\mathbin{\\triangle} A:A\\subseteq S\\}\\subseteq\\mathcal{H}$.",
+  "graph_summary": "The largest dimension of a full subcube contained in the class.",
   "category": "shattering",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "largest_strongly_shattered_set"
+  "short_name": "largest_strongly_shattered_set",
+  "origin_references": "Strong shattering and its extremal theory are developed in \\cite{bollobas1995defect}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Every cube contained in a subfamily is also a cube contained in the larger class, so the maximum cube dimension cannot decrease when concepts are added.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{000,011,101,110\\}$ has no one-inclusion edge, hence no nonempty contained cube and value 0. Projecting to its first two coordinates gives the full two-cube $\\{00,01,10,11\\}$, of value 2.",
+      "kind": "counterexample"
+    },
+    "c_monotonic": {
+      "proof": "A cube contained in a conditioned fibre lifts to a cube in the original class by adjoining the fixed labels, so its dimension cannot increase.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

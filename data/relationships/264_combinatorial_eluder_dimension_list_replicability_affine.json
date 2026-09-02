@@ -1,0 +1,15 @@
+{
+  "id": 264,
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/list_replicability",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "For every finite binary concept class, $\\mathrm{Edim}(\\mathcal H)\\geq\\mathrm{LR}(\\mathcal H)-1$.",
+  "status": "established",
+  "proof": "The cited theorem gives $\\mathrm{LR}(\\mathcal H)\\leq\\operatorname{height}(\\mathcal H)$, while its height--eluder proposition gives $\\operatorname{height}(\\mathcal H)=\\mathrm{Edim}(\\mathcal H)+1$. Rearranging yields the displayed affine bound.",
+  "references": "\\cite{blondal2026signranklist}",
+  "proof_source": "Theorem 'Height controls list replicability' and Proposition 'Height and eluder dimension are equivalent' in the cited paper.",
+  "short_name": "combinatorial_eluder_dimension_list_replicability_affine",
+  "name": "Combinatorial Eluder Dimension / List Replicability Number (affine)"
+}

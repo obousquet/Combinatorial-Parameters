@@ -1,0 +1,12 @@
+{
+  "id": 430,
+  "name": "Maximum Degree of Warmuth's $C_5$ Class",
+  "short_name": "maximum_degree_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/maximum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For each cyclic placement of the prescribed pattern $1001$, the two choices for the one unrestricted bit differ in exactly that bit, giving one edge.  Direct comparison of the five cyclic placements shows that concepts from different placements differ in at least two bits.  Thus the $1$-inclusion graph is a matching of five edges and has maximum degree one.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

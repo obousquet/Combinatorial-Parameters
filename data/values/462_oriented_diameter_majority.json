@@ -1,0 +1,11 @@
+{
+  "id": 462,
+  "name": "Oriented Diameter of Majority",
+  "short_name": "oriented_diameter_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/oriented_diameter",
+  "value": "$n+1$",
+  "details": "The class is realized on its $n$ ordinary coordinates and one majority coordinate.",
+  "status": "established",
+  "proof": "The empty ordinary subset with majority bit 0 and the full ordinary subset with majority bit 1 are both class members and disagree on all n+1 coordinates. This witnesses oriented diameter n+1, which is also the largest possible value on this domain."
+}

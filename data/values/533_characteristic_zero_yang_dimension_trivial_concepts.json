@@ -1,0 +1,12 @@
+{
+  "id": 533,
+  "name": "Characteristic-zero Yang Dimension of Trivial concepts",
+  "short_name": "characteristic_zero_yang_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/characteristic_zero_yang_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The Yang complex of the two constant functions is the disjoint union of two simplices. Its only nonzero reduced homology is in degree 0 over $\\mathbb Q$, so $\\mathrm Y_0=1$.",
+  "references": "\\cite{yang2018homological}"
+}

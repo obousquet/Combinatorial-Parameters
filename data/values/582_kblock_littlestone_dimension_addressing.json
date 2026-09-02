@@ -1,0 +1,10 @@
+{
+  "id": 582,
+  "name": "$k$-Block Littlestone Dimension of Addressing",
+  "short_name": "kblock_littlestone_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "value": "$\\lfloor\\log n\\rfloor$",
+  "status": "established",
+  "proof": "For every fixed $k\\geq2$, the established VC and Littlestone dimensions of the addressing class are both $\\lfloor\\log n\\rfloor$. Proposition \\ref{prop:block-littlestone-sandwich} forces $\\mathrm B_k=\\lfloor\\log n\\rfloor$."
+}

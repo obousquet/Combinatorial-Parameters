@@ -1,0 +1,11 @@
+{
+  "id": 189,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full-domain projection has minimum degree $n$.  Every projection onto at most $n$ coordinates has minimum degree at most $n$.",
+  "name": "Projected Minimum Degree of Full Cube",
+  "short_name": "projected_minimum_degree_full_cube"
+}

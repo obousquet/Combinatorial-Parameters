@@ -1,0 +1,11 @@
+{
+  "id": 217,
+  "parameter_1_id": "#parameters/extremal_extension_vc_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "Every extension contains the original class, so its VC dimension is at least that of the original class.",
+  "status": "established",
+  "proof": "If $\\mathcal H\\subseteq\\mathcal E$, every set shattered by $\\mathcal H$ is shattered by $\\mathcal E$. Taking the minimum over extremal extensions gives the result.",
+  "short_name": "extremal_extension_vc_dimension_vc_dimension",
+  "name": "Extremal-Extension VC Dimension / VC Dimension"
+}

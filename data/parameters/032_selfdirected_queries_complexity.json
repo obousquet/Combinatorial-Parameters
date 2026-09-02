@@ -1,12 +1,23 @@
 {
   "id": 32,
   "name": "Self-Directed Queries Complexity",
-  "symbol": "$\\mathrm{M}_{\\mathrm{sd}}$",
+  "symbol": "\\mathrm{M}_{\\mathrm{sd}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "selfdirected_queries_complexity"
+  "c_monotonic": true,
+  "definition": "The **Self-Directed Queries Complexity** is the smallest worst-case number of mistakes of an online learner that adaptively chooses the next instance to be labeled, while an adversary supplies labels consistent with an unknown target in $\\mathcal H$.",
+  "graph_summary": "Online mistake bound when the learner adaptively chooses the next instance.",
+  "short_name": "selfdirected_queries_complexity",
+  "origin_references": "The self-directed learning model is introduced in \\cite{goldman1993learning,goldman1994power}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A self-directed learner with a worst-case mistake bound for all targets in $\\mathcal H$ has the same bound when its target is restricted to any subfamily.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A self-directed strategy for the original class restricts to the fibre after removing fixed coordinates, so its worst-case query count cannot increase.",
+      "kind": "direct_argument"
+    }
+  }
 }

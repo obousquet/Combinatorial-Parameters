@@ -1,0 +1,11 @@
+{
+  "id": 550,
+  "parameter_id": "#parameters/minimum_degree",
+  "class_id": "#classes/universal_class",
+  "value": "$0$",
+  "status": "established",
+  "proof": "The 1-inclusion graph is edgeless because every distinct pair $u_i,u_j$ differs on $2^{n-1}$ coordinates. Therefore every vertex has degree zero.",
+  "references": "\\cite{haussler1994predicting,chornomaz2025spherical}",
+  "short_name": "minimum_degree_universal_class",
+  "name": "Minimum Degree of Universal Class"
+}

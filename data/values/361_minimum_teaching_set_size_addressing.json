@@ -1,0 +1,11 @@
+{
+  "id": 361,
+  "name": "Minimum Teaching-Set Size of Addressing",
+  "short_name": "minimum_teaching_set_size_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every addressing concept has its own addressed primary coordinate, which is positive for that concept and negative for every other one. Hence one positive example teaches it, while size zero cannot distinguish a nontrivial class."
+}

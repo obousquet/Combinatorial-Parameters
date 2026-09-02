@@ -1,0 +1,13 @@
+{
+  "id": 419,
+  "name": "Proper Unlabeled Sample Compression of Half-intervals",
+  "short_name": "proper_unlabeled_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/proper_unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "The maximum-class representation map reconstructs a consistent member of the original class.",
+  "status": "established",
+  "proof": "For a maximum class, the representation-map construction selects a subset of the sample domain and reconstructs the unique represented concept consistent with the full sample; it is therefore proper.  On the effective-coordinate half-interval class this gives a proper unlabeled scheme of size one.  Proper unlabeled compression is at least ordinary unlabeled compression, whose value here is one.",
+  "references": "\\cite{chalopin2022unlabeled,palvolgyi2021unlabeled}"
+}

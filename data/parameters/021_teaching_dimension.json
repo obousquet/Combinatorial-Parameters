@@ -1,12 +1,38 @@
 {
   "id": 21,
   "name": "Teaching Dimension",
-  "symbol": "$\\mathrm{TD}$",
+  "symbol": "\\mathrm{TD}",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "teaching_dimension"
+  "definition": "For $h\\in\\mathcal{H}$, a teaching set is a set of labeled instances on which no other member of $\\mathcal{H}$ agrees with $h$. The **Teaching Dimension** is the maximum, over $h\\in\\mathcal{H}$, of the minimum size of such a set.",
+  "graph_summary": "Largest, over concepts, of the minimum number of labeled examples that uniquely identifies the concept.",
+  "short_name": "teaching_dimension",
+  "origin_references": "The classical teaching-set model and teaching dimension originate in \\cite{shinohara1991teachability,goldman1995complexity}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For a target in a subfamily, every teaching set relative to the containing class is also a teaching set relative to the subfamily. Taking the target-wise minima and then the maximum shows that teaching dimension cannot increase on a subfamily.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "For each target in the conditioned fibre, delete fixed coordinates from a teaching set in the original class.  It remains a teaching set in the fibre.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{001,010,100\\}$ has teaching dimension 1, since each concept has a private positive coordinate. Projecting away the first coordinate gives $\\{00,01,10\\}$, whose every concept needs two coordinates to be identified, hence has teaching dimension 2.",
+      "kind": "counterexample"
+    }
+  }
 }

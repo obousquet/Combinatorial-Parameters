@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/size",
   "parameter_2_id": "#parameters/proper_equivalence_queries_complexity",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "For finite concept classes; the stated $|\\mathcal H|$ bound is deliberately weak by one query.",
+  "proof": "For a finite class, repeatedly propose any remaining concept as a proper equivalence query. A counterexample eliminates that proposal, so after at most $|\\mathcal H|-1$ failed queries one concept remains and is identified. Hence the complexity is at most $|\\mathcal H|$.",
   "short_name": "size_proper_equivalence_queries_complexity",
   "name": "Size / Proper Equivalence Queries Complexity",
   "witness": "#classes/halfintervals"

@@ -1,0 +1,12 @@
+{
+  "id": 620,
+  "name": "Minimum Star Number of Singletons plus Empty Set",
+  "short_name": "minimum_star_number_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "This class is intersection-closed and has VC dimension one. Example 2 of the cited paper gives $\\mathrm S_{\\mathrm{min}}=\\mathrm{VC}$ for intersection-closed classes, so the value is one.",
+  "references": "\\cite{hanneke2024star_eluder}"
+}

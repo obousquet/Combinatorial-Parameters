@@ -1,0 +1,12 @@
+{
+  "id": 512,
+  "name": "Dual Antipodal VC Dimension of Universal Class",
+  "short_name": "dual_antipodal_vc_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/dual_antipodal_vc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The dual of the universal class is the full $n$-cube. Its antipodal VC dimension is at least its VC dimension $n$ and at most its domain size $n$, hence equals $n$.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

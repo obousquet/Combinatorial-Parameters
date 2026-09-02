@@ -1,0 +1,12 @@
+{
+  "id": 645,
+  "name": "Sign Rank of Universal Class",
+  "short_name": "sign_rank_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The incidence sign matrix of $\\mathcal U_n$ is the transpose of that of the n-dimensional full cube. Sign rank is invariant under transposition, and the full cube has sign rank n. Hence $\\mathrm{SR}(\\mathcal U_n)=n$.",
+  "references": "\\cite{alon2016sign}"
+}

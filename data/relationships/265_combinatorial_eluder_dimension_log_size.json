@@ -1,0 +1,12 @@
+{
+  "id": 265,
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/log_size",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, $\\mathrm{Edim}(\\mathcal H)\\geq\\log_2|\\mathcal H|$.",
+  "status": "established",
+  "proof": "Repeatedly choose a coordinate on which the current version space disagrees, retain a largest label fibre, and continue until the version space is a singleton. In the binary case each step retains at least half the current class, so this constructs an eluder sequence of length at least $\\log_2|\\mathcal H|$.",
+  "references": "\\cite{hanneke2024star_eluder}",
+  "short_name": "combinatorial_eluder_dimension_log_size",
+  "name": "Combinatorial Eluder Dimension / Log Size"
+}

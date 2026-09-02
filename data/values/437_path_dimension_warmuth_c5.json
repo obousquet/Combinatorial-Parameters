@@ -1,0 +1,12 @@
+{
+  "id": 437,
+  "name": "Path Dimension of Warmuth's $C_5$ Class",
+  "short_name": "path_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/path_dimension",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On the coordinate set $\\{0,1,2,4\\}$, the ordering $0,1,2,4$ and starting trace $0110$ give a full path through five realized traces.  A length-five path would have to use the full five-coordinate projection; enumerating its $5!$ coordinate orderings and starting traces finds no full path of length five.  Hence the path dimension is four.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

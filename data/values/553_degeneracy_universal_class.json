@@ -1,0 +1,11 @@
+{
+  "id": 553,
+  "parameter_id": "#parameters/degeneracy",
+  "class_id": "#classes/universal_class",
+  "value": "$0$",
+  "status": "established",
+  "proof": "The 1-inclusion graph is edgeless, so every induced subgraph has minimum degree zero and its degeneracy is zero.",
+  "references": "\\cite{haussler1988predicting,chornomaz2025spherical}",
+  "short_name": "degeneracy_universal_class",
+  "name": "Degeneracy of Universal Class"
+}

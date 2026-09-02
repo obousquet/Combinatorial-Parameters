@@ -1,0 +1,11 @@
+{
+  "id": 542,
+  "parameter_id": "#parameters/size",
+  "class_id": "#classes/universal_class",
+  "value": "$n$",
+  "status": "established",
+  "proof": "By definition $\\mathcal U_n=\\{u_i:i\\in[n]\\}$ consists of exactly n distinct hypotheses.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "size_universal_class",
+  "name": "Size of Universal Class"
+}

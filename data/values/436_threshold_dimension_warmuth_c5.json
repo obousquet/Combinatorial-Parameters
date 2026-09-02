@@ -1,0 +1,12 @@
+{
+  "id": 436,
+  "name": "Threshold Dimension of Warmuth's $C_5$ Class",
+  "short_name": "threshold_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/threshold_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On two adjacent cyclic coordinates, the ten concepts realize the traces $00,10,11$, yielding a threshold chain of length two.  Enumerating the traces on each of the ten three-coordinate projections shows that none contains all four initial-segment traces of a length-three threshold chain.  Thus the threshold dimension is exactly two.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

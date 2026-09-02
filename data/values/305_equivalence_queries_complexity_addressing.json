@@ -1,0 +1,11 @@
+{
+  "id": 305,
+  "name": "Equivalence Queries Complexity of Addressing",
+  "short_name": "equivalence_queries_complexity_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$\\lfloor\\log n\\rfloor$",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{Q}_{\\mathrm{eq}}=\\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Addressing.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}"
+}

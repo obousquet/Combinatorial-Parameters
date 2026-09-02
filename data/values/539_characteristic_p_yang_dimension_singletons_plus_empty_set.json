@@ -1,0 +1,12 @@
+{
+  "id": 539,
+  "name": "Characteristic-p Yang Dimension of Singletons plus empty set",
+  "short_name": "characteristic_p_yang_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/characteristic_p_yang_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The delta-function class together with the all-zero function has Yang's explicit minimal one-dimensional cellular resolution over every field. Hence $\\mathrm Y_p=1$.",
+  "references": "\\cite{yang2018homological}; see the full arXiv version, the delta-functions-plus-zero example."
+}

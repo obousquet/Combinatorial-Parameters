@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/vc_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "The class shatters every singleton but no two-element set.",
+  "status": "established",
+  "proof": "Every coordinate has both labels among the class, so VC dimension is at least one.  No two ordinary coordinates can both be positive in one concept; an ordinary coordinate can be positive only together with its unique tag; and no two tag coordinates are simultaneously positive.  Thus every two-coordinate projection omits at least one of the four patterns, so VC dimension is exactly one.",
+  "references": "\\cite{maass1992lower}"
 }

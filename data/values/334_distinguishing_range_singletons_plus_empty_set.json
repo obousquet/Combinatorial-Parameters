@@ -1,0 +1,11 @@
+{
+  "id": 334,
+  "name": "Distinguishing Range of Singletons plus Empty Set",
+  "short_name": "distinguishing_range_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "If coordinate $i$ is omitted, the empty concept and singleton $\\{i\\}$ have identical empty traces. Thus every coordinate is necessary, and the full domain distinguishes all concepts."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 251,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, the largest projected one-inclusion average degree is at most its effective range.",
+  "status": "established",
+  "proof": "Each coordinate projection has effective range at most \\mathrm E(\\mathcal H), and hence all degrees in its 1-inclusion graph are at most \\mathrm E(\\mathcal H). Its average degree is at most that value. Maximize over projections.",
+  "references": "\\cite{haussler1994predicting}",
+  "short_name": "effective_range_projected_double_density_or_projected_average_degree",
+  "name": "Effective Range / Projected Double Density or Projected Average Degree"
+}

@@ -1,13 +1,34 @@
 {
   "id": 39,
   "name": "Stable Labeled Sample Compression",
-  "symbol": "$\\mathrm{sLSC}$",
+  "symbol": "\\mathrm{sLSC}",
   "category": "compression",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "stable_labeled_sample_compression"
+  "strictly_monotonic": null,
+  "definition": "The **Stable Labeled Sample Compression** is the minimum size of a labeled sample compression scheme such that removing any examples outside its compression set leaves the reconstructed hypothesis unchanged.",
+  "graph_summary": "Labeled compression size under reconstruction stability.",
+  "origin_references": "The stability condition for sample compression schemes is used in \\cite{bousquet2020proper,hanneke2021stable}.",
+  "short_name": "stable_labeled_sample_compression",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Restrict a stable, possibly improper labeled compression scheme for $\\mathcal H$ to samples realizable by $\\mathcal G\\subseteq\\mathcal H$.  Consistency and the stability identity are retained unchanged.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Use the stable scheme on a sample over the retained coordinates and restrict its reconstruction.  Projected-realizable samples are realizable by an extension in $\\mathcal H$; both the consistency guarantee and stability survive restriction, with unchanged size.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

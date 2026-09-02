@@ -1,0 +1,11 @@
+{
+  "id": 607,
+  "name": "Dual Antipodal VC Dimension of Half-intervals",
+  "short_name": "dual_antipodal_vc_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/dual_antipodal_vc_dimension",
+  "value": "$\\begin{cases}1&n=1,\\\\2&n\\geq2.\\end{cases}$",
+  "status": "established",
+  "proof": "The traces of any chosen initial segments form a chain. For two distinct initial segments, the two endpoint coordinates induce $11$ and one of $01,10$, so both complementary pairs on two hypotheses occur when $n\\geq2$. After ordering three chosen segments by reverse inclusion, every coordinate trace is one of $000$, $100$, $110$, and $111$; these cover only three of the four complementary pairs, so three hypotheses cannot be dually antipodally shattered. Thus the value is two for $n\\geq2$; the one-point case has value one.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

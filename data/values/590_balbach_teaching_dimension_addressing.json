@@ -1,0 +1,12 @@
+{
+  "id": 590,
+  "name": "Balbach Teaching Dimension of Addressing",
+  "short_name": "balbach_teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For Addressing, ordinary teaching dimension and recursive teaching dimension are both one. The established sandwich $\\mathrm{TD}\\ge\\mathrm{BTD}\\ge\\mathrm{RTD}$ therefore forces $\\mathrm{BTD}=1$.",
+  "references": "\\cite{zilles2011models,balbach2008measuring,maass1992lower}; derived using established TD and RTD values"
+}

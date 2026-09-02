@@ -1,0 +1,12 @@
+{
+  "id": 518,
+  "name": "List Replicability Number of Universal Class",
+  "short_name": "list_replicability_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/list_replicability",
+  "value": "$\\lceil(n+1)/2\\rceil$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The cited paper combines its list-replicable learner for the universal class with its lower bound from dual antipodal VC dimension to obtain $\\mathrm{LR}(\\mathcal U_n)=\\lceil(n+1)/2\\rceil$.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

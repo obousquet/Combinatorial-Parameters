@@ -26,11 +26,24 @@
       "latex_output": null,
       "status": "The website graph is derived from these facts. The survey's explanatory hierarchy remains editorial."
     },
+    "relationship_proofs": {
+      "authority": "latex",
+      "source": "main.tex and included prose files, addressed by stable LaTeX labels",
+      "database_pointer": "data/relationships/*.json: latex_proof_label and proof_source",
+      "status": "The database owns the structured fact; the LaTeX survey owns any canonical full proof. Do not duplicate a full proof in both representations."
+    },
     "parameter_values": {
       "authority": "database",
       "source": "data/values/*.json",
       "latex_output": "includes/generated/val_table.tex",
       "generator": "sync/generate_latex_catalog.py --section value-table"
+    },
+    "value_proofs": {
+      "authority": "database",
+      "source": "data/values/*.json: proof and references",
+      "latex_output": "includes/generated/value_proofs.tex",
+      "generator": "sync/generate_latex_catalog.py --section value-proofs",
+      "status": "The survey imports a labelled appendix generated from the database, so each concise value proof has one editable source and one survey location."
     },
     "bibliography": {
       "authority": "database",

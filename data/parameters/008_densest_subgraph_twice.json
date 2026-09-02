@@ -1,14 +1,37 @@
 {
   "id": 8,
   "name": "Densest Subgraph (twice)",
-  "symbol": "$\\mathrm{dens}^*$",
+  "symbol": "\\mathrm{dens}^*",
   "definition": "The **densest subgraph dimension** of a concept class is equal to twice the density of the densest subgraph (a.k.a. **subgraph density**) of its $1$-inclusion graph.",
-  "comments": "The densest subgraph is dual to the lowest outdegree orientation.",
   "category": "graph-based",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "densest_subgraph_twice"
+  "short_name": "densest_subgraph_twice",
+  "comments": "The densest subgraph is dual to the lowest outdegree orientation. Conditioning gives an induced subgraph of the $1$-inclusion graph, so this parameter is c-monotonic.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "The 1-inclusion graph of a subfamily is an induced subgraph of the original graph. Every subgraph considered in the densest-subgraph maximum for the subfamily is therefore also a subgraph considered for the original class.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Conditioning gives an induced subgraph of the one-inclusion graph.  The maximum subgraph density cannot increase on an induced subgraph.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{000,001,110\\}$ has a single one-inclusion edge, hence densest-subgraph value 1. Projecting to the last two coordinates gives $\\{00,01,10\\}$, a two-edge path whose doubled density is $4/3$.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

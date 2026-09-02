@@ -1,0 +1,12 @@
+{
+  "id": 380,
+  "name": "No-Clashing Teaching Dimension of Half-intervals",
+  "short_name": "noclashing_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The endpoint assignment $[i]\\mapsto(i,1)$ is already a positive non-clashing teacher mapping of width one. Width zero cannot distinguish a nontrivial class.",
+  "references": "\\cite{KSZ2019}"
+}

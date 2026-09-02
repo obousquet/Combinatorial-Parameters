@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/proper_stable_sample_compression",
   "parameter_2_id": "#parameters/proper_unlabeled_sample_compression",
   "relationship_type": "larger",
+  "references": "\\cite{hanneke2021stable,bousquet2020proper,chalopin2022unlabeled}",
   "details": "Definition",
+  "status": "established",
+  "proof": "Proper stable unlabeled compression adds stability to proper unlabeled compression. Restricting the allowed compression functions cannot decrease the minimum size.",
   "short_name": "proper_stable_sample_compression_proper_unlabeled_sample_compression",
   "name": "Proper Stable Sample Compression / Proper Unlabeled Sample Compression"
 }

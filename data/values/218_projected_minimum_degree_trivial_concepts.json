@@ -1,0 +1,11 @@
+{
+  "id": 218,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A one-coordinate projection is a single edge, with minimum degree one.  Any projection has at most two vertices and cannot have minimum degree above one.",
+  "name": "Projected Minimum Degree of Trivial concepts",
+  "short_name": "projected_minimum_degree_trivial_concepts"
+}

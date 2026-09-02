@@ -1,7 +1,7 @@
 {
   "id": 16,
   "name": "Unlabeled sample compression",
-  "symbol": "$\\mathrm{USC}$",
+  "symbol": "\\mathrm{USC}",
   "description": "Minimum size of an unlabeled sample compression scheme",
   "category": "compression",
   "symmetric": true,
@@ -9,6 +9,27 @@
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "unlabeled_sample_compression"
+  "strictly_monotonic": null,
+  "definition": "The **Unlabeled Sample Compression** of $\\mathcal{H}$ is the smallest $k$ for which every realizable labeled sample can be reduced to at most $k$ of its instances, without retaining their labels, from which a reconstruction function returns a hypothesis consistent with the whole sample.",
+  "graph_summary": "Smallest number of unlabeled sample instances sufficient for consistent reconstruction.",
+  "origin_references": "Kuzmin and Warmuth give an early optimal unlabeled-compression construction for maximum classes in \\cite{kuzmin2007unlabeled}. P\u00e1lv\u00f6lgyi and Tardos showed that the optimum can exceed VC dimension, while Chalopin--Chepoi--Moran--Warmuth give a corrected construction for maximum classes; see \\cite{palvolgyi2021unlabeled,chalopin2022unlabeled}.",
+  "short_name": "unlabeled_sample_compression",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Restricting a compression scheme to a subfamily preserves its size and reconstruction guarantee.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Projecting a compression scheme and deleting projected-away coordinates preserves its size and reconstruction guarantee.",
+      "kind": "direct_argument"
+    }
+  }
 }

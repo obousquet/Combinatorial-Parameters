@@ -1,0 +1,12 @@
+{
+  "id": 586,
+  "name": "Proper Stable Labeled Sample Compression of Trivial Concepts",
+  "short_name": "proper_stable_labeled_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/proper_stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established proper stable unlabeled scheme of size one is also a proper stable labeled scheme after retaining its label, so the value is at most one. Proper labeled compression has value one for the two constant hypotheses, and proper stable labeled compression is a restriction of that model, giving the matching lower bound.",
+  "references": "\\cite{FW1995,hanneke2021stable,bousquet2020proper}; derived from the established proper stable unlabeled and proper labeled benchmark values"
+}

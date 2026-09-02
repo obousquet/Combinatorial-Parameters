@@ -1,0 +1,11 @@
+{
+  "id": 316,
+  "name": "Hitting Size of Half-intervals",
+  "short_name": "hitting_size_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty initial segment contains its first coordinate, so that one coordinate is a hitting set. A hitting set cannot be empty."
+}

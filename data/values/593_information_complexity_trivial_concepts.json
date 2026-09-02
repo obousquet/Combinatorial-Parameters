@@ -1,0 +1,11 @@
+{
+  "id": 593,
+  "name": "Information Complexity of Trivial concepts",
+  "short_name": "information_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/information_complexity",
+  "value": "$0$",
+  "status": "established",
+  "proof": "On every realizable sample for either constant target, the first observed label determines that target.  Output that constant function.  Conditional on any realizable distribution, the output is the fixed target function and is therefore independent of the random sample, so $I(S;\\mathcal A(S))=0$.  Nonnegativity of mutual information gives equality.",
+  "references": "\\cite{pradeep2022information}"
+}

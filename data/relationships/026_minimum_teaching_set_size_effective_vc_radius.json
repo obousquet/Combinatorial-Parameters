@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/minimum_teaching_set_size",
   "parameter_2_id": "#parameters/effective_vc_radius",
   "relationship_type": "larger",
+  "details": "For finite classes, by the definition of effective VC radius.",
+  "status": "established",
+  "proof": "Let $d=\\mathrm{VCR}(\\mathcal H)$ and let $T$ be a teaching set of size less than $d$; coordinates outside the effective range may be discarded.  Extend $T$ to a $d$-subset $S$ of the effective range.  Since $S$ is shattered, there is a concept other than the target that agrees with it on $T$ and differs on a point of $S\\setminus T$, contradicting that $T$ teaches the target.  Thus every teaching set has size at least $d$.",
+  "witness": "#classes/warmuth_c5",
   "short_name": "minimum_teaching_set_size_effective_vc_radius",
   "name": "Minimum Teaching Set Size / Effective VC Radius"
 }

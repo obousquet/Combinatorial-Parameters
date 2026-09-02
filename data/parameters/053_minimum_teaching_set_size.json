@@ -1,12 +1,39 @@
 {
   "id": 53,
   "name": "Minimum Teaching Set Size",
-  "symbol": "$\\mathrm{TS}_{\\min}$",
+  "symbol": "\\mathrm{TS}_{\\min}",
   "category": "teaching",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": false,
+  "c_monotonic": false,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "minimum_teaching_set_size"
+  "definition": "The **Minimum Teaching Set Size** of $\\mathcal{H}$ is $\\min_{h\\in\\mathcal{H}}\\operatorname{ts}(h,\\mathcal{H})$, where $\\operatorname{ts}(h,\\mathcal{H})$ is the minimum size of a teaching set for $h$ in $\\mathcal{H}$.",
+  "graph_summary": "Smallest teaching-set size attained by a concept in the class.",
+  "origin_references": "This is the minimum counterpart of the classical teaching-set framework of \\cite{shinohara1991teachability,goldman1995complexity}.",
+  "short_name": "minimum_teaching_set_size",
+  "comments": "Not c-monotonic: $\\mathcal H=\\{000,001,010,100,110\\}$ has minimum teaching-set size $1$, while conditioning the last coordinate to $0$ gives the full two-dimensional cube, whose minimum teaching-set size is $2$.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Counterexample: H={000,001,010,011,100} has minimum teaching-set size 1 because 100 is identified by one coordinate. Its subfamily {000,001,010,011} is the full two-cube and has minimum teaching-set size 2.",
+      "kind": "counterexample"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: H={001,010,011,100} has minimum teaching-set size 1. A two-coordinate projection is the full two-cube {00,01,10,11}, whose minimum teaching-set size is 2.",
+      "kind": "counterexample"
+    },
+    "c_monotonic": {
+      "proof": "Counterexample: H={000,001,010,100,110} has minimum teaching-set size 1; conditioning its last coordinate to 0 gives the full two-cube, whose minimum teaching-set size is 2.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

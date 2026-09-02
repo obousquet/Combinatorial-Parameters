@@ -1,0 +1,12 @@
+{
+  "id": 476,
+  "name": "Proper Stable Sample Compression of Trivial concepts",
+  "short_name": "proper_stable_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/proper_stable_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The stable size-one unlabeled scheme reconstructs only the two constant concepts in the class, so it is proper.  The ordinary unlabeled lower bound rules out size zero.",
+  "references": "\\cite{hanneke2021stable}"
+}

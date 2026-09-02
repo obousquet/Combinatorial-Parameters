@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/occasional_onesided_getback",
   "parameter_2_id": "#parameters/best_mistakes",
   "relationship_type": "larger",
-  "details": "Lemma",
+  "details": "O1G has optional mistake-only feedback, while the favorable mistake model supplies full labels.",
+  "status": "established",
+  "proof": "Any favorable-sequence full-feedback strategy can be used in the best-mistakes model, whereas an O1G learner must operate when feedback may be withheld and every supplied signal only identifies a mistake.  The full-feedback model can simulate O1G and may reveal strictly more information, so $\\mathrm{M}_{\\mathrm{best}}(\\mathcal H)\\le\\mathrm{M}_{\\mathrm{o1g}}(\\mathcal H)$.",
+  "references": "\\cite{ben1997online}",
   "short_name": "occasional_onesided_getback_best_mistakes",
   "name": "Occasional One-Sided Getback / Best Mistakes"
 }

@@ -1,12 +1,38 @@
 {
   "id": 54,
   "name": "Maximum Teaching Set Size",
-  "symbol": "$\\mathrm{TS}_{\\max}$",
+  "symbol": "\\mathrm{TS}_{\\max}",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "maximum_teaching_set_size"
+  "definition": "The **Maximum Teaching Set Size** of $\\mathcal{H}$ is $\\max_{h\\in\\mathcal{H}}\\operatorname{ts}(h,\\mathcal{H})$. It is the classical teaching dimension.",
+  "graph_summary": "Largest minimum teaching-set size; equal to the teaching dimension.",
+  "origin_references": "This is the classical teaching dimension of \\cite{shinohara1991teachability,goldman1995complexity}.",
+  "short_name": "maximum_teaching_set_size",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A teaching set for a target remains a teaching set after restricting to a subfamily. Therefore every remaining target has no larger minimum teaching-set size, and taking their maximum cannot increase the value.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict every target's teaching set to the unfixed coordinates.  The restricted sample still distinguishes the target within the conditioned fibre.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "This parameter is exactly equal to Teaching Dimension by the established relationship `teaching_dimension_maximum_teaching_set_size`; its p monotonic classification transfers unchanged.",
+      "kind": "equality_transfer"
+    }
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "id": 629,
+  "name": "Radon Number of Trivial Concepts",
+  "short_name": "radon_number_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/radon_number",
+  "value": "2",
+  "value_class": "constant",
+  "status": "established",
+  "proof": "The class consists of the two constant hypotheses.  They form a Radon-independent pair: for their only nontrivial bipartition, any coordinate separates the two singleton convex hulls.  No Radon-independent set can have more than the two hypotheses in the class.",
+  "references": "\\cite{chase2024dual}"
+}

@@ -3,7 +3,11 @@
   "parameter_1_id": "#parameters/occasional_onesided_getback",
   "parameter_2_id": "#parameters/unlabeled_sample_compression",
   "relationship_type": "larger",
-  "details": "Lemma",
+  "details": "For finite concept classes, an OOG learner induces an unlabeled sample-compression scheme of no greater size.",
+  "status": "established",
+  "latex_proof_label": "lem:oog-compression",
+  "proof_source": "LaTeX survey, OOG/compression lemma (lem:oog-compression).",
+  "references": "\\cite{ben1997online}",
   "short_name": "occasional_onesided_getback_unlabeled_sample_compression",
   "name": "Occasional One-Sided Getback / Unlabeled sample compression"
 }

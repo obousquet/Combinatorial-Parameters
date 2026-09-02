@@ -1,0 +1,12 @@
+{
+  "id": 618,
+  "name": "Minimum Star Number of Trivial Concepts",
+  "short_name": "minimum_star_number_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The general bounds $\\mathrm{VC}\\leq\\mathrm S_{\\mathrm{min}}\\leq\\mathrm S$ are both one for the two constant concepts, so the minimum star number is one.",
+  "references": "\\cite{hanneke2024star_eluder}"
+}

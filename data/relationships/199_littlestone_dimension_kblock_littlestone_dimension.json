@@ -1,0 +1,13 @@
+{
+  "id": 199,
+  "name": "Littlestone Dimension / $k$-Block Littlestone Dimension",
+  "short_name": "littlestone_dimension_kblock_littlestone_dimension",
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "Every $k$-block shattered tree is an ordinary shattered Littlestone tree.",
+  "proof": "The $k$-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Thus every tree counted by $\\mathrm B_k(\\mathcal H)$ is counted by $\\mathrm L(\\mathcal H)$, and $\\mathrm L(\\mathcal H)\\ge\\mathrm B_k(\\mathcal H)$ for every $k\\ge2$.",
+  "latex_proof_label": "prop:block-littlestone-sandwich",
+  "proof_source": "Proposition \\ref{prop:block-littlestone-sandwich} in the survey."
+}

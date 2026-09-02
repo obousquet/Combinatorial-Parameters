@@ -1,0 +1,12 @@
+{
+  "id": 363,
+  "name": "Positive Teaching Dimension of Singletons",
+  "short_name": "positive_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The unique positive coordinate of a singleton distinguishes it from every other singleton. A nontrivial class cannot have positive teaching dimension zero.",
+  "references": "\\cite{balbach2008measuring}"
+}

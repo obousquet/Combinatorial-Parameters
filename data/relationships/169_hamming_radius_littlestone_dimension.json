@@ -1,0 +1,12 @@
+{
+  "id": 169,
+  "parameter_1_id": "#parameters/hamming_radius",
+  "parameter_2_id": "#parameters/littlestone_dimension",
+  "relationship_type": "larger",
+  "details": "For finite concept classes, Hamming radius dominates Littlestone dimension.",
+  "status": "established",
+  "latex_proof_label": "lem:littlestone-hamming-radius",
+  "proof_source": "LaTeX survey, Littlestone/Hamming-radius lemma (lem:littlestone-hamming-radius).",
+  "short_name": "hamming_radius_littlestone_dimension",
+  "name": "Hamming Radius / Littlestone Dimension"
+}

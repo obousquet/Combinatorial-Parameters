@@ -1,0 +1,12 @@
+{
+  "id": 583,
+  "name": "Monotonic Yang Dimension of Trivial Concepts",
+  "short_name": "monotonic_yang_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/monotonic_yang_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The whole two-constant class is an allowed subfamily and has Yang dimension 1. Conversely every subfamily has at most two concepts, and Yang dimension is at most the number of generators minus one, hence at most 1. Therefore $\\mathrm Y^*=1$.",
+  "references": "\\cite{yang2018homological}; derived using the established generator-count bound"
+}

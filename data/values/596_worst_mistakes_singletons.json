@@ -1,0 +1,12 @@
+{
+  "id": 596,
+  "name": "Worst Mistakes of Singletons",
+  "short_name": "worst_mistakes_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Predict $0$ until a positive label appears.  It can appear only at the target singleton's unique coordinate, so this strategy makes at most one mistake and then identifies the target.  Zero mistakes are impossible because at any coordinate some singleton target has label $1$ and another has label $0$.",
+  "references": "\\cite{ben1997online}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 552,
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "class_id": "#classes/universal_class",
+  "value": "$0$",
+  "status": "established",
+  "proof": "The 1-inclusion graph is edgeless, and every one of its subgraphs is edgeless. Thus the maximum subgraph average degree is zero.",
+  "references": "\\cite{haussler1994predicting,chornomaz2025spherical}",
+  "short_name": "densest_subgraph_twice_universal_class",
+  "name": "Densest Subgraph (twice) of Universal Class"
+}

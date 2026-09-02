@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/hamming_radius",
   "value": "$2$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "For the usual asymptotic construction (in particular, with at least two tag coordinates).",
+  "status": "established",
+  "proof": "The empty set is a Hamming-ball center of radius two because every concept has size at most two.  Conversely, a radius-one center must be empty or a singleton in order to be within one of $\\emptyset$.  Among the at least two tag singleton concepts, one is then at distance two from that center.  Thus the minimum enclosing radius is exactly two.",
+  "references": "\\cite{maass1992lower}"
 }

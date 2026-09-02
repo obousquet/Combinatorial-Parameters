@@ -1,0 +1,11 @@
+{
+  "id": 505,
+  "name": "Spherical Dimension of Half-intervals",
+  "short_name": "spherical_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/spherical_dimension",
+  "value": "$0$",
+  "status": "established",
+  "proof": "Half-intervals are thresholds. The low-VC classification of spherical dimension gives value zero for every non-singleton subclass of thresholds.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

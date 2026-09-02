@@ -1,0 +1,14 @@
+{
+  "id": 254,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/dual_antipodal_vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "For every finite binary class, the stronger counting bound $\\mathrm E(\\mathcal H)\\geq2^{\\mathrm{VC}^{*a}(\\mathcal H)-1}-1$ holds. In particular $\\mathrm E(\\mathcal H)\\geq\\mathrm{VC}^{*a}(\\mathcal H)-1$.",
+  "status": "established",
+  "proof": "If d concepts are dually antipodally shattered, each of the $2^{d-1}$ complementary pairs of label patterns is realized, up to a global label flip, by a coordinate. The pair consisting of the all-zero and all-one patterns is the only pair whose realizing coordinate can be constant on the chosen concepts. Every other pair is nonconstant, so its coordinate is effective. Thus at least $2^{d-1}-1$ effective coordinates occur. Since $2^{d-1}-1\\geq d-1$ for every d, the stated affine bound follows.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "effective_range_dual_antipodal_vc_dimension_affine",
+  "name": "Effective Range / Dual Antipodal VC Dimension (affine)"
+}

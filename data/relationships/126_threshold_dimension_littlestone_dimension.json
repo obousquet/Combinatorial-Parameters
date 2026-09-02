@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/threshold_dimension",
   "parameter_2_id": "#parameters/littlestone_dimension",
   "relationship_type": "log",
-  "details": "Theorem",
+  "details": "Shelah--Hodges threshold/Littlestone comparison.",
+  "status": "established",
+  "proof": "The threshold--Littlestone comparison states $\\mathrm{T}(\\mathcal H)\\geq\\lceil\\log_2 \\mathrm{Ldim}(\\mathcal H)\\rceil$.  This is precisely the asserted logarithmic lower bound (with the harmless integer rounding made explicit).",
+  "references": "\\cite{alon2020closure}",
   "short_name": "threshold_dimension_littlestone_dimension",
   "name": "Threshold Dimension / Littlestone Dimension",
   "witness": "#classes/halfintervals"

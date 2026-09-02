@@ -1,0 +1,11 @@
+{
+  "id": 91,
+  "name": "SCO Dimension",
+  "short_name": "sco_dimension",
+  "symbol": "\u005cmathrm{SCO}",
+  "category": "algebraic",
+  "definition": "The **SCO dimension** $\u005cmathrm{SCO}(\u005cmathcal H)$ is the least $d$ for which, for some $\u005calpha>0$ and $0<\u005cbeta<1/2$, realizable learning of $\u005cmathcal H$ admits an $(\u005calpha,\u005cbeta)$-reduction to a $d$-dimensional stochastic convex optimization problem: approximately optimizing its convex loss decodes to a hypothesis of error at most $\u005cbeta$.",
+  "graph_summary": "Least dimension of a stochastic-convex-optimization problem to which realizable learning of the class reduces.",
+  "description": "A reduction-based learning dimension; the reduction permits fixed positive optimization slack and error below one half.",
+  "origin_references": "Defined in the SCO-reduction framework summarized in \u005ccite{chornomaz2025spherical}."
+}

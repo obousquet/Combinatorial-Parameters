@@ -1,0 +1,11 @@
+{
+  "id": 516,
+  "name": "Extremal-Extension VC Dimension of Singletons plus empty set",
+  "short_name": "extremal_extension_vc_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/extremal_extension_vc_dimension",
+  "value": "$1$",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The class has $n+1$ concepts and exactly $n+1$ shattered sets: the empty set and the $n$ singletons. It is therefore itself extremal of VC dimension one."
+}

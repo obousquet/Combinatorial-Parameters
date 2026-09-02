@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/densest_subgraph_twice",
   "parameter_2_id": "#parameters/degeneracy",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For every finite $1$-inclusion graph.",
   "short_name": "densest_subgraph_twice_degeneracy",
-  "name": "Densest Subgraph (twice) / Degeneracy"
+  "name": "Densest Subgraph (twice) / Degeneracy",
+  "status": "established",
+  "proof": "For every induced subgraph, its average degree is at least its minimum degree.  Maximize the former over subgraphs to obtain the densest-subgraph parameter and the latter to obtain degeneracy.",
+  "references": "\\cite{haussler1994predicting}"
 }

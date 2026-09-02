@@ -1,0 +1,14 @@
+{
+  "id": 208,
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "log",
+  "multiplicative_constant": "\\tfrac12",
+  "details": "Assouad proved $\u005cmathrm{VC}^{*}(\u005cmathcal H)\u005cleq2^{\u005cmathrm{VC}(\u005cmathcal H)+1}-1$. Thus, when the dual VC dimension is positive, $\u005cmathrm{VC}(\u005cmathcal H)\u005cgeq\u005ctfrac12\u005clog_2\u005cmathrm{VC}^{*}(\u005cmathcal H)$.",
+  "status": "established",
+  "proof": "For $d=\u005cmathrm{VC}(\u005cmathcal H)\u005cgeq1$, Assouad's bound gives $\u005clog_2\u005cmathrm{VC}^{*}(\u005cmathcal H)\u005cleq d+1\u005cleq2d$. The zero case has dual VC dimension zero.",
+  "references": "\u005ccite{assouad1983densite}",
+  "witness": "#classes/full_cube",
+  "short_name": "vc_dimension_dual_vc_dimension_log",
+  "name": "VC Dimension / Dual VC Dimension (logarithmic)"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 339,
+  "name": "Effective Range of Blockwise-Addressing",
+  "short_name": "effective_range_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$2^{d+1}+1$",
+  "status": "established",
+  "proof": "The domain consists of $z$, the $2^d$ coordinates $x_i$, and the $2^d$ coordinates $y_i$. Each coordinate changes value among the displayed $f_i,g_i$, so every domain coordinate is effective.",
+  "references": "\\cite{ben1997online}"
+}

@@ -1,12 +1,23 @@
 {
   "id": 41,
   "name": "Proper Stable Labeled Sample Compression",
-  "symbol": "$\\mathrm{psLSC}$",
+  "symbol": "\\mathrm{psLSC}",
   "category": "compression",
   "symmetric": true,
-  "monotonic": false,
   "p_monotonic": true,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "proper_stable_labeled_sample_compression"
+  "c_monotonic": true,
+  "definition": "The **Proper Stable Labeled Sample Compression** is the minimum size of a labeled sample compression scheme that is both proper, with reconstruction in $\\mathcal{H}$, and stable under removal of unselected examples.",
+  "graph_summary": "Proper stable labeled-compression size.",
+  "short_name": "proper_stable_labeled_sample_compression",
+  "origin_references": "The stable-compression condition is used in \u005ccite{bousquet2020proper,hanneke2021stable}; this parameter additionally requires proper reconstruction.",
+  "monotonicity_evidence": {
+    "p_monotonic": {
+      "proof": "Use the original proper stable labeled scheme on a projected-realizable sample and restrict its reconstructed hypothesis.  The result is a consistent member of the projected class, while the selected labels, stability condition, and size are unchanged.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "The standard restriction of a proper stable labeled compression scheme to a conditioned fibre preserves its size, propriety, and stability.",
+      "kind": "direct_argument"
+    }
+  }
 }

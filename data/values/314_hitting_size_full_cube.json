@@ -1,0 +1,11 @@
+{
+  "id": 314,
+  "name": "Hitting Size of Full Cube",
+  "short_name": "hitting_size_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The Full Cube contains every singleton, forcing every coordinate into a hitting set. The full domain is a hitting set."
+}

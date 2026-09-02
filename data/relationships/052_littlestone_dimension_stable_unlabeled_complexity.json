@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/stable_unlabeled_complexity",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "A conservative optimal online learner yields stable compression from its mistake examples.",
+  "proof": "Use a conservative online learner with mistake bound $\\mathrm L(\\mathcal H)$, such as the standard optimal algorithm, and cycle it through a realizable sample until a full pass is mistake-free.  Retain only the examples on which it made a mistake.  There are at most $\\mathrm L(\\mathcal H)$; their labels are recoverable from the learner's successive mistaken predictions, and removing any unretained example leaves the final predictor unchanged.  This gives a stable unlabeled compression scheme of that size.",
+  "references": "\\cite{hanneke2021stable}",
   "short_name": "littlestone_dimension_stable_unlabeled_complexity",
   "name": "Littlestone Dimension / Stable Unlabeled Complexity"
 }

@@ -1,0 +1,12 @@
+{
+  "id": 595,
+  "name": "Worst Mistakes of Full Cube",
+  "short_name": "worst_mistakes_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Even when the entire instance sequence is known in advance, the learner can err at most once at each coordinate: predict arbitrarily on its first occurrence and reuse the observed label afterwards.  Conversely, present all $n$ coordinates once.  Against any deterministic learner, choose each target label opposite to its first prediction.  These $n$ labels define a full-cube target, so the adversary forces $n$ mistakes.",
+  "references": "\\cite{ben1997online}"
+}

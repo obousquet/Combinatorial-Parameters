@@ -1,0 +1,12 @@
+{
+  "id": 233,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/characteristic_zero_yang_dimension",
+  "relationship_type": "larger",
+  "details": "Characteristic-zero instance of the Yang generator-count bound.",
+  "status": "established",
+  "proof": "Yang's canonical ideal has one minimal monomial generator for each concept. The Taylor resolution on $|\\mathcal H|$ generators over $\\mathbb Q$ has length at most $|\\mathcal H|-1$ for a nonempty class. Thus $\\mathrm Y_0(\\mathcal H)\\leq|\\mathcal H|$ (and the empty class has value 0 by convention).",
+  "references": "\\cite{yang2018homological}",
+  "short_name": "size_characteristic_zero_yang_dimension",
+  "name": "Size / Characteristic-zero Yang Dimension"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 549,
+  "parameter_id": "#parameters/maximum_degree",
+  "class_id": "#classes/universal_class",
+  "value": "$0$",
+  "status": "established",
+  "proof": "For distinct i,j, the hypotheses $u_i$ and $u_j$ disagree precisely on the $2^{n-1}$ subsets containing exactly one of i,j. Thus no two distinct hypotheses differ on one coordinate, so the 1-inclusion graph has no edges.",
+  "references": "\\cite{haussler1994predicting,chornomaz2025spherical}",
+  "short_name": "maximum_degree_universal_class",
+  "name": "Maximum Degree of Universal Class"
+}

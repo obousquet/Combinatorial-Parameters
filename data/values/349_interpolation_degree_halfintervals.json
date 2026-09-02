@@ -1,0 +1,11 @@
+{
+  "id": 349,
+  "name": "Interpolation Degree of Half-intervals",
+  "short_name": "interpolation_degree_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For target values $a_i$ on initial segments $[i]$, the linear polynomial $a_1x_1+\\sum_{i=2}^n(a_i-a_{i-1})x_i$ evaluates to $a_i$ on $[i]$. Constants do not interpolate all functions on this non-singleton class."
+}

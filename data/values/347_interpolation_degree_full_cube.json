@@ -1,0 +1,11 @@
+{
+  "id": 347,
+  "name": "Interpolation Degree of Full Cube",
+  "short_name": "interpolation_degree_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every function on the Boolean cube has a multilinear polynomial representation of degree at most $n$. The parity function has nonzero coefficient on the degree-$n$ monomial in its unique multilinear representation, so degree below $n$ cannot suffice."
+}

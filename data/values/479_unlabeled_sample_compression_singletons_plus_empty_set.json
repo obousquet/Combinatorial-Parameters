@@ -1,0 +1,12 @@
+{
+  "id": 479,
+  "name": "Unlabeled Sample Compression of Singletons plus Empty Set",
+  "short_name": "unlabeled_sample_compression_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Retain the unique positive instance when one is present and reconstruct its singleton; retain nothing from an all-negative sample and reconstruct the empty concept.  This is consistent.  Size zero cannot handle incompatible positive and negative one-point samples.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

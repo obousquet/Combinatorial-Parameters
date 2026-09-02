@@ -4,7 +4,10 @@
   "parameter_2_id": "#parameters/maximum_degree",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
+  "witness": "#classes/singletons",
   "short_name": "projected_maximal_degree_maximum_degree",
-  "name": "Projected Maximal Degree / Maximum Degree"
+  "name": "Projected Maximal Degree / Maximum Degree",
+  "status": "established",
+  "proof": "The projected maximal degree maximizes maximum degree over projections.  The full-domain projection is the original class, so it is one of the candidates."
 }

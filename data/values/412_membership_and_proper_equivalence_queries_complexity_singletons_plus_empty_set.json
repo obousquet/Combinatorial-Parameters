@@ -1,0 +1,12 @@
+{
+  "id": 412,
+  "name": "Membership and Proper Equivalence Queries Complexity of Singletons plus empty set",
+  "short_name": "membership_and_proper_equivalence_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/membership_and_proper_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The empty concept is a member of the class, so the preceding one-query equivalence strategy is proper.  Its positive counterexample identifies the singleton target, and zero queries are impossible for a nontrivial class.",
+  "references": "\\cite{angluin1988queries}"
+}

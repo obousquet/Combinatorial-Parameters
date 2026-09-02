@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/majority_complexity",
   "parameter_2_id": "#parameters/littlestone_dimension",
   "relationship_type": "larger",
+  "details": "The pointwise-majority (halving) learner is one particular equivalence-query strategy.",
+  "status": "established",
+  "proof": "The halving/majority procedure is one particular equivalence-query learner. Its query count is therefore at least the optimal equivalence-query complexity, which equals Littlestone dimension.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}",
   "short_name": "majority_complexity_littlestone_dimension",
   "name": "Majority Complexity / Littlestone Dimension"
 }

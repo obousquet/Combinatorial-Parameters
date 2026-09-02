@@ -4,7 +4,10 @@
   "short_name": "maximum_degree_tagged_singletons",
   "class_id": "#classes/tagged_singletons",
   "parameter_id": "#parameters/maximum_degree",
-  "value": "$\\left\\lceil\\frac{n}{2}\\right\\rceil$",
+  "value": "$\\left\\lfloor\\frac{n}{2}\\right\\rfloor+\\lceil\\log n\\rceil+2$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "For the displayed tagged-singletons formula and the usual asymptotic range of $n$; the legacy $n/2$ entry omitted the tag-allocation offset.",
+  "status": "established",
+  "proof": "The $1$-inclusion graph has an edge from $\\emptyset$ to every tag singleton, and an edge from the tag singleton $\\{n+\\ell\\}$ to each tagged pair carrying tag $\\ell$.  For $\\ell=1$, the definition of $f$ assigns exactly $\\lfloor n/2\\rfloor+\\lceil\\log n\\rceil+1$ ordinary coordinates to that tag.  Its degree is therefore $\\lfloor n/2\\rfloor+\\lceil\\log n\\rceil+2$.  Later tag groups are smaller, every tagged pair has degree one, and the empty concept has only $\\lceil\\log n\\rceil$ neighbours, proving this is the maximum.",
+  "references": "\\cite{maass1992lower}"
 }

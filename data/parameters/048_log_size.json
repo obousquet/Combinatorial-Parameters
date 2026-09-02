@@ -1,8 +1,8 @@
 {
   "id": 48,
   "name": "Log Size",
-  "symbol": "$\\log \\mathrm{H}$",
-  "definition": "The **Log Size** of a family $\\mathcal{H}$ is simply the (binary) log of its cardinality, $$ \\log |\\mathcal{H|} $$",
+  "symbol": "\\log \\mathrm{H}",
+  "definition": "The **Log Size** of a family $\\mathcal{H}$ is simply the binary logarithm of its cardinality, $$ \\log |\\mathcal{H}|. $$",
   "category": "basic",
   "symmetric": true,
   "monotonic": true,
@@ -11,5 +11,31 @@
   "doubly_monotonic": true,
   "strictly_monotonic": true,
   "strict_c_monotonic": true,
-  "short_name": "log_size"
+  "short_name": "log_size",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A subfamily has at most as many distinct concepts as the original class, and the logarithm is increasing.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A coordinate projection has at most as many distinct concepts as the original class, and the logarithm is increasing.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "If $x$ is effective then both fibres are nonempty and $|\\mathcal H|=|\\mathcal H_{x=0}|+|\\mathcal H_{x=1}|$, so $\\log|\\mathcal H|$ is strictly larger than the smaller fibre value. Also $\\log|\\mathcal H|=0$ implies $|\\mathcal H|=1$. Thus the definition of strict c-monotonicity holds.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, a doubly monotonic strictly c-monotonic parameter is strictly monotonic.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

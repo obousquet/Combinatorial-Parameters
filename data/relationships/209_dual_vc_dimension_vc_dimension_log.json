@@ -1,0 +1,14 @@
+{
+  "id": 209,
+  "parameter_1_id": "#parameters/dual_vc_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "log",
+  "multiplicative_constant": "\\tfrac12",
+  "details": "Applying Assouad's bound to the dual class gives $\u005cmathrm{VC}(\u005cmathcal H)\u005cleq2^{\u005cmathrm{VC}^{*}(\u005cmathcal H)+1}-1$. Thus, when VC dimension is positive, $\u005cmathrm{VC}^{*}(\u005cmathcal H)\u005cgeq\u005ctfrac12\u005clog_2\u005cmathrm{VC}(\u005cmathcal H)$.",
+  "status": "established",
+  "proof": "Apply Assouad's theorem to $\u005cmathcal H^*$ and use $(\u005cmathcal H^*)^*=\u005cmathcal H$ after identifying duplicate points. For positive $d=\u005cmathrm{VC}^{*}(\u005cmathcal H)$, the resulting logarithm is at most $d+1\u005cleq2d$.",
+  "references": "\u005ccite{assouad1983densite}",
+  "witness": "#classes/universal_class",
+  "short_name": "dual_vc_dimension_vc_dimension_log",
+  "name": "Dual VC Dimension / VC Dimension (logarithmic)"
+}

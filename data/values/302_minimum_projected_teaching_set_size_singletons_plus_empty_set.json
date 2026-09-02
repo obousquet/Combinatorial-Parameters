@@ -1,0 +1,11 @@
+{
+  "id": 302,
+  "name": "Minimum Projected Teaching-Set Size of Singletons plus Empty Set",
+  "short_name": "minimum_projected_teaching_set_size_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/minimum_projected_teaching_set_size",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For a singleton target $\\{i\\}$, projection to the other $n-1$ coordinates turns it into the empty trace; together with the original empty concept and the other singleton traces, this requires all $n-1$ negative coordinates to teach. No projection can give that target more than $n-1$ competing singleton traces, and a projection containing $i$ is taught by its positive coordinate. The empty target has worst projected teaching-set size $n$, but the parameter takes the minimum over targets, hence its value is $n-1$."
+}

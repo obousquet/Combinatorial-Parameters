@@ -1,0 +1,15 @@
+{
+  "id": 259,
+  "parameter_1_id": "#parameters/list_replicability",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "-1",
+  "details": "For finite binary classes with $\\mathrm{VC}(\\mathcal H)\\geq2$, $\\mathrm{LR}(\\mathcal H,\\epsilon)\\geq1+\\lceil\\mathrm{VC}(\\mathcal H)/2\\rceil$ for every $0<\\epsilon<1/2$. Thus $\\mathrm{LR}(\\mathcal H)\\geq\\tfrac12\\mathrm{VC}(\\mathcal H)+1$. The condition $\\mathrm{VC}\\geq2$ is necessary: a complementary two-hypothesis class has $\\mathrm{VC}=1$ but $\\mathrm{LR}=1$.",
+  "status": "established",
+  "proof": "This is the VC-dimensional consequence stated in Theorem 10. It follows from the local Borsuk--Ulam lower bound for list replicability, and survives the $\\epsilon\\to0$ limit in the definition of $\\mathrm{LR}$.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "witness": "#classes/universal_class",
+  "short_name": "list_replicability_vc_dimension_affine",
+  "name": "List Replicability / VC Dimension (affine)"
+}

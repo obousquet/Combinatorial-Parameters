@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/log_shattering",
   "parameter_2_id": "#parameters/majority_complexity",
   "relationship_type": "larger",
+  "details": "Pajor's sandwich theorem bounds log size by log shattering, and halving uses at most log size.",
+  "status": "established",
+  "proof": "The sandwich theorem gives $|\\mathcal H|\\leq |\\operatorname{sh}(\\mathcal H)|$.  Taking binary logarithms yields $\\log|\\mathcal H|\\leq\\log|\\operatorname{sh}(\\mathcal H)|$.  The pointwise-majority halving algorithm uses at most $\\log|\\mathcal H|$ queries, so its complexity is at most log shattering.",
+  "references": "\\cite{bollobas1995defect,maass1992lower}",
   "short_name": "log_shattering_majority_complexity",
   "name": "Log Shattering / Majority Complexity"
 }

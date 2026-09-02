@@ -1,0 +1,13 @@
+{
+  "id": 468,
+  "name": "Log Size Ratio of Blockwise-Addressing",
+  "short_name": "log_size_ratio_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/log_size_ratio",
+  "value": "$\\frac{\\log(2^{d+1}-1)}{\\log(2^{d+1}+2)}$",
+  "value_class": "omega_1",
+  "details": "The construction has $2^{d+1}$ concepts on a domain of $2^{d+1}+1$ coordinates.",
+  "status": "established",
+  "proof": "There are $2^d$ functions f_i and $2^d$ functions g_i. The domain consists of z and two blocks of 2^d coordinates, so it has $2^{d+1}+1$ elements. Substitution into $\\log(|\\mathcal H|-1)/\\log(|\\mathcal X|+1)$ gives the stated expression.",
+  "references": "\\cite{ben1997online}"
+}

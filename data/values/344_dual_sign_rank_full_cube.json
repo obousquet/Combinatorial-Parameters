@@ -1,0 +1,12 @@
+{
+  "id": 344,
+  "name": "Dual Sign Rank of Full Cube",
+  "short_name": "dual_sign_rank_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/dual_sign_rank",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Dual sign rank is at least VC dimension, which is $n$ for the Full Cube. It is at most sign rank, and the cube sign matrix itself has rank $n$; therefore the value is exactly $n$.",
+  "references": "\\cite{alon2016sign}"
+}

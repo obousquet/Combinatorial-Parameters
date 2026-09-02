@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/oriented_diameter",
   "parameter_2_id": "#parameters/threshold_dimension",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "For finite concept classes, oriented diameter dominates threshold dimension.",
+  "latex_proof_label": "lem:elementary-parameter-hierarchy",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
   "witness": "#classes/trivial_concepts",
   "short_name": "oriented_diameter_threshold_dimension",
   "name": "Oriented Diameter / Threshold Dimension"

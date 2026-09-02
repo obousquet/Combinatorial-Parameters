@@ -1,0 +1,12 @@
+{
+  "id": 388,
+  "name": "Proper Labeled Sample Compression of Singletons",
+  "short_name": "proper_labeled_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/proper_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "In the size-one cyclic-boundary scheme, every reconstruction is a singleton and therefore belongs to the class.  It is thus proper, and size zero remains impossible.",
+  "references": "\\cite{FW1995}"
+}

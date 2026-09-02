@@ -1,14 +1,36 @@
 {
   "id": 49,
   "name": "Log Size Ratio",
-  "symbol": "$\\frac{\\log (\\mathrm{H}-1)}{\\log (n+1)}$",
-  "definition": "The **Log Size Ratio** of a family $\\mathcal{H}$ is the ratio of the log of its cardinality to the log of the effective range, $$ \\log \\frac{|\\mathcal{H|}-1}{\\log (n+1)} $$",
+  "symbol": "\\frac{\\log (\\mathrm{H}-1)}{\\log (n+1)}",
+  "definition": "The **Log Size Ratio** of a family $\\mathcal{H}$ over a domain of size $n$ is $$\\frac{\\log(|\\mathcal{H}|-1)}{\\log(n+1)}.$$",
   "category": "basic",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": true,
-  "c_monotonic": true,
-  "doubly_monotonic": true,
+  "p_monotonic": false,
+  "c_monotonic": false,
+  "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "log_size_ratio"
+  "short_name": "log_size_ratio",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For a fixed ambient domain, passing to a subfamily cannot increase $|\\mathcal H|$, and $t\\mapsto\\log(t-1)$ is increasing for $t\\geq2$.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: on a five-coordinate domain let $\\mathcal H=\\{00000,00001,00010,10000\\}$. Its value is $\\log 3/\\log 6$. Projecting to the last two coordinates gives $\\{00,01,10\\}$, of value $\\log 2/\\log 3>\\log 3/\\log 6$. Thus projection can increase the ratio.",
+      "kind": "counterexample"
+    },
+    "c_monotonic": {
+      "proof": "For the same class $\\mathcal H=\\{00000,00001,00010,10000\\}$, condition the first three coordinates to $000$ and delete them. The resulting class is $\\{00,01,10\\}$, whose value $\\log 2/\\log 3$ exceeds $\\log 3/\\log 6$, the value of $\\mathcal H$.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "Doubly monotonicity requires projection monotonicity, which is refuted by the displayed four-concept example.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity requires doubly monotonicity, which fails.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

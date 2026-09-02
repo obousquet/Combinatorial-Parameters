@@ -1,0 +1,12 @@
+{
+  "id": 207,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Every nonempty subgraph of a path has a vertex of degree at most one, while the path itself has minimum degree one.",
+  "name": "Degeneracy of Half-intervals",
+  "short_name": "degeneracy_halfintervals"
+}

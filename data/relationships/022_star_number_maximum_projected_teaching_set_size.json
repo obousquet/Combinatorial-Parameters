@@ -3,6 +3,11 @@
   "parameter_1_id": "#parameters/star_number",
   "parameter_2_id": "#parameters/maximum_projected_teaching_set_size",
   "relationship_type": "equivalence",
+  "status": "established",
+  "details": "For finite concept classes; the equality takes the maximum over all coordinate projections.",
+  "references": "\\cite{hanneke2015minimax}",
+  "latex_proof_label": "lem:star-projected-teaching",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:star-projected-teaching`.",
   "short_name": "star_number_maximum_projected_teaching_set_size",
   "name": "Star number / Maximum Projected Teaching Set Size"
 }

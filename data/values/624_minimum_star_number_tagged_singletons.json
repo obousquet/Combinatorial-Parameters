@@ -1,0 +1,12 @@
+{
+  "id": 624,
+  "name": "Minimum Star Number of Tagged Singletons",
+  "short_name": "minimum_star_number_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Tagged Singletons is intersection-closed: the intersection of two distinct tagged pairs is either empty or their common tag singleton, and all other intersections are also class members. Its VC dimension is one, so Example 2 of the cited paper gives $\\mathrm S_{\\mathrm{min}}=\\mathrm{VC}=1$.",
+  "references": "\\cite{hanneke2024star_eluder,maass1992lower}"
+}

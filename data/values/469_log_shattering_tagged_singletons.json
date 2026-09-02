@@ -1,0 +1,13 @@
+{
+  "id": 469,
+  "name": "Log Shattering of Tagged Singletons",
+  "short_name": "log_shattering_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$\\log(n+\\lceil\\log n\\rceil+1)$",
+  "value_class": "omega_log_n",
+  "details": "The domain has n ordinary coordinates and $\\lceil\\log n\\rceil$ tag coordinates.",
+  "status": "established",
+  "proof": "The empty set and every singleton coordinate set are shattered: each ordinary and tag coordinate varies among the displayed concepts. No two-coordinate set is shattered, since no concept contains two ordinary coordinates, no concept contains two tags, and an ordinary coordinate appears only with its assigned tag. Thus there are exactly $1+n+\\lceil\\log n\\rceil$ shattered sets, whose binary logarithm is the stated value.",
+  "references": "\\cite{maass1992lower}"
+}

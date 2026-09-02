@@ -1,0 +1,11 @@
+{
+  "id": 213,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$0$",
+  "details": "For $n>1$.",
+  "status": "established",
+  "proof": "The original $1$-inclusion graph and every subgraph are edgeless, hence have average degree zero.",
+  "name": "Densest Subgraph (twice) of Trivial concepts",
+  "short_name": "densest_subgraph_twice_trivial_concepts"
+}

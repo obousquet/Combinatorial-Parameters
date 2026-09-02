@@ -52,12 +52,28 @@
         "rendered": true,
         "enum": [
             { "value": "larger", "display_name": "$P_1\\ge P_2$" },
-            { "value": "larger_c", "display_name": "$P_1\\ge cP_2$" },
+            { "value": "larger_c", "display_name": "$P_1\\ge cP_2-d$" },
             { "value": "equivalence", "display_name": "$P_1 = P_2$" },
             { "value": "log", "display_name": "$P_1 \\ge c\\log P_2$" },
             { "value": "sqrt", "display_name": "$P_1 \\ge c\\sqrt{P_2}$" },
             { "value": "inv_log", "display_name": "$P_1 \\ge \\frac{cP_2}{\\log n}$" }
         ]
+    },
+    {
+        "name": "additive_constant",
+        "type": "string",
+        "label": "Additive Constant",
+        "description": "Optional real constant d in the affine bound P_1 >= c P_2 - d. A negative d represents a positive additive term. It is independent of the class, though it may depend on fixed auxiliary parameters.",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "multiplicative_constant",
+        "type": "string",
+        "label": "Multiplicative Constant",
+        "description": "Optional positive factor c in a larger_c bound.  When omitted, c denotes an unspecified positive constant.",
+        "required": false,
+        "rendered": true
     },
     {
         "name": "variant",

@@ -1,0 +1,13 @@
+{
+  "id": 494,
+  "name": "Maximum Teaching-Set Size of Tagged Singletons",
+  "short_name": "maximum_teaching_set_size_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$n/2$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "For the standard tagged-singletons construction, with the ordinary coordinates divided into dyadic tag groups.",
+  "proof": "The first tag singleton requires negative examples on all $n/2$ ordinary coordinates carrying that tag, and these examples suffice. All other concepts have no larger teaching sets. Thus the maximum teaching-set size is $n/2$.",
+  "references": "\\cite{maass1992lower}"
+}

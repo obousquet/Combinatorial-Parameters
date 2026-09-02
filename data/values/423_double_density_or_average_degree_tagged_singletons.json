@@ -1,0 +1,12 @@
+{
+  "id": 423,
+  "name": "Double Density or Average Degree of Tagged Singletons",
+  "short_name": "double_density_or_average_degree_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$\\frac{2(n+\\lceil\\log n\\rceil)}{n+\\lceil\\log n\\rceil+1}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Writing $m=\\lceil\\log n\\rceil$, the $1$-inclusion graph has the empty concept, $m$ tag singletons, and $n$ tagged pairs: hence $n+m+1$ vertices.  Its only edges are the $m$ edges from $\\emptyset$ to tag singletons and the $n$ edges from a tagged pair to its tag singleton.  It therefore has $n+m$ edges, and its average degree is $2(n+m)/(n+m+1)$.",
+  "references": "\\cite{maass1992lower}"
+}

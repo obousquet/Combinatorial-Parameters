@@ -1,0 +1,12 @@
+{
+  "id": 341,
+  "name": "Sign Rank of Trivial Concepts",
+  "short_name": "sign_rank_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The two sign rows are constant opposites. They are realized by the rank-one matrix with one all-positive row and one all-negative row; rank zero cannot realize a nonzero sign pattern.",
+  "references": "\\cite{alon2016sign}"
+}

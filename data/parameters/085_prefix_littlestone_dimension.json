@@ -1,0 +1,34 @@
+{
+  "id": 85,
+  "name": "Prefix-$k$ Littlestone Dimension",
+  "short_name": "prefix_littlestone_dimension",
+  "symbol": "\\mathrm{PL}_k",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": null,
+  "definition": "Fix $k\\ge1$. A **prefix-$k$ Littlestone tree** of depth $d$ is an ordinarily shattered complete binary tree in which the coordinate label is horizontally constant on each of the first $\\min\\{k,d\\}$ levels; after that prefix, labels are unrestricted. The **Prefix-$k$ Littlestone Dimension** $\\mathrm{PL}_k(\\mathcal{H})$ is the largest depth of such a tree. In particular, $\\mathrm{PL}_1=\\mathrm{L}$.",
+  "graph_summary": "Largest shattered tree with a VC-like, level-constant prefix of $k$ queries and an unrestricted tail.",
+  "description": "Database-defined structural variant; no published origin is claimed.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A prefix-constrained shattered tree for a subfamily is still shattered by every containing class, with the same horizontally constant prefix.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Every coordinate queried by a shattered tree for a projection is retained.  Lift, for each leaf, a projected realizing hypothesis to an original hypothesis; the same prefix-constrained tree is then shattered before projection.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding subfamily and projection arguments establish both required forms of monotonicity.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection, so it cannot create a larger prefix-constrained shattered tree.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

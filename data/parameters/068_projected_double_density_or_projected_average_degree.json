@@ -1,14 +1,37 @@
 {
   "id": 68,
   "name": "Projected Double Density or Projected Average Degree",
-  "symbol": "$\\mathrm{dens}^p$",
+  "symbol": "\\mathrm{dens}^p",
   "definition": "The **projected double density** of a concept class is defined as the maximum over all projections of the averaged degree of the $1$-inclusion graph.",
   "category": "graph-based",
   "symmetric": true,
-  "monotonic": true,
+  "monotonic": false,
   "p_monotonic": true,
-  "c_monotonic": true,
-  "doubly_monotonic": true,
+  "c_monotonic": false,
+  "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "projected_double_density_or_projected_average_degree"
+  "short_name": "projected_double_density_or_projected_average_degree",
+  "origin_references": "The underlying one-inclusion-graph density is central in the work of Haussler, Littlestone, and Warmuth (1988, 1994); taking the maximum over coordinate projections is the catalogue's p-monotonic envelope construction.",
+  "monotonicity_evidence": {
+    "p_monotonic": {
+      "proof": "Every coordinate projection of pi_T(H) is a coordinate projection pi_U(H) of the original class, for some U contained in T. Thus the collection over which the maximum defining the projected double density of pi_T(H) is taken is contained in the collection for H.",
+      "kind": "direct_argument"
+    },
+    "monotonic": {
+      "proof": "Counterexample: let G={0000,0001,0010,0100,0110,1000,1001} and H=G union {1111}. Exhausting the coordinate projections gives dens^p(G)=16/7 (attained on the full domain) but dens^p(H)=2. Hence adjoining a concept can decrease the parameter.",
+      "kind": "counterexample"
+    },
+    "c_monotonic": {
+      "proof": "Counterexample: for H={00000,00010,00011,00100,00110,01000,01010,01100,01101,01110,01111,10000,10001,10010,10100,11000,11111}, exhaustive projection gives dens^p(H)=40/13. Conditioning the last coordinate to 0 and deleting it gives a class with projected double density 19/6>40/13.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "Doubly monotonicity requires subfamily monotonicity, which is refuted by the recorded counterexample.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity requires doubly monotonicity, which fails.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

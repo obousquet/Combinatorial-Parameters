@@ -1,0 +1,11 @@
+{
+  "id": 301,
+  "name": "Minimum Projected Teaching-Set Size of Singletons",
+  "short_name": "minimum_projected_teaching_set_size_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/minimum_projected_teaching_set_size",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For a singleton target $\\{i\\}$, project to the other $n-1$ coordinates. Its trace is empty, while the projected class contains the empty trace and all $n-1$ singleton traces, so all $n-1$ negative coordinates are needed to teach it. Any projection has at most $n-1$ relevant competing singleton traces after omitting the target, and projections containing $i$ teach the target with its positive coordinate. Thus every target has worst projected teaching-set size exactly $n-1$."
+}

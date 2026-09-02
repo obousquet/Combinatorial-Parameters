@@ -4,5 +4,8 @@
   "parameter_2_id": "#parameters/worst_mistakes",
   "relationship_type": "larger",
   "short_name": "littlestone_dimension_worst_mistakes",
-  "name": "Littlestone Dimension / Worst Mistakes"
+  "name": "Littlestone Dimension / Worst Mistakes",
+  "details": "For finite classes, the unrestricted tree rank defining Littlestone dimension dominates the regular-tree rank defining worst mistakes.",
+  "status": "established",
+  "references": "\\cite{ben1997online}"
 }

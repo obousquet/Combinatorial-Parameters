@@ -1,0 +1,11 @@
+{
+  "id": 543,
+  "parameter_id": "#parameters/log_size",
+  "class_id": "#classes/universal_class",
+  "value": "$\\log_2 n$",
+  "status": "established",
+  "proof": "The universal class has exactly n hypotheses, and log size is by definition the binary logarithm of the class size.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "log_size_universal_class",
+  "name": "Log Size of Universal Class"
+}

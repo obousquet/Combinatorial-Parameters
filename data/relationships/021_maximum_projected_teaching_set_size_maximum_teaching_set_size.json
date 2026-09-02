@@ -4,7 +4,9 @@
   "parameter_2_id": "#parameters/maximum_teaching_set_size",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "maximum_projected_teaching_set_size_maximum_teaching_set_size",
-  "name": "Maximum Projected Teaching Set Size / Maximum Teaching Set Size"
+  "name": "Maximum Projected Teaching Set Size / Maximum Teaching Set Size",
+  "status": "established",
+  "proof": "The projected maximum teaching-set size maximizes over projections.  The full-domain projection is the original class, and hence supplies the ordinary maximum teaching-set size as a candidate."
 }

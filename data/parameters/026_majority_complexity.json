@@ -1,13 +1,38 @@
 {
   "id": 26,
   "name": "Majority Complexity",
-  "symbol": "$\\mathrm{Maj}$",
+  "symbol": "\\mathrm{Maj}",
   "category": "queries",
   "symmetric": true,
-  "monotonic": true,
-  "p_monotonic": true,
-  "c_monotonic": true,
-  "doubly_monotonic": true,
+  "monotonic": false,
+  "p_monotonic": false,
+  "c_monotonic": false,
+  "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "majority_complexity"
+  "definition": "The **Majority Complexity** of a finite class $\\mathcal{H}$ is the number of queries used by the halving algorithm: at each stage it proposes the pointwise majority vote of the hypotheses still consistent with the answers received.",
+  "graph_summary": "Number of queries made by the halving (pointwise-majority) algorithm.",
+  "origin_references": "The query-complexity notation $\\mathrm{LC}(\\mathrm{Halving})$ and its lower-bound analysis appear in \\cite{maass1992lower}.",
+  "short_name": "majority_complexity",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Counterexample (with zero tie-breaking): $\\mathcal H=\\{0000,1000,0100,1100,0010,1010,1110,0001,1001\\}$ has majority complexity 2. Its initial majority is $1000$, and each possible counterexample leaves a class of majority complexity at most 1. Removing $1000$ leaves a subfamily whose initial majority is $0000$; a counterexample on the first coordinate leaves $\\{1100,1010,1110,1001\\}$ of majority complexity 2. Hence the subfamily has majority complexity 3.",
+      "kind": "counterexample"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample (with zero tie-breaking): $\\mathcal H=\\{10000,01000,00100,11010,01110,11001,10101,11101,11111\\}$ has majority complexity 2. Its initial majority is $11100$, and every counterexample branch has complexity at most 1. Projecting away the second coordinate gives $\\{0000,1000,0100,1010,0110,1001,1101,1111\\}$; its initial majority is $1000$, and a counterexample on its second coordinate leaves a class of majority complexity 2. Thus the projected class has complexity 3.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "Doubly monotonicity requires subfamily monotonicity, which is refuted by the recorded majority-complexity counterexample.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity requires doubly monotonicity, which fails by the recorded subfamily counterexample.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "Counterexample (with zero tie-breaking): $\\mathcal H=\\{11000,10100,11010,10001,11001,10101,01101,11011,10111\\}$ has majority complexity 2. Conditioning the first coordinate to 1 and deleting it gives $\\{1000,0100,1010,0001,1001,0101,1011,0111\\}$, whose initial majority has a counterexample branch of majority complexity 2 and hence total complexity 3.",
+      "kind": "counterexample"
+    }
+  }
 }

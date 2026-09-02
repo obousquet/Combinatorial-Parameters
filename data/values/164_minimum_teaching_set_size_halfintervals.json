@@ -1,0 +1,11 @@
+{
+  "id": 164,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The endpoint segment $[1]$ is uniquely identified by the negative label at coordinate $2$ (and $[n]$ by the positive label at $n$).  No nontrivial class has a zero-size teaching set.",
+  "name": "Minimum Teaching Set Size of Half-intervals",
+  "short_name": "minimum_teaching_set_size_halfintervals"
+}

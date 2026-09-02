@@ -1,0 +1,12 @@
+{
+  "id": 306,
+  "name": "Equivalence Queries Complexity of Tagged Singletons",
+  "short_name": "equivalence_queries_complexity_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{Q}_{\\mathrm{eq}}=\\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Tagged Singletons.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}"
+}

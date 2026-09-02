@@ -1,0 +1,11 @@
+{
+  "id": 215,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$0$",
+  "details": "For $n>1$.",
+  "status": "established",
+  "proof": "There is no $1$-inclusion edge, hence no smaller neighbour of either concept.",
+  "name": "Maximum Positive Degree of Trivial concepts",
+  "short_name": "maximum_positive_degree_trivial_concepts"
+}

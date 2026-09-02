@@ -1,0 +1,12 @@
+{
+  "id": 383,
+  "name": "Labeled Sample Compression of Trivial concepts",
+  "short_name": "labeled_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty realizable sample has a uniform label; retain one labeled point and reconstruct the corresponding constant concept.  The empty sample has a fixed reconstruction.  Size zero is impossible because the two constant concepts have incompatible one-point samples.",
+  "references": "\\cite{FW1995}"
+}

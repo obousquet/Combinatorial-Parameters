@@ -1,13 +1,39 @@
 {
   "id": 15,
   "name": "Interpolation degree",
-  "symbol": "$\\mathrm{intdeg}$",
+  "symbol": "\\mathrm{intdeg}",
   "description": "Minimum degree of an interpolating polynomial",
+  "definition": "The **Interpolation Degree** of $\\mathcal{H}$ is the smallest degree needed to interpolate every real-valued function on $\\mathcal{H}$. Equivalently, it is the minimum, over bases of $\\mathbb{R}[x]/V(\\mathcal{H})$, of the largest degree of a basis element.",
+  "graph_summary": "The least polynomial degree sufficient to interpolate arbitrary functions on the class.",
+  "origin_references": "Introduced as interpolation degree for Boolean-cube subsets by Moran and Rashtchian in \\cite{moran2015shattered}.",
   "category": "algebraic",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "interpolation_degree"
+  "short_name": "interpolation_degree",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "If degree-$d$ polynomials interpolate every function on $\\mathcal H$, their restrictions interpolate every function on a subfamily. Hence passing to a subfamily cannot require a larger degree.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict an interpolating basis to the conditioned fibre and substitute the fixed coordinates.  This cannot increase the degree needed to interpolate functions on that fibre.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{001,010,011,100\\}$ has interpolation degree 1, since the coordinate functions separate its four points. Projecting away the first coordinate gives the full two-cube, whose interpolation degree is 2.",
+      "kind": "counterexample"
+    }
+  }
 }

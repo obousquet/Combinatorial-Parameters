@@ -1,0 +1,12 @@
+{
+  "id": 615,
+  "name": "Extended Teaching Dimension of Tagged Singletons",
+  "short_name": "extended_teaching_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Extended teaching dimension equals star number for finite binary classes. The established star number of Tagged Singletons is $n$, so $\\mathrm{XTD}=n$.",
+  "references": "\\cite{hanneke2015minimax,maass1992lower}"
+}

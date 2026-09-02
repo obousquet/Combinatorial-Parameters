@@ -1,7 +1,7 @@
 {
   "id": 1,
   "name": "Effective Range",
-  "symbol": "$\\mathrm{E}$",
+  "symbol": "\\mathrm{E}",
   "definition": "The **effective range** $E(\\mathcal{H})$ of a family $\\mathcal{H}$ is the number of elements that can be distinguished by members of $\\mathcal{H}$: $$ E(\\mathcal{H}):= |\\{x:x\\in\\mathcal{X\\|,\\, \\exists h_1,h_2\\in\\mathcal{H},\\, x\\in h_1 \\Delta h_2}} $$",
   "category": "basic",
   "symmetric": true,
@@ -11,5 +11,31 @@
   "doubly_monotonic": true,
   "strictly_monotonic": true,
   "strict_c_monotonic": true,
-  "short_name": "effective_range"
+  "short_name": "effective_range",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "By definition, strictly monotonic means doubly monotonic and strictly c-monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, a doubly monotonic strictly c-monotonic parameter is strictly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Adding concepts cannot make a previously varying coordinate constant.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Projection deletes coordinates and can only discard varying coordinates, never create one.",
+      "kind": "direct_argument"
+    }
+  }
 }

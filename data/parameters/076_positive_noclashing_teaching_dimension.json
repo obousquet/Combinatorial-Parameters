@@ -1,12 +1,26 @@
 {
   "id": 76,
   "name": "Positive No-Clashing Teaching Dimension",
-  "symbol": "$\\mathrm{NCTD}^+$",
+  "symbol": "\\mathrm{NCTD}^+",
   "category": "teaching",
   "symmetric": false,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "positive_noclashing_teaching_dimension"
+  "p_monotonic": null,
+  "c_monotonic": true,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "definition": "The **Positive No-Clashing Teaching Dimension** is the no-clashing teaching dimension when every sample assigned by the teacher mapping is required to contain only positive examples of its target concept.",
+  "graph_summary": "No-clashing teaching dimension with positive-only teacher samples.",
+  "short_name": "positive_noclashing_teaching_dimension",
+  "origin_references": "The positive no-clashing variant is defined in \\cite{KSZ2019}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Restrict a positive no-clashing teacher mapping to a subfamily. Each remaining sample is still positive for its target, and every pair that could clash in the restricted mapping already could clash in the original one.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict a positive no-clashing teacher mapping to the conditioned fibre and delete fixed coordinates.  Positivity and no-clashing are preserved.",
+      "kind": "direct_argument"
+    }
+  }
 }

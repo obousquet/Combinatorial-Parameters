@@ -1,0 +1,15 @@
+{
+  "id": 203,
+  "parameter_1_id": "#parameters/star_number",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "For every concept class, the star number is at least the co-VC dimension minus one.",
+  "status": "established",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:star-covc-affine`.",
+  "references": "\\cite{bousquet2020proper}",
+  "latex_proof_label": "lem:star-covc-affine",
+  "short_name": "star_number_covc_dimension_affine",
+  "name": "Star Number / co-VC dimension (affine)"
+}

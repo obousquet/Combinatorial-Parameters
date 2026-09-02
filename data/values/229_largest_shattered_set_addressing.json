@@ -1,0 +1,11 @@
+{
+  "id": 229,
+  "name": "Largest Shattered Set of Addressing",
+  "short_name": "largest_shattered_set_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$\\lfloor\\log n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the addressing class is $\\lfloor\\log n\\rfloor$."
+}

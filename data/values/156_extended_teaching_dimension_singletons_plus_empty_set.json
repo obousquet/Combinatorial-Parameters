@@ -1,0 +1,12 @@
+{
+  "id": 156,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For the all-zero target, every coordinate must be queried to eliminate each singleton and leave only $\\emptyset$.  Querying all coordinates specifies every target, so the extended teaching dimension is $n$.",
+  "references": "\\cite{hegedHus1995generalized}",
+  "name": "Extended Teaching Dimension of Singletons plus empty set",
+  "short_name": "extended_teaching_dimension_singletons_plus_empty_set"
+}

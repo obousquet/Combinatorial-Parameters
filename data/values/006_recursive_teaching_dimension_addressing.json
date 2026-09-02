@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/recursive_teaching_dimension",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Every addressing concept contains a unique address coordinate in $[n]$: its positive label there is inconsistent with every other addressing concept.  Hence all concepts have one-point teaching sets in the initial class and can be removed in a single recursive-teaching layer.  A nontrivial class cannot have recursive teaching dimension zero, so the value is exactly one.",
+  "references": "\\cite{maass1992lower}"
 }

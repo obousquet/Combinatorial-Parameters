@@ -45,6 +45,19 @@ def relation_endpoints(relationship: Dict[str, Any]) -> tuple[str, str]:
     return relationship["parameter_1_id"], relationship["parameter_2_id"]
 
 
+def is_homogeneous_linear(relationship: Dict[str, Any]) -> bool:
+    """Whether a relation is safe for the Hasse-like dominance backbone.
+
+    ``larger_c`` encompasses both homogeneous constant-factor bounds and
+    affine bounds.  A nonzero additive term cannot safely impose a vertical
+    order or participate in transitive reduction, so it remains an overlay.
+    """
+    return (
+        relationship["relationship_type"] in LINEAR_TYPES
+        and not relationship.get("additive_constant")
+    )
+
+
 def exact_equivalence_components(
     parameters: List[Dict[str, Any]], relationships: List[Dict[str, Any]]
 ) -> tuple[Dict[str, List[str]], Dict[str, str]]:
@@ -138,7 +151,11 @@ def proof_adjacency(
 
     adjacency: Dict[str, set[str]] = defaultdict(set)
     for relationship in relationships:
-        if relationship is excluded or relationship["relationship_type"] not in allowed:
+        if (
+            relationship is excluded
+            or relationship["relationship_type"] not in allowed
+            or not is_homogeneous_linear(relationship)
+        ):
             continue
         source, target = relation_endpoints(relationship)
         adjacency[source].add(target)
@@ -152,7 +169,7 @@ def is_redundant_linear_relation(
 ) -> bool:
     """Whether another safe linear proof establishes this direct relationship."""
     relation_type = relationship["relationship_type"]
-    if relation_type not in LINEAR_TYPES:
+    if not is_homogeneous_linear(relationship):
         return False
 
     source, target = relation_endpoints(relationship)
@@ -176,7 +193,7 @@ def canonical_linear_relations(
     """Keep one representative for duplicate displayed linear relationships."""
     canonical: Dict[tuple[str, str, str], Dict[str, Any]] = {}
     for relationship in sorted(relationships, key=lambda item: item["id"]):
-        if relationship["relationship_type"] not in LINEAR_TYPES:
+        if not is_homogeneous_linear(relationship):
             continue
         source, target = relation_endpoints(relationship)
         canonical.setdefault((source, target, relationship["relationship_type"]), relationship)
@@ -275,7 +292,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     print('generating graph...')
     arrow_map = {
         "larger": {"arrowhead": "normal", "style": "dashed", "color": "#0074D9"},      # blue
-        "larger_c": {"arrowhead": "normal", "style": "dashed", "color": "#FF4136"},   # red
+        "larger_c": {"arrowhead": "normal", "style": "dashed", "color": "#FF4136"},   # red, including affine bounds
         "equivalence": {"arrowhead": "normal", "style": "dashed", "color": "#2ECC40"}, # green
         "log": {"arrowhead": "normal", "style": "dashed", "color": "#FFDC00"},        # yellow
         "sqrt": {"arrowhead": "normal", "style": "dashed", "color": "#B10DC9"},       # purple
@@ -303,7 +320,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         "none": "No special properties", "sym": "Symmetric", "mon": "Monotonic", "pmon": "Piecewise Monotonic", "dmon": "Doubly Monotonic", "smon": "Strictly Monotonic"
         }
     arrow_values = {
-        "larger": "A ≥ B", "larger_c": "A ≥ cB", "equivalence": "A = B", "log": "A ≥ c log B", "sqrt": "A ≥ c√B", "inv_log": "A ≥ cB/log n"
+        "larger": "A ≥ B", "larger_c": "A ≥ cB − d", "equivalence": "A = B", "log": "A ≥ c log B", "sqrt": "A ≥ c√B", "inv_log": "A ≥ cB/log n"
         }
     cat_values = cache.get_enum_values("parameters", "category")
     cat_values = {val: display for val, display in cat_values}
@@ -408,7 +425,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         nonlinear = [
             relationship
             for relationship in variant_relationships
-            if relationship["relationship_type"] not in LINEAR_TYPES
+            if not is_homogeneous_linear(relationship)
         ]
         displayed_relationships.extend(
             (relationship, variant, True)

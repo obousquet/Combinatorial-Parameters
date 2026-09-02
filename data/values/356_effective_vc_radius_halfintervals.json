@@ -1,0 +1,11 @@
+{
+  "id": 356,
+  "name": "Effective VC Radius of Half-intervals",
+  "short_name": "effective_vc_radius_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each coordinate is shattered by an initial segment ending before it and one ending at or after it. For two ordered coordinates $i<j$, initial segments realize only $00,10,11$, never $01$, so radius two fails."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 527,
+  "name": "Combinatorial Eluder Dimension of the Universal Class",
+  "short_name": "combinatorial_eluder_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Take $u_n$ as base.  For each $j<n$, use the domain point $\\{j\\}$ and witness $u_j$: it differs from $u_n$ at $\\{j\\}$ and agrees with it at all earlier singleton points.  Thus there is a witness of length $n-1$.  Since the class has n hypotheses, the general size bound gives the matching upper bound.",
+  "references": "\\cite{li2022understanding,chornomaz2025spherical}"
+}

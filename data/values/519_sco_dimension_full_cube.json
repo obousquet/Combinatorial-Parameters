@@ -1,0 +1,12 @@
+{
+  "id": 519,
+  "name": "SCO Dimension of Full Cube",
+  "short_name": "sco_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The spherical-dimension lower bound gives $\\mathrm{SCO}\\geq\\mathrm{sd}+1=n$ for the full cube, while the sign-rank upper bound gives $\\mathrm{SCO}\\leq\\mathrm{SR}=n$. Hence both bounds are tight.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

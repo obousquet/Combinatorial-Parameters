@@ -1,0 +1,11 @@
+{
+  "id": 360,
+  "name": "Minimum Teaching-Set Size of Tagged Singletons",
+  "short_name": "minimum_teaching_set_size_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A tagged pair contains an ordinary coordinate $i$ that occurs in no other concept. Its one positive example $(i,1)$ therefore teaches that pair. The nontrivial class cannot have minimum teaching-set size zero."
+}

@@ -1,0 +1,13 @@
+{
+  "id": 467,
+  "name": "Equivalence Queries Complexity of Majority",
+  "short_name": "equivalence_queries_complexity_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "For the standard unrestricted equivalence-query model on this finite class.",
+  "status": "established",
+  "proof": "Unrestricted equivalence-query complexity equals Littlestone dimension. The majority class has Littlestone dimension n, witnessed by its full-cube ordinary-coordinate projection and bounded by its 2^n concepts. Therefore its equivalence-query complexity is n.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 185,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is the $n$-regular hypercube, so its average degree is $n$.",
+  "name": "Double Density or Average Degree of Full Cube",
+  "short_name": "double_density_or_average_degree_full_cube"
+}

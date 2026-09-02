@@ -1,0 +1,11 @@
+{
+  "id": 216,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/projected_maximal_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projection onto any one coordinate gives the two concepts $0$ and $1$, whose $1$-inclusion graph is a single edge.  Every projection has maximum degree at most one.",
+  "name": "Projected Maximal Degree of Trivial concepts",
+  "short_name": "projected_maximal_degree_trivial_concepts"
+}

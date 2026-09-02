@@ -1,0 +1,12 @@
+{
+  "id": 328,
+  "name": "Worst Mistakes of Trivial Concepts",
+  "short_name": "worst_mistakes_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "No strategy can guarantee zero mistakes against the two opposite constant targets. Regardless of the adversarial presentation, the first observed label identifies the target, so at most one mistake is possible.",
+  "references": "\\cite{ben1997online}"
+}

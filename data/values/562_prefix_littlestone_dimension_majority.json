@@ -1,0 +1,12 @@
+{
+  "id": 562,
+  "name": "Prefix-$k$ Littlestone Dimension of Majority",
+  "short_name": "prefix_littlestone_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "On the majority class, both the established VC and Littlestone dimensions equal $n$. The surveyed sandwich theorem places Prefix-k Littlestone Dimension between them, so its value is $n$ for every fixed k.",
+  "references": "Derived from Proposition \\ref{prop:prefix-littlestone-order} in the survey and the established majority benchmark values"
+}

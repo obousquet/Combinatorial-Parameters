@@ -1,0 +1,10 @@
+{
+  "id": 514,
+  "name": "Extremal-Extension VC Dimension of Trivial concepts",
+  "short_name": "extremal_extension_vc_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/extremal_extension_vc_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "VC dimension one is necessary because the class shatters a singleton. The full chain of initial segments is an extremal VC-one class containing both constant concepts, giving the matching upper bound."
+}

@@ -3,7 +3,8 @@
   "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/proper_stable_sample_compression",
   "relationship_type": "larger",
-  "details": "Lemma",
+  "details": "No source or proof for this universal comparison has yet been verified. The available stable-compression sources do not state this proper equivalence-query lower bound.",
+  "status": "needs_verification",
   "short_name": "proper_equivalence_queries_complexity_proper_stable_sample_compression",
   "name": "Proper Equivalence Queries Complexity / Proper Stable Sample Compression"
 }

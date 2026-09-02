@@ -71,11 +71,15 @@
         <p><strong>Name: </strong>Interpolation degree / Log Size Ratio</p>
 <p><strong>Parameter 1: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/log_size_ratio.html">Log Size Ratio</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2$</p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+
+
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
 
-<p><strong>Status:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $d=\mathrm{intdeg}(\mathcal H)$, monomials supported on at most $d$ of the $n$ coordinates span every function on $\mathcal H$.  Since the function space has dimension $|\mathcal H|$, we have $|\mathcal H|\le\sum_{i=0}^{d}\binom ni\le(n+1)^d$.  Hence $d\ge\log(|\mathcal H|)/\log(n+1)$, up to the Log Size Ratio normalization.</p></div>
+
 
 
 

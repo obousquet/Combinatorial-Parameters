@@ -1,0 +1,11 @@
+{
+  "id": 368,
+  "name": "Positive Teaching Dimension of Majority",
+  "short_name": "positive_teaching_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$\\infty$",
+  "status": "established",
+  "proof": "The base all-zero labeling is the empty concept in the class. It has no positive examples, and its empty positive sample is consistent with the other Majority concepts, so it cannot be positively taught.",
+  "references": "\\cite{balbach2008measuring}"
+}

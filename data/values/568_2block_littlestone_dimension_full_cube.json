@@ -1,0 +1,10 @@
+{
+  "id": 568,
+  "name": "2-Block Littlestone Dimension of Full Cube",
+  "short_name": "2block_littlestone_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/2block_littlestone_dimension",
+  "value": "$n$",
+  "status": "established",
+  "proof": "The established VC and Littlestone dimensions of the full cube are both n. Proposition \\ref{prop:block-littlestone-sandwich} places $\\mathrm{VC}\\leq\\mathrm B_2\\leq\\mathrm L$, so $\\mathrm B_2=n$."
+}

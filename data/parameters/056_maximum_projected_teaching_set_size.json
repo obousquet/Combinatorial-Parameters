@@ -1,13 +1,47 @@
 {
   "id": 56,
   "name": "Maximum Projected Teaching Set Size",
-  "symbol": "$\\mathrm{TS}_{\\max}^p$",
+  "symbol": "\\mathrm{TS}_{\\max}^p",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
+  "strict_c_monotonic": false,
+  "tight_strict_c_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "maximum_projected_teaching_set_size"
+  "definition": "The **Maximum Projected Teaching Set Size** is the largest teaching-set size attained by a concept in any coordinate projection of $\\mathcal{H}$. It is equivalently the star number.",
+  "graph_summary": "Largest teaching-set size of a concept over all coordinate projections; equal to the star number.",
+  "short_name": "maximum_projected_teaching_set_size",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For every coordinate projection, the projected subfamily is a subfamily of the projected original class. Maximum teaching-set size cannot increase under that restriction; maximize over projections.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A projection of a projection is a projection of the original class. The defining maximum over all projections therefore cannot increase after restricting to one projection.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "This parameter equals Star Number. The six-concept Star-Number counterexample $\\{001,010,011,100,101,110\\}$ has equal value 2 on the full class and on both fibres of its last coordinate.",
+      "kind": "equality_transfer"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "This parameter equals Star Number. Tight strict c-monotonicity would imply strict c-monotonicity, which fails on the transferred six-concept counterexample.",
+      "kind": "equality_transfer"
+    },
+    "strictly_monotonic": {
+      "proof": "This parameter equals Star Number. Strict monotonicity requires strict c-monotonicity, which fails on the transferred six-concept counterexample.",
+      "kind": "equality_transfer"
+    }
+  }
 }

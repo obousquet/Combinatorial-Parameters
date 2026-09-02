@@ -1,0 +1,12 @@
+{
+  "id": 489,
+  "name": "Proper Stable Labeled Sample Compression of Singletons plus Empty Set",
+  "short_name": "proper_stable_labeled_sample_compression_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/proper_stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The stable unlabeled size-one scheme reconstructs only the empty concept and singletons, so it is proper and remains stable when labels may be retained.  Proper labeled compression has value one, giving the lower bound.",
+  "references": "\\cite{FW1995,hanneke2021stable}"
+}

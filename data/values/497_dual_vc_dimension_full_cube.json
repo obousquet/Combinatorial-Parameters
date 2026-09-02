@@ -1,0 +1,12 @@
+{
+  "id": 497,
+  "name": "Dual VC Dimension of Full Cube",
+  "short_name": "dual_vc_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/dual_vc_dimension",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "The dual of the $n$-dimensional cube is the universal class with $n$ concepts. It shatters $\\lfloor\\log_2 n\\rfloor$ concepts, and no larger set can be shattered because $n$ concepts realize at most $n$ patterns.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

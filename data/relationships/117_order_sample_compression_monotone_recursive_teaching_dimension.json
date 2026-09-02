@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/order_sample_compression",
   "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
   "relationship_type": "larger",
+  "details": "For finite concept classes; projected recursive teaching dimension is a lower bound for order compression.",
   "short_name": "order_sample_compression_monotone_recursive_teaching_dimension",
-  "name": "Order Sample Compression / Monotone Recursive Teaching Dimension"
+  "name": "Order Sample Compression / Projected Recursive Teaching Dimension",
+  "status": "established",
+  "references": "\\cite{darnstadt2016order}"
 }

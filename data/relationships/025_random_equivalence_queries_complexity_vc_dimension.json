@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/random_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
+  "details": "For finite concept classes in the random-counterexample equivalence-query model.",
+  "proof": "Angluin and Dohrn prove that the VC dimension lower-bounds the expected number of equivalence queries when each counterexample is sampled at random from the disagreement set (their Theorem 25).",
+  "references": "\\cite{angluin2017random}",
+  "status": "established",
   "short_name": "random_equivalence_queries_complexity_vc_dimension",
   "name": "Random Equivalence Queries Complexity / VC Dimension"
 }

@@ -1,0 +1,12 @@
+{
+  "id": 657,
+  "name": "Membership Query Complexity of Universal Class",
+  "short_name": "membership_query_complexity_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$\\lceil\\log_2 n\\rceil$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "A binary membership-query decision tree of depth r has at most $2^r$ leaves, giving r at least $\\lceil\\log_2 n\\rceil$. Conversely, at every stage choose a subset A of the surviving indices with sizes as balanced as possible and query A. The answer from target $u_i$ says exactly whether i lies in A, so this binary search identifies i in $\\lceil\\log_2 n\\rceil$ queries.",
+  "references": "\\cite{angluin1988queries}"
+}

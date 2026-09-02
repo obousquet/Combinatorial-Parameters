@@ -1,7 +1,7 @@
 {
   "id": 4,
   "name": "Diameter",
-  "symbol": "$\\mathrm{D}$",
+  "symbol": "\\mathrm{D}",
   "definition": "The **diameter** $D(\\mathcal{H})$ of a family $\\mathcal{H}$ is the largest distance between two elements of the family, i.e. $$ D(\\mathcal{H}):= \\max_{h_1,h_2\\in\\mathcal{H}} |h_1\\Delta h_2| $$",
   "comments": "The diameter is equal to the strict diameter dimension.",
   "category": "basic",
@@ -11,5 +11,27 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": false,
-  "short_name": "diameter"
+  "short_name": "diameter",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Every pair of concepts in a subfamily remains a pair in the containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Deleting coordinates cannot increase Hamming distance between two concepts.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "Counterexample to strict c-monotonicity: for $\\mathcal H=\\{000,011,101,110\\}$, split on the first coordinate.  Each fibre is a pair at diameter 2, while the full class also has diameter 2 (all distinct pairs have distance 2).  Thus the full value does not strictly exceed the smaller fibre value.",
+      "kind": "counterexample"
+    }
+  }
 }

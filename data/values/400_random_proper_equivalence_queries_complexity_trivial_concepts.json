@@ -1,0 +1,12 @@
+{
+  "id": 400,
+  "name": "Random Proper Equivalence Queries Complexity of Trivial concepts",
+  "short_name": "random_proper_equivalence_queries_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/random_proper_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The one-query constant strategy is proper because both proposed constants belong to the class.  A failed query identifies the other concept, and zero queries are impossible.",
+  "references": "\\cite{maass1992lower}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 332,
+  "name": "Distinguishing Range of Singletons",
+  "short_name": "distinguishing_range_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "If two coordinates are omitted, their singleton concepts have the same empty trace, so at least $n-1$ coordinates are necessary. Retaining any $n-1$ coordinates gives distinct traces for every singleton: the omitted singleton has the empty trace and all retained singletons have their unique positive coordinate."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 174,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Map $\\emptyset$ to the empty set and each singleton $\\{i\\}$ to $(i,1)$.  For a singleton and $\\emptyset$, the positive example is inconsistent with $\\emptyset$; two different singletons are separated by either positive example.  Thus the mapping is positive and non-clashing.  A size-$0$ mapping cannot work for distinct concepts.",
+  "name": "Positive No-Clashing Teaching Dimension of Singletons plus empty set",
+  "short_name": "positive_noclashing_teaching_dimension_singletons_plus_empty_set"
+}

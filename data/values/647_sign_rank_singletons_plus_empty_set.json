@@ -1,0 +1,13 @@
+{
+  "id": 647,
+  "name": "Sign Rank of Singletons plus Empty Set",
+  "short_name": "sign_rank_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq4$.",
+  "status": "established",
+  "proof": "The rows indexed by the singleton concepts form the n-by-n signed identity submatrix, whose sign rank is 3 for $n\\geq4$. Thus the full incidence matrix has sign rank at least 3. This class has VC dimension one, and every VC-one sign matrix has sign rank at most 3. Hence the value is exactly 3.",
+  "references": "\\cite{alon2016sign}"
+}

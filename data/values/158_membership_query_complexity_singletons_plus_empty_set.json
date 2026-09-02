@@ -1,0 +1,11 @@
+{
+  "id": 158,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For the empty target, every coordinate must be queried negatively to rule out its singleton; hence $n$ queries are necessary.  Querying all coordinates always identifies the target.",
+  "name": "Membership Query Complexity of Singletons plus empty set",
+  "short_name": "membership_query_complexity_singletons_plus_empty_set"
+}

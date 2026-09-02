@@ -1,0 +1,34 @@
+{
+  "id": 87,
+  "name": "Spherical Dimension",
+  "short_name": "spherical_dimension",
+  "symbol": "\u005cmathrm{sd}",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "For a finite binary class $\u005cmathcal H$, let $\u005cDelta_{\u005cmathcal H}$ be its space of realizable distributions on labeled examples and let $\u005cDelta_{\u005cmathcal H}^{\u005cmathrm{ant}}=\u005cDelta_{\u005cmathcal H}\u005ccap(-\u005cDelta_{\u005cmathcal H})$, where $-$ flips labels. The **spherical dimension** $\u005cmathrm{sd}(\u005cmathcal H)$ is the largest $d$ for which there is a continuous antipodality-preserving map $S^d\u005cto\u005cDelta_{\u005cmathcal H}^{\u005cmathrm{ant}}$.",
+  "graph_summary": "Largest sphere that maps continuously and antipodally into the class’s label-flip-symmetric realizable-distribution space.",
+  "description": "Finite-class version only; the distinct finitely supported, simplicial, and infinitely supported variants are intentionally not catalogued here.",
+  "origin_references": "Introduced by Chornomaz, Moran, and Waknine in \u005ccite{chornomaz2025spherical}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Proposition 27 of \u005ccite{chornomaz2025spherical} proves monotonicity for the class preorder, which includes deleting hypotheses.",
+      "kind": "citation"
+    },
+    "p_monotonic": {
+      "proof": "Proposition 27 of \u005ccite{chornomaz2025spherical} proves monotonicity for the class preorder, which includes restricting the domain.",
+      "kind": "citation"
+    },
+    "doubly_monotonic": {
+      "proof": "The cited preorder monotonicity covers both subfamilies and projections.",
+      "kind": "citation"
+    },
+    "c_monotonic": {
+      "proof": "Conditioning is restriction to a subfamily followed by a projection, so it follows from double monotonicity.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

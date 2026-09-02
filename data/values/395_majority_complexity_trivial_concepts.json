@@ -1,0 +1,12 @@
+{
+  "id": 395,
+  "name": "Majority Complexity of Trivial concepts",
+  "short_name": "majority_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The pointwise-majority equivalence query is one of the two constant concepts.  If it is wrong, any counterexample identifies the other constant concept.  A nontrivial two-concept class requires one query in the worst case.",
+  "references": "\\cite{maass1992lower}"
+}

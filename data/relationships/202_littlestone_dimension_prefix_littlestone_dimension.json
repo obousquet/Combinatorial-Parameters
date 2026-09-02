@@ -1,0 +1,13 @@
+{
+  "id": 202,
+  "name": "Littlestone Dimension / Prefix-$k$ Littlestone Dimension",
+  "short_name": "littlestone_dimension_prefix_littlestone_dimension",
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/prefix_littlestone_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree.",
+  "proof": "The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary Littlestone tree. Therefore $\\mathrm L(\\mathcal H)\\ge\\mathrm{PL}_k(\\mathcal H)$ for every $k\\ge1$; for $k=1$, the condition is vacuous and equality holds.",
+  "latex_proof_label": "prop:prefix-littlestone-order",
+  "proof_source": "Proposition \\ref{prop:prefix-littlestone-order} in the survey."
+}

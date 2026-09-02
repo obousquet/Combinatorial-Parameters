@@ -1,0 +1,12 @@
+{
+  "id": 622,
+  "name": "Minimum Star Number of Majority",
+  "short_name": "minimum_star_number_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The general bounds $\\mathrm{VC}\\leq\\mathrm S_{\\mathrm{min}}\\leq\\mathrm S$ are both n for Majority, so the minimum star number is n.",
+  "references": "\\cite{hanneke2024star_eluder,maass1992lower}"
+}

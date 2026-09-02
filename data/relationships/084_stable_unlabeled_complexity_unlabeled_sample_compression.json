@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/stable_unlabeled_complexity",
   "parameter_2_id": "#parameters/unlabeled_sample_compression",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "For finite concept classes; stability is an additional constraint on an unlabeled compression scheme.",
+  "proof": "Stable unlabeled compression schemes are unlabeled compression schemes with an additional stability requirement. Minimizing over the restricted class of stable schemes cannot improve the optimum.",
+  "references": "\\cite{hanneke2021stable,bousquet2020proper}",
   "short_name": "stable_unlabeled_complexity_unlabeled_sample_compression",
   "name": "Stable Unlabeled Complexity / Unlabeled sample compression"
 }

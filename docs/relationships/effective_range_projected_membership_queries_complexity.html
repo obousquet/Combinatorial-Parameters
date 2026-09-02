@@ -72,10 +72,14 @@
 <p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-<p><strong>Variant:</strong> </p>
 
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Each coordinate projection can be learned by querying only its effective coordinates.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Status:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every coordinate projection $\mathcal{G}$ of $\mathcal{H}$, querying all coordinates in the effective range of $\mathcal{G}$ distinguishes every pair of its concepts.  Thus $\mathrm{Q}_m(\mathcal{G})\le\mathrm{E}(\mathcal{G})\le\mathrm{E}(\mathcal{H})$.  Maximizing over projections gives $\mathrm{Q}_m^p(\mathcal{H})\le\mathrm{E}(\mathcal{H})$.</p></div>
+
 
 
 

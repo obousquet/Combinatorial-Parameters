@@ -1,0 +1,12 @@
+{
+  "id": 269,
+  "parameter_1_id": "#parameters/star_number",
+  "parameter_2_id": "#parameters/minimum_star_number",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, the ordinary star number is at least the minimum star number.",
+  "status": "established",
+  "proof": "The minimum is over all centre labelings, including the labelings realized by hypotheses in the class; the ordinary star number is the maximum over those realizable centres.",
+  "references": "\\cite{hanneke2024star_eluder}",
+  "short_name": "star_number_minimum_star_number",
+  "name": "Star Number / Minimum Star Number"
+}

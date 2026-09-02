@@ -1,0 +1,12 @@
+{
+  "id": 228,
+  "parameter_1_id": "#parameters/characteristic_p_yang_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "For every prime $p$.",
+  "status": "established",
+  "proof": "A shattered set of size d induces the boundary of a d-dimensional cross-polytope in the Yang complex. Its top reduced homology is nonzero over every field, so Hochster's formula gives $\\mathrm{Y}_p(\\mathcal H)\\geq d$. Maximize over shattered sets.",
+  "references": "\\cite{yang2018homological}",
+  "short_name": "characteristic_p_yang_dimension_vc_dimension",
+  "name": "Characteristic-p Yang Dimension / VC Dimension"
+}

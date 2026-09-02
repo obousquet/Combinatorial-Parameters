@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/maximum_positive_degree",
   "parameter_2_id": "#parameters/largest_strongly_shattered_set",
   "relationship_type": "larger_c",
+  "details": "A top vertex of a contained cube has one lower neighbour in each cube coordinate.",
   "short_name": "maximum_positive_degree_largest_strongly_shattered_set",
-  "name": "Maximum Positive Degree / Largest Strongly Shattered Set"
+  "name": "Maximum Positive Degree / Largest Strongly Shattered Set",
+  "status": "established",
+  "proof": "In a contained $d$-cube, its top vertex has $d$ smaller $1$-inclusion neighbours.  Hence maximum positive degree is at least the largest strongly shattered-set size."
 }

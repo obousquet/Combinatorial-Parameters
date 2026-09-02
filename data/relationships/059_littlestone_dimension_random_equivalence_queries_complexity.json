@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/random_equivalence_queries_complexity",
   "relationship_type": "larger",
+  "details": "Random counterexamples are a restriction of the adversarial equivalence-query model.",
+  "status": "established",
+  "proof": "An equivalence-query strategy that succeeds against every permissible counterexample also succeeds when the counterexample is selected randomly.  Thus $\\mathrm{Q}_{\\mathrm{req}}(\\mathcal H)\\le\\mathrm{Q}_{\\mathrm{eq}}(\\mathcal H)=\\mathrm{L}(\\mathcal H)$.",
+  "references": "\\cite{littlestone1988learning}",
   "short_name": "littlestone_dimension_random_equivalence_queries_complexity",
   "name": "Littlestone Dimension / Random Equivalence Queries Complexity"
 }

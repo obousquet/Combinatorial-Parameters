@@ -1,0 +1,11 @@
+{
+  "id": 346,
+  "name": "Interpolation Degree of Singletons",
+  "short_name": "interpolation_degree_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For prescribed values $a_i$ on singleton $\\{i\\}$, the linear polynomial $\\sum_i a_i x_i$ has exactly those values. A degree-zero polynomial cannot interpolate distinct values on two singleton concepts."
+}

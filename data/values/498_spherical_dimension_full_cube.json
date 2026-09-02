@@ -1,0 +1,12 @@
+{
+  "id": 498,
+  "name": "Spherical Dimension of Full Cube",
+  "short_name": "spherical_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/spherical_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For the $n$-cube, the realizable-distribution complex is the boundary of the $n$-dimensional cross-polytope, an antipodal $(n-1)$-sphere; the cited paper proves this is exact.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

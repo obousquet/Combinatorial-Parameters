@@ -1,0 +1,12 @@
+{
+  "id": 426,
+  "name": "Double Density or Average Degree of Majority",
+  "short_name": "double_density_or_average_degree_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$n-\\frac{(n-\\lfloor n/2\\rfloor)\\binom{n}{\\lfloor n/2\\rfloor}}{2^{n-1}}$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "There is one concept for each base subset, so the graph has $2^n$ vertices.  Starting from the $n2^{n-1}$ edges of the $n$-cube, exactly $(n-t)\\binom nt$ edges between layers $t=\\lfloor n/2\\rfloor$ and $t+1$ are deleted because their endpoints have different majority bits.  Dividing twice the remaining edge count by $2^n$ gives the displayed average degree.",
+  "references": "\\cite{maass1992lower}"
+}

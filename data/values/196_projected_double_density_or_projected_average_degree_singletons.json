@@ -1,0 +1,11 @@
+{
+  "id": 196,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$\\frac{2n}{n+1}$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "A projection onto $k$ coordinates has a $k$-leaf star as its $1$-inclusion graph, with average degree $2k/(k+1)$.  This increases with $k$, so the maximum at $k=n$ is $2n/(n+1)$.",
+  "name": "Projected Double Density or Projected Average Degree of Singletons",
+  "short_name": "projected_double_density_or_projected_average_degree_singletons"
+}

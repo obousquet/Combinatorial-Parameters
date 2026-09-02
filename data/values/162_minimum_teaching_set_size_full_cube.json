@@ -1,0 +1,11 @@
+{
+  "id": 162,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every concept in the full cube has a neighbor differing on each coordinate.  Hence any teaching set must include all $n$ coordinates, and the full labeled concept is a teaching set.",
+  "name": "Minimum Teaching Set Size of Full Cube",
+  "short_name": "minimum_teaching_set_size_full_cube"
+}

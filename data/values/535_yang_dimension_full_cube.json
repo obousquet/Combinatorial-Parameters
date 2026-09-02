@@ -1,0 +1,12 @@
+{
+  "id": 535,
+  "name": "Yang dimension of Full cube",
+  "short_name": "yang_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/yang_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The canonical ideal of the full binary cube is $\\prod_{x=1}^n(v_{x,0},v_{x,1})$. Tensoring the length-one resolutions of its n factors gives a minimal free resolution of length n, so $\\mathrm Y=n$.",
+  "references": "\\cite{yang2018homological}"
+}

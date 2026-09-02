@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/log_size",
   "parameter_2_id": "#parameters/random_proper_equivalence_queries_complexity",
   "relationship_type": "larger",
+  "details": "A proper random-counterexample strategy halves the expected version-space size.",
+  "status": "established",
+  "proof": "At each stage, query a hypothesis minimizing its $L_1$ distance to the pointwise average of the current version space.  For every target, a uniformly random counterexample leaves at most half the current hypotheses in expectation.  Induction and Jensen's inequality for the concave logarithm then give expected remaining query cost at most $\\log|\\mathcal H|$.",
   "short_name": "log_size_random_proper_equivalence_queries_complexity",
   "name": "Log Size / Random Proper Equivalence Queries Complexity"
 }

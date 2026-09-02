@@ -1,0 +1,1 @@
+{"id":682,"name":"Projected VC Radius of Majority","short_name":"projected_vc_radius_majority","class_id":"#classes/majority","parameter_id":"#parameters/projected_vc_radius","value":"$n$","value_class":"omega_n","status":"established","proof":"Projected VC radius equals VC dimension. The established majority VC dimension is n.","references":"\\cite{maass1992lower}"}

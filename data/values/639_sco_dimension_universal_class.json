@@ -1,0 +1,12 @@
+{
+  "id": 639,
+  "name": "SCO Dimension of Universal Class",
+  "short_name": "sco_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$n-1\\leq\\mathrm{SCO}\\leq n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The established spherical-dimension bound $\\mathrm{sd}(\\mathcal U_n)\\geq n-2$ and Theorem 12 give $\\mathrm{SCO}(\\mathcal U_n)\\geq n-1$.  The universal class is the dual of the full cube, so its sign rank equals the established dual sign rank n of the full cube.  The sign-rank SCO reduction gives $\\mathrm{SCO}(\\mathcal U_n)\\leq n$.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign}"
+}

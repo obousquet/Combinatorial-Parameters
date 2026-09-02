@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/worst_mistakes",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
+  "details": "The worst-case online mistake bound dominates VC dimension.",
   "short_name": "worst_mistakes_vc_dimension",
-  "name": "Worst Mistakes / VC Dimension"
+  "name": "Worst Mistakes / VC Dimension",
+  "status": "established",
+  "references": "\\cite{ben1997online}"
 }

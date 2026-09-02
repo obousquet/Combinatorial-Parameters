@@ -1,0 +1,12 @@
+{
+  "id": 508,
+  "name": "Spherical Dimension of Universal Class",
+  "short_name": "spherical_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/spherical_dimension",
+  "value": "$n-2\\leq\\mathrm{sd}(\\mathcal U_n)\\leq n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Lemma 2 of the cited paper proves $n-2\\leq\\mathrm{sd}(\\mathcal U_n)\\leq n-1$ (and gives the exact lower endpoint when $n$ is odd).",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 228,
+  "name": "Largest Shattered Set of Trivial Concepts",
+  "short_name": "largest_shattered_set_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the two trivial concepts is one."
+}

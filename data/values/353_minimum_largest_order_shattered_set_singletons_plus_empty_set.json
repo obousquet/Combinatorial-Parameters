@@ -1,0 +1,11 @@
+{
+  "id": 353,
+  "name": "Minimum Largest Order Shattered Set of Singletons plus Empty Set",
+  "short_name": "minimum_largest_order_shattered_set_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class is already a nontrivial downset, so it contains a one-cube. Its VC dimension is one, and order shattering cannot contain a two-cube after any downshift."
+}

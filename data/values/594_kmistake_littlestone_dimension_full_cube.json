@@ -1,0 +1,12 @@
+{
+  "id": 594,
+  "name": "$k$-Mistake Littlestone Dimension of Full Cube",
+  "short_name": "kmistake_littlestone_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/kmistake_littlestone_dimension",
+  "value": "$n+2k$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For the lower bound, query every coordinate once and query one fixed coordinate $2k$ additional times.  On every branch, a cube hypothesis matches the singly queried coordinates and takes a majority label on the repeated coordinate, making at most $k$ disagreements.  Conversely, an adversary answers each query so as to balance the two labels previously seen at that coordinate.  Along a branch of length $T$, if coordinate $i$ is queried $t_i$ times, every cube hypothesis makes at least $\\sum_i\\lfloor t_i/2\\rfloor\\ge(T-n)/2$ disagreements.  Thus a $k$-shattered tree has minimum branch length at most $n+2k$, proving equality.",
+  "references": "\\cite{filmus2023randomized}"
+}

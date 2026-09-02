@@ -4,5 +4,10 @@
   "parameter_2_id": "#parameters/relative_hitting_size",
   "relationship_type": "equivalence",
   "short_name": "maximum_teaching_set_size_relative_hitting_size",
-  "name": "Maximum Teaching Set Size / Relative Hitting Size"
+  "name": "Maximum Teaching Set Size / Relative Hitting Size",
+  "details": "For finite concept classes. The equality is a definitional reformulation of teaching dimension in relative-hitting language.",
+  "references": "\\cite{goldman1995complexity,shinohara1991teachability}",
+  "status": "established",
+  "latex_proof_label": "lem:relative-hitting-teaching",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:relative-hitting-teaching`."
 }

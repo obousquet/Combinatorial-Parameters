@@ -1,0 +1,11 @@
+{
+  "id": 315,
+  "name": "Hitting Size of Singletons plus Empty Set",
+  "short_name": "hitting_size_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every singleton is a nonempty concept, so a hitting set must contain every coordinate. The empty concept imposes no condition."
+}

@@ -4,7 +4,9 @@
   "parameter_2_id": "#parameters/monotonic_minimum_teaching_set_size",
   "relationship_type": "equivalence",
   "status": "established",
+  "details": "For finite concept classes; this identifies recursive teaching dimension with its max-over-subclasses formulation.",
   "proof": "At every nonempty subfamily, the recursive teaching process removes a concept with a smallest teaching set; maximizing this minimum over subfamilies is exactly monotonic minimum teaching-set size.",
+  "references": "\\cite{doliwa2014recursive}",
   "short_name": "recursive_teaching_dimension_monotonic_minimum_teaching_set_size",
   "name": "Recursive Teaching Dimension / Monotonic Minimum Teaching Set Size"
 }

@@ -1,0 +1,11 @@
+{
+  "id": 290,
+  "name": "Monotonic Minimum Teaching-Set Size of Blockwise-Addressing",
+  "short_name": "monotonic_minimum_teaching_set_size_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/monotonic_minimum_teaching_set_size",
+  "value": "$2$",
+  "status": "established",
+  "proof": "The established identity $\\mathrm{TS}_{\\min}^*=RTD$ applies to every finite class.  The directly verified Blockwise-Addressing value $RTD=2$ therefore gives $\\mathrm{TS}_{\\min}^*=2$.",
+  "references": "\\cite{doliwa2014recursive,ben1997online}; derived using the established equality with RTD"
+}

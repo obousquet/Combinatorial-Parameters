@@ -2,8 +2,9 @@
   "id": 18,
   "name": "Littlestone Dimension",
   "short_name": "littlestone_dimension",
-  "symbol": "$\\mathrm{L}$",
-  "definition": "",
+  "symbol": "\\mathrm{L}",
+  "definition": "The **Littlestone Dimension** of $\\mathcal{H}$ is the largest depth of a complete binary tree whose internal nodes are labeled by domain points and for which every root-to-leaf sequence of edge labels is realized by a member of $\\mathcal{H}$.",
+  "graph_summary": "Maximum depth of a complete binary tree shattered by the class.",
   "description": "\\cite{littlestone1988learning}",
   "comments": "",
   "origin_references": "\\cite{littlestone1988learning}",
@@ -15,5 +16,35 @@
   "doubly_monotonic": true,
   "strictly_monotonic": true,
   "strict_c_monotonic": true,
-  "tight_strict_c_monotonic": true
+  "tight_strict_c_monotonic": true,
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "By definition, strictly monotonic means doubly monotonic and strictly c-monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, a doubly monotonic strictly c-monotonic parameter is strictly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Every shattered Littlestone tree for a subfamily is also shattered by the containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Every shattered Littlestone tree for a projection is realized by the original class on the same queried coordinates.",
+      "kind": "direct_argument"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "The defining Littlestone recurrence takes the larger branch value when branches differ and one plus their common value when they agree.",
+      "kind": "direct_argument"
+    }
+  }
 }

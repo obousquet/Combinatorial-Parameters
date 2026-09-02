@@ -3,7 +3,9 @@
   "parameter_1_id": "#parameters/random_proper_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/random_equivalence_queries_complexity",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "random_proper_equivalence_queries_complexity_random_equivalence_queries_complexity",
-  "name": "Random Proper Equivalence Queries Complexity / Random Equivalence Queries Complexity"
+  "name": "Random Proper Equivalence Queries Complexity / Random Equivalence Queries Complexity",
+  "status": "established",
+  "proof": "Random proper equivalence-query algorithms are restricted to hypotheses from the class, whereas random equivalence-query algorithms may use arbitrary hypotheses.  The restriction cannot lower the optimal expected or worst-case query complexity."
 }

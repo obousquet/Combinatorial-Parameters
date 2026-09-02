@@ -1,7 +1,7 @@
 {
   "id": 19,
   "name": "Star number",
-  "symbol": "$\\mathrm{S}$",
+  "symbol": "\\mathrm{S}",
   "definition": "The **Star dimension** of a family $\\mathcal{H}$, denoted by $S(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $\\mathcal{H}\\_{|S}$ contains a $d$-star, i.e. there is a subset $T\\subset S$ such that $$ T\\in \\mathcal{H}\\_{|S} \\,\\mbox{ and }\\, \\forall x\\in S,\\, T\\Delta \\{x\\} \\in \\mathcal{H}\\_{|S}\\,. $$",
   "category": "teaching",
   "symmetric": true,
@@ -9,6 +9,39 @@
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
+  "strict_c_monotonic": false,
+  "tight_strict_c_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "star_number"
+  "short_name": "star_number",
+  "origin_references": "Introduced as the combinatorial measure called the star number in \\cite{hanneke2015minimax}.",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Every star contained in a subfamily remains a star in the containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A star in a projection is realized by the original class on its star coordinates.",
+      "kind": "direct_argument"
+    },
+    "strict_c_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{001,010,011,100,101,110\\}$ has Star Number 2. Conditioning its last coordinate to 0 or 1, and deleting that coordinate, gives respectively $\\{01,10,11\\}$ and $\\{00,01,10\\}$; each is a 2-star. Thus $\\mathrm S(\\mathcal H)$ is not strictly larger than the smaller fibre value.",
+      "kind": "counterexample"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "Tight strict c-monotonicity requires strict c-monotonicity, which is refuted by the displayed six-concept class.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity requires strict c-monotonicity, which fails for the displayed six-concept class.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

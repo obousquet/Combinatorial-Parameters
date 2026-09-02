@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/proper_equivalence_queries_complexity",
   "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "Under the standard addressing convention with $n$ encoded primary coordinates.",
+  "status": "established",
+  "proof": "A learner can enumerate the $n$ proper hypotheses, so $n$ queries suffice.  Conversely, when the learner proposes the addressing concept with primary coordinate $j$, every other target has label $0$ at $j$ while the proposal has label $1$.  An adversary can always return $j$ as the counterexample and retain every other target.  Thus each failed proper equivalence query rules out only its proposed hypothesis, and the last remaining target still requires its accepting query.  The worst-case complexity is $n$.",
+  "references": "\\cite{angluin1988queries,maass1992lower}"
 }

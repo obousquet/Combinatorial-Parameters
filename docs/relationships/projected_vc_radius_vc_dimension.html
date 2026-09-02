@@ -72,10 +72,14 @@
 <p><strong>Parameter 1: </strong><a href="parameters/projected_vc_radius.html">Projected VC Radius</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
+
+
 <p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Taking the largest effective VC radius over projections is exactly VC dimension.</p></div>
 
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is VC-shattered, the projection to $S$ is the full cube on $S$, so its effective VC radius is $|S|$; hence $\mathrm{VCR}^p\ge\mathrm{VC}$.  Conversely, effective VC radius at least $d$ in a projection supplies a shattered $d$-set in that projection, and thus in the original class.  Hence $\mathrm{VCR}^p=\mathrm{VC}$.</p></div>
 
-<p><strong>Status:</strong> </p>
 
 
 

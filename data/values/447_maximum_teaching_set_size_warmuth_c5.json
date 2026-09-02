@@ -1,0 +1,12 @@
+{
+  "id": 447,
+  "name": "Maximum Teaching Set Size of Warmuth's $C_5$ Class",
+  "short_name": "maximum_teaching_set_size_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every one of the ten concepts has minimum teaching-set size three: no two-coordinate restriction is unique, and a three-coordinate restriction can be chosen for each cyclic placement.  Taking the maximum over concepts therefore gives three.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

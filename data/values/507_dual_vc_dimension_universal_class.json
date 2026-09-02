@@ -1,0 +1,12 @@
+{
+  "id": 507,
+  "name": "Dual VC Dimension of Universal Class",
+  "short_name": "dual_vc_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/dual_vc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The dual of the universal class is the full $n$-cube, which shatters all $n$ of its coordinates.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

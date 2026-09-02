@@ -1,0 +1,13 @@
+{
+  "id": 226,
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, combinatorial eluder dimension directly dominates VC dimension. The addressing family gives an unbounded separation: $\\mathrm{Edim}=n-1$ while $\\mathrm{VC}=\\log_2 n$ under the standard $n=2^d$ convention.",
+  "status": "established",
+  "proof": "If S={x_1,...,x_d} is shattered, choose as base a hypothesis with label 0 on S. At step i, shattering supplies a hypothesis that is 1 at x_i and 0 at every earlier x_j. These form a sequential eluder witness of length d.",
+  "references": "\\cite{li2022understanding,vapnik1971uniform}",
+  "witness": "#classes/addressing",
+  "short_name": "combinatorial_eluder_dimension_vc_dimension",
+  "name": "Combinatorial Eluder Dimension / VC Dimension"
+}

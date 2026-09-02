@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/membership_and_equivalence_queries_complexity",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The improper equivalence query for the all-zero labeling is allowed.  Its counterexample against a singleton target is that target's unique positive coordinate, so one query identifies it."
 }

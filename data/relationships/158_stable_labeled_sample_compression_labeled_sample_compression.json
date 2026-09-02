@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/stable_labeled_sample_compression",
   "parameter_2_id": "#parameters/labeled_sample_compression",
   "relationship_type": "larger",
+  "references": "\\cite{hanneke2021stable}",
   "details": "Definition",
+  "status": "established",
+  "proof": "Stable labeled compression adds stability to labeled compression. Restricting the allowed compression functions cannot decrease the minimum size.",
   "short_name": "stable_labeled_sample_compression_labeled_sample_compression",
   "name": "Stable Labeled Sample Compression / Labeled Sample Compression"
 }

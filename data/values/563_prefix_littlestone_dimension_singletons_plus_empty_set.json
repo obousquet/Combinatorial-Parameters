@@ -1,0 +1,12 @@
+{
+  "id": 563,
+  "name": "Prefix-$k$ Littlestone Dimension of Singletons plus Empty Set",
+  "short_name": "prefix_littlestone_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Singletons plus the empty set has established VC and Littlestone dimension one. The surveyed sandwich theorem therefore forces Prefix-k Littlestone Dimension to equal one for every fixed k.",
+  "references": "Derived from Proposition \\ref{prop:prefix-littlestone-order} in the survey and the established benchmark values"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 198,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is the star centered at $\\emptyset$ with one leaf for each singleton.  Every leaf has degree one.",
+  "name": "Minimum Degree of Singletons plus empty set",
+  "short_name": "minimum_degree_singletons_plus_empty_set"
+}

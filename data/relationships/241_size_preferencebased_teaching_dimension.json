@@ -1,0 +1,12 @@
+{
+  "id": 241,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/preferencebased_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every nonempty finite class, the stronger bound $\\mathrm{PBTD}(\\mathcal H)\\leq|\\mathcal H|-1$ holds.",
+  "status": "established",
+  "proof": "Fix any strict preference order. For a target h, choose one disagreement coordinate against each concept preferred to h. The resulting sample rules out every more-preferred consistent concept and has size at most $|\\mathcal H|-1$. Thus that order has teaching dimension at most $|\\mathcal H|-1$, and minimizing over orders preserves the bound.",
+  "references": "\\cite{gao2017preference}",
+  "short_name": "size_preferencebased_teaching_dimension",
+  "name": "Size / Preference-Based Teaching Dimension"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 267,
+  "parameter_1_id": "#parameters/extended_teaching_dimension",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "equivalence",
+  "details": "For finite binary concept classes, extended teaching dimension equals the star number.",
+  "status": "established",
+  "proof": "Theorem 13 of the cited paper proves the finite-domain form $\\mathrm{XTD}(\\mathcal H,m)=\\min\\{\\mathrm S(\\mathcal H),m\\}$. Taking $m$ to be the finite effective domain gives $\\mathrm{XTD}(\\mathcal H)=\\mathrm S(\\mathcal H)$.",
+  "references": "\\cite{hanneke2015minimax}",
+  "short_name": "extended_teaching_dimension_star_number",
+  "name": "Extended Teaching Dimension / Star Number"
+}

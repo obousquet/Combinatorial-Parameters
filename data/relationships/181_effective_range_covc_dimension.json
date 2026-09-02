@@ -1,0 +1,12 @@
+{
+  "id": 181,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "larger",
+  "details": "A hollow star can use only coordinates in the effective range.",
+  "status": "established",
+  "proof": "If a projected class contains a hollow $d$-star on S, then for each $x\\in S$ the star's realizable neighbours include labelings that differ at x.  Thus every x in S lies in the effective range, so $d\\le \\mathrm E(\\mathcal H)$.  Maximizing d gives $\\mathrm{coVC}(\\mathcal H)\\le\\mathrm E(\\mathcal H)$.",
+  "references": "\\cite{bousquet2020proper}",
+  "short_name": "effective_range_covc_dimension",
+  "name": "Effective Range / co-VC Dimension"
+}

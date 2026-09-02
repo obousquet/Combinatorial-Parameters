@@ -1,0 +1,11 @@
+{
+  "id": 320,
+  "name": "Hitting Size of Warmuth's $C_5$ Class",
+  "short_name": "hitting_size_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The five concepts with their unrestricted coordinate set to zero have supports $\\{0,3\\},\\{1,4\\},\\{0,2\\},\\{1,3\\},\\{2,4\\}$. These are the edges of a $5$-cycle, whose minimum vertex cover has size three, so every hitting set has size at least three. Any three-coordinate vertex cover of this cycle meets those five supports and hence also their one-coordinate extensions, giving a hitting set."
+}

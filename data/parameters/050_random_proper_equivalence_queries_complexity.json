@@ -1,12 +1,13 @@
 {
   "id": 50,
   "name": "Random Proper Equivalence Queries Complexity",
-  "symbol": "$\\mathrm{Q}_{\\mathrm{rpeq}}$",
+  "symbol": "\\mathrm{Q}_{\\mathrm{rpeq}}",
   "category": "queries",
   "symmetric": true,
-  "monotonic": false,
-  "p_monotonic": true,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "random_proper_equivalence_queries_complexity"
+  "definition": "For a fixed known probability distribution $\\mu$ on the domain, assumed to give positive mass to every relevant disagreement set, the **Random Proper Equivalence Queries Complexity** is the least worst-case expected number of proper equivalence queries needed to identify a target in $\\mathcal H$, when a failed hypothesis $h\\in\\mathcal H$ receives a counterexample sampled from $\\mu$ conditioned on the disagreement set with the target. Thus the quantity is properly written $\\mathrm Q_{\\mathrm{rpeq}}(\\mathcal H;\\mu)$.",
+  "graph_summary": "Expected proper-equivalence-query complexity under a fixed known counterexample distribution $\\mu$.",
+  "comments": "This is distribution-dependent rather than a pure invariant of $\\mathcal H$.  No projection comparison is asserted until a convention for transporting $\\mu$ through a projection is fixed.",
+  "origin_references": "Introduced by Angluin and Dohrn in \\cite{angluin2017random}.",
+  "short_name": "random_proper_equivalence_queries_complexity",
+  "monotonicity_evidence": {}
 }

@@ -1,0 +1,12 @@
+{
+  "id": 321,
+  "name": "Membership Query Complexity of Half-intervals",
+  "short_name": "membership_query_complexity_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$\\lceil\\log_2 n\\rceil$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "A membership query at a midpoint says on which side of that point the unknown initial-segment endpoint lies, so binary search identifies one of the $n$ concepts in $\\lceil\\log_2 n\\rceil$ queries. Any deterministic membership-query decision tree distinguishing $n$ targets has depth at least $\\lceil\\log_2 n\\rceil$.",
+  "references": "\\cite{angluin1988queries}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 160,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The empty concept requires a negative example at every coordinate to exclude every singleton, so it has teaching-set size $n$.  Every singleton is taught by its positive coordinate; therefore the maximum teaching-set size is $n$.",
+  "name": "Teaching Dimension of Singletons plus empty set",
+  "short_name": "teaching_dimension_singletons_plus_empty_set"
+}

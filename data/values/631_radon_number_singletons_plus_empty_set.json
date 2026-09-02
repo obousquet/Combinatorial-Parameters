@@ -1,0 +1,12 @@
+{
+  "id": 631,
+  "name": "Radon Number of Singletons plus Empty Set",
+  "short_name": "radon_number_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/radon_number",
+  "value": "$\\begin{cases}2&n\\leq2,\\\\3&n\\geq3.\\end{cases}$",
+  "value_class": "constant",
+  "status": "established",
+  "proof": "For $n\\geq3$, any three singleton hypotheses are Radon independent: in every bipartition, the singleton side is disjoint from the hull of the other two.  No four hypotheses are Radon independent.  If four singletons are chosen, split them into two pairs; both pair hulls contain the empty hypothesis.  If the empty hypothesis and three singletons are chosen, split them into a pair containing the empty hypothesis and a pair of singletons; again both hulls contain the empty hypothesis.  The classes for $n=1,2$ are checked directly, giving 2.",
+  "references": "\\cite{chase2024dual}"
+}

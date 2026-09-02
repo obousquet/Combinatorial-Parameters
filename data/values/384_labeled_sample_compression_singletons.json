@@ -1,0 +1,12 @@
+{
+  "id": 384,
+  "name": "Labeled Sample Compression of Singletons",
+  "short_name": "labeled_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Fix a cyclic successor map on the domain.  If the sample has a positive point, retain it and reconstruct its singleton.  Otherwise its negative coordinates form a proper subset; retain a negative point whose successor is outside that subset and reconstruct the successor singleton.  This is consistent with the full sample.  Size zero is impossible for a nontrivial class.",
+  "references": "\\cite{FW1995}"
+}

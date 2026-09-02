@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/proper_unlabeled_sample_compression",
   "parameter_2_id": "#parameters/unlabeled_sample_compression",
   "relationship_type": "larger",
+  "references": "\\cite{bousquet2020proper,chalopin2022unlabeled}",
   "details": "Definition",
+  "status": "established",
+  "proof": "Proper unlabeled compression requires the reconstruction to belong to $\\mathcal H$, an additional restriction beyond ordinary unlabeled compression. Restricting the allowed schemes cannot decrease the minimum size.",
   "short_name": "proper_unlabeled_sample_compression_unlabeled_sample_compression",
   "name": "Proper Unlabeled Sample Compression / Unlabeled sample compression"
 }

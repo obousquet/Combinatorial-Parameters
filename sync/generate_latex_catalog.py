@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 
@@ -54,7 +55,7 @@ def colour(entry: dict) -> str:
 
 def marker(value: bool | None) -> str:
     if value is None:
-        return ""
+        return "?"
     return "Y" if value else "N"
 
 
@@ -66,6 +67,8 @@ def generate_parameter_table(data_dir: Path, mapping: dict) -> str:
         "\\caption{List of Combinatorial Parameters}\\\\",
         "\\hline",
         "Symbol & Name & Def & $P^\\dagger$ & $P^*$ & $P^p$ & $P^c$ & $P^{p*}$ & Str & $\\mathrm{Str}_c$ & $\\mathrm{TStr}_c$\\\\",
+        "\\multicolumn{11}{|l|}{Y = established; N = known failure; ? = not yet classified.}\\\\",
+        "\\hline",
         "\\hline",
         "\\endhead",
     ]
@@ -85,7 +88,7 @@ def generate_parameter_table(data_dir: Path, mapping: dict) -> str:
         for entry in category_entries:
             lines.extend(
                 [
-                    "\\cellcolor{" + colour(entry) + "} " + entry["symbol"]
+                    "\\cellcolor{" + colour(entry) + "} " + math_mode(entry["symbol"])
                     + " & " + entry["name"]
                     + " & \\ref{" + definition_label(entry, mapping) + "}"
                     + " & " + marker(entry.get("symmetric"))
@@ -111,6 +114,25 @@ def reference_short_name(reference: str) -> str:
 
 def math_mode(value: str) -> str:
     return value if value.startswith("$") and value.endswith("$") else "$" + value + "$"
+
+
+def normalize_proof_latex(text: str) -> str:
+    """Put legacy bare exponent expressions into inline math mode.
+
+    Value proofs are LaTeX-aware prose.  A few older entries nevertheless use
+    plain-text notation such as ``2^n``.  Split around existing dollar-delimited
+    math before normalizing, so a correct expression like ``$n=2^d$`` is never
+    altered.
+    """
+    parts = text.split("$")
+    for index in range(0, len(parts), 2):
+        parts[index] = re.sub(
+            r"(?<![\\w\\\\])([A-Za-z0-9]+\^[A-Za-z0-9]+)", r"$\1$", parts[index]
+        )
+        parts[index] = re.sub(
+            r"(?<![\\w\\\\])([A-Za-z]+_[A-Za-z0-9]+)", r"$\1$", parts[index]
+        )
+    return "$".join(parts)
 
 
 def generate_value_table(data_dir: Path, mapping: dict) -> str:
@@ -157,10 +179,56 @@ def generate_value_table(data_dir: Path, mapping: dict) -> str:
             ]
         )
         for entry in category_entries:
-            row = [entry["symbol"]]
+            row = [math_mode(entry["symbol"])]
             row.extend(values.get((entry["short_name"], class_entry["short_name"]), "") for class_entry in classes)
             lines.extend([" & ".join(row) + "\\\\", "\\hline"])
     lines.extend(["\\end{longtable}", "\\end{center}", ""])
+    return "\n".join(lines)
+
+
+def generate_value_proofs(data_dir: Path) -> str:
+    """Generate the survey appendix containing the database-owned value proofs.
+
+    A value record remains the single editable source for its statement and
+    concise derivation.  The survey imports this appendix verbatim so a reader
+    of either representation reaches the same proof.
+    """
+    parameters = {
+        entry["short_name"]: entry
+        for entry in records(data_dir, "parameters")
+        if entry.get("short_name")
+    }
+    classes = {
+        entry["short_name"]: entry
+        for entry in records(data_dir, "classes")
+        if entry.get("short_name")
+    }
+    entries = [entry for entry in records(data_dir, "values") if entry.get("proof")]
+    lines = [
+        "% GENERATED from data/values by sync/generate_latex_catalog.py; do not edit.",
+        "\\section{Proofs of catalogue values}\\label{app:value-proofs}",
+        "Each statement and proof in this appendix is generated from the structured database value record; the database is the editable source of truth.",
+        "",
+    ]
+    for entry in entries:
+        parameter = parameters[reference_short_name(entry["parameter_id"])]
+        class_record = classes[reference_short_name(entry["class_id"])]
+        value = entry.get("value", "")
+        title = entry.get("name") or parameter["name"] + " of " + class_record["name"]
+        label = entry.get("short_name") or "value-" + str(entry["id"])
+        lines.extend(
+            [
+                "\\subsection{" + title + "}\\label{val:" + label + "}",
+                "\\noindent\\textbf{Statement.} The " + parameter["name"]
+                + " of " + class_record["name"] + " is " + value + ".",
+                "\\begin{proof}",
+                normalize_proof_latex(entry["proof"]),
+                "\\end{proof}",
+            ]
+        )
+        if entry.get("references"):
+            lines.append("\\noindent\\textbf{Reference.} " + entry["references"] + ".")
+        lines.append("")
     return "\n".join(lines)
 
 
@@ -191,7 +259,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--section",
-        choices=["parameter-table", "value-table", *SOURCE_ASSETS],
+        choices=["parameter-table", "value-table", "value-proofs", *SOURCE_ASSETS],
         default="parameter-table",
     )
     parser.add_argument("--output", type=Path, required=True)
@@ -206,6 +274,7 @@ def main() -> int:
     generators = {
         "parameter-table": generate_parameter_table,
         "value-table": generate_value_table,
+        "value-proofs": lambda data_dir, _mapping: generate_value_proofs(data_dir),
     }
     if args.section in SOURCE_ASSETS:
         output = generate_source_asset(args.data_dir, args.section)

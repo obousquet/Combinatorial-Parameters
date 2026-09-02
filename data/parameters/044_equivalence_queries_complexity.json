@@ -1,7 +1,7 @@
 {
   "id": 44,
   "name": "Equivalence Queries Complexity",
-  "symbol": "$\\mathrm{Q}_{\\mathrm{eq}}$",
+  "symbol": "\\mathrm{Q}_{\\mathrm{eq}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
@@ -11,5 +11,38 @@
   "strictly_monotonic": true,
   "strict_c_monotonic": true,
   "tight_strict_c_monotonic": true,
-  "short_name": "equivalence_queries_complexity"
+  "definition": "The **Equivalence Queries Complexity** of $\\mathcal{H}$ is the minimum worst-case number of equivalence queries needed to identify an unknown target in $\\mathcal{H}$, when the learner may propose arbitrary Boolean functions as equivalence hypotheses.",
+  "graph_summary": "Minimum worst-case number of arbitrary equivalence queries needed to identify the target.",
+  "short_name": "equivalence_queries_complexity",
+  "origin_references": "Equivalence queries in the exact query-learning model are introduced in \\cite{angluin1988queries}.",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "By definition, strictly monotonic means doubly monotonic and strictly c-monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, a doubly monotonic strictly c-monotonic parameter is strictly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "This parameter is exactly equal to Littlestone Dimension by the established relationship `equivalence_queries_complexity_littlestone_dimension`; its monotonic classification transfers unchanged.",
+      "kind": "equality_transfer"
+    },
+    "p_monotonic": {
+      "proof": "This parameter is exactly equal to Littlestone Dimension by the established relationship `equivalence_queries_complexity_littlestone_dimension`; its p monotonic classification transfers unchanged.",
+      "kind": "equality_transfer"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "This parameter is exactly equal to Littlestone Dimension by the established relationship `equivalence_queries_complexity_littlestone_dimension`; its tight strict c monotonic classification transfers unchanged.",
+      "kind": "equality_transfer"
+    }
+  }
 }

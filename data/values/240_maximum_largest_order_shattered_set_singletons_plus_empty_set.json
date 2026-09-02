@@ -1,0 +1,11 @@
+{
+  "id": 240,
+  "name": "Maximum Largest Order Shattered Set of Singletons plus Empty Set",
+  "short_name": "maximum_largest_order_shattered_set_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/maximum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Maximum Largest Order Shattered Set is, by definition, the VC dimension. Singletons plus the empty set have established VC dimension one."
+}

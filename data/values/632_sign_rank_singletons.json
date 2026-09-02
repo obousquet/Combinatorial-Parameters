@@ -1,0 +1,12 @@
+{
+  "id": 632,
+  "name": "Sign Rank of Singletons",
+  "short_name": "sign_rank_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$\\begin{cases}1&n\\leq2,\\\\2&n=3,\\\\3&n\\geq4.\\end{cases}$",
+  "value_class": "constant",
+  "status": "established",
+  "proof": "The incidence sign matrix of the singleton class is the $n\\times n$ signed identity matrix: it has positive diagonal and negative off-diagonal entries.  Its sign rank is 3 for $n\\geq4$ (Claim 1 in the cited paper).  For $n=3$, three vectors at angles $0,120,240$ degrees give a rank-two realization; for $n\\leq2$, the displayed sign matrix has rank one.",
+  "references": "\\cite{alon2016sign}"
+}

@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/projected_vc_radius",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "equivalence",
+  "details": "Taking the largest effective VC radius over projections is exactly VC dimension.",
+  "status": "established",
+  "proof": "If $S$ is VC-shattered, the projection to $S$ is the full cube on $S$, so its effective VC radius is $|S|$; hence $\\mathrm{VCR}^p\\ge\\mathrm{VC}$.  Conversely, effective VC radius at least $d$ in a projection supplies a shattered $d$-set in that projection, and thus in the original class.  Hence $\\mathrm{VCR}^p=\\mathrm{VC}$.",
   "short_name": "projected_vc_radius_vc_dimension",
   "name": "Projected VC Radius / VC Dimension"
 }

@@ -1,0 +1,14 @@
+{
+  "id": 215,
+  "parameter_1_id": "#parameters/dual_vc_dimension",
+  "parameter_2_id": "#parameters/dual_antipodal_vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "\\tfrac12",
+  "details": "For every finite binary class, $\\mathrm{VC}^{*a}(\\mathcal H)\\leq2\\,\\mathrm{VC}^{*}(\\mathcal H)+1$; equivalently $\\mathrm{VC}^{*}(\\mathcal H)\\geq(\\mathrm{VC}^{*a}(\\mathcal H)-1)/2$.",
+  "status": "established",
+  "proof": "This is the second chain of Assouad-type bounds for antipodal shattering in Lemma 20 of the cited paper.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "dual_vc_dimension_dual_antipodal_vc_dimension_affine",
+  "name": "Dual VC Dimension / Dual Antipodal VC Dimension (affine)"
+}

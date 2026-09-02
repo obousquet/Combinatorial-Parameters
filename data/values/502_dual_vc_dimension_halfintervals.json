@@ -1,0 +1,10 @@
+{
+  "id": 502,
+  "name": "Dual VC Dimension of Half-intervals",
+  "short_name": "dual_vc_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/dual_vc_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "After exchanging points and initial segments, the dual class is a chain of terminal segments. It shatters one hypothesis but no pair because every trace in a chain is comparable."
+}

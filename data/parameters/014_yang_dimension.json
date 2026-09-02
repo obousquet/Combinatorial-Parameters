@@ -1,13 +1,35 @@
 {
   "id": 14,
   "name": "Yang dimension",
-  "symbol": "$\\mathrm{Y}$",
-  "description": "Projective dimension of the cuboplex",
+  "symbol": "\\mathrm{Y}",
+  "description": "Yang dimension over the default coefficient field $\\mathbb F_2$ (that is, $\\mathrm Y_2$)",
   "category": "algebraic",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "yang_dimension"
+  "definition": "The **Yang Dimension** in this catalogue is the characteristic-two specialization $\\mathrm{Y}(\\mathcal H)=\\mathrm{Y}_2(\\mathcal H)$: the projective dimension, over $\\mathbb F_2$, of its associated ideal $I^*_{\\mathcal H}$; equivalently, the length of a minimal free resolution over $\\mathbb F_2$. Characteristic zero gives a lower bound $\\mathrm Y_0\\leq\\mathrm Y_2$. The homological formula permits exceptions at torsion primes, but no explicit Boolean class separating $\\mathrm Y_2$ from another characteristic is currently recorded.",
+  "graph_summary": "Default characteristic-two value: $\\mathrm Y=\\mathrm Y_2$, the minimal-resolution length of the associated ideal. It is at least $\\mathrm Y_0$.",
+  "comments": "The characteristic-$p$ entry denotes a family of fixed-prime parameters. The default node is its $p=2$ specialization, not a field-independent invariant.",
+  "origin_references": "Introduced as homological dimension in \\cite{yang2018homological}.",
+  "short_name": "yang_dimension",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Yang's full version \\cite{yang2018homological} exhibits the delta class on $2^d$ inputs as a subfamily of the conjunction class, with homological dimensions $2^d-1$ and $d+1$, respectively. For $d\\geq3$ this reverses the asserted subfamily-monotonic inequality.",
+      "kind": "citation"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "Yang proves that restricting the domain (projection) cannot increase the projective dimension of the canonical ideal.",
+      "kind": "direct_argument"
+    }
+  }
 }

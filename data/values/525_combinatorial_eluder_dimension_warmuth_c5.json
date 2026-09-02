@@ -1,0 +1,12 @@
+{
+  "id": 525,
+  "name": "Combinatorial Eluder Dimension of Warmuth's $C_5$ Class",
+  "short_name": "combinatorial_eluder_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Enumerate the ten binary concepts of $C_5$ and the ten choices of base hypothesis in the sequential definition.  For example, with base $00101$ on cyclic coordinates $0,\\ldots,4$, the points $0,2,1,3$ have respective witnesses $10100,01001,01110,00111$.  Exhaustive search over the five coordinates and all bases finds no witness sequence of length five, so the value is exactly four.",
+  "references": "\\cite{li2022understanding}"
+}

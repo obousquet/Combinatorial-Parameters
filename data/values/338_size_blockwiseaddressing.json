@@ -1,0 +1,11 @@
+{
+  "id": 338,
+  "name": "Size of Blockwise-Addressing",
+  "short_name": "size_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/size",
+  "value": "$2^{d+1}$",
+  "status": "established",
+  "proof": "The construction contains the $2^d$ functions $f_i$ and the $2^d$ functions $g_i$, for a total of $2^{d+1}$ concepts.",
+  "references": "\\cite{ben1997online}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 538,
+  "name": "Yang dimension of Singletons plus empty set",
+  "short_name": "yang_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/yang_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "This is Yang's delta-function class together with the all-zero function. Yang proves that its canonical ideal has a minimal one-dimensional cellular resolution (equivalently, its canonical-suboplex ring is Cohen--Macaulay of regularity 1), so $\\mathrm Y=1$.",
+  "references": "\\cite{yang2018homological}; see the full arXiv version, the delta-functions-plus-zero example."
+}

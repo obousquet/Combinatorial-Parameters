@@ -1,0 +1,12 @@
+{
+  "id": 389,
+  "name": "Proper Labeled Sample Compression of Singletons plus empty set",
+  "short_name": "proper_labeled_sample_compression_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/proper_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The size-one construction reconstructs either a singleton or the empty concept, so every reconstruction lies in the class.  Incompatible one-point samples rule out size zero.",
+  "references": "\\cite{FW1995}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 167,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "By definition $\\mathrm{TS}_{\\max}=\\mathrm{TD}$, and every full-cube concept needs all $n$ coordinates to be taught.",
+  "name": "Maximum Teaching Set Size of Full Cube",
+  "short_name": "maximum_teaching_set_size_full_cube"
+}

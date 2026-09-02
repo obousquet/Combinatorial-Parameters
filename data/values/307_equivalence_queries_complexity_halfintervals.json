@@ -1,0 +1,12 @@
+{
+  "id": 307,
+  "name": "Equivalence Queries Complexity of Half-intervals",
+  "short_name": "equivalence_queries_complexity_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{Q}_{\\mathrm{eq}}=\\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Half-intervals.",
+  "references": "\\cite{littlestone1988learning}"
+}

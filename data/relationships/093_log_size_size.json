@@ -4,6 +4,8 @@
   "parameter_2_id": "#parameters/size",
   "relationship_type": "log",
   "details": "Definition",
+  "status": "established",
+  "proof": "By definition, $\\log\\mathrm{Size}(\\mathcal H)=\\log_2|\\mathcal H|$.",
   "short_name": "log_size_size",
   "name": "Log Size / Size",
   "witness": "#classes/halfintervals"

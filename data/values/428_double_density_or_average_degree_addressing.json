@@ -1,0 +1,12 @@
+{
+  "id": 428,
+  "name": "Double Density or Average Degree of Addressing",
+  "short_name": "double_density_or_average_degree_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The unprojected $1$-inclusion graph is edgeless: two distinct addressing concepts differ both in their primary coordinate and in at least one address coordinate.  Therefore its average degree is zero.",
+  "references": "\\cite{maass1992lower}"
+}

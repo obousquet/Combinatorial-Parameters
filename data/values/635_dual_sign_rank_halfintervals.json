@@ -1,0 +1,12 @@
+{
+  "id": 635,
+  "name": "Dual Sign Rank of Halfintervals",
+  "short_name": "dual_sign_rank_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/dual_sign_rank",
+  "value": "$\\begin{cases}1&n=1,\\\\2&n\\geq2.\\end{cases}$",
+  "value_class": "constant",
+  "status": "established",
+  "proof": "Transposing the signed threshold-incidence matrix leaves its rank-two realization argument unchanged.  Thus dual sign rank has the same value as sign rank for halfintervals.",
+  "references": "\\cite{alon2016sign}"
+}

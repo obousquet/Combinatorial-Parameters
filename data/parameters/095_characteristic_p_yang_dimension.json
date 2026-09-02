@@ -1,0 +1,35 @@
+{
+  "id": 95,
+  "name": "Characteristic-p Yang Dimension",
+  "short_name": "characteristic_p_yang_dimension",
+  "symbol": "\\mathrm{Y}_p",
+  "category": "algebraic",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "description": "Family of Yang dimensions over a field of fixed positive characteristic $p$",
+  "definition": "For each prime $p$, the **characteristic-$p$ Yang dimension** is $\\mathrm{Y}_p(\\mathcal H):=\\operatorname{pd}_{\\mathbb F_p}(I^*_{\\mathcal H})$. Equivalently it is the regularity of the Yang complex over $\\mathbb F_p$. Extension of scalars shows that it depends only on the characteristic, not on the particular field of characteristic $p$. For every prime $p$, $\\mathrm Y_p\\geq\\mathrm Y_0$. For a fixed finite class, equality holds for all but finitely many primes; possible exceptional primes divide torsion in an integral homology group occurring in Hochster's formula. Thus the homological formula permits characteristic dependence. No explicit Boolean class with $\\mathrm Y_p\\ne\\mathrm Y_q$ is currently recorded, so neither a strict separation nor an ordering between distinct positive characteristics is asserted.",
+  "graph_summary": "For each prime $p$, Yang dimension over characteristic $p$. $\\mathrm Y_p\\geq\\mathrm Y_0$; for a fixed finite class, only finitely many torsion-detected primes could differ. No strict positive-characteristic separation is recorded.",
+  "comments": "This database row is a uniformly quantified family, one parameter for each fixed prime $p$. Its $p=2$ specialization is the catalogue's default Yang dimension $\\mathrm Y$. A direct lattice-homology census found $\\mathrm Y_2=\\mathrm Y_3$ for every class on at most four coordinates (up to cube symmetry); this is a bounded computation, not a general theorem.",
+  "origin_references": "The underlying homological dimension was introduced by Yang in \\cite{yang2018homological}; the coefficient-field notation is made explicit in the local Yang-dimension draft.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Yang's delta-versus-conjunction counterexample \\cite{yang2018homological} has explicit cellular resolutions over an arbitrary field: on $2^d$ inputs the delta class has value $2^d-1$ and is contained in a conjunction class of value $d+1$. Thus monotonicity fails for every fixed positive characteristic when $d\\geq3$.",
+      "kind": "citation"
+    },
+    "doubly_monotonic": {
+      "proof": "Doubly monotonicity requires subfamily monotonicity, which is refuted by the recorded delta-versus-conjunction example.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity requires doubly monotonicity, which fails.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "At a fixed coefficient field, restricting the domain (projection) cannot increase the projective dimension of Yang's canonical ideal.",
+      "kind": "direct_argument"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": 592,
+  "name": "Self-Directed Queries Complexity of Blockwise-Addressing",
+  "short_name": "selfdirected_queries_complexity_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$\\leq 2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Example 2 first queries $z$, which determines whether the target is an $f_i$ or a $g_i$. It then queries the corresponding private coordinates while predicting 0; the unique positive coordinate identifies the target. At most one mistake occurs at $z$ and at most one afterwards, so $\\mathrm{SDC}\\le2$.",
+  "references": "\\cite{ben1997online}, Example 2"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 484,
+  "name": "Proper Stable Sample Compression of Full Cube",
+  "short_name": "proper_stable_sample_compression_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/proper_stable_sample_compression",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The stable unlabeled size-$n$ construction reconstructs Boolean concepts on the domain; every such concept belongs to the full cube, so it is proper.  Proper stable compression is at least ordinary unlabeled compression, whose value is $n$.",
+  "references": "\\cite{hanneke2021stable,chalopin2022unlabeled,palvolgyi2021unlabeled}"
+}

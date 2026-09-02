@@ -2,8 +2,11 @@
   "id": 78,
   "parameter_1_id": "#parameters/projected_minimum_degree",
   "parameter_2_id": "#parameters/vc_dimension",
-  "relationship_type": "equivalence",
-  "details": "Project on the largest shattered set.",
+  "relationship_type": "larger",
+  "details": "Project on the largest shattered set. The reverse inequality is false in general.",
+  "status": "established",
+  "proof": "If $S$ is shattered with $|S|=d$, the projection to $S$ is the full $d$-cube and has minimum degree $d$. Hence projected minimum degree is at least VC dimension. Equality cannot be asserted in general: there are classes with VC dimension $10$ and minimum degree $11$, and the full projection is one candidate in the projected maximum.",
+  "references": "\\cite{rubinstein2007shifting}",
   "short_name": "projected_minimum_degree_vc_dimension",
   "name": "Projected Minimum Degree / VC Dimension"
 }

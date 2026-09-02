@@ -1,0 +1,12 @@
+{
+  "id": 609,
+  "name": "SCO Dimension of Trivial Concepts",
+  "short_name": "sco_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For the two constant concepts, the established spherical dimension is $0$, so the SCO lower bound gives $\\mathrm{SCO}\\geq\\mathrm{sd}+1=1$. Their established sign rank is $1$, and the sign-rank SCO reduction gives $\\mathrm{SCO}\\leq1$. Thus the value is exactly one.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign}"
+}

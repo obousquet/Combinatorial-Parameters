@@ -1,0 +1,12 @@
+{
+  "id": 532,
+  "name": "Characteristic-p Yang Dimension of Singletons",
+  "short_name": "characteristic_p_yang_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/characteristic_p_yang_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For the delta-function class, distinct nonempty subfamilies have distinct least containing cubes, so the Taylor resolution of Yang's canonical ideal is minimal over every field. Its top syzygy has homological degree $n-1$.",
+  "references": "\\cite{yang2018homological}; see the full arXiv version, Section \"Delta Functions\"."
+}

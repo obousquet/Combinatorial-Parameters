@@ -4,5 +4,8 @@
   "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
   "relationship_type": "sqrt",
   "short_name": "vc_dimension_monotone_recursive_teaching_dimension",
-  "name": "VC Dimension / Monotone Recursive Teaching Dimension"
+  "name": "VC Dimension / Projected Recursive Teaching Dimension",
+  "details": "Equivalently, $\\mathrm{RTD}^p(\\mathcal H)=O(\\mathrm{VC}(\\mathcal H)^2)$.",
+  "status": "established",
+  "references": "\\cite{hu2017quadratic}"
 }

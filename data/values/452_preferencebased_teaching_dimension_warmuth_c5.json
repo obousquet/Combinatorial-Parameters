@@ -1,0 +1,12 @@
+{
+  "id": 452,
+  "name": "Preference-Based Teaching Dimension of Warmuth's $C_5$ Class",
+  "short_name": "preferencebased_teaching_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/preferencebased_teaching_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For finite classes, preference-based teaching dimension equals recursive teaching dimension.  Since the recursive teaching dimension of $C_5$ is three, its preference-based teaching dimension is three.",
+  "references": "\\cite{gao2017preference,palvolgyi2021unlabeled}"
+}

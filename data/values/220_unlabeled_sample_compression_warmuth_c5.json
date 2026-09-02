@@ -1,0 +1,11 @@
+{
+  "id": 220,
+  "name": "Unlabeled Sample Compression of Warmuth's $C_5$ class",
+  "short_name": "unlabeled_sample_compression_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/unlabeled_sample_compression",
+  "value": "$3$",
+  "status": "established",
+  "proof": "Keeping all positively labeled positions gives a size-three scheme.  P\u00e1lv\u00f6lgyi and Tardos prove that no size-two unlabeled scheme exists.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

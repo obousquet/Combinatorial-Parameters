@@ -1,0 +1,11 @@
+{
+  "id": 157,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Querying all $n$ coordinates identifies the target.  If any coordinate is unqueried, two concepts differing only there remain consistent with every answer, so $n$ queries are necessary.",
+  "name": "Membership Query Complexity of Full Cube",
+  "short_name": "membership_query_complexity_full_cube"
+}

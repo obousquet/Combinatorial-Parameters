@@ -1,0 +1,11 @@
+{
+  "id": 225,
+  "name": "Largest Shattered Set of Singletons plus Empty Set",
+  "short_name": "largest_shattered_set_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for singletons plus the empty set is one."
+}

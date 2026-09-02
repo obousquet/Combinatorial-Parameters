@@ -1,0 +1,30 @@
+{
+  "id": 93,
+  "name": "Subset Teaching Dimension",
+  "short_name": "subset_teaching_dimension",
+  "symbol": "\u005cmathrm{STD}",
+  "category": "teaching",
+  "monotonic": false,
+  "p_monotonic": null,
+  "c_monotonic": null,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "definition": "Let $\u005cmathrm{STS}^{0}(h,\u005cmathcal H)$ be the set of all ordinary minimum teaching samples for $h$. Given $k$ and a sample $S$, set $\u005cmathrm{Cons}_{\u005cmathrm{sub}}(S,\u005cmathcal H,k)=\u005c{h'\u005cin\u005cmathcal H:\u005cexists S'\u005cin\u005cmathrm{STS}^{k}(h',\u005cmathcal H), S\u005csubseteq S'\u005c}$. Then $\u005cmathrm{STD}^{k+1}(h,\u005cmathcal H)$ is the smallest $|S|$ for which this set is $\u005c{h\u005c}$, and $\u005cmathrm{STS}^{k+1}(h,\u005cmathcal H)$ contains all minimizers. Once these sets stabilize, the **Subset Teaching Dimension** is the maximum stabilized value over $h$.",
+  "graph_summary": "Iterated cooperative teaching: a sample identifies a target by being contained in one of its previous minimum teaching samples and in no other target’s.",
+  "description": "An iteratively defined teaching parameter. It is at most ordinary teaching dimension, but is neither comparable with Balbach nor recursive teaching dimension nor monotone under subclasses.",
+  "origin_references": "Introduced in \u005ccite{zilles2011models}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Theorem 21 constructs, for every $u>2$, a class $\u005cmathcal C$ with a subclass $\u005cmathcal C'$ such that $\u005cmathrm{STD}(\u005cmathcal C)=2$ and $\u005cmathrm{STD}(\u005cmathcal C')=u$.",
+      "kind": "citation"
+    },
+    "doubly_monotonic": {
+      "proof": "Doubly monotonicity requires subfamily monotonicity, which Theorem 21 refutes.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity requires doubly monotonicity, which fails.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

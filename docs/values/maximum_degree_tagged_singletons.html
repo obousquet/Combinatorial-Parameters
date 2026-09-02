@@ -71,12 +71,12 @@
         <p><strong>Name: </strong>Maximum Degree of Tagged Singletons</p>
 <p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/maximum_degree.html">Maximum Degree</a></p>
-<p><strong>Value: </strong>$\left\lceil\frac{n}{2}\right\rceil$</p>
+<p><strong>Value: </strong>$\left\lfloor\frac{n}{2}\right\rfloor+\lceil\log n\rceil+2$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
-<p><strong>Status:</strong> </p>
-
-
+<p><strong>Details: </strong>For the displayed tagged-singletons formula and the usual asymptotic range of $n$; the legacy $n/2$ entry omitted the tag-allocation offset.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The $1$-inclusion graph has an edge from $\emptyset$ to every tag singleton, and an edge from the tag singleton $\{n+\ell\}$ to each tagged pair carrying tag $\ell$.  For $\ell=1$, the definition of $f$ assigns exactly $\lfloor n/2\rfloor+\lceil\log n\rceil+1$ ordinary coordinates to that tag.  Its degree is therefore $\lfloor n/2\rfloor+\lceil\log n\rceil+2$.  Later tag groups are smaller, every tagged pair has degree one, and the empty concept has only $\lceil\log n\rceil$ neighbours, proving this is the maximum.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
     </div>

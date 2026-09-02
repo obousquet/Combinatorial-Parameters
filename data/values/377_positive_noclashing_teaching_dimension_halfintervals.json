@@ -1,0 +1,12 @@
+{
+  "id": 377,
+  "name": "Positive No-Clashing Teaching Dimension of Half-intervals",
+  "short_name": "positive_noclashing_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Assign initial segment $[i]$ its positive endpoint example $(i,1)$. For $i<j$, $[i]$ is inconsistent with $(j,1)$, so no two distinct concepts clash. A nontrivial class cannot have width zero.",
+  "references": "\\cite{KSZ2019}"
+}

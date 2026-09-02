@@ -1,0 +1,11 @@
+{
+  "id": 232,
+  "name": "Largest Shattered Set of Majority",
+  "short_name": "largest_shattered_set_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the majority class is $n$."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 616,
+  "name": "Extended Teaching Dimension of Warmuth's $C_5$ Class",
+  "short_name": "extended_teaching_dimension_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Extended teaching dimension equals star number for finite binary classes. The established star number of Warmuth's $C_5$ class is $3$, so $\\mathrm{XTD}=3$.",
+  "references": "\\cite{hanneke2015minimax,palvolgyi2021unlabeled}"
+}

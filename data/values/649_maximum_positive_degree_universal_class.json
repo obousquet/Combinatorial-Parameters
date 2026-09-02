@@ -1,0 +1,12 @@
+{
+  "id": 649,
+  "name": "Maximum Positive Degree of Universal Class",
+  "short_name": "maximum_positive_degree_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For distinct i,j, the universal hypotheses $u_i$ and $u_j$ disagree on exactly the $2^{n-1}$ subsets containing precisely one of i,j. Hence the 1-inclusion graph has no edges (for n at least 2), so every positive degree is zero.",
+  "references": "\\cite{haussler1994predicting,chornomaz2025spherical}"
+}

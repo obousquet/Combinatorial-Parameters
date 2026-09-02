@@ -1,0 +1,12 @@
+{
+  "id": 379,
+  "name": "Positive No-Clashing Teaching Dimension of Addressing",
+  "short_name": "positive_noclashing_teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Assign every concept its unique positive primary coordinate. Any other addressing concept is negative there, so the resulting width-one mapping is positive and non-clashing. The class is nontrivial, ruling out zero.",
+  "references": "\\cite{KSZ2019}"
+}

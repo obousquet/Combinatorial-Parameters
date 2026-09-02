@@ -1,14 +1,34 @@
 {
   "id": 71,
   "name": "Dual Sign Rank",
-  "symbol": "$\\mathrm{DSR}$",
-  "definition": "The **dual sign rank** of a sign matrix $S$ is the maximum number $k$ such that there exist $k$ columns of $S$ such that any real matrix $M$ with signs $S$ has those column linearly independent.",
+  "symbol": "\\mathrm{DSR}",
+  "definition": "The **dual sign rank** of a sign matrix $S$ is the largest $k$ for which some fixed $k$ columns are linearly independent in every real matrix $M$ whose sign pattern is $S$.",
+  "graph_summary": "The largest fixed set of columns forced to be linearly independent in every realization.",
   "category": "algebraic",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "dual_sign_rank"
+  "strictly_monotonic": null,
+  "short_name": "dual_sign_rank",
+  "origin_references": "Introduced in the form used here in \\cite{alon2016sign}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Passing to a subfamily deletes rows of the sign matrix. If a fixed column set is independent in every realization after rows are deleted, it is in particular independent in the restriction of every realization of the original matrix. Thus adding rows can only increase the maximum universally independent column set.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A projection deletes columns and identifies some equal projected rows. Choose one original row above each projected row. If a fixed remaining column set is independent in every realization of the projected matrix, then it is independent on these representative rows in every realization of the original matrix, hence independent in the full original realization.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

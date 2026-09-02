@@ -1,0 +1,13 @@
+{
+  "id": 263,
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/list_replicability",
+  "relationship_type": "larger",
+  "details": "Every finite binary concept class satisfies $\\mathrm{SR}(\\mathcal H)\\geq\\mathrm{LR}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "The cited paper proves $\\mathrm{SCdim}(\\mathcal H)\\leq\\mathrm{SR}(\\mathcal H)-1$ and $\\mathrm{LR}(\\mathcal H)=\\mathrm{SCdim}(\\mathcal H)+1$. Combining the two displayed equalities yields the claim.",
+  "references": "\\cite{blondal2026simplicialcovering}",
+  "proof_source": "Corollary  in the cited paper (the sign-rank corollary immediately following the extremal-class theorem).",
+  "short_name": "sign_rank_list_replicability",
+  "name": "Sign Rank / List Replicability Number"
+}

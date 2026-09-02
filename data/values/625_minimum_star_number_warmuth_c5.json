@@ -1,0 +1,12 @@
+{
+  "id": 625,
+  "name": "Minimum Star Number of Warmuth's $C_5$ Class",
+  "short_name": "minimum_star_number_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The checked exact enumerator constructs the ten cyclic $1001$-pattern concepts, enumerates all $2^5$ centre labelings and all coordinate subsets, and implements the centred-star definition directly. Its minimum is $3$.",
+  "references": "\\cite{hanneke2024star_eluder,palvolgyi2021unlabeled}"
+}

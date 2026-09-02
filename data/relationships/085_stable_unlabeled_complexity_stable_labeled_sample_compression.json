@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/stable_unlabeled_complexity",
   "parameter_2_id": "#parameters/stable_labeled_sample_compression",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "For finite concept classes; unlabeled stable compression is a restricted form of labeled stable compression.",
+  "proof": "Forgetting labels from a compression set is an additional restriction. Thus every stable unlabeled scheme is a stable labeled scheme, and the minimum stable-unlabeled size is at least the stable-labeled one.",
+  "references": "\\cite{hanneke2021stable,bousquet2020proper}",
   "short_name": "stable_unlabeled_complexity_stable_labeled_sample_compression",
   "name": "Stable Unlabeled Complexity / Stable Labeled Sample Compression"
 }

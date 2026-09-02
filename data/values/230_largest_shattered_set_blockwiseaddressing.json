@@ -1,0 +1,10 @@
+{
+  "id": 230,
+  "name": "Largest Shattered Set of Blockwise-Addressing",
+  "short_name": "largest_shattered_set_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$d$",
+  "status": "established",
+  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for Blockwise-Addressing is $d$."
+}

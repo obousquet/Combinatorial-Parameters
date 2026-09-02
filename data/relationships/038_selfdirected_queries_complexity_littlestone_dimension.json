@@ -4,5 +4,8 @@
   "parameter_2_id": "#parameters/littlestone_dimension",
   "relationship_type": "inv_log",
   "short_name": "selfdirected_queries_complexity_littlestone_dimension",
-  "name": "Self-Directed Queries Complexity / Littlestone Dimension"
+  "name": "Self-Directed Queries Complexity / Littlestone Dimension",
+  "details": "For finite classes, $\\mathrm{M}_{\\mathrm{sd}}(\\mathcal H) \\ge \\mathrm{L}(\\mathcal H)/\\log |\\mathcal H|$.",
+  "status": "established",
+  "references": "\\cite{ben1997online}"
 }

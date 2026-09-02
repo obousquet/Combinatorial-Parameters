@@ -1,0 +1,13 @@
+{
+  "id": 477,
+  "name": "Unlabeled Sample Compression of Singletons",
+  "short_name": "unlabeled_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a domain with at least two points.",
+  "status": "established",
+  "proof": "Fix a cyclic successor map.  If a realizable sample has a positive instance, retain it and reconstruct that singleton.  If it is all-negative, its instance set is a proper subset of the domain; retain a point whose successor lies outside that set and reconstruct the successor singleton.  This is consistent.  Size zero cannot distinguish two distinct singleton targets.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

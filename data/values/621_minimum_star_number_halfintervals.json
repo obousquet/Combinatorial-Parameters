@@ -1,0 +1,12 @@
+{
+  "id": 621,
+  "name": "Minimum Star Number of Half-intervals",
+  "short_name": "minimum_star_number_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$\\begin{cases}0&n=1,\\\\1&n\\geq2.\\end{cases}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $n=1$ there is one initial segment, so no nonempty star exists. For $n\\ge2$, the class of initial segments is intersection-closed and has VC dimension one. Example 2 of the cited paper gives $\\mathrm S_{\\mathrm{min}}=\\mathrm{VC}$ for intersection-closed classes, so the value is one.",
+  "references": "\\cite{hanneke2024star_eluder}"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 600,
+  "name": "List Replicability Number of Singletons plus Empty Set",
+  "short_name": "list_replicability_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/list_replicability",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "This is a proper extremal class of VC dimension one: its $n+1$ concepts and its shattered sets are respectively the empty set plus the $n$ singletons. The cited theorem gives $\\mathrm{SCdim}=1$, and $\\mathrm{LR}=\\mathrm{SCdim}+1$ gives $\\mathrm{LR}=2$.",
+  "references": "\\cite{blondal2026simplicialcovering}"
+}

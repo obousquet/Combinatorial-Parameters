@@ -1,0 +1,11 @@
+{
+  "id": 194,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$0$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "There are no $1$-inclusion neighbours in the original singleton graph, so every dominance is zero.",
+  "name": "Maximum Positive Degree of Singletons",
+  "short_name": "maximum_positive_degree_singletons"
+}

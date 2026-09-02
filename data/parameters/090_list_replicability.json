@@ -1,0 +1,22 @@
+{
+  "id": 90,
+  "name": "List Replicability Number",
+  "short_name": "list_replicability",
+  "symbol": "\u005cmathrm{LR}",
+  "category": "compression",
+  "monotonic": true,
+  "p_monotonic": null,
+  "c_monotonic": null,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "definition": "A learner is **$(\u005cepsilon,L)$-list replicable** for $\u005cmathcal H$ if, for every $\u005cdelta>0$, some sample size makes its output lie with probability at least $1-\u005cdelta$ in a fixed list of $L$ hypotheses, all of error below $\u005cepsilon$, for every realizable distribution. Let $\u005cmathrm{LR}(\u005cmathcal H,\u005cepsilon)$ be the least such $L$ and define the **list replicability number** $\u005cmathrm{LR}(\u005cmathcal H)=\u005clim_{\u005cepsilon\u005cto0}\u005cmathrm{LR}(\u005cmathcal H,\u005cepsilon)$.",
+  "graph_summary": "Smallest eventual list size to which a randomized learner’s output can be confined while remaining accurate.",
+  "description": "A realizable PAC-learning stability parameter; its definition includes the accuracy limit $\u005cepsilon\u005cto0$.",
+  "origin_references": "Defined in the list-replicability framework used by \u005ccite{chornomaz2025spherical}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Any $(\u005cepsilon,L)$-list-replicable learner for $\u005cmathcal H$ also works for a subclass: every distribution realizable by the subclass is realizable by $\u005cmathcal H$, so the same learner, sample size, and distribution-dependent accurate list apply. Minimize $L$ and take the accuracy limit.",
+      "kind": "direct_argument"
+    }
+  }
+}

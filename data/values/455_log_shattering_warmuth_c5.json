@@ -1,0 +1,12 @@
+{
+  "id": 455,
+  "name": "Log Shattering of Warmuth's $C_5$ Class",
+  "short_name": "log_shattering_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The empty set, every one-coordinate set, and every two-coordinate set are shattered, giving $1+5+\\binom52=16$ shattered sets.  No three-coordinate set is shattered because the VC dimension is two.  The binary logarithm of the number of shattered sets is therefore $\\log_2 16=4$.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

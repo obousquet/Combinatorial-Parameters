@@ -1,0 +1,11 @@
+{
+  "id": 333,
+  "name": "Distinguishing Range of Full Cube",
+  "short_name": "distinguishing_range_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "If a coordinate is omitted, two cube concepts differing only on it have identical traces. Retaining all $n$ coordinates is injective."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 634,
+  "name": "Sign Rank of Halfintervals",
+  "short_name": "sign_rank_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$\\begin{cases}1&n=1,\\\\2&n\\geq2.\\end{cases}$",
+  "value_class": "constant",
+  "status": "established",
+  "proof": "Index the initial segments by $i$ and the domain points by $x$, both from 1 to $n$.  The rank-two real matrix $M_{i,x}=i-x+\\tfrac12$ is positive exactly when $x\\leq i$, so it realizes the incidence signs.  For $n\\geq2$, the first two rows are neither equal nor opposite, whereas every nonzero rank-one sign matrix has all rows equal or opposite; hence rank one is impossible.  The $n=1$ matrix has rank one.",
+  "references": "\\cite{alon2016sign}"
+}

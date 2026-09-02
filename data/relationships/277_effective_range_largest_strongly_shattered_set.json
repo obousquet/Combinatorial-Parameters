@@ -1,0 +1,12 @@
+{
+  "id": 277,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, $\\mathrm E(\\mathcal H)\\geq\\mathrm{ST}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "A strongly shattered set of size d is the free-coordinate set of a contained d-cube.  Both labels occur on each of those coordinates, so all d coordinates belong to the effective range.",
+  "references": "\\cite{vapnik1971uniform}",
+  "short_name": "effective_range_largest_strongly_shattered_set",
+  "name": "Effective Range / Largest Strongly Shattered Set"
+}

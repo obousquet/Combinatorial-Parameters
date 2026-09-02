@@ -1,0 +1,15 @@
+{
+  "id": 260,
+  "parameter_1_id": "#parameters/list_replicability",
+  "parameter_2_id": "#parameters/dual_antipodal_vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "-\\tfrac12",
+  "details": "For every finite binary class and every $0<\\epsilon<1/2$, $\\mathrm{LR}(\\mathcal H,\\epsilon)\\geq1+\\lfloor\\mathrm{VC}^{*a}(\\mathcal H)/2\\rfloor$. Hence $\\mathrm{LR}(\\mathcal H)\\geq\\tfrac12\\mathrm{VC}^{*a}(\\mathcal H)+\\tfrac12$.",
+  "status": "established",
+  "proof": "This is the dual-antipodal-VC consequence stated in Theorem 10. For an integer $d$, $1+\\lfloor d/2\\rfloor\\geq d/2+1/2$; taking the accuracy limit yields the displayed affine bound.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "witness": "#classes/universal_class",
+  "short_name": "list_replicability_dual_antipodal_vc_dimension_affine",
+  "name": "List Replicability / Dual Antipodal VC Dimension (affine)"
+}

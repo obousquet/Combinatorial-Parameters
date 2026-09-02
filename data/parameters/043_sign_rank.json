@@ -1,14 +1,34 @@
 {
   "id": 43,
   "name": "Sign Rank",
-  "symbol": "$\\mathrm{SR}$",
-  "definition": "The **sign rank** of a sign matrix $S$ is the maximum number $k$ such for all real matrix $M$ whose signs are $S$, $M$ has rank at least $k$.",
+  "symbol": "\\mathrm{SR}",
+  "definition": "The **sign rank** of a sign matrix $S$ is the least rank of a real matrix $M$ whose sign pattern is $S$.",
+  "graph_summary": "The smallest real rank realizing the incidence sign pattern.",
   "category": "algebraic",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "sign_rank"
+  "strictly_monotonic": null,
+  "short_name": "sign_rank",
+  "origin_references": "This formulation and its connection with VC dimension are recorded in \\cite{alon2016sign}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "The incidence sign matrix of a subfamily is obtained by deleting rows.  Restricting any real sign realization to those rows cannot increase its rank.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "The incidence sign matrix after a coordinate projection is obtained by deleting columns.  Restricting a real sign realization to those columns cannot increase its rank.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

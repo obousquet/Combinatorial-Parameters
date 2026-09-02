@@ -1,0 +1,14 @@
+{
+  "id": 272,
+  "parameter_1_id": "#parameters/extremal_extension_vc_dimension",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "\\tfrac12",
+  "details": "For every finite binary class, $\\mathrm{VC}_{\\mathrm{extr}}(\\mathcal H)\\geq(\\mathrm{VC}^{*}(\\mathcal H)-1)/2$.",
+  "status": "established",
+  "proof": "The cited theorem gives $\\mathrm{VC}^{*}(\\mathcal E)\\leq2\\,\\mathrm{VC}(\\mathcal E)+1$ for every finite extremal class $\\mathcal E$. Apply it to an extremal extension of $\\mathcal H$ and use monotonicity of dual VC dimension under adding hypotheses; then minimize the extension VC dimension.",
+  "references": "\\cite{chase2024dual}",
+  "short_name": "extremal_extension_vc_dimension_dual_vc_dimension_affine",
+  "name": "Extremal-Extension VC Dimension / Dual VC Dimension (affine)"
+}

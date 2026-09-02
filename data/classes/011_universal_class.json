@@ -1,0 +1,9 @@
+{
+  "id": 11,
+  "name": "Universal Class",
+  "short_name": "universal_class",
+  "symbol": "\u005cmathcal U_n",
+  "definition": "The **universal class** $\u005cmathcal U_n=\u005c{u_i:i\u005cin[n]\u005c}$ has domain $2^{[n]}$ and $u_i(A)=1$ exactly when $i\u005cin A$. Equivalently, it is the dual class of the $n$-dimensional full cube.",
+  "comments": "This is the minimal class witnessing dual VC dimension $n$.",
+  "origin_references": "Used as the universal class in \u005ccite{chornomaz2025spherical}."
+}

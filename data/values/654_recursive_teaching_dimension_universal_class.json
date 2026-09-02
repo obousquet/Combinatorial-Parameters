@@ -1,0 +1,13 @@
+{
+  "id": 654,
+  "name": "Recursive Teaching Dimension of Universal Class",
+  "short_name": "recursive_teaching_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "All hypotheses can be removed in the first recursive batch: each $u_i$ has the one-point teaching set $(\\{i\\},1)$ in the full class. A recursive teaching dimension of zero is impossible for a class with more than one hypothesis. Hence $\\mathrm{RTD}=1$.",
+  "references": "\\cite{zilles2011models}"
+}

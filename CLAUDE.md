@@ -79,6 +79,36 @@ classes to LaTeX definition labels. Validate it after changing either inventory:
 ```bash
 python3 sync/validate_latex_mapping.py \
   --data-dir data --latex-dir ~/latex/CombinatorialParameters
+
+# `symbol` fields in both tables are bare TeX; renderers add delimiters.
+python3 sync/validate_symbols.py --data-dir data
+
+# Audits the proof/reference requirement for established values and
+# relationships, plus each declared monotonicity classification.
+python3 sync/audit_provenance.py --data-dir data
+
+# Checks unambiguous established literal-integer benchmark values against
+# direct linear and equality relationships. Formulae and scoped alternatives
+# are deliberately skipped.
+python3 sync/audit_benchmark_consistency.py \
+  --data-dir data --fail-on-contradiction
+```
+
+Validate the monotonicity metadata after changing parameter properties or an
+established equality relationship:
+
+```bash
+python3 sync/validate_monotonicity.py --data-dir data --check
+
+# Reports every declared monotonicity flag without a proof or provenance entry.
+python3 sync/audit_monotonicity_evidence.py --data-dir data
+
+# This only backfills evidence forced by other declared properties; it does
+# not infer foundational monotonicity claims.
+python3 sync/backfill_monotonicity_evidence.py --data-dir data --write
+
+# Verifies direct inequalities forced by registered max-over-subfamilies constructions.
+python3 sync/validate_monotonicity_consequences.py --data-dir data --check
 ```
 
 The database owns the structured catalogue and its LaTeX catalogue sources.
@@ -94,6 +124,10 @@ python3 sync/generate_latex_catalog.py \
 python3 sync/generate_latex_catalog.py \
   --data-dir data --section value-table \
   --output ~/latex/CombinatorialParameters/includes/generated/val_table.tex
+
+python3 sync/generate_latex_catalog.py \
+  --data-dir data --section value-proofs \
+  --output ~/latex/CombinatorialParameters/includes/generated/value_proofs.tex
 
 python3 sync/generate_latex_catalog.py \
   --data-dir data --section parameter-definitions \

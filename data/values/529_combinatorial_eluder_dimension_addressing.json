@@ -1,0 +1,13 @@
+{
+  "id": 529,
+  "name": "Combinatorial Eluder Dimension of Addressing",
+  "short_name": "combinatorial_eluder_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$2^{\\lfloor\\log_2 n\\rfloor}-1$",
+  "value_class": "omega_n",
+  "details": "Under the standard convention $n=2^d$, this is $n-1$.",
+  "status": "established",
+  "proof": "Take the addressing concept with the all-zero address word as base.  List the primary coordinate of every other address word and use its addressing concept as witness.  A witness has label 0 on all other primary coordinates, so it agrees with the base at every earlier listed point.  This gives $|\\mathcal H|-1=2^{\\lfloor\\log_2 n\\rfloor}-1$ steps; the general size bound gives equality.",
+  "references": "\\cite{li2022understanding,maass1992lower}"
+}

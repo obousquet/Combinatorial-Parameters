@@ -1,0 +1,11 @@
+{
+  "id": 169,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "By definition $\\mathrm{TS}_{\\max}=\\mathrm{TD}$; an interior initial segment needs its final positive and next negative coordinates.",
+  "name": "Maximum Teaching Set Size of Half-intervals",
+  "short_name": "maximum_teaching_set_size_halfintervals"
+}

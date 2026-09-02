@@ -1,0 +1,14 @@
+{
+  "id": 219,
+  "parameter_1_id": "#parameters/sco_dimension",
+  "parameter_2_id": "#parameters/spherical_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "-1",
+  "details": "For every finite binary class, $\\mathrm{SCO}(\\mathcal H)\\geq\\mathrm{sd}(\\mathcal H)+1$.",
+  "status": "established",
+  "proof": "This is the first inequality of Theorem 12 in the cited paper, obtained by applying a Borsuk--Ulam argument to any SCO reduction.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "sco_dimension_spherical_dimension_affine",
+  "name": "SCO Dimension / Spherical Dimension (affine)"
+}

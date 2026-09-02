@@ -1,0 +1,12 @@
+{
+  "id": 566,
+  "name": "Projected Strongly Shattered Dimension of Universal Class",
+  "short_name": "projected_strongly_shattered_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/projected_strongly_shattered_dimension",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Projected Strongly Shattered Dimension is exactly VC dimension, whose established value on the universal class is $\\lfloor\\log_2 n\\rfloor$.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

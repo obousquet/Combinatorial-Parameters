@@ -1,0 +1,13 @@
+{
+  "id": 168,
+  "parameter_1_id": "#parameters/unlabeled_sample_compression",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "The inequality can be strict: Warmuth's $C_5$ class has $\\mathrm{USC}=3$ and $\\mathrm{VC}=2$.",
+  "witness": "#classes/warmuth_c5",
+  "status": "established",
+  "proof": "If a set of $d$ points is shattered, its $2^d$ full labelings must compress to distinct unlabeled subsets: a single subset has only one reconstruction.  Fewer than $d$ retained points offer only $\\sum_{i=0}^{d-1}\\binom di<2^d$ subsets, so every unlabeled scheme has size at least $d$.",
+  "references": "\\cite{palvolgyi2021unlabeled}",
+  "short_name": "unlabeled_sample_compression_vc_dimension",
+  "name": "Unlabeled Sample Compression / VC Dimension"
+}

@@ -1,0 +1,34 @@
+{
+  "id": 96,
+  "name": "Characteristic-zero Yang Dimension",
+  "short_name": "characteristic_zero_yang_dimension",
+  "symbol": "\\mathrm{Y}_0",
+  "category": "algebraic",
+  "symmetric": true,
+  "monotonic": false,
+  "p_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "description": "Yang dimension over a characteristic-zero field",
+  "definition": "The **characteristic-zero Yang dimension** is $\\mathrm{Y}_0(\\mathcal H):=\\operatorname{pd}_{\\mathbb Q}(I^*_{\\mathcal H})$, equivalently the regularity of the Yang complex over $\\mathbb Q$. It has the same value over every characteristic-zero field. It is at most $\\mathrm Y_p$ for every prime $p$. For a fixed finite class, $\\mathrm Y_p=\\mathrm Y_0$ outside the finite set of primes detected by torsion in the integral Hochster/interval complexes.",
+  "graph_summary": "Yang dimension in characteristic zero. It lower-bounds every $\\mathrm Y_p$; for a fixed finite class, only finitely many primes can differ from it.",
+  "origin_references": "The underlying homological dimension was introduced by Yang in \\cite{yang2018homological}; this characteristic-zero specialization is standard coefficient-field notation.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Yang's delta-versus-conjunction counterexample \\cite{yang2018homological} has explicit cellular resolutions over an arbitrary field: on $2^d$ inputs the delta class has value $2^d-1$ and is contained in a conjunction class of value $d+1$. Thus monotonicity fails over characteristic zero when $d\\geq3$.",
+      "kind": "citation"
+    },
+    "doubly_monotonic": {
+      "proof": "Doubly monotonicity requires subfamily monotonicity, which is refuted by the recorded delta-versus-conjunction example.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Strict monotonicity requires doubly monotonicity, which fails.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "At a fixed coefficient field, restricting the domain (projection) cannot increase the projective dimension of Yang's canonical ideal.",
+      "kind": "direct_argument"
+    }
+  }
+}

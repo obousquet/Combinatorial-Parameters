@@ -1,0 +1,15 @@
+{
+  "id": 216,
+  "parameter_1_id": "#parameters/extremal_extension_vc_dimension",
+  "parameter_2_id": "#parameters/spherical_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "-\\tfrac12",
+  "details": "For every nonempty finite binary class, $\\mathrm{sd}(\\mathcal H)\\leq2\\,\\mathrm{VC}_{\\mathrm{extr}}(\\mathcal H)-1$; equivalently $\\mathrm{VC}_{\\mathrm{extr}}(\\mathcal H)\\geq(\\mathrm{sd}(\\mathcal H)+1)/2$.",
+  "status": "established",
+  "proof": "Theorem 9 of the cited paper proves $\\mathrm{sd}(\\mathcal E)\\leq2\\,\\mathrm{VC}(\\mathcal E)-1$ for every finite extremal class $\\mathcal E$. Apply it to a minimum-VC extremal extension of $\\mathcal H$ and use spherical-dimension monotonicity under inclusion.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "witness": "#classes/full_cube",
+  "short_name": "extremal_extension_vc_dimension_spherical_dimension_affine",
+  "name": "Extremal-Extension VC Dimension / Spherical Dimension (affine)"
+}

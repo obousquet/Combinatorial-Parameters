@@ -4,6 +4,8 @@
   "parameter_2_id": "#parameters/hamming_radius",
   "relationship_type": "larger",
   "details": "Definition",
+  "status": "established",
+  "proof": "Outside the effective range all concepts have the same label, so choose the ball center with that common label there. On the effective range every concept differs from the center on at most $E(\\mathcal H)$ coordinates, giving Hamming radius at most the effective range.",
   "witness": "#classes/singletons",
   "short_name": "effective_range_hamming_radius",
   "name": "Effective Range / Hamming Radius"

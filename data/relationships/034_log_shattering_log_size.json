@@ -3,7 +3,11 @@
   "parameter_1_id": "#parameters/log_shattering",
   "parameter_2_id": "#parameters/log_size",
   "relationship_type": "larger",
-  "details": "Pajor Lemma",
+  "details": "Pajor's sandwich theorem.",
+  "status": "established",
+  "latex_proof_label": "thm:sandwich",
+  "proof_source": "Full proof in the LaTeX survey: Theorem `thm:sandwich`.",
+  "references": "\\cite{pajor1985volumes,bollobas1995defect}",
   "short_name": "log_shattering_log_size",
   "name": "Log Shattering / Log Size",
   "witness": "#classes/trivial_concepts"

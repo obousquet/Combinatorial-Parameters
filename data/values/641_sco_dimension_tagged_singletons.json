@@ -1,0 +1,13 @@
+{
+  "id": 641,
+  "name": "SCO Dimension of Tagged Singletons",
+  "short_name": "sco_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$2\\leq\\mathrm{SCO}\\leq3$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq5$.",
+  "status": "established",
+  "proof": "For $n\\geq5$, the established spherical dimension of tagged singletons is 1, so Theorem 12 gives $\\mathrm{SCO}\\geq2$.  Their established VC dimension is one, hence their sign rank is at most 3 by the VC-one sign-rank theorem.  The sign-rank SCO reduction gives $\\mathrm{SCO}\\leq3$.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign}"
+}

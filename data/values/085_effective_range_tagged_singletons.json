@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/effective_range",
   "value": "$n+\\lceil \\log n \\rceil$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "Every coordinate in the tagged-singletons domain is effective.",
+  "status": "established",
+  "proof": "For each ordinary coordinate $i\\in[n]$, the tagged singleton containing $i$ differs from $\\emptyset$ at $i$.  For each tag coordinate $n+\\ell$, the singleton $\\{n+\\ell\\}$ differs from $\\emptyset$ there.  Hence the effective range is the full domain of $n+\\lceil\\log n\\rceil$ coordinates.",
+  "references": "\\cite{maass1992lower}"
 }

@@ -1,12 +1,26 @@
 {
   "id": 45,
   "name": "Positive Teaching Dimension",
-  "symbol": "$\\mathrm{TD}^+$",
+  "symbol": "\\mathrm{TD}^+",
   "category": "teaching",
   "symmetric": false,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "positive_teaching_dimension"
+  "p_monotonic": null,
+  "c_monotonic": true,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "definition": "The **Positive Teaching Dimension** is the largest, over $h\\in\\mathcal{H}$, minimum size of a teaching set for $h$ that uses only positive examples of $h$.",
+  "graph_summary": "Worst-case minimum size of a teaching set restricted to positive examples.",
+  "origin_references": "Positive-example variants of teaching dimension are studied in \\cite{balbach2008measuring}.",
+  "short_name": "positive_teaching_dimension",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A positive teaching set for a target in a class remains a positive teaching set after restricting to a subfamily. Taking the maximum over the remaining targets cannot increase the value.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict a positive teaching set to unfixed coordinates.  It is still positive and distinguishes the target inside the conditioned fibre.",
+      "kind": "direct_argument"
+    }
+  }
 }

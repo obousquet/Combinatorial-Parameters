@@ -48,6 +48,36 @@ def validate_table(
     return errors
 
 
+def survey_labels(latex_dir: Path) -> set[str]:
+    """Return labels from LaTeX-authored survey prose, excluding generated files."""
+    labels = set()
+    for source in latex_dir.rglob("*.tex"):
+        if "generated" in source.parts:
+            continue
+        labels.update(LABEL_PATTERN.findall(source.read_text()))
+    return labels
+
+
+def validate_relationship_proof_labels(
+    entries: list[dict], latex_labels: set[str]
+) -> list[str]:
+    errors = []
+    for entry in entries:
+        label = entry.get("latex_proof_label")
+        if not label:
+            continue
+        name = entry.get("short_name", f"ID {entry['id']}")
+        if label not in latex_labels:
+            errors.append(
+                f"relationship/{name} points to missing survey proof label {label}"
+            )
+        if not entry.get("proof_source"):
+            errors.append(
+                f"relationship/{name} has latex_proof_label but no proof_source"
+            )
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
@@ -73,8 +103,11 @@ def main() -> int:
 
     parameter_entries = records(args.data_dir, "parameters")
     class_entries = records(args.data_dir, "classes")
+    relationship_entries = records(args.data_dir, "relationships")
     errors = validate_table(parameter_entries, mapping["parameters"], latex_labels, "parameters")
     errors.extend(validate_table(class_entries, mapping["classes"], latex_labels, "classes"))
+    proof_labels = survey_labels(args.latex_dir)
+    errors.extend(validate_relationship_proof_labels(relationship_entries, proof_labels))
     if errors:
         print("LaTeX mapping validation failed:", *errors, sep="\n- ", file=sys.stderr)
         return 1
@@ -83,7 +116,9 @@ def main() -> int:
     print(
         "LaTeX mapping valid: "
         f"{mapped_parameters} mapped parameters, {len(placeholders)} documented placeholders, "
-        f"{len(class_entries)} mapped classes."
+        f"{len(class_entries)} mapped classes, "
+        f"{sum(bool(entry.get('latex_proof_label')) for entry in relationship_entries)} "
+        "relationship proof labels."
     )
     return 0
 

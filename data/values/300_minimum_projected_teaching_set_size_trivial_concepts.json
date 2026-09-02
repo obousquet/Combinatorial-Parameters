@@ -1,0 +1,11 @@
+{
+  "id": 300,
+  "name": "Minimum Projected Teaching-Set Size of Trivial Concepts",
+  "short_name": "minimum_projected_teaching_set_size_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/minimum_projected_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty projection of the two constant concepts is again two complementary constants, and one labeled coordinate teaches either target. The empty projection needs no examples. Hence each target has worst projected teaching-set size one."
+}

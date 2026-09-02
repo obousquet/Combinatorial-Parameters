@@ -1,0 +1,13 @@
+{
+  "id": 478,
+  "name": "Proper Unlabeled Sample Compression of Singletons",
+  "short_name": "proper_unlabeled_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/proper_unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a domain with at least two points.",
+  "status": "established",
+  "proof": "The cyclic-boundary size-one unlabeled scheme always reconstructs a singleton in the class.  It is therefore proper, and the ordinary unlabeled lower bound of one applies.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 701,
+  "name": "Littlestone Dimension of Universal Class",
+  "short_name": "littlestone_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Let d be $\\lfloor\\log_2 n\\rfloor$ and select $2^d$ indices. Assign them distinct d-bit strings; at level t query the domain point consisting of the selected indices whose tth bit is one. Every root-to-leaf label sequence is realized by its coded $u_i$, so $\\mathrm L\\geq d$. A depth-d mistake tree has $2^d$ distinct realized leaves, whereas the class has n hypotheses, proving the matching upper bound.",
+  "references": "\\cite{littlestone1988learning}"
+}

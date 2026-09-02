@@ -1,0 +1,12 @@
+{
+  "id": 510,
+  "name": "Spherical Dimension of Singletons plus empty set",
+  "short_name": "spherical_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/spherical_dimension",
+  "value": "$1$",
+  "details": "For $n\\geq3$.",
+  "status": "established",
+  "proof": "Its antipodal complex has one positive and one negative literal for each coordinate, with edges precisely between opposite-sign literals from different coordinates: it is the complete bipartite graph minus a perfect matching. It contains an antipodal six-cycle when $n\\geq3$, giving a 1-sphere. Since the complex is one-dimensional, no larger sphere occurs.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

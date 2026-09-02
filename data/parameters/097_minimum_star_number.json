@@ -1,0 +1,19 @@
+{
+  "id": 97,
+  "name": "Minimum Star Number",
+  "short_name": "minimum_star_number",
+  "symbol": "\\mathrm{S}_{\\mathrm{min}}",
+  "category": "teaching",
+  "definition": "For a finite binary class $\\mathcal H$ and any (possibly unrealizable) labeling $g:\\mathcal X\\to\\{0,1\\}$, let $\\mathrm S_g(\\mathcal H)$ be the largest $d$ for which there are distinct points $x_1,\\ldots,x_d$ and hypotheses $h_0,\\ldots,h_d\\in\\mathcal H$ such that $h_0(x_j)=g(x_j)$ for all $j$, while $h_i(x_j)=g(x_j)$ holds exactly when $j\\ne i$ for every $i\\ge1$. The **minimum star number** is $\\mathrm S_{\\mathrm{min}}(\\mathcal H)=\\inf_g\\mathrm S_g(\\mathcal H)$.",
+  "graph_summary": "Smallest star-number value over all possible centre labelings; it bounds a stable unlabeled compression scheme.",
+  "description": "Hanneke's minimum-centred-star parameter. For finite binary classes it lies between VC dimension and the ordinary star number.",
+  "origin_references": "Introduced by Hanneke in \\cite{hanneke2024star_eluder}.",
+  "symmetric": true,
+  "monotonic": true,
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For every fixed centre labeling, every star of a subfamily remains a star after enlarging the class. Taking the infimum over centres preserves this inequality.",
+      "kind": "direct_argument"
+    }
+  }
+}

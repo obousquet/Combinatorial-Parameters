@@ -1,13 +1,37 @@
 {
   "id": 10,
   "name": "Minimum Degree",
-  "symbol": "$\\mathrm{d}_{\\min}$",
+  "symbol": "\\mathrm{d}_{\\min}",
   "definition": "The **minimum degree** of a concept class is defined as the minimum degree of its $1$-inclusion graph.",
   "category": "graph-based",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": false,
+  "c_monotonic": false,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "minimum_degree"
+  "short_name": "minimum_degree",
+  "comments": "Not c-monotonic: for $\\mathcal H=\\{000,001,110\\}$, the isolated function $110$ makes the minimum degree $0$, while conditioning the first coordinate to $0$ leaves an edge of minimum degree $1$.",
+  "monotonicity_evidence": {
+    "c_monotonic": {
+      "proof": "Counterexample: H={000,001,110} has an isolated vertex and hence minimum degree 0, while conditioning its first coordinate to 0 leaves an edge of minimum degree 1.",
+      "kind": "direct_argument"
+    },
+    "monotonic": {
+      "proof": "Counterexample: $\\{000,001,110\\}$ has an isolated vertex and minimum degree 0, whereas its subfamily $\\{000,001\\}$ is an edge and has minimum degree 1.",
+      "kind": "counterexample"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{000,001,110\\}$ has minimum degree 0. Projecting to the last two coordinates gives the two-edge path $\\{00,01,10\\}$, whose minimum degree is 1.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

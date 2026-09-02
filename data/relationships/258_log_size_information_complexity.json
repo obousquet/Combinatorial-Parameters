@@ -1,0 +1,12 @@
+{
+  "id": 258,
+  "parameter_1_id": "#parameters/log_size",
+  "parameter_2_id": "#parameters/information_complexity",
+  "relationship_type": "larger",
+  "details": "For every finite class, $\\mathrm{IC}(\\mathcal H)\\leq\\log_2|\\mathcal H|$.",
+  "status": "established",
+  "proof": "Choose a deterministic proper empirical-risk minimizer with fixed tie-breaking. Its output lies in $\\mathcal H$, so $I(S;\\mathcal A(S))\\leq H(\\mathcal A(S))\\leq\\log_2|\\mathcal H|$. This learner is admissible in the infimum defining information complexity; then take the distribution and sample-size supremum.",
+  "references": "\\cite{pradeep2022information}",
+  "short_name": "log_size_information_complexity",
+  "name": "Log Size / Information Complexity"
+}

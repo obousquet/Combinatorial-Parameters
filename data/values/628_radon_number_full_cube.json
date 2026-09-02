@@ -1,0 +1,12 @@
+{
+  "id": 628,
+  "name": "Radon Number of Full Cube",
+  "short_name": "radon_number_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/radon_number",
+  "value": "$\\lfloor\\log_2(2n+2)\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Proposition 22 of the cited paper proves that the n-dimensional full cube has Radon number $\\lfloor\\log_2(2n+2)\\rfloor$.",
+  "references": "\\cite{chase2024dual}"
+}

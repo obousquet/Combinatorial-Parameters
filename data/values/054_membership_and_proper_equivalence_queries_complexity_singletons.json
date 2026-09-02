@@ -4,7 +4,10 @@
   "short_name": "membership_and_proper_equivalence_queries_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/membership_and_proper_equivalence_queries_complexity",
-  "value": "$n$",
+  "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "This corrects the legacy table: allowing membership queries cannot cost more than membership-query complexity alone.",
+  "status": "established",
+  "proof": "Query membership at $n-1$ distinct coordinates.  A positive answer identifies its singleton target, and if all answers are negative the only remaining singleton is identified.  Conversely, an adversary can answer $0$ to any membership query, eliminating only that singleton.  Against a proper equivalence query proposing $\\{i\\}$, it returns $i$ whenever possible, again eliminating only $\\{i\\}$.  Thus no allowed query removes more than one candidate in the worst case, and $n-1$ queries are necessary and sufficient.",
+  "references": "\\cite{angluin1988queries}"
 }

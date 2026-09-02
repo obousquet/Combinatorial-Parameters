@@ -1,0 +1,12 @@
+{
+  "id": 429,
+  "name": "Densest Subgraph (twice) of Addressing",
+  "short_name": "densest_subgraph_twice_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every subgraph of the edgeless unprojected $1$-inclusion graph is edgeless.  Hence its maximum subgraph average degree, equivalently densest-subgraph double density, is zero.",
+  "references": "\\cite{maass1992lower}"
+}

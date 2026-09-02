@@ -1,0 +1,12 @@
+{
+  "id": 394,
+  "name": "Proper Stable Labeled Sample Compression of Half-intervals",
+  "short_name": "proper_stable_labeled_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/proper_stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The stable endpoint scheme always reconstructs an initial segment, hence lies within the class.  It is therefore proper and stable of size one; zero is impossible.",
+  "references": "\\cite{FW1995}"
+}

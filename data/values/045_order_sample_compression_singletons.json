@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/order_sample_compression",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "Singleton classes have VC dimension one.",
+  "status": "established",
+  "proof": "The order-compression construction for VC-dimension-one classes gives an order sample compression scheme of size one.  Size zero is impossible for a class with two distinct concepts, since an empty compression set has one fixed reconstruction and cannot be consistent with samples distinguishing those concepts.  Hence the value is exactly one.",
+  "references": "\\cite{darnstadt2016order}"
 }

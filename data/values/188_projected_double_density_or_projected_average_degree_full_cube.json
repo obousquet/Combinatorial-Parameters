@@ -1,0 +1,11 @@
+{
+  "id": 188,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full-domain projection has average degree $n$.  A projection onto $k\\le n$ coordinates is a $k$-cube, whose average degree is $k$.",
+  "name": "Projected Double Density or Projected Average Degree of Full Cube",
+  "short_name": "projected_double_density_or_projected_average_degree_full_cube"
+}

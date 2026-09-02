@@ -1,0 +1,13 @@
+{
+  "id": 648,
+  "name": "Dual Sign Rank of Singletons plus Empty Set",
+  "short_name": "dual_sign_rank_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/dual_sign_rank",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq4$.",
+  "status": "established",
+  "proof": "After transposition, the columns indexed by singleton concepts still form an n-by-n signed identity submatrix, so the dual sign rank is at least 3 for $n\\geq4$. The dual class has VC dimension one, and the VC-one sign-rank theorem gives the upper bound 3. Therefore the dual sign rank is exactly 3.",
+  "references": "\\cite{alon2016sign}"
+}

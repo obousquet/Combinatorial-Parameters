@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/membership_and_equivalence_queries_complexity",
   "relationship_type": "larger",
+  "details": "Allowing membership queries in addition to arbitrary equivalence queries can only help the learner.",
+  "status": "established",
+  "proof": "Equivalence-query complexity equals Littlestone dimension. Allowing membership queries in addition to arbitrary equivalence queries enlarges the learner's permitted query family, so it cannot require more queries.",
+  "references": "\\cite{littlestone1988learning}",
   "short_name": "littlestone_dimension_membership_and_equivalence_queries_complexity",
   "name": "Littlestone Dimension / Membership and Equivalence Queries Complexity"
 }

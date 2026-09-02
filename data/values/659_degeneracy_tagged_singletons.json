@@ -1,0 +1,13 @@
+{
+  "id": 659,
+  "name": "Degeneracy of Tagged Singletons",
+  "short_name": "degeneracy_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For the nondegenerate tagged-singletons range $n\\geq2$.",
+  "status": "established",
+  "proof": "Its 1-inclusion graph is the tree consisting of the empty concept, the tag singletons, and the tagged pairs. Every nonempty tree has a leaf, so every nonempty induced subgraph has a vertex of degree at most one; an edge shows that degeneracy is not zero. Hence it is exactly one.",
+  "references": "\\cite{maass1992lower}"
+}

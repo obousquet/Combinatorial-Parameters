@@ -1,12 +1,12 @@
 {
   "id": 27,
   "name": "Membership and Proper Equivalence Queries Complexity",
-  "symbol": "$\\mathrm{Q}_{\\mathrm{mpeq}}$",
+  "symbol": "\\mathrm{Q}_{\\mathrm{mpeq}}",
   "category": "queries",
   "symmetric": true,
-  "monotonic": false,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "membership_and_proper_equivalence_queries_complexity"
+  "definition": "The **Membership and Proper Equivalence Queries Complexity** of $\\mathcal{H}$ is the minimum worst-case number of queries needed to identify an unknown target in $\\mathcal{H}$ when the learner may use membership queries and equivalence queries whose proposed hypotheses belong to $\\mathcal{H}$.",
+  "graph_summary": "Minimum worst-case number of membership or proper equivalence queries needed to identify the target.",
+  "origin_references": "Membership and equivalence queries in the exact query-learning model are introduced in \\cite{angluin1988queries}; this parameter restricts equivalence hypotheses to $\\mathcal{H}$.",
+  "short_name": "membership_and_proper_equivalence_queries_complexity",
+  "monotonicity_evidence": {}
 }

@@ -1,12 +1,26 @@
 {
   "id": 47,
   "name": "No-Clashing Teaching Dimension",
-  "symbol": "$\\mathrm{NCTD}$",
+  "symbol": "\\mathrm{NCTD}",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "noclashing_teaching_dimension"
+  "p_monotonic": null,
+  "c_monotonic": true,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "definition": "The **No-Clashing Teaching Dimension** is the minimum possible maximum size of the samples in a teacher mapping that assigns one labeled sample to each concept, subject to no two distinct concepts being simultaneously consistent with the union of their assigned samples.",
+  "graph_summary": "Smallest maximum sample size of a non-clashing teacher mapping.",
+  "short_name": "noclashing_teaching_dimension",
+  "origin_references": "Introduced as the no-clashing teaching dimension in \\cite{KSZ2019}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Restricting a no-clashing teacher mapping to a subfamily preserves the no-clashing condition and cannot increase its maximum sample size.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict a no-clashing teacher mapping to the conditioned fibre and delete fixed coordinates.  A clash in the fibre would already be a clash in the original class.",
+      "kind": "direct_argument"
+    }
+  }
 }

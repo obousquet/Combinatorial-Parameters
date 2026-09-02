@@ -4,5 +4,10 @@
   "parameter_2_id": "#parameters/star_number",
   "relationship_type": "equivalence",
   "short_name": "projected_maximal_degree_star_number",
-  "name": "Projected Maximal Degree / Star number"
+  "name": "Projected Maximal Degree / Star number",
+  "status": "established",
+  "details": "Both parameters maximize the degree of a star over coordinate projections.",
+  "references": "\\cite{hanneke2015minimax}",
+  "latex_proof_label": "lem:star-projected-teaching",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:star-projected-teaching`."
 }

@@ -3,8 +3,10 @@
   "parameter_1_id": "#parameters/membership_and_proper_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/membership_and_equivalence_queries_complexity",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "witness": "#classes/singletons",
   "short_name": "membership_and_proper_equivalence_queries_complexity_membership_and_equivalence_queries_complexity",
-  "name": "Membership and Proper Equivalence Queries Complexity / Membership and Equivalence Queries Complexity"
+  "name": "Membership and Proper Equivalence Queries Complexity / Membership and Equivalence Queries Complexity",
+  "status": "established",
+  "proof": "Replacing proper equivalence queries by unrestricted equivalence queries enlarges the learner's available query set.  Thus the mixed proper model cannot have smaller optimal complexity."
 }

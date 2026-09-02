@@ -1,0 +1,12 @@
+{
+  "id": 483,
+  "name": "Stable Unlabeled Complexity of Full Cube",
+  "short_name": "stable_unlabeled_complexity_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The Littlestone dimension of the full cube is $n$, and the stable unlabeled-compression construction from a conservative online learner gives a stable scheme of size at most $n$.  Stable unlabeled compression is at least ordinary unlabeled compression, whose exact value for the full cube is $n$.",
+  "references": "\\cite{hanneke2021stable,chalopin2022unlabeled,palvolgyi2021unlabeled}"
+}

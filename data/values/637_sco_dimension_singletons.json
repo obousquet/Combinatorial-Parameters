@@ -1,0 +1,13 @@
+{
+  "id": 637,
+  "name": "SCO Dimension of Singletons",
+  "short_name": "sco_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$\\begin{cases}2&n=3,\\\\2\\leq\\mathrm{SCO}\\leq3&n\\geq4.\\end{cases}$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq3$.",
+  "status": "established",
+  "proof": "For $n\\geq3$, the spherical dimension of singletons is 1, so Theorem 12 gives $\\mathrm{SCO}\\geq2$.  Their sign rank is 2 at n=3 and 3 for $n\\geq4$; the sign-rank construction in the same theorem gives the corresponding upper bounds.  Thus n=3 is exact, while the displayed interval is established for larger n.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign}"
+}

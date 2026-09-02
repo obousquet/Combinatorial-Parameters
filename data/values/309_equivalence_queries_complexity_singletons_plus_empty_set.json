@@ -1,0 +1,12 @@
+{
+  "id": 309,
+  "name": "Equivalence Queries Complexity of Singletons plus Empty Set",
+  "short_name": "equivalence_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{Q}_{\\mathrm{eq}}=\\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Singletons plus Empty Set.",
+  "references": "\\cite{littlestone1988learning}"
+}

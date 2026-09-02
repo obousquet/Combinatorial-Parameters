@@ -1,0 +1,12 @@
+{
+  "id": 405,
+  "name": "Projected Recursive Teaching Dimension of Full Cube",
+  "short_name": "monotone_recursive_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every projection of the full cube is the full cube on its retained coordinates, whose recursive teaching dimension is its number of coordinates.  The full-domain projection has value $n$, and no projection has more than $n$ coordinates.",
+  "references": "\\cite{doliwa2014recursive}"
+}

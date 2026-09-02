@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/membership_and_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/partial_equivalence_queries_complexity",
   "relationship_type": "larger",
+  "details": "Partial equivalence queries include both total equivalence and one-point membership queries.",
+  "status": "established",
+  "proof": "An arbitrary equivalence query is a total partial equivalence query, and a membership query is a partial query defined at one point. Thus partial equivalence queries include every query available in the membership-and-equivalence model.",
+  "references": "\\cite{maass1992lower}",
   "short_name": "membership_and_equivalence_queries_complexity_partial_equivalence_queries_complexity",
   "name": "Membership and Equivalence Queries Complexity / Partial Equivalence Queries Complexity"
 }

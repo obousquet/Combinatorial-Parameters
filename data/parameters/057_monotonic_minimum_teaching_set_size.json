@@ -1,12 +1,37 @@
 {
   "id": 57,
   "name": "Monotonic Minimum Teaching Set Size",
-  "symbol": "$\\mathrm{TS}_{\\min}^*$",
+  "symbol": "\\mathrm{TS}_{\\min}^*",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "monotonic_minimum_teaching_set_size"
+  "definition": "The **Monotonic Minimum Teaching Set Size** is $\\max_{\\mathcal{G}\\subseteq\\mathcal{H}}\\mathrm{TS}_{\\min}(\\mathcal{G})$. It is equivalently the recursive teaching dimension.",
+  "graph_summary": "Largest minimum teaching-set size over subclasses; equal to recursive teaching dimension.",
+  "short_name": "monotonic_minimum_teaching_set_size",
+  "monotonicity_evidence": {
+    "c_monotonic": {
+      "proof": "It is the maximum over subfamilies of minimum teaching-set size.  Conditioning a subfamily is a subfamily of the conditioned fibre, and restricting teaching sets cannot increase their sizes.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "This parameter is exactly equal to Recursive Teaching Dimension by the established relationship `recursive_teaching_dimension_monotonic_minimum_teaching_set_size`; its monotonic classification transfers unchanged.",
+      "kind": "equality_transfer"
+    },
+    "p_monotonic": {
+      "proof": "This parameter is exactly equal to Recursive Teaching Dimension by the established relationship `recursive_teaching_dimension_monotonic_minimum_teaching_set_size`; its p monotonic classification transfers unchanged.",
+      "kind": "equality_transfer"
+    }
+  }
 }

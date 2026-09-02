@@ -1,0 +1,11 @@
+{
+  "id": 319,
+  "name": "Hitting Size of Addressing",
+  "short_name": "hitting_size_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$2^{\\lfloor\\log_2 n\\rfloor}$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The class has one effective primary coordinate for each of its $2^{\\lfloor\\log_2 n\\rfloor}$ address words, and that coordinate occurs as a singleton part of its corresponding concept. Thus all such primary coordinates are forced. They meet every nonempty concept, so they form a hitting set."
+}

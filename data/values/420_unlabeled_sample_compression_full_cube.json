@@ -1,0 +1,13 @@
+{
+  "id": 420,
+  "name": "Unlabeled Sample Compression of Full Cube",
+  "short_name": "unlabeled_sample_compression_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/unlabeled_sample_compression",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "The full cube is the VC-dimension-$n$ maximum class on its $n$-point domain.",
+  "status": "established",
+  "proof": "The corrected maximum-class construction gives an unlabeled compression scheme of size equal to the VC dimension, hence at most $n$.  Conversely, the full domain is shattered, so the general VC-dimension lower bound for unlabeled compression gives at least $n$.",
+  "references": "\\cite{chalopin2022unlabeled,palvolgyi2021unlabeled}"
+}

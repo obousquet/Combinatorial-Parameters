@@ -1,0 +1,11 @@
+{
+  "id": 463,
+  "name": "Hamming Radius of Majority",
+  "short_name": "hamming_radius_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/hamming_radius",
+  "value": "$n$",
+  "details": "The class is realized on its $n$ ordinary coordinates and one majority coordinate.",
+  "status": "established",
+  "proof": "For any proposed center, complementing its ordinary-coordinate trace gives a class member that differs on all n ordinary coordinates, so radius at least n is necessary. Conversely, take the center with all ordinary coordinates equal to 1 and majority coordinate 0. A class member with ordinary subset A has distance n-|A| plus at most one for its majority bit; this is at most n. Hence the radius is exactly n."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 186,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full set has $n$ smaller $1$-inclusion neighbours, one obtained by deleting each coordinate, and no vertex can have more than $n$ neighbours.",
+  "name": "Maximum Positive Degree of Full Cube",
+  "short_name": "maximum_positive_degree_full_cube"
+}

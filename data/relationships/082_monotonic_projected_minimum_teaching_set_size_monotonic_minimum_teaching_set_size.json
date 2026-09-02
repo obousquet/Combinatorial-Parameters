@@ -4,7 +4,9 @@
   "parameter_2_id": "#parameters/monotonic_minimum_teaching_set_size",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "monotonic_projected_minimum_teaching_set_size_monotonic_minimum_teaching_set_size",
-  "name": "Monotonic Projected Minimum Teaching Set Size / Monotonic Minimum Teaching Set Size"
+  "name": "Monotonic Projected Minimum Teaching Set Size / Monotonic Minimum Teaching Set Size",
+  "status": "established",
+  "proof": "For each subfamily, the projected quantity includes its full-domain projection and is therefore at least its unprojected quantity.  Maximizing over subfamilies preserves the inequality."
 }

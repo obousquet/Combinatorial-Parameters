@@ -1,0 +1,13 @@
+{
+  "id": 652,
+  "name": "Minimum Teaching Set Size of Universal Class",
+  "short_name": "minimum_teaching_set_size_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The one-point positive sample $(\\{i\\},1)$ teaches each $u_i$, because no other $u_j$ is positive at the domain point $\\{i\\}$. No target can be taught by the empty sample in a non-singleton class. Hence the minimum attained teaching-set size is one.",
+  "references": "\\cite{shinohara1991teachability,goldman1995complexity}"
+}

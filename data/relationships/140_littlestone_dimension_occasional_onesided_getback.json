@@ -3,6 +3,11 @@
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/occasional_onesided_getback",
   "relationship_type": "larger",
+  "details": "The occasional one-sided favorable game is a restricted tree/mistake game: the learner chooses the presentation and the adversary may only signal mistakes.",
+  "latex_proof_label": "lem:oog-compression",
+  "proof_source": "LaTeX survey, OOG/compression lemma (lem:oog-compression).",
+  "references": "\\cite{ben1997online}",
+  "status": "established",
   "short_name": "littlestone_dimension_occasional_onesided_getback",
   "name": "Littlestone Dimension / Occasional One-Sided Getback"
 }

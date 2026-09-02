@@ -1,0 +1,11 @@
+{
+  "id": 362,
+  "name": "Positive Teaching Dimension of Trivial Concepts",
+  "short_name": "positive_teaching_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$\\infty$",
+  "status": "established",
+  "proof": "The empty concept has no positive examples. Its only positive teaching set is therefore empty, which is also consistent with the full concept, so it has no finite positive teaching set.",
+  "references": "\\cite{balbach2008measuring}"
+}

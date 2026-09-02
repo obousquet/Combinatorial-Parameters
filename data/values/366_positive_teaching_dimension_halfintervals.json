@@ -1,0 +1,11 @@
+{
+  "id": 366,
+  "name": "Positive Teaching Dimension of Half-intervals",
+  "short_name": "positive_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$\\infty$",
+  "status": "established",
+  "proof": "For any proper initial segment, every positive example also belongs to each larger initial segment. In particular, no positive sample can distinguish $[1]$ from its proper supersets, so the positive teaching dimension is infinite.",
+  "references": "\\cite{balbach2008measuring}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 240,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/maximum_projected_teaching_set_size",
+  "relationship_type": "larger",
+  "details": "For every nonempty finite class, the stronger bound $\\mathrm{TS}_{\\max}^p(\\mathcal H)\\leq|\\mathcal H|-1$ holds.",
+  "status": "established",
+  "proof": "Every coordinate projection $\\mathcal H_{|S}$ has at most $|\\mathcal H|$ distinct concepts. For a projected target, choose one distinguishing coordinate against each other projected concept; their union is a teaching set of size at most $|\\mathcal H|-1$. Taking the defining maximum over targets and projections proves the bound.",
+  "references": "\\cite{hanneke2015minimax}",
+  "short_name": "size_maximum_projected_teaching_set_size",
+  "name": "Size / Maximum Projected Teaching Set Size"
+}

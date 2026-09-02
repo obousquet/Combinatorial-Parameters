@@ -1,0 +1,12 @@
+{
+  "id": 480,
+  "name": "Proper Unlabeled Sample Compression of Singletons plus Empty Set",
+  "short_name": "proper_unlabeled_sample_compression_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/proper_unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The size-one scheme reconstructs either the empty concept or a singleton, so its reconstruction is always in the class.  The ordinary unlabeled lower bound of one applies.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

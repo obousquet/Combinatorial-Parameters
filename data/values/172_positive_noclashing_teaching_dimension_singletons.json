@@ -1,0 +1,12 @@
+{
+  "id": 172,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "The mapping $\\{i\\}\\mapsto\\{(i,1)\\}$ is positive and non-clashing.  As the class has at least two concepts, an empty teaching set for every concept would clash, giving the matching lower bound.",
+  "name": "Positive No-Clashing Teaching Dimension of Singletons",
+  "short_name": "positive_noclashing_teaching_dimension_singletons"
+}

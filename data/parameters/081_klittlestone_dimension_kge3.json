@@ -1,13 +1,34 @@
 {
   "id": 81,
-  "name": "$k$-Littlestone Dimension ($k\\ge3$)",
-  "symbol": "$\\mathrm{L}_k$",
+  "name": "$k$-Block Littlestone Dimension ($k\\ge2$)",
+  "symbol": "\\mathrm{B}_k",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "klittlestone_dimension_kge3"
+  "strictly_monotonic": null,
+  "definition": "Fix $k\\ge2$. A **$k$-block Littlestone tree** of depth $d$ has a domain-point label $x_v$ at every node $v\\in\\{0,1\\}^{<d}$ and is shattered in the ordinary Littlestone sense. In each block beginning at level $qk$, the root label may be arbitrary, while for every $1\\le r<k$ all nodes at level $qk+r$ below the same block root have one common label. Thus a block fixes $k$ coordinates before their joint label in $\\{0,1\\}^k$ is revealed, and has $2^k$ outcomes. $\\mathrm{B}_k(\\mathcal{H})$ is the largest total number $d$ of queried coordinates in a shattered $k$-block tree.",
+  "graph_summary": "Maximum total query depth of a shattered tree with non-adaptive batches of $k$ coordinates.",
+  "description": "Database-defined structural variant; no published origin is claimed. Although the raw depths $\\mathrm B_k$ are not ordered across $k$, the number of complete blocks $\\lfloor\\mathrm B_k/k\\rfloor$ is non-increasing in $k$.",
+  "short_name": "kblock_littlestone_dimension_kge2",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A constrained shattered tree for a subfamily is still shattered by every containing class, with exactly the same block-label constraints.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Every coordinate queried by a shattered tree for a projection is retained.  Lift, for each leaf, a projected realizing hypothesis to an original hypothesis; the same tree is then shattered before projection and retains its block constraints.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding subfamily and projection arguments establish both required forms of monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection, so it cannot create a larger constrained shattered tree.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

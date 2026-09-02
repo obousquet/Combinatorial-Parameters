@@ -1,0 +1,12 @@
+{
+  "id": 398,
+  "name": "Majority Complexity of Full Cube",
+  "short_name": "majority_complexity_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The halving algorithm makes at most $\\log_2|2^{[n]}|=n$ equivalence queries.  Conversely the full cube has Littlestone dimension $n$, and the halving learner is a particular equivalence-query learner, so it needs at least $n$ in the worst case.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}"
+}

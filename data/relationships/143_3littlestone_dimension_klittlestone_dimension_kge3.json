@@ -1,9 +1,13 @@
 {
   "id": 143,
-  "parameter_1_id": "#parameters/3littlestone_dimension",
-  "parameter_2_id": "#parameters/klittlestone_dimension_kge3",
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/3block_littlestone_dimension",
   "relationship_type": "larger",
-  "details": "Definition",
-  "short_name": "3littlestone_dimension_klittlestone_dimension_kge3",
-  "name": "3-Littlestone Dimension / $k$-Littlestone Dimension ($k\\ge3$)"
+  "status": "established",
+  "details": "A 3-block shattered tree is an ordinary shattered Littlestone tree.",
+  "proof": "The 3-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Therefore every tree counted by $\\mathrm{B}_3(\\mathcal H)$ is counted by $\\mathrm L(\\mathcal H)$, and $\\mathrm L(\\mathcal H)\\ge\\mathrm{B}_3(\\mathcal H)$.",
+  "latex_proof_label": "prop:block-littlestone-sandwich",
+  "proof_source": "Proposition \\ref{prop:block-littlestone-sandwich} in the survey.",
+  "short_name": "littlestone_dimension_3block_littlestone_dimension",
+  "name": "Littlestone Dimension / 3-Block Littlestone Dimension"
 }

@@ -1,0 +1,11 @@
+{
+  "id": 235,
+  "name": "Relative Hitting Size of Singletons",
+  "short_name": "relative_hitting_size_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Relative hitting size is, by definition, the maximum teaching-set size. The established teaching dimension of singletons is one."
+}

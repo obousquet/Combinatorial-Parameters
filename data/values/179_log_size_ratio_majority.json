@@ -1,0 +1,11 @@
+{
+  "id": 179,
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/log_size_ratio",
+  "value": "$\\frac{\\log(2^n-1)}{\\log(n+2)}$",
+  "details": "The class is over a domain of size $n+1$.",
+  "status": "established",
+  "proof": "The Majority family has $2^n$ concepts on its $n+1$ point domain.  Substituting these quantities into the definition gives the stated value.",
+  "name": "Log Size Ratio of Majority",
+  "short_name": "log_size_ratio_majority"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 159,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For any target subset, every coordinate must be included in a teaching set: changing an omitted coordinate gives a distinct full-cube concept consistent with the sample.  All $n$ coordinates suffice.",
+  "name": "Teaching Dimension of Full Cube",
+  "short_name": "teaching_dimension_full_cube"
+}

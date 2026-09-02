@@ -1,0 +1,12 @@
+{
+  "id": 424,
+  "name": "Densest Subgraph (twice) of Tagged Singletons",
+  "short_name": "densest_subgraph_twice_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$\\frac{2(n+\\lceil\\log n\\rceil)}{n+\\lceil\\log n\\rceil+1}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is a tree with $n+\\lceil\\log n\\rceil+1$ vertices.  Every subgraph is a forest, so a subgraph on $v$ vertices has average degree at most $2(v-1)/v$, which increases with $v$.  The full tree attains this bound, so it is a densest subgraph and has the stated double density.",
+  "references": "\\cite{maass1992lower}"
+}

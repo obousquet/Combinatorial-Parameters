@@ -1,0 +1,12 @@
+{
+  "id": 170,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Theorem 19 gives $\\mathrm{NCTD}^+(2^{[n]})=n$.",
+  "references": "\\cite{KSZ2019}",
+  "name": "Positive No-Clashing Teaching Dimension of Full Cube",
+  "short_name": "positive_noclashing_teaching_dimension_full_cube"
+}

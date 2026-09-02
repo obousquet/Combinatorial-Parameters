@@ -1,0 +1,13 @@
+{
+  "id": 644,
+  "name": "List Replicability Number of Tagged Singletons",
+  "short_name": "list_replicability_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/list_replicability",
+  "value": "$2\\leq\\mathrm{LR}\\leq3$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq5$.",
+  "status": "established",
+  "proof": "For $n\\geq5$, the established spherical dimension is 1, so Theorem 10 gives $\\mathrm{LR}\\geq2$.  Tagged singletons have VC dimension one, hence sign rank at most 3 by the VC-one sign-rank theorem. The sign-rank upper bound on list replicability gives $\\mathrm{LR}\\leq3$.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign,blondal2026simplicialcovering}"
+}

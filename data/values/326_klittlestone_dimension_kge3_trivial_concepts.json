@@ -1,0 +1,11 @@
+{
+  "id": 326,
+  "name": "$k$-Mistake Littlestone Dimension of Trivial Concepts",
+  "short_name": "kmistake_littlestone_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/kmistake_littlestone_dimension",
+  "value": "$2k+1$",
+  "status": "established",
+  "proof": "For two hypotheses, Filmus--Hanneke--Mehalel--Moran show that the optimal deterministic $k$-realizable mistake bound is $2k+1$. Their Theorem 2.4 identifies this bound with $k$-Littlestone dimension, yielding the stated value.",
+  "references": "\\cite{filmus2023randomized}"
+}

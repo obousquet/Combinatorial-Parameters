@@ -1,0 +1,12 @@
+{
+  "id": 268,
+  "parameter_1_id": "#parameters/minimum_star_number",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, the minimum star number is at least VC dimension.",
+  "status": "established",
+  "proof": "If a set of size d is shattered, then for any centre labeling g its restriction to that set is realized by one hypothesis, and each one-coordinate flip is realized by another. Thus this set is a g-centred star of size d; minimize over g.",
+  "references": "\\cite{hanneke2024star_eluder}",
+  "short_name": "minimum_star_number_vc_dimension",
+  "name": "Minimum Star Number / VC Dimension"
+}

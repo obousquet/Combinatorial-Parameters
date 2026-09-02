@@ -1,0 +1,13 @@
+{
+  "id": 530,
+  "name": "Combinatorial Eluder Dimension of Blockwise-Addressing",
+  "short_name": "combinatorial_eluder_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$2^{d+1}-1$",
+  "value_class": "omega_n",
+  "details": "For the displayed blockwise-addressing incidence construction.",
+  "status": "established",
+  "proof": "Take $f_i$ as base.  List the primary coordinates $x_j$ for $j\\ne i$, witnessed by $f_j$, followed by all $y_j$, witnessed by $g_j$.  Each witness is zero at earlier listed coordinates and differs from $f_i$ at its own coordinate.  This gives $(2^d-1)+2^d=2^{d+1}-1$ steps.  The class has $2^{d+1}$ hypotheses, so the size bound is tight.",
+  "references": "\\cite{li2022understanding,ben1997online}"
+}

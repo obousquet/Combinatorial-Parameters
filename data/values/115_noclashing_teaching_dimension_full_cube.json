@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/noclashing_teaching_dimension",
   "value": "$\\lceil n/2\\rceil$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "references": "\\cite{KSZ2019}",
+  "proof": "Theorem 19 gives $\\mathrm{NCTD}(2^{[n]})=\\lceil n/2\\rceil$."
 }

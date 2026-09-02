@@ -6,5 +6,6 @@
   "parameter_id": "#parameters/recursive_teaching_dimension",
   "value": "$2$",
   "status": "established",
-  "references": "\\cite{ben1997online}, p. 54"
+  "proof": "For $f_i$, the labeled pair $(z,0),(x_i,1)$ distinguishes it from every $f_j$ and $g_j$; symmetrically $(z,1),(y_i,1)$ teaches $g_i$.  The same bound holds in every subfamily, so $RTD\\le2$.  Conversely, in the full class no one-coordinate sample identifies a concept: at $z$ there are many concepts with each label; at a private coordinate a concept from the opposite family can match; and at a block coordinate every bit occurs for many members of the same family.  Thus $TS_{\\min}\\ge2$, hence $RTD\\ge2$.",
+  "references": "\\cite{ben1997online}, Example 2; direct teaching-set calculation"
 }

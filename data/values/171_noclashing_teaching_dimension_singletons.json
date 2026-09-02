@@ -1,0 +1,12 @@
+{
+  "id": 171,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Map the singleton $\\{i\\}$ to its positive example $(i,1)$.  This is non-clashing, so the value is at most $1$.  A size-$0$ mapping cannot distinguish two distinct concepts, so the value is exactly $1$.",
+  "name": "No-Clashing Teaching Dimension of Singletons",
+  "short_name": "noclashing_teaching_dimension_singletons"
+}

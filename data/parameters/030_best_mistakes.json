@@ -1,12 +1,23 @@
 {
   "id": 30,
   "name": "Best Mistakes",
-  "symbol": "$\\mathrm{M}_{\\mathrm{best}}$",
+  "symbol": "\\mathrm{M}_{\\mathrm{best}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "best_mistakes"
+  "c_monotonic": true,
+  "definition": "The **Best Mistakes** parameter is the smallest worst-case number of prediction mistakes achievable when the learner may choose a presentation sequence favorable to it, while the feedback remains consistent with one target concept in $\\mathcal H$.",
+  "graph_summary": "Mistake bound under a presentation sequence chosen favorably to the learner.",
+  "short_name": "best_mistakes",
+  "origin_references": "The favorably ordered (best) mistake model is studied in \\cite{ben1997online}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A favorable presentation strategy and predictor that works for every target in $\\mathcal H$ can be used unchanged when the target is restricted to a subfamily; optimizing over strategies can only improve the bound.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict an optimal prediction strategy to the conditioned fibre, treating fixed-coordinate labels as known; no additional mistakes are needed.",
+      "kind": "direct_argument"
+    }
+  }
 }

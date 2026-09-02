@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/projected_maximal_degree",
   "parameter_2_id": "#parameters/projected_minimum_degree",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For finite concept classes.",
+  "witness": "#classes/warmuth_c5",
   "short_name": "projected_maximal_degree_projected_minimum_degree",
-  "name": "Projected Maximal Degree / Projected Minimum Degree"
+  "name": "Projected Maximal Degree / Projected Minimum Degree",
+  "status": "established",
+  "proof": "For every projection, maximum degree is at least minimum degree.  Taking maxima over projections preserves the inequality."
 }

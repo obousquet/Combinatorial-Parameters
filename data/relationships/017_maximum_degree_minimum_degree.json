@@ -3,7 +3,11 @@
   "parameter_1_id": "#parameters/maximum_degree",
   "parameter_2_id": "#parameters/minimum_degree",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For every finite $1$-inclusion graph.",
+  "witness": "#classes/tagged_singletons",
   "short_name": "maximum_degree_minimum_degree",
-  "name": "Maximum Degree / Minimum Degree"
+  "name": "Maximum Degree / Minimum Degree",
+  "status": "established",
+  "proof": "In any graph the maximum degree is at least the minimum degree.",
+  "references": "\\cite{haussler1988predicting}"
 }

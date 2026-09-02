@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/star_number",
   "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "Under the standard addressing convention $n=2^d$, so the $d$ address bits encode all $n$ primary coordinates.",
+  "status": "established",
+  "proof": "Project to all primary coordinates except one, say $p$.  The addressing concept whose primary coordinate is $p$ becomes the empty trace, while every other concept becomes its distinct primary singleton; these traces form an $(n-1)$-star.  Conversely, a $d$-star has $d+1$ distinct traces (its centre and leaves), each realized by a distinct original concept.  Since the addressing class has $n$ concepts, $d\\le n-1$.  Thus its star number is exactly $n-1$.",
+  "references": "\\cite{maass1992lower}"
 }

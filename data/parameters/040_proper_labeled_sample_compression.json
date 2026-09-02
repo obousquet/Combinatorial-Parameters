@@ -1,12 +1,23 @@
 {
   "id": 40,
   "name": "Proper Labeled Sample Compression",
-  "symbol": "$\\mathrm{pLSC}$",
+  "symbol": "\\mathrm{pLSC}",
   "category": "compression",
   "symmetric": true,
-  "monotonic": false,
   "p_monotonic": true,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "proper_labeled_sample_compression"
+  "c_monotonic": true,
+  "definition": "The **Proper Labeled Sample Compression** is the minimum size of a labeled sample compression scheme whose reconstruction function always returns a member of $\\mathcal{H}$.",
+  "graph_summary": "Labeled compression size with reconstruction constrained to the class.",
+  "short_name": "proper_labeled_sample_compression",
+  "origin_references": "This is the proper-reconstruction restriction of the standard labeled sample-compression framework of \u005ccite{FW1995}.",
+  "monotonicity_evidence": {
+    "p_monotonic": {
+      "proof": "Apply the proper labeled scheme to a projected-realizable labeled sample on the retained coordinates and restrict its reconstructed member of $\\mathcal H$.  The restriction belongs to the projected class, remains consistent, and uses no additional labeled examples.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "For a conditioned sample, append the fixed labeled coordinates, apply the original proper compression scheme, and restrict the reconstruction back to the fibre.",
+      "kind": "direct_argument"
+    }
+  }
 }

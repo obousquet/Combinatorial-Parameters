@@ -1,0 +1,12 @@
+{
+  "id": 252,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_minimum_degree",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, the largest projected minimum 1-inclusion degree is at most its effective range.",
+  "status": "established",
+  "proof": "Each coordinate projection has effective range at most \\mathrm E(\\mathcal H), and every vertex in its 1-inclusion graph has at most one neighbor per effective coordinate. Its minimum degree is therefore at most \\mathrm E(\\mathcal H). Maximize over projections.",
+  "references": "\\cite{haussler1994predicting}",
+  "short_name": "effective_range_projected_minimum_degree",
+  "name": "Effective Range / Projected Minimum Degree"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 345,
+  "name": "Interpolation Degree of Trivial Concepts",
+  "short_name": "interpolation_degree_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On either coordinate, the two concepts have values zero and one. Constant and linear polynomials therefore interpolate every function on the class, while constants alone cannot distinguish its two members."
+}

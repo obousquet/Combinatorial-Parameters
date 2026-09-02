@@ -1,7 +1,7 @@
 {
   "id": 2,
   "name": "Size",
-  "symbol": "$\\mathrm{H}$",
+  "symbol": "\\mathrm{H}",
   "definition": "The **size** of a family $\\mathcal{H}$ is simply the  cardinality, $$  |\\mathcal{H|} $$",
   "category": "basic",
   "symmetric": true,
@@ -11,5 +11,31 @@
   "doubly_monotonic": true,
   "strictly_monotonic": true,
   "strict_c_monotonic": true,
-  "short_name": "size"
+  "short_name": "size",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "By definition, strictly monotonic means doubly monotonic and strictly c-monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, a doubly monotonic strictly c-monotonic parameter is strictly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "A subfamily has no more concepts than its containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Projection maps concepts to concepts and may identify them, so its image has no larger cardinality.",
+      "kind": "direct_argument"
+    }
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "id": 611,
+  "name": "Best Mistakes of Singletons",
+  "short_name": "best_mistakes_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$\\begin{cases}0&n=1,\\\\1&n\\geq2.\\end{cases}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $n\\geq2$, present any $n-1$ coordinates and predict $0$ at each. A positive label identifies its singleton target and causes one mistake; if all are negative, the unpresented coordinate is the target, with no mistake. Hence one mistake suffices. On the first presented coordinate, any learner prediction can be falsified: choose its singleton if it predicts $0$, and a different singleton if it predicts $1$. Thus one mistake is necessary. For $n=1$ the target is already known, so the value is zero.",
+  "references": "\\cite{ben1997online}"
+}

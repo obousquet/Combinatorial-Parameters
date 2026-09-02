@@ -1,0 +1,12 @@
+{
+  "id": 386,
+  "name": "Labeled Sample Compression of Half-intervals",
+  "short_name": "labeled_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For a sample with a positive point, retain its greatest positive coordinate and reconstruct the corresponding initial segment.  For an all-negative nonempty sample, retain its least negative coordinate and reconstruct the preceding initial segment; use a fixed interval for the empty sample.  These reconstructions are consistent.  Zero is impossible for a nontrivial class.",
+  "references": "\\cite{FW1995}"
+}

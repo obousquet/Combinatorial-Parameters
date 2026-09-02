@@ -1,0 +1,10 @@
+{
+  "id": 571,
+  "name": "2-Block Littlestone Dimension of Singletons",
+  "short_name": "2block_littlestone_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/2block_littlestone_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "The established VC and Littlestone dimensions of singletons are both one. Proposition \\ref{prop:block-littlestone-sandwich} gives $1\\leq\\mathrm B_2\\leq1$."
+}

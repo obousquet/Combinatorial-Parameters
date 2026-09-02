@@ -1,0 +1,11 @@
+{
+  "id": 243,
+  "name": "Maximum Largest Order Shattered Set of Trivial Concepts",
+  "short_name": "maximum_largest_order_shattered_set_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/maximum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Maximum Largest Order Shattered Set is, by definition, the VC dimension. The two trivial concepts have established VC dimension one."
+}

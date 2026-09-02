@@ -1,0 +1,13 @@
+{
+  "id": 663,
+  "name": "Subset Teaching Dimension of Universal Class",
+  "short_name": "subset_teaching_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "For each target $u_i$, the one-point positive sample $(\\{i\\},1)$ is an ordinary minimum teaching sample and it is contained in no minimum teaching sample of another $u_j$: no other universal hypothesis is positive at $\\{i\\}$. It therefore remains a singleton subset-teaching sample at every iteration. An empty sample identifies no target, so $\\mathrm{STD}=1$.",
+  "references": "\\cite{zilles2011models}"
+}

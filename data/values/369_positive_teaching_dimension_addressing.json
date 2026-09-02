@@ -1,0 +1,12 @@
+{
+  "id": 369,
+  "name": "Positive Teaching Dimension of Addressing",
+  "short_name": "positive_teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each addressing concept has a unique positive primary coordinate, so that one positive example teaches it. The class is nontrivial, so zero examples cannot teach every target.",
+  "references": "\\cite{balbach2008measuring}"
+}

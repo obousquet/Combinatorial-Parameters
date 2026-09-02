@@ -1,0 +1,15 @@
+{
+  "id": 218,
+  "parameter_1_id": "#parameters/list_replicability",
+  "parameter_2_id": "#parameters/spherical_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "-\\tfrac32",
+  "details": "For finite classes with $\\mathrm{sd}(\\mathcal H)\\geq1$, $\\mathrm{LR}(\\mathcal H,\\epsilon)\\geq\\lceil(\\mathrm{sd}(\\mathcal H)+3)/2\\rceil$ for every $0<\\epsilon<1/2$, hence $\\mathrm{LR}(\\mathcal H)\\geq(\\mathrm{sd}(\\mathcal H)+3)/2$. The two-complementary-hypotheses case is excluded.",
+  "status": "established",
+  "proof": "This is Theorem 10 of the cited paper. Taking the limit in $\\epsilon$ gives the stated affine lower bound for the list replicability number.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "witness": "#classes/universal_class",
+  "short_name": "list_replicability_spherical_dimension_affine",
+  "name": "List Replicability / Spherical Dimension (affine)"
+}

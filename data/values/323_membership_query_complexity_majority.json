@@ -1,0 +1,12 @@
+{
+  "id": 323,
+  "name": "Membership Query Complexity of Majority",
+  "short_name": "membership_query_complexity_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The labels on the $n$ base coordinates are arbitrary, and the final majority coordinate is determined by them. Querying all base coordinates identifies the target. Since all $2^n$ base labelings occur, a binary decision tree requires at least $n$ queries.",
+  "references": "\\cite{angluin1988queries}"
+}

@@ -1,13 +1,38 @@
 {
   "id": 64,
   "name": "Degeneracy",
-  "symbol": "$\\mathrm{d}^*_{\\min}$",
+  "symbol": "\\mathrm{d}^*_{\\min}",
   "definition": "The **degeneracy** of a concept class is defined as the degeneracy of its $1$-inclusion graph, i.e. the maximum over induced subgraphs of the minimum degree.",
   "category": "graph-based",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "degeneracy"
+  "short_name": "degeneracy",
+  "origin_references": "The minimum-degree deletion argument for one-inclusion graphs appears in \\cite{haussler1988predicting}; see also the graph-orientation treatment in \\cite{alon1992colorings}.",
+  "comments": "Conditioning gives an induced subgraph of the $1$-inclusion graph, and degeneracy cannot increase on induced subgraphs.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "The 1-inclusion graph of a subfamily is an induced subgraph of the original graph. Every induced subgraph considered in its degeneracy maximum is also an induced subgraph of the original graph.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Conditioning gives an induced subgraph of the one-inclusion graph, and graph degeneracy cannot increase under induced subgraphs.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{01,10\\}$ has edgeless one-inclusion graph and degeneracy 0. Projecting to either coordinate gives $\\{0,1\\}$, whose one-inclusion graph is an edge and has degeneracy 1.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

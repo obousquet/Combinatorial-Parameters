@@ -3,6 +3,12 @@
   "parameter_1_id": "#parameters/monotone_recursive_teaching_dimension",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
+  "witness": "#classes/warmuth_c5",
   "short_name": "monotone_recursive_teaching_dimension_vc_dimension",
-  "name": "Monotone Recursive Teaching Dimension / VC Dimension"
+  "name": "Projected Recursive Teaching Dimension / VC Dimension",
+  "status": "established",
+  "details": "Projected recursive teaching dimension is the maximum recursive teaching dimension over coordinate projections.",
+  "references": "\\cite{doliwa2014recursive}",
+  "latex_proof_label": "lem:projected-rtd-vc",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:projected-rtd-vc`."
 }

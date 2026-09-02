@@ -1,0 +1,11 @@
+{
+  "id": 348,
+  "name": "Interpolation Degree of Singletons plus Empty Set",
+  "short_name": "interpolation_degree_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For prescribed values $a_0$ on the empty concept and $a_i$ on $\\{i\\}$, the affine polynomial $a_0+\\sum_i(a_i-a_0)x_i$ interpolates them. Constants alone do not distinguish the concepts."
+}

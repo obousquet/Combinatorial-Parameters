@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/size",
   "parameter_2_id": "#parameters/littlestone_dimension",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For finite concept classes, size is at least Littlestone dimension (the survey proves the stronger $\\log|\\mathcal H|\\ge L$).",
+  "status": "established",
+  "latex_proof_label": "lem:elementary-parameter-hierarchy",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy` (which proves the stronger logarithmic bound).",
   "witness": "#classes/singletons",
   "short_name": "size_littlestone_dimension",
   "name": "Size / Littlestone Dimension"

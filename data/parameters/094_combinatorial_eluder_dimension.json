@@ -1,0 +1,21 @@
+{
+  "id": 94,
+  "name": "Combinatorial Eluder Dimension",
+  "short_name": "combinatorial_eluder_dimension",
+  "symbol": "\\mathrm{Edim}",
+  "category": "queries",
+  "definition": "For a binary class $\\mathcal H$ and base hypothesis $h^*\\in\\mathcal H$, $\\mathrm{Edim}_{h^*}(\\mathcal H)$ is the largest $m$ for which there are points $x_1,\\ldots,x_m$ and hypotheses $h_1,\\ldots,h_m\\in\\mathcal H$ such that $h_i(x_i)\\ne h^*(x_i)$ while $h_i(x_j)=h^*(x_j)$ for every $j<i$. The **combinatorial eluder dimension** is $\\max_{h^*\\in\\mathcal H}\\mathrm{Edim}_{h^*}(\\mathcal H)$.",
+  "graph_summary": "Longest sequential disagreement witness relative to one base hypothesis; the binary specialization of eluder dimension.",
+  "description": "This is the binary combinatorial specialization, rather than the scale-sensitive real-valued eluder dimension of Russo and Van Roy.",
+  "origin_references": "Eluder dimension was introduced by Russo and Van Roy in \\cite{russo2013eluder}; this binary formulation and its comparisons are developed in \\cite{li2022understanding}.",
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "monotonicity_evidence": {
+    "monotonic": {"proof": "A sequential witness in a subfamily is still a witness after the class is enlarged.", "kind": "direct_argument"},
+    "p_monotonic": {"proof": "A witness in a coordinate projection lifts by choosing preimages of its base and witness hypotheses; all required equalities and disagreements are on retained coordinates.", "kind": "direct_argument"},
+    "c_monotonic": {"proof": "Conditioning is restriction to a subfamily followed by a projection, so it follows from the two preceding monotonicities.", "kind": "definitional_consequence"},
+    "doubly_monotonic": {"proof": "It is monotonic both under subfamilies and under coordinate projections.", "kind": "definitional_consequence"}
+  }
+}

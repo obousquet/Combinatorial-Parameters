@@ -1,0 +1,12 @@
+{
+  "id": 385,
+  "name": "Labeled Sample Compression of Singletons plus empty set",
+  "short_name": "labeled_sample_compression_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Use the singleton construction when a positive point is present.  For an all-negative sample, use the empty reconstruction when no point is retained; if a singleton must be reconstructed, the same cyclic-boundary choice as for singletons supplies one retained negative point.  The scheme is consistent, and size zero cannot handle incompatible positive and negative one-point samples.",
+  "references": "\\cite{FW1995}"
+}

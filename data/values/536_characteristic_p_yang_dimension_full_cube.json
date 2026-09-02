@@ -1,0 +1,12 @@
+{
+  "id": 536,
+  "name": "Characteristic-p Yang Dimension of Full cube",
+  "short_name": "characteristic_p_yang_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/characteristic_p_yang_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The canonical ideal is $\\prod_{x=1}^n(v_{x,0},v_{x,1})$. The tensor product of the n length-one factor resolutions is minimal over every field and has length n, so $\\mathrm Y_p=n$.",
+  "references": "\\cite{yang2018homological}"
+}

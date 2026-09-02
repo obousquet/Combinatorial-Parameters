@@ -1,0 +1,10 @@
+{
+  "id": 245,
+  "name": "Maximum Largest Order Shattered Set of Blockwise-Addressing",
+  "short_name": "maximum_largest_order_shattered_set_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/maximum_largest_order_shattered_set",
+  "value": "$d$",
+  "status": "established",
+  "proof": "Maximum Largest Order Shattered Set is, by definition, the VC dimension. Blockwise-Addressing has established VC dimension $d$."
+}

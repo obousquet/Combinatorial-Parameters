@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/proper_equivalence_queries_complexity",
   "value": "$\\log n$",
   "value_class": "omega_log_n",
-  "details": ""
+  "details": "More precisely, $\\Theta(\\log_2 n)$, with endpoint-rounding depending on the threshold convention.",
+  "status": "established",
+  "proof": "Maintain the interval of feasible right endpoints and query its median initial segment.  A counterexample tells on which side of the queried boundary the target endpoint lies, so the interval is halved at each query.  Conversely, against a query $[k]$, an adversary can answer at $k$ and retain all targets ending before $k$, or answer at $k+1$ and retain all targets ending at or after $k+1$; it chooses the larger side.  Thus logarithmically many proper equivalence queries are both sufficient and necessary.",
+  "references": "\\cite{angluin1988queries}"
 }

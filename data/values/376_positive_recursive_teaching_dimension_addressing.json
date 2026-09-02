@@ -1,0 +1,12 @@
+{
+  "id": 376,
+  "name": "Positive Recursive Teaching Dimension of Addressing",
+  "short_name": "positive_recursive_teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/positive_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every addressing concept has a unique positive primary coordinate, so the concepts may be removed in any order with one positive teaching example each.",
+  "references": "\\cite{fallat2023batch}"
+}

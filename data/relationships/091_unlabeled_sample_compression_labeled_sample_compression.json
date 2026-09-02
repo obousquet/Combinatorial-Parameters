@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/unlabeled_sample_compression",
   "parameter_2_id": "#parameters/labeled_sample_compression",
   "relationship_type": "larger",
+  "details": "Unlabeled compression is the more restrictive model because retained labels are not stored.",
+  "references": "\\cite{chalopin2022unlabeled}",
+  "status": "established",
+  "proof": "An unlabeled compression scheme is a labeled compression scheme with the additional restriction that retained labels are not stored. Minimizing over the more restrictive unlabeled schemes cannot improve the optimum.",
   "short_name": "unlabeled_sample_compression_labeled_sample_compression",
   "name": "Unlabeled sample compression / Labeled Sample Compression"
 }

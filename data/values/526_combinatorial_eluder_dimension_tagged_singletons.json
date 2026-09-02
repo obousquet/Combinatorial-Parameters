@@ -1,0 +1,12 @@
+{
+  "id": 526,
+  "name": "Combinatorial Eluder Dimension of Tagged Singletons",
+  "short_name": "combinatorial_eluder_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$n+\\lceil\\log_2 n\\rceil$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Use the empty hypothesis as base.  First list all n ordinary coordinates, with the tagged singleton containing the current ordinary coordinate as witness; then list the $\\lceil\\log_2 n\\rceil$ tag coordinates, with their tag singletons as witnesses.  Each witness agrees with the empty base on earlier listed coordinates.  All ordinary and tag coordinates are active, so the effective-range upper bound gives equality.",
+  "references": "\\cite{li2022understanding,maass1992lower}"
+}

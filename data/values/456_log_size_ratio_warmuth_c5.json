@@ -1,0 +1,12 @@
+{
+  "id": 456,
+  "name": "Log Size Ratio of Warmuth's $C_5$ Class",
+  "short_name": "log_size_ratio_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/log_size_ratio",
+  "value": "$\\frac{\\log 9}{\\log 6}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class has ten concepts on a five-coordinate domain.  Substituting $|\\mathcal H|=10$ and $n=5$ into $\\log(|\\mathcal H|-1)/\\log(n+1)$ gives $\\log 9/\\log 6$.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

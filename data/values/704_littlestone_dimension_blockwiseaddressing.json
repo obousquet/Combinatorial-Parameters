@@ -1,0 +1,11 @@
+{
+  "id": 704,
+  "name": "Littlestone Dimension of Blockwise-Addressing",
+  "short_name": "littlestone_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$d+1$",
+  "status": "established",
+  "proof": "Query z at the root. In the 0-subtree, the f_i realize every d-bit pattern on any y-block, and in the 1-subtree the g_i realize every d-bit pattern on the corresponding x-block. Thus both subtrees support depth d and the class shatters a tree of depth d+1. It has exactly $2^{d+1}$ concepts, so a deeper complete tree would require more distinct leaf realizers.",
+  "references": "\\cite{ben1997online,littlestone1988learning}"
+}

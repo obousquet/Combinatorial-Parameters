@@ -1,0 +1,12 @@
+{
+  "id": 435,
+  "name": "Oriented Diameter of Warmuth's $C_5$ Class",
+  "short_name": "oriented_diameter_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/oriented_diameter",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The two concepts $10010$ and $01001$ have an oriented disagreement on two coordinates, giving a witness of size two.  Direct comparison of the ten cyclic $C_5$ strings shows that no ordered pair has three coordinates on which the first is $0$ and the second is $1$; hence no larger oriented pair occurs in a projection.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

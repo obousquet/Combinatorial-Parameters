@@ -3,6 +3,11 @@
   "parameter_1_id": "#parameters/maximum_teaching_set_size",
   "parameter_2_id": "#parameters/largest_strongly_shattered_set",
   "relationship_type": "larger",
+  "details": "A corner of a contained cube must be distinguished on every cube coordinate.",
+  "witness": "#classes/warmuth_c5",
   "short_name": "maximum_teaching_set_size_largest_strongly_shattered_set",
-  "name": "Maximum Teaching Set Size / Largest Strongly Shattered Set"
+  "name": "Maximum Teaching Set Size / Largest Strongly Shattered Set",
+  "status": "established",
+  "proof": "For a contained $d$-cube, choose any corner.  For each of the $d$ cube coordinates there is a neighbouring concept differing only there, so every teaching set for that corner must include all $d$ coordinates.  Thus the maximum teaching-set size is at least $d$.",
+  "references": "\\cite{shinohara1991teachability,goldman1995complexity}"
 }

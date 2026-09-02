@@ -1,0 +1,11 @@
+{
+  "id": 461,
+  "name": "Diameter of Warmuth's $C_5$ class",
+  "short_name": "diameter_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/diameter",
+  "value": "$4$",
+  "details": "For the ten cyclic binary strings in the definition of $C_5$.",
+  "status": "established",
+  "proof": "Enumerating the ten traces satisfying the cyclic 1001 condition, every pair differs on at most four coordinates. The pair 00101 and 01010 differs on four coordinates, so the upper bound is attained."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 313,
+  "name": "Hitting Size of Singletons",
+  "short_name": "hitting_size_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every singleton is a nonempty concept, so a hitting set must contain every coordinate. The full domain meets every singleton."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 545,
+  "parameter_id": "#parameters/path_dimension",
+  "class_id": "#classes/universal_class",
+  "value": "$n-1$",
+  "status": "established",
+  "proof": "On the points $A_{n-1},A_{n-2},\\ldots,A_1$, the traces of $u_n,u_{n-1},\\ldots,u_1$ start at the empty trace and add exactly one coordinate at every step. This is a path of length n-1. A path of length d contains d+1 distinct traces and therefore requires d+1 distinct hypotheses, so d\\leq n-1.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "path_dimension_universal_class",
+  "name": "Path Dimension of Universal Class"
+}

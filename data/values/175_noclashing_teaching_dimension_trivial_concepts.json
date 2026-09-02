@@ -1,0 +1,12 @@
+{
+  "id": 175,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a nonempty domain.",
+  "status": "established",
+  "proof": "At one coordinate, teach $\\emptyset$ with label $0$ and the full concept with label $1$.  The two singleton teaching sets are inconsistent with the opposite concept, so this is non-clashing.  The two distinct concepts rule out value $0$.",
+  "name": "No-Clashing Teaching Dimension of Trivial concepts",
+  "short_name": "noclashing_teaching_dimension_trivial_concepts"
+}

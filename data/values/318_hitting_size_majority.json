@@ -1,0 +1,11 @@
+{
+  "id": 318,
+  "name": "Hitting Size of Majority",
+  "short_name": "hitting_size_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For every base coordinate $i$, the concept induced by $\\{i\\}$ is a singleton, so all $n$ base coordinates are forced. They meet every nonempty Majority concept; the extra majority coordinate is never needed."
+}

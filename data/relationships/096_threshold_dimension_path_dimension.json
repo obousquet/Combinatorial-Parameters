@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/threshold_dimension",
   "parameter_2_id": "#parameters/path_dimension",
   "relationship_type": "larger_c",
-  "details": "Lemma",
+  "details": "For finite concept classes, threshold dimension is at least one half of path dimension.",
+  "latex_proof_label": "lem:threshold-path",
+  "proof_source": "LaTeX survey, threshold/path lemma (lem:threshold-path).",
+  "status": "established",
   "short_name": "threshold_dimension_path_dimension",
   "name": "Threshold Dimension / Path Dimension"
 }

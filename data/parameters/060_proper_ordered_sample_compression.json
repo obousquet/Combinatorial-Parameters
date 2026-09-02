@@ -1,12 +1,23 @@
 {
   "id": 60,
   "name": "Proper Ordered Sample Compression",
-  "symbol": "$\\mathrm{pOSC}$",
+  "symbol": "\\mathrm{pOSC}",
   "category": "compression",
   "symmetric": true,
-  "monotonic": false,
   "p_monotonic": true,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "proper_ordered_sample_compression"
+  "c_monotonic": true,
+  "definition": "The **Proper Ordered Sample Compression** is the minimum size of an order sample compression scheme whose decoded hypotheses all belong to $\\mathcal{H}$.",
+  "graph_summary": "Order-compression size with reconstruction constrained to the class.",
+  "short_name": "proper_ordered_sample_compression",
+  "origin_references": "Order compression schemes were introduced by Darnst\u00e4dt, Kiss, Simon, and Zilles in \\cite{darnstadt2016order}; this is their proper-reconstruction restriction.",
+  "monotonicity_evidence": {
+    "p_monotonic": {
+      "proof": "Project every compressed sample and every decoded hypothesis of a proper ordered scheme to the retained coordinates. The projected reconstruction remains a member of the projected class and the projected order is an order scheme of no larger size. This is the projection argument in Darnstädt--Doliwa--Simon--Zilles \\cite{darnstadt2016order}.",
+      "kind": "citation"
+    },
+    "c_monotonic": {
+      "proof": "Restriction to a conditioned fibre commutes with an ordered proper compression scheme after fixed coordinates are removed from its sample and reconstruction.",
+      "kind": "direct_argument"
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": 74,
   "name": "Maximum Largest Order Shattered Set",
-  "symbol": "$\\mathrm{OSH}_{\\max}$",
+  "symbol": "\\mathrm{OSH}_{\\max}",
   "category": "shattering",
   "symmetric": true,
   "monotonic": true,
@@ -9,5 +9,30 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": false,
-  "short_name": "maximum_largest_order_shattered_set"
+  "definition": "For each order of the domain, take the largest cardinality of an order-shattered set. The **Maximum Largest Order Shattered Set** is the maximum of this quantity over all domain orders; it is equivalently the VC dimension.",
+  "graph_summary": "Largest order-shattered-set size over domain orders; equal to VC dimension.",
+  "origin_references": "The order-shattering sandwich framework is due to \\cite{bollobas1995defect}.",
+  "short_name": "maximum_largest_order_shattered_set",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Maximum largest order-shattered-set size equals VC dimension. Every set shattered by a subfamily is also shattered by its containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Maximum largest order-shattered-set size equals VC dimension. Every set shattered by a projection is shattered by the original class on the same coordinates.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "Maximum largest order-shattered-set size equals VC dimension. For $\\mathcal H=\\{000,001,011,100\\}$, conditioning the third coordinate gives two fibres of value 1, while the full class also has value 1.",
+      "kind": "counterexample"
+    }
+  }
 }

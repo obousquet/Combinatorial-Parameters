@@ -1,0 +1,13 @@
+{
+  "id": 421,
+  "name": "Proper Unlabeled Sample Compression of Full Cube",
+  "short_name": "proper_unlabeled_sample_compression_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/proper_unlabeled_sample_compression",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "For the full cube, every reconstructed Boolean function on the domain belongs to the class.",
+  "status": "established",
+  "proof": "The maximum-class representation-map construction reconstructs a consistent concept.  Since the full cube contains every concept on its domain, this is a proper unlabeled scheme of size at most $n$.  Proper unlabeled compression is at least ordinary unlabeled compression, whose exact value here is $n$.",
+  "references": "\\cite{chalopin2022unlabeled,palvolgyi2021unlabeled}"
+}

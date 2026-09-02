@@ -3,7 +3,11 @@
   "parameter_1_id": "#parameters/maximum_degree",
   "parameter_2_id": "#parameters/maximum_positive_degree",
   "relationship_type": "larger",
+  "details": "For the oriented one-inclusion graph of every finite concept class.",
   "variant": "relative",
+  "witness": "#classes/halfintervals",
   "short_name": "maximum_degree_maximum_positive_degree",
-  "name": "Maximum Degree / Maximum Positive Degree"
+  "name": "Maximum Degree / Maximum Positive Degree",
+  "status": "established",
+  "proof": "For every vertex, its number of smaller neighbours is at most its total degree.  Taking maxima over vertices gives the inequality."
 }

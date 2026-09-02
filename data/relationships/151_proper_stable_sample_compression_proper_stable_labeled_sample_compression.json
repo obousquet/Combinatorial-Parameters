@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/proper_stable_sample_compression",
   "parameter_2_id": "#parameters/proper_stable_labeled_sample_compression",
   "relationship_type": "larger",
+  "references": "\\cite{hanneke2021stable,bousquet2020proper}",
   "details": "Definition",
+  "status": "established",
+  "proof": "Every proper stable unlabeled scheme is a proper stable labeled scheme after allowing the retained labels to be stored. The latter model is less restrictive.",
   "short_name": "proper_stable_sample_compression_proper_stable_labeled_sample_compression",
   "name": "Proper Stable Sample Compression / Proper Stable Labeled Sample Compression"
 }

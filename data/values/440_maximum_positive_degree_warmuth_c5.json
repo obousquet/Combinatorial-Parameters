@@ -1,0 +1,12 @@
+{
+  "id": 440,
+  "name": "Maximum Positive Degree of Warmuth's $C_5$ Class",
+  "short_name": "maximum_positive_degree_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The raw $1$-inclusion graph is a matching.  In each edge, the concept obtained by setting the unrestricted bit to one properly contains the one with that bit set to zero, so it has one smaller neighbor.  No vertex can have more, because the graph has maximum degree one.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

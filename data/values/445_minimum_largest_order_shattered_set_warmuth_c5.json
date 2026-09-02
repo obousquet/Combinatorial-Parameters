@@ -1,0 +1,12 @@
+{
+  "id": 445,
+  "name": "Minimum Largest Order Shattered Set of Warmuth's $C_5$ Class",
+  "short_name": "minimum_largest_order_shattered_set_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The effective VC radius is two, and every coordinate order therefore has an order-shattered set of size two.  Conversely every order-shattered set is shattered, so its size is at most the VC dimension, also two.  The minimum over orders is consequently exactly two.",
+  "references": "\\cite{bollobas1995defect,palvolgyi2021unlabeled}"
+}

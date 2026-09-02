@@ -6,5 +6,7 @@
   "parameter_id": "#parameters/yang_dimension",
   "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "status": "established",
+  "proof": "For the delta-function class, distinct nonempty subfamilies have distinct least containing cubes, so the Taylor resolution of Yang's canonical ideal is minimal. Its top syzygy has homological degree $n-1$, which is therefore the Yang dimension.",
+  "references": "\\cite{yang2018homological}; see the full arXiv version, Section \"Delta Functions\", which constructs the minimal $(n-1)$-simplex resolution of the delta-function class."
 }

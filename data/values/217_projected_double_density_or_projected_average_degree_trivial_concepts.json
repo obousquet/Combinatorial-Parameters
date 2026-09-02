@@ -1,0 +1,11 @@
+{
+  "id": 217,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A one-coordinate projection is a single edge and has average degree one.  No projection of two concepts can have average degree above one.",
+  "name": "Projected Double Density or Projected Average Degree of Trivial concepts",
+  "short_name": "projected_double_density_or_projected_average_degree_trivial_concepts"
+}

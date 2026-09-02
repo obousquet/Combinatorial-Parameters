@@ -1,0 +1,11 @@
+{
+  "id": 299,
+  "name": "Minimum Projected Teaching-Set Size of the Full Cube",
+  "short_name": "minimum_projected_teaching_set_size_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/minimum_projected_teaching_set_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For every target of the full cube, projection to the full $n$-coordinate domain is again a full cube, and all $n$ coordinates are required to distinguish the target. Thus every target has worst projected teaching-set size at least $n$; no projection has more coordinates, so the minimum of these worst-case sizes is $n$."
+}

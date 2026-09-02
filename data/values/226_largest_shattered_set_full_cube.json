@@ -1,0 +1,11 @@
+{
+  "id": 226,
+  "name": "Largest Shattered Set of the Full Cube",
+  "short_name": "largest_shattered_set_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the full cube is $n$."
+}

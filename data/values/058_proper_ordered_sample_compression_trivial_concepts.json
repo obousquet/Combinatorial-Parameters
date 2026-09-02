@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/proper_ordered_sample_compression",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Order the two constant hypotheses.  A one-point labeled sample selects the least compatible constant and is itself a teaching set for that choice; the decompression is therefore proper.  As no size-zero proper scheme can distinguish the two constants, the proper ordered sample compression value is exactly one.",
+  "references": "\\cite{darnstadt2016order}"
 }

@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/effective_range",
   "parameter_2_id": "#parameters/log_shattering",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "Every shattered set is a subset of the effective range.",
+  "latex_proof_label": "lem:effective-range-log-shattering",
+  "proof_source": "LaTeX survey, effective-range/log-shattering lemma (lem:effective-range-log-shattering).",
   "witness": "#classes/singletons",
   "short_name": "effective_range_log_shattering",
   "name": "Effective Range / Log Shattering"

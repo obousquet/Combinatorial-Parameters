@@ -1,0 +1,12 @@
+{
+  "id": 627,
+  "name": "Radon Number of Singletons",
+  "short_name": "radon_number_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/radon_number",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Example 1 of the cited paper proves that the n singleton hypotheses are Radon independent, hence the Radon number is n.",
+  "references": "\\cite{chase2024dual}"
+}

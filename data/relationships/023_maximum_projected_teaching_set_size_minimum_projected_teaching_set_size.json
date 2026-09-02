@@ -3,7 +3,9 @@
   "parameter_1_id": "#parameters/maximum_projected_teaching_set_size",
   "parameter_2_id": "#parameters/minimum_projected_teaching_set_size",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "maximum_projected_teaching_set_size_minimum_projected_teaching_set_size",
-  "name": "Maximum Projected Teaching Set Size / Minimum Projected Teaching Set Size"
+  "name": "Maximum Projected Teaching Set Size / Minimum Projected Teaching Set Size",
+  "status": "established",
+  "proof": "For every projected class, the largest minimum teaching-set size is at least the smallest minimum teaching-set size.  Taking the respective extrema over projections preserves this ordering."
 }

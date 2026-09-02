@@ -1,0 +1,12 @@
+{
+  "id": 473,
+  "name": "Unlabeled Sample Compression of Trivial concepts",
+  "short_name": "unlabeled_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Fix an order on the domain.  For an all-positive sample, retain its least instance and reconstruct the full concept; for an all-negative sample, retain nothing and reconstruct the empty concept.  This is a size-one unlabeled compression scheme.  Size zero cannot distinguish the incompatible positive and negative one-point samples.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

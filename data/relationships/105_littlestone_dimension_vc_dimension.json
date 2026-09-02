@@ -4,6 +4,9 @@
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
   "details": "Definition",
+  "status": "established",
+  "proof": "If $S=\\{x_1,\\ldots,x_d\\}$ is shattered, use $x_1,\\ldots,x_d$ as the successive levels of a complete binary tree. Every root-to-leaf labeling is realized by shattering, so this is a shattered tree of depth $d$.",
+  "references": "\\cite{littlestone1988learning}",
   "witness": "#classes/halfintervals",
   "short_name": "littlestone_dimension_vc_dimension",
   "name": "Littlestone Dimension / VC Dimension"

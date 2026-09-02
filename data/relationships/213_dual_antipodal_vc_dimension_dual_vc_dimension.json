@@ -1,0 +1,13 @@
+{
+  "id": 213,
+  "parameter_1_id": "#parameters/dual_antipodal_vc_dimension",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "larger",
+  "details": "Every dually shattered set is dually antipodally shattered. The full cube makes the comparison strict: $\\mathrm{VC}^{*a}=\\lfloor\\log_2 n\\rfloor+1$ whereas $\\mathrm{VC}^{*}=\\lfloor\\log_2 n\\rfloor$.",
+  "status": "established",
+  "proof": "For each labeling, ordinary dual shattering supplies a point inducing that labeling itself, which is one of the two patterns allowed by dual antipodal shattering.",
+  "references": "\u005ccite{chornomaz2025spherical}",
+  "witness": "#classes/full_cube",
+  "short_name": "dual_antipodal_vc_dimension_dual_vc_dimension",
+  "name": "Dual Antipodal VC Dimension / Dual VC Dimension"
+}

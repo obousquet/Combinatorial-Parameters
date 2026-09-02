@@ -1,0 +1,13 @@
+{
+  "id": 280,
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, $\\mathrm{SR}(\\mathcal H)\\geq\\mathrm{VC}(\\mathcal H^*)$.",
+  "witness": "#classes/full_cube",
+  "status": "established",
+  "proof": "Transpose the incidence sign matrix. Proposition 1 gives that its dual sign rank is at least its VC dimension; dual sign rank is at most sign rank. Since sign rank is invariant under transposition, this yields $\\mathrm{SR}(\\mathcal H)\\geq\\mathrm{VC}(\\mathcal H^*)$.",
+  "references": "\\cite{alon2016sign}",
+  "short_name": "sign_rank_dual_vc_dimension",
+  "name": "Sign Rank / Dual VC Dimension"
+}

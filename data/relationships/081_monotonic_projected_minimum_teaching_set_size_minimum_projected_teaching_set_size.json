@@ -4,7 +4,9 @@
   "parameter_2_id": "#parameters/minimum_projected_teaching_set_size",
   "relationship_type": "larger",
   "variant": "monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "monotonic_projected_minimum_teaching_set_size_minimum_projected_teaching_set_size",
-  "name": "Monotonic Projected Minimum Teaching Set Size / Minimum Projected Teaching Set Size"
+  "name": "Monotonic Projected Minimum Teaching Set Size / Minimum Projected Teaching Set Size",
+  "status": "established",
+  "proof": "The monotonic projected variant takes an additional maximum over subfamilies.  Taking the original class as the subfamily recovers the ordinary projected minimum teaching-set size."
 }

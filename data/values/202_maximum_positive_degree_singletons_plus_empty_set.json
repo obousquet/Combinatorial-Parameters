@@ -1,0 +1,11 @@
+{
+  "id": 202,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each singleton has exactly one smaller neighbour, $\\emptyset$, and $\\emptyset$ has none.",
+  "name": "Maximum Positive Degree of Singletons plus empty set",
+  "short_name": "maximum_positive_degree_singletons_plus_empty_set"
+}

@@ -1,7 +1,7 @@
 {
   "id": 3,
   "name": "Oriented Diameter",
-  "symbol": "$\\mathrm{D}^+$",
+  "symbol": "\\mathrm{D}^+",
   "definition": "The **oriented diameter** $\\mathrm{D}^+(\\mathcal{H})$ of a family $\\mathcal{H}$ is defined as $$ \\mathrm{D}^+(\\mathcal{H}):= \\max\\{|S\\|: \\{\\emptyset, S\\}\\subset \\mathcal{H}\\_{|S}} $$",
   "category": "basic",
   "symmetric": false,
@@ -10,5 +10,27 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": false,
-  "short_name": "oriented_diameter"
+  "short_name": "oriented_diameter",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Every oriented-diameter witness in a subfamily is also a witness in the containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Projecting an oriented-diameter witness only deletes coordinates, so it cannot increase its length.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "Counterexample to strict c-monotonicity: for $\\mathcal H=\\{0010,0100,0111,1001\\}$, conditioning the second coordinate gives two fibres of oriented diameter 2, while $\\mathrm D^+(\\mathcal H)=2$. Thus the full value does not strictly exceed the smaller fibre value.",
+      "kind": "counterexample"
+    }
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "id": 206,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/extended_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "The effective range distinguishes every pair of hypotheses, so its restriction leaves at most one hypothesis consistent with any target labeling.",
+  "status": "established",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:effective-range-xtd`.",
+  "latex_proof_label": "lem:effective-range-xtd",
+  "short_name": "effective_range_extended_teaching_dimension",
+  "name": "Effective Range / Extended Teaching Dimension"
+}

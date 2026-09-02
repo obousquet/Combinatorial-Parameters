@@ -1,0 +1,12 @@
+{
+  "id": 155,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every labeling is itself a concept of the full cube.  Specifying it uniquely requires querying every one of the $n$ coordinates, and all $n$ coordinates suffice.",
+  "references": "\\cite{hegedHus1995generalized}",
+  "name": "Extended Teaching Dimension of Full Cube",
+  "short_name": "extended_teaching_dimension_full_cube"
+}

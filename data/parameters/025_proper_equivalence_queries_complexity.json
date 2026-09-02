@@ -1,12 +1,33 @@
 {
   "id": 25,
   "name": "Proper Equivalence Queries Complexity",
-  "symbol": "$\\mathrm{Q}_{\\mathrm{peq}}$",
+  "symbol": "\\mathrm{Q}_{\\mathrm{peq}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "proper_equivalence_queries_complexity"
+  "definition": "The **Proper Equivalence Queries Complexity** of $\\mathcal{H}$ is the minimum worst-case number of equivalence queries needed to identify an unknown target in $\\mathcal{H}$, when every proposed equivalence hypothesis must itself belong to $\\mathcal{H}$.",
+  "graph_summary": "Minimum worst-case number of equivalence queries when every proposed hypothesis is in the class.",
+  "origin_references": "Equivalence queries in the exact query-learning model are introduced in \\cite{angluin1988queries}; this parameter restricts the learner's equivalence hypotheses to $\\mathcal{H}$.",
+  "short_name": "proper_equivalence_queries_complexity",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Counterexample: $\\{000,001,010,100\\}$ has proper equivalence-query complexity 1, by querying $000$; a counterexample identifies which singleton is the target. Its subfamily $\\{001,010,100\\}$ has complexity 2, since a rejected singleton proposal can be refuted at its own coordinate and eliminate only that proposal.",
+      "kind": "counterexample"
+    },
+    "p_monotonic": {
+      "proof": "Run a proper equivalence-query learner for $\\mathcal H$ against counterexamples restricted to the retained coordinates, replacing each proposed hypothesis by its projection. The projected proposal is proper; any projected counterexample is also valid for the simulated original learner. If the projected proposal is accepted, its projection is the target. Thus projection cannot require more queries.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

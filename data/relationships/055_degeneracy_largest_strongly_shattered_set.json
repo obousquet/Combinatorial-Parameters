@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/degeneracy",
   "parameter_2_id": "#parameters/largest_strongly_shattered_set",
   "relationship_type": "larger",
+  "details": "Every contained cube gives an induced subgraph of matching minimum degree.",
   "short_name": "degeneracy_largest_strongly_shattered_set",
-  "name": "Degeneracy / Largest Strongly Shattered Set"
+  "name": "Degeneracy / Largest Strongly Shattered Set",
+  "status": "established",
+  "proof": "A strongly shattered set of size $d$ supplies a contained $d$-cube in the $1$-inclusion graph.  That cube is an induced subgraph of minimum degree $d$, so the graph degeneracy is at least $d$."
 }

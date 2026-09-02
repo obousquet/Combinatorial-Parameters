@@ -1,0 +1,12 @@
+{
+  "id": 98,
+  "name": "Radon Number",
+  "short_name": "radon_number",
+  "symbol": "\\mathrm{Rad}",
+  "category": "shattering",
+  "definition": "For a finite binary class $\\mathcal H$, form the convexity space on ground set $\\mathcal H$ whose convex sets are the version spaces $\\{h\\in\\mathcal H:h|_S=y\\}$ and their intersections. A set $\\{h_1,\\ldots,h_k\\}\\subseteq\\mathcal H$ is **Radon independent** if, for every nontrivial partition $I\\sqcup J=[k]$, the convex hulls of $\\{h_i:i\\in I\\}$ and $\\{h_j:j\\in J\\}$ are disjoint. The **Radon number** $\\mathrm{Rad}(\\mathcal H)$ is the largest size of a Radon-independent subset.",
+  "graph_summary": "Largest subset whose every nontrivial partition has disjoint version-space convex hulls.",
+  "description": "The Radon number of the convexity space naturally associated with a concept class; introduced for this setting by Chase, Chornomaz, Hanneke, Moran, and Yehudayoff.",
+  "origin_references": "Defined for concept classes in \\cite{chase2024dual}.",
+  "symmetric": true
+}

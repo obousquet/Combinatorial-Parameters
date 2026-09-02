@@ -1,7 +1,7 @@
 {
   "id": 7,
   "name": "Path Dimension",
-  "symbol": "$\\mathrm{P}$",
+  "symbol": "\\mathrm{P}",
   "definition": "The **Path dimension** of a family $\\mathcal{H}$, denoted by $P(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $\\mathcal{H}\\_{|S}$ contains a full path, i.e. there is an ordering $x_1,\\ldots,x_d$ of the elements of $S$ and a subset $T\\subset S$ such that $$ \\forall 0\\le k\\le d,\\, T\\Delta \\{x_1,\\ldots,x_k\\} \\in \\mathcal{H}\\_{|S}\\,. $$",
   "category": "basic",
   "symmetric": true,
@@ -10,5 +10,27 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": false,
-  "short_name": "path_dimension"
+  "short_name": "path_dimension",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "A path witness contained in a subfamily remains contained in the larger class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A path witness in a projection is already realized by the original class on those coordinates.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "Counterexample to strict c-monotonicity: for $\\mathcal H=\\{0000,0001,0010,0011,0100,0111,1001,1010\\}$, conditioning the third coordinate gives two fibres of path dimension 3, while $\\mathrm P(\\mathcal H)=3$.",
+      "kind": "counterexample"
+    }
+  }
 }

@@ -1,0 +1,12 @@
+{
+  "id": 619,
+  "name": "Minimum Star Number of Full Cube",
+  "short_name": "minimum_star_number_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The general bounds $\\mathrm{VC}\\leq\\mathrm S_{\\mathrm{min}}\\leq\\mathrm S$ are both n for the full cube, so the minimum star number is n.",
+  "references": "\\cite{hanneke2024star_eluder}"
+}

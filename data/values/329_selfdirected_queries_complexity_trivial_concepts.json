@@ -1,0 +1,12 @@
+{
+  "id": 329,
+  "name": "Self-Directed Queries Complexity of Trivial Concepts",
+  "short_name": "selfdirected_queries_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The learner chooses any coordinate. Its first prediction may be wrong, but the returned label identifies which constant is the target and prevents all later mistakes. Zero is impossible for two opposite labelings.",
+  "references": "\\cite{goldman1993learning,goldman1994power}"
+}

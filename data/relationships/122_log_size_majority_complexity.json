@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/log_size",
   "parameter_2_id": "#parameters/majority_complexity",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "For finite nonempty concept classes, with logarithms base $2$.",
+  "proof": "On an incorrect pointwise-majority equivalence query, at least the ceiling half of the current version space disagrees with the proposal and is eliminated, leaving at most its floor half. The halving algorithm therefore needs at most $\\lfloor\\log_2|\\mathcal H|\\rfloor$ informative queries.",
+  "references": "\\cite{maass1992lower}",
   "short_name": "log_size_majority_complexity",
   "name": "Log Size / Majority Complexity"
 }

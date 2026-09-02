@@ -1,0 +1,11 @@
+{
+  "id": 503,
+  "name": "Spherical Dimension of Trivial concepts",
+  "short_name": "spherical_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/spherical_dimension",
+  "value": "$0$",
+  "status": "established",
+  "proof": "The two constant concepts form a two-element threshold class. The low-VC classification of spherical dimension gives spherical dimension zero for every non-singleton subclass of thresholds.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

@@ -1,0 +1,10 @@
+{
+  "id": 248,
+  "name": "Maximum Largest Order Shattered Set of Warmuth's $C_5$ Class",
+  "short_name": "maximum_largest_order_shattered_set_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/maximum_largest_order_shattered_set",
+  "value": "$2$",
+  "status": "established",
+  "proof": "Maximum Largest Order Shattered Set is, by definition, the VC dimension. Warmuth's $C_5$ class has established VC dimension two."
+}

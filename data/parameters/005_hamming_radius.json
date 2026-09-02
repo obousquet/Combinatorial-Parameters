@@ -1,7 +1,7 @@
 {
   "id": 5,
   "name": "Hamming Radius",
-  "symbol": "$\\mathrm{B}$",
+  "symbol": "\\mathrm{B}",
   "definition": "The **Hamming Radius** $B(\\mathcal{H})$ of a family $\\mathcal{H}$ is the smallest radius of an enclosing Hamming ball, defined as $$ B(\\mathcal{H}):= \\min\\{d: \\exists T\\subset \\mathcal{X\\},\\, \\forall h\\in \\mathcal{H},\\, |h\\Delta T|\\le d} $$",
   "category": "basic",
   "symmetric": true,
@@ -9,6 +9,38 @@
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "hamming_radius"
+  "strictly_monotonic": true,
+  "strict_c_monotonic": true,
+  "tight_strict_c_monotonic": false,
+  "short_name": "hamming_radius",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Every Hamming ball containing a class also contains each of its subfamilies.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Projecting a containing Hamming ball gives a ball of no greater radius containing the projected class.",
+      "kind": "direct_argument"
+    },
+    "strict_c_monotonic": {
+      "proof": "Let r be the radius of $\\mathcal H$, witnessed by a centre c, and let x be active. In the fibre whose fixed label differs from c(x), deleting x from c gives an enclosing ball of radius at most r-1. Hence the smaller fibre radius is below r. Also radius zero implies that all concepts equal the centre, so the class has size at most one.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "Hamming radius is doubly monotonic, and the enclosing-ball argument proves strict c-monotonicity.",
+      "kind": "direct_argument"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{011,100\\}$ has radius 2. Each active one-coordinate split has two singleton fibres of radius 0, whose tight recurrence value would be 1, not 2.",
+      "kind": "counterexample"
+    }
+  }
 }

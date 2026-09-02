@@ -1,0 +1,11 @@
+{
+  "id": 178,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/log_size_ratio",
+  "value": "$\\frac{\\log(n-1)}{\\log(n+1)}$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "The half-interval class has $n$ initial segments on a domain of size $n$.  Hence the definition gives $\\log(n-1)/\\log(n+1)$.",
+  "name": "Log Size Ratio of Half-intervals",
+  "short_name": "log_size_ratio_halfintervals"
+}

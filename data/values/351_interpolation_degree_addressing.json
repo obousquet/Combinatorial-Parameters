@@ -1,0 +1,11 @@
+{
+  "id": 351,
+  "name": "Interpolation Degree of Addressing",
+  "short_name": "interpolation_degree_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each concept has a unique addressed primary coordinate. Assigning a coefficient to each such coordinate gives a linear polynomial with arbitrary prescribed values on the corresponding concepts. A constant polynomial cannot distinguish the nontrivial class."
+}

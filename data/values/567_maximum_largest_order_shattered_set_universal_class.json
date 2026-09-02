@@ -1,0 +1,12 @@
+{
+  "id": 567,
+  "name": "Maximum Largest Order Shattered Set of Universal Class",
+  "short_name": "maximum_largest_order_shattered_set_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/maximum_largest_order_shattered_set",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Maximum Largest Order Shattered Set is exactly VC dimension, whose established value on the universal class is $\\lfloor\\log_2 n\\rfloor$.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

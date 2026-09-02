@@ -1,0 +1,12 @@
+{
+  "id": 392,
+  "name": "Stable Labeled Sample Compression of Half-intervals",
+  "short_name": "stable_labeled_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Retain the greatest positive sample coordinate when one exists, otherwise the least negative coordinate.  Removing an unselected point preserves that selected extremum and the endpoint reconstruction, making the size-one scheme stable.  Zero is impossible.",
+  "references": "\\cite{FW1995}"
+}

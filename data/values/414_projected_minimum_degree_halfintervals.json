@@ -1,0 +1,11 @@
+{
+  "id": 414,
+  "name": "Projected Minimum Degree of Half-intervals",
+  "short_name": "projected_minimum_degree_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty coordinate projection of the ordered initial segments is again a chain of initial segments.  Its $1$-inclusion graph is a path, so its endpoint vertices have degree one and its minimum degree is one.  The empty projection has degree zero, hence the maximum over projections is one."
+}

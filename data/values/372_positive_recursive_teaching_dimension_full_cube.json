@@ -1,0 +1,12 @@
+{
+  "id": 372,
+  "name": "Positive Recursive Teaching Dimension of Full Cube",
+  "short_name": "positive_recursive_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/positive_recursive_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Remove cube concepts in decreasing inclusion order. A concept is positively taught among the remaining subsets by all of its positive coordinates, giving samples of size at most $n$. Initially the full concept needs all $n$ positive coordinates to exclude each neighbour missing one coordinate, so the bound is exact.",
+  "references": "\\cite{fallat2023batch}"
+}

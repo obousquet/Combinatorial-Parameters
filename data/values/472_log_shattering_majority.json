@@ -1,0 +1,13 @@
+{
+  "id": 472,
+  "name": "Log Shattering of Majority",
+  "short_name": "log_shattering_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$\\log\\left(2^n+\\sum_{k=0}^{\\lfloor(n-1)/2\\rfloor}\\binom{n}{k}\\right)$",
+  "value_class": "omega_n",
+  "details": "The class is the graph of the strict-majority bit over n ordinary coordinates.",
+  "status": "established",
+  "proof": "Every subset of the n ordinary coordinates is shattered because every ordinary trace occurs. For a set consisting of the majority coordinate and $k$ ordinary coordinates, all patterns are realizable exactly when $k\\le\\lfloor(n-1)/2\\rfloor$: after fixing any pattern on those $k$ coordinates, set the remaining ordinary coordinates all to 0 or all to 1 to realize either majority label. Conversely, if $k$ is larger, the all-one ordinary pattern cannot have majority label 0 (or, equivalently, the all-zero pattern cannot have majority label 1). Thus there are $2^n$ shattered sets without the majority coordinate and $\\sum_{k=0}^{\\lfloor(n-1)/2\\rfloor}\\binom nk$ with it.",
+  "references": "\\cite{maass1992lower}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 636,
+  "name": "Radon Number of Universal Class",
+  "short_name": "radon_number_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/radon_number",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Write the hypotheses as $u_i(A)=1$ exactly when $i\\in A$, for $A\\subseteq[n]$.  For every subset $T\\subseteq[n]$, the one-point positive sample at $A=T$ has version space exactly $\\{u_i:i\\in T\\}$.  Hence every subset of hypotheses is convex, every convex hull is the set itself, and all $n$ hypotheses form a Radon-independent set.  The cardinality bound gives equality.",
+  "references": "\\cite{chase2024dual}"
+}

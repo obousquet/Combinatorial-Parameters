@@ -1,0 +1,12 @@
+{
+  "id": 246,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/double_density_or_average_degree",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, its one-inclusion average degree is at most its effective range.",
+  "status": "established",
+  "proof": "Every vertex of the 1-inclusion graph has degree at most \\mathrm E(\\mathcal H), since at most one neighbor can use each effective coordinate. Averaging the vertex degrees gives \\mathrm{dens}(\\mathcal H)\\leq\\mathrm E(\\mathcal H).",
+  "references": "\\cite{haussler1994predicting}",
+  "short_name": "effective_range_double_density_or_average_degree",
+  "name": "Effective Range / Double Density or Average Degree"
+}

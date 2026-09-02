@@ -1,0 +1,11 @@
+{
+  "id": 606,
+  "name": "Dual Antipodal VC Dimension of Singletons plus Empty Set",
+  "short_name": "dual_antipodal_vc_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/dual_antipodal_vc_dimension",
+  "value": "$\\begin{cases}1&n=1,\\\\2&2\\leq n\\leq3,\\\\3&n\\geq4.\\end{cases}$",
+  "status": "established",
+  "proof": "For a selected set of singleton hypotheses, coordinate traces are unit vectors and, when available, the zero vector. Including the empty hypothesis only forces one selected coordinate of every trace to be zero, so it cannot create the missing complementary pairs. Hence $d\\geq4$ is impossible. For $n\\geq4$, three singleton hypotheses and one outside coordinate realize the zero vector and all three unit vectors, giving $d=3$; direct inspection of $n=1,2,3$ gives the stated boundary values.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

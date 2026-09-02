@@ -1,0 +1,12 @@
+{
+  "id": 451,
+  "name": "Monotonic Minimum Teaching-Set Size of Warmuth's $C_5$ Class",
+  "short_name": "monotonic_minimum_teaching_set_size_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/monotonic_minimum_teaching_set_size",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Monotonic minimum teaching-set size equals recursive teaching dimension.  The latter is three for $C_5$, so this value is three as well.",
+  "references": "\\cite{doliwa2014recursive,palvolgyi2021unlabeled}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 322,
+  "name": "Membership Query Complexity of Addressing",
+  "short_name": "membership_query_complexity_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Querying every address coordinate reveals the address word and hence the unique addressed concept. There are $2^{\\lfloor\\log_2 n\\rfloor}$ concepts, so the binary decision-tree lower bound shows that fewer queries cannot suffice.",
+  "references": "\\cite{angluin1988queries}"
+}

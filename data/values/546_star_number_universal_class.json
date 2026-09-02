@@ -1,0 +1,11 @@
+{
+  "id": 546,
+  "parameter_id": "#parameters/star_number",
+  "class_id": "#classes/universal_class",
+  "value": "$n-1$",
+  "status": "established",
+  "proof": "Fix i and project to the n-1 domain points $\\{j\\}$ for $j\\ne i$. Then $u_i$ has the all-zero trace and each $u_j$ has the corresponding unit-vector trace, giving an (n-1)-star. No star can have more leaves than the n-1 hypotheses other than its center.",
+  "references": "\\cite{hanneke2015minimax,chornomaz2025spherical}",
+  "short_name": "star_number_universal_class",
+  "name": "Star Number of Universal Class"
+}

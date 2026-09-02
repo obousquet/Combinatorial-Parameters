@@ -1,0 +1,12 @@
+{
+  "id": 417,
+  "name": "Proper Ordered Sample Compression of Half-intervals",
+  "short_name": "proper_ordered_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/proper_ordered_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The half-interval class is intersection-closed.  The proper order-compression construction for intersection-closed classes has size at most their VC dimension, which is one here.  A nontrivial class rules out size zero.",
+  "references": "\\cite{darnstadt2016order}"
+}

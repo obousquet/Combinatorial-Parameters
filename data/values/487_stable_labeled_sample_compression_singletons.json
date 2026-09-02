@@ -1,0 +1,13 @@
+{
+  "id": 487,
+  "name": "Stable Labeled Sample Compression of Singletons",
+  "short_name": "stable_labeled_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a domain with at least two points.",
+  "status": "established",
+  "proof": "The established stable unlabeled scheme of size one is also a stable labeled scheme when the retained label is allowed.  Stable labeled compression is at least ordinary labeled compression, whose value for singletons is one.",
+  "references": "\\cite{FW1995,hanneke2021stable}"
+}

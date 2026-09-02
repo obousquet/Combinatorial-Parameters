@@ -1,0 +1,14 @@
+{
+  "id": 271,
+  "parameter_1_id": "#parameters/minimum_star_number",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "additive_constant": "1",
+  "details": "For every finite binary class, $\\mathrm S_{\\mathrm{min}}(\\mathcal H)\\geq\\tfrac12\\mathrm{VC}^{*}(\\mathcal H)-1$.",
+  "status": "established",
+  "proof": "Corollary 25 of the cited paper establishes this direct affine lower bound.",
+  "references": "\\cite{hanneke2024star_eluder}",
+  "short_name": "minimum_star_number_dual_vc_dimension_affine",
+  "name": "Minimum Star Number / Dual VC Dimension (affine)"
+}

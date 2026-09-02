@@ -1,0 +1,13 @@
+{
+  "id": 662,
+  "name": "Balbach Teaching Dimension of Universal Class",
+  "short_name": "balbach_teaching_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The universal class has both ordinary teaching dimension and recursive teaching dimension equal to one. The established finite-class sandwich $\\mathrm{TD}\\geq\\mathrm{BTD}\\geq\\mathrm{RTD}$ therefore forces $\\mathrm{BTD}=1$.",
+  "references": "\\cite{zilles2011models,balbach2008measuring}"
+}

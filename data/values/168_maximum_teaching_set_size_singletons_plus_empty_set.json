@@ -1,0 +1,11 @@
+{
+  "id": 168,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "By definition $\\mathrm{TS}_{\\max}=\\mathrm{TD}$; the empty concept needs all $n$ negative coordinates to exclude the singletons.",
+  "name": "Maximum Teaching Set Size of Singletons plus empty set",
+  "short_name": "maximum_teaching_set_size_singletons_plus_empty_set"
+}

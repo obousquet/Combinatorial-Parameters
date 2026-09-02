@@ -1,0 +1,12 @@
+{
+  "id": 399,
+  "name": "Random Equivalence Queries Complexity of Trivial concepts",
+  "short_name": "random_equivalence_queries_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/random_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Query either constant concept.  If it is wrong, any counterexample establishes that the other constant is the target, independently of the random counterexample rule.  Zero queries cannot distinguish the two targets.",
+  "references": "\\cite{maass1992lower}"
+}

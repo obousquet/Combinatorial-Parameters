@@ -1,0 +1,13 @@
+{
+  "id": 638,
+  "name": "SCO Dimension of Halfintervals",
+  "short_name": "sco_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$1\\leq\\mathrm{SCO}\\leq2$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The spherical dimension of every non-singleton threshold class is 0, so Theorem 12 gives $\\mathrm{SCO}\\geq1$.  The halfinterval incidence matrix has sign rank 2, and the sign-rank SCO reduction gives $\\mathrm{SCO}\\leq2$.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign}"
+}

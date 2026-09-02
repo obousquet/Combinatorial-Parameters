@@ -1,0 +1,12 @@
+{
+  "id": 343,
+  "name": "Sign Rank of Full Cube",
+  "short_name": "sign_rank_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The $2^n$ cube sign patterns form a realizing matrix with $n$ linearly independent columns, so sign rank is at most $n$. Dual sign rank is at least VC dimension, which is $n$, and dual sign rank never exceeds sign rank. Hence sign rank is exactly $n$.",
+  "references": "\\cite{alon2016sign}"
+}

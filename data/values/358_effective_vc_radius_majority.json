@@ -1,0 +1,11 @@
+{
+  "id": 358,
+  "name": "Effective VC Radius of Majority",
+  "short_name": "effective_vc_radius_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$\\lceil n/2\\rceil$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Any subset of at most $\\lceil n/2\\rceil$ coordinates is shattered. If it omits the majority coordinate this is immediate from the free base bits. Otherwise, after fixing its $k-1$ selected base bits, the remaining $n-k+1$ bits can make the majority bit either value exactly when $k\\le\\lceil n/2\\rceil$. For $k=\\lceil n/2\\rceil+1$, choose the majority coordinate and $k-1$ base coordinates all labeled zero: even setting every remaining base bit to one does not reach a strict majority, so this set is not shattered."
+}

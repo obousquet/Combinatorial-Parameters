@@ -1,0 +1,12 @@
+{
+  "id": 387,
+  "name": "Proper Labeled Sample Compression of Trivial concepts",
+  "short_name": "proper_labeled_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/proper_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The size-one labeled scheme reconstructs one of the two constant concepts, hence is proper.  The same incompatible one-point samples rule out size zero.",
+  "references": "\\cite{FW1995}"
+}

@@ -5,5 +5,8 @@
   "relationship_type": "larger",
   "details": "Definition: the maximization defining $\\mathrm{XTD}$ includes targets in the class, for which specifying sets are teaching sets.",
   "short_name": "extended_teaching_dimension_teaching_dimension",
-  "name": "Extended Teaching Dimension / Teaching Dimension"
+  "name": "Extended Teaching Dimension / Teaching Dimension",
+  "status": "established",
+  "proof": "For every target $h\\in\\mathcal H$, a specifying set for $h$ among all labelings is in particular a teaching set for $h$ within $\\mathcal H$. Since $\\mathrm{XTD}$ maximizes over a superset of targets, it is at least $\\mathrm{TD}$.",
+  "references": "\\cite{hegedHus1995generalized}"
 }

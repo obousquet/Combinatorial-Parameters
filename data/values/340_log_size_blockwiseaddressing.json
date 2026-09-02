@@ -1,0 +1,11 @@
+{
+  "id": 340,
+  "name": "Log Size of Blockwise-Addressing",
+  "short_name": "log_size_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/log_size",
+  "value": "$d+1$",
+  "status": "established",
+  "proof": "The class has size $2^{d+1}$, so its binary log-size is $d+1$.",
+  "references": "\\cite{ben1997online}"
+}

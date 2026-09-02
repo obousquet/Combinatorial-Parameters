@@ -3,8 +3,10 @@
   "parameter_1_id": "#parameters/projected_vc_radius",
   "parameter_2_id": "#parameters/effective_vc_radius",
   "relationship_type": "larger",
+  "status": "established",
   "variant": "p_monotonic",
   "details": "Definition",
+  "proof": "The identity projection is among the coordinate projections.  The maximum effective VC radius over all projections is therefore at least the effective VC radius of $\\mathcal{H}$ itself.",
   "short_name": "projected_vc_radius_effective_vc_radius",
   "name": "Projected VC Radius / Effective VC Radius"
 }

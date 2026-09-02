@@ -1,0 +1,11 @@
+{
+  "id": 183,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full $n$-cube is an induced subgraph with minimum degree $n$, while no induced subgraph can have minimum degree above the ambient maximum degree $n$.",
+  "name": "Degeneracy of Full Cube",
+  "short_name": "degeneracy_full_cube"
+}

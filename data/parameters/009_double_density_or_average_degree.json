@@ -1,13 +1,38 @@
 {
   "id": 9,
   "name": "Double Density or Average Degree",
-  "symbol": "$\\mathrm{dens}$",
+  "symbol": "\\mathrm{dens}",
   "definition": "The **double-density** of a concept class is defined as twice the density of its $1$-inclusion graph, i.e twice the ratio of edges to vertices, or equivalently the average degree.",
   "category": "graph-based",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": false,
+  "c_monotonic": false,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "double_density_or_average_degree"
+  "short_name": "double_density_or_average_degree",
+  "origin_references": "The one-inclusion-graph density framework is used in \\cite{haussler1988predicting,haussler1994predicting}.",
+  "comments": "Not c-monotonic: for $\\mathcal H=\\{000,001,110\\}$, the average degree is $2/3$, while conditioning the first coordinate to $0$ leaves an edge of average degree $1$.",
+  "monotonicity_evidence": {
+    "c_monotonic": {
+      "proof": "Counterexample: H={000,001,110} has average degree 2/3, while conditioning its first coordinate to 0 leaves an edge of average degree 1.",
+      "kind": "direct_argument"
+    },
+    "monotonic": {
+      "proof": "Counterexample: the class $\\{000,001,110\\}$ has average degree $2/3$, but its subfamily $\\{000,001\\}$ is an edge and has average degree 1.",
+      "kind": "counterexample"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{000,001,110\\}$ has average degree $2/3$. Projecting to the last two coordinates gives the two-edge path $\\{00,01,10\\}$, of average degree $4/3$.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

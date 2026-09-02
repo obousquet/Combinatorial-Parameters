@@ -1,0 +1,13 @@
+{
+  "id": 643,
+  "name": "List Replicability Number of Singletons",
+  "short_name": "list_replicability_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/list_replicability",
+  "value": "$\\begin{cases}2&n=3,\\\\2\\leq\\mathrm{LR}\\leq3&n\\geq4.\\end{cases}$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq3$.",
+  "status": "established",
+  "proof": "For $n\\geq3$, the established spherical dimension is 1, and Theorem 10 gives $\\mathrm{LR}\\geq2$.  The sign rank is 2 at n=3 and 3 for $n\\geq4$; the sign-rank upper bound on list replicability gives the corresponding upper bounds. Thus n=3 is exact and the displayed interval holds for larger n.",
+  "references": "\\cite{chornomaz2025spherical,alon2016sign,blondal2026simplicialcovering}"
+}

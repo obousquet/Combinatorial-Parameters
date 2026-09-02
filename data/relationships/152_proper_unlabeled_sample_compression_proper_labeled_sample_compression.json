@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/proper_unlabeled_sample_compression",
   "parameter_2_id": "#parameters/proper_labeled_sample_compression",
   "relationship_type": "larger",
+  "references": "\\cite{bousquet2020proper,chalopin2022unlabeled}",
   "details": "Definition",
+  "status": "established",
+  "proof": "Every proper unlabeled scheme is a proper labeled scheme after allowing the retained labels to be stored. The latter model is less restrictive.",
   "short_name": "proper_unlabeled_sample_compression_proper_labeled_sample_compression",
   "name": "Proper Unlabeled Sample Compression / Proper Labeled Sample Compression"
 }

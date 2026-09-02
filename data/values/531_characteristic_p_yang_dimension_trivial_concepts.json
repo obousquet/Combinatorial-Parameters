@@ -1,0 +1,12 @@
+{
+  "id": 531,
+  "name": "Characteristic-p Yang Dimension of Trivial concepts",
+  "short_name": "characteristic_p_yang_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/characteristic_p_yang_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The Yang complex of the two constant functions is the disjoint union of two simplices. Its only nonzero reduced homology is in degree 0 over every field, so its Yang dimension is 1 in every positive characteristic.",
+  "references": "\\cite{yang2018homological}"
+}

@@ -1,12 +1,23 @@
 {
   "id": 37,
   "name": "Proper Unlabeled Sample Compression",
-  "symbol": "$\\mathrm{pUSC}$",
+  "symbol": "\\mathrm{pUSC}",
   "category": "compression",
   "symmetric": true,
-  "monotonic": false,
   "p_monotonic": true,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "proper_unlabeled_sample_compression"
+  "c_monotonic": true,
+  "definition": "The **Proper Unlabeled Sample Compression** is the minimum size of an unlabeled sample compression scheme whose reconstruction function always returns a member of $\\mathcal{H}$.",
+  "graph_summary": "Unlabeled compression size with reconstruction constrained to the class.",
+  "short_name": "proper_unlabeled_sample_compression",
+  "origin_references": "This is the proper-reconstruction restriction of the unlabeled-compression framework; see \u005ccite{kuzmin2007unlabeled,palvolgyi2021unlabeled,chalopin2022unlabeled}.",
+  "monotonicity_evidence": {
+    "p_monotonic": {
+      "proof": "On a sample of the projected class, apply the original proper scheme to that same sample on the retained coordinates and restrict its reconstruction.  An extension makes the sample realizable in $\\mathcal H$; the restricted reconstruction is in the projected class and is consistent, without enlarging the unlabeled compression set.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "For a conditioned sample, append the fixed labeled coordinates, compress in the original class, and delete fixed coordinates from the compressed set; restriction of reconstruction remains proper.",
+      "kind": "direct_argument"
+    }
+  }
 }

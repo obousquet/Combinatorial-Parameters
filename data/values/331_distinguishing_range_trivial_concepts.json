@@ -1,0 +1,11 @@
+{
+  "id": 331,
+  "name": "Distinguishing Range of Trivial Concepts",
+  "short_name": "distinguishing_range_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On any one coordinate the empty and full concepts have opposite traces. The empty projection cannot distinguish two concepts."
+}

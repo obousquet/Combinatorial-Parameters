@@ -3,7 +3,10 @@
   "parameter_1_id": "#parameters/sign_rank",
   "parameter_2_id": "#parameters/dual_sign_rank",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For every sign matrix.",
   "short_name": "sign_rank_dual_sign_rank",
-  "name": "Sign Rank / Dual Sign Rank"
+  "name": "Sign Rank / Dual Sign Rank",
+  "status": "established",
+  "proof": "If a fixed set of $k$ columns is linearly independent in every realizing matrix, then every realizing matrix has rank at least $k$.  Thus the maximum such fixed $k$ (dual sign rank) is at most sign rank.",
+  "references": "\\cite{alon2016sign}"
 }

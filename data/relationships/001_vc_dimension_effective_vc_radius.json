@@ -4,8 +4,11 @@
   "parameter_2_id": "#parameters/effective_vc_radius",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes; this is immediate from the definition of effective VC radius.",
   "witness": "#classes/addressing",
   "short_name": "vc_dimension_effective_vc_radius",
-  "name": "VC Dimension / Effective VC Radius"
+  "name": "VC Dimension / Effective VC Radius",
+  "status": "established",
+  "proof": "If the effective VC radius is $k$, then every $k$-subset of the effective range is shattered.  In particular one such subset is shattered, so the VC dimension is at least $k$.",
+  "references": "\\cite{vapnik1971uniform}"
 }

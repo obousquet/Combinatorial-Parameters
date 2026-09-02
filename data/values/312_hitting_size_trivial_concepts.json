@@ -1,0 +1,11 @@
+{
+  "id": 312,
+  "name": "Hitting Size of Trivial Concepts",
+  "short_name": "hitting_size_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The full concept is the only nonempty member, and any one coordinate hits it. The empty set cannot hit it."
+}

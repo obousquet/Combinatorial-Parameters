@@ -1,0 +1,15 @@
+{
+  "id": 177,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "-1",
+  "details": "For every nonempty finite concept class, $|\\mathcal H|\\geq\\mathrm S(\\mathcal H)+1$.",
+  "status": "established",
+  "latex_proof_label": "lem:elementary-parameter-hierarchy",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
+  "witness": "#classes/warmuth_c5",
+  "short_name": "size_star_number",
+  "name": "Size / Star Number (affine)"
+}

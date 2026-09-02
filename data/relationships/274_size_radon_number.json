@@ -1,0 +1,12 @@
+{
+  "id": 274,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, $|\\mathcal H|\\geq\\mathrm{Rad}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "A Radon-independent set is, by definition, a subset of the hypothesis class.  Its cardinality is therefore at most $|\\mathcal H|$; maximizing over such sets gives the inequality.",
+  "references": "\\cite{chase2024dual}",
+  "short_name": "size_radon_number",
+  "name": "Size / Radon Number"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 427,
+  "name": "Minimum Degree of Addressing",
+  "short_name": "minimum_degree_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Distinct addressing concepts have different addressed primary coordinates and different address words, so their symmetric difference has size at least two.  Thus the $1$-inclusion graph is edgeless and every vertex has degree zero.",
+  "references": "\\cite{maass1992lower}"
+}

@@ -2,9 +2,9 @@
   "id": 12,
   "name": "VC Dimension",
   "short_name": "vc_dimension",
-  "symbol": "$\\mathrm{VC}$",
+  "symbol": "\\mathrm{VC}",
   "definition": "The **VC dimension** of a family $\\mathcal{H}$, denoted by $\\VC(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $S$ is shattered by $\\mathcal{H}$, i.e.  $$ |\\mathcal{H|\\_{|S}} = 2^{|S|}\\,. $$",
-  "description": "Vapnik-Chervonenkis Dimension \\cite{vc71}.",
+  "description": "Vapnik-Chervonenkis Dimension.",
   "comments": "",
   "category": "shattering",
   "symmetric": true,
@@ -12,5 +12,28 @@
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false
+  "strictly_monotonic": false,
+  "origin_references": "Introduced in the foundational work of Vapnik and Chervonenkis, \\cite{vapnik1971uniform}.",
+  "monotonicity_evidence": {
+    "doubly_monotonic": {
+      "proof": "By definition, being monotonic under both subfamilies and projections is doubly monotonic.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection; hence doubly monotonicity implies c-monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "monotonic": {
+      "proof": "Every set shattered by a subfamily is also shattered by the containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Every set shattered by a projection is shattered by the original class on the same coordinates.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "Counterexample to strict c-monotonicity: for $\\mathcal H=\\{000,001,011,100\\}$, conditioning the third coordinate gives two fibres of VC dimension 1, while $\\mathrm{VC}(\\mathcal H)=1$.",
+      "kind": "counterexample"
+    }
+  }
 }

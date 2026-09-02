@@ -1,0 +1,11 @@
+{
+  "id": 166,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "By definition $\\mathrm{TS}_{\\max}=\\mathrm{TD}$, and each singleton is taught by its unique positive coordinate.",
+  "name": "Maximum Teaching Set Size of Singletons",
+  "short_name": "maximum_teaching_set_size_singletons"
+}

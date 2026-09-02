@@ -1,0 +1,13 @@
+{
+  "id": 470,
+  "name": "Largest Strongly Shattered Set of Tagged Singletons",
+  "short_name": "largest_strongly_shattered_set_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For tagged singletons on a nonempty ordinary domain.",
+  "status": "established",
+  "proof": "The empty concept and any tag singleton form a contained one-dimensional cube, so the value is at least one. A contained two-cube would require four concepts realizing all patterns on two varying coordinates while agreeing outside them. The construction has no ordinary singleton, no two-tag concept, and each ordinary coordinate occurs only with its assigned tag; consequently no two-coordinate projection contains such a cube. Hence the largest strongly shattered set has size one.",
+  "references": "\\cite{maass1992lower}"
+}

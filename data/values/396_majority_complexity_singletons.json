@@ -1,0 +1,12 @@
+{
+  "id": 396,
+  "name": "Majority Complexity of Singletons",
+  "short_name": "majority_complexity_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "With the zero tie-breaking convention, the pointwise majority of the singleton concepts is the empty hypothesis.  Its equivalence query either succeeds only in the degenerate one-concept case or returns the target's unique positive coordinate, which identifies the singleton.  For a nontrivial singleton class, zero queries cannot identify the target.",
+  "references": "\\cite{maass1992lower}"
+}

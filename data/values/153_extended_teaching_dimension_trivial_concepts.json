@@ -1,0 +1,12 @@
+{
+  "id": 153,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "At any one coordinate, the queried label selects exactly one of the two constant concepts.  Thus one coordinate specifies every target labeling with respect to the class.  No empty specifying set can do so, since both constants would remain consistent.  Hence the extended teaching dimension is $1$.",
+  "references": "\\cite{hegedHus1995generalized}",
+  "name": "Extended Teaching Dimension of Trivial concepts",
+  "short_name": "extended_teaching_dimension_trivial_concepts"
+}

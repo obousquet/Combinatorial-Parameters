@@ -4,5 +4,9 @@
   "parameter_2_id": "#parameters/noclashing_teaching_dimension",
   "relationship_type": "larger",
   "short_name": "positive_noclashing_teaching_dimension_noclashing_teaching_dimension",
-  "name": "Positive No-Clashing Teaching Dimension / No-Clashing Teaching Dimension"
+  "name": "Positive No-Clashing Teaching Dimension / No-Clashing Teaching Dimension",
+  "details": "For finite concept classes.",
+  "status": "established",
+  "proof": "A positive non-clashing teacher mapping is a non-clashing teacher mapping with an additional restriction on its samples.  Minimizing over the restricted class cannot lower the optimum.",
+  "references": "\\cite{KSZ2019}"
 }

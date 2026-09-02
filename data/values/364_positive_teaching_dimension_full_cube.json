@@ -1,0 +1,11 @@
+{
+  "id": 364,
+  "name": "Positive Teaching Dimension of Full Cube",
+  "short_name": "positive_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$\\infty$",
+  "status": "established",
+  "proof": "The empty cube concept has no positive examples, and its empty positive sample is consistent with every cube concept. Thus it has no finite positive teaching set.",
+  "references": "\\cite{balbach2008measuring}"
+}

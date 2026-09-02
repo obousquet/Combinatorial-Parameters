@@ -1,0 +1,12 @@
+{
+  "id": 279,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_strongly_shattered_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, $\\mathrm E(\\mathcal H)\\geq\\mathrm{ST}^{p}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "A strongly shattered set in a coordinate projection is witnessed by a contained cube. Each of its free coordinates varies in that projection and hence in the original class, so its size is at most the original effective range. Maximize over projections.",
+  "references": "\\cite{vapnik1971uniform}",
+  "short_name": "effective_range_projected_strongly_shattered_dimension",
+  "name": "Effective Range / Projected Strongly Shattered Dimension"
+}

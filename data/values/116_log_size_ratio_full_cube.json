@@ -4,7 +4,9 @@
   "short_name": "log_size_ratio_full_cube",
   "class_id": "#classes/full_cube",
   "parameter_id": "#parameters/log_size_ratio",
-  "value": "$n/\\log n$",
+  "value": "$\\frac{\\log(2^n-1)}{\\log(n+1)}$",
   "value_class": "omega_log_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The full cube has $2^n$ concepts on a domain of size $n$, so substitution into the definition gives $\\log(2^n-1)/\\log(n+1)$."
 }

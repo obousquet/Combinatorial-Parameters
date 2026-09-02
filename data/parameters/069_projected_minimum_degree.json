@@ -1,13 +1,25 @@
 {
   "id": 69,
   "name": "Projected Minimum Degree",
-  "symbol": "$\\mathrm{d}^p_{\\min}$",
+  "symbol": "\\mathrm{d}^p_{\\min}",
   "category": "graph-based",
   "symmetric": true,
-  "monotonic": true,
+  "monotonic": null,
   "p_monotonic": true,
   "c_monotonic": true,
-  "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "projected_minimum_degree"
+  "doubly_monotonic": null,
+  "definition": "The **Projected Minimum Degree** is the maximum, over all coordinate projections of $\\mathcal{H}$, of the minimum degree of the projected class's $1$-inclusion graph.",
+  "graph_summary": "Largest minimum degree among coordinate projections.",
+  "short_name": "projected_minimum_degree",
+  "origin_references": "Minimum degree in one-inclusion graphs, including counterexamples to its proposed VC upper bound, is studied by Rubinstein, Bartlett, and Rubinstein (2007); the projected envelope is the catalogue's p-monotonic construction.",
+  "monotonicity_evidence": {
+    "p_monotonic": {
+      "proof": "Every coordinate projection of pi_T(H) is a coordinate projection pi_U(H) of the original class, for some U contained in T. Thus the collection over which the maximum defining the projected minimum degree of pi_T(H) is taken is contained in the collection for H.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is a restriction to a fibre followed by a projection.  It is recorded separately from subfamily monotonicity because the latter has not been established for this maximum-of-minimum-degrees parameter.",
+      "kind": "direct_argument"
+    }
+  }
 }

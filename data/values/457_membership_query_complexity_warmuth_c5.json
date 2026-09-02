@@ -1,0 +1,12 @@
+{
+  "id": 457,
+  "name": "Membership Query Complexity of Warmuth's $C_5$ Class",
+  "short_name": "membership_query_complexity_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "At least four binary answers are necessary to identify one of ten concepts.  Four suffice: query coordinate $0$, then coordinate $1$; on branch $00$, query $3$; on branch $01$, query $2$ and, only after answer $0$, query $3$; on branch $10$, query $2$ and, only after answer $0$, query $4$; on branch $11$, query $2$.  The resulting leaves are the ten distinct $C_5$ strings, so the exact complexity is four.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

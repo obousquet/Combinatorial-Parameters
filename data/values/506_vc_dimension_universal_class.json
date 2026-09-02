@@ -1,0 +1,12 @@
+{
+  "id": 506,
+  "name": "VC Dimension of Universal Class",
+  "short_name": "vc_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "The $n$ hypotheses can realize at most $n$ label patterns on a chosen set, so no set larger than $\\lfloor\\log_2 n\\rfloor$ is shattered. Choosing one domain point for each binary pattern on that many hypotheses gives equality.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 210,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Along the inclusion-ordered path, every nonminimal initial segment has exactly one smaller $1$-inclusion neighbour, and the minimal segment has none.",
+  "name": "Maximum Positive Degree of Half-intervals",
+  "short_name": "maximum_positive_degree_halfintervals"
+}

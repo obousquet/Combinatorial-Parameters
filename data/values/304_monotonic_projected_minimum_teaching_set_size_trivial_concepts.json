@@ -1,0 +1,11 @@
+{
+  "id": 304,
+  "name": "Monotonic Projected Minimum Teaching-Set Size of Trivial Concepts",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The full two-concept class has minimum projected teaching-set size one. Every subclass has at most two distinct projected traces, so its minimum projected teaching-set size is at most one; hence the subfamily maximum is one."
+}

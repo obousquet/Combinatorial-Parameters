@@ -1,0 +1,12 @@
+{
+  "id": 702,
+  "name": "Equivalence Queries Complexity of Universal Class",
+  "short_name": "equivalence_queries_complexity_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "For finite classes in the unrestricted equivalence-query model, equivalence-query complexity equals Littlestone dimension. The universal class has the established value $\\lfloor\\log_2 n\\rfloor$ for the latter.",
+  "references": "\\cite{littlestone1988learning}"
+}

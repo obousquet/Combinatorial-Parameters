@@ -1,0 +1,12 @@
+{
+  "id": 371,
+  "name": "Positive Recursive Teaching Dimension of Singletons",
+  "short_name": "positive_recursive_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/positive_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "At every nontrivial stage, any singleton is taught by its unique positive coordinate. Thus all concepts can be removed with positive samples of size one.",
+  "references": "\\cite{fallat2023batch}"
+}

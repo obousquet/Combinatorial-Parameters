@@ -1,0 +1,11 @@
+{
+  "id": 187,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_maximal_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full-domain projection is the $n$-cube and has maximum degree $n$.  Every projection onto at most $n$ coordinates has maximum degree at most $n$.",
+  "name": "Projected Maximal Degree of Full Cube",
+  "short_name": "projected_maximal_degree_full_cube"
+}

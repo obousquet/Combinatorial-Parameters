@@ -4,7 +4,10 @@
   "short_name": "threshold_dimension_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/threshold_dimension",
-  "value": "$\\lceil \\log n\\rceil$",
+  "value": "$\\log_2 n+1$",
   "value_class": "omega_log_n",
-  "details": ""
+  "details": "Under the standard convention $n=2^d$; this corrects an off-by-one in the legacy table.",
+  "status": "established",
+  "proof": "Projecting to the $d=\\log_2 n$ address coordinates gives the full $d$-cube.  Its chain $\\emptyset,\\{a_1\\},\\ldots,\\{a_1,\\ldots,a_d\\}$ is realized by the address concepts; adding the primary coordinate of the all-one address concept gives one further realized trace.  Hence the threshold dimension is at least $d+1$.  Conversely, the final trace of a threshold chain is contained in one addressing concept and so uses at most its $d$ address coordinates and its single primary coordinate.  Thus no chain has dimension exceeding $d+1$.",
+  "references": "\\cite{maass1992lower}"
 }

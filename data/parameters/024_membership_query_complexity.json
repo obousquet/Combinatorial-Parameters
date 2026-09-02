@@ -1,12 +1,38 @@
 {
   "id": 24,
   "name": "Membership Query Complexity",
-  "symbol": "$\\mathrm{Q}_m$",
+  "symbol": "\\mathrm{Q}_m",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "membership_query_complexity"
+  "definition": "The **Membership Query Complexity** of $\\mathcal{H}$ is the minimum worst-case number of membership queries needed to identify an unknown target in $\\mathcal{H}$.",
+  "graph_summary": "Minimum worst-case number of membership queries needed to identify the target.",
+  "short_name": "membership_query_complexity",
+  "origin_references": "Membership queries in the exact query-learning model are introduced in \\cite{angluin1988queries}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A membership-query decision tree identifying every target in a class also identifies every target in a subfamily, without changing its queries or worst-case depth.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A membership-query learner for the original class learns a conditioned fibre by answering every query on a fixed coordinate for free and simulating all other queries.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{0001,0011,0100,1000\\}$ has membership-query complexity 2: query the last coordinate, then use the third coordinate on the 1-branch and the second coordinate on the 0-branch. Projecting away the last coordinate gives $\\{000,001,010,100\\}$, for which every first query isolates at most one target and the remaining three require two further queries, so the complexity is 3.",
+      "kind": "counterexample"
+    }
+  }
 }

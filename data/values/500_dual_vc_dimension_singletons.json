@@ -1,0 +1,11 @@
+{
+  "id": 500,
+  "name": "Dual VC Dimension of Singletons",
+  "short_name": "dual_vc_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/dual_vc_dimension",
+  "value": "$1$",
+  "details": "For $n\u005cgeq2$.",
+  "status": "established",
+  "proof": "The dual class is again the class of singleton indicators on its $n$ hypotheses. It shatters one hypothesis, but on any two hypotheses it omits the pattern $11$."
+}

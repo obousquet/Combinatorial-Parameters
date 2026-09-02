@@ -1,0 +1,12 @@
+{
+  "id": 223,
+  "name": "Log Size of Warmuth's $C_5$ class",
+  "short_name": "log_size_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/log_size",
+  "value": "$\\log_2 10$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class has exactly ten concepts, so its binary logarithmic size is $\\log_2 10$.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

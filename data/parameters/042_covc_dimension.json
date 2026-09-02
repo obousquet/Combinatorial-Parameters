@@ -1,13 +1,40 @@
 {
   "id": 42,
   "name": "co-VC dimension",
-  "symbol": "$\\mathrm{coVC}$",
+  "symbol": "\\mathrm{coVC}",
   "definition": "The **coVC number** of a family $\\mathcal{H}$, denoted by $\\covcmod(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $\\mathcal{H}\\_{|S}$ contains a hollow $d$-star, i.e. there is a subset $T\\subset S$ such that $$ T\\notin \\mathcal{H}\\_{|S} \\,\\mbox{ and }\\, \\forall x\\in S,\\, T\\Delta \\{x\\} \\in \\mathcal{H}\\_{|S}\\,. $$",
   "category": "holes",
+  "description": "The maximum dimension of a hollow star in a coordinate projection. It is also called the hollow star number, dual Helly number, or consistency dimension (up to the conventional shift used for Helly numbers).",
+  "graph_summary": "Largest projected hollow star: an unrealizable labeling whose every one-coordinate flip is realizable. Also called hollow star number/co-VC dimension.",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "covc_dimension"
+  "comments": "Also called the **consistency dimension**: it is the least $k$ such that every nonmember admits a labeled sample of size at most $k$ inconsistent with the class. This is equivalent to the hollow-star/co-VC formulation.",
+  "origin_references": "Introduced as co-VC dimension in \\cite{kane2019communication}; the equivalent dual Helly number and hollow-star formulation are developed in \\cite{bousquet2020proper}. The consistency-dimension terminology appears in \\cite{hegedHus1995generalized}.",
+  "short_name": "covc_dimension",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For $n\\ge3$, the full cube $\\{0,1\\}^{[n]}$ has $\\mathrm{coVC}=0$, whereas its singleton subfamily has $\\mathrm{coVC}=n$: the all-zero trace is missing and all of its one-coordinate neighbours occur.  Thus passage to a subfamily can increase co-VC dimension.",
+      "kind": "counterexample"
+    },
+    "p_monotonic": {
+      "proof": "A hollow star in a projection $(\\mathcal H_{|T})_{|S}$ is exactly a hollow star in $\\mathcal H_{|S}$ for $S\\subseteq T$.  Since co-VC maximizes over coordinate restrictions, projecting first cannot increase it.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A hollow star in a conditioned fibre can be lifted by adjoining the fixed labels.  It is then a hollow star in the original class, so conditioning cannot increase co-VC dimension.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

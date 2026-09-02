@@ -1,0 +1,12 @@
+{
+  "id": 409,
+  "name": "Projected Membership Queries Complexity of Singletons plus empty set",
+  "short_name": "projected_membership_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/projected_membership_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "A projection to $k$ coordinates is again the empty concept together with the $k$ singleton concepts.  To identify the empty target requires $k$ negative answers, and querying all coordinates suffices.  The full-domain projection has $k=n$.",
+  "references": "\\cite{angluin1988queries}"
+}

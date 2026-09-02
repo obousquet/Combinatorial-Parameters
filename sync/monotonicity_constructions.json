@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "purpose": "Explicit max-over-subfamilies constructions used to derive direct monotonicity consequences.",
+  "constructions": [
+    {
+      "derived_parameter_id": "#parameters/monotonic_yang_dimension",
+      "base_parameter_id": "#parameters/yang_dimension",
+      "operation": "max_subfamilies"
+    }
+  ]
+}

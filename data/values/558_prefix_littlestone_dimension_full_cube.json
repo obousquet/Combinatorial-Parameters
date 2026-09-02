@@ -1,0 +1,12 @@
+{
+  "id": 558,
+  "name": "Prefix-$k$ Littlestone Dimension of Full Cube",
+  "short_name": "prefix_littlestone_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Query the $n$ coordinates in the same fixed order at every node. This is a prefix-$k$ tree of depth $n$, so $\\mathrm{PL}_k\\geq n$. No Littlestone tree on an $n$-coordinate class has depth greater than $n$, and $\\mathrm{PL}_k\\leq\\mathrm L$, giving equality.",
+  "references": "Database-defined variant; the comparison $\\mathrm{PL}_k\\leq\\mathrm L$ is Proposition \\ref{prop:prefix-littlestone-order} in the survey"
+}

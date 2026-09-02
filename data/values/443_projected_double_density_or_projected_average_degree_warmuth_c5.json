@@ -1,0 +1,12 @@
+{
+  "id": 443,
+  "name": "Projected Double Density or Projected Average Degree of Warmuth's $C_5$ Class",
+  "short_name": "projected_double_density_or_projected_average_degree_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$\\frac{18}{7}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On three consecutive cyclic coordinates, the projection has seven vertices and nine $1$-inclusion edges, hence average degree $18/7$.  Enumerating all coordinate projections of the ten $C_5$ strings shows that none has higher average degree.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

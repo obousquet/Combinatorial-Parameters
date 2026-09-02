@@ -1,0 +1,11 @@
+{
+  "id": 191,
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$0$",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "The $1$-inclusion graph has no edges, so every induced subgraph has minimum degree zero.",
+  "name": "Degeneracy of Singletons",
+  "short_name": "degeneracy_singletons"
+}

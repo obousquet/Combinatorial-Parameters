@@ -1,0 +1,12 @@
+{
+  "id": 642,
+  "name": "List Replicability Number of Trivial Concepts",
+  "short_name": "list_replicability_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/list_replicability",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On a realizable distribution with either constant target, every labeled example has that target's constant label.  From one example, output the corresponding constant hypothesis.  The singleton list containing that hypothesis has error zero and contains the learner output with probability one.  A nonempty list is necessary, so $\\mathrm{LR}=1$.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

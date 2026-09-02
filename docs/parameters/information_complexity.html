@@ -77,20 +77,20 @@
     </div>
     
 <strong>Definition:</strong><div class="text-field"><p>The <strong>Information Complexity</strong> of a hypothesis class $\mathcal{H}$ is the supremum, over sample sizes and data distributions, of the least mutual information $I(S;\mathcal{A}(S))$ between a sample $S$ and the output of a PAC-learning algorithm $\mathcal{A}$ for $\mathcal{H}$.</p></div>
-
+<strong>Description:</strong><div class="text-field"><p>For arbitrary binary classes, finite information complexity is equivalent to finite Littlestone dimension. More quantitatively, finite Littlestone dimension $d$ implies $\mathrm{IC}(\mathcal H)\leq 2^d+\log_2(d+1)+3+3/(e\ln 2)$, by Pradeep, Nachum, and Gastpar. This is an exponential bound, so it is recorded here rather than as one of the graph's affine or logarithmic relationship edges.</p></div>
 
 <strong>Origin References:</strong><div class="text-field"><p>Defined in this form by Pradeep, Nachum, and Gastpar <a href="bibliography.html#pradeep2022information">[pradeep2022information]</a>.</p></div>
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> No</p>
-<p><strong>C-Monotonic:</strong> Unspecified</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
+<p><strong>C-Monotonic:</strong> Yes</p>
 <p><strong>Strict C-Monotonic:</strong> Unspecified</p>
 <p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> No</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/size_information_complexity.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{IC}$</a></li></ul></p></div>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/information_complexity_trivial_concepts.html'>Information Complexity of Trivial concepts</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/size_information_complexity.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{IC}$</a></li><li><a href="relationships/log_size_information_complexity.html" class="relationship-statement">$\log \mathrm{H} \ge \mathrm{IC}$</a></li></ul></p></div>
 
         </div>
     </div>

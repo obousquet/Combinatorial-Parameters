@@ -1,0 +1,13 @@
+{
+  "id": 257,
+  "parameter_1_id": "#parameters/balbach_teaching_dimension",
+  "parameter_2_id": "#parameters/recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite concept class, $\\mathrm{BTD}(\\mathcal H)\\geq\\mathrm{RTD}(\\mathcal H)$; the inequality can be strict.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "status": "established",
+  "proof": "Theorem 32 proves the comparison. At the first layer attaining the recursive teaching dimension, the minimum ordinary teaching dimension of the remaining subclass equals that layer's value. Lemma 31 lower-bounds its Balbach dimension by this minimum, and BTD subclass monotonicity transfers the bound to $\\mathcal H$.",
+  "references": "\\cite{zilles2011models}",
+  "short_name": "balbach_teaching_dimension_recursive_teaching_dimension",
+  "name": "Balbach Teaching Dimension / Recursive Teaching Dimension"
+}

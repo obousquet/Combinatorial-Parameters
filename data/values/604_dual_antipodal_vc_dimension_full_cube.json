@@ -1,0 +1,11 @@
+{
+  "id": 604,
+  "name": "Dual Antipodal VC Dimension of Full Cube",
+  "short_name": "dual_antipodal_vc_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/dual_antipodal_vc_dimension",
+  "value": "$\\lfloor\\log_2 n\\rfloor+1$",
+  "status": "established",
+  "proof": "For a dually antipodally shattered set of $d$ cube functions, the $n$ coordinates must realize all $2^{d-1}$ complementary pairs of $d$-bit patterns, so $2^{d-1}\\leq n$. Conversely, for $d=\\lfloor\\log_2 n\\rfloor+1$, choose $d$ functions whose values on $2^{d-1}$ coordinates are one representative from every complementary pair; assign their remaining values arbitrarily. These functions are dually antipodally shattered.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

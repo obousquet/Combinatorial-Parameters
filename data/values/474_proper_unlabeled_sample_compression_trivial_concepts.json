@@ -1,0 +1,12 @@
+{
+  "id": 474,
+  "name": "Proper Unlabeled Sample Compression of Trivial concepts",
+  "short_name": "proper_unlabeled_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/proper_unlabeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The size-one unlabeled scheme for the two constant concepts reconstructs either the empty or the full concept, both of which belong to the class.  Thus it is proper; the ordinary unlabeled lower bound of one still applies.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

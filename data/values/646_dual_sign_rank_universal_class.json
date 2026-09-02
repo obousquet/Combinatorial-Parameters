@@ -1,0 +1,12 @@
+{
+  "id": 646,
+  "name": "Dual Sign Rank of Universal Class",
+  "short_name": "dual_sign_rank_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/dual_sign_rank",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "By definition, dual sign rank is the sign rank of the transposed incidence matrix. The transpose for $\\mathcal U_n$ is the full-cube incidence matrix, whose sign rank is n. Therefore $\\mathrm{DSR}(\\mathcal U_n)=n$.",
+  "references": "\\cite{alon2016sign}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 403,
+  "name": "Random Equivalence Queries Complexity of Singletons plus empty set",
+  "short_name": "random_equivalence_queries_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/random_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Query the empty concept.  It succeeds for the empty target, and otherwise its unique positive counterexample identifies the target singleton.  Thus the random counterexample rule does not change the one-query bound, while zero queries are impossible.",
+  "references": "\\cite{maass1992lower}"
+}

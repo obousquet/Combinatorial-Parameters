@@ -1,0 +1,13 @@
+{
+  "id": 471,
+  "name": "Largest Strongly Shattered Set of Majority",
+  "short_name": "largest_strongly_shattered_set_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$\\lfloor n/2\\rfloor$",
+  "value_class": "omega_n",
+  "details": "The majority class is the graph of the strict-majority bit over its n ordinary coordinates.",
+  "status": "established",
+  "proof": "Fix any $\\lfloor n/2\\rfloor$ ordinary coordinates to vary and set every other ordinary coordinate and the majority coordinate to 0. All resulting traces have at most $\\lfloor n/2\\rfloor$ ordinary ones, so the whole cube is contained in the class. Conversely, a contained cube cannot vary the majority coordinate, since that bit is determined by the ordinary trace. If it varies $k$ ordinary coordinates, the majority bit must be constant throughout the cube. With $r$ fixed ordinary ones this requires either $r+k\\le n/2$ or $r>n/2$; the available fixed coordinates then give respectively $k\\le\\lfloor n/2\\rfloor$ or $k\\le\\lceil n/2\\rceil-1$. Hence $k\\le\\lfloor n/2\\rfloor$.",
+  "references": "\\cite{maass1992lower}"
+}

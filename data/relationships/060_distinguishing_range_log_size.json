@@ -3,7 +3,9 @@
   "parameter_1_id": "#parameters/distinguishing_range",
   "parameter_2_id": "#parameters/log_size",
   "relationship_type": "larger",
+  "status": "established",
   "details": "Lemma",
+  "proof": "On a distinguishing coordinate set $S$, the $|\\mathcal{H}|$ concepts have pairwise distinct binary restrictions.  There are only $2^{|S|}$ such restrictions, so $|\\mathcal{H}|\\le2^{|S|}$.  Minimizing over $S$ gives $\\mathrm{R}(\\mathcal{H})\\ge\\log|\\mathcal{H}|$.",
   "short_name": "distinguishing_range_log_size",
   "name": "Distinguishing Range / Log Size"
 }

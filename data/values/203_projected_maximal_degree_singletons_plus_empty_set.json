@@ -1,0 +1,11 @@
+{
+  "id": 203,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/projected_maximal_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full-domain projection is the $n$-leaf star and has maximum degree $n$.  A projection onto $k$ coordinates is a $k$-leaf star, whose maximum degree is $k\\le n$.",
+  "name": "Projected Maximal Degree of Singletons plus empty set",
+  "short_name": "projected_maximal_degree_singletons_plus_empty_set"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 493,
+  "name": "Teaching Dimension of Tagged Singletons",
+  "short_name": "teaching_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$n/2$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "For the standard tagged-singletons construction, with the ordinary coordinates divided into dyadic tag groups.",
+  "proof": "A tag singleton with the first tag must be distinguished from each of the $n/2$ tagged pairs carrying that tag, requiring a negative example at every corresponding ordinary coordinate. Those $n/2$ negative examples suffice. Every other concept has a teaching set no larger than this, so the maximum teaching-set size is $n/2$.",
+  "references": "\\cite{maass1992lower}"
+}

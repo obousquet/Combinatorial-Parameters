@@ -73,10 +73,10 @@
 <p><strong>Parameter: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
-<p><strong>Status:</strong> </p>
-
-
+<p><strong>Details: </strong>Under the standard addressing convention with $n$ encoded primary coordinates.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A learner can enumerate the $n$ proper hypotheses, so $n$ queries suffice.  Conversely, when the learner proposes the addressing concept with primary coordinate $j$, every other target has label $0$ at $j$ while the proposal has label $1$.  An adversary can always return $j$ as the counterexample and retain every other target.  Thus each failed proper equivalence query rules out only its proposed hypothesis, and the last remaining target still requires its accepting query.  The worst-case complexity is $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
     </div>

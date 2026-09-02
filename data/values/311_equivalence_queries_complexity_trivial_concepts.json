@@ -1,0 +1,12 @@
+{
+  "id": 311,
+  "name": "Equivalence Queries Complexity of Trivial Concepts",
+  "short_name": "equivalence_queries_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{Q}_{\\mathrm{eq}}=\\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Trivial Concepts.",
+  "references": "\\cite{littlestone1988learning}"
+}

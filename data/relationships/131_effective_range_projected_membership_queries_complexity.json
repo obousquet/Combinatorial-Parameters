@@ -3,6 +3,9 @@
   "parameter_1_id": "#parameters/effective_range",
   "parameter_2_id": "#parameters/projected_membership_queries_complexity",
   "relationship_type": "larger",
+  "status": "established",
+  "details": "Each coordinate projection can be learned by querying only its effective coordinates.",
+  "proof": "For every coordinate projection $\\mathcal{G}$ of $\\mathcal{H}$, querying all coordinates in the effective range of $\\mathcal{G}$ distinguishes every pair of its concepts.  Thus $\\mathrm{Q}_m(\\mathcal{G})\\le\\mathrm{E}(\\mathcal{G})\\le\\mathrm{E}(\\mathcal{H})$.  Maximizing over projections gives $\\mathrm{Q}_m^p(\\mathcal{H})\\le\\mathrm{E}(\\mathcal{H})$.",
   "short_name": "effective_range_projected_membership_queries_complexity",
   "name": "Effective Range / Projected Membership Queries Complexity",
   "witness": "#classes/trivial_concepts"

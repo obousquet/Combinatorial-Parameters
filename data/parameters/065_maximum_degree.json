@@ -1,13 +1,37 @@
 {
   "id": 65,
   "name": "Maximum Degree",
-  "symbol": "$\\mathrm{d}_{\\max}$",
+  "symbol": "\\mathrm{d}_{\\max}",
   "definition": "The **maximum degree** of a concept class is defined as the maximum degree of its $1$-inclusion graph.",
   "category": "graph-based",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "maximum_degree"
+  "short_name": "maximum_degree",
+  "comments": "Conditioning gives an induced subgraph of the $1$-inclusion graph, whose maximum degree cannot exceed that of the original graph.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "The 1-inclusion graph of a subfamily is an induced subgraph of the original graph, so no vertex degree can increase.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Conditioning gives an induced subgraph of the one-inclusion graph, so maximum degree cannot increase.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: $\\mathcal H=\\{000,001,110\\}$ has one-inclusion graph consisting of one edge and an isolated vertex, hence maximum degree 1. Projecting to the last two coordinates gives $\\{00,01,10\\}$, the three-vertex path of maximum degree 2.",
+      "kind": "counterexample"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

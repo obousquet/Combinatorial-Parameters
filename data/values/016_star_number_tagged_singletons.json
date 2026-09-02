@@ -4,7 +4,10 @@
   "short_name": "star_number_tagged_singletons",
   "class_id": "#classes/tagged_singletons",
   "parameter_id": "#parameters/star_number",
-  "value": "$n-1$",
+  "value": "$n$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "With $n$ ordinary coordinates, as in the database definition of tagged singletons.",
+  "status": "established",
+  "proof": "Project to all $n$ ordinary coordinates.  The empty concept gives the star centre, and each tagged singleton $\\{i,n+f(i)\\}$ restricts to the leaf $\\{i\\}$, producing an $n$-star.  Conversely, in a star witness each selected tag coordinate either contributes its tag singleton as a leaf or prevents every ordinary coordinate carrying that tag from being a one-coordinate leaf.  Taking all ordinary coordinates is optimal, so no star has more than $n$ leaves.",
+  "references": "\\cite{maass1992lower}"
 }

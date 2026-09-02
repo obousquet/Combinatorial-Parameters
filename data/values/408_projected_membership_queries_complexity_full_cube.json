@@ -1,0 +1,12 @@
+{
+  "id": 408,
+  "name": "Projected Membership Queries Complexity of Full Cube",
+  "short_name": "projected_membership_queries_complexity_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_membership_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every projection is a full cube on at most $n$ coordinates, and identifying a target in a $k$-cube requires and is achieved by querying all $k$ coordinates.  The full-domain projection supplies the matching value $n$.",
+  "references": "\\cite{angluin1988queries}"
+}

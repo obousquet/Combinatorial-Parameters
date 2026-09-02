@@ -1,0 +1,1 @@
+{"id":256,"name":"Projected VC Radius of Half-intervals","short_name":"projected_vc_radius_halfintervals","class_id":"#classes/halfintervals","parameter_id":"#parameters/projected_vc_radius","value":"$1$","value_class":"omega_1","status":"established","proof":"Projected VC radius equals VC dimension. Half-intervals have established VC dimension one."}

@@ -1,0 +1,11 @@
+{
+  "id": 237,
+  "name": "Relative Hitting Size of Singletons plus Empty Set",
+  "short_name": "relative_hitting_size_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Relative hitting size is, by definition, the maximum teaching-set size. The established teaching dimension of singletons plus the empty set is $n$."
+}

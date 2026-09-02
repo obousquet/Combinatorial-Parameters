@@ -1,13 +1,36 @@
 {
   "id": 77,
   "name": "Distinguishing Range",
-  "symbol": "$\\mathrm{R}$",
+  "symbol": "\\mathrm{R}",
   "definition": "Minimum number of coordinates over which all concepts in the class can be distinguished.",
   "category": "basic",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "distinguishing_range"
+  "short_name": "distinguishing_range",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Any coordinate set that distinguishes all concepts of a class also distinguishes every subfamily. Minimizing its size therefore cannot increase after restricting the class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Counterexample: H={0010,0011,0101,1000} has distinguishing range 2. A three-coordinate projection has trace {000,001,011,100}, whose four concepts require all three remaining coordinates to be distinguished. Thus the projected value is 3.",
+      "kind": "counterexample"
+    },
+    "c_monotonic": {
+      "proof": "A coordinate set distinguishing a target in the original class remains distinguishing in a conditioned fibre after fixed coordinates are deleted.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

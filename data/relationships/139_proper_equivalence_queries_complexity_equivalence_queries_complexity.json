@@ -3,7 +3,9 @@
   "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/equivalence_queries_complexity",
   "relationship_type": "larger",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "proper_equivalence_queries_complexity_equivalence_queries_complexity",
-  "name": "Proper Equivalence Queries Complexity / Equivalence Queries Complexity"
+  "name": "Proper Equivalence Queries Complexity / Equivalence Queries Complexity",
+  "status": "established",
+  "proof": "A proper equivalence-query learner may query only hypotheses from the class, whereas unrestricted equivalence queries allow arbitrary hypotheses.  The restriction cannot decrease the optimal worst-case query complexity."
 }

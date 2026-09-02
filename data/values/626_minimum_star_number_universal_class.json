@@ -1,0 +1,12 @@
+{
+  "id": 626,
+  "name": "Minimum Star Number of Universal Class",
+  "short_name": "minimum_star_number_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$\\tfrac n2-1\\leq\\mathrm S_{\\mathrm{min}}(\\mathcal U_n)\\leq n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The universal class has dual VC dimension n, so Corollary 25 of the cited paper gives $\\mathrm S_{\\mathrm{min}}\\geq n/2-1$. Its established ordinary star number is $n-1$, and $\\mathrm S_{\\mathrm{min}}\\leq\\mathrm S$ gives the upper bound.",
+  "references": "\\cite{hanneke2024star_eluder,chornomaz2025spherical}"
+}

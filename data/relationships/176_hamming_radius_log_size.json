@@ -1,0 +1,12 @@
+{
+  "id": 176,
+  "parameter_1_id": "#parameters/hamming_radius",
+  "parameter_2_id": "#parameters/log_size",
+  "relationship_type": "inv_log",
+  "details": "For finite concept classes on a domain of size n at least 2, Hamming radius is at least log-size divided by log n.",
+  "status": "established",
+  "latex_proof_label": "lem:basic-parameter-relationships",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:basic-parameter-relationships`.",
+  "short_name": "hamming_radius_log_size",
+  "name": "Hamming Radius / Log Size"
+}

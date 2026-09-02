@@ -1,0 +1,12 @@
+{
+  "id": 617,
+  "name": "Extended Teaching Dimension of Universal Class",
+  "short_name": "extended_teaching_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Extended teaching dimension equals star number for finite binary classes. The established star number of Universal Class is $n-1$, so $\\mathrm{XTD}=n-1$.",
+  "references": "\\cite{hanneke2015minimax,chornomaz2025spherical}"
+}

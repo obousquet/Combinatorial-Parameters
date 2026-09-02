@@ -1,0 +1,12 @@
+{
+  "id": 407,
+  "name": "Projected Recursive Teaching Dimension of Half-intervals",
+  "short_name": "monotone_recursive_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Restricting initial segments to any subset of the ordered domain again gives a chain of initial segments, possibly with duplicates removed.  Remove the chain from either endpoint: each current endpoint is taught by one adjacent coordinate when another concept remains.  Thus every projection has recursive teaching dimension at most one, and a nontrivial projection gives equality.",
+  "references": "\\cite{doliwa2014recursive}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 397,
+  "name": "Majority Complexity of Singletons plus empty set",
+  "short_name": "majority_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The pointwise majority is the empty hypothesis.  If it is incorrect, the returned positive counterexample is the unique point of the target singleton.  Thus one query suffices, while zero cannot distinguish the empty concept from a singleton.",
+  "references": "\\cite{maass1992lower}"
+}

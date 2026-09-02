@@ -1,0 +1,12 @@
+{
+  "id": 390,
+  "name": "Proper Labeled Sample Compression of Half-intervals",
+  "short_name": "proper_labeled_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/proper_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The endpoint construction reconstructs an initial segment in every case, hence is a proper size-one scheme.  Since the class is nontrivial, zero is impossible.",
+  "references": "\\cite{FW1995}"
+}

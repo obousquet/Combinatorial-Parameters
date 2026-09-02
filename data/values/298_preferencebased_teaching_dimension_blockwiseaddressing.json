@@ -1,0 +1,11 @@
+{
+  "id": 298,
+  "name": "Preference-Based Teaching Dimension of Blockwise-Addressing",
+  "short_name": "preferencebased_teaching_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/preferencebased_teaching_dimension",
+  "value": "$2$",
+  "status": "established",
+  "proof": "For finite classes, preference-based teaching dimension equals recursive teaching dimension.  The directly verified Blockwise-Addressing value $RTD=2$ therefore gives $\\mathrm{PBTD}=2$.",
+  "references": "\\cite{gao2017preference,ben1997online}; derived using the established equality with RTD"
+}

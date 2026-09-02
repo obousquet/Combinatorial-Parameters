@@ -1,0 +1,11 @@
+{
+  "id": 231,
+  "name": "Largest Shattered Set of Half-intervals",
+  "short_name": "largest_shattered_set_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for half-intervals is one."
+}

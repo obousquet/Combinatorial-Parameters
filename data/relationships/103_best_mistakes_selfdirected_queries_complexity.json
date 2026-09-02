@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/best_mistakes",
   "parameter_2_id": "#parameters/selfdirected_queries_complexity",
   "relationship_type": "larger",
+  "details": "Self-directed learning permits adaptive choice of the next instance.",
+  "status": "established",
+  "proof": "A self-directed learner can emulate any learner and favorable presentation sequence used for $\\mathrm{M}_{\\mathrm{best}}$ by choosing the same next instance itself.  It may additionally adapt that choice to earlier feedback.  Thus $\\mathrm{M}_{\\mathrm{sd}}(\\mathcal H)\\le\\mathrm{M}_{\\mathrm{best}}(\\mathcal H)$.",
+  "references": "\\cite{ben1997online}",
   "short_name": "best_mistakes_selfdirected_queries_complexity",
   "name": "Best Mistakes / Self-Directed Queries Complexity"
 }

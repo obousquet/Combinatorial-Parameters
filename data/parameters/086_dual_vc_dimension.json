@@ -1,0 +1,34 @@
+{
+  "id": 86,
+  "name": "Dual VC Dimension",
+  "short_name": "dual_vc_dimension",
+  "symbol": "\u005cmathrm{VC}^{*}",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "For $\u005cmathcal H\u005csubseteq2^{\u005cmathcal X}$, let $\u005cmathcal H^*=\u005c{\u005cx^*:x\u005cin\u005cmathcal X\u005c}$ be the dual class on domain $\u005cmathcal H$, where $x^*=\u005c{h\u005cin\u005cmathcal H:x\u005cin h\u005c}$.  The **dual VC dimension** is $\u005cmathrm{VC}^{*}(\u005cmathcal H)=\u005cmathrm{VC}(\u005cmathcal H^*)$.",
+  "graph_summary": "The VC dimension after exchanging points and concepts: $\u005cmathrm{VC}^{*}(\u005cmathcal H)=\u005cmathrm{VC}(\u005cmathcal H^*)$.",
+  "description": "The shattering dimension of the transposed incidence matrix.",
+  "origin_references": "The dual shatter function and its dimension are classical; the standard VC/dual-VC comparison is due to Assouad, \u005ccite{assouad1983densite}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "If $\u005cmathcal H\u005csubseteq\u005cmathcal G$, then $\u005cmathcal H^*$ is a projection of $\u005cmathcal G^*$ to the coordinates indexed by $\u005cmathcal H$; VC dimension cannot increase under that projection.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A projection of $\u005cmathcal H$ identifies some concepts. Its dual is a restriction of $\u005cmathcal H^*$ to one representative of each resulting concept, so it cannot have larger VC dimension.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding inclusion and projection arguments establish both required monotonicities.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Conditioning is restriction to a subfamily followed by a projection, and therefore follows from double monotonicity.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

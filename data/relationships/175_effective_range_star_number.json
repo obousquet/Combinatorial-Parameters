@@ -1,0 +1,14 @@
+{
+  "id": 175,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "larger",
+  "details": "Every coordinate in a realizable star is distinguished by two concepts, so it lies in the effective range.",
+  "status": "established",
+  "references": "\\cite{hanneke2015minimax}",
+  "latex_proof_label": "lem:elementary-parameter-hierarchy",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
+  "witness": "#classes/warmuth_c5",
+  "short_name": "effective_range_star_number",
+  "name": "Effective Range / Star Number"
+}

@@ -1,12 +1,23 @@
 {
   "id": 36,
   "name": "Proper Stable Sample Compression",
-  "symbol": "$\\mathrm{psUSC}$",
+  "symbol": "\\mathrm{psUSC}",
   "category": "compression",
   "symmetric": true,
-  "monotonic": false,
   "p_monotonic": true,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "proper_stable_sample_compression"
+  "c_monotonic": true,
+  "definition": "The **Proper Stable Sample Compression** is the minimum size of an unlabeled sample compression scheme that is both proper, with reconstruction in $\\mathcal{H}$, and stable: removing examples outside its compression set leaves the reconstructed hypothesis unchanged.",
+  "graph_summary": "Proper stable unlabeled-compression size.",
+  "origin_references": "The stability condition for sample compression schemes is used in \\cite{bousquet2020proper,hanneke2021stable}.",
+  "short_name": "proper_stable_sample_compression",
+  "monotonicity_evidence": {
+    "p_monotonic": {
+      "proof": "For a projected-realizable sample, apply the original proper stable scheme while viewing the sample on the retained coordinates as a sample on the original domain, then restrict the reconstructed member of $\\mathcal H$.  It lies in the projected class, stays consistent, and has the same stability and compression size.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "For a conditioned sample, append the fixed labeled coordinates, compress in the original class, and delete fixed coordinates from the compressed set.  Reconstruction restricted to the fibre remains proper and stable.",
+      "kind": "direct_argument"
+    }
+  }
 }

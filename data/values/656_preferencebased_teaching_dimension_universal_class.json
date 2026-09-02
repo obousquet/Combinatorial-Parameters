@@ -1,0 +1,13 @@
+{
+  "id": 656,
+  "name": "Preference-Based Teaching Dimension of Universal Class",
+  "short_name": "preferencebased_teaching_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/preferencebased_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "Preference-based teaching dimension equals recursive teaching dimension for finite classes. The universal class has recursive teaching dimension one because $(\\{i\\},1)$ identifies every target $u_i$.",
+  "references": "\\cite{gao2017preference,zilles2011models}"
+}

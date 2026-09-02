@@ -1,0 +1,12 @@
+{
+  "id": 433,
+  "name": "Densest Subgraph (twice) of Warmuth's $C_5$ Class",
+  "short_name": "densest_subgraph_twice_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every subgraph of a matching has maximum degree at most one and therefore average degree at most one.  Any one of the five edges attains average degree one, so the densest-subgraph double density is exactly one.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

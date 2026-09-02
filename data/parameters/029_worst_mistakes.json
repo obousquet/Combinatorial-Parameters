@@ -1,12 +1,33 @@
 {
   "id": 29,
   "name": "Worst Mistakes",
-  "symbol": "$\\mathrm{M}_{\\mathrm{worst}}$",
+  "symbol": "\\mathrm{M}_{\\mathrm{worst}}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "worst_mistakes"
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "The **Worst Mistakes** parameter is the smallest worst-case number of prediction mistakes achievable when the learner may use the whole presented instance sequence, but that sequence is chosen adversarially and the feedback remains consistent with one target concept in $\\mathcal H$.",
+  "graph_summary": "Mistake bound when an adversary chooses the presentation sequence and the learner may be transductive.",
+  "short_name": "worst_mistakes",
+  "origin_references": "The adversarially ordered (worst) and favorably ordered mistake models are studied in \\cite{ben1997online}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A prediction strategy whose adversarial mistake bound holds for every target in $\\mathcal H$ has the same bound when the target is known to lie in a subfamily $\\mathcal G\\subseteq\\mathcal H$.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A mistake-bound learner for the original class restricts to a conditioned fibre by answering fixed-coordinate predictions for free; its mistake bound cannot increase.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Let $\\mathcal R=\\mathcal H|_T$. Fix a representative in $\\mathcal H$ for every target trace in $\\mathcal R$. Any adversarial presentation sequence on $T$ with labels from such a trace is also a valid presentation sequence for its representative in $\\mathcal H$. Restricting an optimal worst-case predictor for $\\mathcal H$ to those sequences therefore gives the same bound for $\\mathcal R$.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "This is the conjunction of the established subfamily- and projection-monotonicity arguments.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

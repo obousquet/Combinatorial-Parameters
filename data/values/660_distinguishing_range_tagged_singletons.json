@@ -1,0 +1,12 @@
+{
+  "id": 660,
+  "name": "Distinguishing Range of Tagged Singletons",
+  "short_name": "distinguishing_range_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$n+\\lceil\\log_2 n\\rceil$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every ordinary coordinate i is necessary: the tagged pair $\\{i,n+f(i)\\}$ and its tag singleton differ only at i. Every tag coordinate $n+\\ell$ is necessary as well, because the tag singleton $\\{n+\\ell\\}$ and the empty concept differ only there. Thus all $n+\\lceil\\log_2 n\\rceil$ coordinates are required, and querying all of them plainly distinguishes the class.",
+  "references": "\\cite{maass1992lower}"
+}

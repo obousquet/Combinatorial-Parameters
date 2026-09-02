@@ -1,0 +1,13 @@
+{
+  "id": 554,
+  "name": "Balbach Teaching Dimension of Singletons plus Empty Set",
+  "short_name": "balbach_teaching_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "Every singleton has a one-point positive teaching set. For the empty concept, one negative example still leaves singleton hypotheses whose ordinary teaching-set size is one, so the size filter does not isolate it; any two negative examples do. Thus the stabilized Balbach maximum is two (and the source notes the separate degenerate $n=1$ case has value one).",
+  "references": "\\cite{zilles2011models,balbach2008measuring}"
+}

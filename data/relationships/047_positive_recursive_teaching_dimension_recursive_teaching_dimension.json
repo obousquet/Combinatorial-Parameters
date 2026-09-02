@@ -4,5 +4,9 @@
   "parameter_2_id": "#parameters/recursive_teaching_dimension",
   "relationship_type": "larger",
   "short_name": "positive_recursive_teaching_dimension_recursive_teaching_dimension",
-  "name": "Positive Recursive Teaching Dimension / Recursive Teaching Dimension"
+  "name": "Positive Recursive Teaching Dimension / Recursive Teaching Dimension",
+  "details": "For finite concept classes.",
+  "status": "established",
+  "proof": "The positive recursive model requires every teaching sample used at every recursive stage to be positive.  It is therefore a restriction of the ordinary recursive model, so its optimum cannot be smaller.",
+  "references": "\\cite{fallat2023batch}"
 }

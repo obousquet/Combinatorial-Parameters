@@ -29,9 +29,9 @@
     },
     {
         "name": "symbol",
-        "type": "string",
+        "type": "latex",
         "label": "Symbol",
-        "description": "Symbol representing the parameter",
+        "description": "Bare TeX symbol representing the parameter (without $...$ delimiters; renderers supply math mode)",
         "required": true,
         "rendered": true
     },
@@ -105,7 +105,7 @@
         "name": "monotonic",
         "type": "boolean",
         "label": "Monotonic",
-        "description": "Whether the parameter is monotonic, i.e. non-decreasing with respect to set inclusion",
+      "description": "Whether the parameter is monotonic, i.e. non-decreasing with respect to set inclusion. True is established, false is a known failure, and omission means not yet classified.",
         "required": false,
         "rendered": true
     },
@@ -113,7 +113,7 @@
         "name": "p_monotonic",
         "type": "boolean",
         "label": "P-Monotonic",
-        "description": "Whether the parameter is p-monotonic, i.e. non-decreasing with respect to projections",
+      "description": "Whether the parameter is p-monotonic, i.e. non-decreasing with respect to projections. True is established, false is a known failure, and omission means not yet classified.",
         "required": false,
         "rendered": true
     },
@@ -121,7 +121,7 @@
         "name": "c_monotonic",
         "type": "boolean",
         "label": "C-Monotonic",
-        "description": "Whether the parameter is c-monotonic, i.e. P(H) is at least P(H_{S=y}) for every coordinate subset S and labeling y",
+      "description": "Whether the parameter is c-monotonic, i.e. P(H) is at least P(H_{S=y}) for every coordinate subset S and labeling y. True is established, false is a known failure, and omission means not yet classified.",
         "required": false,
         "rendered": true
     },
@@ -129,7 +129,7 @@
         "name": "strict_c_monotonic",
         "type": "boolean",
         "label": "Strict C-Monotonic",
-        "description": "Whether the parameter is c-monotonic, is zero only on classes of size at most one, and strictly exceeds the smaller one-coordinate conditioned branch",
+      "description": "Whether the parameter is c-monotonic, is zero only on classes of size at most one, and strictly exceeds the smaller one-coordinate conditioned branch. True is established, false is a known failure, and omission means not yet classified.",
         "required": false,
         "rendered": true
     },
@@ -137,15 +137,23 @@
         "name": "tight_strict_c_monotonic",
         "type": "boolean",
         "label": "Tight Strict C-Monotonic",
-        "description": "Whether the parameter is strict c-monotonic and equals the maximum, over one-coordinate splits, of the larger branch value or one plus their common value when they are equal",
+      "description": "Whether the parameter is strict c-monotonic and equals the maximum, over one-coordinate splits, of the larger branch value or one plus their common value when they are equal. True is established, false is a known failure, and omission means not yet classified.",
         "required": false,
         "rendered": true
+    },
+    {
+        "name": "monotonicity_evidence",
+        "type": "object",
+        "label": "Monotonicity Evidence",
+        "description": "Per-property proof sketch, survey proof label, or primary citation. Each declared monotonicity Boolean must have a matching entry keyed by its field name.",
+        "required": false,
+        "rendered": false
     },
     {
         "name": "doubly_monotonic",
         "type": "boolean",
         "label": "Doubly Monotonic",
-        "description": "Whether the parameter is doubly monotonic, i.e. monotonic with respect to both subfamilies and projections (and therefore conditioning)",
+      "description": "Whether the parameter is doubly monotonic, i.e. monotonic with respect to both subfamilies and projections (and therefore conditioning). True is established, false is a known failure, and omission means not yet classified.",
         "required": false,
         "rendered": true
     },
@@ -153,7 +161,7 @@
         "name": "strictly_monotonic",
         "type": "boolean",
         "label": "Strictly Monotonic",
-        "description": "Whether the parameter is doubly monotonic, is zero only on classes of size at most one, and strictly exceeds the smaller one-coordinate conditioned branch",
+      "description": "Whether the parameter is doubly monotonic, is zero only on classes of size at most one, and strictly exceeds the smaller one-coordinate conditioned branch. True is established, false is a known failure, and omission means not yet classified.",
         "required": false,
         "rendered": true
     },

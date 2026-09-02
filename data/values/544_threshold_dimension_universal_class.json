@@ -1,0 +1,11 @@
+{
+  "id": 544,
+  "parameter_id": "#parameters/threshold_dimension",
+  "class_id": "#classes/universal_class",
+  "value": "$n-1$",
+  "status": "established",
+  "proof": "Use the $n-1$ domain points $A_k=\\{1,\\ldots,k\\}$, ordered as $A_{n-1},A_{n-2},\\ldots,A_1$. The traces of $u_n,u_{n-1},\\ldots,u_1$ are respectively the empty trace and the successive initial segments, giving a threshold witness of dimension n-1. Conversely, a threshold witness of dimension d contains d+1 distinct traces and therefore needs d+1 distinct hypotheses; since $|\\mathcal U_n|=n$, d\\leq n-1.",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "threshold_dimension_universal_class",
+  "name": "Threshold Dimension of Universal Class"
+}

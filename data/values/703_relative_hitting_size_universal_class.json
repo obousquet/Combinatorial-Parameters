@@ -1,0 +1,13 @@
+{
+  "id": 703,
+  "name": "Relative Hitting Size of Universal Class",
+  "short_name": "relative_hitting_size_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "For finite concept classes, relative hitting size equals teaching dimension. The universal class has teaching dimension one: $(\\{i\\},1)$ uniquely identifies each target $u_i$.",
+  "references": "\\cite{goldman1995complexity,shinohara1991teachability}"
+}

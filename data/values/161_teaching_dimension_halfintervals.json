@@ -1,0 +1,11 @@
+{
+  "id": 161,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For an interior initial segment $[i]$, the positive example at $i$ and negative example at $i+1$ identify it.  Neither one alone identifies an interior segment, since its adjacent segment remains consistent.  The two endpoint segments need only one example, so for $n\\ge3$ the teaching dimension is $2$.",
+  "name": "Teaching Dimension of Half-intervals",
+  "short_name": "teaching_dimension_halfintervals"
+}

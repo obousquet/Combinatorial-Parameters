@@ -1,0 +1,12 @@
+{
+  "id": 276,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, $\\mathrm E(\\mathcal H)\\geq\\mathrm{VCR}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "If $\\mathrm{VCR}(\\mathcal H)=k$, its definition quantifies over k-element subsets of the effective range.  Thus k cannot exceed the cardinality of that range; the k=0 case is immediate.",
+  "references": "\\cite{vapnik1971uniform}",
+  "short_name": "effective_range_effective_vc_radius",
+  "name": "Effective Range / Effective VC Radius"
+}

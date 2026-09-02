@@ -1,0 +1,34 @@
+{
+  "id": 88,
+  "name": "Dual Antipodal VC Dimension",
+  "short_name": "dual_antipodal_vc_dimension",
+  "symbol": "\u005cmathrm{VC}^{*a}",
+  "category": "shattering",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "A set of hypotheses $A\u005csubseteq\u005cmathcal H$ is **dually antipodally shattered** if, for every labeling $s:A\u005cto\u005c{0,1\u005c}$, some point $x$ induces either $s$ or its bitwise complement on $A$. The **dual antipodal VC dimension** $\u005cmathrm{VC}^{*a}(\u005cmathcal H)$ is the largest size of such a set; equivalently it is the antipodal VC dimension of $\u005cmathcal H^*$.",
+  "graph_summary": "Largest hypothesis set whose every labeling is realized by a point, up to simultaneously flipping all labels.",
+  "description": "Antipodal relaxation of dual VC dimension; distinct from the older parameter named dual sign rank, which is antipodal VC dimension rather than its dual.",
+  "origin_references": "The antipodal-shattering formulation and its dual are used explicitly in \u005ccite{chornomaz2025spherical}; antipodal VC was introduced under the name dual sign rank in \u005ccite{alon2016sign}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "The class preorder monotonicity statement in Proposition 27 of \u005ccite{chornomaz2025spherical} covers dual antipodal VC dimension and includes deletion of hypotheses.",
+      "kind": "citation"
+    },
+    "p_monotonic": {
+      "proof": "The same preorder statement includes domain restriction, hence projections.",
+      "kind": "citation"
+    },
+    "doubly_monotonic": {
+      "proof": "The cited preorder monotonicity establishes both subfamily and projection monotonicity.",
+      "kind": "citation"
+    },
+    "c_monotonic": {
+      "proof": "Conditioning is restriction to a subfamily followed by a projection, so it follows from double monotonicity.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

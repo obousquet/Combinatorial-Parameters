@@ -1,0 +1,11 @@
+{
+  "id": 548,
+  "parameter_id": "#parameters/maximum_projected_teaching_set_size",
+  "class_id": "#classes/universal_class",
+  "value": "$n-1$",
+  "status": "established",
+  "proof": "Maximum projected teaching-set size equals the star number. The singleton-subset projection gives an (n-1)-star, and no projected class with n hypotheses can have a teaching set larger than n-1.",
+  "references": "\\cite{hanneke2015minimax,chornomaz2025spherical}",
+  "short_name": "maximum_projected_teaching_set_size_universal_class",
+  "name": "Maximum Projected Teaching Set Size of Universal Class"
+}

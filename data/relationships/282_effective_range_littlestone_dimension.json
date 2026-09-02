@@ -1,0 +1,12 @@
+{
+  "id": 282,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/littlestone_dimension",
+  "relationship_type": "larger",
+  "details": "For every binary concept class, $\\mathrm E(\\mathcal H)\\geq\\mathrm L(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Follow any root-to-leaf path in a complete shattered Littlestone tree of depth d. The node labels on this path are distinct: repeating a point would make the branch that assigns it opposite labels unrealizable. At each node, the two child branches are realized by concepts with opposite labels there, so the point lies in the effective range. Thus the effective range contains at least d points.",
+  "references": "\\cite{littlestone1988learning}",
+  "short_name": "effective_range_littlestone_dimension",
+  "name": "Effective Range / Littlestone Dimension"
+}

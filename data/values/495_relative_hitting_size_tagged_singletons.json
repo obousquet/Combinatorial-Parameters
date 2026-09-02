@@ -1,0 +1,13 @@
+{
+  "id": 495,
+  "name": "Relative Hitting Size of Tagged Singletons",
+  "short_name": "relative_hitting_size_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$n/2$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "For the standard tagged-singletons construction, with the ordinary coordinates divided into dyadic tag groups.",
+  "proof": "Relative hitting size equals maximum teaching-set size. For tagged singletons, the first tag singleton needs and has a teaching set of size $n/2$, while no target requires more.",
+  "references": "\\cite{maass1992lower}"
+}

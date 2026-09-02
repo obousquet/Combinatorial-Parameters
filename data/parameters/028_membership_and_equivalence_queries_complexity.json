@@ -1,13 +1,23 @@
 {
   "id": 28,
   "name": "Membership and Equivalence Queries Complexity",
-  "symbol": "$\\mathrm{Q}_\\mathrm{meq}$",
+  "symbol": "\\mathrm{Q}_\\mathrm{meq}",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": true,
   "c_monotonic": true,
-  "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "membership_and_equivalence_queries_complexity"
+  "definition": "The **Membership and Equivalence Queries Complexity** of $\\mathcal{H}$ is the minimum worst-case number of queries needed to identify an unknown target in $\\mathcal{H}$ when the learner may use membership queries and arbitrary equivalence queries.",
+  "graph_summary": "Minimum worst-case number of membership or arbitrary equivalence queries needed to identify the target.",
+  "origin_references": "Membership and equivalence queries in the exact query-learning model are introduced in \\cite{angluin1988queries}.",
+  "short_name": "membership_and_equivalence_queries_complexity",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Any membership-and-arbitrary-equivalence-query strategy that identifies every target in $\\mathcal H$ also identifies every target in a subfamily $\\mathcal G\\subseteq\\mathcal H$, with the same worst-case number of queries.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "For a fibre, membership labels on fixed coordinates are known.  For an arbitrary equivalence hypothesis, first replace its fixed-coordinate values by the prescribed fibre labels; any counterexample in the remaining coordinates is a valid counterexample to the restricted hypothesis.  This simulates a strategy for the original class with no more queries.",
+      "kind": "direct_argument"
+    }
+  }
 }

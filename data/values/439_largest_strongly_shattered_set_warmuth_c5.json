@@ -1,0 +1,12 @@
+{
+  "id": 439,
+  "name": "Largest Strongly Shattered Set of Warmuth's $C_5$ Class",
+  "short_name": "largest_strongly_shattered_set_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each $1$-inclusion edge is a one-dimensional subcube, so a singleton coordinate set is strongly shattered.  A strongly shattered two-set would produce a two-dimensional cube and hence a $4$-cycle in the $1$-inclusion graph, impossible because that graph is a matching.  Therefore the largest strongly shattered set has size one.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

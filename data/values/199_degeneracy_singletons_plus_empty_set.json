@@ -1,0 +1,11 @@
+{
+  "id": 199,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty subgraph of a star has a leaf of degree at most one, while the star itself has minimum degree one.",
+  "name": "Degeneracy of Singletons plus empty set",
+  "short_name": "degeneracy_singletons_plus_empty_set"
+}

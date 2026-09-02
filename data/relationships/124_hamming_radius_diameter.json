@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/hamming_radius",
   "parameter_2_id": "#parameters/diameter",
   "relationship_type": "larger_c",
+  "status": "established",
+  "details": "For finite classes, this is the metric inequality $B(\\mathcal H)\\ge D(\\mathcal H)/2$.",
+  "latex_proof_label": "lem:metric-diameter-radius",
+  "proof_source": "LaTeX survey, metric diameter/radius lemma (lem:metric-diameter-radius).",
   "short_name": "hamming_radius_diameter",
   "name": "Hamming Radius / Diameter"
 }

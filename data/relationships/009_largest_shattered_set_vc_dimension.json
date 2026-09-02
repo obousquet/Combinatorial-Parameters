@@ -6,6 +6,7 @@
   "details": "Definition",
   "status": "established",
   "proof": "Both names denote the maximum cardinality of a subset shattered by the class; VC dimension is the standard name for this quantity.",
+  "references": "\\cite{vapnik1971uniform}",
   "short_name": "largest_shattered_set_vc_dimension",
   "name": "Largest Shattered Set / VC Dimension"
 }

@@ -1,0 +1,11 @@
+{
+  "id": 182,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger",
+  "details": "Effective range controls both the number of varying coordinates and class size.",
+  "status": "established",
+  "proof": "All concepts agree outside the effective range, hence $|\\mathcal H|\\le 2^{\\mathrm E(\\mathcal H)}$.  For a nonempty domain, $\\log(n+1)\\ge1$, so $\\log(|\\mathcal H|-1)/\\log(n+1)\\le\\mathrm E(\\mathcal H)$.",
+  "short_name": "effective_range_log_size_ratio",
+  "name": "Effective Range / Log Size Ratio"
+}

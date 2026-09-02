@@ -1,0 +1,12 @@
+{
+  "id": 556,
+  "name": "Monotonic Yang Dimension of Full Cube",
+  "short_name": "monotonic_yang_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/monotonic_yang_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full cube itself is an allowed subfamily and has Yang dimension $n$, so $\\mathrm Y^*\\geq n$. Conversely every subfamily has effective range at most $n$, and the established effective-range Yang bound gives Yang dimension at most $n$. Thus the maximum is exactly $n$.",
+  "references": "\\cite{yang2018homological}; derived using the established effective-range bound"
+}

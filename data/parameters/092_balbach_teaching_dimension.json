@@ -1,0 +1,22 @@
+{
+  "id": 92,
+  "name": "Balbach Teaching Dimension",
+  "short_name": "balbach_teaching_dimension",
+  "symbol": "\u005cmathrm{BTD}",
+  "category": "teaching",
+  "monotonic": true,
+  "p_monotonic": null,
+  "c_monotonic": null,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "definition": "For $h\u005cin\u005cmathcal H$, set $\u005cmathrm{BTD}^{0}(h,\u005cmathcal H)$ to its ordinary minimum teaching-set size. Inductively, $\u005cmathrm{BTD}^{k+1}(h,\u005cmathcal H)$ is the minimum teaching-set size of $h$ inside the subfamily of hypotheses whose $k$th value is at least that size. Once these values stabilize, the **Balbach teaching dimension** is their maximum over $h\u005cin\u005cmathcal H$.",
+  "graph_summary": "Iterated teaching-set dimension that filters competitors according to their previous teaching complexity.",
+  "description": "An iteratively defined teaching parameter. It is monotone under subclasses, lies between recursive and ordinary teaching dimension, and is incomparable with subset teaching dimension.",
+  "origin_references": "Introduced in \u005ccite{balbach2008measuring}; its basic comparisons and subclass monotonicity are proved in \u005ccite{zilles2011models}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For every subclass $\u005cmathcal C'\u005csubseteq\u005cmathcal C$, induction over the Balbach iterations gives $\u005cmathrm{BTD}^k(c,\u005cmathcal C')\u005cleq\u005cmathrm{BTD}^k(c,\u005cmathcal C)$ for every $c\u005cin\u005cmathcal C'$. Taking the stabilized maximum proves subclass monotonicity.",
+      "kind": "citation"
+    }
+  }
+}

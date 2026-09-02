@@ -1,0 +1,11 @@
+{
+  "id": 205,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty projection is a star and has minimum degree one at its leaves.  The empty projection has degree zero, so the maximum over projections is one.",
+  "name": "Projected Minimum Degree of Singletons plus empty set",
+  "short_name": "projected_minimum_degree_singletons_plus_empty_set"
+}

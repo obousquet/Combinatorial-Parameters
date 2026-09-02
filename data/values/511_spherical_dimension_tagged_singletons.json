@@ -1,0 +1,12 @@
+{
+  "id": 511,
+  "name": "Spherical Dimension of Tagged Singletons",
+  "short_name": "spherical_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/spherical_dimension",
+  "value": "$1$",
+  "details": "For $n\u005cgeq5$, so that the construction has at least three tag coordinates.",
+  "status": "established",
+  "proof": "Projection to any three tag coordinates is the class of three singletons together with the empty concept, whose spherical dimension is one. Projection monotonicity therefore gives $\u005cmathrm{sd}\u005cgeq1$. The recorded VC dimension is one, and the low-VC classification in the cited paper gives $\u005cmathrm{sd}\u005cleq1$.",
+  "references": "\u005ccite{chornomaz2025spherical}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 374,
+  "name": "Positive Recursive Teaching Dimension of Half-intervals",
+  "short_name": "positive_recursive_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/positive_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Remove initial segments from largest to smallest. At each stage, the current largest endpoint is a positive coordinate appearing in no remaining smaller segment, so one positive example teaches it.",
+  "references": "\\cite{fallat2023batch}"
+}

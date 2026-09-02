@@ -1,0 +1,12 @@
+{
+  "id": 481,
+  "name": "Stable Unlabeled Complexity of Singletons plus Empty Set",
+  "short_name": "stable_unlabeled_complexity_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Retain the positive instance exactly when the sample has one; otherwise retain nothing.  Every intermediate subsample containing the retained positive instance still retains it, and every all-negative subsample retains nothing.  Thus the size-one scheme is stable.  Size zero is impossible.",
+  "references": "\\cite{hanneke2021stable}"
+}

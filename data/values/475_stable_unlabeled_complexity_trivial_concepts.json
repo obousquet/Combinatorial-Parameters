@@ -1,0 +1,12 @@
+{
+  "id": 475,
+  "name": "Stable Unlabeled Complexity of Trivial concepts",
+  "short_name": "stable_unlabeled_complexity_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Use the size-one unlabeled scheme that retains the least instance of an all-positive sample and retains nothing from an all-negative sample.  Any intermediate subsample containing the retained instance has the same least instance; intermediate all-negative subsamples still retain nothing.  Hence the compression map is stable.  Size zero is impossible.",
+  "references": "\\cite{hanneke2021stable}"
+}

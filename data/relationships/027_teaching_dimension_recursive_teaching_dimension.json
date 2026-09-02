@@ -4,6 +4,11 @@
   "parameter_2_id": "#parameters/recursive_teaching_dimension",
   "relationship_type": "larger",
   "details": "Theorem",
+  "witness": "#classes/halfintervals",
   "short_name": "teaching_dimension_recursive_teaching_dimension",
-  "name": "Teaching Dimension / Recursive Teaching Dimension"
+  "name": "Teaching Dimension / Recursive Teaching Dimension",
+  "status": "established",
+  "references": "\\cite{zilles2011models}",
+  "latex_proof_label": "lem:teaching-dimension-rtd",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:teaching-dimension-rtd`."
 }

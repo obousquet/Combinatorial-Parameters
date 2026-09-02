@@ -1,0 +1,13 @@
+{
+  "id": 658,
+  "name": "Maximum Positive Degree of Tagged Singletons",
+  "short_name": "maximum_positive_degree_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For the nondegenerate tagged-singletons range $n\\geq2$.",
+  "status": "established",
+  "proof": "The oriented 1-inclusion graph has only the edges from the empty concept to tag singletons and from a tag singleton to each tagged pair. Every nonempty vertex has exactly one smaller neighbour: the empty concept for a tag singleton, and its tag singleton for a tagged pair. Thus the largest positive degree is one.",
+  "references": "\\cite{maass1992lower}"
+}

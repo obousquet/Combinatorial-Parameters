@@ -1,0 +1,12 @@
+{
+  "id": 438,
+  "name": "Degeneracy of Warmuth's $C_5$ Class",
+  "short_name": "degeneracy_warmuth_c5",
+  "class_id": "#classes/warmuth_c5",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is a matching of five edges.  Every nonempty subgraph therefore has a vertex of degree at most one, and an edge subgraph has minimum degree one.  Thus its degeneracy is exactly one.",
+  "references": "\\cite{palvolgyi2021unlabeled}"
+}

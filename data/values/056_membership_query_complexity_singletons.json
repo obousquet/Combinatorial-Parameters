@@ -4,7 +4,9 @@
   "short_name": "membership_query_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/membership_query_complexity",
-  "value": "$n$",
+  "value": "$n-1$",
   "value_class": "omega_n",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Query coordinates until a positive answer occurs.  If the first $n-1$ answers are negative, the remaining coordinate is forced to be the target singleton, so $n-1$ queries suffice.  Conversely, after fewer than $n-1$ negative answers at least two singleton concepts remain consistent."
 }

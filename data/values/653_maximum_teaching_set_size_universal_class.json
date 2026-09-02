@@ -1,0 +1,13 @@
+{
+  "id": 653,
+  "name": "Maximum Teaching Set Size of Universal Class",
+  "short_name": "maximum_teaching_set_size_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "For every i, $(\\{i\\},1)$ is a teaching sample for $u_i$, while no empty sample distinguishes it from the other universal hypotheses. Thus every target has teaching-set size exactly one, and so does their maximum.",
+  "references": "\\cite{shinohara1991teachability,goldman1995complexity}"
+}

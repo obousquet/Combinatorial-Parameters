@@ -1,0 +1,11 @@
+{
+  "id": 367,
+  "name": "Positive Teaching Dimension of Tagged Singletons",
+  "short_name": "positive_teaching_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$\\infty$",
+  "status": "established",
+  "proof": "The class contains the empty concept and other concepts. Its empty target has no positive examples, so its only positive sample is consistent with every other concept and cannot teach it.",
+  "references": "\\cite{balbach2008measuring}"
+}

@@ -1,0 +1,48 @@
+{
+  "id": 84,
+  "name": "$k$-Mistake Littlestone Dimension",
+  "short_name": "kmistake_littlestone_dimension",
+  "symbol": "\\mathrm{L}^{\\mathrm{mist}}_k",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": true,
+  "strict_c_monotonic": true,
+  "tight_strict_c_monotonic": false,
+  "definition": "For an integer $k\\ge0$, the **$k$-Mistake Littlestone Dimension** $\\mathrm{L}^{\\mathrm{mist}}_k(\\mathcal{H})$ is the supremum, over binary decision trees whose every branch disagrees with some hypothesis in $\\mathcal{H}$ on at most $k$ queried labels, of the minimum branch length.",
+  "graph_summary": "Supremum of the minimum branch length of a tree whose paths are realizable with at most $k$ mistakes.",
+  "origin_references": "Introduced by Filmus, Hanneke, Mehalel, and Moran \\cite{filmus2023randomized}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Every tree whose branches are $k$-realizable by a subfamily is also $k$-realizable by the containing class.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A $k$-shattered tree for a projection queries only retained coordinates; lifting each realizing projected hypothesis to an original hypothesis realizes the same branches with the same number of disagreements.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding subfamily and projection arguments establish both required forms of monotonicity.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection.",
+      "kind": "definitional_consequence"
+    },
+    "strict_c_monotonic": {
+      "proof": "If both one-coordinate conditioned branches have $k$-mistake trees of minimum lengths a and b, attach the two trees below a root querying that coordinate. The root label agrees with the corresponding conditioned class, so the resulting tree is $k$-shattered and has minimum branch length at least $1+\\min\\{a,b\\}$.",
+      "kind": "direct_argument"
+    },
+    "strictly_monotonic": {
+      "proof": "The parameter is doubly monotonic; its value can be zero only for an empty or singleton class, and the tree-grafting argument proves strict c-monotonicity.",
+      "kind": "direct_argument"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "This fails for the two constant hypotheses when $k=1$: each one-coordinate branch is a singleton of value 1, whereas the whole class has value $2k+1=3$, not the required $1+1=2$.",
+      "kind": "counterexample"
+    }
+  }
+}

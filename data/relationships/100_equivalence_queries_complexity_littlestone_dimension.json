@@ -4,5 +4,10 @@
   "parameter_2_id": "#parameters/littlestone_dimension",
   "relationship_type": "equivalence",
   "short_name": "equivalence_queries_complexity_littlestone_dimension",
-  "name": "Equivalence Queries Complexity / Littlestone Dimension"
+  "name": "Equivalence Queries Complexity / Littlestone Dimension",
+  "status": "established",
+  "details": "For finite concept classes in the standard unrestricted equivalence-query model.",
+  "latex_proof_label": "lem:equivalence-query-littlestone",
+  "proof_source": "LaTeX survey, equivalence-query/Littlestone lemma (lem:equivalence-query-littlestone).",
+  "references": "\\cite{littlestone1988learning}"
 }

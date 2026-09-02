@@ -1,0 +1,11 @@
+{
+  "id": 317,
+  "name": "Hitting Size of Tagged Singletons",
+  "short_name": "hitting_size_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$\\lceil\\log_2 n\\rceil$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Each tag coordinate occurs as a singleton concept, so every hitting set contains all $\\lceil\\log_2 n\\rceil$ tag coordinates. Those coordinates meet every tagged pair as well, hence form a hitting set."
+}

@@ -5,6 +5,9 @@
   "relationship_type": "larger",
   "variant": "p_monotonic",
   "details": "Definition",
+  "status": "established",
+  "proof": "The full-domain projection is among the projections optimized over by the projected parameter, so it includes every strongly shattered set of the original class.",
+  "witness": "#classes/warmuth_c5",
   "short_name": "projected_strongly_shattered_dimension_largest_strongly_shattered_set",
   "name": "Projected Strongly Shattered Dimension / Largest Strongly Shattered Set"
 }

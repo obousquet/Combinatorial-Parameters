@@ -1,0 +1,11 @@
+{
+  "id": 357,
+  "name": "Effective VC Radius of Tagged Singletons",
+  "short_name": "effective_vc_radius_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every ordinary or tag coordinate varies and is therefore shattered. Two distinct ordinary coordinates never occur together in a concept, so their trace misses $11$; hence radius two fails."
+}

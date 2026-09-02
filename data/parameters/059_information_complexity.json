@@ -1,12 +1,34 @@
 {
   "id": 59,
   "name": "Information Complexity",
-  "symbol": "$\\mathrm{IC}$",
+  "symbol": "\\mathrm{IC}",
   "category": "basic",
   "symmetric": true,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "information_complexity"
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "The **Information Complexity** of a hypothesis class $\\mathcal{H}$ is the supremum, over sample sizes and data distributions, of the least mutual information $I(S;\\mathcal{A}(S))$ between a sample $S$ and the output of a PAC-learning algorithm $\\mathcal{A}$ for $\\mathcal{H}$.",
+  "description": "For arbitrary binary classes, finite information complexity is equivalent to finite Littlestone dimension. More quantitatively, finite Littlestone dimension $d$ implies $\\mathrm{IC}(\\mathcal H)\\leq 2^d+\\log_2(d+1)+3+3/(e\\ln 2)$, by Pradeep, Nachum, and Gastpar. This is an exponential bound, so it is recorded here rather than as one of the graph's affine or logarithmic relationship edges.",
+  "graph_summary": "Least worst-case mutual information between a training sample and a PAC learner's output. If $\\mathrm{Ldim}=d$, then $\\mathrm{IC}\\leq2^d+\\log_2(d+1)+3+3/(e\\ln2)$.",
+  "origin_references": "Defined in this form by Pradeep, Nachum, and Gastpar \\cite{pradeep2022information}.",
+  "short_name": "information_complexity",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A PAC learner for $\\mathcal H$ is also a PAC learner for a subfamily $\\mathcal G\\subseteq\\mathcal H$. Using the same learner does not increase $I(S;\\mathcal A(S))$, so taking the infimum over learners and supremum over distributions preserves the inequality.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Let $\\mathcal R=\\mathcal H|_T$ be a coordinate projection. For any PAC learner $\\mathcal A$ for $\\mathcal H$, run $\\mathcal A$ on a sample supported on $T$ (viewed as a sample on the original domain) and output $\\mathcal A(S)|_T$. Every target in $\\mathcal R$ has an extension in $\\mathcal H$, so this PAC learns $\\mathcal R$. By data processing, $I(S;\\mathcal A(S)|_T)\\leq I(S;\\mathcal A(S))$. Taking the infimum over learners and the required suprema proves $\\mathrm{IC}(\\mathcal R)\\leq\\mathrm{IC}(\\mathcal H)$.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "For a conditioned class, first take the subfamily $\\mathcal G=\\{h\\in\\mathcal H:h|_S=y\\}$ and then project away $S$. Subfamily monotonicity followed by projection monotonicity gives $\\mathrm{IC}(\\mathcal H)\\geq\\mathrm{IC}(\\mathcal G)\\geq\\mathrm{IC}(\\mathcal H_{S=y})$.",
+      "kind": "composition"
+    },
+    "doubly_monotonic": {
+      "proof": "This is the conjunction of the established subfamily- and projection-monotonicity arguments.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

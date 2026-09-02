@@ -1,0 +1,12 @@
+{
+  "id": 173,
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Map each singleton $\\{i\\}$ to $(i,1)$ and map $\\emptyset$ to $(1,0)$.  Every pair is non-clashing: the positive example rules out the empty concept, and $(1,0)$ rules out $\\{1\\}$.  As there are distinct concepts, size $0$ is impossible.",
+  "name": "No-Clashing Teaching Dimension of Singletons plus empty set",
+  "short_name": "noclashing_teaching_dimension_singletons_plus_empty_set"
+}

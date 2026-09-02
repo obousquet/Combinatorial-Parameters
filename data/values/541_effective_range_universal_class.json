@@ -1,0 +1,11 @@
+{
+  "id": 541,
+  "parameter_id": "#parameters/effective_range",
+  "class_id": "#classes/universal_class",
+  "value": "$2^n-2$",
+  "status": "established",
+  "proof": "At the domain points $\\varnothing$ and $[n]$, every universal hypothesis has the common value 0 or 1, respectively, so neither is effective. For every proper nonempty subset $A\\subset[n]$, choose $i\\in A$ and $j\\notin A$; then $u_i(A)=1$ and $u_j(A)=0$. Thus all and only the other $2^n-2$ points are effective (also for $n=1$, when this number is zero).",
+  "references": "\\cite{chornomaz2025spherical}",
+  "short_name": "effective_range_universal_class",
+  "name": "Effective Range of Universal Class"
+}

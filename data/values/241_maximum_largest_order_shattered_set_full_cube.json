@@ -1,0 +1,11 @@
+{
+  "id": 241,
+  "name": "Maximum Largest Order Shattered Set of the Full Cube",
+  "short_name": "maximum_largest_order_shattered_set_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/maximum_largest_order_shattered_set",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Maximum Largest Order Shattered Set is, by definition, the VC dimension. The full cube has established VC dimension $n$."
+}

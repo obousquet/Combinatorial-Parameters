@@ -1,0 +1,11 @@
+{
+  "id": 330,
+  "name": "Occasional One-Sided Getback of Trivial Concepts",
+  "short_name": "occasional_onesided_getback_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/occasional_onesided_getback",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "No strategy can guarantee zero mistakes against the two opposite constants. If a mistake-only signal is ever returned on the first presented coordinate, it identifies the other constant target; if no signal is returned, no mistake is counted. Thus at most one mistake occurs."
+}

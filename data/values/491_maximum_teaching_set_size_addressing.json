@@ -1,0 +1,13 @@
+{
+  "id": 491,
+  "name": "Maximum Teaching-Set Size of Addressing",
+  "short_name": "maximum_teaching_set_size_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "This is the classical teaching dimension of the addressing class.",
+  "proof": "Maximum teaching-set size is, by definition, teaching dimension. The addressing class has teaching dimension one because every concept has a private positive primary coordinate.",
+  "references": "\\cite{maass1992lower}"
+}

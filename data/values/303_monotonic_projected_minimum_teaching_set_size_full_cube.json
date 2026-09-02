@@ -1,0 +1,11 @@
+{
+  "id": 303,
+  "name": "Monotonic Projected Minimum Teaching-Set Size of the Full Cube",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Taking the full cube itself as the subfamily gives minimum projected teaching-set size $n$. Conversely, every subfamily and every projection live on at most $n$ coordinates, so no teaching set can have size greater than $n$."
+}

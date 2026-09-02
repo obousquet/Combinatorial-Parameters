@@ -72,12 +72,16 @@
 <p><strong>Parameter 1: </strong><a href="parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
+<strong>Details:</strong><div class="text-field"><p>A star witness forces one membership query per spoke.</p></div>
 
-<p><strong>Status:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On a projected $d$-star with centre $h_0$ and leaves $h_i$ differing from $h_0$ only at $x_i$, an identification algorithm must query every $x_i$: if it omits $x_i$, the answers are identical for $h_0$ and $h_i$.  Hence the membership-query complexity of that projection is at least $d$.  Maximizing over projections gives $\mathrm{Q}_m^p(\mathcal H)\ge\mathrm{S}(\mathcal H)$.</p></div>
 
 
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2015minimax">[hanneke2015minimax]</a></p></div>
 
         </div>
     </div>

@@ -1,13 +1,34 @@
 {
   "id": 80,
-  "name": "3-Littlestone Dimension",
-  "symbol": "$\\mathrm{L}_3$",
+  "name": "3-Block Littlestone Dimension",
+  "symbol": "\\mathrm{B}_3",
   "category": "queries",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": false,
-  "short_name": "3littlestone_dimension"
+  "strictly_monotonic": null,
+  "definition": "The **3-Block Littlestone Dimension** $\\mathrm{B}_3(\\mathcal{H})$ is the largest depth of a complete binary tree shattered by $\\mathcal{H}$ in which, in every block of three consecutive levels, the first level is unrestricted and each of the next two levels is horizontally constant within that block. Equivalently, each block asks three coordinates before receiving their three labels, giving eight branches, and successive blocks may depend on all preceding labels.",
+  "graph_summary": "Maximum total query depth of a shattered tree whose three-coordinate batches are fixed before their labels are revealed.",
+  "description": "Database-defined structural variant; no published origin is claimed.",
+  "short_name": "3block_littlestone_dimension",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "A constrained shattered tree for a subfamily is still shattered by every containing class, with exactly the same block-label constraints.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Every coordinate queried by a shattered tree for a projection is retained.  Lift, for each leaf, a projected realizing hypothesis to an original hypothesis; the same tree is then shattered before projection and retains its block constraints.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding subfamily and projection arguments establish both required forms of monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is restriction to a subfamily followed by a projection, so it cannot create a larger constrained shattered tree.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

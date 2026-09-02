@@ -1,0 +1,11 @@
+{
+  "id": 352,
+  "name": "Minimum Largest Order Shattered Set of Singletons",
+  "short_name": "minimum_largest_order_shattered_set_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every coordinate order, full downshifting produces a nontrivial downset, hence it contains the empty trace and a singleton trace, a one-cube. Downshifting preserves VC dimension one, so no two-cube can occur."
+}

@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/projected_strongly_shattered_dimension",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "equivalence",
+  "details": "A set is shattered exactly when it becomes strongly shattered in its coordinate projection.",
+  "status": "established",
+  "proof": "A set $S$ is shattered by $\\mathcal H$ exactly when the projection $\\mathcal H_{|S}$ contains the full $S$-cube. In that projection, $S$ is strongly shattered. Conversely, a strongly shattered set in any projection is shattered by the original class on the same coordinates. Taking maxima yields equality.",
+  "references": "\\cite{bollobas1995defect}",
   "short_name": "projected_strongly_shattered_dimension_vc_dimension",
   "name": "Projected Strongly Shattered Dimension / VC Dimension"
 }

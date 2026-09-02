@@ -5,6 +5,7 @@
   "class_id": "#classes/trivial_concepts",
   "parameter_id": "#parameters/log_size_ratio",
   "value": "$0$",
-  "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "The class has two concepts, so $\\log(|\\mathcal H|-1)=\\log 1=0$."
 }

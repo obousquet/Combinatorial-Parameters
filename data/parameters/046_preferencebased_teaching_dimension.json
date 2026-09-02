@@ -1,12 +1,38 @@
 {
   "id": 46,
   "name": "Preference-Based Teaching Dimension",
-  "symbol": "$\\mathrm{PBTD}$",
+  "symbol": "\\mathrm{PBTD}",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "preferencebased_teaching_dimension"
+  "definition": "The **Preference-Based Teaching Dimension** is the minimum, over strict preference orders on $\\mathcal{H}$, of the largest number of labeled examples needed to make the target the uniquely most preferred concept consistent with its teaching sample.",
+  "graph_summary": "Smallest worst-case teaching-sample size after optimizing a fixed preference order.",
+  "short_name": "preferencebased_teaching_dimension",
+  "origin_references": "Introduced in \\cite{gao2017preference}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Restrict any strict preference order and its teaching samples to a subfamily. Each sample still makes its target uniquely most preferred among the fewer consistent candidates, so the optimum cannot increase.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict the preference order and the teaching map to the conditioned fibre, deleting fixed coordinates from samples; the teaching guarantee is preserved.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "This parameter is exactly equal to Recursive Teaching Dimension by the established relationship `preferencebased_teaching_dimension_recursive_teaching_dimension`; its p monotonic classification transfers unchanged.",
+      "kind": "equality_transfer"
+    }
+  }
 }

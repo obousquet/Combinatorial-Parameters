@@ -4,6 +4,9 @@
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "equivalence",
   "details": "Sandwich Theorem",
+  "status": "established",
+  "proof": "For every domain order, the order-shattered sets are shattered, giving the upper bound by VC dimension. The order-shattering sandwich theorem supplies an order for which a maximum shattered set is order-shattered, giving the reverse bound.",
+  "references": "\\cite{bollobas1995defect}",
   "short_name": "maximum_largest_order_shattered_set_vc_dimension",
   "name": "Maximum Largest Order Shattered Set / VC Dimension"
 }

@@ -1,0 +1,12 @@
+{
+  "id": 176,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a nonempty domain.",
+  "status": "established",
+  "proof": "Teach $\\emptyset$ by the empty set and the full concept by one positive example.  The latter is inconsistent with $\\emptyset$, so the mapping is positive and non-clashing.  Since the class has two distinct concepts, value $0$ is impossible.",
+  "name": "Positive No-Clashing Teaching Dimension of Trivial concepts",
+  "short_name": "positive_noclashing_teaching_dimension_trivial_concepts"
+}

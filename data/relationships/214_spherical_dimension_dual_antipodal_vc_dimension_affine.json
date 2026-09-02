@@ -1,0 +1,15 @@
+{
+  "id": 214,
+  "parameter_1_id": "#parameters/spherical_dimension",
+  "parameter_2_id": "#parameters/dual_antipodal_vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "2",
+  "details": "For every finite binary class, $\u005cmathrm{sd}(\u005cmathcal H)\u005cgeq\u005cmathrm{VC}^{*a}(\u005cmathcal H)-2$.",
+  "status": "established",
+  "proof": "Lemma 2 of the cited paper constructs an antipodal sphere of dimension $d-2$ from a dually antipodally shattered set of size $d$.",
+  "references": "\u005ccite{chornomaz2025spherical}",
+  "witness": "#classes/universal_class",
+  "short_name": "spherical_dimension_dual_antipodal_vc_dimension_affine",
+  "name": "Spherical Dimension / Dual Antipodal VC Dimension (affine)"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 182,
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The $1$-inclusion graph of the full cube is the $n$-dimensional hypercube, which is $n$-regular.",
+  "name": "Minimum Degree of Full Cube",
+  "short_name": "minimum_degree_full_cube"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 557,
+  "name": "Monotonic Yang Dimension of Singletons",
+  "short_name": "monotonic_yang_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/monotonic_yang_dimension",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The whole delta-function class is an allowed subfamily and has Yang dimension $n-1$. Conversely every subfamily has at most $n$ concepts, and the established generator-count bound gives Yang dimension at most $|\\mathcal G|-1\\leq n-1$. Therefore $\\mathrm Y^*=n-1$.",
+  "references": "\\cite{yang2018homological}; derived using the established generator-count bound"
+}

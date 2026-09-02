@@ -1,0 +1,13 @@
+{
+  "id": 603,
+  "name": "Subset Teaching Dimension of Trivial Concepts",
+  "short_name": "subset_teaching_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a nonempty domain.",
+  "status": "established",
+  "proof": "Every one-point sample labeled 0 is a minimum teaching sample only for the empty concept, and every one labeled 1 only for the full concept. These samples therefore remain subset teaching samples at every iteration; the empty sample identifies neither of the two targets. Thus $\\mathrm{STD}=1$.",
+  "references": "\\cite{zilles2011models}"
+}

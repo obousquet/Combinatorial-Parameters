@@ -1,0 +1,12 @@
+{
+  "id": 393,
+  "name": "Proper Stable Labeled Sample Compression of Trivial concepts",
+  "short_name": "proper_stable_labeled_sample_compression_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/proper_stable_labeled_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The stable size-one scheme reconstructs a constant concept from the class, so it is proper as well.  Zero remains impossible.",
+  "references": "\\cite{FW1995}"
+}

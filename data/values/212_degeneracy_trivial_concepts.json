@@ -1,0 +1,11 @@
+{
+  "id": 212,
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$0$",
+  "details": "For $n>1$.",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is edgeless, and so are all its induced subgraphs.",
+  "name": "Degeneracy of Trivial concepts",
+  "short_name": "degeneracy_trivial_concepts"
+}

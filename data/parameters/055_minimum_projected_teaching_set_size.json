@@ -1,12 +1,32 @@
 {
   "id": 55,
   "name": "Minimum Projected Teaching Set Size",
-  "symbol": "$\\mathrm{TS}_{\\min}^p$",
+  "symbol": "\\mathrm{TS}_{\\min}^p",
   "category": "teaching",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "minimum_projected_teaching_set_size"
+  "definition": "For each concept, take the largest teaching-set size it has in any coordinate projection of $\\mathcal{H}$. The **Minimum Projected Teaching Set Size** is the minimum of this quantity over all concepts in $\\mathcal{H}$.",
+  "graph_summary": "Minimum, over concepts, of their worst projected teaching-set size.",
+  "short_name": "minimum_projected_teaching_set_size",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Counterexample on four coordinates: let H={0000,0010,0011,0101,0110,1010,1100,1101} and G=H\\{1101}. Enumerating every coordinate projection and every teaching set gives the per-concept worst projected teaching sizes (3,4,3,3,3,3,3,2) for H and (3,4,3,3,3,3,3) for G. Hence TS_min^p(H)=2 whereas TS_min^p(G)=3, although G is a subfamily of H.",
+      "kind": "counterexample"
+    },
+    "p_monotonic": {
+      "proof": "Choose a target h attaining the minimum for H. After projecting H to T, use the image of h as a target. Every further projection of that image is a projection of H on some U contained in T, and its teaching-set size is one of the candidates already bounded by the maximum used for h in H. Thus the minimum projected teaching-set size cannot increase.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    }
+  }
 }

@@ -1,12 +1,26 @@
 {
   "id": 78,
   "name": "Positive Recursive Teaching Dimension",
-  "symbol": "$\\mathrm{RTD}^+$",
+  "symbol": "\\mathrm{RTD}^+",
   "category": "teaching",
   "symmetric": false,
   "monotonic": true,
-  "p_monotonic": false,
-  "doubly_monotonic": false,
-  "strictly_monotonic": false,
-  "short_name": "positive_recursive_teaching_dimension"
+  "p_monotonic": null,
+  "c_monotonic": true,
+  "doubly_monotonic": null,
+  "strictly_monotonic": null,
+  "definition": "The **Positive Recursive Teaching Dimension** is the least worst-case sample size in a recursive teaching sequence when every teaching sample is required to use only positive examples of its target concept.",
+  "graph_summary": "Recursive teaching dimension with positive-only teaching samples.",
+  "short_name": "positive_recursive_teaching_dimension",
+  "origin_references": "The positive recursive variant is defined in \\cite{fallat2023batch}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Take a positive recursive teaching order for the original class and retain only the targets of a subfamily. Each retained positive teaching set still separates its target from every later retained target, so the largest teaching-set size cannot increase.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Restrict a positive recursive teaching order to the conditioned fibre and delete fixed coordinates from its positive teaching sets.",
+      "kind": "direct_argument"
+    }
+  }
 }

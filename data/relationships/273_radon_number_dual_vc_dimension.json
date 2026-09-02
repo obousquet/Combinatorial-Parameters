@@ -1,0 +1,12 @@
+{
+  "id": 273,
+  "parameter_1_id": "#parameters/radon_number",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, the Radon number is at least the dual VC dimension.",
+  "status": "established",
+  "proof": "A set of hypotheses dually shattered by coordinates is Radon independent: for every nontrivial bipartition, a coordinate realizes opposite constant labels on the two parts, and the corresponding complementary half-spaces separate their convex hulls.",
+  "references": "\\cite{chase2024dual}",
+  "short_name": "radon_number_dual_vc_dimension",
+  "name": "Radon Number / Dual VC Dimension"
+}

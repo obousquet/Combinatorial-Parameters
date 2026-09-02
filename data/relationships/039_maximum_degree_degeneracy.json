@@ -3,7 +3,11 @@
   "parameter_1_id": "#parameters/maximum_degree",
   "parameter_2_id": "#parameters/degeneracy",
   "relationship_type": "larger",
-  "details": "Definition and Monotonicity",
+  "details": "For every finite $1$-inclusion graph.",
+  "witness": "#classes/halfintervals",
   "short_name": "maximum_degree_degeneracy",
-  "name": "Maximum Degree / Degeneracy"
+  "name": "Maximum Degree / Degeneracy",
+  "status": "established",
+  "proof": "Every induced subgraph has maximum degree at most the maximum degree of the original graph, and its minimum degree is at most that maximum.  Maximize over induced subgraphs in the definition of degeneracy.",
+  "references": "\\cite{haussler1988predicting,alon1992colorings}"
 }

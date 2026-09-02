@@ -69,6 +69,10 @@ with open(csv_path, newline='') as csvfile:
                 value = re.sub(r'\\emph{([^}]*)}', r'**\1**', value)
                 # Replace \[...\] with $$...$$
                 value = value.replace('\\[', '$$').replace('\\]', '$$')
+            if schema_field == 'symbol' and value:
+                # Symbols are stored as bare TeX; each renderer owns its math
+                # delimiters.  This is the same convention as classes.
+                value = re.sub(r'^\$(.*)\$$', r'\1', value)
             # Handle enum mapping
             if col_type == 'enum':
                 enum_map = {e['display_name'].lower(): e['value'] for e in col.get('enum', [])}

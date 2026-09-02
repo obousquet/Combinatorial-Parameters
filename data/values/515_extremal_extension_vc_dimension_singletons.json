@@ -1,0 +1,11 @@
+{
+  "id": 515,
+  "name": "Extremal-Extension VC Dimension of Singletons",
+  "short_name": "extremal_extension_vc_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/extremal_extension_vc_dimension",
+  "value": "$1$",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "VC dimension one is necessary. Adding the empty concept gives a class of $n+1$ concepts with exactly the empty set and the $n$ singletons shattered, hence an extremal VC-one extension."
+}

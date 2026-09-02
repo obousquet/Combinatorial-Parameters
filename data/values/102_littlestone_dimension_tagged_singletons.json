@@ -6,5 +6,8 @@
   "parameter_id": "#parameters/littlestone_dimension",
   "value": "$2$",
   "value_class": "omega_1",
-  "details": ""
+  "details": "",
+  "status": "established",
+  "proof": "Choose a tag coordinate $t$.  On the $t=1$ branch, querying an ordinary coordinate assigned tag $t$ separates its tag singleton from its tagged pair; on the $t=0$ branch, querying a distinct tag coordinate separates $\\emptyset$ from that tag singleton.  This shatters a depth-two tree.  At an ordinary coordinate, the positive branch is a singleton class, while at a tag coordinate the positive branch is a star and has Littlestone dimension one.  Thus no root has both branches of Littlestone dimension at least two, proving the value is exactly two.",
+  "references": "\\cite{maass1992lower}"
 }

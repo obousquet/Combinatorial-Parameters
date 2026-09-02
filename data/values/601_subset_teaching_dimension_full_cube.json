@@ -1,0 +1,12 @@
+{
+  "id": 601,
+  "name": "Subset Teaching Dimension of Full Cube",
+  "short_name": "subset_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "For a cube concept, its only ordinary minimum teaching sample is its complete labeled graph. A sample is contained in no other concept's such graph exactly when it specifies every coordinate, so the first subset-teaching iteration still has value n and the same unique sample. Hence the process is already stable and $\\mathrm{STD}=n$.",
+  "references": "\\cite{zilles2011models}"
+}

@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/vc_dimension",
   "parameter_2_id": "#parameters/log_shattering",
   "relationship_type": "inv_log",
+  "status": "established",
+  "details": "Sauer--Shelah counting bound.",
+  "proof": "If $d=\\mathrm{VC}(\\mathcal H)$ on a domain of size $n$, every shattered set has size at most $d$.  Thus $|\\operatorname{sh}(\\mathcal H)|\\le\\sum_{i=0}^{d}\\binom ni\\le(en/d)^d$.  Taking logarithms gives $d=\\Omega(\\log\\operatorname{sh}(\\mathcal H)/\\log n)$, with the small-$n$ cases absorbed in the universal constant.",
+  "references": "\\cite{vapnik1971uniform}",
   "short_name": "vc_dimension_log_shattering",
   "name": "VC Dimension / Log Shattering",
   "witness": "#classes/halfintervals"

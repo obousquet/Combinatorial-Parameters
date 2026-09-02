@@ -1,12 +1,38 @@
 {
   "id": 23,
   "name": "Relative Hitting Size",
-  "symbol": "$\\mathrm{RHT}$",
+  "symbol": "\\mathrm{RHT}",
+  "definition": "The **Relative Hitting Size** is $\\max_{h\\in\\mathcal{H}}\\mathrm{HT}(\\{h'\\mathbin{\\triangle}h:h'\\in\\mathcal{H}\\})$; equivalently, it is the maximum teaching-set size.",
+  "graph_summary": "The worst hitting size after translating the class by one of its concepts.",
   "category": "teaching",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
+  "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "short_name": "relative_hitting_size"
+  "short_name": "relative_hitting_size",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Relative hitting size equals maximum teaching-set size (teaching dimension), which is monotonic under subfamilies by restricting each target's teaching set.",
+      "kind": "definitional_consequence",
+      "references": "\\cite{goldman1995complexity,shinohara1991teachability}"
+    },
+    "c_monotonic": {
+      "proof": "This is equal to maximum teaching-set size; the latter is c-monotonic by restricting each teaching set to the unfixed coordinates.",
+      "kind": "direct_argument"
+    },
+    "doubly_monotonic": {
+      "proof": "By definition, doubly monotonicity requires both subfamily monotonicity and projection monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "By definition, strictly monotonicity requires both doubly monotonicity and strict c-monotonicity; the recorded failure of one of them rules it out.",
+      "kind": "definitional_consequence"
+    },
+    "p_monotonic": {
+      "proof": "Relative hitting size equals teaching dimension. The class $\\{001,010,100\\}$ has value 1, while projection away the first coordinate gives $\\{00,01,10\\}$, whose value is 2 by the teaching-dimension projection counterexample.",
+      "kind": "counterexample"
+    }
+  }
 }

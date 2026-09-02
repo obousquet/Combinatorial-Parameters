@@ -1,0 +1,11 @@
+{
+  "id": 605,
+  "name": "Dual Antipodal VC Dimension of Singletons",
+  "short_name": "dual_antipodal_vc_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/dual_antipodal_vc_dimension",
+  "value": "$\\begin{cases}1&n\\leq2,\\\\2&n=3,\\\\3&n\\geq4.\\end{cases}$",
+  "status": "established",
+  "proof": "On any selected singleton hypotheses, every coordinate trace is a unit vector, together with the zero vector when an unselected coordinate remains. Thus at most $d+1$ patterns occur on $d$ selected hypotheses, whereas antipodal shattering requires $2^{d-1}$ complementary pairs. This excludes $d\\geq4$. The zero vector and three unit vectors witness $d=3$ for $n\\geq4$; the same count gives the two smaller boundary values.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

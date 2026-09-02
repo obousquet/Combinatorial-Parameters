@@ -1,0 +1,12 @@
+{
+  "id": 206,
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Consecutive initial segments form a path on $n$ vertices in the $1$-inclusion graph.  Its endpoints have degree one.",
+  "name": "Minimum Degree of Half-intervals",
+  "short_name": "minimum_degree_halfintervals"
+}

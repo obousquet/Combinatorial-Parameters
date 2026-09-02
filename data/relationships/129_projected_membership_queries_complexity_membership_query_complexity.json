@@ -4,7 +4,9 @@
   "parameter_2_id": "#parameters/membership_query_complexity",
   "relationship_type": "larger",
   "variant": "p_monotonic",
-  "details": "Definition",
+  "details": "For finite concept classes.",
   "short_name": "projected_membership_queries_complexity_membership_query_complexity",
-  "name": "Projected Membership Queries Complexity / Membership Query Complexity"
+  "name": "Projected Membership Queries Complexity / Membership Query Complexity",
+  "status": "established",
+  "proof": "Projected membership-query complexity maximizes the membership-query complexity over projections.  The full-domain projection is the original class, so it supplies the ordinary membership-query complexity as a candidate."
 }

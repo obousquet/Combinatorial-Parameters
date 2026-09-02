@@ -1,0 +1,12 @@
+{
+  "id": 342,
+  "name": "Dual Sign Rank of Trivial Concepts",
+  "short_name": "dual_sign_rank_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/dual_sign_rank",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every realizing matrix has nonzero columns, so one fixed column is independent. Two columns are not forced independent, since the rank-one realization with identical positive column magnitudes realizes the same sign matrix.",
+  "references": "\\cite{alon2016sign}"
+}

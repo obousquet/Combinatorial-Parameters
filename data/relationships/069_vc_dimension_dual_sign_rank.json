@@ -3,6 +3,10 @@
   "parameter_1_id": "#parameters/vc_dimension",
   "parameter_2_id": "#parameters/dual_sign_rank",
   "relationship_type": "larger_c",
+  "details": "For sign matrices with $\\mathrm{VC}\\geq1$; more precisely, $\\mathrm{DSR}\\leq2\\mathrm{VC}+1$.",
   "short_name": "vc_dimension_dual_sign_rank",
-  "name": "VC Dimension / Dual Sign Rank"
+  "name": "VC Dimension / Dual Sign Rank",
+  "status": "established",
+  "proof": "Proposition 1 gives $\\mathrm{DSR}\\leq2\\mathrm{VC}+1$.  When $\\mathrm{VC}\\geq1$, this implies $\\mathrm{DSR}\\leq3\\mathrm{VC}$, i.e. the displayed constant-factor relationship.",
+  "references": "\\cite{alon2016sign}"
 }

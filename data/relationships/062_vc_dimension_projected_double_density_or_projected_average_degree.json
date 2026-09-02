@@ -2,8 +2,11 @@
   "id": 62,
   "parameter_1_id": "#parameters/vc_dimension",
   "parameter_2_id": "#parameters/projected_double_density_or_projected_average_degree",
-  "relationship_type": "larger",
+  "relationship_type": "larger_c",
   "details": "Down Shifting and Monotonicity",
+  "status": "established",
+  "proof": "For every projection, the Haussler--Littlestone--Warmuth density lemma gives $|E|/|V|\\le\\mathrm{VC}(\\mathcal H)$. Since this parameter is twice that density (the average degree), it is at most $2\\,\\mathrm{VC}(\\mathcal H)$. Thus $\\mathrm{VC}(\\mathcal H)\\ge\\tfrac12\\,\\mathrm{dens}^p(\\mathcal H)$.",
+  "references": "\\cite{haussler1988predicting}",
   "short_name": "vc_dimension_projected_double_density_or_projected_average_degree",
   "name": "VC Dimension / Projected Double Density or Projected Average Degree"
 }
