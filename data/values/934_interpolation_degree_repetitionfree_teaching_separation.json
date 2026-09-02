@@ -1,0 +1,12 @@
+{
+  "id": 934,
+  "name": "Interpolation Degree of the Repetition-Free Teaching Separation Class",
+  "short_name": "interpolation_degree_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class contains a two-cube, so interpolation degree is at least its largest strongly shattered-set size, namely two. Its minimum largest order-shattered-set size is two, and this upper-bounds interpolation degree. Hence interpolation degree is exactly two.",
+  "references": "\\cite{moran2015shattered,bollobas1995defect,doliwa2014recursive}"
+}
