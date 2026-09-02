@@ -427,8 +427,9 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     # are broader: every base-variant affine dominance fact contributes its
     # direction, and the transitive closure is condensed before layering.
     # Thus an $A >= cB-d$ fact need not be drawn as a backbone edge to place A
-    # above B.  Every stated direct relationship remains displayed as either a
-    # backbone edge or an overlay.
+    # above B.  A homogeneous linear fact that is implied by another displayed
+    # path is deliberately absent: it remains in the catalogue and parameter
+    # pages, but would only duplicate an arrow in the Hasse-like view.
     reduced_by_variant = {
         variant: reduced_linear_relations(variant_relationships)
         for variant, variant_relationships in relationships_by_variant.items()
@@ -483,15 +484,6 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     displayed_relationships = []
     for variant, variant_relationships in relationships_by_variant.items():
         reduced_linear = reduced_by_variant[variant]
-        reduced_ids = {relationship["id"] for relationship in reduced_linear}
-        # ``canonical_linear_relations`` also avoids drawing duplicate records
-        # with the same quotient endpoints and relationship type.  Retain all
-        # its non-backbone members as direct-fact overlays.
-        direct_linear_overlays = [
-            relationship
-            for relationship in canonical_linear_relations(variant_relationships)
-            if relationship["id"] not in reduced_ids
-        ]
         nonlinear = [
             relationship
             for relationship in variant_relationships
@@ -501,9 +493,11 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             (relationship, variant, True)
             for relationship in reduced_linear
         )
+        # Nonlinear and affine facts cannot safely take part in a homogeneous
+        # transitive reduction, so retain them as non-constraining overlays.
         displayed_relationships.extend(
             (relationship, variant, False)
-            for relationship in direct_linear_overlays + nonlinear
+            for relationship in nonlinear
         )
 
     displayed_edge_keys = set()
