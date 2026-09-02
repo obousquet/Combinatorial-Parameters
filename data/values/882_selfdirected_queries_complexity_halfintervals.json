@@ -1,0 +1,12 @@
+{
+  "id": 882,
+  "name": "Self-Directed Queries Complexity of Half-Intervals",
+  "short_name": "selfdirected_queries_complexity_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The half-interval class has VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles states that every nontrivial VC-one class has self-directed learning complexity one.  The class is nontrivial, so the value is exactly one.",
+  "references": "\\cite{doliwa2014recursive}"
+}

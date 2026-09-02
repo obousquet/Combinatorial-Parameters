@@ -1,0 +1,11 @@
+{
+  "id": 856,
+  "name": "Best Mistakes of the Three-Code Class",
+  "short_name": "best_mistakes_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Present the third coordinate first and predict one.  A negative answer makes one mistake and identifies $000$.  After a positive answer, query the first coordinate and predict zero: it is correct for $011$, and its one possible mistake identifies $101$.  Thus at most one mistake occurs.  Zero mistakes are impossible for a nonconstant class, so the value is one."
+}

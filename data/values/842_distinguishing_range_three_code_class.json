@@ -1,0 +1,11 @@
+{
+  "id": 842,
+  "name": "Distinguishing Range of the Three-Code Class",
+  "short_name": "distinguishing_range_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "One binary coordinate has only two possible traces and cannot distinguish all three concepts.  On the first two coordinates, the traces are $00,01,10$, which are distinct.  Hence exactly two coordinates are necessary and sufficient."
+}

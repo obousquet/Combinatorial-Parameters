@@ -1,0 +1,12 @@
+{
+  "id": 888,
+  "name": "Average Teaching Dimension of Trivial Concepts",
+  "short_name": "average_teaching_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "One coordinate with the target's label distinguishes either of the two constant concepts, while the empty sample does not. Both individual minimum teaching-set sizes are one, so their average is one.",
+  "references": null
+}

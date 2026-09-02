@@ -1,0 +1,20 @@
+{
+  "id": 101,
+  "name": "Repetition-Free Recursive Teaching Dimension",
+  "short_name": "repetitionfree_recursive_teaching_dimension",
+  "symbol": "\\mathrm{rfRTD}",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "definition": "A recursive teaching plan is *repetition-free* when no two teaching sets use the same set of coordinates.  The **repetition-free recursive teaching dimension** $\\mathrm{rfRTD}(\\mathcal H)$ is the least possible maximum teaching-set size among repetition-free recursive teaching plans for $\\mathcal H$.",
+  "graph_summary": "Recursive teaching dimension when the coordinate sets of all teaching samples must be distinct.",
+  "description": "The repetition-free variant of recursive teaching dimension introduced by Doliwa--Fan--Simon--Zilles.",
+  "origin_references": "\\cite{doliwa2014recursive}",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Restrict a repetition-free teaching plan to any subfamily, deleting empty batches.  Each retained teaching set is still a teaching set at its stage and the coordinate sets remain pairwise distinct.",
+      "kind": "citation",
+      "references": "\\cite{doliwa2014recursive}"
+    }
+  }
+}

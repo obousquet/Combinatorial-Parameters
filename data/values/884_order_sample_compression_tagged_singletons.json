@@ -1,0 +1,12 @@
+{
+  "id": 884,
+  "name": "Order Sample Compression of Tagged Singletons",
+  "short_name": "order_sample_compression_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Tagged singletons have VC dimension one.  Corollary 4 of Darnstädt--Kiss--Simon--Zilles gives an order-compression scheme of size one for every VC-one class.  A nontrivial class cannot have order-compression size zero, because one fixed reconstruction cannot be consistent with two distinct full samples.",
+  "references": "\\cite{darnstadt2016order}"
+}

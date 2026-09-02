@@ -1,0 +1,11 @@
+{
+  "id": 844,
+  "name": "Path Dimension of the Three-Code Class",
+  "short_name": "path_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/path_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On the first two coordinates, the traces $01,00,10$ form a full path of length two: flip the second coordinate and then the first.  A full path of length three has four distinct successive traces, whereas this class has only three concepts.  Hence the path dimension is two."
+}

@@ -493,7 +493,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For a finite class, fix a total preference order.  To make the learner select a target $h$, the teacher must supply a teaching set that eliminates every hypothesis preferred to $h$; reversing the order turns these into the teaching sets of a recursive teaching plan.  Conversely, the elimination order of a recursive teaching plan, read in reverse, is a preference order under which the same samples teach their assigned concepts.  Both constructions preserve the maximum sample size, so minimizing gives $\mathrm{PBTD}=\mathrm{RTD}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#gao2017preference">[gao2017preference]</a></p></div>
@@ -719,11 +719,11 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes. The order-compression lower bound is preserved under both subclasses and coordinate projections.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Darnstadt, Kiss, Simon, and Zilles prove that order-compression number lower-bounds projected recursive teaching dimension, by projecting a maximal teaching plan (Theorem 4). Applying the same statement to every subclass, together with restriction of an order scheme to a subclass and its projection, gives the max-over-subclasses-and-projections minimum-teaching-set formulation.</p></div>
+<strong>Details:</strong><div class="text-field"><p>Refuted.  On the three-code class, $\mathrm{OSC}=1$ but $\mathrm{TS}_{\min}^{*p}=2$.  The cited order-compression theorem controls projected recursive teaching dimension for the given class; it does not justify maximizing a separate minimum-teaching quantity over all subclasses.</p></div>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The three-code class $\{000,011,101\}$ has an order scheme of size one, using the order $000<011<101$.  Yet after omitting, respectively, $x_0,x_1,x_2$, each of its three targets is the middle point of a three-trace path and needs two coordinates to be taught.  Thus $\mathrm{TS}_{\min}^{*p}=2>1=\mathrm{OSC}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
@@ -742,11 +742,11 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes; the right-hand side maximizes minimum teaching-set size over subclasses and coordinate projections.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Doliwa, Fan, Simon, and Zilles cite Kuhlmann's bound from minimum teaching-set size to self-directed learning, and prove that the optimal online mistake bound is twofold monotone (Corollary 8). The optimal online mistake bound is Littlestone dimension. Apply the bound to every subclass and projection, then take the maximum.</p></div>
+<strong>Details:</strong><div class="text-field"><p>Refuted.  The three-code class has $\mathrm{Ldim}=1$ and $\mathrm{TS}_{\min}^{*p}=2$.  The cited twofold-monotonicity statement does not yield a bound by the maximum-over-subclasses projected teaching quantity used here.</p></div>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The three-code class $\{000,011,101\}$ has no complete Littlestone tree of depth two, hence $\mathrm{Ldim}=1$.  On the other hand, omitting a different coordinate makes each target the middle of a three-trace path, so its minimum projected teaching-set size is two and therefore $\mathrm{TS}_{\min}^{*p}=2$.  Hence $\mathrm{Ldim}<\mathrm{TS}_{\min}^{*p}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
@@ -907,7 +907,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Hu--Wu--Li--Wang prove $\mathrm{RTD}(\mathcal C)\leq 39.3752\,\mathrm{VC}(\mathcal C)^2-3.6330\,\mathrm{VC}(\mathcal C)$ for every finite binary class $\mathcal C$.  Every coordinate projection $\mathcal H_{|S}$ has $\mathrm{VC}(\mathcal H_{|S})\leq\mathrm{VC}(\mathcal H)$, since any set shattered after projection was already shattered in $\mathcal H$.  Apply their bound to every projection and maximize over $S$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hu2017quadratic">[hu2017quadratic]</a></p></div>
@@ -949,11 +949,11 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite classes, $\mathrm{M}_{\mathrm{sd}}(\mathcal H) \ge \mathrm{L}(\mathcal H)/\log |\mathcal H|$.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For a finite class on a domain of size $n$, $\mathrm{M}_{\mathrm{sd}}(\mathcal H)\geq\mathrm{L}(\mathcal H)/\log_2 n$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 7 of Ben-David--Kushilevitz--Mansour proves $\mathrm L(\mathcal H)\leq\mathrm M_{\mathrm{sd}}(\mathcal H)\log_2 n$ for a finite domain of size $n$.  Their tree proof takes a minimum-rank self-directed strategy tree and bounds its number of leaves by the binomial sum determined by its rank; the information-theoretic proof encodes a target by the at-most-$\mathrm M_{\mathrm{sd}}$ mistaken queried points.  Rearranging gives the displayed inequality.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
@@ -1298,7 +1298,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $S$ be a shattered set of size $d$.  Even when the learner knows the whole presentation order, an adversary may present the points of $S$ one at a time and assign at each point the label opposite to the learner's prediction.  After all $d$ rounds, shattering supplies a concept realizing the resulting labeling, so this is a valid target-consistent run with $d$ mistakes.  Hence $\mathrm M_{\mathrm{worst}}\geq\mathrm{VC}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
@@ -2126,7 +2126,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(1) of Doliwa--Fan--Simon--Zilles states the chain $\mathrm{RTD}(\mathcal H)\leq\mathrm{SDC}(\mathcal H)\leq\mathrm{LC}_{\mathrm{partial}}(\mathcal H)$.  Its middle inequality is the simulation established by Goldman--Sloan: the partial-equivalence-query model is no more powerful than self-directed learning, so its optimal worst-case query count cannot be smaller.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
@@ -2425,7 +2425,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Lemma 7 of Doliwa--Fan--Simon--Zilles (attributed there to Kuhlmann) gives $\mathrm{TS}_{\min}(\mathcal C)\leq\mathrm{SDC}(\mathcal C)$ for every concept class.  Since $\mathrm{SDC}$ is monotone under subclasses, their Lemmas 3--4 yield $\mathrm{RTD}(\mathcal H)=\max_{\mathcal C\subseteq\mathcal H}\mathrm{TS}_{\min}(\mathcal C)\leq\mathrm{SDC}(\mathcal H)$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
@@ -2766,11 +2766,11 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes; projected recursive teaching dimension is a lower bound for order compression.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes; projected recursive teaching dimension is a lower bound for order compression (Theorem 4).</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every coordinate set, Theorem 1 restricts an order scheme to that projection without increasing its size.  The maximal teaching-plan argument of Lemma 1 lower-bounds the resulting order-scheme size by the recursive teaching dimension of that projection.  Taking the maximum over projections is Theorem 4.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
@@ -2816,7 +2816,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 <p><strong>Status:</strong> Established</p>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The worst-sequence/offline characterization maximizes the rank only over class trees induced by a fixed ordered sequence of instances: every depth level has one common queried instance.  Each such regular class tree is a valid Littlestone tree, while Littlestone dimension maximizes over all instance-labeled class trees.  Maximizing over the larger family gives $\mathrm L\geq\mathrm M_{\mathrm{worst}}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
@@ -6799,6 +6799,213 @@
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-296" style="position:relative;">
+        
+        <h3><a href="relationships/proper_ordered_sample_compression_monotone_recursive_teaching_dimension.html" class="table-title-link">Proper Ordered Sample Compression / Projected Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Ordered Sample Compression / Projected Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes.  This is the fixed-proper-reconstruction form of the restriction and teaching-plan proof underlying Theorem 4 of Darnstädt--Kiss--Simon--Zilles.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a proper order scheme and restrict it to any coordinate set.  Its restricted reconstruction remains in the projected class and its size does not increase.  The maximal teaching-plan argument then lower-bounds that size by the recursive teaching dimension of the projected class.  Maximizing over coordinate sets gives $\mathrm{pOSC}\geq\mathrm{RTD}^{p}$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-297" style="position:relative;">
+        
+        <h3><a href="relationships/sign_rank_spherical_dimension_affine.html" class="table-title-link">Sign Rank / Spherical Dimension (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sign Rank / Spherical Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/spherical_dimension.html">Spherical Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+<p><strong>Additive Constant: </strong>-1</p>
+<p><strong>Multiplicative Constant: </strong>1</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm{SR}(\mathcal H)\geq\mathrm{sd}(\mathcal H)+1$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 12 states the source chain $\mathrm{sd}(\mathcal H)+1\leq\mathrm{SCO}(\mathcal H)\leq\mathrm{SR}(\mathcal H)$.  The paper explicitly identifies its sign-rank with the minimum real rank realizing the incidence sign matrix, which is the catalogue convention.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-298" style="position:relative;">
+        
+        <h3><a href="relationships/selfdirected_queries_complexity_minimum_teaching_set_size.html" class="table-title-link">Self-Directed Queries Complexity / Minimum Teaching Set Size</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Self-Directed Queries Complexity / Minimum Teaching Set Size</p>
+<p><strong>Parameter 1: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite concept class, $\mathrm{SDC}(\mathcal H)\geq\mathrm{TS}_{\min}(\mathcal H)$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is Lemma 7 of Doliwa--Fan--Simon--Zilles, attributed there to Kuhlmann: every finite concept class satisfies $\mathrm{TS}_{\min}(\mathcal H)\leq\mathrm{SDC}(\mathcal H)$.  It is a direct comparison of the two models, not a transitive graph inference.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-299" style="position:relative;">
+        
+        <h3><a href="relationships/vc_dimension_selfdirected_queries_complexity.html" class="table-title-link">VC Dimension / Self-Directed Queries Complexity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension / Self-Directed Queries Complexity</p>
+<p><strong>Parameter 1: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Refuted: self-directed query complexity has no upper bound that depends only on VC dimension.  Ben-David--Eiron construct, for every fixed $d\geq3$ and arbitrarily large $n$, a finite class $\mathcal C^d_n$ with $\mathrm{VC}(\mathcal C^d_n)=d$ and $\mathrm{SDC}(\mathcal C^d_n)=\Theta(n)$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Lemma 1 of the cited paper constructs the classes $\mathcal C^d_n$ and establishes the displayed fixed-VC, unbounded-self-directed-complexity behavior.  Consequently no function of VC dimension alone can universally upper-bound $\mathrm{SDC}$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1998self">[ben1998self]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-300" style="position:relative;">
+        
+        <h3><a href="relationships/worst_mistakes_partial_equivalence_queries_complexity.html" class="table-title-link">Worst Mistakes / Partial Equivalence Queries Complexity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes / Partial Equivalence Queries Complexity</p>
+<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{M}_{\mathrm{worst}}(\mathcal H)\geq\mathrm Q_{\mathrm{par}}(\mathcal H)$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(1) of Doliwa--Fan--Simon--Zilles states $\mathrm{LC}_{\mathrm{partial}}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{Mopt}$ is the optimal adversarial online mistake bound, which is precisely the catalogue's $\mathrm{M}_{\mathrm{worst}}$, while $\mathrm{LC}_{\mathrm{partial}}$ is its partial-equivalence-query complexity.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-301" style="position:relative;">
+        
+        <h3><a href="relationships/worst_mistakes_monotone_recursive_teaching_dimension.html" class="table-title-link">Worst Mistakes / Projected Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes / Projected Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{M}_{\mathrm{worst}}(\mathcal H)\geq\mathrm{RTD}^{p}(\mathcal H)$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(2) of Doliwa--Fan--Simon--Zilles states $\mathrm{RTD}^{*}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{RTD}^{*}$ is the maximum recursive teaching dimension over coordinate projections, the catalogue's projected recursive teaching dimension, and $\mathrm{Mopt}$ is the catalogue's worst-mistakes parameter.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-302" style="position:relative;">
+        
+        <h3><a href="relationships/repetitionfree_recursive_teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension / Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension / Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every repetition-free recursive teaching plan is, after forgetting the repetition-free constraint, a recursive teaching plan.</p></div>
+<p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The admissible repetition-free teaching plans form a subclass of all recursive teaching plans.  Minimizing the maximum teaching-set size over the smaller class can only increase the value.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-303" style="position:relative;">
+        
+        <h3><a href="relationships/teaching_dimension_average_teaching_dimension.html" class="table-title-link">Teaching Dimension / Average Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Teaching Dimension / Average Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The maximum of the individual minimum teaching-set sizes is at least their arithmetic mean.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each concept $h$, its minimum teaching-set size is at most the maximum teaching-set size. Averaging these inequalities over $h$ gives $\mathrm{TD}\ge\mathrm{TS}_{\mathrm{avg}}$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-304" style="position:relative;">
+        
+        <h3><a href="relationships/average_teaching_dimension_minimum_teaching_set_size.html" class="table-title-link">Average Teaching Dimension / Minimum Teaching-Set Size</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension / Minimum Teaching-Set Size</p>
+<p><strong>Parameter 1: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The arithmetic mean of the individual minimum teaching-set sizes is at least their minimum.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every individual minimum teaching-set size is at least $\mathrm{TS}_{\mathrm{min}}$. Averaging over all concepts gives $\mathrm{TS}_{\mathrm{avg}}\ge\mathrm{TS}_{\mathrm{min}}$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
 
         </div>
     </div>

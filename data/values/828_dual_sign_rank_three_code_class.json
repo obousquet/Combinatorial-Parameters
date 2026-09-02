@@ -1,0 +1,12 @@
+{
+  "id": 828,
+  "name": "Dual Sign Rank of the Three-Code Class",
+  "short_name": "dual_sign_rank_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/dual_sign_rank",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The coordinate sign columns are $(--+),(-+-),(-++)$.  Any two are neither equal nor opposite.  Hence in every realizing real matrix, any selected pair is linearly independent: dependent nonzero columns would have identical signs (positive scalar multiple) or opposite signs (negative scalar multiple).  Thus dual sign rank is at least two.  It is at most sign rank, whose directly verified value for this class is two.  Therefore the dual sign rank is exactly two.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

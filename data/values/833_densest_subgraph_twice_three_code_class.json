@@ -1,0 +1,11 @@
+{
+  "id": 833,
+  "name": "Densest Subgraph (twice) of the Three-Code Class",
+  "short_name": "densest_subgraph_twice_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/densest_subgraph_twice",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The $1$-inclusion graph is edgeless, and so is every one of its subgraphs.  Every subgraph consequently has average degree zero, proving that its densest-subgraph double density is zero."
+}

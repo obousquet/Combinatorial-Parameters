@@ -1,0 +1,12 @@
+{
+  "id": 102,
+  "name": "Average Teaching Dimension",
+  "short_name": "average_teaching_dimension",
+  "symbol": "\u005cmathrm{TS}_{\u005cmathrm{avg}}",
+  "category": "teaching",
+  "symmetric": true,
+  "definition": "The **average teaching dimension** of a finite class $\u005cmathcal H$ is the average, over $h\u005cin\u005cmathcal H$, of the minimum size of a teaching set for $h$ within $\u005cmathcal H$: $\u005cmathrm{TS}_{\u005cmathrm{avg}}(\u005cmathcal H)=|\u005cmathcal H|^{-1}\u005csum_{h\u005cin\u005cmathcal H}\u005cmathrm{TS}(h;\u005cmathcal H)$.",
+  "graph_summary": "Mean, over concepts, of their minimum teaching-set sizes.",
+  "description": "The average-case counterpart of teaching dimension.",
+  "origin_references": "\u005ccite{doliwa2014recursive}"
+}

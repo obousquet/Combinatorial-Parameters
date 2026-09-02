@@ -1,0 +1,10 @@
+{
+  "id": 849,
+  "name": "Log Size Ratio of the Three-Code Class",
+  "short_name": "log_size_ratio_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/log_size_ratio",
+  "value": "$\\frac12$",
+  "status": "established",
+  "proof": "The class has three concepts on a three-point domain.  Substitution into $\\log_2(|\\mathcal H|-1)/\\log_2(n+1)$ gives $\\log_2 2/\\log_2 4=1/2$."
+}

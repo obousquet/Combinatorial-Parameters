@@ -1,0 +1,11 @@
+{
+  "id": 860,
+  "name": "Combinatorial Eluder Dimension of the Three-Code Class",
+  "short_name": "combinatorial_eluder_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Use $000$ as base.  First query the first coordinate with witness $101$; then query the second coordinate with witness $011$, which agrees with the base at the first coordinate.  This gives a length-two eluder sequence.  Such witnesses are distinct and cannot equal the base, so a class of three concepts admits no sequence longer than two.  Thus the value is two."
+}

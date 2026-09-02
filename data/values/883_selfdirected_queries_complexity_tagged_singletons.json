@@ -1,0 +1,12 @@
+{
+  "id": 883,
+  "name": "Self-Directed Queries Complexity of Tagged Singletons",
+  "short_name": "selfdirected_queries_complexity_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Tagged singletons have VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles gives self-directed learning complexity one for every nontrivial VC-one class.  Thus the value is one.",
+  "references": "\\cite{doliwa2014recursive}"
+}

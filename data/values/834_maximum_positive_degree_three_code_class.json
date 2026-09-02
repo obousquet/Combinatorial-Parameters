@@ -1,0 +1,11 @@
+{
+  "id": 834,
+  "name": "Maximum Positive Degree of the Three-Code Class",
+  "short_name": "maximum_positive_degree_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "There are no edges in the $1$-inclusion graph, since every pair of distinct concepts differs on two coordinates.  Thus no concept has a smaller adjacent neighbour and every positive degree is zero."
+}

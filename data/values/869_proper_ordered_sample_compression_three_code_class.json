@@ -1,0 +1,12 @@
+{
+  "id": 869,
+  "name": "Proper Ordered Sample Compression of the Three-Code Class",
+  "short_name": "proper_ordered_sample_compression_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/proper_ordered_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Use the order $000<011<101$.  The order-compression construction retaining nothing for $000$, $x_0=1$ for $011$, and $x_2=1$ for $101$ decodes only to these three class members, so it is proper and has size one.  A size-zero scheme has one fixed proper reconstruction and cannot be consistent with both full samples $000$ and $011$.",
+  "references": "\\cite{darnstadt2016order}"
+}

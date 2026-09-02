@@ -1,0 +1,12 @@
+{
+  "id": 886,
+  "name": "Repetition-Free Recursive Teaching Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "repetitionfree_recursive_teaching_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Doliwa--Fan--Simon--Zilles prove that every order-two teaching plan repeats the coordinate set $\\{x_1,x_2\\}$ for its first two concepts, while an order-three repetition-free plan exists.  Thus $\\mathrm{rfRTD}=3$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 891,
+  "name": "Average Teaching Dimension of Half-Intervals",
+  "short_name": "average_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$\\begin{cases}0&n=1,\\\\2-\\frac2n&n\\ge2.\\end{cases}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $n\\ge2$, the two endpoint initial intervals have one-coordinate teaching sets, while every one of the $n-2$ interior intervals needs and has the adjacent positive/negative pair. Their total is $2+2(n-2)=2n-2$, whose average is $2-2/n$. For $n=1$, the unique concept has the empty teaching set, so the value is zero.",
+  "references": null
+}

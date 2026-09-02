@@ -1,0 +1,10 @@
+{
+  "id": 875,
+  "name": "Randomized Littlestone Dimension of the Three-Code Class",
+  "short_name": "randomized_littlestone_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/randomized_littlestone_dimension",
+  "value": "$\\frac34$",
+  "status": "established",
+  "proof": "Query $x_0$ first: its zero branch identifies $000$, while its one branch contains $011,101$ and is separated by $x_1$.  This shattered tree has expected random-branch depth $3/2$, giving value $3/4$.  Conversely, every shattered tree has at most three leaves, and a binary tree with at most three leaves has expected random-branch depth at most $3/2$.  Hence $\\mathrm{RL}=3/4$."
+}

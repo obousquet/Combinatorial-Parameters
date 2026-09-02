@@ -1,0 +1,11 @@
+{
+  "id": 846,
+  "name": "Projected Strongly Shattered Dimension of the Three-Code Class",
+  "short_name": "projected_strongly_shattered_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/projected_strongly_shattered_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projected strongly shattered dimension equals VC dimension: a set shattered by the class becomes a contained cube after projecting to that set.  The established VC dimension of the three-code class is one, proving this value."
+}

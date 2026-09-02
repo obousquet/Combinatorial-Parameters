@@ -1,0 +1,14 @@
+{
+  "id": 297,
+  "name": "Sign Rank / Spherical Dimension (affine)",
+  "short_name": "sign_rank_spherical_dimension_affine",
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/spherical_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "-1",
+  "details": "For every finite binary class, $\\mathrm{SR}(\\mathcal H)\\geq\\mathrm{sd}(\\mathcal H)+1$.",
+  "status": "established",
+  "proof": "Theorem 12 states the source chain $\\mathrm{sd}(\\mathcal H)+1\\leq\\mathrm{SCO}(\\mathcal H)\\leq\\mathrm{SR}(\\mathcal H)$.  The paper explicitly identifies its sign-rank with the minimum real rank realizing the incidence sign matrix, which is the catalogue convention.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

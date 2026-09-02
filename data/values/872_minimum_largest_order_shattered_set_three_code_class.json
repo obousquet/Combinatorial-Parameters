@@ -1,0 +1,11 @@
+{
+  "id": 872,
+  "name": "Minimum Largest Order Shattered Set of the Three-Code Class",
+  "short_name": "minimum_largest_order_shattered_set_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every coordinate order, downshifting preserves the class cardinality three and yields a nontrivial downset.  Such a downset contains a one-cube, so its largest order-shattered set has size at least one.  A two-cube has four traces, which cannot occur in a three-trace shifted class.  Thus the largest order-shattered set has size exactly one for every order, and so does the minimum over orders."
+}

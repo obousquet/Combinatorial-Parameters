@@ -6,6 +6,7 @@
   "short_name": "partial_equivalence_queries_complexity_selfdirected_queries_complexity",
   "name": "Partial Equivalence Queries Complexity / Self-Directed Queries Complexity",
   "details": "For finite concept classes, $\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)\\ge\\mathrm{SDC}(\\mathcal H)$.",
+  "proof": "Corollary 8(1) of Doliwa--Fan--Simon--Zilles states the chain $\\mathrm{RTD}(\\mathcal H)\\leq\\mathrm{SDC}(\\mathcal H)\\leq\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)$.  Its middle inequality is the simulation established by Goldman--Sloan: the partial-equivalence-query model is no more powerful than self-directed learning, so its optimal worst-case query count cannot be smaller.",
   "status": "established",
   "references": "\\cite{doliwa2014recursive}"
 }

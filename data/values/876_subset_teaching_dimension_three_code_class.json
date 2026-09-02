@@ -1,0 +1,11 @@
+{
+  "id": 876,
+  "name": "Subset Teaching Dimension of the Three-Code Class",
+  "short_name": "subset_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The ordinary one-point teaching samples $x_0=0$ for $000$, $x_1=1$ for $011$, and $x_2=1$ for $101$ are each contained in no ordinary minimum teaching sample of either other target.  They therefore remain subset-teaching samples at every iteration.  An empty sample identifies no target, so the stabilized maximum is one."
+}

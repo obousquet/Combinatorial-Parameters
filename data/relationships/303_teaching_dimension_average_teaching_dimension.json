@@ -1,0 +1,12 @@
+{
+  "id": 303,
+  "name": "Teaching Dimension / Average Teaching Dimension",
+  "short_name": "teaching_dimension_average_teaching_dimension",
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/average_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "The maximum of the individual minimum teaching-set sizes is at least their arithmetic mean.",
+  "proof": "For each concept $h$, its minimum teaching-set size is at most the maximum teaching-set size. Averaging these inequalities over $h$ gives $\\mathrm{TD}\\ge\\mathrm{TS}_{\\mathrm{avg}}$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

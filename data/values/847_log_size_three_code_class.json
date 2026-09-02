@@ -1,0 +1,10 @@
+{
+  "id": 847,
+  "name": "Log Size of the Three-Code Class",
+  "short_name": "log_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/log_size",
+  "value": "$\\log_2 3$",
+  "status": "established",
+  "proof": "The class has exactly the three distinct concepts $000,011,101$.  Its binary logarithmic size is therefore $\\log_2 3$."
+}

@@ -1,6 +1,6 @@
 \subsection{Basic}\label{sec:Basic}
 \subsubsection{Effective Range}
-      
+
       \begin{definition}[Effective Range - {$\mathrm{E}$}]\label{def:effective_range}
       The {\em effective range} $E(\H)$ of a family $\H$ is the number of elements that can be distinguished by members of $\H$: \[ E(\H)\bydef \abs*{\set*{x:x\in\X,\, \exists h_1,h_2\in\H,\, x\in h_1 \Delta h_2}} \]
       \end{definition}
@@ -9,7 +9,7 @@
       \item {\bf Monotonicity Type}: SM
       \end{itemize}
 \subsubsection{Size}
-      
+
       \begin{definition}[Size - {$\mathrm{H}$}]\label{def:size}
       The {\em size} of a family $\H$ is simply the  cardinality, \[  \abs*{\H} \]
       \end{definition}
@@ -544,6 +544,18 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: DM
       \end{itemize}
+\subsubsection{Repetition-Free Recursive Teaching Dimension}
+      
+      \begin{definition}[Repetition-Free Recursive Teaching Dimension - {$\mathrm{rfRTD}$}]\label{def:repetitionfree_recursive_teaching_dimension}
+      A recursive teaching plan is \emph{repetition-free} when the coordinate
+      sets of its teaching samples are pairwise distinct.  The repetition-free
+      recursive teaching dimension $\mathrm{rfRTD}(\mathcal H)$ is the least
+      possible maximum teaching-set size among such plans.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \end{itemize}
 \subsubsection{Teaching Dimension = Relative Hitting Size = Maximum Teaching Set Size}
       
       \begin{definition}[Teaching Dimension = Relative Hitting Size = Maximum Teaching Set Size - {\begin{tabular}{l}$\mathrm{TD} = \mathrm{RHT} = \mathrm{TS}_{\max}$\end{tabular}}]\label{def:teaching_dimension_=_relative_hitting_size_=_maximum_teaching_set_size}
@@ -552,6 +564,21 @@
       \begin{itemize}
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: M
+      \end{itemize}
+\subsubsection{Average Teaching Dimension}
+      
+      \begin{definition}[Average Teaching Dimension - {$\mathrm{TS}_{\mathrm{avg}}$}]\label{def:average_teaching_dimension}
+      For a finite class $\mathcal H$, the \emph{average teaching dimension}
+      is the mean, over $h\in\mathcal H$, of the minimum size of a teaching
+      set for $h$ within $\mathcal H$:
+      \[
+      \mathrm{TS}_{\mathrm{avg}}(\mathcal H)=\frac1{|\mathcal H|}
+      \sum_{h\in\mathcal H}\mathrm{TS}(h;\mathcal H).
+      \]
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: unclassified
       \end{itemize}
 \subsubsection{Hitting Size}
       

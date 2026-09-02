@@ -1,0 +1,11 @@
+{
+  "id": 881,
+  "name": "Radon Number of the Three-Code Class",
+  "short_name": "radon_number_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/radon_number",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The whole three-concept class is Radon independent.  For each partition into a singleton and a pair, the pair agrees on one coordinate on which the singleton disagrees: $011,101$ agree at $x_0=1$; $000,101$ agree at $x_1=0$; and $000,011$ agree at $x_2=0$.  The pair's convex hull is consequently disjoint from the singleton's hull.  This checks every nontrivial partition, and no Radon-independent subset can have more than the three available concepts."
+}

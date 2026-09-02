@@ -1,0 +1,12 @@
+{
+  "id": 892,
+  "name": "Average Teaching Dimension of Addressing",
+  "short_name": "average_teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Both the established minimum teaching-set size and teaching dimension of Addressing are one. Every individual minimum teaching-set size is therefore one, so their average is one.",
+  "references": "\\cite{maass1992lower}"
+}

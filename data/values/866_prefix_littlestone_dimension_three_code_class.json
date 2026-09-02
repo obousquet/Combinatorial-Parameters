@@ -1,0 +1,11 @@
+{
+  "id": 866,
+  "name": "Prefix-$k$ Littlestone Dimension of the Three-Code Class",
+  "short_name": "prefix_littlestone_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every fixed $k\\geq1$, a one-point VC witness is a prefix-$k$ tree of depth one, while every prefix-$k$ tree is an ordinary Littlestone tree.  The established VC and Littlestone dimensions are both one, forcing $\\mathrm{PL}_k=1$."
+}

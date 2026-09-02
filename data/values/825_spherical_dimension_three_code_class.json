@@ -1,0 +1,12 @@
+{
+  "id": 825,
+  "name": "Spherical Dimension of the Three-Code Class",
+  "short_name": "spherical_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/spherical_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Write the three concepts as $a=000$, $b=011$, and $c=101$.  Across these concepts, the three coordinates have minority singleton supports $\\{c\\}$, $\\{b\\}$, and $\\{a\\}$, respectively; coordinate bit flips do not change those minority singleton supports.  In a threshold subclass, every nonconstant coordinate is an initial or final segment of one common linear order of the concepts, so its minority singleton must be an endpoint.  A three-element order has only two endpoints, so this class is not, even after bit flips, a threshold subclass.  Its established VC dimension is one.  Lemma 31 of the cited paper classifies precisely this case as spherical dimension one.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

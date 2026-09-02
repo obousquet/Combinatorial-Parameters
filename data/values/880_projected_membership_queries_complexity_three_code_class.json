@@ -1,0 +1,11 @@
+{
+  "id": 880,
+  "name": "Projected Membership Queries Complexity of the Three-Code Class",
+  "short_name": "projected_membership_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/projected_membership_queries_complexity",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The star number is two, so the established star lower bound gives $\\mathrm Q_{\\mathrm m}^p\\geq2$.  Every projection has at most three distinct traces.  If it has three, query a coordinate that separates one trace from the other two and then, only on the two-trace branch, a coordinate that separates those; if it has fewer, one query suffices.  Thus every projection is learned with at most two membership queries, proving equality."
+}

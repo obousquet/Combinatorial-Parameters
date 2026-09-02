@@ -1,0 +1,11 @@
+{
+  "id": 878,
+  "name": "Extremal-Extension VC Dimension of the Three-Code Class",
+  "short_name": "extremal_extension_vc_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/extremal_extension_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class has VC dimension one, giving the lower bound.  Add the codeword $001$ to obtain $\\mathcal E=\\{000,011,101,001\\}$.  Every singleton coordinate is shattered, while each two-coordinate projection has only three traces: the new trace repeats an existing trace in every such projection.  Hence the shattered sets of $\\mathcal E$ are precisely the empty set and its three singletons, four in total, equal to $|\\mathcal E|$.  Thus $\\mathcal E$ is extremal with VC dimension one and proves the matching upper bound."
+}

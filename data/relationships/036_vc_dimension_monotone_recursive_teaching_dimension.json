@@ -6,6 +6,7 @@
   "short_name": "vc_dimension_monotone_recursive_teaching_dimension",
   "name": "VC Dimension / Projected Recursive Teaching Dimension",
   "details": "Equivalently, $\\mathrm{RTD}^p(\\mathcal H)=O(\\mathrm{VC}(\\mathcal H)^2)$.",
+  "proof": "Hu--Wu--Li--Wang prove $\\mathrm{RTD}(\\mathcal C)\\leq 39.3752\\,\\mathrm{VC}(\\mathcal C)^2-3.6330\\,\\mathrm{VC}(\\mathcal C)$ for every finite binary class $\\mathcal C$.  Every coordinate projection $\\mathcal H_{|S}$ has $\\mathrm{VC}(\\mathcal H_{|S})\\leq\\mathrm{VC}(\\mathcal H)$, since any set shattered after projection was already shattered in $\\mathcal H$.  Apply their bound to every projection and maximize over $S$.",
   "status": "established",
   "references": "\\cite{hu2017quadratic}"
 }

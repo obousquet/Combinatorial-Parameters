@@ -1,0 +1,12 @@
+{
+  "id": 879,
+  "name": "List Replicability Number of the Three-Code Class",
+  "short_name": "list_replicability_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/list_replicability",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The three-code class has spherical dimension one.  The spherical-dimension list-replicability theorem therefore gives $\\mathrm{LR}\\geq\\lceil(1+3)/2\\rceil=2$.  Its sign rank is two, and the established sign-rank upper bound gives $\\mathrm{LR}\\leq2$.  Hence $\\mathrm{LR}=2$.",
+  "references": "\\cite{chornomaz2025spherical,blondal2026simplicialcovering}"
+}

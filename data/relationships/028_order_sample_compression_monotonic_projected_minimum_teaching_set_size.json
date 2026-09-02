@@ -3,10 +3,12 @@
   "parameter_1_id": "#parameters/order_sample_compression",
   "parameter_2_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
   "relationship_type": "larger",
-  "details": "For finite concept classes. The order-compression lower bound is preserved under both subclasses and coordinate projections.",
-  "proof": "Darnstadt, Kiss, Simon, and Zilles prove that order-compression number lower-bounds projected recursive teaching dimension, by projecting a maximal teaching plan (Theorem 4). Applying the same statement to every subclass, together with restriction of an order scheme to a subclass and its projection, gives the max-over-subclasses-and-projections minimum-teaching-set formulation.",
+  "details": "Refuted.  On the three-code class, $\\mathrm{OSC}=1$ but $\\mathrm{TS}_{\\min}^{*p}=2$.  The cited order-compression theorem controls projected recursive teaching dimension for the given class; it does not justify maximizing a separate minimum-teaching quantity over all subclasses.",
+  "proof": "The three-code class $\\{000,011,101\\}$ has an order scheme of size one, using the order $000<011<101$.  Yet after omitting, respectively, $x_0,x_1,x_2$, each of its three targets is the middle point of a three-trace path and needs two coordinates to be taught.  Thus $\\mathrm{TS}_{\\min}^{*p}=2>1=\\mathrm{OSC}$.",
   "references": "\\cite{darnstadt2016order}",
-  "status": "established",
+  "status": "refuted",
   "short_name": "order_sample_compression_monotonic_projected_minimum_teaching_set_size",
-  "name": "Order Sample Compression / Monotonic Projected Minimum Teaching Set Size"
+  "name": "Order Sample Compression / Monotonic Projected Minimum Teaching Set Size",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict"
 }

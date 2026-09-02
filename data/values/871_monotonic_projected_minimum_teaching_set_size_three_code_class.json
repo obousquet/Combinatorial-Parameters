@@ -1,0 +1,11 @@
+{
+  "id": 871,
+  "name": "Monotonic Projected Minimum Teaching-Set Size of the Three-Code Class",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The three-concept subfamily itself has minimum projected teaching-set size two, so the monotonic maximum is at least two.  No subfamily has more than three distinct traces, and a target trace among at most three traces is always distinguished by at most two coordinates in any projection.  Hence every subfamily has minimum projected teaching-set size at most two, and the maximum is exactly two."
+}

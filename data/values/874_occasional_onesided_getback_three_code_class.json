@@ -1,0 +1,11 @@
+{
+  "id": 874,
+  "name": "Occasional One-Sided Getback of the Three-Code Class",
+  "short_name": "occasional_onesided_getback_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/occasional_onesided_getback",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established O1G bounds put unlabeled sample compression below O1G and Littlestone dimension above it.  Both endpoint values are one for the three-code class, so $\\mathrm{M}_{\\mathrm{o1g}}=1$."
+}

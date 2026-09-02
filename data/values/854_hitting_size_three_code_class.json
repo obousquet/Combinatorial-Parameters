@@ -1,0 +1,11 @@
+{
+  "id": 854,
+  "name": "Hitting Size of the Three-Code Class",
+  "short_name": "hitting_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Interpreting strings as supports, the two nonempty concepts are $\\{2,3\\}$ and $\\{1,3\\}$, which share their third coordinate.  That coordinate is a hitting set, while the empty set cannot hit either nonempty concept.  Hence the hitting size is one."
+}

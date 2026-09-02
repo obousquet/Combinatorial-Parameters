@@ -1,0 +1,12 @@
+{
+  "id": 300,
+  "name": "Worst Mistakes / Partial Equivalence Queries Complexity",
+  "short_name": "worst_mistakes_partial_equivalence_queries_complexity",
+  "parameter_1_id": "#parameters/worst_mistakes",
+  "parameter_2_id": "#parameters/partial_equivalence_queries_complexity",
+  "relationship_type": "larger",
+  "details": "For finite concept classes, $\\mathrm{M}_{\\mathrm{worst}}(\\mathcal H)\\geq\\mathrm Q_{\\mathrm{par}}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Corollary 8(1) of Doliwa--Fan--Simon--Zilles states $\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)\\leq\\mathrm{Mopt}(\\mathcal H)$.  Their $\\mathrm{Mopt}$ is the optimal adversarial online mistake bound, which is precisely the catalogue's $\\mathrm{M}_{\\mathrm{worst}}$, while $\\mathrm{LC}_{\\mathrm{partial}}$ is its partial-equivalence-query complexity.",
+  "references": "\\cite{doliwa2014recursive}"
+}

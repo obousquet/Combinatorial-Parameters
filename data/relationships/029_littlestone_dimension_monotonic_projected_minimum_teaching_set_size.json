@@ -3,10 +3,12 @@
   "parameter_1_id": "#parameters/littlestone_dimension",
   "parameter_2_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
   "relationship_type": "larger",
-  "details": "For finite concept classes; the right-hand side maximizes minimum teaching-set size over subclasses and coordinate projections.",
-  "proof": "Doliwa, Fan, Simon, and Zilles cite Kuhlmann's bound from minimum teaching-set size to self-directed learning, and prove that the optimal online mistake bound is twofold monotone (Corollary 8). The optimal online mistake bound is Littlestone dimension. Apply the bound to every subclass and projection, then take the maximum.",
+  "details": "Refuted.  The three-code class has $\\mathrm{Ldim}=1$ and $\\mathrm{TS}_{\\min}^{*p}=2$.  The cited twofold-monotonicity statement does not yield a bound by the maximum-over-subclasses projected teaching quantity used here.",
+  "proof": "The three-code class $\\{000,011,101\\}$ has no complete Littlestone tree of depth two, hence $\\mathrm{Ldim}=1$.  On the other hand, omitting a different coordinate makes each target the middle of a three-trace path, so its minimum projected teaching-set size is two and therefore $\\mathrm{TS}_{\\min}^{*p}=2$.  Hence $\\mathrm{Ldim}<\\mathrm{TS}_{\\min}^{*p}$.",
   "references": "\\cite{doliwa2014recursive}",
-  "status": "established",
+  "status": "refuted",
   "short_name": "littlestone_dimension_monotonic_projected_minimum_teaching_set_size",
-  "name": "Littlestone Dimension / Monotonic Projected Minimum Teaching Set Size"
+  "name": "Littlestone Dimension / Monotonic Projected Minimum Teaching Set Size",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict"
 }

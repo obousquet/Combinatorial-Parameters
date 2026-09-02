@@ -1,0 +1,12 @@
+{
+  "id": 827,
+  "name": "SCO Dimension of the Three-Code Class",
+  "short_name": "sco_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/sco_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established spherical dimension of this class is one.  Theorem 12 of Chornomaz--Moran--Waknine gives $\\mathrm{sd}(\\mathcal H)+1\\leq\\mathrm{SCO}(\\mathcal H)\\leq\\mathrm{SR}(\\mathcal H)$.  The directly verified sign-rank value here is two, so the two bounds coincide at $\\mathrm{SCO}=2$.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

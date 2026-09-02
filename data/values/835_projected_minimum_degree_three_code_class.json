@@ -1,0 +1,11 @@
+{
+  "id": 835,
+  "name": "Projected Minimum Degree of the Three-Code Class",
+  "short_name": "projected_minimum_degree_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On any one coordinate, the projection is the full one-cube, whose minimum degree is one.  On two coordinates, every projection is a three-vertex path and has minimum degree one; on all three coordinates it is edgeless, and the empty projection has degree zero.  Hence the maximum projected minimum degree is one."
+}

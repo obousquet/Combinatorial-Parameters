@@ -1,0 +1,11 @@
+{
+  "id": 831,
+  "name": "Degeneracy of the Three-Code Class",
+  "short_name": "degeneracy_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Its $1$-inclusion graph is edgeless because its three concepts are pairwise at Hamming distance two.  Every nonempty induced subgraph therefore has minimum degree zero, which is exactly the degeneracy."
+}

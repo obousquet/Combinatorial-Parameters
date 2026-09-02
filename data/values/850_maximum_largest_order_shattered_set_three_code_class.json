@@ -1,0 +1,11 @@
+{
+  "id": 850,
+  "name": "Maximum Largest Order Shattered Set of the Three-Code Class",
+  "short_name": "maximum_largest_order_shattered_set_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/maximum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Maximum Largest Order Shattered Set equals VC dimension by definition.  The established VC dimension of the three-code class is one."
+}

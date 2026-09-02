@@ -1,0 +1,12 @@
+{
+  "id": 298,
+  "name": "Self-Directed Queries Complexity / Minimum Teaching Set Size",
+  "short_name": "selfdirected_queries_complexity_minimum_teaching_set_size",
+  "parameter_1_id": "#parameters/selfdirected_queries_complexity",
+  "parameter_2_id": "#parameters/minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "details": "For every finite concept class, $\\mathrm{SDC}(\\mathcal H)\\geq\\mathrm{TS}_{\\min}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "This is Lemma 7 of Doliwa--Fan--Simon--Zilles, attributed there to Kuhlmann: every finite concept class satisfies $\\mathrm{TS}_{\\min}(\\mathcal H)\\leq\\mathrm{SDC}(\\mathcal H)$.  It is a direct comparison of the two models, not a transitive graph inference.",
+  "references": "\\cite{doliwa2014recursive}"
+}

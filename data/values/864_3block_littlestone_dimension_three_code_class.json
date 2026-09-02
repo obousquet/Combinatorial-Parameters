@@ -1,0 +1,11 @@
+{
+  "id": 864,
+  "name": "3-Block Littlestone Dimension of the Three-Code Class",
+  "short_name": "3block_littlestone_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/3block_littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The block-Littlestone sandwich gives $\\mathrm{VC}\\leq\\mathrm B_3\\leq\\mathrm L$.  Both established endpoint values are one for this class, so $\\mathrm B_3=1$."
+}

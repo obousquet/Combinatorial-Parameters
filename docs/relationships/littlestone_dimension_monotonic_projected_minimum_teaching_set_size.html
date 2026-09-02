@@ -75,11 +75,11 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes; the right-hand side maximizes minimum teaching-set size over subclasses and coordinate projections.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Doliwa, Fan, Simon, and Zilles cite Kuhlmann's bound from minimum teaching-set size to self-directed learning, and prove that the optimal online mistake bound is twofold monotone (Corollary 8). The optimal online mistake bound is Littlestone dimension. Apply the bound to every subclass and projection, then take the maximum.</p></div>
+<strong>Details:</strong><div class="text-field"><p>Refuted.  The three-code class has $\mathrm{Ldim}=1$ and $\mathrm{TS}_{\min}^{*p}=2$.  The cited twofold-monotonicity statement does not yield a bound by the maximum-over-subclasses projected teaching quantity used here.</p></div>
+<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The three-code class $\{000,011,101\}$ has no complete Littlestone tree of depth two, hence $\mathrm{Ldim}=1$.  On the other hand, omitting a different coordinate makes each target the middle of a three-trace path, so its minimum projected teaching-set size is two and therefore $\mathrm{TS}_{\min}^{*p}=2$.  Hence $\mathrm{Ldim}<\mathrm{TS}_{\min}^{*p}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>

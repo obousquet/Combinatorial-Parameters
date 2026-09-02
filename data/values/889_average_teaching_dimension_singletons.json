@@ -1,0 +1,12 @@
+{
+  "id": 889,
+  "name": "Average Teaching Dimension of Singletons",
+  "short_name": "average_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every singleton, its unique positive coordinate is a teaching set of size one, and the empty sample identifies no target in the nontrivial class. Thus every individual value and their average equal one.",
+  "references": null
+}

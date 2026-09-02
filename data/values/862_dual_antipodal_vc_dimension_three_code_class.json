@@ -1,0 +1,11 @@
+{
+  "id": 862,
+  "name": "Dual Antipodal VC Dimension of the Three-Code Class",
+  "short_name": "dual_antipodal_vc_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/dual_antipodal_vc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For the two hypotheses $011,101$, the coordinate traces include $01$, $10$, and $11$; the last also represents its complement $00$.  Thus this pair is dually antipodally shattered.  On all three hypotheses, the realized traces and their complements are $000,011,101,111,100,010$, missing the complementary pair $001,110$.  Hence no triple is dually antipodally shattered and the value is two."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 848,
+  "name": "Log Shattering of the Three-Code Class",
+  "short_name": "log_shattering_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/log_shattering",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The empty set and all three singleton coordinate sets are shattered.  No coordinate pair is shattered because every two-coordinate projection has only three traces.  Hence there are $1+3=4$ shattered sets and their binary logarithm is two."
+}

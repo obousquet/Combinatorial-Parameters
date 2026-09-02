@@ -1,0 +1,11 @@
+{
+  "id": 861,
+  "name": "Dual VC Dimension of the Three-Code Class",
+  "short_name": "dual_vc_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/dual_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The three dual concepts, viewed on the three original hypotheses, are the coordinate columns $001,010,011$.  Each of the two nonconstant original hypotheses is shattered as a one-point dual domain.  Any dual two-point restriction realizes only three traces, so no pair is shattered.  Hence dual VC dimension is one."
+}

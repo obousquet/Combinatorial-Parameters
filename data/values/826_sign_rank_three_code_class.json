@@ -1,0 +1,12 @@
+{
+  "id": 826,
+  "name": "Sign Rank of the Three-Code Class",
+  "short_name": "sign_rank_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "In the concept order $(000,011,101)$, the coordinate sign columns are $(--+),(-+-),(-++)$.  They have a rank-two realization: take row vectors $p=(-1,0)$, $q=(1,1)$, $r=(1,-1)$, and column vectors $s=(1/2,-1)$, $t=(1/2,1)$, $w=(1,0)$, respectively.  The signs of their three corresponding dot-product columns are exactly the displayed columns.  Rank one is impossible because all nonzero columns of a rank-one real matrix have sign vectors that are equal or opposite, whereas $(--+)$ and $(-+-)$ are neither.  Hence the sign rank is two.",
+  "references": "\\cite{chornomaz2025spherical}"
+}

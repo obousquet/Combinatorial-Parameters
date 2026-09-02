@@ -1,0 +1,12 @@
+{
+  "id": 304,
+  "name": "Average Teaching Dimension / Minimum Teaching-Set Size",
+  "short_name": "average_teaching_dimension_minimum_teaching_set_size",
+  "parameter_1_id": "#parameters/average_teaching_dimension",
+  "parameter_2_id": "#parameters/minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "The arithmetic mean of the individual minimum teaching-set sizes is at least their minimum.",
+  "proof": "Every individual minimum teaching-set size is at least $\\mathrm{TS}_{\\mathrm{min}}$. Averaging over all concepts gives $\\mathrm{TS}_{\\mathrm{avg}}\\ge\\mathrm{TS}_{\\mathrm{min}}$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

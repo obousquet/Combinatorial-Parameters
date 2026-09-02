@@ -1,0 +1,11 @@
+{
+  "id": 837,
+  "name": "Effective VC Radius of the Three-Code Class",
+  "short_name": "effective_vc_radius_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate is nonconstant on the class and is therefore shattered.  On every pair of coordinates the class realizes exactly three of the four binary traces, so no pair is shattered.  Since the effective range is all three coordinates, the effective VC radius is exactly one."
+}

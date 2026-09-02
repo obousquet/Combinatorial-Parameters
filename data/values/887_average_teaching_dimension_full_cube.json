@@ -1,0 +1,12 @@
+{
+  "id": 887,
+  "name": "Average Teaching Dimension of the Full Cube",
+  "short_name": "average_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every full-cube concept needs all $n$ coordinates in a teaching set, since changing an omitted coordinate gives another consistent cube concept. Thus every individual value, and hence their average, is $n$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

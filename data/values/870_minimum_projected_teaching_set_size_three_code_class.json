@@ -1,0 +1,11 @@
+{
+  "id": 870,
+  "name": "Minimum Projected Teaching-Set Size of the Three-Code Class",
+  "short_name": "minimum_projected_teaching_set_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/minimum_projected_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each target requires two examples in a suitable two-coordinate projection.  Omitting $x_0$ gives the traces $000\\mapsto00$, $011\\mapsto01$, $101\\mapsto10$, so $000$ is the middle corner and both coordinates are needed to teach it.  Omitting $x_1$ similarly makes $011$ the middle corner, and omitting $x_2$ makes $101$ the middle corner.  Thus every target has worst projected teaching-set size at least two.  With only three distinct traces, two coordinates always suffice to distinguish any target in every projection, so the minimum is two."
+}

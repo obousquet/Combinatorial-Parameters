@@ -1,0 +1,11 @@
+{
+  "id": 853,
+  "name": "Minimum Teaching Set Size of the Three-Code Class",
+  "short_name": "minimum_teaching_set_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The third coordinate with label zero identifies $000$ among the three concepts.  The empty sample is consistent with every concept, so teaching-set size zero is impossible.  Thus the minimum teaching-set size is one."
+}

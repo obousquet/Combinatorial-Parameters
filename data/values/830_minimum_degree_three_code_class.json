@@ -1,0 +1,11 @@
+{
+  "id": 830,
+  "name": "Minimum Degree of the Three-Code Class",
+  "short_name": "minimum_degree_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The three strings $000,011,101$ are pairwise at Hamming distance two.  Hence every vertex of the $1$-inclusion graph is isolated, so its minimum degree is zero."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 859,
+  "name": "Majority Complexity of the Three-Code Class",
+  "short_name": "majority_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The pointwise majority hypothesis is $001$.  It differs from each of $000,011,101$ on exactly one coordinate, so a counterexample to this first majority query identifies the target.  One query therefore suffices, and zero cannot identify a three-concept class."
+}

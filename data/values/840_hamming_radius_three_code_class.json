@@ -1,0 +1,11 @@
+{
+  "id": 840,
+  "name": "Hamming Radius of the Three-Code Class",
+  "short_name": "hamming_radius_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/hamming_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The center $001$ is at Hamming distance one from each of $000,011,101$, so radius one suffices.  Radius zero contains only one binary string, whereas the class has three distinct concepts.  Hence the minimum enclosing radius is one."
+}

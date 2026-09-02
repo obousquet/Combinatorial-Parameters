@@ -1,0 +1,12 @@
+{
+  "id": 301,
+  "name": "Worst Mistakes / Projected Recursive Teaching Dimension",
+  "short_name": "worst_mistakes_monotone_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/worst_mistakes",
+  "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For finite concept classes, $\\mathrm{M}_{\\mathrm{worst}}(\\mathcal H)\\geq\\mathrm{RTD}^{p}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Corollary 8(2) of Doliwa--Fan--Simon--Zilles states $\\mathrm{RTD}^{*}(\\mathcal H)\\leq\\mathrm{Mopt}(\\mathcal H)$.  Their $\\mathrm{RTD}^{*}$ is the maximum recursive teaching dimension over coordinate projections, the catalogue's projected recursive teaching dimension, and $\\mathrm{Mopt}$ is the catalogue's worst-mistakes parameter.",
+  "references": "\\cite{doliwa2014recursive}"
+}

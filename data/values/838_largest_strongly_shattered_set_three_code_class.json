@@ -1,0 +1,11 @@
+{
+  "id": 838,
+  "name": "Largest Strongly Shattered Set of the Three-Code Class",
+  "short_name": "largest_strongly_shattered_set_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A nonempty strongly shattered set contains a one-dimensional subcube and hence gives an edge of the $1$-inclusion graph.  The three concepts are pairwise at Hamming distance two, so that graph is edgeless.  The empty set is strongly shattered, proving that the maximum size is zero."
+}

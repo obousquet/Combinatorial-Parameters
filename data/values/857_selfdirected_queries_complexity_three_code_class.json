@@ -1,0 +1,11 @@
+{
+  "id": 857,
+  "name": "Self-Directed Queries Complexity of the Three-Code Class",
+  "short_name": "selfdirected_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established chain $\\mathrm{RTD}\\leq\\mathrm{SDC}\\leq\\mathrm{LC}_{\\mathrm{partial}}$ has both endpoint values equal to one for this class.  Therefore self-directed query complexity is exactly one."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 877,
+  "name": "Interpolation Degree of the Three-Code Class",
+  "short_name": "interpolation_degree_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "In coordinate order $(x_0,x_1,x_2)$ the codewords are $000,110,101$.  The evaluation vectors of $1,x_1,x_2$ on these three points are $(1,1,1),(0,1,0),(0,0,1)$, which are linearly independent.  Thus degree-one polynomials interpolate every real-valued function on the class.  Degree zero only gives constants, so the interpolation degree is one."
+}

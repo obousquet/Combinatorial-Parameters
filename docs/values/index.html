@@ -8747,11 +8747,11 @@
         <p><strong>Name: </strong>Spherical Dimension of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/spherical_dimension.html">Spherical Dimension</a></p>
-<p><strong>Value: </strong>$n-2\leq\mathrm{sd}(\mathcal U_n)\leq n-1$</p>
+<p><strong>Value: </strong>$\begin{cases}n-2&n\text{ odd},\\n-2\leq\mathrm{sd}(\mathcal U_n)\leq n-1&n\text{ even}.\end{cases}$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Lemma 2 of the cited paper proves $n-2\leq\mathrm{sd}(\mathcal U_n)\leq n-1$ (and gives the exact lower endpoint when $n$ is odd).</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Lemma 2 of the cited paper proves $n-2\leq\mathrm{sd}(\mathcal U_n)\leq n-1$ and, more sharply, $\mathrm{sd}(\mathcal U_n)=n-2$ for odd $n$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
 
         </div>
@@ -13156,6 +13156,1213 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The established Blockwise-Addressing bound gives $\mathrm{coVC}\ge2^d+1$. The direct affine relation $\mathrm S\ge\mathrm{coVC}-1$ therefore gives $\mathrm S\ge2^d$. Conversely any $r$-star uses its centre and $r$ distinct leaves, so $r\le|\mathcal H|-1=2^{d+1}-1$. This proves the displayed interval.</p></div>
 <strong>References:</strong><div class="text-field"><p>Derived from the established Blockwise-Addressing co-VC bound and the direct star/co-VC and size/star relationships; see <a href="bibliography.html#ben1997online">[ben1997online]</a> <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-825" style="position:relative;">
+        
+        <h3><a href="values/spherical_dimension_three_code_class.html" class="table-title-link">Spherical Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Spherical Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/spherical_dimension.html">Spherical Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Write the three concepts as $a=000$, $b=011$, and $c=101$.  Across these concepts, the three coordinates have minority singleton supports $\{c\}$, $\{b\}$, and $\{a\}$, respectively; coordinate bit flips do not change those minority singleton supports.  In a threshold subclass, every nonconstant coordinate is an initial or final segment of one common linear order of the concepts, so its minority singleton must be an endpoint.  A three-element order has only two endpoints, so this class is not, even after bit flips, a threshold subclass.  Its established VC dimension is one.  Lemma 31 of the cited paper classifies precisely this case as spherical dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-826" style="position:relative;">
+        
+        <h3><a href="values/sign_rank_three_code_class.html" class="table-title-link">Sign Rank of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sign Rank of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>In the concept order $(000,011,101)$, the coordinate sign columns are $(--+),(-+-),(-++)$.  They have a rank-two realization: take row vectors $p=(-1,0)$, $q=(1,1)$, $r=(1,-1)$, and column vectors $s=(1/2,-1)$, $t=(1/2,1)$, $w=(1,0)$, respectively.  The signs of their three corresponding dot-product columns are exactly the displayed columns.  Rank one is impossible because all nonzero columns of a rank-one real matrix have sign vectors that are equal or opposite, whereas $(--+)$ and $(-+-)$ are neither.  Hence the sign rank is two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-827" style="position:relative;">
+        
+        <h3><a href="values/sco_dimension_three_code_class.html" class="table-title-link">SCO Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>SCO Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/sco_dimension.html">SCO Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The established spherical dimension of this class is one.  Theorem 12 of Chornomaz--Moran--Waknine gives $\mathrm{sd}(\mathcal H)+1\leq\mathrm{SCO}(\mathcal H)\leq\mathrm{SR}(\mathcal H)$.  The directly verified sign-rank value here is two, so the two bounds coincide at $\mathrm{SCO}=2$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-828" style="position:relative;">
+        
+        <h3><a href="values/dual_sign_rank_three_code_class.html" class="table-title-link">Dual Sign Rank of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dual Sign Rank of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The coordinate sign columns are $(--+),(-+-),(-++)$.  Any two are neither equal nor opposite.  Hence in every realizing real matrix, any selected pair is linearly independent: dependent nonzero columns would have identical signs (positive scalar multiple) or opposite signs (negative scalar multiple).  Thus dual sign rank is at least two.  It is at most sign rank, whose directly verified value for this class is two.  Therefore the dual sign rank is exactly two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-829" style="position:relative;">
+        
+        <h3><a href="values/maximum_degree_three_code_class.html" class="table-title-link">Maximum Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/maximum_degree.html">Maximum Degree</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The three strings $000,011,101$ are pairwise at Hamming distance two.  Thus the $1$-inclusion graph has no edges and its maximum degree is zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-830" style="position:relative;">
+        
+        <h3><a href="values/minimum_degree_three_code_class.html" class="table-title-link">Minimum Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_degree.html">Minimum Degree</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The three strings $000,011,101$ are pairwise at Hamming distance two.  Hence every vertex of the $1$-inclusion graph is isolated, so its minimum degree is zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-831" style="position:relative;">
+        
+        <h3><a href="values/degeneracy_three_code_class.html" class="table-title-link">Degeneracy of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Degeneracy of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Its $1$-inclusion graph is edgeless because its three concepts are pairwise at Hamming distance two.  Every nonempty induced subgraph therefore has minimum degree zero, which is exactly the degeneracy.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-832" style="position:relative;">
+        
+        <h3><a href="values/double_density_or_average_degree_three_code_class.html" class="table-title-link">Double Density or Average Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Double Density or Average Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/double_density_or_average_degree.html">Double Density or Average Degree</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Its $1$-inclusion graph has no edges: $000,011,101$ are pairwise at Hamming distance two.  Its average degree, equivalently its double density, is therefore zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-833" style="position:relative;">
+        
+        <h3><a href="values/densest_subgraph_twice_three_code_class.html" class="table-title-link">Densest Subgraph (twice) of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Densest Subgraph (twice) of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/densest_subgraph_twice.html">Densest Subgraph (twice)</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The $1$-inclusion graph is edgeless, and so is every one of its subgraphs.  Every subgraph consequently has average degree zero, proving that its densest-subgraph double density is zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-834" style="position:relative;">
+        
+        <h3><a href="values/maximum_positive_degree_three_code_class.html" class="table-title-link">Maximum Positive Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Positive Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There are no edges in the $1$-inclusion graph, since every pair of distinct concepts differs on two coordinates.  Thus no concept has a smaller adjacent neighbour and every positive degree is zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-835" style="position:relative;">
+        
+        <h3><a href="values/projected_minimum_degree_three_code_class.html" class="table-title-link">Projected Minimum Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Minimum Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On any one coordinate, the projection is the full one-cube, whose minimum degree is one.  On two coordinates, every projection is a three-vertex path and has minimum degree one; on all three coordinates it is edgeless, and the empty projection has degree zero.  Hence the maximum projected minimum degree is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-836" style="position:relative;">
+        
+        <h3><a href="values/projected_double_density_or_projected_average_degree_three_code_class.html" class="table-title-link">Projected Double Density or Projected Average Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Double Density or Projected Average Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
+<p><strong>Value: </strong>$\frac{4}{3}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A one-coordinate projection is one edge and has average degree one.  Every two-coordinate projection is the three-vertex path with two edges, hence average degree $4/3$.  The full projection is edgeless and the empty projection has degree zero.  Thus the maximum projected average degree is $4/3$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-837" style="position:relative;">
+        
+        <h3><a href="values/effective_vc_radius_three_code_class.html" class="table-title-link">Effective VC Radius of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective VC Radius of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate is nonconstant on the class and is therefore shattered.  On every pair of coordinates the class realizes exactly three of the four binary traces, so no pair is shattered.  Since the effective range is all three coordinates, the effective VC radius is exactly one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-838" style="position:relative;">
+        
+        <h3><a href="values/largest_strongly_shattered_set_three_code_class.html" class="table-title-link">Largest Strongly Shattered Set of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Largest Strongly Shattered Set of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A nonempty strongly shattered set contains a one-dimensional subcube and hence gives an edge of the $1$-inclusion graph.  The three concepts are pairwise at Hamming distance two, so that graph is edgeless.  The empty set is strongly shattered, proving that the maximum size is zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-839" style="position:relative;">
+        
+        <h3><a href="values/diameter_three_code_class.html" class="table-title-link">Diameter of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Diameter of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/diameter.html">Diameter</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Each pair among $000,011,101$ differs on exactly two coordinates.  Thus the largest Hamming distance between concepts in the class is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-840" style="position:relative;">
+        
+        <h3><a href="values/hamming_radius_three_code_class.html" class="table-title-link">Hamming Radius of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hamming Radius of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The center $001$ is at Hamming distance one from each of $000,011,101$, so radius one suffices.  Radius zero contains only one binary string, whereas the class has three distinct concepts.  Hence the minimum enclosing radius is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-841" style="position:relative;">
+        
+        <h3><a href="values/oriented_diameter_three_code_class.html" class="table-title-link">Oriented Diameter of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Oriented Diameter of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/oriented_diameter.html">Oriented Diameter</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restricting $000$ and $011$ to the two coordinates where they differ gives the oriented pair $\emptyset,\{1,2\}$, so the value is at least two.  An oriented pair on three coordinates would require the all-zero and all-one traces on the full domain, but neither $111$ nor any other three-one concept is in the class.  Thus the value is exactly two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-842" style="position:relative;">
+        
+        <h3><a href="values/distinguishing_range_three_code_class.html" class="table-title-link">Distinguishing Range of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Distinguishing Range of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/distinguishing_range.html">Distinguishing Range</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>One binary coordinate has only two possible traces and cannot distinguish all three concepts.  On the first two coordinates, the traces are $00,01,10$, which are distinct.  Hence exactly two coordinates are necessary and sufficient.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-843" style="position:relative;">
+        
+        <h3><a href="values/threshold_dimension_three_code_class.html" class="table-title-link">Threshold Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Threshold Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/threshold_dimension.html">Threshold Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the first and third coordinates, the traces are $00,01,11$, which form a threshold chain of length two.  A length-three threshold chain requires four distinct traces on three coordinates, but the class has only three concepts.  Therefore the threshold dimension is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-844" style="position:relative;">
+        
+        <h3><a href="values/path_dimension_three_code_class.html" class="table-title-link">Path Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Path Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/path_dimension.html">Path Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the first two coordinates, the traces $01,00,10$ form a full path of length two: flip the second coordinate and then the first.  A full path of length three has four distinct successive traces, whereas this class has only three concepts.  Hence the path dimension is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-845" style="position:relative;">
+        
+        <h3><a href="values/largest_shattered_set_three_code_class.html" class="table-title-link">Largest Shattered Set of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Largest Shattered Set of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/largest_shattered_set.html">Largest Shattered Set</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Largest Shattered Set is the VC dimension by definition.  The established VC dimension of this class is one, so this value is one as well.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-846" style="position:relative;">
+        
+        <h3><a href="values/projected_strongly_shattered_dimension_three_code_class.html" class="table-title-link">Projected Strongly Shattered Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Strongly Shattered Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_strongly_shattered_dimension.html">Projected Strongly Shattered Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected strongly shattered dimension equals VC dimension: a set shattered by the class becomes a contained cube after projecting to that set.  The established VC dimension of the three-code class is one, proving this value.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-847" style="position:relative;">
+        
+        <h3><a href="values/log_size_three_code_class.html" class="table-title-link">Log Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Log Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/log_size.html">Log Size</a></p>
+<p><strong>Value: </strong>$\log_2 3$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly the three distinct concepts $000,011,101$.  Its binary logarithmic size is therefore $\log_2 3$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-848" style="position:relative;">
+        
+        <h3><a href="values/log_shattering_three_code_class.html" class="table-title-link">Log Shattering of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Log Shattering of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/log_shattering.html">Log Shattering</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The empty set and all three singleton coordinate sets are shattered.  No coordinate pair is shattered because every two-coordinate projection has only three traces.  Hence there are $1+3=4$ shattered sets and their binary logarithm is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-849" style="position:relative;">
+        
+        <h3><a href="values/log_size_ratio_three_code_class.html" class="table-title-link">Log Size Ratio of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Log Size Ratio of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/log_size_ratio.html">Log Size Ratio</a></p>
+<p><strong>Value: </strong>$\frac12$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has three concepts on a three-point domain.  Substitution into $\log_2(|\mathcal H|-1)/\log_2(n+1)$ gives $\log_2 2/\log_2 4=1/2$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-850" style="position:relative;">
+        
+        <h3><a href="values/maximum_largest_order_shattered_set_three_code_class.html" class="table-title-link">Maximum Largest Order Shattered Set of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Largest Order Shattered Set of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/maximum_largest_order_shattered_set.html">Maximum Largest Order Shattered Set</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Maximum Largest Order Shattered Set equals VC dimension by definition.  The established VC dimension of the three-code class is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-851" style="position:relative;">
+        
+        <h3><a href="values/projected_vc_radius_three_code_class.html" class="table-title-link">Projected VC Radius of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected VC Radius of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_vc_radius.html">Projected VC Radius</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected VC radius equals VC dimension.  The established VC dimension of this class is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-852" style="position:relative;">
+        
+        <h3><a href="values/monotonic_minimum_teaching_set_size_three_code_class.html" class="table-title-link">Monotonic Minimum Teaching Set Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Monotonic Minimum Teaching Set Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For finite classes, monotonic minimum teaching-set size equals recursive teaching dimension.  The established recursive teaching dimension of this class is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-853" style="position:relative;">
+        
+        <h3><a href="values/minimum_teaching_set_size_three_code_class.html" class="table-title-link">Minimum Teaching Set Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Teaching Set Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The third coordinate with label zero identifies $000$ among the three concepts.  The empty sample is consistent with every concept, so teaching-set size zero is impossible.  Thus the minimum teaching-set size is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-854" style="position:relative;">
+        
+        <h3><a href="values/hitting_size_three_code_class.html" class="table-title-link">Hitting Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hitting Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/hitting_size.html">Hitting Size</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Interpreting strings as supports, the two nonempty concepts are $\{2,3\}$ and $\{1,3\}$, which share their third coordinate.  That coordinate is a hitting set, while the empty set cannot hit either nonempty concept.  Hence the hitting size is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-855" style="position:relative;">
+        
+        <h3><a href="values/relative_hitting_size_three_code_class.html" class="table-title-link">Relative Hitting Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Relative Hitting Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Relative hitting size equals the maximum teaching-set size.  The established teaching dimension of this class is one, so its relative hitting size is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-856" style="position:relative;">
+        
+        <h3><a href="values/best_mistakes_three_code_class.html" class="table-title-link">Best Mistakes of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Best Mistakes of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Present the third coordinate first and predict one.  A negative answer makes one mistake and identifies $000$.  After a positive answer, query the first coordinate and predict zero: it is correct for $011$, and its one possible mistake identifies $101$.  Thus at most one mistake occurs.  Zero mistakes are impossible for a nonconstant class, so the value is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-857" style="position:relative;">
+        
+        <h3><a href="values/selfdirected_queries_complexity_three_code_class.html" class="table-title-link">Self-Directed Queries Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Self-Directed Queries Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The established chain $\mathrm{RTD}\leq\mathrm{SDC}\leq\mathrm{LC}_{\mathrm{partial}}$ has both endpoint values equal to one for this class.  Therefore self-directed query complexity is exactly one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-858" style="position:relative;">
+        
+        <h3><a href="values/worst_mistakes_three_code_class.html" class="table-title-link">Worst Mistakes of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is at least VC dimension, whose established value is one.  It is at most Littlestone dimension because the fixed-sequence class trees are among all Littlestone trees; the established Littlestone dimension is also one.  Hence worst mistakes equals one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-859" style="position:relative;">
+        
+        <h3><a href="values/majority_complexity_three_code_class.html" class="table-title-link">Majority Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The pointwise majority hypothesis is $001$.  It differs from each of $000,011,101$ on exactly one coordinate, so a counterexample to this first majority query identifies the target.  One query therefore suffices, and zero cannot identify a three-concept class.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-860" style="position:relative;">
+        
+        <h3><a href="values/combinatorial_eluder_dimension_three_code_class.html" class="table-title-link">Combinatorial Eluder Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Use $000$ as base.  First query the first coordinate with witness $101$; then query the second coordinate with witness $011$, which agrees with the base at the first coordinate.  This gives a length-two eluder sequence.  Such witnesses are distinct and cannot equal the base, so a class of three concepts admits no sequence longer than two.  Thus the value is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-861" style="position:relative;">
+        
+        <h3><a href="values/dual_vc_dimension_three_code_class.html" class="table-title-link">Dual VC Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dual VC Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/dual_vc_dimension.html">Dual VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The three dual concepts, viewed on the three original hypotheses, are the coordinate columns $001,010,011$.  Each of the two nonconstant original hypotheses is shattered as a one-point dual domain.  Any dual two-point restriction realizes only three traces, so no pair is shattered.  Hence dual VC dimension is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-862" style="position:relative;">
+        
+        <h3><a href="values/dual_antipodal_vc_dimension_three_code_class.html" class="table-title-link">Dual Antipodal VC Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dual Antipodal VC Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/dual_antipodal_vc_dimension.html">Dual Antipodal VC Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the two hypotheses $011,101$, the coordinate traces include $01$, $10$, and $11$; the last also represents its complement $00$.  Thus this pair is dually antipodally shattered.  On all three hypotheses, the realized traces and their complements are $000,011,101,111,100,010$, missing the complementary pair $001,110$.  Hence no triple is dually antipodally shattered and the value is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-863" style="position:relative;">
+        
+        <h3><a href="values/2block_littlestone_dimension_three_code_class.html" class="table-title-link">2-Block Littlestone Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>2-Block Littlestone Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The block-Littlestone sandwich gives $\mathrm{VC}\leq\mathrm B_2\leq\mathrm L$.  Both established endpoint values are one for this class, so $\mathrm B_2=1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-864" style="position:relative;">
+        
+        <h3><a href="values/3block_littlestone_dimension_three_code_class.html" class="table-title-link">3-Block Littlestone Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>3-Block Littlestone Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The block-Littlestone sandwich gives $\mathrm{VC}\leq\mathrm B_3\leq\mathrm L$.  Both established endpoint values are one for this class, so $\mathrm B_3=1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-865" style="position:relative;">
+        
+        <h3><a href="values/kblock_littlestone_dimension_three_code_class.html" class="table-title-link">$k$-Block Littlestone Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq2$, the block-Littlestone sandwich gives $\mathrm{VC}\leq\mathrm B_k\leq\mathrm L$.  Both established endpoint values are one for this class, so $\mathrm B_k=1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-866" style="position:relative;">
+        
+        <h3><a href="values/prefix_littlestone_dimension_three_code_class.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq1$, a one-point VC witness is a prefix-$k$ tree of depth one, while every prefix-$k$ tree is an ordinary Littlestone tree.  The established VC and Littlestone dimensions are both one, forcing $\mathrm{PL}_k=1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-867" style="position:relative;">
+        
+        <h3><a href="values/positive_teaching_dimension_three_code_class.html" class="table-title-link">Positive Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\infty$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The concept $000$ has no positive examples.  Its only positive sample is therefore empty, but that sample is also consistent with $011$ and $101$.  Hence $000$ has no finite positive teaching set, so the positive teaching dimension is infinite.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-868" style="position:relative;">
+        
+        <h3><a href="values/order_sample_compression_three_code_class.html" class="table-title-link">Order Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Order Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Order the decoded hypotheses as $000<011<101$.  A sample whose least compatible hypothesis is $000$ needs no retained example.  If its least compatible hypothesis is $011$, the sample must exclude $000$, so retaining $x_0=1$ excludes the only earlier hypothesis.  If it is $101$, the sample must exclude both earlier hypotheses, and retaining $x_2=1$ does so.  Thus this is an order scheme of size one.  Size zero is impossible because one fixed reconstruction cannot be consistent with the distinct full samples $000$ and $011$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-869" style="position:relative;">
+        
+        <h3><a href="values/proper_ordered_sample_compression_three_code_class.html" class="table-title-link">Proper Ordered Sample Compression of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Ordered Sample Compression of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Use the order $000<011<101$.  The order-compression construction retaining nothing for $000$, $x_0=1$ for $011$, and $x_2=1$ for $101$ decodes only to these three class members, so it is proper and has size one.  A size-zero scheme has one fixed proper reconstruction and cannot be consistent with both full samples $000$ and $011$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-870" style="position:relative;">
+        
+        <h3><a href="values/minimum_projected_teaching_set_size_three_code_class.html" class="table-title-link">Minimum Projected Teaching-Set Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Projected Teaching-Set Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_projected_teaching_set_size.html">Minimum Projected Teaching Set Size</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Each target requires two examples in a suitable two-coordinate projection.  Omitting $x_0$ gives the traces $000\mapsto00$, $011\mapsto01$, $101\mapsto10$, so $000$ is the middle corner and both coordinates are needed to teach it.  Omitting $x_1$ similarly makes $011$ the middle corner, and omitting $x_2$ makes $101$ the middle corner.  Thus every target has worst projected teaching-set size at least two.  With only three distinct traces, two coordinates always suffice to distinguish any target in every projection, so the minimum is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-871" style="position:relative;">
+        
+        <h3><a href="values/monotonic_projected_minimum_teaching_set_size_three_code_class.html" class="table-title-link">Monotonic Projected Minimum Teaching-Set Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Monotonic Projected Minimum Teaching-Set Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The three-concept subfamily itself has minimum projected teaching-set size two, so the monotonic maximum is at least two.  No subfamily has more than three distinct traces, and a target trace among at most three traces is always distinguished by at most two coordinates in any projection.  Hence every subfamily has minimum projected teaching-set size at most two, and the maximum is exactly two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-872" style="position:relative;">
+        
+        <h3><a href="values/minimum_largest_order_shattered_set_three_code_class.html" class="table-title-link">Minimum Largest Order Shattered Set of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Largest Order Shattered Set of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every coordinate order, downshifting preserves the class cardinality three and yields a nontrivial downset.  Such a downset contains a one-cube, so its largest order-shattered set has size at least one.  A two-cube has four traces, which cannot occur in a three-trace shifted class.  Thus the largest order-shattered set has size exactly one for every order, and so does the minimum over orders.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-873" style="position:relative;">
+        
+        <h3><a href="values/balbach_teaching_dimension_three_code_class.html" class="table-title-link">Balbach Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Balbach Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For this class, ordinary teaching dimension and recursive teaching dimension are both one.  The established finite-class sandwich $\mathrm{TD}\geq\mathrm{BTD}\geq\mathrm{RTD}$ therefore gives $\mathrm{BTD}=1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-874" style="position:relative;">
+        
+        <h3><a href="values/occasional_onesided_getback_three_code_class.html" class="table-title-link">Occasional One-Sided Getback of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Occasional One-Sided Getback of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The established O1G bounds put unlabeled sample compression below O1G and Littlestone dimension above it.  Both endpoint values are one for the three-code class, so $\mathrm{M}_{\mathrm{o1g}}=1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-875" style="position:relative;">
+        
+        <h3><a href="values/randomized_littlestone_dimension_three_code_class.html" class="table-title-link">Randomized Littlestone Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Randomized Littlestone Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\frac34$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Query $x_0$ first: its zero branch identifies $000$, while its one branch contains $011,101$ and is separated by $x_1$.  This shattered tree has expected random-branch depth $3/2$, giving value $3/4$.  Conversely, every shattered tree has at most three leaves, and a binary tree with at most three leaves has expected random-branch depth at most $3/2$.  Hence $\mathrm{RL}=3/4$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-876" style="position:relative;">
+        
+        <h3><a href="values/subset_teaching_dimension_three_code_class.html" class="table-title-link">Subset Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The ordinary one-point teaching samples $x_0=0$ for $000$, $x_1=1$ for $011$, and $x_2=1$ for $101$ are each contained in no ordinary minimum teaching sample of either other target.  They therefore remain subset-teaching samples at every iteration.  An empty sample identifies no target, so the stabilized maximum is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-877" style="position:relative;">
+        
+        <h3><a href="values/interpolation_degree_three_code_class.html" class="table-title-link">Interpolation Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interpolation Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>In coordinate order $(x_0,x_1,x_2)$ the codewords are $000,110,101$.  The evaluation vectors of $1,x_1,x_2$ on these three points are $(1,1,1),(0,1,0),(0,0,1)$, which are linearly independent.  Thus degree-one polynomials interpolate every real-valued function on the class.  Degree zero only gives constants, so the interpolation degree is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-878" style="position:relative;">
+        
+        <h3><a href="values/extremal_extension_vc_dimension_three_code_class.html" class="table-title-link">Extremal-Extension VC Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Extremal-Extension VC Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/extremal_extension_vc_dimension.html">Extremal-Extension VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has VC dimension one, giving the lower bound.  Add the codeword $001$ to obtain $\mathcal E=\{000,011,101,001\}$.  Every singleton coordinate is shattered, while each two-coordinate projection has only three traces: the new trace repeats an existing trace in every such projection.  Hence the shattered sets of $\mathcal E$ are precisely the empty set and its three singletons, four in total, equal to $|\mathcal E|$.  Thus $\mathcal E$ is extremal with VC dimension one and proves the matching upper bound.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-879" style="position:relative;">
+        
+        <h3><a href="values/list_replicability_three_code_class.html" class="table-title-link">List Replicability Number of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>List Replicability Number of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/list_replicability.html">List Replicability Number</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The three-code class has spherical dimension one.  The spherical-dimension list-replicability theorem therefore gives $\mathrm{LR}\geq\lceil(1+3)/2\rceil=2$.  Its sign rank is two, and the established sign-rank upper bound gives $\mathrm{LR}\leq2$.  Hence $\mathrm{LR}=2$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a> <a href="bibliography.html#blondal2026simplicialcovering">[blondal2026simplicialcovering]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-880" style="position:relative;">
+        
+        <h3><a href="values/projected_membership_queries_complexity_three_code_class.html" class="table-title-link">Projected Membership Queries Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Membership Queries Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The star number is two, so the established star lower bound gives $\mathrm Q_{\mathrm m}^p\geq2$.  Every projection has at most three distinct traces.  If it has three, query a coordinate that separates one trace from the other two and then, only on the two-trace branch, a coordinate that separates those; if it has fewer, one query suffices.  Thus every projection is learned with at most two membership queries, proving equality.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-881" style="position:relative;">
+        
+        <h3><a href="values/radon_number_three_code_class.html" class="table-title-link">Radon Number of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Radon Number of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/radon_number.html">Radon Number</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The whole three-concept class is Radon independent.  For each partition into a singleton and a pair, the pair agrees on one coordinate on which the singleton disagrees: $011,101$ agree at $x_0=1$; $000,101$ agree at $x_1=0$; and $000,011$ agree at $x_2=0$.  The pair's convex hull is consequently disjoint from the singleton's hull.  This checks every nontrivial partition, and no Radon-independent subset can have more than the three available concepts.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-882" style="position:relative;">
+        
+        <h3><a href="values/selfdirected_queries_complexity_halfintervals.html" class="table-title-link">Self-Directed Queries Complexity of Half-Intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Self-Directed Queries Complexity of Half-Intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The half-interval class has VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles states that every nontrivial VC-one class has self-directed learning complexity one.  The class is nontrivial, so the value is exactly one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-883" style="position:relative;">
+        
+        <h3><a href="values/selfdirected_queries_complexity_tagged_singletons.html" class="table-title-link">Self-Directed Queries Complexity of Tagged Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Self-Directed Queries Complexity of Tagged Singletons</p>
+<p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Tagged singletons have VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles gives self-directed learning complexity one for every nontrivial VC-one class.  Thus the value is one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-884" style="position:relative;">
+        
+        <h3><a href="values/order_sample_compression_tagged_singletons.html" class="table-title-link">Order Sample Compression of Tagged Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Order Sample Compression of Tagged Singletons</p>
+<p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Tagged singletons have VC dimension one.  Corollary 4 of Darnstädt--Kiss--Simon--Zilles gives an order-compression scheme of size one for every VC-one class.  A nontrivial class cannot have order-compression size zero, because one fixed reconstruction cannot be consistent with two distinct full samples.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-885" style="position:relative;">
+        
+        <h3><a href="values/recursive_teaching_dimension_repetitionfree_teaching_separation.html" class="table-title-link">Recursive Teaching Dimension of the Repetition-Free Teaching Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursive Teaching Dimension of the Repetition-Free Teaching Separation Class</p>
+<p><strong>Class: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The source gives a recursive teaching plan of order two for this thirteen-concept class, and proves that its recursive teaching dimension is exactly two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-886" style="position:relative;">
+        
+        <h3><a href="values/repetitionfree_recursive_teaching_dimension_repetitionfree_teaching_separation.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension of the Repetition-Free Teaching Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension of the Repetition-Free Teaching Separation Class</p>
+<p><strong>Class: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Doliwa--Fan--Simon--Zilles prove that every order-two teaching plan repeats the coordinate set $\{x_1,x_2\}$ for its first two concepts, while an order-three repetition-free plan exists.  Thus $\mathrm{rfRTD}=3$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-887" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_full_cube.html" class="table-title-link">Average Teaching Dimension of the Full Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of the Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every full-cube concept needs all $n$ coordinates in a teaching set, since changing an omitted coordinate gives another consistent cube concept. Thus every individual value, and hence their average, is $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-888" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_trivial_concepts.html" class="table-title-link">Average Teaching Dimension of Trivial Concepts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of Trivial Concepts</p>
+<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>One coordinate with the target's label distinguishes either of the two constant concepts, while the empty sample does not. Both individual minimum teaching-set sizes are one, so their average is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-889" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_singletons.html" class="table-title-link">Average Teaching Dimension of Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every singleton, its unique positive coordinate is a teaching set of size one, and the empty sample identifies no target in the nontrivial class. Thus every individual value and their average equal one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-890" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_singletons_plus_empty_set.html" class="table-title-link">Average Teaching Dimension of Singletons plus Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of Singletons plus Empty Set</p>
+<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\frac{2n}{n+1}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Each of the $n$ singleton concepts is taught by its positive coordinate. The empty concept requires all $n$ negative coordinates to exclude every singleton. Averaging the total $n+n$ over the $n+1$ concepts gives $2n/(n+1)$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-891" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_halfintervals.html" class="table-title-link">Average Teaching Dimension of Half-Intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of Half-Intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\begin{cases}0&n=1,\\2-\frac2n&n\ge2.\end{cases}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n\ge2$, the two endpoint initial intervals have one-coordinate teaching sets, while every one of the $n-2$ interior intervals needs and has the adjacent positive/negative pair. Their total is $2+2(n-2)=2n-2$, whose average is $2-2/n$. For $n=1$, the unique concept has the empty teaching set, so the value is zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-892" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_addressing.html" class="table-title-link">Average Teaching Dimension of Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Both the established minimum teaching-set size and teaching dimension of Addressing are one. Every individual minimum teaching-set size is therefore one, so their average is one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-893" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_three_code_class.html" class="table-title-link">Average Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The three-code class has both minimum teaching-set size and teaching dimension equal to one. Thus every concept has minimum teaching-set size one, and the average is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-894" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_universal_class.html" class="table-title-link">Average Teaching Dimension of the Universal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of the Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The established minimum teaching-set size and teaching dimension of the universal class are both one. Hence every individual minimum teaching-set size equals one, giving average teaching dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a> <a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-895" style="position:relative;">
+        
+        <h3><a href="values/average_teaching_dimension_warmuth_c5.html" class="table-title-link">Average Teaching Dimension of Warmuth's $C_5$ Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Average Teaching Dimension of Warmuth's $C_5$ Class</p>
+<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Warmuth's $C_5$ class has both established minimum teaching-set size and teaching dimension equal to three. Therefore every individual minimum teaching-set size is three, and so is their average.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a></p></div>
 
         </div>
     </div>

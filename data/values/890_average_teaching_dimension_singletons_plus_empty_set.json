@@ -1,0 +1,12 @@
+{
+  "id": 890,
+  "name": "Average Teaching Dimension of Singletons plus Empty Set",
+  "short_name": "average_teaching_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$\\frac{2n}{n+1}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each of the $n$ singleton concepts is taught by its positive coordinate. The empty concept requires all $n$ negative coordinates to exclude every singleton. Averaging the total $n+n$ over the $n+1$ concepts gives $2n/(n+1)$.",
+  "references": null
+}

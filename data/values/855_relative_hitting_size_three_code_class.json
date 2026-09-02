@@ -1,0 +1,11 @@
+{
+  "id": 855,
+  "name": "Relative Hitting Size of the Three-Code Class",
+  "short_name": "relative_hitting_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Relative hitting size equals the maximum teaching-set size.  The established teaching dimension of this class is one, so its relative hitting size is one."
+}

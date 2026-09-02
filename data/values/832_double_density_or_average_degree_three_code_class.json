@@ -1,0 +1,11 @@
+{
+  "id": 832,
+  "name": "Double Density or Average Degree of the Three-Code Class",
+  "short_name": "double_density_or_average_degree_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Its $1$-inclusion graph has no edges: $000,011,101$ are pairwise at Hamming distance two.  Its average degree, equivalently its double density, is therefore zero."
+}

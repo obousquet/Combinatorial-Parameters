@@ -3,9 +3,10 @@
   "parameter_1_id": "#parameters/order_sample_compression",
   "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
   "relationship_type": "larger",
-  "details": "For finite concept classes; projected recursive teaching dimension is a lower bound for order compression.",
+  "details": "For finite concept classes; projected recursive teaching dimension is a lower bound for order compression (Theorem 4).",
   "short_name": "order_sample_compression_monotone_recursive_teaching_dimension",
   "name": "Order Sample Compression / Projected Recursive Teaching Dimension",
   "status": "established",
-  "references": "\\cite{darnstadt2016order}"
+  "references": "\\cite{darnstadt2016order}",
+  "proof": "For every coordinate set, Theorem 1 restricts an order scheme to that projection without increasing its size.  The maximal teaching-plan argument of Lemma 1 lower-bounds the resulting order-scheme size by the recursive teaching dimension of that projection.  Taking the maximum over projections is Theorem 4."
 }

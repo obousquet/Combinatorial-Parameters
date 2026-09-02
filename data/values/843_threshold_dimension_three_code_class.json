@@ -1,0 +1,11 @@
+{
+  "id": 843,
+  "name": "Threshold Dimension of the Three-Code Class",
+  "short_name": "threshold_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/threshold_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On the first and third coordinates, the traces are $00,01,11$, which form a threshold chain of length two.  A length-three threshold chain requires four distinct traces on three coordinates, but the class has only three concepts.  Therefore the threshold dimension is two."
+}

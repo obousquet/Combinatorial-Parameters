@@ -1,0 +1,12 @@
+{
+  "id": 893,
+  "name": "Average Teaching Dimension of the Three-Code Class",
+  "short_name": "average_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The three-code class has both minimum teaching-set size and teaching dimension equal to one. Thus every concept has minimum teaching-set size one, and the average is one.",
+  "references": null
+}

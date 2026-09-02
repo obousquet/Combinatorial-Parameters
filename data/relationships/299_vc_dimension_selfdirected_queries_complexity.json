@@ -1,0 +1,12 @@
+{
+  "id": 299,
+  "name": "VC Dimension / Self-Directed Queries Complexity",
+  "short_name": "vc_dimension_selfdirected_queries_complexity",
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/selfdirected_queries_complexity",
+  "relationship_type": "larger",
+  "details": "Refuted: self-directed query complexity has no upper bound that depends only on VC dimension.  Ben-David--Eiron construct, for every fixed $d\\geq3$ and arbitrarily large $n$, a finite class $\\mathcal C^d_n$ with $\\mathrm{VC}(\\mathcal C^d_n)=d$ and $\\mathrm{SDC}(\\mathcal C^d_n)=\\Theta(n)$.",
+  "status": "refuted",
+  "proof": "Lemma 1 of the cited paper constructs the classes $\\mathcal C^d_n$ and establishes the displayed fixed-VC, unbounded-self-directed-complexity behavior.  Consequently no function of VC dimension alone can universally upper-bound $\\mathrm{SDC}$.",
+  "references": "\\cite{ben1998self}"
+}

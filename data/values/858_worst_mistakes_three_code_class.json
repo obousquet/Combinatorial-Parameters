@@ -1,0 +1,11 @@
+{
+  "id": 858,
+  "name": "Worst Mistakes of the Three-Code Class",
+  "short_name": "worst_mistakes_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Worst mistakes is at least VC dimension, whose established value is one.  It is at most Littlestone dimension because the fixed-sequence class trees are among all Littlestone trees; the established Littlestone dimension is also one.  Hence worst mistakes equals one."
+}

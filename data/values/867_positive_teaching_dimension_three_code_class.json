@@ -1,0 +1,10 @@
+{
+  "id": 867,
+  "name": "Positive Teaching Dimension of the Three-Code Class",
+  "short_name": "positive_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/positive_teaching_dimension",
+  "value": "$\\infty$",
+  "status": "established",
+  "proof": "The concept $000$ has no positive examples.  Its only positive sample is therefore empty, but that sample is also consistent with $011$ and $101$.  Hence $000$ has no finite positive teaching set, so the positive teaching dimension is infinite."
+}

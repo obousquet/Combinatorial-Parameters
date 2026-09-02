@@ -1,0 +1,11 @@
+{
+  "id": 839,
+  "name": "Diameter of the Three-Code Class",
+  "short_name": "diameter_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/diameter",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each pair among $000,011,101$ differs on exactly two coordinates.  Thus the largest Hamming distance between concepts in the class is two."
+}

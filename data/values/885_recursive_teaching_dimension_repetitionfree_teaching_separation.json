@@ -1,0 +1,12 @@
+{
+  "id": 885,
+  "name": "Recursive Teaching Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "recursive_teaching_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The source gives a recursive teaching plan of order two for this thirteen-concept class, and proves that its recursive teaching dimension is exactly two.",
+  "references": "\\cite{doliwa2014recursive}"
+}

@@ -20,8 +20,26 @@ COLLAPSIBLE_EQUIVALENCE_IDS = {
 
 
 def graph_label(name: str, max_line_length: int = 26) -> str:
-    """Shorten implicit suffixes and balance a long label across two DOT lines."""
+    """Make graph-only labels compact, then balance them over two DOT lines.
+
+    This leaves catalogue names untouched: the full name remains available in
+    the popup and on the parameter page.  The graph uses the conventional
+    short forms for recurring qualifiers so its hierarchy is legible without
+    depending on obstacle-avoiding edge routes.
+    """
     name = re.sub(r"\s+(?:complexity|size)\s*$", "", name, flags=re.IGNORECASE)
+    abbreviations = {
+        "projected": "Proj",
+        "projection": "Proj",
+        "maximum": "Max",
+        "minimum": "Min",
+        "monotonic": "Mon",
+        "dimension": "Dim",
+    }
+    for long_form, short_form in abbreviations.items():
+        name = re.sub(
+            rf"\b{long_form}\b", short_form, name, flags=re.IGNORECASE
+        )
     if len(name) <= max_line_length or " " not in name:
         return name
 

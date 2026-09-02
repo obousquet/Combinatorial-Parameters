@@ -1,0 +1,11 @@
+{
+  "id": 836,
+  "name": "Projected Double Density or Projected Average Degree of the Three-Code Class",
+  "short_name": "projected_double_density_or_projected_average_degree_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$\\frac{4}{3}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A one-coordinate projection is one edge and has average degree one.  Every two-coordinate projection is the three-vertex path with two edges, hence average degree $4/3$.  The full projection is edgeless and the empty projection has degree zero.  Thus the maximum projected average degree is $4/3$."
+}

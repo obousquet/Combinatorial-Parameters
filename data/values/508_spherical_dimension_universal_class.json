@@ -4,9 +4,9 @@
   "short_name": "spherical_dimension_universal_class",
   "class_id": "#classes/universal_class",
   "parameter_id": "#parameters/spherical_dimension",
-  "value": "$n-2\\leq\\mathrm{sd}(\\mathcal U_n)\\leq n-1$",
+  "value": "$\\begin{cases}n-2&n\\text{ odd},\\\\n-2\\leq\\mathrm{sd}(\\mathcal U_n)\\leq n-1&n\\text{ even}.\\end{cases}$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "Lemma 2 of the cited paper proves $n-2\\leq\\mathrm{sd}(\\mathcal U_n)\\leq n-1$ (and gives the exact lower endpoint when $n$ is odd).",
+  "proof": "Lemma 2 of the cited paper proves $n-2\\leq\\mathrm{sd}(\\mathcal U_n)\\leq n-1$ and, more sharply, $\\mathrm{sd}(\\mathcal U_n)=n-2$ for odd $n$.",
   "references": "\u005ccite{chornomaz2025spherical}"
 }

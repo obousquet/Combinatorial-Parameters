@@ -1,0 +1,12 @@
+{
+  "id": 894,
+  "name": "Average Teaching Dimension of the Universal Class",
+  "short_name": "average_teaching_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/average_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established minimum teaching-set size and teaching dimension of the universal class are both one. Hence every individual minimum teaching-set size equals one, giving average teaching dimension one.",
+  "references": "\\cite{shinohara1991teachability,goldman1995complexity}"
+}

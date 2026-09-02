@@ -7,5 +7,6 @@
   "short_name": "worst_mistakes_vc_dimension",
   "name": "Worst Mistakes / VC Dimension",
   "status": "established",
-  "references": "\\cite{ben1997online}"
+  "references": "\\cite{ben1997online}",
+  "proof": "Let $S$ be a shattered set of size $d$.  Even when the learner knows the whole presentation order, an adversary may present the points of $S$ one at a time and assign at each point the label opposite to the learner's prediction.  After all $d$ rounds, shattering supplies a concept realizing the resulting labeling, so this is a valid target-consistent run with $d$ mistakes.  Hence $\\mathrm M_{\\mathrm{worst}}\\geq\\mathrm{VC}$."
 }

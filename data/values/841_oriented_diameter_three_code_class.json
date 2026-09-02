@@ -1,0 +1,11 @@
+{
+  "id": 841,
+  "name": "Oriented Diameter of the Three-Code Class",
+  "short_name": "oriented_diameter_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/oriented_diameter",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Restricting $000$ and $011$ to the two coordinates where they differ gives the oriented pair $\\emptyset,\\{1,2\\}$, so the value is at least two.  An oriented pair on three coordinates would require the all-zero and all-one traces on the full domain, but neither $111$ nor any other three-one concept is in the class.  Thus the value is exactly two."
+}
