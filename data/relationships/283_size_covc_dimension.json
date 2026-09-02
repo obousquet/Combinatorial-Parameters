@@ -1,0 +1,13 @@
+{
+  "id": 283,
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "larger",
+  "details": "Every finite binary class satisfies $|\\mathcal H|\\geq\\mathrm{coVC}(\\mathcal H)$.",
+  "status": "established",
+  "proof_source": "Full proof in the LaTeX survey: Lemma `lem:size-covc`.",
+  "latex_proof_label": "lem:size-covc",
+  "references": "\\cite{bousquet2020proper}",
+  "short_name": "size_covc_dimension",
+  "name": "Size / co-VC Dimension"
+}

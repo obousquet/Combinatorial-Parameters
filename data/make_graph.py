@@ -164,6 +164,29 @@ def proof_adjacency(
     return adjacency
 
 
+def rank_adjacency(relationships: List[Dict[str, Any]]) -> Dict[str, set[str]]:
+    """Build the dominance graph used solely for vertical placement.
+
+    Every established base-variant affine inequality has the same direction
+    of growth as a plain ``A >= B`` relation: if ``A >= c B - d`` with
+    ``c>0``, then A belongs no lower than B in the hierarchy.  Additive terms
+    prevent a relation from being safely *reduced* as a homogeneous Hasse
+    edge, but they do not change that direction.  Consequently ranks use the
+    transitive closure of all ``larger`` and ``larger_c`` records, including
+    affine ones; exact equalities are traversable in both directions.
+    """
+    adjacency: Dict[str, set[str]] = defaultdict(set)
+    for relationship in relationships:
+        relation_type = relationship["relationship_type"]
+        if relation_type not in LINEAR_TYPES:
+            continue
+        source, target = relation_endpoints(relationship)
+        adjacency[source].add(target)
+        if relation_type == "equivalence":
+            adjacency[target].add(source)
+    return adjacency
+
+
 def is_redundant_linear_relation(
     relationship: Dict[str, Any], relationships: List[Dict[str, Any]]
 ) -> bool:
@@ -217,8 +240,13 @@ def reduced_linear_relations(
 
 
 def hierarchy_ranks(relationships: List[Dict[str, Any]]) -> Dict[str, int]:
-    """Assign top-to-bottom ranks after condensing strongly connected components."""
-    adjacency = proof_adjacency(relationships, "larger_c")
+    """Assign ranks from the affine-dominance transitive closure.
+
+    Strongly connected components handle reciprocal bounds without claiming
+    that their endpoints are equal parameters.  The longest-path ranks of the
+    condensed DAG are exactly the layer numbers induced by the closure.
+    """
+    adjacency = rank_adjacency(relationships)
     vertices = set(adjacency)
     vertices.update(target for targets in adjacency.values() for target in targets)
 
@@ -355,17 +383,19 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     for relationship in collapsed_relationships:
         relationships_by_variant[variant_of(relationship)].append(relationship)
 
-    # Only the reduced base linear graph defines vertical position.  The graph
-    # nevertheless displays every stated direct relationship: a direct linear
-    # fact which is redundant for the Hasse backbone is an overlay.  Otherwise
-    # the reduction would make an established database fact silently vanish
-    # from the picture.
+    # The reduced homogeneous graph is the visible Hasse-like backbone.  Ranks
+    # are broader: every base-variant affine dominance fact contributes its
+    # direction, and the transitive closure is condensed before layering.
+    # Thus an $A >= cB-d$ fact need not be drawn as a backbone edge to place A
+    # above B.  Every stated direct relationship remains displayed as either a
+    # backbone edge or an overlay.
     reduced_by_variant = {
         variant: reduced_linear_relations(variant_relationships)
         for variant, variant_relationships in relationships_by_variant.items()
     }
     base_backbone = reduced_by_variant.get(BASE_VARIANT, [])
-    ranks = hierarchy_ranks(base_backbone)
+    base_rank_relations = relationships_by_variant.get(BASE_VARIANT, [])
+    ranks = hierarchy_ranks(base_rank_relations)
 
     # Add one node for each exact-equality component.  The first record is the
     # clickable representative; the combined label makes every identification
@@ -487,6 +517,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     print(
         "graph relationships: "
         f"{len(relationships)} direct, {len(edges)} displayed after collapsing "
-        f"{merged_nodes} exact-equality parameters ({len(base_backbone)} in the base linear backbone)"
+        f"{merged_nodes} exact-equality parameters ({len(base_backbone)} in the base homogeneous backbone; "
+        f"{len(base_rank_relations)} base relations used for affine ranks)"
     )
     return {"nodes": nodes, "edges": edges, "legend": legend}

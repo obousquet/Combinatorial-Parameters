@@ -12,7 +12,7 @@
   "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "comments": "Also called the **consistency dimension**: it is the least $k$ such that every nonmember admits a labeled sample of size at most $k$ inconsistent with the class. This is equivalent to the hollow-star/co-VC formulation.",
+  "comments": "Also called the **consistency dimension**: it is the least $k$ such that every nonmember admits a labeled sample of size at most $k$ inconsistent with the class. This is equivalent to the hollow-star/co-VC formulation. For intersection-closed or extremal classes (hence maximum classes), $\\mathrm{coVC}\\leq\\mathrm{VC}+1$; affine halfspaces in $\\mathbb R^d$ with both constants attain $d+2=\\mathrm{VC}+1$.",
   "origin_references": "Introduced as co-VC dimension in \\cite{kane2019communication}; the equivalent dual Helly number and hollow-star formulation are developed in \\cite{bousquet2020proper}. The consistency-dimension terminology appears in \\cite{hegedHus1995generalized}.",
   "short_name": "covc_dimension",
   "monotonicity_evidence": {
