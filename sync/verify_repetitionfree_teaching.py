@@ -96,6 +96,16 @@ def one_inclusion_adjacency() -> tuple[frozenset[int], ...]:
     return tuple(frozenset(neighbours) for neighbours in adjacency)
 
 
+def graph_degrees(concepts: tuple[str, ...]) -> tuple[int, ...]:
+    """Return degrees in the one-inclusion graph of a finite projected class."""
+    adjacency = [set() for _ in concepts]
+    for left, right in combinations(range(len(concepts)), 2):
+        if hamming_distance(concepts[left], concepts[right]) == 1:
+            adjacency[left].add(right)
+            adjacency[right].add(left)
+    return tuple(map(len, adjacency))
+
+
 def largest_contained_cube_dimension() -> int:
     """Compute the largest strongly shattered coordinate set."""
     dimension = len(CLASS[0])
@@ -154,6 +164,14 @@ def main() -> None:
     )
     assert degeneracy == 2
     assert largest_contained_cube_dimension() == 2
+    projected_graph_statistics = []
+    for size in range(1, 6):
+        for coordinates in combinations(range(5), size):
+            projection = tuple(sorted({"".join(concept[index] for index in coordinates) for concept in CLASS}))
+            degrees = graph_degrees(projection)
+            projected_graph_statistics.append((min(degrees), sum(degrees) / len(degrees)))
+    assert max(minimum for minimum, _ in projected_graph_statistics) == 3
+    assert max(average for _, average in projected_graph_statistics) == 3
     print(f"individual minimum teaching-set sizes: {sizes}")
     print("minimum teaching-set size: 2; teaching dimension / maximum teaching-set size: 4")
     print("sum: 40; average teaching dimension: 40/13")
@@ -162,6 +180,7 @@ def main() -> None:
     print("diameter: 5; Hamming radius: 4")
     print("minimum/maximum degree: 1/3; average degree: 24/13; densest-subgraph value: 2")
     print("degeneracy: 2; largest strongly shattered set: 2")
+    print("projected minimum degree: 3; projected average degree: 3")
 
 
 if __name__ == "__main__":

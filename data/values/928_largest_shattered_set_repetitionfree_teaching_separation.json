@@ -1,0 +1,12 @@
+{
+  "id": 928,
+  "name": "Largest Shattered Set of the Repetition-Free Teaching Separation Class",
+  "short_name": "largest_shattered_set_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/largest_shattered_set",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Largest shattered set is the VC dimension. The directly verified VC dimension of this class is three.",
+  "references": "\\cite{vapnik1971uniform,doliwa2014recursive}"
+}

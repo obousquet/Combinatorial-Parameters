@@ -1,0 +1,12 @@
+{
+  "id": 930,
+  "name": "Projected Strongly Shattered Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "projected_strongly_shattered_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/projected_strongly_shattered_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projected strongly shattered dimension equals VC dimension. The directly verified VC dimension of this class is three.",
+  "references": "\\cite{bollobas1995defect,doliwa2014recursive}"
+}

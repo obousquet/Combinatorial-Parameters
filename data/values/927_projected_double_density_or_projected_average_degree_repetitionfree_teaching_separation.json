@@ -1,0 +1,12 @@
+{
+  "id": 927,
+  "name": "Projected Double Density of the Repetition-Free Teaching Separation Class",
+  "short_name": "projected_double_density_or_projected_average_degree_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The projection to coordinates $0,2,3$ is the full three-cube and has average degree three. Exhaustive inspection of all nonempty coordinate projections finds no larger average degree; this is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,haussler1988predicting}"
+}

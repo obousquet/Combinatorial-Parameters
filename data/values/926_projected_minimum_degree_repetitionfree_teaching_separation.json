@@ -1,0 +1,12 @@
+{
+  "id": 926,
+  "name": "Projected Minimum Degree of the Repetition-Free Teaching Separation Class",
+  "short_name": "projected_minimum_degree_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projecting to coordinates $0,2,3$ realizes the full three-cube, of minimum degree three. Exhaustive inspection of all nonempty coordinate projections finds none with larger minimum degree; this is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive,rubinstein2007shifting}"
+}

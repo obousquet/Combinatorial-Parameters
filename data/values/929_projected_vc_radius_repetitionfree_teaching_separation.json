@@ -1,0 +1,12 @@
+{
+  "id": 929,
+  "name": "Projected VC Radius of the Repetition-Free Teaching Separation Class",
+  "short_name": "projected_vc_radius_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/projected_vc_radius",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projected VC radius equals VC dimension. The directly verified VC dimension of this class is three.",
+  "references": "\\cite{bollobas1995defect,doliwa2014recursive}"
+}
