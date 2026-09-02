@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,23 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-12" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-802" style="position:relative;">
         
-        <h3><a href="classes/three_code_class.html" class="table-title-link">Three-Code Class</a></h3>
+        <h3><a href="values/random_equivalence_queries_complexity_three_code_class.html" class="table-title-link">Random Equivalence Queries Complexity of the Three-Code Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Three-Code Class</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal C_{\triangle}">
-            \[\mathcal C_{\triangle}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>On the three-point domain $\{x_0,x_1,x_2\}$, let $\mathcal C_{\triangle}=\{000,011,101\}$, where strings list the values at $x_2,x_1,x_0$ in that order.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>A finite witness class used to separate proper from improper unlabeled compression.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/proper_labeled_sample_compression_three_code_class.html'>Proper Labeled Sample Compression of the Three-Code Class</a></li><li><a href='values/equivalence_queries_complexity_three_code_class.html'>Equivalence Queries Complexity of the Three-Code Class</a></li><li><a href='values/membership_query_complexity_three_code_class.html'>Membership Query Complexity of the Three-Code Class</a></li><li><a href='values/membership_and_equivalence_queries_complexity_three_code_class.html'>Membership and Equivalence Queries Complexity of the Three-Code Class</a></li><li><a href='values/random_equivalence_queries_complexity_three_code_class.html'>Random Equivalence Queries Complexity of the Three-Code Class</a></li><li><a href='values/unlabeled_sample_compression_three_code_class.html'>Unlabeled Sample Compression of the Three-Code Class</a></li><li><a href='values/proper_unlabeled_sample_compression_three_code_class.html'>Proper Unlabeled Sample Compression of the Three-Code Class</a></li><li><a href='values/stable_unlabeled_complexity_three_code_class.html'>Stable Unlabeled Complexity of the Three-Code Class</a></li><li><a href='values/proper_stable_sample_compression_three_code_class.html'>Proper Stable Sample Compression of the Three-Code Class</a></li><li><a href='values/labeled_sample_compression_three_code_class.html'>Labeled Sample Compression of the Three-Code Class</a></li><li><a href='values/stable_labeled_sample_compression_three_code_class.html'>Stable Labeled Sample Compression of the Three-Code Class</a></li><li><a href='values/proper_stable_labeled_sample_compression_three_code_class.html'>Proper Stable Labeled Sample Compression of the Three-Code Class</a></li><li><a href='values/proper_equivalence_queries_complexity_three_code_class.html'>Proper Equivalence Queries Complexity of the Three-Code Class</a></li><li><a href='values/membership_and_proper_equivalence_queries_complexity_three_code_class.html'>Membership and Proper Equivalence Queries Complexity of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/proper_unlabeled_sample_compression_unlabeled_sample_compression.html'>Proper Unlabeled Sample Compression / Unlabeled sample compression</a></li><li><a href='relationships/proper_stable_sample_compression_stable_unlabeled_complexity.html'>Proper Stable Sample Compression / Stable Unlabeled Complexity</a></li></ul></p></div>
+        <p><strong>Name: </strong>Random Equivalence Queries Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every full-support counterexample distribution $\mu$, use the improper proposal $001$. For each target in $\mathcal C_{\triangle}$ its disagreement set with this proposal is a distinct singleton coordinate, so the random counterexample is deterministic and identifies the target. The verifier $\texttt{sync/verify\_properness\_separation.py}$ checks these response classes. Zero queries are impossible for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
 
         </div>
     </div>

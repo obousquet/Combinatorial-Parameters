@@ -1,0 +1,12 @@
+{
+  "id": 802,
+  "name": "Random Equivalence Queries Complexity of the Three-Code Class",
+  "short_name": "random_equivalence_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/random_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every full-support counterexample distribution $\\mu$, use the improper proposal $001$. For each target in $\\mathcal C_{\\triangle}$ its disagreement set with this proposal is a distinct singleton coordinate, so the random counterexample is deterministic and identifies the target. The verifier $\\texttt{sync/verify\\_properness\\_separation.py}$ checks these response classes. Zero queries are impossible for a non-singleton class.",
+  "references": "\\cite{angluin2017random}"
+}
