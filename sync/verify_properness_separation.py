@@ -171,6 +171,29 @@ def basic_parameter_values():
         )
         for concept in CONCEPTS
     )
+    extended_teaching = max(
+        min(
+            subset.bit_count()
+            for subset in range(1 << DIMENSION)
+            if sum((concept ^ target) & subset == 0 for concept in CONCEPTS) <= 1
+        )
+        for target in range(1 << DIMENSION)
+    )
+    def centred_star(target):
+        return max(
+            subset.bit_count()
+            for subset in range(1 << DIMENSION)
+            if any((concept ^ target) & subset == 0 for concept in CONCEPTS)
+            and all(
+                any(
+                    (concept ^ target) & (subset ^ (1 << coordinate)) == 0
+                    and ((concept ^ target) & (1 << coordinate))
+                    for concept in CONCEPTS
+                )
+                for coordinate in range(DIMENSION) if subset & (1 << coordinate)
+            )
+        )
+    minimum_star = min(centred_star(target) for target in range(1 << DIMENSION))
     # Every coordinate has a singleton branch, ruling out a complete
     # Littlestone tree of depth two; each active coordinate gives depth one.
     littlestone = 1 if any(
@@ -186,6 +209,10 @@ def basic_parameter_values():
         "vc_dimension": vc,
         "littlestone_dimension": littlestone,
         "teaching_dimension": teaching,
+        "extended_teaching_dimension": extended_teaching,
+        "minimum_star_number": minimum_star,
+        "maximum_projected_teaching_set_size": star,
+        "projected_maximal_degree": star,
         "star_number": star,
         "covc_dimension": covc,
     }
@@ -266,6 +293,10 @@ def main():
         "vc_dimension": 1,
         "littlestone_dimension": 1,
         "teaching_dimension": 1,
+        "extended_teaching_dimension": 2,
+        "minimum_star_number": 1,
+        "maximum_projected_teaching_set_size": 2,
+        "projected_maximal_degree": 2,
         "star_number": 2,
         "covc_dimension": 3,
     }

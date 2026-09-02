@@ -1,0 +1,12 @@
+{
+  "id": 811,
+  "name": "Extended Teaching Dimension of the Three-Code Class",
+  "short_name": "extended_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/extended_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The absent labeling $001$ needs two coordinates to leave at most one class member consistent, so $\\mathrm{XTD}\\geq2$. Every labeling is specified by some two-coordinate restriction, so $\\mathrm{XTD}\\leq2$. Equivalently, $\\mathrm{XTD}=\\mathrm S=2$ by Theorem 13 of the cited paper. The direct finite check is in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "\\cite{hanneke2015minimax}"
+}

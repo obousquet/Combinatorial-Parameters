@@ -1,0 +1,12 @@
+{
+  "id": 812,
+  "name": "Minimum Star Number of the Three-Code Class",
+  "short_name": "minimum_star_number_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/minimum_star_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate is shattered, so every centre labeling has a centred one-star and $\\mathrm S_{\\min}\\geq1$. At the centre $000$, no two-star exists because the other two class members differ from it on two coordinates. Hence $\\mathrm S_{\\min}=1$. The enumeration over all eight centre labelings is checked in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "\\cite{hanneke2024star_eluder}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 813,
+  "name": "Maximum Projected Teaching-Set Size of the Three-Code Class",
+  "short_name": "maximum_projected_teaching_set_size_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/maximum_projected_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The maximum projected teaching-set size equals the star number. The projection $\\{00,01,11\\}$ has teaching set size two for its middle trace, and no three-concept projection can require more. The exhaustive check is in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "\\cite{hanneke2015minimax}"
+}

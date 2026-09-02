@@ -1,0 +1,12 @@
+{
+  "id": 814,
+  "name": "Projected Maximal Degree of the Three-Code Class",
+  "short_name": "projected_maximal_degree_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/projected_maximal_degree",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On the projection $\\{x_0,x_1\\}$, the trace $01$ is adjacent to both $00$ and $11$, so projected maximal degree is at least two. A three-concept projection has no degree above two. Thus the value is two, as checked in $\\texttt{sync/verify\\_properness\\_separation.py}$.",
+  "references": "\\cite{hanneke2015minimax}"
+}

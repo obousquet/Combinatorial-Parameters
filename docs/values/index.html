@@ -12667,6 +12667,40 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-812" style="position:relative;">
+        
+        <h3><a href="values/minimum_star_number_three_code_class.html" class="table-title-link">Minimum Star Number of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Star Number of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_star_number.html">Minimum Star Number</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate is shattered, so every centre labeling has a centred one-star and $\mathrm S_{\min}\geq1$. At the centre $000$, no two-star exists because the other two class members differ from it on two coordinates. Hence $\mathrm S_{\min}=1$. The enumeration over all eight centre labelings is checked in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2024star_eluder">[hanneke2024star_eluder]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-814" style="position:relative;">
+        
+        <h3><a href="values/projected_maximal_degree_three_code_class.html" class="table-title-link">Projected Maximal Degree of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Maximal Degree of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the projection $\{x_0,x_1\}$, the trace $01$ is adjacent to both $00$ and $11$, so projected maximal degree is at least two. A three-concept projection has no degree above two. Thus the value is two, as checked in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2015minimax">[hanneke2015minimax]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-787" style="position:relative;">
         
         <h3><a href="values/unlabeled_sample_compression_three_code_class.html" class="table-title-link">Unlabeled Sample Compression of the Three-Code Class</a></h3>
@@ -12918,6 +12952,40 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Projecting to $\{x_0,x_1\}$ gives $\{00,01,11\}$, with $01$ adjacent to both other traces, so the star number is at least two. No projection of a three-concept class has a vertex of degree above two. Hence $\mathrm S=2$; this is exhaustively checked in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition; compare the projected-star formulation in <a href="bibliography.html#hanneke2015minimax">[hanneke2015minimax]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-811" style="position:relative;">
+        
+        <h3><a href="values/extended_teaching_dimension_three_code_class.html" class="table-title-link">Extended Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Extended Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/extended_teaching_dimension.html">Extended Teaching Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The absent labeling $001$ needs two coordinates to leave at most one class member consistent, so $\mathrm{XTD}\geq2$. Every labeling is specified by some two-coordinate restriction, so $\mathrm{XTD}\leq2$. Equivalently, $\mathrm{XTD}=\mathrm S=2$ by Theorem 13 of the cited paper. The direct finite check is in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2015minimax">[hanneke2015minimax]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-813" style="position:relative;">
+        
+        <h3><a href="values/maximum_projected_teaching_set_size_three_code_class.html" class="table-title-link">Maximum Projected Teaching-Set Size of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Projected Teaching-Set Size of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/maximum_projected_teaching_set_size.html">Maximum Projected Teaching Set Size</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The maximum projected teaching-set size equals the star number. The projection $\{00,01,11\}$ has teaching set size two for its middle trace, and no three-concept projection can require more. The exhaustive check is in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2015minimax">[hanneke2015minimax]</a></p></div>
 
         </div>
     </div>

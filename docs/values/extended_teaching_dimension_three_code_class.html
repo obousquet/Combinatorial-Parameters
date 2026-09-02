@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-66" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-811" style="position:relative;">
         
-        <h3><a href="parameters/projected_maximal_degree.html" class="table-title-link">Projected Maximal Degree</a></h3>
+        <h3><a href="values/extended_teaching_dimension_three_code_class.html" class="table-title-link">Extended Teaching Dimension of the Three-Code Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Maximal Degree</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{d}^p_{\max}">
-            \[\mathrm{d}^p_{\max}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Projected Maximal Degree</strong> is the maximum, over all coordinate projections of $\mathcal{H}$, of the maximum degree of the projected class's $1$-inclusion graph. It is equivalently the star number.</p></div>
+        <p><strong>Name: </strong>Extended Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/extended_teaching_dimension.html">Extended Teaching Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-
-
-<p><strong>Category:</strong> Graph-based</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> No</p>
-<p><strong>Tight Strict C-Monotonic:</strong> No</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/projected_maximal_degree_full_cube.html'>Projected Maximal Degree of Full Cube</a></li><li><a href='values/projected_maximal_degree_singletons.html'>Projected Maximal Degree of Singletons</a></li><li><a href='values/projected_maximal_degree_singletons_plus_empty_set.html'>Projected Maximal Degree of Singletons plus empty set</a></li><li><a href='values/projected_maximal_degree_trivial_concepts.html'>Projected Maximal Degree of Trivial concepts</a></li><li><a href='values/projected_maximal_degree_warmuth_c5.html'>Projected Maximal Degree of Warmuth's $C_5$ Class</a></li><li><a href='values/projected_maximal_degree_universal_class.html'>Projected Maximal Degree of Universal Class</a></li><li><a href='values/projected_maximal_degree_majority.html'>Projected Maximal Degree of Majority</a></li><li><a href='values/projected_maximal_degree_addressing.html'>Projected Maximal Degree of Addressing</a></li><li><a href='values/projected_maximal_degree_tagged_singletons.html'>Projected Maximal Degree of Tagged Singletons</a></li><li><a href='values/projected_maximal_degree_halfintervals.html'>Projected Maximal Degree of Half-intervals</a></li><li><a href='values/projected_maximal_degree_three_code_class.html'>Projected Maximal Degree of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/projected_maximal_degree_star_number.html" class="relationship-statement">$\mathrm{d}^p_{\max} = \mathrm{S}$</a></li><li><a href="relationships/projected_maximal_degree_maximum_degree.html" class="relationship-statement">$\mathrm{d}^p_{\max} \ge \mathrm{d}_{\max}$ <span class="relationship-variant">(p_monotonic)</span></a></li><li><a href="relationships/projected_maximal_degree_projected_minimum_degree.html" class="relationship-statement">$\mathrm{d}^p_{\max} \ge \mathrm{d}^p_{\min}$</a></li><li><a href="relationships/projected_maximal_degree_projected_double_density_or_projected_average_degree.html" class="relationship-statement">$\mathrm{d}^p_{\max} \ge \mathrm{dens}^p$</a></li><li><a href="relationships/effective_range_projected_maximal_degree.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{d}^p_{\max}$</a></li></ul></p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The absent labeling $001$ needs two coordinates to leave at most one class member consistent, so $\mathrm{XTD}\geq2$. Every labeling is specified by some two-coordinate restriction, so $\mathrm{XTD}\leq2$. Equivalently, $\mathrm{XTD}=\mathrm S=2$ by Theorem 13 of the cited paper. The direct finite check is in $\texttt{sync/verify\_properness\_separation.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2015minimax">[hanneke2015minimax]</a></p></div>
 
         </div>
     </div>
