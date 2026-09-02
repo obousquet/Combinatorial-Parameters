@@ -1,0 +1,12 @@
+{
+  "id": 767,
+  "name": "Worst Mistakes of Majority",
+  "short_name": "worst_mistakes_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Worst mistakes is bounded below by VC dimension and above by Littlestone dimension. Both established majority-class values equal $n$, so worst mistakes equals $n$.",
+  "references": "\\cite{ben1997online}"
+}

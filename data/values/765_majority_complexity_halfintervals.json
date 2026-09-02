@@ -1,0 +1,12 @@
+{
+  "id": 765,
+  "name": "Majority Complexity of Half-Intervals",
+  "short_name": "majority_complexity_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$\\log n$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Majority complexity is at least Littlestone dimension and at most log size. Both established half-interval values equal $\\log n$, so majority complexity equals $\\log n$.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}"
+}

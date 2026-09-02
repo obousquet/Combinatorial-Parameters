@@ -4966,6 +4966,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-767" style="position:relative;">
+        
+        <h3><a href="values/worst_mistakes_majority.html" class="table-title-link">Worst Mistakes of Majority</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes of Majority</p>
+<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is bounded below by VC dimension and above by Littlestone dimension. Both established majority-class values equal $n$, so worst mistakes equals $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-290" style="position:relative;">
         
         <h3><a href="values/monotonic_minimum_teaching_set_size_blockwiseaddressing.html" class="table-title-link">Monotonic Minimum Teaching-Set Size of Blockwise-Addressing</a></h3>
@@ -6696,6 +6713,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Retain the greatest positive sample coordinate when one exists, otherwise the least negative coordinate.  Removing an unselected point preserves that selected extremum and the endpoint reconstruction, making the size-one scheme stable.  Zero is impossible.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-763" style="position:relative;">
+        
+        <h3><a href="values/majority_complexity_addressing.html" class="table-title-link">Majority Complexity of Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Complexity of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Majority complexity is at least Littlestone dimension and at most log size. Both established addressing values equal $\lfloor\log n\rfloor$, proving the equality.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
     </div>
@@ -12272,6 +12306,91 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The defining identity gives $\mathrm{PL}_1=\mathrm L=\lfloor\log_2 n\rfloor$. For k at least two, depth two would be level-constant on its first two levels and would shatter two coordinates. Since VC dimension is one, the value is at most one; a one-point VC witness gives equality.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the prefix-tree definition and the threshold calculations in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-764" style="position:relative;">
+        
+        <h3><a href="values/majority_complexity_blockwiseaddressing.html" class="table-title-link">Majority Complexity of Blockwise Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Complexity of Blockwise Addressing</p>
+<p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Value: </strong>$d+1$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Majority complexity is bounded below by Littlestone dimension and above by log size. The two established blockwise-addressing values are both $d+1$, so majority complexity is $d+1$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-765" style="position:relative;">
+        
+        <h3><a href="values/majority_complexity_halfintervals.html" class="table-title-link">Majority Complexity of Half-Intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Complexity of Half-Intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Value: </strong>$\log n$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Majority complexity is at least Littlestone dimension and at most log size. Both established half-interval values equal $\log n$, so majority complexity equals $\log n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-766" style="position:relative;">
+        
+        <h3><a href="values/random_equivalence_queries_complexity_majority.html" class="table-title-link">Random Equivalence Queries Complexity of Majority</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Random Equivalence Queries Complexity of Majority</p>
+<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
+<p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Random equivalence-query complexity lies between VC dimension and Littlestone dimension. Both established majority-class values are $n$, hence the value is $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-768" style="position:relative;">
+        
+        <h3><a href="values/maximum_teaching_set_size_majority.html" class="table-title-link">Maximum Teaching Set Size of Majority</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Teaching Set Size of Majority</p>
+<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
+<p><strong>Parameter: </strong><a href="parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Maximum teaching-set size is at least maximum degree, whose established majority-class value is $n$. It is at most maximum projected teaching-set size, also $n$ on this class. Therefore it equals $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a> <a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-769" style="position:relative;">
+        
+        <h3><a href="values/projected_minimum_degree_majority.html" class="table-title-link">Projected Minimum Degree of Majority</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Minimum Degree of Majority</p>
+<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected minimum degree is at least VC dimension, whose established majority-class value is $n$. It is at most projected maximal degree, also $n$ on this class. Hence projected minimum degree equals $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#rubinstein2007shifting">[rubinstein2007shifting]</a></p></div>
 
         </div>
     </div>

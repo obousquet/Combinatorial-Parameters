@@ -1,0 +1,12 @@
+{
+  "id": 768,
+  "name": "Maximum Teaching Set Size of Majority",
+  "short_name": "maximum_teaching_set_size_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/maximum_teaching_set_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Maximum teaching-set size is at least maximum degree, whose established majority-class value is $n$. It is at most maximum projected teaching-set size, also $n$ on this class. Therefore it equals $n$.",
+  "references": "\\cite{shinohara1991teachability,goldman1995complexity}"
+}

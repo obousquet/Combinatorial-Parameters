@@ -1,0 +1,12 @@
+{
+  "id": 764,
+  "name": "Majority Complexity of Blockwise Addressing",
+  "short_name": "majority_complexity_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$d+1$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Majority complexity is bounded below by Littlestone dimension and above by log size. The two established blockwise-addressing values are both $d+1$, so majority complexity is $d+1$.",
+  "references": "\\cite{littlestone1988learning,maass1992lower}"
+}

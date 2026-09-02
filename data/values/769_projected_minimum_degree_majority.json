@@ -1,0 +1,12 @@
+{
+  "id": 769,
+  "name": "Projected Minimum Degree of Majority",
+  "short_name": "projected_minimum_degree_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Projected minimum degree is at least VC dimension, whose established majority-class value is $n$. It is at most projected maximal degree, also $n$ on this class. Hence projected minimum degree equals $n$.",
+  "references": "\\cite{rubinstein2007shifting}"
+}
