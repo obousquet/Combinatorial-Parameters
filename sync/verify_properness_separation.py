@@ -120,6 +120,18 @@ def proper_equivalence_one_query_fails():
     return True
 
 
+def membership_query_one_fails():
+    """No single coordinate partitions the three targets into singletons."""
+    for coordinate in range(DIMENSION):
+        response_sizes = [
+            sum((target >> coordinate) & 1 == answer for target in CONCEPTS)
+            for answer in (0, 1)
+        ]
+        if max(response_sizes) <= 1:
+            return False
+    return True
+
+
 def proper_stable_labeled_size_one_exists():
     """Check an explicit proper stable labelled scheme of size one.
 
@@ -188,6 +200,7 @@ def main():
     assert compression_exists(2, proper=True, stable=True)
     assert proper_stable_labeled_size_one_exists()
     assert proper_equivalence_one_query_fails()
+    assert membership_query_one_fails()
     # The improper query 001 has one distinct disagreement coordinate per target.
     proposal = 0b001
     responses = [
@@ -197,7 +210,7 @@ def main():
     assert {response for response in responses if response} == {(0b000,), (0b011,), (0b101,)}
     print(
         "Three-code class: USC=1 < pUSC=2; sUSC=1 < psUSC=2; "
-        "LSC=sLSC=pLSC=psLSC=1; EQ=1 < pEQ=2"
+        "LSC=sLSC=pLSC=psLSC=1; EQ=MEQ=1 < pEQ=MPEQ=MQ=2"
     )
 
 

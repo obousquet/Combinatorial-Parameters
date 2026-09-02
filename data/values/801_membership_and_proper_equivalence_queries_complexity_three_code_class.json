@@ -1,0 +1,12 @@
+{
+  "id": 801,
+  "name": "Membership and Proper Equivalence Queries Complexity of the Three-Code Class",
+  "short_name": "membership_and_proper_equivalence_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/membership_and_proper_equivalence_queries_complexity",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A single allowed query cannot identify every target: every membership coordinate leaves two possible targets for one answer, and every proper equivalence proposal has a counterexample response compatible with two targets; both checks are in $\\texttt{sync/verify\\_properness\\_separation.py}$. Two membership queries suffice by the established membership-query strategy, so the exact mixed proper-query complexity is two.",
+  "references": "\\cite{angluin1988queries}"
+}

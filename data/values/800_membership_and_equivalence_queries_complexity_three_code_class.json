@@ -1,0 +1,12 @@
+{
+  "id": 800,
+  "name": "Membership and Equivalence Queries Complexity of the Three-Code Class",
+  "short_name": "membership_and_equivalence_queries_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/membership_and_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The one improper equivalence proposal $001$ identifies the target after its counterexample, as in the established equivalence-query value. Hence one mixed query suffices; size zero is impossible for a non-singleton class.",
+  "references": "\\cite{angluin1988queries}"
+}

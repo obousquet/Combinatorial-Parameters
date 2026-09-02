@@ -12548,6 +12548,40 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-799" style="position:relative;">
+        
+        <h3><a href="values/membership_query_complexity_three_code_class.html" class="table-title-link">Membership Query Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Membership Query Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate has one label value shared by two of $000,011,101$, so one membership query cannot always identify the target; this is checked in $\texttt{sync/verify\_properness\_separation.py}$. Query $x_0$ first. If its label is zero the target is $000$; otherwise query $x_1$, which distinguishes $011$ from $101$. Thus two queries are necessary and sufficient.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-800" style="position:relative;">
+        
+        <h3><a href="values/membership_and_equivalence_queries_complexity_three_code_class.html" class="table-title-link">Membership and Equivalence Queries Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Membership and Equivalence Queries Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The one improper equivalence proposal $001$ identifies the target after its counterexample, as in the established equivalence-query value. Hence one mixed query suffices; size zero is impossible for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-787" style="position:relative;">
         
         <h3><a href="values/unlabeled_sample_compression_three_code_class.html" class="table-title-link">Unlabeled Sample Compression of the Three-Code Class</a></h3>
@@ -12713,6 +12747,23 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>No proper first proposal identifies every target after one counterexample: the exhaustive response check in $\texttt{sync/verify\_properness\_separation.py}$ finds, for each proposal in $\mathcal C_{\triangle}$, a disagreement coordinate compatible with at least two targets. Conversely, query any two class members; if both are rejected, the third member is forced. Thus the exact proper-query complexity is two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-801" style="position:relative;">
+        
+        <h3><a href="values/membership_and_proper_equivalence_queries_complexity_three_code_class.html" class="table-title-link">Membership and Proper Equivalence Queries Complexity of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Membership and Proper Equivalence Queries Complexity of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/membership_and_proper_equivalence_queries_complexity.html">Membership and Proper Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A single allowed query cannot identify every target: every membership coordinate leaves two possible targets for one answer, and every proper equivalence proposal has a counterexample response compatible with two targets; both checks are in $\texttt{sync/verify\_properness\_separation.py}$. Two membership queries suffice by the established membership-query strategy, so the exact mixed proper-query complexity is two.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
 
         </div>

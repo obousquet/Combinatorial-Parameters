@@ -1,0 +1,12 @@
+{
+  "id": 799,
+  "name": "Membership Query Complexity of the Three-Code Class",
+  "short_name": "membership_query_complexity_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate has one label value shared by two of $000,011,101$, so one membership query cannot always identify the target; this is checked in $\\texttt{sync/verify\\_properness\\_separation.py}$. Query $x_0$ first. If its label is zero the target is $000$; otherwise query $x_1$, which distinguishes $011$ from $101$. Thus two queries are necessary and sufficient.",
+  "references": "\\cite{angluin1988queries}"
+}
