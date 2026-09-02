@@ -1,0 +1,13 @@
+{
+  "id": 724,
+  "name": "$k$-Block Littlestone Dimension of Half-intervals",
+  "short_name": "kblock_littlestone_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For every fixed $k\\ge2$.",
+  "status": "established",
+  "proof": "The VC witness gives depth one. For every k at least two, the first two levels of a depth-two k-block tree would be a fixed two-coordinate cube, contradicting VC dimension one.",
+  "references": "Directly from the block-tree definition and the threshold/VC calculation in \\cite{littlestone1988learning}."
+}

@@ -12242,6 +12242,74 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-722" style="position:relative;">
+        
+        <h3><a href="values/2block_littlestone_dimension_halfintervals.html" class="table-title-link">2-Block Littlestone Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>2-Block Littlestone Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>VC dimension one gives a depth-one level-constant tree. A depth-two 2-block tree has a fixed coordinate at its second level and would realize all four labelings on two fixed coordinates, contradicting VC dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the threshold/VC calculation in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-723" style="position:relative;">
+        
+        <h3><a href="values/3block_littlestone_dimension_halfintervals.html" class="table-title-link">3-Block Littlestone Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>3-Block Littlestone Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-one VC witness supplies the lower bound. Any depth-two 3-block tree has a common second-level coordinate, hence would shatter two fixed coordinates, which is impossible for this VC-one class.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the threshold/VC calculation in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-724" style="position:relative;">
+        
+        <h3><a href="values/kblock_littlestone_dimension_halfintervals.html" class="table-title-link">$k$-Block Littlestone Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For every fixed $k\ge2$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The VC witness gives depth one. For every k at least two, the first two levels of a depth-two k-block tree would be a fixed two-coordinate cube, contradicting VC dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the threshold/VC calculation in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-725" style="position:relative;">
+        
+        <h3><a href="values/prefix_littlestone_dimension_halfintervals.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\mathrm{PL}_1=\lfloor\log_2 n\rfloor,\quad\mathrm{PL}_k=1\ (k\ge2)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The defining identity gives $\mathrm{PL}_1=\mathrm L=\lfloor\log_2 n\rfloor$. For k at least two, depth two would be level-constant on its first two levels and would shatter two coordinates. Since VC dimension is one, the value is at most one; a one-point VC witness gives equality.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the prefix-tree definition and the threshold calculations in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

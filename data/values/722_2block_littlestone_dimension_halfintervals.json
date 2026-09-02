@@ -1,0 +1,12 @@
+{
+  "id": 722,
+  "name": "2-Block Littlestone Dimension of Half-intervals",
+  "short_name": "2block_littlestone_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/2block_littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "VC dimension one gives a depth-one level-constant tree. A depth-two 2-block tree has a fixed coordinate at its second level and would realize all four labelings on two fixed coordinates, contradicting VC dimension one.",
+  "references": "Directly from the block-tree definition and the threshold/VC calculation in \\cite{littlestone1988learning}."
+}
