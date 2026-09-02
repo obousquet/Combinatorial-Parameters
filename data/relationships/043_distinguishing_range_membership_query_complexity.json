@@ -6,6 +6,8 @@
   "status": "established",
   "details": "It is sufficient to query all coordinates in the distinguishing range.",
   "proof": "Let $S$ be a smallest coordinate set on which the concepts of $\\mathcal{H}$ have pairwise distinct restrictions.  Querying the target on every coordinate in $S$ determines its restriction to $S$, and hence identifies the target.  Therefore $\\mathrm{Q}_m(\\mathcal{H})\\le |S|=\\mathrm{R}(\\mathcal{H})$.",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
   "short_name": "distinguishing_range_membership_query_complexity",
   "name": "Distinguishing Range / Membership Query Complexity"
 }

@@ -7,5 +7,7 @@
   "short_name": "projected_double_density_or_projected_average_degree_projected_minimum_degree",
   "name": "Projected Double Density or Projected Average Degree / Projected Minimum Degree",
   "status": "established",
-  "proof": "For every projection, average degree is at least minimum degree.  Taking maxima over projections preserves the inequality."
+  "proof": "For every projection, average degree is at least minimum degree.  Taking maxima over projections preserves the inequality.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict"
 }
