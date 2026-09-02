@@ -1,0 +1,12 @@
+{
+  "id": 737,
+  "name": "Occasional One-Sided Getback of Full Cube",
+  "short_name": "occasional_onesided_getback_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/occasional_onesided_getback",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The established O1G/compression lemma gives $\\mathrm{M}_{\\mathrm{o1g}}\\geq\\mathrm{USC}$, and the full cube has established unlabeled-compression value n. The same lemma gives $\\mathrm{M}_{\\mathrm{o1g}}\\leq\\mathrm L$, while the full cube has Littlestone dimension n. Thus both bounds coincide at n.",
+  "references": "\\cite{ben1997online,chalopin2022unlabeled,palvolgyi2021unlabeled}"
+}
