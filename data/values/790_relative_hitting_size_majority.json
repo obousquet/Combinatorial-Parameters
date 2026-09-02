@@ -1,0 +1,12 @@
+{
+  "id": 790,
+  "name": "Relative Hitting Size of Majority",
+  "short_name": "relative_hitting_size_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/relative_hitting_size",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Relative hitting size is a definitional reformulation of maximum teaching-set size. The latter has established value n on the majority class, so relative hitting size is n as well.",
+  "references": "\\cite{goldman1995complexity,shinohara1991teachability}"
+}

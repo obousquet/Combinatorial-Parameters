@@ -1,0 +1,12 @@
+{
+  "id": 789,
+  "name": "Teaching Dimension of Majority",
+  "short_name": "teaching_dimension_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Teaching dimension is exactly maximum teaching-set size. The latter has established value n on the majority class, so teaching dimension is n as well.",
+  "references": "\\cite{goldman1995complexity,shinohara1991teachability}"
+}
