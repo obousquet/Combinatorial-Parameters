@@ -1,0 +1,11 @@
+{
+  "id": 911,
+  "name": "Effective Range of the Repetition-Free Teaching Separation Class",
+  "short_name": "effective_range_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$5$",
+  "status": "established",
+  "proof": "Each of the five displayed coordinates takes both labels among the thirteen strings, so all five are effective. The direct check is in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

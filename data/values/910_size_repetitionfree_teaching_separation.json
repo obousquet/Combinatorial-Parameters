@@ -1,0 +1,11 @@
+{
+  "id": 910,
+  "name": "Size of the Repetition-Free Teaching Separation Class",
+  "short_name": "size_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/size",
+  "value": "$13$",
+  "status": "established",
+  "proof": "The displayed definition lists thirteen distinct binary strings; this is also checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

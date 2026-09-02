@@ -1,0 +1,12 @@
+{
+  "id": 916,
+  "name": "Hamming Radius of the Repetition-Free Teaching Separation Class",
+  "short_name": "hamming_radius_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/hamming_radius",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Enumerating all $32$ possible binary centres gives minimum enclosing radius four. The exhaustive check is in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

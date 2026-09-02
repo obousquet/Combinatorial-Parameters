@@ -1,0 +1,12 @@
+{
+  "id": 915,
+  "name": "Diameter of the Repetition-Free Teaching Separation Class",
+  "short_name": "diameter_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/diameter",
+  "value": "$5$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The strings $10101$ and $01010$ differ in all five coordinates, and no distance can exceed the five-coordinate domain size. The enumeration is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

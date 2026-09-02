@@ -1,0 +1,11 @@
+{
+  "id": 912,
+  "name": "Log Size of the Repetition-Free Teaching Separation Class",
+  "short_name": "log_size_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/log_size",
+  "value": "$\\log_2 13$",
+  "status": "established",
+  "proof": "The class has thirteen concepts, so by definition its binary log-size is $\\log_2 13$.",
+  "references": "\\cite{doliwa2014recursive}"
+}

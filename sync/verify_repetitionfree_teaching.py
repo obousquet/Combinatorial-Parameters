@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+from functools import cache
 from itertools import combinations, product
 
 
@@ -52,6 +53,39 @@ def largest_star_dimension(
     return best
 
 
+def vc_dimension() -> int:
+    """Compute the largest shattered coordinate set."""
+    dimension = len(CLASS[0])
+    largest = 0
+    for size in range(dimension + 1):
+        for coordinates in combinations(range(dimension), size):
+            traces = {"".join(concept[index] for index in coordinates) for concept in CLASS}
+            if len(traces) == 2**size:
+                largest = max(largest, size)
+    return largest
+
+
+def littlestone_dimension(concepts: tuple[str, ...]) -> int:
+    """Compute Littlestone dimension by the standard restriction recurrence."""
+    dimension = len(CLASS[0])
+
+    @cache
+    def recurse(current: tuple[str, ...]) -> int:
+        best = 0
+        for coordinate in range(dimension):
+            zero = tuple(concept for concept in current if concept[coordinate] == "0")
+            one = tuple(concept for concept in current if concept[coordinate] == "1")
+            if zero and one:
+                best = max(best, 1 + min(recurse(zero), recurse(one)))
+        return best
+
+    return recurse(concepts)
+
+
+def hamming_distance(first: str, second: str) -> int:
+    return sum(left != right for left, right in zip(first, second))
+
+
 def main() -> None:
     sizes = tuple(minimum_teaching_set_size(concept, CLASS) for concept in CLASS)
     assert sizes == EXPECTED_SIZES, (sizes, EXPECTED_SIZES)
@@ -62,9 +96,20 @@ def main() -> None:
         largest_star_dimension(center) for center in map("".join, product("01", repeat=5))
     )
     assert minimum_centered_star == 3
+    assert len(CLASS) == 13
+    assert all({concept[index] for concept in CLASS} == {"0", "1"} for index in range(5))
+    assert vc_dimension() == 3
+    assert littlestone_dimension(CLASS) == 3
+    assert max(hamming_distance(first, second) for first in CLASS for second in CLASS) == 5
+    assert min(
+        max(hamming_distance(centre, concept) for concept in CLASS)
+        for centre in map("".join, product("01", repeat=5))
+    ) == 4
     print(f"individual minimum teaching-set sizes: {sizes}")
     print("sum: 40; average teaching dimension: 40/13")
     print("star number: 4; co-VC dimension: 4; minimum star number: 3")
+    print("size: 13; effective range: 5; VC dimension: 3; Littlestone dimension: 3")
+    print("diameter: 5; Hamming radius: 4")
 
 
 if __name__ == "__main__":

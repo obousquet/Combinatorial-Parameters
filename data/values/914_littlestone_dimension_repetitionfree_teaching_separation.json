@@ -1,0 +1,12 @@
+{
+  "id": 914,
+  "name": "Littlestone Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "littlestone_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The standard restriction recurrence $L(\\mathcal H)=\\max_x(1+\\min\\{L(\\mathcal H_{x=0}),L(\\mathcal H_{x=1})\\})$ evaluates to three on the displayed finite class. The recursive computation is checked in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{littlestone1988learning,doliwa2014recursive}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 913,
+  "name": "VC Dimension of the Repetition-Free Teaching Separation Class",
+  "short_name": "vc_dimension_repetitionfree_teaching_separation",
+  "class_id": "#classes/repetitionfree_teaching_separation",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Enumerating coordinate subsets finds a shattered three-set and no shattered four-set. The exhaustive check is in $\\texttt{sync/verify\\_repetitionfree\\_teaching.py}$.",
+  "references": "\\cite{doliwa2014recursive}"
+}
