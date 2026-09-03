@@ -10,5 +10,8 @@
   "details": "For every finite binary class, $\\mathrm{SR}(\\mathcal H)\\geq\\mathrm{sd}(\\mathcal H)+1$.",
   "status": "established",
   "proof": "Theorem 12 states the source chain $\\mathrm{sd}(\\mathcal H)+1\\leq\\mathrm{SCO}(\\mathcal H)\\leq\\mathrm{SR}(\\mathcal H)$.  The paper explicitly identifies its sign-rank with the minimum real rank realizing the incidence sign matrix, which is the catalogue convention.",
-  "references": "\\cite{chornomaz2025spherical}"
+  "references": "\\cite{chornomaz2025spherical}",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "strict",
+  "witness_verification": "For the singleton-plus-empty class (with $n\\geq4$), sign rank is 3 and spherical dimension is 1."
 }
