@@ -4,9 +4,8 @@
   "short_name": "monotonic_projected_minimum_teaching_set_size_singletons_plus_empty_set",
   "class_id": "#classes/singletons_plus_empty_set",
   "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
-  "value": "$1$",
-  "value_class": "omega_1",
+  "value": "$n-1$",
+  "value_class": "omega_n",
   "status": "established",
-  "proof": "The monotonic projected parameter dominates monotonic minimum teaching-set size, whose established value here is $1$. It is at most Littlestone dimension, also $1$ for the singleton-plus-empty class. Thus the value is $1$.",
-  "references": "\\cite{doliwa2014recursive}"
+  "proof": "The singleton subfamily is admissible and has minimum projected teaching-set size $n-1$, giving the lower bound. Every subfamily consists of the empty trace together with at most $m\\leq n$ singleton traces. If it contains a singleton, that target has worst projected teaching-set size at most $m-1\\leq n-1$; if it contains only the empty trace, its value is zero. Thus every subfamily has minimum projected teaching-set size at most $n-1$, proving equality."
 }

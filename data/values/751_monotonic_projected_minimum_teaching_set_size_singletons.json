@@ -4,9 +4,8 @@
   "short_name": "monotonic_projected_minimum_teaching_set_size_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
-  "value": "$1$",
-  "value_class": "omega_1",
+  "value": "$n-1$",
+  "value_class": "omega_n",
   "status": "established",
-  "proof": "The monotonic projected parameter is at least monotonic minimum teaching-set size, whose established singleton-class value is $1$. It is at most order sample compression, also $1$ on this class. Hence its value is $1$.",
-  "references": "\\cite{darnstadt2016order}"
+  "proof": "The class itself is an admissible subfamily, and its minimum projected teaching-set size is $n-1$, so the monotonic projected value is at least $n-1$. Conversely, every subfamily of the singleton class has at most $n$ concepts. For a subfamily with $m\\geq2$ singleton traces, projecting away the target coordinate shows that its minimum projected teaching-set size is at most $m-1\\leq n-1$; one-concept subfamilies have value zero. Taking the maximum over subfamilies gives exactly $n-1$."
 }
