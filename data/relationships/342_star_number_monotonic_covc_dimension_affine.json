@@ -1,0 +1,14 @@
+{
+  "id": 342,
+  "name": "Star Number / Monotonic co-VC Dimension (affine)",
+  "short_name": "star_number_monotonic_covc_dimension_affine",
+  "parameter_1_id": "#parameters/star_number",
+  "parameter_2_id": "#parameters/monotonic_covc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "The monotonic co-VC dimension is at most the star number plus one.",
+  "status": "established",
+  "proof": "For every subfamily $\\mathcal G\\subseteq\\mathcal H$, the established affine hollow-star bound gives $\\mathrm S(\\mathcal G)\\ge\\mathrm{coVC}(\\mathcal G)-1$. Star Number is subfamily-monotonic, so $\\mathrm S(\\mathcal H)\\ge\\mathrm{coVC}(\\mathcal G)-1$. Taking the maximum over $\\mathcal G$ gives $\\mathrm S(\\mathcal H)\\ge\\mathrm{coVC}^*(\\mathcal H)-1.",
+  "derivation": "max_subfamilies from #relationships/star_number_covc_dimension_affine"
+}

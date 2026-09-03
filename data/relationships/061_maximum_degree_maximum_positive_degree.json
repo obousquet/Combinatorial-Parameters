@@ -4,7 +4,6 @@
   "parameter_2_id": "#parameters/maximum_positive_degree",
   "relationship_type": "larger",
   "details": "For the oriented one-inclusion graph of every finite concept class.",
-  "variant": "relative",
   "witness": "#classes/halfintervals",
   "witness_strength": "strict",
   "short_name": "maximum_degree_maximum_positive_degree",

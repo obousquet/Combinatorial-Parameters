@@ -105,9 +105,17 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
                     "parameter_1_larger_witness": first_witness,
                     "parameter_2_larger_witness": second_witness,
                     # These witnesses are generally literature families rather
-                    # than a single finite benchmark row.  Their explicit
-                    # descriptions and cited proof are the certificate.
-                    "verified": bool(first_witness and second_witness and relationship.get("references")),
+                    # than a single finite benchmark row. Their explicit
+                    # descriptions plus a citation or self-contained proof are
+                    # the certificate.
+                    # A two-sided family certificate can be self-contained:
+                    # elementary comparisons are often proved by the canonical
+                    # value records rather than a separate literature source.
+                    "verified": bool(
+                        first_witness
+                        and second_witness
+                        and (relationship.get("references") or relationship.get("proof"))
+                    ),
                 }
             )
             continue

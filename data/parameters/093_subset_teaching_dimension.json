@@ -4,18 +4,27 @@
   "short_name": "subset_teaching_dimension",
   "symbol": "\u005cmathrm{STD}",
   "category": "teaching",
+  "symmetric": true,
   "monotonic": false,
-  "p_monotonic": null,
+  "p_monotonic": false,
   "c_monotonic": null,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
   "definition": "Let $\u005cmathrm{STS}^{0}(h,\u005cmathcal H)$ be the set of all ordinary minimum teaching samples for $h$. Given $k$ and a sample $S$, set $\u005cmathrm{Cons}_{\u005cmathrm{sub}}(S,\u005cmathcal H,k)=\u005c{h'\u005cin\u005cmathcal H:\u005cexists S'\u005cin\u005cmathrm{STS}^{k}(h',\u005cmathcal H), S\u005csubseteq S'\u005c}$. Then $\u005cmathrm{STD}^{k+1}(h,\u005cmathcal H)$ is the smallest $|S|$ for which this set is $\u005c{h\u005c}$, and $\u005cmathrm{STS}^{k+1}(h,\u005cmathcal H)$ contains all minimizers. Once these sets stabilize, the **Subset Teaching Dimension** is the maximum stabilized value over $h$.",
   "graph_summary": "Iterated cooperative teaching: a sample identifies a target by being contained in one of its previous minimum teaching samples and in no other target’s.",
-  "description": "An iteratively defined teaching parameter. It is at most ordinary teaching dimension, but is neither comparable with Balbach nor recursive teaching dimension nor monotone under subclasses.",
+  "description": "An iteratively defined, complement-symmetric teaching parameter. It is at most ordinary teaching dimension, but is neither comparable with Balbach nor recursive teaching dimension, and is neither subclass- nor projection-monotonic.",
   "origin_references": "Introduced in \u005ccite{zilles2011models}.",
   "monotonicity_evidence": {
     "monotonic": {
       "proof": "Theorem 21 constructs, for every $u>2$, a class $\u005cmathcal C$ with a subclass $\u005cmathcal C'$ such that $\u005cmathrm{STD}(\u005cmathcal C)=2$ and $\u005cmathrm{STD}(\u005cmathcal C')=u$.",
+      "kind": "citation"
+    },
+    "symmetric": {
+      "proof": "Complementing every concept exchanges positive and negative labels bijectively. This preserves ordinary minimum teaching samples, inclusion between samples, and hence every stage of the subset-teaching recursion.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Table 7 of Zilles--Lange--Holte--Zinkevich \u005ccite{zilles2011models} gives a class of STD 1 whose projection obtained by deleting x_1 has value 2; its four projected concepts remain distinct. Thus deleting coordinates can increase STD.",
       "kind": "citation"
     },
     "doubly_monotonic": {

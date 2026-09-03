@@ -1,0 +1,15 @@
+{
+  "id": 325,
+  "name": "Subset Teaching Dimension / No-Clashing Teaching Dimension Incomparability",
+  "short_name": "subset_teaching_dimension_noclashing_teaching_dimension_incomparable",
+  "parameter_1_id": "#parameters/subset_teaching_dimension",
+  "parameter_2_id": "#parameters/noclashing_teaching_dimension",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "For finite binary concept classes, neither parameter admits a universal affine-linear upper bound in terms of the other.",
+  "parameter_1_larger_witness": "For every $u\u005cge2$, the family $\u005cmathcal C^u_{1/2}$ of all singleton and doubleton subsets of a $(u+1)$-point domain has $\u005cmathrm{STD}=u$ and $\u005cmathrm{NCTD}\u005cle\u005cmathrm{RTD}=2$.",
+  "parameter_2_larger_witness": "Proposition 17(i) gives, for every $n$, a generalized paired family with $\u005cmathrm{STD}=1$ and $\u005cmathrm{NCTD}=n$.",
+  "proof": "Theorem 36 of Zilles--Lange--Holte--Zinkevich gives the first family with $\u005cmathrm{STD}=u$ and $\u005cmathrm{RTD}=2$; no-clashing teaching dimension is at most recursive teaching dimension. Mansouri--Simon--Singla--Zilles, Proposition 17(i), constructs the reverse unbounded separation.",
+  "proof_source": "Zilles et al., Theorem 36; Mansouri et al., Proposition 17(i)",
+  "references": "\\cite{zilles2011models,KSZ2019,mansouri2022batch}"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 967,
+  "name": "Projected Interpolation Degree of Trivial Concepts",
+  "short_name": "projected_interpolation_degree_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/projected_interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty projection remains a two-point class of opposite constants and has interpolation degree one; the empty projection has degree zero. Hence the maximum is one."
+}

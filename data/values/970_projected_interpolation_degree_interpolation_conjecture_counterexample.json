@@ -1,0 +1,11 @@
+{
+  "id": 970,
+  "name": "Projected Interpolation Degree of the Interpolation-Conjecture Counterexample",
+  "short_name": "projected_interpolation_degree_interpolation_conjecture_counterexample",
+  "class_id": "#classes/interpolation_conjecture_counterexample",
+  "parameter_id": "#parameters/projected_interpolation_degree",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projecting $\\{001,010,011,100\\}$ onto its last two coordinates gives the full two-cube, so the value is at least two. The other two-coordinate projections have at most three distinct traces and interpolation degree one, while the original class and all one-coordinate projections have degree at most one. Thus the maximum is exactly two."
+}

@@ -1,0 +1,13 @@
+{
+  "id": 340,
+  "name": "Monotonic co-VC Dimension / co-VC Dimension",
+  "short_name": "monotonic_covc_dimension_covc_dimension",
+  "parameter_1_id": "#parameters/monotonic_covc_dimension",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "larger",
+  "details": "The monotonic envelope dominates the original co-VC dimension.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "status": "established",
+  "proof": "The defining maximum ranges over all subfamilies, including $\\mathcal H$ itself."
+}

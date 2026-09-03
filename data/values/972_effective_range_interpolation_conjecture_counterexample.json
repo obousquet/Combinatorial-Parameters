@@ -1,0 +1,11 @@
+{
+  "id": 972,
+  "name": "Effective Range of the Interpolation-Conjecture Counterexample",
+  "short_name": "effective_range_interpolation_conjecture_counterexample",
+  "class_id": "#classes/interpolation_conjecture_counterexample",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "In $\\{001,010,011,100\\}$, each of the three coordinates takes both labels: compare $001$ with $100$ for the first coordinate, $001$ with $010$ for the second, and $010$ with $011$ for the third."
+}

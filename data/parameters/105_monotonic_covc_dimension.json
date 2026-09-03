@@ -1,0 +1,34 @@
+{
+  "id": 105,
+  "name": "Monotonic co-VC Dimension",
+  "symbol": "\\mathrm{coVC}^*",
+  "definition": "The **monotonic co-VC dimension** is the subfamily-monotonic envelope of co-VC dimension: $$\\mathrm{coVC}^*(\\mathcal H):=\\max_{\\mathcal G\\subseteq\\mathcal H}\\mathrm{coVC}(\\mathcal G).$$",
+  "description": "The largest hollow-star dimension obtainable after discarding concepts.",
+  "graph_summary": "Largest co-VC dimension among subfamilies; a doubly monotonic hollow-star parameter.",
+  "category": "holes",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": null,
+  "short_name": "monotonic_covc_dimension",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "Every subfamily of a subfamily of $\\mathcal H$ is also a subfamily of $\\mathcal H$, so enlarging $\\mathcal H$ can only enlarge the defining maximum.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "For every subfamily of a projection $\\mathcal H_{|S}$, select one preimage in $\\mathcal H$ for each projected concept. It is the projection of a subfamily $\\mathcal G\\subseteq\\mathcal H$. Projection-monotonicity of co-VC gives $\\mathrm{coVC}((\\mathcal H_{|S})')\\le\\mathrm{coVC}(\\mathcal G)\\le\\mathrm{coVC}^*(\\mathcal H)$.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is a subfamily restriction followed by a projection, and the preceding two established properties apply.",
+      "kind": "definitional_consequence"
+    },
+    "doubly_monotonic": {
+      "proof": "It is both subfamily-monotonic and projection-monotonic by the displayed direct arguments.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

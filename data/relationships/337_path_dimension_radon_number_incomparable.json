@@ -1,0 +1,14 @@
+{
+  "id": 337,
+  "name": "Path Dimension / Radon Number (Incomparable)",
+  "short_name": "path_dimension_radon_number_incomparable",
+  "parameter_1_id": "#parameters/path_dimension",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm P(2^{[n]})=n$ while its Radon number is $\\lfloor\\log_2(2n+2)\\rfloor$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, the Radon number is $n$ while $\\mathrm P(\\mathcal S_n)=1$.",
+  "status": "established",
+  "proof": "The Full Cube and Singleton value formulae yield unbounded gaps in both directions.",
+  "proof_source": "Database-owned value proofs for Path Dimension and Radon Number of the Full Cube and Singletons."
+}

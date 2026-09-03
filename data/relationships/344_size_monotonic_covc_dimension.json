@@ -1,0 +1,15 @@
+{
+  "id": 344,
+  "name": "Size / Monotonic co-VC Dimension",
+  "short_name": "size_monotonic_covc_dimension",
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/monotonic_covc_dimension",
+  "relationship_type": "larger",
+  "details": "Consequence of the max-over-subfamilies construction.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
+  "status": "established",
+  "proof": "Every subfamily $\\mathcal G$ has $\\mathrm{coVC}(\\mathcal G)\\le|\\mathcal G|\\le|\\mathcal H|$. Maximizing over $\\mathcal G\\subseteq\\mathcal H$ proves the bound.",
+  "derivation": "max_subfamilies from #relationships/size_covc_dimension",
+  "references": "\\cite{bousquet2020proper}"
+}

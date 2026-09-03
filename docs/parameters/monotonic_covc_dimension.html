@@ -1,0 +1,122 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Combinatorial-Parameters/">
+        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
+    </head>
+    <body>
+        <header>
+            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="parameters/index.html">Parameters</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="values/index.html">Values</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
+    <div class="table-card" id="math-105" style="position:relative;">
+        
+        <h3><a href="parameters/monotonic_covc_dimension.html" class="table-title-link">Monotonic co-VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Monotonic co-VC Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathrm{coVC}^*">
+            \[\mathrm{coVC}^*\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>The <strong>monotonic co-VC dimension</strong> is the subfamily-monotonic envelope of co-VC dimension: $$\mathrm{coVC}^*(\mathcal H):=\max_{\mathcal G\subseteq\mathcal H}\mathrm{coVC}(\mathcal G).$$</p></div>
+<strong>Description:</strong><div class="text-field"><p>The largest hollow-star dimension obtainable after discarding concepts.</p></div>
+
+
+<p><strong>Category:</strong> Holes and Homology</p>
+<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Monotonic:</strong> Yes</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
+<p><strong>C-Monotonic:</strong> Yes</p>
+<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/monotonic_covc_dimension_trivial_concepts.html'>Monotonic co-VC Dimension of Trivial Concepts</a></li><li><a href='values/monotonic_covc_dimension_singletons.html'>Monotonic co-VC Dimension of Singletons</a></li><li><a href='values/monotonic_covc_dimension_full_cube.html'>Monotonic co-VC Dimension of Full Cube</a></li><li><a href='values/monotonic_covc_dimension_singletons_plus_empty_set.html'>Monotonic co-VC Dimension of Singletons plus Empty Set</a></li><li><a href='values/monotonic_covc_dimension_warmuth_c5.html'>Monotonic co-VC Dimension of Warmuth's $C_5$</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/monotonic_covc_dimension_covc_dimension.html" class="relationship-statement">$\mathrm{coVC}^* \ge \mathrm{coVC}$</a></li><li><a href="relationships/monotonic_covc_dimension_star_number.html" class="relationship-statement">$\mathrm{coVC}^* \ge \mathrm{S}$</a></li><li><a href="relationships/star_number_monotonic_covc_dimension_affine.html" class="relationship-statement">$\mathrm{S} \ge \mathrm{coVC}^* - (1)$</a></li><li><a href="relationships/effective_range_monotonic_covc_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{coVC}^*$</a></li><li><a href="relationships/size_monotonic_covc_dimension.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{coVC}^*$</a></li><li><a href="relationships/monotonic_covc_dimension_diameter_incomparable.html" class="relationship-statement">$\mathrm{coVC}^*\mathrel{\parallel}\mathrm{D}\;\text{(incomparable)}$</a></li><li><a href="relationships/monotonic_covc_dimension_log_shattering_incomparable.html" class="relationship-statement">$\mathrm{coVC}^*\mathrel{\parallel}\log \mathrm{sh}\;\text{(incomparable)}$</a></li></ul></p></div>
+
+        </div>
+    </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
+    </body>
+    </html>
+    

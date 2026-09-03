@@ -1,0 +1,15 @@
+{
+  "id": 355,
+  "name": "2-Block Littlestone Dimension / 3-Block Littlestone Dimension (affine)",
+  "short_name": "2block_littlestone_dimension_3block_littlestone_dimension_affine",
+  "parameter_1_id": "#parameters/2block_littlestone_dimension",
+  "parameter_2_id": "#parameters/3block_littlestone_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\frac{2}{3}",
+  "additive_constant": "\\frac{4}{3}",
+  "details": "The complete-block comparison gives $\\mathrm B_3\\le\\frac32\\mathrm B_2+2$, equivalently the displayed affine lower bound.",
+  "status": "established",
+  "proof_source": "Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.",
+  "latex_proof_label": "prop:block-littlestone-round-order",
+  "proof": "The general relation $\\mathrm B_\\ell\\le(\\ell/k)\\mathrm B_k+(\\ell-1)$, with $k=2$ and $\\ell=3$, rearranges to $\\mathrm B_2\\ge\\frac23\\mathrm B_3-\\frac43$."
+}

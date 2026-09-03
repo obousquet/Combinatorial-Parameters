@@ -1,0 +1,11 @@
+{
+  "id": 964,
+  "name": "Monotonic co-VC Dimension of Singletons",
+  "short_name": "monotonic_covc_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/monotonic_covc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The singleton class itself has co-VC dimension $n$, so the envelope is at least $n$. Its effective range has $n$ coordinates, which upper-bounds every co-VC value of every subfamily."
+}

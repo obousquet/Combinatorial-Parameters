@@ -1,0 +1,14 @@
+{
+  "id": 333,
+  "name": "Diameter / Log Shattering (Incomparable)",
+  "short_name": "diameter_log_shattering_incomparable",
+  "parameter_1_id": "#parameters/diameter",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, $\\mathrm D(\\mathcal T_n)=n$ while $\\mathrm{LS}(\\mathcal T_n)=\\log(n+1)$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\mathrm{LS}(\\mathcal S_n)=\\log(n+1)$ while $\\mathrm D(\\mathcal S_n)=2$.",
+  "status": "established",
+  "proof": "The recorded value formulae yield a linear-versus-logarithmic gap in one direction and an unbounded logarithmic-versus-constant gap in the other.",
+  "proof_source": "Database-owned value proofs for Diameter and Log Shattering of Trivial Concepts and Singletons."
+}

@@ -3,7 +3,6 @@
   "parameter_1_id": "#parameters/vc_dimension",
   "parameter_2_id": "#parameters/effective_vc_radius",
   "relationship_type": "larger",
-  "variant": "p_monotonic",
   "details": "For finite concept classes; this is immediate from the definition of effective VC radius.",
   "witness": "#classes/addressing",
   "witness_strength": "unbounded",

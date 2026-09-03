@@ -1,0 +1,13 @@
+{
+  "id": 345,
+  "name": "Projected Interpolation Degree / Interpolation Degree",
+  "short_name": "projected_interpolation_degree_interpolation_degree",
+  "parameter_1_id": "#parameters/projected_interpolation_degree",
+  "parameter_2_id": "#parameters/interpolation_degree",
+  "relationship_type": "larger",
+  "details": "The full-domain projection is included in the defining maximum.",
+  "witness": "#classes/interpolation_conjecture_counterexample",
+  "witness_strength": "strict",
+  "status": "established",
+  "proof": "Taking $S=\\mathcal X$ in the definition gives $\\mathrm{intdeg}^p(\\mathcal H)\\ge\\mathrm{intdeg}(\\mathcal H)$."
+}

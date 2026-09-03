@@ -1,0 +1,13 @@
+{
+  "id": 341,
+  "name": "Monotonic co-VC Dimension / Star Number",
+  "short_name": "monotonic_covc_dimension_star_number",
+  "parameter_1_id": "#parameters/monotonic_covc_dimension",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "larger",
+  "details": "Every realized star becomes a hollow star after its centre is removed.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
+  "status": "established",
+  "proof": "Let $h_0,h_1,\\ldots,h_d$ witness a $d$-star in a projection of $\\mathcal H$.  In the subfamily formed by $h_1,\\ldots,h_d$, the centre trace of $h_0$ is absent while each of its $d$ one-coordinate flips is present. Thus that subfamily has co-VC dimension at least $d$, and maximizing over subfamilies proves $\\mathrm{coVC}^*(\\mathcal H)\\ge\\mathrm S(\\mathcal H)$."
+}

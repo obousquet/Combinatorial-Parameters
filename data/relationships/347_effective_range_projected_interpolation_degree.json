@@ -1,0 +1,13 @@
+{
+  "id": 347,
+  "name": "Effective Range / Projected Interpolation Degree",
+  "short_name": "effective_range_projected_interpolation_degree",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_interpolation_degree",
+  "relationship_type": "larger",
+  "details": "Interpolation on an $m$-coordinate Boolean domain has degree at most $m$.",
+  "witness": "#classes/interpolation_conjecture_counterexample",
+  "witness_strength": "strict",
+  "status": "established",
+  "proof": "For every projection, its effective range has at most $\\mathrm E(\\mathcal H)$ coordinates. Every function on a Boolean class over $m$ active coordinates is the restriction of a multilinear polynomial of degree at most $m$. Thus each projected interpolation degree is at most $\\mathrm E(\\mathcal H)$, and so is their maximum."
+}

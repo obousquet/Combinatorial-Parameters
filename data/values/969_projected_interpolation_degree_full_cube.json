@@ -1,0 +1,11 @@
+{
+  "id": 969,
+  "name": "Projected Interpolation Degree of Full Cube",
+  "short_name": "projected_interpolation_degree_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_interpolation_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full-domain projection is the $n$-cube and has interpolation degree $n$. No projection has more than $n$ active coordinates, so degree $n$ is also an upper bound."
+}

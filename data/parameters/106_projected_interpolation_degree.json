@@ -1,0 +1,34 @@
+{
+  "id": 106,
+  "name": "Projected Interpolation Degree",
+  "symbol": "\\mathrm{intdeg}^p",
+  "definition": "The **projected interpolation degree** is $$\\mathrm{intdeg}^p(\\mathcal H):=\\max_{S\\subseteq\\mathcal X}\\mathrm{intdeg}(\\mathcal H_{|S}).$$",
+  "description": "The largest polynomial interpolation degree required by a coordinate projection.",
+  "graph_summary": "Maximum interpolation degree over coordinate projections; it dominates VC dimension.",
+  "category": "algebraic",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "strictly_monotonic": null,
+  "short_name": "projected_interpolation_degree",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For $\\mathcal G\\subseteq\\mathcal H$, every $\\mathcal G_{|S}$ is a subfamily of $\\mathcal H_{|S}$, and interpolation degree is subfamily-monotonic. Taking maxima over $S$ preserves the inequality.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "A projection of a projection is a projection of the original class; the set of projections optimized over after projecting is therefore a subset of those optimized over originally.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is a subfamily restriction followed by a projection.",
+      "kind": "definitional_consequence"
+    },
+    "doubly_monotonic": {
+      "proof": "It is both subfamily-monotonic and projection-monotonic by the displayed direct arguments.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

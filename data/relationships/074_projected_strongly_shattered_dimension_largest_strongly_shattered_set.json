@@ -3,7 +3,6 @@
   "parameter_1_id": "#parameters/projected_strongly_shattered_dimension",
   "parameter_2_id": "#parameters/largest_strongly_shattered_set",
   "relationship_type": "larger",
-  "variant": "p_monotonic",
   "details": "Definition",
   "status": "established",
   "proof": "The full-domain projection is among the projections optimized over by the projected parameter, so it includes every strongly shattered set of the original class.",

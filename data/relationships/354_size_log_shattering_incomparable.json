@@ -1,0 +1,14 @@
+{
+  "id": 354,
+  "name": "Size / Log Shattering (Incomparable)",
+  "short_name": "size_log_shattering_incomparable",
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For the singleton class $\\mathcal S_n$, $|\\mathcal S_n|=n$ while $\\mathrm{LS}(\\mathcal S_n)=\\log(n+1)$.",
+  "parameter_2_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, $\\mathrm{LS}(\\mathcal T_n)=\\log(n+1)$ while $|\\mathcal T_n|=2$.",
+  "status": "established",
+  "proof": "The Singleton and Trivial-Concept value calculations give the two opposite unbounded gaps.",
+  "proof_source": "Database-owned value proofs for Size and Log Shattering of Singletons and Trivial Concepts."
+}

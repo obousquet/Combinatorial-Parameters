@@ -6,7 +6,6 @@
   "status": "established",
   "witness": "#classes/repetitionfree_teaching_separation",
   "witness_strength": "strict",
-  "variant": "p_monotonic",
   "details": "Definition",
   "proof": "The identity projection is among the coordinate projections.  The maximum effective VC radius over all projections is therefore at least the effective VC radius of $\\mathcal{H}$ itself.",
   "short_name": "projected_vc_radius_effective_vc_radius",

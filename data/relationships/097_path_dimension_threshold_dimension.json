@@ -3,7 +3,6 @@
   "parameter_1_id": "#parameters/path_dimension",
   "parameter_2_id": "#parameters/threshold_dimension",
   "relationship_type": "larger",
-  "variant": "relative",
   "details": "For finite concept classes, path dimension dominates threshold dimension.",
   "witness": "#classes/warmuth_c5",
   "witness_strength": "strict",

@@ -3,7 +3,6 @@
   "parameter_1_id": "#parameters/monotonic_minimum_teaching_set_size",
   "parameter_2_id": "#parameters/minimum_teaching_set_size",
   "relationship_type": "larger",
-  "variant": "monotonic",
   "details": "For finite concept classes.",
   "short_name": "monotonic_minimum_teaching_set_size_minimum_teaching_set_size",
   "name": "Monotonic Minimum Teaching Set Size / Minimum Teaching Set Size",

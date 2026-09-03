@@ -1,0 +1,11 @@
+{
+  "id": 963,
+  "name": "Monotonic co-VC Dimension of Trivial Concepts",
+  "short_name": "monotonic_covc_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/monotonic_covc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class itself has co-VC dimension two, giving the lower bound. Its Star Number is one, and the established inequality $\\mathrm{coVC}^*\\le\\mathrm S+1$ gives the matching upper bound."
+}

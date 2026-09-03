@@ -1,0 +1,14 @@
+{
+  "id": 327,
+  "name": "Diameter / Projected Membership Queries Complexity (Incomparable)",
+  "short_name": "diameter_projected_membership_queries_complexity_incomparable",
+  "parameter_1_id": "#parameters/diameter",
+  "parameter_2_id": "#parameters/projected_membership_queries_complexity",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, $\\mathrm D(\\mathcal T_n)=n$ and $\\mathrm Q_{\\mathrm m}^p(\\mathcal T_n)=1$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\mathrm Q_{\\mathrm m}^p(\\mathcal S_n)=n-1$ and $\\mathrm D(\\mathcal S_n)=2$.",
+  "status": "established",
+  "proof": "These are the canonical value calculations for Trivial Concepts and Singletons; their two opposite unbounded gaps rule out both affine-linear reverse bounds.",
+  "proof_source": "Database-owned value proofs for Diameter and Projected Membership Queries Complexity of Trivial Concepts and Singletons."
+}

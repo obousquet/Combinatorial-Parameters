@@ -3,7 +3,6 @@
   "parameter_1_id": "#parameters/diameter",
   "parameter_2_id": "#parameters/oriented_diameter",
   "relationship_type": "larger",
-  "variant": "relative",
   "details": "For finite concept classes, diameter dominates oriented diameter.",
   "witness": "#classes/warmuth_c5",
   "witness_strength": "strict",

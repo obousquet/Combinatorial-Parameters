@@ -1,0 +1,14 @@
+{
+  "id": 339,
+  "name": "Proper Equivalence Queries Complexity / Hitting Size (Incomparable)",
+  "short_name": "proper_equivalence_queries_complexity_hitting_size_incomparable",
+  "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/hitting_size",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For half-intervals $\\mathcal I_n$, $\\mathrm Q_{\\mathrm{peq}}(\\mathcal I_n)=\\log n$ while $\\mathrm{HT}(\\mathcal I_n)=1$.",
+  "parameter_2_larger_witness": "For singletons plus the empty set $\\mathcal S_n\\cup\\{\\emptyset\\}$, $\\mathrm{HT}=n$ while $\\mathrm Q_{\\mathrm{peq}}=1$.",
+  "status": "established",
+  "proof": "The Half-interval and Singletons-plus-empty-set value calculations give the two opposite unbounded separations.",
+  "proof_source": "Database-owned value proofs for Proper Equivalence Queries Complexity and Hitting Size of Half-intervals and Singletons plus the Empty Set."
+}

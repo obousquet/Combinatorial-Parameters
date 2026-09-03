@@ -1,0 +1,11 @@
+{
+  "id": 968,
+  "name": "Projected Interpolation Degree of Singletons",
+  "short_name": "projected_interpolation_degree_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty coordinate projection is the empty concept together with singleton concepts on the retained coordinates. Affine-linear polynomials interpolate arbitrary values on that class, while a nontrivial projection is not interpolated by constants."
+}

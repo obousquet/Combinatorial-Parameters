@@ -464,6 +464,24 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     legend.extend([{"type": "edge", "label": t, "text": arrow_values[t], **v} for t, v in arrow_map.items()])
     legend.extend([
         {
+            "type": "edge",
+            "label": "A ≥ B",
+            "text": "Dashed arrow: direct relationship with no displayed separation witness",
+            **arrow_map["larger"],
+        },
+        {
+            "type": "edge",
+            "label": "A ≥ B",
+            "text": "Thin solid arrow: strict-separation witness displayed on the edge",
+            **{**arrow_map["larger"], "style": "solid", "penwidth": 1},
+        },
+        {
+            "type": "edge",
+            "label": "A ≥ B",
+            "text": "Thick solid arrow: unbounded-gap witness displayed on the edge",
+            **{**arrow_map["larger"], "style": "solid", "penwidth": 2},
+        },
+        {
             "type": "node",
             "label": "C",
             "text": "Strict-separation witness (refutes the reverse inequality)",
@@ -645,12 +663,14 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         }
         if witness_strength == "unbounded":
             edge.update({
+                "penwidth": 2,
                 "label_shape": "doubleoctagon",
                 "label_color": "#D35400",
                 "label_fillcolor": "#FFF0D9",
             })
         elif witness_strength == "strict":
             edge.update({
+                "penwidth": 1,
                 "label_shape": "box",
                 "label_color": "#888888",
                 "label_fillcolor": "#f0f0f0",

@@ -1,0 +1,11 @@
+{
+  "id": 346,
+  "name": "Projected Interpolation Degree / VC Dimension",
+  "short_name": "projected_interpolation_degree_vc_dimension",
+  "parameter_1_id": "#parameters/projected_interpolation_degree",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "A largest shattered projection is a full cube.",
+  "status": "established",
+  "proof": "If $S$ is shattered with $|S|=d$, then $\\mathcal H_{|S}=\\{0,1\\}^S$. The interpolation degree of this full $d$-cube is $d$, so the maximum over projections is at least $d=\\mathrm{VC}(\\mathcal H)$."
+}

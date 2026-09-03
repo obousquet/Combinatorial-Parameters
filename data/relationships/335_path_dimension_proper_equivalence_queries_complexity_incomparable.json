@@ -1,0 +1,14 @@
+{
+  "id": 335,
+  "name": "Path Dimension / Proper Equivalence Queries Complexity (Incomparable)",
+  "short_name": "path_dimension_proper_equivalence_queries_complexity_incomparable",
+  "parameter_1_id": "#parameters/path_dimension",
+  "parameter_2_id": "#parameters/proper_equivalence_queries_complexity",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For half-intervals $\\mathcal I_n$, $\\mathrm P(\\mathcal I_n)=n-1$ while $\\mathrm Q_{\\mathrm{peq}}(\\mathcal I_n)=\\log n$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\mathrm Q_{\\mathrm{peq}}(\\mathcal S_n)=n-1$ while $\\mathrm P(\\mathcal S_n)=1$.",
+  "status": "established",
+  "proof": "The recorded Half-interval and Singleton value formulae give unbounded gaps in opposite directions.",
+  "proof_source": "Database-owned value proofs for Path Dimension and Proper Equivalence Queries Complexity of Half-intervals and Singletons."
+}

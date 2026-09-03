@@ -1,0 +1,14 @@
+{
+  "id": 331,
+  "name": "Diameter / Combinatorial Eluder Dimension (Incomparable)",
+  "short_name": "diameter_combinatorial_eluder_dimension_incomparable",
+  "parameter_1_id": "#parameters/diameter",
+  "parameter_2_id": "#parameters/combinatorial_eluder_dimension",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, $\\mathrm D(\\mathcal T_n)=n$ and $\\operatorname{cedim}(\\mathcal T_n)=1$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\operatorname{cedim}(\\mathcal S_n)=n-1$ and $\\mathrm D(\\mathcal S_n)=2$.",
+  "status": "established",
+  "proof": "The canonical value calculations give unbounded gaps in both directions.",
+  "proof_source": "Database-owned value proofs for Diameter and Combinatorial Eluder Dimension of Trivial Concepts and Singletons."
+}

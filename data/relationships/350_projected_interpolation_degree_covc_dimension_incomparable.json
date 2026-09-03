@@ -1,0 +1,14 @@
+{
+  "id": 350,
+  "name": "Projected Interpolation Degree / co-VC Dimension (Incomparable)",
+  "short_name": "projected_interpolation_degree_covc_dimension_incomparable",
+  "parameter_1_id": "#parameters/projected_interpolation_degree",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
+  "parameter_1_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm{intdeg}^p(2^{[n]})=n$ while $\\mathrm{coVC}(2^{[n]})=0$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\mathrm{coVC}(\\mathcal S_n)=n$ while $\\mathrm{intdeg}^p(\\mathcal S_n)=1$.",
+  "status": "established",
+  "proof": "The canonical Full-Cube and Singleton value calculations provide the two opposite unbounded gaps.",
+  "proof_source": "Database-owned value proofs for Projected Interpolation Degree and co-VC Dimension of the Full Cube and Singletons."
+}
