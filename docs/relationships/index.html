@@ -8463,6 +8463,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-394" style="position:relative;">
+        
+        <h3><a href="relationships/projected_distinguishing_range_proper_ordered_sample_compression.html" class="table-title-link">Projected Distinguishing Range / Proper Ordered Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Distinguishing Range / Proper Ordered Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm R^p(\mathcal H)\geq\mathrm{pOSC}(\mathcal H)$.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For half-intervals on $[n]$, $\mathrm R^p=n-1$, whereas the proper ordered sample-compression value is one.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a proper ordered scheme and consider any inclusion-minimal teaching sample used by its compression rule, for a hypothesis $h$ relative to the later hypotheses in the defining order.  Write $T$ for its coordinate set.  For each $x\in T$, minimality supplies a later hypothesis $h_x$ agreeing with $h$ on $T\setminus\{x\}$ and differing at $x$.  Thus the projection of the relevant tail class to $T$ contains the star consisting of $h_{|T}$ and the $|T|$ distinct one-coordinate flips $(h_x)_{|T}$.  Every coordinate of this star is needed to distinguish its centre from its corresponding leaf, so its distinguishing range is $|T|$.  The full projected class has distinguishing range at least that of this subfamily, hence $\mathrm R^p(\mathcal H)\geq|T|$.  This holds for every compressed minimal teaching sample, so it bounds the scheme size; minimizing over proper ordered schemes gives $\mathrm R^p\geq\mathrm{pOSC}$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

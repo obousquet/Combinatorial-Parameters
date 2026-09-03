@@ -1,0 +1,15 @@
+{
+  "id": 394,
+  "name": "Projected Distinguishing Range / Proper Ordered Sample Compression",
+  "short_name": "projected_distinguishing_range_proper_ordered_sample_compression",
+  "parameter_1_id": "#parameters/projected_distinguishing_range",
+  "parameter_2_id": "#parameters/proper_ordered_sample_compression",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, $\\mathrm R^p(\\mathcal H)\\geq\\mathrm{pOSC}(\\mathcal H)$.",
+  "proof": "Fix a proper ordered scheme and consider any inclusion-minimal teaching sample used by its compression rule, for a hypothesis $h$ relative to the later hypotheses in the defining order.  Write $T$ for its coordinate set.  For each $x\\in T$, minimality supplies a later hypothesis $h_x$ agreeing with $h$ on $T\\setminus\\{x\\}$ and differing at $x$.  Thus the projection of the relevant tail class to $T$ contains the star consisting of $h_{|T}$ and the $|T|$ distinct one-coordinate flips $(h_x)_{|T}$.  Every coordinate of this star is needed to distinguish its centre from its corresponding leaf, so its distinguishing range is $|T|$.  The full projected class has distinguishing range at least that of this subfamily, hence $\\mathrm R^p(\\mathcal H)\\geq|T|$.  This holds for every compressed minimal teaching sample, so it bounds the scheme size; minimizing over proper ordered schemes gives $\\mathrm R^p\\geq\\mathrm{pOSC}$.",
+  "references": "\\cite{darnstadt2016order}",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For half-intervals on $[n]$, $\\mathrm R^p=n-1$, whereas the proper ordered sample-compression value is one."
+}
