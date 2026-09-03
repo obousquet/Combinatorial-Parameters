@@ -1,6 +1,6 @@
 {
   "id": 81,
-  "name": "$k$-Block Littlestone Dimension ($k\\ge2$)",
+  "name": "$k$-Block Littlestone Dimension ($k>2$)",
   "symbol": "\\mathrm{B}_k",
   "category": "queries",
   "symmetric": true,
@@ -9,10 +9,10 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": null,
-  "definition": "Fix $k\\ge2$. A **$k$-block Littlestone tree** of depth $d$ has a domain-point label $x_v$ at every node $v\\in\\{0,1\\}^{<d}$ and is shattered in the ordinary Littlestone sense. In each block beginning at level $qk$, the root label may be arbitrary, while for every $1\\le r<k$ all nodes at level $qk+r$ below the same block root have one common label. Thus a block fixes $k$ coordinates before their joint label in $\\{0,1\\}^k$ is revealed, and has $2^k$ outcomes. $\\mathrm{B}_k(\\mathcal{H})$ is the largest total number $d$ of queried coordinates in a shattered $k$-block tree.",
-  "graph_summary": "Maximum total query depth of a shattered tree with non-adaptive batches of $k$ coordinates.",
+  "definition": "Fix an integer $k>2$. A **$k$-block Littlestone tree** of depth $d$ has a domain-point label $x_v$ at every node $v\\in\\{0,1\\}^{<d}$ and is shattered in the ordinary Littlestone sense. In each block beginning at level $qk$, the root label may be arbitrary, while for every $1\\le r<k$ all nodes at level $qk+r$ below the same block root have one common label. Thus a block fixes $k$ coordinates before their joint label in $\\{0,1\\}^k$ is revealed, and has $2^k$ outcomes. $\\mathrm{B}_k(\\mathcal{H})$ is the largest total number $d$ of queried coordinates in a shattered $k$-block tree.",
+  "graph_summary": "For fixed $k>2$: maximum total query depth of a shattered tree with non-adaptive batches of $k$ coordinates.",
   "description": "Database-defined structural variant; no published origin is claimed. Although the raw depths $\\mathrm B_k$ are not ordered across $k$, the number of complete blocks $\\lfloor\\mathrm B_k/k\\rfloor$ is non-increasing in $k$.",
-  "short_name": "kblock_littlestone_dimension_kge2",
+  "short_name": "kblock_littlestone_dimension_kgt2",
   "monotonicity_evidence": {
     "monotonic": {
       "proof": "A constrained shattered tree for a subfamily is still shattered by every containing class, with exactly the same block-label constraints.",

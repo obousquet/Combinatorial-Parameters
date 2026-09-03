@@ -19,6 +19,15 @@ from typing import Any
 
 Record = dict[str, Any]
 BOUNDARY_PARAMETERS = {"#parameters/effective_range", "#parameters/size"}
+GROWTH_RANK = {
+    "omega_1": 0,
+    "omega_log_n": 1,
+    "omega_n": 2,
+    "omega_n_log_n": 3,
+    "omega_n_squared": 4,
+    "omega_2^n": 5,
+    "$\\Omega(2^n)$": 5,
+}
 
 
 def load_records(directory: Path) -> list[Record]:
@@ -103,6 +112,70 @@ def strict_value_candidates(
     return sorted(candidates, key=lambda item: (item["right"] - item["left"], item["class"]))
 
 
+def localize_bypass_witness(
+    relationship: Record,
+    path: list[Record],
+    values: list[Record],
+    component_of: dict[str, str],
+) -> dict[str, Any]:
+    """Try to place a bypass witness on an edge of its witnessless proof path.
+
+    If ``A >= B >= C`` is the reason a direct witnessed ``A >= C`` edge was
+    reduced away, its witness must separate at least one path edge. Exact
+    values can identify that edge mechanically; missing or symbolic cells are
+    deliberately reported as an unresolved research task rather than guessed.
+    """
+    witness = relationship["witness"]
+    observed: dict[str, int] = {}
+    growth: dict[str, tuple[int, str]] = {}
+    for value in values:
+        if value.get("status") != "established" or value.get("class_id") != witness:
+            continue
+        integer = literal_integer(value.get("value"))
+        if integer is not None:
+            observed[component_of.get(value["parameter_id"], value["parameter_id"])] = integer
+        rank = GROWTH_RANK.get(value.get("value_class"))
+        if rank is not None:
+            component = component_of.get(value["parameter_id"], value["parameter_id"])
+            previous = growth.get(component)
+            if previous is None or rank > previous[0]:
+                growth[component] = (rank, value["value_class"])
+
+    localized = []
+    unknown = []
+    for edge in path:
+        source, target = graph_endpoints(edge)
+        left, right = observed.get(source), observed.get(target)
+        if relationship.get("witness_strength") == "unbounded":
+            left_growth, right_growth = growth.get(source), growth.get(target)
+            if left_growth is not None and right_growth is not None and left_growth[0] > right_growth[0]:
+                localized.append({
+                    "id": edge["id"], "source": source, "target": target,
+                    "evidence": f"{left_growth[1]} > {right_growth[1]}",
+                })
+            elif left_growth is None or right_growth is None:
+                unknown.append({"id": edge["id"], "source": source, "target": target})
+        elif left is None or right is None:
+            unknown.append({"id": edge["id"], "source": source, "target": target})
+        elif left > right:
+            localized.append({
+                "id": edge["id"], "source": source, "target": target,
+                "evidence": f"{left}>{right}",
+            })
+    return {
+        "witness": witness,
+        "path": [edge["id"] for edge in path],
+        "localized_edges": localized,
+        "unknown_edges": unknown,
+        "resolved": bool(localized),
+    }
+
+
+def graph_endpoints(relationship: Record) -> tuple[str, str]:
+    """Use quotient endpoints when auditing a graph-level relationship."""
+    return relationship["parameter_1_id"], relationship["parameter_2_id"]
+
+
 def audit(data_dir: Path) -> dict[str, Any]:
     root = data_dir.parent.resolve()
     graph = load_graph_module(root)
@@ -127,6 +200,7 @@ def audit(data_dir: Path) -> dict[str, Any]:
         "variants": {},
         "boundary_witness_queue": [],
         "witness_queue": [],
+        "witness_protected_bypasses": [],
     }
     boundary_components = {
         component_of[parameter]
@@ -186,6 +260,15 @@ def audit(data_dir: Path) -> dict[str, Any]:
             ],
             "edges": sorted(edge_rows, key=lambda row: (-row["lost_reachability_pairs"], row["id"])),
         }
+        for bypass, path in graph.witness_protected_bypass_relations(variant_relationships):
+            localization = localize_bypass_witness(bypass, path, values, component_of)
+            result["witness_protected_bypasses"].append({
+                "id": bypass["id"],
+                "short_name": bypass["short_name"],
+                "variant": variant,
+                "strength": bypass["witness_strength"],
+                **localization,
+            })
     for key in ("boundary_witness_queue", "witness_queue"):
         result[key].sort(key=lambda row: (-row["lost_reachability_pairs"], row["id"]))
     result["strict_witness_value_checks"] = {
@@ -200,6 +283,7 @@ def audit(data_dir: Path) -> dict[str, Any]:
             for row in summary["edges"]
         ),
     }
+    result["witness_protected_bypasses"].sort(key=lambda row: row["id"])
     return result
 
 
@@ -223,6 +307,10 @@ def main() -> None:
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--json", action="store_true", help="emit the full machine-readable audit")
     parser.add_argument("--all", action="store_true", help="also print every witnessless reduced edge")
+    parser.add_argument(
+        "--check-witness-bypasses", action="store_true",
+        help="fail when a retained witnessed bypass cannot be localized to an alternate witnessless path edge",
+    )
     args = parser.parse_args()
     report = audit(args.data_dir.resolve())
     if args.json:
@@ -240,9 +328,27 @@ def main() -> None:
         "Strict witnesses independently confirmed by literal endpoint values: "
         f"{checks['confirmed']}; not mechanically checkable: {checks['not_literal_or_not_recorded']}"
     )
+    bypasses = report["witness_protected_bypasses"]
+    resolved = sum(row["resolved"] for row in bypasses)
+    print(
+        "Witness-protected transitive bypasses: "
+        f"{len(bypasses)} ({resolved} localized to an alternate path edge; "
+        f"{len(bypasses) - resolved} need value evidence)"
+    )
+    for row in bypasses:
+        locations = ", ".join(
+            f"#{edge['id']} ({edge['evidence']})"
+            for edge in row["localized_edges"]
+        ) or "unresolved"
+        print(
+            f"  #{row['id']:>3} {row['strength']} witness {row['witness']} "
+            f"via {' -> '.join('#' + str(edge_id) for edge_id in row['path'])}: {locations}"
+        )
     print_queue("Boundary Hasse edges needing witnesses", report["boundary_witness_queue"])
     if args.all:
         print_queue("All reduced Hasse edges needing witnesses", report["witness_queue"])
+    if args.check_witness_bypasses and any(not row["resolved"] for row in bypasses):
+        raise SystemExit("unlocalized witness-protected transitive bypasses")
 
 
 if __name__ == "__main__":

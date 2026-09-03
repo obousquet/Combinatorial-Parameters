@@ -1429,8 +1429,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>A 2-block shattered tree is an ordinary shattered Littlestone tree.</p></div>
-<p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
@@ -2859,8 +2859,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Pajor's sandwich theorem bounds log size by log shattering, and halving uses at most log size.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
@@ -3549,32 +3549,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-143" style="position:relative;">
-        
-        <h3><a href="relationships/littlestone_dimension_3block_littlestone_dimension.html" class="table-title-link">Littlestone Dimension / 3-Block Littlestone Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Littlestone Dimension / 3-Block Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A 3-block shattered tree is an ordinary shattered Littlestone tree.</p></div>
-<p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The 3-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Therefore every tree counted by $\mathrm{B}_3(\mathcal H)$ is counted by $\mathrm L(\mathcal H)$, and $\mathrm L(\mathcal H)\ge\mathrm{B}_3(\mathcal H)$.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:block-littlestone-sandwich} in the survey.</p></div>
-
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-144" style="position:relative;">
         
         <h3><a href="relationships/membership_query_complexity_log_size.html" class="table-title-link">Membership Query Complexity / Log Size</a></h3>
@@ -4037,32 +4011,6 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A membership-only learner is a valid learner in the model that also permits proper equivalence queries.  The additional query type cannot increase the optimum, so membership-only complexity is at least the mixed-model complexity.</p></div>
 
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-164" style="position:relative;">
-        
-        <h3><a href="relationships/3block_littlestone_dimension_vc_dimension.html" class="table-title-link">3-Block Littlestone Dimension / VC Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A VC-shattered set gives a level-constant 3-block tree.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S=\{x_1,\ldots,x_d\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies the 3-block constraint (indeed, it is level-constant everywhere). Hence $\mathrm{B}_3(\mathcal H)\ge\operatorname{VC}(\mathcal H)$.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:block-littlestone-sandwich} in the survey.</p></div>
 
 
 
@@ -4985,7 +4933,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / $k$-Block Littlestone Dimension</p>
 <p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
@@ -4997,7 +4945,7 @@
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The $k$-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Thus every tree counted by $\mathrm B_k(\mathcal H)$ is counted by $\mathrm L(\mathcal H)$, and $\mathrm L(\mathcal H)\ge\mathrm B_k(\mathcal H)$ for every $k\ge2$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The $k$-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Thus every tree counted by $\mathrm B_k(\mathcal H)$ is counted by $\mathrm L(\mathcal H)$, and $\mathrm L(\mathcal H)\ge\mathrm B_k(\mathcal H)$ for every fixed $k>2$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:block-littlestone-sandwich} in the survey.</p></div>
 
 
@@ -5010,7 +4958,7 @@
         <h3><a href="relationships/kblock_littlestone_dimension_vc_dimension.html" class="table-title-link">$k$-Block Littlestone Dimension / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter 1: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
@@ -5023,7 +4971,7 @@
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S=\{x_1,\ldots,x_d\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies every $k$-block constraint. Hence $\mathrm B_k(\mathcal H)\ge\operatorname{VC}(\mathcal H)$ for every $k\ge2$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S=\{x_1,\ldots,x_d\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies every $k$-block constraint. Hence $\mathrm B_k(\mathcal H)\ge\operatorname{VC}(\mathcal H)$ for every fixed $k>2$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:block-littlestone-sandwich} in the survey.</p></div>
 
 
@@ -5068,10 +5016,10 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
+<strong>Details:</strong><div class="text-field"><p>A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree. For every fixed $k\ge2$, half-intervals give an unbounded separation; $k=1$ is the stated equality case.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every fixed $k\ge2$, the half-interval class has $\mathrm L=\Theta(\log n)$ and $\mathrm{PL}_k=1$. The same value record separately states the exceptional identity $\mathrm{PL}_1=\mathrm L$.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -5745,8 +5693,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Characteristic-zero instance of Yang's VC bound.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
@@ -5849,8 +5797,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>Characteristic-zero instance of the Yang generator-count bound.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
@@ -6525,8 +6473,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{Edim}(\mathcal H)\geq\log_2|\mathcal H|$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
@@ -6863,8 +6811,8 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm E(\mathcal H)\geq\mathrm{VCR}^{p}(\mathcal H)$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
@@ -8673,23 +8621,23 @@
     
     <div class="table-card" id="math-355" style="position:relative;">
         
-        <h3><a href="relationships/2block_littlestone_dimension_3block_littlestone_dimension_affine.html" class="table-title-link">2-Block Littlestone Dimension / 3-Block Littlestone Dimension (affine)</a></h3>
+        <h3><a href="relationships/2block_littlestone_dimension_kblock_littlestone_dimension_affine.html" class="table-title-link">2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>2-Block Littlestone Dimension / 3-Block Littlestone Dimension (affine)</p>
+        <p><strong>Name: </strong>2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</p>
 <p><strong>Parameter 1: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-<p><strong>Additive Constant: </strong>\frac{4}{3}</p>
-<p><strong>Multiplicative Constant: </strong>\frac{2}{3}</p>
+<p><strong>Additive Constant: </strong>\frac{2(k-1)}{k}</p>
+<p><strong>Multiplicative Constant: </strong>\frac{2}{k}</p>
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The complete-block comparison gives $\mathrm B_3\le\frac32\mathrm B_2+2$, equivalently the displayed affine lower bound.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For every fixed integer $k>2$, the complete-block comparison gives $\mathrm B_k\le\frac{k}{2}\mathrm B_2+(k-1)$, equivalently the displayed affine lower bound.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
 
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The general relation $\mathrm B_\ell\le(\ell/k)\mathrm B_k+(\ell-1)$, with $k=2$ and $\ell=3$, rearranges to $\mathrm B_2\ge\frac23\mathrm B_3-\frac43$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The general relation $\mathrm B_\ell\le(\ell/k)\mathrm B_k+(\ell-1)$, instantiated with the smaller block size $k=2$ and $\ell>2$, gives $\mathrm B_2\ge\frac{2}{\ell}\mathrm B_\ell-\frac{2(\ell-1)}{\ell}$. Renaming $\ell$ as the fixed parameter $k$ gives the stated bound.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.</p></div>
 
 

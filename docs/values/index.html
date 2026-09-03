@@ -5578,23 +5578,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-325" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_trivial_concepts.html" class="table-title-link">3-Block Littlestone Dimension of Trivial Concepts</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Trivial Concepts</p>
-<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> </p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The two constant hypotheses shatter a tree of depth one. A shattered binary tree of depth two has four leaves, and each leaf needs a distinct realizing hypothesis, while this class has only two. Thus $\mathrm B_3=1$.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-326" style="position:relative;">
         
         <h3><a href="values/kmistake_littlestone_dimension_trivial_concepts.html" class="table-title-link">$k$-Mistake Littlestone Dimension of Trivial Concepts</a></h3>
@@ -8593,12 +8576,12 @@
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Trivial Concepts</p>
 <p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The two constant hypotheses shatter a tree of depth one. A shattered binary tree of depth two has four leaves, and each leaf needs a distinct realizing hypothesis, while this class has only two. Hence $\mathrm B_k=1$ for every $k\ge2$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The two constant hypotheses shatter a tree of depth one. A shattered binary tree of depth two has four leaves, and each leaf needs a distinct realizing hypothesis, while this class has only two. Hence $\mathrm B_k=1$ for every fixed $k>2$.</p></div>
 
 
         </div>
@@ -9641,35 +9624,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-569" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_full_cube.html" class="table-title-link">3-Block Littlestone Dimension of Full Cube</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Full Cube</p>
-<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> </p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of the full cube are both n. Proposition \ref{prop:block-littlestone-sandwich} places $\mathrm{VC}\leq\mathrm B_3\leq\mathrm L$, so $\mathrm B_3=n$.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-570" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_full_cube.html" class="table-title-link">$k$-Block Littlestone Dimension of Full Cube</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq2$, the established VC and Littlestone dimensions of the full cube are both n. Proposition \ref{prop:block-littlestone-sandwich} gives $\mathrm{VC}\leq\mathrm B_k\leq\mathrm L$, hence $\mathrm B_k=n$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of the full cube are both n. Proposition \ref{prop:block-littlestone-sandwich} gives $\mathrm{VC}\leq\mathrm B_k\leq\mathrm L$, hence $\mathrm B_k=n$.</p></div>
 
 
         </div>
@@ -9692,35 +9658,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-572" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_singletons.html" class="table-title-link">3-Block Littlestone Dimension of Singletons</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Singletons</p>
-<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> </p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_3\leq1$.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-573" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_singletons.html" class="table-title-link">$k$-Block Littlestone Dimension of Singletons</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq2$, the established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_k\leq1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_k\leq1$.</p></div>
 
 
         </div>
@@ -9743,35 +9692,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-575" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_singletons_plus_empty_set.html" class="table-title-link">3-Block Littlestone Dimension of Singletons plus Empty Set</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Singletons plus Empty Set</p>
-<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> </p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of singletons plus the empty set are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_3\leq1$.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-576" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_singletons_plus_empty_set.html" class="table-title-link">$k$-Block Littlestone Dimension of Singletons plus Empty Set</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Singletons plus Empty Set</p>
 <p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq2$, the established VC and Littlestone dimensions of singletons plus the empty set are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_k\leq1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of singletons plus the empty set are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_k\leq1$.</p></div>
 
 
         </div>
@@ -9794,35 +9726,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-578" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_majority.html" class="table-title-link">3-Block Littlestone Dimension of Majority</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Majority</p>
-<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> </p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of the majority class are both n. Proposition \ref{prop:block-littlestone-sandwich} gives $n\leq\mathrm B_3\leq n$.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-579" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_majority.html" class="table-title-link">$k$-Block Littlestone Dimension of Majority</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Majority</p>
 <p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq2$, the established VC and Littlestone dimensions of the majority class are both n. Proposition \ref{prop:block-littlestone-sandwich} gives $n\leq\mathrm B_k\leq n$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of the majority class are both n. Proposition \ref{prop:block-littlestone-sandwich} gives $n\leq\mathrm B_k\leq n$.</p></div>
 
 
         </div>
@@ -9845,35 +9760,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-581" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_addressing.html" class="table-title-link">3-Block Littlestone Dimension of Addressing</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Addressing</p>
-<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
-<p><strong>Order:</strong> </p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces the same value for $\mathrm B_3$.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-582" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_addressing.html" class="table-title-link">$k$-Block Littlestone Dimension of Addressing</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq2$, the established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces $\mathrm B_k=\lfloor\log n\rfloor$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces $\mathrm B_k=\lfloor\log n\rfloor$.</p></div>
 
 
         </div>
@@ -12055,35 +11953,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-711" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_tagged_singletons.html" class="table-title-link">3-Block Littlestone Dimension of Tagged Singletons</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Tagged Singletons</p>
-<p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-one VC witness gives the lower bound. Any depth-two 3-block tree already has a common second-level coordinate and would shatter two fixed coordinates, contradicting VC dimension one.</p></div>
-<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the VC calculation for this class in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-712" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_tagged_singletons.html" class="table-title-link">$k$-Block Littlestone Dimension of Tagged Singletons</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Tagged Singletons</p>
 <p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For every fixed $k\ge2$.</p>
+<p><strong>Details: </strong>For every fixed $k>2$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-one VC witness gives the lower bound. For every k at least two, the first two levels of a depth-two k-block tree use fixed coordinates and would shatter a two-point set, contradicting VC dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-one VC witness gives the lower bound. For every fixed $k>2$, the first two levels of a depth-two k-block tree use fixed coordinates and would shatter a two-point set, contradicting VC dimension one.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the VC calculation for this class in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
 
         </div>
@@ -12123,33 +12004,16 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-715" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_universal_class.html" class="table-title-link">3-Block Littlestone Dimension of Universal Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Universal Class</p>
-<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness is level-constant and hence satisfies every 3-block constraint. The ordinary Littlestone dimension supplies the matching upper bound.</p></div>
-<strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-716" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_universal_class.html" class="table-title-link">$k$-Block Littlestone Dimension of Universal Class</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>For every fixed $k\ge2$.</p>
+<p><strong>Details: </strong>For every fixed $k>2$.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness is horizontally constant on every level, hence is a k-block tree for every k. The ordinary Littlestone dimension gives the matching upper bound.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
@@ -12191,35 +12055,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-719" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_warmuth_c5.html" class="table-title-link">3-Block Littlestone Dimension of Warmuth's $C_5$ Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Warmuth's $C_5$ Class</p>
-<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$2$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>VC dimension two gives a depth-two level-constant tree. A depth-three 3-block tree has all three levels horizontally constant, so it would shatter three fixed coordinates, contradicting VC dimension two.</p></div>
-<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the $C_5$ VC calculation in <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a>.</p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-720" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_warmuth_c5.html" class="table-title-link">$k$-Block Littlestone Dimension of Warmuth's $C_5$ Class</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Warmuth's $C_5$ Class</p>
 <p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
-<p><strong>Value: </strong>$\begin{cases}3&k=2,\\2&k\ge3.\end{cases}$</p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
+<p><strong>Value: </strong>$2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For k=2 use the recorded depth-three 2-block witness. For k at least three, a depth-three k-block tree is level-constant on its first three levels and would shatter three coordinates, while VC dimension is two. The VC witness supplies depth two in every case.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, a depth-three k-block tree is level-constant on its first three levels and would shatter three coordinates, while VC dimension is two. The VC witness supplies depth two.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the $C_5$ calculations in <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a>.</p></div>
 
         </div>
@@ -12259,35 +12106,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-723" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_halfintervals.html" class="table-title-link">3-Block Littlestone Dimension of Half-intervals</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of Half-intervals</p>
-<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The depth-one VC witness supplies the lower bound. Any depth-two 3-block tree has a common second-level coordinate, hence would shatter two fixed coordinates, which is impossible for this VC-one class.</p></div>
-<strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the threshold/VC calculation in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-724" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_halfintervals.html" class="table-title-link">$k$-Block Littlestone Dimension of Half-intervals</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Half-intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For every fixed $k\ge2$.</p>
+<p><strong>Details: </strong>For every fixed $k>2$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The VC witness gives depth one. For every k at least two, the first two levels of a depth-two k-block tree would be a fixed two-coordinate cube, contradicting VC dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The VC witness gives depth one. For every fixed $k>2$, the first two levels of a depth-two k-block tree would be a fixed two-coordinate cube, contradicting VC dimension one.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the block-tree definition and the threshold/VC calculation in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
 
         </div>
@@ -13823,35 +13653,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-864" style="position:relative;">
-        
-        <h3><a href="values/3block_littlestone_dimension_three_code_class.html" class="table-title-link">3-Block Littlestone Dimension of the Three-Code Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>3-Block Littlestone Dimension of the Three-Code Class</p>
-<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/3block_littlestone_dimension.html">3-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The block-Littlestone sandwich gives $\mathrm{VC}\leq\mathrm B_3\leq\mathrm L$.  Both established endpoint values are one for this class, so $\mathrm B_3=1$.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-865" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_three_code_class.html" class="table-title-link">$k$-Block Littlestone Dimension of the Three-Code Class</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of the Three-Code Class</p>
 <p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kge2.html">$k$-Block Littlestone Dimension ($k\ge2$)</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq2$, the block-Littlestone sandwich gives $\mathrm{VC}\leq\mathrm B_k\leq\mathrm L$.  Both established endpoint values are one for this class, so $\mathrm B_k=1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the block-Littlestone sandwich gives $\mathrm{VC}\leq\mathrm B_k\leq\mathrm L$. Both established endpoint values are one for this class, so $\mathrm B_k=1$.</p></div>
 
 
         </div>

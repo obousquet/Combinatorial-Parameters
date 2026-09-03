@@ -1,0 +1,15 @@
+{
+  "id": 355,
+  "name": "2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)",
+  "short_name": "2block_littlestone_dimension_kblock_littlestone_dimension_affine",
+  "parameter_1_id": "#parameters/2block_littlestone_dimension",
+  "parameter_2_id": "#parameters/kblock_littlestone_dimension_kgt2",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\frac{2}{k}",
+  "additive_constant": "\\frac{2(k-1)}{k}",
+  "details": "For every fixed integer $k>2$, the complete-block comparison gives $\\mathrm B_k\\le\\frac{k}{2}\\mathrm B_2+(k-1)$, equivalently the displayed affine lower bound.",
+  "status": "established",
+  "proof_source": "Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.",
+  "latex_proof_label": "prop:block-littlestone-round-order",
+  "proof": "The general relation $\\mathrm B_\\ell\\le(\\ell/k)\\mathrm B_k+(\\ell-1)$, instantiated with the smaller block size $k=2$ and $\\ell>2$, gives $\\mathrm B_2\\ge\\frac{2}{\\ell}\\mathrm B_\\ell-\\frac{2(\\ell-1)}{\\ell}$. Renaming $\\ell$ as the fixed parameter $k$ gives the stated bound."
+}

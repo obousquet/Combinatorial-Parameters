@@ -235,17 +235,96 @@ def is_redundant_linear_relation(
     return False
 
 
+def reduction_representative_priority(relationship: Dict[str, Any]) -> tuple[int, int, int]:
+    """Prefer the strongest recorded separation when quotienting duplicate facts."""
+    return (
+        {"unbounded": 2, "strict": 1}.get(relationship.get("witness_strength"), 0),
+        int(bool(relationship.get("witness"))),
+        -relationship["id"],
+    )
+
+
 def canonical_linear_relations(
     relationships: List[Dict[str, Any]]
 ) -> List[Dict[str, Any]]:
-    """Keep one representative for duplicate displayed linear relationships."""
+    """Keep the strongest-evidence representative for duplicate linear facts."""
     canonical: Dict[tuple[str, str, str], Dict[str, Any]] = {}
-    for relationship in sorted(relationships, key=lambda item: item["id"]):
+    for relationship in relationships:
         if not is_homogeneous_linear(relationship):
             continue
         source, target = relation_endpoints(relationship)
-        canonical.setdefault((source, target, relationship["relationship_type"]), relationship)
+        key = (source, target, relationship["relationship_type"])
+        previous = canonical.get(key)
+        if previous is None or reduction_representative_priority(relationship) > reduction_representative_priority(previous):
+            canonical[key] = relationship
     return list(canonical.values())
+
+
+def witnessless_proof_path(
+    relationship: Dict[str, Any], relationships: List[Dict[str, Any]]
+) -> List[Dict[str, Any]] | None:
+    """Return a witnessless alternate proof path, if one makes an edge redundant."""
+    allowed = {"equivalence", "larger"}
+    if relationship["relationship_type"] == "larger_c":
+        allowed.add("larger_c")
+    elif relationship["relationship_type"] == "equivalence":
+        allowed = {"equivalence"}
+
+    adjacency: Dict[str, List[tuple[str, Dict[str, Any]]]] = defaultdict(list)
+    for candidate in relationships:
+        if (
+            candidate is relationship
+            or candidate["relationship_type"] not in allowed
+            or not is_homogeneous_linear(candidate)
+            or candidate.get("witness")
+        ):
+            continue
+        source, target = relation_endpoints(candidate)
+        adjacency[source].append((target, candidate))
+        if candidate["relationship_type"] == "equivalence":
+            adjacency[target].append((source, candidate))
+
+    source, target = relation_endpoints(relationship)
+    pending = deque([source])
+    previous: Dict[str, tuple[str, Dict[str, Any]] | None] = {source: None}
+    while pending:
+        node = pending.popleft()
+        if node == target:
+            path: List[Dict[str, Any]] = []
+            while previous[node] is not None:
+                predecessor, edge = previous[node]
+                path.append(edge)
+                node = predecessor
+            return list(reversed(path))
+        for successor, edge in adjacency[node]:
+            if successor not in previous:
+                previous[successor] = (node, edge)
+                pending.append(successor)
+    return None
+
+
+def witness_protected_bypass_relations(
+    relationships: List[Dict[str, Any]]
+) -> List[tuple[Dict[str, Any], List[Dict[str, Any]]]]:
+    """Find reduced-away witness edges whose alternate proof path has no witness.
+
+    Such a direct edge is mathematically redundant but visually indispensable:
+    without it the Hasse backbone has no displayed certificate for the known
+    strict or unbounded separation. It is rendered as a non-constraining
+    overlay, while the audit tool queues its witness for localization along
+    the witnessless path.
+    """
+    canonical = canonical_linear_relations(relationships)
+    protected = []
+    for relationship in canonical:
+        if relationship.get("witness_strength") not in {"strict", "unbounded"}:
+            continue
+        if not relationship.get("witness") or not is_redundant_linear_relation(relationship, canonical):
+            continue
+        path = witnessless_proof_path(relationship, canonical)
+        if path:
+            protected.append((relationship, path))
+    return protected
 
 
 def literal_integer(value: str | None) -> int | None:
@@ -532,9 +611,10 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     # are broader: every base-variant affine dominance fact contributes its
     # direction, and the transitive closure is condensed before layering.
     # Thus an $A >= cB-d$ fact need not be drawn as a backbone edge to place A
-    # above B.  A homogeneous linear fact that is implied by another displayed
-    # path is deliberately absent: it remains in the catalogue and parameter
-    # pages, but would only duplicate an arrow in the Hasse-like view.
+    # above B. Normally a homogeneous fact implied by another displayed path
+    # is absent. The exception is a strict/unbounded witnessed bypass whose
+    # alternate proof path has no witnesses: preserve it as an overlay so the
+    # graph does not erase its only visible separation certificate.
     reduced_by_variant = {
         variant: reduced_linear_relations(variant_relationships)
         for variant, variant_relationships in relationships_by_variant.items()
@@ -607,6 +687,10 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         displayed_relationships.extend(
             (relationship, variant, True)
             for relationship in reduced_linear
+        )
+        displayed_relationships.extend(
+            (relationship, variant, False)
+            for relationship, _ in witness_protected_bypass_relations(variant_relationships)
         )
         # Nonlinear and affine facts cannot safely take part in a homogeneous
         # transitive reduction, so retain them as non-constraining overlays.

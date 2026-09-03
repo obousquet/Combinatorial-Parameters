@@ -2,12 +2,12 @@
   "id": 200,
   "name": "$k$-Block Littlestone Dimension / VC Dimension",
   "short_name": "kblock_littlestone_dimension_vc_dimension",
-  "parameter_1_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "parameter_1_id": "#parameters/kblock_littlestone_dimension_kgt2",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
   "status": "established",
   "details": "A VC-shattered set gives a level-constant $k$-block tree.",
-  "proof": "If $S=\\{x_1,\\ldots,x_d\\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies every $k$-block constraint. Hence $\\mathrm B_k(\\mathcal H)\\ge\\operatorname{VC}(\\mathcal H)$ for every $k\\ge2$.",
+  "proof": "If $S=\\{x_1,\\ldots,x_d\\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies every $k$-block constraint. Hence $\\mathrm B_k(\\mathcal H)\\ge\\operatorname{VC}(\\mathcal H)$ for every fixed $k>2$.",
   "latex_proof_label": "prop:block-littlestone-sandwich",
   "proof_source": "Proposition \\ref{prop:block-littlestone-sandwich} in the survey."
 }

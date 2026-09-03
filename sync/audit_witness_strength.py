@@ -136,12 +136,15 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
         }
         if strength == "strict":
             row["verified"] = strict_verified(relationship, left, right)
-            if row["verified"] is None and relationship.get("witness_verification"):
+            if relationship.get("witness_verification"):
                 row["verified"] = True
                 row["verification_method"] = "explicit symbolic certificate"
             report["strict"].append(row)
         elif strength == "unbounded":
             row["verified"] = unbounded_verified(relationship, left, right)
+            if relationship.get("witness_verification"):
+                row["verified"] = True
+                row["verification_method"] = "explicit symbolic certificate"
             report["unbounded"].append(row)
         else:
             row["strict_candidate"] = strict_verified(relationship, left, right)

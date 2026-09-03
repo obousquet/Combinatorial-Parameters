@@ -3,8 +3,8 @@
   "name": "$k$-Block Littlestone Dimension of Majority",
   "short_name": "kblock_littlestone_dimension_majority",
   "class_id": "#classes/majority",
-  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kgt2",
   "value": "$n$",
   "status": "established",
-  "proof": "For every fixed $k\\geq2$, the established VC and Littlestone dimensions of the majority class are both n. Proposition \\ref{prop:block-littlestone-sandwich} gives $n\\leq\\mathrm B_k\\leq n$."
+  "proof": "For every fixed $k>2$, the established VC and Littlestone dimensions of the majority class are both n. Proposition \\ref{prop:block-littlestone-sandwich} gives $n\\leq\\mathrm B_k\\leq n$."
 }

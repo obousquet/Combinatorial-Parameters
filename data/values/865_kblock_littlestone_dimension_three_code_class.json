@@ -3,9 +3,9 @@
   "name": "$k$-Block Littlestone Dimension of the Three-Code Class",
   "short_name": "kblock_littlestone_dimension_three_code_class",
   "class_id": "#classes/three_code_class",
-  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kgt2",
   "value": "$1$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "For every fixed $k\\geq2$, the block-Littlestone sandwich gives $\\mathrm{VC}\\leq\\mathrm B_k\\leq\\mathrm L$.  Both established endpoint values are one for this class, so $\\mathrm B_k=1$."
+  "proof": "For every fixed $k>2$, the block-Littlestone sandwich gives $\\mathrm{VC}\\leq\\mathrm B_k\\leq\\mathrm L$. Both established endpoint values are one for this class, so $\\mathrm B_k=1$."
 }

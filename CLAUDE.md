@@ -98,6 +98,12 @@ python3 sync/audit_witness_strength.py --data-dir data
 python3 sync/audit_benchmark_consistency.py \
   --data-dir data --fail-on-contradiction
 
+# Finds direct strict/unbounded witness edges which a transitive reduction
+# would otherwise hide behind a witnessless path.  The graph preserves those
+# as overlays.  Add --check-witness-bypasses to make unresolved localization
+# (missing value evidence on every path edge) fail a review/CI run.
+python3 sync/audit_hasse_edges.py --data-dir data
+
 # Prioritizes cited primary sources whose companion literature packet is
 # missing or incomplete.  Omit the limit option to list every gap.
 python3 sync/audit_literature_packets.py \

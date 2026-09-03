@@ -7,6 +7,8 @@
   "status": "established",
   "proof": "Repeatedly choose a coordinate on which the current version space disagrees, retain a largest label fibre, and continue until the version space is a singleton. In the binary case each step retains at least half the current class, so this constructs an eluder sequence of length at least $\\log_2|\\mathcal H|$.",
   "references": "\\cite{hanneke2024star_eluder}",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
   "short_name": "combinatorial_eluder_dimension_log_size",
   "name": "Combinatorial Eluder Dimension / Log Size"
 }

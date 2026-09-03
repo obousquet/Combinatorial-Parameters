@@ -66,9 +66,9 @@
             <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
     <div class="table-card" id="math-81" style="position:relative;">
         
-        <h3><a href="parameters/kblock_littlestone_dimension_kge2.html" class="table-title-link">$k$-Block Littlestone Dimension ($k\ge2$)</a></h3>
+        <h3><a href="parameters/kblock_littlestone_dimension_kgt2.html" class="table-title-link">$k$-Block Littlestone Dimension ($k>2$)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>$k$-Block Littlestone Dimension ($k\ge2$)</p>
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension ($k>2$)</p>
 <strong>Symbol:</strong>
     <div class="table-display">
         <div class="latex-equation" data-latex="\mathrm{B}_k">
@@ -76,7 +76,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>Fix $k\ge2$. A <strong>$k$-block Littlestone tree</strong> of depth $d$ has a domain-point label $x_v$ at every node $v\in\{0,1\}^{<d}$ and is shattered in the ordinary Littlestone sense. In each block beginning at level $qk$, the root label may be arbitrary, while for every $1\le r<k$ all nodes at level $qk+r$ below the same block root have one common label. Thus a block fixes $k$ coordinates before their joint label in $\{0,1\}^k$ is revealed, and has $2^k$ outcomes. $\mathrm{B}_k(\mathcal{H})$ is the largest total number $d$ of queried coordinates in a shattered $k$-block tree.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>Fix an integer $k>2$. A <strong>$k$-block Littlestone tree</strong> of depth $d$ has a domain-point label $x_v$ at every node $v\in\{0,1\}^{<d}$ and is shattered in the ordinary Littlestone sense. In each block beginning at level $qk$, the root label may be arbitrary, while for every $1\le r<k$ all nodes at level $qk+r$ below the same block root have one common label. Thus a block fixes $k$ coordinates before their joint label in $\{0,1\}^k$ is revealed, and has $2^k$ outcomes. $\mathrm{B}_k(\mathcal{H})$ is the largest total number $d$ of queried coordinates in a shattered $k$-block tree.</p></div>
 <strong>Description:</strong><div class="text-field"><p>Database-defined structural variant; no published origin is claimed. Although the raw depths $\mathrm B_k$ are not ordered across $k$, the number of complete blocks $\lfloor\mathrm B_k/k\rfloor$ is non-increasing in $k$.</p></div>
 
 
@@ -90,7 +90,7 @@
 <p><strong>Doubly Monotonic:</strong> Yes</p>
 <p><strong>Strictly Monotonic:</strong> Unspecified</p>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/kblock_littlestone_dimension_trivial_concepts.html'>$k$-Block Littlestone Dimension of Trivial Concepts</a></li><li><a href='values/kblock_littlestone_dimension_full_cube.html'>$k$-Block Littlestone Dimension of Full Cube</a></li><li><a href='values/kblock_littlestone_dimension_singletons.html'>$k$-Block Littlestone Dimension of Singletons</a></li><li><a href='values/kblock_littlestone_dimension_singletons_plus_empty_set.html'>$k$-Block Littlestone Dimension of Singletons plus Empty Set</a></li><li><a href='values/kblock_littlestone_dimension_majority.html'>$k$-Block Littlestone Dimension of Majority</a></li><li><a href='values/kblock_littlestone_dimension_addressing.html'>$k$-Block Littlestone Dimension of Addressing</a></li><li><a href='values/kblock_littlestone_dimension_tagged_singletons.html'>$k$-Block Littlestone Dimension of Tagged Singletons</a></li><li><a href='values/kblock_littlestone_dimension_universal_class.html'>$k$-Block Littlestone Dimension of Universal Class</a></li><li><a href='values/kblock_littlestone_dimension_warmuth_c5.html'>$k$-Block Littlestone Dimension of Warmuth's $C_5$ Class</a></li><li><a href='values/kblock_littlestone_dimension_halfintervals.html'>$k$-Block Littlestone Dimension of Half-intervals</a></li><li><a href='values/kblock_littlestone_dimension_three_code_class.html'>$k$-Block Littlestone Dimension of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/littlestone_dimension_kblock_littlestone_dimension.html" class="relationship-statement">$\mathrm{L} \ge \mathrm{B}_k$</a></li><li><a href="relationships/kblock_littlestone_dimension_vc_dimension.html" class="relationship-statement">$\mathrm{B}_k \ge \mathrm{VC}$</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/littlestone_dimension_kblock_littlestone_dimension.html" class="relationship-statement">$\mathrm{L} \ge \mathrm{B}_k$</a></li><li><a href="relationships/kblock_littlestone_dimension_vc_dimension.html" class="relationship-statement">$\mathrm{B}_k \ge \mathrm{VC}$</a></li><li><a href="relationships/2block_littlestone_dimension_kblock_littlestone_dimension_affine.html" class="relationship-statement">$\mathrm{B}_2 \ge \frac{2}{k}\mathrm{B}_k - (\frac{2(k-1)}{k})$</a></li></ul></p></div>
 
         </div>
     </div>

@@ -3,11 +3,11 @@
   "name": "$k$-Block Littlestone Dimension of Tagged Singletons",
   "short_name": "kblock_littlestone_dimension_tagged_singletons",
   "class_id": "#classes/tagged_singletons",
-  "parameter_id": "#parameters/kblock_littlestone_dimension_kge2",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kgt2",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": "For every fixed $k\\ge2$.",
+  "details": "For every fixed $k>2$.",
   "status": "established",
-  "proof": "The depth-one VC witness gives the lower bound. For every k at least two, the first two levels of a depth-two k-block tree use fixed coordinates and would shatter a two-point set, contradicting VC dimension one.",
+  "proof": "The depth-one VC witness gives the lower bound. For every fixed $k>2$, the first two levels of a depth-two k-block tree use fixed coordinates and would shatter a two-point set, contradicting VC dimension one.",
   "references": "Directly from the block-tree definition and the VC calculation for this class in \\cite{maass1992lower}."
 }
