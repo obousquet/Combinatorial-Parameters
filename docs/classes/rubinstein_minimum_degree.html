@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-78" style="position:relative;">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-25" style="position:relative;">
         
-        <h3><a href="relationships/projected_minimum_degree_vc_dimension.html" class="table-title-link">Projected Minimum Degree / VC Dimension</a></h3>
+        <h3><a href="classes/rubinstein_minimum_degree.html" class="table-title-link">Rubinstein Minimum-Degree Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Minimum Degree / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+        <p><strong>Name: </strong>Rubinstein Minimum-Degree Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="V_d">
+            \[V_d\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>For each d at least 10, this is the class V_d on d+2 coordinates from Corollary 44 of Rubinstein--Bartlett--Rubinstein. Its bitwise complement is the union of three sets: S1 has four free coordinates, then the fixed word 00110011, then d-10 zero coordinates; S2 has fixed 0011, then four free coordinates, then fixed 1100, then d-10 zero coordinates; S3 has fixed 11001100, then d-6 free coordinates.</p></div>
 
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Project on the largest shattered set. The reverse inequality is false in general.</p></div>
-<p><strong>Witness: </strong><a href="classes/rubinstein_minimum_degree.html">Rubinstein Minimum-Degree Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For every d at least 10, Corollary 44 gives VC(V_d)=d and ordinary minimum degree d+1; projected minimum degree is at least the ordinary one by the full projection.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is shattered with $|S|=d$, the projection to $S$ is the full $d$-cube and has minimum degree $d$. Hence projected minimum degree is at least VC dimension. Equality cannot be asserted in general: there are classes with VC dimension $10$ and minimum degree $11$, and the full projection is one candidate in the projected maximum.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#rubinstein2007shifting">[rubinstein2007shifting]</a></p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/vc_dimension_rubinstein_minimum_degree.html'>VC Dimension of the Rubinstein Minimum-Degree Class</a></li><li><a href='values/projected_minimum_degree_rubinstein_minimum_degree.html'>Projected Minimum Degree of the Rubinstein Minimum-Degree Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/projected_minimum_degree_vc_dimension.html'>Projected Minimum Degree / VC Dimension</a></li></ul></p></div>
 
         </div>
     </div>

@@ -1,0 +1,12 @@
+{
+  "id": 986,
+  "name": "Projected Minimum Degree of the Rubinstein Minimum-Degree Class",
+  "short_name": "projected_minimum_degree_rubinstein_minimum_degree",
+  "class_id": "#classes/rubinstein_minimum_degree",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$\\ge d+1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Corollary 44 gives ordinary one-inclusion minimum degree d+1 for V_d. The full-coordinate projection is among those maximized by projected minimum degree, so the projected parameter is at least d+1.",
+  "references": "\\cite{rubinstein2007shifting}, Corollary 44."
+}

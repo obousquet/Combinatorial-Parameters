@@ -1,0 +1,12 @@
+{
+  "id": 985,
+  "name": "VC Dimension of the Rubinstein Minimum-Degree Class",
+  "short_name": "vc_dimension_rubinstein_minimum_degree",
+  "class_id": "#classes/rubinstein_minimum_degree",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$d$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Corollary 44 of Rubinstein--Bartlett--Rubinstein states that their class V_d has VC dimension exactly d for every d at least 10.",
+  "references": "\\cite{rubinstein2007shifting}, Corollary 44."
+}

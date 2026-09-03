@@ -7,6 +7,9 @@
   "status": "established",
   "proof": "If $S$ is shattered with $|S|=d$, the projection to $S$ is the full $d$-cube and has minimum degree $d$. Hence projected minimum degree is at least VC dimension. Equality cannot be asserted in general: there are classes with VC dimension $10$ and minimum degree $11$, and the full projection is one candidate in the projected maximum.",
   "references": "\\cite{rubinstein2007shifting}",
+  "witness": "#classes/rubinstein_minimum_degree",
+  "witness_strength": "strict",
+  "witness_verification": "For every d at least 10, Corollary 44 gives VC(V_d)=d and ordinary minimum degree d+1; projected minimum degree is at least the ordinary one by the full projection.",
   "short_name": "projected_minimum_degree_vc_dimension",
   "name": "Projected Minimum Degree / VC Dimension"
 }
