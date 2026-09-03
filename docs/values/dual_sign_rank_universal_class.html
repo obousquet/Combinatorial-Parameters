@@ -71,11 +71,11 @@
         <p><strong>Name: </strong>Dual Sign Rank of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/dual_sign_rank.html">Dual Sign Rank</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor\leq\mathrm{DSR}(\mathcal U_n)\leq2\lfloor\log_2 n\rfloor+1$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>By definition, dual sign rank is the sign rank of the transposed incidence matrix. The transpose for $\mathcal U_n$ is the full-cube incidence matrix, whose sign rank is n. Therefore $\mathrm{DSR}(\mathcal U_n)=n$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Dual sign rank is not sign rank of the transposed matrix. Proposition 1 of Alon--Moran--Yehudayoff gives (\mathrm{VC}(\mathcal H)\leq\mathrm{DSR}(\mathcal H)\leq2\mathrm{VC}(\mathcal H)+1). Since (\mathrm{VC}(\mathcal U_n)=\lfloor\log_2n\rfloor), substitution gives the displayed bounds.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#alon2016sign">[alon2016sign]</a></p></div>
 
         </div>

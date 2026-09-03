@@ -4,9 +4,9 @@
   "short_name": "dual_sign_rank_universal_class",
   "class_id": "#classes/universal_class",
   "parameter_id": "#parameters/dual_sign_rank",
-  "value": "$n$",
-  "value_class": "omega_n",
+  "value": "$\\lfloor\\log_2 n\\rfloor\\leq\\mathrm{DSR}(\\mathcal U_n)\\leq2\\lfloor\\log_2 n\\rfloor+1$",
+  "value_class": "omega_log_n",
   "status": "established",
-  "proof": "By definition, dual sign rank is the sign rank of the transposed incidence matrix. The transpose for $\\mathcal U_n$ is the full-cube incidence matrix, whose sign rank is n. Therefore $\\mathrm{DSR}(\\mathcal U_n)=n$.",
+  "proof": "Dual sign rank is not sign rank of the transposed matrix. Proposition 1 of Alon--Moran--Yehudayoff gives \\(\\mathrm{VC}(\\mathcal H)\\leq\\mathrm{DSR}(\\mathcal H)\\leq2\\mathrm{VC}(\\mathcal H)+1\\). Since \\(\\mathrm{VC}(\\mathcal U_n)=\\lfloor\\log_2n\\rfloor\\), substitution gives the displayed bounds.",
   "references": "\\cite{alon2016sign}"
 }
