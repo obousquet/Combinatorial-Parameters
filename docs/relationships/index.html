@@ -8205,23 +8205,23 @@
     
     <div class="table-card" id="math-365" style="position:relative;">
         
-        <h3><a href="relationships/monotonic_covc_dimension_positive_recursive_teaching_dimension.html" class="table-title-link">Monotonic co-VC Dimension / Positive Recursive Teaching Dimension</a></h3>
+        <h3><a href="relationships/star_number_positive_recursive_teaching_dimension.html" class="table-title-link">Star Number / Positive Recursive Teaching Dimension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Monotonic co-VC Dimension / Positive Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
+        <p><strong>Name: </strong>Star Number / Positive Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/star_number.html">Star number</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>At every positive recursive-teaching stage, a smallest positive teaching set yields a hollow star after removing its target.</p></div>
-<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
+<strong>Details:</strong><div class="text-field"><p>A smallest positive teaching set at any recursive stage is a star centered at its target.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$-singleton class, star number is $n-1$, while positive recursive teaching dimension is $1$.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix any positive recursive teaching order. At a stage with remaining family $\mathcal G$, target $h$, and a smallest positive teaching set $S$ of size $d$, minimality gives, for each $x\in S$, a concept $g_x\in\mathcal G\setminus\{h\}$ that is one on $S\setminus\{x\}$ and zero at $x$. No remaining competitor is one on all of $S$, by the teaching property. Thus, after deleting $h$ and projecting to $S$, the all-one trace is absent while each of its one-coordinate flips is present: the projected subfamily has co-VC dimension at least $d$. Therefore $\mathrm{coVC}^*(\mathcal H)$ bounds every stage of every positive recursive order, and hence bounds the minimum possible maximum stage size $\mathrm{RTD}^+(\mathcal H)$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix any positive recursive teaching order. At a stage with remaining family $\mathcal G$, target $h$, and a smallest positive teaching set $S$ of size $d$, minimality gives, for each $x\in S$, a concept $g_x\in\mathcal G\setminus\{h\}$ that is one on $S\setminus\{x\}$ and zero at $x$. The target is one on all of $S$, so its trace and the traces of the $g_x$ form a $d$-star in the projection of $\mathcal G$. Since star number is subfamily-monotonic, $\mathrm S(\mathcal H)\ge d$ for every stage of every positive recursive order. It therefore bounds the minimum possible maximum stage size $\mathrm{RTD}^+(\mathcal H)$.</p></div>
 
 
 

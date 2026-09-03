@@ -1,0 +1,14 @@
+{
+  "id": 365,
+  "name": "Star Number / Positive Recursive Teaching Dimension",
+  "short_name": "star_number_positive_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/star_number",
+  "parameter_2_id": "#parameters/positive_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "A smallest positive teaching set at any recursive stage is a star centered at its target.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the $n$-singleton class, star number is $n-1$, while positive recursive teaching dimension is $1$.",
+  "status": "established",
+  "proof": "Fix any positive recursive teaching order. At a stage with remaining family $\\mathcal G$, target $h$, and a smallest positive teaching set $S$ of size $d$, minimality gives, for each $x\\in S$, a concept $g_x\\in\\mathcal G\\setminus\\{h\\}$ that is one on $S\\setminus\\{x\\}$ and zero at $x$. The target is one on all of $S$, so its trace and the traces of the $g_x$ form a $d$-star in the projection of $\\mathcal G$. Since star number is subfamily-monotonic, $\\mathrm S(\\mathcal H)\\ge d$ for every stage of every positive recursive order. It therefore bounds the minimum possible maximum stage size $\\mathrm{RTD}^+(\\mathcal H)$."
+}
