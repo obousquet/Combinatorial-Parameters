@@ -729,9 +729,12 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     }
     base_backbone = reduced_by_variant.get(BASE_VARIANT, [])
     base_rank_relations = relationships_by_variant.get(BASE_VARIANT, [])
-    ranks = hierarchy_ranks(
-        base_rank_relations, set(parameters_by_ref)
-    )
+    # Ranking must operate on precisely the same equality quotient as the
+    # displayed graph.  In particular, never add pre-collapse members as
+    # separate vertices: doing so gives an equivalence class both a quotient
+    # rank and unrelated isolated-member ranks, and makes its placement depend
+    # on whichever member happens to be used as the node representative.
+    ranks = hierarchy_ranks(base_rank_relations, set(equivalence_components))
     linear_blocks = affine_linear_blocks(base_rank_relations)
 
     # Add one node for each exact-equality component.  The first record is the
@@ -782,9 +785,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             **color,
             "style": "filled",
         }
-        member_ranks = [ranks[member_ref] for member_ref in component if member_ref in ranks]
-        if member_ranks:
-            node["rank"] = member_ranks[0]
+        node["rank"] = ranks[component_root]
         nodes.append(node)
 
     displayed_relationships = []
