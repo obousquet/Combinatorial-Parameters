@@ -7,6 +7,9 @@
   "details": "A conservative optimal online learner yields stable compression from its mistake examples.",
   "proof": "Use a conservative online learner with mistake bound $\\mathrm L(\\mathcal H)$, such as the standard optimal algorithm, and cycle it through a realizable sample until a full pass is mistake-free.  Retain only the examples on which it made a mistake.  There are at most $\\mathrm L(\\mathcal H)$; their labels are recoverable from the learner's successive mistaken predictions, and removing any unretained example leaves the final predictor unchanged.  This gives a stable unlabeled compression scheme of that size.",
   "references": "\\cite{hanneke2021stable}",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the half-interval class $\\mathcal I_n$, $\\mathrm L=\\Theta(\\log n)$, while retaining the largest positive sample point (or nothing for an all-negative sample) is a stable unlabeled compression scheme of size one.  Hence the gap is unbounded.",
   "short_name": "littlestone_dimension_stable_unlabeled_complexity",
   "name": "Littlestone Dimension / Stable Unlabeled Complexity"
 }

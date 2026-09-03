@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-52" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1012" style="position:relative;">
         
-        <h3><a href="relationships/littlestone_dimension_stable_unlabeled_complexity.html" class="table-title-link">Littlestone Dimension / Stable Unlabeled Complexity</a></h3>
+        <h3><a href="values/stable_unlabeled_complexity_halfintervals.html" class="table-title-link">Stable Unlabeled Complexity of Half-Intervals</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Littlestone Dimension / Stable Unlabeled Complexity</p>
-<p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A conservative optimal online learner yields stable compression from its mistake examples.</p></div>
-<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the half-interval class $\mathcal I_n$, $\mathrm L=\Theta(\log n)$, while retaining the largest positive sample point (or nothing for an all-negative sample) is a stable unlabeled compression scheme of size one.  Hence the gap is unbounded.</p></div>
-
+        <p><strong>Name: </strong>Stable Unlabeled Complexity of Half-Intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Use a conservative online learner with mistake bound $\mathrm L(\mathcal H)$, such as the standard optimal algorithm, and cycle it through a realizable sample until a full pass is mistake-free.  Retain only the examples on which it made a mistake.  There are at most $\mathrm L(\mathcal H)$; their labels are recoverable from the learner's successive mistaken predictions, and removing any unretained example leaves the final predictor unchanged.  This gives a stable unlabeled compression scheme of that size.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For a realizable sample from $\mathcal I_n$, retain its largest positive point if it has one and reconstruct the corresponding initial segment.  If it has no positive point, retain nothing and reconstruct $[1]$; every negative sample point is then at least $2$, since every member of $\mathcal I_n$ contains $1$.  The scheme is sample-consistent and stable: deleting an unretained example never changes the largest positive point or the fact that there are no positives.  Size zero cannot compress a nonconstant class, so the optimum is one.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation for the half-interval class; compare the stable-compression framework in <a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
 
         </div>
     </div>

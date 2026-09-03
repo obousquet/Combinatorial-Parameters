@@ -1,0 +1,12 @@
+{
+  "id": 1012,
+  "name": "Stable Unlabeled Complexity of Half-Intervals",
+  "short_name": "stable_unlabeled_complexity_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For a realizable sample from $\\mathcal I_n$, retain its largest positive point if it has one and reconstruct the corresponding initial segment.  If it has no positive point, retain nothing and reconstruct $[1]$; every negative sample point is then at least $2$, since every member of $\\mathcal I_n$ contains $1$.  The scheme is sample-consistent and stable: deleting an unretained example never changes the largest positive point or the fact that there are no positives.  Size zero cannot compress a nonconstant class, so the optimum is one.",
+  "references": "Direct calculation for the half-interval class; compare the stable-compression framework in \\cite{hanneke2021stable}"
+}
