@@ -6,6 +6,8 @@
   "details": "Definition",
   "status": "established",
   "proof": "The defining maximum for $\\mathrm Y^*(\\mathcal H)$ ranges over all subfamilies, including $\\mathcal H$ itself. Its value is therefore at least $\\mathrm Y(\\mathcal H)$.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
   "short_name": "monotonic_yang_dimension_yang_dimension",
   "name": "Monotonic Yang Dimension / Yang dimension"
 }
