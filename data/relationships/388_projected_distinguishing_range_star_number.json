@@ -1,0 +1,14 @@
+{
+  "id": 388,
+  "name": "Projected Distinguishing Range / Star Number",
+  "short_name": "projected_distinguishing_range_star_number",
+  "parameter_1_id": "#parameters/projected_distinguishing_range",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, $\\mathrm R^p(\\mathcal H)\\geq\\mathrm S(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Let $x_1,\\ldots,x_s$ and $h_0,h_1,\\ldots,h_s$ witness an $s$-star.  Project to $T=\\{x_1,\\ldots,x_s\\}$.  In $\\mathcal H_{|T}$, $h_i$ differs from the center $h_0$ exactly at $x_i$.  Any coordinate set whose traces distinguish every projected concept must therefore contain every $x_i$, or it fails to distinguish $h_0$ from $h_i$.  Thus $\\mathrm R(\\mathcal H_{|T})\\geq s$; maximizing over $T$ proves $\\mathrm R^p\\geq\\mathrm S$.",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For half-intervals, projected distinguishing range is $n-1$, while the star number is $2$."
+}

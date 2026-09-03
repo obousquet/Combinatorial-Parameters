@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-107" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-388" style="position:relative;">
         
-        <h3><a href="parameters/projected_distinguishing_range.html" class="table-title-link">Projected Distinguishing Range</a></h3>
+        <h3><a href="relationships/projected_distinguishing_range_star_number.html" class="table-title-link">Projected Distinguishing Range / Star Number</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Distinguishing Range</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{R}^{p}">
-            \[\mathrm{R}^{p}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>projected distinguishing range</strong> of $\mathcal H$ is $$\mathrm R^p(\mathcal H)=\max_{S\subseteq\mathcal X}\mathrm R(\mathcal H_{|S}),$$ where $\mathrm R$ is distinguishing range. Thus it is the largest, over coordinate projections, of the fewest coordinates that distinguish every pair of projected concepts.</p></div>
-<strong>Description:</strong><div class="text-field"><p>The projection-monotone closure of distinguishing range, introduced in this catalogue.</p></div>
+        <p><strong>Name: </strong>Projected Distinguishing Range / Star Number</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
-<p><strong>Category:</strong> Basic</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/projected_distinguishing_range_halfintervals.html'>$\mathrm{R}^{p}(\{[i]\}_{1\le i\le n}) = n-1\;(\Omega(n))$</a></li><li><a href='values/projected_distinguishing_range_trivial_concepts.html'>$\mathrm{R}^{p}(\{\emptyset, [n]\}) = 1\;(\Omega(1))$</a></li><li><a href='values/projected_distinguishing_range_full_cube.html'>$\mathrm{R}^{p}(\{S:S\subset [n]\}) = n\;(\Omega(n))$</a></li><li><a href='values/projected_distinguishing_range_distinguishing_range_projection_gap.html'>$\mathrm{R}^{p}(\mathcal D_{\mathrm{R}}) = 3\;(\Omega(1))$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/projected_distinguishing_range_distinguishing_range.html" class="relationship-statement">$\mathrm{R}^{p} \ge \mathrm{R}$</a></li><li><a href="relationships/effective_range_projected_distinguishing_range.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{R}^{p}$</a></li><li><a href="relationships/size_projected_distinguishing_range.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{R}^{p}$</a></li><li><a href="relationships/projected_distinguishing_range_projected_membership_queries_complexity.html" class="relationship-statement">$\mathrm{R}^{p} \ge \mathrm{Q}_{\mathrm{m}}^p$</a></li><li><a href="relationships/projected_distinguishing_range_star_number.html" class="relationship-statement">$\mathrm{R}^{p} \ge \mathrm{S}$</a></li></ul><p><strong>Incomparabilities:</strong></p><ul class="fields-list"><li><a href="relationships/projected_distinguishing_range_log_shattering_incomparable.html" class="relationship-statement">$\mathrm{R}^{p}\mathrel{\parallel}\log \mathrm{sh}\;\text{(incomparable)}$</a></li></ul></div>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm R^p(\mathcal H)\geq\mathrm S(\mathcal H)$.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For half-intervals, projected distinguishing range is $n-1$, while the star number is $2$.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $x_1,\ldots,x_s$ and $h_0,h_1,\ldots,h_s$ witness an $s$-star.  Project to $T=\{x_1,\ldots,x_s\}$.  In $\mathcal H_{|T}$, $h_i$ differs from the center $h_0$ exactly at $x_i$.  Any coordinate set whose traces distinguish every projected concept must therefore contain every $x_i$, or it fails to distinguish $h_0$ from $h_i$.  Thus $\mathrm R(\mathcal H_{|T})\geq s$; maximizing over $T$ proves $\mathrm R^p\geq\mathrm S$.</p></div>
+
+
+
 
         </div>
     </div>
