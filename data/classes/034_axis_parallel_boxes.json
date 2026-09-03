@@ -1,0 +1,9 @@
+{
+  "id": 34,
+  "name": "Axis-Parallel Boxes",
+  "short_name": "axis_parallel_boxes",
+  "graph_label": "Boxes",
+  "symbol": "\\mathrm{BOX}_n^d",
+  "definition": "For integers $n\\ge2$ and $d\\ge1$, let $X_n^d=\\{0,\\ldots,n-1\\}^d$.  The class $\\mathrm{BOX}_n^d$ consists of the indicator functions of all nonempty axis-parallel boxes $\\prod_{j=1}^d[a_j,b_j]\\cap X_n^d$, where $0\\le a_j\\le b_j<n$.  For $d=1$ these are the nonempty intervals of the ordered $n$-point domain.",
+  "comments": "This is the finite box family used by Goldman--Sloan to separate self-directed learning from partial equivalence queries.  For the graph witness, $d$ is fixed and $n$ tends to infinity."
+}

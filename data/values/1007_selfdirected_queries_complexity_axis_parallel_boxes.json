@@ -1,0 +1,12 @@
+{
+  "id": 1007,
+  "name": "Self-Directed Queries Complexity of Axis-Parallel Boxes",
+  "short_name": "selfdirected_queries_complexity_axis_parallel_boxes",
+  "class_id": "#classes/axis_parallel_boxes",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The learner approaches the target box from two opposite corners of $X_n^d$, predicting negative labels.  The first mistakes identify the two opposite target corners and hence the box.  Conversely, both corners can be forced as mistakes, so the optimum is exactly two.",
+  "references": "Theorem 4 of \\cite{goldman1994power}."
+}

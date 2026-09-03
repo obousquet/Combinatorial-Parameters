@@ -1,0 +1,12 @@
+{
+  "id": 1008,
+  "name": "Partial Equivalence Queries Complexity of Axis-Parallel Boxes",
+  "short_name": "partial_equivalence_queries_complexity_axis_parallel_boxes",
+  "class_id": "#classes/axis_parallel_boxes",
+  "parameter_id": "#parameters/partial_equivalence_queries_complexity",
+  "value": "$\\Theta(d\\log n)$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "For every fixed dimension $d\\ge1$, the partial-equivalence-query complexity of $\\mathrm{BOX}_n^d$ is bounded above and below by constant multiples of $d\\log n$.  In particular it diverges with $n$ whereas the self-directed complexity remains two.",
+  "references": "\\cite{maass1992lower,goldman1994power}; the latter explicitly invokes the matching box bound from the former in its proof of the strict model separation."
+}

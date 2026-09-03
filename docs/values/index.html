@@ -16067,6 +16067,40 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1007" style="position:relative;">
+        
+        <h3><a href="values/selfdirected_queries_complexity_axis_parallel_boxes.html" class="table-title-link">Self-Directed Queries Complexity of Axis-Parallel Boxes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Self-Directed Queries Complexity of Axis-Parallel Boxes</p>
+<p><strong>Class: </strong><a href="classes/axis_parallel_boxes.html">Axis-Parallel Boxes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The learner approaches the target box from two opposite corners of $X_n^d$, predicting negative labels.  The first mistakes identify the two opposite target corners and hence the box.  Conversely, both corners can be forced as mistakes, so the optimum is exactly two.</p></div>
+<strong>References:</strong><div class="text-field"><p>Theorem 4 of <a href="bibliography.html#goldman1994power">[goldman1994power]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1008" style="position:relative;">
+        
+        <h3><a href="values/partial_equivalence_queries_complexity_axis_parallel_boxes.html" class="table-title-link">Partial Equivalence Queries Complexity of Axis-Parallel Boxes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Equivalence Queries Complexity of Axis-Parallel Boxes</p>
+<p><strong>Class: </strong><a href="classes/axis_parallel_boxes.html">Axis-Parallel Boxes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$\Theta(d\log n)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed dimension $d\ge1$, the partial-equivalence-query complexity of $\mathrm{BOX}_n^d$ is bounded above and below by constant multiples of $d\log n$.  In particular it diverges with $n$ whereas the self-directed complexity remains two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a> <a href="bibliography.html#goldman1994power">[goldman1994power]</a>; the latter explicitly invokes the matching box bound from the former in its proof of the strict model separation.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

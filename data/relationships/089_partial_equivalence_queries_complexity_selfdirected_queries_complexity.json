@@ -8,5 +8,8 @@
   "details": "For finite concept classes, $\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)\\ge\\mathrm{SDC}(\\mathcal H)$.",
   "proof": "Corollary 8(1) of Doliwa--Fan--Simon--Zilles states the chain $\\mathrm{RTD}(\\mathcal H)\\leq\\mathrm{SDC}(\\mathcal H)\\leq\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)$.  Its middle inequality is the simulation established by Goldman--Sloan: the partial-equivalence-query model is no more powerful than self-directed learning, so its optimal worst-case query count cannot be smaller.",
   "status": "established",
-  "references": "\\cite{doliwa2014recursive}"
+  "references": "\\cite{doliwa2014recursive,goldman1994power,maass1992lower}",
+  "witness": "#classes/axis_parallel_boxes",
+  "witness_strength": "unbounded",
+  "witness_verification": "Fix any $d\\ge1$ and let $n$ grow.  Then $\\mathrm{SDC}(\\mathrm{BOX}_n^d)=2$ while $\\mathrm{LC}_{\\mathrm{partial}}(\\mathrm{BOX}_n^d)=\\Theta(d\\log n)$, so the gap is unbounded and rules out every reverse affine-linear bound."
 }
