@@ -1,0 +1,12 @@
+{
+  "id": 1009,
+  "name": "Partial Equivalence Queries Complexity of Addressing",
+  "short_name": "partial_equivalence_queries_complexity_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/partial_equivalence_queries_complexity",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Query the partial hypothesis that labels every address point negative and is undefined on the bit points.  For target concept $i$, its unique positive address point $i$ is the only possible counterexample, so the reply identifies the target in one query.  A nontrivial class cannot be identified with zero queries.",
+  "references": "Directly from the addressing-class definition; this is also the $\\mathrm{LC}_{\\mathrm{partial}}(\\mathrm{ADDRESSING}_n)=1$ entry in \\cite{maass1992lower}."
+}

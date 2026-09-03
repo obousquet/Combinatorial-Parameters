@@ -8,5 +8,8 @@
   "proof": "An arbitrary equivalence query is a total partial equivalence query, and a membership query is a partial query defined at one point. Thus partial equivalence queries include every query available in the membership-and-equivalence model.",
   "references": "\\cite{maass1992lower}",
   "short_name": "membership_and_equivalence_queries_complexity_partial_equivalence_queries_complexity",
-  "name": "Membership and Equivalence Queries Complexity / Partial Equivalence Queries Complexity"
+  "name": "Membership and Equivalence Queries Complexity / Partial Equivalence Queries Complexity",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
+  "witness_verification": "On $\\mathrm{ADDRESSING}_n$, a partial hypothesis which labels every address point negative identifies the target after its unique counterexample, so $\\mathrm{LC}_{\\mathrm{partial}}=1$.  Maass--Turán prove $\\mathrm{LC}_{\\mathrm{ARB\\text{-}MEMB}}=\\Theta(\\log n)$ for the same family.  Thus the gap is unbounded."
 }

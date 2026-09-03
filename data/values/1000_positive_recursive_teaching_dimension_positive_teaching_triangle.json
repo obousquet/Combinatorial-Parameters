@@ -7,6 +7,6 @@
   "value": "$2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "In the full class, every positive one-coordinate sample is shared by another concept, so no target has a positive teaching set of size one. Its two positive coordinates teach each target, giving a first removal of cost two; the remaining two targets then have one-coordinate positive teaching sets. Thus positive RTD is exactly two. The recurrence is verified in sync/verify_positive_teaching_triangle.py.",
-  "references": "Direct calculation; verified by sync/verify_positive_teaching_triangle.py."
+  "proof": "In the full class, every positive one-coordinate sample is shared by another concept, so no target has a positive teaching set of size one. Its two positive coordinates teach each target, giving a first removal of cost two; the remaining two targets then have one-coordinate positive teaching sets. Thus positive RTD is exactly two. The recurrence is verified by the dedicated positive-teaching-triangle checker.",
+  "references": "Direct calculation; verified by the dedicated positive-teaching-triangle checker"
 }

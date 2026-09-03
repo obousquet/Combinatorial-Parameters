@@ -15959,8 +15959,8 @@
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>In the full class, every positive one-coordinate sample is shared by another concept, so no target has a positive teaching set of size one. Its two positive coordinates teach each target, giving a first removal of cost two; the remaining two targets then have one-coordinate positive teaching sets. Thus positive RTD is exactly two. The recurrence is verified in sync/verify_positive_teaching_triangle.py.</p></div>
-<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_positive_teaching_triangle.py.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>In the full class, every positive one-coordinate sample is shared by another concept, so no target has a positive teaching set of size one. Its two positive coordinates teach each target, giving a first removal of cost two; the remaining two targets then have one-coordinate positive teaching sets. Thus positive RTD is exactly two. The recurrence is verified by the dedicated positive-teaching-triangle checker.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by the dedicated positive-teaching-triangle checker</p></div>
 
         </div>
     </div>
@@ -16097,6 +16097,40 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed dimension $d\ge1$, the partial-equivalence-query complexity of $\mathrm{BOX}_n^d$ is bounded above and below by constant multiples of $d\log n$.  In particular it diverges with $n$ whereas the self-directed complexity remains two.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a> <a href="bibliography.html#goldman1994power">[goldman1994power]</a>; the latter explicitly invokes the matching box bound from the former in its proof of the strict model separation.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1009" style="position:relative;">
+        
+        <h3><a href="values/partial_equivalence_queries_complexity_addressing.html" class="table-title-link">Partial Equivalence Queries Complexity of Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Equivalence Queries Complexity of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Query the partial hypothesis that labels every address point negative and is undefined on the bit points.  For target concept $i$, its unique positive address point $i$ is the only possible counterexample, so the reply identifies the target in one query.  A nontrivial class cannot be identified with zero queries.</p></div>
+<strong>References:</strong><div class="text-field"><p>Directly from the addressing-class definition; this is also the $\mathrm{LC}_{\mathrm{partial}}(\mathrm{ADDRESSING}_n)=1$ entry in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1010" style="position:relative;">
+        
+        <h3><a href="values/membership_and_equivalence_queries_complexity_addressing.html" class="table-title-link">Membership and Equivalence Queries Complexity of Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Membership and Equivalence Queries Complexity of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$\Theta(\log n)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the addressing family, Maass--Turán's table of matching bounds gives $\mathrm{LC}_{\mathrm{ARB\text{-}MEMB}}(\mathrm{ADDRESSING}_n)=\Theta(\log n)$, exactly the database's model with arbitrary equivalence and membership queries.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a>, Table 1.</p></div>
 
         </div>
     </div>

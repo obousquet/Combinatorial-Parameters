@@ -125,6 +125,22 @@ def math_mode(value: str) -> str:
     return value if value.startswith("$") and value.endswith("$") else "$" + value + "$"
 
 
+def escape_path_underscores(text: str) -> str:
+    """Escape underscores in prose paths without disturbing inline math.
+
+    Value records sometimes cite their accompanying verification checker, for
+    example ``sync/verify_positive_teaching_triangle.py``.  Underscores are
+    illegal in ordinary LaTeX text, while the proof normalizer below has a
+    separate legacy convention for bare mathematical subscripts.  Treating
+    slash-containing tokens as paths first preserves both conventions.
+    """
+    parts = text.split("$")
+    path = re.compile(r"(?<![A-Za-z0-9_.-])(?:[A-Za-z0-9_.-]+/)+[A-Za-z0-9_.-]+")
+    for index in range(0, len(parts), 2):
+        parts[index] = path.sub(lambda match: match.group(0).replace("_", r"\_"), parts[index])
+    return "$".join(parts)
+
+
 def normalize_proof_latex(text: str) -> str:
     """Put legacy bare exponent expressions into inline math mode.
 
@@ -133,7 +149,14 @@ def normalize_proof_latex(text: str) -> str:
     math before normalizing, so a correct expression like ``$n=2^d$`` is never
     altered.
     """
-    parts = text.split("$")
+    # Preserve both of the TeX conventions already used by database records.
+    # In particular, do not mistake the subscript in ``\(\mathcal U_n\)``
+    # for a legacy bare-text expression.
+    parts = re.split(
+        r"(\$\$.*?\$\$|\$[^$]*\$|\\\(.*?\\\)|\\\[.*?\\\])",
+        escape_path_underscores(text),
+        flags=re.S,
+    )
     for index in range(0, len(parts), 2):
         parts[index] = re.sub(
             r"(?<![\\w\\\\])([A-Za-z0-9]+\^[A-Za-z0-9]+)", r"$\1$", parts[index]
@@ -141,7 +164,7 @@ def normalize_proof_latex(text: str) -> str:
         parts[index] = re.sub(
             r"(?<![\\w\\\\])([A-Za-z]+_[A-Za-z0-9]+)", r"$\1$", parts[index]
         )
-    return "$".join(parts)
+    return "".join(parts)
 
 
 def definition_latex(text: str) -> str:
@@ -321,7 +344,11 @@ def generate_value_proofs(data_dir: Path) -> str:
             ]
         )
         if entry.get("references"):
-            lines.append("\\noindent\\textbf{Reference.} " + entry["references"] + ".")
+            lines.append(
+                "\\noindent\\textbf{Reference.} "
+                + escape_path_underscores(entry["references"])
+                + "."
+            )
         lines.append("")
     return "\n".join(lines)
 
