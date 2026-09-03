@@ -1,0 +1,12 @@
+{
+  "id": 1011,
+  "name": "Membership and Proper Equivalence Queries Complexity of Addressing",
+  "short_name": "membership_and_proper_equivalence_queries_complexity_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/membership_and_proper_equivalence_queries_complexity",
+  "value": "$\\Theta(\\log n)$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "The $r=\\lceil\\log_2 n\\rceil$ membership queries at the bit points reveal the injective code of the target, so $r$ queries suffice.  For the lower bound, against every failed proper equivalence query the adversary returns the proposed hypothesis's address point, which excludes only that hypothesis.  At any fixed transcript of $m$ membership answers and $p$ such failures, at most $2^m(p+1)\\leq2^{m+p}$ targets can have been distinguished.  Thus identifying all $n$ targets requires $m+p\\geq\\lceil\\log_2 n\\rceil$ queries.",
+  "references": "Direct calculation from the addressing construction of \\cite{maass1992lower}"
+}

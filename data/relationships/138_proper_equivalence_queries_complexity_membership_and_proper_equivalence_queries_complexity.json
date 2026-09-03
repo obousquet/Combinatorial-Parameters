@@ -7,5 +7,8 @@
   "short_name": "proper_equivalence_queries_complexity_membership_and_proper_equivalence_queries_complexity",
   "name": "Proper Equivalence Queries Complexity / Membership and Proper Equivalence Queries Complexity",
   "status": "established",
-  "proof": "Any learner using only proper equivalence queries is a valid learner in the model that additionally permits membership queries.  The larger set of permitted queries cannot increase optimal complexity."
+  "proof": "Any learner using only proper equivalence queries is a valid learner in the model that additionally permits membership queries.  The larger set of permitted queries cannot increase optimal complexity.",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $\\mathrm{ADDRESSING}_n$, proper equivalence-query complexity is $n$, whereas the membership-plus-proper-equivalence complexity is $\\Theta(\\log n)$: query the bit coordinates to recover the injective address code.  Hence the gap is unbounded."
 }
