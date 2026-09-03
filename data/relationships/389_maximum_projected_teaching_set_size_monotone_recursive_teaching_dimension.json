@@ -1,0 +1,14 @@
+{
+  "id": 389,
+  "name": "Maximum Projected Teaching Set Size / Projected Recursive Teaching Dimension",
+  "short_name": "maximum_projected_teaching_set_size_monotone_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/maximum_projected_teaching_set_size",
+  "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, $\\mathrm{TS}_{\\max}^p(\\mathcal H)\\geq\\mathrm{RTD}^p(\\mathcal H)$. Equivalently, the star number upper-bounds projected recursive teaching dimension.",
+  "status": "established",
+  "proof": "For each coordinate projection $\\mathcal H_{|S}$, recursive teaching dimension is at most teaching dimension, because a teaching set for every target in the full projected class is available at the first recursive stage.  Taking the maximum over $S$ gives $\\max_S\\mathrm{RTD}(\\mathcal H_{|S})\\leq\\max_S\\mathrm{TD}(\\mathcal H_{|S})=\\mathrm{TS}_{\\max}^p(\\mathcal H)$.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $n$ singleton concepts, maximum projected teaching-set size (equivalently star number) is $n-1$, while projected recursive teaching dimension is $1$."
+}
