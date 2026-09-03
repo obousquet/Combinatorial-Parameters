@@ -8,7 +8,7 @@
   "status": "established",
   "details": "For finite concept classes.",
   "proof": "The active-coordinate retention scheme is proper and consistent. It retains every active example, so removing an unretained (necessarily inactive) example does not change the retained sample or reconstruction; hence it is stable. Its size is at most \\(\\mathrm E(\\mathcal H)\\).",
-  "witness": "#classes/singletons",
+  "witness": "#classes/singletons_plus_empty_set",
   "witness_strength": "unbounded",
-  "witness_verification": "For $n$ singleton concepts, effective range is $n$ while proper stable labeled sample compression size is 1."
+  "witness_verification": "For the $n$ singletons together with the empty concept, effective range is $n$ while proper stable labeled sample compression size is 1."
 }

@@ -8,6 +8,7 @@
   "status": "established",
   "details": "For finite concept classes.",
   "proof": "Retain all active-coordinate examples of the sample and reconstruct the least consistent member of the class. This is proper, discarding inactive examples preserves consistency, and retaining every remaining example makes stability immediate. Its size is at most \\(\\mathrm E(\\mathcal H)\\).",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict"
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the $n$ singletons together with the empty concept, effective range is $n$, while proper stable sample-compression size is 1."
 }
