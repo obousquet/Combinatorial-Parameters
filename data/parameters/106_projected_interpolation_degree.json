@@ -4,14 +4,14 @@
   "symbol": "\\mathrm{intdeg}^p",
   "definition": "The **projected interpolation degree** is $$\\mathrm{intdeg}^p(\\mathcal H):=\\max_{S\\subseteq\\mathcal X}\\mathrm{intdeg}(\\mathcal H_{|S}).$$",
   "description": "The largest polynomial interpolation degree required by a coordinate projection.",
-  "graph_summary": "Maximum interpolation degree over coordinate projections; it dominates VC dimension.",
+  "graph_summary": "Maximum interpolation degree over coordinate projections; for finite binary classes it equals VC dimension.",
   "category": "algebraic",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "strictly_monotonic": null,
+  "strictly_monotonic": false,
   "short_name": "projected_interpolation_degree",
   "monotonicity_evidence": {
     "monotonic": {

@@ -22,6 +22,7 @@ COLLAPSIBLE_EQUIVALENCE_IDS = {
     71, 73, 75,  # Projected radii/order-shattering variants = VC dimension
     100,  # Equivalence-query complexity = Littlestone dimension
     318,  # Self-directed dimension = self-directed queries complexity
+    346,  # Projected interpolation degree = VC dimension
 }
 
 

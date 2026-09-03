@@ -7950,18 +7950,18 @@
         <p><strong>Name: </strong>Projected Interpolation Degree / VC Dimension</p>
 <p><strong>Parameter 1: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+<p><strong>Relationship Type:</strong> $P_1 = P_2$</p>
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A largest shattered projection is a full cube.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For finite binary classes, projected interpolation degree equals VC dimension.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
 
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is shattered with $|S|=d$, then $\mathcal H_{|S}=\{0,1\}^S$. The interpolation degree of this full $d$-cube is $d$, so the maximum over projections is at least $d=\mathrm{VC}(\mathcal H)$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is shattered with $|S|=d$, then $\mathcal H_{|S}=\{0,1\}^S$, whose interpolation degree is $d$; hence $\mathrm{intdeg}^p(\mathcal H)\ge\mathrm{VC}(\mathcal H)$. Conversely, for every projection $\mathcal G=\mathcal H_{|T}$, the established order-shattering bounds give $\mathrm{intdeg}(\mathcal G)\le\mathrm{OSH}_{\min}(\mathcal G)\le\mathrm{VC}(\mathcal G)\le\mathrm{VC}(\mathcal H)$. Maximizing over $T$ gives the reverse inequality.</p></div>
 
 
 
