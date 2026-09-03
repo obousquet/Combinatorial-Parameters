@@ -2,7 +2,7 @@
   "id": 3,
   "name": "Oriented Diameter",
   "symbol": "\\mathrm{D}^+",
-  "definition": "The **oriented diameter** $\\mathrm{D}^+(\\mathcal{H})$ of a family $\\mathcal{H}$ is defined as $$ \\mathrm{D}^+(\\mathcal{H}):= \\max\\{|S\\|: \\{\\emptyset, S\\}\\subset \\mathcal{H}\\_{|S}} $$",
+  "definition": "For $\\mathcal H\\subseteq2^{\\mathcal X}$, the **oriented diameter** is $$\\mathrm D^+(\\mathcal H):=\\max\\{ |S|:S\\subseteq\\mathcal X,\\{\\emptyset,S\\}\\subseteq\\mathcal H_{|S}\\}.$$",
   "category": "basic",
   "graph_summary": "The largest set supporting both the all-zero and all-one traces.",
   "symmetric": false,

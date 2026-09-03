@@ -1,0 +1,10 @@
+{
+  "id": 965,
+  "name": "Total Trace Count of Singletons",
+  "short_name": "total_trace_count_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/total_trace_count",
+  "value": "$(n+2)2^{n-1}-1$",
+  "status": "established",
+  "proof": "On an $s$-subset with $s<n$, the $s$ retained singleton traces and the empty trace occur, giving $s+1$ traces. On the full domain there are $n$ singleton traces. Therefore $\\operatorname{Tr}=\\sum_{s=0}^n\\binom ns(s+1)-1=(n+2)2^{n-1}-1$."
+}

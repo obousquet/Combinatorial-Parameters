@@ -18,10 +18,12 @@ Each subdirectory contains:
 
 ### Database-authoritative LaTeX catalogue
 
-The structured catalogue and its LaTeX sources are maintained in this
-repository. `data/latex/parameter_definitions.tex`,
-`data/latex/class_definitions.tex`, and `data/latex/references.bib` generate
-the corresponding inputs consumed by `~/latex/CombinatorialParameters`.
+The structured catalogue is maintained in this repository.  Each parameter
+and class record's `definition` field is the sole source for its full
+definition; `graph_summary` is the deliberately shorter parameter-popup
+version.  The LaTeX definition catalogues are generated directly from those
+records.  `data/latex/references.bib` generates the bibliography input
+consumed by `~/latex/CombinatorialParameters`.
 The LaTeX repository owns only survey narrative, proofs, and layout.
 
 Use `sync/ownership.json` for the complete ownership map and regenerate the

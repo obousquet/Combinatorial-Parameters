@@ -1,0 +1,10 @@
+{
+  "id": 964,
+  "name": "Total Trace Count of Trivial Concepts",
+  "short_name": "total_trace_count_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/total_trace_count",
+  "value": "$2^{n+1}-1$",
+  "status": "established",
+  "proof": "The empty coordinate subset has one trace. Every nonempty subset has the two distinct constant traces. Hence $\\operatorname{Tr}(\\{\\emptyset,[n]\\})=1+2(2^n-1)=2^{n+1}-1$."
+}

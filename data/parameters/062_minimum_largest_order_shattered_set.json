@@ -2,7 +2,7 @@
   "id": 62,
   "name": "Minimum Largest Order Shattered Set",
   "symbol": "\\mathrm{OSH}_{\\min}",
-  "definition": "For an order of the domain, let its order-shattered sets be those represented by cubes after downshifting in that order. The **Minimum Largest Order Shattered Set** is the minimum, over domain orders, of the largest cardinality of an order-shattered set.",
+  "definition": "Fix a linear order $\\prec$ on $X$, and let $D_{\\prec}(\\mathcal H)$ be the class obtained by the corresponding down-shifting operation. A set $S\\subseteq X$ is **$\\prec$-order-shattered** when $D_{\\prec}(\\mathcal H)|_S=2^S$. The **Minimum Largest Order Shattered Set** is $\\min_{\\prec}\\max\\{|S|:S\\text{ is }\\prec\\text{-order-shattered}\\}$.",
   "graph_summary": "The smallest, over coordinate orders, of the largest order-shattered dimension.",
   "category": "shattering",
   "symmetric": true,

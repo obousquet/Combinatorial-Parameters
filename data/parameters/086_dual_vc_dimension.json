@@ -9,7 +9,7 @@
   "p_monotonic": true,
   "c_monotonic": true,
   "doubly_monotonic": true,
-  "definition": "For $\u005cmathcal H\u005csubseteq2^{\u005cmathcal X}$, let $\u005cmathcal H^*=\u005c{\u005cx^*:x\u005cin\u005cmathcal X\u005c}$ be the dual class on domain $\u005cmathcal H$, where $x^*=\u005c{h\u005cin\u005cmathcal H:x\u005cin h\u005c}$.  The **dual VC dimension** is $\u005cmathrm{VC}^{*}(\u005cmathcal H)=\u005cmathrm{VC}(\u005cmathcal H^*)$.",
+  "definition": "For $\u005cmathcal H\u005csubseteq2^{\u005cmathcal X}$, let $\u005cmathcal H^*=\u005c{x^*:x\u005cin\u005cmathcal X\u005c}$ be the dual class on domain $\u005cmathcal H$, where $x^*=\u005c{h\u005cin\u005cmathcal H:x\u005cin h\u005c}$.  The **dual VC dimension** is $\u005cmathrm{VC}^{*}(\u005cmathcal H)=\u005cmathrm{VC}(\u005cmathcal H^*)$.",
   "graph_summary": "The VC dimension after exchanging points and concepts: $\u005cmathrm{VC}^{*}(\u005cmathcal H)=\u005cmathrm{VC}(\u005cmathcal H^*)$.",
   "description": "The shattering dimension of the transposed incidence matrix.",
   "origin_references": "The dual shatter function and its dimension are classical; the standard VC/dual-VC comparison is due to Assouad, \u005ccite{assouad1983densite}.",

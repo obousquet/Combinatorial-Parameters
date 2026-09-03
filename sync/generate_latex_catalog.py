@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Generate database-owned LaTeX catalogue sections.
 
-The generated file is deliberately limited to fields that have a single
-structured owner in ``data/``. It must not be edited by hand.
+The structured records in ``data/parameters`` and ``data/classes`` are the
+single editable source of catalogue definitions.  Generated LaTeX is never an
+independent source.
 """
 
 from __future__ import annotations
@@ -34,6 +35,14 @@ def records(data_dir: Path, table: str) -> list[dict]:
 
 def definition_label(entry: dict, mapping: dict) -> str:
     config = mapping["parameters"]
+    return config["label_overrides"].get(
+        entry["short_name"],
+        config["default_label_template"].format(short_name=entry["short_name"]),
+    )
+
+
+def class_definition_label(entry: dict, mapping: dict) -> str:
+    config = mapping["classes"]
     return config["label_overrides"].get(
         entry["short_name"],
         config["default_label_template"].format(short_name=entry["short_name"]),
@@ -135,6 +144,91 @@ def normalize_proof_latex(text: str) -> str:
     return "$".join(parts)
 
 
+def definition_latex(text: str) -> str:
+    """Render the database's Markdown-plus-TeX definition text in LaTeX.
+
+    Definitions deliberately use the same lightweight format rendered by the
+    website: inline math is dollar-delimited, display math uses ``$$...$$``,
+    and bold names are Markdown emphasis.  Keeping that source format avoids
+    a second hand-maintained TeX definition catalogue.
+    """
+    # A bold span may legitimately contain inline TeX, e.g.
+    # ``**compression scheme of size $k$**``.  Convert that form before
+    # splitting prose from math.  Single-star emphasis remains below so TeX
+    # syntax such as ``$H^*$`` is insulated from Markdown processing.
+    text = re.sub(r"\*\*(.+?)\*\*", r"\\emph{\1}", text, flags=re.S)
+    parts = re.split(r"(\$\$.*?\$\$|\$[^$]*\$)", text, flags=re.S)
+    for index in range(0, len(parts), 2):
+        # Markdown belongs only to prose.  In particular, a TeX superscript
+        # such as H^* must never be mistaken for Markdown emphasis.
+        parts[index] = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"\\emph{\1}", parts[index])
+    text = "".join(parts)
+    pieces = text.split("$$")
+    rendered: list[str] = []
+    for index, piece in enumerate(pieces):
+        if index % 2:
+            rendered.extend(["\\[", piece.strip(), "\\]"])
+        else:
+            rendered.append(piece.strip())
+    return "\n".join(piece for piece in rendered if piece)
+
+
+def generate_parameter_definitions(data_dir: Path, mapping: dict) -> str:
+    """Generate every parameter definition from its structured record."""
+    entries = records(data_dir, "parameters")
+    placeholders = {int(identifier) for identifier in mapping["parameters"].get("unmapped_database_ids", {})}
+    lines = [
+        "% GENERATED from data/parameters by sync/generate_latex_catalog.py; do not edit.",
+        "% The definition field is the sole authoritative catalogue definition.",
+        "\\subsection{Conventions}",
+        "All classes below are binary concept classes $\\mathcal H\\subseteq2^{\\mathcal X}$: a concept is identified with its positive set.  For $S\\subseteq\\mathcal X$, its coordinate projection is $\\mathcal H_{|S}=\\{h\\cap S:h\\in\\mathcal H\\}$.  For a labeling $y:S\\to\\{0,1\\}$, the conditioned class $\\mathcal H_{S=y}$ consists of concepts agreeing with $y$ on $S$, restricted to the remaining coordinates.  A set $S$ is \\emph{shattered} precisely when $\\mathcal H_{|S}=2^S$.  The one-inclusion graph has vertex set $\\mathcal H$ and an edge between two concepts whose symmetric difference has cardinality one.  A teaching set for $h\\in\\mathcal H$ is a labeled set of coordinates on which no other concept in $\\mathcal H$ agrees with $h$.",
+        "",
+    ]
+    for category, category_name in CATEGORY_NAMES.items():
+        category_entries = [
+            entry for entry in entries
+            if entry.get("category") == category and entry["id"] not in placeholders
+        ]
+        if not category_entries:
+            continue
+        lines.extend(["\\subsection{" + category_name + "}\\label{sec:" + category_name + "}", ""])
+        for entry in category_entries:
+            lines.extend(
+                [
+                    "\\subsubsection{" + entry["name"] + "}",
+                    "\\begin{definition}[" + entry["name"] + " - {"
+                    + math_mode(entry["symbol"]) + "}]\\label{"
+                    + definition_label(entry, mapping) + "}",
+                    definition_latex(entry.get("definition", "")) or "Definition pending.",
+                    "\\end{definition}",
+                    "",
+                ]
+            )
+    return "\n".join(lines)
+
+
+def generate_class_definitions(data_dir: Path, mapping: dict) -> str:
+    """Generate every class definition from its structured record."""
+    lines = [
+        "% GENERATED from data/classes by sync/generate_latex_catalog.py; do not edit.",
+        "% The definition field is the sole authoritative catalogue definition.",
+        "",
+    ]
+    for entry in records(data_dir, "classes"):
+        lines.extend(
+            [
+                "\\subsection{" + entry["name"] + "}\\label{"
+                + class_definition_label(entry, mapping) + "}",
+                "\\begin{definition}[" + entry["name"] + " - {"
+                + math_mode(entry["symbol"]) + "}]",
+                definition_latex(entry.get("definition", "")) or "Definition pending.",
+                "\\end{definition}",
+                "",
+            ]
+        )
+    return "\n".join(lines)
+
+
 def generate_value_table(data_dir: Path, mapping: dict) -> str:
     parameters = {
         entry["short_name"]: entry
@@ -232,20 +326,13 @@ def generate_value_proofs(data_dir: Path) -> str:
     return "\n".join(lines)
 
 
-SOURCE_ASSETS = {
-    "parameter-definitions": "parameter_definitions.tex",
-    "class-definitions": "class_definitions.tex",
-    "bibliography": "references.bib",
-}
+SOURCE_ASSETS = {"bibliography": "references.bib"}
 
 
 def generate_source_asset(data_dir: Path, section: str) -> str:
     """Return a database-owned LaTeX source asset verbatim.
 
-    These assets are kept under ``data/latex`` while their content is migrated
-    incrementally into record-level structured fields.  Copying through this
-    generator keeps the LaTeX checkout output-only from the first migration
-    step onward.
+    Bibliography data remains an intentionally bibliographic source asset.
     """
     source = data_dir / "latex" / SOURCE_ASSETS[section]
     return source.read_text()
@@ -259,7 +346,10 @@ def main() -> int:
     )
     parser.add_argument(
         "--section",
-        choices=["parameter-table", "value-table", "value-proofs", *SOURCE_ASSETS],
+        choices=[
+            "parameter-table", "value-table", "value-proofs",
+            "parameter-definitions", "class-definitions", *SOURCE_ASSETS,
+        ],
         default="parameter-table",
     )
     parser.add_argument("--output", type=Path, required=True)
@@ -275,6 +365,8 @@ def main() -> int:
         "parameter-table": generate_parameter_table,
         "value-table": generate_value_table,
         "value-proofs": lambda data_dir, _mapping: generate_value_proofs(data_dir),
+        "parameter-definitions": generate_parameter_definitions,
+        "class-definitions": generate_class_definitions,
     }
     if args.section in SOURCE_ASSETS:
         output = generate_source_asset(args.data_dir, args.section)

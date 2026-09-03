@@ -2,7 +2,7 @@
   "id": 11,
   "name": "Log Shattering",
   "symbol": "\\log \\mathrm{sh}",
-  "definition": "The **Log Shattering** of a family $\\mathcal{H}$ is the (binary) log of the number of its shattered sets, $$ \\log |sh{\\mathcal{H|}} $$",
+  "definition": "Let $\\operatorname{sh}(\\mathcal H)=\\{S\\subseteq\\mathcal X: \\mathcal H_{|S}=2^S\\}$ be the sets shattered by $\\mathcal H\\subseteq2^{\\mathcal X}$. Its **log shattering** is $$\\log_2|\\operatorname{sh}(\\mathcal H)|.$$",
   "category": "shattering",
   "graph_summary": "The binary logarithm of the number of subsets shattered by the class.",
   "symmetric": true,

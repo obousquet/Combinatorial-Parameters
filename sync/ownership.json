@@ -10,15 +10,17 @@
     },
     "parameter_definitions": {
       "authority": "database",
-      "source": "data/latex/parameter_definitions.tex",
+      "source": "data/parameters/*.json: definition",
       "latex_output": "includes/generated/parameter_definitions.tex",
-      "generator": "sync/generate_latex_catalog.py --section parameter-definitions"
+      "generator": "sync/generate_latex_catalog.py --section parameter-definitions",
+      "status": "The definition field is the sole editable full definition; graph_summary is its concise popup companion."
     },
     "class_catalog": {
       "authority": "database",
       "source": "data/classes/*.json",
       "latex_output": "includes/generated/class_definitions.tex",
-      "generator": "sync/generate_latex_catalog.py --section class-definitions"
+      "generator": "sync/generate_latex_catalog.py --section class-definitions",
+      "status": "Each class record's definition field is the sole editable class definition."
     },
     "parameter_relationships": {
       "authority": "database",

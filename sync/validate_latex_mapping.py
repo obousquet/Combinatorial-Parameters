@@ -9,6 +9,11 @@ import re
 import sys
 from pathlib import Path
 
+from generate_latex_catalog import (
+    generate_class_definitions,
+    generate_parameter_definitions,
+)
+
 
 LABEL_PATTERN = re.compile(r"\\label\{([^}]+)\}")
 
@@ -90,16 +95,14 @@ def main() -> int:
     args = parser.parse_args()
 
     mapping = json.loads(args.mapping.read_text())
-    # Definition sources are database-owned and copied into the LaTeX checkout.
-    # Read the authoritative files here so validation does not accidentally rely
-    # on a stale generated copy.
-    latex_labels = set()
-    for source in (
-        args.data_dir / "latex" / "parameter_definitions.tex",
-        args.data_dir / "latex" / "class_definitions.tex",
-    ):
-        if source.is_file():
-            latex_labels.update(LABEL_PATTERN.findall(source.read_text()))
+    # Definitions are generated directly from structured records.  Validate
+    # against that generated text, never a manually edited TeX shadow copy.
+    latex_labels = set(
+        LABEL_PATTERN.findall(generate_parameter_definitions(args.data_dir, mapping))
+    )
+    latex_labels.update(
+        LABEL_PATTERN.findall(generate_class_definitions(args.data_dir, mapping))
+    )
 
     parameter_entries = records(args.data_dir, "parameters")
     class_entries = records(args.data_dir, "classes")

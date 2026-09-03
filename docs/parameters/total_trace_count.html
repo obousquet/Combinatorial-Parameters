@@ -64,33 +64,33 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-78" style="position:relative;">
+    <div class="table-card" id="math-105" style="position:relative;">
         
-        <h3><a href="parameters/positive_recursive_teaching_dimension.html" class="table-title-link">Positive Recursive Teaching Dimension</a></h3>
+        <h3><a href="parameters/total_trace_count.html" class="table-title-link">Total Trace Count</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive Recursive Teaching Dimension</p>
+        <p><strong>Name: </strong>Total Trace Count</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{RTD}^+">
-            \[\mathrm{RTD}^+\]
+        <div class="latex-equation" data-latex="\operatorname{Tr}">
+            \[\operatorname{Tr}\]
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>A <strong>positive teaching set</strong> for $h\in\mathcal H$ relative to $\mathcal G\subseteq\mathcal H$ is a set $S\subseteq\{x:h(x)=1\}$ such that no $g\in\mathcal G\setminus\{h\}$ is $1$ on every point of $S$. For an ordering $h_1,\ldots,h_m$ of $\mathcal H$, take the largest minimum size of a positive teaching set for $h_i$ relative to $\{h_i,\ldots,h_m\}$. The <strong>Positive Recursive Teaching Dimension</strong> is the minimum of this quantity over all such orderings.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>For a finite binary class $\mathcal H$ on a finite domain $X$, its <strong>Total Trace Count</strong> is $\operatorname{Tr}(\mathcal H):=\sum_{S\subseteq X}|\mathcal H_{|S}|$, the number of distinct labeled traces counted over all coordinate subsets.</p></div>
+<strong>Description:</strong><div class="text-field"><p>Equivalently, count each pair $(S,h|_S)$ consisting of a coordinate subset and a distinct trace realized on it. This aggregate is finite only for finite domains.</p></div>
 
 
-<strong>Origin References:</strong><div class="text-field"><p>The positive recursive variant is defined in <a href="bibliography.html#fallat2023batch">[fallat2023batch]</a>.</p></div>
-<p><strong>Category:</strong> Teaching and Hitting</p>
-<p><strong>Symmetric:</strong> No</p>
+<p><strong>Category:</strong> Basic</p>
+<p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Unspecified</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
 <p><strong>C-Monotonic:</strong> Yes</p>
 <p><strong>Strict C-Monotonic:</strong> Unspecified</p>
 <p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Unspecified</p>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
 <p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/positive_recursive_teaching_dimension_trivial_concepts.html'>Positive Recursive Teaching Dimension of Trivial Concepts</a></li><li><a href='values/positive_recursive_teaching_dimension_singletons.html'>Positive Recursive Teaching Dimension of Singletons</a></li><li><a href='values/positive_recursive_teaching_dimension_full_cube.html'>Positive Recursive Teaching Dimension of Full Cube</a></li><li><a href='values/positive_recursive_teaching_dimension_singletons_plus_empty_set.html'>Positive Recursive Teaching Dimension of Singletons plus Empty Set</a></li><li><a href='values/positive_recursive_teaching_dimension_halfintervals.html'>Positive Recursive Teaching Dimension of Half-intervals</a></li><li><a href='values/positive_recursive_teaching_dimension_tagged_singletons.html'>Positive Recursive Teaching Dimension of Tagged Singletons</a></li><li><a href='values/positive_recursive_teaching_dimension_addressing.html'>Positive Recursive Teaching Dimension of Addressing</a></li><li><a href='values/positive_recursive_teaching_dimension_three_code_class.html'>Positive Recursive Teaching Dimension of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/positive_recursive_teaching_dimension_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^+ \ge \mathrm{RTD}$</a></li><li><a href="relationships/positive_teaching_dimension_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{TD}^+ \ge \mathrm{RTD}^+$</a></li><li><a href="relationships/positive_recursive_teaching_dimension_positive_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^+ \ge \mathrm{NCTD}^+$</a></li><li><a href="relationships/effective_range_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{RTD}^+$</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/total_trace_count_full_cube.html'>Total Trace Count of Full Cube</a></li><li><a href='values/total_trace_count_trivial_concepts.html'>Total Trace Count of Trivial Concepts</a></li><li><a href='values/total_trace_count_singletons.html'>Total Trace Count of Singletons</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/total_trace_count_size.html" class="relationship-statement">$\operatorname{Tr} \ge \mathrm{H}$</a></li></ul></p></div>
 
         </div>
     </div>

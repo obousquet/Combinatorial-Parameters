@@ -2,7 +2,7 @@
   "id": 77,
   "name": "Distinguishing Range",
   "symbol": "\\mathrm{R}",
-  "definition": "Minimum number of coordinates over which all concepts in the class can be distinguished.",
+  "definition": "The **distinguishing range** is $\\min\\{|S|:S\\subseteq X\\text{ and the trace map }h\\mapsto h|_S\\text{ is injective on }\\mathcal H\\}$. Equivalently, it is the fewest coordinates on which every pair of distinct concepts has different traces.",
   "category": "basic",
   "graph_summary": "The largest coordinate set on which all concepts have distinct traces.",
   "symmetric": true,

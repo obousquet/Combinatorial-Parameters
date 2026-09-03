@@ -9,7 +9,7 @@
   "c_monotonic": true,
   "doubly_monotonic": null,
   "strictly_monotonic": null,
-  "definition": "The **Positive Recursive Teaching Dimension** is the least worst-case sample size in a recursive teaching sequence when every teaching sample is required to use only positive examples of its target concept.",
+  "definition": "A **positive teaching set** for $h\\in\\mathcal H$ relative to $\\mathcal G\\subseteq\\mathcal H$ is a set $S\\subseteq\\{x:h(x)=1\\}$ such that no $g\\in\\mathcal G\\setminus\\{h\\}$ is $1$ on every point of $S$. For an ordering $h_1,\\ldots,h_m$ of $\\mathcal H$, take the largest minimum size of a positive teaching set for $h_i$ relative to $\\{h_i,\\ldots,h_m\\}$. The **Positive Recursive Teaching Dimension** is the minimum of this quantity over all such orderings.",
   "graph_summary": "Recursive teaching dimension with positive-only teaching samples.",
   "short_name": "positive_recursive_teaching_dimension",
   "origin_references": "The positive recursive variant is defined in \\cite{fallat2023batch}.",

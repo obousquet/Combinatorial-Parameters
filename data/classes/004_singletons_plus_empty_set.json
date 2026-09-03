@@ -2,6 +2,6 @@
   "id": 4,
   "name": "Singletons plus empty set",
   "symbol": "\\{\\{i\\}\\}_{1\\le i\\le n}\\cup\\{\\emptyset\\}",
-  "definition": "All singletons and the empty set",
+  "definition": "For $n\\geq1$, the singleton-plus-empty class on domain $[n]$ is $\\mathcal S_n^0=\\{\\emptyset\\}\\cup\\{\\{i\\}:i\\in[n]\\}\\subseteq2^{[n]}$.",
   "short_name": "singletons_plus_empty_set"
 }

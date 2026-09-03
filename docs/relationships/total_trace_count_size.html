@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,27 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-78" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-319" style="position:relative;">
         
-        <h3><a href="parameters/positive_recursive_teaching_dimension.html" class="table-title-link">Positive Recursive Teaching Dimension</a></h3>
+        <h3><a href="relationships/total_trace_count_size.html" class="table-title-link">Total Trace Count / Size</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive Recursive Teaching Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{RTD}^+">
-            \[\mathrm{RTD}^+\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>A <strong>positive teaching set</strong> for $h\in\mathcal H$ relative to $\mathcal G\subseteq\mathcal H$ is a set $S\subseteq\{x:h(x)=1\}$ such that no $g\in\mathcal G\setminus\{h\}$ is $1$ on every point of $S$. For an ordering $h_1,\ldots,h_m$ of $\mathcal H$, take the largest minimum size of a positive teaching set for $h_i$ relative to $\{h_i,\ldots,h_m\}$. The <strong>Positive Recursive Teaching Dimension</strong> is the minimum of this quantity over all such orderings.</p></div>
+        <p><strong>Name: </strong>Total Trace Count / Size</p>
+<p><strong>Parameter 1: </strong><a href="parameters/total_trace_count.html">Total Trace Count</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
-<strong>Origin References:</strong><div class="text-field"><p>The positive recursive variant is defined in <a href="bibliography.html#fallat2023batch">[fallat2023batch]</a>.</p></div>
-<p><strong>Category:</strong> Teaching and Hitting</p>
-<p><strong>Symmetric:</strong> No</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Unspecified</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Unspecified</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/positive_recursive_teaching_dimension_trivial_concepts.html'>Positive Recursive Teaching Dimension of Trivial Concepts</a></li><li><a href='values/positive_recursive_teaching_dimension_singletons.html'>Positive Recursive Teaching Dimension of Singletons</a></li><li><a href='values/positive_recursive_teaching_dimension_full_cube.html'>Positive Recursive Teaching Dimension of Full Cube</a></li><li><a href='values/positive_recursive_teaching_dimension_singletons_plus_empty_set.html'>Positive Recursive Teaching Dimension of Singletons plus Empty Set</a></li><li><a href='values/positive_recursive_teaching_dimension_halfintervals.html'>Positive Recursive Teaching Dimension of Half-intervals</a></li><li><a href='values/positive_recursive_teaching_dimension_tagged_singletons.html'>Positive Recursive Teaching Dimension of Tagged Singletons</a></li><li><a href='values/positive_recursive_teaching_dimension_addressing.html'>Positive Recursive Teaching Dimension of Addressing</a></li><li><a href='values/positive_recursive_teaching_dimension_three_code_class.html'>Positive Recursive Teaching Dimension of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/positive_recursive_teaching_dimension_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^+ \ge \mathrm{RTD}$</a></li><li><a href="relationships/positive_teaching_dimension_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{TD}^+ \ge \mathrm{RTD}^+$</a></li><li><a href="relationships/positive_recursive_teaching_dimension_positive_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^+ \ge \mathrm{NCTD}^+$</a></li><li><a href="relationships/effective_range_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{RTD}^+$</a></li></ul></p></div>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class, the full-domain traces are the concepts themselves.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The summand indexed by $S=X$ is $|\mathcal H_{|X}|=|\mathcal H|$. All remaining summands are nonnegative, so $\operatorname{Tr}(\mathcal H)\geq|\mathcal H|$.</p></div>
+
+
+
 
         </div>
     </div>

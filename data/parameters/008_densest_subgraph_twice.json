@@ -12,6 +12,7 @@
   "doubly_monotonic": false,
   "strictly_monotonic": false,
   "short_name": "densest_subgraph_twice",
+  "origin_references": "The density and densest-subgraph treatment of the $1$-inclusion graph is part of the random-point prediction framework developed in \\cite{haussler1988predicting,haussler1994predicting}.",
   "comments": "The densest subgraph is dual to the lowest outdegree orientation. Conditioning gives an induced subgraph of the $1$-inclusion graph, so this parameter is c-monotonic.",
   "monotonicity_evidence": {
     "monotonic": {

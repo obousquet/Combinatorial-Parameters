@@ -2,7 +2,7 @@
   "id": 1,
   "name": "Effective Range",
   "symbol": "\\mathrm{E}",
-  "definition": "The **effective range** $E(\\mathcal{H})$ of a family $\\mathcal{H}$ is the number of elements that can be distinguished by members of $\\mathcal{H}$: $$ E(\\mathcal{H}):= |\\{x:x\\in\\mathcal{X\\|,\\, \\exists h_1,h_2\\in\\mathcal{H},\\, x\\in h_1 \\Delta h_2}} $$",
+  "definition": "For a family $\\mathcal{H}\\subseteq2^{\\mathcal{X}}$, the **effective range** is $$E(\\mathcal{H}):=\\bigl|\\{x\\in\\mathcal{X}:\\exists h_1,h_2\\in\\mathcal{H}\\text{ with }x\\in h_1\\mathbin{\\triangle}h_2\\}\\bigr|.$$ Thus it counts the coordinates on which two concepts of $\\mathcal H$ disagree.",
   "category": "basic",
   "graph_summary": "The number of coordinates on which two concepts in the class disagree.",
   "symmetric": true,

@@ -2,6 +2,6 @@
   "id": 2,
   "name": "Singletons",
   "symbol": "\\{\\{i\\}\\}_{1\\le i\\le n}",
-  "definition": "Singletons",
+  "definition": "For $n\\geq1$, the singleton class on domain $[n]=\\{1,\\ldots,n\\}$ is $\\mathcal S_n=\\{\\{i\\}:i\\in[n]\\}\\subseteq2^{[n]}$.",
   "short_name": "singletons"
 }

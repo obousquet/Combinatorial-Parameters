@@ -9,7 +9,7 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": false,
-  "definition": "For each order of the domain, take the largest cardinality of an order-shattered set. The **Maximum Largest Order Shattered Set** is the maximum of this quantity over all domain orders; it is equivalently the VC dimension.",
+  "definition": "For a linear order $\\prec$ on $X$, call $S\\subseteq X$ **$\\prec$-order-shattered** when the down-shifted class $D_{\\prec}(\\mathcal H)$ realizes every trace on $S$, i.e. $D_{\\prec}(\\mathcal H)|_S=2^S$. The **Maximum Largest Order Shattered Set** is $\\max_{\\prec}\\max\\{|S|:S\\text{ is }\\prec\\text{-order-shattered}\\}$; it equals $\\operatorname{VC}(\\mathcal H)$.",
   "graph_summary": "Largest order-shattered-set size over domain orders; equal to VC dimension.",
   "origin_references": "The order-shattering sandwich framework is due to \\cite{bollobas1995defect}.",
   "short_name": "maximum_largest_order_shattered_set",

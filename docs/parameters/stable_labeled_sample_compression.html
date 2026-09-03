@@ -76,7 +76,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Stable Labeled Sample Compression</strong> is the minimum size of a labeled sample compression scheme such that removing any examples outside its compression set leaves the reconstructed hypothesis unchanged.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>For a finite realizable labeled sample $A$, a <strong>labeled compression scheme of size $k$</strong> selects a labeled subsample $C(A)\subseteq A$ with $|C(A)|\le k$ and reconstructs a hypothesis consistent with $A$ from $C(A)$. It is <strong>stable</strong> when $C(A)\subseteq B\subseteq A$ implies that reconstructing from $B$ gives the same hypothesis as reconstructing from $A$. The <strong>Stable Labeled Sample Compression</strong> is the least such $k$.</p></div>
 
 
 <strong>Origin References:</strong><div class="text-field"><p>The stability condition for sample compression schemes is used in <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a> <a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a>.</p></div>

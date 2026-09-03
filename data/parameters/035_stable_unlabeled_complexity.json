@@ -9,7 +9,7 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": null,
-  "definition": "The **Stable Unlabeled Complexity** is the minimum size of an unlabeled sample compression scheme such that removing any examples outside its compression set leaves the reconstructed hypothesis unchanged.",
+  "definition": "For a finite realizable labeled sample $A$, an **unlabeled compression scheme of size $k$** selects a set $C(A)\\subseteq\\operatorname{dom}(A)$ with $|C(A)|\\le k$ and reconstructs a hypothesis consistent with $A$ from the labels on $C(A)$. It is **stable** when $C(A)\\subseteq\\operatorname{dom}(B)\\subseteq\\operatorname{dom}(A)$ implies that reconstructing from $B$ gives the same hypothesis as reconstructing from $A$. The **Stable Unlabeled Complexity** is the least such $k$.",
   "graph_summary": "Unlabeled compression size under reconstruction stability.",
   "origin_references": "The stability condition for sample compression schemes is used in \\cite{bousquet2020proper,hanneke2021stable}.",
   "short_name": "stable_unlabeled_complexity",

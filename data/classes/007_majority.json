@@ -2,6 +2,6 @@
   "id": 7,
   "name": "Majority",
   "symbol": "\\text{Maj}",
-  "definition": "(see \\cite{maass1992lower}): $\\{S\\subset [n+1]: n+1\\in S\\Leftrightarrow |S\\backslash \\{n+1\\\\}|>n/2}$\n\nSo we have all subsets of $[n]$ and an extra majority bit.",
+  "definition": "Following \\cite{maass1992lower}, for $n\\geq1$ the majority class on $[n+1]$ consists of all $S\\subseteq[n+1]$ such that $n+1\\in S$ if and only if $|S\\cap[n]|>n/2$. Thus the last coordinate is the strict-majority bit of the first $n$ coordinates.",
   "short_name": "majority"
 }

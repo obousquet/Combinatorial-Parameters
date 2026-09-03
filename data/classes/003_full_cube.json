@@ -2,6 +2,6 @@
   "id": 3,
   "name": "Full Cube",
   "symbol": "\\{S:S\\subset [n]\\}",
-  "definition": "All concepts, i.e. the powerset of the range.",
+  "definition": "For $n\\geq1$, the full cube on domain $[n]=\\{1,\\ldots,n\\}$ is $2^{[n]}$, the class of all $2^n$ binary labelings of $[n]$.",
   "short_name": "full_cube"
 }

@@ -27,9 +27,10 @@ parameters, assigned values, and bibliography entries.
 
 - Preserve the schemas in `data/*/schema.json`; use existing IDs and
   cross-references such as `#parameters/<short_name>`.
-- `graph_summary` is the concise, database-owned explanation for an interactive
-  graph popup. Keep it short; the full self-contained survey definition belongs
-  in `data/latex/parameter_definitions.tex`.
+- `definition` is the single authoritative full, self-contained definition for
+  a parameter or class. `graph_summary` is the concise, database-owned
+  explanation for a parameter's interactive graph popup; keep it short. The
+  generator derives the survey definition catalogue directly from these fields.
 - Treat a relationship record as a stated mathematical fact. Do not introduce
   inferred transitive relationships as new records merely to improve a graph.
 - Keep names, definitions, relationships, values, and references aligned with

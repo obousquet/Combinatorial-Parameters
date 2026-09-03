@@ -2,7 +2,7 @@
   "id": 2,
   "name": "Size",
   "symbol": "\\mathrm{H}",
-  "definition": "The **size** of a family $\\mathcal{H}$ is simply the  cardinality, $$  |\\mathcal{H|} $$",
+  "definition": "For a family $\\mathcal{H}$, its **size** is its cardinality: $$\\mathrm H(\\mathcal H):=|\\mathcal H|.$$",
   "category": "basic",
   "graph_summary": "The number of concepts in the class.",
   "symmetric": true,
