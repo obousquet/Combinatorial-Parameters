@@ -1,0 +1,11 @@
+{
+  "id": 953,
+  "name": "Repetition-Free Recursive Teaching Dimension of the Three-Code Class",
+  "short_name": "repetitionfree_recursive_teaching_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "For the three concepts $000,011,101$, use respectively the one-coordinate teaching samples at coordinates $3,2,1$ (with their displayed labels).  Each sample identifies its target among all three concepts, and the coordinate sets $\\{3\\},\\{2\\},\\{1\\}$ are distinct.  Thus these removals give a repetition-free recursive plan of order one, which is optimal for a non-singleton class.",
+  "references": "\\cite{doliwa2014recursive}"
+}

@@ -15285,6 +15285,91 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-950" style="position:relative;">
+
+        <h3><a href="values/repetitionfree_recursive_teaching_dimension_trivial_concepts.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension of Trivial Concepts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension of Trivial Concepts</p>
+<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Parameter: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Choose either constant concept first and teach it at one coordinate.  The remaining concept is then the sole candidate and uses the empty teaching set.  These coordinate sets are distinct, so this is a repetition-free plan of order one.  No nontrivial two-concept class has a teaching plan of order zero.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-951" style="position:relative;">
+
+        <h3><a href="values/repetitionfree_recursive_teaching_dimension_singletons.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension of Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Remove the singleton concepts in any order.  The positive example at its unique coordinate teaches each singleton, and these one-coordinate teaching sets are pairwise distinct.  Thus this is a repetition-free recursive teaching plan of order one; order zero cannot identify a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-952" style="position:relative;">
+
+        <h3><a href="values/repetitionfree_recursive_teaching_dimension_singletons_plus_empty_set.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension of Singletons plus Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension of Singletons plus Empty Set</p>
+<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Remove every singleton using its unique positive coordinate, in any order, and then remove the empty concept with the empty teaching set.  The singleton coordinate sets are pairwise distinct and differ from the final empty set.  This is a repetition-free plan of order one, which is optimal for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-953" style="position:relative;">
+
+        <h3><a href="values/repetitionfree_recursive_teaching_dimension_three_code_class.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the three concepts $000,011,101$, use respectively the one-coordinate teaching samples at coordinates $3,2,1$ (with their displayed labels).  Each sample identifies its target among all three concepts, and the coordinate sets $\{3\},\{2\},\{1\}$ are distinct.  Thus these removals give a repetition-free recursive plan of order one, which is optimal for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-954" style="position:relative;">
+
+        <h3><a href="values/repetitionfree_recursive_teaching_dimension_halfintervals.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>For nontrivial finite half-interval chains.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Repeatedly remove an extreme remaining initial segment.  If the remaining endpoints form an interval $[a,b]$, remove its left endpoint using the negative label at coordinate $a+1$, or its right endpoint using the positive label at coordinate $b$.  Alternating sides uses each singleton coordinate set at most once; the final sole concept uses the empty set.  Hence this is a repetition-free plan of order one, and order zero is impossible for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

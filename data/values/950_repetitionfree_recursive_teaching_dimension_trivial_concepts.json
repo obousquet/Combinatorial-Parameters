@@ -1,0 +1,11 @@
+{
+  "id": 950,
+  "name": "Repetition-Free Recursive Teaching Dimension of Trivial Concepts",
+  "short_name": "repetitionfree_recursive_teaching_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "Choose either constant concept first and teach it at one coordinate.  The remaining concept is then the sole candidate and uses the empty teaching set.  These coordinate sets are distinct, so this is a repetition-free plan of order one.  No nontrivial two-concept class has a teaching plan of order zero.",
+  "references": "\\cite{doliwa2014recursive}"
+}

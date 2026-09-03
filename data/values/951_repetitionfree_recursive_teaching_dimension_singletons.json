@@ -1,0 +1,11 @@
+{
+  "id": 951,
+  "name": "Repetition-Free Recursive Teaching Dimension of Singletons",
+  "short_name": "repetitionfree_recursive_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "Remove the singleton concepts in any order.  The positive example at its unique coordinate teaches each singleton, and these one-coordinate teaching sets are pairwise distinct.  Thus this is a repetition-free recursive teaching plan of order one; order zero cannot identify a non-singleton class.",
+  "references": "\\cite{doliwa2014recursive}"
+}

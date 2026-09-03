@@ -1,0 +1,11 @@
+{
+  "id": 952,
+  "name": "Repetition-Free Recursive Teaching Dimension of Singletons plus Empty Set",
+  "short_name": "repetitionfree_recursive_teaching_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "Remove every singleton using its unique positive coordinate, in any order, and then remove the empty concept with the empty teaching set.  The singleton coordinate sets are pairwise distinct and differ from the final empty set.  This is a repetition-free plan of order one, which is optimal for a non-singleton class.",
+  "references": "\\cite{doliwa2014recursive}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 954,
+  "name": "Repetition-Free Recursive Teaching Dimension of Half-intervals",
+  "short_name": "repetitionfree_recursive_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "value": "$1$",
+  "status": "established",
+  "details": "For nontrivial finite half-interval chains.",
+  "proof": "Repeatedly remove an extreme remaining initial segment.  If the remaining endpoints form an interval $[a,b]$, remove its left endpoint using the negative label at coordinate $a+1$, or its right endpoint using the positive label at coordinate $b$.  Alternating sides uses each singleton coordinate set at most once; the final sole concept uses the empty set.  Hence this is a repetition-free plan of order one, and order zero is impossible for a non-singleton class.",
+  "references": "\\cite{doliwa2014recursive}"
+}
