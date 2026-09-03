@@ -1,0 +1,15 @@
+{
+  "id": 391,
+  "name": "Log Shattering / Projected Distinguishing Range (logarithmic)",
+  "short_name": "log_shattering_projected_distinguishing_range",
+  "parameter_1_id": "#parameters/log_shattering",
+  "parameter_2_id": "#parameters/projected_distinguishing_range",
+  "relationship_type": "log",
+  "multiplicative_constant": "1",
+  "details": "For every finite binary class with positive projected distinguishing range, $\\log_2|\\operatorname{sh}(\\mathcal H)|\\geq\\log_2\\mathrm R^p(\\mathcal H)$; more precisely it is at least $\\log_2(\\mathrm R^p(\\mathcal H)+1)$.",
+  "status": "established",
+  "proof": "Choose a projection $\\mathcal G=\\mathcal H_{|S}$ attaining $r=\\mathrm R^p(\\mathcal H)$, and a minimum distinguishing coordinate set $T$ for $\\mathcal G$.  Every coordinate in $T$ is active in $\\mathcal G$, since an inactive coordinate could be deleted without changing any trace.  Hence it is active in $\\mathcal H$, and its singleton is shattered by $\\mathcal H$.  The $r$ distinct singleton sets in $T$, together with the empty set, give at least $r+1$ shattered subsets of $\\mathcal H$.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the trivial class $\\mathcal T_n=\\{\\emptyset,[n]\\}$, log shattering is $\\log_2(n+1)$ while projected distinguishing range is $1$; hence no reverse affine-linear bound holds."
+}
