@@ -7,5 +7,8 @@
   "short_name": "degeneracy_largest_strongly_shattered_set",
   "name": "Degeneracy / Largest Strongly Shattered Set",
   "status": "established",
-  "proof": "A strongly shattered set of size $d$ supplies a contained $d$-cube in the $1$-inclusion graph.  That cube is an induced subgraph of minimum degree $d$, so the graph degeneracy is at least $d$."
+  "proof": "A strongly shattered set of size $d$ supplies a contained $d$-cube in the $1$-inclusion graph.  That cube is an induced subgraph of minimum degree $d$, so the graph degeneracy is at least $d$.",
+  "witness": "#classes/middle_layers",
+  "witness_strength": "unbounded",
+  "witness_verification": "For ML_m, degeneracy is m+1 while the largest strongly shattered set has size 1."
 }

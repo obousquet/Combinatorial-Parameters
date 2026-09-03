@@ -1,0 +1,12 @@
+{
+  "id": 978,
+  "name": "Largest Strongly Shattered Set of the Middle Two Layers",
+  "short_name": "largest_strongly_shattered_set_middle_layers",
+  "class_id": "#classes/middle_layers",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class has one-inclusion edges, so it contains a one-cube. Every two-cube contains vertices in three consecutive cardinality layers. Since ML_m uses only the two layers m and m+1, it contains no two-cube; hence its largest contained cube has dimension one.",
+  "references": "Direct calculation; verified by sync/verify_middle_layers.py."
+}

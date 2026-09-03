@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-55" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-978" style="position:relative;">
         
-        <h3><a href="relationships/degeneracy_largest_strongly_shattered_set.html" class="table-title-link">Degeneracy / Largest Strongly Shattered Set</a></h3>
+        <h3><a href="values/largest_strongly_shattered_set_middle_layers.html" class="table-title-link">Largest Strongly Shattered Set of the Middle Two Layers</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Degeneracy / Largest Strongly Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="parameters/degeneracy.html">Degeneracy</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Every contained cube gives an induced subgraph of matching minimum degree.</p></div>
-<p><strong>Witness: </strong><a href="classes/middle_layers.html">Middle Two Layers</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For ML_m, degeneracy is m+1 while the largest strongly shattered set has size 1.</p></div>
-
+        <p><strong>Name: </strong>Largest Strongly Shattered Set of the Middle Two Layers</p>
+<p><strong>Class: </strong><a href="classes/middle_layers.html">Middle Two Layers</a></p>
+<p><strong>Parameter: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set of size $d$ supplies a contained $d$-cube in the $1$-inclusion graph.  That cube is an induced subgraph of minimum degree $d$, so the graph degeneracy is at least $d$.</p></div>
-
-
-
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has one-inclusion edges, so it contains a one-cube. Every two-cube contains vertices in three consecutive cardinality layers. Since ML_m uses only the two layers m and m+1, it contains no two-cube; hence its largest contained cube has dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_middle_layers.py.</p></div>
 
         </div>
     </div>

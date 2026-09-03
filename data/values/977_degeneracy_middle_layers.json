@@ -1,0 +1,12 @@
+{
+  "id": 977,
+  "name": "Degeneracy of the Middle Two Layers",
+  "short_name": "degeneracy_middle_layers",
+  "class_id": "#classes/middle_layers",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$m+1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every m-set has 2m+1-m=m+1 one-inclusion neighbors in the upper layer, and every (m+1)-set has m+1 neighbors in the lower layer. Thus the full one-inclusion graph is (m+1)-regular, so its degeneracy is at least m+1. Its maximum degree is also m+1, so every induced subgraph has minimum degree at most m+1. Hence the degeneracy is exactly m+1.",
+  "references": "Direct calculation; verified by sync/verify_middle_layers.py."
+}

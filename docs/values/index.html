@@ -5578,6 +5578,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-977" style="position:relative;">
+        
+        <h3><a href="values/degeneracy_middle_layers.html" class="table-title-link">Degeneracy of the Middle Two Layers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Degeneracy of the Middle Two Layers</p>
+<p><strong>Class: </strong><a href="classes/middle_layers.html">Middle Two Layers</a></p>
+<p><strong>Parameter: </strong><a href="parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Value: </strong>$m+1$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every m-set has 2m+1-m=m+1 one-inclusion neighbors in the upper layer, and every (m+1)-set has m+1 neighbors in the lower layer. Thus the full one-inclusion graph is (m+1)-regular, so its degeneracy is at least m+1. Its maximum degree is also m+1, so every induced subgraph has minimum degree at most m+1. Hence the degeneracy is exactly m+1.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_middle_layers.py.</p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-326" style="position:relative;">
         
         <h3><a href="values/kmistake_littlestone_dimension_trivial_concepts.html" class="table-title-link">$k$-Mistake Littlestone Dimension of Trivial Concepts</a></h3>
@@ -12034,6 +12051,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness labels every level by one domain point, so it is in particular a 2-block tree of depth $\lfloor\log_2 n\rfloor$. The ordinary Littlestone dimension gives the matching upper bound.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-978" style="position:relative;">
+        
+        <h3><a href="values/largest_strongly_shattered_set_middle_layers.html" class="table-title-link">Largest Strongly Shattered Set of the Middle Two Layers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Largest Strongly Shattered Set of the Middle Two Layers</p>
+<p><strong>Class: </strong><a href="classes/middle_layers.html">Middle Two Layers</a></p>
+<p><strong>Parameter: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has one-inclusion edges, so it contains a one-cube. Every two-cube contains vertices in three consecutive cardinality layers. Since ML_m uses only the two layers m and m+1, it contains no two-cube; hence its largest contained cube has dimension one.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_middle_layers.py.</p></div>
 
         </div>
     </div>
