@@ -1,0 +1,10 @@
+{
+  "id": 1021,
+  "name": "Projected Distinguishing Range of the Eluder--Range Separation Class",
+  "short_name": "projected_distinguishing_range_eluder_range_separation_class",
+  "class_id": "#classes/eluder_range_separation_class",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "value": "5",
+  "status": "established",
+  "proof": "The displayed class contains pairs differing only at each of the five coordinates: $(01111,11111)$, $(00111,01111)$, $(10000,10100)$, $(10000,10010)$, and $(01000,01001)$ respectively for $x_1,\\ldots,x_5$. Hence every distinguishing coordinate set contains all five coordinates, so $\\mathrm R(\\mathcal D_{\\mathrm{ER}})=5$. The full-domain projection is permitted in the maximum defining $\\mathrm R^p$, while no projection has more than five coordinates; therefore $\\mathrm R^p(\\mathcal D_{\\mathrm{ER}})=5$."
+}

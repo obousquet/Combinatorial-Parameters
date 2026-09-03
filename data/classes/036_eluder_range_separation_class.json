@@ -1,0 +1,9 @@
+{
+  "id": 36,
+  "name": "Eluder--Range Separation Class",
+  "short_name": "eluder_range_separation_class",
+  "symbol": "\\mathcal D_{\\mathrm{ER}}",
+  "definition": "On coordinates $x_1,\\ldots,x_5$, let $\\mathcal D_{\\mathrm{ER}}=\\{00111,01000,01001,01111,10000,10010,10100,11111\\}$, where the displayed bits are the values at $x_1,\\ldots,x_5$ in that order.",
+  "comments": "A finite counterexample to the candidate inequality $\\mathrm{Edim}\\geq\\mathrm R^p$.",
+  "graph_label": "E/R gap"
+}

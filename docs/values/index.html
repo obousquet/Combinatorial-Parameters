@@ -5578,6 +5578,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1021" style="position:relative;">
+        
+        <h3><a href="values/projected_distinguishing_range_eluder_range_separation_class.html" class="table-title-link">Projected Distinguishing Range of the Eluder--Range Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Distinguishing Range of the Eluder--Range Separation Class</p>
+<p><strong>Class: </strong><a href="classes/eluder_range_separation_class.html">Eluder--Range Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Value: </strong>5</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The displayed class contains pairs differing only at each of the five coordinates: $(01111,11111)$, $(00111,01111)$, $(10000,10100)$, $(10000,10010)$, and $(01000,01001)$ respectively for $x_1,\ldots,x_5$. Hence every distinguishing coordinate set contains all five coordinates, so $\mathrm R(\mathcal D_{\mathrm{ER}})=5$. The full-domain projection is permitted in the maximum defining $\mathrm R^p$, while no projection has more than five coordinates; therefore $\mathrm R^p(\mathcal D_{\mathrm{ER}})=5$.</p></div>
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-327" style="position:relative;">
         
         <h3><a href="values/best_mistakes_trivial_concepts.html" class="table-title-link">Best Mistakes of Trivial Concepts</a></h3>
@@ -16250,6 +16267,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>In the full cube, whichever concept is taught first must be distinguished from every one-bit neighbour, so its teaching set contains all n coordinates; hence $\mathrm{rfRTD}\ge n$.  Conversely, induct on n: split the cube into its two (n-1)-dimensional fibres at one coordinate.  Teach the 1-fibre first, adding that coordinate to every teaching set in a repetition-free plan for the fibre, then teach the 0-fibre with its repetition-free plan.  The added coordinate distinguishes the two blocks' coordinate sets, and it also separates each first-block concept from every still-present 0-fibre concept.  The order is at most n.  Thus $\mathrm{rfRTD}=n$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1022" style="position:relative;">
+        
+        <h3><a href="values/combinatorial_eluder_dimension_eluder_range_separation_class.html" class="table-title-link">Combinatorial Eluder Dimension of the Eluder--Range Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension of the Eluder--Range Separation Class</p>
+<p><strong>Class: </strong><a href="classes/eluder_range_separation_class.html">Eluder--Range Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Value: </strong>4</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>With base $01111$, query $x_5,x_4,x_2,x_1$ and use respectively $01000,01001,00111,11111$ as witnesses; each witness agrees with the base at every earlier queried coordinate and disagrees at its own coordinate. Thus $\mathrm{Edim}\geq4$. For the reverse inequality, a length-five witness would query all five coordinates. Directly applying the defining compatibility condition to each of the eight possible bases gives maximum lengths $4,4,4,4,4,4,4,4$ (in the displayed order $00111,01000,01001,01111,10000,10010,10100,11111$): at every compatible partial sequence no fifth unused coordinate has a witness. Hence $\mathrm{Edim}=4$.</p></div>
+
 
         </div>
     </div>

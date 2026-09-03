@@ -1,0 +1,13 @@
+{
+  "id": 395,
+  "name": "Combinatorial Eluder Dimension / Projected Distinguishing Range",
+  "short_name": "combinatorial_eluder_dimension_projected_distinguishing_range",
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/projected_distinguishing_range",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The candidate universal inequality $\\mathrm{Edim}(\\mathcal H)\\geq\\mathrm R^p(\\mathcal H)$ is false, already for a finite binary class.",
+  "proof": "For $\\mathcal D_{\\mathrm{ER}}$, the checked values are $\\mathrm{Edim}=4$ and $\\mathrm R^p=5$.",
+  "witness": "#classes/eluder_range_separation_class",
+  "witness_strength": "strict"
+}

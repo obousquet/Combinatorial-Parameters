@@ -1,0 +1,10 @@
+{
+  "id": 1022,
+  "name": "Combinatorial Eluder Dimension of the Eluder--Range Separation Class",
+  "short_name": "combinatorial_eluder_dimension_eluder_range_separation_class",
+  "class_id": "#classes/eluder_range_separation_class",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "4",
+  "status": "established",
+  "proof": "With base $01111$, query $x_5,x_4,x_2,x_1$ and use respectively $01000,01001,00111,11111$ as witnesses; each witness agrees with the base at every earlier queried coordinate and disagrees at its own coordinate. Thus $\\mathrm{Edim}\\geq4$. For the reverse inequality, a length-five witness would query all five coordinates. Directly applying the defining compatibility condition to each of the eight possible bases gives maximum lengths $4,4,4,4,4,4,4,4$ (in the displayed order $00111,01000,01001,01111,10000,10010,10100,11111$): at every compatible partial sequence no fifth unused coordinate has a witness. Hence $\\mathrm{Edim}=4$."
+}
