@@ -1,0 +1,12 @@
+{
+  "id": 997,
+  "name": "Monotonic Projected Minimum Teaching Set Size of the Projected-Teaching Monotonicity Separation Class",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_projected_teaching_monotonicity_gap",
+  "class_id": "#classes/projected_teaching_monotonicity_gap",
+  "parameter_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The four-concept subfamily $\\{1000,0100,0010,0001\\}$ has projected minimum teaching-set size three. Exhaustive enumeration of all 31 nonempty subfamilies shows none has larger value. Therefore the subclass maximum is three; see sync/verify_projected_teaching_values.py.",
+  "references": "Direct calculation; verified by sync/verify_projected_teaching_values.py."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 996,
+  "name": "Minimum Projected Teaching Set Size of the Projected-Teaching Monotonicity Separation Class",
+  "short_name": "minimum_projected_teaching_set_size_projected_teaching_monotonicity_gap",
+  "class_id": "#classes/projected_teaching_monotonicity_gap",
+  "parameter_id": "#parameters/minimum_projected_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For each target and each of the 16 coordinate projections, compute its minimum distinguishing set in the distinct trace class. The minimum, over targets, of the resulting worst projected teaching size is two. The exact calculation is in sync/verify_projected_teaching_values.py.",
+  "references": "Direct calculation; verified by sync/verify_projected_teaching_values.py."
+}
