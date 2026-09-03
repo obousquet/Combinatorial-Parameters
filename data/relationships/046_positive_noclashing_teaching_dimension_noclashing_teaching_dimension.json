@@ -8,5 +8,8 @@
   "details": "For finite concept classes.",
   "status": "established",
   "proof": "A positive non-clashing teacher mapping is a non-clashing teacher mapping with an additional restriction on its samples.  Minimizing over the restricted class cannot lower the optimum.",
-  "references": "\\cite{KSZ2019}"
+  "references": "\\cite{KSZ2019}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "On the $n$-dimensional full cube, positive no-clashing teaching dimension is $n$, whereas ordinary no-clashing teaching dimension is $\\lceil n/2\\rceil$. The gap is unbounded."
 }
