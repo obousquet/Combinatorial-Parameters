@@ -7,6 +7,9 @@
   "status": "established",
   "proof": "If a set of size d is shattered, then for any centre labeling g its restriction to that set is realized by one hypothesis, and each one-coordinate flip is realized by another. Thus this set is a g-centred star of size d; minimize over g.",
   "references": "\\cite{hanneke2024star_eluder}",
+  "witness": "#classes/universal_class",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the universal class with $n$ concepts, the recorded lower bound on minimum star number is $n/2-1$, while VC dimension is $\\lfloor\\log_2n\\rfloor$.",
   "short_name": "minimum_star_number_vc_dimension",
   "name": "Minimum Star Number / VC Dimension"
 }
