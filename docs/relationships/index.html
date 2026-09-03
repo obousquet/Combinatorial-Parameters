@@ -8307,6 +8307,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-386" style="position:relative;">
+        
+        <h3><a href="relationships/proper_equivalence_queries_complexity_teaching_dimension.html" class="table-title-link">Proper Equivalence Queries Complexity / Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{Q}_{\mathrm{peq}}(\mathcal H)\geq\mathrm{TD}(\mathcal H)$.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For half-intervals, proper equivalence-query complexity is $\log_2 n$, while teaching dimension is $2$ for $n\geq3$.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a target $h$ and run an optimal proper equivalence-query learner against any legal counterexample choices.  Record each returned counterexample as its labeled example $(x,h(x))$.  Any $g$ agreeing with all recorded labels admits exactly the same transcript: each recorded $x$ still refutes the corresponding query for $g$.  The learner therefore outputs $h$ on that transcript also when the target is $g$, so correctness forces $g=h$.  The recorded examples are a teaching set for $h$, of size at most the query bound.  Maximizing over $h$ gives $\mathrm{TD}\leq\mathrm{Q}_{\mathrm{peq}}$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

@@ -1,0 +1,14 @@
+{
+  "id": 386,
+  "name": "Proper Equivalence Queries Complexity / Teaching Dimension",
+  "short_name": "proper_equivalence_queries_complexity_teaching_dimension",
+  "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, $\\mathrm{Q}_{\\mathrm{peq}}(\\mathcal H)\\geq\\mathrm{TD}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Fix a target $h$ and run an optimal proper equivalence-query learner against any legal counterexample choices.  Record each returned counterexample as its labeled example $(x,h(x))$.  Any $g$ agreeing with all recorded labels admits exactly the same transcript: each recorded $x$ still refutes the corresponding query for $g$.  The learner therefore outputs $h$ on that transcript also when the target is $g$, so correctness forces $g=h$.  The recorded examples are a teaching set for $h$, of size at most the query bound.  Maximizing over $h$ gives $\\mathrm{TD}\\leq\\mathrm{Q}_{\\mathrm{peq}}$.",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For half-intervals, proper equivalence-query complexity is $\\log_2 n$, while teaching dimension is $2$ for $n\\geq3$."
+}
