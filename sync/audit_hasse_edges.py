@@ -193,13 +193,20 @@ def audit(data_dir: Path) -> dict[str, Any]:
         by_variant[graph.variant_of(relationship)].append(relationship)
     # Match the renderer's vertical ordering: base affine bounds contribute to
     # rank closure even though only homogeneous facts are Hasse-reduced.
-    ranks = graph.hierarchy_ranks(by_variant.get(graph.BASE_VARIANT, []))
+    base_affine_relations = by_variant.get(graph.BASE_VARIANT, [])
+    ranks = graph.hierarchy_ranks(base_affine_relations)
+    affine_block_of = {
+        parameter: block_index
+        for block_index, block in enumerate(graph.affine_linear_blocks(base_affine_relations))
+        for parameter in block
+    }
 
     result: dict[str, Any] = {
         "direct_established_relationships": len(relationships),
         "variants": {},
         "boundary_witness_queue": [],
         "witness_queue": [],
+        "reciprocal_affine_queue": [],
         "witness_protected_bypasses": [],
     }
     boundary_components = {
@@ -241,6 +248,16 @@ def audit(data_dir: Path) -> dict[str, Any]:
                 # strengthen, the stated fact, so it is not a separation
                 # witness candidate.
                 "requires_separation_witness": record["relationship_type"] != "equivalence",
+                # Mutual reachability through positive affine-linear bounds
+                # already supplies a reverse affine relationship.  Such an
+                # edge cannot have an unbounded reverse separation, so it is
+                # tracked separately as a constant/tightness question rather
+                # than being mixed into the one-way witness campaign.
+                "reciprocally_affine_bounded": (
+                    variant == graph.BASE_VARIANT
+                    and affine_block_of.get(source) is not None
+                    and affine_block_of.get(source) == affine_block_of.get(target)
+                ),
                 "lost_reachability_pairs": lost_pairs,
                 "strict_value_candidates": strict_value_candidates(record, values, component_of),
             }
@@ -253,9 +270,12 @@ def audit(data_dir: Path) -> dict[str, Any]:
                 row["strict_witness_value_check"] = None
             edge_rows.append(row)
             if row["requires_separation_witness"] and not row["has_witness"]:
-                result["witness_queue"].append(row)
-                if source in boundary_components:
-                    result["boundary_witness_queue"].append(row)
+                if row["reciprocally_affine_bounded"]:
+                    result["reciprocal_affine_queue"].append(row)
+                else:
+                    result["witness_queue"].append(row)
+                    if source in boundary_components:
+                        result["boundary_witness_queue"].append(row)
         result["variants"][variant] = {
             "canonical_linear_facts": len(canonical),
             "reduced_edges": len(reduced),
@@ -274,7 +294,7 @@ def audit(data_dir: Path) -> dict[str, Any]:
                 "strength": bypass["witness_strength"],
                 **localization,
             })
-    for key in ("boundary_witness_queue", "witness_queue"):
+    for key in ("boundary_witness_queue", "witness_queue", "reciprocal_affine_queue"):
         result[key].sort(key=lambda row: (-row["lost_reachability_pairs"], row["id"]))
     result["strict_witness_value_checks"] = {
         "confirmed": sum(
@@ -350,8 +370,13 @@ def main() -> None:
             f"via {' -> '.join('#' + str(edge_id) for edge_id in row['path'])}: {locations}"
         )
     print_queue("Boundary Hasse edges needing witnesses", report["boundary_witness_queue"])
+    print(
+        "Reduced Hasse edges inside mutual affine-linear blocks: "
+        f"{len(report['reciprocal_affine_queue'])} (constant/tightness evidence, not one-way separation targets)"
+    )
     if args.all:
         print_queue("All reduced Hasse edges needing witnesses", report["witness_queue"])
+        print_queue("Reciprocal-affine reduced edges", report["reciprocal_affine_queue"])
     if args.check_witness_bypasses and any(not row["resolved"] for row in bypasses):
         raise SystemExit("unlocalized witness-protected transitive bypasses")
 
