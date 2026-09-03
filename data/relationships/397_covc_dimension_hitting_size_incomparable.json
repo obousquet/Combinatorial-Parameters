@@ -1,0 +1,14 @@
+{
+  "id": 397,
+  "name": "co-VC Dimension / Hitting Size (Incomparable)",
+  "short_name": "covc_dimension_hitting_size_incomparable",
+  "parameter_1_id": "#parameters/covc_dimension",
+  "parameter_2_id": "#parameters/hitting_size",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal C^{\\cap}_n=\\{\\{0,i\\}:1\\leq i\\leq n\\}$, $\\mathrm{coVC}=n$ after projecting away the common coordinate, whereas $\\mathrm{HT}=1$.",
+  "parameter_2_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm{HT}=n$ because every singleton must be hit, whereas $\\mathrm{coVC}=0$ because every trace is realized.",
+  "proof": "The two explicit families give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs for Common-Core Singletons and the Full Cube."
+}

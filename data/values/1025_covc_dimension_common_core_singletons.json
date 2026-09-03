@@ -1,0 +1,11 @@
+{
+  "id": 1025,
+  "name": "co-VC Dimension of Common-Core Singletons",
+  "short_name": "covc_dimension_common_core_singletons",
+  "class_id": "#classes/common_core_singletons",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Projecting away the common coordinate gives the $n$ singleton class. Its absent all-zero trace has all $n$ one-coordinate flips present, giving a hollow $n$-star and hence $\\mathrm{coVC}\\geq n$. Conversely every projection of $\\mathcal C^{\\cap}_n$ has at most $n$ distinct concepts, while a hollow $d$-star has $d$ distinct realized leaves. Therefore no projection has co-VC dimension above $n$."
+}

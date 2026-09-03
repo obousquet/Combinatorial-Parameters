@@ -1,0 +1,9 @@
+{
+  "id": 37,
+  "name": "Common-Core Singletons",
+  "short_name": "common_core_singletons",
+  "symbol": "\\mathcal C^{\\cap}_n",
+  "definition": "On $\\{0,1,\\ldots,n\\}$, let $\\mathcal C^{\\cap}_n=\\{\\{0,i\\}:1\\leq i\\leq n\\}$. Thus every concept contains the common coordinate $0$ and one private coordinate.",
+  "comments": "A common-core lift of the singleton class. Projecting away the common coordinate recovers the $n$ singleton concepts.",
+  "graph_label": "Core singletons"
+}

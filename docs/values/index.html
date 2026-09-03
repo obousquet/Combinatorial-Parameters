@@ -10066,6 +10066,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1024" style="position:relative;">
+        
+        <h3><a href="values/hitting_size_common_core_singletons.html" class="table-title-link">Hitting Size of Common-Core Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hitting Size of Common-Core Singletons</p>
+<p><strong>Class: </strong><a href="classes/common_core_singletons.html">Common-Core Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/hitting_size.html">Hitting Size</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The common coordinate $0$ belongs to every member of $\mathcal C^{\cap}_n$, so it is a hitting set of size one. The class has nonempty members, so the empty set cannot be a hitting set.</p></div>
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-595" style="position:relative;">
         
         <h3><a href="values/worst_mistakes_full_cube.html" class="table-title-link">Worst Mistakes of Full Cube</a></h3>
@@ -16300,6 +16317,23 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>With base $01111$, query $x_5,x_4,x_2,x_1$ and use respectively $01000,01001,00111,11111$ as witnesses; each witness agrees with the base at every earlier queried coordinate and disagrees at its own coordinate. Thus $\mathrm{Edim}\geq4$. For the reverse inequality, a length-five witness would query all five coordinates. Directly applying the defining compatibility condition to each of the eight possible bases gives maximum lengths $4,4,4,4,4,4,4,4$ (in the displayed order $00111,01000,01001,01111,10000,10010,10100,11111$): at every compatible partial sequence no fifth unused coordinate has a witness. Hence $\mathrm{Edim}=4$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1025" style="position:relative;">
+        
+        <h3><a href="values/covc_dimension_common_core_singletons.html" class="table-title-link">co-VC Dimension of Common-Core Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>co-VC Dimension of Common-Core Singletons</p>
+<p><strong>Class: </strong><a href="classes/common_core_singletons.html">Common-Core Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projecting away the common coordinate gives the $n$ singleton class. Its absent all-zero trace has all $n$ one-coordinate flips present, giving a hollow $n$-star and hence $\mathrm{coVC}\geq n$. Conversely every projection of $\mathcal C^{\cap}_n$ has at most $n$ distinct concepts, while a hollow $d$-star has $d$ distinct realized leaves. Therefore no projection has co-VC dimension above $n$.</p></div>
 
 
         </div>
