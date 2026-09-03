@@ -1,0 +1,14 @@
+{
+  "id": 324,
+  "name": "Subset Teaching Dimension / VC Dimension (Incomparable)",
+  "short_name": "subset_teaching_dimension_vc_dimension_incomparable",
+  "parameter_1_id": "#parameters/subset_teaching_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.",
+  "parameter_1_larger_witness": "For every $u\\ge3$, $\\mathcal C^u_{1/2}=\\{\\{x_i\\}:i\\in[u+1]\\}\\cup\\{\\{x_i,x_j\\}:i,j\\in[u+1]\\}$ has $\\mathrm{STD}=u$ and $\\mathrm{VC}=2$: pairs are shattered, while a triple cannot be because every concept has size at most two.",
+  "parameter_2_larger_witness": "The class of monomials over $m$ Boolean variables has $\\mathrm{STD}=2$ and $\\mathrm{VC}\\ge m$. The $m$ assignments with exactly one zero coordinate are shattered by positive conjunctions.",
+  "status": "established",
+  "proof": "Theorem 18(2) gives $\\mathrm{STD}(\\mathcal C^u_{1/2})=u$, and the displayed size-two construction gives its VC dimension. Theorem 19 gives constant STD for monomials; the stated explicit set is shattered, so their VC dimension is unbounded.",
+  "references": "\\cite{zilles2011models}"
+}

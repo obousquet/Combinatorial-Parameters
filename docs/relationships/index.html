@@ -102,6 +102,8 @@
 <p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If the effective VC radius is $k$, then every $k$-subset of the effective range is shattered.  In particular one such subset is shattered, so the VC dimension is at least $k$.</p></div>
 
@@ -125,6 +127,8 @@
 <strong>Details:</strong><div class="text-field"><p>The order-shattered sets are shattered sets.</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every order-shattered set is shattered, so the largest size of a shattered set is at least the corresponding order-shattering parameter.</p></div>
@@ -150,6 +154,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set contains a full subcube and hence satisfies the order-shattering condition.  Thus the order-shattering parameter is at least the largest strongly shattered set.</p></div>
 
@@ -173,6 +179,8 @@
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
 <p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $\mathcal H$ contains a $d$-cube, restrict an interpolating polynomial to that cube.  Every real-valued function on the cube must then be representable; in particular its parity function requires degree $d$.  Hence $\mathrm{intdeg}(\mathcal H)\ge\mathrm{ST}(\mathcal H)$.</p></div>
@@ -198,6 +206,8 @@
 <p><strong>Witness: </strong><a href="classes/order_shattering_effective_vc_radius_separation.html">Order-Shattering/Effective-VC-Radius Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Work on the effective range.  If the effective VC radius is $d$, every $d$-subset is shattered.  For each coordinate order, the relevant initial $d$-set is therefore order-shattered by the downshifting characterization.  Thus every order has an order-shattered set of size $d$, and minimizing over orders gives $\mathrm{OSH}_{\min}(\mathcal H)\ge\mathrm{VCR}(\mathcal H)$.</p></div>
 
@@ -221,6 +231,8 @@
 <strong>Details:</strong><div class="text-field"><p>Lemma</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every coordinate order, the standard monomials of the vanishing ideal form a basis for functions on $\mathcal H$, and their supports are the order-shattered sets for that order.  Their degrees are thus at most the largest order-shattered-set size.  Minimizing over orders gives $\mathrm{intdeg}(\mathcal H)\le\mathrm{OSH}_{\min}(\mathcal H)$.</p></div>
@@ -246,6 +258,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For a fixed domain order, Ben-David, Kushilevitz, and Mansour identify the optimal mistake count with the rank of the corresponding order-labeled consistency tree. An order-shattered set of size d yields a complete binary subtree of depth d in that tree, so its rank is at least d. Minimize over orders to obtain best mistakes at least the minimum largest order-shattered-set size.</p></div>
 
@@ -269,6 +283,8 @@
 <strong>Details:</strong><div class="text-field"><p>Dimension bound from Yang's canonical suboplex.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Coordinates outside the effective range are constant on the class and may be deleted.  On the remaining $\mathrm{E}(\mathcal H)$ coordinates, Yang's canonical suboplex is a subcomplex of the boundary of the corresponding cross-polytope; every relevant section has dimension at most $\mathrm{E}(\mathcal H)-1$.  Since Yang dimension is one plus the largest possible homology dimension, $\mathrm{Y}(\mathcal H)\le \mathrm{E}(\mathcal H)$.</p></div>
@@ -294,6 +310,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Both names denote the maximum cardinality of a subset shattered by the class; VC dimension is the standard name for this quantity.</p></div>
 
@@ -317,6 +335,8 @@
 <strong>Details:</strong><div class="text-field"><p>Contradicted by the trivial two-concept class: proper stable labeled compression is 1, whereas co-VC dimension is 2.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For the two constant concepts on a two-point domain, retaining one labeled example gives a proper stable labeled compression scheme, so the compression value is 1. The two traces form a hollow 2-star (the two mixed labelings are absent), so co-VC dimension is 2. Hence the stated universal inequality is false.</p></div>
@@ -342,6 +362,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:max-min-teaching-set</code>.</p></div>
@@ -365,6 +387,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite $1$-inclusion graph.</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Degeneracy is the maximum, over induced subgraphs, of their minimum degrees.  Taking the original graph as one candidate gives at least its minimum degree.</p></div>
@@ -390,6 +414,8 @@
 <p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The maximum vertex degree is at least the average vertex degree, which is the double-density parameter.</p></div>
 
@@ -413,6 +439,8 @@
 <strong>Details:</strong><div class="text-field"><p>Both parameters maximize the degree of a star over coordinate projections.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -438,6 +466,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The projected maximal degree maximizes maximum degree over projections.  The full-domain projection is the original class, so it is one of the candidates.</p></div>
 
@@ -462,6 +492,8 @@
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For the half-interval family with $n\ge3$, the $1$-inclusion graph is an $n$-vertex path. Its degeneracy is $1$, while its double density is $2(n-1)/n>1$.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every induced subgraph, its average degree is at least its minimum degree.  Maximize the former over subgraphs to obtain the densest-subgraph parameter and the latter to obtain degeneracy.</p></div>
 
@@ -485,6 +517,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite $1$-inclusion graph.</p></div>
 <p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>In any graph the maximum degree is at least the minimum degree.</p></div>
@@ -510,6 +544,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For a finite class, fix a total preference order.  To make the learner select a target $h$, the teacher must supply a teaching set that eliminates every hypothesis preferred to $h$; reversing the order turns these into the teaching sets of a recursive teaching plan.  Conversely, the elimination order of a recursive teaching plan, read in reverse, is a preference order under which the same samples teach their assigned concepts.  Both constructions preserve the maximum sample size, so minimizing gives $\mathrm{PBTD}=\mathrm{RTD}$.</p></div>
 
@@ -533,6 +569,8 @@
 <strong>Details:</strong><div class="text-field"><p>Needs a corrected scope or formulation: for the one-concept class $\mathcal H=\{h\}$ with $h\ne\emptyset$, $\mathrm{HT}(\mathcal H)>0$ whereas $\mathrm{RHT}(\mathcal H)=0$ under the current definition.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The displayed unconditional inequality is not valid with the current definitions; the one-concept example above is a counterexample.</p></div>
@@ -558,6 +596,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The monotone/projection variant takes the maximum recursive teaching dimension over projections.  The full-domain projection is the original class, giving the inequality.</p></div>
 
@@ -581,6 +621,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The projected maximum teaching-set size maximizes over projections.  The full-domain projection is the original class, and hence supplies the ordinary maximum teaching-set size as a candidate.</p></div>
@@ -606,6 +648,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:star-projected-teaching</code>.</p></div>
@@ -629,6 +673,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projected class, the largest minimum teaching-set size is at least the smallest minimum teaching-set size.  Taking the respective extrema over projections preserves this ordering.</p></div>
@@ -654,6 +700,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Restricting a minimal resolution to a largest shattered coordinate set yields a resolution of the full cube on that set, whose projective dimension is its cardinality. Hence the homological/Yang dimension is at least the VC dimension.</p></div>
 
@@ -677,6 +725,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes in the random-counterexample equivalence-query model.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Angluin and Dohrn prove that the VC dimension lower-bounds the expected number of equivalence queries when each counterexample is sampled at random from the disagreement set (their Theorem 25).</p></div>
@@ -702,6 +752,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $d=\mathrm{VCR}(\mathcal H)$ and let $T$ be a teaching set of size less than $d$; coordinates outside the effective range may be discarded.  Extend $T$ to a $d$-subset $S$ of the effective range.  Since $S$ is shattered, there is a concept other than the target that agrees with it on $T$ and differs on a point of $S\setminus T$, contradicting that $T$ teaches the target.  Thus every teaching set has size at least $d$.</p></div>
 
@@ -725,6 +777,8 @@
 <strong>Details:</strong><div class="text-field"><p>Theorem</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -750,6 +804,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The three-code class $\{000,011,101\}$ has an order scheme of size one, using the order $000<011<101$.  Yet after omitting, respectively, $x_0,x_1,x_2$, each of its three targets is the middle point of a three-trace path and needs two coordinates to be taught.  Thus $\mathrm{TS}_{\min}^{*p}=2>1=\mathrm{OSC}$.</p></div>
 
@@ -773,6 +829,8 @@
 <strong>Details:</strong><div class="text-field"><p>Refuted.  The three-code class has $\mathrm{Ldim}=1$ and $\mathrm{TS}_{\min}^{*p}=2$.  The cited twofold-monotonicity statement does not yield a bound by the maximum-over-subclasses projected teaching quantity used here.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The three-code class $\{000,011,101\}$ has no complete Littlestone tree of depth two, hence $\mathrm{Ldim}=1$.  On the other hand, omitting a different coordinate makes each target the middle of a three-trace path, so its minimum projected teaching-set size is two and therefore $\mathrm{TS}_{\min}^{*p}=2$.  Hence $\mathrm{Ldim}<\mathrm{TS}_{\min}^{*p}$.</p></div>
@@ -798,6 +856,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Needs verification</p>
 
 
@@ -821,6 +881,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes. The singleton family gives an unbounded gap: $\mathrm{pOSC}=n-1$ while $\mathrm{OSC}=1$.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A proper ordered sample-compression scheme is an ordered sample-compression scheme with an additional properness requirement on reconstruction.  Minimizing over the restricted class of schemes cannot improve the optimum.</p></div>
@@ -846,6 +908,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every proper order sample-compression scheme is, after forgetting its order requirement, a proper labeled sample-compression scheme. Minimizing over the smaller class of ordered schemes cannot give a smaller value.</p></div>
 
@@ -869,6 +933,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, threshold dimension dominates VC dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -894,6 +960,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem <code>thm:sandwich</code>.</p></div>
@@ -917,6 +985,8 @@
 <strong>Details:</strong><div class="text-field"><p>Effective range is the number of shattered singletons</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -942,6 +1012,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Hu--Wu--Li--Wang prove $\mathrm{RTD}(\mathcal C)\leq 39.3752\,\mathrm{VC}(\mathcal C)^2-3.6330\,\mathrm{VC}(\mathcal C)$ for every finite binary class $\mathcal C$.  Every coordinate projection $\mathcal H_{|S}$ has $\mathrm{VC}(\mathcal H_{|S})\leq\mathrm{VC}(\mathcal H)$, since any set shattered after projection was already shattered in $\mathcal H$.  Apply their bound to every projection and maximize over $S$.</p></div>
 
@@ -965,6 +1037,8 @@
 <strong>Details:</strong><div class="text-field"><p>Sauer--Shelah counting bound.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $d=\mathrm{VC}(\mathcal H)$ on a domain of size $n$, every shattered set has size at most $d$.  Thus $|\operatorname{sh}(\mathcal H)|\le\sum_{i=0}^{d}\binom ni\le(en/d)^d$.  Taking logarithms gives $d=\Omega(\log\operatorname{sh}(\mathcal H)/\log n)$, with the small-$n$ cases absorbed in the universal constant.</p></div>
@@ -990,6 +1064,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 7 of Ben-David--Kushilevitz--Mansour proves $\mathrm L(\mathcal H)\leq\mathrm M_{\mathrm{sd}}(\mathcal H)\log_2 n$ for a finite domain of size $n$.  Their tree proof takes a minimum-rank self-directed strategy tree and bounds its number of leaves by the binomial sum determined by its rank; the information-theoretic proof encodes a target by the at-most-$\mathrm M_{\mathrm{sd}}$ mistaken queried points.  Rearranging gives the displayed inequality.</p></div>
 
@@ -1013,6 +1089,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite $1$-inclusion graph.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every induced subgraph has maximum degree at most the maximum degree of the original graph, and its minimum degree is at most that maximum.  Maximize over induced subgraphs in the definition of degeneracy.</p></div>
@@ -1038,6 +1116,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Teaching dimension is defined as the maximum, over concepts in the class, of the size of a smallest teaching set. This is precisely the maximum teaching-set size.</p></div>
 
@@ -1061,6 +1141,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite $1$-inclusion graph.</p></div>
 <p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every induced subgraph has average degree at most the maximum degree of the original graph.  Maximizing its average degree over subgraphs gives the densest-subgraph parameter.</p></div>
@@ -1086,6 +1168,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The projected parameter maximizes the minimum degree over projections, and the full-domain projection recovers the original $1$-inclusion graph.</p></div>
 
@@ -1109,6 +1193,8 @@
 <strong>Details:</strong><div class="text-field"><p>It is sufficient to query all coordinates in the distinguishing range.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $S$ be a smallest coordinate set on which the concepts of $\mathcal{H}$ have pairwise distinct restrictions.  Querying the target on every coordinate in $S$ determines its restriction to $S$, and hence identifies the target.  Therefore $\mathrm{Q}_m(\mathcal{H})\le |S|=\mathrm{R}(\mathcal{H})$.</p></div>
@@ -1134,6 +1220,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A positive teaching set uniquely identifies its target among all concepts, hence is in particular non-clashing with every other assigned teaching set.  Minimizing over positive teacher mappings yields the inequality.</p></div>
 
@@ -1157,6 +1245,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Positive teaching sets are a restricted class of ordinary teaching sets.  Therefore the minimum teaching-set size for each target, and hence its worst case, cannot decrease under the positivity restriction.</p></div>
@@ -1182,6 +1272,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A positive non-clashing teacher mapping is a non-clashing teacher mapping with an additional restriction on its samples.  Minimizing over the restricted class cannot lower the optimum.</p></div>
 
@@ -1205,6 +1297,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The positive recursive model requires every teaching sample used at every recursive stage to be positive.  It is therefore a restriction of the ordinary recursive model, so its optimum cannot be smaller.</p></div>
@@ -1230,6 +1324,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A positive teacher that distinguishes every target in the full class can be used at the first recursive stage.  Recursive removal can only reduce the set of competitors, so the positive recursive optimum is no larger.</p></div>
 
@@ -1253,6 +1349,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A positive recursive teaching plan is non-clashing: for two concepts, the one removed first has a positive teaching set that distinguishes it from the later concept, which was still present at that stage.  Thus its positive recursive plan is an admissible positive non-clashing mapping.</p></div>
@@ -1278,6 +1376,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A coordinate outside the effective range has the same value in every concept, so deleting it cannot merge two restrictions.  A minimum distinguishing coordinate set may therefore be chosen inside the effective range, giving $\mathrm{R}(\mathcal{H})\le\mathrm{E}(\mathcal{H})$.</p></div>
 
@@ -1301,6 +1401,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each concept, every smaller neighbour differs on a positive-labelled instance that must occur in any positive non-clashing teaching set.  Thus its teaching set has size at least its dominance; maximize over the concepts.</p></div>
@@ -1326,6 +1428,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Use a conservative online learner with mistake bound $\mathrm L(\mathcal H)$, such as the standard optimal algorithm, and cycle it through a realizable sample until a full pass is mistake-free.  Retain only the examples on which it made a mistake.  There are at most $\mathrm L(\mathcal H)$; their labels are recoverable from the learner's successive mistaken predictions, and removing any unretained example leaves the final predictor unchanged.  This gives a stable unlabeled compression scheme of that size.</p></div>
 
@@ -1349,6 +1453,8 @@
 <strong>Details:</strong><div class="text-field"><p>The worst-case online mistake bound dominates VC dimension.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $S$ be a shattered set of size $d$.  Even when the learner knows the whole presentation order, an adversary may present the points of $S$ one at a time and assign at each point the label opposite to the learner's prediction.  After all $d$ rounds, shattering supplies a concept realizing the resulting labeling, so this is a valid target-consistent run with $d$ mistakes.  Hence $\mathrm M_{\mathrm{worst}}\geq\mathrm{VC}$.</p></div>
@@ -1374,6 +1480,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Apply the average-degree lower bound to every subfamily.  No-clashing teaching dimension is monotone under taking a subfamily, and the maximum average degree over those subfamilies is the densest-subgraph parameter.</p></div>
 
@@ -1397,6 +1505,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every contained cube gives an induced subgraph of matching minimum degree.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set of size $d$ supplies a contained $d$-cube in the $1$-inclusion graph.  That cube is an induced subgraph of minimum degree $d$, so the graph degeneracy is at least $d$.</p></div>
@@ -1422,6 +1532,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>In a contained $d$-cube, its top vertex has $d$ smaller $1$-inclusion neighbours.  Hence maximum positive degree is at least the largest strongly shattered-set size.</p></div>
 
@@ -1445,6 +1557,8 @@
 <strong>Details:</strong><div class="text-field"><p>A 2-block shattered tree is an ordinary shattered Littlestone tree.</p></div>
 <p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The 2-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Therefore every tree counted by $\mathrm{B}_2(\mathcal H)$ is counted by $\mathrm L(\mathcal H)$, and $\mathrm L(\mathcal H)\ge\mathrm{B}_2(\mathcal H)$.</p></div>
@@ -1470,6 +1584,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S=\{x_1,\ldots,x_d\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies the 2-block constraint (indeed, it is level-constant everywhere). Hence $\mathrm{B}_2(\mathcal H)\ge\operatorname{VC}(\mathcal H)$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:block-littlestone-sandwich} in the survey.</p></div>
@@ -1493,6 +1609,8 @@
 <strong>Details:</strong><div class="text-field"><p>Random counterexamples are a restriction of the adversarial equivalence-query model.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>An equivalence-query strategy that succeeds against every permissible counterexample also succeeds when the counterexample is selected randomly.  Thus $\mathrm{Q}_{\mathrm{req}}(\mathcal H)\le\mathrm{Q}_{\mathrm{eq}}(\mathcal H)=\mathrm{L}(\mathcal H)$.</p></div>
@@ -1518,6 +1636,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On a distinguishing coordinate set $S$, the $|\mathcal{H}|$ concepts have pairwise distinct binary restrictions.  There are only $2^{|S|}$ such restrictions, so $|\mathcal{H}|\le2^{|S|}$.  Minimizing over $S$ gives $\mathrm{R}(\mathcal{H})\ge\log|\mathcal{H}|$.</p></div>
 
@@ -1541,6 +1661,8 @@
 <strong>Details:</strong><div class="text-field"><p>For the oriented one-inclusion graph of every finite concept class.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every vertex, its number of smaller neighbours is at most its total degree.  Taking maxima over vertices gives the inequality.</p></div>
@@ -1566,6 +1688,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projection, the Haussler--Littlestone--Warmuth density lemma gives $|E|/|V|\le\mathrm{VC}(\mathcal H)$. Since this parameter is twice that density (the average degree), it is at most $2\,\mathrm{VC}(\mathcal H)$. Thus $\mathrm{VC}(\mathcal H)\ge\tfrac12\,\mathrm{dens}^p(\mathcal H)$.</p></div>
 
@@ -1590,6 +1714,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>On the singleton class, projected double density is $2n/(n+1)$ while ordinary double density is $0$, so the inequality is strict for every n&gt;=1.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The projected double-density is the maximum average degree over projections.  The full-domain projection gives the original average degree as one candidate.</p></div>
 
@@ -1613,6 +1739,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projection, average degree is at least minimum degree.  Taking maxima over projections preserves the inequality.</p></div>
@@ -1638,6 +1766,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projection, maximum degree is at least minimum degree.  Taking maxima over projections preserves the inequality.</p></div>
 
@@ -1661,6 +1791,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projection, its maximum degree is at least its average degree.  Maximizing both quantities over projections preserves this inequality.</p></div>
@@ -1686,6 +1818,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every edge of the $1$-inclusion graph, a non-clashing teacher mapping must use the differing instance in at least one of the two endpoint teaching sets.  Averaging over concepts gives a teaching set of size at least half the average degree.</p></div>
 
@@ -1709,6 +1843,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every sign matrix, $\mathrm{VC}\leq\mathrm{DSR}\leq2\mathrm{VC}+1$.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is the first inequality of Proposition 1, which identifies dual sign rank with the VC dimension of the matrix obtained by adjoining the negated rows.</p></div>
@@ -1734,6 +1870,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proposition 1 gives $\mathrm{DSR}\leq2\mathrm{VC}+1$.  When $\mathrm{VC}\geq1$, this implies $\mathrm{DSR}\leq3\mathrm{VC}$, i.e. the displayed constant-factor relationship.</p></div>
 
@@ -1757,6 +1895,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every sign matrix.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a fixed set of $k$ columns is linearly independent in every realizing matrix, then every realizing matrix has rank at least $k$.  Thus the maximum such fixed $k$ (dual sign rank) is at most sign rank.</p></div>
@@ -1782,6 +1922,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is VC-shattered, the projection to $S$ is the full cube on $S$, so its effective VC radius is $|S|$; hence $\mathrm{VCR}^p\ge\mathrm{VC}$.  Conversely, effective VC radius at least $d$ in a projection supplies a shattered $d$-set in that projection, and thus in the original class.  Hence $\mathrm{VCR}^p=\mathrm{VC}$.</p></div>
 
@@ -1805,6 +1947,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The identity projection is among the coordinate projections.  The maximum effective VC radius over all projections is therefore at least the effective VC radius of $\mathcal{H}$ itself.</p></div>
@@ -1830,6 +1974,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A set $S$ is shattered by $\mathcal H$ exactly when the projection $\mathcal H_{|S}$ contains the full $S$-cube. In that projection, $S$ is strongly shattered. Conversely, a strongly shattered set in any projection is shattered by the original class on the same coordinates. Taking maxima yields equality.</p></div>
 
@@ -1853,6 +1999,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The full-domain projection is among the projections optimized over by the projected parameter, so it includes every strongly shattered set of the original class.</p></div>
@@ -1878,6 +2026,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every domain order, the order-shattered sets are shattered, giving the upper bound by VC dimension. The order-shattering sandwich theorem supplies an order for which a maximum shattered set is order-shattered, giving the reverse bound.</p></div>
 
@@ -1901,6 +2051,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Both parameters optimize the largest order-shattered-set size over the same set of domain orders; a maximum is at least the corresponding minimum.</p></div>
@@ -1926,6 +2078,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set of size $d$ gives a contained $d$-cube.  Each cube vertex has $d$ cube neighbours in the $1$-inclusion graph, so the ambient maximum degree is at least $d$.</p></div>
 
@@ -1949,6 +2103,8 @@
 <strong>Details:</strong><div class="text-field"><p>Project on the largest shattered set. The reverse inequality is false in general.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is shattered with $|S|=d$, the projection to $S$ is the full $d$-cube and has minimum degree $d$. Hence projected minimum degree is at least VC dimension. Equality cannot be asserted in general: there are classes with VC dimension $10$ and minimum degree $11$, and the full projection is one candidate in the projected maximum.</p></div>
@@ -1974,6 +2130,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For a contained $d$-cube, choose any corner.  For each of the $d$ cube coordinates there is a neighbouring concept differing only there, so every teaching set for that corner must include all $d$ coordinates.  Thus the maximum teaching-set size is at least $d$.</p></div>
 
@@ -1997,6 +2155,8 @@
 <strong>Details:</strong><div class="text-field"><p>Down shifting lemma and Monotonicity</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The one-inclusion density lemma applies to every subfamily: each induced subgraph has density at most $\mathrm{VC}(\mathcal H)$. The densest-subgraph-twice parameter is twice this maximum density, so it is at most $2\,\mathrm{VC}(\mathcal H)$.</p></div>
@@ -2022,6 +2182,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The monotonic projected variant takes an additional maximum over subfamilies.  Taking the original class as the subfamily recovers the ordinary projected minimum teaching-set size.</p></div>
 
@@ -2045,6 +2207,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each subfamily, the projected quantity includes its full-domain projection and is therefore at least its unprojected quantity.  Maximizing over subfamilies preserves the inequality.</p></div>
@@ -2070,6 +2234,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The projected minimum teaching-set parameter maximizes the corresponding quantity over projections.  The full-domain projection recovers the original class and its minimum teaching-set size.</p></div>
 
@@ -2093,6 +2259,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes; stability is an additional constraint on an unlabeled compression scheme.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Stable unlabeled compression schemes are unlabeled compression schemes with an additional stability requirement. Minimizing over the restricted class of stable schemes cannot improve the optimum.</p></div>
@@ -2118,6 +2286,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Forgetting labels from a compression set is an additional restriction. Thus every stable unlabeled scheme is a stable labeled scheme, and the minimum stable-unlabeled size is at least the stable-labeled one.</p></div>
 
@@ -2141,6 +2311,8 @@
 <strong>Details:</strong><div class="text-field"><p>The pointwise-majority (halving) learner is one particular equivalence-query strategy.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The halving/majority procedure is one particular equivalence-query learner. Its query count is therefore at least the optimal equivalence-query complexity, which equals Littlestone dimension.</p></div>
@@ -2166,6 +2338,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Equivalence-query complexity equals Littlestone dimension. Allowing membership queries in addition to arbitrary equivalence queries enlarges the learner's permitted query family, so it cannot require more queries.</p></div>
 
@@ -2189,6 +2363,8 @@
 <strong>Details:</strong><div class="text-field"><p>Partial equivalence queries include both total equivalence and one-point membership queries.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>An arbitrary equivalence query is a total partial equivalence query, and a membership query is a partial query defined at one point. Thus partial equivalence queries include every query available in the membership-and-equivalence model.</p></div>
@@ -2214,6 +2390,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(1) of Doliwa--Fan--Simon--Zilles states the chain $\mathrm{RTD}(\mathcal H)\leq\mathrm{SDC}(\mathcal H)\leq\mathrm{LC}_{\mathrm{partial}}(\mathcal H)$.  Its middle inequality is the simulation established by Goldman--Sloan: the partial-equivalence-query model is no more powerful than self-directed learning, so its optimal worst-case query count cannot be smaller.</p></div>
 
@@ -2238,6 +2416,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For every singleton-family size $n\ge2$, the recorded values satisfy $n-1<n$, so the witness strictly refutes the displayed Yang-dimension lower bound.</p></div>
+
+
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On the singleton (delta-function) class, the recorded default Yang dimension is $n-1$, while co-VC dimension equals n. Thus $\mathrm Y(\mathcal H)<\operatorname{coVC}(\mathcal H)$ on this family, refuting the displayed universal inequality.</p></div>
 
@@ -2261,6 +2441,8 @@
 <strong>Details:</strong><div class="text-field"><p>Unlabeled compression is the more restrictive model because retained labels are not stored.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>An unlabeled compression scheme is a labeled compression scheme with the additional restriction that retained labels are not stored. Minimizing over the more restrictive unlabeled schemes cannot improve the optimum.</p></div>
@@ -2286,6 +2468,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For the full cube, every trace is present, so no positive-dimensional hollow star exists and co-VC dimension is zero. Its entire domain is shattered, so its effective VC radius is n. Thus the asserted inequality fails on this family.</p></div>
 
@@ -2309,6 +2493,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>By definition, $\log\mathrm{Size}(\mathcal H)=\log_2|\mathcal H|$.</p></div>
@@ -2334,6 +2520,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a set of size $d$ is shattered, its $2^d$ labelings are realized by distinct members of the class. Thus $|\mathcal H|\ge 2^d\ge d$, and maximizing $d$ gives the inequality.</p></div>
 
@@ -2357,6 +2545,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A full path on a set of size $d$ contains $d+1$ distinct projected concepts. Each is the projection of a distinct member of $\mathcal H$, so $|\mathcal H|\ge d+1\ge d$.</p></div>
@@ -2382,6 +2572,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, threshold/path lemma (lem:threshold-path).</p></div>
@@ -2405,6 +2597,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, path dimension dominates threshold dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -2430,6 +2624,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:elementary-parameter-hierarchy</code>.</p></div>
@@ -2453,6 +2649,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, diameter dominates path dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -2478,6 +2676,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, equivalence-query/Littlestone lemma (lem:equivalence-query-littlestone).</p></div>
@@ -2501,6 +2701,8 @@
 <strong>Details:</strong><div class="text-field"><p>A recursive teaching plan yields a triangular interpolation basis.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Order the concepts by a recursive teaching plan of width $r=\mathrm{RTD}(\mathcal H)$.  For the teaching set $S_i$ of its $i$th concept $h_i$ among the remaining concepts, the product of literals agreeing with $h_i$ on $S_i$ has degree at most $r$, is nonzero at $h_i$, and vanishes at every later $h_j$.  These polynomials give an invertible triangular evaluation matrix, hence a degree-at-most-$r$ interpolation basis.</p></div>
@@ -2526,6 +2728,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Lemma 7 of Doliwa--Fan--Simon--Zilles (attributed there to Kuhlmann) gives $\mathrm{TS}_{\min}(\mathcal C)\leq\mathrm{SDC}(\mathcal C)$ for every concept class.  Since $\mathrm{SDC}$ is monotone under subclasses, their Lemmas 3--4 yield $\mathrm{RTD}(\mathcal H)=\max_{\mathcal C\subseteq\mathcal H}\mathrm{TS}_{\min}(\mathcal C)\leq\mathrm{SDC}(\mathcal H)$.</p></div>
 
@@ -2549,6 +2753,8 @@
 <strong>Details:</strong><div class="text-field"><p>Self-directed learning permits adaptive choice of the next instance.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A self-directed learner can emulate any learner and favorable presentation sequence used for $\mathrm{M}_{\mathrm{best}}$ by choosing the same next instance itself.  It may additionally adapt that choice to earlier feedback.  Thus $\mathrm{M}_{\mathrm{sd}}(\mathcal H)\le\mathrm{M}_{\mathrm{best}}(\mathcal H)$.</p></div>
@@ -2574,6 +2780,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every coordinate of a shattered set takes both labels among members of $\mathcal H$, so it belongs to the effective range. Hence the effective range contains every shattered set.</p></div>
 
@@ -2597,6 +2805,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S=\{x_1,\ldots,x_d\}$ is shattered, use $x_1,\ldots,x_d$ as the successive levels of a complete binary tree. Every root-to-leaf labeling is realized by shattering, so this is a shattered tree of depth $d$.</p></div>
@@ -2622,6 +2832,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:elementary-parameter-hierarchy</code>.</p></div>
@@ -2645,6 +2857,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, diameter dominates oriented diameter.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -2670,6 +2884,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On its two-coordinate domain, this family has no projection containing both $\varnothing$ and its full coordinate set, so $\mathrm D^+(\mathcal H)=0$.  Its two concepts differ on both coordinates, hence $\mathrm D(\mathcal H)=2$.  No positive universal constant can make the displayed inequality hold.</p></div>
 
@@ -2693,6 +2909,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite classes, through minimum teaching-set size.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The first layer in the recursive teaching process is $\mathcal H$ itself, so $\mathrm{RTD}(\mathcal H)\ge\mathrm{TS}_{\min}(\mathcal H)$.  Every minimum teaching set has size at least $\mathrm{VCR}(\mathcal H)$, because a smaller one extends to a shattered set of size $\mathrm{VCR}(\mathcal H)$; see the proof of the minimum-teaching-set relation.  Combining the two inequalities gives the claim.</p></div>
@@ -2718,6 +2936,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Outside the effective range all concepts have the same label, so choose the ball center with that common label there. On the effective range every concept differs from the center on at most $E(\mathcal H)$ coordinates, giving Hamming radius at most the effective range.</p></div>
 
@@ -2741,6 +2961,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, size is at least Littlestone dimension (the survey proves the stronger $\log|\mathcal H|\ge L$).</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -2766,6 +2988,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For the singleton family, Size is n and Yang dimension is n-1, so the inequality is strict for every n&gt;=2.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Yang's canonical ideal $I_{\mathcal H}^\star$ has exactly one minimal monomial generator for each $h\in\mathcal H$.  For a nonempty class, the Taylor resolution on these $|\mathcal H|$ generators has length at most $|\mathcal H|-1$, so its projective dimension (Yang dimension) is at most $|\mathcal H|-1$.  The empty class has Yang dimension $0$ by convention.  Thus $\mathrm Y(\mathcal H)\le |\mathcal H|$ in all cases.</p></div>
 
@@ -2789,6 +3013,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every shattered set is a subset of the effective range.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -2814,6 +3040,8 @@
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Repeatedly propose any remaining candidate as a proper equivalence-query hypothesis. A negative answer supplies a counterexample and in particular eliminates the proposed candidate; after at most $|\mathcal H|-1$ negative answers, the unique remaining concept is the target.</p></div>
 
@@ -2837,6 +3065,8 @@
 <strong>Details:</strong><div class="text-field"><p>Pajor's sandwich theorem bounds log size by log shattering, and halving uses at most log size.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The sandwich theorem gives $|\mathcal H|\leq |\operatorname{sh}(\mathcal H)|$.  Taking binary logarithms yields $\log|\mathcal H|\leq\log|\operatorname{sh}(\mathcal H)|$.  The pointwise-majority halving algorithm uses at most $\log|\mathcal H|$ queries, so its complexity is at most log shattering.</p></div>
@@ -2862,6 +3092,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A labeled compression scheme is a general sample compression scheme.  Floyd and Warmuth prove that every general compression scheme for a class of VC dimension $d$ has size at least $\lceil d/5\rceil$.  Hence $\mathrm{LSC}(\mathcal H)\ge (1/5)\mathrm{VC}(\mathcal H)$.</p></div>
 
@@ -2885,6 +3117,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes; projected recursive teaching dimension is a lower bound for order compression (Theorem 4).</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every coordinate set, Theorem 1 restricts an order scheme to that projection without increasing its size.  The maximal teaching-plan argument of Lemma 1 lower-bounds the resulting order-scheme size by the recursive teaching dimension of that projection.  Taking the maximum over projections is Theorem 4.</p></div>
@@ -2910,6 +3144,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:projected-rtd-vc</code>.</p></div>
@@ -2933,6 +3169,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite classes, the unrestricted tree rank defining Littlestone dimension dominates the regular-tree rank defining worst mistakes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The worst-sequence/offline characterization maximizes the rank only over class trees induced by a fixed ordered sequence of instances: every depth level has one common queried instance.  Each such regular class tree is a valid Littlestone tree, while Littlestone dimension maximizes over all instance-labeled class trees.  Maximizing over the larger family gives $\mathrm L\geq\mathrm M_{\mathrm{worst}}$.</p></div>
@@ -2958,6 +3196,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The worst-mistakes game takes the maximum over all presentation sequences, whereas the best-mistakes game permits a favorable choice of sequence.  Taking a maximum over a superset of sequences cannot decrease the optimal worst-case mistake count, so $\mathrm{M}_{\mathrm{worst}}(\mathcal{H})\ge\mathrm{M}_{\mathrm{best}}(\mathcal{H})$.</p></div>
 
@@ -2981,6 +3221,8 @@
 <strong>Details:</strong><div class="text-field"><p>Invalid as stated.  If the rows are the concepts of an $N\times N$ Hadamard sign matrix, then $|\mathcal H|=N$ but its sign rank is at least $\sqrt N$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Interpret the rows of an $N\times N$ Hadamard matrix as concepts on its $N$ columns.  Forster's spectral lower bound gives sign rank at least $\sqrt N$.  For arbitrarily large powers of two, $\sqrt N>\log_2N$, contradicting the displayed inequality.</p></div>
@@ -3006,6 +3248,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On an incorrect pointwise-majority equivalence query, at least the ceiling half of the current version space disagrees with the proposal and is eliminated, leaving at most its floor half. The halving algorithm therefore needs at most $\lfloor\log_2|\mathcal H|\rfloor$ informative queries.</p></div>
 
@@ -3029,6 +3273,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite classes, this is the metric inequality $B(\mathcal H)\ge D^+(\mathcal H)/2$.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>An oriented-diameter witness of size $d$ gives two concepts whose traces differ on all $d$ witness coordinates. For any Hamming-ball center, at least one of those concepts is at distance at least $d/2$ from it. Hence $B(\mathcal H)\ge \tfrac12 D^+(\mathcal H)$.</p></div>
@@ -3054,6 +3300,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, metric diameter/radius lemma (lem:metric-diameter-radius).</p></div>
@@ -3077,6 +3325,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes. The equality is a definitional reformulation of teaching dimension in relative-hitting language.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -3102,6 +3352,8 @@
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 8 of the cited source gives $\mathrm T(\mathcal H)\geq\lfloor\log_2\mathrm L(\mathcal H)\rfloor$. For every positive integer $m$, $\lfloor\log_2m\rfloor\geq\tfrac12\log_2m$ (and both sides are zero for $m=1$), giving the recorded logarithmic bound.</p></div>
 
@@ -3125,6 +3377,8 @@
 <strong>Details:</strong><div class="text-field"><p>Sauer--Shelah bound. The full cube gives an unbounded reverse-linear separation: $\mathrm{VC}=n$ while $\mathrm{LSR}=\Theta(n/\log n)$.</p></div>
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $d=\mathrm{VC}(\mathcal H)$ and let $n$ be the domain size.  Sauer--Shelah gives $|\mathcal H|\le\sum_{i=0}^{d}\binom ni\le(n+1)^d$.  Therefore $d\ge\log(|\mathcal H|)/\log(n+1)$, which is the asserted bound up to the harmless $-1$ normalization in Log Size Ratio.</p></div>
@@ -3150,6 +3404,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $d=\mathrm{intdeg}(\mathcal H)$, monomials supported on at most $d$ of the $n$ coordinates span every function on $\mathcal H$.  Since the function space has dimension $|\mathcal H|$, we have $|\mathcal H|\le\sum_{i=0}^{d}\binom ni\le(n+1)^d$.  Hence $d\ge\log(|\mathcal H|)/\log(n+1)$, up to the Log Size Ratio normalization.</p></div>
 
@@ -3173,6 +3429,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Projected membership-query complexity maximizes the membership-query complexity over projections.  The full-domain projection is the original class, so it supplies the ordinary membership-query complexity as a candidate.</p></div>
@@ -3198,6 +3456,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On a projected $d$-star with centre $h_0$ and leaves $h_i$ differing from $h_0$ only at $x_i$, an identification algorithm must query every $x_i$: if it omits $x_i$, the answers are identical for $h_0$ and $h_i$.  Hence the membership-query complexity of that projection is at least $d$.  Maximizing over projections gives $\mathrm{Q}_m^p(\mathcal H)\ge\mathrm{S}(\mathcal H)$.</p></div>
 
@@ -3221,6 +3481,8 @@
 <strong>Details:</strong><div class="text-field"><p>Each coordinate projection can be learned by querying only its effective coordinates.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every coordinate projection $\mathcal{G}$ of $\mathcal{H}$, querying all coordinates in the effective range of $\mathcal{G}$ distinguishes every pair of its concepts.  Thus $\mathrm{Q}_m(\mathcal{G})\le\mathrm{E}(\mathcal{G})\le\mathrm{E}(\mathcal{H})$.  Maximizing over projections gives $\mathrm{Q}_m^p(\mathcal{H})\le\mathrm{E}(\mathcal{H})$.</p></div>
@@ -3246,6 +3508,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For any finite projection $\mathcal{G}$ of $\mathcal{H}$, repeatedly choose a coordinate on which two remaining concepts disagree.  The answer eliminates at least one candidate, so at most $|\mathcal{G}|-1\le |\mathcal{H}|-1$ queries suffice.  Hence $\mathrm{Q}_m^p(\mathcal{H})\le |\mathcal{H}|$.</p></div>
 
@@ -3269,6 +3533,8 @@
 <strong>Details:</strong><div class="text-field"><p>A proper random-counterexample strategy halves the expected version-space size.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At each stage, query a hypothesis minimizing its $L_1$ distance to the pointwise average of the current version space.  For every target, a uniformly random counterexample leaves at most half the current hypotheses in expectation.  Induction and Jensen's inequality for the concave logarithm then give expected remaining query cost at most $\log|\mathcal H|$.</p></div>
@@ -3294,6 +3560,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every deterministic proper equivalence-query algorithm is a randomized one with degenerate randomness.  Allowing randomization cannot increase the optimum, so deterministic complexity is at least randomized complexity.</p></div>
 
@@ -3317,6 +3585,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Random proper equivalence-query algorithms are restricted to hypotheses from the class, whereas random equivalence-query algorithms may use arbitrary hypotheses.  The restriction cannot lower the optimal expected or worst-case query complexity.</p></div>
@@ -3342,6 +3612,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At every nonempty subfamily, the recursive teaching process removes a concept with a smallest teaching set; maximizing this minimum over subfamilies is exactly monotonic minimum teaching-set size.</p></div>
 
@@ -3365,6 +3637,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes. The equality is a definitional reformulation of teaching dimension in relative-hitting language.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -3390,6 +3664,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Any learner using only proper equivalence queries is a valid learner in the model that additionally permits membership queries.  The larger set of permitted queries cannot increase optimal complexity.</p></div>
 
@@ -3413,6 +3689,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes. Strict on the singleton class: $\mathrm Q_{\mathrm{peq}}=n-1$ while $\mathrm Q_{\mathrm{eq}}=1$.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A proper equivalence-query learner may query only hypotheses from the class, whereas unrestricted equivalence queries allow arbitrary hypotheses.  The restriction cannot decrease the optimal worst-case query complexity.</p></div>
@@ -3438,6 +3716,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, OOG/compression lemma (lem:oog-compression).</p></div>
@@ -3461,6 +3741,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The monotonic variant maximizes the minimum teaching-set size over subfamilies, and the original class is among those subfamilies.</p></div>
@@ -3486,6 +3768,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a target $h$ and run any membership-query learner that identifies it.  The coordinates queried on the path leading to $h$ must distinguish $h$ from every other concept; otherwise that concept gives the same transcript and the learner cannot identify the target.  Thus they form a teaching set for $h$, of size at most $\mathrm{Q}_m(\mathcal{H})$.  Maximizing over $h$ yields $\mathrm{RHT}(\mathcal{H})\le\mathrm{Q}_m(\mathcal{H})$.</p></div>
 
@@ -3509,6 +3793,8 @@
 <strong>Details:</strong><div class="text-field"><p>A 3-block shattered tree is an ordinary shattered Littlestone tree.</p></div>
 <p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The 3-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Therefore every tree counted by $\mathrm{B}_3(\mathcal H)$ is counted by $\mathrm L(\mathcal H)$, and $\mathrm L(\mathcal H)\ge\mathrm{B}_3(\mathcal H)$.</p></div>
@@ -3534,6 +3820,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, membership-query/log-size lemma (lem:membership-query-log-size).</p></div>
@@ -3557,6 +3845,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes. The singleton family gives an unbounded gap: $\mathrm Q_{\mathrm{mpeq}}=n-1$ while $\mathrm Q_{\mathrm{meq}}=1$.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Replacing proper equivalence queries by unrestricted equivalence queries enlarges the learner's available query set.  Thus the mixed proper model cannot have smaller optimal complexity.</p></div>
@@ -3582,6 +3872,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, metric diameter/radius lemma (lem:metric-diameter-radius).</p></div>
@@ -3605,6 +3897,8 @@
 <strong>Details:</strong><div class="text-field"><p>Invalid as stated.  The family $\mathcal H=\{\{1\},\{2\}\}$ has oriented diameter $0$ and Hamming radius $1$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>As above, this two-concept family has no projection containing an empty/full pair, so $\mathrm D^+(\mathcal H)=0$.  It is contained in the radius-one Hamming ball centered at $\varnothing$, and no radius-zero ball contains both concepts; therefore $\mathrm B(\mathcal H)=1$.  The claimed positive-factor lower bound is false.</p></div>
@@ -3630,6 +3924,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The densest-subgraph parameter maximizes average degree over subgraphs.  The original graph is one candidate, so its average degree cannot be larger.</p></div>
 
@@ -3653,6 +3949,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite $1$-inclusion graph.</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The average vertex degree of a finite graph is at least its minimum vertex degree.</p></div>
@@ -3678,6 +3976,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix $h\in\mathcal H$. For each other $h'\in\mathcal H$, choose one coordinate on which h and $h'$ differ. The union of these at most $|\mathcal H|-1$ coordinates is a teaching set for h. Maximize over h.</p></div>
 
@@ -3701,6 +4001,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every proper stable unlabeled scheme is a proper stable labeled scheme after allowing the retained labels to be stored. The latter model is less restrictive.</p></div>
@@ -3726,6 +4028,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every proper unlabeled scheme is a proper labeled scheme after allowing the retained labels to be stored. The latter model is less restrictive.</p></div>
 
@@ -3749,6 +4053,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition. Strict on the three-code class: $\mathrm{pUSC}=2$ while $\mathrm{USC}=1$.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper unlabeled compression requires the reconstruction to belong to $\mathcal H$, an additional restriction beyond ordinary unlabeled compression. Restricting the allowed schemes cannot decrease the minimum size.</p></div>
@@ -3774,6 +4080,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper stable unlabeled compression adds properness to stable unlabeled compression. Restricting the allowed reconstruction functions cannot decrease the minimum size.</p></div>
 
@@ -3797,6 +4105,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper stable labeled compression adds properness to stable labeled compression. Restricting the allowed reconstruction functions cannot decrease the minimum size.</p></div>
@@ -3822,6 +4132,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper stable labeled compression adds stability to proper labeled compression. Restricting the allowed compression functions cannot decrease the minimum size.</p></div>
 
@@ -3845,6 +4157,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper stable unlabeled compression adds stability to proper unlabeled compression. Restricting the allowed compression functions cannot decrease the minimum size.</p></div>
@@ -3870,6 +4184,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Stable labeled compression adds stability to labeled compression. Restricting the allowed compression functions cannot decrease the minimum size.</p></div>
 
@@ -3893,6 +4209,8 @@
 <strong>Details:</strong><div class="text-field"><p>No source or proof for this universal comparison has yet been verified. The available stable-compression sources do not state this proper equivalence-query lower bound.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Needs verification</p>
 
@@ -3918,6 +4236,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper labeled compression adds properness to labeled compression. Restricting the allowed reconstruction functions cannot decrease the minimum size.</p></div>
 
@@ -3941,6 +4261,8 @@
 <strong>Details:</strong><div class="text-field"><p>O1G has optional mistake-only feedback, while the favorable mistake model supplies full labels.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Any favorable-sequence full-feedback strategy can be used in the best-mistakes model, whereas an O1G learner must operate when feedback may be withheld and every supplied signal only identifies a mistake.  The full-feedback model can simulate O1G and may reveal strictly more information, so $\mathrm{M}_{\mathrm{best}}(\mathcal H)\le\mathrm{M}_{\mathrm{o1g}}(\mathcal H)$.</p></div>
@@ -3966,6 +4288,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, OOG/compression lemma (lem:oog-compression).</p></div>
@@ -3989,6 +4313,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A membership-only learner is a valid learner in the model that also permits proper equivalence queries.  The additional query type cannot increase the optimum, so membership-only complexity is at least the mixed-model complexity.</p></div>
@@ -4014,6 +4340,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S=\{x_1,\ldots,x_d\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies the 3-block constraint (indeed, it is level-constant everywhere). Hence $\mathrm{B}_3(\mathcal H)\ge\operatorname{VC}(\mathcal H)$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:block-littlestone-sandwich} in the survey.</p></div>
@@ -4037,6 +4365,8 @@
 <strong>Details:</strong><div class="text-field"><p>Definition</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The defining maximum for $\mathrm Y^*(\mathcal H)$ ranges over all subfamilies, including $\mathcal H$ itself. Its value is therefore at least $\mathrm Y(\mathcal H)$.</p></div>
@@ -4062,6 +4392,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every target $h\in\mathcal H$, a specifying set for $h$ among all labelings is in particular a teaching set for $h$ within $\mathcal H$. Since $\mathrm{XTD}$ maximizes over a superset of targets, it is at least $\mathrm{TD}$.</p></div>
 
@@ -4085,6 +4417,8 @@
 <strong>Details:</strong><div class="text-field"><p>A membership-query decision tree supplies a specifying set for every labeling. For finite classes with more than two concepts, Hegedüs also proves $Q_m\leq \mathrm{XTD}\log_2|\mathcal{H}|$.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a target labeling. Along a membership-query decision-tree path identifying it, the queried coordinates and their answers distinguish that labeling from every other member of the class, so they form a specifying set. The worst path length is therefore at least $\mathrm{XTD}(\mathcal H)$.</p></div>
@@ -4110,6 +4444,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a set of $d$ points is shattered, its $2^d$ full labelings must compress to distinct unlabeled subsets: a single subset has only one reconstruction.  Fewer than $d$ retained points offer only $\sum_{i=0}^{d-1}\binom di<2^d$ subsets, so every unlabeled scheme has size at least $d$.</p></div>
 
@@ -4133,6 +4469,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every preference-based teaching mapping is no-clashing.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let T_h be a preference-based teaching set for h. If two distinct concepts h,h' clashed, then h' would be consistent with T_h and h with T_h'. The first consistency forces h to be preferred to h', while the second forces h' to be preferred to h, contradicting strictness of the preference order. Thus the same mapping is no-clashing, so the preference-based teaching dimension is at least the no-clashing teaching dimension.</p></div>
@@ -4158,6 +4496,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, Littlestone/Hamming-radius lemma (lem:littlestone-hamming-radius).</p></div>
@@ -4181,6 +4521,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, diameter dominates Littlestone dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -4206,6 +4548,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, teaching-set/degree lower-bound lemma (lem:teaching-set-degree-lower-bound).</p></div>
@@ -4229,6 +4573,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, minimum teaching-set size dominates the minimum degree of the ordinary 1-inclusion graph.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -4254,6 +4600,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:elementary-parameter-hierarchy</code>.</p></div>
@@ -4277,6 +4625,8 @@
 <strong>Details:</strong><div class="text-field"><p>A shattered set of size $d$ contains a realizable star of size $d$ after projection.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -4302,6 +4652,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:elementary-parameter-hierarchy</code>.</p></div>
@@ -4325,6 +4677,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes on a domain of size n at least 2, Hamming radius is at least log-size divided by log n.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -4350,6 +4704,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:elementary-parameter-hierarchy</code>.</p></div>
@@ -4373,6 +4729,8 @@
 <strong>Details:</strong><div class="text-field"><p>Consequence of the max-over-subfamilies construction of monotonic Yang dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every subfamily $\mathcal G\subseteq\mathcal H$, the Yang bound gives $\mathrm Y(\mathcal G)\le\mathrm E(\mathcal G)$.  Effective range is monotonic under subfamilies, so $\mathrm E(\mathcal G)\le\mathrm E(\mathcal H)$.  Taking the maximum over $\mathcal G$ yields $\mathrm Y^*(\mathcal H)\le\mathrm E(\mathcal H)$.</p></div>
@@ -4398,6 +4756,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every subfamily $\mathcal G\subseteq\mathcal H$, $\mathrm Y(\mathcal G)\le |\mathcal G|\le |\mathcal H|$.  Taking the maximum over $\mathcal G$ gives $\mathrm Y^*(\mathcal H)\le |\mathcal H|$.</p></div>
 
@@ -4421,6 +4781,8 @@
 <strong>Details:</strong><div class="text-field"><p>A hitting set can select one coordinate from each nonempty concept.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each nonempty $h\in\mathcal H$, choose one element $x_h\in h$.  The set of chosen elements meets every nonempty concept, so $\mathrm{HT}(\mathcal H)\le |\mathcal H|$.</p></div>
@@ -4446,6 +4808,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a projected class contains a hollow $d$-star on S, then for each $x\in S$ the star's realizable neighbours include labelings that differ at x.  Thus every x in S lies in the effective range, so $d\le \mathrm E(\mathcal H)$.  Maximizing d gives $\mathrm{coVC}(\mathcal H)\le\mathrm E(\mathcal H)$.</p></div>
 
@@ -4469,6 +4833,8 @@
 <strong>Details:</strong><div class="text-field"><p>Effective range controls both the number of varying coordinates and class size.</p></div>
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>All concepts agree outside the effective range, hence $|\mathcal H|\le 2^{\mathrm E(\mathcal H)}$.  For a nonempty domain, $\log(n+1)\ge1$, so $\log(|\mathcal H|-1)/\log(n+1)\le\mathrm E(\mathcal H)$.</p></div>
@@ -4494,6 +4860,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a deterministic proper empirical-risk minimizer with a fixed tie-breaking order on $\mathcal H$.  Its output takes at most $|\mathcal H|$ values, hence $I(S;\mathcal A(S))\le H(\mathcal A(S))\le\log_2|\mathcal H|\le|\mathcal H|$ (with value 0 for a singleton class).  Taking the infimum in the definition of information complexity preserves this upper bound.</p></div>
 
@@ -4517,6 +4885,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every coordinate in an oriented pair is active.</p></div>
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If an oriented pair (\emptyset,S) is realized in a projection, its two realizing concepts differ on every coordinate of S. Thus S is contained in the effective range. Maximizing gives (\mathrm E(\mathcal H)\ge\mathrm D^+(\mathcal H)).</p></div>
@@ -4542,6 +4912,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A threshold trace on S contains concepts with different labels at every coordinate of S. Hence every coordinate of S belongs to the effective range, so (\mathrm E(\mathcal H)\ge\mathrm T(\mathcal H)).</p></div>
 
@@ -4565,6 +4937,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every coordinate projection has at most (\mathrm E(\mathcal H)) active coordinates. In every nonempty subfamily of such a projection, the full active-coordinate sample teaches any chosen concept, so each recursive teaching stage has a teaching set of size at most (\mathrm E(\mathcal H)). Taking the maximum over projections proves the bound.</p></div>
@@ -4590,6 +4964,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix an order of the class. Retain every example of the input sample whose coordinate is active, and decode to the least class member consistent with the retained sample. Inactive examples have the same label in every class member, so this remains consistent with the original sample. At most (\mathrm E(\mathcal H)) examples are retained.</p></div>
 
@@ -4613,6 +4989,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain all active-coordinate examples of the sample and reconstruct the least consistent member of the class. This is proper, discarding inactive examples preserves consistency, and retaining every remaining example makes stability immediate. Its size is at most (\mathrm E(\mathcal H)).</p></div>
@@ -4638,6 +5016,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain all active-coordinate examples and reconstruct a fixed least class member consistent with them. The retained examples include their observed labels, so the reconstruction is proper and consistent; inactive examples are irrelevant. The retained size is at most (\mathrm E(\mathcal H)).</p></div>
 
@@ -4661,6 +5041,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain the labeled examples on every active coordinate and reconstruct a fixed least consistent member of the class. Inactive examples are common to all class members, so this is consistent with the original sample and proper. Its size is at most (\mathrm E(\mathcal H)).</p></div>
@@ -4686,6 +5068,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The active-coordinate retention scheme is proper and consistent. It retains every active example, so removing an unretained (necessarily inactive) example does not change the retained sample or reconstruction; hence it is stable. Its size is at most (\mathrm E(\mathcal H)).</p></div>
 
@@ -4709,6 +5093,8 @@
 <strong>Details:</strong><div class="text-field"><p>The rank of a matrix is at most its number of rows.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The incidence sign matrix of (\mathcal H) has (|\mathcal H|) rows. Any real matrix realizing its sign pattern has rank at most its number of rows, so minimizing this rank gives (\mathrm{SR}(\mathcal H)\le |\mathcal H|).</p></div>
@@ -4734,6 +5120,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Two distinct concepts differ at an active coordinate. Thus the labels of any concept on the full effective range identify it within the class, giving it a teaching set of size at most (\mathrm E(\mathcal H)). In particular the minimum teaching-set size is at most that value.</p></div>
 
@@ -4757,6 +5145,8 @@
 <strong>Details:</strong><div class="text-field"><p>A linearly independent column set has size at most the number of rows.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every realizing matrix for the incidence sign matrix has (|\mathcal H|) rows. A set of linearly independent columns in such a matrix has size at most its rank, hence at most (|\mathcal H|). This applies to the fixed column set in the definition of dual sign rank.</p></div>
@@ -4782,6 +5172,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A smaller neighbor counted by the dominance of a concept differs from it on one coordinate. Such a coordinate is active. Therefore the positive degree of every vertex, and hence its maximum, is at most (\mathrm E(\mathcal H)).</p></div>
 
@@ -4805,6 +5197,8 @@
 <strong>Details:</strong><div class="text-field"><p>Assign each concept all of its positive active coordinates.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Assign h the positive examples on all active coordinates in h. For two distinct concepts, one has an active coordinate absent from the other; the positive sample of that concept is inconsistent with the other. Hence this assignment is non-clashing and has size at most (\mathrm E(\mathcal H)).</p></div>
@@ -4830,6 +5224,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Repeatedly remove an inclusion-maximal concept. Its positive labels on all active coordinates distinguish it from every remaining concept: no remaining concept can contain it, and each differs on a positive coordinate. These samples have size at most (\mathrm E(\mathcal H)), yielding a positive recursive teaching sequence with that bound.</p></div>
 
@@ -4853,6 +5249,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix an order of the class, retain every active-coordinate example, and decode to the least class member consistent with it. The decoder is proper and remains consistent with the full sample because inactive coordinates have a common label. This proper order-compression scheme retains at most (\mathrm E(\mathcal H)) examples.</p></div>
@@ -4878,6 +5276,8 @@
 <p><strong>Witness: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The $k$-block condition only restricts the coordinate labels allowed in an ordinarily shattered Littlestone tree. Thus every tree counted by $\mathrm B_k(\mathcal H)$ is counted by $\mathrm L(\mathcal H)$, and $\mathrm L(\mathcal H)\ge\mathrm B_k(\mathcal H)$ for every $k\ge2$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:block-littlestone-sandwich} in the survey.</p></div>
@@ -4901,6 +5301,8 @@
 <strong>Details:</strong><div class="text-field"><p>A VC-shattered set gives a level-constant $k$-block tree.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S=\{x_1,\ldots,x_d\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies every $k$-block constraint. Hence $\mathrm B_k(\mathcal H)\ge\operatorname{VC}(\mathcal H)$ for every $k\ge2$.</p></div>
@@ -4926,6 +5328,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A tree shattered in the ordinary realizable sense has every branch consistent with a hypothesis in the class, hence with zero disagreements. It is therefore $k$-realizable for every $k\ge0$, so $\mathrm L^{\mathrm{mist}}_k(\mathcal H)\ge\mathrm L(\mathcal H)$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Immediate from the $k$-shattered-tree definition in Section 2.2.1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>.</p></div>
@@ -4949,6 +5353,8 @@
 <strong>Details:</strong><div class="text-field"><p>A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary Littlestone tree. Therefore $\mathrm L(\mathcal H)\ge\mathrm{PL}_k(\mathcal H)$ for every $k\ge1$; for $k=1$, the condition is vacuous and equality holds.</p></div>
@@ -4974,6 +5380,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:star-covc-affine</code>.</p></div>
@@ -4997,6 +5405,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every $k\ge1$, a VC-shattered set gives a regular shattered tree, which satisfies the prefix-$k$ constraints.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -5022,6 +5432,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:effective-range-xtd</code>.</p></div>
@@ -5045,6 +5457,8 @@
 <strong>Details:</strong><div class="text-field"><p>Equivalently, $\mathrm{HT}(\mathcal H)\le\mathrm E(\mathcal H)+1$.  The one extra coordinate is only needed when a nonempty hypothesis avoids the effective range; then that coordinate is common to all hypotheses.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -5070,6 +5484,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For $d=\mathrm{VC}(\mathcal H)\geq1$, Assouad's bound gives $\log_2\mathrm{VC}^{*}(\mathcal H)\leq d+1\leq2d$. The zero case has dual VC dimension zero.</p></div>
 
@@ -5093,6 +5509,8 @@
 <strong>Details:</strong><div class="text-field"><p>Applying Assouad's bound to the dual class gives $\mathrm{VC}(\mathcal H)\leq2^{\mathrm{VC}^{*}(\mathcal H)+1}-1$. Thus, when VC dimension is positive, $\mathrm{VC}^{*}(\mathcal H)\geq\tfrac12\log_2\mathrm{VC}(\mathcal H)$.</p></div>
 <p><strong>Witness: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Apply Assouad's theorem to $\mathcal H^*$ and use $(\mathcal H^*)^*=\mathcal H$ after identifying duplicate points. For positive $d=\mathrm{VC}^{*}(\mathcal H)$, the resulting logarithm is at most $d+1\leq2d$.</p></div>
@@ -5118,6 +5536,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A shattered $d$-set yields the boundary of the $d$-dimensional cross-polytope as an antipodal simplicial $(d-1)$-sphere in the realizable-distribution complex, as shown in Lemma 2 of the cited paper.</p></div>
 
@@ -5142,6 +5562,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For the singleton family, Yang dimension is n-1 while spherical dimension is 1 for n&gt;=3. Thus no reverse affine-linear bound of Yang dimension by spherical dimension can hold.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The antipodal realizable-distribution complex is the intersection of the Yang complex with its label flip. Its coindex is at most its Stiefel--Whitney height, then at most its Stanley--Reisner regularity minus one; the Kalai--Meshulam regularity inequality bounds that regularity by twice the Yang dimension.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the local Yang-dimension draft: ~/latex/YangDim/drafts/spherical_dimension.tex, Theorem <code>thm:sd-vs-hd</code> (unpublished).</p></div>
@@ -5165,6 +5587,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every prime $p$.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>After deleting coordinates constant on the class, every relevant Yang-complex section lies in the boundary of the cross-polytope on $\mathrm E(\mathcal H)$ coordinates. Its homology has dimension at most $\mathrm E(\mathcal H)-1$ over every field, giving $\mathrm Y_p(\mathcal H)\leq\mathrm E(\mathcal H)$.</p></div>
@@ -5190,6 +5614,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For every full-cube dimension $n\ge1$, $\lfloor\log_2 n\rfloor+1$ is exactly one larger than $\lfloor\log_2 n\rfloor$.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each labeling, ordinary dual shattering supplies a point inducing that labeling itself, which is one of the two patterns allowed by dual antipodal shattering.</p></div>
 
@@ -5214,6 +5640,8 @@
 <p><strong>Witness: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For the universal class, dual antipodal VC dimension is n, while spherical dimension is at most n-1. Hence the two endpoint parameters are strictly separated for every n.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Lemma 2 of the cited paper constructs an antipodal sphere of dimension $d-2$ from a dually antipodally shattered set of size $d$.</p></div>
 
@@ -5237,6 +5665,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm{VC}^{*a}(\mathcal H)\leq2\,\mathrm{VC}^{*}(\mathcal H)+1$; equivalently $\mathrm{VC}^{*}(\mathcal H)\geq(\mathrm{VC}^{*a}(\mathcal H)-1)/2$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is the second chain of Assouad-type bounds for antipodal shattering in Lemma 20 of the cited paper.</p></div>
@@ -5262,6 +5692,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For the full cube, extremal-extension VC dimension is n whereas spherical dimension is n-1, so the endpoint parameters are strictly separated for every n&gt;=1.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 9 of the cited paper proves $\mathrm{sd}(\mathcal E)\leq2\,\mathrm{VC}(\mathcal E)-1$ for every finite extremal class $\mathcal E$. Apply it to a minimum-VC extremal extension of $\mathcal H$ and use spherical-dimension monotonicity under inclusion.</p></div>
 
@@ -5285,6 +5717,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every extension contains the original class, so its VC dimension is at least that of the original class.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $\mathcal H\subseteq\mathcal E$, every set shattered by $\mathcal H$ is shattered by $\mathcal E$. Taking the minimum over extremal extensions gives the result.</p></div>
@@ -5310,6 +5744,8 @@
 <p><strong>Witness: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is Theorem 10 of the cited paper. Taking the limit in $\epsilon$ gives the stated affine lower bound for the list replicability number.</p></div>
 
@@ -5333,6 +5769,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm{SCO}(\mathcal H)\geq\mathrm{sd}(\mathcal H)+1$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is the first inequality of Theorem 12 in the cited paper, obtained by applying a Borsuk--Ulam argument to any SCO reduction.</p></div>
@@ -5358,6 +5796,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is the second inequality of Theorem 12 in the cited paper, using the sign-rank construction as a special SCO reduction.</p></div>
 
@@ -5381,6 +5821,8 @@
 <strong>Details:</strong><div class="text-field"><p>A sign-rank realization supplies an embedding into an extremal class of the same VC dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>As observed in Section B.5 of the cited paper, the standard homogeneous-hyperplane realization associated with sign rank yields an extremal extension whose VC dimension is at most the sign rank.</p></div>
@@ -5406,6 +5848,8 @@
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A star witness around a base hypothesis is a sequential eluder witness: every leaf differs from the base at its own point and agrees with it at all earlier star points.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Theorem 8 (the star-number lower bound) of Li--Kamath--Foster--Srebro.</p></div>
@@ -5429,6 +5873,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, the combinatorial eluder dimension dominates threshold dimension. The singleton family gives an unbounded separation: $\mathrm{Edim}=n-1$ while threshold dimension is 1.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A threshold-chain witness relative to its base hypothesis is a sequential eluder witness. This is the lower bound in Theorem 8 of the cited paper.</p></div>
@@ -5454,6 +5900,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At each witnessing point the base and witness hypothesis disagree, so the point lies in the effective range. A repeated point cannot be independent after it has appeared, because agreement with the base on the earlier copy forces agreement at its later copy.</p></div>
 
@@ -5477,6 +5925,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class, $|\mathcal H|\geq\mathrm{Edim}(\mathcal H)+1$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The base hypothesis cannot serve as a witness. Moreover a witness hypothesis used at step i agrees with the base on all earlier points but differs at x_i, so it cannot have been used at an earlier step. Thus there are d+1 distinct hypotheses.</p></div>
@@ -5502,6 +5952,8 @@
 <p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If S={x_1,...,x_d} is shattered, choose as base a hypothesis with label 0 on S. At step i, shattering supplies a hypothesis that is 1 at x_i and 0 at every earlier x_j. These form a sequential eluder witness of length d.</p></div>
 
@@ -5525,6 +5977,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every prime $p$, $\mathrm{Y}_p(\mathcal H)\geq\mathrm{Y}_0(\mathcal H)$. For each fixed finite class, equality holds for all but finitely many primes. The only possible exceptional primes divide torsion in an integral homology group of a Hochster/interval complex. Universal coefficients do not by themselves compare two distinct positive primes, so no relationship between them is recorded here.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every integral complex $K$ in the Hochster formula, the universal coefficient exact sequence says that $\widetilde H_i(K;\mathbb F_p)$ is built from $\widetilde H_i(K;\mathbb Z)\otimes\mathbb F_p$ and $\operatorname{Tor}(\widetilde H_{i-1}(K;\mathbb Z),\mathbb F_p)$. A nonzero rational group has a free integral summand and therefore stays nonzero over every $\mathbb F_p$, giving $\mathrm{Y}_p\geq\mathrm{Y}_0$. There are finitely many relevant finite complexes and each has torsion at only finitely many primes, so outside their union the mod-$p$ and rational homology—and hence the Yang dimensions—agree. This does not compare two exceptional primes.</p></div>
@@ -5550,6 +6004,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A shattered set of size d induces the boundary of a d-dimensional cross-polytope in the Yang complex. Its top reduced homology is nonzero over every field, so Hochster's formula gives $\mathrm{Y}_p(\mathcal H)\geq d$. Maximize over shattered sets.</p></div>
 
@@ -5573,6 +6029,8 @@
 <strong>Details:</strong><div class="text-field"><p>Characteristic-zero instance of Yang's VC bound.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A shattered set of size d induces the boundary of a d-dimensional cross-polytope in the Yang complex. Its top reduced homology is nonzero over $\mathbb Q$, so Hochster's formula gives $\mathrm{Y}_0(\mathcal H)\geq d$. Maximize over shattered sets.</p></div>
@@ -5598,6 +6056,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Maintain the version space of candidates. While it has two distinct concepts, choose a coordinate on which two candidates disagree and make a membership query there. Whichever answer is returned eliminates at least one candidate. After at most $|\mathcal H|-1$ queries only the target remains.</p></div>
 
@@ -5621,6 +6081,8 @@
 <strong>Details:</strong><div class="text-field"><p>Characteristic-zero instance of the Yang effective-range bound.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>After deleting coordinates constant on the class, every relevant Yang-complex section lies in the boundary of the cross-polytope on $\mathrm E(\mathcal H)$ coordinates. Its homology has dimension at most $\mathrm E(\mathcal H)-1$ over $\mathbb Q$, giving $\mathrm Y_0(\mathcal H)\leq\mathrm E(\mathcal H)$.</p></div>
@@ -5646,6 +6108,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Yang's canonical ideal has one minimal monomial generator for each concept. The Taylor resolution on $|\mathcal H|$ generators, valid over every field, has length at most $|\mathcal H|-1$ for a nonempty class. Thus $\mathrm Y_p(\mathcal H)\leq|\mathcal H|$ (and the empty class has value 0 by convention).</p></div>
 
@@ -5669,6 +6133,8 @@
 <strong>Details:</strong><div class="text-field"><p>Characteristic-zero instance of the Yang generator-count bound.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Yang's canonical ideal has one minimal monomial generator for each concept. The Taylor resolution on $|\mathcal H|$ generators over $\mathbb Q$ has length at most $|\mathcal H|-1$ for a nonempty class. Thus $\mathrm Y_0(\mathcal H)\leq|\mathcal H|$ (and the empty class has value 0 by convention).</p></div>
@@ -5694,6 +6160,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The proper strategy is also admissible when arbitrary equivalence hypotheses are allowed: propose a remaining concept and every negative answer eliminates it. Thus at most $|\mathcal H|-1$ equivalence queries are needed.</p></div>
 
@@ -5717,6 +6185,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every nonempty finite class, the stronger bound $\mathrm{RTD}(\mathcal H)\leq|\mathcal H|-1$ holds.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At any nonempty stage $\mathcal G$ of the recursive teaching process, choose one concept h with a minimum teaching set. As for ordinary teaching dimension, h has a teaching set of size at most $|\mathcal G|-1\leq|\mathcal H|-1$. Taking the maximum over stages proves the bound.</p></div>
@@ -5742,6 +6212,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every coordinate projection $\mathcal H_{|S}$ has at most $|\mathcal H|$ distinct concepts. Apply the recursive-teaching bound to each projection and take the defining maximum over S.</p></div>
 
@@ -5765,6 +6237,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every nonempty finite class, the stronger bound $\mathrm{TS}_{\max}^p(\mathcal H)\leq|\mathcal H|-1$ holds.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every coordinate projection $\mathcal H_{|S}$ has at most $|\mathcal H|$ distinct concepts. For a projected target, choose one distinguishing coordinate against each other projected concept; their union is a teaching set of size at most $|\mathcal H|-1$. Taking the defining maximum over targets and projections proves the bound.</p></div>
@@ -5790,6 +6264,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix any strict preference order. For a target h, choose one disagreement coordinate against each concept preferred to h. The resulting sample rules out every more-preferred consistent concept and has size at most $|\mathcal H|-1$. Thus that order has teaching dimension at most $|\mathcal H|-1$, and minimizing over orders preserves the bound.</p></div>
 
@@ -5813,6 +6289,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every nonempty finite class, the stronger bound $\mathrm{NCTD}(\mathcal H)\leq|\mathcal H|-1$ holds.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each target h, choose one disagreement coordinate against every other concept. This gives a teaching set of size at most $|\mathcal H|-1$ which is consistent with no other concept. Assigning these samples to all targets is no-clashing, since two distinct concepts cannot both be consistent with either assigned sample.</p></div>
@@ -5838,6 +6316,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>First quotient coordinates having the same evaluation vector on $\mathcal H$; the resulting domain has $\mathrm E(\mathcal H)$ points and preserves spherical dimension. The antipodal realizable-distribution complex is a finite subcomplex of the realizable-distribution complex and therefore has dimension at most $\mathrm E(\mathcal H)-1$. The local Borsuk--Ulam theorem in the cited paper forbids an antipodality-preserving map from $S^d$ whenever $2(\mathrm E-1)\leq d$. Hence $d\leq2\mathrm E-3$ for every admitted $d\geq1$.</p></div>
 
@@ -5861,6 +6341,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, the stronger counting bound $\mathrm E(\mathcal H)\geq2^{\mathrm{VC}^{*}(\mathcal H)}-2$ holds. In particular $\mathrm E(\mathcal H)\geq\mathrm{VC}^{*}(\mathcal H)-1$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If d concepts are shattered in the dual, the $2^d$ label patterns on them are realized by distinct coordinates. All patterns except the all-zero and all-one patterns are nonconstant on those concepts, hence their coordinates are effective. Thus $\mathrm E\geq2^d-2$. Since $2^d-2\geq d-1$ for every d, this gives the recorded affine bound.</p></div>
@@ -5886,6 +6368,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At a fixed concept, two distinct 1-inclusion neighbors cannot differ from it on the same coordinate. Every coordinate supporting an incident edge is effective. Hence the vertex degree, and then the maximum degree, is at most \mathrm E(\mathcal H).</p></div>
 
@@ -5909,6 +6393,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, its one-inclusion average degree is at most its effective range.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every vertex of the 1-inclusion graph has degree at most \mathrm E(\mathcal H), since at most one neighbor can use each effective coordinate. Averaging the vertex degrees gives \mathrm{dens}(\mathcal H)\leq\mathrm E(\mathcal H).</p></div>
@@ -5934,6 +6420,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>In every induced subgraph, each vertex still has at most one neighbor per effective coordinate, hence degree at most \mathrm E(\mathcal H). Its average degree is therefore at most \mathrm E(\mathcal H). Maximizing over subgraphs gives \mathrm{dens}^{*}(\mathcal H)\leq\mathrm E(\mathcal H).</p></div>
 
@@ -5957,6 +6445,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, the minimum degree of its 1-inclusion graph is at most its effective range.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every vertex of the 1-inclusion graph has at most one neighbor per effective coordinate. In particular its minimum degree is at most \mathrm E(\mathcal H).</p></div>
@@ -5982,6 +6472,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every induced subgraph of the 1-inclusion graph has all degrees at most \mathrm E(\mathcal H), because an incident edge uses a distinct effective coordinate. Its minimum degree is at most this value, and maximizing those minima over induced subgraphs gives the claimed degeneracy bound.</p></div>
 
@@ -6005,6 +6497,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, the maximum 1-inclusion degree over all coordinate projections is at most its effective range.</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every projection has no more effective coordinates than the original class. In each projected 1-inclusion graph, a vertex has at most one neighbor per effective coordinate. Taking the maximum over projections gives \mathrm d^p_{\max}(\mathcal H)\leq\mathrm E(\mathcal H).</p></div>
@@ -6030,6 +6524,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Each coordinate projection has effective range at most \mathrm E(\mathcal H), and hence all degrees in its 1-inclusion graph are at most \mathrm E(\mathcal H). Its average degree is at most that value. Maximize over projections.</p></div>
 
@@ -6053,6 +6549,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, the largest projected minimum 1-inclusion degree is at most its effective range.</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Each coordinate projection has effective range at most \mathrm E(\mathcal H), and every vertex in its 1-inclusion graph has at most one neighbor per effective coordinate. Its minimum degree is therefore at most \mathrm E(\mathcal H). Maximize over projections.</p></div>
@@ -6078,6 +6576,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If d concepts are dually antipodally shattered, each of the $2^{d-1}$ complementary pairs of label patterns is realized, up to a global label flip, by a coordinate. The pair consisting of the all-zero and all-one patterns is the only pair whose realizing coordinate can be constant on the chosen concepts. Every other pair is nonconstant, so its coordinate is effective. Thus at least $2^{d-1}-1$ effective coordinates occur. Since $2^{d-1}-1\geq d-1$ for every d, the stated affine bound follows.</p></div>
 
@@ -6101,6 +6601,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite concept class, $\mathrm{TD}(\mathcal H)\geq\mathrm{BTD}(\mathcal H)$. The singleton-plus-empty-set family gives an unbounded gap: $\mathrm{TD}=n$ while $\mathrm{BTD}=2$.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At every Balbach iteration, an ordinary minimum teaching set for a target is still valid: it leaves no other consistent hypothesis, hence no other hypothesis surviving the size filter. Thus every iterated Balbach value is at most its ordinary teaching dimension; maximize at stabilization.</p></div>
@@ -6126,6 +6628,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>An ordinary minimum teaching set is admissible at the first subset-teaching step because it is inconsistent with every competing concept. The subset-teaching iterations only permit further reductions, so their stabilized maximum cannot exceed ordinary teaching dimension.</p></div>
 
@@ -6149,6 +6653,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite concept class, $\mathrm{BTD}(\mathcal H)\geq\mathrm{RTD}(\mathcal H)$; the inequality can be strict.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 32 proves the comparison. At the first layer attaining the recursive teaching dimension, the minimum ordinary teaching dimension of the remaining subclass equals that layer's value. Lemma 31 lower-bounds its Balbach dimension by this minimum, and BTD subclass monotonicity transfers the bound to $\mathcal H$.</p></div>
@@ -6174,6 +6680,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Choose a deterministic proper empirical-risk minimizer with fixed tie-breaking. Its output lies in $\mathcal H$, so $I(S;\mathcal A(S))\leq H(\mathcal A(S))\leq\log_2|\mathcal H|$. This learner is admissible in the infimum defining information complexity; then take the distribution and sample-size supremum.</p></div>
 
@@ -6198,6 +6706,8 @@
 <p><strong>Witness: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>For even n, the universal class has list replicability n/2+1 and dual antipodal VC dimension n. Thus the displayed affine lower bound is strict on this infinite subfamily.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is the dual-antipodal-VC consequence stated in Theorem 10. For an integer $d$, $1+\lfloor d/2\rfloor\geq d/2+1/2$; taking the accuracy limit yields the displayed affine bound.</p></div>
 
@@ -6221,6 +6731,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every fixed integer $k\geq0$ and every class over a nonempty domain, $\mathrm L^{\mathrm{mist}}_k(\mathcal H)\geq\mathrm L(\mathcal H)+k$. This strengthens the non-affine comparison recorded separately.</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Start with any ordinary shattered tree of minimum branch length d. Below each leaf attach a complete binary tree of depth k, using a fixed domain point (available because the domain is nonempty) at all added internal nodes. The hypothesis realizing the original branch disagrees with at most k of the added labels, so the resulting tree is k-shattered and has minimum branch length d+k. Take the supremum over d.</p></div>
@@ -6246,6 +6758,8 @@
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 8 of the cited source gives $\mathrm L(\mathcal H)\geq\lfloor\log_2\mathrm T(\mathcal H)\rfloor$. For every positive integer $m$, $\lfloor\log_2m\rfloor\geq\tfrac12\log_2m$ (and both sides are zero for $m=1$), giving the recorded logarithmic bound.</p></div>
 
@@ -6269,6 +6783,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every finite binary concept class satisfies $\mathrm{SR}(\mathcal H)\geq\mathrm{LR}(\mathcal H)$.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The cited paper proves $\mathrm{SCdim}(\mathcal H)\leq\mathrm{SR}(\mathcal H)-1$ and $\mathrm{LR}(\mathcal H)=\mathrm{SCdim}(\mathcal H)+1$. Combining the two displayed equalities yields the claim.</p></div>
@@ -6294,6 +6810,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Repeatedly choose a coordinate on which the current version space disagrees, retain a largest label fibre, and continue until the version space is a singleton. In the binary case each step retains at least half the current class, so this constructs an eluder sequence of length at least $\log_2|\mathcal H|$.</p></div>
 
@@ -6317,6 +6835,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every binary concept class, combinatorial eluder dimension dominates Littlestone dimension. The half-interval family gives an unbounded separation: $\mathrm{Edim}=n-1$ while $\mathrm L=\Theta(\log n)$.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a hypothesis $h^*$ and follow the branch it realizes in any shattered Littlestone tree. At each node, shattering supplies a hypothesis realizing the branch that instead takes the opposite edge there. It agrees with $h^*$ at all earlier node labels and disagrees at the current node, so the nodes on the branch form an eluder witness of the same length.</p></div>
@@ -6342,6 +6862,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Hanneke--Yang's Theorem 13 proves their finite-pool identity $\mathrm{XTD}(\mathcal H,m)=\min\{\mathrm S(\mathcal H),m\}$. Taking a pool containing the finite effective range gives $\mathrm{XTD}(\mathcal H)=\mathrm S(\mathcal H)$.</p></div>
 
@@ -6365,6 +6887,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, the minimum star number is at least VC dimension.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a set of size d is shattered, then for any centre labeling g its restriction to that set is realized by one hypothesis, and each one-coordinate flip is realized by another. Thus this set is a g-centred star of size d; minimize over g.</p></div>
@@ -6390,6 +6914,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The minimum is over all centre labelings, including the labelings realized by hypotheses in the class; the ordinary star number is the maximum over those realizable centres.</p></div>
 
@@ -6413,6 +6939,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every finite binary class admits a stable unlabeled sample-compression scheme of size at most its minimum star number.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 23 in the cited paper constructs a stable, sample-consistent unlabeled compression scheme of size $\mathrm S_{\mathrm{min}}$. The optimum stable-unlabeled compression size is therefore no larger.</p></div>
@@ -6438,6 +6966,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 25 of the cited paper establishes this direct affine lower bound.</p></div>
 
@@ -6461,6 +6991,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm{VC}_{\mathrm{extr}}(\mathcal H)\geq(\mathrm{VC}^{*}(\mathcal H)-1)/2$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The cited theorem gives $\mathrm{VC}^{*}(\mathcal E)\leq2\,\mathrm{VC}(\mathcal E)+1$ for every finite extremal class $\mathcal E$. Apply it to an extremal extension of $\mathcal H$ and use monotonicity of dual VC dimension under adding hypotheses; then minimize the extension VC dimension.</p></div>
@@ -6486,6 +7018,8 @@
 <p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A set of hypotheses dually shattered by coordinates is Radon independent: for every nontrivial bipartition, a coordinate realizes opposite constant labels on the two parts, and the corresponding complementary half-spaces separate their convex hulls.</p></div>
 
@@ -6509,6 +7043,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $|\mathcal H|\geq\mathrm{Rad}(\mathcal H)$.</p></div>
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A Radon-independent set is, by definition, a subset of the hypothesis class.  Its cardinality is therefore at most $|\mathcal H|$; maximizing over such sets gives the inequality.</p></div>
@@ -6534,6 +7070,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every d-star in the definition uses d+1 distinct hypotheses $h_0,\ldots,h_d$. Thus $d\leq|\mathcal H|-1$ for every centre labeling, and in particular $\mathrm{S}_{\mathrm{min}}(\mathcal H)\leq|\mathcal H|-1$.</p></div>
 
@@ -6557,6 +7095,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm E(\mathcal H)\geq\mathrm{VCR}(\mathcal H)$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $\mathrm{VCR}(\mathcal H)=k$, its definition quantifies over k-element subsets of the effective range.  Thus k cannot exceed the cardinality of that range; the k=0 case is immediate.</p></div>
@@ -6582,6 +7122,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set of size d is the free-coordinate set of a contained d-cube.  Both labels occur on each of those coordinates, so all d coordinates belong to the effective range.</p></div>
 
@@ -6605,6 +7147,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm E(\mathcal H)\geq\mathrm{VCR}^{p}(\mathcal H)$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every coordinate projection has effective range contained in the original effective range. Its effective VC radius is at most the size of that projected effective range, so maximizing over projections still gives at most $\mathrm E(\mathcal H)$.</p></div>
@@ -6630,6 +7174,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set in a coordinate projection is witnessed by a contained cube. Each of its free coordinates varies in that projection and hence in the original class, so its size is at most the original effective range. Maximize over projections.</p></div>
 
@@ -6653,6 +7199,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{SR}(\mathcal H)\geq\mathrm{VC}(\mathcal H^*)$.</p></div>
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Transpose the incidence sign matrix. Proposition 1 gives that its dual sign rank is at least its VC dimension; dual sign rank is at most sign rank. Since sign rank is invariant under transposition, this yields $\mathrm{SR}(\mathcal H)\geq\mathrm{VC}(\mathcal H^*)$.</p></div>
@@ -6678,6 +7226,8 @@
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Discard the coordinates on which all concepts agree. The remaining incidence matrix has $\mathrm E(\mathcal H)$ columns and therefore admits a realizing matrix of rank at most $\mathrm E(\mathcal H)$. Reintroduce all constant columns using one additional rank-one direction. This realizes the original sign matrix with rank at most $\mathrm E(\mathcal H)+1$.</p></div>
 
@@ -6701,6 +7251,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every binary concept class, $\mathrm E(\mathcal H)\geq\mathrm L(\mathcal H)$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Follow any root-to-leaf path in a complete shattered Littlestone tree of depth d. The node labels on this path are distinct: repeating a point would make the branch that assigns it opposite labels unrealizable. At each node, the two child branches are realized by concepts with opposite labels there, so the point lies in the effective range. Thus the effective range contains at least d points.</p></div>
@@ -6726,6 +7278,8 @@
 <p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:size-covc</code>.</p></div>
@@ -6750,6 +7304,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>On the singleton-plus-empty class, Littlestone dimension is 1 whereas randomized Littlestone dimension is 1-2^{-n}, which is strictly smaller for every n&gt;=1.</p></div>
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Induct on the finite Littlestone dimension d. At the root of any shattered tree, the two restrictions have dimensions a,b at most d, and they cannot both equal d (otherwise their complete trees join to give dimension d+1). Thus $a\leq d$ and $b\leq d-1$ after ordering. Induction bounds each subtree's randomized value by its Littlestone dimension, so the root tree has half its expected branch length at most $1/2+(a+b)/2\leq d$. Taking suprema proves the claim; the infinite case follows by truncation.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>The randomized-tree definition is Definition 1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>; the comparison is a direct induction.</p></div>
@@ -6773,6 +7329,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every binary concept class, $\mathrm{RL}(\mathcal H)\geq\frac12\mathrm L(\mathcal H).</p></div>
 <p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A complete shattered Littlestone tree of depth d has every branch of length d, hence average branch length d. It witnesses randomized Littlestone dimension at least d/2. Take the supremum over d.</p></div>
@@ -6798,6 +7356,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every ordinarily shattered tree has zero disagreements on every branch and is therefore k-shattered. Its random-branch expectation is unchanged.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Immediate from the k-shattered-tree definition in Section 2.2.1 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>.</p></div>
@@ -6821,6 +7381,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every integer $k\geq0$, $\mathrm{RL}^{\mathrm{mist}}_k(\mathcal H)\geq\frac12\mathrm L^{\mathrm{mist}}_k(\mathcal H).</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A k-shattered tree of minimum branch length d has random-branch expectation at least d. It therefore witnesses randomized k-mistake Littlestone dimension at least d/2; take the supremum over d.</p></div>
@@ -6846,6 +7408,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A randomized learner may emulate any deterministic learner. Theorem 3 of Filmus--Hanneke--Mehalel--Moran identifies the respective optimal $k$-realizable mistake bounds with the two dimensions, giving the inequality.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Theorem 3 of <a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a>, together with deterministic learners as a subclass of randomized learners.</p></div>
@@ -6869,6 +7433,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary concept class, $\log_2|\mathcal H|\geq2\,\mathrm{RL}(\mathcal H)$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Distinct leaves of a shattered tree require distinct realizing hypotheses, so it has at most $|\mathcal H|$ leaves. A uniform random root-to-leaf walk reaches a leaf at depth d with probability $2^{-d}$; its expected depth is therefore the entropy of this leaf distribution, at most $\log_2|\mathcal H|$. Divide by two and take the supremum over shattered trees.</p></div>
@@ -6894,6 +7460,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each $h\in\mathcal H$, choose a teaching set $T(h)$ of size at most $\mathrm{TD}(\mathcal H)$. If $h\ne h'$, then $T(h)$ is inconsistent with $h'$ because it identifies $h$ uniquely in the whole class. Thus no pair can clash, and the same map witnesses $\mathrm{NCTD}(\mathcal H)\leq\mathrm{TD}(\mathcal H)$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition prop:td-low-nctd.</p></div>
@@ -6917,6 +7485,8 @@
 <strong>Details:</strong><div class="text-field"><p>Every recursive teaching map is no-clashing.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Take a recursive teaching order and, for each concept h, a teaching set T(h) identifying h within the then-current remaining class. For two distinct concepts h,h', assume h is removed first. Then h' is still present when T(h) is chosen, so T(h) is inconsistent with h'. Thus no pair can clash. The same map has width at most $\mathrm{RTD}(\mathcal H)$, proving $\mathrm{NCTD}(\mathcal H)\leq\mathrm{RTD}(\mathcal H)$.</p></div>
@@ -6942,6 +7512,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star.</p></div>
@@ -6965,6 +7537,8 @@
 <strong>Details:</strong><div class="text-field"><p>The survey's stable-compression argument applies to labeled schemes and proves the stronger projected-NCTD lower bound.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -6990,6 +7564,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star.</p></div>
@@ -7013,6 +7589,8 @@
 <strong>Details:</strong><div class="text-field"><p>The stable-compression theorem applies directly; properness is an additional restriction.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 
@@ -7038,6 +7616,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a proper order scheme and restrict it to any coordinate set.  Its restricted reconstruction remains in the projected class and its size does not increase.  The maximal teaching-plan argument then lower-bounds that size by the recursive teaching dimension of the projected class.  Maximizing over coordinate sets gives $\mathrm{pOSC}\geq\mathrm{RTD}^{p}$.</p></div>
 
@@ -7061,6 +7641,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm{SR}(\mathcal H)\geq\mathrm{sd}(\mathcal H)+1$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 12 states the source chain $\mathrm{sd}(\mathcal H)+1\leq\mathrm{SCO}(\mathcal H)\leq\mathrm{SR}(\mathcal H)$.  The paper explicitly identifies its sign-rank with the minimum real rank realizing the incidence sign matrix, which is the catalogue convention.</p></div>
@@ -7086,6 +7668,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is Lemma 7 of Doliwa--Fan--Simon--Zilles, attributed there to Kuhlmann: every finite concept class satisfies $\mathrm{TS}_{\min}(\mathcal H)\leq\mathrm{SDC}(\mathcal H)$.  It is a direct comparison of the two models, not a transitive graph inference.</p></div>
 
@@ -7109,6 +7693,8 @@
 <strong>Details:</strong><div class="text-field"><p>Refuted: self-directed query complexity has no upper bound that depends only on VC dimension.  Ben-David--Eiron construct, for every fixed $d\geq3$ and arbitrarily large $n$, a finite class $\mathcal C^d_n$ with $\mathrm{VC}(\mathcal C^d_n)=d$ and $\mathrm{SDC}(\mathcal C^d_n)=\Theta(n)$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Lemma 1 of the cited paper constructs the classes $\mathcal C^d_n$ and establishes the displayed fixed-VC, unbounded-self-directed-complexity behavior.  Consequently no function of VC dimension alone can universally upper-bound $\mathrm{SDC}$.</p></div>
@@ -7134,6 +7720,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(1) of Doliwa--Fan--Simon--Zilles states $\mathrm{LC}_{\mathrm{partial}}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{Mopt}$ is the optimal adversarial online mistake bound, which is precisely the catalogue's $\mathrm{M}_{\mathrm{worst}}$, while $\mathrm{LC}_{\mathrm{partial}}$ is its partial-equivalence-query complexity.</p></div>
 
@@ -7157,6 +7745,8 @@
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{M}_{\mathrm{worst}}(\mathcal H)\geq\mathrm{RTD}^{p}(\mathcal H)$.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(2) of Doliwa--Fan--Simon--Zilles states $\mathrm{RTD}^{*}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{RTD}^{*}$ is the maximum recursive teaching dimension over coordinate projections, the catalogue's projected recursive teaching dimension, and $\mathrm{Mopt}$ is the catalogue's worst-mistakes parameter.</p></div>
@@ -7182,6 +7772,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The admissible repetition-free teaching plans form a subclass of all recursive teaching plans.  Minimizing the maximum teaching-set size over the smaller class can only increase the value.</p></div>
 
@@ -7205,6 +7797,8 @@
 <strong>Details:</strong><div class="text-field"><p>The maximum of the individual minimum teaching-set sizes is at least their arithmetic mean.</p></div>
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each concept $h$, its minimum teaching-set size is at most the maximum teaching-set size. Averaging these inequalities over $h$ gives $\mathrm{TD}\ge\mathrm{TS}_{\mathrm{avg}}$.</p></div>
@@ -7230,6 +7824,8 @@
 <p><strong>Witness: </strong><a href="classes/repetitionfree_teaching_separation.html">Repetition-Free Teaching Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every individual minimum teaching-set size is at least $\mathrm{TS}_{\mathrm{min}}$. Averaging over all concepts gives $\mathrm{TS}_{\mathrm{avg}}\ge\mathrm{TS}_{\mathrm{min}}$.</p></div>
 
@@ -7253,6 +7849,8 @@
 <strong>Details:</strong><div class="text-field"><p>The draft conjecture $\mathrm{intdeg}(\mathcal H)=\mathrm{SCVC}(\mathcal H)$ is false. On $\mathcal C_{\mathrm{int}}=\{001,010,011,100\}$, the two quantities are respectively $1$ and $2$. The reverse one-sided comparison is separately refuted by $\mathcal C_{\mathrm{rev}}$.</p></div>
 <p><strong>Witness: </strong><a href="classes/interpolation_conjecture_counterexample.html">Interpolation-Conjecture Counterexample</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The constant polynomial and the three coordinate functions have linearly independent evaluation vectors on the four concepts, so $\mathrm{intdeg}(\mathcal C_{\mathrm{int}})=1$. The projection to $\{x_2,x_3\}$ is the full two-cube, so it is admissible and has VC dimension two. No projection to at most one coordinate has four shattered subsets, while the full projection has five; hence every admissible projection has VC dimension at least two and $\mathrm{SCVC}(\mathcal C_{\mathrm{int}})=2$.</p></div>
@@ -7278,6 +7876,8 @@
 <p><strong>Witness: </strong><a href="classes/scvc_vc_separation.html">SCVC/VC Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The full-domain projection is admissible by the sandwich theorem, and its VC dimension is $\mathrm{VC}(\mathcal H)$. Since $\mathrm{SCVC}$ minimizes over all admissible projections, $\mathrm{SCVC}(\mathcal H)\leq\mathrm{VC}(\mathcal H)$.</p></div>
 
@@ -7301,6 +7901,8 @@
 <strong>Details:</strong><div class="text-field"><p>No reverse one-sided comparison rescues the refuted equality: on $\mathcal C_{\mathrm{rev}}=\{0110,0111,1000,1001\}$, $\mathrm{SCVC}=1$ while $\mathrm{intdeg}=2$.</p></div>
 <p><strong>Witness: </strong><a href="classes/scvc_interpolation_reverse_separation.html">SCVC/Interpolation Reverse Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
+
+
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The projection to $\{x_1,x_2,x_3\}$ has trace $\{011,100\}$, whose empty set and three singleton coordinates are shattered, while its VC dimension is one; it is therefore SCVC-admissible. Degree-one polynomials have only rank three on the four original concepts, whereas degree-two polynomials have rank four. Thus $\mathrm{SCVC}(\mathcal C_{\mathrm{rev}})=1<2=\mathrm{intdeg}(\mathcal C_{\mathrm{rev}})$.</p></div>
@@ -7326,6 +7928,8 @@
 <p><strong>Witness: </strong><a href="classes/interpolation_effective_vc_radius_counterexample.html">Interpolation/Effective-VC-Radius Counterexample</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
 
+
+
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The constant and three coordinate functions have linearly independent evaluation vectors on the four concepts, so interpolation degree is one. Every pair of effective coordinates realizes all four binary patterns, whereas the full three-coordinate set is not shattered; hence effective VC radius is two.</p></div>
 
@@ -7349,6 +7953,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{LR}(\mathcal H)\geq\mathrm{VC}(\mathcal H). The cited result proves the stronger epsilon-wise statement $\mathrm{LR}(\mathcal H,\epsilon)\geq\mathrm{VC}(\mathcal H)$ for every $0&lt;\epsilon&lt;1/2$.</p></div>
 <p><strong>Witness: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The cited VC-class theorem gives $\mathrm{LR}(\mathcal H,\epsilon)\geq\mathrm{VC}(\mathcal H)$ for every $0<\epsilon<1/2$. Since the catalogue parameter requires a single list-size bound that works for all error thresholds, it is at least each epsilon-wise lower bound, yielding the displayed inequality.</p></div>
@@ -7374,6 +7980,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $r=\mathrm{RTD}(\mathcal H)$ on an $n$-point domain. Samei--Semukhin--Yang--Zilles prove $|\mathcal H|\leq\sum_{i=0}^r\binom ni\leq(n+1)^r$. Thus $r\geq\log(|\mathcal H|)/\log(n+1)$, which is at least $\log(|\mathcal H|-1)/\log(n+1)=\mathrm{LSR}(\mathcal H)$; singleton classes satisfy the conclusion by the catalogue's zero convention.</p></div>
 
@@ -7397,6 +8005,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, its Hamming radius is at least its Log Size Ratio.</p></div>
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $B=\mathrm B(\mathcal H)$ on an $n$-point domain and choose an enclosing Hamming ball of radius $B$. It contains at most $\sum_{i=0}^B\binom ni\leq(n+1)^B$ labelings. Hence $B\geq\log(|\mathcal H|)/\log(n+1)\geq\log(|\mathcal H|-1)/\log(n+1)=\mathrm{LSR}(\mathcal H)$; the singleton case follows from the zero convention.</p></div>
@@ -7422,6 +8032,8 @@
 <p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On an $n$-point domain, use the complete depth-$n$ tree that queries the coordinates in one fixed order on every level. Its zero-cover has one distinct leaf labeling for each member of $\mathcal H$, hence size $|\mathcal H|$. Rakhlin--Sridharan--Tewari's sequential Sauer bound gives $|\mathcal H|\leq\sum_{i=0}^L\binom ni\leq(n+1)^L$ for $L=\mathrm{Ldim}(\mathcal H)$. Therefore $L\geq\log(|\mathcal H|-1)/\log(n+1)=\mathrm{LSR}(\mathcal H)$, with the singleton convention handled separately.</p></div>
 
@@ -7445,6 +8057,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, log size is at least VC dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A shattered set of size $d=\mathrm{VC}(\mathcal H)$ realizes all $2^d$ binary traces, each supplied by a distinct member of $\mathcal H$. Thus $|\mathcal H|\geq2^d$, and taking base-two logarithms gives $\log_2|\mathcal H|\geq d$.</p></div>
@@ -7470,6 +8084,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set of size $d$ is the free-coordinate set of a contained $d$-cube. Its $2^d$ cube vertices are distinct members of $\mathcal H$, so $|\mathcal H|\geq2^d$ and $\log_2|\mathcal H|\geq d$.</p></div>
 
@@ -7493,6 +8109,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, effective range is at least log size.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>All concepts agree outside their effective range. Restriction to the $\mathrm E(\mathcal H)$ active coordinates is therefore injective on $\mathcal H$, so $|\mathcal H|\leq2^{\mathrm E(\mathcal H)}$. Taking base-two logarithms yields $\mathrm E(\mathcal H)\geq\log_2|\mathcal H|$.</p></div>
@@ -7518,6 +8136,8 @@
 <p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a set of size $d=\mathrm{VC}(\mathcal H)$ is shattered, all of its $2^d$ subsets are shattered. Thus the shattering family has size at least $2^d$, and $\log_2|\operatorname{sh}(\mathcal H)|\geq d$.</p></div>
 
@@ -7541,6 +8161,8 @@
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, log shattering is at least the largest strongly shattered-set size.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A strongly shattered set of size $d$ contains a full $d$-cube, hence every one of its $2^d$ subsets is shattered. Therefore $|\operatorname{sh}(\mathcal H)|\geq2^d$ and $\log_2|\operatorname{sh}(\mathcal H)|\geq d$.</p></div>
@@ -7566,6 +8188,8 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 1 of Devulapalli--Hanneke proves that the minimax labelling-game value, equivalently the maximum realizable self-directed-tree depth, equals the optimal self-directed mistake bound.</p></div>
 
@@ -7575,26 +8199,80 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-319" style="position:relative;">
+    <div class="table-card" id="math-322" style="position:relative;">
         
-        <h3><a href="relationships/total_trace_count_size.html" class="table-title-link">Total Trace Count / Size</a></h3>
+        <h3><a href="relationships/subset_teaching_dimension_recursive_teaching_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / Recursive Teaching Dimension (Incomparable)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Total Trace Count / Size</p>
-<p><strong>Parameter 1: </strong><a href="parameters/total_trace_count.html">Total Trace Count</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/size.html">Size</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+        <p><strong>Name: </strong>Subset Teaching Dimension / Recursive Teaching Dimension (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every finite binary class, the full-domain traces are the concepts themselves.</p></div>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
 
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For every $u\ge2$, the family $\mathcal C^u_{1/2}=\{\{x_i\}:i\in[u+1]\}\cup\{\{x_i,x_j\}:i,j\in[u+1]\}$ has $\mathrm{STD}=u$ and $\mathrm{RTD}=2$.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For every $u$, the paired family $\mathcal C^u_{\mathrm{pair}}$ of Theorem 35 has $\mathrm{STD}=1$ and $\mathrm{RTD}=u$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The summand indexed by $S=X$ is $|\mathcal H_{|X}|=|\mathcal H|$. All remaining summands are nonnegative, so $\operatorname{Tr}(\mathcal H)\geq|\mathcal H|$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 36 proves the first directional separation, and Theorem 35 proves the second. Both families are explicitly constructed in the cited paper.</p></div>
 
 
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
 
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-323" style="position:relative;">
+        
+        <h3><a href="relationships/subset_teaching_dimension_balbach_teaching_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / Balbach Teaching Dimension (Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension / Balbach Teaching Dimension (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For every $u\ge3$, the family $\mathcal C^u_{1/2}=\{\{x_i\}:i\in[u+1]\}\cup\{\{x_i,x_j\}:i,j\in[u+1]\}$ has $\mathrm{STD}=u$ and $\mathrm{BTD}=3$.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For every $u$, the paired family $\mathcal C^u_{\mathrm{pair}}$ of Theorem 18 has $\mathrm{STD}=1$ and $\mathrm{BTD}=u$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The two assertions of Theorem 18 give the respective directional unbounded separations.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-324" style="position:relative;">
+        
+        <h3><a href="relationships/subset_teaching_dimension_vc_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / VC Dimension (Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension / VC Dimension (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For every $u\ge3$, $\mathcal C^u_{1/2}=\{\{x_i\}:i\in[u+1]\}\cup\{\{x_i,x_j\}:i,j\in[u+1]\}$ has $\mathrm{STD}=u$ and $\mathrm{VC}=2$: pairs are shattered, while a triple cannot be because every concept has size at most two.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>The class of monomials over $m$ Boolean variables has $\mathrm{STD}=2$ and $\mathrm{VC}\ge m$. The $m$ assignments with exactly one zero coordinate are shattered by positive conjunctions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 18(2) gives $\mathrm{STD}(\mathcal C^u_{1/2})=u$, and the displayed size-two construction gives its VC dimension. Theorem 19 gives constant STD for monomials; the stated explicit set is shattered, so their VC dimension is unbounded.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
 
         </div>
     </div>

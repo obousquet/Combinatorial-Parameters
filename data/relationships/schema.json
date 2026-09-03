@@ -56,7 +56,8 @@
             { "value": "equivalence", "display_name": "$P_1 = P_2$" },
             { "value": "log", "display_name": "$P_1 \\ge c\\log P_2$" },
             { "value": "sqrt", "display_name": "$P_1 \\ge c\\sqrt{P_2}$" },
-            { "value": "inv_log", "display_name": "$P_1 \\ge \\frac{cP_2}{\\log n}$" }
+            { "value": "inv_log", "display_name": "$P_1 \\ge \\frac{cP_2}{\\log n}$" },
+            { "value": "incomparable", "display_name": "$P_1 \\parallel P_2$ (incomparable)" }
         ]
     },
     {
@@ -121,6 +122,22 @@
         "type": "text",
         "label": "Witness Verification",
         "description": "Explicit calculation or parameter range verifying the declared witness strength when literal endpoint values are insufficient.",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "parameter_1_larger_witness",
+        "type": "text",
+        "label": "Witness: Parameter 1 Larger",
+        "description": "For an incomparable pair, an explicit family on which parameter 1 is unbounded while parameter 2 stays bounded.",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "parameter_2_larger_witness",
+        "type": "text",
+        "label": "Witness: Parameter 2 Larger",
+        "description": "For an incomparable pair, an explicit family on which parameter 2 is unbounded while parameter 1 stays bounded.",
         "required": false,
         "rendered": true
     },

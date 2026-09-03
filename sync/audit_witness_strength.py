@@ -94,6 +94,23 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
     values = records(data_dir / "values")
     report: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for relationship in records(data_dir / "relationships"):
+        if relationship.get("relationship_type") == "incomparable":
+            first_witness = relationship.get("parameter_1_larger_witness")
+            second_witness = relationship.get("parameter_2_larger_witness")
+            report["incomparable"].append(
+                {
+                    "id": relationship["id"],
+                    "short_name": relationship["short_name"],
+                    "status": relationship.get("status"),
+                    "parameter_1_larger_witness": first_witness,
+                    "parameter_2_larger_witness": second_witness,
+                    # These witnesses are generally literature families rather
+                    # than a single finite benchmark row.  Their explicit
+                    # descriptions and cited proof are the certificate.
+                    "verified": bool(first_witness and second_witness and relationship.get("references")),
+                }
+            )
+            continue
         if not relationship.get("witness"):
             continue
         left, right = endpoint_values(relationship, values)
@@ -136,7 +153,7 @@ def main() -> None:
     if args.json:
         print(json.dumps(report, indent=2, sort_keys=True))
     else:
-        for category in ("strict", "unbounded", "unclassified"):
+        for category in ("strict", "unbounded", "incomparable", "unclassified"):
             rows = report[category]
             confirmed = sum(row.get("verified") is True for row in rows)
             unresolved = sum(row.get("verified") is not True for row in rows)
@@ -146,10 +163,12 @@ def main() -> None:
                     for row in rows
                 )
                 print(f"Unclassified witnesses: {len(rows)} ({candidates} mechanically classifiable candidates)")
+            elif category == "incomparable":
+                print(f"Declared incomparable pairs: {len(rows)} ({confirmed} with both directional witnesses recorded; {unresolved} incomplete)")
             else:
                 print(f"Declared {category} witnesses: {len(rows)} ({confirmed} verified; {unresolved} need manual evidence)")
     failures = [
-        row for category in ("strict", "unbounded") for row in report[category]
+        row for category in ("strict", "unbounded", "incomparable") for row in report[category]
         if row.get("verified") is not True
     ]
     if args.check and failures:

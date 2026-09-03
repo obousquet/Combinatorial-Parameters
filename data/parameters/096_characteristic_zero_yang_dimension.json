@@ -3,7 +3,7 @@
   "name": "Characteristic-zero Yang Dimension",
   "short_name": "characteristic_zero_yang_dimension",
   "symbol": "\\mathrm{Y}_0",
-  "category": "algebraic",
+  "category": "holes",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,

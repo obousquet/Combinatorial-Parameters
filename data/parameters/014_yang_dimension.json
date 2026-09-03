@@ -3,7 +3,7 @@
   "name": "Yang dimension",
   "symbol": "\\mathrm{Y}",
   "description": "Yang dimension over the default coefficient field $\\mathbb F_2$ (that is, $\\mathrm Y_2$)",
-  "category": "algebraic",
+  "category": "holes",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,

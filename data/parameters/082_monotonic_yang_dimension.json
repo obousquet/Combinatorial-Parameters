@@ -4,7 +4,7 @@
   "symbol": "\\mathrm{Y}^*",
   "definition": "The **monotonic Yang dimension** is the subfamily-monotonic version of Yang dimension: $$\\mathrm{Y}^*(\\mathcal{H}) := \\max_{\\mathcal{G}\\subseteq\\mathcal{H}} \\mathrm{Y}(\\mathcal{G}).$$",
   "graph_summary": "Maximum Yang dimension over all subfamilies of the class.",
-  "category": "algebraic",
+  "category": "holes",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

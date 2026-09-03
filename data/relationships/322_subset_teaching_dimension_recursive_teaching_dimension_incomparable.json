@@ -1,0 +1,14 @@
+{
+  "id": 322,
+  "name": "Subset Teaching Dimension / Recursive Teaching Dimension (Incomparable)",
+  "short_name": "subset_teaching_dimension_recursive_teaching_dimension_incomparable",
+  "parameter_1_id": "#parameters/subset_teaching_dimension",
+  "parameter_2_id": "#parameters/recursive_teaching_dimension",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.",
+  "parameter_1_larger_witness": "For every $u\\ge2$, the family $\\mathcal C^u_{1/2}=\\{\\{x_i\\}:i\\in[u+1]\\}\\cup\\{\\{x_i,x_j\\}:i,j\\in[u+1]\\}$ has $\\mathrm{STD}=u$ and $\\mathrm{RTD}=2$.",
+  "parameter_2_larger_witness": "For every $u$, the paired family $\\mathcal C^u_{\\mathrm{pair}}$ of Theorem 35 has $\\mathrm{STD}=1$ and $\\mathrm{RTD}=u$.",
+  "status": "established",
+  "proof": "Theorem 36 proves the first directional separation, and Theorem 35 proves the second. Both families are explicitly constructed in the cited paper.",
+  "references": "\\cite{zilles2011models}"
+}

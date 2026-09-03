@@ -3,7 +3,7 @@
   "name": "Characteristic-p Yang Dimension",
   "short_name": "characteristic_p_yang_dimension",
   "symbol": "\\mathrm{Y}_p",
-  "category": "algebraic",
+  "category": "holes",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,

@@ -1,0 +1,14 @@
+{
+  "id": 323,
+  "name": "Subset Teaching Dimension / Balbach Teaching Dimension (Incomparable)",
+  "short_name": "subset_teaching_dimension_balbach_teaching_dimension_incomparable",
+  "parameter_1_id": "#parameters/subset_teaching_dimension",
+  "parameter_2_id": "#parameters/balbach_teaching_dimension",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.",
+  "parameter_1_larger_witness": "For every $u\\ge3$, the family $\\mathcal C^u_{1/2}=\\{\\{x_i\\}:i\\in[u+1]\\}\\cup\\{\\{x_i,x_j\\}:i,j\\in[u+1]\\}$ has $\\mathrm{STD}=u$ and $\\mathrm{BTD}=3$.",
+  "parameter_2_larger_witness": "For every $u$, the paired family $\\mathcal C^u_{\\mathrm{pair}}$ of Theorem 18 has $\\mathrm{STD}=1$ and $\\mathrm{BTD}=u$.",
+  "status": "established",
+  "proof": "The two assertions of Theorem 18 give the respective directional unbounded separations.",
+  "references": "\\cite{zilles2011models}"
+}

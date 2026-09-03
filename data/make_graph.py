@@ -428,17 +428,31 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         "queries": {"color": "#FF4136", "fillcolor": "#FFE6E6"},      # red
         "holes": {"color": "#AAAAAA", "fillcolor": "#F5F5F5"}         # gray
     }
+    # Shape encodes the strongest established monotonicity classification.
+    # A second outline denotes a strengthened form; circles are deliberately
+    # avoided because their minimum size makes long parameter labels unwieldy.
     shape_map = {
-        "none": "octagon",
-        "sym": "box",
-        "mon": "diamond",
-        "pmon": "hexagon",
-        "dmon": "ellipse",
-        "smon": "doublecircle"
+        "none": {"shape": "octagon"},
+        "sym": {"shape": "box"},
+        "mon": {"shape": "diamond"},
+        "pmon": {"shape": "hexagon"},
+        "cmon": {"shape": "trapezium"},
+        "dmon": {"shape": "hexagon", "peripheries": 2},
+        "scmon": {"shape": "trapezium", "peripheries": 2},
+        "tscmon": {"shape": "octagon", "peripheries": 2},
+        "smon": {"shape": "diamond", "peripheries": 2},
     }
     shape_values = {
-        "none": "No special properties", "sym": "Symmetric", "mon": "Monotonic", "pmon": "Piecewise Monotonic", "dmon": "Doubly Monotonic", "smon": "Strictly Monotonic"
-        }
+        "none": "No special properties",
+        "sym": "Symmetric",
+        "mon": "Subclass-monotonic",
+        "pmon": "Projection-monotonic",
+        "cmon": "C-monotonic (under conditioning)",
+        "dmon": "Doubly monotonic (subclasses and projections)",
+        "scmon": "Strict C-monotonic",
+        "tscmon": "Tight strict C-monotonic",
+        "smon": "Strictly monotonic (doubly monotonic and strict C-monotonic)",
+    }
     arrow_values = {
         "larger": "A ≥ B", "larger_c": "A ≥ cB − d", "equivalence": "A = B", "log": "A ≥ c log B", "sqrt": "A ≥ c√B", "inv_log": "A ≥ cB/log n"
         }
@@ -446,7 +460,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     cat_values = {val: display for val, display in cat_values}
 
     legend = [{"type": "node", "label": t, "text": cat_values[t], **v} for t, v in category_map.items()]
-    legend.extend([{"type": "node", "label": t, "text": shape_values[t], "shape": v} for t, v in shape_map.items()])
+    legend.extend([{"type": "node", "label": t, "text": shape_values[t], **v} for t, v in shape_map.items()])
     legend.extend([{"type": "edge", "label": t, "text": arrow_values[t], **v} for t, v in arrow_map.items()])
     legend.extend([
         {
@@ -477,6 +491,9 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         if relationship.get("status") not in {
             "needs_verification", "conjectured", "open", "refuted"
         }
+        # Incomparability is catalogue evidence, not a dominance edge.  It
+        # must never affect equality collapse, ranking, or graph clutter.
+        and relationship.get("relationship_type") != "incomparable"
     ]
     equivalence_components, equivalence_component_of = exact_equivalence_components(
         parameters, relationships
@@ -529,11 +546,21 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             mon_type = "mon"
         if m.get("p_monotonic", False):
             mon_type = "pmon"
+        if m.get("c_monotonic", False):
+            mon_type = "cmon"
         if m.get("doubly_monotonic", False):
             mon_type = "dmon"
+        if m.get("strict_c_monotonic", False):
+            mon_type = "scmon"
+        if m.get("tight_strict_c_monotonic", False):
+            mon_type = "tscmon"
         if m.get("strictly_monotonic", False):
             mon_type = "smon"
-        shape = shape_map.get(mon_type, "box")
+        # The tight property is stronger than the legacy strictly-monotonic
+        # flag and must remain visible when both are present.
+        if m.get("tight_strict_c_monotonic", False):
+            mon_type = "tscmon"
+        shape_style = shape_map.get(mon_type, shape_map["none"])
         node = {
             "id": f'#parameters/{m["id"]}',
             "label": " /\\n".join(
@@ -542,7 +569,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             ),
             "ref": f'#parameters/{m["id"]}',
             "type": "parameter",
-            "shape": shape,
+            **shape_style,
             **color,
             "style": "filled",
         }

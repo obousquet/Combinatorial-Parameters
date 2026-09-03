@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,20 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
-    <div class="table-card" id="math-965" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-322" style="position:relative;">
         
-        <h3><a href="values/total_trace_count_singletons.html" class="table-title-link">Total Trace Count of Singletons</a></h3>
+        <h3><a href="relationships/subset_teaching_dimension_recursive_teaching_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / Recursive Teaching Dimension (Incomparable)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Total Trace Count of Singletons</p>
-<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/total_trace_count.html">Total Trace Count</a></p>
-<p><strong>Value: </strong>$(n+2)2^{n-1}-1$</p>
-<p><strong>Order:</strong> </p>
+        <p><strong>Name: </strong>Subset Teaching Dimension / Recursive Teaching Dimension (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
 
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For every $u\ge2$, the family $\mathcal C^u_{1/2}=\{\{x_i\}:i\in[u+1]\}\cup\{\{x_i,x_j\}:i,j\in[u+1]\}$ has $\mathrm{STD}=u$ and $\mathrm{RTD}=2$.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For every $u$, the paired family $\mathcal C^u_{\mathrm{pair}}$ of Theorem 35 has $\mathrm{STD}=1$ and $\mathrm{RTD}=u$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On an $s$-subset with $s<n$, the $s$ retained singleton traces and the empty trace occur, giving $s+1$ traces. On the full domain there are $n$ singleton traces. Therefore $\operatorname{Tr}=\sum_{s=0}^n\binom ns(s+1)-1=(n+2)2^{n-1}-1$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 36 proves the first directional separation, and Theorem 35 proves the second. Both families are explicitly constructed in the cited paper.</p></div>
 
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
 
         </div>
     </div>

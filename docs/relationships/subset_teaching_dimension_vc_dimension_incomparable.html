@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-105" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-324" style="position:relative;">
         
-        <h3><a href="parameters/total_trace_count.html" class="table-title-link">Total Trace Count</a></h3>
+        <h3><a href="relationships/subset_teaching_dimension_vc_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / VC Dimension (Incomparable)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Total Trace Count</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{Tr}">
-            \[\operatorname{Tr}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>For a finite binary class $\mathcal H$ on a finite domain $X$, its <strong>Total Trace Count</strong> is $\operatorname{Tr}(\mathcal H):=\sum_{S\subseteq X}|\mathcal H_{|S}|$, the number of distinct labeled traces counted over all coordinate subsets.</p></div>
-<strong>Description:</strong><div class="text-field"><p>Equivalently, count each pair $(S,h|_S)$ consisting of a coordinate subset and a distinct trace realized on it. This aggregate is finite only for finite domains.</p></div>
+        <p><strong>Name: </strong>Subset Teaching Dimension / VC Dimension (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
 
 
-<p><strong>Category:</strong> Basic</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/total_trace_count_full_cube.html'>Total Trace Count of Full Cube</a></li><li><a href='values/total_trace_count_trivial_concepts.html'>Total Trace Count of Trivial Concepts</a></li><li><a href='values/total_trace_count_singletons.html'>Total Trace Count of Singletons</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/total_trace_count_size.html" class="relationship-statement">$\operatorname{Tr} \ge \mathrm{H}$</a></li></ul></p></div>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For every $u\ge3$, $\mathcal C^u_{1/2}=\{\{x_i\}:i\in[u+1]\}\cup\{\{x_i,x_j\}:i,j\in[u+1]\}$ has $\mathrm{STD}=u$ and $\mathrm{VC}=2$: pairs are shattered, while a triple cannot be because every concept has size at most two.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>The class of monomials over $m$ Boolean variables has $\mathrm{STD}=2$ and $\mathrm{VC}\ge m$. The $m$ assignments with exactly one zero coordinate are shattered by positive conjunctions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 18(2) gives $\mathrm{STD}(\mathcal C^u_{1/2})=u$, and the displayed size-two construction gives its VC dimension. Theorem 19 gives constant STD for monomials; the stated explicit set is shattered, so their VC dimension is unbounded.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
 
         </div>
     </div>
