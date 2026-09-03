@@ -10,7 +10,7 @@ sanity check, enumerates all nonempty classes on domains of size at most 3.
 from __future__ import annotations
 
 from fractions import Fraction
-from itertools import combinations
+from itertools import combinations, permutations
 
 
 COUNTEREXAMPLE = ("001", "010", "011", "100")
@@ -124,6 +124,32 @@ def effective_vc_radius(concepts: tuple[str, ...]) -> int:
     )
 
 
+def downshift(concepts: tuple[str, ...], coordinate: int) -> tuple[str, ...]:
+    """Apply the standard binary downshift at one coordinate."""
+    shifted = set(concepts)
+    for concept in concepts:
+        if concept[coordinate] == "1":
+            lowered = concept[:coordinate] + "0" + concept[coordinate + 1 :]
+            if lowered not in shifted:
+                shifted.remove(concept)
+                shifted.add(lowered)
+    return tuple(sorted(shifted))
+
+
+def minimum_order_shattered_dimension(concepts: tuple[str, ...]) -> int:
+    """Minimum largest downshifted face over all coordinate orders."""
+    dimension = len(concepts[0])
+    largest_faces = []
+    for order in permutations(range(dimension)):
+        shifted = concepts
+        for coordinate in order:
+            shifted = downshift(shifted, coordinate)
+        # A fully downshifted binary family is downward closed, so its largest
+        # shattered face is the largest support of one of its members.
+        largest_faces.append(max(concept.count("1") for concept in shifted))
+    return min(largest_faces)
+
+
 def exhaustive_small_cube_check() -> int:
     counterexamples = 0
     for dimension in range(1, 4):
@@ -151,6 +177,7 @@ def main() -> None:
     assert scvc(REVERSE_COUNTEREXAMPLE) == 1
     assert interpolation_degree(EFFECTIVE_VC_RADIUS_COUNTEREXAMPLE) == 1
     assert effective_vc_radius(EFFECTIVE_VC_RADIUS_COUNTEREXAMPLE) == 2
+    assert minimum_order_shattered_dimension(EFFECTIVE_VC_RADIUS_COUNTEREXAMPLE) == 2
     assert vc_dimension(SCVC_VC_SEPARATION) == 2
     assert scvc(SCVC_VC_SEPARATION) == 1
     benchmark_check()
@@ -159,6 +186,7 @@ def main() -> None:
     print("Interpolation conjecture refuted: intdeg(C_int)=1, SCVC(C_int)=2.")
     print("Neither one-sided comparison holds: intdeg(C_rev)=2, SCVC(C_rev)=1.")
     print("The proposed intdeg >= VCR bound also fails: intdeg(C_even)=1, VCR(C_even)=2.")
+    print("C_even also has OSH_min=2, strictly above its interpolation degree 1.")
     print(f"Small-cube sanity check found {count} counterexamples through dimension 3.")
 
 

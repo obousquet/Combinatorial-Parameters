@@ -1,0 +1,12 @@
+{
+  "id": 991,
+  "name": "Minimum Largest Order-Shattered Set of the Interpolation/Effective-VC-Radius Counterexample",
+  "short_name": "minimum_largest_order_shattered_set_interpolation_effective_vc_radius_counterexample",
+  "class_id": "#classes/interpolation_effective_vc_radius_counterexample",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For each of the six coordinate orders, apply the three binary downshifts and inspect the resulting down-closed family. Its largest face has size two, so the minimum over orders is two. The exhaustive finite calculation is recorded in sync/verify_interpolation_conjecture.py.",
+  "references": "Direct calculation; verified by sync/verify_interpolation_conjecture.py."
+}

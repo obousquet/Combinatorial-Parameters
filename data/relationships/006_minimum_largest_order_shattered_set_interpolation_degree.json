@@ -6,6 +6,9 @@
   "status": "established",
   "details": "Lemma",
   "proof": "For every coordinate order, the standard monomials of the vanishing ideal form a basis for functions on $\\mathcal H$, and their supports are the order-shattered sets for that order.  Their degrees are thus at most the largest order-shattered-set size.  Minimizing over orders gives $\\mathrm{intdeg}(\\mathcal H)\\le\\mathrm{OSH}_{\\min}(\\mathcal H)$.",
+  "witness": "#classes/interpolation_effective_vc_radius_counterexample",
+  "witness_strength": "strict",
+  "witness_verification": "For the even-parity class C_even on three coordinates, OSH_min=2 while interpolation degree is 1; sync/verify_interpolation_conjecture.py checks every coordinate order and the interpolation rank.",
   "references": "\\cite{moran2015shattered}",
   "short_name": "minimum_largest_order_shattered_set_interpolation_degree",
   "name": "Minimum Largest Order Shattered Set / Interpolation degree"
