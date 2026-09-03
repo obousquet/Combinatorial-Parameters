@@ -1,0 +1,13 @@
+{
+  "id": 364,
+  "name": "Monotonic co-VC Dimension / Monotonic Projected Minimum Teaching Set Size",
+  "short_name": "monotonic_covc_dimension_monotonic_projected_minimum_teaching_set_size",
+  "parameter_1_id": "#parameters/monotonic_covc_dimension",
+  "parameter_2_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "relationship_type": "larger",
+  "details": "A minimum teaching set becomes a hollow star after its target is removed; the two monotonic envelopes preserve this comparison.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
+  "status": "established",
+  "proof": "Let $\\mathcal F$ be any coordinate projection of a subfamily of $\\mathcal H$, and choose $h\\in\\mathcal F$ with a smallest teaching set $S$ of size $d=\\mathrm{TS}_{\\min}(\\mathcal F)$. Minimality of $S$ gives, for every $x\\in S$, a concept $h_x\\in\\mathcal F$ agreeing with $h$ on $S\\setminus\\{x\\}$ and differing at $x$. In the projection of $\\mathcal F\\setminus\\{h\\}$ to $S$, the trace of $h$ is absent and all its one-coordinate flips are present. Hence $\\mathrm{coVC}(\\mathcal F\\setminus\\{h\\})\\ge d$. Since $\\mathrm{coVC}^*$ is monotonic under both subfamilies and projections, $\\mathrm{coVC}^*(\\mathcal H)\\ge\\mathrm{TS}_{\\min}(\\mathcal F)$. Maximizing over $\\mathcal F$ proves $\\mathrm{coVC}^*(\\mathcal H)\\ge\\mathrm{TS}_{\\min}^{*p}(\\mathcal H)$."
+}
