@@ -1,0 +1,16 @@
+{
+  "id": 383,
+  "name": "Radon Number / VC Dimension (logarithmic)",
+  "short_name": "radon_number_vc_dimension_log",
+  "parameter_1_id": "#parameters/radon_number",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "log",
+  "multiplicative_constant": "1",
+  "details": "For every finite binary class with positive VC dimension, $\\mathrm{Rad}(\\mathcal H)\\geq\\lfloor\\log_2(2\\,\\mathrm{VC}(\\mathcal H)+2)\\rfloor\\geq\\log_2\\mathrm{VC}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "The cited theorem gives the displayed floor-log lower bound for every class. Since $\\mathrm{VC}(\\mathcal H)\\geq1$ in the nontrivial case, it immediately implies the recorded logarithmic relation; when VC dimension is zero the logarithmic statement is vacuous.",
+  "references": "\\cite{chase2024dual}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the full cube, Radon number is $\\lfloor\\log_2(2n+2)\\rfloor$ while VC dimension is $n$, so no reverse affine-linear bound can hold."
+}
