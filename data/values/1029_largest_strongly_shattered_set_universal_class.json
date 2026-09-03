@@ -1,0 +1,11 @@
+{
+  "id": 1029,
+  "name": "Largest Strongly Shattered Set of Universal Class",
+  "short_name": "largest_strongly_shattered_set_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For distinct $u_i,u_j$, the incidence functions differ on exactly the subsets containing exactly one of $i,j$, of which there are $2^{n-1}$. Thus the one-inclusion graph has no edge, so the class contains no positive-dimensional cube and its largest strongly shattered set has size zero."
+}
