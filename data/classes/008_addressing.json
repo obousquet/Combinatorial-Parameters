@@ -3,5 +3,6 @@
   "name": "Addressing",
   "symbol": "\\text{Add}",
   "definition": "Following \\cite{maass1992lower}, let $r=\\lceil\\log_2 n\\rceil$. The addressing class has $n$ concepts on a domain consisting of $n$ address points and $r$ bit points: the concept indexed by $i\\in[n]$ is positive on address point $i$ and, on the bit points, equals a fixed injective $r$-bit encoding of $i$. In particular it combines a singleton family with its binary address.",
-  "short_name": "addressing"
+  "short_name": "addressing",
+  "graph_label": "Addressing"
 }

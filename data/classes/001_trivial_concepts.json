@@ -3,5 +3,6 @@
   "name": "Trivial concepts",
   "symbol": "\\{\\emptyset, [n]\\}",
   "definition": "For $n\\geq1$, the trivial class on domain $[n]=\\{1,\\ldots,n\\}$ is $\\mathcal T_n=\\{\\emptyset,[n]\\}\\subseteq2^{[n]}$.",
-  "short_name": "trivial_concepts"
+  "short_name": "trivial_concepts",
+  "graph_label": "Trivial"
 }

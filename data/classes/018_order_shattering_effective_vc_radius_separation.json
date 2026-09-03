@@ -2,6 +2,7 @@
   "id": 18,
   "name": "Order-Shattering/Effective-VC-Radius Separation Class",
   "short_name": "order_shattering_effective_vc_radius_separation",
+  "graph_label": "OS/VCR sep.",
   "symbol": "\\mathcal C_{\\mathrm{osh}}",
   "definition": "On the domain $\\{x_1,x_2,x_3\\}$, let $\\mathcal C_{\\mathrm{osh}}=\\{000,001,010,011,100\\}$, where strings list values at $x_1,x_2,x_3$ in that order.",
   "comments": "A five-concept class witnessing that minimum largest order-shattered-set size can be strictly larger than effective VC radius."

@@ -2,6 +2,7 @@
   "id": 17,
   "name": "Interpolation/Effective-VC-Radius Counterexample",
   "short_name": "interpolation_effective_vc_radius_counterexample",
+  "graph_label": "Interp./VCR cex.",
   "symbol": "\\mathcal C_{\\mathrm{even}}",
   "definition": "On the domain $\\{x_1,x_2,x_3\\}$, let $\\mathcal C_{\\mathrm{even}}=\\{000,011,101,110\\}$, where strings list values at $x_1,x_2,x_3$ in that order.",
   "comments": "The even-parity class refutes the candidate inequality $\\mathrm{intdeg}\\geq\\mathrm{VCR}$ under the database's effective-VC-radius definition."

@@ -434,13 +434,13 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     shape_map = {
         "none": {"shape": "octagon"},
         "sym": {"shape": "box"},
-        "mon": {"shape": "diamond"},
+        "mon": {"shape": "ellipse"},
         "pmon": {"shape": "hexagon"},
         "cmon": {"shape": "trapezium"},
         "dmon": {"shape": "hexagon", "peripheries": 2},
         "scmon": {"shape": "trapezium", "peripheries": 2},
         "tscmon": {"shape": "octagon", "peripheries": 2},
-        "smon": {"shape": "diamond", "peripheries": 2},
+        "smon": {"shape": "ellipse", "peripheries": 2},
     }
     shape_values = {
         "none": "No special properties",
@@ -629,7 +629,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         if r.get("witness"):
             _, w = cache.lookup(r["witness"])
             if w:
-                label = w.get("short_name", w.get("name", str(w["id"])))
+                label = w.get("graph_label") or w.get("short_name", w.get("name", str(w["id"])))
                 label_ref = f'#classes/{w["id"]}'
                 arrow = copy.copy(arrow)
                 arrow["style"] = "solid"

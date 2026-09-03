@@ -2,6 +2,7 @@
   "id": 15,
   "name": "SCVC/VC Separation Class",
   "short_name": "scvc_vc_separation",
+  "graph_label": "SCVC/VC sep.",
   "symbol": "\\mathcal C_{\\mathrm{SCVC}}",
   "definition": "On the domain $\\{x_1,x_2,x_3,z\\}$, let $\\mathcal C_{\\mathrm{SCVC}}=\\{0000,1001,1100,1111\\}$, where strings list values at $x_1,x_2,x_3,z$ in that order.",
   "comments": "A four-concept class witnessing that shattering-cover projection VC dimension can be strictly below VC dimension."

@@ -3,5 +3,6 @@
   "name": "Tagged Singletons",
   "symbol": "\\text{Tag}",
   "definition": "Following \\cite{maass1992lower}, for $n\\geq2$ put $r=\\lceil\\log_2 n\\rceil$ and let $f(i)$ be the least $\\ell\\in[r]$ with $i\\leq\\sum_{j=1}^{\\ell}n2^{-j}+r+1$. On domain $[n+r]$, the tagged-singleton class is $$\\{\\emptyset\\}\\cup\\{\\{n+\\ell\\}:\\ell\\in[r]\\}\\cup\\{\\{i,n+f(i)\\}:i\\in[n]\\}.$$ Thus each singleton on $[n]$ receives one binary-address tag, while the tag coordinates themselves also occur as singletons.",
-  "short_name": "tagged_singletons"
+  "short_name": "tagged_singletons",
+  "graph_label": "Tagged singletons"
 }

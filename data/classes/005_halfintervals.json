@@ -3,5 +3,6 @@
   "name": "Half-intervals",
   "symbol": "\\{[i]\\}_{1\\le i\\le n}",
   "definition": "For $n\\geq1$, the half-interval class on the ordered domain $[n]=\\{1,\\ldots,n\\}$ is $\\mathcal I_n=\\{[i]:1\\leq i\\leq n\\}\\subseteq2^{[n]}$, where $[i]=\\{1,\\ldots,i\\}$.",
-  "short_name": "halfintervals"
+  "short_name": "halfintervals",
+  "graph_label": "Half-intervals"
 }

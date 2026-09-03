@@ -3,7 +3,7 @@
   "name": "Spherical Dimension",
   "short_name": "spherical_dimension",
   "symbol": "\u005cmathrm{sd}",
-  "category": "shattering",
+  "category": "holes",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

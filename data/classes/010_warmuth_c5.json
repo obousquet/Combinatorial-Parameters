@@ -4,5 +4,6 @@
   "symbol": "C_5",
   "definition": "Let the domain be the cyclic group $\\mathbb{Z}/5\\mathbb{Z}$.  A binary function belongs to $C_5$ precisely when, on some four consecutive cyclic positions, its values are $1,0,0,1$ in that order.  The value on the remaining position is unrestricted, so the class has ten functions.",
   "comments": "This is also called Warmuth's example.  It is a finite separation between unlabeled sample-compression size and VC dimension.",
-  "short_name": "warmuth_c5"
+  "short_name": "warmuth_c5",
+  "graph_label": "C5"
 }

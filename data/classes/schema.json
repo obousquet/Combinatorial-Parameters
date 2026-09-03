@@ -28,6 +28,14 @@
       "rendered": false
     },
     {
+      "name": "graph_label",
+      "type": "string",
+      "label": "Graph Label",
+      "description": "Compact plain-text label for a class used as a witness on the parameter graph; Graphviz does not typeset TeX labels.",
+      "required": false,
+      "rendered": false
+    },
+    {
       "name": "symbol",
       "type": "latex",
       "label": "Symbol",
