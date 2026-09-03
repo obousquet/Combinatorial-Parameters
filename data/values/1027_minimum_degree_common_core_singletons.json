@@ -1,0 +1,11 @@
+{
+  "id": 1027,
+  "name": "Minimum Degree of Common-Core Singletons",
+  "short_name": "minimum_degree_common_core_singletons",
+  "class_id": "#classes/common_core_singletons",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Distinct concepts $\\{0,i\\}$ and $\\{0,j\\}$ differ at both private coordinates $i,j$, so no two concepts are adjacent in the one-inclusion graph. Every vertex has degree zero, hence so does the minimum degree."
+}

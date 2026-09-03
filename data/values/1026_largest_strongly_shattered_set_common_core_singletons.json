@@ -1,0 +1,11 @@
+{
+  "id": 1026,
+  "name": "Largest Strongly Shattered Set of Common-Core Singletons",
+  "short_name": "largest_strongly_shattered_set_common_core_singletons",
+  "class_id": "#classes/common_core_singletons",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Any two distinct members $\\{0,i\\}$ and $\\{0,j\\}$ differ in the two private coordinates $i,j$. Thus the one-inclusion graph has no edge, so the class contains no positive-dimensional cube. Its largest strongly shattered set consequently has size zero."
+}

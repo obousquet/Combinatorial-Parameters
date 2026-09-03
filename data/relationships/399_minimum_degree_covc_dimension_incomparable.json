@@ -1,0 +1,14 @@
+{
+  "id": 399,
+  "name": "Minimum Degree / co-VC Dimension (Incomparable)",
+  "short_name": "minimum_degree_covc_dimension_incomparable",
+  "parameter_1_id": "#parameters/minimum_degree",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the full cube $2^{[n]}$, every vertex has degree $n$, whereas $\\mathrm{coVC}=0$.",
+  "parameter_2_larger_witness": "For common-core singletons $\\mathcal C^{\\cap}_n=\\{\\{0,i\\}:1\\leq i\\leq n\\}$, $\\mathrm{coVC}=n$ after projecting away the common coordinate, whereas the one-inclusion graph is edgeless and $\\mathrm d_{\\min}=0$.",
+  "proof": "The two explicit families give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs for the Full Cube and Common-Core Singletons."
+}
