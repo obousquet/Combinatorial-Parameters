@@ -1,0 +1,12 @@
+{
+  "id": 983,
+  "name": "Recursive Teaching Dimension of the Projected RTD Separation Class",
+  "short_name": "recursive_teaching_dimension_projected_rtd_gap",
+  "class_id": "#classes/projected_rtd_gap",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Remove 100 using its first coordinate, then 001 using its second coordinate. Of the two remaining concepts 010 and 011, remove either with the third coordinate and finally the last one with the empty set. Thus RTD is at most one; it cannot be zero for a non-singleton class.",
+  "references": "Direct calculation; verified by sync/verify_projected_rtd_gap.py."
+}

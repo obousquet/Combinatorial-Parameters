@@ -1,0 +1,12 @@
+{
+  "id": 984,
+  "name": "Projected Recursive Teaching Dimension of the Projected RTD Separation Class",
+  "short_name": "monotone_recursive_teaching_dimension_projected_rtd_gap",
+  "class_id": "#classes/projected_rtd_gap",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projecting away the first coordinate produces all four strings on the remaining two coordinates, i.e. the full two-cube, whose recursive teaching dimension is two. No projection has more than three coordinates and the original class has RTD one; exhaustive evaluation shows the maximum is exactly two.",
+  "references": "Direct calculation; verified by sync/verify_projected_rtd_gap.py."
+}

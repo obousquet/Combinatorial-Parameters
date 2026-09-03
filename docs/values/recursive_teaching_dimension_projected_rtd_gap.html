@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-20" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-983" style="position:relative;">
         
-        <h3><a href="relationships/monotone_recursive_teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Projected Recursive Teaching Dimension / Recursive Teaching Dimension</a></h3>
+        <h3><a href="values/recursive_teaching_dimension_projected_rtd_gap.html" class="table-title-link">Recursive Teaching Dimension of the Projected RTD Separation Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Recursive Teaching Dimension / Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-<p><strong>Witness: </strong><a href="classes/projected_rtd_gap.html">Projected Recursive-Teaching Separation Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For C_rtdp, RTD is 1; deleting the first coordinate gives the full two-cube and raises projected RTD to 2.</p></div>
-
+        <p><strong>Name: </strong>Recursive Teaching Dimension of the Projected RTD Separation Class</p>
+<p><strong>Class: </strong><a href="classes/projected_rtd_gap.html">Projected Recursive-Teaching Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The monotone/projection variant takes the maximum recursive teaching dimension over projections.  The full-domain projection is the original class, giving the inequality.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Remove 100 using its first coordinate, then 001 using its second coordinate. Of the two remaining concepts 010 and 011, remove either with the third coordinate and finally the last one with the empty set. Thus RTD is at most one; it cannot be zero for a non-singleton class.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_projected_rtd_gap.py.</p></div>
 
         </div>
     </div>

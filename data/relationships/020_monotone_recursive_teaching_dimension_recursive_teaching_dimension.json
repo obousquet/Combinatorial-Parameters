@@ -8,5 +8,8 @@
   "name": "Projected Recursive Teaching Dimension / Recursive Teaching Dimension",
   "status": "established",
   "proof": "The monotone/projection variant takes the maximum recursive teaching dimension over projections.  The full-domain projection is the original class, giving the inequality.",
-  "references": "\\cite{doliwa2014recursive}"
+  "references": "\\cite{doliwa2014recursive}",
+  "witness": "#classes/projected_rtd_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For C_rtdp, RTD is 1; deleting the first coordinate gives the full two-cube and raises projected RTD to 2."
 }
