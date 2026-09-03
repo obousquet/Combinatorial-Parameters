@@ -7,6 +7,9 @@
   "status": "established",
   "proof": "The halving/majority procedure is one particular equivalence-query learner. Its query count is therefore at least the optimal equivalence-query complexity, which equals Littlestone dimension.",
   "references": "\\cite{littlestone1988learning,maass1992lower}",
+  "witness": "#classes/majority_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For C_maj, the prescribed majority-query procedure takes 3 queries in the worst case, whereas Littlestone dimension (and unrestricted equivalence-query complexity) is 2.",
   "short_name": "majority_complexity_littlestone_dimension",
   "name": "Majority Complexity / Littlestone Dimension"
 }

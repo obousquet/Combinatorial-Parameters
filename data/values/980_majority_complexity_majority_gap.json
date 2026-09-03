@@ -1,0 +1,12 @@
+{
+  "id": 980,
+  "name": "Majority Complexity of the Majority-Query Separation Class",
+  "short_name": "majority_complexity_majority_gap",
+  "class_id": "#classes/majority_gap",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "At each version space the prescribed query is its coordinatewise majority, with zero tie-breaking. The adversary chooses a counterexample coordinate whose minority branch maximizes the remaining recursive cost. Exhaustive evaluation of this recurrence gives exactly three; see sync/verify_majority_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_majority_gap.py."
+}

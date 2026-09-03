@@ -9641,6 +9641,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-979" style="position:relative;">
+        
+        <h3><a href="values/littlestone_dimension_majority_gap.html" class="table-title-link">Littlestone Dimension of the Majority-Query Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension of the Majority-Query Separation Class</p>
+<p><strong>Class: </strong><a href="classes/majority_gap.html">Majority-Query Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The finite Littlestone recurrence gives value two: each coordinate split has a branch of rank at most one, while a depth-two tree is obtained by first querying x1 and then a separating coordinate in either branch. The exhaustive recurrence certificate is in sync/verify_majority_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_majority_gap.py.</p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-570" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_full_cube.html" class="table-title-link">$k$-Block Littlestone Dimension of Full Cube</a></h3>
@@ -9671,6 +9688,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_2\leq1$.</p></div>
 
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-980" style="position:relative;">
+        
+        <h3><a href="values/majority_complexity_majority_gap.html" class="table-title-link">Majority Complexity of the Majority-Query Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Complexity of the Majority-Query Separation Class</p>
+<p><strong>Class: </strong><a href="classes/majority_gap.html">Majority-Query Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>At each version space the prescribed query is its coordinatewise majority, with zero tie-breaking. The adversary chooses a counterexample coordinate whose minority branch maximizes the remaining recursive cost. Exhaustive evaluation of this recurrence gives exactly three; see sync/verify_majority_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_majority_gap.py.</p></div>
 
         </div>
     </div>

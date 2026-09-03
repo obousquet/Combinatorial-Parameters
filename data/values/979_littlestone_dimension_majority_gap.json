@@ -1,0 +1,12 @@
+{
+  "id": 979,
+  "name": "Littlestone Dimension of the Majority-Query Separation Class",
+  "short_name": "littlestone_dimension_majority_gap",
+  "class_id": "#classes/majority_gap",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The finite Littlestone recurrence gives value two: each coordinate split has a branch of rank at most one, while a depth-two tree is obtained by first querying x1 and then a separating coordinate in either branch. The exhaustive recurrence certificate is in sync/verify_majority_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_majority_gap.py."
+}
