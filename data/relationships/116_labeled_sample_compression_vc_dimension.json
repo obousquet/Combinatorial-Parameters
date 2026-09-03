@@ -3,6 +3,7 @@
   "parameter_1_id": "#parameters/labeled_sample_compression",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac15",
   "status": "established",
   "details": "Floyd--Warmuth lower bound for general sample compression.",
   "proof": "A labeled compression scheme is a general sample compression scheme.  Floyd and Warmuth prove that every general compression scheme for a class of VC dimension $d$ has size at least $\\lceil d/5\\rceil$.  Hence $\\mathrm{LSC}(\\mathcal H)\\ge (1/5)\\mathrm{VC}(\\mathcal H)$.",
