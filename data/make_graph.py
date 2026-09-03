@@ -6,16 +6,21 @@ import re
 
 LINEAR_TYPES = {"larger", "larger_c", "equivalence"}
 BASE_VARIANT = "base"
-# Exact identities eligible to be represented by one graph node.  This is
-# deliberately narrower than every relationship record marked ``equivalence``:
-# a qualified identity (for example one holding only for finite classes) must
-# remain an edge until the graph has a way to display its scope.
+# Exact identities eligible to be represented by one graph node.
+#
+# The catalogue deliberately works with finite binary concept classes (see
+# ``main.json``).  Consequently every *established*, base-variant equality in
+# that scope is an identity for the graph and is safe to contract.  The list is
+# kept explicit rather than contracting every record of type ``equivalence``:
+# it excludes refuted draft equalities and makes a future change of catalogue
+# scope an intentional review point.
 COLLAPSIBLE_EQUIVALENCE_IDS = {
     9,  # Largest shattered set = VC dimension (definition)
-    14, 22,  # Projected maximal degree = star number = maximum projected TS
+    14, 22, 267,  # Projected maximal degree = star number = max projected TS = XTD
+    18, 136,  # Preference-based TD = RTD = monotonic minimum TS
     40, 125, 137,  # Teaching dimension = relative hitting size = maximum TS
+    71, 73, 75,  # Projected radii/order-shattering variants = VC dimension
     100,  # Equivalence-query complexity = Littlestone dimension
-    136,  # Recursive teaching dimension = monotonic minimum teaching-set size
     318,  # Self-directed dimension = self-directed queries complexity
 }
 
