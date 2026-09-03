@@ -8,6 +8,9 @@
   "proof": "A randomized learner may emulate any deterministic learner. Theorem 3 of Filmus--Hanneke--Mehalel--Moran identifies the respective optimal $k$-realizable mistake bounds with the two dimensions, giving the inequality.",
   "references": "\\cite{filmus2023randomized}",
   "proof_source": "Theorem 3 of \u005ccite{filmus2023randomized}, together with deterministic learners as a subclass of randomized learners.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the two complementary constant concepts, deterministic value is $2k+1$, whereas the randomized value is $k+(k+\\tfrac12)\\binom{2k}{k}4^{-k}=k+O(\\sqrt{k})$. Hence their difference is unbounded as $k$ grows.",
   "short_name": "kmistake_littlestone_dimension_randomized_kmistake_littlestone_dimension",
   "name": "$k$-Mistake Littlestone Dimension / Randomized $k$-Mistake Littlestone Dimension"
 }

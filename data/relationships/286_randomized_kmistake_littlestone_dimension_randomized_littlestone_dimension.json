@@ -8,6 +8,9 @@
   "proof": "Every ordinarily shattered tree has zero disagreements on every branch and is therefore k-shattered. Its random-branch expectation is unchanged.",
   "references": "\u005ccite{filmus2023randomized}",
   "proof_source": "Immediate from the k-shattered-tree definition in Section 2.2.1 of \u005ccite{filmus2023randomized}.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the two complementary constant concepts, $\\mathrm{RL}^{\\mathrm{mist}}_k=k+(k+\\tfrac12)\\binom{2k}{k}4^{-k}$, while randomized Littlestone dimension is $1/2$. Thus the gap is unbounded as $k$ grows.",
   "short_name": "randomized_kmistake_littlestone_dimension_randomized_littlestone_dimension",
   "name": "Randomized $k$-Mistake Littlestone Dimension / Randomized Littlestone Dimension"
 }

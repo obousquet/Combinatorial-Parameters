@@ -9,5 +9,8 @@
   "details": "Every realizable branch is $k$-realizable for every $k\\ge0$.",
   "proof": "A tree shattered in the ordinary realizable sense has every branch consistent with a hypothesis in the class, hence with zero disagreements. It is therefore $k$-realizable for every $k\\ge0$, so $\\mathrm L^{\\mathrm{mist}}_k(\\mathcal H)\\ge\\mathrm L(\\mathcal H)$.",
   "references": "\\cite{filmus2023randomized}",
-  "proof_source": "Immediate from the $k$-shattered-tree definition in Section 2.2.1 of \\cite{filmus2023randomized}."
+  "proof_source": "Immediate from the $k$-shattered-tree definition in Section 2.2.1 of \\cite{filmus2023randomized}.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the two complementary constant concepts, $\\mathrm L^{\\mathrm{mist}}_k=2k+1$ whereas ordinary Littlestone dimension is 1. Thus the gap is unbounded as the indexed parameter $k$ grows."
 }
