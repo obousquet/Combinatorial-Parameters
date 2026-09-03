@@ -1,0 +1,12 @@
+{
+  "id": 988,
+  "name": "Worst Mistakes of the Littlestone/Worst-Order Separation Class",
+  "short_name": "worst_mistakes_littlestone_worst_gap",
+  "class_id": "#classes/littlestone_worst_gap",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For each of the 24 coordinate orders, solve the transductive minimax prediction recurrence from the final coordinate backwards. Every order has value two, and no smaller uniform bound is possible. Repeated coordinates do not help an adversary because their labels are known after first occurrence. See sync/verify_littlestone_worst_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_littlestone_worst_gap.py."
+}

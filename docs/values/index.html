@@ -12259,6 +12259,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-987" style="position:relative;">
+        
+        <h3><a href="values/littlestone_dimension_littlestone_worst_gap.html" class="table-title-link">Littlestone Dimension of the Littlestone/Worst-Order Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension of the Littlestone/Worst-Order Separation Class</p>
+<p><strong>Class: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard finite Littlestone rank recurrence evaluates to three. The exhaustive recurrence calculation is recorded in sync/verify_littlestone_worst_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_littlestone_worst_gap.py.</p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-724" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_halfintervals.html" class="table-title-link">$k$-Block Littlestone Dimension of Half-intervals</a></h3>
@@ -15723,6 +15740,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Corollary 44 gives ordinary one-inclusion minimum degree d+1 for V_d. The full-coordinate projection is among those maximized by projected minimum degree, so the projected parameter is at least d+1.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#rubinstein2007shifting">[rubinstein2007shifting]</a>, Corollary 44.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-988" style="position:relative;">
+        
+        <h3><a href="values/worst_mistakes_littlestone_worst_gap.html" class="table-title-link">Worst Mistakes of the Littlestone/Worst-Order Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes of the Littlestone/Worst-Order Separation Class</p>
+<p><strong>Class: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For each of the 24 coordinate orders, solve the transductive minimax prediction recurrence from the final coordinate backwards. Every order has value two, and no smaller uniform bound is possible. Repeated coordinates do not help an adversary because their labels are known after first occurrence. See sync/verify_littlestone_worst_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_littlestone_worst_gap.py.</p></div>
 
         </div>
     </div>

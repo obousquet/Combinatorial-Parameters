@@ -1,0 +1,12 @@
+{
+  "id": 987,
+  "name": "Littlestone Dimension of the Littlestone/Worst-Order Separation Class",
+  "short_name": "littlestone_dimension_littlestone_worst_gap",
+  "class_id": "#classes/littlestone_worst_gap",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The standard finite Littlestone rank recurrence evaluates to three. The exhaustive recurrence calculation is recorded in sync/verify_littlestone_worst_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_littlestone_worst_gap.py."
+}

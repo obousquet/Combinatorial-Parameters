@@ -1,0 +1,8 @@
+{
+  "id": 26,
+  "name": "Littlestone/Worst-Order Separation Class",
+  "short_name": "littlestone_worst_gap",
+  "graph_label": "Ldim/worst gap",
+  "symbol": "C_{lw}",
+  "definition": "On four coordinates, let C_lw consist of the eight strings 0000, 1000, 0100, 0001, 1101, 0011, 1011, and 1111."
+}

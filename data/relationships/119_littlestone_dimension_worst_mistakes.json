@@ -8,5 +8,8 @@
   "details": "For finite classes, the unrestricted tree rank defining Littlestone dimension dominates the regular-tree rank defining worst mistakes.",
   "status": "established",
   "references": "\\cite{ben1997online}",
-  "proof": "The worst-sequence/offline characterization maximizes the rank only over class trees induced by a fixed ordered sequence of instances: every depth level has one common queried instance.  Each such regular class tree is a valid Littlestone tree, while Littlestone dimension maximizes over all instance-labeled class trees.  Maximizing over the larger family gives $\\mathrm L\\geq\\mathrm M_{\\mathrm{worst}}$."
+  "proof": "The worst-sequence/offline characterization maximizes the rank only over class trees induced by a fixed ordered sequence of instances: every depth level has one common queried instance.  Each such regular class tree is a valid Littlestone tree, while Littlestone dimension maximizes over all instance-labeled class trees.  Maximizing over the larger family gives $\\mathrm L\\geq\\mathrm M_{\\mathrm{worst}}$.",
+  "witness": "#classes/littlestone_worst_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For C_lw, Littlestone dimension is 3 while the worst transductive fixed-order mistake bound is 2."
 }
