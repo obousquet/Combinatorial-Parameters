@@ -7,6 +7,8 @@
   "details": "For finite concept classes; proper ordered compression is a restricted form of proper labeled compression.",
   "proof": "Every proper order sample-compression scheme is, after forgetting its order requirement, a proper labeled sample-compression scheme. Minimizing over the smaller class of ordered schemes cannot give a smaller value.",
   "references": "\\cite{darnstadt2016order}",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
   "short_name": "proper_ordered_sample_compression_proper_labeled_sample_compression",
   "name": "Proper Ordered Sample Compression / Proper Labeled Sample Compression"
 }
