@@ -1,0 +1,14 @@
+{
+  "id": 379,
+  "name": "Sign Rank / Radon Number (Incomparable)",
+  "short_name": "sign_rank_radon_number_incomparable",
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the full cube $2^{[n]}$, sign rank is $n$, while Radon number is $\\lfloor\\log_2(2n+2)\\rfloor$.",
+  "parameter_2_larger_witness": "For the $n$-singleton class $\\mathcal S_n$, Radon number is $n$, while sign rank is at most $3$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Sign Rank and Radon Number of Full Cube and Singletons."
+}
