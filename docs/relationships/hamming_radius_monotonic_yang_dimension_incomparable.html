@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-82" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-369" style="position:relative;">
         
-        <h3><a href="parameters/monotonic_yang_dimension.html" class="table-title-link">Monotonic Yang Dimension</a></h3>
+        <h3><a href="relationships/hamming_radius_monotonic_yang_dimension_incomparable.html" class="table-title-link">Hamming Radius / Monotonic Yang Dimension (Incomparable)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Monotonic Yang Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{Y}^*">
-            \[\mathrm{Y}^*\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>monotonic Yang dimension</strong> is the subfamily-monotonic version of Yang dimension: $$\mathrm{Y}^*(\mathcal{H}) := \max_{\mathcal{G}\subseteq\mathcal{H}} \mathrm{Y}(\mathcal{G}).$$</p></div>
+        <p><strong>Name: </strong>Hamming Radius / Monotonic Yang Dimension (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotonic_yang_dimension.html">Monotonic Yang Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
 
 
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.</p></div>
 
-<p><strong>Category:</strong> Holes and Homology</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/monotonic_yang_dimension_full_cube.html'>Monotonic Yang Dimension of Full Cube</a></li><li><a href='values/monotonic_yang_dimension_singletons.html'>Monotonic Yang Dimension of Singletons</a></li><li><a href='values/monotonic_yang_dimension_trivial_concepts.html'>Monotonic Yang Dimension of Trivial Concepts</a></li><li><a href='values/monotonic_yang_dimension_singletons_plus_empty_set.html'>Monotonic Yang Dimension of Singletons plus Empty Set</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/monotonic_yang_dimension_yang_dimension.html" class="relationship-statement">$\mathrm{Y}^* \ge \mathrm{Y}$</a></li><li><a href="relationships/effective_range_monotonic_yang_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{Y}^*$</a></li><li><a href="relationships/size_monotonic_yang_dimension.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{Y}^*$</a></li></ul><p><strong>Incomparabilities:</strong></p><ul class="fields-list"><li><a href="relationships/diameter_monotonic_yang_dimension_incomparable.html" class="relationship-statement">$\mathrm{D}\mathrel{\parallel}\mathrm{Y}^*\;\text{(incomparable)}$</a></li><li><a href="relationships/hamming_radius_monotonic_yang_dimension_incomparable.html" class="relationship-statement">$\mathrm{B}\mathrel{\parallel}\mathrm{Y}^*\;\text{(incomparable)}$</a></li></ul></div>
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For $\mathcal T_n=\{\emptyset,[n]\}$, Hamming radius is $\lceil n/2\rceil$, while monotonic Yang dimension is $1$.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For $\mathcal S_n$, monotonic Yang dimension is $n-1$, while Hamming radius is $1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The two canonical value calculations give unbounded gaps in the two directions.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Database-owned value proofs for Hamming Radius and Monotonic Yang Dimension of Trivial Concepts and Singletons.</p></div>
+
+
 
         </div>
     </div>

@@ -1,0 +1,14 @@
+{
+  "id": 369,
+  "name": "Hamming Radius / Monotonic Yang Dimension (Incomparable)",
+  "short_name": "hamming_radius_monotonic_yang_dimension_incomparable",
+  "parameter_1_id": "#parameters/hamming_radius",
+  "parameter_2_id": "#parameters/monotonic_yang_dimension",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, Hamming radius is $\\lceil n/2\\rceil$, while monotonic Yang dimension is $1$.",
+  "parameter_2_larger_witness": "For $\\mathcal S_n$, monotonic Yang dimension is $n-1$, while Hamming radius is $1$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Hamming Radius and Monotonic Yang Dimension of Trivial Concepts and Singletons."
+}

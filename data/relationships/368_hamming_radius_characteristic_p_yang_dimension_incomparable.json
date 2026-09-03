@@ -1,0 +1,14 @@
+{
+  "id": 368,
+  "name": "Hamming Radius / Characteristic-p Yang Dimension (Incomparable)",
+  "short_name": "hamming_radius_characteristic_p_yang_dimension_incomparable",
+  "parameter_1_id": "#parameters/hamming_radius",
+  "parameter_2_id": "#parameters/characteristic_p_yang_dimension",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, Hamming radius is $\\lceil n/2\\rceil$, while $\\mathrm Y_p$ is $1$ for every prime $p$.",
+  "parameter_2_larger_witness": "For $\\mathcal S_n$, $\\mathrm Y_p=n-1$ for every prime $p$, while Hamming radius is $1$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions, uniformly in the fixed characteristic $p$.",
+  "proof_source": "Database-owned value proofs for Hamming Radius and Characteristic-p Yang Dimension of Trivial Concepts and Singletons."
+}
