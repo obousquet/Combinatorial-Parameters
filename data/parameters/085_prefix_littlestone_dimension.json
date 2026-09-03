@@ -1,6 +1,6 @@
 {
   "id": 85,
-  "name": "Prefix-$k$ Littlestone Dimension",
+  "name": "Prefix-$k$ Littlestone Dimension ($k>1$)",
   "short_name": "prefix_littlestone_dimension",
   "symbol": "\\mathrm{PL}_k",
   "category": "queries",
@@ -10,8 +10,8 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": null,
-  "definition": "Fix $k\\ge1$. A **prefix-$k$ Littlestone tree** of depth $d$ is an ordinarily shattered complete binary tree in which the coordinate label is horizontally constant on each of the first $\\min\\{k,d\\}$ levels; after that prefix, labels are unrestricted. The **Prefix-$k$ Littlestone Dimension** $\\mathrm{PL}_k(\\mathcal{H})$ is the largest depth of such a tree. In particular, $\\mathrm{PL}_1=\\mathrm{L}$.",
-  "graph_summary": "Largest shattered tree with a VC-like, level-constant prefix of $k$ queries and an unrestricted tail.",
+  "definition": "Fix an integer $k>1$. A **prefix-$k$ Littlestone tree** of depth $d$ is an ordinarily shattered complete binary tree in which the coordinate label is horizontally constant on each of the first $\\min\\{k,d\\}$ levels; after that prefix, labels are unrestricted. The **Prefix-$k$ Littlestone Dimension** $\\mathrm{PL}_k(\\mathcal{H})$ is the largest depth of such a tree. The notation extends at $k=1$ by the identity $\\mathrm{PL}_1=\\mathrm{L}$, so that case is ordinary Littlestone dimension rather than a separate prefix parameter.",
+  "graph_summary": "For fixed $k>1$: largest shattered tree with a level-constant prefix of $k$ queries and an unrestricted tail.",
   "description": "Database-defined structural variant; no published origin is claimed.",
   "monotonicity_evidence": {
     "monotonic": {

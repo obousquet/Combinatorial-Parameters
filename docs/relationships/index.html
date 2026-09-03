@@ -3549,6 +3549,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-202" style="position:relative;">
+        
+        <h3><a href="relationships/littlestone_dimension_prefix_littlestone_dimension.html" class="table-title-link">Littlestone Dimension / Prefix-$k$ Littlestone Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension / Prefix-$k$ Littlestone Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree. For every fixed $k>1$, half-intervals give an unbounded separation; extending the notation to $k=1$ gives ordinary Littlestone dimension.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every fixed $k>1$, the half-interval class has $\mathrm L=\Theta(\log n)$ and $\mathrm{PL}_k=1$. Extending notation to $k=1$ instead gives $\mathrm{PL}_1=\mathrm L$.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary shattered Littlestone tree. Therefore $\mathrm L(\mathcal H)\ge\mathrm{PL}_k(\mathcal H)$ for every fixed $k>1$. Extending the notation to $k=1$ gives the vacuous constraint and the identity $\mathrm{PL}_1=\mathrm L$.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:prefix-littlestone-order} in the survey.</p></div>
+
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-144" style="position:relative;">
         
         <h3><a href="relationships/membership_query_complexity_log_size.html" class="table-title-link">Membership Query Complexity / Log Size</a></h3>
@@ -5005,32 +5031,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-202" style="position:relative;">
-        
-        <h3><a href="relationships/littlestone_dimension_prefix_littlestone_dimension.html" class="table-title-link">Littlestone Dimension / Prefix-$k$ Littlestone Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Littlestone Dimension / Prefix-$k$ Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree. For every fixed $k\ge2$, half-intervals give an unbounded separation; $k=1$ is the stated equality case.</p></div>
-<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For every fixed $k\ge2$, the half-interval class has $\mathrm L=\Theta(\log n)$ and $\mathrm{PL}_k=1$. The same value record separately states the exceptional identity $\mathrm{PL}_1=\mathrm L$.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary Littlestone tree. Therefore $\mathrm L(\mathcal H)\ge\mathrm{PL}_k(\mathcal H)$ for every $k\ge1$; for $k=1$, the condition is vacuous and equality holds.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:prefix-littlestone-order} in the survey.</p></div>
-
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-203" style="position:relative;">
         
         <h3><a href="relationships/star_number_covc_dimension_affine.html" class="table-title-link">Star Number / co-VC dimension (affine)</a></h3>
@@ -5062,7 +5062,7 @@
         <h3><a href="relationships/prefix_littlestone_dimension_vc_dimension.html" class="table-title-link">Prefix-$k$ Littlestone Dimension / VC Dimension</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter 1: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 

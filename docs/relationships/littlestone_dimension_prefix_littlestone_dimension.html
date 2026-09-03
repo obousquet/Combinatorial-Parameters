@@ -70,19 +70,19 @@
         <div class="table-details">
         <p><strong>Name: </strong>Littlestone Dimension / Prefix-$k$ Littlestone Dimension</p>
 <p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree. For every fixed $k\ge2$, half-intervals give an unbounded separation; $k=1$ is the stated equality case.</p></div>
+<strong>Details:</strong><div class="text-field"><p>A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree. For every fixed $k>1$, half-intervals give an unbounded separation; extending the notation to $k=1$ gives ordinary Littlestone dimension.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For every fixed $k\ge2$, the half-interval class has $\mathrm L=\Theta(\log n)$ and $\mathrm{PL}_k=1$. The same value record separately states the exceptional identity $\mathrm{PL}_1=\mathrm L$.</p></div>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every fixed $k>1$, the half-interval class has $\mathrm L=\Theta(\log n)$ and $\mathrm{PL}_k=1$. Extending notation to $k=1$ instead gives $\mathrm{PL}_1=\mathrm L$.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary Littlestone tree. Therefore $\mathrm L(\mathcal H)\ge\mathrm{PL}_k(\mathcal H)$ for every $k\ge1$; for $k=1$, the condition is vacuous and equality holds.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary shattered Littlestone tree. Therefore $\mathrm L(\mathcal H)\ge\mathrm{PL}_k(\mathcal H)$ for every fixed $k>1$. Extending the notation to $k=1$ gives the vacuous constraint and the identity $\mathrm{PL}_1=\mathrm L$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:prefix-littlestone-order} in the survey.</p></div>
 
 

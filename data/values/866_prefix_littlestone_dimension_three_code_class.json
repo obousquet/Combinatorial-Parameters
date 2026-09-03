@@ -7,5 +7,5 @@
   "value": "$1$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "For every fixed $k\\geq1$, a one-point VC witness is a prefix-$k$ tree of depth one, while every prefix-$k$ tree is an ordinary Littlestone tree.  The established VC and Littlestone dimensions are both one, forcing $\\mathrm{PL}_k=1$."
+  "proof": "For every fixed $k>1$, a one-point VC witness is a prefix-$k$ tree of depth one, while every prefix-$k$ tree is an ordinary Littlestone tree. The established VC and Littlestone dimensions are both one, forcing $\\mathrm{PL}_k=1$."
 }

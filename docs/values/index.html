@@ -9443,7 +9443,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
@@ -9460,7 +9460,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
@@ -9477,7 +9477,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Trivial Concepts</p>
 <p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
@@ -9494,7 +9494,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
@@ -9511,7 +9511,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Majority</p>
 <p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
@@ -9528,7 +9528,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Singletons plus Empty Set</p>
 <p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
@@ -9687,6 +9687,23 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of singletons plus the empty set are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_2\leq1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-866" style="position:relative;">
+        
+        <h3><a href="values/prefix_littlestone_dimension_three_code_class.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>1$, a one-point VC witness is a prefix-$k$ tree of depth one, while every prefix-$k$ tree is an ordinary Littlestone tree. The established VC and Littlestone dimensions are both one, forcing $\mathrm{PL}_k=1$.</p></div>
 
 
         </div>
@@ -11976,12 +11993,12 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Tagged Singletons</p>
 <p><strong>Class: </strong><a href="classes/tagged_singletons.html">Tagged Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\mathrm{PL}_1=2,\quad\mathrm{PL}_k=1\ (k\ge2)$</p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
+<p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The defining identity gives $\mathrm{PL}_1=\mathrm L=2$. For k at least two, a depth-two prefix-k tree is level-constant on its first two levels and hence would shatter two fixed coordinates. Since VC dimension is one, its depth is at most one; the VC witness realizes that depth.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>1$, a depth-two prefix-k tree is level-constant on its first two levels and hence would shatter two fixed coordinates. Since VC dimension is one, its depth is at most one; the VC witness realizes that depth.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the prefix-tree definition and the VC/Littlestone calculations for this class in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
 
         </div>
@@ -12027,10 +12044,10 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
 <p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>For every fixed $k\ge1$.</p>
+<p><strong>Details: </strong>For every fixed $k>1$.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The standard coded Littlestone witness is horizontally constant on every level, so it satisfies every prefix constraint. The ordinary Littlestone dimension gives the matching upper bound.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation from the coded universal-class witness and <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
@@ -12078,12 +12095,12 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Warmuth's $C_5$ Class</p>
 <p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\begin{cases}3&k\le2,\\2&k\ge3.\end{cases}$</p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
+<p><strong>Value: </strong>$\begin{cases}3&k=2,\\2&k\ge3.\end{cases}$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For k=1 this is ordinary Littlestone dimension. For k=2, the recorded depth-three Littlestone witness has a common coordinate at its second level and is a prefix-2 tree. For k at least three, depth three would be level-constant on its first three levels and would shatter three coordinates, contradicting VC dimension two. The VC witness gives depth two.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For k=2, the recorded depth-three Littlestone witness has a common coordinate at its second level and is a prefix-2 tree. For k at least three, depth three would be level-constant on its first three levels and would shatter three coordinates, contradicting VC dimension two. The VC witness gives depth two.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the prefix-tree definition and the $C_5$ calculations in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a>.</p></div>
 
         </div>
@@ -12129,12 +12146,12 @@
         <div class="table-details">
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Half-intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\mathrm{PL}_1=\lfloor\log_2 n\rfloor,\quad\mathrm{PL}_k=1\ (k\ge2)$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The defining identity gives $\mathrm{PL}_1=\mathrm L=\lfloor\log_2 n\rfloor$. For k at least two, depth two would be level-constant on its first two levels and would shatter two coordinates. Since VC dimension is one, the value is at most one; a one-point VC witness gives equality.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>1$, depth two would be level-constant on its first two levels and would shatter two coordinates. Since VC dimension is one, the value is at most one; a one-point VC witness gives equality.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the prefix-tree definition and the threshold calculations in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
 
         </div>
@@ -13665,23 +13682,6 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the block-Littlestone sandwich gives $\mathrm{VC}\leq\mathrm B_k\leq\mathrm L$. Both established endpoint values are one for this class, so $\mathrm B_k=1$.</p></div>
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-866" style="position:relative;">
-        
-        <h3><a href="values/prefix_littlestone_dimension_three_code_class.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of the Three-Code Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of the Three-Code Class</p>
-<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k\geq1$, a one-point VC witness is a prefix-$k$ tree of depth one, while every prefix-$k$ tree is an ordinary Littlestone tree.  The established VC and Littlestone dimensions are both one, forcing $\mathrm{PL}_k=1$.</p></div>
 
 
         </div>

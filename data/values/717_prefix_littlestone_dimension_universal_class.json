@@ -6,7 +6,7 @@
   "parameter_id": "#parameters/prefix_littlestone_dimension",
   "value": "$\\lfloor\\log_2 n\\rfloor$",
   "value_class": "omega_log_n",
-  "details": "For every fixed $k\\ge1$.",
+  "details": "For every fixed $k>1$.",
   "status": "established",
   "proof": "The standard coded Littlestone witness is horizontally constant on every level, so it satisfies every prefix constraint. The ordinary Littlestone dimension gives the matching upper bound.",
   "references": "Direct calculation from the coded universal-class witness and \\cite{littlestone1988learning}."

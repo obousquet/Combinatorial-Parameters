@@ -4,9 +4,9 @@
   "short_name": "prefix_littlestone_dimension_warmuth_c5",
   "class_id": "#classes/warmuth_c5",
   "parameter_id": "#parameters/prefix_littlestone_dimension",
-  "value": "$\\begin{cases}3&k\\le2,\\\\2&k\\ge3.\\end{cases}$",
+  "value": "$\\begin{cases}3&k=2,\\\\2&k\\ge3.\\end{cases}$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "For k=1 this is ordinary Littlestone dimension. For k=2, the recorded depth-three Littlestone witness has a common coordinate at its second level and is a prefix-2 tree. For k at least three, depth three would be level-constant on its first three levels and would shatter three coordinates, contradicting VC dimension two. The VC witness gives depth two.",
+  "proof": "For k=2, the recorded depth-three Littlestone witness has a common coordinate at its second level and is a prefix-2 tree. For k at least three, depth three would be level-constant on its first three levels and would shatter three coordinates, contradicting VC dimension two. The VC witness gives depth two.",
   "references": "Directly from the prefix-tree definition and the $C_5$ calculations in \\cite{littlestone1988learning,palvolgyi2021unlabeled}."
 }

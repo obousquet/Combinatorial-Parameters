@@ -4,9 +4,9 @@
   "short_name": "prefix_littlestone_dimension_halfintervals",
   "class_id": "#classes/halfintervals",
   "parameter_id": "#parameters/prefix_littlestone_dimension",
-  "value": "$\\mathrm{PL}_1=\\lfloor\\log_2 n\\rfloor,\\quad\\mathrm{PL}_k=1\\ (k\\ge2)$",
-  "value_class": "omega_log_n",
+  "value": "$1$",
+  "value_class": "omega_1",
   "status": "established",
-  "proof": "The defining identity gives $\\mathrm{PL}_1=\\mathrm L=\\lfloor\\log_2 n\\rfloor$. For k at least two, depth two would be level-constant on its first two levels and would shatter two coordinates. Since VC dimension is one, the value is at most one; a one-point VC witness gives equality.",
+  "proof": "For every fixed $k>1$, depth two would be level-constant on its first two levels and would shatter two coordinates. Since VC dimension is one, the value is at most one; a one-point VC witness gives equality.",
   "references": "Directly from the prefix-tree definition and the threshold calculations in \\cite{littlestone1988learning}."
 }

@@ -6,11 +6,11 @@
   "parameter_2_id": "#parameters/prefix_littlestone_dimension",
   "relationship_type": "larger",
   "status": "established",
-  "details": "A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree. For every fixed $k\\ge2$, half-intervals give an unbounded separation; $k=1$ is the stated equality case.",
-  "proof": "The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary Littlestone tree. Therefore $\\mathrm L(\\mathcal H)\\ge\\mathrm{PL}_k(\\mathcal H)$ for every $k\\ge1$; for $k=1$, the condition is vacuous and equality holds.",
+  "details": "A prefix-$k$ shattered tree is an ordinary shattered Littlestone tree. For every fixed $k>1$, half-intervals give an unbounded separation; extending the notation to $k=1$ gives ordinary Littlestone dimension.",
+  "proof": "The prefix-$k$ condition only restricts the coordinate labels allowed in an ordinary shattered Littlestone tree. Therefore $\\mathrm L(\\mathcal H)\\ge\\mathrm{PL}_k(\\mathcal H)$ for every fixed $k>1$. Extending the notation to $k=1$ gives the vacuous constraint and the identity $\\mathrm{PL}_1=\\mathrm L$.",
   "latex_proof_label": "prop:prefix-littlestone-order",
   "proof_source": "Proposition \\ref{prop:prefix-littlestone-order} in the survey.",
   "witness": "#classes/halfintervals",
   "witness_strength": "unbounded",
-  "witness_verification": "For every fixed $k\\ge2$, the half-interval class has $\\mathrm L=\\Theta(\\log n)$ and $\\mathrm{PL}_k=1$. The same value record separately states the exceptional identity $\\mathrm{PL}_1=\\mathrm L$."
+  "witness_verification": "For every fixed $k>1$, the half-interval class has $\\mathrm L=\\Theta(\\log n)$ and $\\mathrm{PL}_k=1$. Extending notation to $k=1$ instead gives $\\mathrm{PL}_1=\\mathrm L$."
 }

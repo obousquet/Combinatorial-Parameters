@@ -260,10 +260,15 @@ def canonical_linear_relations(
     return list(canonical.values())
 
 
-def witnessless_proof_path(
+def witness_strength_level(relationship: Dict[str, Any]) -> int:
+    """Return the evidence strength that propagates along a dominance path."""
+    return {"unbounded": 2, "strict": 1}.get(relationship.get("witness_strength"), 0)
+
+
+def strongest_alternate_proof_path(
     relationship: Dict[str, Any], relationships: List[Dict[str, Any]]
-) -> List[Dict[str, Any]] | None:
-    """Return a witnessless alternate proof path, if one makes an edge redundant."""
+) -> tuple[List[Dict[str, Any]], int] | None:
+    """Find an alternate proof path maximizing its strongest witness evidence."""
     allowed = {"equivalence", "larger"}
     if relationship["relationship_type"] == "larger_c":
         allowed.add("larger_c")
@@ -276,7 +281,6 @@ def witnessless_proof_path(
             candidate is relationship
             or candidate["relationship_type"] not in allowed
             or not is_homogeneous_linear(candidate)
-            or candidate.get("witness")
         ):
             continue
         source, target = relation_endpoints(candidate)
@@ -285,21 +289,29 @@ def witnessless_proof_path(
             adjacency[target].append((source, candidate))
 
     source, target = relation_endpoints(relationship)
-    pending = deque([source])
-    previous: Dict[str, tuple[str, Dict[str, Any]] | None] = {source: None}
+    pending = deque([(source, 0)])
+    previous: Dict[tuple[str, int], tuple[tuple[str, int], Dict[str, Any]] | None] = {(source, 0): None}
+    best_target: tuple[str, int] | None = None
     while pending:
-        node = pending.popleft()
+        node, strength = pending.popleft()
         if node == target:
-            path: List[Dict[str, Any]] = []
-            while previous[node] is not None:
-                predecessor, edge = previous[node]
-                path.append(edge)
-                node = predecessor
-            return list(reversed(path))
+            if best_target is None or strength > best_target[1]:
+                best_target = (node, strength)
+            continue
         for successor, edge in adjacency[node]:
-            if successor not in previous:
-                previous[successor] = (node, edge)
-                pending.append(successor)
+            next_strength = max(strength, witness_strength_level(edge))
+            state = (successor, next_strength)
+            if state not in previous:
+                previous[state] = ((node, strength), edge)
+                pending.append(state)
+    if best_target is not None:
+        path: List[Dict[str, Any]] = []
+        state = best_target
+        while previous[state] is not None:
+                predecessor, edge = previous[state]
+                path.append(edge)
+                state = predecessor
+        return list(reversed(path)), best_target[1]
     return None
 
 
@@ -308,11 +320,11 @@ def witness_protected_bypass_relations(
 ) -> List[tuple[Dict[str, Any], List[Dict[str, Any]]]]:
     """Find reduced-away witness edges whose alternate proof path has no witness.
 
-    Such a direct edge is mathematically redundant but visually indispensable:
-    without it the Hasse backbone has no displayed certificate for the known
-    strict or unbounded separation. It is rendered as a non-constraining
-    overlay, while the audit tool queues its witness for localization along
-    the witnessless path.
+    A path with a strict witness certifies every downstream strict separation;
+    a path with an unbounded witness certifies every downstream unbounded
+    separation. A weaker path cannot replace a stronger direct certificate.
+    The retained edge is rendered as a non-constraining overlay, while the
+    audit tool queues its witness for localization along the alternate path.
     """
     canonical = canonical_linear_relations(relationships)
     protected = []
@@ -321,8 +333,11 @@ def witness_protected_bypass_relations(
             continue
         if not relationship.get("witness") or not is_redundant_linear_relation(relationship, canonical):
             continue
-        path = witnessless_proof_path(relationship, canonical)
-        if path:
+        alternate = strongest_alternate_proof_path(relationship, canonical)
+        if alternate is None:
+            continue
+        path, path_strength = alternate
+        if path_strength < witness_strength_level(relationship):
             protected.append((relationship, path))
     return protected
 
