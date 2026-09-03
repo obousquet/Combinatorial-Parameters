@@ -1,0 +1,12 @@
+{
+  "id": 1017,
+  "name": "Distinguishing Range of the Distinguishing-Range Projection Gap",
+  "short_name": "distinguishing_range_distinguishing_range_projection_gap",
+  "class_id": "#classes/distinguishing_range_projection_gap",
+  "parameter_id": "#parameters/distinguishing_range",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Coordinates three and four give the four distinct traces 10, 11, 01, and 00, so two suffice. One binary coordinate yields at most two traces and cannot distinguish four concepts.",
+  "references": "Direct calculation"
+}

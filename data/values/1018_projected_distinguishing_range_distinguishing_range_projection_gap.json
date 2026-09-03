@@ -1,0 +1,12 @@
+{
+  "id": 1018,
+  "name": "Projected Distinguishing Range of the Distinguishing-Range Projection Gap",
+  "short_name": "projected_distinguishing_range_distinguishing_range_projection_gap",
+  "class_id": "#classes/distinguishing_range_projection_gap",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projection to coordinates one, two, and four gives 000, 001, 011, and 100. Every one of its three coordinates is needed: deleting any coordinate merges a pair of these traces. Thus this projection has distinguishing range three. No projection can have distinguishing range above three because the class has four concepts.",
+  "references": "Direct calculation"
+}

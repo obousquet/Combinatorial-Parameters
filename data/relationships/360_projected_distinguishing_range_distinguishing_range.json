@@ -7,5 +7,8 @@
   "relationship_type": "larger",
   "details": "The full-domain projection is among the projections in the defining maximum.",
   "status": "established",
-  "proof": "Taking $S=\\mathcal X$ in the maximum defining $\\mathrm R^p(\\mathcal H)$ gives $\\mathrm R^p(\\mathcal H)\\geq\\mathrm R(\\mathcal H)."
+  "proof": "Taking $S=\\mathcal X$ in the maximum defining $\\mathrm R^p(\\mathcal H)$ gives $\\mathrm R^p(\\mathcal H)\\geq\\mathrm R(\\mathcal H).",
+  "witness": "#classes/distinguishing_range_projection_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal D_{\\mathrm R}=\\{0010,0011,0101,1000\\}$, $\\mathrm R=2$, but its projection onto coordinates one, two, and four has distinguishing range three. Hence $\\mathrm R^p=3>2$."
 }
