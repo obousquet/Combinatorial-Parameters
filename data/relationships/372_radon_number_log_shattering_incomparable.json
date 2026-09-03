@@ -1,0 +1,14 @@
+{
+  "id": 372,
+  "name": "Radon Number / Log Shattering (Incomparable)",
+  "short_name": "radon_number_log_shattering_incomparable",
+  "parameter_1_id": "#parameters/radon_number",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal S_n$, Radon number is $n$, while log shattering is $\\log_2(n+1)$.",
+  "parameter_2_larger_witness": "For the full cube $2^{[n]}$, log shattering is $n$, while Radon number is $\\lfloor\\log_2(2n+2)\\rfloor$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Radon Number and Log Shattering of Full Cube and Singletons."
+}
