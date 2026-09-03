@@ -11970,6 +11970,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-975" style="position:relative;">
+        
+        <h3><a href="values/membership_query_complexity_coded_singletons.html" class="table-title-link">Membership Query Complexity of Coded Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Membership Query Complexity of Coded Singletons</p>
+<p><strong>Class: </strong><a href="classes/coded_singletons.html">Coded Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
+<p><strong>Value: </strong>$\lceil\log_2(n+1)\rceil$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Querying all r tag coordinates recovers the distinct code c_i and hence identifies the target. Conversely, any deterministic membership-query tree of depth q has at most 2^q leaves, but there are n+1 targets; therefore q is at least ceil(log_2(n+1)).</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_coded_singletons.py.</p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-712" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_tagged_singletons.html" class="table-title-link">$k$-Block Littlestone Dimension of Tagged Singletons</a></h3>
@@ -15519,6 +15536,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The four-concept subfamily 000, 100, 010, 110 is a two-cube, in which every concept needs both x1 and x2, giving the lower bound two. Every subfamily containing 001 has a one-point teacher for 001 at x3; every remaining subfamily is contained in that two-cube and has a teacher of size at most two. Hence the maximum over subfamilies is exactly two.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_monotonic_minimum_teaching.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-976" style="position:relative;">
+        
+        <h3><a href="values/projected_membership_queries_complexity_coded_singletons.html" class="table-title-link">Projected Membership Query Complexity of Coded Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Membership Query Complexity of Coded Singletons</p>
+<p><strong>Class: </strong><a href="classes/coded_singletons.html">Coded Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projecting away the tag coordinates gives the n singleton concepts together with the empty concept, whose membership-query complexity is n. Conversely, every projection has at most n+1 distinct traces, and any finite binary class with m traces can be identified by at most m-1 coordinate queries. Thus no projection needs more than n queries.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_coded_singletons.py.</p></div>
 
         </div>
     </div>

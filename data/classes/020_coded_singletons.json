@@ -1,0 +1,8 @@
+{
+  "id": 20,
+  "name": "Coded Singletons",
+  "short_name": "coded_singletons",
+  "graph_label": "Coded singletons",
+  "symbol": "C_{code}",
+  "definition": "For n at least 1, take primary coordinates p_1,...,p_n and r=ceil(log_2(n+1)) tag coordinates. Assign distinct r-bit strings c_0,c_1,...,c_n to the n+1 indices. The class has n+1 concepts h_0,...,h_n: h_i is positive precisely on p_i when i is nonzero and has tag labels c_i."
+}

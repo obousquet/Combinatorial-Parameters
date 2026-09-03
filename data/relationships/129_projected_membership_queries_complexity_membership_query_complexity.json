@@ -7,5 +7,8 @@
   "short_name": "projected_membership_queries_complexity_membership_query_complexity",
   "name": "Projected Membership Queries Complexity / Membership Query Complexity",
   "status": "established",
-  "proof": "Projected membership-query complexity maximizes the membership-query complexity over projections.  The full-domain projection is the original class, so it supplies the ordinary membership-query complexity as a candidate."
+  "proof": "Projected membership-query complexity maximizes the membership-query complexity over projections.  The full-domain projection is the original class, so it supplies the ordinary membership-query complexity as a candidate.",
+  "witness": "#classes/coded_singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For C_code, ordinary membership-query complexity is ceil(log_2(n+1)), while the primary-coordinate projection is singletons plus the empty concept and has membership-query complexity n."
 }

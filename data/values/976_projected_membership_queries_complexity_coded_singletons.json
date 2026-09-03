@@ -1,0 +1,12 @@
+{
+  "id": 976,
+  "name": "Projected Membership Query Complexity of Coded Singletons",
+  "short_name": "projected_membership_queries_complexity_coded_singletons",
+  "class_id": "#classes/coded_singletons",
+  "parameter_id": "#parameters/projected_membership_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Projecting away the tag coordinates gives the n singleton concepts together with the empty concept, whose membership-query complexity is n. Conversely, every projection has at most n+1 distinct traces, and any finite binary class with m traces can be identified by at most m-1 coordinate queries. Thus no projection needs more than n queries.",
+  "references": "Direct calculation; verified by sync/verify_coded_singletons.py."
+}

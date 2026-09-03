@@ -1,0 +1,12 @@
+{
+  "id": 975,
+  "name": "Membership Query Complexity of Coded Singletons",
+  "short_name": "membership_query_complexity_coded_singletons",
+  "class_id": "#classes/coded_singletons",
+  "parameter_id": "#parameters/membership_query_complexity",
+  "value": "$\\lceil\\log_2(n+1)\\rceil$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Querying all r tag coordinates recovers the distinct code c_i and hence identifies the target. Conversely, any deterministic membership-query tree of depth q has at most 2^q leaves, but there are n+1 targets; therefore q is at least ceil(log_2(n+1)).",
+  "references": "Direct calculation; verified by sync/verify_coded_singletons.py."
+}
