@@ -4,6 +4,8 @@
   "parameter_2_id": "#parameters/membership_and_proper_equivalence_queries_complexity",
   "relationship_type": "larger",
   "details": "For finite concept classes.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
   "short_name": "membership_query_complexity_membership_and_proper_equivalence_queries_complexity",
   "name": "Membership Query Complexity / Membership and Proper Equivalence Queries Complexity",
   "status": "established",
