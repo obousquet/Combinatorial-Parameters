@@ -1,0 +1,12 @@
+{
+  "id": 992,
+  "name": "Maximum Positive Degree of the Positive-Degree/Strong-Shattering Separation Class",
+  "short_name": "maximum_positive_degree_positive_degree_gap",
+  "class_id": "#classes/positive_degree_gap",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The top vertex 111 has the three one-inclusion neighbours 110, 101, and 011, all smaller under inclusion. Thus its positive degree is three, which is maximal on a three-coordinate domain. This is checked in sync/verify_positive_degree_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_positive_degree_gap.py."
+}

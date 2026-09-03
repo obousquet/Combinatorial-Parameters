@@ -7,5 +7,8 @@
   "short_name": "maximum_positive_degree_largest_strongly_shattered_set",
   "name": "Maximum Positive Degree / Largest Strongly Shattered Set",
   "status": "established",
-  "proof": "In a contained $d$-cube, its top vertex has $d$ smaller $1$-inclusion neighbours.  Hence maximum positive degree is at least the largest strongly shattered-set size."
+  "proof": "In a contained $d$-cube, its top vertex has $d$ smaller $1$-inclusion neighbours.  Hence maximum positive degree is at least the largest strongly shattered-set size.",
+  "witness": "#classes/positive_degree_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For C_+, the top vertex 111 has three smaller one-inclusion neighbours, while the largest contained cube is an edge. Thus maximum positive degree is 3 and largest strong-shattering size is 1; sync/verify_positive_degree_gap.py checks both quantities."
 }

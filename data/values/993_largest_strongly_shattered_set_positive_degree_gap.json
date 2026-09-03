@@ -1,0 +1,12 @@
+{
+  "id": 993,
+  "name": "Largest Strongly Shattered Set of the Positive-Degree/Strong-Shattering Separation Class",
+  "short_name": "largest_strongly_shattered_set_positive_degree_gap",
+  "class_id": "#classes/positive_degree_gap",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate is strongly shattered by an edge from 111 to the corresponding two-element set. No two-dimensional cube is contained in the four-concept class: its members have Hamming weights two or three, whereas every two-cube has two vertices whose weights differ by two. Hence the largest strongly shattered set has size one. See sync/verify_positive_degree_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_positive_degree_gap.py."
+}

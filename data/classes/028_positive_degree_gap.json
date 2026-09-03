@@ -1,0 +1,8 @@
+{
+  "id": 28,
+  "name": "Positive-Degree/Strong-Shattering Separation Class",
+  "short_name": "positive_degree_gap",
+  "graph_label": "Positive-degree gap",
+  "symbol": "\u005cmathcal C_{+}",
+  "definition": "On three coordinates x_1,x_2,x_3, let \u005cmathcal C_{+}=\\{111,110,101,011\\}, with strings written in coordinate order."
+}
