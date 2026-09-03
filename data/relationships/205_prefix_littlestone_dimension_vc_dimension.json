@@ -7,6 +7,9 @@
   "status": "established",
   "proof_source": "Full proof in the LaTeX survey: Proposition `prop:prefix-littlestone-order`.",
   "latex_proof_label": "prop:prefix-littlestone-order",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
+  "witness_verification": "At the allowed parameter value k=2, the recorded C_5 value is Prefix-2 Littlestone dimension 3 while VC dimension is 2. Thus this is a strict separation for the k-indexed family.",
   "short_name": "prefix_littlestone_dimension_vc_dimension",
   "name": "Prefix-$k$ Littlestone Dimension / VC Dimension"
 }
