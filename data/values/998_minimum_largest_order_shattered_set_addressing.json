@@ -1,0 +1,12 @@
+{
+  "id": 998,
+  "name": "Minimum Largest Order-Shattered Set of Addressing",
+  "short_name": "minimum_largest_order_shattered_set_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Order the bit coordinates before the address coordinates. Each bit downshift replaces every concept's address code by zero, since no other concept has its address coordinate. The subsequent address downshifts leave an empty concept and address singletons, whose largest support has size one. Thus OSH_min is at most one; it is at least one because the addressing class is nonconstant. See sync/verify_addressing_order_shattering.py.",
+  "references": "Direct calculation; verified by sync/verify_addressing_order_shattering.py."
+}
