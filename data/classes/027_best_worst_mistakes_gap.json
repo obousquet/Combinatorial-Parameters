@@ -4,5 +4,5 @@
   "short_name": "best_worst_mistakes_gap",
   "graph_label": "Best/worst gap",
   "symbol": "\u005cmathcal C_{bw}",
-  "definition": "On three coordinates x_1,x_2,x_3, let \u005cmathcal C_{bw} consist of the four strings 000, 100, 010, and 101, with the bits written in the order x_1,x_2,x_3."
+  "definition": "On three coordinates $x_1,x_2,x_3$, let $\\mathcal C_{\\mathrm{bw}}$ consist of the four strings $000,100,010,101$, with bits written in the order $x_1,x_2,x_3$."
 }

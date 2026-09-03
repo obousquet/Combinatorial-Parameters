@@ -4,5 +4,5 @@
   "short_name": "majority_gap",
   "graph_label": "Majority gap",
   "symbol": "C_{maj}",
-  "definition": "On four coordinates, let C_maj consist of the eight strings 0000, 1000, 0100, 1100, 0010, 1010, 1110, and 0001."
+  "definition": "On four coordinates, let $C_{\\mathrm{maj}}$ consist of the eight strings $0000,1000,0100,1100,0010,1010,1110,0001$."
 }

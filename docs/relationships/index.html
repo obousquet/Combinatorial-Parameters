@@ -2547,16 +2547,16 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{SDC}(\mathcal H)\ge\mathrm{RTD}(\mathcal H)$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
+<p><strong>Witness: </strong><a href="classes/ben_david_eiron_selfdirected.html">Ben-David--Eiron Fixed-VC Self-Directed Family</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For any fixed $d\ge3$, Ben-David--Eiron's Lemma 1 gives $\mathrm{SDC}(\mathcal C_n^d)\ge n$ while $\mathrm{VC}(\mathcal C_n^d)=d$. Hu--Wu--Li--Wang's explicit quadratic VC-to-RTD bound gives $\mathrm{RTD}(\mathcal C_n^d)\le39.3752d^2-3.6330d$, independently of $n$. Thus $\mathrm{SDC}/\mathrm{RTD}$ is unbounded along this family.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Lemma 7 of Doliwa--Fan--Simon--Zilles (attributed there to Kuhlmann) gives $\mathrm{TS}_{\min}(\mathcal C)\leq\mathrm{SDC}(\mathcal C)$ for every concept class.  Since $\mathrm{SDC}$ is monotone under subclasses, their Lemmas 3--4 yield $\mathrm{RTD}(\mathcal H)=\max_{\mathcal C\subseteq\mathcal H}\mathrm{TS}_{\min}(\mathcal C)\leq\mathrm{SDC}(\mathcal H)$.</p></div>
 
 
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a> <a href="bibliography.html#ben1998self">[ben1998self]</a> <a href="bibliography.html#hu2017quadratic">[hu2017quadratic]</a></p></div>
 
         </div>
     </div>
@@ -8047,6 +8047,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-358" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_repetitionfree_recursive_teaching_dimension.html" class="table-title-link">Effective Range / Repetition-Free Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Repetition-Free Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm{rfRTD}(\mathcal H)\le E(\mathcal H)$.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On the $n$-singleton family, every coordinate is effective, so $E=n$, while the singleton concepts can be removed using their distinct one-coordinate positive teaching samples, giving $\mathrm{rfRTD}=1$.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Discard the coordinates that are constant on $\mathcal H$, so the domain has $E(\mathcal H)$ coordinates. The full cube on that domain has a repetition-free teaching plan of order its domain size: recursively teach the 1-fibre using the chosen coordinate and then the 0-fibre, so the coordinate sets are all distinct. Restricting this plan to $\mathcal H$ preserves the teaching property and repetition-freeness. Hence it is a repetition-free teaching plan for $\mathcal H$ of order at most $E(\mathcal H)$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
@@ -8943,6 +8969,32 @@
 
 
 
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-359" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_positive_teaching_dimension.html" class="table-title-link">Effective Range / Positive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Positive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Refuted: positive teaching dimension need not be finite, even on a finite domain.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every $n\ge1$, the full cube has effective range $n$ and positive teaching dimension $\infty$ because the empty concept has no finite positive teaching set. Thus the proposed reverse inequality fails more strongly than by an unbounded finite gap.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For the full cube $2^{[n]}$, the empty concept has no positive examples. Its only positive sample is therefore empty, which every cube concept realizes; it cannot be a positive teaching set. Hence $\mathrm{TD}^+(2^{[n]})=\infty$, while the effective range is $n$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a></p></div>
 
         </div>
     </div>

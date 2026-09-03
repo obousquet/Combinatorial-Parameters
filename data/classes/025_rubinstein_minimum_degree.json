@@ -4,5 +4,5 @@
   "short_name": "rubinstein_minimum_degree",
   "graph_label": "Rubinstein min-degree",
   "symbol": "V_d",
-  "definition": "For each d at least 10, this is the class V_d on d+2 coordinates from Corollary 44 of Rubinstein--Bartlett--Rubinstein. Its bitwise complement is the union of three sets: S1 has four free coordinates, then the fixed word 00110011, then d-10 zero coordinates; S2 has fixed 0011, then four free coordinates, then fixed 1100, then d-10 zero coordinates; S3 has fixed 11001100, then d-6 free coordinates."
+  "definition": "For each $d\\ge10$, this is the class $V_d$ on $d+2$ coordinates from Corollary 44 of Rubinstein--Bartlett--Rubinstein. Its bitwise complement is the union of three sets: $S_1$ has four free coordinates, then the fixed word $00110011$, then $d-10$ zero coordinates; $S_2$ has fixed $0011$, then four free coordinates, then fixed $1100$, then $d-10$ zero coordinates; $S_3$ has fixed $11001100$, then $d-6$ free coordinates."
 }

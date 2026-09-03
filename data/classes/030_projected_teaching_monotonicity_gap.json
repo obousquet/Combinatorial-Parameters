@@ -4,5 +4,5 @@
   "short_name": "projected_teaching_monotonicity_gap",
   "graph_label": "Projected-teaching gap",
   "symbol": "\u005cmathcal C_{pt}",
-  "definition": "On four coordinates x_1,x_2,x_3,x_4, let \u005cmathcal C_{pt}=\\{1000,0100,1100,0010,0001\\}, with strings written in coordinate order."
+  "definition": "On four coordinates $x_1,x_2,x_3,x_4$, let $\\mathcal C_{\\mathrm{pt}}=\\{1000,0100,1100,0010,0001\\}$, with strings written in coordinate order."
 }

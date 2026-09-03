@@ -3,6 +3,6 @@
   "name": "Positive-Teaching Triangle",
   "short_name": "positive_teaching_triangle",
   "graph_label": "Positive teaching triangle",
-  "symbol": "\u005cmathcal C_{+\triangle}",
-  "definition": "On three coordinates x_1,x_2,x_3, let \u005cmathcal C_{+\triangle}=\\{110,101,011\\}, with strings written in coordinate order."
+  "symbol": "\\mathcal C_{+\\triangle}",
+  "definition": "On three coordinates $x_1,x_2,x_3$, let $\\mathcal C_{+\\triangle}=\\{110,101,011\\}$, with strings written in coordinate order."
 }

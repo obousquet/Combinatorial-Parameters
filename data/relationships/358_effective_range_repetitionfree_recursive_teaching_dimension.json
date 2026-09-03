@@ -1,0 +1,15 @@
+{
+  "id": 358,
+  "name": "Effective Range / Repetition-Free Recursive Teaching Dimension",
+  "short_name": "effective_range_repetitionfree_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, $\\mathrm{rfRTD}(\\mathcal H)\\le E(\\mathcal H)$.",
+  "proof": "Discard the coordinates that are constant on $\\mathcal H$, so the domain has $E(\\mathcal H)$ coordinates. The full cube on that domain has a repetition-free teaching plan of order its domain size: recursively teach the 1-fibre using the chosen coordinate and then the 0-fibre, so the coordinate sets are all distinct. Restricting this plan to $\\mathcal H$ preserves the teaching property and repetition-freeness. Hence it is a repetition-free teaching plan for $\\mathcal H$ of order at most $E(\\mathcal H)$.",
+  "references": "\\cite{doliwa2014recursive}",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "On the $n$-singleton family, every coordinate is effective, so $E=n$, while the singleton concepts can be removed using their distinct one-coordinate positive teaching samples, giving $\\mathrm{rfRTD}=1$."
+}

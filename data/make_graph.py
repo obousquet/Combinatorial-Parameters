@@ -431,16 +431,23 @@ def reduced_linear_relations(
     ]
 
 
-def hierarchy_ranks(relationships: List[Dict[str, Any]]) -> Dict[str, int]:
+def hierarchy_ranks(
+    relationships: List[Dict[str, Any]], vertices: set[str] | None = None
+) -> Dict[str, int]:
     """Assign ranks from the affine-dominance transitive closure.
 
     Strongly connected components handle reciprocal bounds without claiming
-    that their endpoints are equal parameters.  The longest-path ranks of the
-    condensed DAG are exactly the layer numbers induced by the closure.
+    that their endpoints are equal parameters.  Sources of the condensed DAG
+    (parameters not dominated by another displayed linear parameter) have
+    rank zero.  Every non-isolated sink (a parameter that dominates no other)
+    is placed at the common maximal rank, so terminal nodes align at the
+    bottom even when their incoming branches have unequal lengths.  Isolated
+    nodes have no order information; they are placed at rank zero.
     """
     adjacency = rank_adjacency(relationships)
-    vertices = set(adjacency)
-    vertices.update(target for targets in adjacency.values() for target in targets)
+    all_vertices = set(vertices or ())
+    all_vertices.update(adjacency)
+    all_vertices.update(target for targets in adjacency.values() for target in targets)
 
     # Tarjan's algorithm condenses the preorder to a DAG.  A cycle need not be
     # an identity in the source data, so the individual nodes remain visible.
@@ -473,7 +480,7 @@ def hierarchy_ranks(relationships: List[Dict[str, Any]]) -> Dict[str, int]:
                     break
             components.append(component)
 
-    for vertex in vertices:
+    for vertex in all_vertices:
         if vertex not in indices:
             visit(vertex)
 
@@ -501,7 +508,22 @@ def hierarchy_ranks(relationships: List[Dict[str, Any]]) -> Dict[str, int]:
             indegree[successor] -= 1
             if indegree[successor] == 0:
                 queue.append(successor)
-    return {vertex: ranks[component_of[vertex]] for vertex in vertices}
+    # The longest path from a source gives a valid top-down rank for all
+    # nonterminal components.  Explicitly align every terminal component at
+    # the bottom rank.  Since the DAG's largest source-to-sink distance is the
+    # bottom rank, no nonterminal component can collide with that rank.
+    maximal_rank = max(ranks.values(), default=0)
+    outgoing = {component: dag.get(component, set()) for component in indegree}
+    isolated_components = {
+        component_of[vertex]
+        for vertex in all_vertices
+        if not adjacency.get(vertex)
+        and not any(vertex in targets for targets in adjacency.values())
+    }
+    for component, successors in outgoing.items():
+        if not successors and component not in isolated_components:
+            ranks[component] = maximal_rank
+    return {vertex: ranks[component_of[vertex]] for vertex in all_vertices}
 
 
 def affine_linear_blocks(relationships: List[Dict[str, Any]]) -> List[List[str]]:
@@ -707,7 +729,9 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     }
     base_backbone = reduced_by_variant.get(BASE_VARIANT, [])
     base_rank_relations = relationships_by_variant.get(BASE_VARIANT, [])
-    ranks = hierarchy_ranks(base_rank_relations)
+    ranks = hierarchy_ranks(
+        base_rank_relations, set(parameters_by_ref)
+    )
     linear_blocks = affine_linear_blocks(base_rank_relations)
 
     # Add one node for each exact-equality component.  The first record is the

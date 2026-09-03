@@ -8,5 +8,8 @@
   "details": "For finite concept classes, $\\mathrm{SDC}(\\mathcal H)\\ge\\mathrm{RTD}(\\mathcal H)$.",
   "proof": "Lemma 7 of Doliwa--Fan--Simon--Zilles (attributed there to Kuhlmann) gives $\\mathrm{TS}_{\\min}(\\mathcal C)\\leq\\mathrm{SDC}(\\mathcal C)$ for every concept class.  Since $\\mathrm{SDC}$ is monotone under subclasses, their Lemmas 3--4 yield $\\mathrm{RTD}(\\mathcal H)=\\max_{\\mathcal C\\subseteq\\mathcal H}\\mathrm{TS}_{\\min}(\\mathcal C)\\leq\\mathrm{SDC}(\\mathcal H)$.",
   "status": "established",
-  "references": "\\cite{doliwa2014recursive}"
+  "references": "\\cite{doliwa2014recursive,ben1998self,hu2017quadratic}",
+  "witness": "#classes/ben_david_eiron_selfdirected",
+  "witness_strength": "unbounded",
+  "witness_verification": "For any fixed $d\\ge3$, Ben-David--Eiron's Lemma 1 gives $\\mathrm{SDC}(\\mathcal C_n^d)\\ge n$ while $\\mathrm{VC}(\\mathcal C_n^d)=d$. Hu--Wu--Li--Wang's explicit quadratic VC-to-RTD bound gives $\\mathrm{RTD}(\\mathcal C_n^d)\\le39.3752d^2-3.6330d$, independently of $n$. Thus $\\mathrm{SDC}/\\mathrm{RTD}$ is unbounded along this family."
 }

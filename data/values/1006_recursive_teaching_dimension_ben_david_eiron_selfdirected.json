@@ -1,0 +1,12 @@
+{
+  "id": 1006,
+  "name": "Recursive Teaching Dimension of the Ben-David--Eiron Family",
+  "short_name": "recursive_teaching_dimension_ben_david_eiron_selfdirected",
+  "class_id": "#classes/ben_david_eiron_selfdirected",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$\\le 39.3752d^2-3.6330d$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Ben-David--Eiron give $\\mathrm{VC}(\\mathcal C_n^d)=d$. The explicit quadratic theorem of Hu--Wu--Li--Wang therefore bounds $\\mathrm{RTD}(\\mathcal C_n^d)$ by $39.3752d^2-3.6330d$, uniformly in $n$. Here $d$ is fixed and $n$ is the family variable.",
+  "references": "\\cite{ben1998self,hu2017quadratic}."
+}

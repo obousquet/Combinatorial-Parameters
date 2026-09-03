@@ -4,5 +4,5 @@
   "short_name": "projected_rtd_gap",
   "graph_label": "Projected RTD gap",
   "symbol": "C_{rtdp}",
-  "definition": "On three coordinates, let C_rtdp consist of the four strings 001, 010, 011, and 100."
+  "definition": "On three coordinates, let $C_{\\mathrm{rtdp}}$ consist of the four strings $001,010,011,100$."
 }

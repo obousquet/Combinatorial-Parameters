@@ -4,5 +4,5 @@
   "short_name": "middle_layers",
   "graph_label": "Middle layers",
   "symbol": "ML_m",
-  "definition": "For m at least 1, on a domain of size 2m+1, let ML_m be the family of all subsets of sizes m and m+1."
+  "definition": "For $m\\ge1$, on a domain of size $2m+1$, let $ML_m$ be the family of all subsets of sizes $m$ and $m+1$."
 }

@@ -1,0 +1,9 @@
+{
+  "id": 33,
+  "name": "Ben-David--Eiron Fixed-VC Self-Directed Family",
+  "short_name": "ben_david_eiron_selfdirected",
+  "graph_label": "BE fixed-VC family",
+  "symbol": "\\mathcal C_n^d",
+  "definition": "Fix $d\\ge3$. Let $C_0^d$ be the $2^d\\times d$ matrix whose rows are all binary strings of length $d$. Recursively, if $C_{n-1}^d$ has $r$ rows and $s$ columns, define $C_n^d$ as the $3\\times3$ block matrix $$\\begin{pmatrix}C_{n-1}^d&J&0\\\\0&C_{n-1}^d&J\\\\J&0&C_{n-1}^d\\end{pmatrix},$$ where $J$ and $0$ are respectively the all-one and all-zero $r\\times s$ matrices. The rows of this matrix are the concepts in $\\mathcal C_n^d$ on its $d3^n$ column coordinates.",
+  "comments": "Lemma 1 of Ben-David--Eiron proves $\\mathrm{VC}(\\mathcal C_n^d)=d$ and self-directed complexity at least $n$."
+}

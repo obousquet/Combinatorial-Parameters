@@ -1,0 +1,15 @@
+{
+  "id": 359,
+  "name": "Effective Range / Positive Teaching Dimension",
+  "short_name": "effective_range_positive_teaching_dimension",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/positive_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "Refuted: positive teaching dimension need not be finite, even on a finite domain.",
+  "proof": "For the full cube $2^{[n]}$, the empty concept has no positive examples. Its only positive sample is therefore empty, which every cube concept realizes; it cannot be a positive teaching set. Hence $\\mathrm{TD}^+(2^{[n]})=\\infty$, while the effective range is $n$.",
+  "references": "\\cite{balbach2008measuring}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For every $n\\ge1$, the full cube has effective range $n$ and positive teaching dimension $\\infty$ because the empty concept has no finite positive teaching set. Thus the proposed reverse inequality fails more strongly than by an unbounded finite gap."
+}

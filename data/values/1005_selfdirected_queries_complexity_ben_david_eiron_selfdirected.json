@@ -1,0 +1,12 @@
+{
+  "id": 1005,
+  "name": "Self-Directed Queries Complexity of the Ben-David--Eiron Family",
+  "short_name": "selfdirected_queries_complexity_ben_david_eiron_selfdirected",
+  "class_id": "#classes/ben_david_eiron_selfdirected",
+  "parameter_id": "#parameters/selfdirected_queries_complexity",
+  "value": "$\\ge n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Lemma 1 of Ben-David--Eiron proves recursively that after every queried coordinate and either returned label, the remaining version space contains a copy of $\\mathcal C_{n-1}^d$. Hence every self-directed learner can be forced to make at least $n$ mistakes.",
+  "references": "\\cite{ben1998self}, Lemma 1."
+}

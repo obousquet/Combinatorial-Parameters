@@ -29,6 +29,10 @@
     "doubly_monotonic": {
       "proof": "It is both subfamily-monotonic and projection-monotonic by the displayed direct arguments.",
       "kind": "definitional_consequence"
+    },
+    "strictly_monotonic": {
+      "proof": "For finite binary classes this parameter equals VC dimension. The VC counterexample $\\mathcal H=\\{000,001,011,100\\}$ has both conditioning fibres of value 1 and whole-class value 1, so the strict-C condition fails here as well.",
+      "kind": "counterexample"
     }
   }
 }
