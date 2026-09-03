@@ -1,0 +1,11 @@
+{
+  "id": 1023,
+  "name": "Proper Stable Sample Compression of Half-intervals",
+  "short_name": "proper_stable_sample_compression_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/proper_stable_sample_compression",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For a realizable labeled sample of the initial-segment class, if it contains a negative example, retain its least negative coordinate $j$ and reconstruct $[j-1]$; realizability gives $j\\geq2$. If it contains no negative example, retain nothing and reconstruct $[n]$. The reconstruction belongs to the half-interval class and is consistent with the whole sample. The selected least negative point, when present, is unchanged on deleting unselected examples; the empty case remains empty under every subsample. Thus this is a proper stable unlabeled scheme of size one. Size zero is impossible for a nontrivial class."
+}

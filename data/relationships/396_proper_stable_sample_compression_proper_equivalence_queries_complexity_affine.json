@@ -1,0 +1,14 @@
+{
+  "id": 396,
+  "name": "Proper Stable Sample Compression / Proper Equivalence Queries Complexity (affine)",
+  "short_name": "proper_stable_sample_compression_proper_equivalence_queries_complexity_affine",
+  "parameter_1_id": "#parameters/proper_stable_sample_compression",
+  "parameter_2_id": "#parameters/proper_equivalence_queries_complexity",
+  "relationship_type": "larger_c",
+  "status": "refuted",
+  "details": "There are no constants $c>0,d$ such that $\\mathrm{psUSC}(\\mathcal H)\\geq c\\,\\mathrm Q_{\\mathrm{peq}}(\\mathcal H)-d$ for every finite binary class.",
+  "proof": "For the half-interval family $\\mathcal I_n$, proper stable unlabeled compression has value one, while proper equivalence-query complexity is $\\Theta(\\log n)$. Hence the asserted reverse affine-linear bound fails.",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "The recorded values are $\\mathrm{psUSC}(\\mathcal I_n)=1$ and $\\mathrm Q_{\\mathrm{peq}}(\\mathcal I_n)=\\Theta(\\log n)$, so the gap is unbounded."
+}
