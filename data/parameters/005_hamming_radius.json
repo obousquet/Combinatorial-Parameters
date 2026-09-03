@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{B}",
   "definition": "The **Hamming Radius** $B(\\mathcal{H})$ of a family $\\mathcal{H}$ is the smallest radius of an enclosing Hamming ball, defined as $$ B(\\mathcal{H}):= \\min\\{d: \\exists T\\subset \\mathcal{X\\},\\, \\forall h\\in \\mathcal{H},\\, |h\\Delta T|\\le d} $$",
   "category": "basic",
+  "graph_summary": "The smallest radius of a Hamming ball containing the class.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

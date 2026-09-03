@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{dens}",
   "definition": "The **double-density** of a concept class is defined as twice the density of its $1$-inclusion graph, i.e twice the ratio of edges to vertices, or equivalently the average degree.",
   "category": "graph-based",
+  "graph_summary": "The average degree of the class's one-inclusion graph.",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": false,

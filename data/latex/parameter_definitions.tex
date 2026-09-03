@@ -987,6 +987,23 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf References}: \cite{chase2024dual}
       \end{itemize}
+\subsubsection{Shattering-Cover Projection VC Dimension}
+      \begin{definition}[Shattering-Cover Projection VC Dimension - {$\mathrm{SCVC}$}]\label{def:shattering_cover_projection_vc_dimension}
+      For a finite binary class $\H$ on domain $\X$, define
+      \[
+      \mathrm{SCVC}(\H)\bydef
+      \min\left\{\VC(\H_{|S}):S\subseteq\X,\,
+      |\operatorname{sh}(\H_{|S})|\geq|\H|\right\}.
+      \]
+      The minimum is well-defined because $S=\X$ is admissible by the
+      sandwich theorem.  This quantity formalizes a refuted candidate
+      characterization of interpolation degree.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: ?
+      \end{itemize}
+
 \subsection{Holes and Homology}\label{sec:Holes and Homology}
 \subsubsection{co-VC dimension}
       

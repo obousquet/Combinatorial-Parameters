@@ -5,6 +5,7 @@
   "class_id": "#classes/full_cube",
   "parameter_id": "#parameters/covc_dimension",
   "value": "$0$",
+  "value_class": "omega_1",
   "details": "",
   "status": "established",
   "proof": "Every restriction of the full cube is itself a full cube, so it has no missing trace. Hence it contains no hollow star of positive dimension."

@@ -1,0 +1,13 @@
+{
+  "id": 313,
+  "name": "Log Size / VC Dimension",
+  "short_name": "log_size_vc_dimension",
+  "parameter_1_id": "#parameters/log_size",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, log size is at least VC dimension.",
+  "proof": "A shattered set of size $d=\\mathrm{VC}(\\mathcal H)$ realizes all $2^d$ binary traces, each supplied by a distinct member of $\\mathcal H$. Thus $|\\mathcal H|\\geq2^d$, and taking base-two logarithms gives $\\log_2|\\mathcal H|\\geq d$.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded"
+}

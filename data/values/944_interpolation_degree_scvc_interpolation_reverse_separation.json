@@ -1,0 +1,12 @@
+{
+  "id": 944,
+  "name": "Interpolation Degree of the SCVC/Interpolation Reverse Separation Class",
+  "short_name": "interpolation_degree_scvc_interpolation_reverse_separation",
+  "class_id": "#classes/scvc_interpolation_reverse_separation",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The evaluation matrix of $1,x_1,x_2,x_3,z$ on the four concepts has rank three, so degree one cannot interpolate every function. Including degree-two monomials has rank four, so degree two does suffice. This exact rank calculation is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "details": "A finite counterexample calculation."
+}

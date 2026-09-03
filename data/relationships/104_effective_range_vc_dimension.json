@@ -7,6 +7,7 @@
   "status": "established",
   "proof": "Every coordinate of a shattered set takes both labels among members of $\\mathcal H$, so it belongs to the effective range. Hence the effective range contains every shattered set.",
   "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
   "short_name": "effective_range_vc_dimension",
   "name": "Effective Range / VC Dimension"
 }

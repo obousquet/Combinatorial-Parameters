@@ -10,6 +10,8 @@
   "proof": "Theorem 9 of the cited paper proves $\\mathrm{sd}(\\mathcal E)\\leq2\\,\\mathrm{VC}(\\mathcal E)-1$ for every finite extremal class $\\mathcal E$. Apply it to a minimum-VC extremal extension of $\\mathcal H$ and use spherical-dimension monotonicity under inclusion.",
   "references": "\\cite{chornomaz2025spherical}",
   "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "For the full cube, extremal-extension VC dimension is n whereas spherical dimension is n-1, so the endpoint parameters are strictly separated for every n>=1.",
   "short_name": "extremal_extension_vc_dimension_spherical_dimension_affine",
   "name": "Extremal-Extension VC Dimension / Spherical Dimension (affine)"
 }

@@ -7,6 +7,7 @@
   "additive_constant": "1",
   "details": "For every finite binary concept class, $\\mathrm{SR}(\\mathcal H)\\leq\\mathrm E(\\mathcal H)+1$.",
   "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
   "status": "established",
   "proof": "Discard the coordinates on which all concepts agree. The remaining incidence matrix has $\\mathrm E(\\mathcal H)$ columns and therefore admits a realizing matrix of rank at most $\\mathrm E(\\mathcal H)$. Reintroduce all constant columns using one additional rank-one direction. This realizes the original sign matrix with rank at most $\\mathrm E(\\mathcal H)+1$.",
   "short_name": "effective_range_sign_rank_affine",

@@ -6,6 +6,7 @@
   "details": "For the oriented one-inclusion graph of every finite concept class.",
   "variant": "relative",
   "witness": "#classes/halfintervals",
+  "witness_strength": "strict",
   "short_name": "maximum_degree_maximum_positive_degree",
   "name": "Maximum Degree / Maximum Positive Degree",
   "status": "established",

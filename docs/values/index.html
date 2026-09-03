@@ -486,7 +486,7 @@
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
 <p><strong>Value: </strong>$0$</p>
-<p><strong>Order:</strong> </p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Every restriction of the full cube is itself a full cube, so it has no missing trace. Hence it contains no hollow star of positive dimension.</p></div>
@@ -7932,7 +7932,7 @@
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/spherical_dimension.html">Spherical Dimension</a></p>
 <p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> </p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 <p><strong>Details: </strong>For $n\geq3$.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The antipodal complex is the complete bipartite graph on positive and negative literals with the perfect matching removed. For $n\geq3$ it contains an antipodal six-cycle, giving a 1-sphere, and it is one-dimensional so no larger sphere occurs.</p></div>
@@ -15026,6 +15026,261 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The class contains a two-cube, so interpolation degree is at least its largest strongly shattered-set size, namely two. Its minimum largest order-shattered-set size is two, and this upper-bounds interpolation degree. Hence interpolation degree is exactly two.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#moran2015shattered">[moran2015shattered]</a> <a href="bibliography.html#bollobas1995defect">[bollobas1995defect]</a> <a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-935" style="position:relative;">
+
+        <h3><a href="values/interpolation_degree_interpolation_conjecture_counterexample.html" class="table-title-link">Interpolation Degree of the Interpolation-Conjecture Counterexample</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interpolation Degree of the Interpolation-Conjecture Counterexample</p>
+<p><strong>Class: </strong><a href="classes/interpolation_conjecture_counterexample.html">Interpolation-Conjecture Counterexample</a></p>
+<p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite counterexample calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the concepts $001,010,011,100$, the evaluation vectors of $1,x_1,x_2,x_3$ are linearly independent, so degree-one polynomials interpolate every function. Degree zero gives only constants, hence the interpolation degree is one. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-936" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_interpolation_conjecture_counterexample.html" class="table-title-link">Shattering-Cover Projection VC Dimension of the Interpolation-Conjecture Counterexample</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of the Interpolation-Conjecture Counterexample</p>
+<p><strong>Class: </strong><a href="classes/interpolation_conjecture_counterexample.html">Interpolation-Conjecture Counterexample</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite counterexample calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The projection to $\{x_2,x_3\}$ is the full two-cube, with four shattered subsets, and is therefore admissible. It has VC dimension two. Every projection to at most one coordinate has at most two shattered subsets and fails the admissibility condition $|\operatorname{sh}(\mathcal H_{|S})|\ge4$. Thus the minimum admissible VC dimension is two. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-937" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_trivial_concepts.html" class="table-title-link">Shattering-Cover Projection VC Dimension of Trivial Concepts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of Trivial Concepts</p>
+<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For $n\geq1$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A one-coordinate projection is the full one-cube, so it is admissible and has VC dimension one. The empty projection has one shattered subset, fewer than the two concepts in the class; thus no admissible projection has VC dimension zero. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-938" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_singletons.html" class="table-title-link">Shattering-Cover Projection VC Dimension of Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For $n\geq2$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Project onto any $n-1$ coordinates. The traces are the empty set and their $n-1$ singletons, so all $n$ concepts remain distinguished and exactly the empty set and the singletons are shattered. This projection is admissible and has VC dimension one. A VC-zero projection has one trace and only one shattered subset, hence cannot be admissible for a class of size $n\geq2$. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-939" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_full_cube.html" class="table-title-link">Shattering-Cover Projection VC Dimension of Full Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For $n\geq1$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A projection to $m$ coordinates is the full $m$-cube, with $2^m$ shattered subsets. To meet the admissibility requirement $2^m\geq|\mathcal H|=2^n$ requires $m=n$. The only admissible projection is therefore the full cube, whose VC dimension is $n$. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-940" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_singletons_plus_empty_set.html" class="table-title-link">Shattering-Cover Projection VC Dimension of Singletons plus Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of Singletons plus Empty Set</p>
+<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For $n\geq1$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full class consists of the empty set and all $n$ singletons. Its shattered subsets are exactly the empty set and the $n$ singleton coordinates, so it is itself admissible and has VC dimension one. A VC-zero projection has only one shattered subset and cannot be admissible because the class has at least two concepts. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-941" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_halfintervals.html" class="table-title-link">Shattering-Cover Projection VC Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For $n\geq2$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full threshold chain has exactly the empty set and its $n$ singleton coordinates shattered, so it is admissible and has VC dimension one. No projection of a threshold chain has VC dimension above one. A VC-zero projection has one shattered subset and is not admissible for this $n$-concept class. Thus the minimum admissible VC dimension is one. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-942" style="position:relative;">
+
+        <h3><a href="values/vc_dimension_scvc_vc_separation.html" class="table-title-link">VC Dimension of the SCVC/VC Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of the SCVC/VC Separation Class</p>
+<p><strong>Class: </strong><a href="classes/scvc_vc_separation.html">SCVC/VC Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite separation calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On $\{x_2,z\}$, the four concepts give the traces $00,01,10,11$, so VC dimension is at least two. Every three-coordinate projection has at most four traces, whereas shattering a three-set requires eight; hence VC dimension is exactly two. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-943" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_scvc_vc_separation.html" class="table-title-link">Shattering-Cover Projection VC Dimension of the SCVC/VC Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of the SCVC/VC Separation Class</p>
+<p><strong>Class: </strong><a href="classes/scvc_vc_separation.html">SCVC/VC Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite separation calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projection to $\{x_1,x_2,x_3\}$ gives the four-element threshold chain $000,100,110,111$. It has exactly the empty set and its three singleton coordinates shattered, hence four shattered subsets and is admissible for this four-concept class; its VC dimension is one. An admissible projection has at least two traces and therefore cannot have VC dimension zero. Thus $\mathrm{SCVC}=1$. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-944" style="position:relative;">
+
+        <h3><a href="values/interpolation_degree_scvc_interpolation_reverse_separation.html" class="table-title-link">Interpolation Degree of the SCVC/Interpolation Reverse Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interpolation Degree of the SCVC/Interpolation Reverse Separation Class</p>
+<p><strong>Class: </strong><a href="classes/scvc_interpolation_reverse_separation.html">SCVC/Interpolation Reverse Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite counterexample calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The evaluation matrix of $1,x_1,x_2,x_3,z$ on the four concepts has rank three, so degree one cannot interpolate every function. Including degree-two monomials has rank four, so degree two does suffice. This exact rank calculation is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-945" style="position:relative;">
+
+        <h3><a href="values/shattering_cover_projection_vc_dimension_scvc_interpolation_reverse_separation.html" class="table-title-link">Shattering-Cover Projection VC Dimension of the SCVC/Interpolation Reverse Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of the SCVC/Interpolation Reverse Separation Class</p>
+<p><strong>Class: </strong><a href="classes/scvc_interpolation_reverse_separation.html">SCVC/Interpolation Reverse Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite counterexample calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Project to $\{x_1,x_2,x_3\}$; the trace is $\{011,100\}$, which has VC dimension one and exactly its empty set and three singleton coordinates shattered. Thus the projection has four shattered subsets, matching the four original concepts. A VC-dimension-zero projection has only one shattered subset, so $\mathrm{SCVC}=1$. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-946" style="position:relative;">
+
+        <h3><a href="values/interpolation_degree_interpolation_effective_vc_radius_counterexample.html" class="table-title-link">Interpolation Degree of the Interpolation/Effective-VC-Radius Counterexample</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interpolation Degree of the Interpolation/Effective-VC-Radius Counterexample</p>
+<p><strong>Class: </strong><a href="classes/interpolation_effective_vc_radius_counterexample.html">Interpolation/Effective-VC-Radius Counterexample</a></p>
+<p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite counterexample calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On $000,011,101,110$, the four evaluation vectors of $1,x_1,x_2,x_3$ are linearly independent, so affine polynomials interpolate every function. Degree zero gives only constants. Hence $\mathrm{intdeg}=1$, as checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-947" style="position:relative;">
+
+        <h3><a href="values/effective_vc_radius_interpolation_effective_vc_radius_counterexample.html" class="table-title-link">Effective VC Radius of the Interpolation/Effective-VC-Radius Counterexample</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective VC Radius of the Interpolation/Effective-VC-Radius Counterexample</p>
+<p><strong>Class: </strong><a href="classes/interpolation_effective_vc_radius_counterexample.html">Interpolation/Effective-VC-Radius Counterexample</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>A finite counterexample calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>All three coordinates are effective, and every two-coordinate projection is the full two-cube, so every pair is shattered. The full three-coordinate trace has only four concepts and is not shattered. Thus $\mathrm{VCR}=2$, as checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-948" style="position:relative;">
+
+        <h3><a href="values/minimum_largest_order_shattered_set_order_shattering_effective_vc_radius_separation.html" class="table-title-link">Minimum Largest Order-Shattered Set of the Order-Shattering/Effective-VC-Radius Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Largest Order-Shattered Set of the Order-Shattering/Effective-VC-Radius Separation Class</p>
+<p><strong>Class: </strong><a href="classes/order_shattering_effective_vc_radius_separation.html">Order-Shattering/Effective-VC-Radius Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>An exhaustive finite calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For each of the six coordinate orders, standard downshifting produces a downset with a two-element face; hence every order has an order-shattered two-set. The class has five concepts, so no shifted class can contain a three-cube. Thus the minimum largest order-shattered-set size is two. All orders are checked by $\texttt{sync/verify\_order\_shattering\_separation.py}$.</p></div>
+
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-949" style="position:relative;">
+
+        <h3><a href="values/effective_vc_radius_order_shattering_effective_vc_radius_separation.html" class="table-title-link">Effective VC Radius of the Order-Shattering/Effective-VC-Radius Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective VC Radius of the Order-Shattering/Effective-VC-Radius Separation Class</p>
+<p><strong>Class: </strong><a href="classes/order_shattering_effective_vc_radius_separation.html">Order-Shattering/Effective-VC-Radius Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>An exhaustive finite calculation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>All three coordinates are effective and hence individually shattered. On $\{x_1,x_2\}$ the class realizes only $00,01,10$, so not every pair is shattered. Therefore the effective VC radius is one; this is checked by $\texttt{sync/verify\_order\_shattering\_separation.py}$.</p></div>
+
 
         </div>
     </div>

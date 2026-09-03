@@ -5,6 +5,7 @@
   "relationship_type": "larger_c",
   "details": "For finite concept classes, the stronger bound is $\\mathrm{NCTD} \\ge \\lceil \\mathrm{dens}/2 \\rceil$.",
   "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
   "short_name": "noclashing_teaching_dimension_double_density_or_average_degree",
   "name": "No-Clashing Teaching Dimension / Double Density or Average Degree",
   "status": "established",

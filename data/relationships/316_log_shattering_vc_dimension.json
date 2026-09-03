@@ -1,0 +1,13 @@
+{
+  "id": 316,
+  "name": "Log Shattering / VC Dimension",
+  "short_name": "log_shattering_vc_dimension",
+  "parameter_1_id": "#parameters/log_shattering",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, log shattering is at least VC dimension.",
+  "proof": "If a set of size $d=\\mathrm{VC}(\\mathcal H)$ is shattered, all of its $2^d$ subsets are shattered. Thus the shattering family has size at least $2^d$, and $\\log_2|\\operatorname{sh}(\\mathcal H)|\\geq d$.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded"
+}

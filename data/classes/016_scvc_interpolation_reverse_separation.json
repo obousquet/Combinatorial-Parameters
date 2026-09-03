@@ -1,0 +1,8 @@
+{
+  "id": 16,
+  "name": "SCVC/Interpolation Reverse Separation Class",
+  "short_name": "scvc_interpolation_reverse_separation",
+  "symbol": "\\mathcal C_{\\mathrm{rev}}",
+  "definition": "On the domain $\\{x_1,x_2,x_3,z\\}$, let $\\mathcal C_{\\mathrm{rev}}=\\{0110,0111,1000,1001\\}$, where strings list values at $x_1,x_2,x_3,z$ in that order.",
+  "comments": "A four-concept class witnessing that shattering-cover projection VC dimension can be strictly below interpolation degree."
+}

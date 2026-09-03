@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "Dimension bound from Yang's canonical suboplex.",
   "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
   "status": "established",
   "proof": "Coordinates outside the effective range are constant on the class and may be deleted.  On the remaining $\\mathrm{E}(\\mathcal H)$ coordinates, Yang's canonical suboplex is a subcomplex of the boundary of the corresponding cross-polytope; every relevant section has dimension at most $\\mathrm{E}(\\mathcal H)-1$.  Since Yang dimension is one plus the largest possible homology dimension, $\\mathrm{Y}(\\mathcal H)\\le \\mathrm{E}(\\mathcal H)$.",
   "references": "\\cite{yang2018homological}",

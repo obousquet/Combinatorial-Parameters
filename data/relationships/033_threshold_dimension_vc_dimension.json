@@ -9,5 +9,6 @@
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
   "short_name": "threshold_dimension_vc_dimension",
   "name": "Threshold Dimension / VC Dimension",
-  "witness": "#classes/halfintervals"
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded"
 }

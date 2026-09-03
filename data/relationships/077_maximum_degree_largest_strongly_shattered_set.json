@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "Every contained cube has a vertex with one neighbour in each cube coordinate.",
   "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
   "short_name": "maximum_degree_largest_strongly_shattered_set",
   "name": "Maximum Degree / Largest Strongly Shattered Set",
   "status": "established",

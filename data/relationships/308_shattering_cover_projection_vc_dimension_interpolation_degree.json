@@ -1,0 +1,13 @@
+{
+  "id": 308,
+  "name": "Shattering-Cover Projection VC Dimension / Interpolation Degree",
+  "short_name": "shattering_cover_projection_vc_dimension_interpolation_degree",
+  "parameter_1_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "parameter_2_id": "#parameters/interpolation_degree",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "No reverse one-sided comparison rescues the refuted equality: on $\\mathcal C_{\\mathrm{rev}}=\\{0110,0111,1000,1001\\}$, $\\mathrm{SCVC}=1$ while $\\mathrm{intdeg}=2$.",
+  "proof": "The projection to $\\{x_1,x_2,x_3\\}$ has trace $\\{011,100\\}$, whose empty set and three singleton coordinates are shattered, while its VC dimension is one; it is therefore SCVC-admissible. Degree-one polynomials have only rank three on the four original concepts, whereas degree-two polynomials have rank four. Thus $\\mathrm{SCVC}(\\mathcal C_{\\mathrm{rev}})=1<2=\\mathrm{intdeg}(\\mathcal C_{\\mathrm{rev}})$.",
+  "witness": "#classes/scvc_interpolation_reverse_separation",
+  "witness_strength": "strict"
+}

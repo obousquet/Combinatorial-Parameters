@@ -5,6 +5,7 @@
   "definition": "The **diameter** $D(\\mathcal{H})$ of a family $\\mathcal{H}$ is the largest distance between two elements of the family, i.e. $$ D(\\mathcal{H}):= \\max_{h_1,h_2\\in\\mathcal{H}} |h_1\\Delta h_2| $$",
   "comments": "The diameter is equal to the strict diameter dimension.",
   "category": "basic",
+  "graph_summary": "The greatest Hamming distance between two concepts in the class.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

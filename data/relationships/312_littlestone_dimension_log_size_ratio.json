@@ -1,0 +1,14 @@
+{
+  "id": 312,
+  "name": "Littlestone Dimension / Log Size Ratio",
+  "short_name": "littlestone_dimension_log_size_ratio",
+  "parameter_1_id": "#parameters/littlestone_dimension",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, Littlestone dimension is at least its Log Size Ratio.",
+  "proof": "On an $n$-point domain, use the complete depth-$n$ tree that queries the coordinates in one fixed order on every level. Its zero-cover has one distinct leaf labeling for each member of $\\mathcal H$, hence size $|\\mathcal H|$. Rakhlin--Sridharan--Tewari's sequential Sauer bound gives $|\\mathcal H|\\leq\\sum_{i=0}^L\\binom ni\\leq(n+1)^L$ for $L=\\mathrm{Ldim}(\\mathcal H)$. Therefore $L\\geq\\log(|\\mathcal H|-1)/\\log(n+1)=\\mathrm{LSR}(\\mathcal H)$, with the singleton convention handled separately.",
+  "references": "\\cite{rakhlin2010online}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded"
+}

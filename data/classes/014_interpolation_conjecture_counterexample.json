@@ -1,0 +1,8 @@
+{
+  "id": 14,
+  "name": "Interpolation-Conjecture Counterexample",
+  "short_name": "interpolation_conjecture_counterexample",
+  "symbol": "\\mathcal C_{\\mathrm{int}}",
+  "definition": "On the domain $\\{x_1,x_2,x_3\\}$, let $\\mathcal C_{\\mathrm{int}}=\\{001,010,011,100\\}$, where strings list values at $x_1,x_2,x_3$ in that order.",
+  "comments": "A four-concept counterexample to the proposed equality $\\mathrm{intdeg}=\\mathrm{SCVC}." 
+}

@@ -1,0 +1,12 @@
+{
+  "id": 945,
+  "name": "Shattering-Cover Projection VC Dimension of the SCVC/Interpolation Reverse Separation Class",
+  "short_name": "shattering_cover_projection_vc_dimension_scvc_interpolation_reverse_separation",
+  "class_id": "#classes/scvc_interpolation_reverse_separation",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Project to $\\{x_1,x_2,x_3\\}$; the trace is $\\{011,100\\}$, which has VC dimension one and exactly its empty set and three singleton coordinates shattered. Thus the projection has four shattered subsets, matching the four original concepts. A VC-dimension-zero projection has only one shattered subset, so $\\mathrm{SCVC}=1$. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "details": "A finite counterexample calculation."
+}

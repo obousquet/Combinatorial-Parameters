@@ -1,0 +1,12 @@
+{
+  "id": 947,
+  "name": "Effective VC Radius of the Interpolation/Effective-VC-Radius Counterexample",
+  "short_name": "effective_vc_radius_interpolation_effective_vc_radius_counterexample",
+  "class_id": "#classes/interpolation_effective_vc_radius_counterexample",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "All three coordinates are effective, and every two-coordinate projection is the full two-cube, so every pair is shattered. The full three-coordinate trace has only four concepts and is not shattered. Thus $\\mathrm{VCR}=2$, as checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "details": "A finite counterexample calculation."
+}

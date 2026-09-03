@@ -9,6 +9,7 @@
   "latex_proof_label": "lem:elementary-parameter-hierarchy",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "star_number_vc_dimension",
   "name": "Star Number / VC Dimension"
 }

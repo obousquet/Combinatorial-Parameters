@@ -78,6 +78,7 @@
 <strong>Details:</strong><div class="text-field"><p>A proper random-counterexample strategy halves the expected version-space size.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At each stage, query a hypothesis minimizing its $L_1$ distance to the pointwise average of the current version space.  For every target, a uniformly random counterexample leaves at most half the current hypotheses in expectation.  Induction and Jensen's inequality for the concave logarithm then give expected remaining query cost at most $\log|\mathcal H|$.</p></div>
 

@@ -8,6 +8,7 @@
   "latex_proof_label": "lem:membership-query-log-size",
   "proof_source": "LaTeX survey, membership-query/log-size lemma (lem:membership-query-log-size).",
   "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
   "short_name": "membership_query_complexity_log_size",
   "name": "Membership Query Complexity / Log Size"
 }

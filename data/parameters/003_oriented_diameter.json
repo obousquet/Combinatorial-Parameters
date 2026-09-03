@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{D}^+",
   "definition": "The **oriented diameter** $\\mathrm{D}^+(\\mathcal{H})$ of a family $\\mathcal{H}$ is defined as $$ \\mathrm{D}^+(\\mathcal{H}):= \\max\\{|S\\|: \\{\\emptyset, S\\}\\subset \\mathcal{H}\\_{|S}} $$",
   "category": "basic",
+  "graph_summary": "The largest set supporting both the all-zero and all-one traces.",
   "symmetric": false,
   "monotonic": true,
   "p_monotonic": true,

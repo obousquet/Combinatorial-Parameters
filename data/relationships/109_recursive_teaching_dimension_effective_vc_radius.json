@@ -7,6 +7,7 @@
   "status": "established",
   "proof": "The first layer in the recursive teaching process is $\\mathcal H$ itself, so $\\mathrm{RTD}(\\mathcal H)\\ge\\mathrm{TS}_{\\min}(\\mathcal H)$.  Every minimum teaching set has size at least $\\mathrm{VCR}(\\mathcal H)$, because a smaller one extends to a shattered set of size $\\mathrm{VCR}(\\mathcal H)$; see the proof of the minimum-teaching-set relation.  Combining the two inequalities gives the claim.",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "recursive_teaching_dimension_effective_vc_radius",
   "name": "Recursive Teaching Dimension / Effective VC Radius"
 }

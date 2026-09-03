@@ -1,0 +1,13 @@
+{
+  "id": 307,
+  "name": "VC Dimension / Shattering-Cover Projection VC Dimension",
+  "short_name": "vc_dimension_shattering_cover_projection_vc_dimension",
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "The inequality can be strict.",
+  "proof": "The full-domain projection is admissible by the sandwich theorem, and its VC dimension is $\\mathrm{VC}(\\mathcal H)$. Since $\\mathrm{SCVC}$ minimizes over all admissible projections, $\\mathrm{SCVC}(\\mathcal H)\\leq\\mathrm{VC}(\\mathcal H)$.",
+  "witness": "#classes/scvc_vc_separation",
+  "witness_strength": "strict"
+}

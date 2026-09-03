@@ -7,6 +7,8 @@
   "details": "Lemma",
   "proof": "Work on the effective range.  If the effective VC radius is $d$, every $d$-subset is shattered.  For each coordinate order, the relevant initial $d$-set is therefore order-shattered by the downshifting characterization.  Thus every order has an order-shattered set of size $d$, and minimizing over orders gives $\\mathrm{OSH}_{\\min}(\\mathcal H)\\ge\\mathrm{VCR}(\\mathcal H)$.",
   "references": "\\cite{bollobas1995defect}",
+  "witness": "#classes/order_shattering_effective_vc_radius_separation",
+  "witness_strength": "strict",
   "short_name": "minimum_largest_order_shattered_set_effective_vc_radius",
   "name": "Minimum Largest Order Shattered Set / Effective VC Radius"
 }

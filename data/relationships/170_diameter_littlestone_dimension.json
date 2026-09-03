@@ -8,6 +8,7 @@
   "latex_proof_label": "lem:littlestone-diameter",
   "proof_source": "LaTeX survey, Littlestone/diameter lemma (lem:littlestone-diameter).",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "diameter_littlestone_dimension",
   "name": "Diameter / Littlestone Dimension"
 }

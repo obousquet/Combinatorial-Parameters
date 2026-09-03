@@ -1,0 +1,13 @@
+{
+  "id": 941,
+  "name": "Shattering-Cover Projection VC Dimension of Half-intervals",
+  "short_name": "shattering_cover_projection_vc_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "The full threshold chain has exactly the empty set and its $n$ singleton coordinates shattered, so it is admissible and has VC dimension one. No projection of a threshold chain has VC dimension above one. A VC-zero projection has one shattered subset and is not admissible for this $n$-concept class. Thus the minimum admissible VC dimension is one. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "references": ""
+}

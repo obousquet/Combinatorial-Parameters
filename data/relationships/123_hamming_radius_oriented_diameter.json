@@ -7,6 +7,7 @@
   "details": "For finite classes, this is the metric inequality $B(\\mathcal H)\\ge D^+(\\mathcal H)/2$.",
   "proof": "An oriented-diameter witness of size $d$ gives two concepts whose traces differ on all $d$ witness coordinates. For any Hamming-ball center, at least one of those concepts is at distance at least $d/2$ from it. Hence $B(\\mathcal H)\\ge \\tfrac12 D^+(\\mathcal H)$.",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "hamming_radius_oriented_diameter",
   "name": "Hamming Radius / Oriented Diameter"
 }

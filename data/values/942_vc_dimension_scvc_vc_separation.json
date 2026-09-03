@@ -1,0 +1,12 @@
+{
+  "id": 942,
+  "name": "VC Dimension of the SCVC/VC Separation Class",
+  "short_name": "vc_dimension_scvc_vc_separation",
+  "class_id": "#classes/scvc_vc_separation",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On $\\{x_2,z\\}$, the four concepts give the traces $00,01,10,11$, so VC dimension is at least two. Every three-coordinate projection has at most four traces, whereas shattering a three-set requires eight; hence VC dimension is exactly two. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "details": "A finite separation calculation."
+}

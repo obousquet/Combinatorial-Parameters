@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "Strong shattering is a special case of order shattering.",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "minimum_largest_order_shattered_set_largest_strongly_shattered_set",
   "name": "Minimum Largest Order Shattered Set / Largest Strongly Shattered Set",
   "status": "established",

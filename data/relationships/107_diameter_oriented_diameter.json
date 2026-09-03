@@ -6,6 +6,7 @@
   "variant": "relative",
   "details": "For finite concept classes, diameter dominates oriented diameter.",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "status": "established",
   "latex_proof_label": "lem:elementary-parameter-hierarchy",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",

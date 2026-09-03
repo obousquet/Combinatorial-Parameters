@@ -1,0 +1,14 @@
+{
+  "id": 310,
+  "name": "Recursive Teaching Dimension / Log Size Ratio",
+  "short_name": "recursive_teaching_dimension_log_size_ratio",
+  "parameter_1_id": "#parameters/recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, the recursive teaching dimension is at least its Log Size Ratio.",
+  "proof": "Let $r=\\mathrm{RTD}(\\mathcal H)$ on an $n$-point domain. Samei--Semukhin--Yang--Zilles prove $|\\mathcal H|\\leq\\sum_{i=0}^r\\binom ni\\leq(n+1)^r$. Thus $r\\geq\\log(|\\mathcal H|)/\\log(n+1)$, which is at least $\\log(|\\mathcal H|-1)/\\log(n+1)=\\mathrm{LSR}(\\mathcal H)$; singleton classes satisfy the conclusion by the catalogue's zero convention.",
+  "references": "\\cite{samei2014algebraic}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded"
+}

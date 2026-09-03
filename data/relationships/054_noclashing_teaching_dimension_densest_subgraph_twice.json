@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "For finite concept classes.",
   "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
   "short_name": "noclashing_teaching_dimension_densest_subgraph_twice",
   "name": "No-Clashing Teaching Dimension / Densest Subgraph (twice)",
   "status": "established",

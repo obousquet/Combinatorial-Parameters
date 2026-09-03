@@ -5,6 +5,8 @@
   "relationship_type": "larger",
   "details": "Generator-count bound for Yang's canonical ideal.",
   "witness": "#classes/singletons",
+  "witness_strength": "strict",
+  "witness_verification": "For the singleton family, Size is n and Yang dimension is n-1, so the inequality is strict for every n>=2.",
   "status": "established",
   "proof": "Yang's canonical ideal $I_{\\mathcal H}^\\star$ has exactly one minimal monomial generator for each $h\\in\\mathcal H$.  For a nonempty class, the Taylor resolution on these $|\\mathcal H|$ generators has length at most $|\\mathcal H|-1$, so its projective dimension (Yang dimension) is at most $|\\mathcal H|-1$.  The empty class has Yang dimension $0$ by convention.  Thus $\\mathrm Y(\\mathcal H)\\le |\\mathcal H|$ in all cases.",
   "references": "\\cite{yang2018homological}",

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,26 +63,34 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-259" style="position:relative;">
+            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
+    <div class="table-card" id="math-103" style="position:relative;">
         
-        <h3><a href="relationships/list_replicability_vc_dimension_affine.html" class="table-title-link">List Replicability / VC Dimension (affine)</a></h3>
+        <h3><a href="parameters/shattering_cover_projection_vc_dimension.html" class="table-title-link">Shattering-Cover Projection VC Dimension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>List Replicability / VC Dimension (affine)</p>
-<p><strong>Parameter 1: </strong><a href="parameters/list_replicability.html">List Replicability Number</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-<p><strong>Additive Constant: </strong>-1</p>
-<p><strong>Multiplicative Constant: </strong>\tfrac12</p>
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite binary classes with $\mathrm{VC}(\mathcal H)\geq2$, $\mathrm{LR}(\mathcal H,\epsilon)\geq1+\lceil\mathrm{VC}(\mathcal H)/2\rceil$ for every $0<\epsilon<1/2$. Thus $\mathrm{LR}(\mathcal H)\geq\tfrac12\mathrm{VC}(\mathcal H)+1$. The condition $\mathrm{VC}\geq2$ is necessary: a complementary two-hypothesis class has $\mathrm{VC}=1$ but $\mathrm{LR}=1$.</p></div>
-<p><strong>Witness: </strong><a href="classes/universal_class.html">Universal Class</a></p>
-<p><strong>Witness Strength:</strong> </p>
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>This is the VC-dimensional consequence stated in Theorem 10. It follows from the local Borsuk--Ulam lower bound for list replicability, and survives the $\epsilon\to0$ limit in the definition of $\mathrm{LR}$.</p></div>
+        <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathrm{SCVC}">
+            \[\mathrm{SCVC}\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>For a finite binary class $\mathcal H$ on domain $\mathcal X$, define $\mathrm{SCVC}(\mathcal H)=\min\{\mathrm{VC}(\mathcal H_{|S}):S\subseteq\mathcal X,\ |\operatorname{sh}(\mathcal H_{|S})|\geq|\mathcal H|\}$.  The minimum is well-defined because $S=\mathcal X$ is admissible by the sandwich theorem.</p></div>
+<strong>Description:</strong><div class="text-field"><p>A candidate projection-based characterization of interpolation degree; it is retained because the proposed equality is explicitly refuted below.</p></div>
 
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
+<strong>Origin References:</strong><div class="text-field"><p>This quantity formalizes the draft conjecture in the interpolation-degree discussion of the companion survey.</p></div>
+<p><strong>Category:</strong> Shattering</p>
+<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Monotonic:</strong> Unspecified</p>
+<p><strong>P-Monotonic:</strong> Unspecified</p>
+<p><strong>C-Monotonic:</strong> Unspecified</p>
+<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
+<p><strong>Doubly Monotonic:</strong> Unspecified</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/shattering_cover_projection_vc_dimension_interpolation_conjecture_counterexample.html'>Shattering-Cover Projection VC Dimension of the Interpolation-Conjecture Counterexample</a></li><li><a href='values/shattering_cover_projection_vc_dimension_trivial_concepts.html'>Shattering-Cover Projection VC Dimension of Trivial Concepts</a></li><li><a href='values/shattering_cover_projection_vc_dimension_singletons.html'>Shattering-Cover Projection VC Dimension of Singletons</a></li><li><a href='values/shattering_cover_projection_vc_dimension_full_cube.html'>Shattering-Cover Projection VC Dimension of Full Cube</a></li><li><a href='values/shattering_cover_projection_vc_dimension_singletons_plus_empty_set.html'>Shattering-Cover Projection VC Dimension of Singletons plus Empty Set</a></li><li><a href='values/shattering_cover_projection_vc_dimension_halfintervals.html'>Shattering-Cover Projection VC Dimension of Half-intervals</a></li><li><a href='values/shattering_cover_projection_vc_dimension_scvc_vc_separation.html'>Shattering-Cover Projection VC Dimension of the SCVC/VC Separation Class</a></li><li><a href='values/shattering_cover_projection_vc_dimension_scvc_interpolation_reverse_separation.html'>Shattering-Cover Projection VC Dimension of the SCVC/Interpolation Reverse Separation Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Relationships:</strong><ul class="fields-list"><li><a href="relationships/interpolation_degree_shattering_cover_projection_vc_dimension.html" class="relationship-statement">$\mathrm{intdeg} = \mathrm{SCVC}$</a></li><li><a href="relationships/vc_dimension_shattering_cover_projection_vc_dimension.html" class="relationship-statement">$\mathrm{VC} \ge \mathrm{SCVC}$</a></li><li><a href="relationships/shattering_cover_projection_vc_dimension_interpolation_degree.html" class="relationship-statement">$\mathrm{SCVC} \ge \mathrm{intdeg}$</a></li></ul></p></div>
 
         </div>
     </div>

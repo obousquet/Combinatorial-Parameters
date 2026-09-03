@@ -6,6 +6,8 @@
   "variant": "p_monotonic",
   "details": "For finite concept classes.",
   "witness": "#classes/singletons",
+  "witness_strength": "strict",
+  "witness_verification": "On the singleton class, projected double density is $2n/(n+1)$ while ordinary double density is $0$, so the inequality is strict for every n>=1.",
   "short_name": "projected_double_density_or_projected_average_degree_double_density_or_average_degree",
   "name": "Projected Double Density or Projected Average Degree / Double Density or Average Degree",
   "status": "established",

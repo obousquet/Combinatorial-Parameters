@@ -1,0 +1,12 @@
+{
+  "id": 943,
+  "name": "Shattering-Cover Projection VC Dimension of the SCVC/VC Separation Class",
+  "short_name": "shattering_cover_projection_vc_dimension_scvc_vc_separation",
+  "class_id": "#classes/scvc_vc_separation",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projection to $\\{x_1,x_2,x_3\\}$ gives the four-element threshold chain $000,100,110,111$. It has exactly the empty set and its three singleton coordinates shattered, hence four shattered subsets and is admissible for this four-concept class; its VC dimension is one. An admissible projection has at least two traces and therefore cannot have VC dimension zero. Thus $\\mathrm{SCVC}=1$. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "details": "A finite separation calculation."
+}

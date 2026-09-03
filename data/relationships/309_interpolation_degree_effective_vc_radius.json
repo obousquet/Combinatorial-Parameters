@@ -1,0 +1,13 @@
+{
+  "id": 309,
+  "name": "Interpolation Degree / Effective VC Radius",
+  "short_name": "interpolation_degree_effective_vc_radius",
+  "parameter_1_id": "#parameters/interpolation_degree",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The candidate bound $\\mathrm{intdeg}(\\mathcal H)\\geq\\mathrm{VCR}(\\mathcal H)$ is false under the stated all-effective-subsets definition of effective VC radius. On $\\mathcal C_{\\mathrm{even}}=\\{000,011,101,110\\}$, the values are $1$ and $2$ respectively.",
+  "proof": "The constant and three coordinate functions have linearly independent evaluation vectors on the four concepts, so interpolation degree is one. Every pair of effective coordinates realizes all four binary patterns, whereas the full three-coordinate set is not shattered; hence effective VC radius is two.",
+  "witness": "#classes/interpolation_effective_vc_radius_counterexample",
+  "witness_strength": "strict"
+}

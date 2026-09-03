@@ -4,6 +4,7 @@
   "symbol": "\\log \\mathrm{sh}",
   "definition": "The **Log Shattering** of a family $\\mathcal{H}$ is the (binary) log of the number of its shattered sets, $$ \\log |sh{\\mathcal{H|}} $$",
   "category": "shattering",
+  "graph_summary": "The binary logarithm of the number of subsets shattered by the class.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

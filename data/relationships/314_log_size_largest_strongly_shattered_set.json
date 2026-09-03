@@ -1,0 +1,13 @@
+{
+  "id": 314,
+  "name": "Log Size / Largest Strongly Shattered Set",
+  "short_name": "log_size_largest_strongly_shattered_set",
+  "parameter_1_id": "#parameters/log_size",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, log size is at least the largest strongly shattered-set size.",
+  "proof": "A strongly shattered set of size $d$ is the free-coordinate set of a contained $d$-cube. Its $2^d$ cube vertices are distinct members of $\\mathcal H$, so $|\\mathcal H|\\geq2^d$ and $\\log_2|\\mathcal H|\\geq d$.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded"
+}

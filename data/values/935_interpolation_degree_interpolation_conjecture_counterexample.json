@@ -1,0 +1,12 @@
+{
+  "id": 935,
+  "name": "Interpolation Degree of the Interpolation-Conjecture Counterexample",
+  "short_name": "interpolation_degree_interpolation_conjecture_counterexample",
+  "class_id": "#classes/interpolation_conjecture_counterexample",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For the concepts $001,010,011,100$, the evaluation vectors of $1,x_1,x_2,x_3$ are linearly independent, so degree-one polynomials interpolate every function. Degree zero gives only constants, hence the interpolation degree is one. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "details": "A finite counterexample calculation."
+}

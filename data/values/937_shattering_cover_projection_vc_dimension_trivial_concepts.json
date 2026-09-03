@@ -1,0 +1,13 @@
+{
+  "id": 937,
+  "name": "Shattering-Cover Projection VC Dimension of Trivial Concepts",
+  "short_name": "shattering_cover_projection_vc_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq1$.",
+  "status": "established",
+  "proof": "A one-coordinate projection is the full one-cube, so it is admissible and has VC dimension one. The empty projection has one shattered subset, fewer than the two concepts in the class; thus no admissible projection has VC dimension zero. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "references": ""
+}

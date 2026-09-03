@@ -5,6 +5,7 @@
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/spherical_dimension",
   "value": "$1$",
+  "value_class": "omega_1",
   "details": "For $n\u005cgeq3$.",
   "status": "established",
   "proof": "The antipodal complex is the complete bipartite graph on positive and negative literals with the perfect matching removed. For $n\u005cgeq3$ it contains an antipodal six-cycle, giving a 1-sphere, and it is one-dimensional so no larger sphere occurs.",

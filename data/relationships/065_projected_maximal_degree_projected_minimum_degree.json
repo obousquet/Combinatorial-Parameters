@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "For finite concept classes.",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "projected_maximal_degree_projected_minimum_degree",
   "name": "Projected Maximal Degree / Projected Minimum Degree",
   "status": "established",

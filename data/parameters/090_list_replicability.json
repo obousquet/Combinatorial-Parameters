@@ -5,9 +5,9 @@
   "symbol": "\u005cmathrm{LR}",
   "category": "compression",
   "monotonic": true,
-  "p_monotonic": null,
-  "c_monotonic": null,
-  "doubly_monotonic": null,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
   "strictly_monotonic": null,
   "definition": "A learner is **$(\u005cepsilon,L)$-list replicable** for $\u005cmathcal H$ if, for every $\u005cdelta>0$, some sample size makes its output lie with probability at least $1-\u005cdelta$ in a fixed list of $L$ hypotheses, all of error below $\u005cepsilon$, for every realizable distribution. Let $\u005cmathrm{LR}(\u005cmathcal H,\u005cepsilon)$ be the least such $L$ and define the **list replicability number** $\u005cmathrm{LR}(\u005cmathcal H)=\u005clim_{\u005cepsilon\u005cto0}\u005cmathrm{LR}(\u005cmathcal H,\u005cepsilon)$.",
   "graph_summary": "Smallest eventual list size to which a randomized learner’s output can be confined while remaining accurate.",
@@ -17,6 +17,18 @@
     "monotonic": {
       "proof": "Any $(\u005cepsilon,L)$-list-replicable learner for $\u005cmathcal H$ also works for a subclass: every distribution realizable by the subclass is realizable by $\u005cmathcal H$, so the same learner, sample size, and distribution-dependent accurate list apply. Minimize $L$ and take the accuracy limit.",
       "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Let $\\mathcal R=\\mathcal H_{|S}$. Run an $(\\epsilon,L)$-list-replicable learner for $\\mathcal H$ on a distribution supported on the retained coordinates and restrict every output hypothesis and every member of its fixed list to $S$. Every target in $\\mathcal R$ has an extension in $\\mathcal H$; restriction preserves its error on the supported distribution and cannot enlarge the list. Minimize $L$ and take the accuracy limit.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "A conditioning is a restriction to a subfamily followed by a coordinate projection, so the established subfamily and projection monotonicities imply this form.",
+      "kind": "definitional_consequence"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding arguments establish monotonicity under both subfamilies and coordinate projections.",
+      "kind": "definitional_consequence"
     }
   }
 }

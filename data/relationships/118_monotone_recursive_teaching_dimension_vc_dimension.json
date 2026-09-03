@@ -4,6 +4,7 @@
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "monotone_recursive_teaching_dimension_vc_dimension",
   "name": "Projected Recursive Teaching Dimension / VC Dimension",
   "status": "established",

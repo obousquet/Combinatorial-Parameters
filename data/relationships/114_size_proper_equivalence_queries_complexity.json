@@ -4,9 +4,11 @@
   "parameter_2_id": "#parameters/proper_equivalence_queries_complexity",
   "relationship_type": "larger",
   "status": "established",
-  "details": "For finite concept classes; the stated $|\\mathcal H|$ bound is deliberately weak by one query.",
-  "proof": "For a finite class, repeatedly propose any remaining concept as a proper equivalence query. A counterexample eliminates that proposal, so after at most $|\\mathcal H|-1$ failed queries one concept remains and is identified. Hence the complexity is at most $|\\mathcal H|$.",
+  "details": "For every nonempty finite class, the stronger bound $\\mathrm Q_{\\mathrm{peq}}(\\mathcal H)\\leq|\\mathcal H|-1$ holds.",
+  "proof": "Repeatedly propose any remaining candidate as a proper equivalence-query hypothesis. A negative answer supplies a counterexample and in particular eliminates the proposed candidate; after at most $|\\mathcal H|-1$ negative answers, the unique remaining concept is the target.",
+  "references": "\\cite{angluin1988queries}",
   "short_name": "size_proper_equivalence_queries_complexity",
   "name": "Size / Proper Equivalence Queries Complexity",
-  "witness": "#classes/halfintervals"
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded"
 }

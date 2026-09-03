@@ -87,11 +87,19 @@ python3 sync/validate_symbols.py --data-dir data
 # relationships, plus each declared monotonicity classification.
 python3 sync/audit_provenance.py --data-dir data
 
+# Audits declared strict witnesses from endpoint values and declared unbounded
+# witnesses from asymptotic value classes; legacy witnesses remain a review queue.
+python3 sync/audit_witness_strength.py --data-dir data
+
 # Checks unambiguous established literal-integer benchmark values against
 # direct linear and equality relationships. Formulae and scoped alternatives
 # are deliberately skipped.
 python3 sync/audit_benchmark_consistency.py \
   --data-dir data --fail-on-contradiction
+
+# Rejects duplicate direct statements, which otherwise duplicate parameter-page
+# entries and may obscure the intended canonical provenance record.
+python3 sync/audit_relationship_duplicates.py --data-dir data --check
 
 # Reconstructs the Hasse reduction and ranks witnessless, structurally
 # important edges; use --all for the full research queue.

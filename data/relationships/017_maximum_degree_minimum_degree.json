@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "For every finite $1$-inclusion graph.",
   "witness": "#classes/tagged_singletons",
+  "witness_strength": "unbounded",
   "short_name": "maximum_degree_minimum_degree",
   "name": "Maximum Degree / Minimum Degree",
   "status": "established",

@@ -8,6 +8,7 @@
   "proof": "Order the concepts by a recursive teaching plan of width $r=\\mathrm{RTD}(\\mathcal H)$.  For the teaching set $S_i$ of its $i$th concept $h_i$ among the remaining concepts, the product of literals agreeing with $h_i$ on $S_i$ has degree at most $r$, is nonzero at $h_i$, and vanishes at every later $h_j$.  These polynomials give an invertible triangular evaluation matrix, hence a degree-at-most-$r$ interpolation basis.",
   "references": "\\cite{moran2015shattered}",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "recursive_teaching_dimension_interpolation_degree",
   "name": "Recursive Teaching Dimension / Interpolation degree"
 }

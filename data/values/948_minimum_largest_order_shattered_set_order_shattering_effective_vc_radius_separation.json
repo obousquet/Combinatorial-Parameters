@@ -1,0 +1,12 @@
+{
+  "id": 948,
+  "name": "Minimum Largest Order-Shattered Set of the Order-Shattering/Effective-VC-Radius Separation Class",
+  "short_name": "minimum_largest_order_shattered_set_order_shattering_effective_vc_radius_separation",
+  "class_id": "#classes/order_shattering_effective_vc_radius_separation",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For each of the six coordinate orders, standard downshifting produces a downset with a two-element face; hence every order has an order-shattered two-set. The class has five concepts, so no shifted class can contain a three-cube. Thus the minimum largest order-shattered-set size is two. All orders are checked by $\\texttt{sync/verify\\_order\\_shattering\\_separation.py}$.",
+  "details": "An exhaustive finite calculation."
+}

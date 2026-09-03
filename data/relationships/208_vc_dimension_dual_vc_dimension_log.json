@@ -9,6 +9,7 @@
   "proof": "For $d=\u005cmathrm{VC}(\u005cmathcal H)\u005cgeq1$, Assouad's bound gives $\u005clog_2\u005cmathrm{VC}^{*}(\u005cmathcal H)\u005cleq d+1\u005cleq2d$. The zero case has dual VC dimension zero.",
   "references": "\u005ccite{assouad1983densite}",
   "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "short_name": "vc_dimension_dual_vc_dimension_log",
   "name": "VC Dimension / Dual VC Dimension (logarithmic)"
 }

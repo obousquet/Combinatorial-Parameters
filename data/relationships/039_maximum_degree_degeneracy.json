@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "For every finite $1$-inclusion graph.",
   "witness": "#classes/halfintervals",
+  "witness_strength": "strict",
   "short_name": "maximum_degree_degeneracy",
   "name": "Maximum Degree / Degeneracy",
   "status": "established",

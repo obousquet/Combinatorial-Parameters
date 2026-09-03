@@ -9,5 +9,6 @@
   "references": "\\cite{alon2020closure}",
   "short_name": "threshold_dimension_littlestone_dimension",
   "name": "Threshold Dimension / Littlestone Dimension",
-  "witness": "#classes/halfintervals"
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded"
 }

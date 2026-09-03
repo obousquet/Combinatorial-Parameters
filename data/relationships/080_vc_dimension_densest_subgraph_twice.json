@@ -8,6 +8,7 @@
   "proof": "The one-inclusion density lemma applies to every subfamily: each induced subgraph has density at most $\\mathrm{VC}(\\mathcal H)$. The densest-subgraph-twice parameter is twice this maximum density, so it is at most $2\\,\\mathrm{VC}(\\mathcal H)$.",
   "references": "\\cite{haussler1988predicting}",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "vc_dimension_densest_subgraph_twice",
   "name": "VC Dimension / Densest Subgraph (twice)"
 }

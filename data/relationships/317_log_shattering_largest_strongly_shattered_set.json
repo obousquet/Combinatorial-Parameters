@@ -1,0 +1,13 @@
+{
+  "id": 317,
+  "name": "Log Shattering / Largest Strongly Shattered Set",
+  "short_name": "log_shattering_largest_strongly_shattered_set",
+  "parameter_1_id": "#parameters/log_shattering",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, log shattering is at least the largest strongly shattered-set size.",
+  "proof": "A strongly shattered set of size $d$ contains a full $d$-cube, hence every one of its $2^d$ subsets is shattered. Therefore $|\\operatorname{sh}(\\mathcal H)|\\geq2^d$ and $\\log_2|\\operatorname{sh}(\\mathcal H)|\\geq d$.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded"
+}

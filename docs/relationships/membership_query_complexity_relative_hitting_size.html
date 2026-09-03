@@ -78,6 +78,7 @@
 <strong>Details:</strong><div class="text-field"><p>The query transcript identifying a fixed target is a teaching set for that target.</p></div>
 
 <p><strong>Witness Strength:</strong> </p>
+
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix a target $h$ and run any membership-query learner that identifies it.  The coordinates queried on the path leading to $h$ must distinguish $h$ from every other concept; otherwise that concept gives the same transcript and the learner cannot identify the target.  Thus they form a teaching set for $h$, of size at most $\mathrm{Q}_m(\mathcal{H})$.  Maximizing over $h$ yields $\mathrm{RHT}(\mathcal{H})\le\mathrm{Q}_m(\mathcal{H})$.</p></div>
 

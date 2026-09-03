@@ -1,0 +1,13 @@
+{
+  "id": 306,
+  "name": "Interpolation Degree / Shattering-Cover Projection VC Dimension",
+  "short_name": "interpolation_degree_shattering_cover_projection_vc_dimension",
+  "parameter_1_id": "#parameters/interpolation_degree",
+  "parameter_2_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "relationship_type": "equivalence",
+  "status": "refuted",
+  "details": "The draft conjecture $\\mathrm{intdeg}(\\mathcal H)=\\mathrm{SCVC}(\\mathcal H)$ is false. On $\\mathcal C_{\\mathrm{int}}=\\{001,010,011,100\\}$, the two quantities are respectively $1$ and $2$. The reverse one-sided comparison is separately refuted by $\\mathcal C_{\\mathrm{rev}}$.",
+  "proof": "The constant polynomial and the three coordinate functions have linearly independent evaluation vectors on the four concepts, so $\\mathrm{intdeg}(\\mathcal C_{\\mathrm{int}})=1$. The projection to $\\{x_2,x_3\\}$ is the full two-cube, so it is admissible and has VC dimension two. No projection to at most one coordinate has four shattered subsets, while the full projection has five; hence every admissible projection has VC dimension at least two and $\\mathrm{SCVC}(\\mathcal C_{\\mathrm{int}})=2$.",
+  "witness": "#classes/interpolation_conjecture_counterexample",
+  "witness_strength": "strict"
+}

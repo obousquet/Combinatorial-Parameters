@@ -4,6 +4,7 @@
   "symbol": "\\log \\mathrm{H}",
   "definition": "The **Log Size** of a family $\\mathcal{H}$ is simply the binary logarithm of its cardinality, $$ \\log |\\mathcal{H}|. $$",
   "category": "basic",
+  "graph_summary": "The binary logarithm of the number of concepts in the class.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

@@ -6,6 +6,8 @@
   "details": "Contradicted by singletons: the default ($\\mathbb F_2$) Yang dimension is $n-1$, while co-VC dimension is $n$.",
   "proof": "On the singleton (delta-function) class, the recorded default Yang dimension is $n-1$, while co-VC dimension equals n. Thus $\\mathrm Y(\\mathcal H)<\\operatorname{coVC}(\\mathcal H)$ on this family, refuting the displayed universal inequality.",
   "witness": "#classes/singletons",
+  "witness_strength": "strict",
+  "witness_verification": "For every singleton-family size $n\\ge2$, the recorded values satisfy $n-1<n$, so the witness strictly refutes the displayed Yang-dimension lower bound.",
   "references": "\\cite{yang2018homological}",
   "status": "refuted",
   "short_name": "yang_dimension_covc_dimension",

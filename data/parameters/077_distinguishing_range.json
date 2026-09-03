@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{R}",
   "definition": "Minimum number of coordinates over which all concepts in the class can be distinguished.",
   "category": "basic",
+  "graph_summary": "The largest coordinate set on which all concepts have distinct traces.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,

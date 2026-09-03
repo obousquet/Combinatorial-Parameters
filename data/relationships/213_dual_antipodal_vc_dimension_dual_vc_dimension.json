@@ -9,6 +9,7 @@
   "references": "\u005ccite{chornomaz2025spherical}",
   "witness": "#classes/full_cube",
   "witness_strength": "strict",
+  "witness_verification": "For every full-cube dimension $n\\ge1$, $\\lfloor\\log_2 n\\rfloor+1$ is exactly one larger than $\\lfloor\\log_2 n\\rfloor$.",
   "short_name": "dual_antipodal_vc_dimension_dual_vc_dimension",
   "name": "Dual Antipodal VC Dimension / Dual VC Dimension"
 }

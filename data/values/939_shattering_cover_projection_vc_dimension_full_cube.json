@@ -1,0 +1,13 @@
+{
+  "id": 939,
+  "name": "Shattering-Cover Projection VC Dimension of Full Cube",
+  "short_name": "shattering_cover_projection_vc_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "For $n\\geq1$.",
+  "status": "established",
+  "proof": "A projection to $m$ coordinates is the full $m$-cube, with $2^m$ shattered subsets. To meet the admissibility requirement $2^m\\geq|\\mathcal H|=2^n$ requires $m=n$. The only admissible projection is therefore the full cube, whose VC dimension is $n$. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "references": ""
+}

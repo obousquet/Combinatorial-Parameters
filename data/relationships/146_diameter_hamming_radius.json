@@ -4,6 +4,7 @@
   "parameter_2_id": "#parameters/hamming_radius",
   "relationship_type": "larger",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "status": "established",
   "details": "For finite classes, the minimum enclosing Hamming-ball radius is at most the diameter.",
   "latex_proof_label": "lem:metric-diameter-radius",

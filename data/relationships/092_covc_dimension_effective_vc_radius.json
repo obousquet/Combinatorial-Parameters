@@ -6,6 +6,7 @@
   "details": "Contradicted by the full cube: $\\mathrm{coVC}=0$ but $\\mathrm{VCR}=n$.",
   "proof": "For the full cube, every trace is present, so no positive-dimensional hollow star exists and co-VC dimension is zero. Its entire domain is shattered, so its effective VC radius is n. Thus the asserted inequality fails on this family.",
   "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "status": "refuted",
   "short_name": "covc_dimension_effective_vc_radius",
   "name": "co-VC dimension / Effective VC Radius"

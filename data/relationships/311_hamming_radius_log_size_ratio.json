@@ -1,0 +1,13 @@
+{
+  "id": 311,
+  "name": "Hamming Radius / Log Size Ratio",
+  "short_name": "hamming_radius_log_size_ratio",
+  "parameter_1_id": "#parameters/hamming_radius",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, its Hamming radius is at least its Log Size Ratio.",
+  "proof": "Let $B=\\mathrm B(\\mathcal H)$ on an $n$-point domain and choose an enclosing Hamming ball of radius $B$. It contains at most $\\sum_{i=0}^B\\binom ni\\leq(n+1)^B$ labelings. Hence $B\\geq\\log(|\\mathcal H|)/\\log(n+1)\\geq\\log(|\\mathcal H|-1)/\\log(n+1)=\\mathrm{LSR}(\\mathcal H)$; the singleton case follows from the zero convention.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded"
+}

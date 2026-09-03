@@ -117,6 +117,14 @@
         ]
     },
     {
+        "name": "witness_verification",
+        "type": "text",
+        "label": "Witness Verification",
+        "description": "Explicit calculation or parameter range verifying the declared witness strength when literal endpoint values are insufficient.",
+        "required": false,
+        "rendered": true
+    },
+    {
         "name": "status",
         "type": "enum",
         "label": "Status",

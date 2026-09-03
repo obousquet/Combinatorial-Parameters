@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{dens}^p",
   "definition": "The **projected double density** of a concept class is defined as the maximum over all projections of the averaged degree of the $1$-inclusion graph.",
   "category": "graph-based",
+  "graph_summary": "The greatest one-inclusion average degree among coordinate projections.",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": true,

@@ -1,0 +1,13 @@
+{
+  "id": 938,
+  "name": "Shattering-Cover Projection VC Dimension of Singletons",
+  "short_name": "shattering_cover_projection_vc_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "Project onto any $n-1$ coordinates. The traces are the empty set and their $n-1$ singletons, so all $n$ concepts remain distinguished and exactly the empty set and the singletons are shattered. This projection is admissible and has VC dimension one. A VC-zero projection has one trace and only one shattered subset, hence cannot be admissible for a class of size $n\\geq2$. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "references": ""
+}

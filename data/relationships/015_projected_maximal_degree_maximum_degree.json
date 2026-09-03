@@ -6,6 +6,7 @@
   "variant": "p_monotonic",
   "details": "For finite concept classes.",
   "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
   "short_name": "projected_maximal_degree_maximum_degree",
   "name": "Projected Maximal Degree / Maximum Degree",
   "status": "established",

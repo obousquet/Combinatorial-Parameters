@@ -1,0 +1,14 @@
+{
+  "id": 259,
+  "parameter_1_id": "#parameters/list_replicability",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, $\\mathrm{LR}(\\mathcal H)\\geq\\mathrm{VC}(\\mathcal H). The cited result proves the stronger epsilon-wise statement $\\mathrm{LR}(\\mathcal H,\\epsilon)\\geq\\mathrm{VC}(\\mathcal H)$ for every $0<\\epsilon<1/2$.",
+  "status": "established",
+  "proof": "The cited VC-class theorem gives $\\mathrm{LR}(\\mathcal H,\\epsilon)\\geq\\mathrm{VC}(\\mathcal H)$ for every $0<\\epsilon<1/2$. Since the catalogue parameter requires a single list-size bound that works for all error thresholds, it is at least each epsilon-wise lower bound, yielding the displayed inequality.",
+  "references": "\\cite{blondal2026tight}",
+  "witness": "#classes/universal_class",
+  "witness_strength": "unbounded",
+  "short_name": "list_replicability_vc_dimension",
+  "name": "List Replicability / VC Dimension"
+}

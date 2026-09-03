@@ -1,0 +1,12 @@
+{
+  "id": 936,
+  "name": "Shattering-Cover Projection VC Dimension of the Interpolation-Conjecture Counterexample",
+  "short_name": "shattering_cover_projection_vc_dimension_interpolation_conjecture_counterexample",
+  "class_id": "#classes/interpolation_conjecture_counterexample",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The projection to $\\{x_2,x_3\\}$ is the full two-cube, with four shattered subsets, and is therefore admissible. It has VC dimension two. Every projection to at most one coordinate has at most two shattered subsets and fails the admissibility condition $|\\operatorname{sh}(\\mathcal H_{|S})|\\ge4$. Thus the minimum admissible VC dimension is two. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "details": "A finite counterexample calculation."
+}

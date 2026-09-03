@@ -6,6 +6,7 @@
   "variant": "p_monotonic",
   "details": "For finite concept classes.",
   "witness": "#classes/singletons",
+  "witness_strength": "strict",
   "short_name": "projected_minimum_degree_minimum_degree",
   "name": "Projected Minimum Degree / Minimum Degree",
   "status": "established",

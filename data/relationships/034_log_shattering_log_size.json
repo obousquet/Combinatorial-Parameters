@@ -10,5 +10,6 @@
   "references": "\\cite{pajor1985volumes,bollobas1995defect}",
   "short_name": "log_shattering_log_size",
   "name": "Log Shattering / Log Size",
-  "witness": "#classes/trivial_concepts"
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded"
 }

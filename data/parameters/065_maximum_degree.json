@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{d}_{\\max}",
   "definition": "The **maximum degree** of a concept class is defined as the maximum degree of its $1$-inclusion graph.",
   "category": "graph-based",
+  "graph_summary": "The largest vertex degree in the one-inclusion graph.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,

@@ -5,6 +5,7 @@
   "relationship_type": "larger",
   "details": "A corner of a contained cube must be distinguished on every cube coordinate.",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "maximum_teaching_set_size_largest_strongly_shattered_set",
   "name": "Maximum Teaching Set Size / Largest Strongly Shattered Set",
   "status": "established",

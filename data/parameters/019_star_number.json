@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{S}",
   "definition": "The **Star dimension** of a family $\\mathcal{H}$, denoted by $S(\\mathcal{H})$, is the largest integer $d$ such that there exists a set $S\\subset \\mathcal{X}$, of size $d$ such that $\\mathcal{H}\\_{|S}$ contains a $d$-star, i.e. there is a subset $T\\subset S$ such that $$ T\\in \\mathcal{H}\\_{|S} \\,\\mbox{ and }\\, \\forall x\\in S,\\, T\\Delta \\{x\\} \\in \\mathcal{H}\\_{|S}\\,. $$",
   "category": "teaching",
+  "graph_summary": "The largest number of one-coordinate neighbours of a realized centre, over all projections.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

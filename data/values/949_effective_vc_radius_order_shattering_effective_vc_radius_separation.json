@@ -1,0 +1,12 @@
+{
+  "id": 949,
+  "name": "Effective VC Radius of the Order-Shattering/Effective-VC-Radius Separation Class",
+  "short_name": "effective_vc_radius_order_shattering_effective_vc_radius_separation",
+  "class_id": "#classes/order_shattering_effective_vc_radius_separation",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "All three coordinates are effective and hence individually shattered. On $\\{x_1,x_2\\}$ the class realizes only $00,01,10$, so not every pair is shattered. Therefore the effective VC radius is one; this is checked by $\\texttt{sync/verify\\_order\\_shattering\\_separation.py}$.",
+  "details": "An exhaustive finite calculation."
+}

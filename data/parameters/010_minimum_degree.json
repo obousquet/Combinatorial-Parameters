@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{d}_{\\min}",
   "definition": "The **minimum degree** of a concept class is defined as the minimum degree of its $1$-inclusion graph.",
   "category": "graph-based",
+  "graph_summary": "The minimum vertex degree in the one-inclusion graph.",
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": false,

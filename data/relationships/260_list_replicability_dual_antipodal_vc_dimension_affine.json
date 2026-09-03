@@ -10,6 +10,8 @@
   "proof": "This is the dual-antipodal-VC consequence stated in Theorem 10. For an integer $d$, $1+\\lfloor d/2\\rfloor\\geq d/2+1/2$; taking the accuracy limit yields the displayed affine bound.",
   "references": "\\cite{chornomaz2025spherical}",
   "witness": "#classes/universal_class",
+  "witness_strength": "strict",
+  "witness_verification": "For even n, the universal class has list replicability n/2+1 and dual antipodal VC dimension n. Thus the displayed affine lower bound is strict on this infinite subfamily.",
   "short_name": "list_replicability_dual_antipodal_vc_dimension_affine",
   "name": "List Replicability / Dual Antipodal VC Dimension (affine)"
 }

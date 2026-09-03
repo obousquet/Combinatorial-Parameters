@@ -1,0 +1,12 @@
+{
+  "id": 103,
+  "name": "Shattering-Cover Projection VC Dimension",
+  "short_name": "shattering_cover_projection_vc_dimension",
+  "symbol": "\\mathrm{SCVC}",
+  "category": "shattering",
+  "symmetric": true,
+  "definition": "For a finite binary class $\\mathcal H$ on domain $\\mathcal X$, define $\\mathrm{SCVC}(\\mathcal H)=\\min\\{\\mathrm{VC}(\\mathcal H_{|S}):S\\subseteq\\mathcal X,\\ |\\operatorname{sh}(\\mathcal H_{|S})|\\geq|\\mathcal H|\\}$.  The minimum is well-defined because $S=\\mathcal X$ is admissible by the sandwich theorem.",
+  "graph_summary": "Minimum VC dimension of a projection whose shattered-set family has at least as many members as the original class.",
+  "description": "A candidate projection-based characterization of interpolation degree; it is retained because the proposed equality is explicitly refuted below.",
+  "origin_references": "This quantity formalizes the draft conjecture in the interpolation-degree discussion of the companion survey."
+}

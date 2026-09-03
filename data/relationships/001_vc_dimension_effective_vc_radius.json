@@ -6,6 +6,7 @@
   "variant": "p_monotonic",
   "details": "For finite concept classes; this is immediate from the definition of effective VC radius.",
   "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
   "short_name": "vc_dimension_effective_vc_radius",
   "name": "VC Dimension / Effective VC Radius",
   "status": "established",

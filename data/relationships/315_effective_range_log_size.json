@@ -1,0 +1,13 @@
+{
+  "id": 315,
+  "name": "Effective Range / Log Size",
+  "short_name": "effective_range_log_size",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/log_size",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, effective range is at least log size.",
+  "proof": "All concepts agree outside their effective range. Restriction to the $\\mathrm E(\\mathcal H)$ active coordinates is therefore injective on $\\mathcal H$, so $|\\mathcal H|\\leq2^{\\mathrm E(\\mathcal H)}$. Taking base-two logarithms yields $\\mathrm E(\\mathcal H)\\geq\\log_2|\\mathcal H|$.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded"
+}

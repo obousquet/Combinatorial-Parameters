@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{dens}^*",
   "definition": "The **densest subgraph dimension** of a concept class is equal to twice the density of the densest subgraph (a.k.a. **subgraph density**) of its $1$-inclusion graph.",
   "category": "graph-based",
+  "graph_summary": "Twice the maximum edge density of an induced subgraph of the one-inclusion graph.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,

@@ -142,6 +142,8 @@ def quotient_relationships(
     quotient = []
     for relationship in relationships:
         collapsed = copy.copy(relationship)
+        collapsed["_witness_parameter_1_id"] = relationship["parameter_1_id"]
+        collapsed["_witness_parameter_2_id"] = relationship["parameter_2_id"]
         source = component_of[relationship["parameter_1_id"]]
         target = component_of[relationship["parameter_2_id"]]
         if source == target:
@@ -243,6 +245,73 @@ def canonical_linear_relations(
         source, target = relation_endpoints(relationship)
         canonical.setdefault((source, target, relationship["relationship_type"]), relationship)
     return list(canonical.values())
+
+
+def literal_integer(value: str | None) -> int | None:
+    """Return an unambiguous displayed nonnegative integer, if available."""
+    if not value:
+        return None
+    value = value.strip()
+    if value.startswith("$") and value.endswith("$"):
+        value = value[1:-1].strip()
+    return int(value) if re.fullmatch(r"\d+", value) else None
+
+
+def witness_priority(relationship: Dict[str, Any], exact_values: Dict[tuple[str, str], int]) -> tuple[int, int, int]:
+    """Rank a displayed fact by the strength of its witness evidence.
+
+    An unbounded family separation is stronger than a finite strict example.
+    Among finite examples, use the literal endpoint gap when it is available.
+    The last component gives a stable mathematical-type tie-breaker only; the
+    caller resolves the remaining tie by record ID.
+    """
+    strength = {"unbounded": 2, "strict": 1}.get(
+        relationship.get("witness_strength"), 0
+    )
+    gap = 0
+    witness = relationship.get("witness")
+    if witness:
+        first = exact_values.get((
+            witness,
+            relationship.get("_witness_parameter_1_id", relationship["parameter_1_id"]),
+        ))
+        second = exact_values.get((
+            witness,
+            relationship.get("_witness_parameter_2_id", relationship["parameter_2_id"]),
+        ))
+        if first is not None and second is not None:
+            gap = abs(first - second)
+    type_priority = {"larger": 2, "larger_c": 1}.get(
+        relationship.get("relationship_type"), 0
+    )
+    return strength, gap, type_priority
+
+
+def strongest_displayed_relationships(
+    displayed_relationships: List[tuple[Dict[str, Any], str, bool]],
+    exact_values: Dict[tuple[str, str], int],
+) -> List[tuple[Dict[str, Any], str, bool]]:
+    """Keep one graph edge per ordered endpoint pair.
+
+    Several direct facts can become the same pair after equality collapse.
+    The graph displays a single witness card for such a pair, so pick the
+    strongest supported witness rather than emitting parallel copies.  The
+    constraint flag is retained whenever any candidate was a backbone edge.
+    """
+    selected: Dict[tuple[str, str], tuple[Dict[str, Any], str, bool]] = {}
+    for relationship, variant, constrains_layout in displayed_relationships:
+        source, target = relation_endpoints(relationship)
+        key = (source, target)
+        existing = selected.get(key)
+        if existing is None:
+            selected[key] = (relationship, variant, constrains_layout)
+            continue
+        previous, _, previous_constraint = existing
+        candidate_key = witness_priority(relationship, exact_values) + (-relationship["id"],)
+        previous_key = witness_priority(previous, exact_values) + (-previous["id"],)
+        chosen = relationship if candidate_key > previous_key else previous
+        selected[key] = (chosen, variant, constrains_layout or previous_constraint)
+    return sorted(selected.values(), key=lambda item: item[0]["id"])
 
 
 def reduced_linear_relations(
@@ -500,6 +569,17 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             for relationship in nonlinear
         )
 
+    exact_values = {}
+    for value in cache.get_table_entries("values"):
+        if value.get("status") != "established":
+            continue
+        integer = literal_integer(value.get("value"))
+        if integer is not None:
+            exact_values[(value["class_id"], value["parameter_id"])] = integer
+    displayed_relationships = strongest_displayed_relationships(
+        displayed_relationships, exact_values
+    )
+
     displayed_edge_keys = set()
     for r, variant, constrains_layout in displayed_relationships:
         source_component, target_component = relation_endpoints(r)
@@ -507,13 +587,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         target = parameters_by_ref[target_component]
         if source_component == target_component:
             continue
-        edge_key = (
-            source_component,
-            target_component,
-            r["relationship_type"],
-            variant,
-            r.get("witness", ""),
-        )
+        edge_key = (source_component, target_component, variant)
         if edge_key in displayed_edge_keys:
             continue
         displayed_edge_keys.add(edge_key)

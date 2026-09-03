@@ -4,6 +4,7 @@
   "symbol": "\\mathrm{H}",
   "definition": "The **size** of a family $\\mathcal{H}$ is simply the  cardinality, $$  |\\mathcal{H|} $$",
   "category": "basic",
+  "graph_summary": "The number of concepts in the class.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": true,

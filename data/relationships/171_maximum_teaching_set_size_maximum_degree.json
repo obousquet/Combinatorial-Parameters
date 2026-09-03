@@ -8,6 +8,7 @@
   "latex_proof_label": "lem:teaching-set-degree-lower-bound",
   "proof_source": "LaTeX survey, teaching-set/degree lower-bound lemma (lem:teaching-set-degree-lower-bound).",
   "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
   "short_name": "maximum_teaching_set_size_maximum_degree",
   "name": "Maximum Teaching-Set Size / Maximum Degree"
 }

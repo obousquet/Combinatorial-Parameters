@@ -8,6 +8,7 @@
   "latex_proof_label": "lem:elementary-parameter-hierarchy",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
   "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
   "short_name": "diameter_path_dimension",
   "name": "Diameter / Path Dimension"
 }

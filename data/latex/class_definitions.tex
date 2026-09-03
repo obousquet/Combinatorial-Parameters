@@ -4,6 +4,30 @@
   
   \end{definition}
 
+  \subsection{Order-Shattering/Effective-VC-Radius Separation Class}\label{cl:order_shattering_effective_vc_radius_separation}
+  \begin{definition}[Order-Shattering/Effective-VC-Radius Separation Class - {$\mathcal C_{\mathrm{osh}}$}]
+  On the domain $\{x_1,x_2,x_3\}$, let
+  $\mathcal C_{\mathrm{osh}}=\{000,001,010,011,100\}$, where strings list
+  values at $x_1,x_2,x_3$ in that order.  It witnesses
+  $\mathrm{OSH}_{\min}>\mathrm{VCR}$.
+  \end{definition}
+
+  \subsection{Interpolation/Effective-VC-Radius Counterexample}\label{cl:interpolation_effective_vc_radius_counterexample}
+  \begin{definition}[Interpolation/Effective-VC-Radius Counterexample - {$\mathcal C_{\mathrm{even}}$}]
+  On the domain $\{x_1,x_2,x_3\}$, let
+  $\mathcal C_{\mathrm{even}}=\{000,011,101,110\}$, where strings list
+  values at $x_1,x_2,x_3$ in that order.  It refutes the candidate comparison
+  $\mathrm{intdeg}\geq\mathrm{VCR}$.
+  \end{definition}
+
+  \subsection{SCVC/VC Separation Class}\label{cl:scvc_vc_separation}
+  \begin{definition}[SCVC/VC Separation Class - {$\mathcal C_{\mathrm{SCVC}}$}]
+  On the domain $\{x_1,x_2,x_3,z\}$, let
+  $\mathcal C_{\mathrm{SCVC}}=\{0000,1001,1100,1111\}$, where strings list
+  values at $x_1,x_2,x_3,z$ in that order.  This class has
+  $\mathrm{SCVC}=1<2=\mathrm{VC}$.
+  \end{definition}
+
   \subsection{Universal Class}\label{cl:universal_class}
   \begin{definition}[Universal Class - {$\mathcal U_n$}]
   The universal class $\mathcal U_n=\{u_i:i\in[n]\}$ has domain $2^{[n]}$
@@ -71,4 +95,20 @@
   $\mathcal C_{\mathrm{rf}}$ consist of the thirteen strings
   $00000,11000,01000,01010,01011,01110,01101,01111,10100,10010,10011,10110,10101$,
   in coordinate order $x_1,\ldots,x_5$.
+  \end{definition}
+
+  \subsection{Interpolation-Conjecture Counterexample}\label{cl:interpolation_conjecture_counterexample}
+  \begin{definition}[Interpolation-Conjecture Counterexample - {$\mathcal C_{\mathrm{int}}$}]
+  On the domain $\{x_1,x_2,x_3\}$, let
+  $\mathcal C_{\mathrm{int}}=\{001,010,011,100\}$, where strings list values
+  at $x_1,x_2,x_3$ in that order.  It refutes the candidate equality
+  $\mathrm{intdeg}=\mathrm{SCVC}$.
+  \end{definition}
+
+  \subsection{SCVC/Interpolation Reverse Separation Class}\label{cl:scvc_interpolation_reverse_separation}
+  \begin{definition}[SCVC/Interpolation Reverse Separation Class - {$\mathcal C_{\mathrm{rev}}$}]
+  On the domain $\{x_1,x_2,x_3,z\}$, let
+  $\mathcal C_{\mathrm{rev}}=\{0110,0111,1000,1001\}$, where strings list
+  values at $x_1,x_2,x_3,z$ in that order.  It refutes the reverse candidate
+  comparison $\mathrm{SCVC}\geq\mathrm{intdeg}$.
   \end{definition}

@@ -10,6 +10,8 @@
   "proof": "Lemma 2 of the cited paper constructs an antipodal sphere of dimension $d-2$ from a dually antipodally shattered set of size $d$.",
   "references": "\u005ccite{chornomaz2025spherical}",
   "witness": "#classes/universal_class",
+  "witness_strength": "strict",
+  "witness_verification": "For the universal class, dual antipodal VC dimension is n, while spherical dimension is at most n-1. Hence the two endpoint parameters are strictly separated for every n.",
   "short_name": "spherical_dimension_dual_antipodal_vc_dimension_affine",
   "name": "Spherical Dimension / Dual Antipodal VC Dimension (affine)"
 }

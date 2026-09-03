@@ -1,0 +1,13 @@
+{
+  "id": 940,
+  "name": "Shattering-Cover Projection VC Dimension of Singletons plus Empty Set",
+  "short_name": "shattering_cover_projection_vc_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq1$.",
+  "status": "established",
+  "proof": "The full class consists of the empty set and all $n$ singletons. Its shattered subsets are exactly the empty set and the $n$ singleton coordinates, so it is itself admissible and has VC dimension one. A VC-zero projection has only one shattered subset and cannot be admissible because the class has at least two concepts. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "references": ""
+}
