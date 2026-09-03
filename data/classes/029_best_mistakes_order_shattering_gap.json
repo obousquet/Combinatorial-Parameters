@@ -1,0 +1,8 @@
+{
+  "id": 29,
+  "name": "Best-Mistakes/Order-Shattering Separation Class",
+  "short_name": "best_mistakes_order_shattering_gap",
+  "graph_label": "Best/OSH gap",
+  "symbol": "\u005cmathcal C_{bo}",
+  "definition": "On four coordinates x_1,x_2,x_3,x_4, let \u005cmathcal C_{bo} consist of the five strings 1100, 0010, 0110, 0001, and 1001, with bits written in coordinate order."
+}

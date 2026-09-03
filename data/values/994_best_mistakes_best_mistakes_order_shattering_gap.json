@@ -1,0 +1,12 @@
+{
+  "id": 994,
+  "name": "Best Mistakes of the Best-Mistakes/Order-Shattering Separation Class",
+  "short_name": "best_mistakes_best_mistakes_order_shattering_gap",
+  "class_id": "#classes/best_mistakes_order_shattering_gap",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Solve the transductive minimax prediction recurrence from the last coordinate backwards for every one of the 24 coordinate orders. Every order has value at least two, and some order has value two. Repeated coordinates cannot help after their label has been seen. The exact computation is in sync/verify_best_mistakes_order_shattering_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_best_mistakes_order_shattering_gap.py."
+}

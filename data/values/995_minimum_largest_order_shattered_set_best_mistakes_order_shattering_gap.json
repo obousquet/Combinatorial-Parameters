@@ -1,0 +1,12 @@
+{
+  "id": 995,
+  "name": "Minimum Largest Order-Shattered Set of the Best-Mistakes/Order-Shattering Separation Class",
+  "short_name": "minimum_largest_order_shattered_set_best_mistakes_order_shattering_gap",
+  "class_id": "#classes/best_mistakes_order_shattering_gap",
+  "parameter_id": "#parameters/minimum_largest_order_shattered_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For example, applying the four binary downshifts in the order x_1,x_2,x_3,x_4 produces a down-closed family with largest support size one. No nonconstant class has order-shattering dimension zero. Thus the minimum over coordinate orders is one. The exhaustive calculation is in sync/verify_best_mistakes_order_shattering_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_best_mistakes_order_shattering_gap.py."
+}

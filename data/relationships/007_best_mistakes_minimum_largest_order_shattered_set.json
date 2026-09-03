@@ -6,6 +6,9 @@
   "details": "For finite concept classes; both quantities admit a fixed-order tree-rank formulation.",
   "proof": "For a fixed domain order, Ben-David, Kushilevitz, and Mansour identify the optimal mistake count with the rank of the corresponding order-labeled consistency tree. An order-shattered set of size d yields a complete binary subtree of depth d in that tree, so its rank is at least d. Minimize over orders to obtain best mistakes at least the minimum largest order-shattered-set size.",
   "references": "\\cite{ben1997online}",
+  "witness": "#classes/best_mistakes_order_shattering_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For C_bo, the best fixed-order transductive mistake bound is 2 while the minimum largest order-shattered-set size is 1; sync/verify_best_mistakes_order_shattering_gap.py exhausts all 24 coordinate orders.",
   "status": "established",
   "short_name": "best_mistakes_minimum_largest_order_shattered_set",
   "name": "Best Mistakes / Minimum Largest Order Shattered Set"
