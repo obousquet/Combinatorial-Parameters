@@ -1,0 +1,16 @@
+{
+  "id": 385,
+  "name": "Combinatorial Eluder Dimension / Radon Number (affine)",
+  "short_name": "combinatorial_eluder_dimension_radon_number_affine",
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "For every finite binary concept class, $\\mathrm{Edim}(\\mathcal H)\\geq\\mathrm{Rad}(\\mathcal H)-1$.",
+  "status": "established",
+  "proof": "Let $R=\\{h_1,\\ldots,h_r\\}$ be Radon independent and take $h_r$ as the base hypothesis.  As in the singleton-versus-rest argument, for every $i<r$ there is a coordinate $x_i$ on which $h_i$ differs from every member of $R\\setminus\\{h_i\\}$.  The coordinates are distinct when $r\\geq3$.  Order the pairs $(x_i,h_i)$ for $i=1,\\ldots,r-1$.  At $x_i$, $h_i$ differs from the base $h_r$, while for every $j<i$, both $h_i$ and $h_r$ are among the members other than $h_j$ and hence agree at $x_j$.  These pairs form an eluder sequence of length $r-1$.  The cases $r\\leq2$ follow directly from the definitions.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the full cube, combinatorial eluder dimension is $n$ while the Radon number is $\\lfloor\\log_2(2n+2)\\rfloor$, so no reverse affine-linear bound holds."
+}

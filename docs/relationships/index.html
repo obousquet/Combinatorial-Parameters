@@ -8281,6 +8281,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-385" style="position:relative;">
+        
+        <h3><a href="relationships/combinatorial_eluder_dimension_radon_number_affine.html" class="table-title-link">Combinatorial Eluder Dimension / Radon Number (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension / Radon Number (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/radon_number.html">Radon Number</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+<p><strong>Additive Constant: </strong>1</p>
+<p><strong>Multiplicative Constant: </strong>1</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{Edim}(\mathcal H)\geq\mathrm{Rad}(\mathcal H)-1$.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the full cube, combinatorial eluder dimension is $n$ while the Radon number is $\lfloor\log_2(2n+2)\rfloor$, so no reverse affine-linear bound holds.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $R=\{h_1,\ldots,h_r\}$ be Radon independent and take $h_r$ as the base hypothesis.  As in the singleton-versus-rest argument, for every $i<r$ there is a coordinate $x_i$ on which $h_i$ differs from every member of $R\setminus\{h_i\}$.  The coordinates are distinct when $r\geq3$.  Order the pairs $(x_i,h_i)$ for $i=1,\ldots,r-1$.  At $x_i$, $h_i$ differs from the base $h_r$, while for every $j<i$, both $h_i$ and $h_r$ are among the members other than $h_j$ and hence agree at $x_j$.  These pairs form an eluder sequence of length $r-1$.  The cases $r\leq2$ follow directly from the definitions.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
