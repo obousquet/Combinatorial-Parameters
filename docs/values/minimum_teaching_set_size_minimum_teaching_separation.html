@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-141" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-973" style="position:relative;">
         
-        <h3><a href="relationships/monotonic_minimum_teaching_set_size_minimum_teaching_set_size.html" class="table-title-link">Monotonic Minimum Teaching Set Size / Minimum Teaching Set Size</a></h3>
+        <h3><a href="values/minimum_teaching_set_size_minimum_teaching_separation.html" class="table-title-link">Minimum Teaching-Set Size of the Minimum Teaching-Set Separation Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Monotonic Minimum Teaching Set Size / Minimum Teaching Set Size</p>
-<p><strong>Parameter 1: </strong><a href="parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-<p><strong>Witness: </strong><a href="classes/minimum_teaching_separation.html">Minimum Teaching-Set Separation Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For C_mts = {000, 100, 010, 110, 001}, the minimum teaching-set size is 1, while the four-concept two-cube subfamily forces the monotonic variant to equal 2.</p></div>
-
+        <p><strong>Name: </strong>Minimum Teaching-Set Size of the Minimum Teaching-Set Separation Class</p>
+<p><strong>Class: </strong><a href="classes/minimum_teaching_separation.html">Minimum Teaching-Set Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The monotonic variant maximizes the minimum teaching-set size over subfamilies, and the original class is among those subfamilies.</p></div>
-
-
-
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The exceptional concept $001$ is uniquely specified by its positive label on $x_3$, so the minimum teaching-set size is at most one. The class is non-singleton, so size zero is impossible.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_monotonic_minimum_teaching.py.</p></div>
 
         </div>
     </div>

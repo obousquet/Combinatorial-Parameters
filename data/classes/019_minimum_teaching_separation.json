@@ -1,0 +1,8 @@
+{
+  "id": 19,
+  "name": "Minimum Teaching-Set Separation Class",
+  "short_name": "minimum_teaching_separation",
+  "graph_label": "TS min sep.",
+  "symbol": "\\\\mathcal C_{\\\\mathrm{mts}}",
+  "definition": "On three coordinates x1, x2, x3, let C_mts consist of the five strings 000, 100, 010, 110, and 001. Equivalently, it is the two-dimensional cube on x1, x2 with x3=0, together with 001."
+}

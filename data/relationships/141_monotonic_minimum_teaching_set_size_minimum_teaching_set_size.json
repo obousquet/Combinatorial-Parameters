@@ -7,5 +7,8 @@
   "short_name": "monotonic_minimum_teaching_set_size_minimum_teaching_set_size",
   "name": "Monotonic Minimum Teaching Set Size / Minimum Teaching Set Size",
   "status": "established",
-  "proof": "The monotonic variant maximizes the minimum teaching-set size over subfamilies, and the original class is among those subfamilies."
+  "proof": "The monotonic variant maximizes the minimum teaching-set size over subfamilies, and the original class is among those subfamilies.",
+  "witness": "#classes/minimum_teaching_separation",
+  "witness_strength": "strict",
+  "witness_verification": "For C_mts = {000, 100, 010, 110, 001}, the minimum teaching-set size is 1, while the four-concept two-cube subfamily forces the monotonic variant to equal 2."
 }

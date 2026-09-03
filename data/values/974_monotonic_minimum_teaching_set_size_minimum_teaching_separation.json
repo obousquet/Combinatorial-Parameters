@@ -1,0 +1,12 @@
+{
+  "id": 974,
+  "name": "Monotonic Minimum Teaching-Set Size of the Minimum Teaching-Set Separation Class",
+  "short_name": "monotonic_minimum_teaching_set_size_minimum_teaching_separation",
+  "class_id": "#classes/minimum_teaching_separation",
+  "parameter_id": "#parameters/monotonic_minimum_teaching_set_size",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The four-concept subfamily 000, 100, 010, 110 is a two-cube, in which every concept needs both x1 and x2, giving the lower bound two. Every subfamily containing 001 has a one-point teacher for 001 at x3; every remaining subfamily is contained in that two-cube and has a teacher of size at most two. Hence the maximum over subfamilies is exactly two.",
+  "references": "Direct calculation; verified by sync/verify_monotonic_minimum_teaching.py."
+}
