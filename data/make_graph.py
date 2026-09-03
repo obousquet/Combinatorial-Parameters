@@ -502,6 +502,63 @@ def hierarchy_ranks(relationships: List[Dict[str, Any]]) -> Dict[str, int]:
                 queue.append(successor)
     return {vertex: ranks[component_of[vertex]] for vertex in vertices}
 
+
+def affine_linear_blocks(relationships: List[Dict[str, Any]]) -> List[List[str]]:
+    """Return nontrivial mutual-affine-bound components.
+
+    Each directed edge has the form A >= c B - d with c>0 (plain dominance
+    is the c=1,d=0 case).  A strongly connected component therefore records
+    parameters with derivable affine-linear bounds in *both* directions.  It
+    is intentionally weaker than exact equality, so its members remain
+    separate nodes, but it is useful layout information and deserves a shared
+    visual enclosure.
+    """
+    adjacency: Dict[str, set[str]] = defaultdict(set)
+    for relationship in relationships:
+        if relationship["relationship_type"] not in LINEAR_TYPES:
+            continue
+        source, target = relation_endpoints(relationship)
+        adjacency[source].add(target)
+        if relationship["relationship_type"] == "equivalence":
+            adjacency[target].add(source)
+
+    vertices = set(adjacency)
+    vertices.update(target for targets in adjacency.values() for target in targets)
+    index = 0
+    indices: Dict[str, int] = {}
+    lowlinks: Dict[str, int] = {}
+    stack: List[str] = []
+    on_stack = set()
+    blocks: List[List[str]] = []
+
+    def visit(node: str) -> None:
+        nonlocal index
+        indices[node] = lowlinks[node] = index
+        index += 1
+        stack.append(node)
+        on_stack.add(node)
+        for neighbour in adjacency[node]:
+            if neighbour not in indices:
+                visit(neighbour)
+                lowlinks[node] = min(lowlinks[node], lowlinks[neighbour])
+            elif neighbour in on_stack:
+                lowlinks[node] = min(lowlinks[node], indices[neighbour])
+        if lowlinks[node] == indices[node]:
+            block = []
+            while True:
+                member = stack.pop()
+                on_stack.remove(member)
+                block.append(member)
+                if member == node:
+                    break
+            if len(block) > 1:
+                blocks.append(sorted(block))
+
+    for vertex in sorted(vertices):
+        if vertex not in indices:
+            visit(vertex)
+    return sorted(blocks, key=lambda block: (len(block), block))
+
 def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     """
     Generate nodes and edges for the graph.
@@ -596,6 +653,14 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             "color": "#D35400",
             "fillcolor": "#FFF0D9",
         },
+        {
+            "type": "node",
+            "label": "A ↔ cB+d",
+            "text": "Purple dashed enclosure: a mutually affine-linear block (each member has a positive affine-linear bound in terms of every other, by the displayed relationships and transitivity)",
+            "shape": "box",
+            "style": "rounded,dashed",
+            "color": "#6C5CE7",
+        },
     ])
 
     parameters = cache.get_table_entries("parameters")
@@ -642,6 +707,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     base_backbone = reduced_by_variant.get(BASE_VARIANT, [])
     base_rank_relations = relationships_by_variant.get(BASE_VARIANT, [])
     ranks = hierarchy_ranks(base_rank_relations)
+    linear_blocks = affine_linear_blocks(base_rank_relations)
 
     # Add one node for each exact-equality component.  The first record is the
     # clickable representative; the combined label makes every identification
@@ -787,11 +853,20 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             if source_rank is not None and target_rank is not None and source_rank < target_rank:
                 edge["label_rank"] = (source_rank + target_rank) / 2
         edges.append(edge)
+    clusters = []
+    for block in linear_blocks:
+        clusters.append({
+            "nodes": [f'#parameters/{parameters_by_ref[member]["id"]}' for member in block],
+            "label": "mutually affine-linear",
+            "color": "#6C5CE7",
+            "fontcolor": "#4B3F72",
+        })
     merged_nodes = sum(len(component) - 1 for component in equivalence_components.values())
     print(
         "graph relationships: "
         f"{len(relationships)} direct, {len(edges)} displayed after collapsing "
         f"{merged_nodes} exact-equality parameters ({len(base_backbone)} in the base homogeneous backbone; "
-        f"{len(base_rank_relations)} base relations used for affine ranks)"
+        f"{len(base_rank_relations)} base relations used for affine ranks; "
+        f"{len(clusters)} mutual affine-linear blocks)"
     )
-    return {"nodes": nodes, "edges": edges, "legend": legend}
+    return {"nodes": nodes, "edges": edges, "legend": legend, "clusters": clusters}
