@@ -1,0 +1,14 @@
+{
+  "id": 377,
+  "name": "Proper Ordered Sample Compression / Log Shattering (Incomparable)",
+  "short_name": "proper_ordered_sample_compression_log_shattering_incomparable",
+  "parameter_1_id": "#parameters/proper_ordered_sample_compression",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal S_n$, proper ordered sample-compression size is $n-1$, while log shattering is $\\log_2(n+1)$.",
+  "parameter_2_larger_witness": "For the half-interval class $\\mathcal I_n$, log shattering is $\\log_2 n$, while proper ordered sample-compression size is $1$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Proper Ordered Sample Compression and Log Shattering of Half-Intervals and Singletons."
+}

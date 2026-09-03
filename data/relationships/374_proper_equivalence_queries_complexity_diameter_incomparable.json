@@ -1,0 +1,14 @@
+{
+  "id": 374,
+  "name": "Proper Equivalence Queries Complexity / Diameter (Incomparable)",
+  "short_name": "proper_equivalence_queries_complexity_diameter_incomparable",
+  "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/diameter",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal S_n$, proper equivalence-query complexity is $n-1$, while diameter is $2$.",
+  "parameter_2_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, diameter is $n$, while proper equivalence-query complexity is $1$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Proper Equivalence Queries Complexity and Diameter of Trivial Concepts and Singletons."
+}

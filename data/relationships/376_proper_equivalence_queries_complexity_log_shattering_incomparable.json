@@ -1,0 +1,14 @@
+{
+  "id": 376,
+  "name": "Proper Equivalence Queries Complexity / Log Shattering (Incomparable)",
+  "short_name": "proper_equivalence_queries_complexity_log_shattering_incomparable",
+  "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal S_n$, proper equivalence-query complexity is $n-1$, while log shattering is $\\log_2(n+1)$.",
+  "parameter_2_larger_witness": "For the tagged-singleton class $\\mathcal{Tag}_n$, log shattering is $\\log_2(n+\\lceil\\log_2n\\rceil+1)$, while proper equivalence-query complexity is $2$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Proper Equivalence Queries Complexity and Log Shattering of Singletons and Tagged Singletons."
+}
