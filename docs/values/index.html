@@ -4473,23 +4473,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-736" style="position:relative;">
-        
-        <h3><a href="values/randomized_kmistake_littlestone_dimension_trivial_concepts.html" class="table-title-link">Randomized $k$-Mistake Littlestone Dimension of Trivial Concepts</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Randomized $k$-Mistake Littlestone Dimension of Trivial Concepts</p>
-<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Parameter: </strong><a href="parameters/randomized_kmistake_littlestone_dimension.html">Randomized $k$-Mistake Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$k+\left(k+\frac12\right)\binom{2k}{k}4^{-k}$</p>
-<p><strong>Order:</strong> </p>
-<p><strong>Details: </strong>For every integer $k\geq0$.</p>
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Filmus--Hanneke--Mehalel--Moran's Theorem 65 gives this exact randomized $k$-mistake bound for two experts. Its proof shows that an optimal tree may have every expert-prediction pair equal to $(0,1)$. This is exactly the tree model for the two complementary constant concepts, so their identity $M^\star(2,k)=\mathrm{RL}^{\mathrm{mist}}_k$ gives the displayed value.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a></p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-737" style="position:relative;">
         
         <h3><a href="values/occasional_onesided_getback_full_cube.html" class="table-title-link">Occasional One-Sided Getback of Full Cube</a></h3>
@@ -5591,23 +5574,6 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Every m-set has 2m+1-m=m+1 one-inclusion neighbors in the upper layer, and every (m+1)-set has m+1 neighbors in the lower layer. Thus the full one-inclusion graph is (m+1)-regular, so its degeneracy is at least m+1. Its maximum degree is also m+1, so every induced subgraph has minimum degree at most m+1. Hence the degeneracy is exactly m+1.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_middle_layers.py.</p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-326" style="position:relative;">
-        
-        <h3><a href="values/kmistake_littlestone_dimension_trivial_concepts.html" class="table-title-link">$k$-Mistake Littlestone Dimension of Trivial Concepts</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>$k$-Mistake Littlestone Dimension of Trivial Concepts</p>
-<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kmistake_littlestone_dimension.html">$k$-Mistake Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$2k+1$</p>
-<p><strong>Order:</strong> </p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For two hypotheses, Filmus--Hanneke--Mehalel--Moran show that the optimal deterministic $k$-realizable mistake bound is $2k+1$. Their Theorem 2.4 identifies this bound with $k$-Littlestone dimension, yielding the stated value.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a></p></div>
 
         </div>
     </div>
@@ -10062,23 +10028,6 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>On every realizable sample for either constant target, the first observed label determines that target.  Output that constant function.  Conditional on any realizable distribution, the output is the fixed target function and is therefore independent of the random sample, so $I(S;\mathcal A(S))=0$.  Nonnegativity of mutual information gives equality.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#pradeep2022information">[pradeep2022information]</a></p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-594" style="position:relative;">
-        
-        <h3><a href="values/kmistake_littlestone_dimension_full_cube.html" class="table-title-link">$k$-Mistake Littlestone Dimension of Full Cube</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>$k$-Mistake Littlestone Dimension of Full Cube</p>
-<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Parameter: </strong><a href="parameters/kmistake_littlestone_dimension.html">$k$-Mistake Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$n+2k$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For the lower bound, query every coordinate once and query one fixed coordinate $2k$ additional times.  On every branch, a cube hypothesis matches the singly queried coordinates and takes a majority label on the repeated coordinate, making at most $k$ disagreements.  Conversely, an adversary answers each query so as to balance the two labels previously seen at that coordinate.  Along a branch of length $T$, if coordinate $i$ is queried $t_i$ times, every cube hypothesis makes at least $\sum_i\lfloor t_i/2\rfloor\ge(T-n)/2$ disagreements.  Thus a $k$-shattered tree has minimum branch length at most $n+2k$, proving equality.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a></p></div>
 
         </div>
     </div>
