@@ -1,0 +1,12 @@
+{
+  "id": 1002,
+  "name": "Recursive Teaching Dimension of the Positive-Teaching Triangle",
+  "short_name": "recursive_teaching_dimension_positive_teaching_triangle",
+  "class_id": "#classes/positive_teaching_triangle",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The class admits a recursive teaching plan of width one: first remove 011 using its label 0 at x_1, then distinguish 110 and 101 by one coordinate. No non-singleton class has recursive teaching dimension zero. Equivalently, finite-class preference-based teaching dimension is one; sync/verify_positive_teaching_triangle.py exhausts the corresponding preference orders.",
+  "references": "Direct calculation; verified by sync/verify_positive_teaching_triangle.py."
+}

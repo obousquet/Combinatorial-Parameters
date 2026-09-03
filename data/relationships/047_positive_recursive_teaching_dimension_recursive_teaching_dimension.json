@@ -8,5 +8,8 @@
   "details": "For finite concept classes.",
   "status": "established",
   "proof": "The positive recursive model requires every teaching sample used at every recursive stage to be positive.  It is therefore a restriction of the ordinary recursive model, so its optimum cannot be smaller.",
-  "references": "\\cite{fallat2023batch}"
+  "references": "\\cite{fallat2023batch}",
+  "witness": "#classes/positive_teaching_triangle",
+  "witness_strength": "strict",
+  "witness_verification": "For C_{+triangle}, positive RTD is 2 whereas ordinary RTD (equivalently finite-class PBTD) is 1; sync/verify_positive_teaching_triangle.py exhausts preference orders."
 }

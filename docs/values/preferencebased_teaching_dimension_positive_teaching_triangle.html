@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-47" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1001" style="position:relative;">
         
-        <h3><a href="relationships/positive_recursive_teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Positive Recursive Teaching Dimension / Recursive Teaching Dimension</a></h3>
+        <h3><a href="values/preferencebased_teaching_dimension_positive_teaching_triangle.html" class="table-title-link">Preference-Based Teaching Dimension of the Positive-Teaching Triangle</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive Recursive Teaching Dimension / Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-<p><strong>Witness: </strong><a href="classes/positive_teaching_triangle.html">Positive-Teaching Triangle</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For C_{+triangle}, positive RTD is 2 whereas ordinary RTD (equivalently finite-class PBTD) is 1; sync/verify_positive_teaching_triangle.py exhausts preference orders.</p></div>
-
+        <p><strong>Name: </strong>Preference-Based Teaching Dimension of the Positive-Teaching Triangle</p>
+<p><strong>Class: </strong><a href="classes/positive_teaching_triangle.html">Positive-Teaching Triangle</a></p>
+<p><strong>Parameter: </strong><a href="parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The positive recursive model requires every teaching sample used at every recursive stage to be positive.  It is therefore a restriction of the ordinary recursive model, so its optimum cannot be smaller.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#fallat2023batch">[fallat2023batch]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Put 011 first in the preference order, so it is taught by the empty sample. Among the remaining targets, 110 and 101 are distinguished by one coordinate. Thus a preference-based plan of width one exists; width zero is impossible for a non-singleton class. The exhaustive preference-order calculation is in sync/verify_positive_teaching_triangle.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_positive_teaching_triangle.py.</p></div>
 
         </div>
     </div>

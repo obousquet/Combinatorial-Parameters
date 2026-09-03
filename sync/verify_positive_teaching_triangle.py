@@ -2,6 +2,7 @@
 """Exactly verify C_{+triangle}: positive RTD 2 versus positive NCTD 1."""
 
 from functools import cache
+from itertools import permutations
 
 
 # Bit i is the label at x_(i+1), so these are 110, 101, 011 in coordinate order.
@@ -57,10 +58,30 @@ def positive_noclashing_dimension() -> int:
     raise AssertionError("the full positive support always provides a finite map")
 
 
+def preference_based_dimension() -> int:
+    """Enumerate preference orders and their smallest teaching samples."""
+    for width in range(DIMENSION + 1):
+        for order in permutations(CONCEPTS):
+            valid = True
+            for index, target in enumerate(order):
+                lower = order[index + 1 :]
+                if not any(
+                    sample.bit_count() <= width
+                    and all((other & sample) != (target & sample) for other in lower)
+                    for sample in range(1 << DIMENSION)
+                ):
+                    valid = False
+                    break
+            if valid:
+                return width
+    raise AssertionError("full samples always yield a preference teaching plan")
+
+
 def main() -> None:
     assert positive_recursive_teaching_dimension() == 2
     assert positive_noclashing_dimension() == 1
-    print("C_{+triangle}: positive RTD = 2; positive NCTD = 1")
+    assert preference_based_dimension() == 1
+    print("C_{+triangle}: positive RTD = 2; positive NCTD = PBTD = 1")
 
 
 if __name__ == "__main__":

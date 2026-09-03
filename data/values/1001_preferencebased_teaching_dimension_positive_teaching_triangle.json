@@ -1,0 +1,12 @@
+{
+  "id": 1001,
+  "name": "Preference-Based Teaching Dimension of the Positive-Teaching Triangle",
+  "short_name": "preferencebased_teaching_dimension_positive_teaching_triangle",
+  "class_id": "#classes/positive_teaching_triangle",
+  "parameter_id": "#parameters/preferencebased_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Put 011 first in the preference order, so it is taught by the empty sample. Among the remaining targets, 110 and 101 are distinguished by one coordinate. Thus a preference-based plan of width one exists; width zero is impossible for a non-singleton class. The exhaustive preference-order calculation is in sync/verify_positive_teaching_triangle.py.",
+  "references": "Direct calculation; verified by sync/verify_positive_teaching_triangle.py."
+}
