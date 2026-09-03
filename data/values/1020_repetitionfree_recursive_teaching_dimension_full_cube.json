@@ -1,0 +1,12 @@
+{
+  "id": 1020,
+  "name": "Repetition-Free Recursive Teaching Dimension of Full Cube",
+  "short_name": "repetitionfree_recursive_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "In the full cube, whichever concept is taught first must be distinguished from every one-bit neighbour, so its teaching set contains all n coordinates; hence $\\mathrm{rfRTD}\\ge n$.  Conversely, induct on n: split the cube into its two (n-1)-dimensional fibres at one coordinate.  Teach the 1-fibre first, adding that coordinate to every teaching set in a repetition-free plan for the fibre, then teach the 0-fibre with its repetition-free plan.  The added coordinate distinguishes the two blocks' coordinate sets, and it also separates each first-block concept from every still-present 0-fibre concept.  The order is at most n.  Thus $\\mathrm{rfRTD}=n$.",
+  "references": "\\cite{doliwa2014recursive}"
+}
