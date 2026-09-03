@@ -8,5 +8,8 @@
   "details": "For finite concept classes, $\\mathrm{M}_{\\mathrm{worst}}(\\mathcal H)\\geq\\mathrm Q_{\\mathrm{par}}(\\mathcal H)$.",
   "status": "established",
   "proof": "Corollary 8(1) of Doliwa--Fan--Simon--Zilles states $\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)\\leq\\mathrm{Mopt}(\\mathcal H)$.  Their $\\mathrm{Mopt}$ is the optimal adversarial online mistake bound, which is precisely the catalogue's $\\mathrm{M}_{\\mathrm{worst}}$, while $\\mathrm{LC}_{\\mathrm{partial}}$ is its partial-equivalence-query complexity.",
-  "references": "\\cite{doliwa2014recursive}"
+  "references": "\\cite{doliwa2014recursive}",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $\\mathrm{ADDRESSING}_n$, worst mistakes is $\\lfloor\\log_2 n\\rfloor$, while partial equivalence queries identify the target with one query by proposing the partial hypothesis that is negative on every address point and undefined on bit points. Hence the gap is unbounded."
 }
