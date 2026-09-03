@@ -1,0 +1,12 @@
+{
+  "id": 1028,
+  "name": "Effective VC Radius of Universal Class",
+  "short_name": "effective_vc_radius_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$ for $n\\geq2$",
+  "value_class": "omega_1",
+  "details": "For $n=1$, the one-concept class has empty effective range and value zero.",
+  "status": "established",
+  "proof": "For $n\\geq2$, the effective coordinates of $\\mathcal U_n$ are exactly the nonempty proper subsets $A\\subset[n]$: its column is the membership vector of $A$ across $u_1,\\ldots,u_n$, so it is nonconstant precisely in that case. Every such singleton coordinate is shattered. But any effective $A$ and its complement have only the two joint patterns $01$ and $10$ across the concepts, so that pair is not shattered. Thus the effective VC radius is one."
+}
