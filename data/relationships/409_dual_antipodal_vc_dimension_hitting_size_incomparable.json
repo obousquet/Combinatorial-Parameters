@@ -1,0 +1,14 @@
+{
+  "id": 409,
+  "name": "Dual Antipodal VC Dimension / Hitting Size (Incomparable)",
+  "short_name": "dual_antipodal_vc_dimension_hitting_size_incomparable",
+  "parameter_1_id": "#parameters/dual_antipodal_vc_dimension",
+  "parameter_2_id": "#parameters/hitting_size",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the universal class $\\mathcal U_n$, $\\mathrm{VC}^{*a}=n$, whereas $\\mathrm{HT}=1$.",
+  "parameter_2_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm{HT}=n$, whereas $\\mathrm{VC}^{*a}=\\lfloor\\log_2n\\rfloor+1$.",
+  "proof": "The universal-class and full-cube calculations give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs; see also \\cite{chornomaz2025spherical}."
+}

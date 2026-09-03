@@ -1,0 +1,11 @@
+{
+  "id": 1030,
+  "name": "Hitting Size of Universal Class",
+  "short_name": "hitting_size_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The domain point $[n]$ belongs to every universal-class concept $u_i$, hence it is a hitting set of size one. Since each $u_i$ is nonempty, the empty set cannot be a hitting set."
+}
