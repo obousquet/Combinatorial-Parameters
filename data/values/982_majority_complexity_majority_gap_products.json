@@ -1,0 +1,12 @@
+{
+  "id": 982,
+  "name": "Majority Complexity of Majority-Query Separation Products",
+  "short_name": "majority_complexity_majority_gap_products",
+  "class_id": "#classes/majority_gap_products",
+  "parameter_id": "#parameters/majority_complexity",
+  "value": "$3t$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Coordinatewise majority factors across disjoint Cartesian factors. After an adversarial counterexample in one block, the version space remains a product with only that factor restricted. The majority-query recurrence is therefore additive by induction. Each C_maj factor costs 3, giving total cost 3t.",
+  "references": "Direct recurrence argument; checked for one and two factors by sync/verify_majority_gap_products.py."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 981,
+  "name": "Littlestone Dimension of Majority-Query Separation Products",
+  "short_name": "littlestone_dimension_majority_gap_products",
+  "class_id": "#classes/majority_gap_products",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$2t$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Littlestone dimension is additive on Cartesian products over disjoint coordinate blocks: after a coordinate query in one factor, both child version spaces remain products, and the standard rank recurrence gives the sum of the factor ranks by induction. Each C_maj factor has rank 2, so the t-fold product has rank 2t.",
+  "references": "Direct recurrence argument; checked for one and two factors by sync/verify_majority_gap_products.py."
+}

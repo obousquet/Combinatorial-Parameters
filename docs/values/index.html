@@ -9794,6 +9794,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-981" style="position:relative;">
+        
+        <h3><a href="values/littlestone_dimension_majority_gap_products.html" class="table-title-link">Littlestone Dimension of Majority-Query Separation Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension of Majority-Query Separation Products</p>
+<p><strong>Class: </strong><a href="classes/majority_gap_products.html">Products of the Majority-Query Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$2t$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Littlestone dimension is additive on Cartesian products over disjoint coordinate blocks: after a coordinate query in one factor, both child version spaces remain products, and the standard rank recurrence gives the sum of the factor ranks by induction. Each C_maj factor has rank 2, so the t-fold product has rank 2t.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct recurrence argument; checked for one and two factors by sync/verify_majority_gap_products.py.</p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-579" style="position:relative;">
         
         <h3><a href="values/kblock_littlestone_dimension_majority.html" class="table-title-link">$k$-Block Littlestone Dimension of Majority</a></h3>
@@ -9824,6 +9841,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces the same value for $\mathrm B_2$.</p></div>
 
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-982" style="position:relative;">
+        
+        <h3><a href="values/majority_complexity_majority_gap_products.html" class="table-title-link">Majority Complexity of Majority-Query Separation Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Complexity of Majority-Query Separation Products</p>
+<p><strong>Class: </strong><a href="classes/majority_gap_products.html">Products of the Majority-Query Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Value: </strong>$3t$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Coordinatewise majority factors across disjoint Cartesian factors. After an adversarial counterexample in one block, the version space remains a product with only that factor restricted. The majority-query recurrence is therefore additive by induction. Each C_maj factor costs 3, giving total cost 3t.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct recurrence argument; checked for one and two factors by sync/verify_majority_gap_products.py.</p></div>
 
         </div>
     </div>

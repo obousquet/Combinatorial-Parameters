@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-86" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-982" style="position:relative;">
         
-        <h3><a href="relationships/majority_complexity_littlestone_dimension.html" class="table-title-link">Majority Complexity / Littlestone Dimension</a></h3>
+        <h3><a href="values/majority_complexity_majority_gap_products.html" class="table-title-link">Majority Complexity of Majority-Query Separation Products</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Majority Complexity / Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The pointwise-majority (halving) learner is one particular equivalence-query strategy.</p></div>
-<p><strong>Witness: </strong><a href="classes/majority_gap_products.html">Products of the Majority-Query Separation Class</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the t-fold product C_maj^t, majority-query complexity is 3t whereas Littlestone dimension (and unrestricted equivalence-query complexity) is 2t. The gap is unbounded with t.</p></div>
-
+        <p><strong>Name: </strong>Majority Complexity of Majority-Query Separation Products</p>
+<p><strong>Class: </strong><a href="classes/majority_gap_products.html">Products of the Majority-Query Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
+<p><strong>Value: </strong>$3t$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The halving/majority procedure is one particular equivalence-query learner. Its query count is therefore at least the optimal equivalence-query complexity, which equals Littlestone dimension.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Coordinatewise majority factors across disjoint Cartesian factors. After an adversarial counterexample in one block, the version space remains a product with only that factor restricted. The majority-query recurrence is therefore additive by induction. Each C_maj factor costs 3, giving total cost 3t.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct recurrence argument; checked for one and two factors by sync/verify_majority_gap_products.py.</p></div>
 
         </div>
     </div>

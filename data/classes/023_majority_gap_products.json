@@ -1,0 +1,8 @@
+{
+  "id": 23,
+  "name": "Products of the Majority-Query Separation Class",
+  "short_name": "majority_gap_products",
+  "graph_label": "Majority-gap products",
+  "symbol": "C_{maj}^{t}",
+  "definition": "For t at least 1, take the t-fold Cartesian product of C_maj on disjoint blocks of four coordinates. A concept chooses independently one of the eight C_maj strings on each block."
+}
