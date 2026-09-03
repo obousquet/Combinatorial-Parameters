@@ -7,5 +7,8 @@
   "short_name": "effective_range_monotone_recursive_teaching_dimension",
   "status": "established",
   "details": "For finite concept classes.",
-  "proof": "Every coordinate projection has at most \\(\\mathrm E(\\mathcal H)\\) active coordinates. In every nonempty subfamily of such a projection, the full active-coordinate sample teaches any chosen concept, so each recursive teaching stage has a teaching set of size at most \\(\\mathrm E(\\mathcal H)\\). Taking the maximum over projections proves the bound."
+  "proof": "Every coordinate projection has at most \\(\\mathrm E(\\mathcal H)\\) active coordinates. In every nonempty subfamily of such a projection, the full active-coordinate sample teaches any chosen concept, so each recursive teaching stage has a teaching set of size at most \\(\\mathrm E(\\mathcal H)\\). Taking the maximum over projections proves the bound.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $n$ singleton concepts, effective range is $n$ while monotone recursive teaching dimension is 1."
 }

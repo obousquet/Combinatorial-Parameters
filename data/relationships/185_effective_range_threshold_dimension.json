@@ -7,5 +7,8 @@
   "short_name": "effective_range_threshold_dimension",
   "status": "established",
   "details": "Every coordinate of a nontrivial threshold trace is active.",
-  "proof": "A threshold trace on S contains concepts with different labels at every coordinate of S. Hence every coordinate of S belongs to the effective range, so \\(\\mathrm E(\\mathcal H)\\ge\\mathrm T(\\mathcal H)\\)."
+  "proof": "A threshold trace on S contains concepts with different labels at every coordinate of S. Hence every coordinate of S belongs to the effective range, so \\(\\mathrm E(\\mathcal H)\\ge\\mathrm T(\\mathcal H)\\).",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $n$ singleton concepts, effective range is $n$ while threshold dimension is 1."
 }
