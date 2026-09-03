@@ -1,0 +1,14 @@
+{
+  "id": 380,
+  "name": "Characteristic-p Yang Dimension / Log Shattering (Incomparable)",
+  "short_name": "characteristic_p_yang_dimension_log_shattering_incomparable",
+  "parameter_1_id": "#parameters/characteristic_p_yang_dimension",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the $n$-singleton class $\\mathcal S_n$, $\\mathrm Y_p=n-1$ for every prime $p$, while log shattering is $\\log_2(n+1)$.",
+  "parameter_2_larger_witness": "For the trivial class $\\mathcal T_n=\\{\\emptyset,[n]\\}$, log shattering is $\\log_2(n+1)$, while $\\mathrm Y_p=1$ for every prime $p$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions, uniformly in the fixed characteristic $p$.",
+  "proof_source": "Database-owned value proofs for Characteristic-p Yang Dimension and Log Shattering of Trivial Concepts and Singletons."
+}
