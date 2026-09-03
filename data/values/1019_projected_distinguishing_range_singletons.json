@@ -1,0 +1,11 @@
+{
+  "id": 1019,
+  "name": "Projected Distinguishing Range of Singletons",
+  "short_name": "projected_distinguishing_range_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "On the full domain, omitting two coordinates $i,j$ makes the singleton concepts $\\{i\\}$ and $\\{j\\}$ have the same empty trace, so every distinguishing coordinate set has size at least $n-1$. Retaining all but one coordinate gives distinct traces for all n singleton concepts, so this bound is attained. A projection to k<n coordinates consists of its k singleton traces together with the empty trace, and every retained coordinate is needed to distinguish its singleton from the empty trace; its distinguishing range is therefore k\\leq n-1. The full projection has the already calculated value n-1."
+}

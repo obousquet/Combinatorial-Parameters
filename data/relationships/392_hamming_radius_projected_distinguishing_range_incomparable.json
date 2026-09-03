@@ -1,0 +1,14 @@
+{
+  "id": 392,
+  "name": "Hamming Radius / Projected Distinguishing Range (Incomparable)",
+  "short_name": "hamming_radius_projected_distinguishing_range_incomparable",
+  "parameter_1_id": "#parameters/hamming_radius",
+  "parameter_2_id": "#parameters/projected_distinguishing_range",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, Hamming radius is $\\lceil n/2\\rceil$ while projected distinguishing range is $1$.",
+  "parameter_2_larger_witness": "For the n-singleton class $\\mathcal S_n$, projected distinguishing range is $n-1$ while Hamming radius is $1$.",
+  "status": "established",
+  "proof": "The two explicit benchmark calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Hamming Radius and Projected Distinguishing Range of Trivial Concepts and Singletons."
+}
