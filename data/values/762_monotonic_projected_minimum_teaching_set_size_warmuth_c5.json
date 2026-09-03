@@ -7,6 +7,5 @@
   "value": "$3$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "The monotonic projected parameter dominates monotonic minimum teaching-set size, whose established C5 value is $3$. It is bounded above by Littlestone dimension, also $3$ for C5. Hence its value is $3$.",
-  "references": "\\cite{doliwa2014recursive}"
+  "proof": "The full class has projected minimum teaching-set size three, giving the lower bound. Exhaustive enumeration of all 1,023 nonempty subfamilies and all 32 coordinate projections finds no projected minimum teaching-set size above three. Thus the subfamily maximum is exactly three; this finite calculation is checked by \\texttt{sync/verify\\_projected\\_teaching\\_values.py}."
 }
