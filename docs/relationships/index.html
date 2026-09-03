@@ -8437,6 +8437,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-393" style="position:relative;">
+        
+        <h3><a href="relationships/hamming_radius_repetitionfree_recursive_teaching_dimension.html" class="table-title-link">Hamming Radius / Repetition-Free Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hamming Radius / Repetition-Free Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm B(\mathcal H)\geq\mathrm{rfRTD}(\mathcal H)$.</p></div>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal T_n=\{\emptyset,[n]\}$, the Hamming radius is $\lceil n/2\rceil$, while the two concepts have a repetition-free recursive teaching plan of order one.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $T$ be a centre of an enclosing Hamming ball of radius $B$, and assign to each $h\in\mathcal H$ the coordinate set $r(h)=h\mathbin\Delta T$.  Then $|r(h)|\le B$.  This map is non-clashing: if $h$ and $g$ differ at $x$, exactly one of them differs from $T$ at $x$, so $x\in r(h)\cup r(g)$.  Order the distinct sets $r(h)$ by reverse inclusion, breaking incomparable pairs arbitrarily.  For an earlier $h$ and later $g$, $r(h)\not\subseteq r(g)$, so some $x\in r(h)\setminus r(g)$ distinguishes them.  Thus the representation map is acyclic non-clashing.  The representation-map/teaching-plan equivalence yields a repetition-free teaching plan of order at most $B$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

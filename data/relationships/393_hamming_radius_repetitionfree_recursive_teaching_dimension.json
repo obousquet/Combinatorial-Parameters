@@ -1,0 +1,15 @@
+{
+  "id": 393,
+  "name": "Hamming Radius / Repetition-Free Recursive Teaching Dimension",
+  "short_name": "hamming_radius_repetitionfree_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/hamming_radius",
+  "parameter_2_id": "#parameters/repetitionfree_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, $\\mathrm B(\\mathcal H)\\geq\\mathrm{rfRTD}(\\mathcal H)$.",
+  "proof": "Let $T$ be a centre of an enclosing Hamming ball of radius $B$, and assign to each $h\\in\\mathcal H$ the coordinate set $r(h)=h\\mathbin\\Delta T$.  Then $|r(h)|\\le B$.  This map is non-clashing: if $h$ and $g$ differ at $x$, exactly one of them differs from $T$ at $x$, so $x\\in r(h)\\cup r(g)$.  Order the distinct sets $r(h)$ by reverse inclusion, breaking incomparable pairs arbitrarily.  For an earlier $h$ and later $g$, $r(h)\\not\\subseteq r(g)$, so some $x\\in r(h)\\setminus r(g)$ distinguishes them.  Thus the representation map is acyclic non-clashing.  The representation-map/teaching-plan equivalence yields a repetition-free teaching plan of order at most $B$.",
+  "references": "\\cite{doliwa2014recursive}",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, the Hamming radius is $\\lceil n/2\\rceil$, while the two concepts have a repetition-free recursive teaching plan of order one."
+}
