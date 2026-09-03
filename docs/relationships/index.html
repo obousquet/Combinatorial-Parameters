@@ -8255,6 +8255,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-384" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_radon_number_affine.html" class="table-title-link">Effective Range / Radon Number (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Radon Number (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/radon_number.html">Radon Number</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+<p><strong>Additive Constant: </strong>1</p>
+<p><strong>Multiplicative Constant: </strong>1</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{Rad}(\mathcal H)\leq\mathrm E(\mathcal H)+1$.</p></div>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal T_n=\{\emptyset,[n]\}$, effective range is $n$ while the Radon number is $2$; hence no reverse affine-linear bound holds.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $R=\{h_1,\ldots,h_r\}$ be Radon independent.  The singleton-versus-rest partition for $h_i$ has disjoint convex hulls, so $h_i$ is not in the version-space convex hull of $R\setminus\{h_i\}$.  Hence some coordinate $x_i$ is constant on $R\setminus\{h_i\}$ and has the opposite value on $h_i$.  When $r\geq3$, the coordinates $x_i$ are distinct: if $x_i=x_j$, any third member of $R$ would have to equal both opposite constant values.  Every $x_i$ is active, so $r\leq\mathrm E(\mathcal H)$.  For $r\leq2$, the weaker bound $r\leq\mathrm E(\mathcal H)+1$ is immediate (two distinct concepts differ on an active coordinate).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

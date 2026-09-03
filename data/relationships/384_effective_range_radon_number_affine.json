@@ -1,0 +1,16 @@
+{
+  "id": 384,
+  "name": "Effective Range / Radon Number (affine)",
+  "short_name": "effective_range_radon_number_affine",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "For every finite binary concept class, $\\mathrm{Rad}(\\mathcal H)\\leq\\mathrm E(\\mathcal H)+1$.",
+  "status": "established",
+  "proof": "Let $R=\\{h_1,\\ldots,h_r\\}$ be Radon independent.  The singleton-versus-rest partition for $h_i$ has disjoint convex hulls, so $h_i$ is not in the version-space convex hull of $R\\setminus\\{h_i\\}$.  Hence some coordinate $x_i$ is constant on $R\\setminus\\{h_i\\}$ and has the opposite value on $h_i$.  When $r\\geq3$, the coordinates $x_i$ are distinct: if $x_i=x_j$, any third member of $R$ would have to equal both opposite constant values.  Every $x_i$ is active, so $r\\leq\\mathrm E(\\mathcal H)$.  For $r\\leq2$, the weaker bound $r\\leq\\mathrm E(\\mathcal H)+1$ is immediate (two distinct concepts differ on an active coordinate).",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $\\mathcal T_n=\\{\\emptyset,[n]\\}$, effective range is $n$ while the Radon number is $2$; hence no reverse affine-linear bound holds."
+}
