@@ -3,7 +3,7 @@
   "parameter_1_id": "#parameters/hamming_radius",
   "parameter_2_id": "#parameters/diameter",
   "relationship_type": "larger_c",
-  "multiplicative_constant": "\\tfrac12",
+  "multiplicative_constant": "1/2",
   "status": "established",
   "details": "For finite classes, this is the metric inequality $B(\\mathcal H)\\ge D(\\mathcal H)/2$.",
   "latex_proof_label": "lem:metric-diameter-radius",

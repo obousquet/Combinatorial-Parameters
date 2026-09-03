@@ -3,7 +3,7 @@
   "parameter_1_id": "#parameters/vc_dimension",
   "parameter_2_id": "#parameters/dual_sign_rank",
   "relationship_type": "larger_c",
-  "multiplicative_constant": "\\tfrac13",
+  "multiplicative_constant": "1/3",
   "details": "For sign matrices with $\\mathrm{VC}\\geq1$; more precisely, $\\mathrm{DSR}\\leq2\\mathrm{VC}+1$.",
   "short_name": "vc_dimension_dual_sign_rank",
   "name": "VC Dimension / Dual Sign Rank",
