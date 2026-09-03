@@ -1,0 +1,12 @@
+{
+  "id": 957,
+  "name": "Self-Directed Dimension of Full Cube",
+  "short_name": "selfdirected_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/selfdirected_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ transfers the recorded self-directed-queries-complexity value $n$ on the full cube.",
+  "references": "\\cite{devulapalli2024selfdirected}; derived from the established self-directed-queries-complexity benchmark value"
+}

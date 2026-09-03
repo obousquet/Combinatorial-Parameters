@@ -1,0 +1,12 @@
+{
+  "id": 962,
+  "name": "Self-Directed Dimension of Tagged Singletons",
+  "short_name": "selfdirected_dimension_tagged_singletons",
+  "class_id": "#classes/tagged_singletons",
+  "parameter_id": "#parameters/selfdirected_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ transfers the recorded self-directed-queries-complexity value $1$ on tagged singletons.",
+  "references": "\\cite{devulapalli2024selfdirected}; derived from the established self-directed-queries-complexity benchmark value"
+}

@@ -16,6 +16,7 @@ COLLAPSIBLE_EQUIVALENCE_IDS = {
     40, 125, 137,  # Teaching dimension = relative hitting size = maximum TS
     100,  # Equivalence-query complexity = Littlestone dimension
     136,  # Recursive teaching dimension = monotonic minimum teaching-set size
+    318,  # Self-directed dimension = self-directed queries complexity
 }
 
 

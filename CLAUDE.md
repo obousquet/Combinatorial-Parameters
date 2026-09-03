@@ -97,6 +97,11 @@ python3 sync/audit_witness_strength.py --data-dir data
 python3 sync/audit_benchmark_consistency.py \
   --data-dir data --fail-on-contradiction
 
+# Prioritizes cited primary sources whose companion literature packet is
+# missing or incomplete.  Omit the limit option to list every gap.
+python3 sync/audit_literature_packets.py \
+  --data-dir data --latex-dir ~/latex/CombinatorialParameters --limit 25
+
 # Rejects duplicate direct statements, which otherwise duplicate parameter-page
 # entries and may obscure the intended canonical provenance record.
 python3 sync/audit_relationship_duplicates.py --data-dir data --check

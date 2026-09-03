@@ -54,6 +54,21 @@ def main() -> None:
     reduced_mixed = module.reduced_linear_relations(mixed)
     assert {entry["id"] for entry in reduced_mixed} == {7, 8}
 
+    # A universal stated equivalence that has been explicitly admitted to the
+    # graph policy must quotient the two parameter nodes before ranks and
+    # transitive reduction are computed.
+    selfdirected_dimension = "#parameters/selfdirected_dimension"
+    selfdirected_complexity = "#parameters/selfdirected_queries_complexity"
+    components, component_of = module.exact_equivalence_components(
+        [
+            {"short_name": "selfdirected_dimension"},
+            {"short_name": "selfdirected_queries_complexity"},
+        ],
+        [relationship(318, selfdirected_dimension, selfdirected_complexity, "equivalence")],
+    )
+    assert component_of[selfdirected_dimension] == component_of[selfdirected_complexity]
+    assert len(components) == 1
+
     # Once different direct facts collapse to the same displayed endpoint
     # pair, only one witness card may remain.  An unbounded family separation
     # takes precedence over a strict finite example; otherwise the larger

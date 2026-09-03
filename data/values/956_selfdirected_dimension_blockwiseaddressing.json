@@ -1,0 +1,12 @@
+{
+  "id": 956,
+  "name": "Self-Directed Dimension of Blockwise Addressing",
+  "short_name": "selfdirected_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/selfdirected_dimension",
+  "value": "$\\leq 2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ transfers the recorded upper bound $\\mathrm M_{\\mathrm{sd}}\\leq2$ for the blockwise-addressing class.",
+  "references": "\\cite{devulapalli2024selfdirected}; derived from the established self-directed-queries-complexity benchmark value"
+}

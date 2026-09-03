@@ -1,0 +1,12 @@
+{
+  "id": 960,
+  "name": "Self-Directed Dimension of the Three-Code Class",
+  "short_name": "selfdirected_dimension_three_code_class",
+  "class_id": "#classes/three_code_class",
+  "parameter_id": "#parameters/selfdirected_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ transfers the recorded self-directed-queries-complexity value $1$ on the three-code class.",
+  "references": "\\cite{devulapalli2024selfdirected}; derived from the established self-directed-queries-complexity benchmark value"
+}

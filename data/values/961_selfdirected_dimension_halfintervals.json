@@ -1,0 +1,12 @@
+{
+  "id": 961,
+  "name": "Self-Directed Dimension of Halfintervals",
+  "short_name": "selfdirected_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/selfdirected_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ transfers the recorded self-directed-queries-complexity value $1$ on halfintervals.",
+  "references": "\\cite{devulapalli2024selfdirected}; derived from the established self-directed-queries-complexity benchmark value"
+}

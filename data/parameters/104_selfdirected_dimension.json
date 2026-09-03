@@ -1,0 +1,24 @@
+{
+  "id": 104,
+  "name": "Self-Directed Dimension",
+  "short_name": "selfdirected_dimension",
+  "symbol": "\\mathrm{SDdim}",
+  "category": "queries",
+  "symmetric": true,
+  "monotonic": true,
+  "c_monotonic": true,
+  "definition": "For a finite labeled set $S$, play the **labelling game** on $\\mathcal H$: an adversary may first reveal any labels consistent with a member of $\\mathcal H$, then the learner chooses one remaining point and a label; the adversary continues while all revealed labels remain realizable.  The **self-directed dimension** $\\mathrm{SDdim}(\\mathcal H)$ is the largest minimax number of learner rounds, maximized over finite $S$.  Equivalently, it is the largest depth of a realizable self-directed tree.",
+  "graph_summary": "Largest depth of a realizable self-directed tree (equivalently, the labelling-game value).",
+  "description": "Devulapalli and Hanneke introduced $\\mathrm{SDdim}$ as a combinatorial characterization of the optimal self-directed mistake bound.  On the finite binary classes catalogued here it is exactly self-directed queries complexity.",
+  "origin_references": "Introduced by Devulapalli and Hanneke \\cite{devulapalli2024selfdirected}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "By the established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ and subfamily monotonicity of self-directed queries complexity.",
+      "kind": "equality_transfer"
+    },
+    "c_monotonic": {
+      "proof": "By the established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ and conditioning monotonicity of self-directed queries complexity.",
+      "kind": "equality_transfer"
+    }
+  }
+}

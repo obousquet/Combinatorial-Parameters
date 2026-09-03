@@ -843,6 +843,24 @@
       \item {\bf Bit-flipping invariant}: Y
       \item {\bf Monotonicity Type}: M
       \end{itemize}
+\subsubsection{Self-Directed Dimension}
+
+      \begin{definition}[Self-Directed Dimension - {$\mathrm{SDdim}$}]\label{def:selfdirected_dimension}
+      Let $S$ be a finite set of instances.  In the \emph{labelling game} on
+      a class $\mathcal H$, an adversary may reveal any labels on some points
+      of $S$, provided that all labels so far remain consistent with a member
+      of $\mathcal H$.  The learner then selects one remaining point and
+      predicts a label.  The adversary again reveals any further consistent
+      labels, and the process continues.  The \emph{self-directed dimension}
+      $\mathrm{SDdim}(\mathcal H)$ is the maximum, over finite $S$, of the
+      minimax number of learner rounds in this game.  Equivalently, it is the
+      largest depth of a realizable self-directed tree.
+      \end{definition}
+      \begin{itemize}
+      \item {\bf Bit-flipping invariant}: Y
+      \item {\bf Monotonicity Type}: M
+      \item {\bf References}: \cite{devulapalli2024selfdirected}
+      \end{itemize}
 \subsubsection{Occasional One-Sided Getback}
       
       \begin{definition}[Occasional One-Sided Getback - {$\mathrm{M}_{\mathrm{o1g}}$}]\label{def:occasional_one-sided_getback}
