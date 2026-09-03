@@ -1,0 +1,12 @@
+{
+  "id": 999,
+  "name": "Positive No-Clashing Teaching Dimension of the Positive-Teaching Triangle",
+  "short_name": "positive_noclashing_teaching_dimension_positive_teaching_triangle",
+  "class_id": "#classes/positive_teaching_triangle",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Assign the one-coordinate positive samples x_1 to 110, x_3 to 101, and x_2 to 011. For every pair, at least one assigned sample is negative on the other target, so no pair clashes. Width zero is impossible in a non-singleton class. See sync/verify_positive_teaching_triangle.py.",
+  "references": "Direct calculation; verified by sync/verify_positive_teaching_triangle.py."
+}

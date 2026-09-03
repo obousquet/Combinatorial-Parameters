@@ -15931,6 +15931,40 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-999" style="position:relative;">
+        
+        <h3><a href="values/positive_noclashing_teaching_dimension_positive_teaching_triangle.html" class="table-title-link">Positive No-Clashing Teaching Dimension of the Positive-Teaching Triangle</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive No-Clashing Teaching Dimension of the Positive-Teaching Triangle</p>
+<p><strong>Class: </strong><a href="classes/positive_teaching_triangle.html">Positive-Teaching Triangle</a></p>
+<p><strong>Parameter: </strong><a href="parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Assign the one-coordinate positive samples x_1 to 110, x_3 to 101, and x_2 to 011. For every pair, at least one assigned sample is negative on the other target, so no pair clashes. Width zero is impossible in a non-singleton class. See sync/verify_positive_teaching_triangle.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_positive_teaching_triangle.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1000" style="position:relative;">
+        
+        <h3><a href="values/positive_recursive_teaching_dimension_positive_teaching_triangle.html" class="table-title-link">Positive Recursive Teaching Dimension of the Positive-Teaching Triangle</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Recursive Teaching Dimension of the Positive-Teaching Triangle</p>
+<p><strong>Class: </strong><a href="classes/positive_teaching_triangle.html">Positive-Teaching Triangle</a></p>
+<p><strong>Parameter: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>In the full class, every positive one-coordinate sample is shared by another concept, so no target has a positive teaching set of size one. Its two positive coordinates teach each target, giving a first removal of cost two; the remaining two targets then have one-coordinate positive teaching sets. Thus positive RTD is exactly two. The recurrence is verified in sync/verify_positive_teaching_triangle.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_positive_teaching_triangle.py.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

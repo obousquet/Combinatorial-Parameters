@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-49" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1000" style="position:relative;">
         
-        <h3><a href="relationships/positive_recursive_teaching_dimension_positive_noclashing_teaching_dimension.html" class="table-title-link">Positive Recursive Teaching Dimension / Positive No-Clashing Teaching Dimension</a></h3>
+        <h3><a href="values/positive_recursive_teaching_dimension_positive_teaching_triangle.html" class="table-title-link">Positive Recursive Teaching Dimension of the Positive-Teaching Triangle</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive Recursive Teaching Dimension / Positive No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-<p><strong>Witness: </strong><a href="classes/positive_teaching_triangle.html">Positive-Teaching Triangle</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For C_{+triangle}={110,101,011}, positive RTD is 2 whereas positive NCTD is 1; sync/verify_positive_teaching_triangle.py exhausts the finite teaching-plan and teacher-map choices.</p></div>
-
+        <p><strong>Name: </strong>Positive Recursive Teaching Dimension of the Positive-Teaching Triangle</p>
+<p><strong>Class: </strong><a href="classes/positive_teaching_triangle.html">Positive-Teaching Triangle</a></p>
+<p><strong>Parameter: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A positive recursive teaching plan is non-clashing: for two concepts, the one removed first has a positive teaching set that distinguishes it from the later concept, which was still present at that stage.  Thus its positive recursive plan is an admissible positive non-clashing mapping.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#fallat2023batch">[fallat2023batch]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>In the full class, every positive one-coordinate sample is shared by another concept, so no target has a positive teaching set of size one. Its two positive coordinates teach each target, giving a first removal of cost two; the remaining two targets then have one-coordinate positive teaching sets. Thus positive RTD is exactly two. The recurrence is verified in sync/verify_positive_teaching_triangle.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_positive_teaching_triangle.py.</p></div>
 
         </div>
     </div>
