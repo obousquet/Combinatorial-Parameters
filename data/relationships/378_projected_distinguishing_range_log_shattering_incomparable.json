@@ -1,0 +1,14 @@
+{
+  "id": 378,
+  "name": "Projected Distinguishing Range / Log Shattering (Incomparable)",
+  "short_name": "projected_distinguishing_range_log_shattering_incomparable",
+  "parameter_1_id": "#parameters/projected_distinguishing_range",
+  "parameter_2_id": "#parameters/log_shattering",
+  "relationship_type": "incomparable",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the half-interval class $\\mathcal I_n$, projected distinguishing range is $n-1$, while log shattering is $\\log_2 n$.",
+  "parameter_2_larger_witness": "For the trivial class $\\mathcal T_n=\\{\\emptyset,[n]\\}$, log shattering is $\\log_2(n+1)$, while projected distinguishing range is $1$.",
+  "status": "established",
+  "proof": "The two canonical value calculations give unbounded gaps in the two directions.",
+  "proof_source": "Database-owned value proofs for Projected Distinguishing Range and Log Shattering of Half-Intervals and Trivial Concepts."
+}
