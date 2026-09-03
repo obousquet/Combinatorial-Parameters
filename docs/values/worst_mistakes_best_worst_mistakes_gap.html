@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-29" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-990" style="position:relative;">
         
-        <h3><a href="parameters/worst_mistakes.html" class="table-title-link">Worst Mistakes</a></h3>
+        <h3><a href="values/worst_mistakes_best_worst_mistakes_gap.html" class="table-title-link">Worst Mistakes of the Best/Worst Mistakes Separation Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{M}_{\mathrm{worst}}">
-            \[\mathrm{M}_{\mathrm{worst}}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Worst Mistakes</strong> parameter is the smallest worst-case number of prediction mistakes achievable when the learner may use the whole presented instance sequence, but that sequence is chosen adversarially and the feedback remains consistent with one target concept in $\mathcal H$.</p></div>
+        <p><strong>Name: </strong>Worst Mistakes of the Best/Worst Mistakes Separation Class</p>
+<p><strong>Class: </strong><a href="classes/best_worst_mistakes_gap.html">Best/Worst Mistakes Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-
-<strong>Origin References:</strong><div class="text-field"><p>The adversarially ordered (worst) and favorably ordered mistake models are studied in <a href="bibliography.html#ben1997online">[ben1997online]</a>.</p></div>
-<p><strong>Category:</strong> Queries</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/worst_mistakes_universal_class.html'>Worst Mistakes of Universal Class</a></li><li><a href='values/worst_mistakes_addressing.html'>Worst Mistakes of Addressing</a></li><li><a href='values/worst_mistakes_majority.html'>Worst Mistakes of Majority</a></li><li><a href='values/worst_mistakes_trivial_concepts.html'>Worst Mistakes of Trivial Concepts</a></li><li><a href='values/worst_mistakes_full_cube.html'>Worst Mistakes of Full Cube</a></li><li><a href='values/worst_mistakes_singletons.html'>Worst Mistakes of Singletons</a></li><li><a href='values/worst_mistakes_singletons_plus_empty_set.html'>Worst Mistakes of Singletons plus empty set</a></li><li><a href='values/worst_mistakes_three_code_class.html'>Worst Mistakes of the Three-Code Class</a></li><li><a href='values/worst_mistakes_littlestone_worst_gap.html'>Worst Mistakes of the Littlestone/Worst-Order Separation Class</a></li><li><a href='values/worst_mistakes_best_worst_mistakes_gap.html'>Worst Mistakes of the Best/Worst Mistakes Separation Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong></p><ul class="fields-list"><li><a href="relationships/worst_mistakes_vc_dimension.html" class="relationship-statement">$\mathrm{M}_{\mathrm{worst}} \ge \mathrm{VC}$</a></li><li><a href="relationships/littlestone_dimension_worst_mistakes.html" class="relationship-statement">$\mathrm{L} \ge \mathrm{M}_{\mathrm{worst}}$</a></li><li><a href="relationships/worst_mistakes_best_mistakes.html" class="relationship-statement">$\mathrm{M}_{\mathrm{worst}} \ge \mathrm{M}_{\mathrm{best}}$</a></li><li><a href="relationships/worst_mistakes_partial_equivalence_queries_complexity.html" class="relationship-statement">$\mathrm{M}_{\mathrm{worst}} \ge \mathrm{Q}_{\mathrm{par}}$</a></li><li><a href="relationships/worst_mistakes_monotone_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{M}_{\mathrm{worst}} \ge \mathrm{RTD}^p$</a></li></ul></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The orders x_1,x_2,x_3 and x_1,x_3,x_2 each have transductive minimax value two, and no order has larger value. Repeated coordinates do not help after their labels have been revealed. See sync/verify_best_worst_mistakes_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_best_worst_mistakes_gap.py.</p></div>
 
         </div>
     </div>

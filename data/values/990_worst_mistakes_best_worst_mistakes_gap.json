@@ -1,0 +1,12 @@
+{
+  "id": 990,
+  "name": "Worst Mistakes of the Best/Worst Mistakes Separation Class",
+  "short_name": "worst_mistakes_best_worst_mistakes_gap",
+  "class_id": "#classes/best_worst_mistakes_gap",
+  "parameter_id": "#parameters/worst_mistakes",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The orders x_1,x_2,x_3 and x_1,x_3,x_2 each have transductive minimax value two, and no order has larger value. Repeated coordinates do not help after their labels have been revealed. See sync/verify_best_worst_mistakes_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_best_worst_mistakes_gap.py."
+}

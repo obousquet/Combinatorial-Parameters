@@ -1,0 +1,12 @@
+{
+  "id": 989,
+  "name": "Best Mistakes of the Best/Worst Mistakes Separation Class",
+  "short_name": "best_mistakes_best_worst_mistakes_gap",
+  "class_id": "#classes/best_worst_mistakes_gap",
+  "parameter_id": "#parameters/best_mistakes",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The favourable orders x_2,x_1,x_3 and x_3,x_1,x_2 have transductive minimax value one. Zero mistakes are impossible for a nonconstant class. The exhaustive calculation over all six coordinate orders is recorded in sync/verify_best_worst_mistakes_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_best_worst_mistakes_gap.py."
+}
