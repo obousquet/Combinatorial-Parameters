@@ -6,6 +6,9 @@
   "details": "Every extension contains the original class, so its VC dimension is at least that of the original class.",
   "status": "established",
   "proof": "If $\\mathcal H\\subseteq\\mathcal E$, every set shattered by $\\mathcal H$ is shattered by $\\mathcal E$. Taking the minimum over extremal extensions gives the result.",
+  "witness": "#classes/extremal_extension_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For C_ex, VC=2 and exhaustive enumeration of all same-domain shattering-extremal extensions gives extremal-extension VC dimension 3; sync/verify_extremal_extension_gap.py verifies both.",
   "short_name": "extremal_extension_vc_dimension_vc_dimension",
   "name": "Extremal-Extension VC Dimension / VC Dimension"
 }

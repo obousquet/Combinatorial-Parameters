@@ -1,0 +1,12 @@
+{
+  "id": 1003,
+  "name": "VC Dimension of the Extremal-Extension Separation Class",
+  "short_name": "vc_dimension_extremal_extension_gap",
+  "class_id": "#classes/extremal_extension_gap",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "A two-coordinate projection is shattered, while no three-coordinate projection has all eight traces. The exhaustive calculation over all coordinate subsets is in sync/verify_extremal_extension_gap.py.",
+  "references": "Direct calculation; verified by sync/verify_extremal_extension_gap.py."
+}
