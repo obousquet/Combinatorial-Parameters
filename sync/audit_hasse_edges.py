@@ -236,6 +236,11 @@ def audit(data_dir: Path) -> dict[str, Any]:
                 "target_rank": ranks.get(target),
                 "has_witness": bool(record.get("witness")),
                 "witness_strength": record.get("witness_strength"),
+                # An equality is collapsed by the graph quotient.  A strict
+                # or unbounded witness for it would refute, rather than
+                # strengthen, the stated fact, so it is not a separation
+                # witness candidate.
+                "requires_separation_witness": record["relationship_type"] != "equivalence",
                 "lost_reachability_pairs": lost_pairs,
                 "strict_value_candidates": strict_value_candidates(record, values, component_of),
             }
@@ -247,7 +252,7 @@ def audit(data_dir: Path) -> dict[str, Any]:
             else:
                 row["strict_witness_value_check"] = None
             edge_rows.append(row)
-            if not row["has_witness"]:
+            if row["requires_separation_witness"] and not row["has_witness"]:
                 result["witness_queue"].append(row)
                 if source in boundary_components:
                     result["boundary_witness_queue"].append(row)
