@@ -8333,6 +8333,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-387" style="position:relative;">
+        
+        <h3><a href="relationships/proper_equivalence_queries_complexity_star_number.html" class="table-title-link">Proper Equivalence Queries Complexity / Star Number</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Star Number</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{Q}_{\mathrm{peq}}(\mathcal H)\geq\mathrm S(\mathcal H)$.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For half-intervals, proper equivalence-query complexity is $\log_2 n$, whereas the star number (equivalently maximum projected teaching-set size) is $2$.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper equivalence-query complexity is projection-monotone: a projected learner simulates the original learner using a lift of the projected target, and any projected counterexample is a valid counterexample to the original query.  Applying $\mathrm{Q}_{\mathrm{peq}}\geq\mathrm{TD}$ to every coordinate projection gives $\mathrm{Q}_{\mathrm{peq}}(\mathcal H)\geq\max_{T\subseteq X}\mathrm{TD}(\mathcal H_{|T})=\mathrm{TS}_{\max}^p(\mathcal H)$.  The latter parameter equals the star number.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Database-owned proper-equivalence-query/teaching argument, projection-monotonicity evidence for Proper Equivalence Queries Complexity, and the Star Number / Maximum Projected Teaching Set Size equality.</p></div>
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
