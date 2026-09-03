@@ -64,33 +64,33 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-77" style="position:relative;">
+    <div class="table-card" id="math-107" style="position:relative;">
         
-        <h3><a href="parameters/distinguishing_range.html" class="table-title-link">Distinguishing Range</a></h3>
+        <h3><a href="parameters/projected_distinguishing_range.html" class="table-title-link">Projected Distinguishing Range</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Distinguishing Range</p>
+        <p><strong>Name: </strong>Projected Distinguishing Range</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{R}">
-            \[\mathrm{R}\]
+        <div class="latex-equation" data-latex="\mathrm{R}^{p}">
+            \[\mathrm{R}^{p}\]
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>distinguishing range</strong> is $\min\{|S|:S\subseteq X\text{ and the trace map }h\mapsto h|_S\text{ is injective on }\mathcal H\}$. Equivalently, it is the fewest coordinates on which every pair of distinct concepts has different traces.</p></div>
-
+<strong>Definition:</strong><div class="text-field"><p>The <strong>projected distinguishing range</strong> of $\mathcal H$ is $$\mathrm R^p(\mathcal H)=\max_{S\subseteq\mathcal X}\mathrm R(\mathcal H_{|S}),$$ where $\mathrm R$ is distinguishing range. Thus it is the largest, over coordinate projections, of the fewest coordinates that distinguish every pair of projected concepts.</p></div>
+<strong>Description:</strong><div class="text-field"><p>The projection-monotone closure of distinguishing range, introduced in this catalogue.</p></div>
 
 
 <p><strong>Category:</strong> Basic</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> No</p>
+<p><strong>P-Monotonic:</strong> Yes</p>
 <p><strong>C-Monotonic:</strong> Yes</p>
 <p><strong>Strict C-Monotonic:</strong> Unspecified</p>
 <p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> No</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/distinguishing_range_trivial_concepts.html'>Distinguishing Range of Trivial Concepts</a></li><li><a href='values/distinguishing_range_singletons.html'>Distinguishing Range of Singletons</a></li><li><a href='values/distinguishing_range_full_cube.html'>Distinguishing Range of Full Cube</a></li><li><a href='values/distinguishing_range_halfintervals.html'>Distinguishing Range of Half-intervals</a></li><li><a href='values/distinguishing_range_majority.html'>Distinguishing Range of Majority</a></li><li><a href='values/distinguishing_range_addressing.html'>Distinguishing Range of Addressing</a></li><li><a href='values/distinguishing_range_singletons_plus_empty_set.html'>Distinguishing Range of Singletons plus Empty Set</a></li><li><a href='values/distinguishing_range_universal_class.html'>Distinguishing Range of Universal Class</a></li><li><a href='values/distinguishing_range_tagged_singletons.html'>Distinguishing Range of Tagged Singletons</a></li><li><a href='values/distinguishing_range_three_code_class.html'>Distinguishing Range of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/distinguishing_range_membership_query_complexity.html" class="relationship-statement">$\mathrm{R} \ge \mathrm{Q}_m$</a></li><li><a href="relationships/effective_range_distinguishing_range.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{R}$</a></li><li><a href="relationships/distinguishing_range_log_size.html" class="relationship-statement">$\mathrm{R} \ge \log \mathrm{H}$</a></li><li><a href="relationships/distinguishing_range_labeled_sample_compression.html" class="relationship-statement">$\mathrm{R} \ge \mathrm{LSC}$</a></li><li><a href="relationships/projected_distinguishing_range_distinguishing_range.html" class="relationship-statement">$\mathrm{R}^{p} \ge \mathrm{R}$</a></li></ul><p><strong>Incomparabilities:</strong></p><ul class="fields-list"><li><a href="relationships/diameter_distinguishing_range_incomparable.html" class="relationship-statement">$\mathrm{D}\mathrel{\parallel}\mathrm{R}\;\text{(incomparable)}$</a></li></ul></div>
+<p><strong>Doubly Monotonic:</strong> Yes</p>
+<p><strong>Strictly Monotonic:</strong> Unspecified</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/projected_distinguishing_range_halfintervals.html'>Projected Distinguishing Range of Half-Intervals</a></li><li><a href='values/projected_distinguishing_range_trivial_concepts.html'>Projected Distinguishing Range of Trivial Concepts</a></li><li><a href='values/projected_distinguishing_range_full_cube.html'>Projected Distinguishing Range of Full Cube</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/projected_distinguishing_range_distinguishing_range.html" class="relationship-statement">$\mathrm{R}^{p} \ge \mathrm{R}$</a></li><li><a href="relationships/effective_range_projected_distinguishing_range.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{R}^{p}$</a></li><li><a href="relationships/size_projected_distinguishing_range.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{R}^{p}$</a></li><li><a href="relationships/projected_distinguishing_range_projected_membership_queries_complexity.html" class="relationship-statement">$\mathrm{R}^{p} \ge \mathrm{Q}_{\mathrm{m}}^p$</a></li></ul></div>
 
         </div>
     </div>

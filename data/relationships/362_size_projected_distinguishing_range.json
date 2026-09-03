@@ -1,0 +1,14 @@
+{
+  "id": 362,
+  "name": "Size / Projected Distinguishing Range",
+  "short_name": "size_projected_distinguishing_range",
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/projected_distinguishing_range",
+  "relationship_type": "larger",
+  "details": "For every nonempty finite class, the stronger bound $\\mathrm R^p(\\mathcal H)\\leq|\\mathcal H|-1$ holds.",
+  "status": "established",
+  "proof": "A projection has at most $|\\mathcal H|$ distinct concepts. For any m distinct binary vectors, repeatedly add a coordinate separating two vectors still in the same trace block; each added coordinate increases the number of trace blocks, so at most m-1 coordinates distinguish all m vectors. Apply this to every projection and maximize.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the n-dimensional full cube, $|\\mathcal H|=2^n$ while $\\mathrm R^p=n$. Hence the gap is unbounded."
+}

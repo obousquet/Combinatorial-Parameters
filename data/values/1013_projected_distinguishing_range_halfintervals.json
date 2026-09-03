@@ -1,0 +1,12 @@
+{
+  "id": 1013,
+  "name": "Projected Distinguishing Range of Half-Intervals",
+  "short_name": "projected_distinguishing_range_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full-domain projection is the n-concept chain of initial segments. A set of k queried coordinates induces at most k+1 distinct traces on this chain, so at least n-1 coordinates are needed; querying coordinates $2,\\ldots,n$ attains this bound. No projection can have more than n concepts, and every m-concept binary class has distinguishing range at most m-1 by greedily refining its trace partition. Hence the maximum over projections is exactly n-1.",
+  "references": "Direct calculation from the half-interval construction"
+}

@@ -8073,6 +8073,110 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-360" style="position:relative;">
+        
+        <h3><a href="relationships/projected_distinguishing_range_distinguishing_range.html" class="table-title-link">Projected Distinguishing Range / Distinguishing Range</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Distinguishing Range / Distinguishing Range</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/distinguishing_range.html">Distinguishing Range</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The full-domain projection is among the projections in the defining maximum.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Taking $S=\mathcal X$ in the maximum defining $\mathrm R^p(\mathcal H)$ gives $\mathrm R^p(\mathcal H)\geq\mathrm R(\mathcal H).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-361" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_projected_distinguishing_range.html" class="table-title-link">Effective Range / Projected Distinguishing Range</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Projected Distinguishing Range</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every projection has effective range contained in that of the original class.</p></div>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the two trivial concepts on n coordinates, $\mathrm E=n$ while every nonempty projection has distinguishing range one, so $\mathrm R^p=1$. Hence the gap is unbounded.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projection $\mathcal H_{|S}$, any distinguishing coordinate set can be chosen inside its effective range, so $\mathrm R(\mathcal H_{|S})\leq\mathrm E(\mathcal H_{|S})\leq\mathrm E(\mathcal H)$. Maximizing over S proves the claimed bound.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-362" style="position:relative;">
+        
+        <h3><a href="relationships/size_projected_distinguishing_range.html" class="table-title-link">Size / Projected Distinguishing Range</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size / Projected Distinguishing Range</p>
+<p><strong>Parameter 1: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every nonempty finite class, the stronger bound $\mathrm R^p(\mathcal H)\leq|\mathcal H|-1$ holds.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the n-dimensional full cube, $|\mathcal H|=2^n$ while $\mathrm R^p=n$. Hence the gap is unbounded.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A projection has at most $|\mathcal H|$ distinct concepts. For any m distinct binary vectors, repeatedly add a coordinate separating two vectors still in the same trace block; each added coordinate increases the number of trace blocks, so at most m-1 coordinates distinguish all m vectors. Apply this to every projection and maximize.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-363" style="position:relative;">
+        
+        <h3><a href="relationships/projected_distinguishing_range_projected_membership_queries_complexity.html" class="table-title-link">Projected Distinguishing Range / Projected Membership Queries Complexity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Distinguishing Range / Projected Membership Queries Complexity</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every projection, querying a distinguishing coordinate set identifies its target.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For half-intervals, $\mathrm R^p=n-1$, while $\mathrm Q_m^p=\lceil\log_2 n\rceil$. Hence the gap is unbounded.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For each coordinate projection $\mathcal G=\mathcal H_{|S}$, query the target on a smallest coordinate set distinguishing all concepts of $\mathcal G$. The resulting trace identifies the target, hence $\mathrm Q_m(\mathcal G)\leq\mathrm R(\mathcal G)$. Taking maxima over projections gives $\mathrm Q_m^p(\mathcal H)\leq\mathrm R^p(\mathcal H).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

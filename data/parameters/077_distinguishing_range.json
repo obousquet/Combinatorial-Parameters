@@ -4,7 +4,7 @@
   "symbol": "\\mathrm{R}",
   "definition": "The **distinguishing range** is $\\min\\{|S|:S\\subseteq X\\text{ and the trace map }h\\mapsto h|_S\\text{ is injective on }\\mathcal H\\}$. Equivalently, it is the fewest coordinates on which every pair of distinct concepts has different traces.",
   "category": "basic",
-  "graph_summary": "The largest coordinate set on which all concepts have distinct traces.",
+  "graph_summary": "Fewest coordinates whose traces distinguish every pair of concepts.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,

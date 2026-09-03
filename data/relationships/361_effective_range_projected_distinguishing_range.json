@@ -1,0 +1,14 @@
+{
+  "id": 361,
+  "name": "Effective Range / Projected Distinguishing Range",
+  "short_name": "effective_range_projected_distinguishing_range",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_distinguishing_range",
+  "relationship_type": "larger",
+  "details": "Every projection has effective range contained in that of the original class.",
+  "status": "established",
+  "proof": "For every projection $\\mathcal H_{|S}$, any distinguishing coordinate set can be chosen inside its effective range, so $\\mathrm R(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H)$. Maximizing over S proves the claimed bound.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the two trivial concepts on n coordinates, $\\mathrm E=n$ while every nonempty projection has distinguishing range one, so $\\mathrm R^p=1$. Hence the gap is unbounded."
+}

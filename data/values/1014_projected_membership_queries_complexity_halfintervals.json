@@ -1,0 +1,12 @@
+{
+  "id": 1014,
+  "name": "Projected Membership Queries Complexity of Half-Intervals",
+  "short_name": "projected_membership_queries_complexity_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/projected_membership_queries_complexity",
+  "value": "$\\lceil\\log_2 n\\rceil$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Every coordinate projection of the half-interval class is again a chain of at most n distinct initial-segment traces, and binary search identifies its target in at most $\\lceil\\log_2 n\\rceil$ membership queries. The full-domain projection is the original n-concept chain, for which every membership-query decision tree has at least n leaves and therefore depth at least $\\lceil\\log_2 n\\rceil$.",
+  "references": "Direct calculation; the ordinary half-interval membership-query value is recorded from \\cite{angluin1988queries}"
+}

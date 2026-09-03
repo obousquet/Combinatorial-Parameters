@@ -1,0 +1,33 @@
+{
+  "id": 107,
+  "name": "Projected Distinguishing Range",
+  "short_name": "projected_distinguishing_range",
+  "symbol": "\\mathrm{R}^{p}",
+  "category": "basic",
+  "symmetric": true,
+  "definition": "The **projected distinguishing range** of $\\mathcal H$ is $$\\mathrm R^p(\\mathcal H)=\\max_{S\\subseteq\\mathcal X}\\mathrm R(\\mathcal H_{|S}),$$ where $\\mathrm R$ is distinguishing range. Thus it is the largest, over coordinate projections, of the fewest coordinates that distinguish every pair of projected concepts.",
+  "graph_summary": "Largest distinguishing range attained by a coordinate projection.",
+  "description": "The projection-monotone closure of distinguishing range, introduced in this catalogue.",
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For every coordinate set S, a subfamily projection is a subfamily of the corresponding original projection, and distinguishing range cannot increase under taking a subfamily. Taking the maximum over S preserves this inequality.",
+      "kind": "direct_argument"
+    },
+    "p_monotonic": {
+      "proof": "Every projection of a projection is a projection of the original class. The defining maximum for the projected distinguishing range of a projection is therefore taken over a subset of the projections of the original class.",
+      "kind": "direct_argument"
+    },
+    "c_monotonic": {
+      "proof": "Conditioning is restriction to a subfamily followed by a coordinate projection, so it follows from the preceding monotonicity properties.",
+      "kind": "definitional_consequence"
+    },
+    "doubly_monotonic": {
+      "proof": "It is monotonic both under subfamilies and under coordinate projections by the preceding arguments.",
+      "kind": "definitional_consequence"
+    }
+  }
+}

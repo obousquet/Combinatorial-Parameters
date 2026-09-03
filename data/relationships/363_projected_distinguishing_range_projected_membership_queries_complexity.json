@@ -1,0 +1,14 @@
+{
+  "id": 363,
+  "name": "Projected Distinguishing Range / Projected Membership Queries Complexity",
+  "short_name": "projected_distinguishing_range_projected_membership_queries_complexity",
+  "parameter_1_id": "#parameters/projected_distinguishing_range",
+  "parameter_2_id": "#parameters/projected_membership_queries_complexity",
+  "relationship_type": "larger",
+  "details": "For every projection, querying a distinguishing coordinate set identifies its target.",
+  "status": "established",
+  "proof": "For each coordinate projection $\\mathcal G=\\mathcal H_{|S}$, query the target on a smallest coordinate set distinguishing all concepts of $\\mathcal G$. The resulting trace identifies the target, hence $\\mathrm Q_m(\\mathcal G)\\leq\\mathrm R(\\mathcal G)$. Taking maxima over projections gives $\\mathrm Q_m^p(\\mathcal H)\\leq\\mathrm R^p(\\mathcal H).",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For half-intervals, $\\mathrm R^p=n-1$, while $\\mathrm Q_m^p=\\lceil\\log_2 n\\rceil$. Hence the gap is unbounded."
+}

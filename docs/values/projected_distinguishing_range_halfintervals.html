@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-77" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1013" style="position:relative;">
         
-        <h3><a href="parameters/distinguishing_range.html" class="table-title-link">Distinguishing Range</a></h3>
+        <h3><a href="values/projected_distinguishing_range_halfintervals.html" class="table-title-link">Projected Distinguishing Range of Half-Intervals</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Distinguishing Range</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{R}">
-            \[\mathrm{R}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>distinguishing range</strong> is $\min\{|S|:S\subseteq X\text{ and the trace map }h\mapsto h|_S\text{ is injective on }\mathcal H\}$. Equivalently, it is the fewest coordinates on which every pair of distinct concepts has different traces.</p></div>
+        <p><strong>Name: </strong>Projected Distinguishing Range of Half-Intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Value: </strong>$n-1$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
 
-
-
-<p><strong>Category:</strong> Basic</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> No</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> No</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/distinguishing_range_trivial_concepts.html'>Distinguishing Range of Trivial Concepts</a></li><li><a href='values/distinguishing_range_singletons.html'>Distinguishing Range of Singletons</a></li><li><a href='values/distinguishing_range_full_cube.html'>Distinguishing Range of Full Cube</a></li><li><a href='values/distinguishing_range_halfintervals.html'>Distinguishing Range of Half-intervals</a></li><li><a href='values/distinguishing_range_majority.html'>Distinguishing Range of Majority</a></li><li><a href='values/distinguishing_range_addressing.html'>Distinguishing Range of Addressing</a></li><li><a href='values/distinguishing_range_singletons_plus_empty_set.html'>Distinguishing Range of Singletons plus Empty Set</a></li><li><a href='values/distinguishing_range_universal_class.html'>Distinguishing Range of Universal Class</a></li><li><a href='values/distinguishing_range_tagged_singletons.html'>Distinguishing Range of Tagged Singletons</a></li><li><a href='values/distinguishing_range_three_code_class.html'>Distinguishing Range of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/distinguishing_range_membership_query_complexity.html" class="relationship-statement">$\mathrm{R} \ge \mathrm{Q}_m$</a></li><li><a href="relationships/effective_range_distinguishing_range.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{R}$</a></li><li><a href="relationships/distinguishing_range_log_size.html" class="relationship-statement">$\mathrm{R} \ge \log \mathrm{H}$</a></li><li><a href="relationships/distinguishing_range_labeled_sample_compression.html" class="relationship-statement">$\mathrm{R} \ge \mathrm{LSC}$</a></li><li><a href="relationships/projected_distinguishing_range_distinguishing_range.html" class="relationship-statement">$\mathrm{R}^{p} \ge \mathrm{R}$</a></li></ul><p><strong>Incomparabilities:</strong></p><ul class="fields-list"><li><a href="relationships/diameter_distinguishing_range_incomparable.html" class="relationship-statement">$\mathrm{D}\mathrel{\parallel}\mathrm{R}\;\text{(incomparable)}$</a></li></ul></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full-domain projection is the n-concept chain of initial segments. A set of k queried coordinates induces at most k+1 distinct traces on this chain, so at least n-1 coordinates are needed; querying coordinates $2,\ldots,n$ attains this bound. No projection can have more than n concepts, and every m-concept binary class has distinguishing range at most m-1 by greedily refining its trace partition. Hence the maximum over projections is exactly n-1.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the half-interval construction</p></div>
 
         </div>
     </div>

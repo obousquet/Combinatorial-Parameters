@@ -1,0 +1,11 @@
+{
+  "id": 360,
+  "name": "Projected Distinguishing Range / Distinguishing Range",
+  "short_name": "projected_distinguishing_range_distinguishing_range",
+  "parameter_1_id": "#parameters/projected_distinguishing_range",
+  "parameter_2_id": "#parameters/distinguishing_range",
+  "relationship_type": "larger",
+  "details": "The full-domain projection is among the projections in the defining maximum.",
+  "status": "established",
+  "proof": "Taking $S=\\mathcal X$ in the maximum defining $\\mathrm R^p(\\mathcal H)$ gives $\\mathrm R^p(\\mathcal H)\\geq\\mathrm R(\\mathcal H)."
+}

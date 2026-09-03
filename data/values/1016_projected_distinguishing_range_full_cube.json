@@ -1,0 +1,12 @@
+{
+  "id": 1016,
+  "name": "Projected Distinguishing Range of Full Cube",
+  "short_name": "projected_distinguishing_range_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "A projection of the n-dimensional full cube onto k coordinates is the k-dimensional full cube. Every one of its k coordinates is needed to distinguish the two traces that differ only there, and all k coordinates suffice. Maximizing over $0\\leq k\\leq n$ gives n.",
+  "references": "Direct calculation"
+}

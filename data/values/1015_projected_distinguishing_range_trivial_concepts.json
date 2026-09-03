@@ -1,0 +1,12 @@
+{
+  "id": 1015,
+  "name": "Projected Distinguishing Range of Trivial Concepts",
+  "short_name": "projected_distinguishing_range_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty projection of the two trivial concepts consists of the all-zero and all-one traces, which are distinguished by any one retained coordinate. The empty projection has one trace. Thus the maximum distinguishing range over projections is one.",
+  "references": "Direct calculation"
+}
