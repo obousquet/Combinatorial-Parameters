@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-90" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-357" style="position:relative;">
         
-        <h3><a href="parameters/list_replicability.html" class="table-title-link">List Replicability Number</a></h3>
+        <h3><a href="relationships/distinguishing_range_labeled_sample_compression.html" class="table-title-link">Distinguishing Range / Labeled Sample Compression</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>List Replicability Number</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{LR}">
-            \[\mathrm{LR}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>A learner is <strong>$(\epsilon,L)$-list replicable</strong> for $\mathcal H$ if, for every $\delta>0$, some sample size makes its output lie with probability at least $1-\delta$ in a fixed list of $L$ hypotheses, all of error below $\epsilon$, for every realizable distribution. Let $\mathrm{LR}(\mathcal H,\epsilon)$ be the least such $L$ and define the <strong>list replicability number</strong> $\mathrm{LR}(\mathcal H)=\lim_{\epsilon\to0}\mathrm{LR}(\mathcal H,\epsilon)$.</p></div>
-<strong>Description:</strong><div class="text-field"><p>A realizable PAC-learning stability parameter; its definition includes the accuracy limit $\epsilon\to0$.</p></div>
+        <p><strong>Name: </strong>Distinguishing Range / Labeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/distinguishing_range.html">Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
-<strong>Origin References:</strong><div class="text-field"><p>Defined in the list-replicability framework used by <a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a>.</p></div>
-<p><strong>Category:</strong> Compression</p>
-<p><strong>Symmetric:</strong> Unspecified</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='values/list_replicability_universal_class.html'>List Replicability Number of Universal Class</a></li><li><a href='values/list_replicability_full_cube.html'>List Replicability Number of Full Cube</a></li><li><a href='values/list_replicability_halfintervals.html'>List Replicability Number of Half-intervals</a></li><li><a href='values/list_replicability_singletons_plus_empty_set.html'>List Replicability Number of Singletons plus Empty Set</a></li><li><a href='values/list_replicability_trivial_concepts.html'>List Replicability Number of Trivial Concepts</a></li><li><a href='values/list_replicability_singletons.html'>List Replicability Number of Singletons</a></li><li><a href='values/list_replicability_tagged_singletons.html'>List Replicability Number of Tagged Singletons</a></li><li><a href='values/list_replicability_three_code_class.html'>List Replicability Number of the Three-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Relationships:</strong></p><ul class="fields-list"><li><a href="relationships/list_replicability_spherical_dimension_affine.html" class="relationship-statement">$\mathrm{LR} \ge \tfrac12\mathrm{sd} + (\tfrac32)$</a></li><li><a href="relationships/list_replicability_dual_antipodal_vc_dimension_affine.html" class="relationship-statement">$\mathrm{LR} \ge \tfrac12\mathrm{VC}^{*a} + (\tfrac12)$</a></li><li><a href="relationships/sign_rank_list_replicability.html" class="relationship-statement">$\mathrm{SR} \ge \mathrm{LR}$</a></li><li><a href="relationships/list_replicability_vc_dimension.html" class="relationship-statement">$\mathrm{LR} \ge \mathrm{VC}$</a></li></ul></div>
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite binary concept classes.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A distinguishing coordinate set of size (\mathrm R(\mathcal H)) gives an injective binary trace map on (\mathcal H), so (\lceil\log_2|\mathcal H|\rceil\le\mathrm R(\mathcal H)). The mistake-driven halving construction gives a labeled sample-compression scheme of size at most (\lceil\log_2|\mathcal H|\rceil). Combining the two bounds yields (\mathrm{LSC}(\mathcal H)\le\mathrm R(\mathcal H)).</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
 
         </div>
     </div>

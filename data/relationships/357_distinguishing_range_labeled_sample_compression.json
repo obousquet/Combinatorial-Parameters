@@ -1,0 +1,14 @@
+{
+  "id": 357,
+  "parameter_1_id": "#parameters/distinguishing_range",
+  "parameter_2_id": "#parameters/labeled_sample_compression",
+  "relationship_type": "larger",
+  "name": "Distinguishing Range / Labeled Sample Compression",
+  "short_name": "distinguishing_range_labeled_sample_compression",
+  "status": "established",
+  "details": "For finite binary concept classes.",
+  "proof": "A distinguishing coordinate set of size \\(\\mathrm R(\\mathcal H)\\) gives an injective binary trace map on \\(\\mathcal H\\), so \\(\\lceil\\log_2|\\mathcal H|\\rceil\\le\\mathrm R(\\mathcal H)\\). The mistake-driven halving construction gives a labeled sample-compression scheme of size at most \\(\\lceil\\log_2|\\mathcal H|\\rceil\\). Combining the two bounds yields \\(\\mathrm{LSC}(\\mathcal H)\\le\\mathrm R(\\mathcal H)\\).",
+  "references": "\\cite{FW1995}",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded"
+}

@@ -88,7 +88,7 @@
             
             <section class="relationship-status-section relationship-status-established">
                 <h2>Established relationships</h2>
-                <p>Proved or definitionally valid facts.</p>
+                <p>Proved or definitionally valid inequalities and equalities.</p>
                 <div class="table-grid">
                     
     <div class="table-card" id="math-1" style="position:relative;">
@@ -5031,6 +5031,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-357" style="position:relative;">
+        
+        <h3><a href="relationships/distinguishing_range_labeled_sample_compression.html" class="table-title-link">Distinguishing Range / Labeled Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Distinguishing Range / Labeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/distinguishing_range.html">Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite binary concept classes.</p></div>
+<p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A distinguishing coordinate set of size (\mathrm R(\mathcal H)) gives an injective binary trace map on (\mathcal H), so (\lceil\log_2|\mathcal H|\rceil\le\mathrm R(\mathcal H)). The mistake-driven halving construction gives a labeled sample-compression scheme of size at most (\lceil\log_2|\mathcal H|\rceil). Combining the two bounds yields (\mathrm{LSC}(\mathcal H)\le\mathrm R(\mathcal H)).</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-203" style="position:relative;">
         
         <h3><a href="relationships/star_number_covc_dimension_affine.html" class="table-title-link">Star Number / co-VC dimension (affine)</a></h3>
@@ -7761,6 +7787,274 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-340" style="position:relative;">
+        
+        <h3><a href="relationships/monotonic_covc_dimension_covc_dimension.html" class="table-title-link">Monotonic co-VC Dimension / co-VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Monotonic co-VC Dimension / co-VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The monotonic envelope dominates the original co-VC dimension.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The defining maximum ranges over all subfamilies, including $\mathcal H$ itself.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-341" style="position:relative;">
+        
+        <h3><a href="relationships/monotonic_covc_dimension_star_number.html" class="table-title-link">Monotonic co-VC Dimension / Star Number</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Monotonic co-VC Dimension / Star Number</p>
+<p><strong>Parameter 1: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every realized star becomes a hollow star after its centre is removed.</p></div>
+<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $h_0,h_1,\ldots,h_d$ witness a $d$-star in a projection of $\mathcal H$.  In the subfamily formed by $h_1,\ldots,h_d$, the centre trace of $h_0$ is absent while each of its $d$ one-coordinate flips is present. Thus that subfamily has co-VC dimension at least $d$, and maximizing over subfamilies proves $\mathrm{coVC}^*(\mathcal H)\ge\mathrm S(\mathcal H)$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-342" style="position:relative;">
+        
+        <h3><a href="relationships/star_number_monotonic_covc_dimension_affine.html" class="table-title-link">Star Number / Monotonic co-VC Dimension (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Star Number / Monotonic co-VC Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+<p><strong>Additive Constant: </strong>1</p>
+<p><strong>Multiplicative Constant: </strong>1</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The monotonic co-VC dimension is at most the star number plus one.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every subfamily $\mathcal G\subseteq\mathcal H$, the established affine hollow-star bound gives $\mathrm S(\mathcal G)\ge\mathrm{coVC}(\mathcal G)-1$. Star Number is subfamily-monotonic, so $\mathrm S(\mathcal H)\ge\mathrm{coVC}(\mathcal G)-1$. Taking the maximum over $\mathcal G$ gives $\mathrm S(\mathcal H)\ge\mathrm{coVC}^*(\mathcal H)-1.</p></div>
+
+<strong>Derivation:</strong><div class="text-field"><p>max_subfamilies from <a href="relationships/star_number_covc_dimension_affine.html">Star Number / co-VC dimension (affine)</a></p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-343" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_monotonic_covc_dimension.html" class="table-title-link">Effective Range / Monotonic co-VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Monotonic co-VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Consequence of the max-over-subfamilies construction.</p></div>
+<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every subfamily $\mathcal G$ has $\mathrm{coVC}(\mathcal G)\le\mathrm E(\mathcal G)\le\mathrm E(\mathcal H)$. Maximizing over $\mathcal G\subseteq\mathcal H$ proves the bound.</p></div>
+
+<strong>Derivation:</strong><div class="text-field"><p>max_subfamilies from <a href="relationships/effective_range_covc_dimension.html">Effective Range / co-VC Dimension</a></p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-344" style="position:relative;">
+        
+        <h3><a href="relationships/size_monotonic_covc_dimension.html" class="table-title-link">Size / Monotonic co-VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size / Monotonic co-VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Consequence of the max-over-subfamilies construction.</p></div>
+<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every subfamily $\mathcal G$ has $\mathrm{coVC}(\mathcal G)\le|\mathcal G|\le|\mathcal H|$. Maximizing over $\mathcal G\subseteq\mathcal H$ proves the bound.</p></div>
+
+<strong>Derivation:</strong><div class="text-field"><p>max_subfamilies from <a href="relationships/size_covc_dimension.html">Size / co-VC Dimension</a></p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-345" style="position:relative;">
+        
+        <h3><a href="relationships/projected_interpolation_degree_interpolation_degree.html" class="table-title-link">Projected Interpolation Degree / Interpolation Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Interpolation Degree / Interpolation Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The full-domain projection is included in the defining maximum.</p></div>
+<p><strong>Witness: </strong><a href="classes/interpolation_conjecture_counterexample.html">Interpolation-Conjecture Counterexample</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Taking $S=\mathcal X$ in the definition gives $\mathrm{intdeg}^p(\mathcal H)\ge\mathrm{intdeg}(\mathcal H)$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-346" style="position:relative;">
+        
+        <h3><a href="relationships/projected_interpolation_degree_vc_dimension.html" class="table-title-link">Projected Interpolation Degree / VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Interpolation Degree / VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>A largest shattered projection is a full cube.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is shattered with $|S|=d$, then $\mathcal H_{|S}=\{0,1\}^S$. The interpolation degree of this full $d$-cube is $d$, so the maximum over projections is at least $d=\mathrm{VC}(\mathcal H)$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-347" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_projected_interpolation_degree.html" class="table-title-link">Effective Range / Projected Interpolation Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Projected Interpolation Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Interpolation on an $m$-coordinate Boolean domain has degree at most $m$.</p></div>
+<p><strong>Witness: </strong><a href="classes/interpolation_conjecture_counterexample.html">Interpolation-Conjecture Counterexample</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projection, its effective range has at most $\mathrm E(\mathcal H)$ coordinates. Every function on a Boolean class over $m$ active coordinates is the restriction of a multilinear polynomial of degree at most $m$. Thus each projected interpolation degree is at most $\mathrm E(\mathcal H)$, and so is their maximum.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-355" style="position:relative;">
+        
+        <h3><a href="relationships/2block_littlestone_dimension_kblock_littlestone_dimension_affine.html" class="table-title-link">2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+<p><strong>Additive Constant: </strong>\frac{2(k-1)}{k}</p>
+<p><strong>Multiplicative Constant: </strong>\frac{2}{k}</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every fixed integer $k>2$, the complete-block comparison gives $\mathrm B_k\le\frac{k}{2}\mathrm B_2+(k-1)$, equivalently the displayed affine lower bound.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The general relation $\mathrm B_\ell\le(\ell/k)\mathrm B_k+(\ell-1)$, instantiated with the smaller block size $k=2$ and $\ell>2$, gives $\mathrm B_2\ge\frac{2}{\ell}\mathrm B_\ell-\frac{2(\ell-1)}{\ell}$. Renaming $\ell$ as the fixed parameter $k$ gives the stated bound.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.</p></div>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-356" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_monotonic_projected_minimum_teaching_set_size.html" class="table-title-link">Effective Range / Monotonic Projected Minimum Teaching Set Size</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Monotonic Projected Minimum Teaching Set Size</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotonic_projected_minimum_teaching_set_size.html">Monotonic Projected Minimum Teaching Set Size</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite binary concept classes.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let (\mathcal G\subseteq\mathcal H) and let (\pi_T(\mathcal G)) be any coordinate projection. Its effective range is contained in that of (\mathcal H), and the labels on its active coordinates distinguish every target trace from every other trace. Hence its minimum teaching-set size is at most (\mathrm E(\mathcal H)). Maximizing first over projections and then over subfamilies gives (\mathrm{TS}_{\min}^{*p}(\mathcal H)\le\mathrm E(\mathcal H)).</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+                </div>
+            </section>
+        
+            <section class="relationship-status-section relationship-status-incomparable">
+                <h2>Established incomparabilities</h2>
+                <p>Pairs for which neither parameter dominates the other; each record supplies separation witnesses in both directions.</p>
+                <div class="table-grid">
+                    
     <div class="table-card" id="math-322" style="position:relative;">
         
         <h3><a href="relationships/subset_teaching_dimension_recursive_teaching_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / Recursive Teaching Dimension (Incomparable)</a></h3>
@@ -8229,214 +8523,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-340" style="position:relative;">
-        
-        <h3><a href="relationships/monotonic_covc_dimension_covc_dimension.html" class="table-title-link">Monotonic co-VC Dimension / co-VC Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Monotonic co-VC Dimension / co-VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The monotonic envelope dominates the original co-VC dimension.</p></div>
-<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The defining maximum ranges over all subfamilies, including $\mathcal H$ itself.</p></div>
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-341" style="position:relative;">
-        
-        <h3><a href="relationships/monotonic_covc_dimension_star_number.html" class="table-title-link">Monotonic co-VC Dimension / Star Number</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Monotonic co-VC Dimension / Star Number</p>
-<p><strong>Parameter 1: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Every realized star becomes a hollow star after its centre is removed.</p></div>
-<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $h_0,h_1,\ldots,h_d$ witness a $d$-star in a projection of $\mathcal H$.  In the subfamily formed by $h_1,\ldots,h_d$, the centre trace of $h_0$ is absent while each of its $d$ one-coordinate flips is present. Thus that subfamily has co-VC dimension at least $d$, and maximizing over subfamilies proves $\mathrm{coVC}^*(\mathcal H)\ge\mathrm S(\mathcal H)$.</p></div>
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-342" style="position:relative;">
-        
-        <h3><a href="relationships/star_number_monotonic_covc_dimension_affine.html" class="table-title-link">Star Number / Monotonic co-VC Dimension (affine)</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Star Number / Monotonic co-VC Dimension (affine)</p>
-<p><strong>Parameter 1: </strong><a href="parameters/star_number.html">Star number</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-<p><strong>Additive Constant: </strong>1</p>
-<p><strong>Multiplicative Constant: </strong>1</p>
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The monotonic co-VC dimension is at most the star number plus one.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every subfamily $\mathcal G\subseteq\mathcal H$, the established affine hollow-star bound gives $\mathrm S(\mathcal G)\ge\mathrm{coVC}(\mathcal G)-1$. Star Number is subfamily-monotonic, so $\mathrm S(\mathcal H)\ge\mathrm{coVC}(\mathcal G)-1$. Taking the maximum over $\mathcal G$ gives $\mathrm S(\mathcal H)\ge\mathrm{coVC}^*(\mathcal H)-1.</p></div>
-
-<strong>Derivation:</strong><div class="text-field"><p>max_subfamilies from <a href="relationships/star_number_covc_dimension_affine.html">Star Number / co-VC dimension (affine)</a></p></div>
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-343" style="position:relative;">
-        
-        <h3><a href="relationships/effective_range_monotonic_covc_dimension.html" class="table-title-link">Effective Range / Monotonic co-VC Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Effective Range / Monotonic co-VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Consequence of the max-over-subfamilies construction.</p></div>
-<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every subfamily $\mathcal G$ has $\mathrm{coVC}(\mathcal G)\le\mathrm E(\mathcal G)\le\mathrm E(\mathcal H)$. Maximizing over $\mathcal G\subseteq\mathcal H$ proves the bound.</p></div>
-
-<strong>Derivation:</strong><div class="text-field"><p>max_subfamilies from <a href="relationships/effective_range_covc_dimension.html">Effective Range / co-VC Dimension</a></p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-344" style="position:relative;">
-        
-        <h3><a href="relationships/size_monotonic_covc_dimension.html" class="table-title-link">Size / Monotonic co-VC Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Size / Monotonic co-VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/size.html">Size</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Consequence of the max-over-subfamilies construction.</p></div>
-<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every subfamily $\mathcal G$ has $\mathrm{coVC}(\mathcal G)\le|\mathcal G|\le|\mathcal H|$. Maximizing over $\mathcal G\subseteq\mathcal H$ proves the bound.</p></div>
-
-<strong>Derivation:</strong><div class="text-field"><p>max_subfamilies from <a href="relationships/size_covc_dimension.html">Size / co-VC Dimension</a></p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-345" style="position:relative;">
-        
-        <h3><a href="relationships/projected_interpolation_degree_interpolation_degree.html" class="table-title-link">Projected Interpolation Degree / Interpolation Degree</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Projected Interpolation Degree / Interpolation Degree</p>
-<p><strong>Parameter 1: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The full-domain projection is included in the defining maximum.</p></div>
-<p><strong>Witness: </strong><a href="classes/interpolation_conjecture_counterexample.html">Interpolation-Conjecture Counterexample</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Taking $S=\mathcal X$ in the definition gives $\mathrm{intdeg}^p(\mathcal H)\ge\mathrm{intdeg}(\mathcal H)$.</p></div>
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-346" style="position:relative;">
-        
-        <h3><a href="relationships/projected_interpolation_degree_vc_dimension.html" class="table-title-link">Projected Interpolation Degree / VC Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Projected Interpolation Degree / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A largest shattered projection is a full cube.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $S$ is shattered with $|S|=d$, then $\mathcal H_{|S}=\{0,1\}^S$. The interpolation degree of this full $d$-cube is $d$, so the maximum over projections is at least $d=\mathrm{VC}(\mathcal H)$.</p></div>
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-347" style="position:relative;">
-        
-        <h3><a href="relationships/effective_range_projected_interpolation_degree.html" class="table-title-link">Effective Range / Projected Interpolation Degree</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Effective Range / Projected Interpolation Degree</p>
-<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Interpolation on an $m$-coordinate Boolean domain has degree at most $m$.</p></div>
-<p><strong>Witness: </strong><a href="classes/interpolation_conjecture_counterexample.html">Interpolation-Conjecture Counterexample</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every projection, its effective range has at most $\mathrm E(\mathcal H)$ coordinates. Every function on a Boolean class over $m$ active coordinates is the restriction of a multilinear polynomial of degree at most $m$. Thus each projected interpolation degree is at most $\mathrm E(\mathcal H)$, and so is their maximum.</p></div>
-
-
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-348" style="position:relative;">
         
         <h3><a href="relationships/monotonic_covc_dimension_diameter_incomparable.html" class="table-title-link">Monotonic co-VC Dimension / Diameter (Incomparable)</a></h3>
@@ -8613,32 +8699,6 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The Singleton and Trivial-Concept value calculations give the two opposite unbounded gaps.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Database-owned value proofs for Size and Log Shattering of Singletons and Trivial Concepts.</p></div>
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-355" style="position:relative;">
-        
-        <h3><a href="relationships/2block_littlestone_dimension_kblock_littlestone_dimension_affine.html" class="table-title-link">2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</p>
-<p><strong>Parameter 1: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-<p><strong>Additive Constant: </strong>\frac{2(k-1)}{k}</p>
-<p><strong>Multiplicative Constant: </strong>\frac{2}{k}</p>
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every fixed integer $k>2$, the complete-block comparison gives $\mathrm B_k\le\frac{k}{2}\mathrm B_2+(k-1)$, equivalently the displayed affine lower bound.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The general relation $\mathrm B_\ell\le(\ell/k)\mathrm B_k+(\ell-1)$, instantiated with the smaller block size $k=2$ and $\ell>2$, gives $\mathrm B_2\ge\frac{2}{\ell}\mathrm B_\ell-\frac{2(\ell-1)}{\ell}$. Renaming $\ell$ as the fixed parameter $k$ gives the stated bound.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.</p></div>
 
 
 
