@@ -1,0 +1,16 @@
+{
+  "id": 501,
+  "name": "Teaching Dimension / Densest Subgraph (twice)",
+  "short_name": "teaching_dimension_densest_subgraph_twice",
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/densest_subgraph_twice",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, teaching dimension dominates twice the density of its densest induced subgraph.",
+  "proof": "For every nonempty subfamily $\\mathcal G\\subseteq\\mathcal H$, teaching dimension is subfamily-monotonic and at least average teaching dimension. Averaging the pointwise teaching-set/degree lower bound gives $\\mathrm{TD}(\\mathcal H)\\ge\\mathrm{TS}_{\\mathrm{avg}}(\\mathcal G)\\ge\\mathrm{dens}(\\mathcal G)$. Maximizing the final term over subfamilies gives the densest-subgraph parameter.",
+  "latex_proof_label": "cor:teaching-densest-subgraph",
+  "proof_source": "Corollary \\ref{cor:teaching-densest-subgraph} in the survey, using Corollary \\ref{cor:average-teaching-density}.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
+  "witness_verification": "For Warmuth's $C_5$ class, the established teaching dimension is $3$ and the densest-subgraph value is $1$."
+}
