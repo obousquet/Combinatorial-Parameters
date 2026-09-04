@@ -1,0 +1,14 @@
+{
+  "id": 424,
+  "name": "Hitting Size / Log Size Ratio (Incomparable)",
+  "short_name": "hitting_size_log_size_ratio_incomparable",
+  "parameter_1_id": "#parameters/hitting_size",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the addressing class $\\mathrm{ADDRESSING}_n$, $\\mathrm{HT}=2^{\\lfloor\\log_2n\\rfloor}$ while the log size ratio $\\log(2^{\\lfloor\\log n\\rfloor}-1)/\\log(n+\\lfloor\\log n\\rfloor+1)$ is bounded by one.",
+  "parameter_2_larger_witness": "For the common-core cube $\\mathcal Q^{\\cap}_n$, the log size ratio is $\\log(2^n-1)/\\log(n+2)=\\Theta(n/\\log n)$, while $\\mathrm{HT}=1$.",
+  "proof": "The addressing and common-core-cube value calculations give gaps whose ratios diverge in the two opposite directions.",
+  "references": "Database-owned value proofs."
+}

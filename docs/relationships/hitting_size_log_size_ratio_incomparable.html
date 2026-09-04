@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,23 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-38" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-424" style="position:relative;">
         
-        <h3><a href="classes/common_core_cube.html" class="table-title-link">Common-Core Cube</a></h3>
+        <h3><a href="relationships/hitting_size_log_size_ratio_incomparable.html" class="table-title-link">Hitting Size / Log Size Ratio (Incomparable)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Common-Core Cube</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal Q^{\cap}_n">
-            \[\mathcal Q^{\cap}_n\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>On $\{0,1,\ldots,n\}$, let $\mathcal Q^{\cap}_n=\{\{0\}\cup A:A\subseteq[n]\}$. It is an $n$-cube whose concepts all share coordinate $0$.</p></div>
+        <p><strong>Name: </strong>Hitting Size / Log Size Ratio (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/hitting_size.html">Hitting Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/log_size_ratio.html">Log Size Ratio</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
 
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/hitting_size_common_core_cube.html'>Hitting Size of Common-Core Cube</a></li><li><a href='values/largest_strongly_shattered_set_common_core_cube.html'>Largest Strongly Shattered Set of Common-Core Cube</a></li><li><a href='values/effective_vc_radius_common_core_cube.html'>Effective VC Radius of Common-Core Cube</a></li><li><a href='values/minimum_degree_common_core_cube.html'>Minimum Degree of Common-Core Cube</a></li><li><a href='values/shattering_cover_projection_vc_dimension_common_core_cube.html'>Shattering-Cover Projection VC Dimension of Common-Core Cube</a></li><li><a href='values/subset_teaching_dimension_common_core_cube.html'>Subset Teaching Dimension of Common-Core Cube</a></li><li><a href='values/log_size_ratio_common_core_cube.html'>Log Size Ratio of Common-Core Cube</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the addressing class $\mathrm{ADDRESSING}_n$, $\mathrm{HT}=2^{\lfloor\log_2n\rfloor}$ while the log size ratio $\log(2^{\lfloor\log n\rfloor}-1)/\log(n+\lfloor\log n\rfloor+1)$ is bounded by one.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the common-core cube $\mathcal Q^{\cap}_n$, the log size ratio is $\log(2^n-1)/\log(n+2)=\Theta(n/\log n)$, while $\mathrm{HT}=1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The addressing and common-core-cube value calculations give gaps whose ratios diverge in the two opposite directions.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p>Database-owned value proofs.</p></div>
 
         </div>
     </div>
