@@ -595,6 +595,9 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         "equivalence": {"arrowhead": "normal", "style": "dashed", "color": "#2ECC40"}, # green
         "log": {"arrowhead": "normal", "style": "dashed", "color": "#FFDC00"},        # yellow
         "sqrt": {"arrowhead": "normal", "style": "dashed", "color": "#B10DC9"},       # purple
+        # The statement is A <= C sqrt(B), so reverse the displayed arrow to
+        # retain the graph's conventional larger-to-smaller visual direction.
+        "sqrt_upper": {"arrowhead": "normal", "style": "dotted", "color": "#B10DC9", "dir": "back"}, # purple
         "inv_log": {"arrowhead": "normal", "style": "dotted", "color": "#FF851B"},   # orange
     }
     category_map = {
@@ -633,7 +636,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         "smon": "Strictly monotonic (doubly monotonic and strict C-monotonic)",
     }
     arrow_values = {
-        "larger": "A ≥ B", "larger_c": "A ≥ cB − d", "equivalence": "A = B", "log": "A ≥ c log B", "sqrt": "A ≥ c√B", "inv_log": "A ≥ cB/log n"
+        "larger": "A ≥ B", "larger_c": "A ≥ cB − d", "equivalence": "A = B", "log": "A ≥ c log B", "sqrt": "A ≥ c√B", "sqrt_upper": "A ≤ C√B", "inv_log": "A ≥ cB/log n"
         }
     cat_values = cache.get_enum_values("parameters", "category")
     cat_values = {val: display for val, display in cat_values}

@@ -1,0 +1,13 @@
+{
+  "id": 484,
+  "name": "Average Teaching Dimension / Size (square-root upper bound)",
+  "short_name": "average_teaching_dimension_size_sqrt_upper",
+  "parameter_1_id": "#parameters/average_teaching_dimension",
+  "parameter_2_id": "#parameters/size",
+  "relationship_type": "sqrt_upper",
+  "multiplicative_constant": "C",
+  "status": "established",
+  "details": "For every finite binary class $\\mathcal H$, $\\mathrm{TS}_{\\mathrm{avg}}(\\mathcal H)=O(\\sqrt{|\\mathcal H|})$. This nonlinear upper bound is displayed only as a non-constraining graph overlay and does not participate in the Hasse reduction.",
+  "proof": "Kushilevitz--Linial--Rabinovich--Saks prove that the sum, over the $N=|\\mathcal H|$ concepts, of the minimum sizes of their distinguishing witness sets is $O(N^{3/2})$. These witness-set sizes are precisely the individual minimum teaching-set sizes; dividing by $N$ gives the stated average bound.",
+  "references": "\\cite{kushilevitz1996witness}"
+}

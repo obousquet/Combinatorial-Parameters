@@ -56,6 +56,7 @@
             { "value": "equivalence", "display_name": "$P_1 = P_2$" },
             { "value": "log", "display_name": "$P_1 \\ge c\\log P_2$" },
             { "value": "sqrt", "display_name": "$P_1 \\ge c\\sqrt{P_2}$" },
+            { "value": "sqrt_upper", "display_name": "$P_1 \\le C\\sqrt{P_2}$" },
             { "value": "inv_log", "display_name": "$P_1 \\ge \\frac{cP_2}{\\log n}$" },
             { "value": "incomparable", "display_name": "$P_1 \\parallel P_2$ (incomparable)" }
         ]
@@ -72,7 +73,7 @@
         "name": "multiplicative_constant",
         "type": "string",
         "label": "Multiplicative Constant",
-        "description": "Optional positive factor c in a larger_c bound.  When omitted, c denotes an unspecified positive constant.",
+        "description": "Optional positive constant in an asymptotic or affine relationship. When omitted, c denotes an unspecified positive constant.",
         "required": false,
         "rendered": true
     },
