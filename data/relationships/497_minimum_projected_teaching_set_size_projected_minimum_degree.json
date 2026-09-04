@@ -1,0 +1,16 @@
+{
+  "id": 497,
+  "name": "Minimum Projected Teaching-Set Size / Projected Minimum Degree",
+  "short_name": "minimum_projected_teaching_set_size_projected_minimum_degree",
+  "parameter_1_id": "#parameters/minimum_projected_teaching_set_size",
+  "parameter_2_id": "#parameters/projected_minimum_degree",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, the minimum projected teaching-set size dominates projected minimum degree.",
+  "proof": "For each coordinate projection, every target's teaching-set size is at least its degree in the projected $1$-inclusion graph. Therefore $\\min_h\\max_T\\operatorname{ts}(h,\\mathcal H_{|T})\\ge\\max_T\\min_h\\operatorname{ts}(h,\\mathcal H_{|T})\\ge\\max_T\\mathrm d_{\\min}(\\mathcal H_{|T})=\\mathrm d^p_{\\min}(\\mathcal H)$.",
+  "latex_proof_label": "cor:projected-min-teaching-degree",
+  "proof_source": "Corollary \\ref{cor:projected-min-teaching-degree} in the survey, using Lemma \\ref{lem:teaching-set-degree-lower-bound}.",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict",
+  "witness_verification": "For the three-code class $\\{000,011,101\\}$, the established values are $\\mathrm{TS}_{\\min}^p=2$ and $\\mathrm d^p_{\\min}=1$."
+}
