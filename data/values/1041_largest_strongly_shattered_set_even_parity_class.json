@@ -1,0 +1,10 @@
+{
+  "id": 1041,
+  "name": "Largest Strongly Shattered Set of Even-Parity Class",
+  "short_name": "largest_strongly_shattered_set_even_parity_class",
+  "class_id": "#classes/even_parity_class",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$0$",
+  "status": "established",
+  "proof": "A nonempty strongly shattered set contains a one-dimensional subcube, hence an edge of the $1$-inclusion graph. The even-parity class has no such edge because flipping one coordinate changes parity. The empty set is strongly shattered, so the value is zero."
+}
