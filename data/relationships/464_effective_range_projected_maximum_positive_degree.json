@@ -1,0 +1,11 @@
+{
+  "id": 464,
+  "name": "Effective Range / Projected Maximum Positive Degree",
+  "short_name": "effective_range_projected_maximum_positive_degree",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_maximum_positive_degree",
+  "relationship_type": "larger",
+  "details": "Every coordinate trace has effective range at most that of the original class.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm{d}^{+}_{\\max}(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H)$. Maximize the left-hand side over S."
+}

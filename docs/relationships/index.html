@@ -6435,6 +6435,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-462" style="position:relative;">
+        
+        <h3><a href="relationships/projected_maximum_positive_degree_maximum_positive_degree.html" class="table-title-link">Projected Maximum Positive Degree / Maximum Positive Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Maximum Positive Degree / Maximum Positive Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_maximum_positive_degree.html">Projected Maximum Positive Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The defining maximum includes the identity projection.</p></div>
+<p><strong>Witness: </strong><a href="classes/projected_positive_noclashing_gap.html">Projected Positive No-Clashing Teaching Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal C_{\mathrm{pNC+}}=\{001,010,111\}$, maximum positive degree is zero while its projection to coordinates $\{1,2\}$ has maximum positive degree two; sync/verify_projected_positive_noclashing_gap.py checks every projection.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Take S=X in the definition of $\mathrm{d}^{+p}_{\max}$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-265" style="position:relative;">
         
         <h3><a href="relationships/combinatorial_eluder_dimension_log_size.html" class="table-title-link">Combinatorial Eluder Dimension / Log Size</a></h3>
@@ -8976,6 +9002,84 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm{RTD}^{+}(\mathcal H_{|S})\leq\mathrm E(\mathcal H_{|S})\leq\mathrm E(\mathcal H)$. Maximize the left-hand side over S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-461" style="position:relative;">
+        
+        <h3><a href="relationships/projected_positive_noclashing_teaching_dimension_projected_maximum_positive_degree.html" class="table-title-link">Projected Positive No-Clashing Teaching Dimension / Projected Maximum Positive Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive No-Clashing Teaching Dimension / Projected Maximum Positive Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_positive_noclashing_teaching_dimension.html">Projected Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_maximum_positive_degree.html">Projected Maximum Positive Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The maximum-positive-degree lower bound for positive no-clashing teaching applies to every coordinate trace.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm{NCTD}^{+}(\mathcal H_{|S})\geq\mathrm{d}^{+}_{\max}(\mathcal H_{|S})$. Maximize both sides over S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-463" style="position:relative;">
+        
+        <h3><a href="relationships/projected_maximal_degree_projected_maximum_positive_degree.html" class="table-title-link">Projected Maximal Degree / Projected Maximum Positive Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Maximal Degree / Projected Maximum Positive Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_maximal_degree.html">Projected Maximal Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_maximum_positive_degree.html">Projected Maximum Positive Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Total degree dominates positive degree on every coordinate trace.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm{d}_{\max}(\mathcal H_{|S})\geq\mathrm{d}^{+}_{\max}(\mathcal H_{|S})$. Maximize both sides over S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-464" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_projected_maximum_positive_degree.html" class="table-title-link">Effective Range / Projected Maximum Positive Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Projected Maximum Positive Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_maximum_positive_degree.html">Projected Maximum Positive Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every coordinate trace has effective range at most that of the original class.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm{d}^{+}_{\max}(\mathcal H_{|S})\leq\mathrm E(\mathcal H_{|S})\leq\mathrm E(\mathcal H)$. Maximize the left-hand side over S.</p></div>
 
 
 

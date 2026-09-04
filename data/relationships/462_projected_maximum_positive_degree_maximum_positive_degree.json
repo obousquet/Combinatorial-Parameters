@@ -1,0 +1,14 @@
+{
+  "id": 462,
+  "name": "Projected Maximum Positive Degree / Maximum Positive Degree",
+  "short_name": "projected_maximum_positive_degree_maximum_positive_degree",
+  "parameter_1_id": "#parameters/projected_maximum_positive_degree",
+  "parameter_2_id": "#parameters/maximum_positive_degree",
+  "relationship_type": "larger",
+  "details": "The defining maximum includes the identity projection.",
+  "witness": "#classes/projected_positive_noclashing_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\mathrm{pNC+}}=\\{001,010,111\\}$, maximum positive degree is zero while its projection to coordinates $\\{1,2\\}$ has maximum positive degree two; sync/verify_projected_positive_noclashing_gap.py checks every projection.",
+  "status": "established",
+  "proof": "Take S=X in the definition of $\\mathrm{d}^{+p}_{\\max}$."
+}

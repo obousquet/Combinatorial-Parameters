@@ -1,0 +1,11 @@
+{
+  "id": 463,
+  "name": "Projected Maximal Degree / Projected Maximum Positive Degree",
+  "short_name": "projected_maximal_degree_projected_maximum_positive_degree",
+  "parameter_1_id": "#parameters/projected_maximal_degree",
+  "parameter_2_id": "#parameters/projected_maximum_positive_degree",
+  "relationship_type": "larger",
+  "details": "Total degree dominates positive degree on every coordinate trace.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm{d}_{\\max}(\\mathcal H_{|S})\\geq\\mathrm{d}^{+}_{\\max}(\\mathcal H_{|S})$. Maximize both sides over S."
+}

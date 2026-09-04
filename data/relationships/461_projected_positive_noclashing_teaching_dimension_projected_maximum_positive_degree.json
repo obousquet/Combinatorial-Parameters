@@ -1,0 +1,11 @@
+{
+  "id": 461,
+  "name": "Projected Positive No-Clashing Teaching Dimension / Projected Maximum Positive Degree",
+  "short_name": "projected_positive_noclashing_teaching_dimension_projected_maximum_positive_degree",
+  "parameter_1_id": "#parameters/projected_positive_noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/projected_maximum_positive_degree",
+  "relationship_type": "larger",
+  "details": "The maximum-positive-degree lower bound for positive no-clashing teaching applies to every coordinate trace.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm{NCTD}^{+}(\\mathcal H_{|S})\\geq\\mathrm{d}^{+}_{\\max}(\\mathcal H_{|S})$. Maximize both sides over S."
+}

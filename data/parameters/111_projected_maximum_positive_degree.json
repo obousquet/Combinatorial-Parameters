@@ -1,0 +1,34 @@
+{
+  "id": 111,
+  "name": "Projected Maximum Positive Degree",
+  "short_name": "projected_maximum_positive_degree",
+  "symbol": "\\mathrm{d}^{+p}_{\\max}",
+  "category": "graph-based",
+  "symmetric": false,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "The **Projected Maximum Positive Degree** is $$\\mathrm{d}^{+p}_{\\max}(\\mathcal H)\\bydef\\max_{S\\subseteq\\mathcal X}\\mathrm{d}^{+}_{\\max}(\\mathcal H_{|S}),$$ the largest maximum positive degree among coordinate projections.",
+  "graph_summary": "Largest maximum positive degree attained by a coordinate projection.",
+  "description": "The projection-monotonic closure of maximum positive degree.",
+  "origin_references": "Database-defined projection closure of the oriented one-inclusion-graph parameter.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For every coordinate set S, a trace of a subfamily is a subfamily of the corresponding trace. Maximum positive degree is subfamily-monotonic, and taking maxima preserves the inequality.",
+      "kind": "max_over_subfamilies"
+    },
+    "p_monotonic": {
+      "proof": "Every projection of a projection of H is already a projection of H, so the maximum over traces cannot increase after projection.",
+      "kind": "max_over_projections"
+    },
+    "c_monotonic": {
+      "proof": "A conditioned fibre is a subfamily followed by a projection, so doubly monotonicity implies conditioning monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding subfamily and projection arguments establish both required forms.",
+      "kind": "direct_argument"
+    }
+  }
+}

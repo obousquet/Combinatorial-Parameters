@@ -1,0 +1,11 @@
+{
+  "id": 1059,
+  "name": "Projected Maximum Positive Degree of the Projected Positive No-Clashing Teaching Separation Class",
+  "short_name": "projected_maximum_positive_degree_projected_positive_noclashing_gap",
+  "class_id": "#classes/projected_positive_noclashing_gap",
+  "parameter_id": "#parameters/projected_maximum_positive_degree",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projection to coordinates $\\{1,2\\}$ gives $\\{01,10,11\\}$, where $11$ has two smaller one-coordinate neighbours. Exhaustive enumeration verifies that no projection has larger maximum positive degree. See sync/verify_projected_positive_noclashing_gap.py."
+}

@@ -122,6 +122,22 @@ def positive_rtd(concepts):
     return solve(concepts)
 
 
+def maximum_positive_degree(concepts):
+    """Return the maximum dominance in the oriented one-inclusion graph."""
+    return max(
+        sum(
+            sum(left != right for left, right in zip(concept, other)) == 1
+            and all(
+                other[index] <= concept[index]
+                for index in range(len(concept))
+            )
+            for other in concepts
+            if other != concept
+        )
+        for concept in concepts
+    )
+
+
 def trace(concepts, subset):
     return tuple(sorted({"".join(concept[i] for i in subset) for concept in concepts}))
 
@@ -129,9 +145,11 @@ def trace(concepts, subset):
 def main():
     assert nctd_positive(CLASS) == 1
     assert positive_rtd(CLASS) == 1
+    assert maximum_positive_degree(CLASS) == 0
     assert trace(CLASS, (1, 2)) == ("01", "10", "11")
     assert nctd_positive(trace(CLASS, (1, 2))) == 2
     assert positive_rtd(trace(CLASS, (1, 2))) == 2
+    assert maximum_positive_degree(trace(CLASS, (1, 2))) == 2
     assert max(
         nctd(trace(CLASS, subset))
         for size in range(4)
@@ -147,9 +165,15 @@ def main():
         for size in range(4)
         for subset in combinations(range(3), size)
     ) == 2
+    assert max(
+        maximum_positive_degree(trace(CLASS, subset))
+        for size in range(4)
+        for subset in combinations(range(3), size)
+    ) == 2
     print(
         "C_pNC+: positive NCTD = positive RTD = projected ordinary NCTD = 1; "
-        "projected positive NCTD = projected positive RTD = 2"
+        "maximum positive degree = 0; projected positive NCTD = projected "
+        "positive RTD = projected maximum positive degree = 2"
     )
 
 
