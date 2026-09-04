@@ -138,6 +138,17 @@ def maximum_positive_degree(concepts):
     )
 
 
+def vc_dimension(concepts):
+    """Return VC dimension by enumerating coordinate traces."""
+    width = len(concepts[0])
+    return max(
+        len(subset)
+        for size in range(width + 1)
+        for subset in combinations(range(width), size)
+        if len(trace(concepts, subset)) == 2 ** len(subset)
+    )
+
+
 def trace(concepts, subset):
     return tuple(sorted({"".join(concept[i] for i in subset) for concept in concepts}))
 
@@ -146,6 +157,7 @@ def main():
     assert nctd_positive(CLASS) == 1
     assert positive_rtd(CLASS) == 1
     assert maximum_positive_degree(CLASS) == 0
+    assert vc_dimension(CLASS) == 1
     assert trace(CLASS, (1, 2)) == ("01", "10", "11")
     assert nctd_positive(trace(CLASS, (1, 2))) == 2
     assert positive_rtd(trace(CLASS, (1, 2))) == 2
@@ -172,8 +184,8 @@ def main():
     ) == 2
     print(
         "C_pNC+: positive NCTD = positive RTD = projected ordinary NCTD = 1; "
-        "maximum positive degree = 0; projected positive NCTD = projected "
-        "positive RTD = projected maximum positive degree = 2"
+        "maximum positive degree = 0; VC dimension = 1; projected positive "
+        "NCTD = projected positive RTD = projected maximum positive degree = 2"
     )
 
 

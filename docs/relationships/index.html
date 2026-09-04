@@ -9087,6 +9087,84 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-465" style="position:relative;">
+        
+        <h3><a href="relationships/projected_maximum_positive_degree_vc_dimension.html" class="table-title-link">Projected Maximum Positive Degree / VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Maximum Positive Degree / VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_maximum_positive_degree.html">Projected Maximum Positive Degree</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>A shattered set projects to a full cube, whose top vertex has one smaller neighbour in every cube coordinate.</p></div>
+<p><strong>Witness: </strong><a href="classes/projected_positive_noclashing_gap.html">Projected Positive No-Clashing Teaching Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal C_{\mathrm{pNC+}}=\{001,010,111\}$, VC dimension is one whereas projected maximum positive degree is two; sync/verify_projected_positive_noclashing_gap.py verifies both values.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let S be shattered with |S|=d. Then $\mathcal H_{|S}$ is the full d-cube, whose top vertex has d smaller one-coordinate neighbours. Hence $\mathrm d^{+p}_{\max}(\mathcal H)\ge d$; maximize over shattered S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-466" style="position:relative;">
+        
+        <h3><a href="relationships/projected_positive_noclashing_teaching_dimension_vc_dimension.html" class="table-title-link">Projected Positive No-Clashing Teaching Dimension / VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive No-Clashing Teaching Dimension / VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_positive_noclashing_teaching_dimension.html">Projected Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>A shattered set projects to a full cube, whose positive no-clashing teaching dimension equals its dimension.</p></div>
+<p><strong>Witness: </strong><a href="classes/projected_positive_noclashing_gap.html">Projected Positive No-Clashing Teaching Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal C_{\mathrm{pNC+}}=\{001,010,111\}$, VC dimension is one whereas projected positive no-clashing teaching dimension is two; sync/verify_projected_positive_noclashing_gap.py verifies both values.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let S be shattered with |S|=d. Then $\mathcal H_{|S}$ is the full d-cube and has $\mathrm{NCTD}^{+}=d$. Thus $\mathrm{NCTD}^{+p}(\mathcal H)\ge d$; maximize over shattered S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-467" style="position:relative;">
+        
+        <h3><a href="relationships/projected_positive_recursive_teaching_dimension_vc_dimension.html" class="table-title-link">Projected Positive Recursive Teaching Dimension / VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive Recursive Teaching Dimension / VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>A shattered set projects to a full cube, whose positive recursive teaching dimension equals its dimension.</p></div>
+<p><strong>Witness: </strong><a href="classes/projected_positive_noclashing_gap.html">Projected Positive No-Clashing Teaching Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal C_{\mathrm{pNC+}}=\{001,010,111\}$, VC dimension is one whereas projected positive recursive teaching dimension is two; sync/verify_projected_positive_noclashing_gap.py verifies both values.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let S be shattered with |S|=d. Then $\mathcal H_{|S}$ is the full d-cube and has $\mathrm{RTD}^{+}=d$. Thus $\mathrm{RTD}^{+p}(\mathcal H)\ge d$; maximize over shattered S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

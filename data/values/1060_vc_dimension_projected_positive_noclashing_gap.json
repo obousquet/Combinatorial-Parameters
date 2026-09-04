@@ -1,0 +1,11 @@
+{
+  "id": 1060,
+  "name": "VC Dimension of the Projected Positive No-Clashing Teaching Separation Class",
+  "short_name": "vc_dimension_projected_positive_noclashing_gap",
+  "class_id": "#classes/projected_positive_noclashing_gap",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate realizes both labels, so VC dimension is at least one. No pair of coordinates realizes all four binary traces: the three two-coordinate traces have size at most three. Hence the VC dimension is one. See sync/verify_projected_positive_noclashing_gap.py."
+}

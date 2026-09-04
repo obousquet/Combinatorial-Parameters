@@ -1,0 +1,14 @@
+{
+  "id": 467,
+  "name": "Projected Positive Recursive Teaching Dimension / VC Dimension",
+  "short_name": "projected_positive_recursive_teaching_dimension_vc_dimension",
+  "parameter_1_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger",
+  "details": "A shattered set projects to a full cube, whose positive recursive teaching dimension equals its dimension.",
+  "witness": "#classes/projected_positive_noclashing_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\mathrm{pNC+}}=\\{001,010,111\\}$, VC dimension is one whereas projected positive recursive teaching dimension is two; sync/verify_projected_positive_noclashing_gap.py verifies both values.",
+  "status": "established",
+  "proof": "Let S be shattered with |S|=d. Then $\\mathcal H_{|S}$ is the full d-cube and has $\\mathrm{RTD}^{+}=d$. Thus $\\mathrm{RTD}^{+p}(\\mathcal H)\\ge d$; maximize over shattered S."
+}
