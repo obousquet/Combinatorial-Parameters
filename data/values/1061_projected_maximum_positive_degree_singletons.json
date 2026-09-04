@@ -1,0 +1,11 @@
+{
+  "id": 1061,
+  "name": "Projected Maximum Positive Degree of Singletons",
+  "short_name": "projected_maximum_positive_degree_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_maximum_positive_degree",
+  "value": "$1$ for $n\\ge2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate trace of the n-singleton class consists of distinct singleton concepts, possibly together with the empty concept. Each singleton has at most one smaller one-coordinate neighbour, namely the empty trace. On any two-coordinate trace that empty trace and two singleton traces occur, so the maximum positive degree is exactly one."
+}

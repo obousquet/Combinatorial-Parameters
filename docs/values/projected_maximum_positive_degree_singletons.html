@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-111" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1061" style="position:relative;">
         
-        <h3><a href="parameters/projected_maximum_positive_degree.html" class="table-title-link">Projected Maximum Positive Degree</a></h3>
+        <h3><a href="values/projected_maximum_positive_degree_singletons.html" class="table-title-link">Projected Maximum Positive Degree of Singletons</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Maximum Positive Degree</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{d}^{+p}_{\max}">
-            \[\mathrm{d}^{+p}_{\max}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Projected Maximum Positive Degree</strong> is $$\mathrm{d}^{+p}_{\max}(\mathcal H)\bydef\max_{S\subseteq\mathcal X}\mathrm{d}^{+}_{\max}(\mathcal H_{|S}),$$ the largest maximum positive degree among coordinate projections.</p></div>
-<strong>Description:</strong><div class="text-field"><p>The projection-monotonic closure of maximum positive degree.</p></div>
+        <p><strong>Name: </strong>Projected Maximum Positive Degree of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_maximum_positive_degree.html">Projected Maximum Positive Degree</a></p>
+<p><strong>Value: </strong>$1$ for $n\ge2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-<strong>Origin References:</strong><div class="text-field"><p>Database-defined projection closure of the oriented one-inclusion-graph parameter.</p></div>
-<p><strong>Category:</strong> Graph-based</p>
-<p><strong>Symmetric:</strong> No</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/projected_maximum_positive_degree_projected_positive_noclashing_gap.html'>$\mathrm{d}^{+p}_{\max}(\mathcal C_{\mathrm{pNC+}}) = 2\;(\Omega(1))$</a></li><li><a href='values/projected_maximum_positive_degree_singletons.html'>$\mathrm{d}^{+p}_{\max}(\{\{i\}\}_{1\le i\le n}) = 1$ for $n\ge2\;(\Omega(1))$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/projected_maximum_positive_degree_maximum_positive_degree.html" class="relationship-statement">$\mathrm{d}^{+p}_{\max} \ge \mathrm{d}^+_{\max}$</a></li><li><a href="relationships/projected_positive_noclashing_teaching_dimension_projected_maximum_positive_degree.html" class="relationship-statement">$\mathrm{NCTD}^{+p} \ge \mathrm{d}^{+p}_{\max}$</a></li><li><a href="relationships/projected_maximal_degree_projected_maximum_positive_degree.html" class="relationship-statement">$\mathrm{d}^p_{\max} \ge \mathrm{d}^{+p}_{\max}$</a></li><li><a href="relationships/effective_range_projected_maximum_positive_degree.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{d}^{+p}_{\max}$</a></li><li><a href="relationships/projected_maximum_positive_degree_vc_dimension.html" class="relationship-statement">$\mathrm{d}^{+p}_{\max} \ge \mathrm{VC}$</a></li></ul></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate trace of the n-singleton class consists of distinct singleton concepts, possibly together with the empty concept. Each singleton has at most one smaller one-coordinate neighbour, namely the empty trace. On any two-coordinate trace that empty trace and two singleton traces occur, so the maximum positive degree is exactly one.</p></div>
+
 
         </div>
     </div>
