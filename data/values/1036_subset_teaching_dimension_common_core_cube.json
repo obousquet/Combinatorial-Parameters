@@ -1,0 +1,11 @@
+{
+  "id": 1036,
+  "name": "Subset Teaching Dimension of Common-Core Cube",
+  "short_name": "subset_teaching_dimension_common_core_cube",
+  "class_id": "#classes/common_core_cube",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Deleting the constant common coordinate identifies this class with the full $n$-cube and preserves all minimum teaching samples on the varying coordinates, hence preserves the subset-teaching recursion. The established full-cube calculation therefore gives $\\mathrm{STD}=n$."
+}

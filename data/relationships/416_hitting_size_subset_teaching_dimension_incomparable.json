@@ -1,0 +1,14 @@
+{
+  "id": 416,
+  "name": "Hitting Size / Subset Teaching Dimension (Incomparable)",
+  "short_name": "hitting_size_subset_teaching_dimension_incomparable",
+  "parameter_1_id": "#parameters/hitting_size",
+  "parameter_2_id": "#parameters/subset_teaching_dimension",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For singletons $\\mathcal S_n$, $\\mathrm{HT}=n$ while $\\mathrm{STD}=1$.",
+  "parameter_2_larger_witness": "For the common-core cube $\\mathcal Q^{\\cap}_n$, $\\mathrm{STD}=n$ while $\\mathrm{HT}=1$.",
+  "proof": "The singleton and common-core-cube calculations give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs; see also \\cite{zilles2011models}."
+}
