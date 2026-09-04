@@ -1,0 +1,13 @@
+{
+  "id": 489,
+  "name": "VC Dimension / Antichain Number",
+  "short_name": "vc_dimension_antichain_number",
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/antichain_number",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, the antichain number is at most VC dimension.",
+  "proof": "Theorem 33 of Simon--Telle records the theorem of Mansouri--Simon--Singla--Zilles that every finite concept class admits an antichain teacher mapping whose sample sizes are at most its VC dimension.",
+  "proof_source": "Theorem 33 of Simon--Telle, MAP-and MLE-Based Teaching.",
+  "references": "\\cite{simon2023map,mansouri2022batch}"
+}

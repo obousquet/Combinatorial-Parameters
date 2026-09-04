@@ -1,0 +1,18 @@
+{
+  "id": 112,
+  "name": "Antichain Number",
+  "short_name": "antichain_number",
+  "symbol": "\\mathrm{AN}",
+  "category": "teaching",
+  "symmetric": true,
+  "definition": "An **antichain teacher mapping** for a finite binary class $\\mathcal H$ assigns every $h\\in\\mathcal H$ a labeled sample $T(h)$ consistent with $h$, such that for distinct $h,g\\in\\mathcal H$ neither $T(h)\\subseteq T(g)$ nor $T(g)\\subseteq T(h)$. The **antichain number** $\\mathrm{AN}(\\mathcal H)$ is the minimum, over such mappings, of $\\max_{h\\in\\mathcal H}|T(h)|$.",
+  "graph_summary": "Smallest maximum sample size in a consistent teaching map whose assigned samples are inclusion-incomparable.",
+  "description": "A batch-teaching parameter based on antichain mappings of labeled samples.",
+  "origin_references": "The antichain number is defined and studied in \\cite{simon2023map}; its VC upper bound is attributed there to \\cite{mansouri2022batch}.",
+  "monotonicity_evidence": {
+    "symmetric": {
+      "proof": "Complementing every concept and every label in an assigned sample preserves sample consistency, sample cardinality, and inclusion between samples, hence preserves antichain teacher mappings.",
+      "kind": "direct_argument"
+    }
+  }
+}
