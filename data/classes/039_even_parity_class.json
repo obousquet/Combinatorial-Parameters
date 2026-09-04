@@ -1,0 +1,9 @@
+{
+  "id": 39,
+  "name": "Even-Parity Class",
+  "short_name": "even_parity_class",
+  "graph_label": "EvenParity",
+  "symbol": "\\mathcal E_n",
+  "definition": "The **even-parity class** is $\\mathcal E_n=\\{A\\subseteq[n]:|A|\\text{ is even}\\}$, viewed as a binary concept class on the domain $[n]$.",
+  "comments": "Every two distinct concepts at Hamming distance one have opposite parity, so the $1$-inclusion graph of $\\mathcal E_n$ is edgeless."
+}

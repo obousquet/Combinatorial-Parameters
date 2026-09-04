@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -33,11 +33,19 @@
     </script>
     
         
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
     </head>
     <body>
         <header>
-            <h1>Combinatorial Parameters</h1>
-            <p>Measuring the Size of Families of Sets</p>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
@@ -55,36 +63,25 @@
             </nav>
         </header>
         <main class="table-container">
-            
-    <div class="intro">
-        <p>A database of combinatorial parameters of finite binary concept classes.</p>
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-39" style="position:relative;">
+        
+        <h3><a href="classes/even_parity_class.html" class="table-title-link">Even-Parity Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Even-Parity Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal E_n">
+            \[\mathcal E_n\]
+        </div>
     </div>
-    <div class="tables-grid">
-        
-        <div class="table-card">
-            <h3><a href="classes/index.html">Classes</a></h3>
-            <p>Set families (possibly parameterized)</p>
-            <p class="record-count">39 records</p>
+    
+<strong>Definition:</strong><div class="text-field"><p>The <strong>even-parity class</strong> is $\mathcal E_n=\{A\subseteq[n]:|A|\text{ is even}\}$, viewed as a binary concept class on the domain $[n]$.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every two distinct concepts at Hamming distance one have opposite parity, so the $1$-inclusion graph of $\mathcal E_n$ is edgeless.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/log_size_ratio_even_parity_class.html'>Log Size Ratio of Even-Parity Class</a></li><li><a href='values/minimum_degree_even_parity_class.html'>Minimum Degree of Even-Parity Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
+
         </div>
-        
-        <div class="table-card">
-            <h3><a href="parameters/index.html">Parameters</a></h3>
-            <p>Parameters measuring the size of set families</p>
-            <p class="record-count">102 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="relationships/index.html">Relationships</a></h3>
-            <p>Relationships between parameters</p>
-            <p class="record-count">410 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="values/index.html">Values</a></h3>
-            <p>Values assigned to parameters for specific classes</p>
-            <p class="record-count">971 records</p>
-        </div>
-        
     </div>
     
         </main>
@@ -92,6 +89,23 @@
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
         
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
     </body>
     </html>
     

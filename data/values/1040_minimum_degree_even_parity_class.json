@@ -1,0 +1,10 @@
+{
+  "id": 1040,
+  "name": "Minimum Degree of Even-Parity Class",
+  "short_name": "minimum_degree_even_parity_class",
+  "class_id": "#classes/even_parity_class",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$0$",
+  "status": "established",
+  "proof": "Flipping one coordinate changes parity. Hence no two even subsets differ in exactly one coordinate, so the $1$-inclusion graph is edgeless and has minimum degree zero."
+}
