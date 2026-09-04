@@ -1,0 +1,11 @@
+{
+  "id": 1057,
+  "name": "Projected Positive Recursive Teaching Dimension of Singletons",
+  "short_name": "projected_positive_recursive_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every nonempty coordinate projection is a class of distinct singleton concepts, possibly together with the empty concept. Remove its singleton concepts using their unique positive coordinates, then remove the empty concept. Thus every projection has positive recursive teaching dimension at most one, and the identity projection is non-singleton."
+}

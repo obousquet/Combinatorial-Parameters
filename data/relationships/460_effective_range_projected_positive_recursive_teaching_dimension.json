@@ -1,0 +1,11 @@
+{
+  "id": 460,
+  "name": "Effective Range / Projected Positive Recursive Teaching Dimension",
+  "short_name": "effective_range_projected_positive_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Every coordinate trace has effective range at most that of the original class.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm{RTD}^{+}(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H)$. Maximize the left-hand side over S."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 459,
+  "name": "Star Number / Projected Positive Recursive Teaching Dimension",
+  "short_name": "star_number_projected_positive_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/star_number",
+  "parameter_2_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Star number bounds positive recursive teaching dimension on every trace and is projection-monotonic.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the n-singleton class, star number is n-1, whereas every coordinate projection is again a singleton class (possibly with the empty concept) and has positive recursive teaching dimension at most one.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm S(\\mathcal H)\\geq\\mathrm S(\\mathcal H_{|S})\\geq\\mathrm{RTD}^{+}(\\mathcal H_{|S})$. Maximize the right-hand side over S."
+}

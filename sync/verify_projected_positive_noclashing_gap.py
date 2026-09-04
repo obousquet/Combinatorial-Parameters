@@ -82,14 +82,56 @@ def nctd(concepts):
     raise AssertionError("all labelled coordinates teach every finite class")
 
 
+def positive_rtd(concepts):
+    """Return positive recursive teaching dimension by exhaustive recurrence."""
+    width = len(concepts[0])
+
+    def positive_teaching_size(target, family):
+        for size in range(width + 1):
+            for subset in combinations(
+                [index for index, label in enumerate(target) if label == "1"], size
+            ):
+                if all(
+                    any(target[index] != other[index] for index in subset)
+                    for other in family
+                    if other != target
+                ):
+                    return size
+        return None
+
+    cache = {}
+
+    def solve(family):
+        family = tuple(sorted(family))
+        if len(family) < 2:
+            return 0
+        if family not in cache:
+            candidates = [
+                max(
+                    size,
+                    solve(tuple(other for other in family if other != target)),
+                )
+                for target in family
+                if (size := positive_teaching_size(target, family)) is not None
+            ]
+            if not candidates:
+                raise AssertionError("a finite family has an inclusion-maximal target")
+            cache[family] = min(candidates)
+        return cache[family]
+
+    return solve(concepts)
+
+
 def trace(concepts, subset):
     return tuple(sorted({"".join(concept[i] for i in subset) for concept in concepts}))
 
 
 def main():
     assert nctd_positive(CLASS) == 1
+    assert positive_rtd(CLASS) == 1
     assert trace(CLASS, (1, 2)) == ("01", "10", "11")
     assert nctd_positive(trace(CLASS, (1, 2))) == 2
+    assert positive_rtd(trace(CLASS, (1, 2))) == 2
     assert max(
         nctd(trace(CLASS, subset))
         for size in range(4)
@@ -100,9 +142,14 @@ def main():
         for size in range(4)
         for subset in combinations(range(3), size)
     ) == 2
+    assert max(
+        positive_rtd(trace(CLASS, subset))
+        for size in range(4)
+        for subset in combinations(range(3), size)
+    ) == 2
     print(
-        "C_pNC+: positive NCTD = 1; projected ordinary NCTD = 1; "
-        "projected positive NCTD = 2"
+        "C_pNC+: positive NCTD = positive RTD = projected ordinary NCTD = 1; "
+        "projected positive NCTD = projected positive RTD = 2"
     )
 
 

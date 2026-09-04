@@ -1,0 +1,14 @@
+{
+  "id": 456,
+  "name": "Projected Positive Recursive Teaching Dimension / Positive Recursive Teaching Dimension",
+  "short_name": "projected_positive_recursive_teaching_dimension_positive_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/positive_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "The defining maximum includes the identity projection.",
+  "witness": "#classes/projected_positive_noclashing_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\mathrm{pNC+}}=\\{001,010,111\\}$, $\\mathrm{RTD}^{+}=1$ while $\\mathrm{RTD}^{+p}=2$; sync/verify_projected_positive_noclashing_gap.py checks every projection.",
+  "status": "established",
+  "proof": "Take S=X in the definition of $\\mathrm{RTD}^{+p}$."
+}

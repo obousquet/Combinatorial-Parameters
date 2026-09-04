@@ -1,0 +1,11 @@
+{
+  "id": 457,
+  "name": "Projected Positive Recursive Teaching Dimension / Projected Positive No-Clashing Teaching Dimension",
+  "short_name": "projected_positive_recursive_teaching_dimension_projected_positive_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/projected_positive_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "The positive recursive teaching bound applies separately to every coordinate trace.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm{RTD}^{+}(\\mathcal H_{|S})\\geq\\mathrm{NCTD}^{+}(\\mathcal H_{|S})$. Maximize both sides over S."
+}

@@ -6357,6 +6357,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-459" style="position:relative;">
+        
+        <h3><a href="relationships/star_number_projected_positive_recursive_teaching_dimension.html" class="table-title-link">Star Number / Projected Positive Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Star Number / Projected Positive Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Star number bounds positive recursive teaching dimension on every trace and is projection-monotonic.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the n-singleton class, star number is n-1, whereas every coordinate projection is again a singleton class (possibly with the empty concept) and has positive recursive teaching dimension at most one.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm S(\mathcal H)\geq\mathrm S(\mathcal H_{|S})\geq\mathrm{RTD}^{+}(\mathcal H_{|S})$. Maximize the right-hand side over S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-262" style="position:relative;">
         
         <h3><a href="relationships/littlestone_dimension_threshold_dimension_log.html" class="table-title-link">Littlestone Dimension / Threshold Dimension (logarithmic)</a></h3>
@@ -6981,6 +7007,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-456" style="position:relative;">
+        
+        <h3><a href="relationships/projected_positive_recursive_teaching_dimension_positive_recursive_teaching_dimension.html" class="table-title-link">Projected Positive Recursive Teaching Dimension / Positive Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive Recursive Teaching Dimension / Positive Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The defining maximum includes the identity projection.</p></div>
+<p><strong>Witness: </strong><a href="classes/projected_positive_noclashing_gap.html">Projected Positive No-Clashing Teaching Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal C_{\mathrm{pNC+}}=\{001,010,111\}$, $\mathrm{RTD}^{+}=1$ while $\mathrm{RTD}^{+p}=2$; sync/verify_projected_positive_noclashing_gap.py checks every projection.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Take S=X in the definition of $\mathrm{RTD}^{+p}$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-289" style="position:relative;">
         
         <h3><a href="relationships/log_size_randomized_littlestone_dimension.html" class="table-title-link">Log Size / Randomized Littlestone Dimension</a></h3>
@@ -7237,6 +7289,32 @@
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-457" style="position:relative;">
+        
+        <h3><a href="relationships/projected_positive_recursive_teaching_dimension_projected_positive_noclashing_teaching_dimension.html" class="table-title-link">Projected Positive Recursive Teaching Dimension / Projected Positive No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive Recursive Teaching Dimension / Projected Positive No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_positive_noclashing_teaching_dimension.html">Projected Positive No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The positive recursive teaching bound applies separately to every coordinate trace.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm{RTD}^{+}(\mathcal H_{|S})\geq\mathrm{NCTD}^{+}(\mathcal H_{|S})$. Maximize both sides over S.</p></div>
+
+
+
 
         </div>
     </div>
@@ -8846,6 +8924,58 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Apply $\mathrm{NCTD}^{+}(\mathcal H_{|S})\leq\mathrm E(\mathcal H_{|S})\leq\mathrm E(\mathcal H)$ to every S and maximize.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-458" style="position:relative;">
+        
+        <h3><a href="relationships/projected_positive_recursive_teaching_dimension_projected_recursive_teaching_dimension.html" class="table-title-link">Projected Positive Recursive Teaching Dimension / Projected Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive Recursive Teaching Dimension / Projected Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Positivity is a restriction of recursive teaching on every coordinate trace.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm{RTD}^{+}(\mathcal H_{|S})\geq\mathrm{RTD}(\mathcal H_{|S})$. Maximize both sides over S.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-460" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_projected_positive_recursive_teaching_dimension.html" class="table-title-link">Effective Range / Projected Positive Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Projected Positive Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every coordinate trace has effective range at most that of the original class.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For every S, $\mathrm{RTD}^{+}(\mathcal H_{|S})\leq\mathrm E(\mathcal H_{|S})\leq\mathrm E(\mathcal H)$. Maximize the left-hand side over S.</p></div>
 
 
 

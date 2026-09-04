@@ -1,0 +1,11 @@
+{
+  "id": 458,
+  "name": "Projected Positive Recursive Teaching Dimension / Projected Recursive Teaching Dimension",
+  "short_name": "projected_positive_recursive_teaching_dimension_projected_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Positivity is a restriction of recursive teaching on every coordinate trace.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm{RTD}^{+}(\\mathcal H_{|S})\\geq\\mathrm{RTD}(\\mathcal H_{|S})$. Maximize both sides over S."
+}
