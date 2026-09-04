@@ -1,0 +1,11 @@
+{
+  "id": 1033,
+  "name": "Effective VC Radius of Common-Core Cube",
+  "short_name": "effective_vc_radius_common_core_cube",
+  "class_id": "#classes/common_core_cube",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The common coordinate is constant and hence absent from the effective range; the $n$ private coordinates form the effective range. Every labeling of them occurs by varying $A\\subseteq[n]$, so the entire effective range is shattered. Thus the effective VC radius is $n$."
+}

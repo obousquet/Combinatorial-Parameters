@@ -1,0 +1,14 @@
+{
+  "id": 413,
+  "name": "Hitting Size / Effective VC Radius (Incomparable)",
+  "short_name": "hitting_size_effective_vc_radius_incomparable",
+  "parameter_1_id": "#parameters/hitting_size",
+  "parameter_2_id": "#parameters/effective_vc_radius",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For singletons $\\mathcal S_n$, $\\mathrm{HT}=n$ while $\\mathrm{VCR}=1$.",
+  "parameter_2_larger_witness": "For the common-core cube $\\mathcal Q^{\\cap}_n$, $\\mathrm{VCR}=n$ while $\\mathrm{HT}=1$.",
+  "proof": "The singleton and common-core-cube calculations give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs."
+}
