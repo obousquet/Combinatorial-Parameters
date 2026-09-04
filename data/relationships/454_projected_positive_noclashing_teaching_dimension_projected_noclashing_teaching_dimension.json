@@ -6,6 +6,9 @@
   "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
   "relationship_type": "larger",
   "details": "Positive no-clashing teachers are a restriction of no-clashing teachers on every coordinate trace.",
+  "witness": "#classes/projected_positive_noclashing_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\mathrm{pNC+}}=\\{001,010,111\\}$, $\\mathrm{NCTD}^{p}=1$ while $\\mathrm{NCTD}^{+p}=2$; sync/verify_projected_positive_noclashing_gap.py exhaustively checks every coordinate trace.",
   "status": "established",
   "proof": "For every S, $\\mathrm{NCTD}^{+}(\\mathcal H_{|S})\\geq\\mathrm{NCTD}(\\mathcal H_{|S})$. Maximize both sides over S."
 }

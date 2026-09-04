@@ -1,0 +1,11 @@
+{
+  "id": 1054,
+  "name": "Projected No-Clashing Teaching Dimension of the Projected Positive No-Clashing Teaching Separation Class",
+  "short_name": "projected_noclashing_teaching_dimension_projected_positive_noclashing_gap",
+  "class_id": "#classes/projected_positive_noclashing_gap",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate projection has ordinary no-clashing teaching dimension at most one; exhaustive enumeration of all traces verifies this, while the identity trace is non-singleton. See sync/verify_projected_positive_noclashing_gap.py."
+}
