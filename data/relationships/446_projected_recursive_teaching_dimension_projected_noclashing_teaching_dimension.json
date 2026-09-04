@@ -1,0 +1,17 @@
+{
+  "id": 446,
+  "name": "Projected Recursive Teaching Dimension / Projected No-Clashing Teaching Dimension",
+  "short_name": "projected_recursive_teaching_dimension_projected_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/monotone_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, $\\mathrm{RTD}^{p}(\\mathcal H)\\geq\\mathrm{NCTD}^{p}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "On every coordinate projection, recursive teaching dimension dominates no-clashing teaching dimension. Maximizing both sides over projections proves the claim.",
+  "latex_proof_label": "cor:projected-rtd-low-projected-nctd",
+  "proof_source": "Corollary cor:projected-rtd-low-projected-nctd in the LaTeX survey.",
+  "references": "\\cite{zilles2011models,KSZ2019}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "On the full $n$-cube, $\\mathrm{RTD}^{p}=n$ whereas $\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil$, so the gap is unbounded."
+}
