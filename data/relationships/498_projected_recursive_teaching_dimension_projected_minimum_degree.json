@@ -1,0 +1,16 @@
+{
+  "id": 498,
+  "name": "Projected Recursive Teaching Dimension / Projected Minimum Degree",
+  "short_name": "projected_recursive_teaching_dimension_projected_minimum_degree",
+  "parameter_1_id": "#parameters/monotone_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/projected_minimum_degree",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, projected recursive teaching dimension dominates projected minimum degree.",
+  "proof": "Apply the recursive-teaching/degeneracy inequality to each coordinate projection $\\mathcal H_{|T}$. Its degeneracy is at least its minimum degree, so $\\mathrm{RTD}(\\mathcal H_{|T})\\ge\\mathrm d_{\\min}(\\mathcal H_{|T})$. Maximizing over $T$ gives $\\mathrm{RTD}^{p}(\\mathcal H)\\ge\\mathrm d_{\\min}^{p}(\\mathcal H)$.",
+  "latex_proof_label": "cor:projected-rtd-projected-min-degree",
+  "proof_source": "Corollary \\ref{cor:projected-rtd-projected-min-degree} in the survey, applying Corollary \\ref{cor:rtd-degeneracy} to every coordinate projection.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
+  "witness_verification": "For Warmuth's $C_5$ class, the established values are $\\mathrm{RTD}^p=3$ and $\\mathrm d^p_{\\min}=2$."
+}
