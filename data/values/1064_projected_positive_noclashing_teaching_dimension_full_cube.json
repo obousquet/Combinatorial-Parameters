@@ -1,0 +1,12 @@
+{
+  "id": 1064,
+  "name": "Projected Positive No-Clashing Teaching Dimension of Full Cube",
+  "short_name": "projected_positive_noclashing_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_positive_noclashing_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every coordinate projection of the full n-cube is a full m-cube for some $m\\le n$. Theorem 19 gives positive no-clashing teaching dimension $m$ on that trace, and the full projection attains $m=n$.",
+  "references": "\\cite{KSZ2019}"
+}

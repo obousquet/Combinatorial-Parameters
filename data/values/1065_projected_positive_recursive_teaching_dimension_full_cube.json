@@ -1,0 +1,12 @@
+{
+  "id": 1065,
+  "name": "Projected Positive Recursive Teaching Dimension of Full Cube",
+  "short_name": "projected_positive_recursive_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every coordinate projection of the full n-cube is a full m-cube for some $m\\le n$. Positive recursive teaching dimension is $m$ on that trace, and the full projection attains $m=n$.",
+  "references": "\\cite{fallat2023batch}"
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-110" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-471" style="position:relative;">
         
-        <h3><a href="parameters/projected_positive_recursive_teaching_dimension.html" class="table-title-link">Projected Positive Recursive Teaching Dimension</a></h3>
+        <h3><a href="relationships/projected_noclashing_teaching_dimension_radon_number_incomparable.html" class="table-title-link">Projected No-Clashing Teaching Dimension / Radon Number (Incomparable)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Positive Recursive Teaching Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{RTD}^{+p}">
-            \[\mathrm{RTD}^{+p}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Projected Positive Recursive Teaching Dimension</strong> is $$\mathrm{RTD}^{+p}(\mathcal H)\bydef\max_{S\subseteq\mathcal X}\mathrm{RTD}^{+}(\mathcal H_{|S}),$$ where $\mathrm{RTD}^{+}$ is positive recursive teaching dimension.</p></div>
-<strong>Description:</strong><div class="text-field"><p>The projection-monotonic closure of positive recursive teaching dimension.</p></div>
+        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension / Radon Number (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/radon_number.html">Radon Number</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
 
-<strong>Origin References:</strong><div class="text-field"><p>Database-defined projection closure of positive recursive teaching dimension, which is studied in <a href="bibliography.html#fallat2023batch">[fallat2023batch]</a>.</p></div>
-<p><strong>Category:</strong> Teaching and Hitting</p>
-<p><strong>Symmetric:</strong> No</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/projected_positive_recursive_teaching_dimension_projected_positive_noclashing_gap.html'>$\mathrm{RTD}^{+p}(\mathcal C_{\mathrm{pNC+}}) = 2\;(\Omega(1))$</a></li><li><a href='values/projected_positive_recursive_teaching_dimension_singletons.html'>$\mathrm{RTD}^{+p}(\{\{i\}\}_{1\le i\le n}) = 1\;(\Omega(1))$</a></li><li><a href='values/projected_positive_recursive_teaching_dimension_full_cube.html'>$\mathrm{RTD}^{+p}(\{S:S\subset [n]\}) = n\;(\Omega(n))$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/star_number_projected_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{S} \ge \mathrm{RTD}^{+p}$</a></li><li><a href="relationships/projected_positive_recursive_teaching_dimension_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^{+p} \ge \mathrm{RTD}^+$</a></li><li><a href="relationships/projected_positive_recursive_teaching_dimension_projected_positive_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^{+p} \ge \mathrm{NCTD}^{+p}$</a></li><li><a href="relationships/projected_positive_recursive_teaching_dimension_projected_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^{+p} \ge \mathrm{RTD}^p$</a></li><li><a href="relationships/effective_range_projected_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{RTD}^{+p}$</a></li><li><a href="relationships/projected_positive_recursive_teaching_dimension_vc_dimension.html" class="relationship-statement">$\mathrm{RTD}^{+p} \ge \mathrm{VC}$</a></li></ul><p><strong>Incomparabilities:</strong></p><ul class="fields-list"><li><a href="relationships/projected_positive_recursive_teaching_dimension_radon_number_incomparable.html" class="relationship-statement">$\mathrm{RTD}^{+p}\mathrel{\parallel}\mathrm{Rad}\;\text{(incomparable)}$</a></li></ul></div>
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the full cube $2^{[n]}$, $\mathrm{NCTD}^{p}=\lceil n/2\rceil$, whereas $\mathrm{Rad}=\lfloor\log_2(2n+2)\rfloor=\Theta(\log n)$.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the singleton class $\mathcal S_n$, $\mathrm{Rad}=n$, whereas $\mathrm{NCTD}^{p}=1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The established full-cube and singleton values yield unbounded gaps in both directions.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a> <a href="bibliography.html#chase2024dual">[chase2024dual]</a>; database-owned value proofs.</p></div>
 
         </div>
     </div>

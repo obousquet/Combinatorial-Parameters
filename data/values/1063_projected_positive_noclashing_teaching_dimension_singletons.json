@@ -1,0 +1,13 @@
+{
+  "id": 1063,
+  "name": "Projected Positive No-Clashing Teaching Dimension of Singletons",
+  "short_name": "projected_positive_noclashing_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Every coordinate projection is a singleton class on the retained coordinates, possibly together with the empty concept. Assign each singleton its unique positive example and the empty concept the empty sample. The map is positive and no-clashing with width one, while the identity projection is non-singleton.",
+  "references": "Direct calculation; compare \\cite{KSZ2019}."
+}

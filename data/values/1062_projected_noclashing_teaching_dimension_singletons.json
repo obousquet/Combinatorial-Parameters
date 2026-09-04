@@ -1,0 +1,13 @@
+{
+  "id": 1062,
+  "name": "Projected No-Clashing Teaching Dimension of Singletons",
+  "short_name": "projected_noclashing_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\ge2$.",
+  "status": "established",
+  "proof": "Every coordinate projection of the singleton class is a singleton class on the retained coordinates, possibly together with the empty concept after duplicate traces are identified. Map each remaining singleton to its unique positive example and the empty concept to the empty sample. This is no-clashing and has width one; the identity projection gives the matching lower bound.",
+  "references": "Direct calculation; compare \\cite{KSZ2019} for no-clashing teaching on finite classes."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 472,
+  "name": "Positive No-Clashing Teaching Dimension / Radon Number (Incomparable)",
+  "short_name": "positive_noclashing_teaching_dimension_radon_number_incomparable",
+  "parameter_1_id": "#parameters/positive_noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm{NCTD}^{+}=n$, whereas $\\mathrm{Rad}=\\lfloor\\log_2(2n+2)\\rfloor=\\Theta(\\log n)$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\mathrm{Rad}=n$, whereas $\\mathrm{NCTD}^{+}=1$.",
+  "proof": "The established full-cube and singleton values yield unbounded gaps in both directions.",
+  "references": "\\cite{KSZ2019,chase2024dual}; database-owned value proofs."
+}
