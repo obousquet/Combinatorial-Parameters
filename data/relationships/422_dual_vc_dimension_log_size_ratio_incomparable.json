@@ -1,0 +1,14 @@
+{
+  "id": 422,
+  "name": "Dual VC Dimension / Log Size Ratio (Incomparable)",
+  "short_name": "dual_vc_dimension_log_size_ratio_incomparable",
+  "parameter_1_id": "#parameters/dual_vc_dimension",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the universal class $\\mathcal U_n$, $\\mathrm{VC}^*=n$, while the log size ratio is $\\log(n-1)/\\log(2^n+1)=o(1)$.",
+  "parameter_2_larger_witness": "For the full cube $2^{[n]}$, the log size ratio is $\\log(2^n-1)/\\log(n+1)=\\Theta(n/\\log n)$, while $\\mathrm{VC}^*=\\lfloor\\log_2n\\rfloor$.",
+  "proof": "The universal-class and full-cube value calculations give gaps whose ratios diverge in the two opposite directions.",
+  "references": "Database-owned value proofs; the dual-VC values also follow from \\cite{chornomaz2025spherical}."
+}
