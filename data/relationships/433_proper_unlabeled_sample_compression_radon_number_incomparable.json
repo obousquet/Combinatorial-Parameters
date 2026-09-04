@@ -1,0 +1,14 @@
+{
+  "id": 433,
+  "name": "Proper Unlabeled Sample Compression / Radon Number (Incomparable)",
+  "short_name": "proper_unlabeled_sample_compression_radon_number_incomparable",
+  "parameter_1_id": "#parameters/proper_unlabeled_sample_compression",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm{pUSC}=n$, while $\\mathrm{Rad}=\\lfloor\\log_2(2n+2)\\rfloor=\\Theta(\\log n)$.",
+  "parameter_2_larger_witness": "For the singleton class on $[n]$, $\\mathrm{Rad}=n$, while $\\mathrm{pUSC}=1$.",
+  "proof": "The full-cube and singleton value calculations yield unbounded gaps in the two opposite directions.",
+  "references": "\\cite{chalopin2022unlabeled,palvolgyi2021unlabeled,chase2024dual}; database-owned value proofs."
+}
