@@ -1,0 +1,15 @@
+{
+  "id": 452,
+  "name": "Positive No-Clashing Teaching Dimension / Log Size Ratio (affine)",
+  "short_name": "positive_noclashing_teaching_dimension_log_size_ratio_affine",
+  "parameter_1_id": "#parameters/positive_noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "details": "Every finite nontrivial binary class satisfies $\\mathrm{NCTD}^{+}(\\mathcal H)\\geq\\tfrac12\\,\\log(|\\mathcal H|-1)/\\log(n+1)$, where $n$ is the ambient domain size.",
+  "status": "established",
+  "proof": "Every positive no-clashing teacher is in particular a no-clashing teacher. Thus $\\mathrm{NCTD}^{+}(\\mathcal H)\\geq\\mathrm{NCTD}(\\mathcal H)$, and the no-clashing counting argument gives the stated log-size-ratio lower bound directly.",
+  "latex_proof_label": "cor:positive-nctd-low-log-size-ratio",
+  "proof_source": "Corollary cor:positive-nctd-low-log-size-ratio in the LaTeX survey.",
+  "references": "\\cite{KSZ2019}"
+}
