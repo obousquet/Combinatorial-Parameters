@@ -1,0 +1,13 @@
+{
+  "id": 493,
+  "name": "Randomized Littlestone Dimension / VC Dimension",
+  "short_name": "randomized_littlestone_dimension_vc_dimension",
+  "parameter_1_id": "#parameters/randomized_littlestone_dimension",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "details": "For every finite binary class, $\\mathrm{RL}(\\mathcal H)\\geq\\tfrac12\\mathrm{VC}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "If a d-set is VC-shattered, label every level i of a complete depth-d tree by its ith point. The resulting tree is shattered and every root-to-leaf path has length d. Its uniform-walk average depth is d, so the defining factor one half gives $\\mathrm{RL}(\\mathcal H)\\ge d/2$. Maximize over d.",
+  "references": "\\cite{filmus2023randomized,vapnik1971uniform}"
+}
