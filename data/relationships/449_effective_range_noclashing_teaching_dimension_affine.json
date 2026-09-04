@@ -1,0 +1,19 @@
+{
+  "id": 449,
+  "name": "Effective Range / No-Clashing Teaching Dimension (affine)",
+  "short_name": "effective_range_noclashing_teaching_dimension_affine",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/noclashing_teaching_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "2",
+  "additive_constant": "1",
+  "details": "Every finite binary class satisfies $\\mathrm{E}(\\mathcal H)\\geq2\\,\\mathrm{NCTD}(\\mathcal H)-1$, equivalently $\\mathrm{NCTD}(\\mathcal H)\\leq\\lceil\\mathrm{E}(\\mathcal H)/2\\rceil$.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "For the full cube on $n$ active coordinates, $\\mathrm{E}=n$ and $\\mathrm{NCTD}=\\lceil n/2\\rceil$, so the affine bound is attained for odd $n$ and is off by only one for even $n$.",
+  "status": "established",
+  "proof": "After removing inactive coordinates, view $\\mathcal H$ as a subfamily of the full cube on $\\mathrm E(\\mathcal H)$ coordinates. No-clashing teaching dimension is monotonic under subfamilies, while Theorem 19 of Kirkpatrick--Simon--Zilles gives $\\mathrm{NCTD}(2^{[m]})=\\lceil m/2\\rceil$. Thus $\\mathrm{NCTD}(\\mathcal H)\\leq\\lceil\\mathrm E(\\mathcal H)/2\\rceil$, which is equivalent to the stated affine inequality.",
+  "latex_proof_label": "prop:effective-range-low-nctd",
+  "proof_source": "Proposition prop:effective-range-low-nctd in the LaTeX survey.",
+  "references": "\\cite{KSZ2019}"
+}

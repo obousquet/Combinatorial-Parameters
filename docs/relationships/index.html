@@ -8671,6 +8671,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-449" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_noclashing_teaching_dimension_affine.html" class="table-title-link">Effective Range / No-Clashing Teaching Dimension (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / No-Clashing Teaching Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+<p><strong>Additive Constant: </strong>1</p>
+<p><strong>Multiplicative Constant: </strong>2</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every finite binary class satisfies $\mathrm{E}(\mathcal H)\geq2\,\mathrm{NCTD}(\mathcal H)-1$, equivalently $\mathrm{NCTD}(\mathcal H)\leq\lceil\mathrm{E}(\mathcal H)/2\rceil$.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the full cube on $n$ active coordinates, $\mathrm{E}=n$ and $\mathrm{NCTD}=\lceil n/2\rceil$, so the affine bound is attained for odd $n$ and is off by only one for even $n$.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>After removing inactive coordinates, view $\mathcal H$ as a subfamily of the full cube on $\mathrm E(\mathcal H)$ coordinates. No-clashing teaching dimension is monotonic under subfamilies, while Theorem 19 of Kirkpatrick--Simon--Zilles gives $\mathrm{NCTD}(2^{[m]})=\lceil m/2\rceil$. Thus $\mathrm{NCTD}(\mathcal H)\leq\lceil\mathrm E(\mathcal H)/2\rceil$, which is equivalent to the stated affine inequality.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition prop:effective-range-low-nctd in the LaTeX survey.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
