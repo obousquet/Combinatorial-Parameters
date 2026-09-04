@@ -1,0 +1,11 @@
+{
+  "id": 1031,
+  "name": "Hitting Size of Common-Core Cube",
+  "short_name": "hitting_size_common_core_cube",
+  "class_id": "#classes/common_core_cube",
+  "parameter_id": "#parameters/hitting_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every concept contains coordinate $0$, so $\\{0\\}$ is a hitting set. Since the class has nonempty concepts, no empty hitting set exists."
+}

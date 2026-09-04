@@ -1,0 +1,11 @@
+{
+  "id": 1032,
+  "name": "Largest Strongly Shattered Set of Common-Core Cube",
+  "short_name": "largest_strongly_shattered_set_common_core_cube",
+  "class_id": "#classes/common_core_cube",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Varying $A\\subseteq[n]$ realizes every labeling of the $n$ private coordinates while the common coordinate is fixed. Thus the class contains an $n$-cube. No contained cube can have dimension above the $n$ varying coordinates."
+}

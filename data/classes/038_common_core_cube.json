@@ -1,0 +1,8 @@
+{
+  "id": 38,
+  "name": "Common-Core Cube",
+  "short_name": "common_core_cube",
+  "symbol": "\\mathcal Q^{\\cap}_n",
+  "definition": "On $\\{0,1,\\ldots,n\\}$, let $\\mathcal Q^{\\cap}_n=\\{\\{0\\}\\cup A:A\\subseteq[n]\\}$. It is an $n$-cube whose concepts all share coordinate $0$.",
+  "graph_label": "Core cube"
+}

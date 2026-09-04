@@ -1,0 +1,14 @@
+{
+  "id": 412,
+  "name": "Hitting Size / Largest Strongly Shattered Set (Incomparable)",
+  "short_name": "hitting_size_largest_strongly_shattered_set_incomparable",
+  "parameter_1_id": "#parameters/hitting_size",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For singletons $\\mathcal S_n$, $\\mathrm{HT}=n$ while $\\mathrm{ST}=0$.",
+  "parameter_2_larger_witness": "For the common-core cube $\\mathcal Q^{\\cap}_n$, $\\mathrm{ST}=n$ while $\\mathrm{HT}=1$.",
+  "proof": "The singleton and common-core-cube calculations give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs."
+}
