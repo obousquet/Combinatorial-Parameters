@@ -1,0 +1,16 @@
+{
+  "id": 499,
+  "name": "Positive Teaching Dimension / Maximum Positive Degree",
+  "short_name": "positive_teaching_dimension_maximum_positive_degree",
+  "parameter_1_id": "#parameters/positive_teaching_dimension",
+  "parameter_2_id": "#parameters/maximum_positive_degree",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, positive teaching dimension dominates maximum positive degree.",
+  "proof": "If $g$ is a smaller one-inclusion neighbour of $h$, it differs from $h$ at one coordinate $x$ with $h(x)=1$ and $g(x)=0$. Any positive teaching set for $h$ must include $x$, or else it is also consistent with $g$. These required coordinates are distinct for distinct smaller neighbours, so the minimum positive teaching-set size of $h$ is at least its positive degree. Maximize over $h$.",
+  "latex_proof_label": "lem:positive-teaching-positive-degree",
+  "proof_source": "Lemma \\ref{lem:positive-teaching-positive-degree} in the survey.",
+  "witness": "#classes/addressing",
+  "witness_strength": "strict",
+  "witness_verification": "For every nontrivial addressing class, the established values are $\\mathrm{TD}^+=1$ and $\\mathrm d^+_{\\max}=0$."
+}

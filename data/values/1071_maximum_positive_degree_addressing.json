@@ -1,0 +1,13 @@
+{
+  "id": 1071,
+  "name": "Maximum Positive Degree of Addressing",
+  "short_name": "maximum_positive_degree_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/maximum_positive_degree",
+  "value": "$0$",
+  "value_class": "omega_1",
+  "details": "For every nontrivial addressing class ($n\\geq2$).",
+  "status": "established",
+  "proof": "Two distinct addressing concepts disagree at both of their distinct private address coordinates: the concept indexed by $i$ is one at address point $i$ and zero at address point $j$, while the concept indexed by $j$ has the opposite labels. Thus no two concepts differ on exactly one coordinate, the $1$-inclusion graph is edgeless, and its maximum positive degree is zero.",
+  "references": "Directly from the addressing-class definition."
+}

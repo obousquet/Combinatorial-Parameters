@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-45" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-499" style="position:relative;">
         
-        <h3><a href="parameters/positive_teaching_dimension.html" class="table-title-link">Positive Teaching Dimension</a></h3>
+        <h3><a href="relationships/positive_teaching_dimension_maximum_positive_degree.html" class="table-title-link">Positive Teaching Dimension / Maximum Positive Degree</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive Teaching Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{TD}^+">
-            \[\mathrm{TD}^+\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Positive Teaching Dimension</strong> is the largest, over $h\in\mathcal{H}$, minimum size of a teaching set for $h$ that uses only positive examples of $h$.</p></div>
+        <p><strong>Name: </strong>Positive Teaching Dimension / Maximum Positive Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/maximum_positive_degree.html">Maximum Positive Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
-<strong>Origin References:</strong><div class="text-field"><p>Positive-example variants of teaching dimension are studied in <a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a>.</p></div>
-<p><strong>Category:</strong> Teaching and Hitting</p>
-<p><strong>Symmetric:</strong> No</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Unspecified</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Unspecified</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/positive_teaching_dimension_trivial_concepts.html'>$\mathrm{TD}^+(\{\emptyset, [n]\}) = \infty$</a></li><li><a href='values/positive_teaching_dimension_singletons.html'>$\mathrm{TD}^+(\{\{i\}\}_{1\le i\le n}) = 1\;(\Omega(1))$</a></li><li><a href='values/positive_teaching_dimension_full_cube.html'>$\mathrm{TD}^+(\{S:S\subset [n]\}) = \infty$</a></li><li><a href='values/positive_teaching_dimension_singletons_plus_empty_set.html'>$\mathrm{TD}^+(\{\{i\}\}_{1\le i\le n}\cup\{\emptyset\}) = \infty$</a></li><li><a href='values/positive_teaching_dimension_halfintervals.html'>$\mathrm{TD}^+(\{[i]\}_{1\le i\le n}) = \infty$</a></li><li><a href='values/positive_teaching_dimension_tagged_singletons.html'>$\mathrm{TD}^+(\text{Tag}) = \infty$</a></li><li><a href='values/positive_teaching_dimension_majority.html'>$\mathrm{TD}^+(\text{Maj}) = \infty$</a></li><li><a href='values/positive_teaching_dimension_addressing.html'>$\mathrm{TD}^+(\text{Add}) = 1\;(\Omega(1))$</a></li><li><a href='values/positive_teaching_dimension_three_code_class.html'>$\mathrm{TD}^+(\mathcal C_{\triangle}) = \infty$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/positive_teaching_dimension_positive_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{TD}^+ \ge \mathrm{NCTD}^+$</a></li><li><a href="relationships/positive_teaching_dimension_teaching_dimension.html" class="relationship-statement">$\mathrm{TD}^+ \ge \mathrm{TD}$</a></li><li><a href="relationships/positive_teaching_dimension_positive_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{TD}^+ \ge \mathrm{RTD}^+$</a></li><li><a href="relationships/positive_teaching_dimension_maximum_positive_degree.html" class="relationship-statement">$\mathrm{TD}^+ \ge \mathrm{d}^+_{\max}$</a></li></ul><p><strong>Refuted proposed relationships:</strong></p><ul class="fields-list relationship-list-refuted"><li><a href="relationships/effective_range_positive_teaching_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{TD}^+$</a> <span class="relationship-status-badge relationship-status-refuted">Refuted</span></li></ul></div>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class, positive teaching dimension dominates maximum positive degree.</p></div>
+<p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every nontrivial addressing class, the established values are $\mathrm{TD}^+=1$ and $\mathrm d^+_{\max}=0$.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If $g$ is a smaller one-inclusion neighbour of $h$, it differs from $h$ at one coordinate $x$ with $h(x)=1$ and $g(x)=0$. Any positive teaching set for $h$ must include $x$, or else it is also consistent with $g$. These required coordinates are distinct for distinct smaller neighbours, so the minimum positive teaching-set size of $h$ is at least its positive degree. Maximize over $h$.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Lemma \ref{lem:positive-teaching-positive-degree} in the survey.</p></div>
+
+
 
         </div>
     </div>
