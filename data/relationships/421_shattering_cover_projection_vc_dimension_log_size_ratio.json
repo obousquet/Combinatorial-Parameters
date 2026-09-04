@@ -9,5 +9,8 @@
   "details": "For every finite non-singleton binary class.",
   "proof": "If an admissible projection on $m$ coordinates has VC dimension $d$, its shattered-set family is downward closed with all faces of size at most $d$. Hence $|\\mathcal H|\\leq|\\operatorname{sh}(\\mathcal H_{|S})|\\leq\\sum_{i=0}^d\\binom mi\\leq(m+1)^d\\leq(n+1)^d$. Taking logarithms yields $\\mathrm{SCVC}(\\mathcal H)\\geq\\log(|\\mathcal H|-1)/\\log(n+1)$.",
   "latex_proof_label": "prop:scvc-log-size-ratio",
-  "proof_source": "Proposition \\ref{prop:scvc-log-size-ratio} in the survey."
+  "proof_source": "Proposition \\ref{prop:scvc-log-size-ratio} in the survey.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
+  "witness_verification": "For the trivial two-concept class, $\\mathrm{SCVC}=1$ while $\\log(|\\mathcal H|-1)/\\log(n+1)=0$."
 }
