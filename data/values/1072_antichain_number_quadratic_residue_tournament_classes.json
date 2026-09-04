@@ -1,0 +1,13 @@
+{
+  "id": 1072,
+  "name": "Antichain Number of Quadratic-Residue Tournament Classes",
+  "short_name": "antichain_number_quadratic_residue_tournament_classes",
+  "class_id": "#classes/quadratic_residue_tournament_classes",
+  "parameter_id": "#parameters/antichain_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For every prime $p\\equiv3\\pmod4$.",
+  "status": "established",
+  "proof": "For the tournament class $\\mathcal Q_p=\\{C_a:a\\in\\mathbb F_p\\}$, assign $C_a$ its consistent singleton sample at coordinate $a$. For distinct $a,b$, the two singleton samples are distinct, hence incomparable, so this is an antichain teacher mapping of width one. Since $p>1$, width zero would assign the same empty sample to two targets and violate the antichain condition. Thus $\\mathrm{AN}(\\mathcal Q_p)=1$.",
+  "references": "Direct calculation from the tournament-class definition in \\cite{simon2023tournaments}."
+}

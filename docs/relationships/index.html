@@ -9593,13 +9593,39 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every finite binary class, no-clashing teaching dimension dominates the antichain number.</p></div>
-<p><strong>Witness: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the three-code class, the established no-clashing teaching dimension is $1$, while its antichain number is $0$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
 
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Start with a no-clashing teacher map of width $d$. Pad each assigned sample, with examples consistent with its target, until it has size exactly $d$. This preserves no-clashing. Distinct equal-size samples cannot strictly contain one another, and no-clashing excludes equality, so the padded map is an antichain teacher mapping of width $d$. Hence $\mathrm{AN}\le\mathrm{NCTD}$.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition 8 of Mansouri--Simon--Singla--Zilles.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#mansouri2022batch">[mansouri2022batch]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-503" style="position:relative;">
+        
+        <h3><a href="relationships/recursive_teaching_dimension_antichain_number.html" class="table-title-link">Recursive Teaching Dimension / Antichain Number</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursive Teaching Dimension / Antichain Number</p>
+<p><strong>Parameter 1: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/antichain_number.html">Antichain Number</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, recursive teaching dimension dominates the antichain number.</p></div>
+<p><strong>Witness: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For quadratic-residue tournament classes, $\mathrm{AN}=1$ while $\mathrm{RTD}=\Omega(\log p)$ by the established value records, so the gap is unbounded.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $T$ be a recursive teacher map of width $d$. At every recursive layer, pad each target-consistent teaching sample to size exactly $d$; it remains a teaching sample in that layer. Samples assigned to two distinct targets are unequal: the target removed earlier is taught against every target removed later, and two targets removed together are taught against one another. Thus the padded samples form an inclusion-antichain, proving $\mathrm{AN}\le\mathrm{RTD}$.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition 8 of Mansouri--Simon--Singla--Zilles.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#mansouri2022batch">[mansouri2022batch]</a></p></div>

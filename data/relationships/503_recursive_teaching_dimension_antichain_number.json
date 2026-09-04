@@ -1,0 +1,17 @@
+{
+  "id": 503,
+  "name": "Recursive Teaching Dimension / Antichain Number",
+  "short_name": "recursive_teaching_dimension_antichain_number",
+  "parameter_1_id": "#parameters/recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/antichain_number",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary concept class, recursive teaching dimension dominates the antichain number.",
+  "proof": "Let $T$ be a recursive teacher map of width $d$. At every recursive layer, pad each target-consistent teaching sample to size exactly $d$; it remains a teaching sample in that layer. Samples assigned to two distinct targets are unequal: the target removed earlier is taught against every target removed later, and two targets removed together are taught against one another. Thus the padded samples form an inclusion-antichain, proving $\\mathrm{AN}\\le\\mathrm{RTD}$.",
+  "latex_proof_label": "prop:rtd-antichain",
+  "proof_source": "Proposition 8 of Mansouri--Simon--Singla--Zilles.",
+  "references": "\\cite{mansouri2022batch}",
+  "witness": "#classes/quadratic_residue_tournament_classes",
+  "witness_strength": "unbounded",
+  "witness_verification": "For quadratic-residue tournament classes, $\\mathrm{AN}=1$ while $\\mathrm{RTD}=\\Omega(\\log p)$ by the established value records, so the gap is unbounded."
+}

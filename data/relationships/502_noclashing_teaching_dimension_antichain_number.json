@@ -10,8 +10,5 @@
   "proof": "Start with a no-clashing teacher map of width $d$. Pad each assigned sample, with examples consistent with its target, until it has size exactly $d$. This preserves no-clashing. Distinct equal-size samples cannot strictly contain one another, and no-clashing excludes equality, so the padded map is an antichain teacher mapping of width $d$. Hence $\\mathrm{AN}\\le\\mathrm{NCTD}$.",
   "latex_proof_label": "prop:nctd-antichain",
   "proof_source": "Proposition 8 of Mansouri--Simon--Singla--Zilles.",
-  "references": "\\cite{mansouri2022batch}",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict",
-  "witness_verification": "For the three-code class, the established no-clashing teaching dimension is $1$, while its antichain number is $0$."
+  "references": "\\cite{mansouri2022batch}"
 }
