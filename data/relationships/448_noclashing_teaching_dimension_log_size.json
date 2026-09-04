@@ -1,0 +1,15 @@
+{
+  "id": 448,
+  "name": "No-Clashing Teaching Dimension / Log Size",
+  "short_name": "noclashing_teaching_dimension_log_size",
+  "parameter_1_id": "#parameters/noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/log_size",
+  "relationship_type": "inv_log",
+  "multiplicative_constant": "\\tfrac12",
+  "details": "For every finite binary class $\\mathcal H$ with $\\mathrm{E}(\\mathcal H)\\geq2$, $\\mathrm{NCTD}(\\mathcal H)\\geq\\log_2|\\mathcal H|/(2\\log_2\\mathrm{E}(\\mathcal H))$.",
+  "status": "established",
+  "proof": "Put $d=\\mathrm{NCTD}(\\mathcal H)$.  Padding a width-$d$ no-clashing teacher gives each concept a labeled sample on exactly $d$ of the $\\mathrm E(\\mathcal H)$ effective coordinates.  Distinct concepts receive distinct samples, so $|\\mathcal H|\\leq2^d\\binom{\\mathrm E(\\mathcal H)}d\\leq(2\\mathrm E(\\mathcal H))^d$.  Taking binary logarithms and using $1+\\log_2\\mathrm E\\leq2\\log_2\\mathrm E$ gives the claim.",
+  "latex_proof_label": "prop:nctd-low-log-size",
+  "proof_source": "Proposition prop:nctd-low-log-size in the LaTeX survey.",
+  "references": "\\cite{KSZ2019}"
+}

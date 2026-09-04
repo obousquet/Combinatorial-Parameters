@@ -8645,6 +8645,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-448" style="position:relative;">
+        
+        <h3><a href="relationships/noclashing_teaching_dimension_log_size.html" class="table-title-link">No-Clashing Teaching Dimension / Log Size</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>No-Clashing Teaching Dimension / Log Size</p>
+<p><strong>Parameter 1: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/log_size.html">Log Size</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \ge \frac{cP_2}{\log n}$</p>
+
+<p><strong>Multiplicative Constant: </strong>\tfrac12</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class $\mathcal H$ with $\mathrm{E}(\mathcal H)\geq2$, $\mathrm{NCTD}(\mathcal H)\geq\log_2|\mathcal H|/(2\log_2\mathrm{E}(\mathcal H))$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Put $d=\mathrm{NCTD}(\mathcal H)$.  Padding a width-$d$ no-clashing teacher gives each concept a labeled sample on exactly $d$ of the $\mathrm E(\mathcal H)$ effective coordinates.  Distinct concepts receive distinct samples, so $|\mathcal H|\leq2^d\binom{\mathrm E(\mathcal H)}d\leq(2\mathrm E(\mathcal H))^d$.  Taking binary logarithms and using $1+\log_2\mathrm E\leq2\log_2\mathrm E$ gives the claim.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition prop:nctd-low-log-size in the LaTeX survey.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
