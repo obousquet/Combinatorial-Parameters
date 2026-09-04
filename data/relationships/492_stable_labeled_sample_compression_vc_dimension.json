@@ -1,0 +1,14 @@
+{
+  "id": 492,
+  "name": "Stable Labeled Sample Compression / VC Dimension",
+  "short_name": "stable_labeled_sample_compression_vc_dimension",
+  "parameter_1_id": "#parameters/stable_labeled_sample_compression",
+  "parameter_2_id": "#parameters/vc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "details": "For every finite binary class, $\\mathrm{sLSC}(\\mathcal H)\\geq\\lceil\\mathrm{VC}(\\mathcal H)/2\\rceil$.",
+  "status": "established",
+  "latex_proof_label": "cor:stable-compression-vc",
+  "proof_source": "Full proof in the LaTeX survey: Corollary \\ref{cor:stable-compression-vc}.",
+  "references": "\\cite{KSZ2019}"
+}
