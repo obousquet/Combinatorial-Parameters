@@ -1,0 +1,11 @@
+{
+  "id": 1042,
+  "name": "Effective VC Radius of Even-Parity Class",
+  "short_name": "effective_vc_radius_even_parity_class",
+  "class_id": "#classes/even_parity_class",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$n-1$ for $n\\geq2$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every coordinate is effective. For every $(n-1)$-subset of coordinates, either parity choice of the omitted coordinate extends each trace, so that projection is the full $(n-1)$-cube. The full $n$-set is not shattered because only even patterns occur. Hence the effective VC radius is $n-1$."
+}

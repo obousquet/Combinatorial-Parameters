@@ -1,0 +1,9 @@
+{
+  "id": 40,
+  "name": "Cube with Apex",
+  "short_name": "cube_with_apex",
+  "graph_label": "CubeApex",
+  "symbol": "\\mathcal A_n",
+  "definition": "On the domain $[n]\\cup\\{\\star\\}$, the **cube-with-apex class** is $\\mathcal A_n=\\{A:A\\subseteq[n]\\}\\cup\\{\\{\\star\\}\\}$. Thus it contains the full $n$-cube on $[n]$ with coordinate $\\star$ fixed to $0$, together with one apex having only $\\star$ positive.",
+  "comments": "The base cube is strongly shattered, but the apex activates $\\star$ and makes every pair $\\{\\star,i\\}$ fail to be shattered."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 428,
+  "name": "Effective VC Radius / Largest Strongly Shattered Set (Incomparable)",
+  "short_name": "effective_vc_radius_largest_strongly_shattered_set_incomparable",
+  "parameter_1_id": "#parameters/effective_vc_radius",
+  "parameter_2_id": "#parameters/largest_strongly_shattered_set",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the even-parity class $\\mathcal E_n$, $\\mathrm{VCR}=n-1$, while the largest strongly shattered-set size is $0$.",
+  "parameter_2_larger_witness": "For the cube-with-apex class $\\mathcal A_n$, the largest strongly shattered-set size is $n$, while $\\mathrm{VCR}=1$.",
+  "proof": "The even-parity and cube-with-apex calculations give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs."
+}

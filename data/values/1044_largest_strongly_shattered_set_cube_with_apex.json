@@ -1,0 +1,11 @@
+{
+  "id": 1044,
+  "name": "Largest Strongly Shattered Set of Cube with Apex",
+  "short_name": "largest_strongly_shattered_set_cube_with_apex",
+  "class_id": "#classes/cube_with_apex",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The base subfamily is a full $n$-cube with $\\star$ fixed to zero, so $[n]$ is strongly shattered. A strongly shattered $(n+1)$-set would require a full $(n+1)$-cube and hence $2^{n+1}$ concepts, but $\\mathcal A_n$ has only $2^n+1$. Thus the value is exactly $n$."
+}

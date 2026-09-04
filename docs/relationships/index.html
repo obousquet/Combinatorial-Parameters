@@ -247,25 +247,25 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-7" style="position:relative;">
+    <div class="table-card" id="math-53" style="position:relative;">
         
-        <h3><a href="relationships/best_mistakes_minimum_largest_order_shattered_set.html" class="table-title-link">Best Mistakes / Minimum Largest Order Shattered Set</a></h3>
+        <h3><a href="relationships/worst_mistakes_vc_dimension.html" class="table-title-link">Worst Mistakes / VC Dimension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Best Mistakes / Minimum Largest Order Shattered Set</p>
-<p><strong>Parameter 1: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+        <p><strong>Name: </strong>Worst Mistakes / VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes; both quantities admit a fixed-order tree-rank formulation.</p></div>
-<p><strong>Witness: </strong><a href="classes/best_mistakes_order_shattering_gap.html">Best-Mistakes/Order-Shattering Separation Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For C_bo, the best fixed-order transductive mistake bound is 2 while the minimum largest order-shattered-set size is 1; sync/verify_best_mistakes_order_shattering_gap.py exhausts all 24 coordinate orders.</p></div>
+<strong>Details:</strong><div class="text-field"><p>The worst-case online mistake bound dominates VC dimension.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For a fixed domain order, Ben-David, Kushilevitz, and Mansour identify the optimal mistake count with the rank of the corresponding order-labeled consistency tree. An order-shattered set of size d yields a complete binary subtree of depth d in that tree, so its rank is at least d. Minimize over orders to obtain best mistakes at least the minimum largest order-shattered-set size.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $S$ be a shattered set of size $d$.  Even when the learner knows the whole presentation order, an adversary may present the points of $S$ one at a time and assign at each point the label opposite to the learner's prediction.  After all $d$ rounds, shattering supplies a concept realizing the resulting labeling, so this is a valid target-consistent run with $d$ mistakes.  Hence $\mathrm M_{\mathrm{worst}}\geq\mathrm{VC}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
@@ -1309,32 +1309,6 @@
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-53" style="position:relative;">
-        
-        <h3><a href="relationships/worst_mistakes_vc_dimension.html" class="table-title-link">Worst Mistakes / VC Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The worst-case online mistake bound dominates VC dimension.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $S$ be a shattered set of size $d$.  Even when the learner knows the whole presentation order, an adversary may present the points of $S$ one at a time and assign at each point the label opposite to the learner's prediction.  After all $d$ rounds, shattering supplies a concept realizing the resulting labeling, so this is a valid target-consistent run with $d$ mistakes.  Hence $\mathrm M_{\mathrm{worst}}\geq\mathrm{VC}$.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
     </div>
@@ -2951,51 +2925,25 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-119" style="position:relative;">
+    <div class="table-card" id="math-7" style="position:relative;">
         
-        <h3><a href="relationships/littlestone_dimension_worst_mistakes.html" class="table-title-link">Littlestone Dimension / Worst Mistakes</a></h3>
+        <h3><a href="relationships/best_mistakes_minimum_largest_order_shattered_set.html" class="table-title-link">Best Mistakes / Minimum Largest Order Shattered Set</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Littlestone Dimension / Worst Mistakes</p>
-<p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+        <p><strong>Name: </strong>Best Mistakes / Minimum Largest Order Shattered Set</p>
+<p><strong>Parameter 1: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite classes, the unrestricted tree rank defining Littlestone dimension dominates the regular-tree rank defining worst mistakes.</p></div>
-<p><strong>Witness: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes; both quantities admit a fixed-order tree-rank formulation.</p></div>
+<p><strong>Witness: </strong><a href="classes/best_mistakes_order_shattering_gap.html">Best-Mistakes/Order-Shattering Separation Class</a></p>
 <p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For C_lw, Littlestone dimension is 3 while the worst transductive fixed-order mistake bound is 2.</p></div>
+<strong>Witness Verification:</strong><div class="text-field"><p>For C_bo, the best fixed-order transductive mistake bound is 2 while the minimum largest order-shattered-set size is 1; sync/verify_best_mistakes_order_shattering_gap.py exhausts all 24 coordinate orders.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The worst-sequence/offline characterization maximizes the rank only over class trees induced by a fixed ordered sequence of instances: every depth level has one common queried instance.  Each such regular class tree is a valid Littlestone tree, while Littlestone dimension maximizes over all instance-labeled class trees.  Maximizing over the larger family gives $\mathrm L\geq\mathrm M_{\mathrm{worst}}$.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-120" style="position:relative;">
-        
-        <h3><a href="relationships/worst_mistakes_best_mistakes.html" class="table-title-link">Worst Mistakes / Best Mistakes</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes / Best Mistakes</p>
-<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>An adversarial presentation is at least as hard as a presentation chosen favorably to the learner.</p></div>
-<p><strong>Witness: </strong><a href="classes/best_worst_mistakes_gap.html">Best/Worst Mistakes Separation Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For C_bw, the best fixed-order transductive mistake bound is 1 while the worst fixed-order bound is 2; sync/verify_best_worst_mistakes_gap.py exhausts the six coordinate orders.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The worst-mistakes game takes the maximum over all presentation sequences, whereas the best-mistakes game permits a favorable choice of sequence.  Taking a maximum over a superset of sequences cannot decrease the optimal worst-case mistake count, so $\mathrm{M}_{\mathrm{worst}}(\mathcal{H})\ge\mathrm{M}_{\mathrm{best}}(\mathcal{H})$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For a fixed domain order, Ben-David, Kushilevitz, and Mansour identify the optimal mistake count with the rank of the corresponding order-labeled consistency tree. An order-shattered set of size d yields a complete binary subtree of depth d in that tree, so its rank is at least d. Minimize over orders to obtain best mistakes at least the minimum largest order-shattered-set size.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
@@ -3965,25 +3913,25 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-161" style="position:relative;">
+    <div class="table-card" id="math-119" style="position:relative;">
         
-        <h3><a href="relationships/occasional_onesided_getback_best_mistakes.html" class="table-title-link">Occasional One-Sided Getback / Best Mistakes</a></h3>
+        <h3><a href="relationships/littlestone_dimension_worst_mistakes.html" class="table-title-link">Littlestone Dimension / Worst Mistakes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Occasional One-Sided Getback / Best Mistakes</p>
-<p><strong>Parameter 1: </strong><a href="parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+        <p><strong>Name: </strong>Littlestone Dimension / Worst Mistakes</p>
+<p><strong>Parameter 1: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>O1G has optional mistake-only feedback, while the favorable mistake model supplies full labels.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
+<strong>Details:</strong><div class="text-field"><p>For finite classes, the unrestricted tree rank defining Littlestone dimension dominates the regular-tree rank defining worst mistakes.</p></div>
+<p><strong>Witness: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For C_lw, Littlestone dimension is 3 while the worst transductive fixed-order mistake bound is 2.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Any favorable-sequence full-feedback strategy can be used in the best-mistakes model, whereas an O1G learner must operate when feedback may be withheld and every supplied signal only identifies a mistake.  The full-feedback model can simulate O1G and may reveal strictly more information, so $\mathrm{M}_{\mathrm{best}}(\mathcal H)\le\mathrm{M}_{\mathrm{o1g}}(\mathcal H)$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The worst-sequence/offline characterization maximizes the rank only over class trees induced by a fixed ordered sequence of instances: every depth level has one common queried instance.  Each such regular class tree is a valid Littlestone tree, while Littlestone dimension maximizes over all instance-labeled class trees.  Maximizing over the larger family gives $\mathrm L\geq\mathrm M_{\mathrm{worst}}$.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
@@ -7241,58 +7189,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-300" style="position:relative;">
-        
-        <h3><a href="relationships/worst_mistakes_partial_equivalence_queries_complexity.html" class="table-title-link">Worst Mistakes / Partial Equivalence Queries Complexity</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes / Partial Equivalence Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{M}_{\mathrm{worst}}(\mathcal H)\geq\mathrm Q_{\mathrm{par}}(\mathcal H)$.</p></div>
-<p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathrm{ADDRESSING}_n$, worst mistakes is $\lfloor\log_2 n\rfloor$, while partial equivalence queries identify the target with one query by proposing the partial hypothesis that is negative on every address point and undefined on bit points. Hence the gap is unbounded.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(1) of Doliwa--Fan--Simon--Zilles states $\mathrm{LC}_{\mathrm{partial}}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{Mopt}$ is the optimal adversarial online mistake bound, which is precisely the catalogue's $\mathrm{M}_{\mathrm{worst}}$, while $\mathrm{LC}_{\mathrm{partial}}$ is its partial-equivalence-query complexity.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-301" style="position:relative;">
-        
-        <h3><a href="relationships/worst_mistakes_monotone_recursive_teaching_dimension.html" class="table-title-link">Worst Mistakes / Projected Recursive Teaching Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes / Projected Recursive Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{M}_{\mathrm{worst}}(\mathcal H)\geq\mathrm{RTD}^{p}(\mathcal H)$.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(2) of Doliwa--Fan--Simon--Zilles states $\mathrm{RTD}^{*}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{RTD}^{*}$ is the maximum recursive teaching dimension over coordinate projections, the catalogue's projected recursive teaching dimension, and $\mathrm{Mopt}$ is the catalogue's worst-mistakes parameter.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-302" style="position:relative;">
         
         <h3><a href="relationships/repetitionfree_recursive_teaching_dimension_recursive_teaching_dimension.html" class="table-title-link">Repetition-Free Recursive Teaching Dimension / Recursive Teaching Dimension</a></h3>
@@ -8381,6 +8277,110 @@
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:scvc-log-size-ratio} in the survey.</p></div>
 
 
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-120" style="position:relative;">
+        
+        <h3><a href="relationships/worst_mistakes_best_mistakes.html" class="table-title-link">Worst Mistakes / Best Mistakes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes / Best Mistakes</p>
+<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>An adversarial presentation is at least as hard as a presentation chosen favorably to the learner.</p></div>
+<p><strong>Witness: </strong><a href="classes/best_worst_mistakes_gap.html">Best/Worst Mistakes Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For C_bw, the best fixed-order transductive mistake bound is 1 while the worst fixed-order bound is 2; sync/verify_best_worst_mistakes_gap.py exhausts the six coordinate orders.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The worst-mistakes game takes the maximum over all presentation sequences, whereas the best-mistakes game permits a favorable choice of sequence.  Taking a maximum over a superset of sequences cannot decrease the optimal worst-case mistake count, so $\mathrm{M}_{\mathrm{worst}}(\mathcal{H})\ge\mathrm{M}_{\mathrm{best}}(\mathcal{H})$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-161" style="position:relative;">
+        
+        <h3><a href="relationships/occasional_onesided_getback_best_mistakes.html" class="table-title-link">Occasional One-Sided Getback / Best Mistakes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Occasional One-Sided Getback / Best Mistakes</p>
+<p><strong>Parameter 1: </strong><a href="parameters/occasional_onesided_getback.html">Occasional One-Sided Getback</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>O1G has optional mistake-only feedback, while the favorable mistake model supplies full labels.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Any favorable-sequence full-feedback strategy can be used in the best-mistakes model, whereas an O1G learner must operate when feedback may be withheld and every supplied signal only identifies a mistake.  The full-feedback model can simulate O1G and may reveal strictly more information, so $\mathrm{M}_{\mathrm{best}}(\mathcal H)\le\mathrm{M}_{\mathrm{o1g}}(\mathcal H)$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-300" style="position:relative;">
+        
+        <h3><a href="relationships/worst_mistakes_partial_equivalence_queries_complexity.html" class="table-title-link">Worst Mistakes / Partial Equivalence Queries Complexity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes / Partial Equivalence Queries Complexity</p>
+<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{M}_{\mathrm{worst}}(\mathcal H)\geq\mathrm Q_{\mathrm{par}}(\mathcal H)$.</p></div>
+<p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathrm{ADDRESSING}_n$, worst mistakes is $\lfloor\log_2 n\rfloor$, while partial equivalence queries identify the target with one query by proposing the partial hypothesis that is negative on every address point and undefined on bit points. Hence the gap is unbounded.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(1) of Doliwa--Fan--Simon--Zilles states $\mathrm{LC}_{\mathrm{partial}}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{Mopt}$ is the optimal adversarial online mistake bound, which is precisely the catalogue's $\mathrm{M}_{\mathrm{worst}}$, while $\mathrm{LC}_{\mathrm{partial}}$ is its partial-equivalence-query complexity.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-301" style="position:relative;">
+        
+        <h3><a href="relationships/worst_mistakes_monotone_recursive_teaching_dimension.html" class="table-title-link">Worst Mistakes / Projected Recursive Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes / Projected Recursive Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{M}_{\mathrm{worst}}(\mathcal H)\geq\mathrm{RTD}^{p}(\mathcal H)$.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(2) of Doliwa--Fan--Simon--Zilles states $\mathrm{RTD}^{*}(\mathcal H)\leq\mathrm{Mopt}(\mathcal H)$.  Their $\mathrm{RTD}^{*}$ is the maximum recursive teaching dimension over coordinate projections, the catalogue's projected recursive teaching dimension, and $\mathrm{Mopt}$ is the catalogue's worst-mistakes parameter.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
 
         </div>
     </div>
@@ -10310,6 +10310,32 @@
 <strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the even-parity class $\mathcal E_n$, the log size ratio is $\log(2^{n-1}-1)/\log(n+1)=\Theta(n/\log n)$, while the largest strongly shattered-set size is $0$.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The full-cube and even-parity value calculations give gaps whose ratios diverge in the two opposite directions.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p>Database-owned value proofs.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-428" style="position:relative;">
+        
+        <h3><a href="relationships/effective_vc_radius_largest_strongly_shattered_set_incomparable.html" class="table-title-link">Effective VC Radius / Largest Strongly Shattered Set (Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective VC Radius / Largest Strongly Shattered Set (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the even-parity class $\mathcal E_n$, $\mathrm{VCR}=n-1$, while the largest strongly shattered-set size is $0$.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the cube-with-apex class $\mathcal A_n$, the largest strongly shattered-set size is $n$, while $\mathrm{VCR}=1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The even-parity and cube-with-apex calculations give unbounded gaps in the two opposite directions.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p>Database-owned value proofs.</p></div>

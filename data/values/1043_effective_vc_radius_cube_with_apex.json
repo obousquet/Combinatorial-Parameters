@@ -1,0 +1,11 @@
+{
+  "id": 1043,
+  "name": "Effective VC Radius of Cube with Apex",
+  "short_name": "effective_vc_radius_cube_with_apex",
+  "class_id": "#classes/cube_with_apex",
+  "parameter_id": "#parameters/effective_vc_radius",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Every coordinate is effective and every singleton is shattered. For each $i\\in[n]$, the trace on $\\{\\star,i\\}$ realizes $00,01,10$ but not $11$, because the apex is zero at $i$ and every base-cube concept is zero at $\\star$. Thus not every effective pair is shattered, so the value is one."
+}

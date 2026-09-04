@@ -2637,18 +2637,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-757" style="position:relative;">
+    <div class="table-card" id="math-327" style="position:relative;">
         
-        <h3><a href="values/worst_mistakes_universal_class.html" class="table-title-link">Worst Mistakes of Universal Class</a></h3>
+        <h3><a href="values/best_mistakes_trivial_concepts.html" class="table-title-link">Best Mistakes of Trivial Concepts</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of Universal Class</p>
-<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
+        <p><strong>Name: </strong>Best Mistakes of Trivial Concepts</p>
+<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
+<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is bounded below by VC dimension and above by Littlestone dimension. On the universal class the two established values are both $\lfloor\log_2 n\rfloor$, so worst mistakes has that value.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>At any coordinate the two constant concepts have opposite labels, so no learner can guarantee zero mistakes against both targets. After the first labeled presentation, the target is known, giving an upper bound of one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
@@ -4932,18 +4932,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-759" style="position:relative;">
+    <div class="table-card" id="math-595" style="position:relative;">
         
-        <h3><a href="values/worst_mistakes_addressing.html" class="table-title-link">Worst Mistakes of Addressing</a></h3>
+        <h3><a href="values/worst_mistakes_full_cube.html" class="table-title-link">Worst Mistakes of Full Cube</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of Addressing</p>
-<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+        <p><strong>Name: </strong>Worst Mistakes of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is at least VC dimension and at most Littlestone dimension. Both established addressing-class values are $\lfloor\log n\rfloor$, giving the claimed equality.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Even when the entire instance sequence is known in advance, the learner can err at most once at each coordinate: predict arbitrarily on its first occurrence and reuse the observed label afterwards.  Conversely, present all $n$ coordinates once.  Against any deterministic learner, choose each target label opposite to its first prediction.  These $n$ labels define a full-cube target, so the adversary forces $n$ mistakes.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
@@ -4966,18 +4966,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-767" style="position:relative;">
+    <div class="table-card" id="math-596" style="position:relative;">
         
-        <h3><a href="values/worst_mistakes_majority.html" class="table-title-link">Worst Mistakes of Majority</a></h3>
+        <h3><a href="values/worst_mistakes_singletons.html" class="table-title-link">Worst Mistakes of Singletons</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of Majority</p>
-<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
+        <p><strong>Name: </strong>Worst Mistakes of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is bounded below by VC dimension and above by Littlestone dimension. Both established majority-class values equal $n$, so worst mistakes equals $n$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Predict $0$ until a positive label appears.  It can appear only at the target singleton's unique coordinate, so this strategy makes at most one mistake and then identifies the target.  Zero mistakes are impossible because at any coordinate some singleton target has label $1$ and another has label $0$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
@@ -5612,23 +5612,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-327" style="position:relative;">
-        
-        <h3><a href="values/best_mistakes_trivial_concepts.html" class="table-title-link">Best Mistakes of Trivial Concepts</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Best Mistakes of Trivial Concepts</p>
-<p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>At any coordinate the two constant concepts have opposite labels, so no learner can guarantee zero mistakes against both targets. After the first labeled presentation, the target is known, giving an upper bound of one.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-328" style="position:relative;">
         
         <h3><a href="values/worst_mistakes_trivial_concepts.html" class="table-title-link">Worst Mistakes of Trivial Concepts</a></h3>
@@ -5642,6 +5625,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>No strategy can guarantee zero mistakes against the two opposite constant targets. Regardless of the adversarial presentation, the first observed label identifies the target, so at most one mistake is possible.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-585" style="position:relative;">
+        
+        <h3><a href="values/best_mistakes_blockwiseaddressing.html" class="table-title-link">Best Mistakes of Blockwise-Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Best Mistakes of Blockwise-Addressing</p>
+<p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Value: </strong>$\Theta(d)=\Theta(\log |\mathcal X|)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Example 2 of Ben-David--Kushilevitz--Mansour proves that every fixed presentation order admits an adversarial target forcing $\Omega(d)$ mistakes.  Its general upper bound, together with the class size $2^{d+1}$, gives $O(d)$; hence the best fixed-order mistake bound is $\Theta(d)=\Theta(\log|\mathcal X|)$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a>, Example 2</p></div>
 
         </div>
     </div>
@@ -9913,19 +9913,19 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-585" style="position:relative;">
+    <div class="table-card" id="math-767" style="position:relative;">
         
-        <h3><a href="values/best_mistakes_blockwiseaddressing.html" class="table-title-link">Best Mistakes of Blockwise-Addressing</a></h3>
+        <h3><a href="values/worst_mistakes_majority.html" class="table-title-link">Worst Mistakes of Majority</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Best Mistakes of Blockwise-Addressing</p>
-<p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
-<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Value: </strong>$\Theta(d)=\Theta(\log |\mathcal X|)$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
+        <p><strong>Name: </strong>Worst Mistakes of Majority</p>
+<p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Example 2 of Ben-David--Kushilevitz--Mansour proves that every fixed presentation order admits an adversarial target forcing $\Omega(d)$ mistakes.  Its general upper bound, together with the class size $2^{d+1}$, gives $O(d)$; hence the best fixed-order mistake bound is $\Theta(d)=\Theta(\log|\mathcal X|)$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a>, Example 2</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is bounded below by VC dimension and above by Littlestone dimension. Both established majority-class values equal $n$, so worst mistakes equals $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
     </div>
@@ -10083,40 +10083,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-595" style="position:relative;">
-        
-        <h3><a href="values/worst_mistakes_full_cube.html" class="table-title-link">Worst Mistakes of Full Cube</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of Full Cube</p>
-<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Even when the entire instance sequence is known in advance, the learner can err at most once at each coordinate: predict arbitrarily on its first occurrence and reuse the observed label afterwards.  Conversely, present all $n$ coordinates once.  Against any deterministic learner, choose each target label opposite to its first prediction.  These $n$ labels define a full-cube target, so the adversary forces $n$ mistakes.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-596" style="position:relative;">
-        
-        <h3><a href="values/worst_mistakes_singletons.html" class="table-title-link">Worst Mistakes of Singletons</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of Singletons</p>
-<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Predict $0$ until a positive label appears.  It can appear only at the target singleton's unique coordinate, so this strategy makes at most one mistake and then identifies the target.  Zero mistakes are impossible because at any coordinate some singleton target has label $1$ and another has label $0$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-597" style="position:relative;">
         
         <h3><a href="values/worst_mistakes_singletons_plus_empty_set.html" class="table-title-link">Worst Mistakes of Singletons plus empty set</a></h3>
@@ -10129,6 +10095,23 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Always predict $0$.  The empty target causes no mistake, while a singleton target causes exactly one, at its unique positive coordinate.  Zero mistakes are impossible because the empty target and any singleton disagree at that singleton's coordinate.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-612" style="position:relative;">
+        
+        <h3><a href="values/best_mistakes_singletons_plus_empty_set.html" class="table-title-link">Best Mistakes of Singletons plus Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Best Mistakes of Singletons plus Empty Set</p>
+<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Present every coordinate and predict $0$. The empty target causes no mistake and each singleton target causes one positive label, which identifies it; hence one mistake suffices. At the first presented coordinate, an initial prediction of $0$ is falsified by its singleton target, while a prediction of $1$ is falsified by the empty target. Therefore one mistake is necessary.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
@@ -10372,18 +10355,18 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-612" style="position:relative;">
+    <div class="table-card" id="math-757" style="position:relative;">
         
-        <h3><a href="values/best_mistakes_singletons_plus_empty_set.html" class="table-title-link">Best Mistakes of Singletons plus Empty Set</a></h3>
+        <h3><a href="values/worst_mistakes_universal_class.html" class="table-title-link">Worst Mistakes of Universal Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Best Mistakes of Singletons plus Empty Set</p>
-<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
+        <p><strong>Name: </strong>Worst Mistakes of Universal Class</p>
+<p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Present every coordinate and predict $0$. The empty target causes no mistake and each singleton target causes one positive label, which identifies it; hence one mistake suffices. At the first presented coordinate, an initial prediction of $0$ is falsified by its singleton target, while a prediction of $1$ is falsified by the empty target. Therefore one mistake is necessary.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is bounded below by VC dimension and above by Littlestone dimension. On the universal class the two established values are both $\lfloor\log_2 n\rfloor$, so worst mistakes has that value.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
@@ -12259,19 +12242,19 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-987" style="position:relative;">
+    <div class="table-card" id="math-759" style="position:relative;">
         
-        <h3><a href="values/littlestone_dimension_littlestone_worst_gap.html" class="table-title-link">Littlestone Dimension of the Littlestone/Worst-Order Separation Class</a></h3>
+        <h3><a href="values/worst_mistakes_addressing.html" class="table-title-link">Worst Mistakes of Addressing</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Littlestone Dimension of the Littlestone/Worst-Order Separation Class</p>
-<p><strong>Class: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$3$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
+        <p><strong>Name: </strong>Worst Mistakes of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard finite Littlestone rank recurrence evaluates to three. The exhaustive recurrence calculation is recorded in sync/verify_littlestone_worst_gap.py.</p></div>
-<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_littlestone_worst_gap.py.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is at least VC dimension and at most Littlestone dimension. Both established addressing-class values are $\lfloor\log n\rfloor$, giving the claimed equality.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
     </div>
@@ -13687,23 +13670,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-856" style="position:relative;">
-        
-        <h3><a href="values/best_mistakes_three_code_class.html" class="table-title-link">Best Mistakes of the Three-Code Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Best Mistakes of the Three-Code Class</p>
-<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Present the third coordinate first and predict one.  A negative answer makes one mistake and identifies $000$.  After a positive answer, query the first coordinate and predict zero: it is correct for $011$, and its one possible mistake identifies $101$.  Thus at most one mistake occurs.  Zero mistakes are impossible for a nonconstant class, so the value is one.</p></div>
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-857" style="position:relative;">
         
         <h3><a href="values/selfdirected_queries_complexity_three_code_class.html" class="table-title-link">Self-Directed Queries Complexity of the Three-Code Class</a></h3>
@@ -13716,23 +13682,6 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The established chain $\mathrm{RTD}\leq\mathrm{SDC}\leq\mathrm{LC}_{\mathrm{partial}}$ has both endpoint values equal to one for this class.  Therefore self-directed query complexity is exactly one.</p></div>
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-858" style="position:relative;">
-        
-        <h3><a href="values/worst_mistakes_three_code_class.html" class="table-title-link">Worst Mistakes of the Three-Code Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of the Three-Code Class</p>
-<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is at least VC dimension, whose established value is one.  It is at most Littlestone dimension because the fixed-sequence class trees are among all Littlestone trees; the established Littlestone dimension is also one.  Hence worst mistakes equals one.</p></div>
 
 
         </div>
@@ -15744,23 +15693,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-988" style="position:relative;">
-        
-        <h3><a href="values/worst_mistakes_littlestone_worst_gap.html" class="table-title-link">Worst Mistakes of the Littlestone/Worst-Order Separation Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of the Littlestone/Worst-Order Separation Class</p>
-<p><strong>Class: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$2$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For each of the 24 coordinate orders, solve the transductive minimax prediction recurrence from the final coordinate backwards. Every order has value two, and no smaller uniform bound is possible. Repeated coordinates do not help an adversary because their labels are known after first occurrence. See sync/verify_littlestone_worst_gap.py.</p></div>
-<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_littlestone_worst_gap.py.</p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-989" style="position:relative;">
         
         <h3><a href="values/best_mistakes_best_worst_mistakes_gap.html" class="table-title-link">Best Mistakes of the Best/Worst Mistakes Separation Class</a></h3>
@@ -15778,19 +15710,19 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-990" style="position:relative;">
+    <div class="table-card" id="math-995" style="position:relative;">
         
-        <h3><a href="values/worst_mistakes_best_worst_mistakes_gap.html" class="table-title-link">Worst Mistakes of the Best/Worst Mistakes Separation Class</a></h3>
+        <h3><a href="values/minimum_largest_order_shattered_set_best_mistakes_order_shattering_gap.html" class="table-title-link">Minimum Largest Order-Shattered Set of the Best-Mistakes/Order-Shattering Separation Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Worst Mistakes of the Best/Worst Mistakes Separation Class</p>
-<p><strong>Class: </strong><a href="classes/best_worst_mistakes_gap.html">Best/Worst Mistakes Separation Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$2$</p>
+        <p><strong>Name: </strong>Minimum Largest Order-Shattered Set of the Best-Mistakes/Order-Shattering Separation Class</p>
+<p><strong>Class: </strong><a href="classes/best_mistakes_order_shattering_gap.html">Best-Mistakes/Order-Shattering Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
+<p><strong>Value: </strong>$1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The orders x_1,x_2,x_3 and x_1,x_3,x_2 each have transductive minimax value two, and no order has larger value. Repeated coordinates do not help after their labels have been revealed. See sync/verify_best_worst_mistakes_gap.py.</p></div>
-<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_best_worst_mistakes_gap.py.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For example, applying the four binary downshifts in the order x_1,x_2,x_3,x_4 produces a down-closed family with largest support size one. No nonconstant class has order-shattering dimension zero. Thus the minimum over coordinate orders is one. The exhaustive calculation is in sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
 
         </div>
     </div>
@@ -15846,36 +15778,19 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-994" style="position:relative;">
+    <div class="table-card" id="math-990" style="position:relative;">
         
-        <h3><a href="values/best_mistakes_best_mistakes_order_shattering_gap.html" class="table-title-link">Best Mistakes of the Best-Mistakes/Order-Shattering Separation Class</a></h3>
+        <h3><a href="values/worst_mistakes_best_worst_mistakes_gap.html" class="table-title-link">Worst Mistakes of the Best/Worst Mistakes Separation Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Best Mistakes of the Best-Mistakes/Order-Shattering Separation Class</p>
-<p><strong>Class: </strong><a href="classes/best_mistakes_order_shattering_gap.html">Best-Mistakes/Order-Shattering Separation Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+        <p><strong>Name: </strong>Worst Mistakes of the Best/Worst Mistakes Separation Class</p>
+<p><strong>Class: </strong><a href="classes/best_worst_mistakes_gap.html">Best/Worst Mistakes Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
 <p><strong>Value: </strong>$2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Solve the transductive minimax prediction recurrence from the last coordinate backwards for every one of the 24 coordinate orders. Every order has value at least two, and some order has value two. Repeated coordinates cannot help after their label has been seen. The exact computation is in sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
-<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-995" style="position:relative;">
-        
-        <h3><a href="values/minimum_largest_order_shattered_set_best_mistakes_order_shattering_gap.html" class="table-title-link">Minimum Largest Order-Shattered Set of the Best-Mistakes/Order-Shattering Separation Class</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Minimum Largest Order-Shattered Set of the Best-Mistakes/Order-Shattering Separation Class</p>
-<p><strong>Class: </strong><a href="classes/best_mistakes_order_shattering_gap.html">Best-Mistakes/Order-Shattering Separation Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For example, applying the four binary downshifts in the order x_1,x_2,x_3,x_4 produces a down-closed family with largest support size one. No nonconstant class has order-shattering dimension zero. Thus the minimum over coordinate orders is one. The exhaustive calculation is in sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
-<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The orders x_1,x_2,x_3 and x_1,x_3,x_2 each have transductive minimax value two, and no order has larger value. Repeated coordinates do not help after their labels have been revealed. See sync/verify_best_worst_mistakes_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_best_worst_mistakes_gap.py.</p></div>
 
         </div>
     </div>
@@ -16607,6 +16522,142 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>A nonempty strongly shattered set contains a one-dimensional subcube, hence an edge of the $1$-inclusion graph. The even-parity class has no such edge because flipping one coordinate changes parity. The empty set is strongly shattered, so the value is zero.</p></div>
 
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1042" style="position:relative;">
+        
+        <h3><a href="values/effective_vc_radius_even_parity_class.html" class="table-title-link">Effective VC Radius of Even-Parity Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective VC Radius of Even-Parity Class</p>
+<p><strong>Class: </strong><a href="classes/even_parity_class.html">Even-Parity Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Value: </strong>$n-1$ for $n\geq2$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate is effective. For every $(n-1)$-subset of coordinates, either parity choice of the omitted coordinate extends each trace, so that projection is the full $(n-1)$-cube. The full $n$-set is not shattered because only even patterns occur. Hence the effective VC radius is $n-1$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1043" style="position:relative;">
+        
+        <h3><a href="values/effective_vc_radius_cube_with_apex.html" class="table-title-link">Effective VC Radius of Cube with Apex</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective VC Radius of Cube with Apex</p>
+<p><strong>Class: </strong><a href="classes/cube_with_apex.html">Cube with Apex</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate is effective and every singleton is shattered. For each $i\in[n]$, the trace on $\{\star,i\}$ realizes $00,01,10$ but not $11$, because the apex is zero at $i$ and every base-cube concept is zero at $\star$. Thus not every effective pair is shattered, so the value is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1044" style="position:relative;">
+        
+        <h3><a href="values/largest_strongly_shattered_set_cube_with_apex.html" class="table-title-link">Largest Strongly Shattered Set of Cube with Apex</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Largest Strongly Shattered Set of Cube with Apex</p>
+<p><strong>Class: </strong><a href="classes/cube_with_apex.html">Cube with Apex</a></p>
+<p><strong>Parameter: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The base subfamily is a full $n$-cube with $\star$ fixed to zero, so $[n]$ is strongly shattered. A strongly shattered $(n+1)$-set would require a full $(n+1)$-cube and hence $2^{n+1}$ concepts, but $\mathcal A_n$ has only $2^n+1$. Thus the value is exactly $n$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-856" style="position:relative;">
+        
+        <h3><a href="values/best_mistakes_three_code_class.html" class="table-title-link">Best Mistakes of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Best Mistakes of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Present the third coordinate first and predict one.  A negative answer makes one mistake and identifies $000$.  After a positive answer, query the first coordinate and predict zero: it is correct for $011$, and its one possible mistake identifies $101$.  Thus at most one mistake occurs.  Zero mistakes are impossible for a nonconstant class, so the value is one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-858" style="position:relative;">
+        
+        <h3><a href="values/worst_mistakes_three_code_class.html" class="table-title-link">Worst Mistakes of the Three-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes of the Three-Code Class</p>
+<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is at least VC dimension, whose established value is one.  It is at most Littlestone dimension because the fixed-sequence class trees are among all Littlestone trees; the established Littlestone dimension is also one.  Hence worst mistakes equals one.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-987" style="position:relative;">
+        
+        <h3><a href="values/littlestone_dimension_littlestone_worst_gap.html" class="table-title-link">Littlestone Dimension of the Littlestone/Worst-Order Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension of the Littlestone/Worst-Order Separation Class</p>
+<p><strong>Class: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The standard finite Littlestone rank recurrence evaluates to three. The exhaustive recurrence calculation is recorded in sync/verify_littlestone_worst_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_littlestone_worst_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-988" style="position:relative;">
+        
+        <h3><a href="values/worst_mistakes_littlestone_worst_gap.html" class="table-title-link">Worst Mistakes of the Littlestone/Worst-Order Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Worst Mistakes of the Littlestone/Worst-Order Separation Class</p>
+<p><strong>Class: </strong><a href="classes/littlestone_worst_gap.html">Littlestone/Worst-Order Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For each of the 24 coordinate orders, solve the transductive minimax prediction recurrence from the final coordinate backwards. Every order has value two, and no smaller uniform bound is possible. Repeated coordinates do not help an adversary because their labels are known after first occurrence. See sync/verify_littlestone_worst_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_littlestone_worst_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-994" style="position:relative;">
+        
+        <h3><a href="values/best_mistakes_best_mistakes_order_shattering_gap.html" class="table-title-link">Best Mistakes of the Best-Mistakes/Order-Shattering Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Best Mistakes of the Best-Mistakes/Order-Shattering Separation Class</p>
+<p><strong>Class: </strong><a href="classes/best_mistakes_order_shattering_gap.html">Best-Mistakes/Order-Shattering Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Solve the transductive minimax prediction recurrence from the last coordinate backwards for every one of the 24 coordinate orders. Every order has value at least two, and some order has value two. Repeated coordinates cannot help after their label has been seen. The exact computation is in sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_best_mistakes_order_shattering_gap.py.</p></div>
 
         </div>
     </div>
