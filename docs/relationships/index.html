@@ -9165,6 +9165,58 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-468" style="position:relative;">
+        
+        <h3><a href="relationships/vc_dimension_noclashing_teaching_dimension_sqrt.html" class="table-title-link">VC Dimension / No-Clashing Teaching Dimension (square-root)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension / No-Clashing Teaching Dimension (square-root)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \ge c\sqrt{P_2}$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite binary classes, $\mathrm{NCTD}(\mathcal H)=O(\mathrm{VC}(\mathcal H)^2)$; equivalently, VC dimension is at least a constant multiple of the square root of no-clashing teaching dimension.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proposition 23 of Kirkpatrick--Simon--Zilles gives $\mathrm{NCTD}\leq\mathrm{PBTD}=\mathrm{RTD}$ for finite classes. Apply the explicit quadratic RTD bound of Hu--Wu--Li--Wang to obtain $\mathrm{NCTD}\leq39.3752\,\mathrm{VC}^2-3.6330\,\mathrm{VC}$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a> <a href="bibliography.html#hu2017quadratic">[hu2017quadratic]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-469" style="position:relative;">
+        
+        <h3><a href="relationships/vc_dimension_projected_noclashing_teaching_dimension_sqrt.html" class="table-title-link">VC Dimension / Projected No-Clashing Teaching Dimension (square-root)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension / Projected No-Clashing Teaching Dimension (square-root)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \ge c\sqrt{P_2}$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For finite binary classes, $\mathrm{NCTD}^{p}(\mathcal H)=O(\mathrm{VC}(\mathcal H)^2)$; equivalently, VC dimension is at least a constant multiple of the square root of projected no-clashing teaching dimension.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every coordinate trace has VC dimension at most $\mathrm{VC}(\mathcal H)$. Apply the ordinary no-clashing quadratic bound to every trace and maximize over the trace, yielding $\mathrm{NCTD}^{p}(\mathcal H)\leq39.3752\,\mathrm{VC}(\mathcal H)^2-3.6330\,\mathrm{VC}(\mathcal H)$.</p></div>
+
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a> <a href="bibliography.html#hu2017quadratic">[hu2017quadratic]</a></p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

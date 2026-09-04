@@ -1,0 +1,12 @@
+{
+  "id": 468,
+  "name": "VC Dimension / No-Clashing Teaching Dimension (square-root)",
+  "short_name": "vc_dimension_noclashing_teaching_dimension_sqrt",
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/noclashing_teaching_dimension",
+  "relationship_type": "sqrt",
+  "details": "For finite binary classes, $\\mathrm{NCTD}(\\mathcal H)=O(\\mathrm{VC}(\\mathcal H)^2)$; equivalently, VC dimension is at least a constant multiple of the square root of no-clashing teaching dimension.",
+  "status": "established",
+  "proof": "Proposition 23 of Kirkpatrick--Simon--Zilles gives $\\mathrm{NCTD}\\leq\\mathrm{PBTD}=\\mathrm{RTD}$ for finite classes. Apply the explicit quadratic RTD bound of Hu--Wu--Li--Wang to obtain $\\mathrm{NCTD}\\leq39.3752\\,\\mathrm{VC}^2-3.6330\\,\\mathrm{VC}$.",
+  "references": "\\cite{KSZ2019,hu2017quadratic}"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 469,
+  "name": "VC Dimension / Projected No-Clashing Teaching Dimension (square-root)",
+  "short_name": "vc_dimension_projected_noclashing_teaching_dimension_sqrt",
+  "parameter_1_id": "#parameters/vc_dimension",
+  "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
+  "relationship_type": "sqrt",
+  "details": "For finite binary classes, $\\mathrm{NCTD}^{p}(\\mathcal H)=O(\\mathrm{VC}(\\mathcal H)^2)$; equivalently, VC dimension is at least a constant multiple of the square root of projected no-clashing teaching dimension.",
+  "status": "established",
+  "proof": "Every coordinate trace has VC dimension at most $\\mathrm{VC}(\\mathcal H)$. Apply the ordinary no-clashing quadratic bound to every trace and maximize over the trace, yielding $\\mathrm{NCTD}^{p}(\\mathcal H)\\leq39.3752\\,\\mathrm{VC}(\\mathcal H)^2-3.6330\\,\\mathrm{VC}(\\mathcal H)$.",
+  "references": "\\cite{KSZ2019,hu2017quadratic}"
+}
