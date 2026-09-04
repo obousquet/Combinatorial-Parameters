@@ -1,0 +1,11 @@
+{
+  "id": 454,
+  "name": "Projected Positive No-Clashing Teaching Dimension / Projected No-Clashing Teaching Dimension",
+  "short_name": "projected_positive_noclashing_teaching_dimension_projected_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/projected_positive_noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "Positive no-clashing teachers are a restriction of no-clashing teachers on every coordinate trace.",
+  "status": "established",
+  "proof": "For every S, $\\mathrm{NCTD}^{+}(\\mathcal H_{|S})\\geq\\mathrm{NCTD}(\\mathcal H_{|S})$. Maximize both sides over S."
+}

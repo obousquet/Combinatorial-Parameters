@@ -1,0 +1,14 @@
+{
+  "id": 453,
+  "name": "Projected Positive No-Clashing Teaching Dimension / Positive No-Clashing Teaching Dimension",
+  "short_name": "projected_positive_noclashing_teaching_dimension_positive_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/projected_positive_noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/positive_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "The defining maximum includes the identity projection.",
+  "witness": "#classes/projected_positive_noclashing_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\mathrm{pNC+}}=\\{001,010,111\\}$, $\\mathrm{NCTD}^{+}=1$ while $\\mathrm{NCTD}^{+p}=2$; sync/verify_projected_positive_noclashing_gap.py verifies both values.",
+  "status": "established",
+  "proof": "Take S=X in the definition of $\\mathrm{NCTD}^{+p}$."
+}

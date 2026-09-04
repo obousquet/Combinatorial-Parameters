@@ -1,0 +1,11 @@
+{
+  "id": 1053,
+  "name": "Projected Positive No-Clashing Teaching Dimension of the Projected Positive No-Clashing Teaching Separation Class",
+  "short_name": "projected_positive_noclashing_teaching_dimension_projected_positive_noclashing_gap",
+  "class_id": "#classes/projected_positive_noclashing_gap",
+  "parameter_id": "#parameters/projected_positive_noclashing_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Projection to coordinates $\\{1,2\\}$ gives $\\{01,10,11\\}$, which has positive no-clashing teaching dimension two. Exhaustive enumeration verifies that no projection has a larger value. See sync/verify_projected_positive_noclashing_gap.py."
+}

@@ -1,0 +1,9 @@
+{
+  "id": 43,
+  "name": "Projected Positive No-Clashing Teaching Separation Class",
+  "short_name": "projected_positive_noclashing_gap",
+  "graph_label": "P-NCTD+ gap",
+  "symbol": "\\mathcal C_{\\mathrm{pNC+}}",
+  "definition": "On coordinates $\\{0,1,2\\}$, the **Projected Positive No-Clashing Teaching Separation Class** is $$\\mathcal C_{\\mathrm{pNC+}}=\\{001,010,111\\},$$ where a string lists the labels in coordinate order.",
+  "comments": "A finite certificate that coordinate projection can increase positive no-clashing teaching dimension."
+}

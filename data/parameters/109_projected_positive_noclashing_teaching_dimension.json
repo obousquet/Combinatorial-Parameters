@@ -1,0 +1,34 @@
+{
+  "id": 109,
+  "name": "Projected Positive No-Clashing Teaching Dimension",
+  "short_name": "projected_positive_noclashing_teaching_dimension",
+  "symbol": "\\mathrm{NCTD}^{+p}",
+  "category": "teaching",
+  "symmetric": false,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "The **Projected Positive No-Clashing Teaching Dimension** is $$\\mathrm{NCTD}^{+p}(\\mathcal H)\\bydef\\max_{S\\subseteq\\mathcal X}\\mathrm{NCTD}^{+}(\\mathcal H_{|S}),$$ where each teacher is required to use only positive examples of its target concept.",
+  "graph_summary": "Largest positive no-clashing teaching dimension attained by a coordinate projection.",
+  "description": "The projection-monotonic closure of positive no-clashing teaching dimension.",
+  "origin_references": "Database-defined projection closure of the positive no-clashing model of \\cite{KSZ2019}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "For every coordinate set S, a trace of a subfamily is a subfamily of the corresponding trace. Positive no-clashing teaching dimension is subfamily-monotonic, and taking maxima preserves the inequality.",
+      "kind": "max_over_subfamilies"
+    },
+    "p_monotonic": {
+      "proof": "Every projection of a projection of H is already a projection of H, so the maximum over traces cannot increase after projection.",
+      "kind": "max_over_projections"
+    },
+    "c_monotonic": {
+      "proof": "A conditioned fibre is a subfamily followed by a projection, so doubly monotonicity implies conditioning monotonicity.",
+      "kind": "definitional_consequence"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding subfamily and projection arguments establish both required forms.",
+      "kind": "direct_argument"
+    }
+  }
+}

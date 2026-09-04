@@ -1,0 +1,11 @@
+{
+  "id": 1052,
+  "name": "Positive No-Clashing Teaching Dimension of the Projected Positive No-Clashing Teaching Separation Class",
+  "short_name": "positive_noclashing_teaching_dimension_projected_positive_noclashing_gap",
+  "class_id": "#classes/projected_positive_noclashing_gap",
+  "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Assign $001,010,111$ respectively the positive one-example samples $(2,1),(1,1),(0,1)$. Each pair is prevented from clashing by one of these samples. Width zero is impossible for a non-singleton class. See sync/verify_projected_positive_noclashing_gap.py."
+}

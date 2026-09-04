@@ -64,24 +64,24 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-108" style="position:relative;">
+    <div class="table-card" id="math-109" style="position:relative;">
         
-        <h3><a href="parameters/projected_noclashing_teaching_dimension.html" class="table-title-link">Projected No-Clashing Teaching Dimension</a></h3>
+        <h3><a href="parameters/projected_positive_noclashing_teaching_dimension.html" class="table-title-link">Projected Positive No-Clashing Teaching Dimension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension</p>
+        <p><strong>Name: </strong>Projected Positive No-Clashing Teaching Dimension</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{NCTD}^{p}">
-            \[\mathrm{NCTD}^{p}\]
+        <div class="latex-equation" data-latex="\mathrm{NCTD}^{+p}">
+            \[\mathrm{NCTD}^{+p}\]
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Projected No-Clashing Teaching Dimension</strong> is $$\mathrm{NCTD}^{p}(\mathcal H)\bydef\max_{S\subseteq\mathcal X}\mathrm{NCTD}(\mathcal H_{|S}),$$ where $\mathrm{NCTD}$ is the no-clashing teaching dimension of the projected trace class.</p></div>
-<strong>Description:</strong><div class="text-field"><p>The projection-monotonic closure of no-clashing teaching dimension. It is the quantity appearing in the stable-compression lower-bound theorem of the survey.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>The <strong>Projected Positive No-Clashing Teaching Dimension</strong> is $$\mathrm{NCTD}^{+p}(\mathcal H)\bydef\max_{S\subseteq\mathcal X}\mathrm{NCTD}^{+}(\mathcal H_{|S}),$$ where each teacher is required to use only positive examples of its target concept.</p></div>
+<strong>Description:</strong><div class="text-field"><p>The projection-monotonic closure of positive no-clashing teaching dimension.</p></div>
 
-<strong>Origin References:</strong><div class="text-field"><p>Database-defined projection closure of the no-clashing teaching model of <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
+<strong>Origin References:</strong><div class="text-field"><p>Database-defined projection closure of the positive no-clashing model of <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
 <p><strong>Category:</strong> Teaching and Hitting</p>
-<p><strong>Symmetric:</strong> Yes</p>
+<p><strong>Symmetric:</strong> No</p>
 <p><strong>Monotonic:</strong> Yes</p>
 <p><strong>P-Monotonic:</strong> Yes</p>
 <p><strong>C-Monotonic:</strong> Yes</p>
@@ -89,8 +89,8 @@
 <p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
 <p><strong>Doubly Monotonic:</strong> Yes</p>
 <p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/projected_noclashing_teaching_dimension_full_cube.html'>$\mathrm{NCTD}^{p}(\{S:S\subset [n]\}) = \lceil n/2\rceil\;(\Omega(n))$</a></li><li><a href='values/projected_noclashing_teaching_dimension_trivial_concepts.html'>$\mathrm{NCTD}^{p}(\{\emptyset, [n]\}) = 1\;(\Omega(1))$</a></li><li><a href='values/projected_noclashing_teaching_dimension_projected_noclashing_gap.html'>$\mathrm{NCTD}^{p}(\mathcal C_{\mathrm{pNC}}) = 2\;(\Omega(1))$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/projected_positive_noclashing_teaching_dimension_projected_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{NCTD}^{+p} \ge \mathrm{NCTD}^{p}$</a></li><li><a href="relationships/projected_noclashing_teaching_dimension_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{NCTD}^{p} \ge \mathrm{NCTD}$</a></li><li><a href="relationships/projected_noclashing_teaching_dimension_vc_dimension_affine.html" class="relationship-statement">$\mathrm{NCTD}^{p} \ge \tfrac12\mathrm{VC}$</a></li><li><a href="relationships/stable_unlabeled_complexity_projected_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{sUSC} \ge \mathrm{NCTD}^{p}$</a></li><li><a href="relationships/stable_labeled_sample_compression_projected_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{sLSC} \ge \mathrm{NCTD}^{p}$</a></li><li><a href="relationships/proper_stable_sample_compression_projected_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{psUSC} \ge \mathrm{NCTD}^{p}$</a></li><li><a href="relationships/proper_stable_labeled_sample_compression_projected_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{psLSC} \ge \mathrm{NCTD}^{p}$</a></li><li><a href="relationships/projected_noclashing_teaching_dimension_projected_double_density_affine.html" class="relationship-statement">$\mathrm{NCTD}^{p} \ge \tfrac12\mathrm{dens}^p$</a></li><li><a href="relationships/projected_recursive_teaching_dimension_projected_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{RTD}^p \ge \mathrm{NCTD}^{p}$</a></li><li><a href="relationships/effective_range_projected_noclashing_teaching_dimension_affine.html" class="relationship-statement">$\mathrm{E} \ge 2\mathrm{NCTD}^{p} - (1)$</a></li></ul></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/projected_positive_noclashing_teaching_dimension_projected_positive_noclashing_gap.html'>$\mathrm{NCTD}^{+p}(\mathcal C_{\mathrm{pNC+}}) = 2\;(\Omega(1))$</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/projected_positive_noclashing_teaching_dimension_projected_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{NCTD}^{+p} \ge \mathrm{NCTD}^{p}$</a></li><li><a href="relationships/projected_positive_noclashing_teaching_dimension_positive_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{NCTD}^{+p} \ge \mathrm{NCTD}^+$</a></li><li><a href="relationships/effective_range_projected_positive_noclashing_teaching_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{NCTD}^{+p}$</a></li></ul></div>
 
         </div>
     </div>
