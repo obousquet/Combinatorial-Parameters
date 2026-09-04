@@ -1,0 +1,11 @@
+{
+  "id": 1035,
+  "name": "Shattering-Cover Projection VC Dimension of Common-Core Cube",
+  "short_name": "shattering_cover_projection_vc_dimension_common_core_cube",
+  "class_id": "#classes/common_core_cube",
+  "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every projection that retains all $2^n$ distinct concepts must retain all $n$ private coordinates, since deleting one identifies the two concepts differing only there. On those coordinates the projection is the full $n$-cube, whose VC dimension is $n$ and whose shattered-set family has size $2^n$. Thus every admissible projection has VC dimension at least $n$, and the private-coordinate projection attains it."
+}
