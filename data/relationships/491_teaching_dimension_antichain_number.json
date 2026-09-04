@@ -1,0 +1,13 @@
+{
+  "id": 491,
+  "name": "Teaching Dimension / Antichain Number",
+  "short_name": "teaching_dimension_antichain_number",
+  "parameter_1_id": "#parameters/teaching_dimension",
+  "parameter_2_id": "#parameters/antichain_number",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary concept class, $\\mathrm{TD}(\\mathcal H)\\geq\\mathrm{AN}(\\mathcal H)$.",
+  "proof_source": "Proposition \\ref{prop:subset-teaching-antichain} in the survey.",
+  "latex_proof_label": "prop:subset-teaching-antichain",
+  "references": "\\cite{goldman1995complexity,simon2023map}"
+}
