@@ -117,6 +117,10 @@ python3 sync/audit_relationship_duplicates.py --data-dir data --check
 # important edges; use --all for the full research queue.
 python3 sync/audit_hasse_edges.py --data-dir data
 
+# Screens unrecorded directions against exact benchmark values. This is a
+# research queue only: a listed direction is not a mathematical claim.
+python3 sync/screen_benchmark_dominance.py --data-dir data
+
 # Lists the current bottom-layer components and prioritizes pairs without a
 # direct comparison; benchmark gaps are research leads, not inferred facts.
 python3 sync/audit_leaf_layer.py --data-dir data

@@ -1,0 +1,14 @@
+{
+  "id": 485,
+  "name": "Effective VC Radius / Interpolation Degree",
+  "short_name": "effective_vc_radius_interpolation_degree",
+  "parameter_1_id": "#parameters/effective_vc_radius",
+  "parameter_2_id": "#parameters/interpolation_degree",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The proposed bound $\\mathrm{VCR}(\\mathcal H)\\geq\\mathrm{intdeg}(\\mathcal H)$ fails by an unbounded factor, even for finite binary classes.",
+  "proof": "For the cube-with-apex family $\\mathcal A_n$, every coordinate is effective but the pair consisting of the apex coordinate and any base coordinate is not shattered, so $\\mathrm{VCR}(\\mathcal A_n)=1$. Its full $n$-cube base forces interpolation degree at least $n$, and the base monomials together with the apex coordinate give a degree-$n$ interpolating basis. Thus $\\mathrm{intdeg}(\\mathcal A_n)=n$.",
+  "witness": "#classes/cube_with_apex",
+  "witness_strength": "unbounded",
+  "witness_verification": "For every $n\\geq1$, the established values are $\\mathrm{VCR}(\\mathcal A_n)=1$ and $\\mathrm{intdeg}(\\mathcal A_n)=n$."
+}

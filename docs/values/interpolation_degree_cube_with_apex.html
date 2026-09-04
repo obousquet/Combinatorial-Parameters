@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,23 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-40" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1066" style="position:relative;">
         
-        <h3><a href="classes/cube_with_apex.html" class="table-title-link">Cube with Apex</a></h3>
+        <h3><a href="values/interpolation_degree_cube_with_apex.html" class="table-title-link">Interpolation Degree of Cube with Apex</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Cube with Apex</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal A_n">
-            \[\mathcal A_n\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>On the domain $[n]\cup\{\star\}$, the <strong>cube-with-apex class</strong> is $\mathcal A_n=\{A:A\subseteq[n]\}\cup\{\{\star\}\}$. Thus it contains the full $n$-cube on $[n]$ with coordinate $\star$ fixed to $0$, together with one apex having only $\star$ positive.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>The base cube is strongly shattered, but the apex activates $\star$ and makes every pair $\{\star,i\}$ fail to be shattered.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/effective_vc_radius_cube_with_apex.html'>Effective VC Radius of Cube with Apex</a></li><li><a href='values/largest_strongly_shattered_set_cube_with_apex.html'>Largest Strongly Shattered Set of Cube with Apex</a></li><li><a href='values/interpolation_degree_cube_with_apex.html'>Interpolation Degree of Cube with Apex</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/effective_vc_radius_interpolation_degree.html'>Effective VC Radius / Interpolation Degree</a></li></ul></p></div>
+        <p><strong>Name: </strong>Interpolation Degree of Cube with Apex</p>
+<p><strong>Class: </strong><a href="classes/cube_with_apex.html">Cube with Apex</a></p>
+<p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For $n\geq1$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full $n$-cube base subfamily forces interpolation degree at least $n$. Conversely, the $2^n$ monomials $x_S$ for $S\subseteq[n]$ interpolate arbitrary functions on the base and are zero at the apex except for the constant monomial. Adding the apex coordinate $x_\star$ separates its value from the base without increasing the maximum degree. Hence degree $n$ suffices and is necessary.</p></div>
+
 
         </div>
     </div>

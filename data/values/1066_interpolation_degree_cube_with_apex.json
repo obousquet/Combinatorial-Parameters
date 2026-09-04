@@ -1,0 +1,12 @@
+{
+  "id": 1066,
+  "name": "Interpolation Degree of Cube with Apex",
+  "short_name": "interpolation_degree_cube_with_apex",
+  "class_id": "#classes/cube_with_apex",
+  "parameter_id": "#parameters/interpolation_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "details": "For $n\\geq1$.",
+  "status": "established",
+  "proof": "The full $n$-cube base subfamily forces interpolation degree at least $n$. Conversely, the $2^n$ monomials $x_S$ for $S\\subseteq[n]$ interpolate arbitrary functions on the base and are zero at the apex except for the constant monomial. Adding the apex coordinate $x_\\star$ separates its value from the base without increasing the maximum degree. Hence degree $n$ suffices and is necessary."
+}
