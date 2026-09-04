@@ -1,0 +1,14 @@
+{
+  "id": 417,
+  "name": "co-VC Dimension / Dual VC Dimension (Incomparable)",
+  "short_name": "covc_dimension_dual_vc_dimension_incomparable",
+  "parameter_1_id": "#parameters/covc_dimension",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For singletons $\\mathcal S_n$, $\\mathrm{coVC}=n$ while $\\mathrm{VC}^*=1$.",
+  "parameter_2_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm{VC}^*=\\lfloor\\log_2n\\rfloor$ while $\\mathrm{coVC}=0$.",
+  "proof": "The singleton and full-cube calculations give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs; see also \\cite{chornomaz2025spherical}."
+}
