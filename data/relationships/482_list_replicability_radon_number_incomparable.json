@@ -1,0 +1,14 @@
+{
+  "id": 482,
+  "name": "List Replicability Number / Radon Number (Incomparable)",
+  "short_name": "list_replicability_radon_number_incomparable",
+  "parameter_1_id": "#parameters/list_replicability",
+  "parameter_2_id": "#parameters/radon_number",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm{LR}=n$, whereas $\\mathrm{Rad}=\\lfloor\\log_2(2n+2)\\rfloor=\\Theta(\\log n)$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$ with $n\\ge4$, $\\mathrm{Rad}=n$, whereas $2\\leq\\mathrm{LR}\\leq3$.",
+  "proof": "The established full-cube and singleton bounds yield unbounded gaps in both directions.",
+  "references": "\\cite{blondal2026simplicialcovering,chornomaz2025spherical,alon2016sign,chase2024dual}; database-owned value proofs."
+}
