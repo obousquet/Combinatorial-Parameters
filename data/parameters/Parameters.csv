@@ -77,6 +77,3 @@ dc6df2ea,Maximum Largest Order Shattered Set,$\mathrm{OSH}_{\max}$,,,TRUE,TRUE,T
 24146bbb,Positive No-Clashing Teaching Dimension,$\mathrm{NCTD}^+$,,,FALSE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
 02cce113,Distinguishing Range,$\mathrm{R}$,,Minimum number of coordinates over which all concepts in the class can be distinguished.,TRUE,TRUE,FALSE,FALSE,FALSE,,,Basic
 1dd9f740,Positive Recursive Teaching Dimension,$\mathrm{RTD}^+$,,,FALSE,TRUE,FALSE,FALSE,FALSE,,,Teaching and Hitting
-df84e955,2-Littlestone Dimension,$\mathrm{L}_2$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
-5584a06e,3-Littlestone Dimension,$\mathrm{L}_3$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
-0b91817a,$k$-Littlestone Dimension ($k\ge3$),$\mathrm{L}_k$,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,Queries
