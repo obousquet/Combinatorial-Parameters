@@ -1,0 +1,13 @@
+{
+  "id": 1049,
+  "name": "Recursive Teaching Dimension of Quadratic-Residue Tournament Classes",
+  "short_name": "recursive_teaching_dimension_quadratic_residue_tournament_classes",
+  "class_id": "#classes/quadratic_residue_tournament_classes",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$\\left\\lfloor\\tfrac12\\log_2p-\\log_2\\log_2p\\right\\rfloor$ or larger",
+  "value_class": "omega_log_n",
+  "details": "For all sufficiently large primes $p\\equiv3\\pmod4$; here $|\\mathcal Q_p|=p$.",
+  "status": "established",
+  "proof": "Theorem 15 of Simon proves that every quadratic-residue tournament $G_p$ has minimum teaching dimension at least $\\lfloor\\tfrac12\\log_2p-\\log_2\\log_2p\\rfloor$. Recursive teaching dimension is at least the minimum teaching dimension of its initial class, giving the same lower bound.",
+  "references": "\\cite{simon2023tournaments}"
+}

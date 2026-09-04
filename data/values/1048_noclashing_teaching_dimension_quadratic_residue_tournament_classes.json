@@ -1,0 +1,13 @@
+{
+  "id": 1048,
+  "name": "No-Clashing Teaching Dimension of Quadratic-Residue Tournament Classes",
+  "short_name": "noclashing_teaching_dimension_quadratic_residue_tournament_classes",
+  "class_id": "#classes/quadratic_residue_tournament_classes",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For every prime $p\\equiv3\\pmod4$.",
+  "status": "established",
+  "proof": "For any tournament-induced class $\\mathcal C(G)=\\{C_a\\}$, assign $C_a$ the one-point sample on coordinate $a$.  For distinct vertices $a,b$, the tournament edge between them makes one assigned sample inconsistent with the other concept, so the map is no-clashing. A class with more than one concept has no-clashing teaching dimension at least one.",
+  "references": "\\cite{simon2023tournaments}"
+}

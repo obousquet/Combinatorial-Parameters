@@ -1,0 +1,10 @@
+{
+  "id": 41,
+  "name": "Quadratic-Residue Tournament Classes",
+  "short_name": "quadratic_residue_tournament_classes",
+  "graph_label": "QR tournaments",
+  "symbol": "\\mathcal{Q}_p",
+  "definition": "For a prime $p\\equiv3\\pmod4$, let $G_p$ be the tournament on $\\mathbb F_p$ with an arc $a\\to b$ exactly when $a-b$ is a nonzero quadratic residue modulo $p$.  The **Quadratic-Residue Tournament Class** is $\\mathcal Q_p=\\{C_a:a\\in\\mathbb F_p\\}$ on domain $\\mathbb F_p$, where $C_a=\\{b\\in\\mathbb F_p:a\\to b\\}$.",
+  "comments": "This explicit family realizes a logarithmically growing recursive teaching dimension while retaining no-clashing teaching dimension one.",
+  "origin_references": "\\cite{simon2023tournaments}"
+}

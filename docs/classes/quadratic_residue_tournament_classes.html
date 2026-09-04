@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,29 +63,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-291" style="position:relative;">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-41" style="position:relative;">
         
-        <h3><a href="relationships/recursive_teaching_dimension_noclashing_teaching_dimension.html" class="table-title-link">Recursive Teaching Dimension / No-Clashing Teaching Dimension</a></h3>
+        <h3><a href="classes/quadratic_residue_tournament_classes.html" class="table-title-link">Quadratic-Residue Tournament Classes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Recursive Teaching Dimension / No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Every recursive teaching map is no-clashing.</p></div>
-<p><strong>Witness: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the quadratic-residue tournament classes $\mathcal Q_p$, $\mathrm{NCTD}=1$ while $\mathrm{RTD}\geq\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor$ for infinitely many primes $p\equiv3\pmod4$.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Take a recursive teaching order and, for each concept h, a teaching set T(h) identifying h within the then-current remaining class. For two distinct concepts h,h', assume h is removed first. Then h' is still present when T(h) is chosen, so T(h) is inconsistent with h'. Thus no pair can clash. The same map has width at most $\mathrm{RTD}(\mathcal H)$, proving $\mathrm{NCTD}(\mathcal H)\leq\mathrm{RTD}(\mathcal H)$.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition prop:rtd-low-nctd.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a> <a href="bibliography.html#KSZ2019">[KSZ2019]</a> <a href="bibliography.html#simon2023tournaments">[simon2023tournaments]</a></p></div>
+        <p><strong>Name: </strong>Quadratic-Residue Tournament Classes</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal{Q}_p">
+            \[\mathcal{Q}_p\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>For a prime $p\equiv3\pmod4$, let $G_p$ be the tournament on $\mathbb F_p$ with an arc $a\to b$ exactly when $a-b$ is a nonzero quadratic residue modulo $p$.  The <strong>Quadratic-Residue Tournament Class</strong> is $\mathcal Q_p=\{C_a:a\in\mathbb F_p\}$ on domain $\mathbb F_p$, where $C_a=\{b\in\mathbb F_p:a\to b\}$.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This explicit family realizes a logarithmically growing recursive teaching dimension while retaining no-clashing teaching dimension one.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/noclashing_teaching_dimension_quadratic_residue_tournament_classes.html'>No-Clashing Teaching Dimension of Quadratic-Residue Tournament Classes</a></li><li><a href='values/recursive_teaching_dimension_quadratic_residue_tournament_classes.html'>Recursive Teaching Dimension of Quadratic-Residue Tournament Classes</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/recursive_teaching_dimension_noclashing_teaching_dimension.html'>Recursive Teaching Dimension / No-Clashing Teaching Dimension</a></li></ul></p></div>
 
         </div>
     </div>
