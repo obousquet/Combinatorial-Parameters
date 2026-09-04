@@ -1,0 +1,12 @@
+{
+  "id": 439,
+  "name": "Projected No-Clashing Teaching Dimension / No-Clashing Teaching Dimension",
+  "short_name": "projected_noclashing_teaching_dimension_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/projected_noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "The defining maximum includes the identity projection.",
+  "proof": "Take \\(S=\\mathcal X\\) in the definition of \\(\\mathrm{NCTD}^{p}\\).",
+  "derivation": "max_over_projections from the definition of #parameters/projected_noclashing_teaching_dimension"
+}

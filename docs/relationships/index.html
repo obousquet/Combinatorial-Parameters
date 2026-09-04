@@ -8411,6 +8411,162 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-439" style="position:relative;">
+        
+        <h3><a href="relationships/projected_noclashing_teaching_dimension_noclashing_teaching_dimension.html" class="table-title-link">Projected No-Clashing Teaching Dimension / No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension / No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The defining maximum includes the identity projection.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Take (S=\mathcal X) in the definition of (\mathrm{NCTD}^{p}).</p></div>
+
+<strong>Derivation:</strong><div class="text-field"><p>max_over_projections from the definition of <a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-440" style="position:relative;">
+        
+        <h3><a href="relationships/projected_noclashing_teaching_dimension_vc_dimension_affine.html" class="table-title-link">Projected No-Clashing Teaching Dimension / VC Dimension (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension / VC Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+
+<p><strong>Multiplicative Constant: </strong>\tfrac12</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary class, (\mathrm{NCTD}^{p}(\mathcal H)\geq\lceil\mathrm{VC}(\mathcal H)/2\rceil).</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Project to a shattered set of size d. The projected class is the full d-cube, whose no-clashing teaching dimension is (\lceil d/2\rceil). Taking the maximum over coordinate projections gives the claim.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>The argument in the proof of Theorem thm:stable-comp-low-NCTD-star in the LaTeX survey.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-441" style="position:relative;">
+        
+        <h3><a href="relationships/stable_unlabeled_complexity_projected_noclashing_teaching_dimension.html" class="table-title-link">Stable Unlabeled Complexity / Projected No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stable Unlabeled Complexity / Projected No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Every stable unlabeled sample-compression scheme has size at least the maximum no-clashing teaching dimension of a coordinate projection.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the full n-cube, stable unlabeled complexity is n while (\mathrm{NCTD}^{p}=\lceil n/2\rceil), so the inequality is strict for every (n\ge3).</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-442" style="position:relative;">
+        
+        <h3><a href="relationships/stable_labeled_sample_compression_projected_noclashing_teaching_dimension.html" class="table-title-link">Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The stable-compression theorem applies unchanged to labeled schemes.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the full n-cube, stable labeled compression is n while (\mathrm{NCTD}^{p}=\lceil n/2\rceil), so the inequality is strict for every (n\ge3).</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-443" style="position:relative;">
+        
+        <h3><a href="relationships/proper_stable_sample_compression_projected_noclashing_teaching_dimension.html" class="table-title-link">Proper Stable Sample Compression / Projected No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Stable Sample Compression / Projected No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The stable-compression lower bound applies directly; proper reconstruction is an additional restriction.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the full n-cube, proper stable unlabeled compression is n while (\mathrm{NCTD}^{p}=\lceil n/2\rceil), so the inequality is strict for every (n\ge3).</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-444" style="position:relative;">
+        
+        <h3><a href="relationships/proper_stable_labeled_sample_compression_projected_noclashing_teaching_dimension.html" class="table-title-link">Proper Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The stable-compression lower bound applies directly; properness and labeled reconstruction are additional restrictions.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the full n-cube, proper stable labeled compression is n while (\mathrm{NCTD}^{p}=\lceil n/2\rceil), so the inequality is strict for every (n\ge3).</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         

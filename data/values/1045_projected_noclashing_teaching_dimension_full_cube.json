@@ -1,0 +1,12 @@
+{
+  "id": 1045,
+  "name": "Projected No-Clashing Teaching Dimension of Full Cube",
+  "short_name": "projected_noclashing_teaching_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$\\lceil n/2\\rceil$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every coordinate projection of the full n-cube is a full m-cube for some \\(m\\le n\\), whose no-clashing teaching dimension is \\(\\lceil m/2\\rceil\\) by Theorem 19 of Kirkpatrick--Simon--Zilles. The maximum occurs for the full projection.",
+  "references": "\\cite{KSZ2019}"
+}

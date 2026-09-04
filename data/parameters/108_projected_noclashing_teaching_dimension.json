@@ -1,0 +1,34 @@
+{
+  "id": 108,
+  "name": "Projected No-Clashing Teaching Dimension",
+  "short_name": "projected_noclashing_teaching_dimension",
+  "symbol": "\\mathrm{NCTD}^{p}",
+  "category": "teaching",
+  "symmetric": true,
+  "monotonic": true,
+  "p_monotonic": true,
+  "c_monotonic": true,
+  "doubly_monotonic": true,
+  "definition": "The **Projected No-Clashing Teaching Dimension** is $$\\mathrm{NCTD}^{p}(\\mathcal H)\\bydef\\max_{S\\subseteq\\mathcal X}\\mathrm{NCTD}(\\mathcal H_{|S}),$$ where $\\mathrm{NCTD}$ is the no-clashing teaching dimension of the projected trace class.",
+  "graph_summary": "Largest no-clashing teaching dimension attained by a coordinate projection.",
+  "description": "The projection-monotonic closure of no-clashing teaching dimension. It is the quantity appearing in the stable-compression lower-bound theorem of the survey.",
+  "origin_references": "Database-defined projection closure of the no-clashing teaching model of \\cite{KSZ2019}.",
+  "monotonicity_evidence": {
+    "monotonic": {
+      "proof": "If \\(\\mathcal G\\subseteq\\mathcal H\\), then \\(\\mathcal G_{|S}\\subseteq\\mathcal H_{|S}\\) for every S. No-clashing teaching dimension is subfamily-monotonic, so maximizing its projected values preserves this inequality.",
+      "kind": "max_over_subfamilies"
+    },
+    "p_monotonic": {
+      "proof": "Every projection of \\(\\mathcal H_{|T}\\) is also a projection of \\(\\mathcal H\\), hence the maximum defining \\(\\mathrm{NCTD}^{p}(\\mathcal H_{|T})\\) is at most that defining \\(\\mathrm{NCTD}^{p}(\\mathcal H)\\).",
+      "kind": "max_over_projections"
+    },
+    "c_monotonic": {
+      "proof": "Doubly monotonicity implies conditioning monotonicity, since a conditioned fibre is a subfamily followed by a projection.",
+      "kind": "definitional_consequence"
+    },
+    "doubly_monotonic": {
+      "proof": "The preceding direct arguments establish monotonicity under both subfamilies and projections.",
+      "kind": "direct_argument"
+    }
+  }
+}

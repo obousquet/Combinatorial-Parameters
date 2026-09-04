@@ -1,0 +1,16 @@
+{
+  "id": 442,
+  "name": "Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension",
+  "short_name": "stable_labeled_sample_compression_projected_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/stable_labeled_sample_compression",
+  "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "The stable-compression theorem applies unchanged to labeled schemes.",
+  "latex_proof_label": "thm:stable-comp-low-NCTD-star",
+  "proof_source": "Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.",
+  "references": "\\cite{KSZ2019}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "For the full n-cube, stable labeled compression is n while \\(\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil\\), so the inequality is strict for every \\(n\\ge3\\)."
+}

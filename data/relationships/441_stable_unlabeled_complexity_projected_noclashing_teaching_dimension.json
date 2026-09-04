@@ -1,0 +1,16 @@
+{
+  "id": 441,
+  "name": "Stable Unlabeled Complexity / Projected No-Clashing Teaching Dimension",
+  "short_name": "stable_unlabeled_complexity_projected_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/stable_unlabeled_complexity",
+  "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "Every stable unlabeled sample-compression scheme has size at least the maximum no-clashing teaching dimension of a coordinate projection.",
+  "latex_proof_label": "thm:stable-comp-low-NCTD-star",
+  "proof_source": "Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.",
+  "references": "\\cite{KSZ2019}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "For the full n-cube, stable unlabeled complexity is n while \\(\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil\\), so the inequality is strict for every \\(n\\ge3\\)."
+}

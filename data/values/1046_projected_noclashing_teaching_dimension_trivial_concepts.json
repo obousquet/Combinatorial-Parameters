@@ -1,0 +1,12 @@
+{
+  "id": 1046,
+  "name": "Projected No-Clashing Teaching Dimension of Trivial Concepts",
+  "short_name": "projected_noclashing_teaching_dimension_trivial_concepts",
+  "class_id": "#classes/trivial_concepts",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For a nonempty domain.",
+  "status": "established",
+  "proof": "Every nonempty coordinate projection remains the two constant concepts and has no-clashing teaching dimension one; the empty projection has one trace and value zero. Thus the maximum projected value is one."
+}
