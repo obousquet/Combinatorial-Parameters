@@ -898,4 +898,20 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         f"{len(base_rank_relations)} base relations used for affine ranks; "
         f"{len(clusters)} mutual affine-linear blocks)"
     )
-    return {"nodes": nodes, "edges": edges, "legend": legend, "clusters": clusters}
+    # Dot's defaults prioritize compactness. The Hasse diagram has enough
+    # same-rank nodes that a roomier grid is easier to read, and a larger
+    # crossing-minimization budget produces a better ordering on wide layers.
+    # These settings are local to this database.
+    layout = {
+        "ranksep": 1.05,
+        "nodesep": 0.45,
+        "mclimit": 10,
+        "nslimit": 30,
+    }
+    return {
+        "nodes": nodes,
+        "edges": edges,
+        "legend": legend,
+        "clusters": clusters,
+        "layout": layout,
+    }

@@ -1,0 +1,16 @@
+{
+  "id": 500,
+  "name": "Average Teaching Dimension / Double Density",
+  "short_name": "average_teaching_dimension_double_density",
+  "parameter_1_id": "#parameters/average_teaching_dimension",
+  "parameter_2_id": "#parameters/double_density_or_average_degree",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, average teaching dimension is at least the average degree of its $1$-inclusion graph.",
+  "proof": "For each concept $h$, every teaching set has size at least the degree of $h$ in the $1$-inclusion graph. Averaging this pointwise inequality over $h$ gives $\\mathrm{TS}_{\\mathrm{avg}}(\\mathcal H)\\ge |\\mathcal H|^{-1}\\sum_h\\deg(h)$, and the right-hand side is the double density (average degree).",
+  "latex_proof_label": "cor:average-teaching-density",
+  "proof_source": "Corollary \\ref{cor:average-teaching-density} in the survey, averaging Lemma \\ref{lem:teaching-set-degree-lower-bound}.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
+  "witness_verification": "For Warmuth's $C_5$ class, the established average teaching dimension is $3$ and its average degree is $1$."
+}
