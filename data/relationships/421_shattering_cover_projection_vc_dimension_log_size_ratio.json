@@ -1,0 +1,13 @@
+{
+  "id": 421,
+  "name": "Shattering-Cover Projection VC Dimension / Log Size Ratio",
+  "short_name": "shattering_cover_projection_vc_dimension_log_size_ratio",
+  "parameter_1_id": "#parameters/shattering_cover_projection_vc_dimension",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite non-singleton binary class.",
+  "proof": "If an admissible projection on $m$ coordinates has VC dimension $d$, its shattered-set family is downward closed with all faces of size at most $d$. Hence $|\\mathcal H|\\leq|\\operatorname{sh}(\\mathcal H_{|S})|\\leq\\sum_{i=0}^d\\binom mi\\leq(m+1)^d\\leq(n+1)^d$. Taking logarithms yields $\\mathrm{SCVC}(\\mathcal H)\\geq\\log(|\\mathcal H|-1)/\\log(n+1)$.",
+  "latex_proof_label": "prop:scvc-log-size-ratio",
+  "proof_source": "Proposition \\ref{prop:scvc-log-size-ratio} in the survey."
+}
