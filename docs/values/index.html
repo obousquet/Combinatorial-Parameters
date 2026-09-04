@@ -17138,6 +17138,40 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1073" style="position:relative;">
+        
+        <h3><a href="values/antichain_number_noclashing_antichain_gap.html" class="table-title-link">Antichain Number of the No-Clashing/Antichain Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antichain Number of the No-Clashing/Antichain Separation Class</p>
+<p><strong>Class: </strong><a href="classes/noclashing_antichain_gap.html">No-Clashing/Antichain Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/antichain_number.html">Antichain Number</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Assign respectively to $000,001,010,011,100,101$ the singleton samples $(x_0,0),(x_1,0),(x_1,1),(x_2,1),(x_2,0),(x_0,1)$. These six samples are distinct and have equal size, hence form an antichain. Width zero is impossible for a non-singleton class. Thus $\mathrm{AN}=1$; the assignment and lower bound are checked in $\texttt{sync/verify\_noclashing\_antichain\_gap.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1074" style="position:relative;">
+        
+        <h3><a href="values/noclashing_teaching_dimension_noclashing_antichain_gap.html" class="table-title-link">No-Clashing Teaching Dimension of the No-Clashing/Antichain Separation Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>No-Clashing Teaching Dimension of the No-Clashing/Antichain Separation Class</p>
+<p><strong>Class: </strong><a href="classes/noclashing_antichain_gap.html">No-Clashing/Antichain Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The samples $\varnothing,(x_2,1),(x_1,1),\{(x_1,1),(x_2,1)\},(x_0,1),\{(x_0,1),(x_2,1)\}$, assigned in the class-definition order, form a no-clashing teacher map of width two. Exhaustive enumeration rules out width one, so $\mathrm{NCTD}=2$; see $\texttt{sync/verify\_noclashing\_antichain\_gap.py}$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the class definition.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

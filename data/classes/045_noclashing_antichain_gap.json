@@ -1,0 +1,9 @@
+{
+  "id": 45,
+  "name": "No-Clashing/Antichain Separation Class",
+  "short_name": "noclashing_antichain_gap",
+  "graph_label": "NC/AN gap",
+  "symbol": "\\mathcal C_{\\mathrm{NC/AN}}",
+  "definition": "On the three-coordinate domain $\\{x_0,x_1,x_2\\}$, let $\\mathcal C_{\\mathrm{NC/AN}}=\\{000,001,010,011,100,101\\}$, where strings list values in coordinate order.",
+  "comments": "A six-concept finite class witnessing that no-clashing teaching dimension can exceed the antichain number."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 1074,
+  "name": "No-Clashing Teaching Dimension of the No-Clashing/Antichain Separation Class",
+  "short_name": "noclashing_teaching_dimension_noclashing_antichain_gap",
+  "class_id": "#classes/noclashing_antichain_gap",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The samples $\\varnothing,(x_2,1),(x_1,1),\\{(x_1,1),(x_2,1)\\},(x_0,1),\\{(x_0,1),(x_2,1)\\}$, assigned in the class-definition order, form a no-clashing teacher map of width two. Exhaustive enumeration rules out width one, so $\\mathrm{NCTD}=2$; see $\\texttt{sync/verify\\_noclashing\\_antichain\\_gap.py}$.",
+  "references": "Direct calculation from the class definition."
+}

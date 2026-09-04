@@ -1,0 +1,12 @@
+{
+  "id": 1073,
+  "name": "Antichain Number of the No-Clashing/Antichain Separation Class",
+  "short_name": "antichain_number_noclashing_antichain_gap",
+  "class_id": "#classes/noclashing_antichain_gap",
+  "parameter_id": "#parameters/antichain_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Assign respectively to $000,001,010,011,100,101$ the singleton samples $(x_0,0),(x_1,0),(x_1,1),(x_2,1),(x_2,0),(x_0,1)$. These six samples are distinct and have equal size, hence form an antichain. Width zero is impossible for a non-singleton class. Thus $\\mathrm{AN}=1$; the assignment and lower bound are checked in $\\texttt{sync/verify\\_noclashing\\_antichain\\_gap.py}$.",
+  "references": "Direct calculation from the class definition."
+}

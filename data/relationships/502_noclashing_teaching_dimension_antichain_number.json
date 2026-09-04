@@ -10,5 +10,8 @@
   "proof": "Start with a no-clashing teacher map of width $d$. Pad each assigned sample, with examples consistent with its target, until it has size exactly $d$. This preserves no-clashing. Distinct equal-size samples cannot strictly contain one another, and no-clashing excludes equality, so the padded map is an antichain teacher mapping of width $d$. Hence $\\mathrm{AN}\\le\\mathrm{NCTD}$.",
   "latex_proof_label": "prop:nctd-antichain",
   "proof_source": "Proposition 8 of Mansouri--Simon--Singla--Zilles.",
-  "references": "\\cite{mansouri2022batch}"
+  "references": "\\cite{mansouri2022batch}",
+  "witness": "#classes/noclashing_antichain_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\mathrm{NC/AN}}$, the established values are $\\mathrm{NCTD}=2$ and $\\mathrm{AN}=1$; the exhaustive certificate is $\\texttt{sync/verify\\_noclashing\\_antichain\\_gap.py}$."
 }
