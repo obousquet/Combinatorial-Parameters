@@ -1,0 +1,16 @@
+{
+  "id": 447,
+  "name": "Monotonic Projected Minimum Teaching-Set Size / Projected Recursive Teaching Dimension",
+  "short_name": "monotonic_projected_minimum_teaching_set_size_projected_recursive_teaching_dimension",
+  "parameter_1_id": "#parameters/monotonic_projected_minimum_teaching_set_size",
+  "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
+  "relationship_type": "larger",
+  "details": "For every finite binary class, $\\mathrm{TS}_{\\min}^{*p}(\\mathcal H)\\geq\\mathrm{RTD}^{p}(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Lift any subfamily of any coordinate projection by choosing one preimage for each trace. Its minimum teaching-set size is no greater than the lifted class's minimum projected teaching-set size; maximize over the projection and subfamily.",
+  "latex_proof_label": "prop:monotonic-projected-teaching-low-projected-rtd",
+  "proof_source": "Proposition prop:monotonic-projected-teaching-low-projected-rtd in the LaTeX survey.",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\triangle}=\\{000,011,101\\}$, $\\mathrm{TS}_{\\min}^{*p}=2$ while $\\mathrm{RTD}^{p}=1$."
+}
