@@ -7,6 +7,9 @@
   "relationship_type": "larger",
   "status": "established",
   "details": "The defining maximum includes the identity projection.",
+  "witness": "#classes/projected_noclashing_teaching_gap",
+  "witness_strength": "strict",
+  "witness_verification": "For $\\mathcal C_{\\mathrm{pNC}}=\\{0000,0001,0010,0011,0100,1101\\}$, $\\mathrm{NCTD}=1$ while $\\mathrm{NCTD}^{p}=2$; sync/verify_projected_noclashing_gap.py exhaustively verifies both values.",
   "proof": "Take \\(S=\\mathcal X\\) in the definition of \\(\\mathrm{NCTD}^{p}\\).",
   "derivation": "max_over_projections from the definition of #parameters/projected_noclashing_teaching_dimension"
 }

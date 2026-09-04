@@ -1,0 +1,11 @@
+{
+  "id": 1051,
+  "name": "Projected No-Clashing Teaching Dimension of the Projected No-Clashing Teaching Separation Class",
+  "short_name": "projected_noclashing_teaching_dimension_projected_noclashing_gap",
+  "class_id": "#classes/projected_noclashing_teaching_gap",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The trace on coordinates $\\{1,2,3\\}$ is $\\{000,001,010,011,100,101\\}$ and has no width-one no-clashing teacher, while it has one of width two. Exhaustive enumeration of all teacher maps also checks that every coordinate trace has NCTD at most two; hence the projected maximum is exactly two. See sync/verify_projected_noclashing_gap.py."
+}
