@@ -6,9 +6,10 @@
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger_c",
   "multiplicative_constant": "\\tfrac12",
-  "details": "For every finite binary class, \\(\\mathrm{NCTD}^{p}(\\mathcal H)\\geq\\lceil\\mathrm{VC}(\\mathcal H)/2\\rceil\\).",
+  "details": "For every finite binary class, $\\mathrm{NCTD}^{p}(\\mathcal H)\\geq\\lceil\\mathrm{VC}(\\mathcal H)/2\\rceil$.",
   "status": "established",
-  "proof": "Project to a shattered set of size d. The projected class is the full d-cube, whose no-clashing teaching dimension is \\(\\lceil d/2\\rceil\\). Taking the maximum over coordinate projections gives the claim.",
+  "proof": "Project to a shattered set of size $d$. The projected class is the full $d$-cube, whose no-clashing teaching dimension is $\\lceil d/2\\rceil$. Taking the maximum over coordinate projections gives the claim.",
+  "latex_proof_label": "thm:stable-comp-low-NCTD-star",
   "proof_source": "The argument in the proof of Theorem thm:stable-comp-low-NCTD-star in the LaTeX survey.",
   "references": "\\cite{KSZ2019}"
 }
