@@ -1,0 +1,13 @@
+{
+  "id": 495,
+  "name": "Prefix-$k$ Littlestone Dimension / $k$-Block Littlestone Dimension",
+  "short_name": "prefix_littlestone_dimension_kblock_littlestone_dimension",
+  "parameter_1_id": "#parameters/prefix_littlestone_dimension",
+  "parameter_2_id": "#parameters/kblock_littlestone_dimension_kgt2",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every fixed integer $k>2$ and every finite binary class, $\\mathrm{PL}_k(\\mathcal H)\\geq\\mathrm{B}_k(\\mathcal H)$.",
+  "latex_proof_label": "prop:block-prefix-littlestone",
+  "proof_source": "Full proof in the LaTeX survey: Proposition \\ref{prop:block-prefix-littlestone}.",
+  "references": "Database-owned constrained-tree argument."
+}

@@ -1,0 +1,13 @@
+{
+  "id": 494,
+  "name": "Prefix-2 Littlestone Dimension / 2-Block Littlestone Dimension",
+  "short_name": "prefix_littlestone_dimension_2block_littlestone_dimension",
+  "parameter_1_id": "#parameters/prefix_littlestone_dimension",
+  "parameter_2_id": "#parameters/2block_littlestone_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, $\\mathrm{PL}_2(\\mathcal H)\\geq\\mathrm{B}_2(\\mathcal H)$.",
+  "latex_proof_label": "prop:block-prefix-littlestone",
+  "proof_source": "Full proof in the LaTeX survey: Proposition \\ref{prop:block-prefix-littlestone}.",
+  "references": "Database-owned constrained-tree argument."
+}
