@@ -2951,6 +2951,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-438" style="position:relative;">
+        
+        <h3><a href="relationships/radon_number_covc_dimension.html" class="table-title-link">Radon Number / co-VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Radon Number / co-VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/radon_number.html">Radon Number</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, (\mathrm{Rad}(\mathcal H)\geq\mathrm{coVC}(\mathcal H)).</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the full cube (2^{[n]}), (\mathrm{coVC}=0) whereas (\mathrm{Rad}=\lfloor\log_2(2n+2)\rfloor), which is unbounded.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let the traces (t\mathbin\triangle{x_i}) for (i\in[d]) be a projected d-dimensional hollow star, with the centre trace t unrealizable.  Choose realizing hypotheses (h_i).  For a nontrivial partition (I\sqcup J=[d]), the version space fixing every coordinate (x_j), (j\in J), to (t(x_j)) contains all (h_i) with (i\in I); hence it contains the convex hull of that part.  Symmetrically, the hull of the J-part is contained in the version space fixing the I-coordinates to t.  The two version spaces have empty intersection, since their joint constraints prescribe the unrealizable trace t.  Thus the (h_i) are Radon independent.  Maximizing over hollow stars proves the inequality.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Database-owned direct conversion of a hollow star into a Radon-independent set.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chase2024dual">[chase2024dual]</a> <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-122" style="position:relative;">
         
         <h3><a href="relationships/log_size_majority_complexity.html" class="table-title-link">Log Size / Majority Complexity</a></h3>
