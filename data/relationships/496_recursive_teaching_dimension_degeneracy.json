@@ -1,0 +1,16 @@
+{
+  "id": 496,
+  "name": "Recursive Teaching Dimension / Degeneracy",
+  "short_name": "recursive_teaching_dimension_degeneracy",
+  "parameter_1_id": "#parameters/recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/degeneracy",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, recursive teaching dimension dominates the degeneracy of its $1$-inclusion graph.",
+  "proof": "For every nonempty subfamily $\\mathcal G\\subseteq\\mathcal H$, the minimum teaching-set size of $\\mathcal G$ is at least the minimum degree of its $1$-inclusion graph. Taking the maximum over all subfamilies gives $\\max_{\\mathcal G\\subseteq\\mathcal H}\\mathrm{TS}_{\\min}(\\mathcal G)\\ge\\max_{\\mathcal G\\subseteq\\mathcal H}\\mathrm d_{\\min}(\\mathcal G)$. The left-hand side is $\\mathrm{RTD}(\\mathcal H)$ and the right-hand side is the degeneracy.",
+  "latex_proof_label": "cor:rtd-degeneracy",
+  "proof_source": "Corollary \\ref{cor:rtd-degeneracy} in the survey, combining the max-over-subfamilies characterization of recursive teaching dimension with Lemma \\ref{lem:teaching-set-degree-lower-bound}.",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
+  "witness_verification": "For the two constant concepts on any domain of size at least two, $\\mathrm{RTD}=1$, whereas their $1$-inclusion graph has no edges and degeneracy zero."
+}
