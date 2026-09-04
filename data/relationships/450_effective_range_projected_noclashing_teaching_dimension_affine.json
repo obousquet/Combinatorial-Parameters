@@ -1,0 +1,19 @@
+{
+  "id": 450,
+  "name": "Effective Range / Projected No-Clashing Teaching Dimension (affine)",
+  "short_name": "effective_range_projected_noclashing_teaching_dimension_affine",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "2",
+  "additive_constant": "1",
+  "details": "Every finite binary class satisfies $\\mathrm{E}(\\mathcal H)\\geq2\\,\\mathrm{NCTD}^{p}(\\mathcal H)-1$, equivalently $\\mathrm{NCTD}^{p}(\\mathcal H)\\leq\\lceil\\mathrm{E}(\\mathcal H)/2\\rceil$.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "For the full cube on $n$ active coordinates, $\\mathrm{E}=n$ and $\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil$, so the affine bound is attained for odd $n$ and is off by only one for even $n$.",
+  "status": "established",
+  "proof": "Each coordinate trace $\\mathcal H_{\\mid S}$ has effective range at most $\\mathrm E(\\mathcal H)$. Applying the sharp no-clashing upper bound $\\mathrm{NCTD}(\\mathcal H_{\\mid S})\\leq\\lceil\\mathrm E(\\mathcal H)/2\\rceil$ to every trace and maximizing over $S$ proves the claim.",
+  "latex_proof_label": "cor:effective-range-low-projected-nctd",
+  "proof_source": "Corollary cor:effective-range-low-projected-nctd in the LaTeX survey.",
+  "references": "\\cite{KSZ2019}"
+}
