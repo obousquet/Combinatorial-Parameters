@@ -12119,6 +12119,32 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-488" style="position:relative;">
+        
+        <h3><a href="relationships/minimum_teaching_set_size_degeneracy.html" class="table-title-link">Minimum Teaching-Set Size / Degeneracy</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Teaching-Set Size / Degeneracy</p>
+<p><strong>Parameter 1: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/degeneracy.html">Degeneracy</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The proposed bound $\mathrm{TS}_{\min}(\mathcal H)\geq\mathrm{d}_{\min}^*(\mathcal H)$ fails by an unbounded factor.</p></div>
+<p><strong>Witness: </strong><a href="classes/cube_with_apex.html">Cube with Apex</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every $n\geq1$, the established values are $\mathrm{TS}_{\min}(\mathcal A_n)=1$ and $\mathrm{d}_{\min}^*(\mathcal A_n)=n$.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>In the cube-with-apex class $\mathcal A_n$, the apex has a one-point teaching set, whereas the base subfamily is a full $n$-cube and gives degeneracy $n$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-306" style="position:relative;">
         
         <h3><a href="relationships/interpolation_degree_shattering_cover_projection_vc_dimension.html" class="table-title-link">Interpolation Degree / Shattering-Cover Projection VC Dimension</a></h3>
@@ -12242,6 +12268,58 @@
 
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For the half-interval family $\mathcal I_n$, proper stable unlabeled compression has value one, while proper equivalence-query complexity is $\Theta(\log n)$. Hence the asserted reverse affine-linear bound fails.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-486" style="position:relative;">
+        
+        <h3><a href="relationships/largest_strongly_shattered_set_minimum_degree.html" class="table-title-link">Largest Strongly Shattered Set / Minimum Degree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Largest Strongly Shattered Set / Minimum Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/minimum_degree.html">Minimum Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The proposed pointwise bound $\mathrm{ST}(\mathcal H)\geq d_{\min}(\mathcal H)$ is false, even for finite binary classes.</p></div>
+<p><strong>Witness: </strong><a href="classes/antipodally_punctured_cube.html">Antipodally Punctured Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every $n\geq3$, the established values are $\mathrm{ST}(\mathcal P_n)=n-2<n-1=d_{\min}(\mathcal P_n)$.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For $\mathcal P_n=2^{[n]}\setminus\{\emptyset,[n]\}$ with $n\geq3$, every $(n-1)$-face contains a deleted antipode, whereas an $(n-2)$-face fixing one coordinate to zero and one to one avoids both. Hence $\mathrm{ST}=n-2$. The punctured-cube 1-inclusion graph has minimum degree $n-1$.</p></div>
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-487" style="position:relative;">
+        
+        <h3><a href="relationships/minimum_teaching_set_size_largest_strongly_shattered_set.html" class="table-title-link">Minimum Teaching-Set Size / Largest Strongly Shattered Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Teaching-Set Size / Largest Strongly Shattered Set</p>
+<p><strong>Parameter 1: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The proposed bound $\mathrm{TS}_{\min}(\mathcal H)\geq\mathrm{ST}(\mathcal H)$ fails by an unbounded factor.</p></div>
+<p><strong>Witness: </strong><a href="classes/cube_with_apex.html">Cube with Apex</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every $n\geq1$, the established values are $\mathrm{TS}_{\min}(\mathcal A_n)=1$ and $\mathrm{ST}(\mathcal A_n)=n$.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>In the cube-with-apex class $\mathcal A_n$, the apex is taught by its one positive apex coordinate, so $\mathrm{TS}_{\min}=1$. The base cube is a contained $n$-cube, so $\mathrm{ST}=n$.</p></div>
 
 
 

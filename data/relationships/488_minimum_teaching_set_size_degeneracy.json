@@ -1,0 +1,14 @@
+{
+  "id": 488,
+  "name": "Minimum Teaching-Set Size / Degeneracy",
+  "short_name": "minimum_teaching_set_size_degeneracy",
+  "parameter_1_id": "#parameters/minimum_teaching_set_size",
+  "parameter_2_id": "#parameters/degeneracy",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The proposed bound $\\mathrm{TS}_{\\min}(\\mathcal H)\\geq\\mathrm{d}_{\\min}^*(\\mathcal H)$ fails by an unbounded factor.",
+  "proof": "In the cube-with-apex class $\\mathcal A_n$, the apex has a one-point teaching set, whereas the base subfamily is a full $n$-cube and gives degeneracy $n$.",
+  "witness": "#classes/cube_with_apex",
+  "witness_strength": "unbounded",
+  "witness_verification": "For every $n\\geq1$, the established values are $\\mathrm{TS}_{\\min}(\\mathcal A_n)=1$ and $\\mathrm{d}_{\\min}^*(\\mathcal A_n)=n$."
+}

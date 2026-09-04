@@ -1,0 +1,11 @@
+{
+  "id": 1069,
+  "name": "Minimum Teaching-Set Size of Cube with Apex",
+  "short_name": "minimum_teaching_set_size_cube_with_apex",
+  "class_id": "#classes/cube_with_apex",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The apex is uniquely identified by its positive label at $\\star$, because every base-cube concept is zero there. Thus the minimum teaching-set size is at most one. It cannot be zero in a class with more than one concept, so it is exactly one."
+}

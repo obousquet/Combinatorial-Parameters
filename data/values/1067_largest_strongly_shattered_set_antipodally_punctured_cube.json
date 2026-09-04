@@ -1,0 +1,12 @@
+{
+  "id": 1067,
+  "name": "Largest Strongly Shattered Set of Antipodally Punctured Cube",
+  "short_name": "largest_strongly_shattered_set_antipodally_punctured_cube",
+  "class_id": "#classes/antipodally_punctured_cube",
+  "parameter_id": "#parameters/largest_strongly_shattered_set",
+  "value": "$n-2$",
+  "value_class": "omega_n",
+  "details": "For $n\\geq3$.",
+  "status": "established",
+  "proof": "Fix two coordinates, one to zero and one to one. The resulting $(n-2)$-face avoids both deleted antipodes, so it is a contained cube and strongly shatters an $(n-2)$-set. Every $(n-1)$-face fixes one coordinate and therefore contains one of the two deleted antipodes, so no such face is contained. Thus the value is exactly $n-2$."
+}

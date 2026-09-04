@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,23 +63,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-40" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-486" style="position:relative;">
         
-        <h3><a href="classes/cube_with_apex.html" class="table-title-link">Cube with Apex</a></h3>
+        <h3><a href="relationships/largest_strongly_shattered_set_minimum_degree.html" class="table-title-link">Largest Strongly Shattered Set / Minimum Degree</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Cube with Apex</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal A_n">
-            \[\mathcal A_n\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>On the domain $[n]\cup\{\star\}$, the <strong>cube-with-apex class</strong> is $\mathcal A_n=\{A:A\subseteq[n]\}\cup\{\{\star\}\}$. Thus it contains the full $n$-cube on $[n]$ with coordinate $\star$ fixed to $0$, together with one apex having only $\star$ positive.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>The base cube is strongly shattered, but the apex activates $\star$ and makes every pair $\{\star,i\}$ fail to be shattered.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/degeneracy_cube_with_apex.html'>Degeneracy of Cube with Apex</a></li><li><a href='values/effective_vc_radius_cube_with_apex.html'>Effective VC Radius of Cube with Apex</a></li><li><a href='values/largest_strongly_shattered_set_cube_with_apex.html'>Largest Strongly Shattered Set of Cube with Apex</a></li><li><a href='values/interpolation_degree_cube_with_apex.html'>Interpolation Degree of Cube with Apex</a></li><li><a href='values/minimum_teaching_set_size_cube_with_apex.html'>Minimum Teaching-Set Size of Cube with Apex</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/effective_vc_radius_interpolation_degree.html'>Effective VC Radius / Interpolation Degree</a></li><li><a href='relationships/minimum_teaching_set_size_degeneracy.html'>Minimum Teaching-Set Size / Degeneracy</a></li><li><a href='relationships/minimum_teaching_set_size_largest_strongly_shattered_set.html'>Minimum Teaching-Set Size / Largest Strongly Shattered Set</a></li></ul></p></div>
+        <p><strong>Name: </strong>Largest Strongly Shattered Set / Minimum Degree</p>
+<p><strong>Parameter 1: </strong><a href="parameters/largest_strongly_shattered_set.html">Largest Strongly Shattered Set</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/minimum_degree.html">Minimum Degree</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The proposed pointwise bound $\mathrm{ST}(\mathcal H)\geq d_{\min}(\mathcal H)$ is false, even for finite binary classes.</p></div>
+<p><strong>Witness: </strong><a href="classes/antipodally_punctured_cube.html">Antipodally Punctured Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every $n\geq3$, the established values are $\mathrm{ST}(\mathcal P_n)=n-2<n-1=d_{\min}(\mathcal P_n)$.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For $\mathcal P_n=2^{[n]}\setminus\{\emptyset,[n]\}$ with $n\geq3$, every $(n-1)$-face contains a deleted antipode, whereas an $(n-2)$-face fixing one coordinate to zero and one to one avoids both. Hence $\mathrm{ST}=n-2$. The punctured-cube 1-inclusion graph has minimum degree $n-1$.</p></div>
+
+
+
 
         </div>
     </div>

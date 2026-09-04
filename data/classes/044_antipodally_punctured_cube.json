@@ -1,0 +1,9 @@
+{
+  "id": 44,
+  "name": "Antipodally Punctured Cube",
+  "short_name": "antipodally_punctured_cube",
+  "graph_label": "Qn−{0,1}",
+  "symbol": "\\mathcal P_n",
+  "definition": "For $n\\geq3$, the **antipodally punctured cube** is $\\mathcal P_n:=2^{[n]}\\setminus\\{\\emptyset,[n]\\}$: the full $n$-cube with its all-zero and all-one vertices deleted.",
+  "comments": "It has high minimum 1-inclusion degree but no codimension-one subcube, making it a finite strict counterexample for strongly-shattered-set versus minimum-degree comparisons."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 486,
+  "name": "Largest Strongly Shattered Set / Minimum Degree",
+  "short_name": "largest_strongly_shattered_set_minimum_degree",
+  "parameter_1_id": "#parameters/largest_strongly_shattered_set",
+  "parameter_2_id": "#parameters/minimum_degree",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The proposed pointwise bound $\\mathrm{ST}(\\mathcal H)\\geq d_{\\min}(\\mathcal H)$ is false, even for finite binary classes.",
+  "proof": "For $\\mathcal P_n=2^{[n]}\\setminus\\{\\emptyset,[n]\\}$ with $n\\geq3$, every $(n-1)$-face contains a deleted antipode, whereas an $(n-2)$-face fixing one coordinate to zero and one to one avoids both. Hence $\\mathrm{ST}=n-2$. The punctured-cube 1-inclusion graph has minimum degree $n-1$.",
+  "witness": "#classes/antipodally_punctured_cube",
+  "witness_strength": "strict",
+  "witness_verification": "For every $n\\geq3$, the established values are $\\mathrm{ST}(\\mathcal P_n)=n-2<n-1=d_{\\min}(\\mathcal P_n)$."
+}

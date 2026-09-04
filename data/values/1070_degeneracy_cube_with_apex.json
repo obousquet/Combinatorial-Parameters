@@ -1,0 +1,11 @@
+{
+  "id": 1070,
+  "name": "Degeneracy of Cube with Apex",
+  "short_name": "degeneracy_cube_with_apex",
+  "class_id": "#classes/cube_with_apex",
+  "parameter_id": "#parameters/degeneracy",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The base concepts induce a full $n$-cube, so degeneracy is at least $n$. Every nonempty base vertex has degree $n$, the empty base vertex has degree $n+1$ because it is also adjacent to the apex, and the apex has degree one. Thus every nontrivial induced subgraph either contains a nonempty base vertex of degree at most $n$ or is supported only on the apex and the empty base vertex, where its minimum degree is at most one. Hence degeneracy is exactly $n$."
+}

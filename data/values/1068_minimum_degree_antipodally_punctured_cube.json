@@ -1,0 +1,12 @@
+{
+  "id": 1068,
+  "name": "Minimum Degree of Antipodally Punctured Cube",
+  "short_name": "minimum_degree_antipodally_punctured_cube",
+  "class_id": "#classes/antipodally_punctured_cube",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "details": "For $n\\geq3$.",
+  "status": "established",
+  "proof": "In the full cube every vertex has degree $n$. A remaining vertex adjacent to one deleted antipode loses exactly that neighbor and has degree $n-1$; all other remaining vertices retain degree $n$. Such adjacent vertices exist for $n\\geq3$, so the minimum degree is exactly $n-1$."
+}

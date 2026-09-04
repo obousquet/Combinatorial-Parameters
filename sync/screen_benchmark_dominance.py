@@ -35,6 +35,43 @@ def short(reference: str) -> str:
     return reference.rsplit("/", 1)[-1]
 
 
+def implied_exact_pairs(
+    relationships: list[dict], parameter_ids: set[str]
+) -> set[tuple[str, str]]:
+    """Return base-variant directions implied by exact recorded dominance.
+
+    Constant-factor, affine, and nonlinear bounds deliberately do not enter
+    this closure: they do not in general prove an unscaled A >= B claim.
+    """
+    adjacency: dict[str, set[str]] = defaultdict(set)
+    for relationship in relationships:
+        if (
+            relationship.get("status", "established") != "established"
+            or relationship.get("variant")
+        ):
+            continue
+        source = relationship["parameter_1_id"]
+        target = relationship["parameter_2_id"]
+        if relationship["relationship_type"] == "larger":
+            adjacency[source].add(target)
+        elif relationship["relationship_type"] == "equivalence":
+            adjacency[source].add(target)
+            adjacency[target].add(source)
+
+    implied = set()
+    for source in parameter_ids:
+        pending = list(adjacency[source])
+        seen = set()
+        while pending:
+            target = pending.pop()
+            if target in seen:
+                continue
+            seen.add(target)
+            implied.add((source, target))
+            pending.extend(adjacency[target] - seen)
+    return implied
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
@@ -70,12 +107,17 @@ def main() -> int:
         # exact finite benchmark cells.
         if relationship.get("relationship_type") != "incomparable"
     }
+    implied_pairs = implied_exact_pairs(relationships, set(parameters))
 
     candidates = []
     parameter_ids = sorted(parameters)
     for upper in parameter_ids:
         for lower in parameter_ids:
-            if upper == lower or (upper, lower) in stated_pairs:
+            if (
+                upper == lower
+                or (upper, lower) in stated_pairs
+                or (upper, lower) in implied_pairs
+            ):
                 continue
             shared = [
                 (class_id, entries[upper], entries[lower])
