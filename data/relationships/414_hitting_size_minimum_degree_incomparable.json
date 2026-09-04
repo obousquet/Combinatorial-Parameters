@@ -1,0 +1,14 @@
+{
+  "id": 414,
+  "name": "Hitting Size / Minimum Degree (Incomparable)",
+  "short_name": "hitting_size_minimum_degree_incomparable",
+  "parameter_1_id": "#parameters/hitting_size",
+  "parameter_2_id": "#parameters/minimum_degree",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite binary classes.",
+  "parameter_1_larger_witness": "For singletons $\\mathcal S_n$, $\\mathrm{HT}=n$ while $\\mathrm d_{\\min}=0$.",
+  "parameter_2_larger_witness": "For the common-core cube $\\mathcal Q^{\\cap}_n$, $\\mathrm d_{\\min}=n$ while $\\mathrm{HT}=1$.",
+  "proof": "The singleton and common-core-cube calculations give unbounded gaps in the two opposite directions.",
+  "references": "Database-owned value proofs."
+}

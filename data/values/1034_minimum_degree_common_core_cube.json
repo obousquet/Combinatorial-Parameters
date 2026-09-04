@@ -1,0 +1,11 @@
+{
+  "id": 1034,
+  "name": "Minimum Degree of Common-Core Cube",
+  "short_name": "minimum_degree_common_core_cube",
+  "class_id": "#classes/common_core_cube",
+  "parameter_id": "#parameters/minimum_degree",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Two concepts $\\{0\\}\\cup A$ and $\\{0\\}\\cup B$ are one-inclusion neighbours exactly when $A,B$ differ at one private coordinate. Thus the one-inclusion graph is the $n$-dimensional cube, which is $n$-regular."
+}
