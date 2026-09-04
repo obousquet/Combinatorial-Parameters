@@ -1,0 +1,15 @@
+{
+  "id": 451,
+  "name": "No-Clashing Teaching Dimension / Log Size Ratio (affine)",
+  "short_name": "noclashing_teaching_dimension_log_size_ratio_affine",
+  "parameter_1_id": "#parameters/noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/log_size_ratio",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "\\tfrac12",
+  "details": "Every finite nontrivial binary class satisfies $\\mathrm{NCTD}(\\mathcal H)\\geq\\tfrac12\\,\\log(|\\mathcal H|-1)/\\log(n+1)$, where $n$ is the ambient domain size.",
+  "status": "established",
+  "proof": "If the effective range has size at least two, the no-clashing counting bound gives $\\mathrm{NCTD}\\geq\\log|\\mathcal H|/(2\\log\\mathrm E)$. Since $\\mathrm E\\leq n$ and $\\log(|\\mathcal H|-1)\\leq\\log|\\mathcal H|$, this dominates one half of the log size ratio. If $\\mathrm E=1$, a nontrivial binary class has two concepts and the log size ratio is zero, so the claim is immediate.",
+  "latex_proof_label": "cor:nctd-low-log-size-ratio",
+  "proof_source": "Corollary cor:nctd-low-log-size-ratio in the LaTeX survey.",
+  "references": "\\cite{KSZ2019}"
+}
