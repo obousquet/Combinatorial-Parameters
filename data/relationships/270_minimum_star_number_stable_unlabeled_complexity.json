@@ -7,6 +7,9 @@
   "status": "established",
   "proof": "Theorem 23 in the cited paper constructs a stable, sample-consistent unlabeled compression scheme of size $\\mathrm S_{\\mathrm{min}}$. The optimum stable-unlabeled compression size is therefore no larger.",
   "references": "\\cite{hanneke2024star_eluder}",
+  "witness": "#classes/universal_class",
+  "witness_strength": "unbounded",
+  "witness_verification": "For $\\mathcal U_n$, the established lower bound is $\\mathrm S_{\\mathrm{min}}\\geq n/2-1$. Relationship #52 and the established value $\\mathrm L(\\mathcal U_n)=\\lfloor\\log_2 n\\rfloor$ give $\\mathrm{sUSC}(\\mathcal U_n)\\leq\\lfloor\\log_2 n\\rfloor$. Hence the gap is unbounded.",
   "short_name": "minimum_star_number_stable_unlabeled_complexity",
   "name": "Minimum Star Number / Stable Unlabeled Complexity"
 }
