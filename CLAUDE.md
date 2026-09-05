@@ -105,6 +105,10 @@ python3 sync/audit_relationship_witnesses.py --data-dir data --check \
 # Small-class counting and upper-bound witness-direction regression.
 python3 sync/verify_dual_littlestone_bounds.py
 
+# Independent teaching-order, no-clashing-map and degree computations behind
+# the equality of the three positive projection closures.
+python3 sync/verify_positive_projection_collapse.py
+
 # Checks unambiguous established literal-integer benchmark values against
 # direct linear and equality relationships. Formulae and scoped alternatives
 # are deliberately skipped.

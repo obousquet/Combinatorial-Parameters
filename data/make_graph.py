@@ -23,6 +23,7 @@ COLLAPSIBLE_EQUIVALENCE_IDS = {
     100,  # Equivalence-query complexity = Littlestone dimension
     318,  # Self-directed dimension = self-directed queries complexity
     346,  # Projected interpolation degree = VC dimension
+    457, 461,  # Positive projected RTD = positive projected NCTD = projected positive degree
 }
 
 

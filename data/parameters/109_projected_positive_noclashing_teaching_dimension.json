@@ -11,7 +11,7 @@
   "doubly_monotonic": true,
   "definition": "The **Projected Positive No-Clashing Teaching Dimension** is $$\\mathrm{NCTD}^{+p}(\\mathcal H)\\bydef\\max_{S\\subseteq\\mathcal X}\\mathrm{NCTD}^{+}(\\mathcal H_{|S}),$$ where each teacher is required to use only positive examples of its target concept.",
   "graph_summary": "Largest positive no-clashing teaching dimension attained by a coordinate projection.",
-  "description": "The projection-monotonic closure of positive no-clashing teaching dimension.",
+  "description": "The projection-monotonic closure of positive no-clashing teaching dimension. On finite binary classes it equals projected positive recursive teaching dimension and projected maximum positive degree; see the established equality relationships and the survey's positive-projection-collapse proposition.",
   "origin_references": "Database-defined projection closure of the positive no-clashing model of \\cite{KSZ2019}.",
   "monotonicity_evidence": {
     "monotonic": {

@@ -47,7 +47,7 @@ relationship records were created.
 
 ## Remaining work
 
-Among established non-equality, non-incomparability records, 47 have no
+Among established non-equality, non-incomparability records, 45 have no
 witness, 85 have only strict witnesses, and seven retain legacy witness
 classification. Eight of the 85 strict cases are excluded from unbounded-gap
 search by the reverse controls above.
@@ -57,10 +57,9 @@ current paired benchmark values for witnessless records, and no unused
 growth-category leads for strict records. This is exhaustion of this finite
 benchmark screen, not proof that further witnesses do not exist.
 
-The reduced graph still has 28 witnessless edges outside reciprocal affine
+The reduced graph still has 26 witnessless edges outside reciprocal affine
 blocks. Important unresolved examples include labeled compression versus VC,
-order compression versus projected RTD, projected positive RTD versus
-projected positive NCTD, and positive-characteristic versus characteristic-zero
+order compression versus projected RTD, and positive-characteristic versus characteristic-zero
 Yang dimension. These need additional families, values, or proofs.
 
 The witness improvements localize all three previously protected transitive
@@ -80,3 +79,10 @@ The systematic follow-up is owned by the survey repository:
 `~/latex/CombinatorialParameters/conjectures/parameter_separations.md`, with
 its generated root `dashboard.html`. The database remains authoritative for
 accepted facts and witnesses.
+
+The next campaign round resolves the positive projection hierarchy by proving
+$\mathrm{RTD}^{+p}=\mathrm{NCTD}^{+p}=d_{\max}^{+p}$ on finite classes.
+Relationships #457 and #461 are now equalities, so both witness searches
+are closed. The canonical proof is survey Proposition
+`prop:positive-projection-collapse`; the database regression is
+`sync/verify_positive_projection_collapse.py`.

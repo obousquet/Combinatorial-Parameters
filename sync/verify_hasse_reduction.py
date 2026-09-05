@@ -69,6 +69,28 @@ def main() -> None:
     assert component_of[selfdirected_dimension] == component_of[selfdirected_complexity]
     assert len(components) == 1
 
+    # The proved positive projection closures form one node. Every external
+    # relationship of every member survives the quotient automatically.
+    positive = ["projected_positive_recursive_teaching_dimension",
+                "projected_positive_noclashing_teaching_dimension",
+                "projected_maximum_positive_degree"]
+    refs = [f"#parameters/{name}" for name in positive]
+    external = ["upper", "lower_a", "lower_b"]
+    identities = [relationship(457, refs[0], refs[1], "equivalence"),
+                  relationship(461, refs[1], refs[2], "equivalence")]
+    incident = [relationship(9001, "#parameters/upper", refs[0]),
+                relationship(9002, refs[1], "#parameters/lower_a"),
+                relationship(9003, refs[2], "#parameters/lower_b")]
+    _, component_of = module.exact_equivalence_components(
+        [{"short_name": name} for name in positive + external], identities + incident)
+    assert len({component_of[ref] for ref in refs}) == 1
+    quotient = module.quotient_relationships(identities + incident, component_of)
+    assert {row["id"] for row in quotient} == {9001, 9002, 9003}
+    merged = component_of[refs[0]]
+    assert {(row["parameter_1_id"], row["parameter_2_id"]) for row in quotient} == {
+        ("#parameters/upper", merged), (merged, "#parameters/lower_a"),
+        (merged, "#parameters/lower_b")}
+
     # Once different direct facts collapse to the same displayed endpoint
     # pair, only one witness card may remain.  An unbounded family separation
     # takes precedence over a strict finite example; otherwise the larger

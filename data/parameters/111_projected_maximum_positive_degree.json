@@ -11,7 +11,7 @@
   "doubly_monotonic": true,
   "definition": "The **Projected Maximum Positive Degree** is $$\\mathrm{d}^{+p}_{\\max}(\\mathcal H)\\bydef\\max_{S\\subseteq\\mathcal X}\\mathrm{d}^{+}_{\\max}(\\mathcal H_{|S}),$$ the largest maximum positive degree among coordinate projections.",
   "graph_summary": "Largest maximum positive degree attained by a coordinate projection.",
-  "description": "The projection-monotonic closure of maximum positive degree.",
+  "description": "The projection-monotonic closure of maximum positive degree. On finite binary classes it equals both projected positive recursive teaching dimension and projected positive no-clashing teaching dimension. Minimal positive teaching sets reveal lower one-inclusion neighbours after projection.",
   "origin_references": "Database-defined projection closure of the oriented one-inclusion-graph parameter.",
   "monotonicity_evidence": {
     "monotonic": {

@@ -11,7 +11,7 @@
   "doubly_monotonic": true,
   "definition": "The **Projected Positive Recursive Teaching Dimension** is $$\\mathrm{RTD}^{+p}(\\mathcal H)\\bydef\\max_{S\\subseteq\\mathcal X}\\mathrm{RTD}^{+}(\\mathcal H_{|S}),$$ where $\\mathrm{RTD}^{+}$ is positive recursive teaching dimension.",
   "graph_summary": "Largest positive recursive teaching dimension attained by a coordinate projection.",
-  "description": "The projection-monotonic closure of positive recursive teaching dimension.",
+  "description": "The projection-monotonic closure of positive recursive teaching dimension. On finite binary classes it equals projected positive no-clashing teaching dimension and projected maximum positive degree; see the established equality relationships and the survey's positive-projection-collapse proposition.",
   "origin_references": "Database-defined projection closure of positive recursive teaching dimension, which is studied in \\cite{fallat2023batch}.",
   "monotonicity_evidence": {
     "monotonic": {

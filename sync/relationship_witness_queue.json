@@ -2,8 +2,8 @@
   "counts": {
     "unbounded": 216,
     "strict": 85,
-    "equivalence": 15,
-    "missing": 47,
+    "equivalence": 17,
+    "missing": 45,
     "unclassified": 7,
     "incomparable": 98
   },
@@ -3030,6 +3030,24 @@
             1053,
             1052
           ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1056,
+            1052
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1059,
+            1052
+          ]
         }
       ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -3050,6 +3068,24 @@
             1053,
             1054
           ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1056,
+            1054
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1059,
+            1054
+          ]
         }
       ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -3067,7 +3103,25 @@
           "larger_value": "$2$",
           "smaller_value": "$1$",
           "value_ids": [
+            1053,
+            1055
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
             1056,
+            1055
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1059,
             1055
           ]
         }
@@ -3075,28 +3129,8 @@
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
-      "id": 457,
-      "short_name": "projected_positive_recursive_teaching_dimension_projected_positive_noclashing_teaching_dimension",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
       "id": 458,
       "short_name": "projected_positive_recursive_teaching_dimension_projected_recursive_teaching_dimension",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 461,
-      "short_name": "projected_positive_noclashing_teaching_dimension_projected_maximum_positive_degree",
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
@@ -3117,8 +3151,44 @@
           "larger_value": "$2$",
           "smaller_value": "$0$",
           "value_ids": [
+            1053,
+            1058
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$0$",
+          "value_ids": [
+            1056,
+            1058
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$0$",
+          "value_ids": [
             1059,
             1058
+          ]
+        },
+        {
+          "class": "#classes/singletons",
+          "larger_value": "$1$",
+          "smaller_value": "$0$",
+          "value_ids": [
+            1057,
+            194
+          ]
+        },
+        {
+          "class": "#classes/singletons",
+          "larger_value": "$1$",
+          "smaller_value": "$0$",
+          "value_ids": [
+            1063,
+            194
           ]
         }
       ],
@@ -3132,6 +3202,24 @@
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1053,
+            1060
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1056,
+            1060
+          ]
+        },
         {
           "class": "#classes/projected_positive_noclashing_gap",
           "larger_value": "$2$",
@@ -3160,6 +3248,24 @@
             1053,
             1060
           ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1056,
+            1060
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1059,
+            1060
+          ]
         }
       ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -3177,7 +3283,25 @@
           "larger_value": "$2$",
           "smaller_value": "$1$",
           "value_ids": [
+            1053,
+            1060
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
             1056,
+            1060
+          ]
+        },
+        {
+          "class": "#classes/projected_positive_noclashing_gap",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1059,
             1060
           ]
         }
