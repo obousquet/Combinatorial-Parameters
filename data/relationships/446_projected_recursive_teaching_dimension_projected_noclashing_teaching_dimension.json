@@ -12,6 +12,6 @@
   "proof_source": "Corollary cor:projected-rtd-low-projected-nctd in the LaTeX survey.",
   "references": "\\cite{zilles2011models,KSZ2019}",
   "witness": "#classes/full_cube",
-  "witness_strength": "unbounded",
-  "witness_verification": "On the full $n$-cube, $\\mathrm{RTD}^{p}=n$ whereas $\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil$, so the gap is unbounded."
+  "witness_strength": "strict",
+  "witness_verification": "On the full $n$-cube, $\\mathrm{RTD}^{p}=n$ whereas $\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil$. For every n>=2 the first value is strictly larger, refuting the reverse exact inequality. However their ratio is at most 2: the growing additive difference does not refute a reverse affine-linear bound. Whether a different family gives an unbounded normalized ratio remains unresolved."
 }

@@ -48,8 +48,8 @@ relationship records were created.
 ## Remaining work
 
 Among established non-equality, non-incomparability records, 47 have no
-witness, 83 have only strict witnesses, and seven retain legacy witness
-classification. Eight of the 83 strict cases are excluded from unbounded-gap
+witness, 85 have only strict witnesses, and seven retain legacy witness
+classification. Eight of the 85 strict cases are excluded from unbounded-gap
 search by the reverse controls above.
 
 There are no unused integer-separation or growth-category leads in the
@@ -66,3 +66,17 @@ Yang dimension. These need additional families, values, or proofs.
 The witness improvements localize all three previously protected transitive
 bypasses to stronger witnessed paths. The graph consequently removes those
 three redundant overlays; its reduction audit reports no unresolved bypass.
+
+## Follow-up correction and research campaign
+
+Records #46 and #446 used the full cube's values $n$ and $\lceil n/2\rceil$
+to claim unbounded separation. Their additive difference grows but their
+ratio stays bounded; both witnesses are now strict. The audit rejects
+bounded normalized ratios for a narrow whitelist of exact endpoint formulas,
+even if a prose certificate asserts otherwise. Unrecognized expressions and
+growth-category leads still require mathematical review.
+
+The systematic follow-up is owned by the survey repository:
+`~/latex/CombinatorialParameters/conjectures/parameter_separations.md`, with
+its generated root `dashboard.html`. The database remains authoritative for
+accepted facts and witnesses.

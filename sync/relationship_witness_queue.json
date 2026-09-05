@@ -1,7 +1,7 @@
 {
   "counts": {
-    "unbounded": 218,
-    "strict": 83,
+    "unbounded": 216,
+    "strict": 85,
     "equivalence": 15,
     "missing": 47,
     "unclassified": 7,
@@ -421,6 +421,16 @@
       "short_name": "positive_teaching_dimension_positive_noclashing_teaching_dimension",
       "category": "missing",
       "witness": null,
+      "reverse_affine_path": null,
+      "unbounded_candidates": [],
+      "strict_candidates": [],
+      "review": "Check endpoint proofs and scope before promoting any candidate."
+    },
+    {
+      "id": 46,
+      "short_name": "positive_noclashing_teaching_dimension_noclashing_teaching_dimension",
+      "category": "strict",
+      "witness": "#classes/full_cube",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
@@ -2975,6 +2985,16 @@
       "short_name": "projected_noclashing_teaching_dimension_projected_double_density_affine",
       "category": "missing",
       "witness": null,
+      "reverse_affine_path": null,
+      "unbounded_candidates": [],
+      "strict_candidates": [],
+      "review": "Check endpoint proofs and scope before promoting any candidate."
+    },
+    {
+      "id": 446,
+      "short_name": "projected_recursive_teaching_dimension_projected_noclashing_teaching_dimension",
+      "category": "strict",
+      "witness": "#classes/full_cube",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],

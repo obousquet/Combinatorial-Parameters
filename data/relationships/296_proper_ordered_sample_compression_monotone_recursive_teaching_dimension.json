@@ -5,7 +5,7 @@
   "parameter_1_id": "#parameters/proper_ordered_sample_compression",
   "parameter_2_id": "#parameters/monotone_recursive_teaching_dimension",
   "relationship_type": "larger",
-  "details": "For finite concept classes.  This is the fixed-proper-reconstruction form of the restriction and teaching-plan proof underlying Theorem 4 of Darnstädt--Kiss--Simon--Zilles.",
+  "details": "For finite concept classes. This is the fixed-proper-reconstruction form of the restriction and teaching-plan proof underlying Theorem 24 in the August 26, 2014 author-hosted preprint of Darnstädt--Kiss--Simon--Zilles. See the survey's literature/darnstadt2016order packet for the version-specific numbering.",
   "status": "established",
   "proof": "Fix a proper order scheme and restrict it to any coordinate set.  Its restricted reconstruction remains in the projected class and its size does not increase.  The maximal teaching-plan argument then lower-bounds that size by the recursive teaching dimension of the projected class.  Maximizing over coordinate sets gives $\\mathrm{pOSC}\\geq\\mathrm{RTD}^{p}$.",
   "references": "\\cite{darnstadt2016order}",

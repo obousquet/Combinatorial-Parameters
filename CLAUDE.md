@@ -92,6 +92,10 @@ python3 sync/audit_provenance.py --data-dir data
 # witnesses from asymptotic value classes; legacy witnesses remain a review queue.
 python3 sync/audit_witness_strength.py --data-dir data
 
+# Regression: a growing additive difference must not be classified as an
+# unbounded ratio; exact contradictions override prose certificates.
+python3 -m unittest discover -s sync -p test_witness_ratio.py
+
 # Screens every established direct relationship, including those omitted
 # from the graph: missing witnesses, strict-to-unbounded leads, and reverse
 # affine paths. Leads require endpoint proof and scope review before promotion.
@@ -195,3 +199,9 @@ the generated file has not drifted.
 The LaTeX survey continues to own only its narrative, proofs, and document
 layout. Record any further shared section in `sync/ownership.json` before
 moving it into this workflow.
+
+The active research questions are tracked in the survey's
+`conjectures/parameter_separations.md` and root `dashboard.json` / generated
+`dashboard.html`. These are research state and navigation, not a second
+catalogue of accepted facts. Follow its honest-conjecture-resolution and
+conjecture-dashboard skills for campaign rounds; promote accepted facts here.

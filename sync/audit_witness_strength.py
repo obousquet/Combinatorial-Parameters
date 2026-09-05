@@ -95,6 +95,47 @@ def unbounded_verified(
     return a < b if reverse else a > b
 
 
+def elementary_growth_degree(value: str | None) -> int | None:
+    """Recognize only exact constants and a small whitelist of Theta(n) formulas.
+
+    Growth-class metadata records lower bounds, not necessarily matching upper
+    bounds. It therefore cannot by itself refute a ratio separation. In
+    contrast these exact formulas can. Unsupported expressions stay unknown.
+    """
+    if literal_rational(value) is not None:
+        return 0
+    if not value:
+        return None
+    expression = re.sub(r"\s+", "", value.strip().strip("$"))
+    for opening, closing in ((r"\lceil", r"\rceil"), (r"\lfloor", r"\rfloor")):
+        if expression.startswith(opening) and expression.endswith(closing):
+            expression = expression[len(opening):-len(closing)]
+            break
+    if re.fullmatch(r"n(?:[+-]\d+)?", expression):
+        return 1
+    quotient = re.fullmatch(r"n/([1-9]\d*)", expression)
+    fraction = re.fullmatch(r"\\(?:tfrac|frac)\{n\}\{([1-9]\d*)\}", expression)
+    if quotient or fraction:
+        return 1
+    return None
+
+
+def bounded_ratio_contradiction(relationship: Record, left: Record | None,
+                                right: Record | None) -> bool:
+    """True means this named family cannot refute a reverse affine bound."""
+    if not left or not right:
+        return False
+    a = elementary_growth_degree(left.get("value"))
+    b = elementary_growth_degree(right.get("value"))
+    if a is None or b is None:
+        return False
+    reverse = (relationship.get("status") == "refuted") != (
+        relationship.get("relationship_type") in {"log_upper", "sqrt_upper"}
+    )
+    numerator, denominator = (b, a) if reverse else (a, b)
+    return numerator <= denominator
+
+
 def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
     values = records(data_dir / "values")
     report: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -141,7 +182,7 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
         }
         if strength == "strict":
             row["verified"] = strict_verified(relationship, left, right)
-            if relationship.get("witness_verification"):
+            if relationship.get("witness_verification") and row["verified"] is not False:
                 row["verified"] = True
                 row["verification_method"] = "explicit symbolic certificate"
             report["strict"].append(row)
@@ -150,6 +191,10 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
             if relationship.get("witness_verification"):
                 row["verified"] = True
                 row["verification_method"] = "explicit symbolic certificate"
+            # Prose never overrides a contradiction from exact endpoint formulas.
+            if bounded_ratio_contradiction(relationship, left, right):
+                row["verified"] = False
+                row["verification_method"] = "contradiction: exact endpoint formulas have bounded normalized ratio"
             report["unbounded"].append(row)
         else:
             row["strict_candidate"] = strict_verified(relationship, left, right)
@@ -182,7 +227,10 @@ def main() -> None:
             elif category == "incomparable":
                 print(f"Declared incomparable pairs: {len(rows)} ({confirmed} with both directional witnesses recorded; {unresolved} incomplete)")
             else:
-                print(f"Declared {category} witnesses: {len(rows)} ({confirmed} verified; {unresolved} need manual evidence)")
+                print(f"Declared {category} witnesses: {len(rows)} ({confirmed} supported by endpoint checks or recorded certificates; {unresolved} need review)")
+                for row in rows:
+                    if row.get("verified") is False:
+                        print(f"  #{row['id']}: {row.get('verification_method', 'endpoint contradiction')}")
     failures = [
         row for category in ("strict", "unbounded", "incomparable") for row in report[category]
         if row.get("verified") is not True

@@ -53,6 +53,12 @@
       "latex_output": "includes/generated/references.bib",
       "generator": "sync/generate_latex_catalog.py --section bibliography"
     },
+    "research_campaign_state": {
+      "authority": "latex",
+      "source": "conjectures/parameter_separations.md (research status), dashboard.json (navigation tree)",
+      "database_output": null,
+      "status": "The ledger tracks unproved questions and bounded evidence; the generated dashboard is navigation. Accepted catalogue facts are promoted to database records, not duplicated in campaign files."
+    },
     "survey_narrative_and_proofs": {
       "authority": "latex",
       "source": "main.tex and included prose files",
