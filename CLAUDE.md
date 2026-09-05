@@ -215,3 +215,8 @@ regression: `python3 sync/verify_cube_halfinterval_trees.py`. It enumerates
 actual coordinate fibres on 84 product/block-size cases, including truncated
 final blocks. The universal proofs live in the database value records, not in
 the test output.
+
+For the fixed-VC/unbounded-block separation, run
+`python3 sync/verify_branching_batch_trees.py`. Its eight-family shattering
+and path checks include six independently optimized small domains. Do not
+describe the two larger structural checks as full depth optimizations.

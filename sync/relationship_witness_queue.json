@@ -1,7 +1,7 @@
 {
   "counts": {
-    "unbounded": 218,
-    "strict": 86,
+    "unbounded": 222,
+    "strict": 82,
     "equivalence": 17,
     "missing": 42,
     "unclassified": 7,
@@ -631,62 +631,6 @@
           "value_ids": [
             992,
             993
-          ]
-        }
-      ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 58,
-      "short_name": "2block_littlestone_dimension_vc_dimension",
-      "category": "strict",
-      "witness": "#classes/warmuth_c5",
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [
-        {
-          "class": "#classes/warmuth_c5",
-          "larger_value": "$3$",
-          "smaller_value": "$2$",
-          "value_ids": [
-            718,
-            219
-          ]
-        },
-        {
-          "class": "#classes/warmuth_c5",
-          "larger_value": "$3$",
-          "smaller_value": "$2$",
-          "value_ids": [
-            718,
-            233
-          ]
-        },
-        {
-          "class": "#classes/warmuth_c5",
-          "larger_value": "$3$",
-          "smaller_value": "$2$",
-          "value_ids": [
-            718,
-            248
-          ]
-        },
-        {
-          "class": "#classes/warmuth_c5",
-          "larger_value": "$3$",
-          "smaller_value": "$2$",
-          "value_ids": [
-            718,
-            683
-          ]
-        },
-        {
-          "class": "#classes/warmuth_c5",
-          "larger_value": "$3$",
-          "smaller_value": "$2$",
-          "value_ids": [
-            718,
-            693
           ]
         }
       ],
@@ -2123,26 +2067,6 @@
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
-      "id": 200,
-      "short_name": "kblock_littlestone_dimension_vc_dimension",
-      "category": "strict",
-      "witness": "#classes/cube_halfinterval_product",
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 205,
-      "short_name": "prefix_littlestone_dimension_vc_dimension",
-      "category": "strict",
-      "witness": "#classes/warmuth_c5",
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
       "id": 213,
       "short_name": "dual_antipodal_vc_dimension_dual_vc_dimension",
       "category": "strict",
@@ -2840,26 +2764,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
-    },
-    {
-      "id": 355,
-      "short_name": "2block_littlestone_dimension_kblock_littlestone_dimension_affine",
-      "category": "strict",
-      "witness": "#classes/warmuth_c5",
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [
-        {
-          "class": "#classes/warmuth_c5",
-          "larger_value": "$3$",
-          "smaller_value": "$2$",
-          "value_ids": [
-            718,
-            720
-          ]
-        }
-      ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
       "id": 360,

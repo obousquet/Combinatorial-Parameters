@@ -17359,6 +17359,125 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1086" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_branching_batch_tree.html" class="table-title-link">VC Dimension of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$b$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The $b$ coordinates at the root realize all outgoing bit vectors, so VC is at least $b$. Consider coordinates $(u,i)$ and $(v,j)$ belonging to different tree nodes. If neither node is a prefix of the other, no leaf path visits both; their label pair cannot be $(1,1)$. If $u$ is a proper prefix of $v$, the condition $h_w(v,j)=1$ forces the path to visit $v$, and hence forces the outgoing vector at $u$ to the one fixed by $v$. In particular $h_w(u,i)$ has one fixed value whenever $h_w(v,j)=1$, so one of the two pairs with second label one is missing. The case where $v$ is a prefix of $u$ is the same statement with the coordinates exchanged. Thus any shattered set has all its coordinates at one tree node and has size at most $b$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1087" style="position:relative;">
+        
+        <h3><a href="values/littlestone_dimension_branching_batch_tree.html" class="table-title-link">Littlestone Dimension of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$bn$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Query the $b$ coordinates at the root in a fixed order, then those at the child indexed by the observed outgoing vector, and repeat for $n$ visited nodes. Every sequence of $bn$ answers is realized by its defining word, giving a shattered tree of depth $bn$. Distinct words yield distinct concepts: at the first differing outgoing vector they disagree at a coordinate of their common prefix node. There are therefore exactly $2^{bn}$ concepts, and distinct realizers at all leaves of any shattered depth-$d$ tree imply $2^d\le2^{bn}$, hence $d\le bn$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1088" style="position:relative;">
+        
+        <h3><a href="values/kblock_littlestone_dimension_kgt2_branching_batch_tree.html" class="table-title-link">$k$-Block Littlestone Dimension of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
+<p><strong>Value: </strong>$bn$ if $k\mid b$; $b$ if $k>b$; otherwise $\max\{b,kn\lfloor b/k\rfloor\}\le B_k\le bn$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The argument applies to every $k\ge2$. The ordinary dimension is $bn$, from the canonical path tree and the $2^{bn}$ leaf-count upper bound, so $B_k\le bn$. The VC value is $b$ (value record 1086). If $k>b$, a complete first $k$-block would shatter $k$ coordinates, which is impossible. Every shorter constrained tree is entirely level-constant, so $B_k=b$. For $k\le b$, at every visited tree node retain $k\lfloor b/k\rfloor$ of its $b$ coordinates, split them into successive $k$-batches, and fix the remaining outgoing bits to zero when choosing the next node. This describes a subclass and a valid shattered tree of depth $kn\lfloor b/k\rfloor$: each chosen batch has all $2^k$ outcomes, and the next tree-node label depends only on earlier retained outcomes and the fixed zero bits. The VC-shattered root coordinates also give depth $b$, including truncation if necessary. These prove the displayed lower bound. If $k$ divides $b$, it reaches $bn$, so equality holds.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1089" style="position:relative;">
+        
+        <h3><a href="values/2block_littlestone_dimension_branching_batch_tree.html" class="table-title-link">2-Block Littlestone Dimension of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>2-Block Littlestone Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$bn$ if $b$ is even; $1$ if $b=1$; otherwise $\max\{b,(b-1)n\}\le B_2\le bn$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Apply the general block argument for this family (value record 1088), which is proved for all $k\ge2$, at $k=2$. In particular the slice $b=2$ has exact value $2n$. No exact value is asserted here for odd $b>1$, only the displayed bounds.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1090" style="position:relative;">
+        
+        <h3><a href="values/prefix_littlestone_dimension_branching_batch_tree.html" class="table-title-link">Prefix-$k$ Littlestone Dimension of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
+<p><strong>Value: </strong>$bn$ if $2\le k\le b$; $b$ if $k>b$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The canonical depth-$bn$ path tree queries all $b$ root coordinates in a fixed order, so its first $b$ levels are horizontally constant. It therefore attains the ordinary leaf-count upper bound for every prefix size $k\le b$. If $k>b$, depth at least $k$ would shatter the $k$ coordinates on the first $k$ constant levels, contradicting VC $b$. Any shorter admissible tree is entirely level-constant and has depth at most $b$. The $b$ root coordinates attain that bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1091" style="position:relative;">
+        
+        <h3><a href="values/size_branching_batch_tree.html" class="table-title-link">Class Size of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Class Size of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Value: </strong>$2^{bn}$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There are $|A|^n=2^{bn}$ defining words. At the first position where two words differ, the corresponding concepts disagree on at least one coordinate of their common prefix node, proving injectivity.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1092" style="position:relative;">
+        
+        <h3><a href="values/effective_range_branching_batch_tree.html" class="table-title-link">Effective Range of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Value: </strong>$b(2^{bn}-1)/(2^b-1)$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There are $\sum_{t=0}^{n-1}2^{bt}=(2^{bn}-1)/(2^b-1)$ tree nodes, each with $b$ coordinates. Every coordinate varies: choose a word visiting its node with the corresponding next bit zero, and another with that next bit one. Thus the entire domain is effective.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

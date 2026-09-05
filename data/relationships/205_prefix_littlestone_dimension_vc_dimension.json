@@ -7,9 +7,9 @@
   "status": "established",
   "proof_source": "Full proof in the LaTeX survey: Proposition `prop:prefix-littlestone-order`.",
   "latex_proof_label": "prop:prefix-littlestone-order",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict",
-  "witness_verification": "At the allowed parameter value k=2, the recorded C_5 value is Prefix-2 Littlestone dimension 3 while VC dimension is 2. Thus this is a strict separation for the k-indexed family.",
+  "witness": "#classes/branching_batch_tree",
+  "witness_strength": "unbounded",
+  "witness_verification": "For each fixed k>1, use construction width b=k and let height n grow in the branching batch-tree class. Its exact values are PL_k=kn and VC=k. The normalized ratio kn/(1+k) tends to infinity; this is not merely a finite or k-varying gap. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.",
   "short_name": "prefix_littlestone_dimension_vc_dimension",
   "name": "Prefix-$k$ Littlestone Dimension / VC Dimension"
 }

@@ -48,8 +48,8 @@ relationship records were created.
 ## Remaining work
 
 Among established non-equality, non-incomparability records, 42 have no
-witness, 86 have only strict witnesses, and seven retain legacy witness
-classification. Eight of the 86 strict cases are excluded from unbounded-gap
+witness, 82 have only strict witnesses, and seven retain legacy witness
+classification. Eight of the 82 strict cases are excluded from unbounded-gap
 search by the reverse controls above.
 
 There are no unused integer-separation or growth-category leads in the
@@ -93,3 +93,10 @@ separates prefix-$k$ from $k$-block by an unbounded ratio (records #494/#495)
 and $k$-block from VC strictly (record #200). The latter ratio remains
 bounded. The independent fibre-recursion check covers 84 bounded cases;
 the general result rests on the proof, not on this finite census.
+
+The branching batch-tree construction strengthens #58, #200, #205 and #355
+from strict to unbounded. At fixed construction width $b$, VC is $b$ and
+$B_b=\mathrm{PL}_b=bn$; every larger query block size has value $b$.
+Thus even an arbitrary finite-valued VC-only bound for repeated-block depth
+is impossible. The database owns the definition and value proofs; survey
+Corollary `prop:branching-batch-separations` records the consequences.

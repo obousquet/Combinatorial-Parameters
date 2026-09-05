@@ -12,7 +12,7 @@
   "proof_source": "Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.",
   "latex_proof_label": "prop:block-littlestone-round-order",
   "proof": "The general relation $\\mathrm B_\\ell\\le(\\ell/k)\\mathrm B_k+(\\ell-1)$, instantiated with the smaller block size $k=2$ and $\\ell>2$, gives $\\mathrm B_2\\ge\\frac{2}{\\ell}\\mathrm B_\\ell-\\frac{2(\\ell-1)}{\\ell}$. Renaming $\\ell$ as the fixed parameter $k$ gives the stated bound.",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict",
-  "witness_verification": "The established values on #classes/warmuth_c5 are $3$ and $2$, respectively, so the reverse exact inequality fails. These finite values do not establish an unbounded affine gap. This holds for every fixed k>2."
+  "witness": "#classes/branching_batch_tree",
+  "witness_strength": "unbounded",
+  "witness_verification": "Fix construction width b=2 and any query block size k>2 in the branching batch-tree class. As height n grows, the exact values are B_2=2n and B_k=2. Thus B_2/(1+B_k)=2n/3 tends to infinity, excluding every reverse affine bound even when its constants depend on fixed k. See survey Corollary prop:branching-batch-separations and the database-owned value proofs."
 }

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-355" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1088" style="position:relative;">
         
-        <h3><a href="relationships/2block_littlestone_dimension_kblock_littlestone_dimension_affine.html" class="table-title-link">2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</a></h3>
+        <h3><a href="values/kblock_littlestone_dimension_kgt2_branching_batch_tree.html" class="table-title-link">$k$-Block Littlestone Dimension of the Branching Batch-Tree Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</p>
-<p><strong>Parameter 1: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-
-
-<p><strong>Additive Constant: </strong>\frac{2(k-1)}{k}</p>
-<p><strong>Multiplicative Constant: </strong>\frac{2}{k}</p>
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every fixed integer $k>2$, the complete-block comparison gives $\mathrm B_k\le\frac{k}{2}\mathrm B_2+(k-1)$, equivalently the displayed affine lower bound.</p></div>
-<p><strong>Witness: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>Fix construction width b=2 and any query block size k&gt;2 in the branching batch-tree class. As height n grows, the exact values are B_2=2n and B_k=2. Thus B_2/(1+B_k)=2n/3 tends to infinity, excluding every reverse affine bound even when its constants depend on fixed k. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.</p></div>
-
-
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
+<p><strong>Value: </strong>$bn$ if $k\mid b$; $b$ if $k>b$; otherwise $\max\{b,kn\lfloor b/k\rfloor\}\le B_k\le bn$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>For construction width $b\ge1$ and height $n\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The general relation $\mathrm B_\ell\le(\ell/k)\mathrm B_k+(\ell-1)$, instantiated with the smaller block size $k=2$ and $\ell>2$, gives $\mathrm B_2\ge\frac{2}{\ell}\mathrm B_\ell-\frac{2(\ell-1)}{\ell}$. Renaming $\ell$ as the fixed parameter $k$ gives the stated bound.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.</p></div>
-
-
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The argument applies to every $k\ge2$. The ordinary dimension is $bn$, from the canonical path tree and the $2^{bn}$ leaf-count upper bound, so $B_k\le bn$. The VC value is $b$ (value record 1086). If $k>b$, a complete first $k$-block would shatter $k$ coordinates, which is impossible. Every shorter constrained tree is entirely level-constant, so $B_k=b$. For $k\le b$, at every visited tree node retain $k\lfloor b/k\rfloor$ of its $b$ coordinates, split them into successive $k$-batches, and fix the remaining outgoing bits to zero when choosing the next node. This describes a subclass and a valid shattered tree of depth $kn\lfloor b/k\rfloor$: each chosen batch has all $2^k$ outcomes, and the next tree-node label depends only on earlier retained outcomes and the fixed zero bits. The VC-shattered root coordinates also give depth $b$, including truncation if necessary. These prove the displayed lower bound. If $k$ divides $b$, it reaches $bn$, so equality holds.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite tree construction, with independent checks in the branching-batch-tree regression.</p></div>
 
         </div>
     </div>

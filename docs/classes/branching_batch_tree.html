@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-355" style="position:relative;">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-47" style="position:relative;">
         
-        <h3><a href="relationships/2block_littlestone_dimension_kblock_littlestone_dimension_affine.html" class="table-title-link">2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</a></h3>
+        <h3><a href="classes/branching_batch_tree.html" class="table-title-link">Branching Batch-Tree Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</p>
-<p><strong>Parameter 1: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-
-
-<p><strong>Additive Constant: </strong>\frac{2(k-1)}{k}</p>
-<p><strong>Multiplicative Constant: </strong>\frac{2}{k}</p>
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every fixed integer $k>2$, the complete-block comparison gives $\mathrm B_k\le\frac{k}{2}\mathrm B_2+(k-1)$, equivalently the displayed affine lower bound.</p></div>
-<p><strong>Witness: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>Fix construction width b=2 and any query block size k&gt;2 in the branching batch-tree class. As height n grows, the exact values are B_2=2n and B_k=2. Thus B_2/(1+B_k)=2n/3 tends to infinity, excluding every reverse affine bound even when its constants depend on fixed k. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The general relation $\mathrm B_\ell\le(\ell/k)\mathrm B_k+(\ell-1)$, instantiated with the smaller block size $k=2$ and $\ell>2$, gives $\mathrm B_2\ge\frac{2}{\ell}\mathrm B_\ell-\frac{2(\ell-1)}{\ell}$. Renaming $\ell$ as the fixed parameter $k$ gives the stated bound.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.</p></div>
-
-
+        <p><strong>Name: </strong>Branching Batch-Tree Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal T_{b,n}">
+            \[\mathcal T_{b,n}\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>Fix integers $b,n\ge1$ and put $A=\{0,1\}^b$. The coordinate domain is $X_{b,n}=\{(v,j):v\in\bigcup_{t=0}^{n-1}A^t,\ 1\le j\le b\}$; the empty word is included in $A^0$. For each word $w=(a_1,\ldots,a_n)\in A^n$, define $h_w:X_{b,n}\to\{0,1\}$ by $h_w(v,j)=(a_{t+1})_j$ if $v=(a_1,\ldots,a_t)$ is a prefix of $w$, and $h_w(v,j)=0$ otherwise. Set $\mathcal T_{b,n}=\{h_w:w\in A^n\}$. Thus a concept follows one path through a complete $2^b$-ary tree, reports its outgoing $b$-bit vector at each visited node, and is zero at every off-path node.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The construction width $b$ is distinct from a parameter's query block size $k$. For separation witnesses fix $b$ and $k$ before sending the height $n$ to infinity. The domain and each class are finite. No published origin is claimed for this catalogue construction.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/vc_dimension_branching_batch_tree.html'>VC Dimension of the Branching Batch-Tree Class</a></li><li><a href='values/littlestone_dimension_branching_batch_tree.html'>Littlestone Dimension of the Branching Batch-Tree Class</a></li><li><a href='values/kblock_littlestone_dimension_kgt2_branching_batch_tree.html'>$k$-Block Littlestone Dimension of the Branching Batch-Tree Class</a></li><li><a href='values/2block_littlestone_dimension_branching_batch_tree.html'>2-Block Littlestone Dimension of the Branching Batch-Tree Class</a></li><li><a href='values/prefix_littlestone_dimension_branching_batch_tree.html'>Prefix-$k$ Littlestone Dimension of the Branching Batch-Tree Class</a></li><li><a href='values/size_branching_batch_tree.html'>Class Size of the Branching Batch-Tree Class</a></li><li><a href='values/effective_range_branching_batch_tree.html'>Effective Range of the Branching Batch-Tree Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/2block_littlestone_dimension_vc_dimension.html'>2-Block Littlestone Dimension / VC Dimension</a></li><li><a href='relationships/kblock_littlestone_dimension_vc_dimension.html'>$k$-Block Littlestone Dimension / VC Dimension</a></li><li><a href='relationships/prefix_littlestone_dimension_vc_dimension.html'>Prefix-$k$ Littlestone Dimension / VC Dimension</a></li><li><a href='relationships/2block_littlestone_dimension_kblock_littlestone_dimension_affine.html'>2-Block Littlestone Dimension / $k$-Block Littlestone Dimension (affine)</a></li></ul></p></div>
 
         </div>
     </div>

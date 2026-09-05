@@ -1,0 +1,12 @@
+{
+  "id": 1092,
+  "name": "Effective Range of the Branching Batch-Tree Class",
+  "short_name": "effective_range_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$b(2^{bn}-1)/(2^b-1)$",
+  "status": "established",
+  "details": "For construction width $b\\ge1$ and height $n\\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.",
+  "proof": "There are $\\sum_{t=0}^{n-1}2^{bt}=(2^{bn}-1)/(2^b-1)$ tree nodes, each with $b$ coordinates. Every coordinate varies: choose a word visiting its node with the corresponding next bit zero, and another with that next bit one. Thus the entire domain is effective.",
+  "references": "Direct finite tree construction, with independent checks in the branching-batch-tree regression."
+}

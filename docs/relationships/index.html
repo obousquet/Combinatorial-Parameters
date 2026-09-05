@@ -1533,9 +1533,9 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>A VC-shattered set gives a level-constant 2-block tree.</p></div>
-<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
+<p><strong>Witness: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Fix b=2 in the branching batch-tree class and let n grow. The exact values B_2=2n and VC=2 give B_2/(1+VC)=2n/3 tending to infinity. Thus no reverse affine bound, or even any finite-valued bound in VC alone, exists. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -5341,9 +5341,9 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>A VC-shattered set gives a level-constant $k$-block tree.</p></div>
-<p><strong>Witness: </strong><a href="classes/cube_halfinterval_product.html">Cube–Half-interval Product</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For each fixed integer k&gt;2, set m=k-1 and n&gt;=4 in <a href="classes/cube_halfinterval_product.html">Cube–Half-interval Product</a>. Then B_k=k+1&gt;k=VC, by the database-owned exact value proofs. This is only a strict witness: the ratio (k+1)/k stays bounded, so this family does not refute a reverse affine bound. See survey Corollary prop:cube-halfinterval-separations.</p></div>
+<p><strong>Witness: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For each fixed k&gt;2, set construction width b=k in the branching batch-tree class and let its height n grow. The exact values B_k=kn and VC=k make B_k/(1+VC)=kn/(1+k) tend to infinity. Even a finite-valued bound depending only on VC and fixed k is impossible. This upgrades the former strict cube-product witness; its values remain valid. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -5425,9 +5425,9 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every $k\ge1$, a VC-shattered set gives a regular shattered tree, which satisfies the prefix-$k$ constraints.</p></div>
-<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>At the allowed parameter value k=2, the recorded C_5 value is Prefix-2 Littlestone dimension 3 while VC dimension is 2. Thus this is a strict separation for the k-indexed family.</p></div>
+<p><strong>Witness: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For each fixed k&gt;1, use construction width b=k and let height n grow in the branching batch-tree class. Its exact values are PL_k=kn and VC=k. The normalized ratio kn/(1+k) tends to infinity; this is not merely a finite or k-varying gap. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -8561,9 +8561,9 @@
 <p><strong>Multiplicative Constant: </strong>\frac{2}{k}</p>
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For every fixed integer $k>2$, the complete-block comparison gives $\mathrm B_k\le\frac{k}{2}\mathrm B_2+(k-1)$, equivalently the displayed affine lower bound.</p></div>
-<p><strong>Witness: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>The established values on <a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a> are $3$ and $2$, respectively, so the reverse exact inequality fails. These finite values do not establish an unbounded affine gap. This holds for every fixed k&gt;2.</p></div>
+<p><strong>Witness: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Fix construction width b=2 and any query block size k&gt;2 in the branching batch-tree class. As height n grows, the exact values are B_2=2n and B_k=2. Thus B_2/(1+B_k)=2n/3 tends to infinity, excluding every reverse affine bound even when its constants depend on fixed k. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>

@@ -1,0 +1,9 @@
+{
+  "id": 47,
+  "name": "Branching Batch-Tree Class",
+  "short_name": "branching_batch_tree",
+  "graph_label": "Batch tree",
+  "symbol": "\\mathcal T_{b,n}",
+  "definition": "Fix integers $b,n\\ge1$ and put $A=\\{0,1\\}^b$. The coordinate domain is $X_{b,n}=\\{(v,j):v\\in\\bigcup_{t=0}^{n-1}A^t,\\ 1\\le j\\le b\\}$; the empty word is included in $A^0$. For each word $w=(a_1,\\ldots,a_n)\\in A^n$, define $h_w:X_{b,n}\\to\\{0,1\\}$ by $h_w(v,j)=(a_{t+1})_j$ if $v=(a_1,\\ldots,a_t)$ is a prefix of $w$, and $h_w(v,j)=0$ otherwise. Set $\\mathcal T_{b,n}=\\{h_w:w\\in A^n\\}$. Thus a concept follows one path through a complete $2^b$-ary tree, reports its outgoing $b$-bit vector at each visited node, and is zero at every off-path node.",
+  "comments": "The construction width $b$ is distinct from a parameter's query block size $k$. For separation witnesses fix $b$ and $k$ before sending the height $n$ to infinity. The domain and each class are finite. No published origin is claimed for this catalogue construction."
+}

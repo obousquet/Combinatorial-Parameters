@@ -1,0 +1,12 @@
+{
+  "id": 1089,
+  "name": "2-Block Littlestone Dimension of the Branching Batch-Tree Class",
+  "short_name": "2block_littlestone_dimension_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/2block_littlestone_dimension",
+  "value": "$bn$ if $b$ is even; $1$ if $b=1$; otherwise $\\max\\{b,(b-1)n\\}\\le B_2\\le bn$",
+  "status": "established",
+  "details": "For construction width $b\\ge1$ and height $n\\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.",
+  "proof": "Apply the general block argument for this family (value record 1088), which is proved for all $k\\ge2$, at $k=2$. In particular the slice $b=2$ has exact value $2n$. No exact value is asserted here for odd $b>1$, only the displayed bounds.",
+  "references": "Direct finite tree construction, with independent checks in the branching-batch-tree regression."
+}

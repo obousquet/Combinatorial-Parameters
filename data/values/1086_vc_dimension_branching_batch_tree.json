@@ -1,0 +1,13 @@
+{
+  "id": 1086,
+  "name": "VC Dimension of the Branching Batch-Tree Class",
+  "short_name": "vc_dimension_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$b$",
+  "status": "established",
+  "details": "For construction width $b\\ge1$ and height $n\\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.",
+  "proof": "The $b$ coordinates at the root realize all outgoing bit vectors, so VC is at least $b$. Consider coordinates $(u,i)$ and $(v,j)$ belonging to different tree nodes. If neither node is a prefix of the other, no leaf path visits both; their label pair cannot be $(1,1)$. If $u$ is a proper prefix of $v$, the condition $h_w(v,j)=1$ forces the path to visit $v$, and hence forces the outgoing vector at $u$ to the one fixed by $v$. In particular $h_w(u,i)$ has one fixed value whenever $h_w(v,j)=1$, so one of the two pairs with second label one is missing. The case where $v$ is a prefix of $u$ is the same statement with the coordinates exchanged. Thus any shattered set has all its coordinates at one tree node and has size at most $b$.",
+  "references": "Direct finite tree construction, with independent checks in the branching-batch-tree regression.",
+  "value_class": "omega_1"
+}

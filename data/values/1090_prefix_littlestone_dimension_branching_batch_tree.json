@@ -1,0 +1,12 @@
+{
+  "id": 1090,
+  "name": "Prefix-$k$ Littlestone Dimension of the Branching Batch-Tree Class",
+  "short_name": "prefix_littlestone_dimension_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$bn$ if $2\\le k\\le b$; $b$ if $k>b$",
+  "status": "established",
+  "details": "For construction width $b\\ge1$ and height $n\\ge1$. Query block size $k$ is a separate fixed integer; the general block catalogue parameter uses $k>2$. Any asymptotic statement fixes $b,k$ and lets $n$ grow.",
+  "proof": "The canonical depth-$bn$ path tree queries all $b$ root coordinates in a fixed order, so its first $b$ levels are horizontally constant. It therefore attains the ordinary leaf-count upper bound for every prefix size $k\\le b$. If $k>b$, depth at least $k$ would shatter the $k$ coordinates on the first $k$ constant levels, contradicting VC $b$. Any shorter admissible tree is entirely level-constant and has depth at most $b$. The $b$ root coordinates attain that bound.",
+  "references": "Direct finite tree construction, with independent checks in the branching-batch-tree regression."
+}

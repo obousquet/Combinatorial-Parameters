@@ -8,8 +8,9 @@
   "proof": "If $S=\\{x_1,\\ldots,x_d\\}$ is VC-shattered, label every node on level $i$ by $x_i$. This is a shattered tree of depth $d$ and satisfies the 2-block constraint (indeed, it is level-constant everywhere). Hence $\\mathrm{B}_2(\\mathcal H)\\ge\\operatorname{VC}(\\mathcal H)$.",
   "latex_proof_label": "prop:block-littlestone-sandwich",
   "proof_source": "Proposition \\ref{prop:block-littlestone-sandwich} in the survey.",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict",
+  "witness": "#classes/branching_batch_tree",
+  "witness_strength": "unbounded",
+  "witness_verification": "Fix b=2 in the branching batch-tree class and let n grow. The exact values B_2=2n and VC=2 give B_2/(1+VC)=2n/3 tending to infinity. Thus no reverse affine bound, or even any finite-valued bound in VC alone, exists. See survey Corollary prop:branching-batch-separations and the database-owned value proofs.",
   "short_name": "2block_littlestone_dimension_vc_dimension",
   "name": "2-Block Littlestone Dimension / VC Dimension"
 }
