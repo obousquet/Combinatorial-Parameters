@@ -9,5 +9,8 @@
   "references": "\\cite{hatcher2002algebraic,yang2018homological}",
   "proof_source": "Coefficient-field discussion and the Hochster/interval-homology formulation: ~/latex/YangDim/yang_dimension_combinatorics.tex, Section `The cube-envelope lattice and the Gasharov--Peeva--Welker formula` (unpublished local draft).",
   "short_name": "characteristic_p_yang_dimension_characteristic_zero_yang_dimension",
-  "name": "Characteristic-p Yang Dimension / Characteristic-zero Yang Dimension"
+  "name": "Characteristic-p Yang Dimension / Characteristic-zero Yang Dimension",
+  "witness": "#classes/anchored_torsion",
+  "witness_strength": "strict",
+  "witness_verification": "At the fixed parameter choice p=2, the Anchored Torsion Class has Y_p=4>3=Y_0. For every odd p this same class has Y_p=Y_0=3, so this witnesses strictness of the prime-indexed family at p=2 only, not for each fixed odd prime. The gap is finite, not an unbounded-ratio witness. See the database-owned value proofs and survey Corollary prop:yang-characteristic-separation."
 }

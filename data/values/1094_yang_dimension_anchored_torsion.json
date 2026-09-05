@@ -1,0 +1,11 @@
+{
+  "id": 1094,
+  "name": "Yang Dimension of the Anchored Torsion Class",
+  "short_name": "yang_dimension_anchored_torsion",
+  "class_id": "#classes/anchored_torsion",
+  "parameter_id": "#parameters/yang_dimension",
+  "value": "$4$",
+  "status": "established",
+  "proof": "The catalogue's default Yang dimension is its characteristic-two specialization. The complete coefficient-field calculation for this class (value record 1093) proves that this value is four.",
+  "references": "Direct calculation from the database-owned class definition and its characteristic computation."
+}

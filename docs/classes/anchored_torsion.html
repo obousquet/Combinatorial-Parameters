@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-96" style="position:relative;">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-48" style="position:relative;">
         
-        <h3><a href="parameters/characteristic_zero_yang_dimension.html" class="table-title-link">Characteristic-zero Yang Dimension</a></h3>
+        <h3><a href="classes/anchored_torsion.html" class="table-title-link">Anchored Torsion Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Characteristic-zero Yang Dimension</p>
+        <p><strong>Name: </strong>Anchored Torsion Class</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{Y}_0">
-            \[\mathrm{Y}_0\]
+        <div class="latex-equation" data-latex="\mathcal R_{\mathrm{tor}}">
+            \[\mathcal R_{\mathrm{tor}}\]
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>characteristic-zero Yang dimension</strong> is $\mathrm{Y}_0(\mathcal H):=\operatorname{pd}_{\mathbb Q}(I^*_{\mathcal H})$, equivalently the regularity of the Yang complex over $\mathbb Q$. It has the same value over every characteristic-zero field. It is at most $\mathrm Y_p$ for every prime $p$. For a fixed finite class, $\mathrm Y_p=\mathrm Y_0$ outside the finite set of primes detected by torsion in the integral Hochster/interval complexes.</p></div>
-<strong>Description:</strong><div class="text-field"><p>Yang dimension over a characteristic-zero field</p></div>
-
-<strong>Origin References:</strong><div class="text-field"><p>The underlying homological dimension was introduced by Yang in <a href="bibliography.html#yang2018homological">[yang2018homological]</a>; this characteristic-zero specialization is standard coefficient-field notation.</p></div>
-<p><strong>Category:</strong> Holes and Homology</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> No</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Unspecified</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> No</p>
-<p><strong>Strictly Monotonic:</strong> No</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/characteristic_zero_yang_dimension_trivial_concepts.html'>$\mathrm{Y}_0(\{\emptyset, [n]\}) = 1\;(\Omega(1))$</a></li><li><a href='values/characteristic_zero_yang_dimension_singletons.html'>$\mathrm{Y}_0(\{\{i\}\}_{1\le i\le n}) = n-1\;(\Omega(n))$</a></li><li><a href='values/characteristic_zero_yang_dimension_full_cube.html'>$\mathrm{Y}_0(\{S:S\subset [n]\}) = n\;(\Omega(n))$</a></li><li><a href='values/characteristic_zero_yang_dimension_singletons_plus_empty_set.html'>$\mathrm{Y}_0(\{\{i\}\}_{1\le i\le n}\cup\{\emptyset\}) = 1\;(\Omega(1))$</a></li><li><a href='values/characteristic_zero_yang_dimension_anchored_torsion.html'>$\mathrm{Y}_0(\mathcal R_{\mathrm{tor}}) = 3$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/characteristic_p_yang_dimension_characteristic_zero_yang_dimension.html" class="relationship-statement">$\mathrm{Y}_p \ge \mathrm{Y}_0$</a></li><li><a href="relationships/characteristic_zero_yang_dimension_vc_dimension.html" class="relationship-statement">$\mathrm{Y}_0 \ge \mathrm{VC}$</a></li><li><a href="relationships/effective_range_characteristic_zero_yang_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{Y}_0$</a></li><li><a href="relationships/size_characteristic_zero_yang_dimension.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{Y}_0$</a></li><li><a href="relationships/yang_dimension_characteristic_zero_yang_dimension.html" class="relationship-statement">$\mathrm{Y} \ge \mathrm{Y}_0$</a></li></ul></div>
+<strong>Definition:</strong><div class="text-field"><p>Let $V=\{1,\ldots,6\}$ and let $(F_1,\ldots,F_{10})=(123,124,135,146,156,236,245,256,345,346)$, where a three-digit word denotes the set of its three digits. On the eleven-coordinate domain $X=\{x_0,x_1,\ldots,x_{10}\}$, define seven binary concepts $\mathcal R_{\mathrm{tor}}=\{h_a\}\cup\{h_v:v\in V\}$ as follows. The concept $h_a$ is zero on every coordinate. For $v\in V$, set $h_v(x_0)=1$ and, for $1\le i\le10$, set $h_v(x_i)=0$ if $v\in F_i$ and $h_v(x_i)=1$ otherwise. Thus coordinate $x_0$ separates the added concept from the other six, and the zero side of $x_i$ is $\{h_a\}\cup\{h_v:v\in F_i\}$.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>A finite strict witness for coefficient-field dependence of Yang dimension: value four in characteristic two, and three in characteristic zero or any odd characteristic. This single class does not give an unbounded-ratio separation. The construction is recorded with a direct integral-homology proof; no claim of published origin or minimality is made.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/characteristic_p_yang_dimension_anchored_torsion.html'>Characteristic-p Yang Dimension of the Anchored Torsion Class</a></li><li><a href='values/yang_dimension_anchored_torsion.html'>Yang Dimension of the Anchored Torsion Class</a></li><li><a href='values/characteristic_zero_yang_dimension_anchored_torsion.html'>Characteristic-zero Yang Dimension of the Anchored Torsion Class</a></li><li><a href='values/vc_dimension_anchored_torsion.html'>VC Dimension of the Anchored Torsion Class</a></li><li><a href='values/size_anchored_torsion.html'>Class Size of the Anchored Torsion Class</a></li><li><a href='values/effective_range_anchored_torsion.html'>Effective Range of the Anchored Torsion Class</a></li><li><a href='values/littlestone_dimension_anchored_torsion.html'>Littlestone Dimension of the Anchored Torsion Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/characteristic_p_yang_dimension_characteristic_zero_yang_dimension.html'>Characteristic-p Yang Dimension / Characteristic-zero Yang Dimension</a></li><li><a href='relationships/yang_dimension_characteristic_zero_yang_dimension.html'>Yang Dimension / Characteristic-zero Yang Dimension</a></li></ul></p></div>
 
         </div>
     </div>

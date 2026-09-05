@@ -1,0 +1,400 @@
+{
+  "class": "anchored_torsion",
+  "coordinate_order": "x0,...,x10",
+  "concepts": [
+    "00000000000",
+    "10000011111",
+    "10011100011",
+    "10101101100",
+    "11010110100",
+    "11101010001",
+    "11110001010"
+  ],
+  "cycle_edges": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "integral_boundary": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "determinant": -2,
+  "fields": {
+    "0": {
+      "dimension": 3,
+      "version_spaces": 75,
+      "total_betti": {
+        "0": 7,
+        "1": 21,
+        "2": 35,
+        "3": 20
+      },
+      "maximizers": [
+        {
+          "space_mask": 15,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 23,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 43,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 53,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 57,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 77,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 83,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 89,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 99,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 101,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 126,
+          "degree": 3,
+          "multiplicity": 10
+        }
+      ]
+    },
+    "2": {
+      "dimension": 4,
+      "version_spaces": 75,
+      "total_betti": {
+        "0": 7,
+        "1": 21,
+        "2": 35,
+        "3": 21,
+        "4": 1
+      },
+      "maximizers": [
+        {
+          "space_mask": 127,
+          "degree": 4,
+          "multiplicity": 1
+        }
+      ]
+    },
+    "3": {
+      "dimension": 3,
+      "version_spaces": 75,
+      "total_betti": {
+        "0": 7,
+        "1": 21,
+        "2": 35,
+        "3": 20
+      },
+      "maximizers": [
+        {
+          "space_mask": 15,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 23,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 43,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 53,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 57,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 77,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 83,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 89,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 99,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 101,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 126,
+          "degree": 3,
+          "multiplicity": 10
+        }
+      ]
+    },
+    "5": {
+      "dimension": 3,
+      "version_spaces": 75,
+      "total_betti": {
+        "0": 7,
+        "1": 21,
+        "2": 35,
+        "3": 20
+      },
+      "maximizers": [
+        {
+          "space_mask": 15,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 23,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 43,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 53,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 57,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 77,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 83,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 89,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 99,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 101,
+          "degree": 3,
+          "multiplicity": 1
+        },
+        {
+          "space_mask": 126,
+          "degree": 3,
+          "multiplicity": 10
+        }
+      ]
+    }
+  },
+  "independent_interval_crosscheck": true
+}

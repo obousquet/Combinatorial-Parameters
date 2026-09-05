@@ -220,3 +220,12 @@ For the fixed-VC/unbounded-block separation, run
 `python3 sync/verify_branching_batch_trees.py`. Its eight-family shattering
 and path checks include six independently optimized small domains. Do not
 describe the two larger structural checks as full depth optimizations.
+
+The strict characteristic-dependent Yang witness is checked by
+`python3 sync/verify_yang_characteristic_witness.py`. Its definition and
+integral proof are database-owned; the verifier reuses the survey's exact
+ambiguity calculator. For independent cube-interval verification and full
+report reproduction, add
+`--crosscheck-lattice ~/latex/YangDim/scripts/explore_yang_dimension_lattice.py --check-report sync/yang_characteristic_witness.json`.
+The witness for the prime-indexed relationship is scoped to `p=2`; it is
+strict, not unbounded.

@@ -1,0 +1,11 @@
+{
+  "id": 1097,
+  "name": "Class Size of the Anchored Torsion Class",
+  "short_name": "size_anchored_torsion",
+  "class_id": "#classes/anchored_torsion",
+  "parameter_id": "#parameters/size",
+  "value": "$7$",
+  "status": "established",
+  "proof": "The added zero concept is distinguished from the other six by $x_0$. Distinct old vertices are distinguished by a triple containing one but not the other: the ten triples and their complements give every balanced partition of the six vertices. Thus all seven listed concepts are distinct.",
+  "references": "Direct calculation from the database-owned class definition and its characteristic computation."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1099,
+  "name": "Littlestone Dimension of the Anchored Torsion Class",
+  "short_name": "littlestone_dimension_anchored_torsion",
+  "class_id": "#classes/anchored_torsion",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$2$",
+  "status": "established",
+  "proof": "The two VC-shattered coordinates give a depth-two level-constant Littlestone tree. A depth-three complete shattered tree would require eight distinct concepts, but the class has only seven. Hence the value is exactly two.",
+  "references": "Direct calculation from the database-owned class definition and its characteristic computation."
+}

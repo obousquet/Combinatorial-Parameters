@@ -1,0 +1,11 @@
+{
+  "id": 1096,
+  "name": "VC Dimension of the Anchored Torsion Class",
+  "short_name": "vc_dimension_anchored_torsion",
+  "class_id": "#classes/anchored_torsion",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2$",
+  "status": "established",
+  "proof": "Coordinates $x_1,x_2$ are shattered: concepts $h_1,h_3,h_4,h_5$ realize $00,01,10,11$, respectively. No three coordinates can be shattered because the entire class has only seven concepts, fewer than the eight distinct realizers required.",
+  "references": "Direct calculation from the database-owned class definition and its characteristic computation."
+}

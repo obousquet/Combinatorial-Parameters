@@ -1,9 +1,9 @@
 {
   "counts": {
     "unbounded": 222,
-    "strict": 82,
+    "strict": 84,
     "equivalence": 17,
-    "missing": 42,
+    "missing": 41,
     "unclassified": 7,
     "incomparable": 98
   },
@@ -2286,8 +2286,8 @@
     {
       "id": 227,
       "short_name": "characteristic_p_yang_dimension_characteristic_zero_yang_dimension",
-      "category": "missing",
-      "witness": null,
+      "category": "strict",
+      "witness": "#classes/anchored_torsion",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
@@ -3575,6 +3575,26 @@
           "value_ids": [
             1074,
             1073
+          ]
+        }
+      ],
+      "review": "Check endpoint proofs and scope before promoting any candidate."
+    },
+    {
+      "id": 507,
+      "short_name": "yang_dimension_characteristic_zero_yang_dimension",
+      "category": "strict",
+      "witness": "#classes/anchored_torsion",
+      "reverse_affine_path": null,
+      "unbounded_candidates": [],
+      "strict_candidates": [
+        {
+          "class": "#classes/anchored_torsion",
+          "larger_value": "$4$",
+          "smaller_value": "$3$",
+          "value_ids": [
+            1094,
+            1095
           ]
         }
       ],

@@ -1,0 +1,16 @@
+{
+  "id": 507,
+  "name": "Yang Dimension / Characteristic-zero Yang Dimension",
+  "short_name": "yang_dimension_characteristic_zero_yang_dimension",
+  "parameter_1_id": "#parameters/yang_dimension",
+  "parameter_2_id": "#parameters/characteristic_zero_yang_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, $\\mathrm Y=\\mathrm Y_2\\ge\\mathrm Y_0$. The inequality is strict on the Anchored Torsion Class. This is the default characteristic-two specialization, not a comparison involving a variable prime.",
+  "latex_proof_label": "prop:yang-characteristic-separation",
+  "proof_source": "Survey Corollary prop:yang-characteristic-separation gives the universal inequality and points to the database-owned witness value proofs.",
+  "references": "\\cite{hatcher2002algebraic,yang2018homological}",
+  "witness": "#classes/anchored_torsion",
+  "witness_strength": "strict",
+  "witness_verification": "The database-owned exact values on the Anchored Torsion Class are Y=4 and Y_0=3. They refute the reverse exact domination but do not refute any reverse affine bound."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1098,
+  "name": "Effective Range of the Anchored Torsion Class",
+  "short_name": "effective_range_anchored_torsion",
+  "class_id": "#classes/anchored_torsion",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$11$",
+  "status": "established",
+  "proof": "Coordinate $x_0$ has labels zero and one. Every $x_i$, $1\\le i\\le10$, has four concepts on its zero side and three on its one side. All eleven coordinates are therefore nonconstant.",
+  "references": "Direct calculation from the database-owned class definition and its characteristic computation."
+}

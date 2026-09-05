@@ -11,7 +11,7 @@
   "strictly_monotonic": false,
   "description": "Yang dimension over a characteristic-zero field",
   "definition": "The **characteristic-zero Yang dimension** is $\\mathrm{Y}_0(\\mathcal H):=\\operatorname{pd}_{\\mathbb Q}(I^*_{\\mathcal H})$, equivalently the regularity of the Yang complex over $\\mathbb Q$. It has the same value over every characteristic-zero field. It is at most $\\mathrm Y_p$ for every prime $p$. For a fixed finite class, $\\mathrm Y_p=\\mathrm Y_0$ outside the finite set of primes detected by torsion in the integral Hochster/interval complexes.",
-  "graph_summary": "Yang dimension in characteristic zero. It lower-bounds every $\\mathrm Y_p$; for a fixed finite class, only finitely many primes can differ from it.",
+  "graph_summary": "Yang dimension over characteristic zero. It lower-bounds every $\\mathrm Y_p$ and can be strictly below $\\mathrm Y_2$, as witnessed by the Anchored Torsion Class.",
   "origin_references": "The underlying homological dimension was introduced by Yang in \\cite{yang2018homological}; this characteristic-zero specialization is standard coefficient-field notation.",
   "monotonicity_evidence": {
     "monotonic": {

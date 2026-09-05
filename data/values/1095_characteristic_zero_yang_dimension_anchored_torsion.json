@@ -1,0 +1,11 @@
+{
+  "id": 1095,
+  "name": "Characteristic-zero Yang Dimension of the Anchored Torsion Class",
+  "short_name": "characteristic_zero_yang_dimension_anchored_torsion",
+  "class_id": "#classes/anchored_torsion",
+  "parameter_id": "#parameters/characteristic_zero_yang_dimension",
+  "value": "$3$",
+  "status": "established",
+  "proof": "The full integral-homology and proper-version-space calculation for this class (value record 1093) also treats characteristic zero and gives exactly three over $\\mathbb Q$.",
+  "references": "Direct calculation from the database-owned class definition and its characteristic computation."
+}

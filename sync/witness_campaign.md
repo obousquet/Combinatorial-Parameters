@@ -47,9 +47,9 @@ relationship records were created.
 
 ## Remaining work
 
-Among established non-equality, non-incomparability records, 42 have no
-witness, 82 have only strict witnesses, and seven retain legacy witness
-classification. Eight of the 82 strict cases are excluded from unbounded-gap
+Among established non-equality, non-incomparability records, 41 have no
+witness, 84 have only strict witnesses, and seven retain legacy witness
+classification. Eight of the 84 strict cases are excluded from unbounded-gap
 search by the reverse controls above.
 
 There are no unused integer-separation or growth-category leads in the
@@ -100,3 +100,10 @@ $B_b=\mathrm{PL}_b=bn$; every larger query block size has value $b$.
 Thus even an arbitrary finite-valued VC-only bound for repeated-block depth
 is impossible. The database owns the definition and value proofs; survey
 Corollary `prop:branching-batch-separations` records the consequences.
+
+The Anchored Torsion Class establishes strict field dependence of Yang
+dimension: characteristic two gives four, while characteristic zero and all
+odd characteristics give three. Relationship #227 is now witnessed explicitly
+at the parameter choice $p=2$; #507 records the default-field comparison.
+Neither witness is unbounded, and the same class does not separate an odd
+characteristic from zero. The full proof and exact values are database-owned.
