@@ -7,7 +7,8 @@
   "short_name": "minimum_projected_teaching_set_size_minimum_teaching_set_size",
   "name": "Minimum Projected Teaching Set Size / Minimum Teaching Set Size",
   "status": "established",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict",
-  "proof": "The projected minimum teaching-set parameter maximizes the corresponding quantity over projections.  The full-domain projection recovers the original class and its minimum teaching-set size."
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "proof": "The projected minimum teaching-set parameter maximizes the corresponding quantity over projections.  The full-domain projection recovers the original class and its minimum teaching-set size.",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

@@ -9,5 +9,8 @@
   "status": "established",
   "references": "\\cite{KSZ2019}",
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
-  "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star."
+  "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star.",
+  "witness": "#classes/three_code_class",
+  "witness_strength": "strict",
+  "witness_verification": "The established values on #classes/three_code_class are $2$ and $1$, respectively, so the reverse exact inequality fails. These finite values do not establish an unbounded affine gap."
 }

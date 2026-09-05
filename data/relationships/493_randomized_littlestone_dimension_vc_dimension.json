@@ -9,5 +9,8 @@
   "details": "For every finite binary class, $\\mathrm{RL}(\\mathcal H)\\geq\\tfrac12\\mathrm{VC}(\\mathcal H)$.",
   "status": "established",
   "proof": "If a d-set is VC-shattered, label every level i of a complete depth-d tree by its ith point. The resulting tree is shattered and every root-to-leaf path has length d. Its uniform-walk average depth is d, so the defining factor one half gives $\\mathrm{RL}(\\mathcal H)\\ge d/2$. Maximize over d.",
-  "references": "\\cite{filmus2023randomized,vapnik1971uniform}"
+  "references": "\\cite{filmus2023randomized,vapnik1971uniform}",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $\\mathrm{RL}\\ge \\tfrac12\\lfloor\\log_2n\\rfloor$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

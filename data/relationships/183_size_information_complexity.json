@@ -8,5 +8,8 @@
   "proof": "Fix a deterministic proper empirical-risk minimizer with a fixed tie-breaking order on $\\mathcal H$.  Its output takes at most $|\\mathcal H|$ values, hence $I(S;\\mathcal A(S))\\le H(\\mathcal A(S))\\le\\log_2|\\mathcal H|\\le|\\mathcal H|$ (with value 0 for a singleton class).  Taking the infimum in the definition of information complexity preserves this upper bound.",
   "references": "\\cite{pradeep2022information}",
   "short_name": "size_information_complexity",
-  "name": "Size / Information Complexity"
+  "name": "Size / Information Complexity",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "strict",
+  "witness_verification": "The established values on #classes/trivial_concepts are $2$ and $0$, respectively, so the reverse exact inequality fails. These finite values do not establish an unbounded affine gap."
 }

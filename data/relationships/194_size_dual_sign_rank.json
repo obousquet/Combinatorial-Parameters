@@ -7,5 +7,8 @@
   "short_name": "size_dual_sign_rank",
   "status": "established",
   "details": "A linearly independent column set has size at most the number of rows.",
-  "proof": "Every realizing matrix for the incidence sign matrix has \\(|\\mathcal H|\\) rows. A set of linearly independent columns in such a matrix has size at most its rank, hence at most \\(|\\mathcal H|\\). This applies to the fixed column set in the definition of dual sign rank."
+  "proof": "Every realizing matrix for the incidence sign matrix has \\(|\\mathcal H|\\) rows. A set of linearly independent columns in such a matrix has size at most its rank, hence at most \\(|\\mathcal H|\\). This applies to the fixed column set in the definition of dual sign rank.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $2^n$ and $n$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

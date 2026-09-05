@@ -6,8 +6,9 @@
   "name": "Effective Range / Monotonic Projected Minimum Teaching Set Size",
   "short_name": "effective_range_monotonic_projected_minimum_teaching_set_size",
   "status": "established",
-  "details": "For finite binary concept classes; no separating witness is currently recorded.",
-  "proof": "Let \\(\\mathcal G\\subseteq\\mathcal H\\) and let \\(\\pi_T(\\mathcal G)\\) be any coordinate projection. Its effective range is contained in that of \\(\\mathcal H\\), and the labels on its active coordinates distinguish every target trace from every other trace. Hence its minimum teaching-set size is at most \\(\\mathrm E(\\mathcal H)\\). Maximizing first over projections and then over subfamilies gives \\(\\mathrm{TS}_{\\min}^{*p}(\\mathcal H)\\le\\mathrm E(\\mathcal H)\\)."
-  ,"witness": "#classes/warmuth_c5"
-  ,"witness_strength": "strict"
+  "details": "For finite binary concept classes.",
+  "proof": "Let \\(\\mathcal G\\subseteq\\mathcal H\\) and let \\(\\pi_T(\\mathcal G)\\) be any coordinate projection. Its effective range is contained in that of \\(\\mathcal H\\), and the labels on its active coordinates distinguish every target trace from every other trace. Hence its minimum teaching-set size is at most \\(\\mathrm E(\\mathcal H)\\). Maximizing first over projections and then over subfamilies gives \\(\\mathrm{TS}_{\\min}^{*p}(\\mathcal H)\\le\\mathrm E(\\mathcal H)\\).",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

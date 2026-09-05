@@ -8,6 +8,7 @@
   "status": "established",
   "details": "For finite concept classes.",
   "proof": "Repeatedly remove an inclusion-maximal concept. Its positive labels on all active coordinates distinguish it from every remaining concept: no remaining concept can contain it, and each differs on a positive coordinate. These samples have size at most \\(\\mathrm E(\\mathcal H)\\), yielding a positive recursive teaching sequence with that bound.",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict"
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

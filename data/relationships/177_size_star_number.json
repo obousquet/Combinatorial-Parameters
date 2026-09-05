@@ -9,8 +9,9 @@
   "status": "established",
   "latex_proof_label": "lem:elementary-parameter-hierarchy",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:elementary-parameter-hierarchy`.",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "short_name": "size_star_number",
-  "name": "Size / Star Number (affine)"
+  "name": "Size / Star Number (affine)",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $2^n$ and $n$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

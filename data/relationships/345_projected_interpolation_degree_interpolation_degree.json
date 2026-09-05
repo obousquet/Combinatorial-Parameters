@@ -6,8 +6,9 @@
   "parameter_2_id": "#parameters/interpolation_degree",
   "relationship_type": "larger",
   "details": "The full-domain projection is included in the defining maximum.",
-  "witness": "#classes/interpolation_conjecture_counterexample",
-  "witness_strength": "strict",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
   "status": "established",
-  "proof": "Taking $S=\\mathcal X$ in the definition gives $\\mathrm{intdeg}^p(\\mathcal H)\\ge\\mathrm{intdeg}(\\mathcal H)$."
+  "proof": "Taking $S=\\mathcal X$ in the definition gives $\\mathrm{intdeg}^p(\\mathcal H)\\ge\\mathrm{intdeg}(\\mathcal H)$.",
+  "witness_verification": "For #classes/addressing with n>=4, the established endpoint values or bounds, in parameter order, are $\\lfloor\\log_2n\\rfloor$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs. The projected/order-shattering endpoint value uses its established finite-class equality with VC dimension."
 }

@@ -7,5 +7,8 @@
   "short_name": "effective_range_maximum_positive_degree",
   "status": "established",
   "details": "Every edge of the 1-inclusion graph uses an active coordinate.",
-  "proof": "A smaller neighbor counted by the dominance of a concept differs from it on one coordinate. Such a coordinate is active. Therefore the positive degree of every vertex, and hence its maximum, is at most \\(\\mathrm E(\\mathcal H)\\)."
+  "proof": "A smaller neighbor counted by the dominance of a concept differs from it on one coordinate. Such a coordinate is active. Therefore the positive degree of every vertex, and hence its maximum, is at most \\(\\mathrm E(\\mathcal H)\\).",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

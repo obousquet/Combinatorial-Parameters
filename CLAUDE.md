@@ -92,6 +92,15 @@ python3 sync/audit_provenance.py --data-dir data
 # witnesses from asymptotic value classes; legacy witnesses remain a review queue.
 python3 sync/audit_witness_strength.py --data-dir data
 
+# Screens every established direct relationship, including those omitted
+# from the graph: missing witnesses, strict-to-unbounded leads, and reverse
+# affine paths. Leads require endpoint proof and scope review before promotion.
+python3 sync/audit_relationship_witnesses.py --data-dir data --check \
+  --output sync/relationship_witness_queue.json
+
+# Small-class counting and upper-bound witness-direction regression.
+python3 sync/verify_dual_littlestone_bounds.py
+
 # Checks unambiguous established literal-integer benchmark values against
 # direct linear and equality relationships. Formulae and scoped alternatives
 # are deliberately skipped.

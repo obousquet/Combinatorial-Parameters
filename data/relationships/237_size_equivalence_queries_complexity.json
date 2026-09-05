@@ -8,5 +8,8 @@
   "proof": "The proper strategy is also admissible when arbitrary equivalence hypotheses are allowed: propose a remaining concept and every negative answer eliminates it. Thus at most $|\\mathcal H|-1$ equivalence queries are needed.",
   "references": "\\cite{angluin1988queries}",
   "short_name": "size_equivalence_queries_complexity",
-  "name": "Size / Equivalence Queries Complexity"
+  "name": "Size / Equivalence Queries Complexity",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

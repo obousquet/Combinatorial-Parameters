@@ -3,12 +3,12 @@
   "parameter_1_id": "#parameters/dual_sign_rank",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
-  "details": "For every sign matrix, $\\mathrm{VC}\\leq\\mathrm{DSR}\\leq2\\mathrm{VC}+1$.",
+  "details": "For every sign matrix, $\\mathrm{VC}\\leq\\mathrm{DSR}\\leq2\\mathrm{VC}+1$. The bound $\\mathrm{DSR}\\le2\\mathrm{VC}+1$ rules out an unbounded affine gap, including when VC is zero.",
   "short_name": "dual_sign_rank_vc_dimension",
   "name": "Dual Sign Rank / VC Dimension",
   "status": "established",
   "proof": "This is the first inequality of Proposition 1, which identifies dual sign rank with the VC dimension of the matrix obtained by adjoining the negated rows.",
-  "references": "\\cite{alon2016sign}"
-  ,"witness": "#classes/singletons_plus_empty_set"
-  ,"witness_strength": "strict"
+  "references": "\\cite{alon2016sign}",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "strict"
 }

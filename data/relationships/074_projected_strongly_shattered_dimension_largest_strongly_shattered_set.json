@@ -6,8 +6,9 @@
   "details": "Definition",
   "status": "established",
   "proof": "The full-domain projection is among the projections optimized over by the projected parameter, so it includes every strongly shattered set of the original class.",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict",
+  "witness": "#classes/universal_class",
+  "witness_strength": "unbounded",
   "short_name": "projected_strongly_shattered_dimension_largest_strongly_shattered_set",
-  "name": "Projected Strongly Shattered Dimension / Largest Strongly Shattered Set"
+  "name": "Projected Strongly Shattered Dimension / Largest Strongly Shattered Set",
+  "witness_verification": "For the family #classes/universal_class with n>=4, the established endpoint values or bounds, in parameter order, are $\\lfloor\\log_2 n\\rfloor$ and $0$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

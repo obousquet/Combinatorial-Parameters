@@ -5,10 +5,11 @@
   "relationship_type": "larger",
   "details": "For finite nonempty concept classes, the maximum teaching-set size is at least the minimum teaching-set size.",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:max-min-teaching-set`.",
   "latex_proof_label": "lem:max-min-teaching-set",
   "short_name": "maximum_teaching_set_size_minimum_teaching_set_size",
-  "name": "Maximum Teaching-Set Size / Minimum Teaching-Set Size"
+  "name": "Maximum Teaching-Set Size / Minimum Teaching-Set Size",
+  "witness_verification": "For the family #classes/singletons_plus_empty_set with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

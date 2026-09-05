@@ -12,7 +12,7 @@
   "latex_proof_label": "cor:nctd-low-log-size-ratio",
   "proof_source": "Corollary cor:nctd-low-log-size-ratio in the LaTeX survey.",
   "references": "\\cite{KSZ2019}",
-  "witness": "#classes/trivial_concepts",
-  "witness_strength": "strict",
-  "witness_verification": "For the trivial two-concept class, $\\mathrm{NCTD}=1$ while $\\log(|\\mathcal H|-1)/\\log(n+1)=0$."
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $\\lceil n/2\\rceil$ and $\\frac{\\log(2^n-1)}{\\log(n+1)}$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

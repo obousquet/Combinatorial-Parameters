@@ -4,10 +4,11 @@
   "parameter_2_id": "#parameters/maximum_positive_degree",
   "relationship_type": "larger",
   "details": "For the oriented one-inclusion graph of every finite concept class.",
-  "witness": "#classes/halfintervals",
-  "witness_strength": "strict",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
   "short_name": "maximum_degree_maximum_positive_degree",
   "name": "Maximum Degree / Maximum Positive Degree",
   "status": "established",
-  "proof": "For every vertex, its number of smaller neighbours is at most its total degree.  Taking maxima over vertices gives the inequality."
+  "proof": "For every vertex, its number of smaller neighbours is at most its total degree.  Taking maxima over vertices gives the inequality.",
+  "witness_verification": "For the family #classes/singletons_plus_empty_set with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

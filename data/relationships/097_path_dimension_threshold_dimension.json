@@ -3,7 +3,7 @@
   "parameter_1_id": "#parameters/path_dimension",
   "parameter_2_id": "#parameters/threshold_dimension",
   "relationship_type": "larger",
-  "details": "For finite concept classes, path dimension dominates threshold dimension.",
+  "details": "For finite concept classes, path dimension dominates threshold dimension. Relationship 96 gives the reverse bound $\\mathrm P\\le2\\mathrm T$, so no unbounded ratio is possible.",
   "witness": "#classes/warmuth_c5",
   "witness_strength": "strict",
   "status": "established",

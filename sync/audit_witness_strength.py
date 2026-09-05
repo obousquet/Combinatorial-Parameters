@@ -74,7 +74,9 @@ def strict_verified(relationship: Record, left: Record | None, right: Record | N
         return None
     if relationship.get("relationship_type") == "equivalence":
         return a != b
-    if relationship.get("status") == "refuted":
+    if (relationship.get("status") == "refuted") != (
+        relationship.get("relationship_type") in {"log_upper", "sqrt_upper"}
+    ):
         return a < b
     return a > b
 
@@ -87,7 +89,10 @@ def unbounded_verified(
     a, b = GROWTH_RANK.get(left.get("value_class")), GROWTH_RANK.get(right.get("value_class"))
     if a is None or b is None:
         return None
-    return a < b if relationship.get("status") == "refuted" else a > b
+    reverse = (relationship.get("status") == "refuted") != (
+        relationship.get("relationship_type") in {"log_upper", "sqrt_upper"}
+    )
+    return a < b if reverse else a > b
 
 
 def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:

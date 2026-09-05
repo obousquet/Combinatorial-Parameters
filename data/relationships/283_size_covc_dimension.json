@@ -8,8 +8,9 @@
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:size-covc`.",
   "latex_proof_label": "lem:size-covc",
   "references": "\\cite{bousquet2020proper}",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "short_name": "size_covc_dimension",
-  "name": "Size / co-VC Dimension"
+  "name": "Size / co-VC Dimension",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $2^n$ and $0$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

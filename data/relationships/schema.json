@@ -55,11 +55,28 @@
             { "value": "larger_c", "display_name": "$P_1\\ge cP_2-d$" },
             { "value": "equivalence", "display_name": "$P_1 = P_2$" },
             { "value": "log", "display_name": "$P_1 \\ge c\\log P_2$" },
+            { "value": "log_upper", "display_name": "$P_1 \\le C\\log_b(P_2+s)$" },
             { "value": "sqrt", "display_name": "$P_1 \\ge c\\sqrt{P_2}$" },
             { "value": "sqrt_upper", "display_name": "$P_1 \\le C\\sqrt{P_2}$" },
             { "value": "inv_log", "display_name": "$P_1 \\ge \\frac{cP_2}{\\log n}$" },
             { "value": "incomparable", "display_name": "$P_1 \\parallel P_2$ (incomparable)" }
         ]
+    },
+    {
+        "name": "logarithm_base",
+        "type": "string",
+        "label": "Logarithm Base",
+        "description": "Optional base b for log_upper. If omitted the natural logarithm is used.",
+        "required": false,
+        "rendered": true
+    },
+    {
+        "name": "argument_shift",
+        "type": "string",
+        "label": "Logarithm Argument Shift",
+        "description": "Constant s inside log_upper: P_1 <= C log_b(P_2+s). Defaults to zero; this is distinct from an additive constant outside the logarithm.",
+        "required": false,
+        "rendered": true
     },
     {
         "name": "additive_constant",

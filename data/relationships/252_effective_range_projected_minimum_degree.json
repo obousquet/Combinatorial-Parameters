@@ -5,10 +5,11 @@
   "relationship_type": "larger",
   "details": "For every finite binary class, the largest projected minimum 1-inclusion degree is at most its effective range.",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
   "proof": "Each coordinate projection has effective range at most \\mathrm E(\\mathcal H), and every vertex in its 1-inclusion graph has at most one neighbor per effective coordinate. Its minimum degree is therefore at most \\mathrm E(\\mathcal H). Maximize over projections.",
   "references": "\\cite{haussler1994predicting}",
   "short_name": "effective_range_projected_minimum_degree",
-  "name": "Effective Range / Projected Minimum Degree"
+  "name": "Effective Range / Projected Minimum Degree",
+  "witness_verification": "For #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

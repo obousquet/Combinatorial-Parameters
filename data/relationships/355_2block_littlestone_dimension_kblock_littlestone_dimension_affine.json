@@ -11,5 +11,8 @@
   "status": "established",
   "proof_source": "Full proof in the LaTeX survey: Proposition prop:block-littlestone-round-order.",
   "latex_proof_label": "prop:block-littlestone-round-order",
-  "proof": "The general relation $\\mathrm B_\\ell\\le(\\ell/k)\\mathrm B_k+(\\ell-1)$, instantiated with the smaller block size $k=2$ and $\\ell>2$, gives $\\mathrm B_2\\ge\\frac{2}{\\ell}\\mathrm B_\\ell-\\frac{2(\\ell-1)}{\\ell}$. Renaming $\\ell$ as the fixed parameter $k$ gives the stated bound."
+  "proof": "The general relation $\\mathrm B_\\ell\\le(\\ell/k)\\mathrm B_k+(\\ell-1)$, instantiated with the smaller block size $k=2$ and $\\ell>2$, gives $\\mathrm B_2\\ge\\frac{2}{\\ell}\\mathrm B_\\ell-\\frac{2(\\ell-1)}{\\ell}$. Renaming $\\ell$ as the fixed parameter $k$ gives the stated bound.",
+  "witness": "#classes/warmuth_c5",
+  "witness_strength": "strict",
+  "witness_verification": "The established values on #classes/warmuth_c5 are $3$ and $2$, respectively, so the reverse exact inequality fails. These finite values do not establish an unbounded affine gap. This holds for every fixed k>2."
 }

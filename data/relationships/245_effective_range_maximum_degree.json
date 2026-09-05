@@ -5,10 +5,11 @@
   "relationship_type": "larger",
   "details": "For every finite binary class, the maximum degree of its 1-inclusion graph is at most its effective range.",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
   "proof": "At a fixed concept, two distinct 1-inclusion neighbors cannot differ from it on the same coordinate. Every coordinate supporting an incident edge is effective. Hence the vertex degree, and then the maximum degree, is at most \\mathrm E(\\mathcal H).",
   "references": "\\cite{haussler1994predicting}",
   "short_name": "effective_range_maximum_degree",
-  "name": "Effective Range / Maximum Degree"
+  "name": "Effective Range / Maximum Degree",
+  "witness_verification": "For #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $2$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

@@ -8,5 +8,8 @@
   "proof": "A shattered set of size d induces the boundary of a d-dimensional cross-polytope in the Yang complex. Its top reduced homology is nonzero over every field, so Hochster's formula gives $\\mathrm{Y}_p(\\mathcal H)\\geq d$. Maximize over shattered sets.",
   "references": "\\cite{yang2018homological}",
   "short_name": "characteristic_p_yang_dimension_vc_dimension",
-  "name": "Characteristic-p Yang Dimension / VC Dimension"
+  "name": "Characteristic-p Yang Dimension / VC Dimension",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints. This holds for every fixed prime p."
 }

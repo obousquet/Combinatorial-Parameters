@@ -8,5 +8,8 @@
   "latex_proof_label": "lem:basic-parameter-relationships",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:basic-parameter-relationships`.",
   "short_name": "hamming_radius_log_size",
-  "name": "Hamming Radius / Log Size"
+  "name": "Hamming Radius / Log Size",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/trivial_concepts with n>=4, the established endpoint values or bounds, in parameter order, are $\\lceil n/2\\rceil$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

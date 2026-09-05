@@ -1,1 +1,15 @@
-{"id": 224, "parameter_1_id": "#parameters/effective_range", "parameter_2_id": "#parameters/combinatorial_eluder_dimension", "relationship_type": "larger", "details": "Every point in an eluder witness is active, and the points in a witness sequence are distinct.", "status": "established", "proof": "At each witnessing point the base and witness hypothesis disagree, so the point lies in the effective range. A repeated point cannot be independent after it has appeared, because agreement with the base on the earlier copy forces agreement at its later copy.", "references": "\\cite{li2022understanding}", "witness": "#classes/three_code_class", "witness_strength": "strict", "short_name": "effective_range_combinatorial_eluder_dimension", "name": "Effective Range / Combinatorial Eluder Dimension"}
+{
+  "id": 224,
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/combinatorial_eluder_dimension",
+  "relationship_type": "larger",
+  "details": "Every point in an eluder witness is active, and the points in a witness sequence are distinct.",
+  "status": "established",
+  "proof": "At each witnessing point the base and witness hypothesis disagree, so the point lies in the effective range. A repeated point cannot be independent after it has appeared, because agreement with the base on the earlier copy forces agreement at its later copy.",
+  "references": "\\cite{li2022understanding}",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "short_name": "effective_range_combinatorial_eluder_dimension",
+  "name": "Effective Range / Combinatorial Eluder Dimension",
+  "witness_verification": "For #classes/trivial_concepts with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
+}

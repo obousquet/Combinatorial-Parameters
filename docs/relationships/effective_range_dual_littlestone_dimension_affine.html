@@ -66,23 +66,25 @@
             <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
     <div class="table-card" id="math-506" style="position:relative;">
         
-        <h3><a href="relationships/effective_range_dual_littlestone_dimension_affine.html" class="table-title-link">Effective Range / Dual Littlestone Dimension (affine)</a></h3>
+        <h3><a href="relationships/effective_range_dual_littlestone_dimension_affine.html" class="table-title-link">Dual Littlestone Dimension / Effective Range (logarithmic upper bound)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Effective Range / Dual Littlestone Dimension (affine)</p>
-<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/dual_littlestone_dimension.html">Dual Littlestone Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
-<p><strong>Additive Constant: </strong>1</p>
+        <p><strong>Name: </strong>Dual Littlestone Dimension / Effective Range (logarithmic upper bound)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/dual_littlestone_dimension.html">Dual Littlestone Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \le C\log_b(P_2+s)$</p>
+<p><strong>Logarithm Base: </strong>2</p>
+<p><strong>Logarithm Argument Shift: </strong>2</p>
+
 <p><strong>Multiplicative Constant: </strong>1</p>
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm E(\mathcal H)\ge\mathrm L^*(\mathcal H)-1$.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class on a nonempty finite domain, $\mathrm L^*(\mathcal H)\le\lfloor\log_2(\mathrm E(\mathcal H)+2)\rfloor$. Equivalently $\mathrm E\ge2^{\mathrm L^*}-2$, which strengthens the previously recorded affine consequence $\mathrm E\ge\mathrm L^*-1$. Equality holds on the universal class: $\mathrm L^*(\mathcal U_n)=n$ and $\mathrm E(\mathcal U_n)=2^n-2$.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For half-intervals, effective range is $n$ whereas $\mathrm L^*=\Theta(\log n)$.</p></div>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For half-intervals on [n], effective range is n-1, whereas dual Littlestone dimension is floor(log_2 n). Thus effective range cannot be bounded by any affine function of dual Littlestone dimension. The separation follows the upper-bound orientation: parameter 2 grows faster than parameter 1.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>In the dual class, nonconstant coordinate functions are indexed by effective coordinates, and there are at most two additional constant functions. A depth-d shattered tree needs $2^d$ distinct dual concepts, hence $2^d\le\mathrm E+2$. This implies $d\le\mathrm E+1$.</p></div>
+
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:dual-littlestone-bounds} in the survey.</p></div>
 
 <strong>References:</strong><div class="text-field"><p>Direct counting argument.</p></div>

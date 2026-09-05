@@ -8,5 +8,8 @@
   "proof": "If $\\mathrm{VCR}(\\mathcal H)=k$, its definition quantifies over k-element subsets of the effective range.  Thus k cannot exceed the cardinality of that range; the k=0 case is immediate.",
   "references": "\\cite{vapnik1971uniform}",
   "short_name": "effective_range_effective_vc_radius",
-  "name": "Effective Range / Effective VC Radius"
+  "name": "Effective Range / Effective VC Radius",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

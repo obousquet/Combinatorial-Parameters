@@ -1,19 +1,19 @@
 {
   "id": 506,
-  "name": "Effective Range / Dual Littlestone Dimension (affine)",
+  "name": "Dual Littlestone Dimension / Effective Range (logarithmic upper bound)",
   "short_name": "effective_range_dual_littlestone_dimension_affine",
-  "parameter_1_id": "#parameters/effective_range",
-  "parameter_2_id": "#parameters/dual_littlestone_dimension",
-  "relationship_type": "larger_c",
+  "parameter_1_id": "#parameters/dual_littlestone_dimension",
+  "parameter_2_id": "#parameters/effective_range",
+  "relationship_type": "log_upper",
   "multiplicative_constant": "1",
-  "additive_constant": "1",
+  "logarithm_base": "2",
+  "argument_shift": "2",
   "status": "established",
-  "details": "For every finite binary class, $\\mathrm E(\\mathcal H)\\ge\\mathrm L^*(\\mathcal H)-1$.",
-  "proof": "In the dual class, nonconstant coordinate functions are indexed by effective coordinates, and there are at most two additional constant functions. A depth-d shattered tree needs $2^d$ distinct dual concepts, hence $2^d\\le\\mathrm E+2$. This implies $d\\le\\mathrm E+1$.",
+  "details": "For every nonempty finite binary class on a nonempty finite domain, $\\mathrm L^*(\\mathcal H)\\le\\lfloor\\log_2(\\mathrm E(\\mathcal H)+2)\\rfloor$. Equivalently $\\mathrm E\\ge2^{\\mathrm L^*}-2$, which strengthens the previously recorded affine consequence $\\mathrm E\\ge\\mathrm L^*-1$. Equality holds on the universal class: $\\mathrm L^*(\\mathcal U_n)=n$ and $\\mathrm E(\\mathcal U_n)=2^n-2$.",
   "latex_proof_label": "prop:dual-littlestone-bounds",
   "proof_source": "Proposition \\ref{prop:dual-littlestone-bounds} in the survey.",
   "references": "Direct counting argument.",
   "witness": "#classes/halfintervals",
-  "witness_strength": "strict",
-  "witness_verification": "For half-intervals, effective range is $n$ whereas $\\mathrm L^*=\\Theta(\\log n)$."
+  "witness_strength": "unbounded",
+  "witness_verification": "For half-intervals on [n], effective range is n-1, whereas dual Littlestone dimension is floor(log_2 n). Thus effective range cannot be bounded by any affine function of dual Littlestone dimension. The separation follows the upper-bound orientation: parameter 2 grows faster than parameter 1."
 }

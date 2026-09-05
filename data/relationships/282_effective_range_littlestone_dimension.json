@@ -8,5 +8,8 @@
   "proof": "Follow any root-to-leaf path in a complete shattered Littlestone tree of depth d. The node labels on this path are distinct: repeating a point would make the branch that assigns it opposite labels unrealizable. At each node, the two child branches are realized by concepts with opposite labels there, so the point lies in the effective range. Thus the effective range contains at least d points.",
   "references": "\\cite{littlestone1988learning}",
   "short_name": "effective_range_littlestone_dimension",
-  "name": "Effective Range / Littlestone Dimension"
+  "name": "Effective Range / Littlestone Dimension",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

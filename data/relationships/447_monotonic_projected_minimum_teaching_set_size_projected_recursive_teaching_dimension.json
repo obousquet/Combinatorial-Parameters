@@ -10,7 +10,7 @@
   "proof": "Lift any subfamily of any coordinate projection by choosing one preimage for each trace. Its minimum teaching-set size is no greater than the lifted class's minimum projected teaching-set size; maximize over the projection and subfamily.",
   "latex_proof_label": "prop:monotonic-projected-teaching-low-projected-rtd",
   "proof_source": "Proposition prop:monotonic-projected-teaching-low-projected-rtd in the LaTeX survey.",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict",
-  "witness_verification": "For $\\mathcal C_{\\triangle}=\\{000,011,101\\}$, $\\mathrm{TS}_{\\min}^{*p}=2$ while $\\mathrm{RTD}^{p}=1$."
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

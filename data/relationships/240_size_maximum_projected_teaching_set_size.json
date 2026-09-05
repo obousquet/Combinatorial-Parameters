@@ -8,5 +8,8 @@
   "proof": "Every coordinate projection $\\mathcal H_{|S}$ has at most $|\\mathcal H|$ distinct concepts. For a projected target, choose one distinguishing coordinate against each other projected concept; their union is a teaching set of size at most $|\\mathcal H|-1$. Taking the defining maximum over targets and projections proves the bound.",
   "references": "\\cite{hanneke2015minimax}",
   "short_name": "size_maximum_projected_teaching_set_size",
-  "name": "Size / Maximum Projected Teaching Set Size"
+  "name": "Size / Maximum Projected Teaching Set Size",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $2$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

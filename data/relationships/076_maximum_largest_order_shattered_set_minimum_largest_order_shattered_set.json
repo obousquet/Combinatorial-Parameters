@@ -6,8 +6,9 @@
   "details": "Definition",
   "status": "established",
   "proof": "Both parameters optimize the largest order-shattered-set size over the same set of domain orders; a maximum is at least the corresponding minimum.",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
   "short_name": "maximum_largest_order_shattered_set_minimum_largest_order_shattered_set",
-  "name": "Maximum Largest Order Shattered Set / Minimum Largest Order Shattered Set"
+  "name": "Maximum Largest Order Shattered Set / Minimum Largest Order Shattered Set",
+  "witness_verification": "For #classes/addressing with n>=4, the established endpoint values or bounds, in parameter order, are $\\lfloor\\log_2 n\\rfloor$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs. The projected/order-shattering endpoint value uses its established finite-class equality with VC dimension."
 }

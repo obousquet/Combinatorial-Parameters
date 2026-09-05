@@ -4,9 +4,9 @@
   "short_name": "dual_littlestone_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/dual_littlestone_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "The singleton class is self-dual. It shatters a depth-one tree but has no two-coordinate trace containing all four binary patterns, so its Littlestone dimension is one.",
+  "proof": "The singleton class is self-dual. For $n=1$ it has one concept and dimension zero. For $n\\ge2$ a coordinate has both labels, giving depth one. At every possible root coordinate, however, the label-one branch contains exactly one concept and cannot split again. Hence no complete depth-two Littlestone tree is shattered.",
   "references": "Direct calculation from the singleton-class definition."
 }

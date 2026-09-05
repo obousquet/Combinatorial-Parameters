@@ -6,8 +6,9 @@
   "details": "A hitting set can select one coordinate from each nonempty concept.",
   "status": "established",
   "proof": "For each nonempty $h\\in\\mathcal H$, choose one element $x_h\\in h$.  The set of chosen elements meets every nonempty concept, so $\\mathrm{HT}(\\mathcal H)\\le |\\mathcal H|$.",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "short_name": "size_hitting_size",
-  "name": "Size / Hitting Size"
+  "name": "Size / Hitting Size",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $2^n$ and $n$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

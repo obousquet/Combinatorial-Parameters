@@ -7,8 +7,9 @@
   "status": "established",
   "proof": "The one-inclusion density lemma applies to every subfamily: each induced subgraph has density at most $\\mathrm{VC}(\\mathcal H)$. The densest-subgraph-twice parameter is twice this maximum density, so it is at most $2\\,\\mathrm{VC}(\\mathcal H)$.",
   "references": "\\cite{haussler1988predicting}",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
   "short_name": "vc_dimension_densest_subgraph_twice",
-  "name": "VC Dimension / Densest Subgraph (twice)"
+  "name": "VC Dimension / Densest Subgraph (twice)",
+  "witness_verification": "For #classes/addressing with n>=4, the established endpoint values or bounds, in parameter order, are $\\lfloor\\log_2 n\\rfloor$ and $0$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

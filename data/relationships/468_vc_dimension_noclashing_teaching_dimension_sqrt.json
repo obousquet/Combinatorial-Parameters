@@ -8,5 +8,8 @@
   "details": "For finite binary classes, $\\mathrm{NCTD}(\\mathcal H)=O(\\mathrm{VC}(\\mathcal H)^2)$; equivalently, VC dimension is at least a constant multiple of the square root of no-clashing teaching dimension.",
   "status": "established",
   "proof": "Proposition 23 of Kirkpatrick--Simon--Zilles gives $\\mathrm{NCTD}\\leq\\mathrm{PBTD}=\\mathrm{RTD}$ for finite classes. Apply the explicit quadratic RTD bound of Hu--Wu--Li--Wang to obtain $\\mathrm{NCTD}\\leq39.3752\\,\\mathrm{VC}^2-3.6330\\,\\mathrm{VC}$.",
-  "references": "\\cite{KSZ2019,hu2017quadratic}"
+  "references": "\\cite{KSZ2019,hu2017quadratic}",
+  "witness": "#classes/addressing",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/addressing with n>=4, the established endpoint values or bounds, in parameter order, are $\\lfloor\\log_2n\\rfloor$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

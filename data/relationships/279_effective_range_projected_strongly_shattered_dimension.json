@@ -8,5 +8,8 @@
   "proof": "A strongly shattered set in a coordinate projection is witnessed by a contained cube. Each of its free coordinates varies in that projection and hence in the original class, so its size is at most the original effective range. Maximize over projections.",
   "references": "\\cite{vapnik1971uniform}",
   "short_name": "effective_range_projected_strongly_shattered_dimension",
-  "name": "Effective Range / Projected Strongly Shattered Dimension"
+  "name": "Effective Range / Projected Strongly Shattered Dimension",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs. The projected/order-shattering endpoint value uses its established finite-class equality with VC dimension."
 }

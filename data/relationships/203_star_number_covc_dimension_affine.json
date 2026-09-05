@@ -11,5 +11,8 @@
   "references": "\\cite{bousquet2020proper}",
   "latex_proof_label": "lem:star-covc-affine",
   "short_name": "star_number_covc_dimension_affine",
-  "name": "Star Number / co-VC dimension (affine)"
+  "name": "Star Number / co-VC dimension (affine)",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $0$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

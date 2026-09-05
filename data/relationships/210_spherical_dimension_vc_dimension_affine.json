@@ -5,11 +5,13 @@
   "relationship_type": "larger_c",
   "multiplicative_constant": "1",
   "additive_constant": "1",
-  "details": "For every finite binary class, $\u005cmathrm{sd}(\u005cmathcal H)\u005cgeq\u005cmathrm{VC}(\u005cmathcal H)-1$.",
+  "details": "For every finite binary class, $\\mathrm{sd}(\\mathcal H)\\geq\\mathrm{VC}(\\mathcal H)-1$.",
   "status": "established",
   "proof": "A shattered $d$-set yields the boundary of the $d$-dimensional cross-polytope as an antipodal simplicial $(d-1)$-sphere in the realizable-distribution complex, as shown in Lemma 2 of the cited paper.",
-  "references": "\u005ccite{chornomaz2025spherical}",
-  "witness": "#classes/full_cube",
+  "references": "\\cite{chornomaz2025spherical}",
+  "witness": "#classes/universal_class",
   "short_name": "spherical_dimension_vc_dimension_affine",
-  "name": "Spherical Dimension / VC Dimension (affine)"
+  "name": "Spherical Dimension / VC Dimension (affine)",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/universal_class with n>=4, the established endpoint values or bounds, in parameter order, are $\\mathrm{sd}\\ge n-2$ and $\\lfloor\\log_2n\\rfloor$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

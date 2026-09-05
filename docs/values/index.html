@@ -17179,11 +17179,11 @@
         <p><strong>Name: </strong>Dual Littlestone Dimension of Half-intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Parameter: </strong><a href="parameters/dual_littlestone_dimension.html">Dual Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\Theta(\log_2 n)$</p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>Endpoint rounding depends on whether the empty and full threshold are included.</p>
+<p><strong>Details: </strong>For the catalogue convention $\mathcal I_n=\{[i]:1\le i\le n\}$ on $[n]$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The dual of the $n$ half-intervals is the class of terminal segments on an $n$-element ordered domain. A balanced binary-search tree on its endpoints gives depth $\lfloor\log_2n\rfloor$, while a depth-d shattered tree needs $2^d$ distinct terminal segments. Thus its Littlestone dimension, and hence $\mathrm L^*(\mathcal I_n)$, is $\Theta(\log_2n)$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The dual consists of the $n$ terminal segments $\{i,\ldots,n\}$, $1\le i\le n$. Querying an index at a median endpoint splits the remaining $m$ consecutive possible endpoints into groups of sizes $\lfloor m/2\rfloor$ and $\lceil m/2\rceil$. Recursing gives a complete tree of depth $\lfloor\log_2 n\rfloor$, including depth zero for $n=1$. Conversely a depth-$d$ shattered tree requires $2^d$ distinct terminal segments, so $d\le\lfloor\log_2 n\rfloor$.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct dualization of the standard threshold-tree calculation in <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a>.</p></div>
 
         </div>
@@ -17230,11 +17230,11 @@
         <p><strong>Name: </strong>Dual Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/dual_littlestone_dimension.html">Dual Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton class is self-dual. It shatters a depth-one tree but has no two-coordinate trace containing all four binary patterns, so its Littlestone dimension is one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton class is self-dual. For $n=1$ it has one concept and dimension zero. For $n\ge2$ a coordinate has both labels, giving depth one. At every possible root coordinate, however, the label-one branch contains exactly one concept and cannot split again. Hence no complete depth-two Littlestone tree is shattered.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation from the singleton-class definition.</p></div>
 
         </div>

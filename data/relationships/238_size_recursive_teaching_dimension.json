@@ -8,5 +8,8 @@
   "proof": "At any nonempty stage $\\mathcal G$ of the recursive teaching process, choose one concept h with a minimum teaching set. As for ordinary teaching dimension, h has a teaching set of size at most $|\\mathcal G|-1\\leq|\\mathcal H|-1$. Taking the maximum over stages proves the bound.",
   "references": "\\cite{zilles2011models,doliwa2014recursive}",
   "short_name": "size_recursive_teaching_dimension",
-  "name": "Size / Recursive Teaching Dimension"
+  "name": "Size / Recursive Teaching Dimension",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

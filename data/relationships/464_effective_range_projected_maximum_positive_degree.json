@@ -7,5 +7,8 @@
   "relationship_type": "larger",
   "details": "Every coordinate trace has effective range at most that of the original class.",
   "status": "established",
-  "proof": "For every S, $\\mathrm{d}^{+}_{\\max}(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H)$. Maximize the left-hand side over S."
+  "proof": "For every S, $\\mathrm{d}^{+}_{\\max}(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H_{|S})\\leq\\mathrm E(\\mathcal H)$. Maximize the left-hand side over S.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

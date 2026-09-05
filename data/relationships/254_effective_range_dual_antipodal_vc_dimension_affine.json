@@ -10,5 +10,8 @@
   "proof": "If d concepts are dually antipodally shattered, each of the $2^{d-1}$ complementary pairs of label patterns is realized, up to a global label flip, by a coordinate. The pair consisting of the all-zero and all-one patterns is the only pair whose realizing coordinate can be constant on the chosen concepts. Every other pair is nonconstant, so its coordinate is effective. Thus at least $2^{d-1}-1$ effective coordinates occur. Since $2^{d-1}-1\\geq d-1$ for every d, the stated affine bound follows.",
   "references": "\\cite{chornomaz2025spherical}",
   "short_name": "effective_range_dual_antipodal_vc_dimension_affine",
-  "name": "Effective Range / Dual Antipodal VC Dimension (affine)"
+  "name": "Effective Range / Dual Antipodal VC Dimension (affine)",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $\\lfloor\\log_2n\\rfloor+1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

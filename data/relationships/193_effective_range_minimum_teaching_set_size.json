@@ -6,8 +6,9 @@
   "name": "Effective Range / Minimum Teaching Set Size",
   "short_name": "effective_range_minimum_teaching_set_size",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
   "details": "Full active-coordinate samples identify every concept.",
-  "proof": "Two distinct concepts differ at an active coordinate. Thus the labels of any concept on the full effective range identify it within the class, giving it a teaching set of size at most \\(\\mathrm E(\\mathcal H)\\). In particular the minimum teaching-set size is at most that value."
+  "proof": "Two distinct concepts differ at an active coordinate. Thus the labels of any concept on the full effective range identify it within the class, giving it a teaching set of size at most \\(\\mathrm E(\\mathcal H)\\). In particular the minimum teaching-set size is at most that value.",
+  "witness_verification": "For #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

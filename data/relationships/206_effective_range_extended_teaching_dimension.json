@@ -5,10 +5,11 @@
   "relationship_type": "larger",
   "details": "The effective range distinguishes every pair of hypotheses, so its restriction leaves at most one hypothesis consistent with any target labeling.",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:effective-range-xtd`.",
   "latex_proof_label": "lem:effective-range-xtd",
   "short_name": "effective_range_extended_teaching_dimension",
-  "name": "Effective Range / Extended Teaching Dimension"
+  "name": "Effective Range / Extended Teaching Dimension",
+  "witness_verification": "For #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $2$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

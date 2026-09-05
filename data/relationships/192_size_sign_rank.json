@@ -8,6 +8,7 @@
   "status": "established",
   "details": "The rank of a matrix is at most its number of rows.",
   "proof": "The incidence sign matrix of \\(\\mathcal H\\) has \\(|\\mathcal H|\\) rows. Any real matrix realizing its sign pattern has rank at most its number of rows, so minimizing this rank gives \\(\\mathrm{SR}(\\mathcal H)\\le |\\mathcal H|\\).",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict"
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $2^n$ and $n$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

@@ -71,11 +71,11 @@
         <p><strong>Name: </strong>Dual Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/dual_littlestone_dimension.html">Dual Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton class is self-dual. It shatters a depth-one tree but has no two-coordinate trace containing all four binary patterns, so its Littlestone dimension is one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton class is self-dual. For $n=1$ it has one concept and dimension zero. For $n\ge2$ a coordinate has both labels, giving depth one. At every possible root coordinate, however, the label-one branch contains exactly one concept and cannot split again. Hence no complete depth-two Littlestone tree is shattered.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation from the singleton-class definition.</p></div>
 
         </div>

@@ -7,7 +7,8 @@
   "short_name": "maximum_projected_teaching_set_size_maximum_teaching_set_size",
   "name": "Maximum Projected Teaching Set Size / Maximum Teaching Set Size",
   "status": "established",
-  "proof": "The projected maximum teaching-set size maximizes over projections.  The full-domain projection is the original class, and hence supplies the ordinary maximum teaching-set size as a candidate."
-  ,"witness": "#classes/three_code_class"
-  ,"witness_strength": "strict"
+  "proof": "The projected maximum teaching-set size maximizes over projections.  The full-domain projection is the original class, and hence supplies the ordinary maximum teaching-set size as a candidate.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

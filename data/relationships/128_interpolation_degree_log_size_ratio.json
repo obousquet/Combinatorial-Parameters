@@ -6,8 +6,9 @@
   "status": "established",
   "details": "Theorem",
   "proof": "If $d=\\mathrm{intdeg}(\\mathcal H)$, monomials supported on at most $d$ of the $n$ coordinates span every function on $\\mathcal H$.  Since the function space has dimension $|\\mathcal H|$, we have $|\\mathcal H|\\le\\sum_{i=0}^{d}\\binom ni\\le(n+1)^d$.  Hence $d\\ge\\log(|\\mathcal H|)/\\log(n+1)$, up to the Log Size Ratio normalization.",
-  "witness": "#classes/trivial_concepts",
-  "witness_strength": "strict",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "short_name": "interpolation_degree_log_size_ratio",
-  "name": "Interpolation degree / Log Size Ratio"
+  "name": "Interpolation degree / Log Size Ratio",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $\\frac{\\log(2^n-1)}{\\log(n+1)}$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

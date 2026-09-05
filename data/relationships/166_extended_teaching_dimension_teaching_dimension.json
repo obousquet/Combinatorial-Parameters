@@ -4,11 +4,12 @@
   "parameter_2_id": "#parameters/teaching_dimension",
   "relationship_type": "larger",
   "details": "Definition: the maximization defining $\\mathrm{XTD}$ includes targets in the class, for which specifying sets are teaching sets.",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
   "short_name": "extended_teaching_dimension_teaching_dimension",
   "name": "Extended Teaching Dimension / Teaching Dimension",
   "status": "established",
   "proof": "For every target $h\\in\\mathcal H$, a specifying set for $h$ among all labelings is in particular a teaching set for $h$ within $\\mathcal H$. Since $\\mathrm{XTD}$ maximizes over a superset of targets, it is at least $\\mathrm{TD}$.",
-  "references": "\\cite{hegedHus1995generalized}"
+  "references": "\\cite{hegedHus1995generalized}",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

@@ -5,7 +5,7 @@
   "parameter_1_id": "#parameters/monotonic_covc_dimension",
   "parameter_2_id": "#parameters/star_number",
   "relationship_type": "larger",
-  "details": "Every realized star becomes a hollow star after its centre is removed.",
+  "details": "Every realized star becomes a hollow star after its centre is removed. Relationship 342 gives $\\mathrm{coVC}^*\\le\\mathrm S+1$, so the additive gap is at most one and an unbounded affine gap is impossible.",
   "witness": "#classes/trivial_concepts",
   "witness_strength": "strict",
   "status": "established",

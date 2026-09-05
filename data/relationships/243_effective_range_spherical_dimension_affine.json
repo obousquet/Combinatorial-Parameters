@@ -10,5 +10,8 @@
   "proof": "First quotient coordinates having the same evaluation vector on $\\mathcal H$; the resulting domain has $\\mathrm E(\\mathcal H)$ points and preserves spherical dimension. The antipodal realizable-distribution complex is a finite subcomplex of the realizable-distribution complex and therefore has dimension at most $\\mathrm E(\\mathcal H)-1$. The local Borsuk--Ulam theorem in the cited paper forbids an antipodality-preserving map from $S^d$ whenever $2(\\mathrm E-1)\\leq d$. Hence $d\\leq2\\mathrm E-3$ for every admitted $d\\geq1$.",
   "references": "\\cite{chornomaz2025spherical}",
   "short_name": "effective_range_spherical_dimension_affine",
-  "name": "Effective Range / Spherical Dimension (affine)"
+  "name": "Effective Range / Spherical Dimension (affine)",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

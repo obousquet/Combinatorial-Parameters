@@ -8,6 +8,7 @@
   "status": "established",
   "details": "Every coordinate in an oriented pair is active.",
   "proof": "If an oriented pair \\(\\emptyset,S\\) is realized in a projection, its two realizing concepts differ on every coordinate of S. Thus S is contained in the effective range. Maximizing gives \\(\\mathrm E(\\mathcal H)\\ge\\mathrm D^+(\\mathcal H)\\).",
-  "witness": "#classes/warmuth_c5",
-  "witness_strength": "strict"
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

@@ -8,5 +8,8 @@
   "proof": "Every coordinate projection $\\mathcal H_{|S}$ has at most $|\\mathcal H|$ distinct concepts. Apply the recursive-teaching bound to each projection and take the defining maximum over S.",
   "references": "\\cite{doliwa2014recursive}",
   "short_name": "size_monotone_recursive_teaching_dimension",
-  "name": "Size / Projected Recursive Teaching Dimension"
+  "name": "Size / Projected Recursive Teaching Dimension",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

@@ -7,7 +7,8 @@
   "short_name": "monotonic_projected_minimum_teaching_set_size_monotonic_minimum_teaching_set_size",
   "name": "Monotonic Projected Minimum Teaching Set Size / Monotonic Minimum Teaching Set Size",
   "status": "established",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict",
-  "proof": "For each subfamily, the projected quantity includes its full-domain projection and is therefore at least its unprojected quantity.  Maximizing over subfamilies preserves the inequality."
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "proof": "For each subfamily, the projected quantity includes its full-domain projection and is therefore at least its unprojected quantity.  Maximizing over subfamilies preserves the inequality.",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

@@ -11,8 +11,8 @@
   "doubly_monotonic": true,
   "definition": "For a finite binary class $\\mathcal H$, let $\\mathcal H^*=\\{x^*:x\\in\\mathcal X\\}$ be its dual class, where $x^*(h)=h(x)$ for $h\\in\\mathcal H$. The **dual Littlestone dimension** is $$\\mathrm L^*(\\mathcal H):=\\mathrm L(\\mathcal H^*).$$ Equivalently, it is the largest depth of a complete binary tree whose internal nodes are labeled by hypotheses of $\\mathcal H$ and whose root-to-leaf label sequences are induced by coordinates of $\\mathcal H$.",
   "graph_summary": "Littlestone dimension of the transposed incidence class: $\\mathrm L^*(\\mathcal H)=\\mathrm L(\\mathcal H^*)$.",
-  "description": "The sequential/shattered-tree strengthening of dual VC dimension. It is standard in the private-learning literature; finite ordinary Littlestone dimension implies finite dual Littlestone dimension, albeit with a generally doubly exponential bound.",
-  "origin_references": "Used under this name in \\cite{ghazi2021proper}.",
+  "description": "The sequential/shattered-tree strengthening of dual VC dimension. For finite nonempty classes on nonempty domains, $\\mathrm L^*\\le\\lfloor\\log_2(\\mathrm E+2)\\rfloor$. The general duality bound $\\mathrm L^*\\le2^{2^{\\mathrm L+2}}-2$ is recorded in Corollary 3.8 of the first arXiv version of \\cite{bhaskar2017thicket}, and quoted on page 3 of \\cite{ghazi2021proper}. Half-intervals have $\\mathrm{VC}^*=1$ and unbounded $\\mathrm L^*$, so dual VC alone cannot bound dual Littlestone dimension.",
+  "origin_references": "Used under this name in \\cite{ghazi2021proper}; called dual thicket dimension in \\cite{bhaskar2017thicket}.",
   "monotonicity_evidence": {
     "monotonic": {
       "proof": "For $\\mathcal G\\subseteq\\mathcal H$, the dual class $\\mathcal G^*$ is obtained from $\\mathcal H^*$ by restricting its domain to $\\mathcal G$ and identifying duplicate functions. Projection monotonicity of Littlestone dimension gives $\\mathrm L^*(\\mathcal G)\\le\\mathrm L^*(\\mathcal H)$.",

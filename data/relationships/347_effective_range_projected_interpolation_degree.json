@@ -6,8 +6,9 @@
   "parameter_2_id": "#parameters/projected_interpolation_degree",
   "relationship_type": "larger",
   "details": "Interpolation on an $m$-coordinate Boolean domain has degree at most $m$.",
-  "witness": "#classes/interpolation_conjecture_counterexample",
-  "witness_strength": "strict",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
   "status": "established",
-  "proof": "For every projection, its effective range has at most $\\mathrm E(\\mathcal H)$ coordinates. Every function on a Boolean class over $m$ active coordinates is the restriction of a multilinear polynomial of degree at most $m$. Thus each projected interpolation degree is at most $\\mathrm E(\\mathcal H)$, and so is their maximum."
+  "proof": "For every projection, its effective range has at most $\\mathrm E(\\mathcal H)$ coordinates. Every function on a Boolean class over $m$ active coordinates is the restriction of a multilinear polynomial of degree at most $m$. Thus each projected interpolation degree is at most $\\mathrm E(\\mathcal H)$, and so is their maximum.",
+  "witness_verification": "For #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs. The projected/order-shattering endpoint value uses its established finite-class equality with VC dimension."
 }

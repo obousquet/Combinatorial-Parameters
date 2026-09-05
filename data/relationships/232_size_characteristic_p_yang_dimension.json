@@ -7,8 +7,9 @@
   "status": "established",
   "proof": "Yang's canonical ideal has one minimal monomial generator for each concept. The Taylor resolution on $|\\mathcal H|$ generators, valid over every field, has length at most $|\\mathcal H|-1$ for a nonempty class. Thus $\\mathrm Y_p(\\mathcal H)\\leq|\\mathcal H|$ (and the empty class has value 0 by convention).",
   "references": "\\cite{yang2018homological}",
-  "witness": "#classes/trivial_concepts",
-  "witness_strength": "strict",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
   "short_name": "size_characteristic_p_yang_dimension",
-  "name": "Size / Characteristic-p Yang Dimension"
+  "name": "Size / Characteristic-p Yang Dimension",
+  "witness_verification": "For #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $2^n$ and $n$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs. The calculation holds over every field, in particular for every fixed prime p."
 }

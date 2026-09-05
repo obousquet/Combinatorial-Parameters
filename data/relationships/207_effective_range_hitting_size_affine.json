@@ -10,5 +10,8 @@
   "proof_source": "Full proof in the LaTeX survey: Lemma `lem:effective-range-hitting`.",
   "latex_proof_label": "lem:effective-range-hitting",
   "short_name": "effective_range_hitting_size_affine",
-  "name": "Effective Range / Hitting Size (affine)"
+  "name": "Effective Range / Hitting Size (affine)",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/trivial_concepts with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

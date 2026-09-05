@@ -8,5 +8,8 @@
   "proof": "On a projected $d$-star with centre $h_0$ and leaves $h_i$ differing from $h_0$ only at $x_i$, an identification algorithm must query every $x_i$: if it omits $x_i$, the answers are identical for $h_0$ and $h_i$.  Hence the membership-query complexity of that projection is at least $d$.  Maximizing over projections gives $\\mathrm{Q}_m^p(\\mathcal H)\\ge\\mathrm{S}(\\mathcal H)$.",
   "references": "\\cite{hanneke2015minimax}",
   "short_name": "projected_membership_queries_complexity_star_number",
-  "name": "Projected Membership Queries Complexity / Star number"
+  "name": "Projected Membership Queries Complexity / Star number",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $\\lceil\\log_2 n\\rceil$ and $2$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

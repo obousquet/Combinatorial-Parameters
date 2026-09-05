@@ -5,10 +5,11 @@
   "relationship_type": "larger",
   "details": "For every finite binary class, the largest projected one-inclusion average degree is at most its effective range.",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/trivial_concepts",
+  "witness_strength": "unbounded",
   "proof": "Each coordinate projection has effective range at most \\mathrm E(\\mathcal H), and hence all degrees in its 1-inclusion graph are at most \\mathrm E(\\mathcal H). Its average degree is at most that value. Maximize over projections.",
   "references": "\\cite{haussler1994predicting}",
   "short_name": "effective_range_projected_double_density_or_projected_average_degree",
-  "name": "Effective Range / Projected Double Density or Projected Average Degree"
+  "name": "Effective Range / Projected Double Density or Projected Average Degree",
+  "witness_verification": "For #classes/trivial_concepts with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $1$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

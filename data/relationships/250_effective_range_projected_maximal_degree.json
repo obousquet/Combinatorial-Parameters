@@ -5,10 +5,11 @@
   "relationship_type": "larger",
   "details": "For every finite binary class, the maximum 1-inclusion degree over all coordinate projections is at most its effective range.",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
   "proof": "Every projection has no more effective coordinates than the original class. In each projected 1-inclusion graph, a vertex has at most one neighbor per effective coordinate. Taking the maximum over projections gives \\mathrm d^p_{\\max}(\\mathcal H)\\leq\\mathrm E(\\mathcal H).",
   "references": "\\cite{haussler1994predicting,hanneke2015minimax}",
   "short_name": "effective_range_projected_maximal_degree",
-  "name": "Effective Range / Projected Maximal Degree"
+  "name": "Effective Range / Projected Maximal Degree",
+  "witness_verification": "For #classes/halfintervals with n>=4, the established endpoint values or bounds, in parameter order, are $n-1$ and $2$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

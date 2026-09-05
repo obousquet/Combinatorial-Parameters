@@ -8,5 +8,8 @@
   "proof": "A strongly shattered set of size d is the free-coordinate set of a contained d-cube.  Both labels occur on each of those coordinates, so all d coordinates belong to the effective range.",
   "references": "\\cite{vapnik1971uniform}",
   "short_name": "effective_range_largest_strongly_shattered_set",
-  "name": "Effective Range / Largest Strongly Shattered Set"
+  "name": "Effective Range / Largest Strongly Shattered Set",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $0$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
 }

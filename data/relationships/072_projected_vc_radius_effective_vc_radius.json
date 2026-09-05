@@ -4,10 +4,11 @@
   "parameter_2_id": "#parameters/effective_vc_radius",
   "relationship_type": "larger",
   "status": "established",
-  "witness": "#classes/repetitionfree_teaching_separation",
-  "witness_strength": "strict",
+  "witness": "#classes/universal_class",
+  "witness_strength": "unbounded",
   "details": "Definition",
   "proof": "The identity projection is among the coordinate projections.  The maximum effective VC radius over all projections is therefore at least the effective VC radius of $\\mathcal{H}$ itself.",
   "short_name": "projected_vc_radius_effective_vc_radius",
-  "name": "Projected VC Radius / Effective VC Radius"
+  "name": "Projected VC Radius / Effective VC Radius",
+  "witness_verification": "For the family #classes/universal_class with n>=4, the established endpoint values or bounds, in parameter order, are $\\lfloor\\log_2 n\\rfloor$ and $1$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

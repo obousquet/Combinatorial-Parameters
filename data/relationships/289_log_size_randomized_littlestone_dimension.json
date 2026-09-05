@@ -8,7 +8,10 @@
   "status": "established",
   "proof": "Distinct leaves of a shattered tree require distinct realizing hypotheses, so it has at most $|\\mathcal H|$ leaves. A uniform random root-to-leaf walk reaches a leaf at depth d with probability $2^{-d}$; its expected depth is therefore the entropy of this leaf distribution, at most $\\log_2|\\mathcal H|$. Divide by two and take the supremum over shattered trees.",
   "references": "\\cite{filmus2023randomized}",
-  "proof_source": "Definition 1 of \u005ccite{filmus2023randomized}, followed by the elementary leaf-entropy bound.",
+  "proof_source": "Definition 1 of \\cite{filmus2023randomized}, followed by the elementary leaf-entropy bound.",
   "short_name": "log_size_randomized_littlestone_dimension",
-  "name": "Log Size / Randomized Littlestone Dimension"
+  "name": "Log Size / Randomized Littlestone Dimension",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/singletons with n>=4, the established endpoint values or bounds, in parameter order, are $\\log_2 n$ and $1-2^{1-n}$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }

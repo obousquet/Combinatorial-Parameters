@@ -10,5 +10,8 @@
   "proof": "Corollary 25 of the cited paper establishes this direct affine lower bound.",
   "references": "\\cite{hanneke2024star_eluder}",
   "short_name": "minimum_star_number_dual_vc_dimension_affine",
-  "name": "Minimum Star Number / Dual VC Dimension (affine)"
+  "name": "Minimum Star Number / Dual VC Dimension (affine)",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the family #classes/full_cube with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $\\lfloor\\log_2n\\rfloor$. The first parameter divided by one plus the second tends to infinity as n tends to infinity, ruling out every reverse affine-linear bound. See the database-owned value proofs for these two endpoints."
 }
