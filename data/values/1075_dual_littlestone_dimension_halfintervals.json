@@ -1,0 +1,13 @@
+{
+  "id": 1075,
+  "name": "Dual Littlestone Dimension of Half-intervals",
+  "short_name": "dual_littlestone_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/dual_littlestone_dimension",
+  "value": "$\\Theta(\\log_2 n)$",
+  "value_class": "omega_log_n",
+  "details": "Endpoint rounding depends on whether the empty and full threshold are included.",
+  "status": "established",
+  "proof": "The dual of the $n$ half-intervals is the class of terminal segments on an $n$-element ordered domain. A balanced binary-search tree on its endpoints gives depth $\\lfloor\\log_2n\\rfloor$, while a depth-d shattered tree needs $2^d$ distinct terminal segments. Thus its Littlestone dimension, and hence $\\mathrm L^*(\\mathcal I_n)$, is $\\Theta(\\log_2n)$.",
+  "references": "Direct dualization of the standard threshold-tree calculation in \\cite{littlestone1988learning}."
+}

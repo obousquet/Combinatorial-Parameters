@@ -1,0 +1,17 @@
+{
+  "id": 504,
+  "name": "Dual Littlestone Dimension / Dual VC Dimension",
+  "short_name": "dual_littlestone_dimension_dual_vc_dimension",
+  "parameter_1_id": "#parameters/dual_littlestone_dimension",
+  "parameter_2_id": "#parameters/dual_vc_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every finite binary class, $\\mathrm L^*(\\mathcal H)\\ge\\mathrm{VC}^*(\\mathcal H)$.",
+  "proof": "Apply the standard inequality $\\mathrm L(\\mathcal G)\\ge\\mathrm{VC}(\\mathcal G)$ to the dual class $\\mathcal G=\\mathcal H^*$.",
+  "latex_proof_label": "prop:dual-littlestone-bounds",
+  "proof_source": "Proposition \\ref{prop:dual-littlestone-bounds} in the survey.",
+  "references": "\\cite{littlestone1988learning,ghazi2021proper}",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For half-intervals, $\\mathrm L^*=\\Theta(\\log n)$ while the established dual VC dimension is $1$."
+}

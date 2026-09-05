@@ -1,0 +1,19 @@
+{
+  "id": 506,
+  "name": "Effective Range / Dual Littlestone Dimension (affine)",
+  "short_name": "effective_range_dual_littlestone_dimension_affine",
+  "parameter_1_id": "#parameters/effective_range",
+  "parameter_2_id": "#parameters/dual_littlestone_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "status": "established",
+  "details": "For every finite binary class, $\\mathrm E(\\mathcal H)\\ge\\mathrm L^*(\\mathcal H)-1$.",
+  "proof": "In the dual class, nonconstant coordinate functions are indexed by effective coordinates, and there are at most two additional constant functions. A depth-d shattered tree needs $2^d$ distinct dual concepts, hence $2^d\\le\\mathrm E+2$. This implies $d\\le\\mathrm E+1$.",
+  "latex_proof_label": "prop:dual-littlestone-bounds",
+  "proof_source": "Proposition \\ref{prop:dual-littlestone-bounds} in the survey.",
+  "references": "Direct counting argument.",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "strict",
+  "witness_verification": "For half-intervals, effective range is $n$ whereas $\\mathrm L^*=\\Theta(\\log n)$."
+}

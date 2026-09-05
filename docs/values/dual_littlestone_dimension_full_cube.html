@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -33,11 +33,19 @@
     </script>
     
         
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                }
+            };</script>
     </head>
     <body>
         <header>
-            <h1>Combinatorial Parameters</h1>
-            <p>Measuring the Size of Families of Sets</p>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
@@ -55,36 +63,22 @@
             </nav>
         </header>
         <main class="table-container">
-            
-    <div class="intro">
-        <p>A database of combinatorial parameters of finite binary concept classes.</p>
-    </div>
-    <div class="tables-grid">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1076" style="position:relative;">
         
-        <div class="table-card">
-            <h3><a href="classes/index.html">Classes</a></h3>
-            <p>Set families (possibly parameterized)</p>
-            <p class="record-count">45 records</p>
+        <h3><a href="values/dual_littlestone_dimension_full_cube.html" class="table-title-link">Dual Littlestone Dimension of Full Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dual Littlestone Dimension of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/dual_littlestone_dimension.html">Dual Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The n coordinate functions in the dual class realize every binary pattern on a selected collection of d concepts provided $2^d\le n$, so dual VC dimension gives $\mathrm L^*\ge\lfloor\log_2n\rfloor$. Conversely a depth-d shattered tree needs $2^d$ distinct coordinate functions, and there are only n. Hence equality holds.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct calculation from the full-cube definition and the Littlestone tree definition.</p></div>
+
         </div>
-        
-        <div class="table-card">
-            <h3><a href="parameters/index.html">Parameters</a></h3>
-            <p>Parameters measuring the size of set families</p>
-            <p class="record-count">108 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="relationships/index.html">Relationships</a></h3>
-            <p>Relationships between parameters</p>
-            <p class="record-count">490 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="values/index.html">Values</a></h3>
-            <p>Values assigned to parameters for specific classes</p>
-            <p class="record-count">1009 records</p>
-        </div>
-        
     </div>
     
         </main>
@@ -92,6 +86,23 @@
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
         
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const equations = document.querySelectorAll('.latex-equation');
+                equations.forEach(eq => {
+                    const latex = eq.getAttribute('data-latex');
+                    eq.innerHTML = '$$' + latex + '$$';
+                });
+                function tryTypeset() {{
+                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
+                        MathJax.typesetPromise();
+                    }} else {{
+                        setTimeout(tryTypeset, 100);
+                    }}
+                }}
+                tryTypeset();
+            });
+        </script>
     </body>
     </html>
     

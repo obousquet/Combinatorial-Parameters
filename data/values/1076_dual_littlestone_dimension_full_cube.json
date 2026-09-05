@@ -1,0 +1,12 @@
+{
+  "id": 1076,
+  "name": "Dual Littlestone Dimension of Full Cube",
+  "short_name": "dual_littlestone_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/dual_littlestone_dimension",
+  "value": "$\\lfloor\\log_2 n\\rfloor$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "The n coordinate functions in the dual class realize every binary pattern on a selected collection of d concepts provided $2^d\\le n$, so dual VC dimension gives $\\mathrm L^*\\ge\\lfloor\\log_2n\\rfloor$. Conversely a depth-d shattered tree needs $2^d$ distinct coordinate functions, and there are only n. Hence equality holds.",
+  "references": "Direct calculation from the full-cube definition and the Littlestone tree definition."
+}

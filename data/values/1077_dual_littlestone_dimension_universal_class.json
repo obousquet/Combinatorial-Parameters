@@ -1,0 +1,12 @@
+{
+  "id": 1077,
+  "name": "Dual Littlestone Dimension of Universal Class",
+  "short_name": "dual_littlestone_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/dual_littlestone_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The dual of the universal class is the n-dimensional full cube. Its Littlestone dimension is n, witnessed by querying the n hypothesis coordinates in a fixed order.",
+  "references": "Direct transposition of the universal-class incidence matrix."
+}

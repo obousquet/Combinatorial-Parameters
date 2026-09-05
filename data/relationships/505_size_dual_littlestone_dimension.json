@@ -1,0 +1,17 @@
+{
+  "id": 505,
+  "name": "Size / Dual Littlestone Dimension",
+  "short_name": "size_dual_littlestone_dimension",
+  "parameter_1_id": "#parameters/size",
+  "parameter_2_id": "#parameters/dual_littlestone_dimension",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "Every finite binary class satisfies $|\\mathcal H|\\ge\\mathrm L^*(\\mathcal H)$.",
+  "proof": "A depth-d shattered tree in $\\mathcal H^*$ has $2^d$ leaves realized by distinct coordinate functions. There are at most $2^{|\\mathcal H|}$ distinct binary functions on the domain $\\mathcal H$, so $2^d\\le2^{|\\mathcal H|}$ and $d\\le|\\mathcal H|$.",
+  "latex_proof_label": "prop:dual-littlestone-bounds",
+  "proof_source": "Proposition \\ref{prop:dual-littlestone-bounds} in the survey.",
+  "references": "Direct counting argument.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "For the full n-cube, size is $2^n$ while $\\mathrm L^*=\\lfloor\\log_2n\\rfloor$."
+}

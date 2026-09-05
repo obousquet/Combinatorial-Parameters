@@ -1,0 +1,12 @@
+{
+  "id": 1078,
+  "name": "Dual Littlestone Dimension of Singletons",
+  "short_name": "dual_littlestone_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/dual_littlestone_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The singleton class is self-dual. It shatters a depth-one tree but has no two-coordinate trace containing all four binary patterns, so its Littlestone dimension is one.",
+  "references": "Direct calculation from the singleton-class definition."
+}
