@@ -1,0 +1,13 @@
+{
+  "id": 1080,
+  "name": "Littlestone Dimension of the Cube–Half-interval Product",
+  "short_name": "littlestone_dimension_cube_halfinterval_product",
+  "class_id": "#classes/cube_halfinterval_product",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$m+\\lfloor\\log_2 n\\rfloor$",
+  "details": "For $m\\ge1,n\\ge2$. Block and prefix formulas hold for fixed integer $k\\ge2$; the general block catalogue entry uses $k>2$. Asymptotic orders refer to $n\\to\\infty$ with $m,k$ fixed.",
+  "status": "established",
+  "proof": "There are $2^m n$ concepts, so distinct realizers of the leaves of a depth-$d$ complete shattered tree imply $d\\le m+\\lfloor\\log_2n\\rfloor$. Query the $m$ cube coordinates in a fixed order, then use a balanced threshold-search tree of depth $\\lfloor\\log_2n\\rfloor$ on the $n$ ordered endpoints. Independence of the factors realizes every branch and attains the bound.",
+  "references": "Direct finite product calculation; independent exact regression in sync/verify_cube_halfinterval_trees.py.",
+  "value_class": "omega_log_n"
+}

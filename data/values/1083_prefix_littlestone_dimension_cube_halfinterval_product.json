@@ -1,0 +1,12 @@
+{
+  "id": 1083,
+  "name": "Prefix-$k$ Littlestone Dimension of the Cube–Half-interval Product",
+  "short_name": "prefix_littlestone_dimension_cube_halfinterval_product",
+  "class_id": "#classes/cube_halfinterval_product",
+  "parameter_id": "#parameters/prefix_littlestone_dimension",
+  "value": "$m+\\lfloor\\log_2n\\rfloor$ if $2\\le k\\le m+1$; $m+1$ if $k>m+1$",
+  "details": "For $m\\ge1,n\\ge2$. Block and prefix formulas hold for fixed integer $k\\ge2$; the general block catalogue entry uses $k>2$. Asymptotic orders refer to $n\\to\\infty$ with $m,k$ fixed.",
+  "status": "established",
+  "proof": "The VC dimension is $m+1$: all cube coordinates and one varying threshold coordinate are shattered, but two threshold coordinates cannot be shattered together. If $k>m+1$, a prefix tree of depth at least $k$ would shatter the $k$ coordinates on its first $k$ constant levels, a contradiction. Any shorter tree is entirely level-constant and has depth at most VC; a shattered set attains $m+1$. If $2\\le k\\le m+1$, query the $m$ cube coordinates in a fixed order and then perform a balanced threshold search of depth $\\lfloor\\log_2n\\rfloor$. The first $m+1$ levels, including the first threshold query, are horizontally constant. This is an admissible prefix tree and attains the ordinary leaf-count upper bound $m+\\lfloor\\log_2n\\rfloor$.",
+  "references": "Direct finite product calculation; independent exact regression in sync/verify_cube_halfinterval_trees.py."
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-494" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1082" style="position:relative;">
         
-        <h3><a href="relationships/prefix_littlestone_dimension_2block_littlestone_dimension.html" class="table-title-link">Prefix-2 Littlestone Dimension / 2-Block Littlestone Dimension</a></h3>
+        <h3><a href="values/kblock_littlestone_dimension_kgt2_cube_halfinterval_product.html" class="table-title-link">$k$-Block Littlestone Dimension of the Cube–Half-interval Product</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Prefix-2 Littlestone Dimension / 2-Block Littlestone Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every finite binary class, $\mathrm{PL}_2(\mathcal H)\geq\mathrm{B}_2(\mathcal H)$.</p></div>
-<p><strong>Witness: </strong><a href="classes/cube_halfinterval_product.html">Cube–Half-interval Product</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>Fix k=2 and m=1 in <a href="classes/cube_halfinterval_product.html">Cube–Half-interval Product</a>. For n&gt;=8 the established exact endpoint values are PL_2=1+floor(log_2 n) and B_2=3. Hence PL_2/(1+B_2) tends to infinity as n tends to infinity, excluding every reverse affine bound. The value proofs are database-owned; see also survey Corollary prop:cube-halfinterval-separations.</p></div>
-
-
+        <p><strong>Name: </strong>$k$-Block Littlestone Dimension of the Cube–Half-interval Product</p>
+<p><strong>Class: </strong><a href="classes/cube_halfinterval_product.html">Cube–Half-interval Product</a></p>
+<p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
+<p><strong>Value: </strong>$m+\min\{\lfloor\log_2 n\rfloor,\lfloor m/(k-1)\rfloor+1\}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For $m\ge1,n\ge2$. Block and prefix formulas hold for fixed integer $k\ge2$; the general block catalogue entry uses $k>2$. Asymptotic orders refer to $n\to\infty$ with $m,k$ fixed.</p>
 <p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Proposition \ref{prop:block-prefix-littlestone}.</p></div>
-
-<strong>References:</strong><div class="text-field"><p>Database-owned constrained-tree argument.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Write $\ell=\lfloor\log_2 n\rfloor$ and $a=\lfloor m/(k-1)\rfloor$. In any nonadaptive block, at most one queried coordinate can come from the half-interval factor: two distinct such coordinates have nested positive sets and cannot realize all four label pairs. Coordinates cannot repeat along a shattered path. A depth $d=qk+r$, $0\le r<k$, therefore consumes at least $q(k-1)+\max\{r-1,0\}$ distinct cube coordinates on each path. Hence $q\le a$ and $d\le m+a+1$ (if $r=0$, even $d\le m+a$). Also the $2^d$ distinct leaf realizers give $d\le\lfloor\log_2(2^m n)\rfloor=m+\ell$. For the reverse bound put $t=\min\{\ell,a+1\}\ge1$. Use $t-1$ full blocks, each querying $k-1$ unused cube coordinates followed by one query of a balanced threshold search. Then query all remaining cube coordinates, and finally the $t$th threshold-search query; the intervening tail may contain cube-only full blocks. There is at most one threshold query in any block, and its choice depends only on earlier threshold answers, which occur in preceding blocks. Cube coordinates are predetermined. A balanced threshold tree of depth $t\le\ell$ exists on $n$ ordered endpoints, and every combination with the $m$ independent cube labels is realized. This is a valid shattered $k$-block tree of depth $m+t$, including its possibly truncated final block.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite product calculation; independent exact regression in sync/verify_cube_halfinterval_trees.py.</p></div>
 
         </div>
     </div>

@@ -1,0 +1,13 @@
+{
+  "id": 1079,
+  "name": "VC Dimension of the Cube–Half-interval Product",
+  "short_name": "vc_dimension_cube_halfinterval_product",
+  "class_id": "#classes/cube_halfinterval_product",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$m+1$",
+  "details": "For $m\\ge1,n\\ge2$. Block and prefix formulas hold for fixed integer $k\\ge2$; the general block catalogue entry uses $k>2$. Asymptotic orders refer to $n\\to\\infty$ with $m,k$ fixed.",
+  "status": "established",
+  "proof": "All $m$ cube coordinates together with the second half-interval coordinate are shattered. Conversely, no shattered set contains two half-interval coordinates: their positive sets are nested and miss a label pair. It contains at most $m$ cube coordinates, giving VC exactly $m+1$.",
+  "references": "Direct finite product calculation; independent exact regression in sync/verify_cube_halfinterval_trees.py.",
+  "value_class": "omega_1"
+}

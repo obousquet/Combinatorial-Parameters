@@ -1,0 +1,9 @@
+{
+  "id": 46,
+  "name": "Cube–Half-interval Product",
+  "short_name": "cube_halfinterval_product",
+  "graph_label": "Cube x intervals",
+  "symbol": "\\mathcal C_{m,n}",
+  "definition": "For integers $m\\ge1$ and $n\\ge2$, on the disjoint coordinate domain $[m+n]=\\{1,\\ldots,m+n\\}$ define $\\mathcal C_{m,n}=\\{S\\cup\\{m+1,\\ldots,m+i\\}:S\\subseteq[m],\\ 1\\le i\\le n\\}$. Thus the first $m$ coordinates form a full binary cube, independently of the last $n$ coordinates, whose positive sets are nonempty initial segments.",
+  "comments": "A finite product family separating prefix-$k$ from repeated $k$-block Littlestone dimension, and strictly separating $k$-block dimension from VC. For asymptotic witnesses, fix $m$ and the block size $k$ while $n$ tends to infinity."
+}

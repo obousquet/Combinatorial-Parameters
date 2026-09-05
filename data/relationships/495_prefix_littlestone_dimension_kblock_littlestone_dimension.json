@@ -9,5 +9,8 @@
   "details": "For every fixed integer $k>2$ and every finite binary class, $\\mathrm{PL}_k(\\mathcal H)\\geq\\mathrm{B}_k(\\mathcal H)$.",
   "latex_proof_label": "prop:block-prefix-littlestone",
   "proof_source": "Full proof in the LaTeX survey: Proposition \\ref{prop:block-prefix-littlestone}.",
-  "references": "Database-owned constrained-tree argument."
+  "references": "Database-owned constrained-tree argument.",
+  "witness": "#classes/cube_halfinterval_product",
+  "witness_strength": "unbounded",
+  "witness_verification": "For each fixed integer k>2, take m=k-1 in #classes/cube_halfinterval_product and let n>=8 tend to infinity. The exact endpoint values are PL_k=k-1+floor(log_2 n) and B_k=k+1. Thus PL_k/(1+B_k) tends to infinity even with k fixed, excluding reverse affine bounds whose constants may depend on k. See the database-owned value proofs and survey Corollary prop:cube-halfinterval-separations."
 }

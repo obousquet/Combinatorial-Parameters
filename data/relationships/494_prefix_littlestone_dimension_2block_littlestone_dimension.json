@@ -9,5 +9,8 @@
   "details": "For every finite binary class, $\\mathrm{PL}_2(\\mathcal H)\\geq\\mathrm{B}_2(\\mathcal H)$.",
   "latex_proof_label": "prop:block-prefix-littlestone",
   "proof_source": "Full proof in the LaTeX survey: Proposition \\ref{prop:block-prefix-littlestone}.",
-  "references": "Database-owned constrained-tree argument."
+  "references": "Database-owned constrained-tree argument.",
+  "witness": "#classes/cube_halfinterval_product",
+  "witness_strength": "unbounded",
+  "witness_verification": "Fix k=2 and m=1 in #classes/cube_halfinterval_product. For n>=8 the established exact endpoint values are PL_2=1+floor(log_2 n) and B_2=3. Hence PL_2/(1+B_2) tends to infinity as n tends to infinity, excluding every reverse affine bound. The value proofs are database-owned; see also survey Corollary prop:cube-halfinterval-separations."
 }

@@ -1,0 +1,13 @@
+{
+  "id": 1082,
+  "name": "$k$-Block Littlestone Dimension of the Cube–Half-interval Product",
+  "short_name": "kblock_littlestone_dimension_kgt2_cube_halfinterval_product",
+  "class_id": "#classes/cube_halfinterval_product",
+  "parameter_id": "#parameters/kblock_littlestone_dimension_kgt2",
+  "value": "$m+\\min\\{\\lfloor\\log_2 n\\rfloor,\\lfloor m/(k-1)\\rfloor+1\\}$",
+  "details": "For $m\\ge1,n\\ge2$. Block and prefix formulas hold for fixed integer $k\\ge2$; the general block catalogue entry uses $k>2$. Asymptotic orders refer to $n\\to\\infty$ with $m,k$ fixed.",
+  "status": "established",
+  "proof": "Write $\\ell=\\lfloor\\log_2 n\\rfloor$ and $a=\\lfloor m/(k-1)\\rfloor$. In any nonadaptive block, at most one queried coordinate can come from the half-interval factor: two distinct such coordinates have nested positive sets and cannot realize all four label pairs. Coordinates cannot repeat along a shattered path. A depth $d=qk+r$, $0\\le r<k$, therefore consumes at least $q(k-1)+\\max\\{r-1,0\\}$ distinct cube coordinates on each path. Hence $q\\le a$ and $d\\le m+a+1$ (if $r=0$, even $d\\le m+a$). Also the $2^d$ distinct leaf realizers give $d\\le\\lfloor\\log_2(2^m n)\\rfloor=m+\\ell$. For the reverse bound put $t=\\min\\{\\ell,a+1\\}\\ge1$. Use $t-1$ full blocks, each querying $k-1$ unused cube coordinates followed by one query of a balanced threshold search. Then query all remaining cube coordinates, and finally the $t$th threshold-search query; the intervening tail may contain cube-only full blocks. There is at most one threshold query in any block, and its choice depends only on earlier threshold answers, which occur in preceding blocks. Cube coordinates are predetermined. A balanced threshold tree of depth $t\\le\\ell$ exists on $n$ ordered endpoints, and every combination with the $m$ independent cube labels is realized. This is a valid shattered $k$-block tree of depth $m+t$, including its possibly truncated final block.",
+  "references": "Direct finite product calculation; independent exact regression in sync/verify_cube_halfinterval_trees.py.",
+  "value_class": "omega_1"
+}

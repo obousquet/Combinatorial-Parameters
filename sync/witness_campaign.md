@@ -47,9 +47,9 @@ relationship records were created.
 
 ## Remaining work
 
-Among established non-equality, non-incomparability records, 45 have no
-witness, 85 have only strict witnesses, and seven retain legacy witness
-classification. Eight of the 85 strict cases are excluded from unbounded-gap
+Among established non-equality, non-incomparability records, 42 have no
+witness, 86 have only strict witnesses, and seven retain legacy witness
+classification. Eight of the 86 strict cases are excluded from unbounded-gap
 search by the reverse controls above.
 
 There are no unused integer-separation or growth-category leads in the
@@ -86,3 +86,10 @@ Relationships #457 and #461 are now equalities, so both witness searches
 are closed. The canonical proof is survey Proposition
 `prop:positive-projection-collapse`; the database regression is
 `sync/verify_positive_projection_collapse.py`.
+
+The constrained-tree round adds the cube--half-interval product, with exact
+database-owned values and proofs. At fixed $k$, its $(k-1)$-cube slice
+separates prefix-$k$ from $k$-block by an unbounded ratio (records #494/#495)
+and $k$-block from VC strictly (record #200). The latter ratio remains
+bounded. The independent fibre-recursion check covers 84 bounded cases;
+the general result rests on the proof, not on this finite census.

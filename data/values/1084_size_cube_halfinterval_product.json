@@ -1,0 +1,13 @@
+{
+  "id": 1084,
+  "name": "Class Size of the Cube–Half-interval Product",
+  "short_name": "size_cube_halfinterval_product",
+  "class_id": "#classes/cube_halfinterval_product",
+  "parameter_id": "#parameters/size",
+  "value": "$2^m n$",
+  "details": "For $m\\ge1,n\\ge2$. Block and prefix formulas hold for fixed integer $k\\ge2$; the general block catalogue entry uses $k>2$. Asymptotic orders refer to $n\\to\\infty$ with $m,k$ fixed.",
+  "status": "established",
+  "proof": "The $2^m$ choices of cube support and $n$ distinct nonempty initial segments are independent and give distinct concepts.",
+  "references": "Direct finite product calculation; independent exact regression in sync/verify_cube_halfinterval_trees.py.",
+  "value_class": "omega_n"
+}

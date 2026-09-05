@@ -1,0 +1,13 @@
+{
+  "id": 1085,
+  "name": "Effective Range of the Cube–Half-interval Product",
+  "short_name": "effective_range_cube_halfinterval_product",
+  "class_id": "#classes/cube_halfinterval_product",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$m+n-1$",
+  "details": "For $m\\ge1,n\\ge2$. Block and prefix formulas hold for fixed integer $k\\ge2$; the general block catalogue entry uses $k>2$. Asymptotic orders refer to $n\\to\\infty$ with $m,k$ fixed.",
+  "status": "established",
+  "proof": "Every cube coordinate varies. In the half-interval factor, the first coordinate is constantly one, while each of the remaining $n-1$ coordinates takes both labels across the initial segments. Thus exactly $m+n-1$ domain coordinates are nonconstant.",
+  "references": "Direct finite product calculation; independent exact regression in sync/verify_cube_halfinterval_trees.py.",
+  "value_class": "omega_n"
+}

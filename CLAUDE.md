@@ -209,3 +209,9 @@ The active research questions are tracked in the survey's
 `dashboard.html`. These are research state and navigation, not a second
 catalogue of accepted facts. Follow its honest-conjecture-resolution and
 conjecture-dashboard skills for campaign rounds; promote accepted facts here.
+
+The cube--half-interval constrained-tree values have an independent exact
+regression: `python3 sync/verify_cube_halfinterval_trees.py`. It enumerates
+actual coordinate fibres on 84 product/block-size cases, including truncated
+final blocks. The universal proofs live in the database value records, not in
+the test output.
