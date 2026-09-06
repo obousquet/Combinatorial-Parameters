@@ -33,14 +33,25 @@
     </script>
     
         
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
                 tex: {
                     inlineMath: [['$', '$'], ['\\(', '\\)']],
                     displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
                 }
-            };</script>
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
@@ -18451,6 +18462,40 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1150" style="position:relative;">
+        
+        <h3><a href="values/proper_labeled_sample_compression_chen_teaching_products.html" class="table-title-link">Proper Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</p>
+<p><strong>Class: </strong><a href="classes/chen_teaching_products.html">Chen–Cheng–Tang Teaching Products</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\le3n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For $n\ge1$, the proved bounds are $n+1\le\mathrm{LSC}\le\mathrm{pLSC}\le3n$. The base proper and improper values each lie between two and three; exact optimality of three is not asserted. No stability claim is made. The lower bound is proved in the companion ordinary labeled-compression value.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the twelve-coordinate base, the database-owned certificate sync/cct_compression_certificate.json specifies one reconstruction for each of the 2049 realizable labeled keys of size at most three. Each row $(m,y,h)$ encodes its support, positive labels and reconstructed concept by binary integers, with coordinate 1 as the least significant bit; thus $y\subseteq m$ in support notation. The solver-free checker sync/verify_cct_compression.py reconstructs all 100 concepts from the authoritative class definition, verifies $h$ is in that class and $h\cap m=y$ for every key, and independently verifies all 135073 realizable partial samples. Forward bit-mask enumeration checks that every sample contains a key whose output extends it. A second reverse literal-set enumeration takes, for each key and its output, every intermediate partial sample; their union is exactly the independently reconstructed sample family. Define the encoder by the first consistent key in the fixed order (key size, support mask, positive-label mask). This is a proper, message-free labeled compression scheme of size at most three. The certificate is the proof input; its discovery by a bounded SAT search is not relied on for correctness. For $n$ disjoint blocks, compress each block sample by this same base scheme and retain the union of its labeled keys. The decoder partitions the retained coordinates by their known block indices and applies the base decoder in each block, including the empty key in blocks with no retained examples. Every output block belongs to the base class and extends its whole block sample; hence the product output belongs to $\mathcal C^{\mathrm{CCT}}_n$ and is consistent. The total retained size is at most $3n$. This proves the upper bound for every $n$, without enumerating products or transmitting auxiliary block messages. The particular first-key encoder is not reconstruction-stable, as the verifier checks; this does not rule out a different stable scheme.</p></div>
+<strong>References:</strong><div class="text-field"><p>Explicit finite certificate and independent replay in sync/cct_compression_certificate.json and sync/verify_cct_compression.py. The product argument is given above. No external compression theorem or novelty claim is used.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1151" style="position:relative;">
+        
+        <h3><a href="values/labeled_sample_compression_chen_teaching_products.html" class="table-title-link">Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</p>
+<p><strong>Class: </strong><a href="classes/chen_teaching_products.html">Chen–Cheng–Tang Teaching Products</a></p>
+<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\le3n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every $n\ge1$, $n+1\le\mathrm{LSC}(\mathcal C^{\mathrm{CCT}}_n)\le3n$, so the value is $\Theta(n)$. The base value is either two or three, not proved exactly three. The upper scheme is proper, but not asserted stable.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The proper width-$3n$ scheme and its full certificate are in the companion value proof \ref{val:proper_labeled_sample_compression_chen_teaching_products}; allowing improper outputs cannot increase the optimum. For the lower bound there are $100^n$ distinct full concepts on $12n$ coordinates. Two different full concepts must compress to different labeled keys, because one key has only one reconstruction. If at most $n$ examples were retained, there would be at most $\sum_{i=0}^n2^i\binom{12n}{i}$ possible keys. For $t=1/24$, the inequality $t^i\ge t^n$ for $i\le n$ gives $$\sum_{i=0}^n2^i\binom{12n}{i}\le24^n(1+1/12)^{12n}=\bigl[24(13/12)^{12}\bigr]^n<100^n,$$ where the last step is the exact integer inequality $24\cdot13^{12}<100\cdot12^{12}$. This contradicts injectivity, so the integer compression size is at least $n+1$. The same lower bound applies to proper compression. At $n=1$ it rules out widths zero and one, but leaves the exact optimum at two or three. The verifier checks the constant inequality and twenty finite counting instances; the displayed argument proves the bound for all $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Database-owned proper decoder certificate and direct counting argument; see sync/verify_cct_compression.py.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>
@@ -18458,23 +18503,6 @@
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
         
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const equations = document.querySelectorAll('.latex-equation');
-                equations.forEach(eq => {
-                    const latex = eq.getAttribute('data-latex');
-                    eq.innerHTML = '$$' + latex + '$$';
-                });
-                function tryTypeset() {{
-                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
-                        MathJax.typesetPromise();
-                    }} else {{
-                        setTimeout(tryTypeset, 100);
-                    }}
-                }}
-                tryTypeset();
-            });
-        </script>
     <script>
     let isCompactMode = false;
     

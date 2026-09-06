@@ -166,6 +166,10 @@ python3 sync/verify_proper_compression_covc.py
 # Reject omitted-sign access and exhaust all 81 proper size-one maps at n=3.
 python3 sync/verify_singleton_unlabeled_compression.py
 
+# Proper width-three CCT decoder: all partial samples, two independent replays.
+# The certificate and product/counting proofs are database-owned; no solver needed.
+python3 sync/verify_cct_compression.py
+
 # Direct enumeration behind the repetition-free teaching separation value.
 python3 sync/verify_repetitionfree_teaching.py
 

@@ -1,0 +1,102 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Combinatorial-Parameters/">
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="parameters/index.html">Parameters</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="values/index.html">Values</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1150" style="position:relative;">
+        
+        <h3><a href="values/proper_labeled_sample_compression_chen_teaching_products.html" class="table-title-link">Proper Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</p>
+<p><strong>Class: </strong><a href="classes/chen_teaching_products.html">Chen–Cheng–Tang Teaching Products</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\le3n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For $n\ge1$, the proved bounds are $n+1\le\mathrm{LSC}\le\mathrm{pLSC}\le3n$. The base proper and improper values each lie between two and three; exact optimality of three is not asserted. No stability claim is made. The lower bound is proved in the companion ordinary labeled-compression value.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the twelve-coordinate base, the database-owned certificate sync/cct_compression_certificate.json specifies one reconstruction for each of the 2049 realizable labeled keys of size at most three. Each row $(m,y,h)$ encodes its support, positive labels and reconstructed concept by binary integers, with coordinate 1 as the least significant bit; thus $y\subseteq m$ in support notation. The solver-free checker sync/verify_cct_compression.py reconstructs all 100 concepts from the authoritative class definition, verifies $h$ is in that class and $h\cap m=y$ for every key, and independently verifies all 135073 realizable partial samples. Forward bit-mask enumeration checks that every sample contains a key whose output extends it. A second reverse literal-set enumeration takes, for each key and its output, every intermediate partial sample; their union is exactly the independently reconstructed sample family. Define the encoder by the first consistent key in the fixed order (key size, support mask, positive-label mask). This is a proper, message-free labeled compression scheme of size at most three. The certificate is the proof input; its discovery by a bounded SAT search is not relied on for correctness. For $n$ disjoint blocks, compress each block sample by this same base scheme and retain the union of its labeled keys. The decoder partitions the retained coordinates by their known block indices and applies the base decoder in each block, including the empty key in blocks with no retained examples. Every output block belongs to the base class and extends its whole block sample; hence the product output belongs to $\mathcal C^{\mathrm{CCT}}_n$ and is consistent. The total retained size is at most $3n$. This proves the upper bound for every $n$, without enumerating products or transmitting auxiliary block messages. The particular first-key encoder is not reconstruction-stable, as the verifier checks; this does not rule out a different stable scheme.</p></div>
+<strong>References:</strong><div class="text-field"><p>Explicit finite certificate and independent replay in sync/cct_compression_certificate.json and sync/verify_cct_compression.py. The product argument is given above. No external compression theorem or novelty claim is used.</p></div>
+
+        </div>
+    </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+    </body>
+    </html>
+    

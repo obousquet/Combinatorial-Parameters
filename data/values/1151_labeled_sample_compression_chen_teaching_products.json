@@ -1,0 +1,13 @@
+{
+  "id": 1151,
+  "name": "Labeled Sample Compression of Chen–Cheng–Tang Teaching Products",
+  "short_name": "labeled_sample_compression_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$\\le3n$",
+  "value_class": "omega_n",
+  "details": "For every $n\\ge1$, $n+1\\le\\mathrm{LSC}(\\mathcal C^{\\mathrm{CCT}}_n)\\le3n$, so the value is $\\Theta(n)$. The base value is either two or three, not proved exactly three. The upper scheme is proper, but not asserted stable.",
+  "status": "established",
+  "proof": "The proper width-$3n$ scheme and its full certificate are in the companion value proof \\ref{val:proper_labeled_sample_compression_chen_teaching_products}; allowing improper outputs cannot increase the optimum. For the lower bound there are $100^n$ distinct full concepts on $12n$ coordinates. Two different full concepts must compress to different labeled keys, because one key has only one reconstruction. If at most $n$ examples were retained, there would be at most $\\sum_{i=0}^n2^i\\binom{12n}{i}$ possible keys. For $t=1/24$, the inequality $t^i\\ge t^n$ for $i\\le n$ gives $$\\sum_{i=0}^n2^i\\binom{12n}{i}\\le24^n(1+1/12)^{12n}=\\bigl[24(13/12)^{12}\\bigr]^n<100^n,$$ where the last step is the exact integer inequality $24\\cdot13^{12}<100\\cdot12^{12}$. This contradicts injectivity, so the integer compression size is at least $n+1$. The same lower bound applies to proper compression. At $n=1$ it rules out widths zero and one, but leaves the exact optimum at two or three. The verifier checks the constant inequality and twenty finite counting instances; the displayed argument proves the bound for all $n$.",
+  "references": "Database-owned proper decoder certificate and direct counting argument; see sync/verify_cct_compression.py."
+}

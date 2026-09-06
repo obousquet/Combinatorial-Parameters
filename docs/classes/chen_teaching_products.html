@@ -33,14 +33,25 @@
     </script>
     
         
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
                 tex: {
                     inlineMath: [['$', '$'], ['\\(', '\\)']],
                     displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
                 }
-            };</script>
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
@@ -78,7 +89,7 @@
     
 <strong>Definition:</strong><div class="text-field"><p>Let $\mathcal C_0\subseteq\{0,1\}^{12}$ consist of all cyclic rotations of the nine words $\begin{gathered}\mathtt{000001010101},\ \mathtt{000001110101},\ \mathtt{000011010101},\\ \mathtt{000101110101},\ \mathtt{000111010101},\ \mathtt{001101010101},\\ \mathtt{001101110101},\ \mathtt{010101110111},\ \mathtt{011101110111}.\end{gathered}$ Word positions are the coordinates $1,\ldots,12$, read left to right; repeated rotations are included only once. For each integer $n\ge1$, define $\mathcal C^{\mathrm{CCT}}_n=\mathcal C_0^n$ on the disjoint-block domain $\{1,\ldots,n\}\times\{1,\ldots,12\}$: a concept independently chooses a word of $\mathcal C_0$ on each of the $n$ blocks. Binary words are identified with their sets of coordinates labeled one.</p></div>
 <strong>Comments:</strong><div class="text-field"><p>The base class is Figure 4 of <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; its first eight rotation orbits have twelve elements each and the last has four, giving 100 concepts. Products yield the fixed ratio $\mathrm{RTD}/\mathrm{VC}=5/3$, not an unbounded ratio. The authoritative seed words are stored only in this definition; sync/verify_chen_teaching_products.py checks the construction and can compare them with the durable primary-source extraction.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/vc_dimension_chen_teaching_products.html'>VC Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/minimum_teaching_set_size_chen_teaching_products.html'>Minimum Teaching Set Size of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/teaching_dimension_chen_teaching_products.html'>Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/recursive_teaching_dimension_chen_teaching_products.html'>Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/monotone_recursive_teaching_dimension_chen_teaching_products.html'>Projected Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/effective_range_chen_teaching_products.html'>Effective Range of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/size_chen_teaching_products.html'>Size of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/noclashing_teaching_dimension_chen_teaching_products.html'>No-Clashing Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/double_density_or_average_degree_chen_teaching_products.html'>Double Density or Average Degree of Chen–Cheng–Tang Teaching Products</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/vc_dimension_chen_teaching_products.html'>VC Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/minimum_teaching_set_size_chen_teaching_products.html'>Minimum Teaching Set Size of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/teaching_dimension_chen_teaching_products.html'>Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/recursive_teaching_dimension_chen_teaching_products.html'>Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/monotone_recursive_teaching_dimension_chen_teaching_products.html'>Projected Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/effective_range_chen_teaching_products.html'>Effective Range of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/size_chen_teaching_products.html'>Size of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/noclashing_teaching_dimension_chen_teaching_products.html'>No-Clashing Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/double_density_or_average_degree_chen_teaching_products.html'>Double Density or Average Degree of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/proper_labeled_sample_compression_chen_teaching_products.html'>Proper Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/labeled_sample_compression_chen_teaching_products.html'>Labeled Sample Compression of Chen–Cheng–Tang Teaching Products</a></li></ul></p></div>
 <div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/monotone_recursive_teaching_dimension_vc_dimension.html'>Projected Recursive Teaching Dimension / VC Dimension</a></li></ul></p></div>
 
         </div>
@@ -89,23 +100,6 @@
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
         
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const equations = document.querySelectorAll('.latex-equation');
-                equations.forEach(eq => {
-                    const latex = eq.getAttribute('data-latex');
-                    eq.innerHTML = '$$' + latex + '$$';
-                });
-                function tryTypeset() {{
-                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
-                        MathJax.typesetPromise();
-                    }} else {{
-                        setTimeout(tryTypeset, 100);
-                    }}
-                }}
-                tryTypeset();
-            });
-        </script>
     </body>
     </html>
     

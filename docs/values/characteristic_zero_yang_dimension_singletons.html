@@ -33,14 +33,25 @@
     </script>
     
         
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script>
             window.MathJax = {
                 tex: {
                     inlineMath: [['$', '$'], ['\\(', '\\)']],
                     displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
                 }
-            };</script>
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
@@ -86,23 +97,6 @@
             <p>Generated with Python • Hosted on GitHub Pages</p>
         </footer>
         
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const equations = document.querySelectorAll('.latex-equation');
-                equations.forEach(eq => {
-                    const latex = eq.getAttribute('data-latex');
-                    eq.innerHTML = '$$' + latex + '$$';
-                });
-                function tryTypeset() {{
-                    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {{
-                        MathJax.typesetPromise();
-                    }} else {{
-                        setTimeout(tryTypeset, 100);
-                    }}
-                }}
-                tryTypeset();
-            });
-        </script>
     </body>
     </html>
     
