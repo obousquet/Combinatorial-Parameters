@@ -4,6 +4,7 @@ import argparse
 from fractions import Fraction
 from itertools import combinations, product
 import json
+from math import ceil
 from pathlib import Path
 import re
 
@@ -54,6 +55,44 @@ def coordinate_loads(concepts: set[int], weights: dict[tuple[int, int], int], n:
     return loads
 
 
+def verify_average_products() -> dict:
+    """Optimize every integer teacher map through two coordinates.
+
+    Keep the minimum total cost separate from the minimum maximum cost.
+    Check every Cartesian product of factors on zero or one coordinate.
+    """
+    optima = {}
+    maps = valid = 0
+    for n in range(3):
+        for family_bits in range(1, 1 << (1 << n)):
+            family = tuple(h for h in range(1 << n) if family_bits >> h & 1)
+            best_total, best_maximum = n * len(family), n
+            for masks in product(range(1 << n), repeat=len(family)):
+                maps += 1
+                if any(not ((h ^ g) & (masks[i] | masks[j]))
+                       for i, h in enumerate(family) for j, g in enumerate(family[:i])):
+                    continue
+                valid += 1
+                costs = [mask.bit_count() for mask in masks]
+                best_total = min(best_total, sum(costs))
+                best_maximum = min(best_maximum, max(costs))
+            optima[n, family] = best_total, best_maximum
+    factors = [(n, family) for n, family in optima if n <= 1]
+    products = 0
+    for (na, a), (nb, b) in product(factors, repeat=2):
+        combined = tuple(sorted(h | (g << na) for h in a for g in b))
+        total, _ = optima[na + nb, combined]
+        expected = len(b) * optima[na, a][0] + len(a) * optima[nb, b][0]
+        assert total == expected
+        products += 1
+    # Maximum NCTD is NOT additive: the one-bit cube has value one,
+    # and so does its square. The average optima are 1/2 and 1 instead.
+    assert optima[1, (0, 1)] == (1, 1)
+    assert optima[2, (0, 1, 2, 3)] == (4, 1)
+    return {'classes': len(optima), 'teacher_maps': maps,
+            'valid_teacher_maps': valid, 'cartesian_products': products}
+
+
 def verify(data_dir: Path) -> dict:
     definition = json.loads((data_dir / 'classes/050_chen_teaching_products.json').read_text())['definition']
     words = re.findall(r'\\mathtt\{([01]{12})\}',definition)
@@ -89,7 +128,15 @@ def verify(data_dir: Path) -> dict:
     assert {max(row) for row in loads.values()} == {8}
     lower = Fraction(sum(weights.values()), sum(max(row) for row in loads.values()))
     assert lower == Fraction(89, 40)
-    assert rf'\lceil{lower.numerator}n/{lower.denominator}\rceil' in value['details']
+    integral_mass = ceil(Fraction(sum(weights.values()), 8))
+    assert integral_mass == 223
+    integral_lower = Fraction(integral_mass, len(teacher))
+    assert integral_lower == Fraction(223, 100) > lower
+    assert rf'\lceil{integral_lower.numerator}n/{integral_lower.denominator}\rceil' in value['details']
+    # Round in each 100-target fiber before averaging; rounding only the
+    # final maximum loses information. No 100**22 product is materialized.
+    assert ceil(22 * lower) == 49 and ceil(22 * integral_lower) == 50
+    assert ceil(200 * lower) == 445 and ceil(200 * integral_lower) == 446
     assert 2 < lower <= int(upper.group(1)) == 3
     # A one-bit edge and its square calibrate weighted counting and product scaling.
     assert coordinate_loads({0, 1}, {(0, 1): 1}, 1) == {0: [1], 1: [1]}
@@ -117,7 +164,11 @@ def verify(data_dir: Path) -> dict:
     return {'class_id':50,'targets':100,'checked_pairs':pairs,'width_upper_bound':3,
             'one_inclusion_edges':edges,'exact_base_value':3,
             'weighted_pairs':len(weights),'total_pair_weight':sum(weights.values()),
-            'maximum_coordinate_load_per_target':8,'product_lower_coefficient':str(lower),
+            'maximum_coordinate_load_per_target':8,
+            'fractional_product_lower_coefficient':str(lower),
+            'integer_base_total_lower_bound':integral_mass,
+            'product_lower_coefficient':str(integral_lower),
+            'average_product_regression':verify_average_products(),
             'minimum_rotation_equivariant_width':3,
             'projection_bound_asserted':False}
 
