@@ -29,6 +29,58 @@ def replay(decoder: list[int], keys: list[Sample], partial: list[Sample]) -> lis
             if not any(decoder[i] & s[0] == s[1] for i in available(s, keys))]
 
 
+def cyclic_upper(concepts: tuple[int, ...]) -> dict[Sample, int]:
+    """The DB-owned C5 cyclic rule, not a general decoder construction."""
+    consecutive = {sum(1 << ((i + j) % 5) for j in range(3)) for i in range(5)}
+    result = {}
+    for mask, labels in samples(concepts, 5):
+        if mask.bit_count() <= 2:
+            result[mask, labels] = labels | sum(
+                1 << x for x in range(5) if not mask >> x & 1
+                and mask.bit_count() == 2 and (mask | (1 << x)) in consecutive)
+    return result
+
+
+def check_cyclic_upper(concepts: tuple[int, ...]) -> None:
+    cyclic = cyclic_upper(concepts)
+    partial = samples(concepts, 5)
+    keys = sorted(cyclic)
+    assert len(keys) == 51 and len(partial) == 176
+    assert not replay([cyclic[u] for u in keys], keys, partial)
+    literal = lambda s: {(x, (s[1] >> x) & 1) for x in range(5) if s[0] >> x & 1}
+    for s in partial:
+        assert any(literal(u) <= literal(s) <= literal((31, h)) for u, h in cyclic.items())
+    assert cyclic[5, 1] == 3 and cyclic[3, 1] == 21
+    assert 3 not in concepts and 21 not in concepts  # Do not silently claim properness.
+
+    # Independently check the analytic full-concept keys and the two four-sample cases.
+    full_keys = {}
+    for i in range(5):
+        pair = (1 << i) | (1 << ((i + 2) % 5))
+        negative = (1 << ((i + 3) % 5)) | (1 << ((i + 4) % 5))
+        triple = pair | (1 << ((i + 1) % 5))
+        full_keys[pair] = (negative, 0)
+        full_keys[triple] = (pair, pair)
+    assert set(full_keys) == set(concepts)
+    assert all(cyclic[u] == h for h, u in full_keys.items())
+    exceptional = set()
+    for reflection in (1, -1):
+        for shift in range(5):
+            transform = lambda word: sum(((word >> x) & 1) << ((reflection * x + shift) % 5)
+                                         for x in range(5))
+            for s, u in [((15, 3), (5, 1)), ((15, 5), (3, 1))]:
+                target, key = tuple(map(transform, s)), tuple(map(transform, u))
+                assert target in partial
+                assert cyclic[key] & target[0] == target[1]
+                exceptional.add(target)
+            assert all(cyclic[transform(m), transform(y)] == transform(h)
+                       for (m, y), h in cyclic.items())
+    remainder = {s for s in partial if s[0].bit_count() == 4 and not any(
+        h & s[0] == s[1] and u[0] & s[0] == u[0] for h, u in full_keys.items())}
+    assert remainder == exceptional and len(exceptional) == 20
+    print('CYCLIC UPPER PASS: 176 samples; 10 full keys; two four-sample orbits (20 samples).')
+
+
 def width_one_exists(concepts: tuple[int, ...], n: int) -> tuple[bool, dict[str, int]]:
     """Enumerate distinct keys for the ten full inputs; only one key remains.
 
@@ -83,6 +135,7 @@ def exhaustive_lower() -> None:
     assert counts == {'nodes': 39811, 'leaves': 5848, 'pruned': 17773}
     assert width_one_exists(tuple(range(4)), 2)[0]
     print('EXHAUSTIVE LOWER PASS', counts, '; full two-cube positive control passes')
+    check_cyclic_upper(concepts)
 
     # Compact independently replayed upper rule: majority in the version
     # space of the key, with ties one only for a two-positive key.
@@ -106,7 +159,8 @@ def exhaustive_lower() -> None:
     record = json.loads((Path(__file__).resolve().parents[1] /
                          'data/values/1138_labeled_sample_compression_warmuth_c5.json').read_text())
     assert record['value'] == '$2$' and record['status'] == 'established'
-    assert 'ties as one exactly when the key consists of two positive examples' in record['proof']
+    assert 'consecutive triple in the five-cycle' in record['proof']
+    assert '39811' in record['proof'] and '5848' in record['proof']
     print('UPPER PASS', len(partial), 'samples;', len(upper_keys), 'keys')
 
 
