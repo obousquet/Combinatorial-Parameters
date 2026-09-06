@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-118" style="position:relative;">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-50" style="position:relative;">
         
-        <h3><a href="relationships/monotone_recursive_teaching_dimension_vc_dimension.html" class="table-title-link">Projected Recursive Teaching Dimension / VC Dimension</a></h3>
+        <h3><a href="classes/chen_teaching_products.html" class="table-title-link">Chen–Cheng–Tang Teaching Products</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Recursive Teaching Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Projected recursive teaching dimension is the maximum recursive teaching dimension over coordinate projections.</p></div>
-<p><strong>Witness: </strong><a href="classes/chen_teaching_products.html">Chen–Cheng–Tang Teaching Products</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>The Chen–Cheng–Tang products have projected RTD $5n$ and VC $3n$, independently verified on the base and extended by product additivity. This is a strict witness with ratio $5/3$, not an unbounded-ratio witness. It improves the former Warmuth witness's ratio $3/2$; those original class values are retained.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:projected-rtd-vc</code>.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+        <p><strong>Name: </strong>Chen–Cheng–Tang Teaching Products</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal C^{\mathrm{CCT}}_n">
+            \[\mathcal C^{\mathrm{CCT}}_n\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>Let $\mathcal C_0\subseteq\{0,1\}^{12}$ consist of all cyclic rotations of the nine words $\begin{gathered}\mathtt{000001010101},\ \mathtt{000001110101},\ \mathtt{000011010101},\\ \mathtt{000101110101},\ \mathtt{000111010101},\ \mathtt{001101010101},\\ \mathtt{001101110101},\ \mathtt{010101110111},\ \mathtt{011101110111}.\end{gathered}$ Word positions are the coordinates $1,\ldots,12$, read left to right; repeated rotations are included only once. For each integer $n\ge1$, define $\mathcal C^{\mathrm{CCT}}_n=\mathcal C_0^n$ on the disjoint-block domain $\{1,\ldots,n\}\times\{1,\ldots,12\}$: a concept independently chooses a word of $\mathcal C_0$ on each of the $n$ blocks. Binary words are identified with their sets of coordinates labeled one.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The base class is Figure 4 of <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; its first eight rotation orbits have twelve elements each and the last has four, giving 100 concepts. Products yield the fixed ratio $\mathrm{RTD}/\mathrm{VC}=5/3$, not an unbounded ratio. The authoritative seed words are stored only in this definition; sync/verify_chen_teaching_products.py checks the construction and can compare them with the durable primary-source extraction.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/vc_dimension_chen_teaching_products.html'>VC Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/minimum_teaching_set_size_chen_teaching_products.html'>Minimum Teaching Set Size of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/teaching_dimension_chen_teaching_products.html'>Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/recursive_teaching_dimension_chen_teaching_products.html'>Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/monotone_recursive_teaching_dimension_chen_teaching_products.html'>Projected Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/effective_range_chen_teaching_products.html'>Effective Range of Chen–Cheng–Tang Teaching Products</a></li><li><a href='values/size_chen_teaching_products.html'>Size of Chen–Cheng–Tang Teaching Products</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/monotone_recursive_teaching_dimension_vc_dimension.html'>Projected Recursive Teaching Dimension / VC Dimension</a></li></ul></p></div>
 
         </div>
     </div>

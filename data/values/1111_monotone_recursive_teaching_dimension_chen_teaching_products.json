@@ -1,0 +1,13 @@
+{
+  "id": 1111,
+  "name": "Projected Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products",
+  "short_name": "monotone_recursive_teaching_dimension_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$5n$",
+  "details": "For every integer $n\\ge1$; $n$ is the number of twelve-coordinate blocks. The ratio $\\mathrm{RTD}/\\mathrm{VC}=5/3$ is constant, despite the growing additive gap.",
+  "status": "established",
+  "proof": "The full projection gives the lower bound from RTD $=5n$. For the base, sync/verify_chen_teaching_products.py checks all 4096 projections. On each domain of size greater than five it repeatedly removes a projected concept that is the unique remaining trace on five chosen coordinates; every projection peels to empty. Domains of size at most five have RTD at most five directly. Such a removal sequence is a teaching plan of width at most five, so the base has projected RTD exactly five. Projected RTD is additive on Cartesian products: every projected product splits into projected factors, ordinary RTD is additive, and the maxima over projected domains separate. The full argument is survey Proposition prop:teaching-product-additivity.",
+  "references": "\\cite{chen2016recursive}, Section 3 and Figure 4; \\cite{doliwa2014recursive}, Lemma 16. Definition-driven finite verification: sync/verify_chen_teaching_products.py and sync/chen_teaching_products.json.",
+  "value_class": "omega_n"
+}

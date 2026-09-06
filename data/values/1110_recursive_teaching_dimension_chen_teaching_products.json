@@ -1,0 +1,13 @@
+{
+  "id": 1110,
+  "name": "Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products",
+  "short_name": "recursive_teaching_dimension_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$5n$",
+  "details": "For every integer $n\\ge1$; $n$ is the number of twelve-coordinate blocks. The ratio $\\mathrm{RTD}/\\mathrm{VC}=5/3$ is constant, despite the growing additive gap.",
+  "status": "established",
+  "proof": "For every finite class, minimum teaching size is at most RTD, which is at most teaching dimension. The minimum-teaching and teaching-dimension values for this product family are both $5n$, giving equality. The construction and ordinary RTD/VC product values are Figure 4 and Section 3 of \\cite{chen2016recursive}.",
+  "references": "\\cite{chen2016recursive}, Section 3 and Figure 4; \\cite{doliwa2014recursive}, Lemma 16. Definition-driven finite verification: sync/verify_chen_teaching_products.py and sync/chen_teaching_products.json.",
+  "value_class": "omega_n"
+}

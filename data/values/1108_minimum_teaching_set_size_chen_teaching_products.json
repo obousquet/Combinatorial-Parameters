@@ -1,0 +1,13 @@
+{
+  "id": 1108,
+  "name": "Minimum Teaching Set Size of Chen–Cheng–Tang Teaching Products",
+  "short_name": "minimum_teaching_set_size_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/minimum_teaching_set_size",
+  "value": "$5n$",
+  "details": "For every integer $n\\ge1$; $n$ is the number of twelve-coordinate blocks. The ratio $\\mathrm{RTD}/\\mathrm{VC}=5/3$ is constant, despite the growing additive gap.",
+  "status": "established",
+  "proof": "In the base class, none of the 495 four-coordinate restrictions has a singleton fibre. Smaller teaching sets would extend to a four-coordinate teaching set. Enumerating all 792 five-coordinate sets supplies a teaching set for every one of the 100 concepts, so every target has minimum teaching size exactly five. A sample teaches a product target if and only if it teaches each component separately (hold all other components fixed for necessity). Hence every target in the $n$-fold product has teaching size $5n$, in particular the minimum does.",
+  "references": "\\cite{chen2016recursive}, Section 3 and Figure 4; \\cite{doliwa2014recursive}, Lemma 16. Definition-driven finite verification: sync/verify_chen_teaching_products.py and sync/chen_teaching_products.json.",
+  "value_class": "omega_n"
+}

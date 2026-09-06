@@ -1,0 +1,12 @@
+{
+  "id": 1113,
+  "name": "Size of Chen–Cheng–Tang Teaching Products",
+  "short_name": "size_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/size",
+  "value": "$100^n$",
+  "details": "For every integer $n\\ge1$; $n$ is the number of twelve-coordinate blocks. The ratio $\\mathrm{RTD}/\\mathrm{VC}=5/3$ is constant, despite the growing additive gap.",
+  "status": "established",
+  "proof": "The first eight seed words have pairwise disjoint rotation orbits of length twelve; the ninth has a disjoint orbit of length four. The base therefore has $8\\cdot12+4=100$ concepts. Independent choices on $n$ disjoint blocks give $100^n$ concepts.",
+  "references": "\\cite{chen2016recursive}, Section 3 and Figure 4; \\cite{doliwa2014recursive}, Lemma 16. Definition-driven finite verification: sync/verify_chen_teaching_products.py and sync/chen_teaching_products.json."
+}

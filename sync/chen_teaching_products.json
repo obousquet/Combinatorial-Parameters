@@ -1,0 +1,428 @@
+{
+  "class_id": 50,
+  "base_coordinates": 12,
+  "base_size": 100,
+  "rotation_orbit_sizes": [
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    12,
+    4
+  ],
+  "base_VC": 3,
+  "shattered_triple": 7,
+  "four_coordinate_sets_checked": 495,
+  "base_minimum_teaching_size": 5,
+  "base_TD": 5,
+  "base_RTD": 5,
+  "teaching_masks": [
+    {
+      "concept": 85,
+      "mask": 3083
+    },
+    {
+      "concept": 87,
+      "mask": 1287
+    },
+    {
+      "concept": 170,
+      "mask": 2071
+    },
+    {
+      "concept": 171,
+      "mask": 2567
+    },
+    {
+      "concept": 174,
+      "mask": 2581
+    },
+    {
+      "concept": 340,
+      "mask": 47
+    },
+    {
+      "concept": 342,
+      "mask": 1039
+    },
+    {
+      "concept": 343,
+      "mask": 1287
+    },
+    {
+      "concept": 348,
+      "mask": 1067
+    },
+    {
+      "concept": 349,
+      "mask": 3083
+    },
+    {
+      "concept": 680,
+      "mask": 2071
+    },
+    {
+      "concept": 683,
+      "mask": 2579
+    },
+    {
+      "concept": 684,
+      "mask": 2071
+    },
+    {
+      "concept": 686,
+      "mask": 2567
+    },
+    {
+      "concept": 696,
+      "mask": 2131
+    },
+    {
+      "concept": 698,
+      "mask": 2071
+    },
+    {
+      "concept": 699,
+      "mask": 2071
+    },
+    {
+      "concept": 1045,
+      "mask": 2882
+    },
+    {
+      "concept": 1111,
+      "mask": 1571
+    },
+    {
+      "concept": 1285,
+      "mask": 722
+    },
+    {
+      "concept": 1345,
+      "mask": 173
+    },
+    {
+      "concept": 1360,
+      "mask": 47
+    },
+    {
+      "concept": 1366,
+      "mask": 1063
+    },
+    {
+      "concept": 1368,
+      "mask": 47
+    },
+    {
+      "concept": 1369,
+      "mask": 143
+    },
+    {
+      "concept": 1372,
+      "mask": 1039
+    },
+    {
+      "concept": 1377,
+      "mask": 55
+    },
+    {
+      "concept": 1381,
+      "mask": 551
+    },
+    {
+      "concept": 1392,
+      "mask": 167
+    },
+    {
+      "concept": 1393,
+      "mask": 55
+    },
+    {
+      "concept": 1396,
+      "mask": 47
+    },
+    {
+      "concept": 1398,
+      "mask": 47
+    },
+    {
+      "concept": 1399,
+      "mask": 551
+    },
+    {
+      "concept": 1413,
+      "mask": 211
+    },
+    {
+      "concept": 1429,
+      "mask": 2204
+    },
+    {
+      "concept": 1473,
+      "mask": 151
+    },
+    {
+      "concept": 1477,
+      "mask": 213
+    },
+    {
+      "concept": 1489,
+      "mask": 61
+    },
+    {
+      "concept": 1497,
+      "mask": 143
+    },
+    {
+      "concept": 1501,
+      "mask": 2189
+    },
+    {
+      "concept": 1557,
+      "mask": 835
+    },
+    {
+      "concept": 1621,
+      "mask": 835
+    },
+    {
+      "concept": 1623,
+      "mask": 775
+    },
+    {
+      "concept": 1797,
+      "mask": 595
+    },
+    {
+      "concept": 1813,
+      "mask": 818
+    },
+    {
+      "concept": 1861,
+      "mask": 625
+    },
+    {
+      "concept": 1879,
+      "mask": 803
+    },
+    {
+      "concept": 1893,
+      "mask": 563
+    },
+    {
+      "concept": 1909,
+      "mask": 55
+    },
+    {
+      "concept": 1911,
+      "mask": 551
+    },
+    {
+      "concept": 2090,
+      "mask": 1669
+    },
+    {
+      "concept": 2091,
+      "mask": 647
+    },
+    {
+      "concept": 2133,
+      "mask": 3331
+    },
+    {
+      "concept": 2219,
+      "mask": 2691
+    },
+    {
+      "concept": 2222,
+      "mask": 3589
+    },
+    {
+      "concept": 2389,
+      "mask": 1291
+    },
+    {
+      "concept": 2397,
+      "mask": 3083
+    },
+    {
+      "concept": 2570,
+      "mask": 1441
+    },
+    {
+      "concept": 2603,
+      "mask": 901
+    },
+    {
+      "concept": 2690,
+      "mask": 361
+    },
+    {
+      "concept": 2720,
+      "mask": 91
+    },
+    {
+      "concept": 2732,
+      "mask": 2119
+    },
+    {
+      "concept": 2736,
+      "mask": 91
+    },
+    {
+      "concept": 2738,
+      "mask": 283
+    },
+    {
+      "concept": 2744,
+      "mask": 2075
+    },
+    {
+      "concept": 2747,
+      "mask": 2323
+    },
+    {
+      "concept": 2754,
+      "mask": 121
+    },
+    {
+      "concept": 2762,
+      "mask": 1102
+    },
+    {
+      "concept": 2784,
+      "mask": 91
+    },
+    {
+      "concept": 2786,
+      "mask": 110
+    },
+    {
+      "concept": 2792,
+      "mask": 94
+    },
+    {
+      "concept": 2796,
+      "mask": 87
+    },
+    {
+      "concept": 2798,
+      "mask": 1102
+    },
+    {
+      "concept": 2826,
+      "mask": 433
+    },
+    {
+      "concept": 2858,
+      "mask": 313
+    },
+    {
+      "concept": 2859,
+      "mask": 391
+    },
+    {
+      "concept": 2946,
+      "mask": 313
+    },
+    {
+      "concept": 2954,
+      "mask": 409
+    },
+    {
+      "concept": 2978,
+      "mask": 313
+    },
+    {
+      "concept": 2987,
+      "mask": 403
+    },
+    {
+      "concept": 2994,
+      "mask": 345
+    },
+    {
+      "concept": 3002,
+      "mask": 283
+    },
+    {
+      "concept": 3003,
+      "mask": 279
+    },
+    {
+      "concept": 3093,
+      "mask": 2371
+    },
+    {
+      "concept": 3114,
+      "mask": 1681
+    },
+    {
+      "concept": 3157,
+      "mask": 3393
+    },
+    {
+      "concept": 3242,
+      "mask": 1669
+    },
+    {
+      "concept": 3246,
+      "mask": 1557
+    },
+    {
+      "concept": 3349,
+      "mask": 2498
+    },
+    {
+      "concept": 3421,
+      "mask": 1165
+    },
+    {
+      "concept": 3477,
+      "mask": 2243
+    },
+    {
+      "concept": 3541,
+      "mask": 2249
+    },
+    {
+      "concept": 3549,
+      "mask": 2187
+    },
+    {
+      "concept": 3594,
+      "mask": 1201
+    },
+    {
+      "concept": 3626,
+      "mask": 929
+    },
+    {
+      "concept": 3722,
+      "mask": 1249
+    },
+    {
+      "concept": 3758,
+      "mask": 1605
+    },
+    {
+      "concept": 3786,
+      "mask": 1137
+    },
+    {
+      "concept": 3818,
+      "mask": 110
+    },
+    {
+      "concept": 3822,
+      "mask": 1109
+    }
+  ],
+  "projections_checked": 4096,
+  "base_projected_RTD": 5,
+  "width_five_projection_failures": [],
+  "scope": "Exact base computation; all-power formulae require the product argument."
+}

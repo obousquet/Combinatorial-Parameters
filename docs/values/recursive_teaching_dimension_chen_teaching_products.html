@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-118" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1110" style="position:relative;">
         
-        <h3><a href="relationships/monotone_recursive_teaching_dimension_vc_dimension.html" class="table-title-link">Projected Recursive Teaching Dimension / VC Dimension</a></h3>
+        <h3><a href="values/recursive_teaching_dimension_chen_teaching_products.html" class="table-title-link">Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected Recursive Teaching Dimension / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Projected recursive teaching dimension is the maximum recursive teaching dimension over coordinate projections.</p></div>
-<p><strong>Witness: </strong><a href="classes/chen_teaching_products.html">Chen–Cheng–Tang Teaching Products</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>The Chen–Cheng–Tang products have projected RTD $5n$ and VC $3n$, independently verified on the base and extended by product additivity. This is a strict witness with ratio $5/3$, not an unbounded-ratio witness. It improves the former Warmuth witness's ratio $3/2$; those original class values are retained.</p></div>
-
-
+        <p><strong>Name: </strong>Recursive Teaching Dimension of Chen–Cheng–Tang Teaching Products</p>
+<p><strong>Class: </strong><a href="classes/chen_teaching_products.html">Chen–Cheng–Tang Teaching Products</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$5n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every integer $n\ge1$; $n$ is the number of twelve-coordinate blocks. The ratio $\mathrm{RTD}/\mathrm{VC}=5/3$ is constant, despite the growing additive gap.</p>
 <p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Lemma <code>lem:projected-rtd-vc</code>.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every finite class, minimum teaching size is at most RTD, which is at most teaching dimension. The minimum-teaching and teaching-dimension values for this product family are both $5n$, giving equality. The construction and ordinary RTD/VC product values are Figure 4 and Section 3 of <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>, Section 3 and Figure 4; <a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a>, Lemma 16. Definition-driven finite verification: sync/verify_chen_teaching_products.py and sync/chen_teaching_products.json.</p></div>
 
         </div>
     </div>

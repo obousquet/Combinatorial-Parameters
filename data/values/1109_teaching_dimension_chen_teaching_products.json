@@ -1,0 +1,13 @@
+{
+  "id": 1109,
+  "name": "Teaching Dimension of Chen–Cheng–Tang Teaching Products",
+  "short_name": "teaching_dimension_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$5n$",
+  "details": "For every integer $n\\ge1$; $n$ is the number of twelve-coordinate blocks. The ratio $\\mathrm{RTD}/\\mathrm{VC}=5/3$ is constant, despite the growing additive gap.",
+  "status": "established",
+  "proof": "The database's minimum-teaching value proof for this family establishes that every product target, not merely an easiest target, has minimum teaching size $5n$. Taking the maximum over targets gives teaching dimension $5n$.",
+  "references": "\\cite{chen2016recursive}, Section 3 and Figure 4; \\cite{doliwa2014recursive}, Lemma 16. Definition-driven finite verification: sync/verify_chen_teaching_products.py and sync/chen_teaching_products.json.",
+  "value_class": "omega_n"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 1112,
+  "name": "Effective Range of Chen–Cheng–Tang Teaching Products",
+  "short_name": "effective_range_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$12n$",
+  "details": "For every integer $n\\ge1$; $n$ is the number of twelve-coordinate blocks. The ratio $\\mathrm{RTD}/\\mathrm{VC}=5/3$ is constant, despite the growing additive gap.",
+  "status": "established",
+  "proof": "A nonconstant base word and all its cyclic rotations make each of the twelve coordinates attain both labels. Independent copies preserve variation in every one of the $12n$ domain coordinates.",
+  "references": "\\cite{chen2016recursive}, Section 3 and Figure 4; \\cite{doliwa2014recursive}, Lemma 16. Definition-driven finite verification: sync/verify_chen_teaching_products.py and sync/chen_teaching_products.json.",
+  "value_class": "omega_n"
+}
