@@ -1,0 +1,15 @@
+{
+  "id": 508,
+  "name": "Yang Dimension / Characteristic-p Yang Dimension",
+  "short_name": "yang_dimension_characteristic_p_yang_dimension",
+  "parameter_1_id": "#parameters/yang_dimension",
+  "parameter_2_id": "#parameters/characteristic_p_yang_dimension",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The proposed uniform domination $\\mathrm Y_2\\ge\\mathrm Y_p$ for every fixed prime $p$ is false already at $p=3$. On the Odd-Torsion Dual Class, $\\mathrm Y_2=9<10=\\mathrm Y_3$. This does not refute a reverse affine bound and does not concern the identity at $p=2$.",
+  "latex_proof_label": "prop:yang-positive-characteristics-unordered",
+  "proof_source": "Survey Corollary prop:yang-positive-characteristics-unordered refers to the database-owned exact value proofs for the two opposing finite witnesses.",
+  "witness": "#classes/odd_torsion_dual",
+  "witness_strength": "strict",
+  "witness_verification": "At p=3 the exact values are Y_2=9 and Y_p=10, contradicting the displayed domination. Only strict finite failure, not an unbounded normalized ratio, is asserted."
+}

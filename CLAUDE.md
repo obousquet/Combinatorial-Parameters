@@ -229,3 +229,11 @@ report reproduction, add
 `--crosscheck-lattice ~/latex/YangDim/scripts/explore_yang_dimension_lattice.py --check-report sync/yang_characteristic_witness.json`.
 The witness for the prime-indexed relationship is scoped to `p=2`; it is
 strict, not unbounded.
+
+The reverse characteristic-three witness is checked by
+`python3 sync/verify_odd_torsion_yang.py --check-report sync/odd_torsion_yang.json`.
+This verifies the integral source, actual top ambiguity boundary ranks, every
+version-space size and the field-independent simplex-boundary conditioning.
+It is not a full Betti census. Together the two classes refute both exact
+dominations between characteristics two and three; do not label this as
+unbounded incomparability.

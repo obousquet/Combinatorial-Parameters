@@ -1,0 +1,11 @@
+{
+  "id": 1101,
+  "name": "Yang Dimension of the Odd-Torsion Dual Class",
+  "short_name": "yang_dimension_odd_torsion_dual",
+  "class_id": "#classes/odd_torsion_dual",
+  "parameter_id": "#parameters/yang_dimension",
+  "value": "9",
+  "status": "established",
+  "proof": "The default is $\\mathrm Y=\\mathrm Y_2$. The database-owned proof in value record 1100 gives value nine over every characteristic other than three, including characteristic two.",
+  "references": "See value record 1100 and its direct integral proof."
+}

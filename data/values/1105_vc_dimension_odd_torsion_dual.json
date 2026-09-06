@@ -1,0 +1,11 @@
+{
+  "id": 1105,
+  "name": "VC Dimension of the Odd-Torsion Dual Class",
+  "short_name": "vc_dimension_odd_torsion_dual",
+  "class_id": "#classes/odd_torsion_dual",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "2",
+  "status": "established",
+  "proof": "Every coordinate has exactly three positive concepts. A shattered triple of coordinates would require four distinct concepts positive on its first coordinate, so VC is at most two. The missing-triple coordinates $\\{0,1,2\\}$ and $\\{0,2,4\\}$ are shattered: vertices zero, one, four and three realize the pairs $(1,1),(1,0),(0,1),(0,0)$, respectively.",
+  "references": "Direct shattering argument; the deterministic construction verifier checks the two coordinates."
+}

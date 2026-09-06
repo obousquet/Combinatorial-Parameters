@@ -1,0 +1,15 @@
+{
+  "id": 509,
+  "name": "Characteristic-p Yang Dimension / Yang Dimension",
+  "short_name": "characteristic_p_yang_dimension_yang_dimension",
+  "parameter_1_id": "#parameters/characteristic_p_yang_dimension",
+  "parameter_2_id": "#parameters/yang_dimension",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The proposed uniform domination $\\mathrm Y_p\\ge\\mathrm Y_2$ for every fixed prime $p$ is false, in particular at $p=3$. On the Anchored Torsion Class, $\\mathrm Y_3=3<4=\\mathrm Y_2$; the same failure holds for every odd prime. This is not a refutation of a reverse affine bound, and $p=2$ is still the default-field identity.",
+  "latex_proof_label": "prop:yang-positive-characteristics-unordered",
+  "proof_source": "Survey Corollary prop:yang-positive-characteristics-unordered refers to the database-owned exact value proofs for the two opposing finite witnesses.",
+  "witness": "#classes/anchored_torsion",
+  "witness_strength": "strict",
+  "witness_verification": "At fixed p=3 the exact values are Y_p=3 and Y_2=4, contradicting the displayed domination. The value proof covers every odd prime, but the gap is finite rather than an unbounded-ratio witness."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1106,
+  "name": "Littlestone Dimension of the Odd-Torsion Dual Class",
+  "short_name": "littlestone_dimension_odd_torsion_dual",
+  "class_id": "#classes/odd_torsion_dual",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "2",
+  "status": "established",
+  "proof": "The established VC value two is a lower bound. In any putative depth-three complete mistake tree, the positive branch at the root would need at least four distinct concepts to realize a depth-two subtree. Every coordinate has only three positive concepts. Thus depth three is impossible and Littlestone dimension is two.",
+  "references": "Direct complete-tree leaf count and the explicit shattered pair."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1103,
+  "name": "Size of the Odd-Torsion Dual Class",
+  "short_name": "size_odd_torsion_dual",
+  "class_id": "#classes/odd_torsion_dual",
+  "parameter_id": "#parameters/size",
+  "value": "13",
+  "status": "established",
+  "proof": "There is one concept per vertex. The proof in value record 1100 explicitly distinguishes all thirteen concepts using missing-triple coordinates.",
+  "references": "Direct construction and distinguishing-coordinate proof."
+}

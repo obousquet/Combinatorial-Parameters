@@ -1,0 +1,11 @@
+{
+  "id": 1102,
+  "name": "Characteristic-zero Yang Dimension of the Odd-Torsion Dual Class",
+  "short_name": "characteristic_zero_yang_dimension_odd_torsion_dual",
+  "class_id": "#classes/odd_torsion_dual",
+  "parameter_id": "#parameters/characteristic_zero_yang_dimension",
+  "value": "9",
+  "status": "established",
+  "proof": "The database-owned integral proof in value record 1100 separately covers characteristic zero: the whole-class ambiguity complex is rationally acyclic, proper spaces contribute at most degree nine, and an explicit ten-concept conditioning contributes degree nine over every field.",
+  "references": "See value record 1100."
+}

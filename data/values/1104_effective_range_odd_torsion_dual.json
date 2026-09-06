@@ -1,0 +1,11 @@
+{
+  "id": 1104,
+  "name": "Effective Range of the Odd-Torsion Dual Class",
+  "short_name": "effective_range_odd_torsion_dual",
+  "class_id": "#classes/odd_torsion_dual",
+  "parameter_id": "#parameters/effective_range",
+  "value": "220",
+  "status": "established",
+  "proof": "The face count proved in 1100 leaves 220 missing triangles, hence 220 coordinates. Every coordinate has three concepts labeled one and ten labeled zero, so all are nonconstant.",
+  "references": "Direct face count and coordinate definition."
+}
