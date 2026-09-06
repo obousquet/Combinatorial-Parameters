@@ -4991,62 +4991,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-188" style="position:relative;">
-        
-        <h3><a href="relationships/effective_range_proper_stable_sample_compression.html" class="table-title-link">Effective Range / Proper Stable Sample Compression</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Effective Range / Proper Stable Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, effective range is $n$, while proper stable sample-compression size is 1.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain all active-coordinate examples of the sample and reconstruct the least consistent member of the class. This is proper, discarding inactive examples preserves consistency, and retaining every remaining example makes stability immediate. Its size is at most (\mathrm E(\mathcal H)).</p></div>
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-189" style="position:relative;">
-        
-        <h3><a href="relationships/effective_range_proper_unlabeled_sample_compression.html" class="table-title-link">Effective Range / Proper Unlabeled Sample Compression</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Effective Range / Proper Unlabeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, effective range is $n$ while proper unlabeled sample compression size is 1.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Retain all active-coordinate examples and reconstruct a fixed least class member consistent with them. The retained examples include their observed labels, so the reconstruction is proper and consistent; inactive examples are irrelevant. The retained size is at most (\mathrm E(\mathcal H)).</p></div>
-
-
-
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-190" style="position:relative;">
         
         <h3><a href="relationships/effective_range_proper_labeled_sample_compression.html" class="table-title-link">Effective Range / Proper Labeled Sample Compression</a></h3>
@@ -12829,7 +12773,7 @@
 <p><strong>Witness Strength:</strong> </p>
 
 <strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the full cube $2^{[n]}$, $\mathrm{pUSC}=n$, while $\mathrm{Rad}=\lfloor\log_2(2n+2)\rfloor=\Theta(\log n)$.</p></div>
-<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the singleton class on $[n]$, $\mathrm{Rad}=n$, while $\mathrm{pUSC}=1$.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the singleton class on $[n]$ with $n\ge3$, $\mathrm{Rad}=n$, while $\mathrm{pUSC}=2$. The ratio is still unbounded; see the corrected database-owned proper unlabeled singleton value proof.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The full-cube and singleton value calculations yield unbounded gaps in the two opposite directions.</p></div>
 
@@ -14104,6 +14048,62 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
+
+
+<p><strong>Status:</strong> Needs verification</p>
+
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-188" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_stable_sample_compression.html" class="table-title-link">Effective Range / Proper Stable Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Stable Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Proposed bound for finite concept classes; not currently established here. Retaining all active-coordinate instances does not give their labels to an unlabeled decoder, so the former least-consistent-member construction does not define the claimed scheme. The corresponding labeled argument remains valid. A proper stable unlabeled replacement proof or counterexample is required; no refutation is claimed. The benchmark gap below remains valid independently of the proposed universal bound.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, effective range is $n$, while proper stable sample-compression size is 1.</p></div>
+
+
+<p><strong>Status:</strong> Needs verification</p>
+
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-189" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_unlabeled_sample_compression.html" class="table-title-link">Effective Range / Proper Unlabeled Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Unlabeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Proposed bound for finite concept classes; not currently established here. The former retain-all-active-examples argument passed their observed labels to the decoder and therefore proves only a proper labeled bound. An unlabeled decoder does not receive those labels. A valid replacement proof or counterexample is required; no refutation of this inequality is claimed. The benchmark gap below remains valid independently of the proposed universal bound.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, effective range is $n$ while proper unlabeled sample compression size is 1.</p></div>
 
 
 <p><strong>Status:</strong> Needs verification</p>

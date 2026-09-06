@@ -1,9 +1,9 @@
 {
   "counts": {
-    "unbounded": 222,
-    "strict": 84,
+    "unbounded": 223,
+    "strict": 87,
     "equivalence": 17,
-    "missing": 41,
+    "missing": 38,
     "unclassified": 7,
     "incomparable": 98
   },
@@ -1118,7 +1118,17 @@
       "witness": null,
       "reverse_affine_path": null,
       "unbounded_candidates": [],
-      "strict_candidates": [],
+      "strict_candidates": [
+        {
+          "class": "#classes/warmuth_c5",
+          "larger_value": "$3$",
+          "smaller_value": "$2$",
+          "value_ids": [
+            220,
+            1138
+          ]
+        }
+      ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
@@ -1624,6 +1634,15 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
+          "class": "#classes/singletons",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            478,
+            388
+          ]
+        },
+        {
           "class": "#classes/three_code_class",
           "larger_value": "$2$",
           "smaller_value": "$1$",
@@ -1643,6 +1662,15 @@
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
+        {
+          "class": "#classes/singletons",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            478,
+            477
+          ]
+        },
         {
           "class": "#classes/three_code_class",
           "larger_value": "$2$",
@@ -1688,8 +1716,8 @@
     {
       "id": 156,
       "short_name": "proper_stable_labeled_sample_compression_proper_labeled_sample_compression",
-      "category": "missing",
-      "witness": null,
+      "category": "strict",
+      "witness": "#classes/full_cube",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
@@ -1708,8 +1736,8 @@
     {
       "id": 158,
       "short_name": "stable_labeled_sample_compression_labeled_sample_compression",
-      "category": "missing",
-      "witness": null,
+      "category": "strict",
+      "witness": "#classes/full_cube",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
@@ -2519,7 +2547,17 @@
       "witness": null,
       "reverse_affine_path": null,
       "unbounded_candidates": [],
-      "strict_candidates": [],
+      "strict_candidates": [
+        {
+          "class": "#classes/antipodal_six_code",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1148,
+            1146
+          ]
+        }
+      ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
@@ -2857,11 +2895,21 @@
     {
       "id": 442,
       "short_name": "stable_labeled_sample_compression_projected_noclashing_teaching_dimension",
-      "category": "missing",
-      "witness": null,
+      "category": "strict",
+      "witness": "#classes/antipodal_six_code",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
-      "strict_candidates": [],
+      "strict_candidates": [
+        {
+          "class": "#classes/antipodal_six_code",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1148,
+            1145
+          ]
+        }
+      ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
@@ -3038,7 +3086,17 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
-      "unbounded_candidates": [],
+      "unbounded_candidates": [
+        {
+          "class": "#classes/singleton_cosingleton",
+          "larger_value": "$n-1$",
+          "smaller_value": "$3$",
+          "value_ids": [
+            1129,
+            1137
+          ]
+        }
+      ],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
@@ -3104,7 +3162,17 @@
       "category": "strict",
       "witness": "#classes/projected_positive_noclashing_gap",
       "reverse_affine_path": null,
-      "unbounded_candidates": [],
+      "unbounded_candidates": [
+        {
+          "class": "#classes/singleton_cosingleton",
+          "larger_value": "$n-1$",
+          "smaller_value": "$3$",
+          "value_ids": [
+            1129,
+            1127
+          ]
+        }
+      ],
       "strict_candidates": [
         {
           "class": "#classes/projected_positive_noclashing_gap",
@@ -3142,7 +3210,17 @@
       "category": "strict",
       "witness": "#classes/projected_positive_noclashing_gap",
       "reverse_affine_path": null,
-      "unbounded_candidates": [],
+      "unbounded_candidates": [
+        {
+          "class": "#classes/singleton_cosingleton",
+          "larger_value": "$n-1$",
+          "smaller_value": "$3$",
+          "value_ids": [
+            1129,
+            1127
+          ]
+        }
+      ],
       "strict_candidates": [
         {
           "class": "#classes/projected_positive_noclashing_gap",
@@ -3180,7 +3258,17 @@
       "category": "strict",
       "witness": "#classes/projected_positive_noclashing_gap",
       "reverse_affine_path": null,
-      "unbounded_candidates": [],
+      "unbounded_candidates": [
+        {
+          "class": "#classes/singleton_cosingleton",
+          "larger_value": "$n-1$",
+          "smaller_value": "$3$",
+          "value_ids": [
+            1129,
+            1127
+          ]
+        }
+      ],
       "strict_candidates": [
         {
           "class": "#classes/projected_positive_noclashing_gap",
@@ -3221,7 +3309,17 @@
         440
       ],
       "unbounded_candidates": [],
-      "strict_candidates": [],
+      "strict_candidates": [
+        {
+          "class": "#classes/antipodal_six_code",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1149,
+            1145
+          ]
+        }
+      ],
       "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
     },
     {

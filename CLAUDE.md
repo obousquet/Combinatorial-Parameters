@@ -38,6 +38,10 @@ parameters, assigned values, and bibliography entries.
 - The Hasse-like graph is deliberately conservative: only compatible linear
   relationship types are used to reduce the hierarchy. Nonlinear bounds and
   variant-specific relationships remain visible overlays.
+- For an unlabeled compression claim, the decoder must take only the retained
+  coordinate set: neither the omitted labels nor the original sample may affect
+  its output. Replay all samples sharing a key against that one output. A
+  labeled retain-all or cyclic-sign construction is not an unlabeled proof.
 
 ## Local preview and deployment
 
@@ -157,6 +161,10 @@ python3 sync/verify_projected_nctd_compression_gap.py
 
 # Hollow-star/proper-compression bounds and Three-Code correction regression.
 python3 sync/verify_proper_compression_covc.py
+
+# Unlabeled singleton decoders: improper size one, proper size two for n>=3.
+# Reject omitted-sign access and exhaust all 81 proper size-one maps at n=3.
+python3 sync/verify_singleton_unlabeled_compression.py
 
 # Direct enumeration behind the repetition-free teaching separation value.
 python3 sync/verify_repetitionfree_teaching.py

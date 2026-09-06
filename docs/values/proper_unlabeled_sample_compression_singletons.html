@@ -71,12 +71,12 @@
         <p><strong>Name: </strong>Proper Unlabeled Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For a domain with at least two points.</p>
+<p><strong>Details: </strong>For $n\ge3$. The exceptional values are zero for $n=1$ and one for $n=2$. Corrects the former size-one claim, whose decoder used untransmitted labels.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The cyclic-boundary size-one unlabeled scheme always reconstructs a singleton in the class.  It is therefore proper, and the ordinary unlabeled lower bound of one applies.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Identify a reconstructed singleton with its index in $[n]$. For $n\ge2$, define $\rho(\varnothing)=1$, $\rho(\{1\})=2$, $\rho(\{i\})=i$ for $i\ge2$, and $\rho(\{1,i\})=i+1$ for $2\le i<n$; send any other unused key to 1. A sample with its positive point at 1 retains nothing; one with positive point $i\ge2$ retains $\{i\}$. An all-negative sample has a proper domain $A\subsetneq[n]$; let $r=\min([n]\setminus A)$. Retain nothing if $r=1$, retain $\{1\}$ if $r=2$, and retain $\{1,r-1\}$ if $r\ge3$. These retained coordinates belong to $A$ by minimality of $r$, and the decoder returns the missing singleton $r$. This proves the proper upper bound two, without labels or messages. For the lower bound, suppose a proper size-one decoder exists and put $a=\rho(\varnothing)$. The one-point positive sample at every $i\ne a$ forces $\rho(\{i\})=i$. Write $b=\rho(\{a\})$, defining unused outputs arbitrarily in the class. If $n\ge3$, choose $v\notin\{a,b\}$. The all-negative sample on $[n]\setminus\{v\}$ is realizable only by singleton $v$, but neither its empty key nor any of its singleton keys decodes to $v$, a contradiction. For $n=2$, the displayed upper scheme uses only keys of size at most one, and two distinct concepts rule out size zero. For $n=1$, always reconstruct the sole concept. The exact verifier $\texttt{sync/verify\_singleton\_unlabeled\_compression.py}$ replays the upper schemes and independently rejects all 81 proper size-one decoder maps on the three-singleton class.</p></div>
+
 
         </div>
     </div>

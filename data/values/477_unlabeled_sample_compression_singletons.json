@@ -6,8 +6,8 @@
   "parameter_id": "#parameters/unlabeled_sample_compression",
   "value": "$1$",
   "value_class": "omega_1",
-  "details": "For a domain with at least two points.",
+  "details": "For $n\\ge2$; the value is zero for $n=1$. The decoder is allowed to be improper.",
   "status": "established",
-  "proof": "Fix a cyclic successor map.  If a realizable sample has a positive instance, retain it and reconstruct that singleton.  If it is all-negative, its instance set is a proper subset of the domain; retain a point whose successor lies outside that set and reconstruct the successor singleton.  This is consistent.  Size zero cannot distinguish two distinct singleton targets.",
-  "references": "\\cite{palvolgyi2021unlabeled}"
+  "proof": "Decode the empty key as the all-zero word, and a singleton key $\\{i\\}$ as the singleton concept $\\{i\\}$. Retain the unique positive coordinate if the sample has one, and retain nothing otherwise. The reconstruction is consistent for every realizable sample, including the empty sample, and never reads an omitted label. The empty reconstruction is not a member of the singleton class, so this scheme is improper. Size zero cannot reconstruct both of two distinct full concepts; hence the value is one for $n\\ge2$. For $n=1$, the sole concept can always be reconstructed without a key. The former cyclic-successor argument incorrectly let an unlabeled decoder distinguish the sign of its retained point; that argument proves a labeled, not an unlabeled, upper bound. Exact replay: $\\texttt{sync/verify\\_singleton\\_unlabeled\\_compression.py}$.",
+  "references": ""
 }

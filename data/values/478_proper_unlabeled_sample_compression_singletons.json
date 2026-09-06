@@ -4,10 +4,10 @@
   "short_name": "proper_unlabeled_sample_compression_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/proper_unlabeled_sample_compression",
-  "value": "$1$",
+  "value": "$2$",
   "value_class": "omega_1",
-  "details": "For a domain with at least two points.",
+  "details": "For $n\\ge3$. The exceptional values are zero for $n=1$ and one for $n=2$. Corrects the former size-one claim, whose decoder used untransmitted labels.",
   "status": "established",
-  "proof": "The cyclic-boundary size-one unlabeled scheme always reconstructs a singleton in the class.  It is therefore proper, and the ordinary unlabeled lower bound of one applies.",
-  "references": "\\cite{palvolgyi2021unlabeled}"
+  "proof": "Identify a reconstructed singleton with its index in $[n]$. For $n\\ge2$, define $\\rho(\\varnothing)=1$, $\\rho(\\{1\\})=2$, $\\rho(\\{i\\})=i$ for $i\\ge2$, and $\\rho(\\{1,i\\})=i+1$ for $2\\le i<n$; send any other unused key to 1. A sample with its positive point at 1 retains nothing; one with positive point $i\\ge2$ retains $\\{i\\}$. An all-negative sample has a proper domain $A\\subsetneq[n]$; let $r=\\min([n]\\setminus A)$. Retain nothing if $r=1$, retain $\\{1\\}$ if $r=2$, and retain $\\{1,r-1\\}$ if $r\\ge3$. These retained coordinates belong to $A$ by minimality of $r$, and the decoder returns the missing singleton $r$. This proves the proper upper bound two, without labels or messages. For the lower bound, suppose a proper size-one decoder exists and put $a=\\rho(\\varnothing)$. The one-point positive sample at every $i\\ne a$ forces $\\rho(\\{i\\})=i$. Write $b=\\rho(\\{a\\})$, defining unused outputs arbitrarily in the class. If $n\\ge3$, choose $v\\notin\\{a,b\\}$. The all-negative sample on $[n]\\setminus\\{v\\}$ is realizable only by singleton $v$, but neither its empty key nor any of its singleton keys decodes to $v$, a contradiction. For $n=2$, the displayed upper scheme uses only keys of size at most one, and two distinct concepts rule out size zero. For $n=1$, always reconstruct the sole concept. The exact verifier $\\texttt{sync/verify\\_singleton\\_unlabeled\\_compression.py}$ replays the upper schemes and independently rejects all 81 proper size-one decoder maps on the three-singleton class.",
+  "references": ""
 }
