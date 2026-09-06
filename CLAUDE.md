@@ -155,6 +155,10 @@ python3 sync/verify_proper_compression_covc.py
 # Direct enumeration behind the repetition-free teaching separation value.
 python3 sync/verify_repetitionfree_teaching.py
 
+# Exact message-free labeled compression value on Warmuth's C5 class.
+# Solver-free lower enumeration and full partial-sample upper replay.
+python3 sync/verify_c5_labeled_compression.py
+
 # Independently replay all projected-teaching plans for the finite OSC > RTD^p witness.
 python3 sync/verify_chen_neighbor_puncture.py --data-dir data \
   --check-certificate sync/chen_neighbor_puncture_certificate.json.gz

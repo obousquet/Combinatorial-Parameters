@@ -18247,6 +18247,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1138" style="position:relative;">
+        
+        <h3><a href="values/labeled_sample_compression_warmuth_c5.html" class="table-title-link">Labeled Sample Compression of Warmuth's C5 Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Labeled Sample Compression of Warmuth's C5 Class</p>
+<p><strong>Class: </strong><a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>Exact finite computation with an exhaustive, solver-free lower-bound checker and an independently replayed two-example decoder. No stability or properness is asserted for the upper decoder.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the upper bound, for each realizable labeled key $U$ of size at most two let $V_U$ be all members of $C_5$ extending $U$. Decode by coordinatewise majority in $V_U$, breaking ties as one exactly when the key consists of two positive examples, and as zero otherwise. Every one of the 176 realizable partial samples has a subset key whose reconstruction extends the entire sample; the encoder chooses the first such key in a fixed order. The checker verifies all 51 keys and all 176 samples, both with bit masks and with literal sets. The empty key decodes the all-zero function, which is allowed to be improper. For the lower bound, there are eleven possible empty or singleton labeled keys. Each of the ten full concepts needs a key contained in it that decodes exactly that concept; those ten keys must be distinct. Exhaust all injections of concepts into their available keys. On a partial assignment, reject a branch only if some sample has neither a consistent assigned key nor any unassigned available key. Such rejection is sound regardless of later outputs. Once all ten concepts are assigned, exactly one key remains: try each of its 32 binary total outputs and test coverage of every sample. This exhaustive search visits 39811 states, prunes 17773 immediately impossible states and rejects all 5848 remaining complete injections. It therefore excludes every width-one decoder, including improper ones. The independently replayable standard-library program is sync/verify_c5_labeled_compression.py; it also accepts the known width-one full two-cube scheme as a positive control and rejects a corrupted upper table. Together the two bounds give LSC equal to two.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite verification in sync/verify_c5_labeled_compression.py; no external theorem or solver UNSAT status is used as the lower-bound proof.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>
