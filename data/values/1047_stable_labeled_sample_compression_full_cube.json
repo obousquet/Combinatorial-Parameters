@@ -4,9 +4,9 @@
   "short_name": "stable_labeled_sample_compression_full_cube",
   "class_id": "#classes/full_cube",
   "parameter_id": "#parameters/stable_labeled_sample_compression",
-  "value": "$n$",
+  "value": "$\\lceil n/2\\rceil$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "A labeled compression scheme for the full n-cube has size at least n because it dominates VC dimension n. Retaining every point of a sample is a stable labeled scheme of size n: deleting a point from the sample merely deletes that point from the retained subsample, and the retained labels reconstruct the sample exactly. Thus the optimum is n.",
-  "references": "\\cite{FW1995}"
+  "proof": "The database-owned proper stable labeled full-cube value proof gives an explicit stable scheme of width $\\lceil n/2\\rceil$, so the same upper bound holds without imposing properness. The stable-compression theorem gives the lower bound by projected NCTD, which is $\\lceil n/2\\rceil$ on the full cube. Thus equality holds. The former assertion that labeled compression dominates VC without a constant was invalid; that exact lower bound applies to the unlabeled model.",
+  "references": "The explicit block certificate in the proper stable labeled full-cube value proof; survey theorem thm:stable-comp-low-NCTD-star and \\cite{KSZ2019}."
 }

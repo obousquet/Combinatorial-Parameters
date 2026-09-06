@@ -95,15 +95,15 @@ def unbounded_verified(
     return a < b if reverse else a > b
 
 
-def elementary_growth_degree(value: str | None) -> int | None:
-    """Recognize only exact constants and a small whitelist of Theta(n) formulas.
+def elementary_growth_scale(value: str | None) -> tuple[int, str | None] | None:
+    """Recognize exact constants and positive affine n/t formulas, with variable.
 
     Growth-class metadata records lower bounds, not necessarily matching upper
     bounds. It therefore cannot by itself refute a ratio separation. In
     contrast these exact formulas can. Unsupported expressions stay unknown.
     """
     if literal_rational(value) is not None:
-        return 0
+        return 0, None
     if not value:
         return None
     expression = re.sub(r"\s+", "", value.strip().strip("$"))
@@ -111,13 +111,18 @@ def elementary_growth_degree(value: str | None) -> int | None:
         if expression.startswith(opening) and expression.endswith(closing):
             expression = expression[len(opening):-len(closing)]
             break
-    if re.fullmatch(r"n(?:[+-]\d+)?", expression):
-        return 1
-    quotient = re.fullmatch(r"n/([1-9]\d*)", expression)
-    fraction = re.fullmatch(r"\\(?:tfrac|frac)\{n\}\{([1-9]\d*)\}", expression)
-    if quotient or fraction:
-        return 1
+    affine = re.fullmatch(r"(?:[1-9]\d*)?([nt])(?:[+-]\d+)?", expression)
+    quotient = re.fullmatch(r"([nt])/([1-9]\d*)", expression)
+    fraction = re.fullmatch(r"\\(?:tfrac|frac)\{([nt])\}\{([1-9]\d*)\}", expression)
+    match = affine or quotient or fraction
+    if match:
+        return 1, match.group(1)
     return None
+
+
+def elementary_growth_degree(value: str | None) -> int | None:
+    scale = elementary_growth_scale(value)
+    return scale[0] if scale is not None else None
 
 
 def bounded_ratio_contradiction(relationship: Record, left: Record | None,
@@ -125,10 +130,14 @@ def bounded_ratio_contradiction(relationship: Record, left: Record | None,
     """True means this named family cannot refute a reverse affine bound."""
     if not left or not right:
         return False
-    a = elementary_growth_degree(left.get("value"))
-    b = elementary_growth_degree(right.get("value"))
-    if a is None or b is None:
+    left_scale = elementary_growth_scale(left.get("value"))
+    right_scale = elementary_growth_scale(right.get("value"))
+    if left_scale is None or right_scale is None:
         return False
+    a, left_variable = left_scale
+    b, right_variable = right_scale
+    if a and b and left_variable != right_variable:
+        return False  # No relation between independent growth variables is known.
     reverse = (relationship.get("status") == "refuted") != (
         relationship.get("relationship_type") in {"log_upper", "sqrt_upper"}
     )

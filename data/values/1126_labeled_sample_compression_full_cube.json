@@ -1,0 +1,13 @@
+{
+  "id": 1126,
+  "name": "Labeled Sample Compression of Full Cube",
+  "short_name": "labeled_sample_compression_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$\\Theta(n)$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "With $b_n=\\min\\{k\\ge0:\\sum_{i=0}^k2^i\\binom ni\\ge2^n\\}$, $b_n\\le\\mathrm{LSC}(2^{[n]})\\le\\lceil n/2\\rceil$. Exact for $n=1,2,3,4$: $1,1,2,2$.",
+  "proof": "On the full cube all binary reconstruction functions are proper, so LSC equals proper LSC. Apply the counting lower bound and the stable block-construction upper bound proved in the database-owned proper labeled full-cube value proof; its counting estimate also proves linear order. Stability is not assumed for this lower bound; the exact stable value must not be substituted for the ordinary value without a proof.",
+  "references": "Database-owned proper labeled full-cube value proof."
+}

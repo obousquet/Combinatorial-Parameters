@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-444" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1126" style="position:relative;">
         
-        <h3><a href="relationships/proper_stable_labeled_sample_compression_projected_noclashing_teaching_dimension.html" class="table-title-link">Proper Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</a></h3>
+        <h3><a href="values/labeled_sample_compression_full_cube.html" class="table-title-link">Labeled Sample Compression of Full Cube</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The stable-compression lower bound applies directly; properness and labeled reconstruction are additional restrictions.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
+        <p><strong>Name: </strong>Labeled Sample Compression of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>With $b_n=\min\{k\ge0:\sum_{i=0}^k2^i\binom ni\ge2^n\}$, $b_n\le\mathrm{LSC}(2^{[n]})\le\lceil n/2\rceil$. Exact for $n=1,2,3,4$: $1,1,2,2$.</p>
 <p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the full cube all binary reconstruction functions are proper, so LSC equals proper LSC. Apply the counting lower bound and the stable block-construction upper bound proved in the database-owned proper labeled full-cube value proof; its counting estimate also proves linear order. Stability is not assumed for this lower bound; the exact stable value must not be substituted for the ordinary value without a proof.</p></div>
+<strong>References:</strong><div class="text-field"><p>Database-owned proper labeled full-cube value proof.</p></div>
 
         </div>
     </div>

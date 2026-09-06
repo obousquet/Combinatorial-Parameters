@@ -2289,9 +2289,9 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>For finite concept classes; unlabeled stable compression is a restricted form of labeled stable compression.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On the full n-cube, stable unlabeled compression is n and stable labeled compression is $\lceil n/2\rceil$, by the database-owned value proofs. Thus the inequality is strict for $n\ge2$. The ratio is bounded by two; this is not an unbounded-ratio witness. It localizes the full-cube separation of stable unlabeled compression from projected NCTD to this edge, not the stable-labeled/projected-NCTD edge.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -2318,8 +2318,8 @@
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>The pointwise-majority (halving) learner is one particular equivalence-query strategy.</p></div>
 <p><strong>Witness: </strong><a href="classes/majority_gap_products.html">Products of the Majority-Query Separation Class</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the t-fold product C_maj^t, majority-query complexity is 3t whereas Littlestone dimension (and unrestricted equivalence-query complexity) is 2t. The gap is unbounded with t.</p></div>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the t-fold product C_maj^t with $t\ge1$, majority-query complexity is $3t$ whereas Littlestone dimension (and unrestricted equivalence-query complexity) is $2t$, by the database-owned endpoint proofs. This is a strict witness with ratio exactly $3/2$. Its growing additive gap does not refute a reverse affine bound; the former unbounded-strength classification was incorrect.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -9317,9 +9317,9 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>The stable-compression theorem applies unchanged to labeled schemes.</p></div>
-<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the full n-cube, stable labeled compression is n while (\mathrm{NCTD}^{p}=\lceil n/2\rceil), so the inequality is strict for every (n\ge3).</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
 
 
 <p><strong>Status:</strong> Established</p>
@@ -9373,9 +9373,9 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>The stable-compression lower bound applies directly; properness and labeled reconstruction are additional restrictions.</p></div>
-<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the full n-cube, proper stable labeled compression is n while (\mathrm{NCTD}^{p}=\lceil n/2\rceil), so the inequality is strict for every (n\ge3).</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
 
 
 <p><strong>Status:</strong> Established</p>
@@ -12772,7 +12772,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
-<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the full cube $2^{[n]}$, $\mathrm{pLSC}=n$, while $\mathrm{Rad}=\lfloor\log_2(2n+2)\rfloor=\Theta(\log n)$.</p></div>
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the full cube $2^{[n]}$, $\mathrm{pLSC}=\Theta(n)$ (bounded between $n/5$ and $\lceil n/2\rceil$), while $\mathrm{Rad}=\lfloor\log_2(2n+2)\rfloor=\Theta(\log n)$.</p></div>
 <strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the singleton class on $[n]$, $\mathrm{Rad}=n$, while $\mathrm{pLSC}=1$.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The full-cube and singleton value calculations yield unbounded gaps in the two opposite directions.</p></div>
@@ -12800,7 +12800,7 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
-<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the full cube $2^{[n]}$, $\mathrm{sLSC}=n$, while $\mathrm{Rad}=\lfloor\log_2(2n+2)\rfloor=\Theta(\log n)$.</p></div>
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For the full cube $2^{[n]}$, $\mathrm{sLSC}=\lceil n/2\rceil$, while $\mathrm{Rad}=\lfloor\log_2(2n+2)\rfloor=\Theta(\log n)$.</p></div>
 <strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the singleton class on $[n]$, $\mathrm{Rad}=n$, while $\mathrm{sLSC}=1$.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The full-cube and singleton value calculations yield unbounded gaps in the two opposite directions.</p></div>

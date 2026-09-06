@@ -10,7 +10,5 @@
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
   "proof_source": "Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.",
   "references": "\\cite{KSZ2019}",
-  "witness": "#classes/full_cube",
-  "witness_strength": "strict",
-  "witness_verification": "For the full n-cube, stable labeled compression is n while \\(\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil\\), so the inequality is strict for every \\(n\\ge3\\)."
+  "witness_review": "The former full-cube strict witness was withdrawn: both endpoint values are exactly $\\lceil n/2\\rceil$. No replacement strict witness is asserted."
 }

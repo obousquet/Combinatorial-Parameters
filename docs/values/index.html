@@ -4701,12 +4701,12 @@
         <p><strong>Name: </strong>Proper Labeled Sample Compression of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$n$</p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>Let $b_n=\min\{k\ge0:\sum_{i=0}^k2^i\binom ni\ge2^n\}$. Then $b_n\le\mathrm{pLSC}(2^{[n]})\le\lceil n/2\rceil$. In particular the exact values for $n=1,2,3,4$ are $1,1,2,2$. No exact general value is asserted here.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Proper unlabeled compression is a restriction of proper labeled compression, so the latter is at least its established full-cube value $n$. The established effective-range upper bound gives $\mathrm{pLSC}\leq\mathrm E$, and the full cube has effective range $n$. Thus $\mathrm{pLSC}=n$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a> <a href="bibliography.html#chalopin2022unlabeled">[chalopin2022unlabeled]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The proper stable labeled full-cube value proof supplies a message-free scheme of width $\lceil n/2\rceil$, hence an upper bound without stability as well. For the lower bound, the $2^n$ full input labelings must have different compressed labeled subsets, because a single decoder output cannot agree with two distinct full labelings. There are exactly $\sum_{i=0}^k2^i\binom ni$ possible retained labeled subsets of size at most $k$, giving $b_n$ as a necessary bound. For $n=1,2,3,4$, it equals $\lceil n/2\rceil$. For all $n$, the estimate $\sum_{i=0}^k2^i\binom ni\le4^k\sum_{i=0}^n2^{-i}\binom ni=4^k(3/2)^n$ gives $k\ge\tfrac n2\log_2(4/3)>n/5$, hence the stated linear order. Since every Boolean hypothesis on this domain belongs to the full cube, ordinary and proper labeled compression are identical on this class. The previous equality to $n$ used the unlabeled/labeled restriction inequality backwards.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct counting above and the block certificate in the proper stable labeled full-cube value proof.</p></div>
 
         </div>
     </div>
@@ -4718,12 +4718,12 @@
         <p><strong>Name: </strong>Proper Stable Labeled Sample Compression of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$n$</p>
+<p><strong>Value: </strong>$\lceil n/2\rceil$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>Exact for every $n\ge1$. The previous value $n$ was incorrect: unlabeled compression is more restrictive than labeled compression, not less restrictive.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Proper stable labeled compression is a restriction of proper labeled compression, whose established full-cube value is $n$. Its established effective-range upper bound gives $\mathrm{psLSC}\leq\mathrm E$, and the full cube has effective range $n$. Hence $\mathrm{psLSC}=n$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a> <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Here is a proper stable width-one scheme on two coordinates. In the following complete table, * means an unobserved coordinate: $$\begin{array}{c|c|c}s&K(s)&\rho(K(s))\\\hline **&**&00\\ 0*&0*&00\\ 1*&1*&11\\ *0&*0&10\\ *1&*1&01\\ 00&0*&00\\ 01&*1&01\\ 10&*0&10\\ 11&1*&11\end{array}$$ Each retained sample is contained in its input, and every decoded word agrees with that input. Deleting an unretained coordinate from a full two-coordinate sample leaves its selected singleton, whose compressed sample and reconstruction are unchanged. Other nonempty inputs select their only coordinate. Thus both compression-map stability and reconstruction stability hold. Partition $[n]$ into fixed disjoint pairs and, if necessary, one singleton. Apply this table independently on each pair; on the singleton retain its label when observed and decode an unobserved singleton as zero. The union of the retained samples has size at most $\lceil n/2\rceil$. The decoder identifies blocks from their fixed coordinate locations; no side message, order or repeated example is transmitted. Consistency and stability hold separately in each block, hence globally. Every resulting binary word belongs to the full cube, so the scheme is proper. Conversely the stable-compression lower bound gives at least projected NCTD, whose full-cube value is $\lceil n/2\rceil$. The two bounds coincide. The table is the sole block-certificate source read by sync/verify_full_cube_labeled_compression.py.</p></div>
+<strong>References:</strong><div class="text-field"><p>Explicit block construction above; the matching lower bound uses the survey theorem thm:stable-comp-low-NCTD-star and the cube NCTD calculation in <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
 
         </div>
     </div>
@@ -13813,12 +13813,12 @@
         <p><strong>Name: </strong>Stable Labeled Sample Compression of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$n$</p>
+<p><strong>Value: </strong>$\lceil n/2\rceil$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>A labeled compression scheme for the full n-cube has size at least n because it dominates VC dimension n. Retaining every point of a sample is a stable labeled scheme of size n: deleting a point from the sample merely deletes that point from the retained subsample, and the retained labels reconstruct the sample exactly. Thus the optimum is n.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The database-owned proper stable labeled full-cube value proof gives an explicit stable scheme of width $\lceil n/2\rceil$, so the same upper bound holds without imposing properness. The stable-compression theorem gives the lower bound by projected NCTD, which is $\lceil n/2\rceil$ on the full cube. Thus equality holds. The former assertion that labeled compression dominates VC without a constant was invalid; that exact lower bound applies to the unlabeled model.</p></div>
+<strong>References:</strong><div class="text-field"><p>The explicit block certificate in the proper stable labeled full-cube value proof; survey theorem thm:stable-comp-low-NCTD-star and <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
 
         </div>
     </div>
@@ -18039,6 +18039,23 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The VC value proof for this class supplies a projection equal to the full $k_p$-cube. For a no-clashing teacher on a $k$-cube, each of its $k2^{k-1}$ edges must have the coordinate on which its endpoints differ selected by at least one endpoint's teacher. The sum of teacher sizes is at most $2^k$ times the maximum teacher size. Counting these edge incidences gives maximum size at least $\lceil k/2\rceil$. Apply this to the shattered projection. For the upper bound, NCTD is at most RTD on every projection: in a recursive teaching order, the earlier of two concepts receives a sample inconsistent with the later one. The preceding projected RTD value proof therefore bounds projected NCTD by $\lfloor\log_2p\rfloor$. Since $k_p=\tfrac12\log_2p-O(\log_2\log_2p)$, both bounds have logarithmic order.</p></div>
 <strong>References:</strong><div class="text-field"><p>Derived from \cite[Theorem 13]{simon2023tournaments} and the cube edge-counting argument for no-clashing teaching; see also <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1126" style="position:relative;">
+        
+        <h3><a href="values/labeled_sample_compression_full_cube.html" class="table-title-link">Labeled Sample Compression of Full Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Labeled Sample Compression of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>With $b_n=\min\{k\ge0:\sum_{i=0}^k2^i\binom ni\ge2^n\}$, $b_n\le\mathrm{LSC}(2^{[n]})\le\lceil n/2\rceil$. Exact for $n=1,2,3,4$: $1,1,2,2$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the full cube all binary reconstruction functions are proper, so LSC equals proper LSC. Apply the counting lower bound and the stable block-construction upper bound proved in the database-owned proper labeled full-cube value proof; its counting estimate also proves linear order. Stability is not assumed for this lower bound; the exact stable value must not be substituted for the ordinary value without a proof.</p></div>
+<strong>References:</strong><div class="text-field"><p>Database-owned proper labeled full-cube value proof.</p></div>
 
         </div>
     </div>

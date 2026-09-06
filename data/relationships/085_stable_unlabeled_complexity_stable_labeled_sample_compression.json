@@ -7,6 +7,9 @@
   "details": "For finite concept classes; unlabeled stable compression is a restricted form of labeled stable compression.",
   "proof": "Forgetting labels from a compression set is an additional restriction. Thus every stable unlabeled scheme is a stable labeled scheme, and the minimum stable-unlabeled size is at least the stable-labeled one.",
   "references": "\\cite{hanneke2021stable,bousquet2020proper}",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "On the full n-cube, stable unlabeled compression is n and stable labeled compression is $\\lceil n/2\\rceil$, by the database-owned value proofs. Thus the inequality is strict for $n\\ge2$. The ratio is bounded by two; this is not an unbounded-ratio witness. It localizes the full-cube separation of stable unlabeled compression from projected NCTD to this edge, not the stable-labeled/projected-NCTD edge.",
   "short_name": "stable_unlabeled_complexity_stable_labeled_sample_compression",
   "name": "Stable Unlabeled Complexity / Stable Labeled Sample Compression"
 }

@@ -17,6 +17,15 @@ class WitnessRatioTests(unittest.TestCase):
         self.assertFalse(bounded_ratio_contradiction(
             {"relationship_type": "larger"}, {"value": "$n-1$"}, {"value": "$2$"}))
 
+    def test_positive_coefficients_share_the_same_growth_variable(self):
+        for a, b in (("$3t$", "$2t$"), ("$4n+1$", "$n-1$")):
+            self.assertTrue(bounded_ratio_contradiction(
+                {"relationship_type": "larger"}, {"value": a}, {"value": b}))
+
+    def test_independent_variables_are_not_comparable(self):
+        self.assertFalse(bounded_ratio_contradiction(
+            {"relationship_type": "larger"}, {"value": "$3t$"}, {"value": "$2n$"}))
+
     def test_upper_and_refuted_directions(self):
         for relation in ({"relationship_type": "log_upper"},
                          {"relationship_type": "larger", "status": "refuted"}):
@@ -26,7 +35,7 @@ class WitnessRatioTests(unittest.TestCase):
                 relation, {"value": "$n$"}, {"value": "$2$"}))
 
     def test_lower_bounds_and_piecewise_formulas_are_unknown(self):
-        for value in (r"$\Omega(n)$", "$n$ for odd n", "$n/0$", None):
+        for value in (r"$\Omega(n)$", "$n$ for odd n", "$n/0$", "$-3t$", "$0t$", "$nt$", None):
             self.assertIsNone(elementary_growth_degree(value))
 
     def test_prose_does_not_override_a_ratio_contradiction(self):
@@ -40,6 +49,11 @@ class WitnessRatioTests(unittest.TestCase):
                             "witness_verification": "The difference grows without bound."}
             (root / "relationships" / "test.json").write_text(json.dumps(relationship))
             for name, value in (("a", "$n$"), ("b", r"$\lceil n/2\rceil$")):
+                (root / "values" / f"{name}.json").write_text(json.dumps({
+                    "parameter_id": name, "class_id": "cube", "status": "established",
+                    "value": value, "value_class": "omega_n"}))
+            self.assertFalse(audit(root)["unbounded"][0]["verified"])
+            for name, value in (("a", "$3t$"), ("b", "$2t$")):
                 (root / "values" / f"{name}.json").write_text(json.dumps({
                     "parameter_id": name, "class_id": "cube", "status": "established",
                     "value": value, "value_class": "omega_n"}))

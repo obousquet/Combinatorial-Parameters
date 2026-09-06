@@ -4,9 +4,10 @@
   "short_name": "proper_stable_labeled_sample_compression_full_cube",
   "class_id": "#classes/full_cube",
   "parameter_id": "#parameters/proper_stable_labeled_sample_compression",
-  "value": "$n$",
+  "value": "$\\lceil n/2\\rceil$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "Proper stable labeled compression is a restriction of proper labeled compression, whose established full-cube value is $n$. Its established effective-range upper bound gives $\\mathrm{psLSC}\\leq\\mathrm E$, and the full cube has effective range $n$. Hence $\\mathrm{psLSC}=n$.",
-  "references": "\\cite{hanneke2021stable,bousquet2020proper}"
+  "details": "Exact for every $n\\ge1$. The previous value $n$ was incorrect: unlabeled compression is more restrictive than labeled compression, not less restrictive.",
+  "proof": "Here is a proper stable width-one scheme on two coordinates. In the following complete table, * means an unobserved coordinate: $$\\begin{array}{c|c|c}s&K(s)&\\rho(K(s))\\\\\\hline **&**&00\\\\ 0*&0*&00\\\\ 1*&1*&11\\\\ *0&*0&10\\\\ *1&*1&01\\\\ 00&0*&00\\\\ 01&*1&01\\\\ 10&*0&10\\\\ 11&1*&11\\end{array}$$ Each retained sample is contained in its input, and every decoded word agrees with that input. Deleting an unretained coordinate from a full two-coordinate sample leaves its selected singleton, whose compressed sample and reconstruction are unchanged. Other nonempty inputs select their only coordinate. Thus both compression-map stability and reconstruction stability hold. Partition $[n]$ into fixed disjoint pairs and, if necessary, one singleton. Apply this table independently on each pair; on the singleton retain its label when observed and decode an unobserved singleton as zero. The union of the retained samples has size at most $\\lceil n/2\\rceil$. The decoder identifies blocks from their fixed coordinate locations; no side message, order or repeated example is transmitted. Consistency and stability hold separately in each block, hence globally. Every resulting binary word belongs to the full cube, so the scheme is proper. Conversely the stable-compression lower bound gives at least projected NCTD, whose full-cube value is $\\lceil n/2\\rceil$. The two bounds coincide. The table is the sole block-certificate source read by sync/verify_full_cube_labeled_compression.py.",
+  "references": "Explicit block construction above; the matching lower bound uses the survey theorem thm:stable-comp-low-NCTD-star and the cube NCTD calculation in \\cite{KSZ2019}."
 }

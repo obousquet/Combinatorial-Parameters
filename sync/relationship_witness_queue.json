@@ -1074,11 +1074,31 @@
     {
       "id": 85,
       "short_name": "stable_unlabeled_complexity_stable_labeled_sample_compression",
-      "category": "missing",
-      "witness": null,
+      "category": "strict",
+      "witness": "#classes/full_cube",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
+      "review": "Check endpoint proofs and scope before promoting any candidate."
+    },
+    {
+      "id": 86,
+      "short_name": "majority_complexity_littlestone_dimension",
+      "category": "strict",
+      "witness": "#classes/majority_gap_products",
+      "reverse_affine_path": null,
+      "unbounded_candidates": [],
+      "strict_candidates": [
+        {
+          "class": "#classes/majority_gap",
+          "larger_value": "$3$",
+          "smaller_value": "$2$",
+          "value_ids": [
+            980,
+            979
+          ]
+        }
+      ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
@@ -1293,8 +1313,8 @@
     {
       "id": 117,
       "short_name": "order_sample_compression_monotone_recursive_teaching_dimension",
-      "category": "missing",
-      "witness": null,
+      "category": "strict",
+      "witness": "#classes/chen_neighbor_puncture",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
@@ -1304,7 +1324,7 @@
       "id": 118,
       "short_name": "monotone_recursive_teaching_dimension_vc_dimension",
       "category": "strict",
-      "witness": "#classes/warmuth_c5",
+      "witness": "#classes/chen_teaching_products",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
@@ -2815,26 +2835,6 @@
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
-      "id": 439,
-      "short_name": "projected_noclashing_teaching_dimension_noclashing_teaching_dimension",
-      "category": "strict",
-      "witness": "#classes/projected_noclashing_teaching_gap",
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [
-        {
-          "class": "#classes/projected_noclashing_teaching_gap",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            1051,
-            1050
-          ]
-        }
-      ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
       "id": 440,
       "short_name": "projected_noclashing_teaching_dimension_vc_dimension_affine",
       "category": "missing",
@@ -2857,8 +2857,8 @@
     {
       "id": 442,
       "short_name": "stable_labeled_sample_compression_projected_noclashing_teaching_dimension",
-      "category": "strict",
-      "witness": "#classes/full_cube",
+      "category": "missing",
+      "witness": null,
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
@@ -2877,8 +2877,8 @@
     {
       "id": 444,
       "short_name": "proper_stable_labeled_sample_compression_projected_noclashing_teaching_dimension",
-      "category": "strict",
-      "witness": "#classes/full_cube",
+      "category": "missing",
+      "witness": null,
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [],
@@ -3230,7 +3230,17 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
-      "unbounded_candidates": [],
+      "unbounded_candidates": [
+        {
+          "class": "#classes/quadratic_residue_tournament_classes",
+          "larger_value": "$\\Theta(\\log_2 p)$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            1123,
+            1072
+          ]
+        }
+      ],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },

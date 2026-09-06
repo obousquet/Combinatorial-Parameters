@@ -115,6 +115,10 @@ python3 sync/verify_positive_projection_collapse.py
 python3 sync/audit_benchmark_consistency.py \
   --data-dir data --fail-on-contradiction
 
+# Replay the DB-owned stable labeled full-cube scheme on every partial sample
+# through eight coordinates; reject the old symbolic values and strict witnesses.
+python3 sync/verify_full_cube_labeled_compression.py
+
 # Finds direct strict/unbounded witness edges which a transitive reduction
 # would otherwise hide behind a witnessless path.  The graph preserves those
 # as overlays.  Add --check-witness-bypasses to make unresolved localization

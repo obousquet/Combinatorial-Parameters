@@ -4,9 +4,10 @@
   "short_name": "proper_labeled_sample_compression_full_cube",
   "class_id": "#classes/full_cube",
   "parameter_id": "#parameters/proper_labeled_sample_compression",
-  "value": "$n$",
+  "value": "$\\Theta(n)$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "Proper unlabeled compression is a restriction of proper labeled compression, so the latter is at least its established full-cube value $n$. The established effective-range upper bound gives $\\mathrm{pLSC}\\leq\\mathrm E$, and the full cube has effective range $n$. Thus $\\mathrm{pLSC}=n$.",
-  "references": "\\cite{bousquet2020proper,chalopin2022unlabeled}"
+  "details": "Let $b_n=\\min\\{k\\ge0:\\sum_{i=0}^k2^i\\binom ni\\ge2^n\\}$. Then $b_n\\le\\mathrm{pLSC}(2^{[n]})\\le\\lceil n/2\\rceil$. In particular the exact values for $n=1,2,3,4$ are $1,1,2,2$. No exact general value is asserted here.",
+  "proof": "The proper stable labeled full-cube value proof supplies a message-free scheme of width $\\lceil n/2\\rceil$, hence an upper bound without stability as well. For the lower bound, the $2^n$ full input labelings must have different compressed labeled subsets, because a single decoder output cannot agree with two distinct full labelings. There are exactly $\\sum_{i=0}^k2^i\\binom ni$ possible retained labeled subsets of size at most $k$, giving $b_n$ as a necessary bound. For $n=1,2,3,4$, it equals $\\lceil n/2\\rceil$. For all $n$, the estimate $\\sum_{i=0}^k2^i\\binom ni\\le4^k\\sum_{i=0}^n2^{-i}\\binom ni=4^k(3/2)^n$ gives $k\\ge\\tfrac n2\\log_2(4/3)>n/5$, hence the stated linear order. Since every Boolean hypothesis on this domain belongs to the full cube, ordinary and proper labeled compression are identical on this class. The previous equality to $n$ used the unlabeled/labeled restriction inequality backwards.",
+  "references": "Direct counting above and the block certificate in the proper stable labeled full-cube value proof."
 }
