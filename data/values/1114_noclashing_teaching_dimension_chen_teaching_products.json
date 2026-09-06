@@ -1,0 +1,13 @@
+{
+  "id": 1114,
+  "name": "No-Clashing Teaching Dimension of Chen–Cheng–Tang Teaching Products",
+  "short_name": "noclashing_teaching_dimension_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$\\le3n$",
+  "value_class": "omega_n",
+  "details": "For every integer $n\\ge1$, the full proved bounds are $\\lceil6n/5\\rceil\\le\\mathrm{NCTD}(\\mathcal C^{\\mathrm{CCT}}_n)\\le3n$, not an exact value. At $n=1$ the ordinary no-clashing teaching dimension is either two or three; an unrestricted width-two search timed out and does not decide which. No width-three bound for projected NCTD is asserted.",
+  "status": "established",
+  "proof": "Index the nine seed words as in the class definition. Assign them the coordinate sets $$\\begin{gathered}S_1=\\{2,7,12\\},\\quad S_2=\\{1,2,4\\},\\quad S_3=\\{2,5,7\\},\\\\ S_4=\\{1,2,3\\},\\quad S_5=\\{4,5,9\\},\\quad S_6=\\{4,7,8\\},\\\\ S_7=\\{2,4\\},\\quad S_8=\\{3,7\\},\\quad S_9=\\{1,5,9\\}.\\end{gathered}$$ Label each selected coordinate by its target's label and rotate both target and coordinate set by the same cyclic permutation. This is well-defined: the first eight target orbits have length twelve and $S_9$ is invariant under rotation by four. The resulting 100 samples have size at most three. For each of the 4950 distinct target pairs, their disagreement coordinates meet at least one of the two assigned coordinate sets; sync/verify_cct_noclash.py checks this directly from the definition and these nine sets. Thus no pair clashes. On a product target, take the union of its block samples. Two distinct product targets differ in some block, and the base teacher separates them in that block; hence width at most $3n$. For the lower bound, use the independently established average-degree value $12n/5$ for this family. Every one-inclusion edge requires its differing coordinate to be selected at one endpoint. Each target-coordinate selection covers at most one such edge, so total teaching size is at least the number of edges. The maximum teaching size is therefore at least $6n/5$, and integrality gives the displayed ceiling.",
+  "references": "Explicit computer-assisted construction and independent pairwise replay in sync/verify_cct_noclash.py. The class is from \\cite{chen2016recursive}, Figure 4; the no-clashing map and its product bound are local verified calculations, not claims made by that paper."
+}

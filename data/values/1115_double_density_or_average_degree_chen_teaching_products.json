@@ -1,0 +1,13 @@
+{
+  "id": 1115,
+  "name": "Double Density or Average Degree of Chen–Cheng–Tang Teaching Products",
+  "short_name": "double_density_or_average_degree_chen_teaching_products",
+  "class_id": "#classes/chen_teaching_products",
+  "parameter_id": "#parameters/double_density_or_average_degree",
+  "value": "$12n/5$",
+  "value_class": "omega_n",
+  "details": "For every integer $n\\ge1$. This is the average degree of the whole one-inclusion graph, not the maximum over induced subgraphs or coordinate projections.",
+  "status": "established",
+  "proof": "Direct enumeration of unordered base concept pairs counts exactly 120 pairs at Hamming distance one, on 100 vertices. Two product concepts are adjacent exactly when one block is an adjacent base pair and all other blocks agree. The product therefore has $120n\\,100^{n-1}$ edges and $100^n$ vertices. Its average degree is twice their ratio, namely $12n/5$.",
+  "references": "Definition-driven edge count in sync/verify_cct_noclash.py; the base class is Figure 4 of \\cite{chen2016recursive}."
+}
