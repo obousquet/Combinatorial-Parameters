@@ -80,21 +80,42 @@ def check_withdrawn_witness(relation: dict) -> None:
             relation["id"], "the full-cube endpoint values are equal")
 
 
+def minority_encode(mask: int, y: int) -> tuple[int, int]:
+    """Published four-case encoder; the DB proof owns its specification."""
+    negative = mask ^ y
+    if not y:
+        return 0, 0
+    if not negative:
+        first = y & -y
+        return first, first
+    if y.bit_count() == 1:
+        return y | (negative & -negative), y
+    if negative.bit_count() <= y.bit_count():
+        return negative, 0
+    return y, y
+
+
+def minority_decode(n: int, mask: int, y: int) -> int:
+    full = (1 << n) - 1
+    if not mask:
+        return 0
+    if mask == y and mask.bit_count() == 1:
+        return full
+    if y and mask != y:
+        assert mask.bit_count() == 2 and y.bit_count() == 1
+        return y
+    return y if y else full ^ mask
+
+
 def five_block_table() -> dict[tuple[int, int], int]:
-    proof = record(ROOT / 'data/values/743_proper_labeled_sample_compression_full_cube.json')['proof']
-    rows = re.findall(r'(\d+)\s*&\s*([\d,]+)', proof)
-    assert len(rows) == 16
-    decoder = {}
-    for raw_mask, raw_outputs in rows:
-        mask = int(raw_mask)
-        labels = [y for y in range(32) if y & mask == y]
-        outputs = list(map(int, raw_outputs.split(',')))
-        assert mask.bit_count() <= 2 and len(outputs) == len(labels)
-        for y, output in zip(labels, outputs):
-            assert (mask, y) not in decoder and 0 <= output < 32
-            assert output & mask == y
-            decoder[mask, y] = output
+    value = record(ROOT / 'data/values/743_proper_labeled_sample_compression_full_cube.json')
+    assert 'darnstadt2016order' in value['references']
+    assert 'four-case' in value['proof']
+    decoder = {(m, y): minority_decode(5, m, y)
+               for m in range(32) if m.bit_count() <= 2
+               for y in range(32) if y & m == y}
     assert len(decoder) == 51
+    assert all(w & m == y for (m, y), w in decoder.items())
     return decoder
 
 
@@ -107,7 +128,8 @@ def five_block_check() -> None:
         options = [key for key, output in decoder.items()
                    if key[0] & mask == key[0] and y & key[0] == key[1] and output & mask == y]
         assert options, (mask, y)
-        encoded[mask, y] = min(options)
+        encoded[mask, y] = minority_encode(mask, y)
+        assert encoded[mask, y] in options
         # Independent set-of-literals representation of all availability tests.
         literals = literal((mask, y))
         assert any(literal(key) <= literals and all((output >> x) & 1 == label for x, label in literals)
@@ -132,6 +154,16 @@ def five_block_check() -> None:
                 if decoder[encoded[smaller]] != decoder[key]:
                     instability.append((s, key, smaller))
     assert instability
+    general_cases = 0
+    for n in range(4, 9):
+        for sample in product('*01', repeat=n):
+            mask = sum(1 << x for x, s in enumerate(sample) if s != '*')
+            y = sum(1 << x for x, s in enumerate(sample) if s == '1')
+            m, labels = minority_encode(mask, y)
+            output = minority_decode(n, m, labels)
+            assert m & mask == m and labels == y & m
+            assert m.bit_count() <= n // 2 and output & mask == y
+            general_cases += 1
     for n in (1, 2, 3, 4, 5, 7):
         lower = next(k for k in range(n + 1) if sum(2**i * comb(n, i) for i in range(k + 1)) >= 2**n)
         upper = 2 * (n // 5) + (n % 5 + 1) // 2
@@ -147,7 +179,8 @@ def five_block_check() -> None:
         assert relation['witness'] == '#classes/full_cube'
         assert relation['witness_strength'] == 'strict', 'linear-order endpoints are not a ratio separation'
     print(f'Passed 243 five-cube samples and {products} two-block product samples; '
-          f'non-stability control {instability[0]}; six exact counting matches.')
+          f'{general_cases} four-case samples; non-stability control {instability[0]}; '
+          'six exact counting matches.')
 
 
 def main() -> None:

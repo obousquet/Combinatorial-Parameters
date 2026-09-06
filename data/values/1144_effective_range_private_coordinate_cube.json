@@ -1,0 +1,11 @@
+{
+  "id": 1144,
+  "name": "Effective Range of Private-Coordinate Cubes",
+  "short_name": "effective_range_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$n+2^n$",
+  "status": "established",
+  "proof": "Every original coordinate varies because all binary words occur. Every private coordinate $p_v$ is one on $h_v$ and zero on any different concept, which exists for $n\\ge1$. Thus all $n+2^n$ coordinates belong to the effective range.",
+  "references": "Direct count of varying coordinates from the database-owned class definition."
+}

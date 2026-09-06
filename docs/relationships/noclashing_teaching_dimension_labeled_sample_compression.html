@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,20 +63,31 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
-    <div class="table-card" id="math-1126" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-514" style="position:relative;">
         
-        <h3><a href="values/labeled_sample_compression_full_cube.html" class="table-title-link">Labeled Sample Compression of Full Cube</a></h3>
+        <h3><a href="relationships/noclashing_teaching_dimension_labeled_sample_compression.html" class="table-title-link">No-Clashing Teaching Dimension / Labeled Sample Compression</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Labeled Sample Compression of Full Cube</p>
-<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$\Theta(n)$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-<p><strong>Details: </strong>Let $b_n=\min\{k\ge0:\sum_{i=0}^k2^i\binom ni\ge2^n\}$. Writing $n=5q+r$ with $0\le r<5$, we have $b_n\le\mathrm{LSC}(2^{[n]})\le2q+\lceil r/2\rceil$. Exact for $n=1,2,3,4,5$: $1,1,2,2,2$; also exact at $n=7$, with value three. No exact general formula is asserted.</p>
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On a full cube all binary reconstruction functions are proper, so LSC equals proper LSC. The database-owned proper labeled full-cube value proof gives the five-coordinate width-two decoder, its fixed-block extension of size $2\lfloor n/5\rfloor+\lceil(n\bmod5)/2\rceil$, and the counting lower bound. It establishes the stated exact small values and linear asymptotic order. The ordinary value on five coordinates is two, strictly smaller than stable labeled compression and NCTD, which are three. The ordinary and stable values must not be identified.</p></div>
-<strong>References:</strong><div class="text-field"><p>Database-owned proper labeled full-cube value proof; <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Example 2 and Lemma 12 in the cached August 2014 preprint.</p></div>
+        <p><strong>Name: </strong>No-Clashing Teaching Dimension / Labeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Ordinary NCTD cannot bound labeled sample compression by any finite-valued function. On the private-coordinate cube, NCTD is one while LSC equals the compression number of the full n-cube and is greater than n/5. This does not refute a bound in projected NCTD, which is $\lceil n/2\rceil$ on this family. The reverse exact inequality is separately refuted by full cubes, but that witness only proves a bounded-ratio strict gap; a two-sided unbounded incomparability is not asserted.</p></div>
+<p><strong>Witness: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On this family with n tending to infinity, NCTD is exactly one and LSC &gt; n/5, by established endpoint value proofs. Thus LSC/(1+NCTD) diverges. The inequality is refuted, so the larger endpoint is parameter 2. No converse unbounded separation is claimed.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full separation argument in the survey, cor:private-coordinate-compression-gap; endpoint proofs are database-owned.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Proposition 28(1). The database gives an explicit private-coordinate family and a direct compression identity.</p></div>
 
         </div>
     </div>

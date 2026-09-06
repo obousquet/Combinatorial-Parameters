@@ -1,0 +1,11 @@
+{
+  "id": 1143,
+  "name": "Size of Private-Coordinate Cubes",
+  "short_name": "size_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/size",
+  "value": "$2^n$",
+  "status": "established",
+  "proof": "There is one concept $h_v$ for each of the $2^n$ original binary words. They are distinct on the original coordinates, as well as on their private coordinates.",
+  "references": "Direct count from the database-owned class definition."
+}

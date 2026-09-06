@@ -4705,8 +4705,8 @@
 <p><strong>Order:</strong> $\Omega(n)$</p>
 <p><strong>Details: </strong>Let $b_n=\min\{k\ge0:\sum_{i=0}^k2^i\binom ni\ge2^n\}$. Writing $n=5q+r$ with $0\le r<5$, we have $b_n\le\mathrm{pLSC}(2^{[n]})\le2q+\lceil r/2\rceil$. Exact for $n=1,2,3,4,5$: $1,1,2,2,2$; also exact at $n=7$, with value three. No exact general formula is asserted.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On five coordinates indexed by $0,\ldots,4$, represent a labeled key by integer masks $(M,Y)$: $M$ records observed coordinates and $Y$ the coordinates labeled one, so $Y$ is a bitwise submask of $M$. A binary reconstructed word $w$ has bit $x$ equal to its label at coordinate $x$. The following complete decoder table lists the outputs for each $M$ in increasing numerical order of its submasks $Y$: $$\begin{array}{r|l} M&\rho(M,Y)\\\hline 0&0\\1&10,9\\2&8,10\\3&24,1,18,11\\4&10,12\\5&10,1,22,21\\6&1,10,4,15\\8&3,10\\9&16,3,10,29\\10&17,3,8,10\\12&3,7,10,14\\16&8,31\\17&8,5,30,27\\18&8,14,25,23\\20&2,13,26,20\\24&6,8,19,28\end{array}$$ For each of the 243 partial samples $(A,B)$ on these coordinates, at least one of the 51 listed keys satisfies $M\subseteq A$, $Y=B\cap M$ and $\rho(M,Y)\cap A=B$, where intersections and inclusions refer to the encoded sets. Choose the first such key in the table order. These finite conditions are exhaustively replayed, with an independent literal-set check, by sync/verify_full_cube_labeled_compression.py. Thus two examples suffice, with no auxiliary message, order or repetition. Every output belongs to the full cube, so the scheme is proper. One example cannot suffice: eleven empty/singleton labeled keys cannot decode all 32 distinct full inputs. Hence the five-cube value is exactly two. For $n=5q+r$, partition the domain in advance into $q$ blocks of size five and a remainder of size $r<5$. Apply this decoder separately to each five-block, and the database-owned stable two-coordinate block scheme to the remainder. The union of all keys has size at most $2q+\lceil r/2\rceil$. The decoder recovers each block's key by restriction to its fixed domain; no decomposition message is needed. Consistency holds on every block and therefore on the full sample. No stability is asserted for the five-block scheme. For the lower bound, the $2^n$ full inputs need different retained keys, of which there are $\sum_{i=0}^k2^i\binom ni$. This gives $b_n$. It matches the stated upper bound for $n=1,2,3,4,5,7$. For all $n$, $\sum_{i=0}^k2^i\binom ni\le4^k\sum_{i=0}^n2^{-i}\binom ni=4^k(3/2)^n$, so $k\ge(n/2)\log_2(4/3)>n/5$. This proves linear order. Ordinary and proper labeled compression coincide on a full cube because every binary total reconstruction belongs to the class.</p></div>
-<strong>References:</strong><div class="text-field"><p>Explicit decoder and counting proof above; solver-free replay in sync/verify_full_cube_labeled_compression.py. The proper stable labeled full-cube proof owns the remainder's two-coordinate scheme.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Use the four-case scheme of <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Example 2 in the cached August 2014 preprint. On a full cube of dimension $m\ge4$, fix an order of coordinates. (1) If a sample has no positive examples, retain the empty set and reconstruct all zeros. (2) If it has positive examples but no negatives, retain its first positive and reconstruct all ones. (3) If it has exactly one positive and at least one negative, retain that positive and the first negative; reconstruct one only at the retained positive coordinate. (4) Otherwise retain all examples of the minority label, choosing negatives in a tie; reconstruct their label on retained coordinates and the opposite label elsewhere. In case (4), a positive retained set has at least two elements, so it cannot be confused with case (2). A nonempty negative retained set distinguishes case (4) from case (1); a mixed pair identifies case (3). Thus reconstruction depends only on the labeled key, without any auxiliary message, order or repetition. The first three cases use at most two examples, and the last at most $\lfloor m/2\rfloor$, so the width is at most $\lfloor m/2\rfloor$. Every reconstruction belongs to the full cube. In particular the five-cube has width two. One example cannot suffice there: eleven empty/singleton labeled keys cannot decode 32 distinct full inputs. For $n=5q+r$, apply this scheme separately to $q$ fixed five-coordinate blocks and the database-owned stable pair scheme to the remaining $r<5$ coordinates. The decoder recovers each block's key by restriction to its fixed domain. This gives $2q+\lceil r/2\rceil$ without a decomposition message, as in the source's product Corollary 11 and Lemma 12. No stability is asserted for the four-case scheme. For the lower bound, the $2^n$ full inputs need different retained keys, of which there are $\sum_{i=0}^k2^i\binom ni$. This gives $b_n$ and matches the stated upper bound for $n=1,2,3,4,5,7$. For all $n$, $\sum_{i=0}^k2^i\binom ni\le4^k\sum_{i=0}^n2^{-i}\binom ni=4^k(3/2)^n$, so $k\ge(n/2)\log_2(4/3)>n/5$. Ordinary and proper labeled compression coincide on cubes because every binary total reconstruction is a concept. The solver-free checker sync/verify_full_cube_labeled_compression.py replays the four cases and their fixed products.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, cached August 26, 2014 preprint, Example 2 (cube decoder), Corollary 11 (products), Lemma 12 (five-block bound); <a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Proposition 28(2) (comparison with NCTD). Version-specific source locations are recorded in the survey literature packets.</p></div>
 
         </div>
     </div>
@@ -18055,7 +18055,7 @@
 <p><strong>Details: </strong>Let $b_n=\min\{k\ge0:\sum_{i=0}^k2^i\binom ni\ge2^n\}$. Writing $n=5q+r$ with $0\le r<5$, we have $b_n\le\mathrm{LSC}(2^{[n]})\le2q+\lceil r/2\rceil$. Exact for $n=1,2,3,4,5$: $1,1,2,2,2$; also exact at $n=7$, with value three. No exact general formula is asserted.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>On a full cube all binary reconstruction functions are proper, so LSC equals proper LSC. The database-owned proper labeled full-cube value proof gives the five-coordinate width-two decoder, its fixed-block extension of size $2\lfloor n/5\rfloor+\lceil(n\bmod5)/2\rceil$, and the counting lower bound. It establishes the stated exact small values and linear asymptotic order. The ordinary value on five coordinates is two, strictly smaller than stable labeled compression and NCTD, which are three. The ordinary and stable values must not be identified.</p></div>
-<strong>References:</strong><div class="text-field"><p>Database-owned proper labeled full-cube value proof.</p></div>
+<strong>References:</strong><div class="text-field"><p>Database-owned proper labeled full-cube value proof; <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Example 2 and Lemma 12 in the cached August 2014 preprint.</p></div>
 
         </div>
     </div>
@@ -18260,6 +18260,108 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>For the upper bound, for each realizable labeled key $U$ of size at most two let $V_U$ be all members of $C_5$ extending $U$. Decode by coordinatewise majority in $V_U$, breaking ties as one exactly when the key consists of two positive examples, and as zero otherwise. Every one of the 176 realizable partial samples has a subset key whose reconstruction extends the entire sample; the encoder chooses the first such key in a fixed order. The checker verifies all 51 keys and all 176 samples, both with bit masks and with literal sets. The empty key decodes the all-zero function, which is allowed to be improper. For the lower bound, there are eleven possible empty or singleton labeled keys. Each of the ten full concepts needs a key contained in it that decodes exactly that concept; those ten keys must be distinct. Exhaust all injections of concepts into their available keys. On a partial assignment, reject a branch only if some sample has neither a consistent assigned key nor any unassigned available key. Such rejection is sound regardless of later outputs. Once all ten concepts are assigned, exactly one key remains: try each of its 32 binary total outputs and test coverage of every sample. This exhaustive search visits 39811 states, prunes 17773 immediately impossible states and rejects all 5848 remaining complete injections. It therefore excludes every width-one decoder, including improper ones. The independently replayable standard-library program is sync/verify_c5_labeled_compression.py; it also accepts the known width-one full two-cube scheme as a positive control and rejects a corrupted upper table. Together the two bounds give LSC equal to two.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct finite verification in sync/verify_c5_labeled_compression.py; no external theorem or solver UNSAT status is used as the lower-bound proof.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1139" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_private_coordinate_cube.html" class="table-title-link">VC Dimension of Private-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of Private-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projection onto the original coordinates is the full $n$-cube, so those coordinates are shattered. The class has $2^n$ distinct concepts, and shattering $d$ coordinates requires at least $2^d$ concepts. Hence VC is exactly $n$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct counting and shattering proof; <a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Proposition 26, records the underlying teaching/VC separation and credits Goldman--Kearns.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1140" style="position:relative;">
+        
+        <h3><a href="values/noclashing_teaching_dimension_private_coordinate_cube.html" class="table-title-link">No-Clashing Teaching Dimension of Private-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>No-Clashing Teaching Dimension of Private-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Give $h_v$ the singleton teacher $\{(p_v,1)\}$. Every other concept labels $p_v$ zero, so these are ordinary teaching sets and in particular form a no-clashing assignment. Width zero is impossible for a class with at least two concepts: two empty teachers would clash. Thus NCTD is exactly one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Proposition 28(1), and the explicit private-positive teaching assignment above.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1141" style="position:relative;">
+        
+        <h3><a href="values/projected_noclashing_teaching_dimension_private_coordinate_cube.html" class="table-title-link">Projected No-Clashing Teaching Dimension of Private-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension of Private-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\lceil n/2\rceil$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Projection onto the original coordinates gives $Q_n$, with NCTD $\lceil n/2\rceil$ by <a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Theorem 19. For the reverse bound consider an arbitrary projection retaining original coordinates $S\subseteq[n]$ and some private coordinates. Each concept with a retained private positive has a unique projected trace; assign it that singleton positive teacher. All other distinct traces have zero on every retained private coordinate and are distinguished by their restrictions to $S$. Use a no-clashing assignment of size at most $\lceil |S|/2\rceil$ for this subfamily of the full cube on $S$ (subclass monotonicity and Theorem 19). Two private-positive traces are separated by their private teachers; a private-positive trace and a zero-private trace are separated by the former's positive teacher; pairs of zero-private traces are separated by the chosen cube assignment. If $S$ is empty there is at most one zero-private trace and its teacher is empty. The width is at most $\max(1,\lceil |S|/2\rceil)\le\lceil n/2\rceil$ for $n\ge1$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct projection calculation above, using the full-cube value in <a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Theorem 19. This refinement is not attributed to Proposition 28. Regression: sync/verify_private_coordinate_cube.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1142" style="position:relative;">
+        
+        <h3><a href="values/labeled_sample_compression_private_coordinate_cube.html" class="table-title-link">Labeled Sample Compression of Private-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Labeled Sample Compression of Private-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>In fact $\mathrm{LSC}(\mathcal P_n)=\mathrm{LSC}(Q_n)$. A compressor for $\mathcal P_n$ restricts to one for its cube projection: feed it samples using only original coordinates, so its retained key also uses only those coordinates, and restrict the reconstruction. Conversely let $(\kappa,\rho)$ be any width-$k$ compressor for $Q_n$, where $k\ge1$ since $n\ge1$. If a realizable sample on $X_n$ contains $(p_v,1)$, retain that singleton and reconstruct $h_v$; realizability makes it consistent with the whole sample. If there is no private positive, compress the original-coordinate subsample using $\kappa$; reconstruct $\rho$ on the original coordinates and zero on every private coordinate. This agrees with every observed private label. The decoder distinguishes a private-positive singleton from a key on the original domain, so there is no auxiliary message, and the width is at most $k$. The second reconstruction may be improper, which is allowed for LSC. The cube value proof gives $n/5<\mathrm{LSC}(Q_n)\le2\lfloor n/5\rfloor+\lceil(n\bmod5)/2\rceil$, establishing the stated asymptotic order.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Proposition 28(1), for the separation. The exact cube-compression identity is proved directly above, not attributed to that proposition. Cube bounds are database-owned in the proper labeled full-cube value proof. Regression: sync/verify_private_coordinate_cube.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1143" style="position:relative;">
+        
+        <h3><a href="values/size_private_coordinate_cube.html" class="table-title-link">Size of Private-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size of Private-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Value: </strong>$2^n$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There is one concept $h_v$ for each of the $2^n$ original binary words. They are distinct on the original coordinates, as well as on their private coordinates.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct count from the database-owned class definition.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1144" style="position:relative;">
+        
+        <h3><a href="values/effective_range_private_coordinate_cube.html" class="table-title-link">Effective Range of Private-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range of Private-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Value: </strong>$n+2^n$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every original coordinate varies because all binary words occur. Every private coordinate $p_v$ is one on $h_v$ and zero on any different concept, which exists for $n\ge1$. Thus all $n+2^n$ coordinates belong to the effective range.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct count of varying coordinates from the database-owned class definition.</p></div>
 
         </div>
     </div>

@@ -9,5 +9,5 @@
   "status": "established",
   "details": "Let $b_n=\\min\\{k\\ge0:\\sum_{i=0}^k2^i\\binom ni\\ge2^n\\}$. Writing $n=5q+r$ with $0\\le r<5$, we have $b_n\\le\\mathrm{LSC}(2^{[n]})\\le2q+\\lceil r/2\\rceil$. Exact for $n=1,2,3,4,5$: $1,1,2,2,2$; also exact at $n=7$, with value three. No exact general formula is asserted.",
   "proof": "On a full cube all binary reconstruction functions are proper, so LSC equals proper LSC. The database-owned proper labeled full-cube value proof gives the five-coordinate width-two decoder, its fixed-block extension of size $2\\lfloor n/5\\rfloor+\\lceil(n\\bmod5)/2\\rceil$, and the counting lower bound. It establishes the stated exact small values and linear asymptotic order. The ordinary value on five coordinates is two, strictly smaller than stable labeled compression and NCTD, which are three. The ordinary and stable values must not be identified.",
-  "references": "Database-owned proper labeled full-cube value proof."
+  "references": "Database-owned proper labeled full-cube value proof; \\cite{darnstadt2016order}, Example 2 and Lemma 12 in the cached August 2014 preprint."
 }

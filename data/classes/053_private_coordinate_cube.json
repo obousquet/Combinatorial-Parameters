@@ -1,0 +1,9 @@
+{
+  "id": 53,
+  "name": "Private-Coordinate Cubes",
+  "short_name": "private_coordinate_cube",
+  "graph_label": "Private cube",
+  "symbol": "\\mathcal P_n",
+  "definition": "For an integer $n\\ge1$, write $[n]=\\{1,\\ldots,n\\}$ and $Q_n=\\{0,1\\}^{[n]}$. Take the disjoint union $X_n=[n]\\sqcup\\{p_v:v\\in Q_n\\}$, where each $p_v$ is a new coordinate. The **private-coordinate cube** is $\\mathcal P_n=\\{h_v:v\\in Q_n\\}\\subseteq\\{0,1\\}^{X_n}$, with $h_v(i)=v(i)$ for $i\\in[n]$ and $h_v(p_w)=1$ if and only if $v=w$. Thus each concept has a private positive coordinate, and projection onto the original $n$ coordinates is the full cube.",
+  "comments": "An explicit private-coordinate realization of the separation mechanism used in \\cite{KSZ2019}, Propositions 26 and 28(1), which credit Goldman--Kearns for the teaching/VC separation. The exact projected-NCTD and compression identities here are proved directly in the database; no novelty claim is made."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 1139,
+  "name": "VC Dimension of Private-Coordinate Cubes",
+  "short_name": "vc_dimension_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$n$",
+  "status": "established",
+  "proof": "Projection onto the original coordinates is the full $n$-cube, so those coordinates are shattered. The class has $2^n$ distinct concepts, and shattering $d$ coordinates requires at least $2^d$ concepts. Hence VC is exactly $n$.",
+  "references": "Direct counting and shattering proof; \\cite{KSZ2019}, Proposition 26, records the underlying teaching/VC separation and credits Goldman--Kearns.",
+  "value_class": "omega_n"
+}

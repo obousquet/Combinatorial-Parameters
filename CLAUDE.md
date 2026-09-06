@@ -149,6 +149,9 @@ python3 sync/audit_leaf_layer.py --data-dir data
 # Regression check for the graph's homogeneous transitive reduction.
 python3 sync/verify_hasse_reduction.py
 
+# Private-coordinate teaching/compression separation, including every small projection.
+python3 sync/verify_private_coordinate_cube.py
+
 # Hollow-star/proper-compression bounds and Three-Code correction regression.
 python3 sync/verify_proper_compression_covc.py
 

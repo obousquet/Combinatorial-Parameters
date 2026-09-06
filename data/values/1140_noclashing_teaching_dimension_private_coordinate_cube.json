@@ -1,0 +1,12 @@
+{
+  "id": 1140,
+  "name": "No-Clashing Teaching Dimension of Private-Coordinate Cubes",
+  "short_name": "noclashing_teaching_dimension_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/noclashing_teaching_dimension",
+  "value": "$1$",
+  "status": "established",
+  "proof": "Give $h_v$ the singleton teacher $\\{(p_v,1)\\}$. Every other concept labels $p_v$ zero, so these are ordinary teaching sets and in particular form a no-clashing assignment. Width zero is impossible for a class with at least two concepts: two empty teachers would clash. Thus NCTD is exactly one.",
+  "references": "\\cite{KSZ2019}, Proposition 28(1), and the explicit private-positive teaching assignment above.",
+  "value_class": "omega_1"
+}

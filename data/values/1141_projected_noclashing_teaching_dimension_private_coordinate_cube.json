@@ -1,0 +1,12 @@
+{
+  "id": 1141,
+  "name": "Projected No-Clashing Teaching Dimension of Private-Coordinate Cubes",
+  "short_name": "projected_noclashing_teaching_dimension_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$\\lceil n/2\\rceil$",
+  "status": "established",
+  "proof": "Projection onto the original coordinates gives $Q_n$, with NCTD $\\lceil n/2\\rceil$ by \\cite{KSZ2019}, Theorem 19. For the reverse bound consider an arbitrary projection retaining original coordinates $S\\subseteq[n]$ and some private coordinates. Each concept with a retained private positive has a unique projected trace; assign it that singleton positive teacher. All other distinct traces have zero on every retained private coordinate and are distinguished by their restrictions to $S$. Use a no-clashing assignment of size at most $\\lceil |S|/2\\rceil$ for this subfamily of the full cube on $S$ (subclass monotonicity and Theorem 19). Two private-positive traces are separated by their private teachers; a private-positive trace and a zero-private trace are separated by the former's positive teacher; pairs of zero-private traces are separated by the chosen cube assignment. If $S$ is empty there is at most one zero-private trace and its teacher is empty. The width is at most $\\max(1,\\lceil |S|/2\\rceil)\\le\\lceil n/2\\rceil$ for $n\\ge1$.",
+  "references": "Direct projection calculation above, using the full-cube value in \\cite{KSZ2019}, Theorem 19. This refinement is not attributed to Proposition 28. Regression: sync/verify_private_coordinate_cube.py.",
+  "value_class": "omega_n"
+}

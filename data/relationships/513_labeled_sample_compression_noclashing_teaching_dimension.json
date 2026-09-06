@@ -11,5 +11,6 @@
   "proof_source": "Full proof in the LaTeX survey: cor:compression-nctd-gap, using the database-owned five-cube decoder and cube NCTD value.",
   "witness": "#classes/full_cube",
   "witness_strength": "strict",
-  "witness_verification": "At dimension five, the certified endpoint values are two and three. Both quantities have linear order on cubes, so the growing additive gap is not an unbounded-ratio witness. Verified by sync/verify_full_cube_labeled_compression.py."
+  "witness_verification": "At dimension five, the certified endpoint values are two and three. Both quantities have linear order on cubes, so the growing additive gap is not an unbounded-ratio witness. Verified by sync/verify_full_cube_labeled_compression.py.",
+  "references": "\\cite{KSZ2019}, Proposition 28(2); \\cite{darnstadt2016order}, Example 2 and Lemma 12 in the cached August 2014 preprint. The survey corollary spells out the product and affine-slope consequences."
 }

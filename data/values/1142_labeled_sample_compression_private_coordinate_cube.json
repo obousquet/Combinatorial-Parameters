@@ -1,0 +1,12 @@
+{
+  "id": 1142,
+  "name": "Labeled Sample Compression of Private-Coordinate Cubes",
+  "short_name": "labeled_sample_compression_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/labeled_sample_compression",
+  "value": "$\\Theta(n)$",
+  "status": "established",
+  "proof": "In fact $\\mathrm{LSC}(\\mathcal P_n)=\\mathrm{LSC}(Q_n)$. A compressor for $\\mathcal P_n$ restricts to one for its cube projection: feed it samples using only original coordinates, so its retained key also uses only those coordinates, and restrict the reconstruction. Conversely let $(\\kappa,\\rho)$ be any width-$k$ compressor for $Q_n$, where $k\\ge1$ since $n\\ge1$. If a realizable sample on $X_n$ contains $(p_v,1)$, retain that singleton and reconstruct $h_v$; realizability makes it consistent with the whole sample. If there is no private positive, compress the original-coordinate subsample using $\\kappa$; reconstruct $\\rho$ on the original coordinates and zero on every private coordinate. This agrees with every observed private label. The decoder distinguishes a private-positive singleton from a key on the original domain, so there is no auxiliary message, and the width is at most $k$. The second reconstruction may be improper, which is allowed for LSC. The cube value proof gives $n/5<\\mathrm{LSC}(Q_n)\\le2\\lfloor n/5\\rfloor+\\lceil(n\\bmod5)/2\\rceil$, establishing the stated asymptotic order.",
+  "references": "\\cite{KSZ2019}, Proposition 28(1), for the separation. The exact cube-compression identity is proved directly above, not attributed to that proposition. Cube bounds are database-owned in the proper labeled full-cube value proof. Regression: sync/verify_private_coordinate_cube.py.",
+  "value_class": "omega_n"
+}

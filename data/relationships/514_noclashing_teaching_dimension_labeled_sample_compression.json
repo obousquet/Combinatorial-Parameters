@@ -1,0 +1,16 @@
+{
+  "id": 514,
+  "name": "No-Clashing Teaching Dimension / Labeled Sample Compression",
+  "short_name": "noclashing_teaching_dimension_labeled_sample_compression",
+  "parameter_1_id": "#parameters/noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/labeled_sample_compression",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "Ordinary NCTD cannot bound labeled sample compression by any finite-valued function. On the private-coordinate cube, NCTD is one while LSC equals the compression number of the full n-cube and is greater than n/5. This does not refute a bound in projected NCTD, which is $\\lceil n/2\\rceil$ on this family. The reverse exact inequality is separately refuted by full cubes, but that witness only proves a bounded-ratio strict gap; a two-sided unbounded incomparability is not asserted.",
+  "latex_proof_label": "cor:private-coordinate-compression-gap",
+  "proof_source": "Full separation argument in the survey, cor:private-coordinate-compression-gap; endpoint proofs are database-owned.",
+  "references": "\\cite{KSZ2019}, Proposition 28(1). The database gives an explicit private-coordinate family and a direct compression identity.",
+  "witness": "#classes/private_coordinate_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "On this family with n tending to infinity, NCTD is exactly one and LSC > n/5, by established endpoint value proofs. Thus LSC/(1+NCTD) diverges. The inequality is refuted, so the larger endpoint is parameter 2. No converse unbounded separation is claimed."
+}
