@@ -1,0 +1,102 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Combinatorial-Parameters/">
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+    
+        
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/hasse.html">Hasse Diagram</a></li></ul>
+        </div>
+    
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="classes/index.html">Classes</a></li><li><a href="parameters/index.html">Parameters</a></li><li><a href="relationships/index.html">Relationships</a></li><li><a href="values/index.html">Values</a></li></ul>
+        </div>
+    
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1153" style="position:relative;">
+        
+        <h3><a href="values/proper_ordered_sample_compression_branching_batch_tree.html" class="table-title-link">Proper Ordered Sample Compression of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Ordered Sample Compression of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Value: </strong>$b$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For all integers $b,n\ge1$. The value is independent of height $n$; fix $b$ for an asymptotic separation. Reconstruction is proper and uses only retained positive examples, without an auxiliary message.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Identify a concept with its positive support. The class is closed under binary intersections. Indeed, for two distinct leaf words take their common prefix, replace their first differing outgoing vectors $a,a'$ by the bitwise intersection $a\wedge a'$, and append zero vectors to obtain a leaf word of length $n$. Before the divergence the two concepts agree; at the divergence their pointwise intersection is the new vector; below it their paths are disjoint, so the intersection is zero everywhere. This remains valid when $a\wedge a'$ equals one of the two original vectors. Identical words intersect to themselves. Thus every nonempty finite intersection is again a concept. Apply Proposition~\ref{prop:intersection-closed-compression} of the survey (the standard intersection-closed scheme): retain a minimal positive spanning subset of the sample and reconstruct its closure. That proposition proves that its size is at most VC, that the closure is a proper consistent output even in the presence of negative examples, and that a linear extension of inclusion makes it the first compatible hypothesis both for the original sample and for the retained key. It includes the empty positive set; here the closure of that set is the zero concept. The established VC value is $b$, so this gives proper order compression at most $b$. Conversely proper order compression dominates ordinary order compression, which dominates VC. The value is therefore exactly $b$. This is an application of the standard scheme, not a new general theorem; its general proof is not duplicated here.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Theorem 28 and Corollary 29, printed pages 13--14 of the cached August 26, 2014 author preprint. The family-specific closure argument and complete derivation above are database-owned; sync/verify_branching_batch_trees.py independently checks intersections and replays the decoder on all samples of its six small-domain cases.</p></div>
+
+        </div>
+    </div>
+    
+        </main>
+        <footer>
+            <p>Generated with Python • Hosted on GitHub Pages</p>
+        </footer>
+        
+    </body>
+    </html>
+    

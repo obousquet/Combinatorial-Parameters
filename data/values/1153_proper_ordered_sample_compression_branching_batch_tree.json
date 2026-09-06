@@ -1,0 +1,13 @@
+{
+  "id": 1153,
+  "name": "Proper Ordered Sample Compression of the Branching Batch-Tree Class",
+  "short_name": "proper_ordered_sample_compression_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/proper_ordered_sample_compression",
+  "value": "$b$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For all integers $b,n\\ge1$. The value is independent of height $n$; fix $b$ for an asymptotic separation. Reconstruction is proper and uses only retained positive examples, without an auxiliary message.",
+  "proof": "Identify a concept with its positive support. The class is closed under binary intersections. Indeed, for two distinct leaf words take their common prefix, replace their first differing outgoing vectors $a,a'$ by the bitwise intersection $a\\wedge a'$, and append zero vectors to obtain a leaf word of length $n$. Before the divergence the two concepts agree; at the divergence their pointwise intersection is the new vector; below it their paths are disjoint, so the intersection is zero everywhere. This remains valid when $a\\wedge a'$ equals one of the two original vectors. Identical words intersect to themselves. Thus every nonempty finite intersection is again a concept. Apply Proposition~\\ref{prop:intersection-closed-compression} of the survey (the standard intersection-closed scheme): retain a minimal positive spanning subset of the sample and reconstruct its closure. That proposition proves that its size is at most VC, that the closure is a proper consistent output even in the presence of negative examples, and that a linear extension of inclusion makes it the first compatible hypothesis both for the original sample and for the retained key. It includes the empty positive set; here the closure of that set is the zero concept. The established VC value is $b$, so this gives proper order compression at most $b$. Conversely proper order compression dominates ordinary order compression, which dominates VC. The value is therefore exactly $b$. This is an application of the standard scheme, not a new general theorem; its general proof is not duplicated here.",
+  "references": "\\cite{darnstadt2016order}, Theorem 28 and Corollary 29, printed pages 13--14 of the cached August 26, 2014 author preprint. The family-specific closure argument and complete derivation above are database-owned; sync/verify_branching_batch_trees.py independently checks intersections and replays the decoder on all samples of its six small-domain cases."
+}

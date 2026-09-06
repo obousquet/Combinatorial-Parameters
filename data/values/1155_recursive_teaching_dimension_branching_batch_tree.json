@@ -1,0 +1,13 @@
+{
+  "id": 1155,
+  "name": "Recursive Teaching Dimension of the Branching Batch-Tree Class",
+  "short_name": "recursive_teaching_dimension_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$b$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For all integers $b,n\\ge1$; independent of tree height.",
+  "proof": "For every leaf word $w$ and each of the $b$ coordinates in its final visited batch, flipping that bit of the final outgoing vector gives another concept differing from $h_w$ at exactly that one coordinate. Any teaching set for $h_w$ in the full class must include all $b$ such coordinates. Therefore every possible first recursive teaching removal costs at least $b$. For the upper bound, RTD is at most OSC, and the database-owned Order Sample Compression value of this class is $b$. Thus RTD is exactly $b$. The lower argument concerns the full class, not an unproved general inequality between RTD and VC.",
+  "references": "Direct last-batch neighbour lower bound; the database-owned Order Sample Compression value of this class and \\cite{darnstadt2016order}, Lemma 23 of the cached author preprint."
+}

@@ -257,6 +257,10 @@ For the fixed-VC/unbounded-block separation, run
 `python3 sync/verify_branching_batch_trees.py`. Its eight-family shattering
 and path checks include six independently optimized small domains. Do not
 describe the two larger structural checks as full depth optimizations.
+The same verifier now checks the intersection-closed proper order scheme
+and last-batch teaching lower bound. `--compression-only` skips depth
+optimization; all 8059 realizable samples on the six small domains are
+replayed, while the two larger cases check intersections and neighbours only.
 
 The strict characteristic-dependent Yang witness is checked by
 `python3 sync/verify_yang_characteristic_witness.py`. Its definition and

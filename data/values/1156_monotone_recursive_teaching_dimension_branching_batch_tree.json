@@ -1,0 +1,13 @@
+{
+  "id": 1156,
+  "name": "Projected Recursive Teaching Dimension of the Branching Batch-Tree Class",
+  "short_name": "monotone_recursive_teaching_dimension_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$b$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For all integers $b,n\\ge1$; the maximum is over all coordinate projections, including the full domain.",
+  "proof": "The identity projection gives $\\mathrm{RTD}^p(\\mathcal T_{b,n})\\ge\\mathrm{RTD}(\\mathcal T_{b,n})=b$, by the database-owned recursive teaching value. The universal order-compression bound gives $\\mathrm{RTD}^p(\\mathcal T_{b,n})\\le\\mathrm{OSC}(\\mathcal T_{b,n})=b$, using the database-owned OSC value. Hence the projected value is exactly $b$. No assumption that an arbitrary projection remains a batch-tree class is needed.",
+  "references": "The database-owned Recursive Teaching Dimension and Order Sample Compression values of this class; \\cite{darnstadt2016order}, Theorem 24 of the cached August 26, 2014 author preprint."
+}

@@ -1,0 +1,13 @@
+{
+  "id": 1154,
+  "name": "Order Sample Compression of the Branching Batch-Tree Class",
+  "short_name": "order_sample_compression_branching_batch_tree",
+  "class_id": "#classes/branching_batch_tree",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$b$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For all integers $b,n\\ge1$; independent of tree height.",
+  "proof": "The proper order scheme in the database-owned Proper Ordered Sample Compression value of this class has width $b$ and is also admissible for ordinary order compression. Conversely OSC dominates VC, whose value on this class is $b$ because the root batch is shattered. Thus $b\\le\\mathrm{OSC}(\\mathcal T_{b,n})\\le b$.",
+  "references": "The database-owned Proper Ordered Sample Compression and VC Dimension values of this class; \\cite{darnstadt2016order}, Corollaries 25 and 29 of the cached August 26, 2014 author preprint."
+}

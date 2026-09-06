@@ -18513,6 +18513,74 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1153" style="position:relative;">
+        
+        <h3><a href="values/proper_ordered_sample_compression_branching_batch_tree.html" class="table-title-link">Proper Ordered Sample Compression of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Ordered Sample Compression of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Value: </strong>$b$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For all integers $b,n\ge1$. The value is independent of height $n$; fix $b$ for an asymptotic separation. Reconstruction is proper and uses only retained positive examples, without an auxiliary message.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Identify a concept with its positive support. The class is closed under binary intersections. Indeed, for two distinct leaf words take their common prefix, replace their first differing outgoing vectors $a,a'$ by the bitwise intersection $a\wedge a'$, and append zero vectors to obtain a leaf word of length $n$. Before the divergence the two concepts agree; at the divergence their pointwise intersection is the new vector; below it their paths are disjoint, so the intersection is zero everywhere. This remains valid when $a\wedge a'$ equals one of the two original vectors. Identical words intersect to themselves. Thus every nonempty finite intersection is again a concept. Apply Proposition~\ref{prop:intersection-closed-compression} of the survey (the standard intersection-closed scheme): retain a minimal positive spanning subset of the sample and reconstruct its closure. That proposition proves that its size is at most VC, that the closure is a proper consistent output even in the presence of negative examples, and that a linear extension of inclusion makes it the first compatible hypothesis both for the original sample and for the retained key. It includes the empty positive set; here the closure of that set is the zero concept. The established VC value is $b$, so this gives proper order compression at most $b$. Conversely proper order compression dominates ordinary order compression, which dominates VC. The value is therefore exactly $b$. This is an application of the standard scheme, not a new general theorem; its general proof is not duplicated here.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Theorem 28 and Corollary 29, printed pages 13--14 of the cached August 26, 2014 author preprint. The family-specific closure argument and complete derivation above are database-owned; sync/verify_branching_batch_trees.py independently checks intersections and replays the decoder on all samples of its six small-domain cases.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1154" style="position:relative;">
+        
+        <h3><a href="values/order_sample_compression_branching_batch_tree.html" class="table-title-link">Order Sample Compression of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Order Sample Compression of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Value: </strong>$b$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For all integers $b,n\ge1$; independent of tree height.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The proper order scheme in the database-owned Proper Ordered Sample Compression value of this class has width $b$ and is also admissible for ordinary order compression. Conversely OSC dominates VC, whose value on this class is $b$ because the root batch is shattered. Thus $b\le\mathrm{OSC}(\mathcal T_{b,n})\le b$.</p></div>
+<strong>References:</strong><div class="text-field"><p>The database-owned Proper Ordered Sample Compression and VC Dimension values of this class; <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Corollaries 25 and 29 of the cached August 26, 2014 author preprint.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1155" style="position:relative;">
+        
+        <h3><a href="values/recursive_teaching_dimension_branching_batch_tree.html" class="table-title-link">Recursive Teaching Dimension of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursive Teaching Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$b$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For all integers $b,n\ge1$; independent of tree height.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every leaf word $w$ and each of the $b$ coordinates in its final visited batch, flipping that bit of the final outgoing vector gives another concept differing from $h_w$ at exactly that one coordinate. Any teaching set for $h_w$ in the full class must include all $b$ such coordinates. Therefore every possible first recursive teaching removal costs at least $b$. For the upper bound, RTD is at most OSC, and the database-owned Order Sample Compression value of this class is $b$. Thus RTD is exactly $b$. The lower argument concerns the full class, not an unproved general inequality between RTD and VC.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct last-batch neighbour lower bound; the database-owned Order Sample Compression value of this class and <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Lemma 23 of the cached author preprint.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1156" style="position:relative;">
+        
+        <h3><a href="values/monotone_recursive_teaching_dimension_branching_batch_tree.html" class="table-title-link">Projected Recursive Teaching Dimension of the Branching Batch-Tree Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Recursive Teaching Dimension of the Branching Batch-Tree Class</p>
+<p><strong>Class: </strong><a href="classes/branching_batch_tree.html">Branching Batch-Tree Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$b$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For all integers $b,n\ge1$; the maximum is over all coordinate projections, including the full domain.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The identity projection gives $\mathrm{RTD}^p(\mathcal T_{b,n})\ge\mathrm{RTD}(\mathcal T_{b,n})=b$, by the database-owned recursive teaching value. The universal order-compression bound gives $\mathrm{RTD}^p(\mathcal T_{b,n})\le\mathrm{OSC}(\mathcal T_{b,n})=b$, using the database-owned OSC value. Hence the projected value is exactly $b$. No assumption that an arbitrary projection remains a batch-tree class is needed.</p></div>
+<strong>References:</strong><div class="text-field"><p>The database-owned Recursive Teaching Dimension and Order Sample Compression values of this class; <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>, Theorem 24 of the cached August 26, 2014 author preprint.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>
