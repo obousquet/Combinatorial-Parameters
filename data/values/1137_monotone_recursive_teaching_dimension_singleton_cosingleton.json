@@ -1,0 +1,13 @@
+{
+  "id": 1137,
+  "name": "Projected Recursive Teaching Dimension of Singleton–Cosingleton Classes",
+  "short_name": "monotone_recursive_teaching_dimension_singleton_cosingleton",
+  "class_id": "#classes/singleton_cosingleton",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For every integer n >= 4.",
+  "proof": "The general inequalities $\\mathrm{VC}\\le\\mathrm{RTD}^p\\le\\mathrm{OSC}$ place projected RTD between the two established values three on this class. See the database-owned VC and OSC value proofs. This uses the projected, not just the ordinary, recursive teaching parameter.",
+  "references": "Local proof using the survey comparison theorems and database-owned endpoint values."
+}

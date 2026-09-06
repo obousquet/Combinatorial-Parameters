@@ -1,0 +1,17 @@
+{
+  "id": 512,
+  "name": "Proper Stable Labeled Sample Compression / co-VC Dimension (affine)",
+  "short_name": "proper_stable_labeled_sample_compression_covc_dimension_affine",
+  "parameter_1_id": "#parameters/proper_stable_labeled_sample_compression",
+  "status": "established",
+  "relationship_type": "larger_c",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "latex_proof_label": "prop:proper-compression-covc",
+  "proof_source": "Proposition \\ref{prop:proper-compression-covc} in the LaTeX survey. The proof uses deletion samples of a projected hollow star and actual proper reconstructions.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "multiplicative_constant": "1/2",
+  "additive_constant": "1/2",
+  "details": "For every nonempty finite binary class, $\\mathrm{psLSC}\\ge\\lceil(\\mathrm{coVC}-1)/2\\rceil$. Reconstruction stability suffices; preservation of the selected subset is not required. The stronger unshifted comparison in refuted relationship #10 remains false.",
+  "witness_verification": "On the full cube $2^{[n]}$, the established endpoint values are $\\lceil n/2\\rceil$ and $0$. The first grows unboundedly while co-VC is zero, excluding every reverse affine bound. See the database-owned endpoint value proofs."
+}

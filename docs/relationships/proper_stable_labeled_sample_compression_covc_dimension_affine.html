@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,20 +63,31 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
-    <div class="table-card" id="math-868" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-512" style="position:relative;">
         
-        <h3><a href="values/order_sample_compression_three_code_class.html" class="table-title-link">Order Sample Compression of the Three-Code Class</a></h3>
+        <h3><a href="relationships/proper_stable_labeled_sample_compression_covc_dimension_affine.html" class="table-title-link">Proper Stable Labeled Sample Compression / co-VC Dimension (affine)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Order Sample Compression of the Three-Code Class</p>
-<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
+        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / co-VC Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+
+
+<p><strong>Additive Constant: </strong>1/2</p>
+<p><strong>Multiplicative Constant: </strong>1/2</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class, $\mathrm{psLSC}\ge\lceil(\mathrm{coVC}-1)/2\rceil$. Reconstruction stability suffices; preservation of the selected subset is not required. The stronger unshifted comparison in refuted relationship <a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a> remains false.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On the full cube $2^{[n]}$, the established endpoint values are $\lceil n/2\rceil$ and $0$. The first grows unboundedly while co-VC is zero, excluding every reverse affine bound. See the database-owned endpoint value proofs.</p></div>
+
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Use the decoder order $001<000<011<101$, allowing the missing hollow-star center $001$ as an improper reconstruction. A sample consistent with $001$ retains nothing. Otherwise retain one example disagreeing with $001$. Exactly one class member disagrees with $001$ at that coordinate, so realizability forces that member to realize the whole sample. The retained singleton therefore has the same first consistent hypothesis as the original sample. Width zero cannot reconstruct both distinct full samples $000$ and $011$, proving equality. The former proof used only the proper order and incorrectly assumed its proposed distinguishing coordinate was present in every partial sample. The corrected scheme is independently replayed by sync/verify_proper_compression_covc.py.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:proper-compression-covc} in the LaTeX survey. The proof uses deletion samples of a projected hollow star and actual proper reconstructions.</p></div>
+
+
 
         </div>
     </div>

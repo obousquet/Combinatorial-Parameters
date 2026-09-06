@@ -64,19 +64,19 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
-    <div class="table-card" id="math-868" style="position:relative;">
+    <div class="table-card" id="math-1136" style="position:relative;">
         
-        <h3><a href="values/order_sample_compression_three_code_class.html" class="table-title-link">Order Sample Compression of the Three-Code Class</a></h3>
+        <h3><a href="values/proper_ordered_sample_compression_singleton_cosingleton.html" class="table-title-link">Proper Ordered Sample Compression of Singleton–Cosingleton Classes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Order Sample Compression of the Three-Code Class</p>
-<p><strong>Class: </strong><a href="classes/three_code_class.html">Three-Code Class</a></p>
-<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
-
+        <p><strong>Name: </strong>Proper Ordered Sample Compression of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Value: </strong>$n-1$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Use the decoder order $001<000<011<101$, allowing the missing hollow-star center $001$ as an improper reconstruction. A sample consistent with $001$ retains nothing. Otherwise retain one example disagreeing with $001$. Exactly one class member disagrees with $001$ at that coordinate, so realizability forces that member to realize the whole sample. The retained singleton therefore has the same first consistent hypothesis as the original sample. Width zero cannot reconstruct both distinct full samples $000$ and $011$, proving equality. The former proof used only the proper order and incorrectly assumed its proposed distinguishing coordinate was present in every partial sample. The corrected scheme is independently replayed by sync/verify_proper_compression_covc.py.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The hollow-star lower bound in Proposition \ref{prop:proper-compression-covc}, together with the class's co-VC value $n$, gives at least $n-1$. For the upper bound order all singletons by their coordinate, followed by all cosingletons in the same order. Write $P,N$ for the positive and negative coordinates of a realizable sample. If $P=\varnothing$, let $i$ be the first coordinate not in $N$ and retain all negatives before $i$; the first compatible singleton is $\{i\}$. If $|P|=1$, retain that positive alone, selecting its singleton. If $|P|\ge2$ and $N\ne\varnothing$, realizability forces $N=\{j\}$; retain two positives and the negative at $j$, selecting the cosingleton missing $j$. This uses three examples, at most $n-1$. Finally if $|P|\ge2$ and $N=\varnothing$, let $j$ be the least coordinate not in $P$; such a coordinate exists because the full set is not a class member. Retain every positive before $j$, adding further positives if needed to retain at least two. This uses $\max(j-1,2)\le n-1$ examples, rules out every singleton and every earlier cosingleton, and selects the cosingleton missing $j$. In every case the retained sample preserves the first consistent proper hypothesis. Removing any redundant retained examples gives a minimal order kernel without increasing its size. Thus the bound holds for every $n\ge4$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local proof using the survey comparison theorems and database-owned endpoint values.</p></div>
 
         </div>
     </div>

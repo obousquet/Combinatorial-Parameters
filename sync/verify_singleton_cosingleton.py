@@ -29,6 +29,7 @@ def vc(hypotheses: set[int] | frozenset[int], n: int) -> int:
 
 def main() -> None:
     sample_checks = 0
+    proper_checks = 0
     minimality_checks = 0
     for n in range(4, 9):
         hypotheses = family(n)
@@ -65,6 +66,27 @@ def main() -> None:
                         minimality_checks += 1
                 sample_checks += 1
 
+        proper_order = order[2:]
+        for mask in range(1 << n):
+            for positives in {h & mask for h in hypotheses}:
+                negatives = mask ^ positives
+                bits = [1 << x for x in range(n) if positives & (1 << x)]
+                if not bits:
+                    i = next(x for x in range(n) if not (negatives >> x & 1))
+                    kernel = (1 << i) - 1
+                elif len(bits) == 1:
+                    kernel = positives
+                elif negatives:
+                    assert negatives.bit_count() == 1
+                    kernel = bits[0] | bits[1] | negatives
+                else:
+                    j = next(x for x in range(n) if not (positives >> x & 1))
+                    kernel = ((1 << j) - 1) | bits[0] | bits[1]
+                assert kernel & mask == kernel and kernel.bit_count() <= n - 1
+                decoded = next(h for h in proper_order if h & kernel == positives & kernel)
+                assert decoded == next(h for h in proper_order if h & mask == positives)
+                assert decoded in hypotheses and decoded & mask == positives
+                proper_checks += 1
         # Build the actual nonempty intersection closure, not just its advertised value.
         closed = set(hypotheses)
         while True:
@@ -87,7 +109,8 @@ def main() -> None:
         assert all({(h >> x) & 1 for h in hypotheses} == {0, 1} for x in range(n))
         assert 0 not in hypotheses and all(1 << x in hypotheses for x in range(n))
     expected = {1127: '$3$', 1128: '$3$', 1129: '$n-1$', 1130: '$3$', 1131: '$3$',
-                1132: '$3$', 1133: '$2n$', 1134: '$n$', 1135: '$n$'}
+                1132: '$3$', 1133: '$2n$', 1134: '$n$', 1135: '$n$',
+                1136: '$n-1$', 1137: '$3$'}
     for path in (DATA / 'values').glob('*_singleton_cosingleton.json'):
         value = json.loads(path.read_text())
         assert value['class_id'] == '#classes/singleton_cosingleton'
@@ -103,7 +126,8 @@ def main() -> None:
     # Properness is deliberately unavailable for this particular order.
     assert 0 not in family(4) and 15 not in family(4)
     print(json.dumps({'domain_sizes': [4, 5, 6, 7, 8], 'sample_checks': sample_checks,
-                      'minimality_checks': minimality_checks, 'value_records': 9,
+                      'minimality_checks': minimality_checks, 'proper_order_checks': proper_checks,
+                      'value_records': 11,
                       'scope': 'Exact OSC three; positive projected RTD n-1; unbounded ratio.'}, indent=2))
 
 

@@ -1,0 +1,17 @@
+{
+  "id": 511,
+  "name": "Proper Ordered Sample Compression / co-VC Dimension (affine)",
+  "short_name": "proper_ordered_sample_compression_covc_dimension_affine",
+  "parameter_1_id": "#parameters/proper_ordered_sample_compression",
+  "status": "established",
+  "relationship_type": "larger_c",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "latex_proof_label": "prop:proper-compression-covc",
+  "proof_source": "Proposition \\ref{prop:proper-compression-covc} in the LaTeX survey. The proof uses deletion samples of a projected hollow star and actual proper reconstructions.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "details": "For every nonempty finite binary class, $\\mathrm{pOSC}\\ge\\mathrm{coVC}-1$. This bound requires proper reconstruction; it is not a bound on ordinary OSC.",
+  "witness_verification": "On the full cube $2^{[n]}$, the established endpoint values are $n$ and $0$. The first grows unboundedly while co-VC is zero, excluding every reverse affine bound. See the database-owned endpoint value proofs."
+}

@@ -10507,6 +10507,62 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-511" style="position:relative;">
+        
+        <h3><a href="relationships/proper_ordered_sample_compression_covc_dimension_affine.html" class="table-title-link">Proper Ordered Sample Compression / co-VC Dimension (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Ordered Sample Compression / co-VC Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+
+
+<p><strong>Additive Constant: </strong>1</p>
+<p><strong>Multiplicative Constant: </strong>1</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class, $\mathrm{pOSC}\ge\mathrm{coVC}-1$. This bound requires proper reconstruction; it is not a bound on ordinary OSC.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On the full cube $2^{[n]}$, the established endpoint values are $n$ and $0$. The first grows unboundedly while co-VC is zero, excluding every reverse affine bound. See the database-owned endpoint value proofs.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:proper-compression-covc} in the LaTeX survey. The proof uses deletion samples of a projected hollow star and actual proper reconstructions.</p></div>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-512" style="position:relative;">
+        
+        <h3><a href="relationships/proper_stable_labeled_sample_compression_covc_dimension_affine.html" class="table-title-link">Proper Stable Labeled Sample Compression / co-VC Dimension (affine)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / co-VC Dimension (affine)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge cP_2-d$</p>
+
+
+<p><strong>Additive Constant: </strong>1/2</p>
+<p><strong>Multiplicative Constant: </strong>1/2</p>
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class, $\mathrm{psLSC}\ge\lceil(\mathrm{coVC}-1)/2\rceil$. Reconstruction stability suffices; preservation of the selected subset is not required. The stronger unshifted comparison in refuted relationship <a href="classes/warmuth_c5.html">Warmuth's $C_5$ class</a> remains false.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On the full cube $2^{[n]}$, the established endpoint values are $\lceil n/2\rceil$ and $0$. The first grows unboundedly while co-VC is zero, excluding every reverse affine bound. See the database-owned endpoint value proofs.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:proper-compression-covc} in the LaTeX survey. The proof uses deletion samples of a projected hollow star and actual proper reconstructions.</p></div>
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
@@ -13343,7 +13399,7 @@
 
 
 <p><strong>Status:</strong> Refuted</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The three-code class $\{000,011,101\}$ has an order scheme of size one, using the order $000<011<101$.  Yet after omitting, respectively, $x_0,x_1,x_2$, each of its three targets is the middle point of a three-trace path and needs two coordinates to be taught.  Thus $\mathrm{TS}_{\min}^{*p}=2>1=\mathrm{OSC}$.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The database-owned OSC value proof gives an improper order scheme of size one for the Three-Code Class, placing its missing center $001$ before its three members. The database-owned monotonic projected minimum teaching value is two: each target becomes the middle of a three-trace path on a suitable projection and requires two coordinates there. Thus $\mathrm{TS}_{\min}^{*p}=2>1=\mathrm{OSC}$. The formerly quoted proper three-hypothesis order does not have width one on partial samples and is not used.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>

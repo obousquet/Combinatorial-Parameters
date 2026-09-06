@@ -4,9 +4,9 @@
   "short_name": "proper_ordered_sample_compression_three_code_class",
   "class_id": "#classes/three_code_class",
   "parameter_id": "#parameters/proper_ordered_sample_compression",
-  "value": "$1$",
+  "value": "$2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Use the order $000<011<101$.  The order-compression construction retaining nothing for $000$, $x_0=1$ for $011$, and $x_2=1$ for $101$ decodes only to these three class members, so it is proper and has size one.  A size-zero scheme has one fixed proper reconstruction and cannot be consistent with both full samples $000$ and $011$.",
+  "proof": "The co-VC value is three, so Proposition \\ref{prop:proper-compression-covc} gives proper ordered compression at least two. Conversely, fix any order of the three hypotheses. For a sample whose first consistent hypothesis is $h$, choose from the sample one disagreement with each earlier hypothesis. There are at most two earlier hypotheses, and the retained examples preserve $h$ as the first consistent reconstruction; remove redundant examples if necessary. Thus width two suffices. The former width-one proof was invalid on partial samples: in the order $000<011<101$, the sample $x_0=1,x_1=0$ selects $101$ but does not contain the proposed key $x_2=1$; either of its one-example subsets selects an earlier hypothesis. All six proper orders are independently checked by sync/verify_proper_compression_covc.py.",
   "references": "\\cite{darnstadt2016order}"
 }

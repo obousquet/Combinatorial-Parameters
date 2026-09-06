@@ -1,0 +1,13 @@
+{
+  "id": 1136,
+  "name": "Proper Ordered Sample Compression of Singleton–Cosingleton Classes",
+  "short_name": "proper_ordered_sample_compression_singleton_cosingleton",
+  "class_id": "#classes/singleton_cosingleton",
+  "parameter_id": "#parameters/proper_ordered_sample_compression",
+  "value": "$n-1$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "For every integer n >= 4.",
+  "proof": "The hollow-star lower bound in Proposition \\ref{prop:proper-compression-covc}, together with the class's co-VC value $n$, gives at least $n-1$. For the upper bound order all singletons by their coordinate, followed by all cosingletons in the same order. Write $P,N$ for the positive and negative coordinates of a realizable sample. If $P=\\varnothing$, let $i$ be the first coordinate not in $N$ and retain all negatives before $i$; the first compatible singleton is $\\{i\\}$. If $|P|=1$, retain that positive alone, selecting its singleton. If $|P|\\ge2$ and $N\\ne\\varnothing$, realizability forces $N=\\{j\\}$; retain two positives and the negative at $j$, selecting the cosingleton missing $j$. This uses three examples, at most $n-1$. Finally if $|P|\\ge2$ and $N=\\varnothing$, let $j$ be the least coordinate not in $P$; such a coordinate exists because the full set is not a class member. Retain every positive before $j$, adding further positives if needed to retain at least two. This uses $\\max(j-1,2)\\le n-1$ examples, rules out every singleton and every earlier cosingleton, and selects the cosingleton missing $j$. In every case the retained sample preserves the first consistent proper hypothesis. Removing any redundant retained examples gives a minimal order kernel without increasing its size. Thus the bound holds for every $n\\ge4$.",
+  "references": "Local proof using the survey comparison theorems and database-owned endpoint values."
+}

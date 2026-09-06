@@ -7,6 +7,6 @@
   "value": "$1$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Order the decoded hypotheses as $000<011<101$.  A sample whose least compatible hypothesis is $000$ needs no retained example.  If its least compatible hypothesis is $011$, the sample must exclude $000$, so retaining $x_0=1$ excludes the only earlier hypothesis.  If it is $101$, the sample must exclude both earlier hypotheses, and retaining $x_2=1$ does so.  Thus this is an order scheme of size one.  Size zero is impossible because one fixed reconstruction cannot be consistent with the distinct full samples $000$ and $011$.",
+  "proof": "Use the decoder order $001<000<011<101$, allowing the missing hollow-star center $001$ as an improper reconstruction. A sample consistent with $001$ retains nothing. Otherwise retain one example disagreeing with $001$. Exactly one class member disagrees with $001$ at that coordinate, so realizability forces that member to realize the whole sample. The retained singleton therefore has the same first consistent hypothesis as the original sample. Width zero cannot reconstruct both distinct full samples $000$ and $011$, proving equality. The former proof used only the proper order and incorrectly assumed its proposed distinguishing coordinate was present in every partial sample. The corrected scheme is independently replayed by sync/verify_proper_compression_covc.py.",
   "references": "\\cite{darnstadt2016order}"
 }
