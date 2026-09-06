@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-34" style="position:relative;">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-52" style="position:relative;">
         
-        <h3><a href="parameters/order_sample_compression.html" class="table-title-link">Order Sample Compression</a></h3>
+        <h3><a href="classes/singleton_cosingleton.html" class="table-title-link">Singleton–Cosingleton Classes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Order Sample Compression</p>
+        <p><strong>Name: </strong>Singleton–Cosingleton Classes</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{OSC}">
-            \[\mathrm{OSC}\]
+        <div class="latex-equation" data-latex="\mathcal A_n">
+            \[\mathcal A_n\]
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Order Sample Compression</strong> of $\mathcal{H}$ is the minimum size of a labeled compression scheme compatible with a well-order of its decoded hypotheses: each sample is decoded to the least compatible hypothesis and compressed by a minimal teaching set relative to earlier hypotheses.</p></div>
-
-
-<strong>Origin References:</strong><div class="text-field"><p>Introduced in <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>.</p></div>
-<p><strong>Category:</strong> Compression</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/order_sample_compression_singletons.html'>$\mathrm{OSC}(\{\{i\}\}_{1\le i\le n}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_trivial_concepts.html'>$\mathrm{OSC}(\{\emptyset, [n]\}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_full_cube.html'>$\mathrm{OSC}(\{S:S\subset [n]\}) = n\;(\Omega(n))$</a></li><li><a href='values/order_sample_compression_halfintervals.html'>$\mathrm{OSC}(\{[i]\}_{1\le i\le n}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_three_code_class.html'>$\mathrm{OSC}(\mathcal C_{\triangle}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_tagged_singletons.html'>$\mathrm{OSC}(\text{Tag}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_chen_neighbor_puncture.html'>$\mathrm{OSC}(\mathcal N_{\mathrm{CCT}}) \ge 5$</a></li><li><a href='values/order_sample_compression_singleton_cosingleton.html'>$\mathrm{OSC}(\mathcal A_n) = 3\;(\Omega(1))$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/proper_ordered_sample_compression_order_sample_compression.html" class="relationship-statement">$\mathrm{pOSC} \ge \mathrm{OSC}$</a></li><li><a href="relationships/order_sample_compression_monotone_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{OSC} \ge \mathrm{RTD}^p$</a></li><li><a href="relationships/effective_range_order_sample_compression.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{OSC}$</a></li><li><a href="relationships/projected_positive_recursive_teaching_dimension_order_sample_compression.html" class="relationship-statement">$\mathrm{RTD}^{+p} \ge \mathrm{OSC}$</a></li></ul><p><strong>Refuted proposed relationships:</strong></p><ul class="fields-list relationship-list-refuted"><li><a href="relationships/order_sample_compression_monotonic_projected_minimum_teaching_set_size.html" class="relationship-statement">$\mathrm{OSC} \ge \mathrm{TS}_{\min}^{*p}$</a> <span class="relationship-status-badge relationship-status-refuted">Refuted</span></li></ul></div>
+<strong>Definition:</strong><div class="text-field"><p>For each integer $n\ge4$, let $[n]=\{1,\ldots,n\}$. The <strong>singleton–cosingleton class</strong> on domain $[n]$ is $$\mathcal A_n=\{\{i\},[n]\setminus\{i\}:i\in[n]\}\subseteq2^{[n]}.$$ A subset is identified with its binary indicator function. Thus the class has all singleton supports and all complements of singleton supports, but neither the empty support nor the full support.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Migrated from the survey's signed intersection-completion example. It separates projected positive recursive teaching from order compression by an unbounded ratio. The lower bound n &gt;= 4 is part of the family definition.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/vc_dimension_singleton_cosingleton.html'>VC Dimension of Singleton–Cosingleton Classes</a></li><li><a href='values/order_sample_compression_singleton_cosingleton.html'>Order Sample Compression of Singleton–Cosingleton Classes</a></li><li><a href='values/projected_positive_recursive_teaching_dimension_singleton_cosingleton.html'>Projected Positive Recursive Teaching Dimension of Singleton–Cosingleton Classes</a></li><li><a href='values/minimum_teaching_set_size_singleton_cosingleton.html'>Minimum Teaching Set Size of Singleton–Cosingleton Classes</a></li><li><a href='values/recursive_teaching_dimension_singleton_cosingleton.html'>Recursive Teaching Dimension of Singleton–Cosingleton Classes</a></li><li><a href='values/teaching_dimension_singleton_cosingleton.html'>Teaching Dimension of Singleton–Cosingleton Classes</a></li><li><a href='values/size_singleton_cosingleton.html'>Size of Singleton–Cosingleton Classes</a></li><li><a href='values/effective_range_singleton_cosingleton.html'>Effective Range of Singleton–Cosingleton Classes</a></li><li><a href='values/covc_dimension_singleton_cosingleton.html'>co-VC Dimension of Singleton–Cosingleton Classes</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/projected_positive_recursive_teaching_dimension_order_sample_compression.html'>Projected Positive Recursive Teaching Dimension / Order Sample Compression</a></li></ul></p></div>
 
         </div>
     </div>

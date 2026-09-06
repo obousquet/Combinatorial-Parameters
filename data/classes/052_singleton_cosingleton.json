@@ -1,0 +1,9 @@
+{
+  "id": 52,
+  "name": "Singleton–Cosingleton Classes",
+  "short_name": "singleton_cosingleton",
+  "graph_label": "S∪coS",
+  "symbol": "\\mathcal A_n",
+  "definition": "For each integer $n\\ge4$, let $[n]=\\{1,\\ldots,n\\}$. The **singleton–cosingleton class** on domain $[n]$ is $$\\mathcal A_n=\\{\\{i\\},[n]\\setminus\\{i\\}:i\\in[n]\\}\\subseteq2^{[n]}.$$ A subset is identified with its binary indicator function. Thus the class has all singleton supports and all complements of singleton supports, but neither the empty support nor the full support.",
+  "comments": "Migrated from the survey's signed intersection-completion example. It separates projected positive recursive teaching from order compression by an unbounded ratio. The lower bound n >= 4 is part of the family definition."
+}

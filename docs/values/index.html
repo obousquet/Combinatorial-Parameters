@@ -18060,6 +18060,159 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1127" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_singleton_cosingleton.html" class="table-title-link">VC Dimension of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every three-coordinate set is shattered: singletons give its one-element traces, cosingletons its two-element traces, and an index outside the triple supplies the empty and full traces. No four-coordinate set is shattered, since all its traces have sizes zero, one, three or four, never two. For $n\ge4$ this proves VC exactly three.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1128" style="position:relative;">
+        
+        <h3><a href="values/order_sample_compression_singleton_cosingleton.html" class="table-title-link">Order Sample Compression of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Order Sample Compression of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Use the fixed decoder order $\varnothing,[n],\{1\},\ldots,\{n\},[n]\setminus\{1\},\ldots,[n]\setminus\{n\}$, with all other binary hypotheses placed afterward if a full-cube order is desired. Write $P,N$ for the positive and negative coordinates of a realizable sample. If $P=\varnothing$, retain nothing and decode to $\varnothing$. If $P\ne\varnothing$ and $N=\varnothing$, retain the first positive and decode to $[n]$. If $|P|=1$ and $N\ne\varnothing$, retain the positive and the first negative; the first consistent hypothesis is that positive's singleton. Otherwise $|P|\ge2$, and realizability forces $|N|=1$: retain the first two positives and the negative, and decode to the cosingleton missing the negative coordinate. Each retained sample has the same first consistent hypothesis as the original sample. Deleting any retained example introduces an earlier consistent hypothesis, so these are minimal order kernels. This proves OSC at most three. The general bound $\mathrm{OSC}\ge\mathrm{RTD}^p\ge\mathrm{VC}$ and the VC value proof give the matching lower bound. Reconstructions $\varnothing$ and $[n]$ are outside the class, so this is an improper construction, not a proper-order bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1129" style="position:relative;">
+        
+        <h3><a href="values/projected_positive_recursive_teaching_dimension_singleton_cosingleton.html" class="table-title-link">Projected Positive Recursive Teaching Dimension of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive Recursive Teaching Dimension of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n-1$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The nonempty intersection closure is exactly $I(\mathcal A_n)=2^{[n]}\setminus\{[n]\}$. Indeed every proper $T\subsetneq[n]$ is the nonempty intersection $\bigcap_{i\notin T}([n]\setminus\{i\})$, and no intersection of proper supports can equal $[n]$. This closure has VC $n-1$. Survey Proposition \ref{prop:intersection-closure-positive-teaching} identifies its VC with $\mathrm{RTD}^{+p}(\mathcal A_n)$, proving the stated value.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1130" style="position:relative;">
+        
+        <h3><a href="values/minimum_teaching_set_size_singleton_cosingleton.html" class="table-title-link">Minimum Teaching Set Size of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Teaching Set Size of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every target has teaching size three. To teach singleton $\{i\}$, label $i$ positive and two distinct other coordinates negative. The positive excludes the other singletons, and the two negatives exclude all cosingletons. A sample of size at most two with no positive label is consistent with at least $n-2\ge2$ singletons. A sample with a positive label must label $i$ positive; if it also labels $j$ negative, both $\{i\}$ and $[n]\setminus\{j\}$ survive. With no negative label there are again multiple realizers. Thus no such sample teaches the singleton. Complementing all labels proves the same statement for every cosingleton. Taking the minimum gives three.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1131" style="position:relative;">
+        
+        <h3><a href="values/recursive_teaching_dimension_singleton_cosingleton.html" class="table-title-link">Recursive Teaching Dimension of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursive Teaching Dimension of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The minimum-teaching value proof \ref{val:minimum_teaching_set_size_singleton_cosingleton} shows that every target initially has teaching size three. Hence the first recursive teaching step costs at least three. The same size-three teachers remain valid after targets are removed, giving a recursive teaching plan of width at most three. Therefore RTD is exactly three.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1132" style="position:relative;">
+        
+        <h3><a href="values/teaching_dimension_singleton_cosingleton.html" class="table-title-link">Teaching Dimension of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Teaching Dimension of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The minimum-teaching value proof \ref{val:minimum_teaching_set_size_singleton_cosingleton} establishes teaching size three for every target, not just for the easiest target. Taking the maximum also gives three.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1133" style="position:relative;">
+        
+        <h3><a href="values/size_singleton_cosingleton.html" class="table-title-link">Size of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Value: </strong>$2n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There are $n$ distinct singletons and $n$ distinct cosingletons. Their support sizes one and $n-1$ differ for $n\ge4$, so the two groups are disjoint.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1134" style="position:relative;">
+        
+        <h3><a href="values/effective_range_singleton_cosingleton.html" class="table-title-link">Effective Range of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The domain has $n$ coordinates. Each coordinate takes value one on its singleton and zero on a different singleton, so every coordinate is nonconstant.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1135" style="position:relative;">
+        
+        <h3><a href="values/covc_dimension_singleton_cosingleton.html" class="table-title-link">co-VC Dimension of Singleton–Cosingleton Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>co-VC Dimension of Singleton–Cosingleton Classes</p>
+<p><strong>Class: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every integer n >= 4.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The all-zero labeling on $[n]$ is absent, and all its one-coordinate flips are the singleton concepts. It is therefore a hollow $n$-star. No projected hollow star can have more than the $n$ domain coordinates, giving equality.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

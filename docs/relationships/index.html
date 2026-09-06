@@ -7135,7 +7135,7 @@
 <strong>Details:</strong><div class="text-field"><p>Every finite binary class admits a stable unlabeled sample-compression scheme of size at most its minimum star number.</p></div>
 <p><strong>Witness: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal U_n$, the established lower bound is $\mathrm S_{\mathrm{min}}\geq n/2-1$. Relationship <a href="parameters/projected_membership_queries_complexity.html">Projected Membership Queries Complexity</a> and the established value $\mathrm L(\mathcal U_n)=\lfloor\log_2 n\rfloor$ give $\mathrm{sUSC}(\mathcal U_n)\leq\lfloor\log_2 n\rfloor$. Hence the gap is unbounded.</p></div>
+<strong>Witness Verification:</strong><div class="text-field"><p>For $\mathcal U_n$, the established lower bound is $\mathrm S_{\mathrm{min}}\geq n/2-1$. Relationship <a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a> and the established value $\mathrm L(\mathcal U_n)=\lfloor\log_2 n\rfloor$ give $\mathrm{sUSC}(\mathcal U_n)\leq\lfloor\log_2 n\rfloor$. Hence the gap is unbounded.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -10475,6 +10475,34 @@
 <strong>Full Proof:</strong><div class="text-field"><p>Survey Corollary prop:yang-characteristic-separation gives the universal inequality and points to the database-owned witness value proofs.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hatcher2002algebraic">[hatcher2002algebraic]</a> <a href="bibliography.html#yang2018homological">[yang2018homological]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-510" style="position:relative;">
+        
+        <h3><a href="relationships/projected_positive_recursive_teaching_dimension_order_sample_compression.html" class="table-title-link">Projected Positive Recursive Teaching Dimension / Order Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Positive Recursive Teaching Dimension / Order Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_positive_recursive_teaching_dimension.html">Projected Positive Recursive Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For nonempty finite binary classes, $\mathrm{OSC}(\mathcal H)\le\mathrm{RTD}^{+p}(\mathcal H)$. More strongly, the right-hand side may be minimized over fixed coordinatewise label flips. Reconstruction in the intersection closure is allowed to be improper for the original class.</p></div>
+<p><strong>Witness: </strong><a href="classes/singleton_cosingleton.html">Singleton–Cosingleton Classes</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For every $n\ge4$, the singleton–cosingleton class has $\mathrm{RTD}^{+p}=n-1$ and $\mathrm{OSC}=3$, by database values <a href="values/projected_positive_recursive_teaching_dimension_singleton_cosingleton.html">Projected Positive Recursive Teaching Dimension of Singleton–Cosingleton Classes</a> and <a href="values/order_sample_compression_singleton_cosingleton.html">Order Sample Compression of Singleton–Cosingleton Classes</a>. Thus the ratio is unbounded, ruling out every reverse affine inequality. The exact order scheme is checked by sync/verify_singleton_cosingleton.py.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Corollary \ref{cor:order-positive-projected-teaching} in the survey, using its intersection-closed compression construction and intersection-closure/positive-teaching identity.</p></div>
+
+
 
         </div>
     </div>

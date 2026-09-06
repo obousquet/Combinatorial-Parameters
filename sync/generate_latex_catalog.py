@@ -151,9 +151,12 @@ def normalize_proof_latex(text: str) -> str:
     """
     # Preserve both of the TeX conventions already used by database records.
     # In particular, do not mistake the subscript in ``\(\mathcal U_n\)``
-    # for a legacy bare-text expression.
+    # for a legacy bare-text expression. Reference/citation keys are identifiers,
+    # not mathematical subscripts: wrapping their underscores breaks the label.
     parts = re.split(
-        r"(\$\$.*?\$\$|\$[^$]*\$|\\\(.*?\\\)|\\\[.*?\\\])",
+        r"(\$\$.*?\$\$|\$[^$]*\$|\\\(.*?\\\)|\\\[.*?\\\]"
+        r"|\\(?:ref|eqref|cref|Cref|autoref|cite|citep|citet)\*?"
+        r"(?:\[[^\]]*\])*\{[^{}]*\})",
         escape_path_underscores(text),
         flags=re.S,
     )

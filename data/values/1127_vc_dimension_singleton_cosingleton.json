@@ -1,0 +1,13 @@
+{
+  "id": 1127,
+  "name": "VC Dimension of Singleton–Cosingleton Classes",
+  "short_name": "vc_dimension_singleton_cosingleton",
+  "class_id": "#classes/singleton_cosingleton",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For every integer n >= 4.",
+  "proof": "Every three-coordinate set is shattered: singletons give its one-element traces, cosingletons its two-element traces, and an index outside the triple supplies the empty and full traces. No four-coordinate set is shattered, since all its traces have sizes zero, one, three or four, never two. For $n\\ge4$ this proves VC exactly three.",
+  "references": "Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument."
+}

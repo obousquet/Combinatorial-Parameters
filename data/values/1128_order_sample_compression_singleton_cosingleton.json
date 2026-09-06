@@ -1,0 +1,13 @@
+{
+  "id": 1128,
+  "name": "Order Sample Compression of Singleton–Cosingleton Classes",
+  "short_name": "order_sample_compression_singleton_cosingleton",
+  "class_id": "#classes/singleton_cosingleton",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$3$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For every integer n >= 4.",
+  "proof": "Use the fixed decoder order $\\varnothing,[n],\\{1\\},\\ldots,\\{n\\},[n]\\setminus\\{1\\},\\ldots,[n]\\setminus\\{n\\}$, with all other binary hypotheses placed afterward if a full-cube order is desired. Write $P,N$ for the positive and negative coordinates of a realizable sample. If $P=\\varnothing$, retain nothing and decode to $\\varnothing$. If $P\\ne\\varnothing$ and $N=\\varnothing$, retain the first positive and decode to $[n]$. If $|P|=1$ and $N\\ne\\varnothing$, retain the positive and the first negative; the first consistent hypothesis is that positive's singleton. Otherwise $|P|\\ge2$, and realizability forces $|N|=1$: retain the first two positives and the negative, and decode to the cosingleton missing the negative coordinate. Each retained sample has the same first consistent hypothesis as the original sample. Deleting any retained example introduces an earlier consistent hypothesis, so these are minimal order kernels. This proves OSC at most three. The general bound $\\mathrm{OSC}\\ge\\mathrm{RTD}^p\\ge\\mathrm{VC}$ and the VC value proof give the matching lower bound. Reconstructions $\\varnothing$ and $[n]$ are outside the class, so this is an improper construction, not a proper-order bound.",
+  "references": "Local definition-driven proof and exact finite replay in sync/verify_singleton_cosingleton.py. The class was already used in the survey's signed intersection-completion argument."
+}

@@ -1,0 +1,15 @@
+{
+  "id": 510,
+  "name": "Projected Positive Recursive Teaching Dimension / Order Sample Compression",
+  "short_name": "projected_positive_recursive_teaching_dimension_order_sample_compression",
+  "parameter_1_id": "#parameters/projected_positive_recursive_teaching_dimension",
+  "parameter_2_id": "#parameters/order_sample_compression",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For nonempty finite binary classes, $\\mathrm{OSC}(\\mathcal H)\\le\\mathrm{RTD}^{+p}(\\mathcal H)$. More strongly, the right-hand side may be minimized over fixed coordinatewise label flips. Reconstruction in the intersection closure is allowed to be improper for the original class.",
+  "latex_proof_label": "cor:order-positive-projected-teaching",
+  "proof_source": "Corollary \\ref{cor:order-positive-projected-teaching} in the survey, using its intersection-closed compression construction and intersection-closure/positive-teaching identity.",
+  "witness": "#classes/singleton_cosingleton",
+  "witness_strength": "unbounded",
+  "witness_verification": "For every $n\\ge4$, the singleton–cosingleton class has $\\mathrm{RTD}^{+p}=n-1$ and $\\mathrm{OSC}=3$, by database values #1129 and #1128. Thus the ratio is unbounded, ruling out every reverse affine inequality. The exact order scheme is checked by sync/verify_singleton_cosingleton.py."
+}
