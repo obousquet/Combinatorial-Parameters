@@ -9,8 +9,9 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": null,
-  "definition": "The **Labeled Sample Compression** of $\\mathcal{H}$ is the smallest $k$ for which every realizable labeled sample can be reduced to at most $k$ labeled examples from which a reconstruction function returns a hypothesis consistent with the whole sample.",
-  "graph_summary": "Smallest number of labeled sample examples sufficient for consistent reconstruction.",
+  "definition": "The **Labeled Sample Compression** of a nonempty finite binary class $\\mathcal H\\subseteq\\{0,1\\}^{\\mathcal X}$ is the smallest integer $k\\ge0$ for which there are fixed maps $\\kappa$ and $\\rho$ with the following property. For every realizable labeled sample $(S,y)$, meaning $S\\subseteq\\mathcal X$ and $y=h|_S$ for some $h\\in\\mathcal H$, the encoder retains $\\kappa(S,y)=(U,y|_U)$ with $U\\subseteq S$ and $|U|\\le k$, and the decoder returns $\\rho(U,y|_U)\\in\\{0,1\\}^{\\mathcal X}$ agreeing with $y$ on all of $S$. The decoder receives only the retained labeled subset: no auxiliary message, ordering, or repeated examples are allowed. Reconstruction may be outside $\\mathcal H$.",
+  "graph_summary": "Smallest labeled subset allowing consistent reconstruction, with no auxiliary message. Reconstruction may be improper.",
+  "comments": "Some literature counts retained examples plus auxiliary bits as the size of a compression scheme. In particular, the exponential theorem in \\cite{moran2016compression} uses such messages; its size bound is not directly an upper bound for the message-free parameter defined here without a separate conversion proof.",
   "origin_references": "The standard sample-compression framework is developed in \\cite{FW1995}.",
   "short_name": "labeled_sample_compression",
   "monotonicity_evidence": {

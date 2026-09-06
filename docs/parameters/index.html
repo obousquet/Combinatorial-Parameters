@@ -1184,9 +1184,9 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Labeled Sample Compression</strong> of $\mathcal{H}$ is the smallest $k$ for which every realizable labeled sample can be reduced to at most $k$ labeled examples from which a reconstruction function returns a hypothesis consistent with the whole sample.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>The <strong>Labeled Sample Compression</strong> of a nonempty finite binary class $\mathcal H\subseteq\{0,1\}^{\mathcal X}$ is the smallest integer $k\ge0$ for which there are fixed maps $\kappa$ and $\rho$ with the following property. For every realizable labeled sample $(S,y)$, meaning $S\subseteq\mathcal X$ and $y=h|_S$ for some $h\in\mathcal H$, the encoder retains $\kappa(S,y)=(U,y|_U)$ with $U\subseteq S$ and $|U|\le k$, and the decoder returns $\rho(U,y|_U)\in\{0,1\}^{\mathcal X}$ agreeing with $y$ on all of $S$. The decoder receives only the retained labeled subset: no auxiliary message, ordering, or repeated examples are allowed. Reconstruction may be outside $\mathcal H$.</p></div>
 
-
+<strong>Comments:</strong><div class="text-field"><p>Some literature counts retained examples plus auxiliary bits as the size of a compression scheme. In particular, the exponential theorem in <a href="bibliography.html#moran2016compression">[moran2016compression]</a> uses such messages; its size bound is not directly an upper bound for the message-free parameter defined here without a separate conversion proof.</p></div>
 <strong>Origin References:</strong><div class="text-field"><p>The standard sample-compression framework is developed in <a href="bibliography.html#FW1995">[FW1995]</a>.</p></div>
 <p><strong>Category:</strong> Compression</p>
 <p><strong>Symmetric:</strong> Yes</p>
