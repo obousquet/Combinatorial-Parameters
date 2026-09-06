@@ -17873,6 +17873,125 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1116" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_chen_neighbor_puncture.html" class="table-title-link">VC Dimension of the Chen Neighbor Puncture</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$4$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Coordinates $1,2,3,9$ realize all sixteen binary patterns. Direct enumeration of all $\binom{12}{5}$ coordinate sets finds no shattered five-set, so the VC dimension is exactly four. The database verifier reads the authoritative class definitions and independently checks these exact traces.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1117" style="position:relative;">
+        
+        <h3><a href="values/recursive_teaching_dimension_chen_neighbor_puncture.html" class="table-title-link">Recursive Teaching Dimension of the Chen Neighbor Puncture</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursive Teaching Dimension of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$4$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full-domain removal plan in sync/chen_neighbor_puncture_certificate.json.gz is a recursive teaching plan of width at most four. Its checker compares the actual remaining words at every removal and verifies that the recorded sample uniquely identifies the removed word. VC dimension four gives the matching lower bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1118" style="position:relative;">
+        
+        <h3><a href="values/monotone_recursive_teaching_dimension_chen_neighbor_puncture.html" class="table-title-link">Projected Recursive Teaching Dimension of the Chen Neighbor Puncture</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Recursive Teaching Dimension of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$4$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>This is a computer-assisted finite proof. The certificate sync/chen_neighbor_puncture_certificate.json.gz contains a width-four removal plan for each of the 3302 coordinate sets of size greater than four. The independent checker in sync/verify_chen_neighbor_puncture.py reconstructs the distinct projected words and, at each of 135515 removals, directly checks that the recorded sample lies in the projected domain, has size at most four, and uniquely identifies the removed word among the remaining words. Every plan ends with no words left. The other 794 projections have at most four coordinates and are taught using their entire domain. Hence every projection has RTD at most four. The shattered four-set gives the matching lower bound. The checker does not use the producer's bitset partitions and rejects an intentionally corrupted teaching sample.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1119" style="position:relative;">
+        
+        <h3><a href="values/order_sample_compression_chen_neighbor_puncture.html" class="table-title-link">Order Sample Compression of the Chen Neighbor Puncture</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Order Sample Compression of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Value: </strong>$\ge5$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>A strict finite separation from projected RTD four. The known bounds are 5 <= OSC <= 8; an exact value and an unbounded family are not claimed.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Write $\mathcal N=\mathcal N_{\mathrm{CCT}}$, and use $\mathcal C_0,h$ from its definition. Every five-coordinate sample of $h$ is realized by a neighbor $h^{(i)}\in\mathcal N$ at an omitted coordinate. Therefore $\mathcal C_0\subseteq C_5(\mathcal N)$. If $\mathrm{OSC}(\mathcal N)\le4$, survey Corollary cor:order-compression-trace-completion gives $\mathrm{OSC}(C_5(\mathcal N))\le4$. This contradicts $\mathrm{OSC}\ge\mathrm{RTD}$ and $\mathrm{RTD}(\mathcal C_0)=5$, using subclass monotonicity. Thus OSC is at least five. For the upper bound, every word lies within Hamming distance eight of $c=\mathtt{110000110000}$. Order the full cube by increasing distance to $c$, breaking ties arbitrarily. The first hypothesis consistent with a sample is $c$ modified only at its sampled disagreement coordinates. Keeping exactly those examples gives an order scheme of size at most eight. Hence $5\le\mathrm{OSC}(\mathcal N)\le8$; no exact value is asserted.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1120" style="position:relative;">
+        
+        <h3><a href="values/size_chen_neighbor_puncture.html" class="table-title-link">Size of the Chen Neighbor Puncture</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Value: </strong>$109$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The base has 100 words. The removed word is in the base, and exactly two of its twelve Hamming neighbors are already in the remaining base. The union therefore has $99+12-2=109$ distinct words. The definition-driven verifier checks the count.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1121" style="position:relative;">
+        
+        <h3><a href="values/effective_range_chen_neighbor_puncture.html" class="table-title-link">Effective Range of the Chen Neighbor Puncture</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Value: </strong>$12$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The domain has twelve coordinates and both labels occur at every coordinate, as directly checked from the defining words. Thus all twelve coordinates are active.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1122" style="position:relative;">
+        
+        <h3><a href="values/hamming_radius_chen_neighbor_puncture.html" class="table-title-link">Hamming Radius of the Chen Neighbor Puncture</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hamming Radius of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/hamming_radius.html">Hamming Radius</a></p>
+<p><strong>Value: </strong>$8$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The center $\mathtt{110000110000}$ encloses the class in a Hamming ball of radius eight. Exhaustive evaluation of all 4096 possible centers gives minimum maximum distance eight. The checker computes the distances directly from the authoritative class definition, using exact integer arithmetic.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

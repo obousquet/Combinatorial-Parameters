@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,34 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-34" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1117" style="position:relative;">
         
-        <h3><a href="parameters/order_sample_compression.html" class="table-title-link">Order Sample Compression</a></h3>
+        <h3><a href="values/recursive_teaching_dimension_chen_neighbor_puncture.html" class="table-title-link">Recursive Teaching Dimension of the Chen Neighbor Puncture</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Order Sample Compression</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{OSC}">
-            \[\mathrm{OSC}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Order Sample Compression</strong> of $\mathcal{H}$ is the minimum size of a labeled compression scheme compatible with a well-order of its decoded hypotheses: each sample is decoded to the least compatible hypothesis and compressed by a minimal teaching set relative to earlier hypotheses.</p></div>
+        <p><strong>Name: </strong>Recursive Teaching Dimension of the Chen Neighbor Puncture</p>
+<p><strong>Class: </strong><a href="classes/chen_neighbor_puncture.html">Chen Neighbor Puncture</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$4$</p>
+<p><strong>Order:</strong> </p>
 
-
-<strong>Origin References:</strong><div class="text-field"><p>Introduced in <a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a>.</p></div>
-<p><strong>Category:</strong> Compression</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/order_sample_compression_singletons.html'>$\mathrm{OSC}(\{\{i\}\}_{1\le i\le n}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_trivial_concepts.html'>$\mathrm{OSC}(\{\emptyset, [n]\}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_full_cube.html'>$\mathrm{OSC}(\{S:S\subset [n]\}) = n\;(\Omega(n))$</a></li><li><a href='values/order_sample_compression_halfintervals.html'>$\mathrm{OSC}(\{[i]\}_{1\le i\le n}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_three_code_class.html'>$\mathrm{OSC}(\mathcal C_{\triangle}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_tagged_singletons.html'>$\mathrm{OSC}(\text{Tag}) = 1\;(\Omega(1))$</a></li><li><a href='values/order_sample_compression_chen_neighbor_puncture.html'>$\mathrm{OSC}(\mathcal N_{\mathrm{CCT}}) \ge 5$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/proper_ordered_sample_compression_order_sample_compression.html" class="relationship-statement">$\mathrm{pOSC} \ge \mathrm{OSC}$</a></li><li><a href="relationships/order_sample_compression_monotone_recursive_teaching_dimension.html" class="relationship-statement">$\mathrm{OSC} \ge \mathrm{RTD}^p$</a></li><li><a href="relationships/effective_range_order_sample_compression.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{OSC}$</a></li></ul><p><strong>Refuted proposed relationships:</strong></p><ul class="fields-list relationship-list-refuted"><li><a href="relationships/order_sample_compression_monotonic_projected_minimum_teaching_set_size.html" class="relationship-statement">$\mathrm{OSC} \ge \mathrm{TS}_{\min}^{*p}$</a> <span class="relationship-status-badge relationship-status-refuted">Refuted</span></li></ul></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full-domain removal plan in sync/chen_neighbor_puncture_certificate.json.gz is a recursive teaching plan of width at most four. Its checker compares the actual remaining words at every removal and verifies that the recorded sample uniquely identifies the removed word. VC dimension four gives the matching lower bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
 
         </div>
     </div>

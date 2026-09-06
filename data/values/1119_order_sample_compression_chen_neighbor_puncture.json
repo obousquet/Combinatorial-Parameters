@@ -1,0 +1,12 @@
+{
+  "id": 1119,
+  "name": "Order Sample Compression of the Chen Neighbor Puncture",
+  "short_name": "order_sample_compression_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/order_sample_compression",
+  "value": "$\\ge5$",
+  "status": "established",
+  "proof": "Write $\\mathcal N=\\mathcal N_{\\mathrm{CCT}}$, and use $\\mathcal C_0,h$ from its definition. Every five-coordinate sample of $h$ is realized by a neighbor $h^{(i)}\\in\\mathcal N$ at an omitted coordinate. Therefore $\\mathcal C_0\\subseteq C_5(\\mathcal N)$. If $\\mathrm{OSC}(\\mathcal N)\\le4$, survey Corollary cor:order-compression-trace-completion gives $\\mathrm{OSC}(C_5(\\mathcal N))\\le4$. This contradicts $\\mathrm{OSC}\\ge\\mathrm{RTD}$ and $\\mathrm{RTD}(\\mathcal C_0)=5$, using subclass monotonicity. Thus OSC is at least five. For the upper bound, every word lies within Hamming distance eight of $c=\\mathtt{110000110000}$. Order the full cube by increasing distance to $c$, breaking ties arbitrarily. The first hypothesis consistent with a sample is $c$ modified only at its sampled disagreement coordinates. Keeping exactly those examples gives an order scheme of size at most eight. Hence $5\\le\\mathrm{OSC}(\\mathcal N)\\le8$; no exact value is asserted.",
+  "references": "Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from \\cite{chen2016recursive}; the puncture modification and its separation proof are local results.",
+  "details": "A strict finite separation from projected RTD four. The known bounds are 5 <= OSC <= 8; an exact value and an unbounded family are not claimed."
+}

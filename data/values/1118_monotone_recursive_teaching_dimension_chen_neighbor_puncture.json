@@ -1,0 +1,11 @@
+{
+  "id": 1118,
+  "name": "Projected Recursive Teaching Dimension of the Chen Neighbor Puncture",
+  "short_name": "monotone_recursive_teaching_dimension_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$4$",
+  "status": "established",
+  "proof": "This is a computer-assisted finite proof. The certificate sync/chen_neighbor_puncture_certificate.json.gz contains a width-four removal plan for each of the 3302 coordinate sets of size greater than four. The independent checker in sync/verify_chen_neighbor_puncture.py reconstructs the distinct projected words and, at each of 135515 removals, directly checks that the recorded sample lies in the projected domain, has size at most four, and uniquely identifies the removed word among the remaining words. Every plan ends with no words left. The other 794 projections have at most four coordinates and are taught using their entire domain. Hence every projection has RTD at most four. The shattered four-set gives the matching lower bound. The checker does not use the producer's bitset partitions and rejects an intentionally corrupted teaching sample.",
+  "references": "Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from \\cite{chen2016recursive}; the puncture modification and its separation proof are local results."
+}

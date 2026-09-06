@@ -1,0 +1,11 @@
+{
+  "id": 1121,
+  "name": "Effective Range of the Chen Neighbor Puncture",
+  "short_name": "effective_range_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$12$",
+  "status": "established",
+  "proof": "The domain has twelve coordinates and both labels occur at every coordinate, as directly checked from the defining words. Thus all twelve coordinates are active.",
+  "references": "Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from \\cite{chen2016recursive}; the puncture modification and its separation proof are local results."
+}

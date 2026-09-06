@@ -1,0 +1,11 @@
+{
+  "id": 1122,
+  "name": "Hamming Radius of the Chen Neighbor Puncture",
+  "short_name": "hamming_radius_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/hamming_radius",
+  "value": "$8$",
+  "status": "established",
+  "proof": "The center $\\mathtt{110000110000}$ encloses the class in a Hamming ball of radius eight. Exhaustive evaluation of all 4096 possible centers gives minimum maximum distance eight. The checker computes the distances directly from the authoritative class definition, using exact integer arithmetic.",
+  "references": "Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from \\cite{chen2016recursive}; the puncture modification and its separation proof are local results."
+}

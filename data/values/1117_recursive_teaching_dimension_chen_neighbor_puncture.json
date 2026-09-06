@@ -1,0 +1,11 @@
+{
+  "id": 1117,
+  "name": "Recursive Teaching Dimension of the Chen Neighbor Puncture",
+  "short_name": "recursive_teaching_dimension_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$4$",
+  "status": "established",
+  "proof": "The full-domain removal plan in sync/chen_neighbor_puncture_certificate.json.gz is a recursive teaching plan of width at most four. Its checker compares the actual remaining words at every removal and verifies that the recorded sample uniquely identifies the removed word. VC dimension four gives the matching lower bound.",
+  "references": "Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from \\cite{chen2016recursive}; the puncture modification and its separation proof are local results."
+}

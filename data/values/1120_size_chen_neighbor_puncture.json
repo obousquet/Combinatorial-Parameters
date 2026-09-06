@@ -1,0 +1,11 @@
+{
+  "id": 1120,
+  "name": "Size of the Chen Neighbor Puncture",
+  "short_name": "size_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/size",
+  "value": "$109$",
+  "status": "established",
+  "proof": "The base has 100 words. The removed word is in the base, and exactly two of its twelve Hamming neighbors are already in the remaining base. The union therefore has $99+12-2=109$ distinct words. The definition-driven verifier checks the count.",
+  "references": "Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from \\cite{chen2016recursive}; the puncture modification and its separation proof are local results."
+}

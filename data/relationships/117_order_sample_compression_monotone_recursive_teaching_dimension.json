@@ -8,5 +8,8 @@
   "name": "Order Sample Compression / Projected Recursive Teaching Dimension",
   "status": "established",
   "references": "\\cite{darnstadt2016order}",
+  "witness": "#classes/chen_neighbor_puncture",
+  "witness_strength": "strict",
+  "witness_verification": "The 109-concept Chen Neighbor Puncture has projected RTD exactly four, certified on all 4096 projections, but OSC at least five: its five-trace completion contains the RTD-five Chen base. See database values #1118/#1119 and survey Proposition prop:osc-projected-rtd-separation. This refutes equality, not a reverse affine bound; no unbounded witness is claimed.",
   "proof": "In the cached August 26, 2014 author-hosted preprint, Theorem 14 restricts an order scheme to any coordinate projection without increasing its size. The teaching-plan argument of Lemma 23 lower-bounds the resulting order-scheme size by the recursive teaching dimension of that projection. Taking the maximum over projections is Theorem 24. See the survey's literature/darnstadt2016order source packet for the exact version and statement numbers."
 }

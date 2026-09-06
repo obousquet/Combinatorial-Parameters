@@ -1,0 +1,9 @@
+{
+  "id": 51,
+  "name": "Chen Neighbor Puncture",
+  "short_name": "chen_neighbor_puncture",
+  "graph_label": "CCT-puncture",
+  "symbol": "\\mathcal N_{\\mathrm{CCT}}",
+  "definition": "Let $\\mathcal C_0\\subseteq\\{0,1\\}^{12}$ be the 100-word base class at $n=1$ in the definition of Chen–Cheng–Tang Teaching Products, and put $h=\\mathtt{000001010101}\\in\\mathcal C_0$. Coordinates are $1,\\ldots,12$, read left to right. For each coordinate $i$, let $h^{(i)}$ agree with $h$ except at $i$, where its bit is flipped. The Chen Neighbor Puncture is the finite class $$\\mathcal N_{\\mathrm{CCT}}=(\\mathcal C_0\\setminus\\{h\\})\\cup\\{h^{(i)}:1\\le i\\le12\\}.$$ Repeated words are included only once. The nine defining seeds of $\\mathcal C_0$ are owned by the Chen–Cheng–Tang Teaching Products record, not duplicated here.",
+  "comments": "A fixed finite class, not an asymptotic family. Its construction is a local modification of the base in \\cite{chen2016recursive}, not a class attributed to that paper. The database verifier reads both authoritative class definitions."
+}

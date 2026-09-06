@@ -147,6 +147,10 @@ python3 sync/verify_hasse_reduction.py
 
 # Direct enumeration behind the repetition-free teaching separation value.
 python3 sync/verify_repetitionfree_teaching.py
+
+# Independently replay all projected-teaching plans for the finite OSC > RTD^p witness.
+python3 sync/verify_chen_neighbor_puncture.py --data-dir data \
+  --check-certificate sync/chen_neighbor_puncture_certificate.json.gz
 ```
 
 Validate the monotonicity metadata after changing parameter properties or an

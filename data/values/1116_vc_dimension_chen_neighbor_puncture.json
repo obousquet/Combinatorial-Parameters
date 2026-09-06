@@ -1,0 +1,11 @@
+{
+  "id": 1116,
+  "name": "VC Dimension of the Chen Neighbor Puncture",
+  "short_name": "vc_dimension_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$4$",
+  "status": "established",
+  "proof": "Coordinates $1,2,3,9$ realize all sixteen binary patterns. Direct enumeration of all $\\binom{12}{5}$ coordinate sets finds no shattered five-set, so the VC dimension is exactly four. The database verifier reads the authoritative class definitions and independently checks these exact traces.",
+  "references": "Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from \\cite{chen2016recursive}; the puncture modification and its separation proof are local results."
+}
