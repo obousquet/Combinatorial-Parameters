@@ -18496,6 +18496,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1152" style="position:relative;">
+        
+        <h3><a href="values/order_sample_compression_antipodal_six_code.html" class="table-title-link">Order Sample Compression of Antipodal Six-Code Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Order Sample Compression of Antipodal Six-Code Class</p>
+<p><strong>Class: </strong><a href="classes/antipodal_six_code.html">Antipodal Six-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Index binary words by integers $j\in\{0,\ldots,15\}$, with label at $x_i$ equal to bit $i$ of $j$ (least significant bit first, matching the displayed coordinate order). The full-cube decoding order is $\langle 0,8,12,14,10,2,3,4,6,7,15,5,1,13,11,9\rangle$. For any realizable sample $S$, let $q(S)$ be the first word in this order extending $S$. Direct finite enumeration of the class's 63 realizable partial samples shows that each has a contained labeled subset $U$ of size at most two with $q(U)=q(S)$. Compress to a smallest such subset, breaking ties by coordinate order, and decode by the same fixed order. This is an order scheme of width at most two; the subset excludes all hypotheses preceding $q(S)$ and is inclusion-minimal with that property. The verification enumerates every actual subset and checks the minimum in two independent bit-mask and literal-set representations; it includes the empty sample, all 24 three-coordinate samples and all six full concepts. All labels and coordinates are retained unchanged, with no auxiliary message. Some reconstructed words are outside the class, which is allowed for OSC. The natural integer order is rejected as a negative control. Conversely every order scheme is a labeled compression scheme, and the independently proved labeled compression value of this class is two. Therefore OSC is exactly two. The order was found by one bounded solver query, but the proof uses only the saved order and solver-free exhaustive replay, not a solver nonexistence verdict. No novelty claim is made.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite certificate, independently replayed in sync/verify_projected_nctd_compression_gap.py. The general finite-order formulation is prop:order-compression-finite-order in the survey; the lower-bound proof is the database-owned Labeled Sample Compression value for this class.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

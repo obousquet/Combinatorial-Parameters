@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,23 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-54" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1152" style="position:relative;">
         
-        <h3><a href="classes/antipodal_six_code.html" class="table-title-link">Antipodal Six-Code Class</a></h3>
+        <h3><a href="values/order_sample_compression_antipodal_six_code.html" class="table-title-link">Order Sample Compression of Antipodal Six-Code Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Antipodal Six-Code Class</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal C_6^{\pm}">
-            \[\mathcal C_6^{\pm}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>On coordinates $x_0,x_1,x_2,x_3$, the <strong>antipodal six-code class</strong> is $$\mathcal C_6^{\pm}=\{\mathtt{0000},\mathtt{1100},\mathtt{1010},\mathtt{0101},\mathtt{0011},\mathtt{1111}\},$$ where each word lists its labels in the displayed coordinate order. It consists of three complementary pairs of binary words.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>A finite, independently verified separation between projected no-clashing teaching dimension one and labeled sample compression two. No asymptotic separation or novelty claim is asserted.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/projected_noclashing_teaching_dimension_antipodal_six_code.html'>Projected No-Clashing Teaching Dimension of Antipodal Six-Code Class</a></li><li><a href='values/noclashing_teaching_dimension_antipodal_six_code.html'>No-Clashing Teaching Dimension of Antipodal Six-Code Class</a></li><li><a href='values/labeled_sample_compression_antipodal_six_code.html'>Labeled Sample Compression of Antipodal Six-Code Class</a></li><li><a href='values/stable_labeled_sample_compression_antipodal_six_code.html'>Stable Labeled Sample Compression of Antipodal Six-Code Class</a></li><li><a href='values/vc_dimension_antipodal_six_code.html'>VC Dimension of Antipodal Six-Code Class</a></li><li><a href='values/order_sample_compression_antipodal_six_code.html'>Order Sample Compression of Antipodal Six-Code Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/stable_labeled_sample_compression_projected_noclashing_teaching_dimension.html'>Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</a></li><li><a href='relationships/projected_noclashing_teaching_dimension_labeled_sample_compression.html'>Projected No-Clashing Teaching Dimension / Labeled Sample Compression</a></li></ul></p></div>
+        <p><strong>Name: </strong>Order Sample Compression of Antipodal Six-Code Class</p>
+<p><strong>Class: </strong><a href="classes/antipodal_six_code.html">Antipodal Six-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Index binary words by integers $j\in\{0,\ldots,15\}$, with label at $x_i$ equal to bit $i$ of $j$ (least significant bit first, matching the displayed coordinate order). The full-cube decoding order is $\langle 0,8,12,14,10,2,3,4,6,7,15,5,1,13,11,9\rangle$. For any realizable sample $S$, let $q(S)$ be the first word in this order extending $S$. Direct finite enumeration of the class's 63 realizable partial samples shows that each has a contained labeled subset $U$ of size at most two with $q(U)=q(S)$. Compress to a smallest such subset, breaking ties by coordinate order, and decode by the same fixed order. This is an order scheme of width at most two; the subset excludes all hypotheses preceding $q(S)$ and is inclusion-minimal with that property. The verification enumerates every actual subset and checks the minimum in two independent bit-mask and literal-set representations; it includes the empty sample, all 24 three-coordinate samples and all six full concepts. All labels and coordinates are retained unchanged, with no auxiliary message. Some reconstructed words are outside the class, which is allowed for OSC. The natural integer order is rejected as a negative control. Conversely every order scheme is a labeled compression scheme, and the independently proved labeled compression value of this class is two. Therefore OSC is exactly two. The order was found by one bounded solver query, but the proof uses only the saved order and solver-free exhaustive replay, not a solver nonexistence verdict. No novelty claim is made.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite certificate, independently replayed in sync/verify_projected_nctd_compression_gap.py. The general finite-order formulation is prop:order-compression-finite-order in the survey; the lower-bound proof is the database-owned Labeled Sample Compression value for this class.</p></div>
 
         </div>
     </div>

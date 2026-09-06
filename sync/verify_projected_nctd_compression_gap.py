@@ -26,6 +26,33 @@ def samples(words: tuple[int, ...], n: int) -> list[tuple[int, int]]:
     return sorted({(m, h & m) for h in words for m in range(1 << n)})
 
 
+def order_certificate() -> list[int]:
+    record = json.loads((DATA / 'values/1152_order_sample_compression_antipodal_six_code.json').read_text())
+    encoded = re.search(r'\\langle ([0-9, ]+)\\rangle', record['proof'])
+    assert encoded is not None
+    order = [int(item) for item in encoded[1].split(',')]
+    assert sorted(order) == list(range(16))
+    return order
+
+
+def order_key_sizes(words: tuple[int, ...], order: list[int]) -> list[int]:
+    assert sorted(order) == list(range(16))
+    first = {(m, y): next(h for h in order if h & m == y) for m, y in samples(words, 4)}
+    literal_words = [frozenset((x, (h >> x) & 1) for x in range(4)) for h in order]
+    sizes = []
+    for (mask, labels), target in first.items():
+        available = [u for u in range(16) if u & mask == u and first[u, labels & u] == target]
+        width = min(u.bit_count() for u in available)
+        sample = frozenset((x, (labels >> x) & 1) for x in range(4) if mask & (1 << x))
+        target_literals = next(h for h in literal_words if sample <= h)
+        literal_width = min(size for size in range(len(sample) + 1)
+                            for key in combinations(sorted(sample), size)
+                            if next(h for h in literal_words if frozenset(key) <= h) == target_literals)
+        assert width == literal_width
+        sizes.append(width)
+    return sizes
+
+
 def width_one(words: tuple[int, ...], n: int) -> tuple[list[int] | None, dict[str, int]]:
     keys = [(0, 0)] + [(1 << x, y << x) for x in range(n) for y in (0, 1)]
     partial = samples(words, n)
@@ -201,7 +228,10 @@ def verify() -> None:
         pass
     else:
         raise AssertionError('corrupted teaching assignment accepted')
-    for value_id, expected in ((1145, '$1$'), (1146, '$1$'), (1147, '$2$'), (1148, '$2$'), (1149, '$2$')):
+    order_sizes = order_key_sizes(words, order_certificate())
+    assert len(order_sizes) == 63 and max(order_sizes) == 2
+    assert max(order_key_sizes(words, list(range(16)))) == 4
+    for value_id, expected in ((1145, '$1$'), (1146, '$1$'), (1147, '$2$'), (1148, '$2$'), (1149, '$2$'), (1152, '$2$')):
         value = json.loads(next((DATA / 'values').glob(f'{value_id}_*.json')).read_text())
         assert value['value'] == expected and value['status'] == 'established'
     for rid in (442, 515):
@@ -211,8 +241,10 @@ def verify() -> None:
     print('Domain exhaustion:', domain_stats, '; independent injection exhaustion:', injection_stats)
     print(f'Passed {projection_count} projections, {pair_checks} teacher pairs, '
           f'63 compression samples, {deletion_checks} stability deletions; '
-          'six concept-deletion compressions, five value guards, two witness guards '
+          'six concept-deletion compressions, six value guards, two witness guards '
           'and positive/negative controls.')
+    print('Order certificate: 63 bit-mask/literal-set checks; key-size histogram',
+          {k: order_sizes.count(k) for k in range(3)}, '; natural-order width four rejected.')
 
 
 if __name__ == '__main__':
