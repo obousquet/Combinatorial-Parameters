@@ -71,11 +71,11 @@
         <p><strong>Name: </strong>Recursive Teaching Dimension of Quadratic-Residue Tournament Classes</p>
 <p><strong>Class: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
 <p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$\left\lfloor\tfrac12\log_2p-\log_2\log_2p\right\rfloor$ or larger</p>
+<p><strong>Value: </strong>$\Theta(\log_2 p)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>For all sufficiently large primes $p\equiv3\pmod4$; here $|\mathcal Q_p|=p$.</p>
+<p><strong>Details: </strong>For all sufficiently large primes $p\equiv3\pmod4$, $\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor\le\mathrm{RTD}(\mathcal Q_p)\le\lfloor\log_2p\rfloor$; here $|\mathcal Q_p|=p$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 15 of Simon proves that every quadratic-residue tournament $G_p$ has minimum teaching dimension at least $\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor$. Recursive teaching dimension is at least the minimum teaching dimension of its initial class, giving the same lower bound.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 15 of Simon proves that every quadratic-residue tournament $G_p$ has minimum teaching dimension at least $\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor$. Recursive teaching dimension is at least the minimum teaching dimension of its initial class, giving the same lower bound. For the matching order upper bound, every remaining subclass has at most $p$ concepts. Repeatedly conditioning on a smaller nonempty fibre of a nonconstant coordinate identifies some concept within at most $\lfloor\log_2p\rfloor$ steps. Use such a teacher at each recursive removal.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#simon2023tournaments">[simon2023tournaments]</a></p></div>
 
         </div>

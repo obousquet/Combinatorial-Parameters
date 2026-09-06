@@ -1,0 +1,13 @@
+{
+  "id": 1125,
+  "name": "Projected No-Clashing Teaching Dimension of Quadratic-Residue Tournament Classes",
+  "short_name": "projected_noclashing_teaching_dimension_quadratic_residue_tournament_classes",
+  "class_id": "#classes/quadratic_residue_tournament_classes",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$\\Theta(\\log_2 p)$",
+  "value_class": "omega_log_n",
+  "details": "With $k_p=\\max\\{k\\ge1:p>k^2 2^{2k-2}\\}$, $\\lceil k_p/2\\rceil\\le\\mathrm{NCTD}^{p}(\\mathcal Q_p)\\le\\lfloor\\log_2p\\rfloor$. Ordinary NCTD remains one; projection is not a bounded-factor operation for NCTD.",
+  "status": "established",
+  "proof": "The VC value proof for this class supplies a projection equal to the full $k_p$-cube. For a no-clashing teacher on a $k$-cube, each of its $k2^{k-1}$ edges must have the coordinate on which its endpoints differ selected by at least one endpoint's teacher. The sum of teacher sizes is at most $2^k$ times the maximum teacher size. Counting these edge incidences gives maximum size at least $\\lceil k/2\\rceil$. Apply this to the shattered projection. For the upper bound, NCTD is at most RTD on every projection: in a recursive teaching order, the earlier of two concepts receives a sample inconsistent with the later one. The preceding projected RTD value proof therefore bounds projected NCTD by $\\lfloor\\log_2p\\rfloor$. Since $k_p=\\tfrac12\\log_2p-O(\\log_2\\log_2p)$, both bounds have logarithmic order.",
+  "references": "Derived from \\cite[Theorem 13]{simon2023tournaments} and the cube edge-counting argument for no-clashing teaching; see also \\cite{KSZ2019}."
+}

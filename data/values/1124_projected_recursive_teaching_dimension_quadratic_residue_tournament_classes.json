@@ -1,0 +1,13 @@
+{
+  "id": 1124,
+  "name": "Projected Recursive Teaching Dimension of Quadratic-Residue Tournament Classes",
+  "short_name": "projected_recursive_teaching_dimension_quadratic_residue_tournament_classes",
+  "class_id": "#classes/quadratic_residue_tournament_classes",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$\\Theta(\\log_2 p)$",
+  "value_class": "omega_log_n",
+  "details": "With $k_p=\\max\\{k\\ge1:p>k^2 2^{2k-2}\\}$, $k_p\\le\\mathrm{RTD}^{p}(\\mathcal Q_p)\\le\\lfloor\\log_2p\\rfloor$.",
+  "status": "established",
+  "proof": "The VC value proof for this class shows that every $k_p$-set is shattered. Projecting onto one gives a full $k_p$-cube. Each cube vertex requires all $k_p$ labels for its first teaching set, and domain size bounds every later teaching set by $k_p$, so its RTD is exactly $k_p$. For the upper bound, every projection has at most $p$ concepts. Any finite class of size $M>1$ has a teaching sample of size at most $\\lfloor\\log_2M\\rfloor$: repeatedly choose a nonconstant coordinate and its smaller nonempty label fibre until one concept remains. Each choice at least halves the residual size; the retained labels identify the survivor. Apply this to every remaining subclass during recursive elimination. Thus every projection has RTD at most $\\lfloor\\log_2p\\rfloor$. The bounds on $k_p$ in the VC value proof give the asymptotic order.",
+  "references": "Derived from \\cite[Theorem 13]{simon2023tournaments}, the full-cube calculation, and the elementary halving bound."
+}

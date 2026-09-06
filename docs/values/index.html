@@ -16788,11 +16788,11 @@
         <p><strong>Name: </strong>Recursive Teaching Dimension of Quadratic-Residue Tournament Classes</p>
 <p><strong>Class: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
 <p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$\left\lfloor\tfrac12\log_2p-\log_2\log_2p\right\rfloor$ or larger</p>
+<p><strong>Value: </strong>$\Theta(\log_2 p)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>For all sufficiently large primes $p\equiv3\pmod4$; here $|\mathcal Q_p|=p$.</p>
+<p><strong>Details: </strong>For all sufficiently large primes $p\equiv3\pmod4$, $\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor\le\mathrm{RTD}(\mathcal Q_p)\le\lfloor\log_2p\rfloor$; here $|\mathcal Q_p|=p$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 15 of Simon proves that every quadratic-residue tournament $G_p$ has minimum teaching dimension at least $\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor$. Recursive teaching dimension is at least the minimum teaching dimension of its initial class, giving the same lower bound.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 15 of Simon proves that every quadratic-residue tournament $G_p$ has minimum teaching dimension at least $\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor$. Recursive teaching dimension is at least the minimum teaching dimension of its initial class, giving the same lower bound. For the matching order upper bound, every remaining subclass has at most $p$ concepts. Repeatedly conditioning on a smaller nonempty fibre of a nonconstant coordinate identifies some concept within at most $\lfloor\log_2p\rfloor$ steps. Use such a teacher at each recursive removal.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#simon2023tournaments">[simon2023tournaments]</a></p></div>
 
         </div>
@@ -17988,6 +17988,57 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>The center $\mathtt{110000110000}$ encloses the class in a Hamming ball of radius eight. Exhaustive evaluation of all 4096 possible centers gives minimum maximum distance eight. The checker computes the distances directly from the authoritative class definition, using exact integer arithmetic.</p></div>
 <strong>References:</strong><div class="text-field"><p>Definition-driven certificate and independent replay: sync/verify_chen_neighbor_puncture.py; sync/chen_neighbor_puncture_certificate.json.gz. The original Chen base is from <a href="bibliography.html#chen2016recursive">[chen2016recursive]</a>; the puncture modification and its separation proof are local results.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1123" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_quadratic_residue_tournament_classes.html" class="table-title-link">VC Dimension of Quadratic-Residue Tournament Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of Quadratic-Residue Tournament Classes</p>
+<p><strong>Class: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$\Theta(\log_2 p)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>For primes $p\equiv3\pmod4$, define $k_p=\max\{k\ge1:p>k^2 2^{2k-2}\}$. Then $k_p\le\mathrm{VC}(\mathcal Q_p)\le\lfloor\log_2p\rfloor$. In fact every $k_p$-coordinate set is shattered.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 13 of Simon gives the strong signed extension property when $p>k^2 2^{2k-2}$: for any distinct coordinates $a_1,\ldots,a_k$ and prescribed signs, there is a vertex $x$ outside these coordinates with the prescribed orientations between $x$ and each $a_j$. In the catalogue convention $C_x(a_j)=1$ exactly when $x\to a_j$, so all binary patterns occur. Thus every such coordinate set is shattered. There are at most $p$ concepts, giving the upper bound by counting the $2^d$ traces of a shattered $d$-set. The inequality defining $k_p$ yields $k_p=\tfrac12\log_2p-O(\log_2\log_2p)$: for sufficiently large $p$, the integer $\lfloor\tfrac12\log_2p-\log_2\log_2p\rfloor$ is admissible, and $k_p\le1+\tfrac12\log_2p$. This proves the asserted order.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem 13]{simon2023tournaments}; the VC consequence follows directly from the signed extension property.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1124" style="position:relative;">
+        
+        <h3><a href="values/projected_recursive_teaching_dimension_quadratic_residue_tournament_classes.html" class="table-title-link">Projected Recursive Teaching Dimension of Quadratic-Residue Tournament Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Recursive Teaching Dimension of Quadratic-Residue Tournament Classes</p>
+<p><strong>Class: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/monotone_recursive_teaching_dimension.html">Projected Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\Theta(\log_2 p)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>With $k_p=\max\{k\ge1:p>k^2 2^{2k-2}\}$, $k_p\le\mathrm{RTD}^{p}(\mathcal Q_p)\le\lfloor\log_2p\rfloor$.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The VC value proof for this class shows that every $k_p$-set is shattered. Projecting onto one gives a full $k_p$-cube. Each cube vertex requires all $k_p$ labels for its first teaching set, and domain size bounds every later teaching set by $k_p$, so its RTD is exactly $k_p$. For the upper bound, every projection has at most $p$ concepts. Any finite class of size $M>1$ has a teaching sample of size at most $\lfloor\log_2M\rfloor$: repeatedly choose a nonconstant coordinate and its smaller nonempty label fibre until one concept remains. Each choice at least halves the residual size; the retained labels identify the survivor. Apply this to every remaining subclass during recursive elimination. Thus every projection has RTD at most $\lfloor\log_2p\rfloor$. The bounds on $k_p$ in the VC value proof give the asymptotic order.</p></div>
+<strong>References:</strong><div class="text-field"><p>Derived from \cite[Theorem 13]{simon2023tournaments}, the full-cube calculation, and the elementary halving bound.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1125" style="position:relative;">
+        
+        <h3><a href="values/projected_noclashing_teaching_dimension_quadratic_residue_tournament_classes.html" class="table-title-link">Projected No-Clashing Teaching Dimension of Quadratic-Residue Tournament Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension of Quadratic-Residue Tournament Classes</p>
+<p><strong>Class: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\Theta(\log_2 p)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>With $k_p=\max\{k\ge1:p>k^2 2^{2k-2}\}$, $\lceil k_p/2\rceil\le\mathrm{NCTD}^{p}(\mathcal Q_p)\le\lfloor\log_2p\rfloor$. Ordinary NCTD remains one; projection is not a bounded-factor operation for NCTD.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The VC value proof for this class supplies a projection equal to the full $k_p$-cube. For a no-clashing teacher on a $k$-cube, each of its $k2^{k-1}$ edges must have the coordinate on which its endpoints differ selected by at least one endpoint's teacher. The sum of teacher sizes is at most $2^k$ times the maximum teacher size. Counting these edge incidences gives maximum size at least $\lceil k/2\rceil$. Apply this to the shattered projection. For the upper bound, NCTD is at most RTD on every projection: in a recursive teaching order, the earlier of two concepts receives a sample inconsistent with the later one. The preceding projected RTD value proof therefore bounds projected NCTD by $\lfloor\log_2p\rfloor$. Since $k_p=\tfrac12\log_2p-O(\log_2\log_2p)$, both bounds have logarithmic order.</p></div>
+<strong>References:</strong><div class="text-field"><p>Derived from \cite[Theorem 13]{simon2023tournaments} and the cube edge-counting argument for no-clashing teaching; see also <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
 
         </div>
     </div>

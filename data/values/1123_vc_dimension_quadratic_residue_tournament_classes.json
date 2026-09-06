@@ -1,0 +1,13 @@
+{
+  "id": 1123,
+  "name": "VC Dimension of Quadratic-Residue Tournament Classes",
+  "short_name": "vc_dimension_quadratic_residue_tournament_classes",
+  "class_id": "#classes/quadratic_residue_tournament_classes",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$\\Theta(\\log_2 p)$",
+  "value_class": "omega_log_n",
+  "details": "For primes $p\\equiv3\\pmod4$, define $k_p=\\max\\{k\\ge1:p>k^2 2^{2k-2}\\}$. Then $k_p\\le\\mathrm{VC}(\\mathcal Q_p)\\le\\lfloor\\log_2p\\rfloor$. In fact every $k_p$-coordinate set is shattered.",
+  "status": "established",
+  "proof": "Theorem 13 of Simon gives the strong signed extension property when $p>k^2 2^{2k-2}$: for any distinct coordinates $a_1,\\ldots,a_k$ and prescribed signs, there is a vertex $x$ outside these coordinates with the prescribed orientations between $x$ and each $a_j$. In the catalogue convention $C_x(a_j)=1$ exactly when $x\\to a_j$, so all binary patterns occur. Thus every such coordinate set is shattered. There are at most $p$ concepts, giving the upper bound by counting the $2^d$ traces of a shattered $d$-set. The inequality defining $k_p$ yields $k_p=\\tfrac12\\log_2p-O(\\log_2\\log_2p)$: for sufficiently large $p$, the integer $\\lfloor\\tfrac12\\log_2p-\\log_2\\log_2p\\rfloor$ is admissible, and $k_p\\le1+\\tfrac12\\log_2p$. This proves the asserted order.",
+  "references": "\\cite[Theorem 13]{simon2023tournaments}; the VC consequence follows directly from the signed extension property."
+}

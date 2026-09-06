@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-439" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1125" style="position:relative;">
         
-        <h3><a href="relationships/projected_noclashing_teaching_dimension_noclashing_teaching_dimension.html" class="table-title-link">Projected No-Clashing Teaching Dimension / No-Clashing Teaching Dimension</a></h3>
+        <h3><a href="values/projected_noclashing_teaching_dimension_quadratic_residue_tournament_classes.html" class="table-title-link">Projected No-Clashing Teaching Dimension of Quadratic-Residue Tournament Classes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension / No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The defining maximum includes the identity projection.</p></div>
-<p><strong>Witness: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>On $\mathcal Q_p$, ordinary NCTD is one whereas projected NCTD is $\Theta(\log_2p)$, by the database-owned values. Thus projected NCTD divided by one plus ordinary NCTD tends to infinity along primes $p\equiv3\pmod4$. The older six-concept strict example remains valid but is not the strongest witness.</p></div>
-
-
+        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension of Quadratic-Residue Tournament Classes</p>
+<p><strong>Class: </strong><a href="classes/quadratic_residue_tournament_classes.html">Quadratic-Residue Tournament Classes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\Theta(\log_2 p)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>With $k_p=\max\{k\ge1:p>k^2 2^{2k-2}\}$, $\lceil k_p/2\rceil\le\mathrm{NCTD}^{p}(\mathcal Q_p)\le\lfloor\log_2p\rfloor$. Ordinary NCTD remains one; projection is not a bounded-factor operation for NCTD.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Take (S=\mathcal X) in the definition of (\mathrm{NCTD}^{p}).</p></div>
-
-<strong>Derivation:</strong><div class="text-field"><p>max_over_projections from the definition of <a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p></div>
-
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The VC value proof for this class supplies a projection equal to the full $k_p$-cube. For a no-clashing teacher on a $k$-cube, each of its $k2^{k-1}$ edges must have the coordinate on which its endpoints differ selected by at least one endpoint's teacher. The sum of teacher sizes is at most $2^k$ times the maximum teacher size. Counting these edge incidences gives maximum size at least $\lceil k/2\rceil$. Apply this to the shattered projection. For the upper bound, NCTD is at most RTD on every projection: in a recursive teaching order, the earlier of two concepts receives a sample inconsistent with the later one. The preceding projected RTD value proof therefore bounds projected NCTD by $\lfloor\log_2p\rfloor$. Since $k_p=\tfrac12\log_2p-O(\log_2\log_2p)$, both bounds have logarithmic order.</p></div>
+<strong>References:</strong><div class="text-field"><p>Derived from \cite[Theorem 13]{simon2023tournaments} and the cube edge-counting argument for no-clashing teaching; see also <a href="bibliography.html#KSZ2019">[KSZ2019]</a>.</p></div>
 
         </div>
     </div>
