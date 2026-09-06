@@ -1,0 +1,12 @@
+{
+  "id": 1148,
+  "name": "Stable Labeled Sample Compression of Antipodal Six-Code Class",
+  "short_name": "stable_labeled_sample_compression_antipodal_six_code",
+  "class_id": "#classes/antipodal_six_code",
+  "parameter_id": "#parameters/stable_labeled_sample_compression",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The ordinary labeled compression value is two, so the stable value is at least two. The database-owned stable pair scheme on the full four-cube has width two. Restrict its encoder to samples realizable by this subclass and leave its possibly improper decoder unchanged. Consistency and reconstruction stability remain valid on all such samples and their subsamples. This gives the matching stable upper bound.",
+  "references": "Direct finite proof and independent solver-free verification in sync/verify_projected_nctd_compression_gap.py. The stable pair decoder is owned by the proper stable labeled full-cube value proof."
+}

@@ -1,0 +1,15 @@
+{
+  "id": 515,
+  "name": "Projected No-Clashing Teaching Dimension / Labeled Sample Compression",
+  "short_name": "projected_noclashing_teaching_dimension_labeled_sample_compression",
+  "parameter_1_id": "#parameters/projected_noclashing_teaching_dimension",
+  "parameter_2_id": "#parameters/labeled_sample_compression",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The antipodal six-code class has projected NCTD one but LSC two. The compression lower bound exhausts all empty/singleton keys and all binary total outputs; it is not a prescribed-teacher or proper-only obstruction. This strict finite example does not refute an affine comparison with larger constants.",
+  "latex_proof_label": "cor:projected-nctd-compression-gap",
+  "proof_source": "Full comparison argument in the LaTeX survey: cor:projected-nctd-compression-gap. Endpoint value proofs are database-owned.",
+  "witness": "#classes/antipodal_six_code",
+  "witness_strength": "strict",
+  "witness_verification": "The established exact endpoint values are one and two. Verified independently by output-domain partition and full-input injection exhaustion in sync/verify_projected_nctd_compression_gap.py. Only a finite strict gap is claimed."
+}

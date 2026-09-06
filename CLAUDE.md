@@ -152,6 +152,9 @@ python3 sync/verify_hasse_reduction.py
 # Private-coordinate teaching/compression separation, including every small projection.
 python3 sync/verify_private_coordinate_cube.py
 
+# Independent finite lower proof for the projected-NCTD/compression gap.
+python3 sync/verify_projected_nctd_compression_gap.py
+
 # Hollow-star/proper-compression bounds and Three-Code correction regression.
 python3 sync/verify_proper_compression_covc.py
 

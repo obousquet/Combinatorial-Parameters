@@ -1,0 +1,12 @@
+{
+  "id": 1149,
+  "name": "VC Dimension of Antipodal Six-Code Class",
+  "short_name": "vc_dimension_antipodal_six_code",
+  "class_id": "#classes/antipodal_six_code",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The first two coordinates realize all four labelings, so VC is at least two. Shattering three coordinates would require eight distinct concepts, whereas this class has six. Hence VC is exactly two.",
+  "references": "Direct finite proof and independent solver-free verification in sync/verify_projected_nctd_compression_gap.py. The stable pair decoder is owned by the proper stable labeled full-cube value proof."
+}

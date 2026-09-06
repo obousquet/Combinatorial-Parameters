@@ -9317,9 +9317,9 @@
 
 <p><strong>Variant:</strong> </p>
 <strong>Details:</strong><div class="text-field"><p>The stable-compression theorem applies unchanged to labeled schemes.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
+<p><strong>Witness: </strong><a href="classes/antipodal_six_code.html">Antipodal Six-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>The established endpoint values on the antipodal six-code class are sLSC two and projected NCTD one. The ordinary LSC lower certificate excludes width one even without stability, and the stable full-four-cube pair scheme supplies the upper bound. Verified in sync/verify_projected_nctd_compression_gap.py.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
@@ -13991,6 +13991,62 @@
 <strong>Full Proof:</strong><div class="text-field"><p>Full separation argument in the survey, cor:private-coordinate-compression-gap; endpoint proofs are database-owned.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Proposition 28(1). The database gives an explicit private-coordinate family and a direct compression identity.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-515" style="position:relative;">
+        
+        <h3><a href="relationships/projected_noclashing_teaching_dimension_labeled_sample_compression.html" class="table-title-link">Projected No-Clashing Teaching Dimension / Labeled Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension / Labeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The antipodal six-code class has projected NCTD one but LSC two. The compression lower bound exhausts all empty/singleton keys and all binary total outputs; it is not a prescribed-teacher or proper-only obstruction. This strict finite example does not refute an affine comparison with larger constants.</p></div>
+<p><strong>Witness: </strong><a href="classes/antipodal_six_code.html">Antipodal Six-Code Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>The established exact endpoint values are one and two. Verified independently by output-domain partition and full-input injection exhaustion in sync/verify_projected_nctd_compression_gap.py. Only a finite strict gap is claimed.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full comparison argument in the LaTeX survey: cor:projected-nctd-compression-gap. Endpoint value proofs are database-owned.</p></div>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-516" style="position:relative;">
+        
+        <h3><a href="relationships/labeled_sample_compression_projected_noclashing_teaching_dimension.html" class="table-title-link">Labeled Sample Compression / Projected No-Clashing Teaching Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Labeled Sample Compression / Projected No-Clashing Teaching Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The five-cube has LSC two but projected NCTD three. The fixed-block family excludes projected NCTD at most LSC plus a universal additive constant, and requires coefficient at least $5/4$ in any universal reverse affine bound. No unbounded-ratio separation is asserted.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>The five-cube endpoint values are two and three; both parameters have linear order on full cubes, so the witness is strict rather than an unbounded ratio.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full comparison argument in the LaTeX survey: cor:compression-nctd-gap. Endpoint value proofs are database-owned.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Theorem 19 and Proposition 28(2), together with the cube projection identity and the database-owned full-cube compression proof.</p></div>
 
         </div>
     </div>

@@ -1,0 +1,16 @@
+{
+  "id": 516,
+  "name": "Labeled Sample Compression / Projected No-Clashing Teaching Dimension",
+  "short_name": "labeled_sample_compression_projected_noclashing_teaching_dimension",
+  "parameter_1_id": "#parameters/labeled_sample_compression",
+  "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The five-cube has LSC two but projected NCTD three. The fixed-block family excludes projected NCTD at most LSC plus a universal additive constant, and requires coefficient at least $5/4$ in any universal reverse affine bound. No unbounded-ratio separation is asserted.",
+  "latex_proof_label": "cor:compression-nctd-gap",
+  "proof_source": "Full comparison argument in the LaTeX survey: cor:compression-nctd-gap. Endpoint value proofs are database-owned.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "The five-cube endpoint values are two and three; both parameters have linear order on full cubes, so the witness is strict rather than an unbounded ratio.",
+  "references": "\\cite{KSZ2019}, Theorem 19 and Proposition 28(2), together with the cube projection identity and the database-owned full-cube compression proof."
+}

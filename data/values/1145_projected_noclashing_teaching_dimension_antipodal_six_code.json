@@ -1,0 +1,12 @@
+{
+  "id": 1145,
+  "name": "Projected No-Clashing Teaching Dimension of Antipodal Six-Code Class",
+  "short_name": "projected_noclashing_teaching_dimension_antipodal_six_code",
+  "class_id": "#classes/antipodal_six_code",
+  "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "On the full class assign singleton teachers as follows, listing word, coordinate and label: $$\\begin{array}{c|c|c}h&x&h(x)\\\\\\hline 0000&0&0\\\\1100&3&0\\\\1010&1&0\\\\0101&1&1\\\\0011&3&1\\\\1111&0&1\\end{array}$$ Every pair of distinct concepts disagrees on at least one of its two selected coordinates, as direct inspection of the fifteen pairs verifies. Deleting any one coordinate leaves six of the eight three-bit words, with the two missing words complementary. After a fixed label flip, this is the six-cycle $000,100,110,111,011,001$. Assign each cycle vertex the coordinate of its outgoing edge in this cyclic order, with that vertex's label. Between any two vertices, one of the two oriented arcs has length at most three; it flips distinct coordinates, including the outgoing coordinate of its first vertex. That teacher distinguishes the endpoints, so the map is no-clashing. Any projection onto at most two coordinates is a subclass of a full two-cube and has NCTD at most one, by restricting the standard full-cube singleton assignment. The empty projection has one concept and value zero. Thus every projection has NCTD at most one. Since the original class has more than one concept, its NCTD, and hence projected NCTD, is at least one.",
+  "references": "Direct finite proof and independent solver-free verification in sync/verify_projected_nctd_compression_gap.py. The stable pair decoder is owned by the proper stable labeled full-cube value proof."
+}

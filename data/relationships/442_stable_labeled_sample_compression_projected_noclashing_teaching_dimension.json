@@ -10,5 +10,8 @@
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
   "proof_source": "Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.",
   "references": "\\cite{KSZ2019}",
-  "witness_review": "The former full-cube strict witness was withdrawn: both endpoint values are exactly $\\lceil n/2\\rceil$. No replacement strict witness is asserted."
+  "witness_review": "The former full-cube strict witness remains withdrawn because its endpoint values both equal $\\lceil n/2\\rceil$. The antipodal six-code class supplies a separate, verified strict witness.",
+  "witness": "#classes/antipodal_six_code",
+  "witness_strength": "strict",
+  "witness_verification": "The established endpoint values on the antipodal six-code class are sLSC two and projected NCTD one. The ordinary LSC lower certificate excludes width one even without stability, and the stable full-four-cube pair scheme supplies the upper bound. Verified in sync/verify_projected_nctd_compression_gap.py."
 }

@@ -1,0 +1,9 @@
+{
+  "id": 54,
+  "name": "Antipodal Six-Code Class",
+  "short_name": "antipodal_six_code",
+  "graph_label": "6-code",
+  "symbol": "\\mathcal C_6^{\\pm}",
+  "definition": "On coordinates $x_0,x_1,x_2,x_3$, the **antipodal six-code class** is $$\\mathcal C_6^{\\pm}=\\{\\mathtt{0000},\\mathtt{1100},\\mathtt{1010},\\mathtt{0101},\\mathtt{0011},\\mathtt{1111}\\},$$ where each word lists its labels in the displayed coordinate order. It consists of three complementary pairs of binary words.",
+  "comments": "A finite, independently verified separation between projected no-clashing teaching dimension one and labeled sample compression two. No asymptotic separation or novelty claim is asserted."
+}

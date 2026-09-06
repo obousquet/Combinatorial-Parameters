@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -44,7 +44,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -63,31 +63,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-442" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1147" style="position:relative;">
         
-        <h3><a href="relationships/stable_labeled_sample_compression_projected_noclashing_teaching_dimension.html" class="table-title-link">Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</a></h3>
+        <h3><a href="values/labeled_sample_compression_antipodal_six_code.html" class="table-title-link">Labeled Sample Compression of Antipodal Six-Code Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Stable Labeled Sample Compression / Projected No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The stable-compression theorem applies unchanged to labeled schemes.</p></div>
-<p><strong>Witness: </strong><a href="classes/antipodal_six_code.html">Antipodal Six-Code Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>The established endpoint values on the antipodal six-code class are sLSC two and projected NCTD one. The ordinary LSC lower certificate excludes width one even without stability, and the stable full-four-cube pair scheme supplies the upper bound. Verified in sync/verify_projected_nctd_compression_gap.py.</p></div>
-
+        <p><strong>Name: </strong>Labeled Sample Compression of Antipodal Six-Code Class</p>
+<p><strong>Class: </strong><a href="classes/antipodal_six_code.html">Antipodal Six-Code Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the upper bound, restrict the database-owned stable pair scheme for the full four-cube to the realizable samples of this subclass. Its width is two; improper outputs are allowed. For the lower bound there are nine possible empty/singleton labeled keys and sixteen possible binary total outputs per key. An output of a key may without loss be required to extend that key: any used key must do so, and unused keys can be changed arbitrarily. Enumerate the 63 realizable partial samples. A decoder is feasible exactly when every sample has an available key whose output extends it. The solver-free checker sync/verify_projected_nctd_compression_gap.py exhausts this finite condition in two independent ways. First, keep each key's possible-output set. A sample is satisfied if one available key's entire remaining output set extends it; reject if no available key has any compatible output. If only one key can cover a sample, restrict its output set to the compatible words. Otherwise partition a key's output set into the words that cover a chosen unresolved sample and those that do not, and recurse on both parts. These are exhaustive disjoint branches, each strictly decreasing a finite domain. All 108 terminal branches are rejected (215 states, 107 splits, 824 forced domain restrictions). Thus no width-one decoder exists. Independently inject the six full concepts into six distinct available keys, since different full inputs require different reconstructed words. For every surviving injection enumerate all possible total outputs of the three remaining keys, pruning only when an uncovered sample has no available unassigned key. Literal-set availability checks reject all 656 surviving complete injections and their 17840 residual states. Neither checker relies on a solver UNSAT answer; both accept the full two-cube width-one scheme as a control. This proves the lower bound two, including improper reconstruction, with freely chosen keys and outputs. The same program constructs and directly checks width-one decoders after deletion of any one concept or any one coordinate. Thus the exhibited obstruction is minimal under either deletion operation, without any claim of global uniqueness.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct finite proof and independent solver-free verification in sync/verify_projected_nctd_compression_gap.py. The stable pair decoder is owned by the proper stable labeled full-cube value proof.</p></div>
 
         </div>
     </div>
