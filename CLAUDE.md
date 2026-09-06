@@ -159,6 +159,10 @@ python3 sync/verify_repetitionfree_teaching.py
 # Solver-free lower enumeration and full partial-sample upper replay.
 python3 sync/verify_c5_labeled_compression.py
 
+# Replay stable pair and ordinary five-cube decoder certificates, including
+# the strict (not unbounded-ratio) separation from NCTD/stable compression.
+python3 sync/verify_full_cube_labeled_compression.py
+
 # Independently replay all projected-teaching plans for the finite OSC > RTD^p witness.
 python3 sync/verify_chen_neighbor_puncture.py --data-dir data \
   --check-certificate sync/chen_neighbor_puncture_certificate.json.gz

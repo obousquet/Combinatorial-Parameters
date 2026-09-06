@@ -7,7 +7,7 @@
   "value": "$\\Theta(n)$",
   "value_class": "omega_n",
   "status": "established",
-  "details": "With $b_n=\\min\\{k\\ge0:\\sum_{i=0}^k2^i\\binom ni\\ge2^n\\}$, $b_n\\le\\mathrm{LSC}(2^{[n]})\\le\\lceil n/2\\rceil$. Exact for $n=1,2,3,4$: $1,1,2,2$.",
-  "proof": "On the full cube all binary reconstruction functions are proper, so LSC equals proper LSC. Apply the counting lower bound and the stable block-construction upper bound proved in the database-owned proper labeled full-cube value proof; its counting estimate also proves linear order. Stability is not assumed for this lower bound; the exact stable value must not be substituted for the ordinary value without a proof.",
+  "details": "Let $b_n=\\min\\{k\\ge0:\\sum_{i=0}^k2^i\\binom ni\\ge2^n\\}$. Writing $n=5q+r$ with $0\\le r<5$, we have $b_n\\le\\mathrm{LSC}(2^{[n]})\\le2q+\\lceil r/2\\rceil$. Exact for $n=1,2,3,4,5$: $1,1,2,2,2$; also exact at $n=7$, with value three. No exact general formula is asserted.",
+  "proof": "On a full cube all binary reconstruction functions are proper, so LSC equals proper LSC. The database-owned proper labeled full-cube value proof gives the five-coordinate width-two decoder, its fixed-block extension of size $2\\lfloor n/5\\rfloor+\\lceil(n\\bmod5)/2\\rceil$, and the counting lower bound. It establishes the stated exact small values and linear asymptotic order. The ordinary value on five coordinates is two, strictly smaller than stable labeled compression and NCTD, which are three. The ordinary and stable values must not be identified.",
   "references": "Database-owned proper labeled full-cube value proof."
 }
