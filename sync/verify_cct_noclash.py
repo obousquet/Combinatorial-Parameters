@@ -27,6 +27,33 @@ def check_map(teacher: dict[int, int], n: int, width: int) -> int:
     return pairs
 
 
+def pair_weights(proof: str, concepts: set[int]) -> dict[tuple[int, int], int]:
+    triples = re.findall(r'\((\d+),(\d+),(\d+)\)', proof)
+    assert len(triples) == 39
+    weights = {}
+    for first, second, raw_weight in triples:
+        h, g, weight = int(first), int(second), int(raw_weight)
+        assert h in concepts and g in concepts and h != g and weight > 0
+        orbit = {tuple(sorted((rotate(h, t), rotate(g, t)))) for t in range(12)}
+        assert not (weights.keys() & orbit), 'Overlapping pair orbits'
+        for pair in orbit:
+            assert set(pair) <= concepts
+            weights[pair] = weight
+    assert len(weights) == 460
+    return weights
+
+
+def coordinate_loads(concepts: set[int], weights: dict[tuple[int, int], int], n: int) -> dict[int, list[int]]:
+    loads = {h: [0] * n for h in concepts}
+    for (h, g), weight in weights.items():
+        assert h in concepts and g in concepts and h < g and weight > 0
+        for x in range(n):
+            if ((h >> x) & 1) != ((g >> x) & 1):
+                loads[h][x] += weight
+                loads[g][x] += weight
+    return loads
+
+
 def verify(data_dir: Path) -> dict:
     definition = json.loads((data_dir / 'classes/050_chen_teaching_products.json').read_text())['definition']
     words = re.findall(r'\\mathtt\{([01]{12})\}',definition)
@@ -56,8 +83,18 @@ def verify(data_dir: Path) -> dict:
     density = Fraction(2*edges,len(teacher))
     average = json.loads((data_dir / 'values/1115_double_density_or_average_degree_chen_teaching_products.json').read_text())
     assert average['value'] == f'${density.numerator}n/{density.denominator}$'
-    lower = density/2
+    weights = pair_weights(proof, set(teacher))
+    loads = coordinate_loads(set(teacher), weights, 12)
+    assert sum(weights.values()) == 1780
+    assert {max(row) for row in loads.values()} == {8}
+    lower = Fraction(sum(weights.values()), sum(max(row) for row in loads.values()))
+    assert lower == Fraction(89, 40)
     assert rf'\lceil{lower.numerator}n/{lower.denominator}\rceil' in value['details']
+    assert 2 < lower <= int(upper.group(1)) == 3
+    # A one-bit edge and its square calibrate weighted counting and product scaling.
+    assert coordinate_loads({0, 1}, {(0, 1): 1}, 1) == {0: [1], 1: [1]}
+    square = coordinate_loads(set(range(4)), {(0, 1): 1, (0, 2): 1, (1, 3): 1, (2, 3): 1}, 2)
+    assert all(row == [1, 1] for row in square.values())
     # All short stabilizer-invariant masks are empty; a symmetry constraint
     # would wrongly exclude every possible asymmetric width-two teacher.
     invariant_short_masks = [s for s in range(1 << 12) if s.bit_count() <= 2 and rotate(s,4) == s]
@@ -78,7 +115,9 @@ def verify(data_dir: Path) -> dict:
     else:
         raise AssertionError('A clashing map was accepted')
     return {'class_id':50,'targets':100,'checked_pairs':pairs,'width_upper_bound':3,
-            'one_inclusion_edges':edges,'exact_base_value':'unresolved: 2 or 3',
+            'one_inclusion_edges':edges,'exact_base_value':3,
+            'weighted_pairs':len(weights),'total_pair_weight':sum(weights.values()),
+            'maximum_coordinate_load_per_target':8,'product_lower_coefficient':str(lower),
             'minimum_rotation_equivariant_width':3,
             'projection_bound_asserted':False}
 
