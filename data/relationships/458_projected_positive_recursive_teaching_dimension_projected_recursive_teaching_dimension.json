@@ -7,5 +7,8 @@
   "relationship_type": "larger",
   "details": "Positivity is a restriction of recursive teaching on every coordinate trace.",
   "status": "established",
+  "witness": "#classes/singleton_cosingleton",
+  "witness_strength": "unbounded",
+  "witness_verification": "For every n >= 4, the database-owned values 1129 and 1137 give positive projected RTD n-1 and ordinary projected RTD 3. The ratio (n-1)/3 tends to infinity, excluding every reverse affine bound. The endpoint proofs use the intersection-closure identity and the explicit order scheme; sync/verify_singleton_cosingleton.py replays the finite controls.",
   "proof": "For every S, $\\mathrm{RTD}^{+}(\\mathcal H_{|S})\\geq\\mathrm{RTD}(\\mathcal H_{|S})$. Maximize both sides over S."
 }

@@ -123,6 +123,13 @@ def main() -> None:
     assert relation['parameter_1_id'] == '#parameters/projected_positive_recursive_teaching_dimension'
     assert relation['parameter_2_id'] == '#parameters/order_sample_compression'
     assert relation['latex_proof_label'] == 'cor:order-positive-projected-teaching'
+    # The same proved family strengthens the existing positive-teaching edges.
+    for identifier in (458, 465, 466, 467):
+        path, = (DATA / 'relationships').glob(f'{identifier}_*.json')
+        witnessed = json.loads(path.read_text())
+        assert witnessed['witness'] == '#classes/singleton_cosingleton'
+        assert witnessed['witness_strength'] == 'unbounded'
+        assert witnessed['status'] == 'established'
     # Properness is deliberately unavailable for this particular order.
     assert 0 not in family(4) and 15 not in family(4)
     print(json.dumps({'domain_sizes': [4, 5, 6, 7, 8], 'sample_checks': sample_checks,

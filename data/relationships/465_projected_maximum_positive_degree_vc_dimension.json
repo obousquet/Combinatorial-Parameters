@@ -6,9 +6,9 @@
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
   "details": "A shattered set projects to a full cube, whose top vertex has one smaller neighbour in every cube coordinate.",
-  "witness": "#classes/projected_positive_noclashing_gap",
-  "witness_strength": "strict",
-  "witness_verification": "For $\\mathcal C_{\\mathrm{pNC+}}=\\{001,010,111\\}$, VC dimension is one whereas projected maximum positive degree is two; sync/verify_projected_positive_noclashing_gap.py verifies both values.",
+  "witness": "#classes/singleton_cosingleton",
+  "witness_strength": "unbounded",
+  "witness_verification": "For every n >= 4, Singleton-Cosingleton has VC 3 (value 1127) and positive projected RTD n-1 (value 1129). Survey Proposition prop:positive-projection-collapse identifies projected maximum positive degree with positive projected RTD. Thus the endpoint ratio is (n-1)/3 and is unbounded. The former finite witness {001,010,111}, with values 2 versus 1, remains valid and its class/value records are retained. The universal proof, not the bounded regression in sync/verify_singleton_cosingleton.py, proves divergence.",
   "status": "established",
   "proof": "Let S be shattered with |S|=d. Then $\\mathcal H_{|S}$ is the full d-cube, whose top vertex has d smaller one-coordinate neighbours. Hence $\\mathrm d^{+p}_{\\max}(\\mathcal H)\\ge d$; maximize over shattered S."
 }
