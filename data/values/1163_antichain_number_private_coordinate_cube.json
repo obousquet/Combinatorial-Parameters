@@ -1,0 +1,12 @@
+{
+  "id": 1163,
+  "name": "Antichain Number of Private-Coordinate Cubes",
+  "short_name": "antichain_number_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/antichain_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every n>=1, assign concept $h_v$ its private positive example $\\{(p_v,1)\\}$. These are distinct consistent singleton samples, hence pairwise inclusion-incomparable. The class has $2^n\\ge2$ concepts, so assigning the empty sample everywhere cannot satisfy incomparability. Thus AN is exactly one. Projection onto the original n coordinates gives the full n-cube, whose database-owned antichain value grows linearly in n. Consequently projection can increase antichain number by an unbounded factor.",
+  "references": "Direct proof from the database class definition; the projected value is proved in Section \\ref{val:antichain_number_full_cube}. Finite regression: sync/verify_noclashing_antichain_gap.py."
+}

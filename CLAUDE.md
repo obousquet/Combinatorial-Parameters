@@ -42,6 +42,11 @@ parameters, assigned values, and bibliography entries.
   coordinate set: neither the omitted labels nor the original sample may affect
   its output. Replay all samples sharing a key against that one output. A
   labeled retain-all or cyclic-sign construction is not an unlabeled proof.
+- Keep the declared ambient domain when studying antichain number. Constant
+  coordinates can change its value; fixed-domain subclass monotonicity does
+  not permit deleting newly constant coordinates. The canonical counterexamples
+  are in survey `prop:antichain-monotonicity`; replay the cube formula and maps
+  with `python3 sync/verify_noclashing_antichain_gap.py`.
 
 ## Local preview and deployment
 

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,23 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-53" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1162" style="position:relative;">
         
-        <h3><a href="classes/private_coordinate_cube.html" class="table-title-link">Private-Coordinate Cubes</a></h3>
+        <h3><a href="values/antichain_number_full_cube.html" class="table-title-link">Antichain Number of Full Cube</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Private-Coordinate Cubes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal P_n">
-            \[\mathcal P_n\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>For an integer $n\ge1$, write $[n]=\{1,\ldots,n\}$ and $Q_n=\{0,1\}^{[n]}$. Take the disjoint union $X_n=[n]\sqcup\{p_v:v\in Q_n\}$, where each $p_v$ is a new coordinate. The <strong>private-coordinate cube</strong> is $\mathcal P_n=\{h_v:v\in Q_n\}\subseteq\{0,1\}^{X_n}$, with $h_v(i)=v(i)$ for $i\in[n]$ and $h_v(p_w)=1$ if and only if $v=w$. Thus each concept has a private positive coordinate, and projection onto the original $n$ coordinates is the full cube.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>An explicit private-coordinate realization of the separation mechanism used in <a href="bibliography.html#KSZ2019">[KSZ2019]</a>, Propositions 26 and 28(1), which credit Goldman--Kearns for the teaching/VC separation. The exact projected-NCTD and compression identities here are proved directly in the database; no novelty claim is made.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/vc_dimension_private_coordinate_cube.html'>VC Dimension of Private-Coordinate Cubes</a></li><li><a href='values/noclashing_teaching_dimension_private_coordinate_cube.html'>No-Clashing Teaching Dimension of Private-Coordinate Cubes</a></li><li><a href='values/projected_noclashing_teaching_dimension_private_coordinate_cube.html'>Projected No-Clashing Teaching Dimension of Private-Coordinate Cubes</a></li><li><a href='values/labeled_sample_compression_private_coordinate_cube.html'>Labeled Sample Compression of Private-Coordinate Cubes</a></li><li><a href='values/size_private_coordinate_cube.html'>Size of Private-Coordinate Cubes</a></li><li><a href='values/effective_range_private_coordinate_cube.html'>Effective Range of Private-Coordinate Cubes</a></li><li><a href='values/antichain_number_private_coordinate_cube.html'>Antichain Number of Private-Coordinate Cubes</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/noclashing_teaching_dimension_labeled_sample_compression.html'>No-Clashing Teaching Dimension / Labeled Sample Compression</a></li></ul></p></div>
+        <p><strong>Name: </strong>Antichain Number of Full Cube</p>
+<p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/antichain_number.html">Antichain Number</a></p>
+<p><strong>Value: </strong>$\min\{k\in\{0,\ldots,n\}:2^k\binom nk\ge2^n\}$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>The formula also gives zero at n=0. For n>0 its value is strictly greater than n/5 and at most n, hence is Theta(n). In particular the one- and two-cubes have value one and the three-cube has value two.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Put $M_j=2^j\binom nj$, the number of labeled samples of size $j$. For the lower bound, any antichain teacher has $2^n$ distinct assigned samples. Choose a uniformly random full binary word and an independent uniformly random coordinate permutation; successively exposing its labels gives a chain of samples containing a fixed size-$j$ sample with probability $1/M_j$. An antichain meets each chain at most once, so its samples $F$ satisfy $\sum_{S\in F}1/M_{|S|}\le1$. If every assigned sample has size at most $k$ and every $M_j$ for $j\le k$ is smaller than $2^n$, this sum is greater than one, a contradiction. Thus the width is at least the displayed minimum. For the upper bound, choose any $k$ satisfying $M_k\ge2^n$. Form a bipartite graph between the full concepts and their consistent size-$k$ samples. Each concept has degree $\binom nk$ and each sample extends to $2^{n-k}$ concepts. For every concept set $A$, counting its incident edges gives $|N(A)|2^{n-k}\ge |A|\binom nk$, whence $|N(A)|\ge|A|$. Hall's theorem gives a matching assigning every concept a distinct consistent size-$k$ sample. Equal-sized distinct samples are incomparable, so this is an antichain teacher. This proves the exact formula, including the one-concept case n=0. For the linear lower bound, the binomial theorem gives $\binom nj\le(5/4)^n4^j$. If $j\le n/5$, then $M_j\le(5/4)^n8^{n/5}<2^n$, since $(5/4)^5 8<2^5$. Hence the minimum is greater than n/5 for n&gt;0; retaining each full concept gives the upper bound n.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct antichain-chain counting and Hall matching proof for Definition 32 of <a href="bibliography.html#simon2023map">[simon2023map]</a>; independent small-cube matching and chain regression in sync/verify_noclashing_antichain_gap.py. No novelty claim is made.</p></div>
 
         </div>
     </div>

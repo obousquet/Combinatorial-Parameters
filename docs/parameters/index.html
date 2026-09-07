@@ -3396,20 +3396,20 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>An <strong>antichain teacher mapping</strong> for a finite binary class $\mathcal H$ assigns every $h\in\mathcal H$ a labeled sample $T(h)$ consistent with $h$, such that for distinct $h,g\in\mathcal H$ neither $T(h)\subseteq T(g)$ nor $T(g)\subseteq T(h)$. The <strong>antichain number</strong> $\mathrm{AN}(\mathcal H)$ is the minimum, over such mappings, of $\max_{h\in\mathcal H}|T(h)|$.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>Fix a finite ambient domain $X$ and a binary class $\mathcal H\subseteq\{0,1\}^{X}$. An <strong>antichain teacher mapping</strong> assigns every $h\in\mathcal H$ a labeled sample $T(h)\subseteq X\times\{0,1\}$ consistent with $h$, such that for distinct $h,g\in\mathcal H$ neither $T(h)\subseteq T(g)$ nor $T(g)\subseteq T(h)$. The <strong>antichain number</strong> $\mathrm{AN}(\mathcal H)$ is the minimum, over such mappings, of $\max_{h\in\mathcal H}|T(h)|$, with value zero for an empty class. Inclusion is inclusion of labeled samples, not just of their coordinate domains. The specified ambient domain is part of the input: constant coordinates may be used and must not be discarded automatically. Subfamily monotonicity keeps this domain fixed; projection and conditioning use their resulting domains.</p></div>
 <strong>Description:</strong><div class="text-field"><p>A batch-teaching parameter based on antichain mappings of labeled samples.</p></div>
 
 <strong>Origin References:</strong><div class="text-field"><p>The antichain number is defined and studied in <a href="bibliography.html#simon2023map">[simon2023map]</a>; its VC upper bound is attributed there to <a href="bibliography.html#mansouri2022batch">[mansouri2022batch]</a>.</p></div>
 <p><strong>Category:</strong> Teaching and Hitting</p>
 <p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Unspecified</p>
-<p><strong>P-Monotonic:</strong> Unspecified</p>
-<p><strong>C-Monotonic:</strong> Unspecified</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Unspecified</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/antichain_number_quadratic_residue_tournament_classes.html'>$\mathrm{AN}(\mathcal{Q}_p) = 1\;(\Omega(1))$</a></li><li><a href='values/antichain_number_noclashing_antichain_gap.html'>$\mathrm{AN}(\mathcal C_{\mathrm{NC/AN}}) = 1\;(\Omega(1))$</a></li><li><a href='values/antichain_number_singletons_plus_empty_set.html'>$\mathrm{AN}(\{\{i\}\}_{1\le i\le n}\cup\{\emptyset\}) = 1\;(\Omega(1))$</a></li></ul></p></div>
+<p><strong>Monotonic:</strong> Yes</p>
+<p><strong>P-Monotonic:</strong> No</p>
+<p><strong>C-Monotonic:</strong> No</p>
+<p><strong>Strict C-Monotonic:</strong> No</p>
+<p><strong>Tight Strict C-Monotonic:</strong> No</p>
+<p><strong>Doubly Monotonic:</strong> No</p>
+<p><strong>Strictly Monotonic:</strong> No</p>
+<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/antichain_number_quadratic_residue_tournament_classes.html'>$\mathrm{AN}(\mathcal{Q}_p) = 1\;(\Omega(1))$</a></li><li><a href='values/antichain_number_noclashing_antichain_gap.html'>$\mathrm{AN}(\mathcal C_{\mathrm{NC/AN}}) = 1\;(\Omega(1))$</a></li><li><a href='values/antichain_number_singletons_plus_empty_set.html'>$\mathrm{AN}(\{\{i\}\}_{1\le i\le n}\cup\{\emptyset\}) = 1\;(\Omega(1))$</a></li><li><a href='values/antichain_number_full_cube.html'>$\mathrm{AN}(\{S:S\subset [n]\}) = \min\{k\in\{0,\ldots,n\}:2^k\binom nk\ge2^n\}\;(\Omega(n))$</a></li><li><a href='values/antichain_number_private_coordinate_cube.html'>$\mathrm{AN}(\mathcal P_n) = 1\;(\Omega(1))$</a></li></ul></p></div>
 <div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/vc_dimension_antichain_number.html" class="relationship-statement">$\mathrm{VC} \ge \mathrm{AN}$</a></li><li><a href="relationships/subset_teaching_dimension_antichain_number.html" class="relationship-statement">$\mathrm{STD} \ge \mathrm{AN}$</a></li><li><a href="relationships/teaching_dimension_antichain_number.html" class="relationship-statement">$\mathrm{TD} \ge \mathrm{AN}$</a></li><li><a href="relationships/noclashing_teaching_dimension_antichain_number.html" class="relationship-statement">$\mathrm{NCTD} \ge \mathrm{AN}$</a></li><li><a href="relationships/recursive_teaching_dimension_antichain_number.html" class="relationship-statement">$\mathrm{RTD} \ge \mathrm{AN}$</a></li></ul></div>
 
         </div>

@@ -1,0 +1,13 @@
+{
+  "id": 1162,
+  "name": "Antichain Number of Full Cube",
+  "short_name": "antichain_number_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/antichain_number",
+  "value": "$\\min\\{k\\in\\{0,\\ldots,n\\}:2^k\\binom nk\\ge2^n\\}$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "The formula also gives zero at n=0. For n>0 its value is strictly greater than n/5 and at most n, hence is Theta(n). In particular the one- and two-cubes have value one and the three-cube has value two.",
+  "proof": "Put $M_j=2^j\\binom nj$, the number of labeled samples of size $j$. For the lower bound, any antichain teacher has $2^n$ distinct assigned samples. Choose a uniformly random full binary word and an independent uniformly random coordinate permutation; successively exposing its labels gives a chain of samples containing a fixed size-$j$ sample with probability $1/M_j$. An antichain meets each chain at most once, so its samples $F$ satisfy $\\sum_{S\\in F}1/M_{|S|}\\le1$. If every assigned sample has size at most $k$ and every $M_j$ for $j\\le k$ is smaller than $2^n$, this sum is greater than one, a contradiction. Thus the width is at least the displayed minimum. For the upper bound, choose any $k$ satisfying $M_k\\ge2^n$. Form a bipartite graph between the full concepts and their consistent size-$k$ samples. Each concept has degree $\\binom nk$ and each sample extends to $2^{n-k}$ concepts. For every concept set $A$, counting its incident edges gives $|N(A)|2^{n-k}\\ge |A|\\binom nk$, whence $|N(A)|\\ge|A|$. Hall's theorem gives a matching assigning every concept a distinct consistent size-$k$ sample. Equal-sized distinct samples are incomparable, so this is an antichain teacher. This proves the exact formula, including the one-concept case n=0. For the linear lower bound, the binomial theorem gives $\\binom nj\\le(5/4)^n4^j$. If $j\\le n/5$, then $M_j\\le(5/4)^n8^{n/5}<2^n$, since $(5/4)^5 8<2^5$. Hence the minimum is greater than n/5 for n>0; retaining each full concept gives the upper bound n.",
+  "references": "Direct antichain-chain counting and Hall matching proof for Definition 32 of \\cite{simon2023map}; independent small-cube matching and chain regression in sync/verify_noclashing_antichain_gap.py. No novelty claim is made."
+}

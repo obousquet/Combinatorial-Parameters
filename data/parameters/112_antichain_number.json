@@ -5,11 +5,50 @@
   "symbol": "\\mathrm{AN}",
   "category": "teaching",
   "symmetric": true,
-  "definition": "An **antichain teacher mapping** for a finite binary class $\\mathcal H$ assigns every $h\\in\\mathcal H$ a labeled sample $T(h)$ consistent with $h$, such that for distinct $h,g\\in\\mathcal H$ neither $T(h)\\subseteq T(g)$ nor $T(g)\\subseteq T(h)$. The **antichain number** $\\mathrm{AN}(\\mathcal H)$ is the minimum, over such mappings, of $\\max_{h\\in\\mathcal H}|T(h)|$.",
-  "graph_summary": "Smallest maximum sample size in a consistent teaching map whose assigned samples are inclusion-incomparable.",
+  "monotonic": true,
+  "p_monotonic": false,
+  "c_monotonic": false,
+  "doubly_monotonic": false,
+  "strict_c_monotonic": false,
+  "tight_strict_c_monotonic": false,
+  "strictly_monotonic": false,
+  "definition": "Fix a finite ambient domain $X$ and a binary class $\\mathcal H\\subseteq\\{0,1\\}^{X}$. An **antichain teacher mapping** assigns every $h\\in\\mathcal H$ a labeled sample $T(h)\\subseteq X\\times\\{0,1\\}$ consistent with $h$, such that for distinct $h,g\\in\\mathcal H$ neither $T(h)\\subseteq T(g)$ nor $T(g)\\subseteq T(h)$. The **antichain number** $\\mathrm{AN}(\\mathcal H)$ is the minimum, over such mappings, of $\\max_{h\\in\\mathcal H}|T(h)|$, with value zero for an empty class. Inclusion is inclusion of labeled samples, not just of their coordinate domains. The specified ambient domain is part of the input: constant coordinates may be used and must not be discarded automatically. Subfamily monotonicity keeps this domain fixed; projection and conditioning use their resulting domains.",
+  "graph_summary": "Smallest maximum size of consistent, pairwise inclusion-incomparable labeled samples. Uses the stated ambient domain, including constant coordinates.",
   "description": "A batch-teaching parameter based on antichain mappings of labeled samples.",
   "origin_references": "The antichain number is defined and studied in \\cite{simon2023map}; its VC upper bound is attributed there to \\cite{mansouri2022batch}.",
   "monotonicity_evidence": {
+    "monotonic": {
+      "kind": "direct_argument",
+      "latex_proof_label": "prop:antichain-monotonicity",
+      "proof": "Restrict an antichain teacher mapping to a subfamily on the same ambient domain; consistency and sample incomparability are preserved. See the full survey proof."
+    },
+    "p_monotonic": {
+      "kind": "counterexample",
+      "latex_proof_label": "prop:antichain-monotonicity",
+      "proof": "The private-coordinate cube has AN one, while its projection onto the original n coordinates has AN growing linearly in n. The database-owned values and the survey proof give the precise construction and bound."
+    },
+    "c_monotonic": {
+      "kind": "counterexample",
+      "latex_proof_label": "prop:antichain-monotonicity",
+      "proof": "The nine-concept class {abc00: a,b,c in {0,1}} union {00011} has AN one. Conditioning its fourth coordinate to zero leaves a three-cube with one constant coordinate, of AN two. The survey gives the full teacher map and counting proof. All five coordinates of the original class are active."
+    },
+    "doubly_monotonic": {
+      "kind": "definitional_consequence",
+      "proof": "Doubly monotonicity requires projection monotonicity, which fails; see Proposition \\ref{prop:antichain-monotonicity}."
+    },
+    "strict_c_monotonic": {
+      "kind": "counterexample",
+      "latex_proof_label": "prop:antichain-monotonicity",
+      "proof": "The two-cube and both branches of either active coordinate split all have AN one. This violates strict increase over equal branches, independently of the separate conditioning counterexample."
+    },
+    "tight_strict_c_monotonic": {
+      "kind": "definitional_consequence",
+      "proof": "The equal-branch plus-one identity already fails on the two-cube; see the strict-c counterexample and Proposition \\ref{prop:antichain-monotonicity}."
+    },
+    "strictly_monotonic": {
+      "kind": "definitional_consequence",
+      "proof": "Strict monotonicity requires both double monotonicity and strict-c monotonicity, and both fail; see Proposition \\ref{prop:antichain-monotonicity}."
+    },
     "symmetric": {
       "proof": "Complementing every concept and every label in an assigned sample preserves sample consistency, sample cardinality, and inclusion between samples, hence preserves antichain teacher mappings.",
       "kind": "direct_argument"
