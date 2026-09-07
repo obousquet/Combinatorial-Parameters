@@ -918,10 +918,10 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         shape_style = shape_map.get(mon_type, shape_map["none"])
         node = {
             "id": f'#parameters/{m["id"]}',
-            "label": " /\\n".join(
-                graph_label(member.get("name", member.get("short_name", str(member["id"]))))
-                for member in members
+            "label": graph_label(m.get("name", m["short_name"])) + (
+                f"\\n(+{len(members) - 1} equivalents)" if len(members) > 1 else ""
             ),
+            "equivalent_refs": [f'#parameters/{member["id"]}' for member in members],
             "ref": f'#parameters/{m["id"]}',
             "type": "parameter",
             **shape_style,
@@ -977,6 +977,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             "label": label,
             "label_ref": label_ref,
             "witness_strength": witness_strength,
+            "hierarchy": r.get("relationship_type") in LINEAR_TYPES and not variant,
             **arrow
         }
         if witness_strength == "unbounded":
@@ -1022,6 +1023,7 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     # crossing-minimization budget produces a better ordering on wide layers.
     # These settings are local to this database.
     layout = {
+        "optimize_horizontal": True,
         "ranksep": 1.05,
         "nodesep": 0.45,
         "mclimit": 10,
