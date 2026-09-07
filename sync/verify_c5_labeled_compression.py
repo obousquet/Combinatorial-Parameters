@@ -4,7 +4,7 @@ Uses the database's existing C5 constructor. No claim follows from a solver
 timeout; accepted tables are independently replayed on every actual sample.
 """
 
-from itertools import product
+from itertools import combinations, product
 from pathlib import Path
 import json
 import sys
@@ -81,6 +81,46 @@ def check_cyclic_upper(concepts: tuple[int, ...]) -> None:
     print('CYCLIC UPPER PASS: 176 samples; 10 full keys; two four-sample orbits (20 samples).')
 
 
+def weighted_lower(concepts: tuple[int, ...]) -> dict[Sample, int]:
+    """DB-owned analytic width-one obstruction; no injection search is needed."""
+    partial = set(samples(concepts, 5))
+    consecutive = {frozenset((i+j) % 5 for j in range(3)): frozenset((i, (i+2) % 5))
+                   for i in range(5)}
+    adjacent = {frozenset((i, (i+1) % 5)) for i in range(5)}
+    weights = {}
+    for coords in combinations(range(5), 3):
+        domain = frozenset(coords)
+        mask = sum(1 << x for x in coords)
+        if domain in consecutive:
+            pair, label = consecutive[domain], 1
+        else:
+            pairs = [p for p in adjacent if p <= domain]
+            assert len(pairs) == 1
+            pair, label = pairs[0], 0
+        for bits in product((0, 1), repeat=3):
+            y = sum(b << x for x, b in zip(coords, bits, strict=True))
+            weight = sum((y >> x & 1) == label for x in pair)
+            if weight:
+                assert (mask, y) in partial
+                weights[mask, y] = weight
+    assert len(weights) == 60 and sum(weights.values()) == 80
+    keys = [(0, 0)] + [(1 << x, b << x) for x in range(5) for b in range(2)]
+    unpack = lambda s: {(x, s[1] >> x & 1) for x in range(5) if s[0] >> x & 1}
+    checked = 0
+    for u in keys:
+        for h in range(32):
+            if h & u[0] != u[1]:
+                continue
+            load = sum(w for (m, y), w in weights.items()
+                       if u[0] & m == u[0] and y & u[0] == u[1] and h & m == y)
+            literal = sum(w for s, w in weights.items() if unpack(u) <= unpack(s) <= unpack((31, h)))
+            assert load == literal == (10 if u == (0, 0) else 6)
+            checked += 1
+    assert checked == 192 and 10+10*6 == 70 < 80
+    print('WEIGHTED LOWER PASS: 60 samples, total weight 80; all 192 key/output loads are 10 or 6, total capacity 70.')
+    return weights
+
+
 def width_one_exists(concepts: tuple[int, ...], n: int) -> tuple[bool, dict[str, int]]:
     """Enumerate distinct keys for the ten full inputs; only one key remains.
 
@@ -136,6 +176,7 @@ def exhaustive_lower() -> None:
     assert width_one_exists(tuple(range(4)), 2)[0]
     print('EXHAUSTIVE LOWER PASS', counts, '; full two-cube positive control passes')
     check_cyclic_upper(concepts)
+    weighted_lower(concepts)
 
     # Compact independently replayed upper rule: majority in the version
     # space of the key, with ties one only for a two-positive key.
@@ -161,6 +202,8 @@ def exhaustive_lower() -> None:
     assert record['value'] == '$2$' and record['status'] == 'established'
     assert 'consecutive triple in the five-cycle' in record['proof']
     assert '39811' in record['proof'] and '5848' in record['proof']
+    assert 'total weight is $10\\cdot8=80$' in record['proof']
+    assert '70<80' in record['proof'] and 'not a dependency' in record['proof']
     print('UPPER PASS', len(partial), 'samples;', len(upper_keys), 'keys')
 
 
