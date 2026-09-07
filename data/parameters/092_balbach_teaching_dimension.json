@@ -2,21 +2,60 @@
   "id": 92,
   "name": "Balbach Teaching Dimension",
   "short_name": "balbach_teaching_dimension",
-  "symbol": "\u005cmathrm{BTD}",
+  "symbol": "\\mathrm{BTD}",
   "category": "teaching",
   "monotonic": true,
-  "p_monotonic": null,
-  "c_monotonic": null,
-  "doubly_monotonic": null,
-  "strictly_monotonic": null,
-  "definition": "For $h\u005cin\u005cmathcal H$, set $\u005cmathrm{BTD}^{0}(h,\u005cmathcal H)$ to its ordinary minimum teaching-set size. Inductively, $\u005cmathrm{BTD}^{k+1}(h,\u005cmathcal H)$ is the minimum teaching-set size of $h$ inside the subfamily of hypotheses whose $k$th value is at least that size. Once these values stabilize, the **Balbach teaching dimension** is their maximum over $h\u005cin\u005cmathcal H$.",
-  "graph_summary": "Iterated teaching-set dimension that filters competitors according to their previous teaching complexity.",
-  "description": "An iteratively defined teaching parameter. It is monotone under subclasses, lies between recursive and ordinary teaching dimension, and is incomparable with subset teaching dimension.",
-  "origin_references": "Introduced in \u005ccite{balbach2008measuring}; its basic comparisons and subclass monotonicity are proved in \u005ccite{zilles2011models}.",
+  "p_monotonic": false,
+  "c_monotonic": true,
+  "doubly_monotonic": false,
+  "strictly_monotonic": false,
+  "definition": "Let $X$ be a finite domain and $\\mathcal H\\subseteq\\{0,1\\}^X$ a nonempty finite binary class. A labeled sample $S\\subseteq X\\times\\{0,1\\}$ contains at most one label per coordinate; a concept is consistent with $S$ when it agrees with every label. For each $h\\in\\mathcal H$, let $b^0_{\\mathcal H}(h)$ be the minimum size of a sample with which $h$ is the unique consistent concept in the class (its ordinary teaching-set size). For $k\\ge0$, define $C_k(S)=\\{g\\in\\mathcal H:g\\text{ is consistent with }S,\\ b^k_{\\mathcal H}(g)\\ge|S|\\}$ and $b^{k+1}_{\\mathcal H}(h)=\\min\\{|S|:C_k(S)=\\{h\\}\\}$. Thus the target itself must survive the same size filter as its competitors. These nonnegative integer values are nonincreasing and eventually stabilize simultaneously. The **Balbach teaching dimension** is $\\mathrm{BTD}(\\mathcal H)=\\max_{h\\in\\mathcal H}b^\\infty_{\\mathcal H}(h)$, with value zero for an empty class.",
+  "graph_summary": "Start with ordinary teaching sizes, then repeatedly identify each target using consistency and the previous sample-size threshold. The target must survive that threshold too.",
+  "description": "An iterated teaching parameter, monotone under subclasses and conditioning but not projections. Constant coordinates do not change it. Strict increase at equal-valued branches fails. It lies between recursive and ordinary teaching dimension and is incomparable with subset teaching dimension.",
+  "origin_references": "Introduced in \\cite{balbach2008measuring}; its basic comparisons and subclass monotonicity are proved in \\cite{zilles2011models}.",
   "monotonicity_evidence": {
     "monotonic": {
-      "proof": "For every subclass $\u005cmathcal C'\u005csubseteq\u005cmathcal C$, induction over the Balbach iterations gives $\u005cmathrm{BTD}^k(c,\u005cmathcal C')\u005cleq\u005cmathrm{BTD}^k(c,\u005cmathcal C)$ for every $c\u005cin\u005cmathcal C'$. Taking the stabilized maximum proves subclass monotonicity.",
-      "kind": "citation"
+      "kind": "direct_argument",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "Theorem 22 of Zilles et al. gives fixed-domain subclass monotonicity. The survey reproves it pointwise at every iteration, splitting according to whether the subclass target still survives the candidate sample-size threshold."
+    },
+    "symmetric": {
+      "kind": "direct_argument",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "Flipping coordinate labels bijects consistent samples of each size, preserves ordinary teaching sizes and every filtered consistency set, and hence preserves every Balbach iterate."
+    },
+    "c_monotonic": {
+      "kind": "direct_argument",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "First restrict to the conditioned subfamily, using subclass monotonicity. Then delete its fixed coordinates. The survey proves constant-coordinate invariance at every iteration by replacing constant examples with unused original coordinates at the same sample size, preserving the size filter."
+    },
+    "p_monotonic": {
+      "kind": "counterexample",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "Private-coordinate cubes have BTD one, while their projections onto the original n coordinates are full cubes with BTD n. The increase is unbounded; see database values 1176 and 589."
+    },
+    "strict_c_monotonic": {
+      "kind": "counterexample",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "The private-coordinate two-cube has BTD one. Both branches at either original cube coordinate retain two targets with private positive teaching examples, so each branch also has BTD one. The whole value does not strictly exceed the equal branch values."
+    },
+    "tight_strict_c_monotonic": {
+      "kind": "counterexample",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "The same private-coordinate two-cube has whole and branch values 1,1,1, violating the equal-branch plus-one identity. No equality with the maximum at unequal branches is assumed."
+    },
+    "doubly_monotonic": {
+      "kind": "definitional_consequence",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "Double monotonicity requires projection monotonicity, which the private-coordinate cubes refute."
+    },
+    "strictly_monotonic": {
+      "kind": "definitional_consequence",
+      "latex_proof_label": "prop:balbach-monotonicity",
+      "proof": "Strict monotonicity requires double monotonicity and strict-c monotonicity; both fail."
     }
-  }
+  },
+  "symmetric": true,
+  "strict_c_monotonic": false,
+  "tight_strict_c_monotonic": false
 }

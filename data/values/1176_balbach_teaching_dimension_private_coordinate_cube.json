@@ -1,0 +1,11 @@
+{
+  "id": 1176,
+  "name": "Balbach Teaching Dimension of Private-Coordinate Cubes",
+  "short_name": "balbach_teaching_dimension_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every $n\\ge1$, each target $h_v$ is ordinarily taught by its private positive example $(p_v,1)$. The class has $2^n\\ge2$ targets, so every ordinary minimum teaching size is exactly one. At a size-one sample the Balbach filter retains all targets; the private example still isolates its target. The size-zero sample is consistent with and retains all targets, so it cannot identify one. Thus the initial all-one vector is already fixed and BTD is exactly one."
+}

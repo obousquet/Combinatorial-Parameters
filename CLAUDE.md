@@ -208,6 +208,9 @@ python3 sync/audit_monotonicity_evidence.py --data-dir data
 # Exact all-minimum-sample iterations for STD conditioning/strict-c counterexamples.
 python3 sync/verify_subset_teaching_monotonicity.py
 
+# Balbach's target-retaining size filter, constant padding and monotonicity.
+python3 sync/verify_balbach_monotonicity.py
+
 # Addressing counts, arbitrary-code counterexamples, and complete-code value scopes.
 python3 sync/verify_addressing_order_shattering.py
 
