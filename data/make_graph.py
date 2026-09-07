@@ -221,6 +221,36 @@ def rank_adjacency(relationships: List[Dict[str, Any]]) -> Dict[str, set[str]]:
     return adjacency
 
 
+def upper_bound_groups(
+    relationships: List[Dict[str, Any]], vertices: set[str],
+    effective_range: str, size: str,
+) -> Dict[str, int]:
+    """Left-to-right regions on the equality quotient, using full base facts.
+
+    0: E only; 1: both; 2: Size only; 3: neither known. 'Only' means
+    absence of a proved affine path from the other root, not incomparability.
+    Never classify from the reduced drawing: omitted edges still prove bounds.
+    """
+    adjacency = rank_adjacency([
+        r for r in relationships
+        if r.get("status") not in {"needs_verification", "conjectured", "open", "refuted"}
+        and variant_of(r) == BASE_VARIANT
+    ])
+
+    def descendants(root: str) -> set[str]:
+        seen, pending = {root}, [root]
+        while pending:
+            for child in adjacency.get(pending.pop(), ()):
+                if child not in seen:
+                    seen.add(child)
+                    pending.append(child)
+        return seen
+
+    from_e, from_size = descendants(effective_range), descendants(size)
+    return {v: 1 if v in from_e and v in from_size else
+            0 if v in from_e else 2 if v in from_size else 3 for v in vertices}
+
+
 def is_redundant_linear_relation(
     relationship: Dict[str, Any], relationships: List[Dict[str, Any]]
 ) -> bool:
@@ -879,6 +909,11 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
     # on whichever member happens to be used as the node representative.
     ranks = hierarchy_ranks(base_rank_relations, set(equivalence_components))
     linear_blocks = affine_linear_blocks(base_rank_relations)
+    horizontal_groups = upper_bound_groups(
+        base_rank_relations, set(equivalence_components),
+        equivalence_component_of['#parameters/effective_range'],
+        equivalence_component_of['#parameters/size'],
+    )
 
     # Add one node for each exact-equality component.  The first record is the
     # clickable representative; the combined label makes every identification
@@ -929,6 +964,10 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
             "style": "filled",
         }
         node["rank"] = ranks[component_root]
+        node["horizontal_group"] = horizontal_groups[component_root]
+        node["horizontal_group_label"] = (
+            "E only", "E and Size", "Size only", "Other roots / descendants"
+        )[node["horizontal_group"]]
         nodes.append(node)
 
     exact_values = {}
