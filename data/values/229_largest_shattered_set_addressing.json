@@ -4,8 +4,9 @@
   "short_name": "largest_shattered_set_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/largest_shattered_set",
-  "value": "$\\lfloor\\log n\\rfloor$",
+  "value": "$\\lfloor\\log n\\rfloor\\quad(n=2^r,\\ r\\ge1)$",
   "value_class": "omega_log_n",
   "status": "established",
-  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the addressing class is $\\lfloor\\log n\\rfloor$."
+  "proof": "Restrict here to $n=2^r$ with all r-bit words present, so $\\lfloor\\log_2n\\rfloor=\\log_2n=r$. Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the addressing class is $\\lfloor\\log n\\rfloor$.",
+  "details": "Scope: complete-code subfamily $n=2^r$, $r\\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. "
 }

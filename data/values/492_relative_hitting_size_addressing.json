@@ -4,10 +4,10 @@
   "short_name": "relative_hitting_size_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/relative_hitting_size",
-  "value": "$1$",
+  "value": "$1\\quad(n\\ge2)$",
   "value_class": "omega_1",
   "status": "established",
-  "details": "Relative hitting size equals teaching dimension for finite Boolean classes.",
+  "details": "For n>=2 (the nontrivial class). Relative hitting size equals teaching dimension for finite Boolean classes.",
   "proof": "Relative hitting size is the maximum teaching-set size. The addressing class has maximum teaching-set size one, witnessed by each concept's private primary coordinate.",
   "references": "\\cite{maass1992lower}"
 }

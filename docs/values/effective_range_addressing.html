@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Effective Range of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Value: </strong>$2^{\lfloor\log n\rfloor}+\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\begin{cases}0&n=1,\\ n+\lceil\log_2 n\rceil&n\ge2.\end{cases}$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>The declared domain always has n+ceil(log2 n) points, but the sole point is constant when n=1.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Every addressed base coordinate occurs as the singleton component of one concept, and each of the $\lfloor\log n\rfloor$ address coordinates varies among the address subsets. Thus precisely $2^{\lfloor\log n\rfloor}+\lfloor\log n\rfloor$ coordinates are effective.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Put $r=\lceil\log_2n\rceil$. For $n\ge2$, each of the n private coordinates takes value one at its own target and zero at the others. Every bit coordinate also varies: if one were constant, the r-bit encoding could realize at most $2^{r-1}<n$ distinct words. Thus all n+r coordinates are effective. At n=1 there is one concept and no bit coordinate, so no coordinate varies.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>

@@ -4,10 +4,10 @@
   "short_name": "log_size_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/log_size",
-  "value": "$\\lfloor\\log n\\rfloor$",
+  "value": "$\\log_2 n$",
   "value_class": "omega_log_n",
-  "details": "",
+  "details": "No rounding: the parameter is the real binary logarithm of class size.",
   "status": "established",
-  "proof": "Taking the binary logarithm of the exact size $2^{\\lfloor\\log n\\rfloor}$ gives $\\lfloor\\log n\\rfloor$.",
+  "proof": "The class has exactly n distinct indexed concepts. Substitution into the definition of Log Size gives $\\log_2n$, including zero at n=1.",
   "references": "\\cite{maass1992lower}"
 }

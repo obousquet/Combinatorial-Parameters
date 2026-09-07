@@ -4,9 +4,10 @@
   "short_name": "membership_and_equivalence_queries_complexity_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/membership_and_equivalence_queries_complexity",
-  "value": "$\\Theta(\\log n)$",
+  "value": "$\\Theta(\\log n)\\quad(n=2^r,\\ r\\ge1)$",
   "value_class": "omega_log_n",
   "status": "established",
-  "proof": "For the addressing family, Maass--Turán's table of matching bounds gives $\\mathrm{LC}_{\\mathrm{ARB\\text{-}MEMB}}(\\mathrm{ADDRESSING}_n)=\\Theta(\\log n)$, exactly the database's model with arbitrary equivalence and membership queries.",
-  "references": "\\cite{maass1992lower}, Table 1."
+  "proof": "Restrict here to $n=2^r$ with all r-bit words present, so $\\lfloor\\log_2n\\rfloor=\\log_2n=r$. For the addressing family, Maass--Turán's table of matching bounds gives $\\mathrm{LC}_{\\mathrm{ARB\\text{-}MEMB}}(\\mathrm{ADDRESSING}_n)=\\Theta(\\log n)$, exactly the database's model with arbitrary equivalence and membership queries.",
+  "references": "\\cite{maass1992lower}, Table 1.",
+  "details": "Scope: complete-code subfamily $n=2^r$, $r\\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. "
 }

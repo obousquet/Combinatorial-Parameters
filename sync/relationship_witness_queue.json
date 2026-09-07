@@ -20,15 +20,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            998,
-            28
-          ]
-        },
-        {
           "class": "#classes/singletons",
           "larger_value": "$1$",
           "smaller_value": "$0$",
@@ -75,15 +66,6 @@
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            351,
-            28
-          ]
-        },
         {
           "class": "#classes/singletons",
           "larger_value": "$1$",
@@ -494,15 +476,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            379,
-            1071
-          ]
-        },
-        {
           "class": "#classes/projected_positive_noclashing_gap",
           "larger_value": "$1$",
           "smaller_value": "$0$",
@@ -568,15 +541,6 @@
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            382,
-            429
-          ]
-        },
         {
           "class": "#classes/singletons",
           "larger_value": "$1$",
@@ -865,15 +829,6 @@
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            382,
-            428
-          ]
-        },
         {
           "class": "#classes/singletons",
           "larger_value": "$1$",
@@ -1838,33 +1793,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            490,
-            37
-          ]
-        },
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            491,
-            37
-          ]
-        },
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            492,
-            37
-          ]
-        },
-        {
           "class": "#classes/repetitionfree_teaching_separation",
           "larger_value": "$4$",
           "smaller_value": "$3$",
@@ -2028,15 +1956,6 @@
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            361,
-            427
-          ]
-        },
         {
           "class": "#classes/repetitionfree_teaching_separation",
           "larger_value": "$2$",
@@ -3207,33 +3126,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            6,
-            770
-          ]
-        },
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            291,
-            770
-          ]
-        },
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            694,
-            770
-          ]
-        },
-        {
           "class": "#classes/singletons",
           "larger_value": "$1$",
           "smaller_value": "$0$",
@@ -3400,15 +3292,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            369,
-            1071
-          ]
-        },
-        {
           "class": "#classes/singletons",
           "larger_value": "$1$",
           "smaller_value": "$0$",
@@ -3428,15 +3311,6 @@
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/addressing",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            892,
-            428
-          ]
-        },
         {
           "class": "#classes/repetitionfree_teaching_separation",
           "larger_value": "$\\frac{40}{13}$",

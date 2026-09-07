@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Membership Query Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Value: </strong>$\lceil\log_2 n\rceil$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Querying every address coordinate reveals the address word and hence the unique addressed concept. There are $2^{\lfloor\log_2 n\rfloor}$ concepts, so the binary decision-tree lower bound shows that fewer queries cannot suffice.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The r bit coordinates, with $r=\lceil\log_2n\rceil$, identify the target because its encoding is injective. Conversely, a binary membership-query decision tree of worst-case depth q has at most $2^q$ leaves, and must distinguish all n targets, so $q\ge\lceil\log_2n\rceil$. This includes zero queries at n=1.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
 
         </div>

@@ -190,9 +190,9 @@
         <p><strong>Name: </strong>Recursive Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Every addressing concept contains a unique address coordinate in $[n]$: its positive label there is inconsistent with every other addressing concept.  Hence all concepts have one-point teaching sets in the initial class and can be removed in a single recursive-teaching layer.  A nontrivial class cannot have recursive teaching dimension zero, so the value is exactly one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
@@ -328,7 +328,7 @@
 <p><strong>Parameter: </strong><a href="parameters/star_number.html">Star number</a></p>
 <p><strong>Value: </strong>$n-1$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-<p><strong>Details: </strong>Under the standard addressing convention $n=2^d$, so the $d$ address bits encode all $n$ primary coordinates.</p>
+<p><strong>Details: </strong>For every n>=1 and every injective encoding; no complete-code assumption is needed.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Project to all primary coordinates except one, say $p$.  The addressing concept whose primary coordinate is $p$ becomes the empty trace, while every other concept becomes its distinct primary singleton; these traces form an $(n-1)$-star.  Conversely, a $d$-star has $d+1$ distinct traces (its centre and leaves), each realized by a distinct original concept.  Since the addressing class has $n$ concepts, $d\le n-1$.  Thus its star number is exactly $n-1$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
@@ -445,11 +445,11 @@
         <p><strong>Name: </strong>co-VC dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Value: </strong>$2^{\lfloor\log n\rfloor}$</p>
+<p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>For every n>=1, independently of the bit encoding.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict to the addressed base coordinates. The empty trace is absent and every one-coordinate trace is realized by the corresponding addressed concept, producing a hollow star of size $2^{\lfloor\log n\rfloor}$. No larger hollow star can use more effective base coordinates.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the n private address coordinates, the all-zero labeling is absent, but every labeling differing from it at exactly one coordinate is realized. This is a hollow star of size n. Conversely, a minimally inconsistent sample of size k has, for each of its k deleted examples, a concept consistent with the remaining sample. These k concepts are distinct: a concept witnessing two deletions would satisfy the full inconsistent sample. Hence k cannot exceed the n concepts. Thus co-VC is exactly n, also at n=1.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -1244,11 +1244,11 @@
         <p><strong>Name: </strong>Size of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
-<p><strong>Value: </strong>$2^{\lfloor\log n\rfloor}$</p>
+<p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>For every n>=1 and every injective encoding in the class definition.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>There is one concept for each subset of the $\lfloor\log n\rfloor$ address coordinates, and distinct address subsets give distinct concepts. Hence the exact size is $2^{\lfloor\log n\rfloor}$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There is exactly one concept for each index $i\in[n]$. Distinct indices give distinct private positive address coordinates, so these n concepts are distinct, irrespective of their bit encoding.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -1550,11 +1550,11 @@
         <p><strong>Name: </strong>Effective Range of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Value: </strong>$2^{\lfloor\log n\rfloor}+\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\begin{cases}0&n=1,\\ n+\lceil\log_2 n\rceil&n\ge2.\end{cases}$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>The declared domain always has n+ceil(log2 n) points, but the sole point is constant when n=1.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Every addressed base coordinate occurs as the singleton component of one concept, and each of the $\lfloor\log n\rfloor$ address coordinates varies among the address subsets. Thus precisely $2^{\lfloor\log n\rfloor}+\lfloor\log n\rfloor$ coordinates are effective.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Put $r=\lceil\log_2n\rceil$. For $n\ge2$, each of the n private coordinates takes value one at its own target and zero at the others. Every bit coordinate also varies: if one were constant, the r-bit encoding could realize at most $2^{r-1}<n$ distinct words. Thus all n+r coordinates are effective. At n=1 there is one concept and no bit coordinate, so no coordinate varies.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -1788,11 +1788,11 @@
         <p><strong>Name: </strong>VC Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The address coordinates realize every binary pattern, so they form a shattered set of size $\lfloor\log n\rfloor$. Since the class has exactly $2^{\lfloor\log n\rfloor}$ concepts, no larger set can be shattered.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. The address coordinates realize every binary pattern, so they form a shattered set of size $\lfloor\log n\rfloor$. Since the class has exactly $2^{\lfloor\log n\rfloor}$ concepts, no larger set can be shattered.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -1805,11 +1805,11 @@
         <p><strong>Name: </strong>Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Querying the $\lfloor\log n\rfloor$ address coordinates in sequence yields a complete mistake tree: every address bit pattern labels one concept. A deeper tree would require more than the $2^{\lfloor\log n\rfloor}$ concepts in the class.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Querying the $\lfloor\log n\rfloor$ address coordinates in sequence yields a complete mistake tree: every address bit pattern labels one concept. A deeper tree would require more than the $2^{\lfloor\log n\rfloor}$ concepts in the class.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -2111,11 +2111,11 @@
         <p><strong>Name: </strong>Log Size of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/log_size.html">Log Size</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\log_2 n$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>No rounding: the parameter is the real binary logarithm of class size.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Taking the binary logarithm of the exact size $2^{\lfloor\log n\rfloor}$ gives $\lfloor\log n\rfloor$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly n distinct indexed concepts. Substitution into the definition of Log Size gives $\log_2n$, including zero at n=1.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -2247,11 +2247,11 @@
         <p><strong>Name: </strong>Threshold Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/threshold_dimension.html">Threshold Dimension</a></p>
-<p><strong>Value: </strong>$\log_2 n+1$</p>
+<p><strong>Value: </strong>$\log_2 n+1\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>Under the standard convention $n=2^d$; this corrects an off-by-one in the legacy table.</p>
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. Under the standard convention $n=2^d$; this corrects an off-by-one in the legacy table.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Projecting to the $d=\log_2 n$ address coordinates gives the full $d$-cube.  Its chain $\emptyset,\{a_1\},\ldots,\{a_1,\ldots,a_d\}$ is realized by the address concepts; adding the primary coordinate of the all-one address concept gives one further realized trace.  Hence the threshold dimension is at least $d+1$.  Conversely, the final trace of a threshold chain is contained in one addressing concept and so uses at most its $d$ address coordinates and its single primary coordinate.  Thus no chain has dimension exceeding $d+1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Projecting to the $d=\log_2 n$ address coordinates gives the full $d$-cube.  Its chain $\emptyset,\{a_1\},\ldots,\{a_1,\ldots,a_d\}$ is realized by the address concepts; adding the primary coordinate of the all-one address concept gives one further realized trace.  Hence the threshold dimension is at least $d+1$.  Conversely, the final trace of a threshold chain is contained in one addressing concept and so uses at most its $d$ address coordinates and its single primary coordinate.  Thus no chain has dimension exceeding $d+1$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -3148,11 +3148,11 @@
         <p><strong>Name: </strong>Log Size Ratio of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/log_size_ratio.html">Log Size Ratio</a></p>
-<p><strong>Value: </strong>$\frac{\log(2^{\lfloor\log n\rfloor}-1)}{\log(n+\lfloor\log n\rfloor+1)}$</p>
+<p><strong>Value: </strong>$\frac{\log(n-1)}{\log(n+\lceil\log_2 n\rceil+1)}$</p>
 <p><strong>Order:</strong> </p>
-<p><strong>Details: </strong>For $n\ge2$; the domain has $n+\lfloor\log n\rfloor$ points.</p>
+<p><strong>Details: </strong>For n>=2. The denominator uses the declared domain, not a different full-code family.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The defining subsets of the $\lfloor\log n\rfloor$ address bits give exactly $2^{\lfloor\log n\rfloor}$ concepts.  Substitute this cardinality and the stated domain size into the definition.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has n concepts on n+r coordinates, where $r=\lceil\log_2n\rceil$. Substituting these two counts into the definition of Log Size Ratio gives the displayed expression. It lies between zero and one.</p></div>
 
 
         </div>
@@ -3981,11 +3981,11 @@
         <p><strong>Name: </strong>Largest Shattered Set of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/largest_shattered_set.html">Largest Shattered Set</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the addressing class is $\lfloor\log n\rfloor$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for the addressing class is $\lfloor\log n\rfloor$.</p></div>
 
 
         </div>
@@ -4236,11 +4236,11 @@
         <p><strong>Name: </strong>Maximum Largest Order Shattered Set of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/maximum_largest_order_shattered_set.html">Maximum Largest Order Shattered Set</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Maximum Largest Order Shattered Set is, by definition, the VC dimension. The addressing class has established VC dimension $\lfloor\log n\rfloor$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Maximum Largest Order Shattered Set is, by definition, the VC dimension. The addressing class has established VC dimension $\lfloor\log n\rfloor$.</p></div>
 
 
         </div>
@@ -4423,11 +4423,11 @@
         <p><strong>Name: </strong>Randomized Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/randomized_littlestone_dimension.html">Randomized Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\frac12\lfloor\log_2 n\rfloor$</p>
+<p><strong>Value: </strong>$\frac12\lfloor\log_2 n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Write d for $\lfloor\log_2 n\rfloor$. The class has exactly $2^d$ concepts, so every shattered tree has expected random-branch depth at most d by the entropy bound. Querying the d address coordinates gives a complete shattered tree of depth d, hence randomized value d/2.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Write d for $\lfloor\log_2 n\rfloor$. The class has exactly $2^d$ concepts, so every shattered tree has expected random-branch depth at most d by the entropy bound. Querying the d address coordinates gives a complete shattered tree of depth d, hence randomized value d/2.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#filmus2023randomized">[filmus2023randomized]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -4610,11 +4610,11 @@
         <p><strong>Name: </strong>Random Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Random equivalence-query complexity lies between VC dimension and Littlestone dimension. The established addressing-class values of both bounds are $\lfloor\log n\rfloor$, hence the random equivalence-query value is the same.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Random equivalence-query complexity lies between VC dimension and Littlestone dimension. The established addressing-class values of both bounds are $\lfloor\log n\rfloor$, hence the random equivalence-query value is the same.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
 
         </div>
@@ -5021,9 +5021,9 @@
         <p><strong>Name: </strong>Preference-Based Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Preference-based teaching dimension equals recursive teaching dimension. The addressing class has established recursive teaching dimension one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#gao2017preference">[gao2017preference]</a></p></div>
@@ -5259,11 +5259,11 @@
         <p><strong>Name: </strong>Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/equivalence_queries_complexity.html">Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> </p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established equality $\mathrm{Q}_{\mathrm{eq}}=\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Addressing.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. The established equality $\mathrm{Q}_{\mathrm{eq}}=\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Addressing.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -5497,11 +5497,11 @@
         <p><strong>Name: </strong>Hitting Size of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/hitting_size.html">Hitting Size</a></p>
-<p><strong>Value: </strong>$2^{\lfloor\log_2 n\rfloor}$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Value: </strong>$\log_2n+1\quad(n=2^r)$</p>
+<p><strong>Order:</strong> $\Omega(\log n)$</p>
+<p><strong>Details: </strong>The displayed value is for complete codes. For an arbitrary code set $B\subseteq\{0,1\}^r$, the exact value is $\min_{T\subseteq[r]}(|T|+|\{b\in B:b|_T=0\}|)$. It need not depend only on n.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has one effective primary coordinate for each of its $2^{\lfloor\log_2 n\rfloor}$ address words, and that coordinate occurs as a singleton part of its corresponding concept. Thus all such primary coordinates are forced. They meet every nonempty concept, so they form a hitting set.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Let $B\subseteq\{0,1\}^r$ be the chosen set of n codewords. Fix the selected bit coordinates T of a hitting set. Every target whose code is zero on T must then be hit by its own private coordinate, and those are the only remaining coordinates that can hit it. Conversely, selecting those private coordinates suffices. Hence $\mathrm{HT}=\min_{T\subseteq[r]}(|T|+|\{b\in B:b|_T=0\}|)$. For complete codes and t selected bits, exactly $2^{r-t}$ targets remain unhit, giving minimum $\min_{0\le t\le r}(t+2^{r-t})=r+1$: write k=r-t and use $2^k\ge k+1$, with equality at k=0 or k=1. Thus the old claimed value n is false for r&gt;=2. At r=0 the sole nonempty concept has hitting size one.</p></div>
 
 
         </div>
@@ -5548,11 +5548,11 @@
         <p><strong>Name: </strong>Membership Query Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/membership_query_complexity.html">Membership Query Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Value: </strong>$\lceil\log_2 n\rceil$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Querying every address coordinate reveals the address word and hence the unique addressed concept. There are $2^{\lfloor\log_2 n\rfloor}$ concepts, so the binary decision-tree lower bound shows that fewer queries cannot suffice.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The r bit coordinates, with $r=\lceil\log_2n\rceil$, identify the target because its encoding is injective. Conversely, a binary membership-query decision tree of worst-case depth q has at most $2^q$ leaves, and must distinguish all n targets, so $q\ge\lceil\log_2n\rceil$. This includes zero queries at n=1.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin1988queries">[angluin1988queries]</a></p></div>
 
         </div>
@@ -5803,11 +5803,11 @@
         <p><strong>Name: </strong>Distinguishing Range of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/distinguishing_range.html">Distinguishing Range</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Value: </strong>$\lceil\log_2 n\rceil$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The $\lfloor\log_2 n\rfloor$ address coordinates give every distinct address word and thus distinguish all concepts. Since the class has $2^{\lfloor\log_2 n\rfloor}$ concepts, fewer binary coordinates cannot give distinct traces for all of them.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The r bit coordinates, where $r=\lceil\log_2n\rceil$, distinguish every target. A set of q binary coordinates has at most $2^q$ distinct traces; to distinguish n concepts requires $q\ge\lceil\log_2n\rceil$. Thus the minimum distinguishing range is exactly r, including zero at n=1.</p></div>
 
 
         </div>
@@ -6024,9 +6024,9 @@
         <p><strong>Name: </strong>Interpolation Degree of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Each concept has a unique addressed primary coordinate. Assigning a coefficient to each such coordinate gives a linear polynomial with arbitrary prescribed values on the corresponding concepts. A constant polynomial cannot distinguish the nontrivial class.</p></div>
 
@@ -6160,9 +6160,9 @@
         <p><strong>Name: </strong>Effective VC Radius of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Every effective coordinate varies and so is shattered. Any two distinct primary coordinates never occur together in one addressing concept, so their trace misses $11$ and radius two fails.</p></div>
 
@@ -6194,9 +6194,9 @@
         <p><strong>Name: </strong>Minimum Teaching-Set Size of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Every addressing concept has its own addressed primary coordinate, which is positive for that concept and negative for every other one. Hence one positive example teaches it, while size zero cannot distinguish a nontrivial class.</p></div>
 
@@ -6330,9 +6330,9 @@
         <p><strong>Name: </strong>Positive Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Each addressing concept has a unique positive primary coordinate, so that one positive example teaches it. The class is nontrivial, so zero examples cannot teach every target.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a></p></div>
@@ -6449,9 +6449,9 @@
         <p><strong>Name: </strong>Positive Recursive Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Every addressing concept has a unique positive primary coordinate, so the concepts may be removed in any order with one positive teaching example each.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#fallat2023batch">[fallat2023batch]</a></p></div>
@@ -6500,9 +6500,9 @@
         <p><strong>Name: </strong>Positive No-Clashing Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Assign every concept its unique positive primary coordinate. Any other addressing concept is negative there, so the resulting width-one mapping is positive and non-clashing. The class is nontrivial, ruling out zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
@@ -6551,9 +6551,9 @@
         <p><strong>Name: </strong>No-Clashing Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Assigning every concept its unique positive primary coordinate is a width-one non-clashing mapping. The nontrivial class rules out width zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
@@ -6738,11 +6738,11 @@
         <p><strong>Name: </strong>Majority Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Majority complexity is at least Littlestone dimension and at most log size. Both established addressing values equal $\lfloor\log n\rfloor$, proving the equality.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Majority complexity is at least Littlestone dimension and at most log size. Both established addressing values equal $\lfloor\log n\rfloor$, proving the equality.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -8506,9 +8506,9 @@
         <p><strong>Name: </strong>Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/teaching_dimension.html">Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>Each addressing concept has a private positive primary coordinate.</p>
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). Each addressing concept has a private positive primary coordinate.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>For each concept, its addressed primary coordinate has label one only for that concept, so its single positive example teaches it. The nontrivial class has teaching dimension at least one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
@@ -8523,9 +8523,9 @@
         <p><strong>Name: </strong>Maximum Teaching-Set Size of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>This is the classical teaching dimension of the addressing class.</p>
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). This is the classical teaching dimension of the addressing class.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Maximum teaching-set size is, by definition, teaching dimension. The addressing class has teaching dimension one because every concept has a private positive primary coordinate.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
@@ -8540,9 +8540,9 @@
         <p><strong>Name: </strong>Relative Hitting Size of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>Relative hitting size equals teaching dimension for finite Boolean classes.</p>
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). Relative hitting size equals teaching dimension for finite Boolean classes.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Relative hitting size is the maximum teaching-set size. The addressing class has maximum teaching-set size one, witnessed by each concept's private primary coordinate.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
@@ -9033,11 +9033,11 @@
         <p><strong>Name: </strong>Combinatorial Eluder Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
-<p><strong>Value: </strong>$2^{\lfloor\log_2 n\rfloor}-1$</p>
+<p><strong>Value: </strong>$n-1$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-<p><strong>Details: </strong>Under the standard convention $n=2^d$, this is $n-1$.</p>
+<p><strong>Details: </strong>For all n>=1; an all-zero address word is not needed.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Take the addressing concept with the all-zero address word as base.  List the primary coordinate of every other address word and use its addressing concept as witness.  A witness has label 0 on all other primary coordinates, so it agrees with the base at every earlier listed point.  This gives $|\mathcal H|-1=2^{\lfloor\log_2 n\rfloor}-1$ steps; the general size bound gives equality.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Choose any target as the base and list the private coordinate of each of the other n-1 targets. At its own listed coordinate that target differs from the base, and at every previously listed private coordinate it agrees with the base. This is an eluder sequence of length n-1. Conversely, in an eluder sequence relative to a base target, each successive witness agrees with the base at all earlier coordinates and disagrees at its own coordinate. These witnesses are distinct and different from the base, so there are at most n-1 steps. For n=1 the empty sequence has value zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#li2022understanding">[li2022understanding]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -9526,11 +9526,11 @@
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On the addressing class, the established VC and Littlestone dimensions both equal $\lfloor\log n\rfloor$. The surveyed sandwich theorem places Prefix-k Littlestone Dimension between them, determining the same value for every fixed k.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. On the addressing class, the established VC and Littlestone dimensions both equal $\lfloor\log n\rfloor$. The surveyed sandwich theorem places Prefix-k Littlestone Dimension between them, determining the same value for every fixed k.</p></div>
 <strong>References:</strong><div class="text-field"><p>Derived from Proposition \ref{prop:prefix-littlestone-order} in the survey and the established addressing benchmark values</p></div>
 
         </div>
@@ -9849,11 +9849,11 @@
         <p><strong>Name: </strong>2-Block Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> </p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces the same value for $\mathrm B_2$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. The established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces the same value for $\mathrm B_2$.</p></div>
 
 
         </div>
@@ -9883,11 +9883,11 @@
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> </p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces $\mathrm B_k=\lfloor\log n\rfloor$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. For every fixed $k>2$, the established VC and Littlestone dimensions of the addressing class are both $\lfloor\log n\rfloor$. Proposition \ref{prop:block-littlestone-sandwich} forces $\mathrm B_k=\lfloor\log n\rfloor$.</p></div>
 
 
         </div>
@@ -10019,9 +10019,9 @@
         <p><strong>Name: </strong>Balbach Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>For Addressing, ordinary teaching dimension and recursive teaching dimension are both one. The established sandwich $\mathrm{TD}\ge\mathrm{BTD}\ge\mathrm{RTD}$ therefore forces $\mathrm{BTD}=1$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a> <a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a>; derived using established TD and RTD values</p></div>
@@ -11515,11 +11515,11 @@
         <p><strong>Name: </strong>Projected VC Radius of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_vc_radius.html">Projected VC Radius</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected VC radius equals VC dimension. The address coordinates give the established value $\lfloor\log n\rfloor$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Projected VC radius equals VC dimension. The address coordinates give the established value $\lfloor\log n\rfloor$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -11685,11 +11685,11 @@
         <p><strong>Name: </strong>Projected Strongly Shattered Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_strongly_shattered_dimension.html">Projected Strongly Shattered Dimension</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected strongly shattered dimension equals VC dimension. Addressing has established VC dimension $\lfloor\log n\rfloor$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Projected strongly shattered dimension equals VC dimension. Addressing has established VC dimension $\lfloor\log n\rfloor$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bollobas1995defect">[bollobas1995defect]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>
@@ -11770,9 +11770,9 @@
         <p><strong>Name: </strong>Monotonic Minimum Teaching Set Size of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/monotonic_minimum_teaching_set_size.html">Monotonic Minimum Teaching Set Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>For finite classes, monotonic minimum teaching-set size equals recursive teaching dimension. Addressing has established recursive teaching dimension one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
@@ -12263,11 +12263,11 @@
         <p><strong>Name: </strong>Worst Mistakes of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Worst mistakes is at least VC dimension and at most Littlestone dimension. Both established addressing-class values are $\lfloor\log n\rfloor$, giving the claimed equality.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Worst mistakes is at least VC dimension and at most Littlestone dimension. Both established addressing-class values are $\lfloor\log n\rfloor$, giving the claimed equality.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>
@@ -12416,11 +12416,11 @@
         <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor$</p>
+<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Random proper equivalence-query complexity is at least random equivalence-query complexity, whose established addressing value is $\lfloor\log n\rfloor$. It is at most log size, also $\lfloor\log n\rfloor$. Hence equality holds.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Random proper equivalence-query complexity is at least random equivalence-query complexity, whose established addressing value is $\lfloor\log n\rfloor$. It is at most log size, also $\lfloor\log n\rfloor$. Hence equality holds.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
 
         </div>
@@ -14303,9 +14303,9 @@
         <p><strong>Name: </strong>Average Teaching Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Both the established minimum teaching-set size and teaching dimension of Addressing are one. Every individual minimum teaching-set size is therefore one, so their average is one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
@@ -15935,9 +15935,9 @@
         <p><strong>Name: </strong>Minimum Largest Order-Shattered Set of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Order the bit coordinates before the address coordinates. Each bit downshift replaces every concept's address code by zero, since no other concept has its address coordinate. The subsequent address downshifts leave an empty concept and address singletons, whose largest support has size one. Thus OSH_min is at most one; it is at least one because the addressing class is nonconstant. See sync/verify_addressing_order_shattering.py.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation; verified by sync/verify_addressing_order_shattering.py.</p></div>
@@ -16122,9 +16122,9 @@
         <p><strong>Name: </strong>Partial Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$1\quad(n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For n>=2 (the nontrivial class). </p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>Query the partial hypothesis that labels every address point negative and is undefined on the bit points.  For target concept $i$, its unique positive address point $i$ is the only possible counterexample, so the reply identifies the target in one query.  A nontrivial class cannot be identified with zero queries.</p></div>
 <strong>References:</strong><div class="text-field"><p>Directly from the addressing-class definition; this is also the $\mathrm{LC}_{\mathrm{partial}}(\mathrm{ADDRESSING}_n)=1$ entry in <a href="bibliography.html#maass1992lower">[maass1992lower]</a>.</p></div>
@@ -16139,11 +16139,11 @@
         <p><strong>Name: </strong>Membership and Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/membership_and_equivalence_queries_complexity.html">Membership and Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\Theta(\log n)$</p>
+<p><strong>Value: </strong>$\Theta(\log n)\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For the addressing family, Maass--Turán's table of matching bounds gives $\mathrm{LC}_{\mathrm{ARB\text{-}MEMB}}(\mathrm{ADDRESSING}_n)=\Theta(\log n)$, exactly the database's model with arbitrary equivalence and membership queries.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. For the addressing family, Maass--Turán's table of matching bounds gives $\mathrm{LC}_{\mathrm{ARB\text{-}MEMB}}(\mathrm{ADDRESSING}_n)=\Theta(\log n)$, exactly the database's model with arbitrary equivalence and membership queries.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a>, Table 1.</p></div>
 
         </div>

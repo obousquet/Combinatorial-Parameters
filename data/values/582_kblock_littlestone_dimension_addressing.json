@@ -4,7 +4,8 @@
   "short_name": "kblock_littlestone_dimension_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/kblock_littlestone_dimension_kgt2",
-  "value": "$\\lfloor\\log n\\rfloor$",
+  "value": "$\\lfloor\\log n\\rfloor\\quad(n=2^r,\\ r\\ge1)$",
   "status": "established",
-  "proof": "For every fixed $k>2$, the established VC and Littlestone dimensions of the addressing class are both $\\lfloor\\log n\\rfloor$. Proposition \\ref{prop:block-littlestone-sandwich} forces $\\mathrm B_k=\\lfloor\\log n\\rfloor$."
+  "proof": "Restrict here to $n=2^r$ with all r-bit words present, so $\\lfloor\\log_2n\\rfloor=\\log_2n=r$. For every fixed $k>2$, the established VC and Littlestone dimensions of the addressing class are both $\\lfloor\\log n\\rfloor$. Proposition \\ref{prop:block-littlestone-sandwich} forces $\\mathrm B_k=\\lfloor\\log n\\rfloor$.",
+  "details": "Scope: complete-code subfamily $n=2^r$, $r\\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. "
 }

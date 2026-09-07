@@ -2,10 +2,10 @@
   "id": 180,
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/log_size_ratio",
-  "value": "$\\frac{\\log(2^{\\lfloor\\log n\\rfloor}-1)}{\\log(n+\\lfloor\\log n\\rfloor+1)}$",
-  "details": "For $n\\ge2$; the domain has $n+\\lfloor\\log n\\rfloor$ points.",
+  "value": "$\\frac{\\log(n-1)}{\\log(n+\\lceil\\log_2 n\\rceil+1)}$",
+  "details": "For n>=2. The denominator uses the declared domain, not a different full-code family.",
   "status": "established",
-  "proof": "The defining subsets of the $\\lfloor\\log n\\rfloor$ address bits give exactly $2^{\\lfloor\\log n\\rfloor}$ concepts.  Substitute this cardinality and the stated domain size into the definition.",
+  "proof": "The class has n concepts on n+r coordinates, where $r=\\lceil\\log_2n\\rceil$. Substituting these two counts into the definition of Log Size Ratio gives the displayed expression. It lies between zero and one.",
   "name": "Log Size Ratio of Addressing",
   "short_name": "log_size_ratio_addressing"
 }

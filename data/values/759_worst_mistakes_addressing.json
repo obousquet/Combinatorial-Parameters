@@ -4,9 +4,10 @@
   "short_name": "worst_mistakes_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/worst_mistakes",
-  "value": "$\\lfloor\\log n\\rfloor$",
+  "value": "$\\lfloor\\log n\\rfloor\\quad(n=2^r,\\ r\\ge1)$",
   "value_class": "omega_log_n",
   "status": "established",
-  "proof": "Worst mistakes is at least VC dimension and at most Littlestone dimension. Both established addressing-class values are $\\lfloor\\log n\\rfloor$, giving the claimed equality.",
-  "references": "\\cite{ben1997online}"
+  "proof": "Restrict here to $n=2^r$ with all r-bit words present, so $\\lfloor\\log_2n\\rfloor=\\log_2n=r$. Worst mistakes is at least VC dimension and at most Littlestone dimension. Both established addressing-class values are $\\lfloor\\log n\\rfloor$, giving the claimed equality.",
+  "references": "\\cite{ben1997online}",
+  "details": "Scope: complete-code subfamily $n=2^r$, $r\\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. "
 }

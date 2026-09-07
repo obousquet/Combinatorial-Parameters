@@ -4,8 +4,9 @@
   "short_name": "hitting_size_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/hitting_size",
-  "value": "$2^{\\lfloor\\log_2 n\\rfloor}$",
-  "value_class": "omega_n",
+  "value": "$\\log_2n+1\\quad(n=2^r)$",
+  "value_class": "omega_log_n",
   "status": "established",
-  "proof": "The class has one effective primary coordinate for each of its $2^{\\lfloor\\log_2 n\\rfloor}$ address words, and that coordinate occurs as a singleton part of its corresponding concept. Thus all such primary coordinates are forced. They meet every nonempty concept, so they form a hitting set."
+  "proof": "Let $B\\subseteq\\{0,1\\}^r$ be the chosen set of n codewords. Fix the selected bit coordinates T of a hitting set. Every target whose code is zero on T must then be hit by its own private coordinate, and those are the only remaining coordinates that can hit it. Conversely, selecting those private coordinates suffices. Hence $\\mathrm{HT}=\\min_{T\\subseteq[r]}(|T|+|\\{b\\in B:b|_T=0\\}|)$. For complete codes and t selected bits, exactly $2^{r-t}$ targets remain unhit, giving minimum $\\min_{0\\le t\\le r}(t+2^{r-t})=r+1$: write k=r-t and use $2^k\\ge k+1$, with equality at k=0 or k=1. Thus the old claimed value n is false for r>=2. At r=0 the sole nonempty concept has hitting size one.",
+  "details": "The displayed value is for complete codes. For an arbitrary code set $B\\subseteq\\{0,1\\}^r$, the exact value is $\\min_{T\\subseteq[r]}(|T|+|\\{b\\in B:b|_T=0\\}|)$. It need not depend only on n."
 }

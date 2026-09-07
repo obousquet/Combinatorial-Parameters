@@ -208,6 +208,9 @@ python3 sync/audit_monotonicity_evidence.py --data-dir data
 # Exact all-minimum-sample iterations for STD conditioning/strict-c counterexamples.
 python3 sync/verify_subset_teaching_monotonicity.py
 
+# Addressing counts, arbitrary-code counterexamples, and complete-code value scopes.
+python3 sync/verify_addressing_order_shattering.py
+
 # This only backfills evidence forced by other declared properties; it does
 # not infer foundational monotonicity claims.
 python3 sync/backfill_monotonicity_evidence.py --data-dir data --write

@@ -1,1 +1,13 @@
-{"id":679,"name":"Projected VC Radius of Addressing","short_name":"projected_vc_radius_addressing","class_id":"#classes/addressing","parameter_id":"#parameters/projected_vc_radius","value":"$\\lfloor\\log n\\rfloor$","value_class":"omega_log_n","status":"established","proof":"Projected VC radius equals VC dimension. The address coordinates give the established value $\\lfloor\\log n\\rfloor$.","references":"\\cite{maass1992lower}"}
+{
+  "id": 679,
+  "name": "Projected VC Radius of Addressing",
+  "short_name": "projected_vc_radius_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/projected_vc_radius",
+  "value": "$\\lfloor\\log n\\rfloor\\quad(n=2^r,\\ r\\ge1)$",
+  "value_class": "omega_log_n",
+  "status": "established",
+  "proof": "Restrict here to $n=2^r$ with all r-bit words present, so $\\lfloor\\log_2n\\rfloor=\\log_2n=r$. Projected VC radius equals VC dimension. The address coordinates give the established value $\\lfloor\\log n\\rfloor$.",
+  "references": "\\cite{maass1992lower}",
+  "details": "Scope: complete-code subfamily $n=2^r$, $r\\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. "
+}

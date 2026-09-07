@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>co-VC dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Value: </strong>$2^{\lfloor\log n\rfloor}$</p>
+<p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>For every n>=1, independently of the bit encoding.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict to the addressed base coordinates. The empty trace is absent and every one-coordinate trace is realized by the corresponding addressed concept, producing a hollow star of size $2^{\lfloor\log n\rfloor}$. No larger hollow star can use more effective base coordinates.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the n private address coordinates, the all-zero labeling is absent, but every labeling differing from it at exactly one coordinate is realized. This is a hollow star of size n. Conversely, a minimally inconsistent sample of size k has, for each of its k deleted examples, a concept consistent with the remaining sample. These k concepts are distinct: a concept witnessing two deletions would satisfy the full inconsistent sample. Hence k cannot exceed the n concepts. Thus co-VC is exactly n, also at n=1.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>

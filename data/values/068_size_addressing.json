@@ -4,10 +4,10 @@
   "short_name": "size_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/size",
-  "value": "$2^{\\lfloor\\log n\\rfloor}$",
+  "value": "$n$",
   "value_class": "omega_n",
-  "details": "",
+  "details": "For every n>=1 and every injective encoding in the class definition.",
   "status": "established",
-  "proof": "There is one concept for each subset of the $\\lfloor\\log n\\rfloor$ address coordinates, and distinct address subsets give distinct concepts. Hence the exact size is $2^{\\lfloor\\log n\\rfloor}$.",
+  "proof": "There is exactly one concept for each index $i\\in[n]$. Distinct indices give distinct private positive address coordinates, so these n concepts are distinct, irrespective of their bit encoding.",
   "references": "\\cite{maass1992lower}"
 }

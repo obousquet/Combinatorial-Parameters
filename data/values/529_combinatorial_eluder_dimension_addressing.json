@@ -4,10 +4,10 @@
   "short_name": "combinatorial_eluder_dimension_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/combinatorial_eluder_dimension",
-  "value": "$2^{\\lfloor\\log_2 n\\rfloor}-1$",
+  "value": "$n-1$",
   "value_class": "omega_n",
-  "details": "Under the standard convention $n=2^d$, this is $n-1$.",
+  "details": "For all n>=1; an all-zero address word is not needed.",
   "status": "established",
-  "proof": "Take the addressing concept with the all-zero address word as base.  List the primary coordinate of every other address word and use its addressing concept as witness.  A witness has label 0 on all other primary coordinates, so it agrees with the base at every earlier listed point.  This gives $|\\mathcal H|-1=2^{\\lfloor\\log_2 n\\rfloor}-1$ steps; the general size bound gives equality.",
+  "proof": "Choose any target as the base and list the private coordinate of each of the other n-1 targets. At its own listed coordinate that target differs from the base, and at every previously listed private coordinate it agrees with the base. This is an eluder sequence of length n-1. Conversely, in an eluder sequence relative to a base target, each successive witness agrees with the base at all earlier coordinates and disagrees at its own coordinate. These witnesses are distinct and different from the base, so there are at most n-1 steps. For n=1 the empty sequence has value zero.",
   "references": "\\cite{li2022understanding,maass1992lower}"
 }

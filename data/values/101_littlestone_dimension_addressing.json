@@ -4,10 +4,10 @@
   "short_name": "littlestone_dimension_addressing",
   "class_id": "#classes/addressing",
   "parameter_id": "#parameters/littlestone_dimension",
-  "value": "$\\lfloor\\log n\\rfloor$",
+  "value": "$\\lfloor\\log n\\rfloor\\quad(n=2^r,\\ r\\ge1)$",
   "value_class": "omega_log_n",
-  "details": "",
+  "details": "Scope: complete-code subfamily $n=2^r$, $r\\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. ",
   "status": "established",
-  "proof": "Querying the $\\lfloor\\log n\\rfloor$ address coordinates in sequence yields a complete mistake tree: every address bit pattern labels one concept. A deeper tree would require more than the $2^{\\lfloor\\log n\\rfloor}$ concepts in the class.",
+  "proof": "Restrict here to $n=2^r$ with all r-bit words present, so $\\lfloor\\log_2n\\rfloor=\\log_2n=r$. Querying the $\\lfloor\\log n\\rfloor$ address coordinates in sequence yields a complete mistake tree: every address bit pattern labels one concept. A deeper tree would require more than the $2^{\\lfloor\\log n\\rfloor}$ concepts in the class.",
   "references": "\\cite{maass1992lower}"
 }

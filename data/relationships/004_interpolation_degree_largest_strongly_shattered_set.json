@@ -9,6 +9,7 @@
   "references": "\\cite{moran2015shattered}",
   "witness": "#classes/addressing",
   "witness_strength": "strict",
+  "witness_verification": "For any Addressing class with n>=2, the n private coordinate functions are the delta functions of the n targets, so every function on the class has a degree-one interpolant; degree zero cannot interpolate all functions on a nontrivial class. Thus interpolation degree is exactly one (value 351). Two different concepts disagree at both of their private coordinates, so the one-inclusion graph has no edge and the largest strongly shattered set has size zero (value 28). This gives the strict endpoint inequality 1>0 on the stated nontrivial scope, independently of the bit encoding.",
   "short_name": "interpolation_degree_largest_strongly_shattered_set",
   "name": "Interpolation degree / Largest Strongly Shattered Set"
 }

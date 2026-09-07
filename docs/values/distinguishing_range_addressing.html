@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Distinguishing Range of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/distinguishing_range.html">Distinguishing Range</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
+<p><strong>Value: </strong>$\lceil\log_2 n\rceil$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The $\lfloor\log_2 n\rfloor$ address coordinates give every distinct address word and thus distinguish all concepts. Since the class has $2^{\lfloor\log_2 n\rfloor}$ concepts, fewer binary coordinates cannot give distinct traces for all of them.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The r bit coordinates, where $r=\lceil\log_2n\rceil$, distinguish every target. A set of q binary coordinates has at most $2^q$ distinct traces; to distinguish n concepts requires $q\ge\lceil\log_2n\rceil$. Thus the minimum distinguishing range is exactly r, including zero at n=1.</p></div>
 
 
         </div>
