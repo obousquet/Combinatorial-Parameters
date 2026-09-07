@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,23 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-36" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1193" style="position:relative;">
         
-        <h3><a href="classes/eluder_range_separation_class.html" class="table-title-link">Eluder--Range Separation Class</a></h3>
+        <h3><a href="values/combinatorial_eluder_dimension_paired_code_separation.html" class="table-title-link">Combinatorial Eluder Dimension of the Paired-Code Family</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Eluder--Range Separation Class</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal D_{\mathrm{ER}}">
-            \[\mathcal D_{\mathrm{ER}}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>On coordinates $x_1,\ldots,x_5$, let $\mathcal D_{\mathrm{ER}}=\{00111,01000,01001,01111,10000,10010,10100,11111\}$, where the displayed bits are the values at $x_1,\ldots,x_5$ in that order.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>A finite counterexample to the candidate inequality $\mathrm{Edim}\geq\mathrm R^p$.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/projected_distinguishing_range_eluder_range_separation_class.html'>Projected Distinguishing Range of the Eluder--Range Separation Class</a></li><li><a href='values/combinatorial_eluder_dimension_eluder_range_separation_class.html'>Combinatorial Eluder Dimension of the Eluder--Range Separation Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension of the Paired-Code Family</p>
+<p><strong>Class: </strong><a href="classes/paired_code_separation.html">Paired-Code Separation Family</a></p>
+<p><strong>Parameter: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>The proved bounds are $n+1\le\mathrm{Edim}(\mathcal C^{\mathrm{pair}}_n)\le8n+3$ for every n>=1, whereas the domain has 2^n coordinates. Only the asymptotic order, not an exact formula, is asserted.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The upper bound is Proposition \ref{prop:paired-code-eluder}: any eluder sequence of length 2m would contain an admissibility-forbidden subsequence with m=4n+2 distinct nonanchor pairs, so Edim is at most 2m-1=8n+3. For the lower bound, Section \ref{val:size_paired_code_separation} gives size at least 2^n+1. The established general inequality Edim &gt;= log_2(size), together with integrality, gives Edim &gt;= n+1.</p></div>
+<strong>References:</strong><div class="text-field"><p>Survey prop:paired-code-eluder and the established eluder/log-size inequality (relationship 265).</p></div>
 
         </div>
     </div>

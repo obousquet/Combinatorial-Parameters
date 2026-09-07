@@ -1,0 +1,11 @@
+{
+  "id": 1192,
+  "name": "Projected Distinguishing Range of the Paired-Code Family",
+  "short_name": "projected_distinguishing_range_paired_code_separation",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "class_id": "#classes/paired_code_separation",
+  "value": "$2^n$",
+  "status": "established",
+  "proof": "Write N=2^n. For every i in [N], the class contains both w_i and w_i XOR e_i, which are distinct and differ only at coordinate i. Therefore every coordinate set distinguishing all concepts must contain i. All N coordinates are necessary and suffice, so the full-domain distinguishing range equals N. The full domain is an allowed projection, and no projection has more than N coordinates, proving that the maximum over projections is also N. This argument does not require different pairs to have disjoint sets of concepts.",
+  "references": "Direct essential-coordinate argument; admissibility and existence are proved in survey prop:paired-code-eluder."
+}

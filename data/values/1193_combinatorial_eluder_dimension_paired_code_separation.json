@@ -1,0 +1,13 @@
+{
+  "id": 1193,
+  "name": "Combinatorial Eluder Dimension of the Paired-Code Family",
+  "short_name": "combinatorial_eluder_dimension_paired_code_separation",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "class_id": "#classes/paired_code_separation",
+  "value": "$\\Theta(n)$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "The proved bounds are $n+1\\le\\mathrm{Edim}(\\mathcal C^{\\mathrm{pair}}_n)\\le8n+3$ for every n>=1, whereas the domain has 2^n coordinates. Only the asymptotic order, not an exact formula, is asserted.",
+  "proof": "The upper bound is Proposition \\ref{prop:paired-code-eluder}: any eluder sequence of length 2m would contain an admissibility-forbidden subsequence with m=4n+2 distinct nonanchor pairs, so Edim is at most 2m-1=8n+3. For the lower bound, Section \\ref{val:size_paired_code_separation} gives size at least 2^n+1. The established general inequality Edim >= log_2(size), together with integrality, gives Edim >= n+1.",
+  "references": "Survey prop:paired-code-eluder and the established eluder/log-size inequality (relationship 265)."
+}

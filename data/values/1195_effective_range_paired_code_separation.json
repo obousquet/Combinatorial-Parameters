@@ -1,0 +1,11 @@
+{
+  "id": 1195,
+  "name": "Effective Range of the Paired-Code Family",
+  "short_name": "effective_range_paired_code_separation",
+  "parameter_id": "#parameters/effective_range",
+  "class_id": "#classes/paired_code_separation",
+  "value": "$2^n$",
+  "status": "established",
+  "proof": "The ambient domain has N=2^n coordinates. Each coordinate i varies on the pair w_i,w_i XOR e_i contained in the class. Thus every domain coordinate contributes to the effective range, which equals N.",
+  "references": "Direct coordinate-pair argument."
+}

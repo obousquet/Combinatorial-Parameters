@@ -6,8 +6,10 @@
   "parameter_2_id": "#parameters/projected_distinguishing_range",
   "relationship_type": "larger",
   "status": "refuted",
-  "details": "The candidate universal inequality $\\mathrm{Edim}(\\mathcal H)\\geq\\mathrm R^p(\\mathcal H)$ is false, already for a finite binary class.",
-  "proof": "For $\\mathcal D_{\\mathrm{ER}}$, the checked values are $\\mathrm{Edim}=4$ and $\\mathrm R^p=5$.",
-  "witness": "#classes/eluder_range_separation_class",
-  "witness_strength": "strict"
+  "details": "The candidate universal inequality $\\mathrm{Edim}\\ge\\mathrm R^p$ is false. More strongly, no absolute constants C,D give $\\mathrm R^p\\le C\\mathrm{Edim}+D$ on all finite binary classes. The paired-code family has $\\mathrm R^p=2^n$ and $\\mathrm{Edim}\\le8n+3$. The old eight-concept class with values four and five remains a valid strict finite witness. This does not settle the opposite affine comparison or exclude every nonlinear bound.",
+  "latex_proof_label": "cor:paired-code-range-separation",
+  "proof_source": "Survey cor:paired-code-range-separation, using prop:paired-code-eluder and the database-owned paired-code values.",
+  "witness": "#classes/paired_code_separation",
+  "witness_strength": "unbounded",
+  "witness_verification": "The database-owned values give Rp/Edim >= 2^n/(8n+3), which tends to infinity. This is an unbounded ratio of finite values, not a nonexistence convention or merely a growing additive difference. The finite paired-word identities and probabilistic exponent are replayed by sync/verify_paired_code_separation.py."
 }

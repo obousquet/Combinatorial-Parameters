@@ -75,22 +75,22 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-36" style="position:relative;">
+    <div class="table-card" id="math-58" style="position:relative;">
         
-        <h3><a href="classes/eluder_range_separation_class.html" class="table-title-link">Eluder--Range Separation Class</a></h3>
+        <h3><a href="classes/paired_code_separation.html" class="table-title-link">Paired-Code Separation Family</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Eluder--Range Separation Class</p>
+        <p><strong>Name: </strong>Paired-Code Separation Family</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal D_{\mathrm{ER}}">
-            \[\mathcal D_{\mathrm{ER}}\]
+        <div class="latex-equation" data-latex="\mathcal C^{\mathrm{pair}}_n">
+            \[\mathcal C^{\mathrm{pair}}_n\]
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>On coordinates $x_1,\ldots,x_5$, let $\mathcal D_{\mathrm{ER}}=\{00111,01000,01001,01111,10000,10010,10100,11111\}$, where the displayed bits are the values at $x_1,\ldots,x_5$ in that order.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>A finite counterexample to the candidate inequality $\mathrm{Edim}\geq\mathrm R^p$.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/projected_distinguishing_range_eluder_range_separation_class.html'>Projected Distinguishing Range of the Eluder--Range Separation Class</a></li><li><a href='values/combinatorial_eluder_dimension_eluder_range_separation_class.html'>Combinatorial Eluder Dimension of the Eluder--Range Separation Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
+<strong>Definition:</strong><div class="text-field"><p>For an integer $n\ge1$, put $N=2^n$, $m=4n+2$ and $X=[N]=\{1,\ldots,N\}$. Let $e_i\in\{0,1\}^{X}$ have its only nonzero bit at coordinate $i$. For a tuple $w=(w_1,\ldots,w_N)$ of binary words on $X$, write $w_i^\epsilon=w_i\oplus\epsilon e_i$, where $\epsilon\in\{0,1\}$ and $\oplus$ is coordinatewise addition modulo two. Call the tuple <strong>admissible</strong> if there do not exist an anchor index $a\in[N]$, an anchor bit $\sigma\in\{0,1\}$, pairwise distinct indices $i_1,\ldots,i_m\in[N]\setminus\{a\}$, bits $\epsilon_1,\ldots,\epsilon_m\in\{0,1\}$ and pairwise distinct coordinates $x_1,\ldots,x_m\in X$ such that, for every $j$, $$w_{i_j}^{\epsilon_j}(x_j)\ne w_a^\sigma(x_j),\qquad w_{i_j}^{\epsilon_j}(x_k)=w_a^\sigma(x_k)\quad(1\le k<j).$$ Choose the lexicographically first admissible tuple, ordering the words by their bits at coordinates $1,\ldots,N$ with $0<1$ and then ordering tuples by indices $1,\ldots,N$. The <strong>paired-code separation family</strong> is $$\mathcal C^{\mathrm{pair}}_n=\{w_i^\epsilon:i\in[N],\ \epsilon\in\{0,1\}\}\subseteq\{0,1\}^{X}.$$ Repeated words are identified as the same concept. The ambient domain is exactly $X$.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Admissible tuples exist for every n by the direct probabilistic proof in survey prop:paired-code-eluder. The lexicographic rule specifies a deterministic family; no efficient algorithm for finding that tuple is claimed. Projected distinguishing range is 2^n, while eluder dimension lies between n+1 and 8n+3. This gives an unbounded ratio in one direction, not two-sided affine incomparability.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/projected_distinguishing_range_paired_code_separation.html'>Projected Distinguishing Range of the Paired-Code Family</a></li><li><a href='values/combinatorial_eluder_dimension_paired_code_separation.html'>Combinatorial Eluder Dimension of the Paired-Code Family</a></li><li><a href='values/size_paired_code_separation.html'>Size of the Paired-Code Family</a></li><li><a href='values/effective_range_paired_code_separation.html'>Effective Range of the Paired-Code Family</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/combinatorial_eluder_dimension_projected_distinguishing_range.html'>Combinatorial Eluder Dimension / Projected Distinguishing Range</a></li></ul></p></div>
 
         </div>
     </div>

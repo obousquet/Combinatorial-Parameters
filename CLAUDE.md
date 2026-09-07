@@ -127,6 +127,10 @@ python3 sync/verify_dual_littlestone_bounds.py
 # projected-range witnesses. Finite gaps do not establish affine incomparability.
 python3 sync/verify_upper_branch_comparisons.py
 
+# Paired-code one-way unbounded separation: conditional probability and
+# distinct-pair extraction checks, including collisions between pair words.
+python3 sync/verify_paired_code_separation.py
+
 # Independent teaching-order, no-clashing-map and degree computations behind
 # the equality of the three positive projection closures.
 python3 sync/verify_positive_projection_collapse.py
