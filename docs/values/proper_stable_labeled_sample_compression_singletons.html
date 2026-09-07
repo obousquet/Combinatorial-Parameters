@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-156" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1157" style="position:relative;">
         
-        <h3><a href="relationships/proper_stable_labeled_sample_compression_proper_labeled_sample_compression.html" class="table-title-link">Proper Stable Labeled Sample Compression / Proper Labeled Sample Compression</a></h3>
+        <h3><a href="values/proper_stable_labeled_sample_compression_singletons.html" class="table-title-link">Proper Stable Labeled Sample Compression of Singletons</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / Proper Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>On the singleton class, proper stable labeled compression is at least $\lceil(n-1)/2\rceil$ and at most $n-1$, while proper labeled compression is one for $n\ge2$. Thus no reverse affine bound is possible. These are database-owned endpoint values, checked by sync/verify_order_stable_compression.py. This supersedes the weaker full-cube witness, where the values are both of linear order; the full-cube strict separation and slope-$3/2$ obstruction remain valid as stated in survey cor:compression-nctd-gap.</p></div>
-
-
+        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>The bounds $\lceil(n-1)/2\rceil\le\mathrm{psLSC}(\mathcal S_n)\le n-1$ hold for $n\ge1$. Only the asymptotic order is asserted; an exact formula is not claimed.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper stable labeled compression adds stability to proper labeled compression. Restricting the allowed compression functions cannot decrease the minimum size.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a> <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The database-owned co-VC value of the singleton class is $n$. The proper stable compression lower bound in survey Proposition \ref{prop:proper-compression-covc} therefore gives $\mathrm{psLSC}\ge\lceil(n-1)/2\rceil$. The order-to-stable conversion in Proposition \ref{prop:order-stable-installation} gives $\mathrm{psLSC}\le\mathrm{pOSC}$, whose database-owned singleton value is $n-1$. These bounds prove linear asymptotic order. At $n=1$ both bounds give zero.</p></div>
+<strong>References:</strong><div class="text-field"><p>The database-owned singleton co-VC and proper ordered compression values; survey Propositions \ref{prop:proper-compression-covc} and \ref{prop:order-stable-installation}.</p></div>
 
         </div>
     </div>

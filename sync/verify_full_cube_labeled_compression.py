@@ -171,7 +171,10 @@ def five_block_check() -> None:
     # Reject a corrupted upper table using a complete input, not a self-check.
     corrupted = {key: 0 for key in decoder}
     assert not any(output & 31 == 31 for output in corrupted.values())
-    for rid in (156, 158, 513):
+    # #156's full-cube strict witness was superseded by unbounded singletons.
+    from verify_order_stable_compression import check_singleton_witness
+    check_singleton_witness()
+    for rid in (158, 513):
         paths = list((ROOT / 'data/relationships').glob(f'{rid:03d}_*.json'))
         assert len(paths) == 1
         relation = record(paths[0])

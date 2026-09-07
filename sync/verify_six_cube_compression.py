@@ -155,7 +155,10 @@ def main() -> None:
         assert value['status'] == 'established' and value['value'] == r'$\Theta(n)$'
         assert 'n=6q+r' in value['details'] and 'n/3+O(1)' in value['details']
         assert '(0,1,1,2,2,2)' in value['details']
-    for record_id, status in ((156, 'established'), (158, 'established'),
+    # #156 now has the stronger singleton witness; do not misclassify cubes.
+    from verify_order_stable_compression import check_singleton_witness
+    check_singleton_witness()
+    for record_id, status in ((158, 'established'),
                               (513, 'refuted'), (516, 'refuted')):
         record_path, = (ROOT / 'data/relationships').glob(f'{record_id}_*.json')
         relation = json.loads(record_path.read_text())

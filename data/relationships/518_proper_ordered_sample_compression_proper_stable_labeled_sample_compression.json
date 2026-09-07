@@ -1,0 +1,15 @@
+{
+  "id": 518,
+  "name": "Proper Ordered Sample Compression / Proper Stable Labeled Sample Compression",
+  "short_name": "proper_ordered_sample_compression_proper_stable_labeled_sample_compression",
+  "parameter_1_id": "#parameters/proper_ordered_sample_compression",
+  "parameter_2_id": "#parameters/proper_stable_labeled_sample_compression",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "A proper order scheme becomes stable by fixing the tie-breaking order on retained keys. Reconstruction remains the first compatible hypothesis in the original class, and the compression width is unchanged.",
+  "latex_proof_label": "prop:order-stable-installation",
+  "proof_source": "Full proof in the LaTeX survey: prop:order-stable-installation, with the ordered hypothesis set equal to the original class.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "On the full three-cube, pOSC is three and proper stable labeled compression is two. In general the database-owned endpoint values are $n$ and $\\lceil n/2\\rceil$, so this is strict but not an unbounded-ratio witness. See sync/verify_order_stable_compression.py and the full-cube value proofs."
+}

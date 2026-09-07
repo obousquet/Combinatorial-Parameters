@@ -9,7 +9,7 @@
   "proof": "Proper stable labeled compression adds stability to proper labeled compression. Restricting the allowed compression functions cannot decrease the minimum size.",
   "short_name": "proper_stable_labeled_sample_compression_proper_labeled_sample_compression",
   "name": "Proper Stable Labeled Sample Compression / Proper Labeled Sample Compression",
-  "witness": "#classes/full_cube",
-  "witness_strength": "strict",
-  "witness_verification": "At $n=6$ the stable value is three and the ordinary value is two, by the database-owned full-cube certificates. At $n=6r$ the stable value is $3r$ while the ordinary value is at most $2r$, so the additive gap is at least $r$. Any universal reverse affine bound requires slope at least $3/2$. Both values have linear order: this is not an unbounded-ratio witness. See survey cor:compression-nctd-gap and sync/verify_six_cube_compression.py."
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "On the singleton class, proper stable labeled compression is at least $\\lceil(n-1)/2\\rceil$ and at most $n-1$, while proper labeled compression is one for $n\\ge2$. Thus no reverse affine bound is possible. These are database-owned endpoint values, checked by sync/verify_order_stable_compression.py. This supersedes the weaker full-cube witness, where the values are both of linear order; the full-cube strict separation and slope-$3/2$ obstruction remain valid as stated in survey cor:compression-nctd-gap."
 }

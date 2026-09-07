@@ -18584,6 +18584,23 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1157" style="position:relative;">
+        
+        <h3><a href="values/proper_stable_labeled_sample_compression_singletons.html" class="table-title-link">Proper Stable Labeled Sample Compression of Singletons</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>The bounds $\lceil(n-1)/2\rceil\le\mathrm{psLSC}(\mathcal S_n)\le n-1$ hold for $n\ge1$. Only the asymptotic order is asserted; an exact formula is not claimed.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The database-owned co-VC value of the singleton class is $n$. The proper stable compression lower bound in survey Proposition \ref{prop:proper-compression-covc} therefore gives $\mathrm{psLSC}\ge\lceil(n-1)/2\rceil$. The order-to-stable conversion in Proposition \ref{prop:order-stable-installation} gives $\mathrm{psLSC}\le\mathrm{pOSC}$, whose database-owned singleton value is $n-1$. These bounds prove linear asymptotic order. At $n=1$ both bounds give zero.</p></div>
+<strong>References:</strong><div class="text-field"><p>The database-owned singleton co-VC and proper ordered compression values; survey Propositions \ref{prop:proper-compression-covc} and \ref{prop:order-stable-installation}.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

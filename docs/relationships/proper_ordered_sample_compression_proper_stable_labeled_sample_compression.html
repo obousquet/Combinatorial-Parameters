@@ -75,30 +75,30 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-156" style="position:relative;">
+    <div class="table-card" id="math-518" style="position:relative;">
         
-        <h3><a href="relationships/proper_stable_labeled_sample_compression_proper_labeled_sample_compression.html" class="table-title-link">Proper Stable Labeled Sample Compression / Proper Labeled Sample Compression</a></h3>
+        <h3><a href="relationships/proper_ordered_sample_compression_proper_stable_labeled_sample_compression.html" class="table-title-link">Proper Ordered Sample Compression / Proper Stable Labeled Sample Compression</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Proper Stable Labeled Sample Compression / Proper Labeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
+        <p><strong>Name: </strong>Proper Ordered Sample Compression / Proper Stable Labeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_labeled_sample_compression.html">Proper Stable Labeled Sample Compression</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Definition</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>On the singleton class, proper stable labeled compression is at least $\lceil(n-1)/2\rceil$ and at most $n-1$, while proper labeled compression is one for $n\ge2$. Thus no reverse affine bound is possible. These are database-owned endpoint values, checked by sync/verify_order_stable_compression.py. This supersedes the weaker full-cube witness, where the values are both of linear order; the full-cube strict separation and slope-$3/2$ obstruction remain valid as stated in survey cor:compression-nctd-gap.</p></div>
+<strong>Details:</strong><div class="text-field"><p>A proper order scheme becomes stable by fixing the tie-breaking order on retained keys. Reconstruction remains the first compatible hypothesis in the original class, and the compression width is unchanged.</p></div>
+<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On the full three-cube, pOSC is three and proper stable labeled compression is two. In general the database-owned endpoint values are $n$ and $\lceil n/2\rceil$, so this is strict but not an unbounded-ratio witness. See sync/verify_order_stable_compression.py and the full-cube value proofs.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Proper stable labeled compression adds stability to proper labeled compression. Restricting the allowed compression functions cannot decrease the minimum size.</p></div>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: prop:order-stable-installation, with the ordered hypothesis set equal to the original class.</p></div>
 
 
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a> <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
 
         </div>
     </div>

@@ -1,0 +1,15 @@
+{
+  "id": 517,
+  "name": "Order Sample Compression / Stable Labeled Sample Compression",
+  "short_name": "order_sample_compression_stable_labeled_sample_compression",
+  "parameter_1_id": "#parameters/order_sample_compression",
+  "parameter_2_id": "#parameters/stable_labeled_sample_compression",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "A fixed hypothesis order gives a labeled compression scheme with stable selected keys, and therefore with stable reconstructions. Improper decoded hypotheses are allowed. The conversion preserves the compression width.",
+  "latex_proof_label": "prop:order-stable-installation",
+  "proof_source": "Full proof in the LaTeX survey: prop:order-stable-installation, using the finite order formulation and fixed tie-breaking on retained keys.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "strict",
+  "witness_verification": "On the full three-cube, OSC is three and stable labeled compression is two. In general the database-owned endpoint values are $n$ and $\\lceil n/2\\rceil$, so this is strict but not an unbounded-ratio witness. See sync/verify_order_stable_compression.py and the full-cube value proofs."
+}

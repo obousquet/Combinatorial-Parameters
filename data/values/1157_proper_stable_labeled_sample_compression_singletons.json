@@ -1,0 +1,13 @@
+{
+  "id": 1157,
+  "name": "Proper Stable Labeled Sample Compression of Singletons",
+  "short_name": "proper_stable_labeled_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/proper_stable_labeled_sample_compression",
+  "value": "$\\Theta(n)$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "The bounds $\\lceil(n-1)/2\\rceil\\le\\mathrm{psLSC}(\\mathcal S_n)\\le n-1$ hold for $n\\ge1$. Only the asymptotic order is asserted; an exact formula is not claimed.",
+  "proof": "The database-owned co-VC value of the singleton class is $n$. The proper stable compression lower bound in survey Proposition \\ref{prop:proper-compression-covc} therefore gives $\\mathrm{psLSC}\\ge\\lceil(n-1)/2\\rceil$. The order-to-stable conversion in Proposition \\ref{prop:order-stable-installation} gives $\\mathrm{psLSC}\\le\\mathrm{pOSC}$, whose database-owned singleton value is $n-1$. These bounds prove linear asymptotic order. At $n=1$ both bounds give zero.",
+  "references": "The database-owned singleton co-VC and proper ordered compression values; survey Propositions \\ref{prop:proper-compression-covc} and \\ref{prop:order-stable-installation}."
+}
