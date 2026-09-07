@@ -7,12 +7,14 @@
   "symmetric": true,
   "monotonic": false,
   "p_monotonic": false,
-  "c_monotonic": null,
+  "c_monotonic": false,
   "doubly_monotonic": false,
+  "strict_c_monotonic": false,
+  "tight_strict_c_monotonic": false,
   "strictly_monotonic": false,
   "definition": "Let $\u005cmathrm{STS}^{0}(h,\u005cmathcal H)$ be the set of all ordinary minimum teaching samples for $h$. Given $k$ and a sample $S$, set $\u005cmathrm{Cons}_{\u005cmathrm{sub}}(S,\u005cmathcal H,k)=\u005c{h'\u005cin\u005cmathcal H:\u005cexists S'\u005cin\u005cmathrm{STS}^{k}(h',\u005cmathcal H), S\u005csubseteq S'\u005c}$. Then $\u005cmathrm{STD}^{k+1}(h,\u005cmathcal H)$ is the smallest $|S|$ for which this set is $\u005c{h\u005c}$, and $\u005cmathrm{STS}^{k+1}(h,\u005cmathcal H)$ contains all minimizers. Once these sets stabilize, the **Subset Teaching Dimension** is the maximum stabilized value over $h$.",
   "graph_summary": "Iterated cooperative teaching: a sample identifies a target by being contained in one of its previous minimum teaching samples and in no other target’s.",
-  "description": "An iteratively defined, complement-symmetric teaching parameter. It is at most ordinary teaching dimension, but is neither comparable with Balbach nor recursive teaching dimension, and is neither subclass- nor projection-monotonic.",
+  "description": "An iteratively defined, complement-symmetric teaching parameter. It is at most ordinary teaching dimension, but is neither comparable with Balbach nor recursive teaching dimension, and is neither subclass-, projection- nor conditioning-monotonic. Even strict increase at equal-valued coordinate branches fails.",
   "origin_references": "Introduced in \u005ccite{zilles2011models}.",
   "monotonicity_evidence": {
     "monotonic": {
@@ -24,8 +26,24 @@
       "kind": "direct_argument"
     },
     "p_monotonic": {
-      "proof": "Table 7 of Zilles--Lange--Holte--Zinkevich \u005ccite{zilles2011models} gives a class of STD 1 whose projection obtained by deleting x_1 has value 2; its four projected concepts remain distinct. Thus deleting coordinates can increase STD.",
-      "kind": "citation"
+      "proof": "The five-concept class {000,001,010,011,100} has STD one, but deleting the first coordinate gives the full two-cube, of STD two. The survey computes all minimum teaching samples at every iteration.",
+      "kind": "counterexample",
+      "latex_proof_label": "prop:subset-teaching-conditioning"
+    },
+    "c_monotonic": {
+      "proof": "For the class {000,001,010,011,100}, STD is one, whereas conditioning the first coordinate to zero leaves the full two-cube, of STD two. All three original coordinates are active. See the complete iteration table in the survey.",
+      "kind": "counterexample",
+      "latex_proof_label": "prop:subset-teaching-conditioning"
+    },
+    "strict_c_monotonic": {
+      "proof": "The same five-concept class has STD one. Its two branches at the second coordinate also have STD one: they are {00,01,10} and {00,01}. Thus even the strict-increase requirement at equal nonempty branches fails.",
+      "kind": "counterexample",
+      "latex_proof_label": "prop:subset-teaching-conditioning"
+    },
+    "tight_strict_c_monotonic": {
+      "proof": "The equal-branch plus-one identity fails on the same class: the whole class and both branches at the second coordinate all have STD one. This does not rely on imposing equality with the maximum at unequal branches.",
+      "kind": "counterexample",
+      "latex_proof_label": "prop:subset-teaching-conditioning"
     },
     "doubly_monotonic": {
       "proof": "Doubly monotonicity requires subfamily monotonicity, which Theorem 21 refutes.",

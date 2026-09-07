@@ -205,6 +205,9 @@ python3 sync/validate_monotonicity.py --data-dir data --check
 # Reports every declared monotonicity flag without a proof or provenance entry.
 python3 sync/audit_monotonicity_evidence.py --data-dir data
 
+# Exact all-minimum-sample iterations for STD conditioning/strict-c counterexamples.
+python3 sync/verify_subset_teaching_monotonicity.py
+
 # This only backfills evidence forced by other declared properties; it does
 # not infer foundational monotonicity claims.
 python3 sync/backfill_monotonicity_evidence.py --data-dir data --write
