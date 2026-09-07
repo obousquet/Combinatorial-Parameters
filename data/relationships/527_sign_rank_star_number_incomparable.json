@@ -1,0 +1,15 @@
+{
+  "id": 527,
+  "name": "Sign Rank / Star Number (Affine Incomparable)",
+  "short_name": "sign_rank_star_number_incomparable",
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "incomparable",
+  "incomparability_strength": "affine",
+  "status": "established",
+  "details": "Both affine directions fail, but sign rank is bounded by a finite-valued function of star number (relationship sign_rank_star_number_functional_upper). This is not functional incomparability; the reverse functional bound fails.",
+  "parameter_1_larger_witness": "On #classes/parity_functions, SR>=2^n while star number is exactly 2n, yielding an unbounded ratio.",
+  "parameter_2_larger_witness": "On #classes/singletons_plus_empty_set with n>=4, star number is n while sign rank is three, excluding even reverse functional control.",
+  "latex_proof_label": "cor:signrank-parity-separations",
+  "proof_source": "Survey cor:signrank-parity-separations and database-owned endpoint proofs."
+}

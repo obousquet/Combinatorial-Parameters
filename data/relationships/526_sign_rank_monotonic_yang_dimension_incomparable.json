@@ -1,0 +1,15 @@
+{
+  "id": 526,
+  "name": "Sign Rank / Monotonic Yang Dimension (Affine Incomparable)",
+  "short_name": "sign_rank_monotonic_yang_dimension_incomparable",
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/monotonic_yang_dimension",
+  "relationship_type": "incomparable",
+  "incomparability_strength": "affine",
+  "status": "established",
+  "details": "Neither parameter has an affine upper bound in the other. Functional incomparability is false: the star-number bound and $S\\le Y^*+1$ give $\\mathrm{SR}\\le f(Y^*+1)$ for a finite-valued f. Conversely no finite-valued bound of Y* in sign rank exists. The parity proof controls Yang on every subclass over every coefficient field, not just VC or linear subclasses.",
+  "parameter_1_larger_witness": "On #classes/parity_functions, SR>=2^n and monotonic Yang is exactly 2n, so SR/(Y*+1) tends to infinity.",
+  "parameter_2_larger_witness": "On #classes/singletons_plus_empty_set with n>=4, monotonic Yang is n-1 while sign rank is three. Thus Y* is unbounded with SR fixed.",
+  "latex_proof_label": "cor:signrank-parity-separations",
+  "proof_source": "Survey cor:signrank-parity-separations, using prop:affine-class-yang, prop:star-signrank-functional and the database-owned endpoint proofs."
+}

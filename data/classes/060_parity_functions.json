@@ -1,0 +1,9 @@
+{
+  "id": 60,
+  "name": "Parity Functions",
+  "short_name": "parity_functions",
+  "symbol": "\\mathcal P_n",
+  "graph_label": "Parities",
+  "definition": "For an integer $n\\ge1$, let $X=\\mathbb F_2^{2n}$, including its zero vector. The **parity-function class** is $$\\mathcal P_n=\\{h_a:a\\in\\mathbb F_2^{2n}\\},\\qquad h_a(x)=a\\cdot x=\\sum_{i=1}^{2n}a_ix_i\\pmod2.$$ Thus there are $4^n$ distinct concepts on $4^n$ domain points. The input dimension is chosen as $2n$ so the Hadamard sign-rank lower bound is the integer $2^n$.",
+  "comments": "This is the class of all linear Boolean functions on a vector-space domain, not the even-parity class on a linearly sized coordinate domain. Its sign matrix is a Sylvester-Hadamard matrix, up to a global sign. Its Yang dimension is 2n over every coefficient field, and remains at most 2n on every subclass; sign rank is at least 2^n."
+}

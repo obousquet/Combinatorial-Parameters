@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -33,11 +33,30 @@
     </script>
     
         
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
-            <h1>Combinatorial Parameters</h1>
-            <p>Measuring the Size of Families of Sets</p>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
@@ -55,36 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            
-    <div class="intro">
-        <p>A database of combinatorial parameters of finite binary concept classes.</p>
-    </div>
-    <div class="tables-grid">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1203" style="position:relative;">
         
-        <div class="table-card">
-            <h3><a href="classes/index.html">Classes</a></h3>
-            <p>Set families (possibly parameterized)</p>
-            <p class="record-count">60 records</p>
+        <h3><a href="values/star_number_parity_functions.html" class="table-title-link">Star Number of Parity Functions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Star Number of Parity Functions</p>
+<p><strong>Class: </strong><a href="classes/parity_functions.html">Parity Functions</a></p>
+<p><strong>Parameter: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Value: </strong>$2n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the $2n$ coordinate-basis input vectors, $h_0$ and the functions indexed by those basis vectors give a realized $2n$-star. Conversely a star's spoke witnesses, queried in any order, form an eluder sequence anchored at its centre. Section \ref{val:combinatorial_eluder_dimension_parity_functions} proves eluder dimension $2n$, giving the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct basis construction and the database-owned parity eluder proof.</p></div>
+
         </div>
-        
-        <div class="table-card">
-            <h3><a href="parameters/index.html">Parameters</a></h3>
-            <p>Parameters measuring the size of set families</p>
-            <p class="record-count">108 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="relationships/index.html">Relationships</a></h3>
-            <p>Relationships between parameters</p>
-            <p class="record-count">512 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="values/index.html">Values</a></h3>
-            <p>Values assigned to parameters for specific classes</p>
-            <p class="record-count">1138 records</p>
-        </div>
-        
     </div>
     
         </main>

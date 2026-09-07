@@ -1,0 +1,12 @@
+{
+  "id": 1203,
+  "name": "Star Number of Parity Functions",
+  "short_name": "star_number_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/star_number",
+  "value": "$2n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "On the $2n$ coordinate-basis input vectors, $h_0$ and the functions indexed by those basis vectors give a realized $2n$-star. Conversely a star's spoke witnesses, queried in any order, form an eluder sequence anchored at its centre. Section \\ref{val:combinatorial_eluder_dimension_parity_functions} proves eluder dimension $2n$, giving the matching upper bound.",
+  "references": "Direct basis construction and the database-owned parity eluder proof."
+}

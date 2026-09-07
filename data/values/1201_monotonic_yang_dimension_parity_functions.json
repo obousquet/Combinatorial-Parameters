@@ -1,0 +1,13 @@
+{
+  "id": 1201,
+  "name": "Monotonic Yang Dimension of Parity Functions",
+  "short_name": "monotonic_yang_dimension_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/monotonic_yang_dimension",
+  "value": "$2n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "The upper bound is hereditary over every subclass, not merely over linear or affine subclasses. It holds in every coefficient characteristic.",
+  "proof": "As in Section \\ref{val:yang_dimension_parity_functions}, this is a binary linear class of dimension 2n. Proposition \\ref{prop:affine-class-yang} bounds Yang dimension on each arbitrary subclass by 2n, through the affine-span closure of every version-space ambiguity complex. The whole class has Yang dimension 2n, so the maximum over subclasses is exactly 2n.",
+  "references": "Survey prop:affine-class-yang."
+}

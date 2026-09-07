@@ -37,6 +37,13 @@ parameters, assigned values, and bibliography entries.
   `affine` means unbounded ratios in both directions; `functional` requires
   bounded-versus-unbounded witnesses. Missing legacy flags are unspecified,
   not an automatic claim of either strength. Keep the precise scope in prose.
+- `functional_upper` means parameter 1 is bounded by one finite-valued
+  function of parameter 2, independent of the class. State the function or
+  its theorem in `details`/`proof_source`. It is not an affine Hasse edge;
+  the graph excludes it from drawing, reduction and ranks. Witness orientation
+  is reversed just as for `log_upper`: a reverse-bound gap has parameter 2
+  large and parameter 1 small. Do not refute an unspecified functional bound
+  using a mere finite gap or an unbounded ratio with both endpoints growing.
 - Keep names, definitions, relationships, values, and references aligned with
   the LaTeX counterpart whenever an edit changes mathematical content.
 - The Hasse-like graph is deliberately conservative: only compatible linear
@@ -143,6 +150,10 @@ python3 -m unittest discover -s sync -p test_incomparability_strength.py
 # Hollow-star Yang bounds, an independent induced-literal/ambiguity comparison,
 # and the bounded projective-plane deletion diagnostic (not a sign-rank solver).
 python3 sync/verify_yang_hollow_star.py
+
+# Arbitrary parity subclasses, affine-span closures, exact Hadamard products,
+# chain-block rank realizations and functional-bound orientation.
+python3 sync/verify_parity_signrank_separation.py
 
 # Independent teaching-order, no-clashing-map and degree computations behind
 # the equality of the three positive projection closures.

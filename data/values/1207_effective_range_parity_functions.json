@@ -1,0 +1,11 @@
+{
+  "id": 1207,
+  "name": "Effective Range of Parity Functions",
+  "short_name": "effective_range_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$4^n-1$",
+  "status": "established",
+  "proof": "The input zero is identically labeled zero. At every nonzero input $x$, $h_0$ has label zero and a coefficient-basis function supported on a nonzero coordinate of $x$ has label one. Thus exactly the $4^n-1$ nonzero inputs vary.",
+  "references": "Direct evaluation."
+}

@@ -78,6 +78,10 @@
         {
           "value": "omega_n_squared",
           "display_name": "$\\Omega(n^2)$"
+        },
+        {
+          "value": "omega_2^n",
+          "display_name": "$\\Omega(2^n)$"
         }
       ]
     },

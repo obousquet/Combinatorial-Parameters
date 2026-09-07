@@ -1,0 +1,12 @@
+{
+  "id": 1205,
+  "name": "VC Dimension of Parity Functions",
+  "short_name": "vc_dimension_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The $2n$ coordinate-basis input vectors are shattered, because their labels are precisely the arbitrary coefficients $a_i$. A shattered set of $t$ points requires at least $2^t$ distinct functions, while the class has $4^n=2^{2n}$ functions. Hence $t\\le2n$.",
+  "references": "Direct shattering and counting."
+}

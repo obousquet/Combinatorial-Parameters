@@ -10686,6 +10686,34 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-525" style="position:relative;">
+        
+        <h3><a href="relationships/sign_rank_star_number_functional_upper.html" class="table-title-link">Sign Rank / Star Number (Functional Upper Bound)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sign Rank / Star Number (Functional Upper Bound)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \le f(P_2)$ (finite-valued functional bound)</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>There is a finite-valued nondecreasing function f, independent of the class, with $\mathrm{SR}(\mathcal H)\le f(\mathrm S(\mathcal H))$ for every finite binary class. An explicit choice is $f(d)=2F(d+2,d+2)^2$, with the chain-partition recurrence F spelled out in the survey. This is not an affine bound and is deliberately omitted from Hasse ranks and edges. Affine control in either direction is refuted by relationship sign_rank_star_number_incomparable.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For n&gt;=4, the star number is n and sign rank is three. In this upper-bound orientation it is the second parameter that grows. This excludes any finite-valued reverse bound S&lt;=g(SR), hence also any reverse affine bound.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey prop:star-signrank-functional independently checks the matching-to-star shift and rank-two block assembly, importing Atminas's published Theorem 2.1. The same qualitative argument appears in Blondal et al. v2 Theorem 1.9; this is not blanket verification of that preprint.</p></div>
+
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem 2.1]{atminas2022starforests}; \cite[Theorem 1.9, version 2]{blondal2026signindex}.</p></div>
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
@@ -13489,6 +13517,93 @@
 <p><strong>Status:</strong> Established</p>
 
 <strong>Full Proof:</strong><div class="text-field"><p>Full proof in the survey: cor:eluder-range-affine-incomparable, using prop:paired-code-eluder, prop:triangular-code-range and the database-owned endpoint proofs.</p></div>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-526" style="position:relative;">
+        
+        <h3><a href="relationships/sign_rank_monotonic_yang_dimension_incomparable.html" class="table-title-link">Sign Rank / Monotonic Yang Dimension (Affine Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sign Rank / Monotonic Yang Dimension (Affine Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/monotonic_yang_dimension.html">Monotonic Yang Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter has an affine upper bound in the other. Functional incomparability is false: the star-number bound and $S\le Y^*+1$ give $\mathrm{SR}\le f(Y^*+1)$ for a finite-valued f. Conversely no finite-valued bound of Y* in sign rank exists. The parity proof controls Yang on every subclass over every coefficient field, not just VC or linear subclasses.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>On <a href="classes/parity_functions.html">Parity Functions</a>, SR&gt;=2^n and monotonic Yang is exactly 2n, so SR/(Y*+1) tends to infinity.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>On <a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a> with n&gt;=4, monotonic Yang is n-1 while sign rank is three. Thus Y* is unbounded with SR fixed.</p></div>
+<p><strong>Incomparability Strength:</strong> Affine incomparability (unbounded ratios)</p>
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey cor:signrank-parity-separations, using prop:affine-class-yang, prop:star-signrank-functional and the database-owned endpoint proofs.</p></div>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-527" style="position:relative;">
+        
+        <h3><a href="relationships/sign_rank_star_number_incomparable.html" class="table-title-link">Sign Rank / Star Number (Affine Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sign Rank / Star Number (Affine Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Both affine directions fail, but sign rank is bounded by a finite-valued function of star number (relationship sign_rank_star_number_functional_upper). This is not functional incomparability; the reverse functional bound fails.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>On <a href="classes/parity_functions.html">Parity Functions</a>, SR&gt;=2^n while star number is exactly 2n, yielding an unbounded ratio.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>On <a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a> with n&gt;=4, star number is n while sign rank is three, excluding even reverse functional control.</p></div>
+<p><strong>Incomparability Strength:</strong> Affine incomparability (unbounded ratios)</p>
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey cor:signrank-parity-separations and database-owned endpoint proofs.</p></div>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-528" style="position:relative;">
+        
+        <h3><a href="relationships/sign_rank_combinatorial_eluder_dimension_incomparable.html" class="table-title-link">Sign Rank / Combinatorial Eluder Dimension (Affine Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sign Rank / Combinatorial Eluder Dimension (Affine Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither affine comparison holds. Since S&lt;=Edim and sign rank is controlled by a nondecreasing function of S, there is nonetheless a finite-valued sign-rank upper bound in Edim. The reverse functional bound fails. The established functional theorem therefore excludes constant-Edim/unbounded-sign-rank families.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>On <a href="classes/parity_functions.html">Parity Functions</a>, SR&gt;=2^n while combinatorial eluder dimension is exactly 2n, so the ratio diverges.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>On <a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a> with n&gt;=4, combinatorial eluder dimension is n and sign rank is three.</p></div>
+<p><strong>Incomparability Strength:</strong> Affine incomparability (unbounded ratios)</p>
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey cor:signrank-parity-separations and database-owned endpoint proofs.</p></div>
 
 
 

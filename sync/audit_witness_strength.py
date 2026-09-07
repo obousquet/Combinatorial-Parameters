@@ -75,7 +75,7 @@ def strict_verified(relationship: Record, left: Record | None, right: Record | N
     if relationship.get("relationship_type") == "equivalence":
         return a != b
     if (relationship.get("status") == "refuted") != (
-        relationship.get("relationship_type") in {"log_upper", "sqrt_upper"}
+        relationship.get("relationship_type") in {"log_upper", "sqrt_upper", "functional_upper"}
     ):
         return a < b
     return a > b
@@ -90,7 +90,7 @@ def unbounded_verified(
     if a is None or b is None:
         return None
     reverse = (relationship.get("status") == "refuted") != (
-        relationship.get("relationship_type") in {"log_upper", "sqrt_upper"}
+        relationship.get("relationship_type") in {"log_upper", "sqrt_upper", "functional_upper"}
     )
     return a < b if reverse else a > b
 
@@ -139,7 +139,7 @@ def bounded_ratio_contradiction(relationship: Record, left: Record | None,
     if a and b and left_variable != right_variable:
         return False  # No relation between independent growth variables is known.
     reverse = (relationship.get("status") == "refuted") != (
-        relationship.get("relationship_type") in {"log_upper", "sqrt_upper"}
+        relationship.get("relationship_type") in {"log_upper", "sqrt_upper", "functional_upper"}
     )
     numerator, denominator = (b, a) if reverse else (a, b)
     return numerator <= denominator

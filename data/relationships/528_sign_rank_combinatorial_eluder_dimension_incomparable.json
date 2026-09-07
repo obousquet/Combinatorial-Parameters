@@ -1,0 +1,15 @@
+{
+  "id": 528,
+  "name": "Sign Rank / Combinatorial Eluder Dimension (Affine Incomparable)",
+  "short_name": "sign_rank_combinatorial_eluder_dimension_incomparable",
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/combinatorial_eluder_dimension",
+  "relationship_type": "incomparable",
+  "incomparability_strength": "affine",
+  "status": "established",
+  "details": "Neither affine comparison holds. Since S<=Edim and sign rank is controlled by a nondecreasing function of S, there is nonetheless a finite-valued sign-rank upper bound in Edim. The reverse functional bound fails. The established functional theorem therefore excludes constant-Edim/unbounded-sign-rank families.",
+  "parameter_1_larger_witness": "On #classes/parity_functions, SR>=2^n while combinatorial eluder dimension is exactly 2n, so the ratio diverges.",
+  "parameter_2_larger_witness": "On #classes/singletons_plus_empty_set with n>=4, combinatorial eluder dimension is n and sign rank is three.",
+  "latex_proof_label": "cor:signrank-parity-separations",
+  "proof_source": "Survey cor:signrank-parity-separations and database-owned endpoint proofs."
+}

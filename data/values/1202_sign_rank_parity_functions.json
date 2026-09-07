@@ -1,0 +1,13 @@
+{
+  "id": 1202,
+  "name": "Sign Rank of Parity Functions",
+  "short_name": "sign_rank_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/sign_rank",
+  "value": "$\\ge2^n$",
+  "value_class": "omega_2^n",
+  "status": "established",
+  "details": "Exponential lower bound, not an exact formula: $2^n\\le\\mathrm{SR}\\le4^n$. No matching asymptotic upper bound is asserted.",
+  "proof": "Let $N=4^n$ and set $W_{a,x}=(-1)^{a\\cdot x}$. For $a\\ne b$, choose a coordinate on which $a+b$ is nonzero and pair each $x$ with its translate by that basis vector; the two character products cancel. Thus $WW^{\\mathsf T}=NI$, and its spectral norm is $\\sqrt N$. Forster's bound gives $\\mathrm{SR}(W)\\ge N/\\lVert W\\rVert=\\sqrt N=2^n$. The catalogue incidence sign matrix differs by at most a global sign, which preserves sign rank. The matrix itself has rank $N$, giving the upper bound $4^n$. No matching exponential rate is claimed.",
+  "references": "\\cite{forster2002linear}; the spectral consequence is also explicit in \\cite[Theorem 13 and Section A.2]{alon2016sign}."
+}

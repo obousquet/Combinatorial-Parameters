@@ -1,0 +1,11 @@
+{
+  "id": 1206,
+  "name": "Size of Parity Functions",
+  "short_name": "size_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/size",
+  "value": "$4^n$",
+  "status": "established",
+  "proof": "There are $4^n$ coefficient vectors $a$. Distinct vectors differ at some coordinate $i$, so their functions differ at the basis input $e_i$. Thus all $4^n$ functions are distinct.",
+  "references": "Direct coefficient enumeration and injectivity."
+}

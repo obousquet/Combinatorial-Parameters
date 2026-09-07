@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Parameters measuring the size of set families - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Parameters measuring the size of set families - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,34 +74,31 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="parameters/index.html">&larr; Back to Parameters Table</a></div>
-    <div class="table-card" id="math-82" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-525" style="position:relative;">
         
-        <h3><a href="parameters/monotonic_yang_dimension.html" class="table-title-link">Monotonic Yang Dimension</a></h3>
+        <h3><a href="relationships/sign_rank_star_number_functional_upper.html" class="table-title-link">Sign Rank / Star Number (Functional Upper Bound)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Monotonic Yang Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathrm{Y}^*">
-            \[\mathrm{Y}^*\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>The <strong>monotonic Yang dimension</strong> is the subfamily-monotonic version of Yang dimension: $$\mathrm{Y}^*(\mathcal{H}) := \max_{\mathcal{G}\subseteq\mathcal{H}} \mathrm{Y}(\mathcal{G}).$$</p></div>
+        <p><strong>Name: </strong>Sign Rank / Star Number (Functional Upper Bound)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \le f(P_2)$ (finite-valued functional bound)</p>
 
 
 
-<p><strong>Category:</strong> Holes and Homology</p>
-<p><strong>Symmetric:</strong> Yes</p>
-<p><strong>Monotonic:</strong> Yes</p>
-<p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
-<p><strong>Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
-<p><strong>Doubly Monotonic:</strong> Yes</p>
-<p><strong>Strictly Monotonic:</strong> Unspecified</p>
-<div class="reference-field"><p><strong>Values:</strong><ul class="fields-list"><li><a href='values/monotonic_yang_dimension_full_cube.html'>$\mathrm{Y}^*(\{S:S\subset [n]\}) = n\;(\Omega(n))$</a></li><li><a href='values/monotonic_yang_dimension_singletons.html'>$\mathrm{Y}^*(\{\{i\}\}_{1\le i\le n}) = n-1\;(\Omega(n))$</a></li><li><a href='values/monotonic_yang_dimension_trivial_concepts.html'>$\mathrm{Y}^*(\{\emptyset, [n]\}) = 1\;(\Omega(1))$</a></li><li><a href='values/monotonic_yang_dimension_singletons_plus_empty_set.html'>$\mathrm{Y}^*(\{\{i\}\}_{1\le i\le n}\cup\{\emptyset\}) = \max\{1,n-1\}\;(\Omega(n))$</a></li><li><a href='values/monotonic_yang_dimension_parity_functions.html'>$\mathrm{Y}^*(\mathcal P_n) = 2n\;(\Omega(n))$</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Established relationships:</strong></p><ul class="fields-list"><li><a href="relationships/monotonic_yang_dimension_yang_dimension.html" class="relationship-statement">$\mathrm{Y}^* \ge \mathrm{Y}$</a></li><li><a href="relationships/effective_range_monotonic_yang_dimension.html" class="relationship-statement">$\mathrm{E} \ge \mathrm{Y}^*$</a></li><li><a href="relationships/size_monotonic_yang_dimension.html" class="relationship-statement">$\mathrm{H} \ge \mathrm{Y}^*$</a></li><li><a href="relationships/monotonic_yang_dimension_monotonic_covc_dimension_affine.html" class="relationship-statement">$\mathrm{Y}^* \ge \mathrm{coVC}^* - (1)$</a></li></ul><p><strong>Incomparabilities:</strong></p><ul class="fields-list"><li><a href="relationships/diameter_monotonic_yang_dimension_incomparable.html" class="relationship-statement">$\mathrm{D}\mathrel{\parallel}\mathrm{Y}^*\;\text{(incomparable)}$</a></li><li><a href="relationships/hamming_radius_monotonic_yang_dimension_incomparable.html" class="relationship-statement">$\mathrm{B}\mathrel{\parallel}\mathrm{Y}^*\;\text{(incomparable)}$</a></li><li><a href="relationships/monotonic_yang_dimension_log_shattering_incomparable.html" class="relationship-statement">$\mathrm{Y}^*\mathrel{\parallel}\log \mathrm{sh}\;\text{(incomparable)}$</a></li><li><a href="relationships/sign_rank_monotonic_yang_dimension_incomparable.html" class="relationship-statement">$\mathrm{SR}\mathrel{\parallel}\mathrm{Y}^*\;\text{(affinely incomparable)}$</a></li></ul></div>
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>There is a finite-valued nondecreasing function f, independent of the class, with $\mathrm{SR}(\mathcal H)\le f(\mathrm S(\mathcal H))$ for every finite binary class. An explicit choice is $f(d)=2F(d+2,d+2)^2$, with the chain-partition recurrence F spelled out in the survey. This is not an affine bound and is deliberately omitted from Hasse ranks and edges. Affine control in either direction is refuted by relationship sign_rank_star_number_incomparable.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For n&gt;=4, the star number is n and sign rank is three. In this upper-bound orientation it is the second parameter that grows. This excludes any finite-valued reverse bound S&lt;=g(SR), hence also any reverse affine bound.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey prop:star-signrank-functional independently checks the matching-to-star shift and rank-two block assembly, importing Atminas's published Theorem 2.1. The same qualitative argument appears in Blondal et al. v2 Theorem 1.9; this is not blanket verification of that preprint.</p></div>
+
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem 2.1]{atminas2022starforests}; \cite[Theorem 1.9, version 2]{blondal2026signindex}.</p></div>
 
         </div>
     </div>

@@ -1,0 +1,13 @@
+{
+  "id": 1200,
+  "name": "Yang Dimension of Parity Functions",
+  "short_name": "yang_dimension_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/yang_dimension",
+  "value": "$2n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "The same exact value holds over every coefficient field.",
+  "proof": "The evaluation map $a\\mapsto h_a$ is linear and injective, since the $2n$ coordinate-basis input vectors recover all coefficients. Its image is therefore a binary linear class of dimension $2n$. Proposition \\ref{prop:affine-class-yang} gives Yang dimension exactly $2n$ over every coefficient field, including the catalogue's default characteristic two.",
+  "references": "Survey prop:affine-class-yang."
+}

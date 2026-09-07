@@ -58,6 +58,7 @@
             { "value": "log_upper", "display_name": "$P_1 \\le C\\log_b(P_2+s)$" },
             { "value": "sqrt", "display_name": "$P_1 \\ge c\\sqrt{P_2}$" },
             { "value": "sqrt_upper", "display_name": "$P_1 \\le C\\sqrt{P_2}$" },
+            { "value": "functional_upper", "display_name": "$P_1 \\le f(P_2)$ (finite-valued functional bound)" },
             { "value": "inv_log", "display_name": "$P_1 \\ge \\frac{cP_2}{\\log n}$" },
             { "value": "incomparable", "display_name": "$P_1 \\parallel P_2$ (incomparable)" }
         ]

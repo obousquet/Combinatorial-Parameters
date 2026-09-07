@@ -869,9 +869,9 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         if relationship.get("status") not in {
             "needs_verification", "conjectured", "open", "refuted"
         }
-        # Incomparability is catalogue evidence, not a dominance edge.  It
-        # must never affect equality collapse, ranking, or graph clutter.
-        and relationship.get("relationship_type") != "incomparable"
+        # Incomparability and unrestricted functional control are catalogue
+        # evidence, not quantitative Hasse edges. Neither affects ranks.
+        and relationship.get("relationship_type") not in {"incomparable", "functional_upper"}
     ]
     equivalence_components, equivalence_component_of = exact_equivalence_components(
         parameters, relationships

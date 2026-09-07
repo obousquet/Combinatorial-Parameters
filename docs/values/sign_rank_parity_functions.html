@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -33,11 +33,30 @@
     </script>
     
         
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
-            <h1>Combinatorial Parameters</h1>
-            <p>Measuring the Size of Families of Sets</p>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
+            
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
@@ -55,36 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            
-    <div class="intro">
-        <p>A database of combinatorial parameters of finite binary concept classes.</p>
-    </div>
-    <div class="tables-grid">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1202" style="position:relative;">
         
-        <div class="table-card">
-            <h3><a href="classes/index.html">Classes</a></h3>
-            <p>Set families (possibly parameterized)</p>
-            <p class="record-count">60 records</p>
+        <h3><a href="values/sign_rank_parity_functions.html" class="table-title-link">Sign Rank of Parity Functions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sign Rank of Parity Functions</p>
+<p><strong>Class: </strong><a href="classes/parity_functions.html">Parity Functions</a></p>
+<p><strong>Parameter: </strong><a href="parameters/sign_rank.html">Sign Rank</a></p>
+<p><strong>Value: </strong>$\ge2^n$</p>
+<p><strong>Order:</strong> $\Omega(2^n)$</p>
+<p><strong>Details: </strong>Exponential lower bound, not an exact formula: $2^n\le\mathrm{SR}\le4^n$. No matching asymptotic upper bound is asserted.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Let $N=4^n$ and set $W_{a,x}=(-1)^{a\cdot x}$. For $a\ne b$, choose a coordinate on which $a+b$ is nonzero and pair each $x$ with its translate by that basis vector; the two character products cancel. Thus $WW^{\mathsf T}=NI$, and its spectral norm is $\sqrt N$. Forster's bound gives $\mathrm{SR}(W)\ge N/\lVert W\rVert=\sqrt N=2^n$. The catalogue incidence sign matrix differs by at most a global sign, which preserves sign rank. The matrix itself has rank $N$, giving the upper bound $4^n$. No matching exponential rate is claimed.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#forster2002linear">[forster2002linear]</a>; the spectral consequence is also explicit in \cite[Theorem 13 and Section A.2]{alon2016sign}.</p></div>
+
         </div>
-        
-        <div class="table-card">
-            <h3><a href="parameters/index.html">Parameters</a></h3>
-            <p>Parameters measuring the size of set families</p>
-            <p class="record-count">108 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="relationships/index.html">Relationships</a></h3>
-            <p>Relationships between parameters</p>
-            <p class="record-count">512 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="values/index.html">Values</a></h3>
-            <p>Values assigned to parameters for specific classes</p>
-            <p class="record-count">1138 records</p>
-        </div>
-        
     </div>
     
         </main>

@@ -1,0 +1,16 @@
+{
+  "id": 525,
+  "name": "Sign Rank / Star Number (Functional Upper Bound)",
+  "short_name": "sign_rank_star_number_functional_upper",
+  "parameter_1_id": "#parameters/sign_rank",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "functional_upper",
+  "status": "established",
+  "details": "There is a finite-valued nondecreasing function f, independent of the class, with $\\mathrm{SR}(\\mathcal H)\\le f(\\mathrm S(\\mathcal H))$ for every finite binary class. An explicit choice is $f(d)=2F(d+2,d+2)^2$, with the chain-partition recurrence F spelled out in the survey. This is not an affine bound and is deliberately omitted from Hasse ranks and edges. Affine control in either direction is refuted by relationship sign_rank_star_number_incomparable.",
+  "latex_proof_label": "prop:star-signrank-functional",
+  "proof_source": "Survey prop:star-signrank-functional independently checks the matching-to-star shift and rank-two block assembly, importing Atminas's published Theorem 2.1. The same qualitative argument appears in Blondal et al. v2 Theorem 1.9; this is not blanket verification of that preprint.",
+  "references": "\\cite[Theorem 2.1]{atminas2022starforests}; \\cite[Theorem 1.9, version 2]{blondal2026signindex}.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
+  "witness_verification": "For n>=4, the star number is n and sign rank is three. In this upper-bound orientation it is the second parameter that grows. This excludes any finite-valued reverse bound S<=g(SR), hence also any reverse affine bound."
+}

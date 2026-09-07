@@ -33,7 +33,7 @@ def implies_exact_domination(relation: dict, coefficients: tuple[Fraction, Fract
 
 def reverse_bound_path(relation: dict, adjacency: dict) -> list[int] | None:
     first, second = relation["parameter_1_id"], relation["parameter_2_id"]
-    if relation["relationship_type"] in {"log_upper", "sqrt_upper"}:
+    if relation["relationship_type"] in {"log_upper", "sqrt_upper", "functional_upper"}:
         first, second = second, first
     pending = deque([(second, [])])
     seen = {second}
@@ -113,7 +113,7 @@ def audit(data_dir: Path) -> dict:
         )
         counts[category] += 1
         a, b = (component_of[p] for p in graph.relation_endpoints(relation))
-        if kind in {"log_upper", "sqrt_upper"}:
+        if kind in {"log_upper", "sqrt_upper", "functional_upper"}:
             a, b = b, a
         growth_leads, strict_leads = [], []
         for class_id, observed in sorted(by_class.items()):

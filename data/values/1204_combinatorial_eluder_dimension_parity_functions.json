@@ -1,0 +1,12 @@
+{
+  "id": 1204,
+  "name": "Combinatorial Eluder Dimension of Parity Functions",
+  "short_name": "combinatorial_eluder_dimension_parity_functions",
+  "class_id": "#classes/parity_functions",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "value": "$2n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Fix an anchor $h_a$. At step $i$, an eluder witness $h_b$ agrees on earlier queried vectors $x_j$ and differs on $x_i$, so $(a+b)\\cdot x_j=0$ for $j<i$ and $(a+b)\\cdot x_i=1$. Therefore $x_i$ is not in the binary linear span of the earlier vectors. There are at most $2n$ such steps. The $2n$ basis vectors, anchored at $h_0$ with the corresponding basis-indexed witnesses, attain this length.",
+  "references": "Direct linear-independence proof."
+}
