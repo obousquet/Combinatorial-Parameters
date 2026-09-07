@@ -10,10 +10,64 @@ from __future__ import annotations
 import argparse
 import json
 from collections import Counter, defaultdict, deque
+from fractions import Fraction
 from pathlib import Path
 
 from audit_witness_strength import GROWTH_RANK, literal_rational, records
 from audit_hasse_edges import load_graph_module
+
+
+def implies_exact_domination(relation: dict, coefficients: tuple[Fraction, Fraction] | None) -> bool:
+    """Sufficient, not exhaustive, for A >= B on nonnegative parameters.
+
+    Affine records use A >= c B - d. Symbolic constants and paths whose
+    weak factors compensate are deliberately left for manual review.
+    """
+    kind = relation["relationship_type"]
+    if kind in {"larger", "equivalence"}:
+        return True
+    if kind != "larger_c":
+        return False
+    return coefficients is not None and coefficients[0] >= 1 and coefficients[1] <= 0
+
+
+def reverse_bound_path(relation: dict, adjacency: dict) -> list[int] | None:
+    first, second = relation["parameter_1_id"], relation["parameter_2_id"]
+    if relation["relationship_type"] in {"log_upper", "sqrt_upper"}:
+        first, second = second, first
+    pending = deque([(second, [])])
+    seen = {second}
+    while pending:
+        node, path = pending.popleft()
+        if node == first:
+            return path
+        for neighbor, identifier in adjacency.get(relation.get("variant", "base"), {}).get(node, []):
+            if neighbor not in seen:
+                seen.add(neighbor)
+                pending.append((neighbor, path + [identifier]))
+    return None
+
+
+def reverse_adjacencies(relations: list[dict], graph) -> tuple[dict, dict]:
+    affine = defaultdict(lambda: defaultdict(list))
+    exact = defaultdict(lambda: defaultdict(list))
+    for relation in relations:
+        if relation.get("status") != "established":
+            continue
+        kind = relation["relationship_type"]
+        if kind not in {"larger", "larger_c", "equivalence"}:
+            continue
+        coefficient = graph.rational_constant(relation.get("multiplicative_constant"))
+        if kind == "larger_c" and coefficient is not None and coefficient <= 0:
+            continue
+        variant = relation.get("variant", "base")
+        first, second = relation["parameter_1_id"], relation["parameter_2_id"]
+        coefficients = graph.affine_coefficients(relation)
+        for adjacency in (affine, exact) if implies_exact_domination(relation, coefficients) else (affine,):
+            adjacency[variant][first].append((second, relation["id"]))
+            if kind == "equivalence":
+                adjacency[variant][second].append((first, relation["id"]))
+    return affine, exact
 
 
 def audit(data_dir: Path) -> dict:
@@ -30,34 +84,11 @@ def audit(data_dir: Path) -> dict:
 
     # Each path retains IDs so its constants and extra scope assumptions can
     # be reviewed. Nonlinear statements cannot certify an affine reverse.
-    adjacency = defaultdict(lambda: defaultdict(list))
-    for relation in established:
-        if relation["relationship_type"] not in graph.LINEAR_TYPES:
-            continue
-        variant = relation.get("variant", "base")
-        first, second = graph.relation_endpoints(relation)
-        adjacency[variant][first].append((second, relation["id"]))
-        if relation["relationship_type"] == "equivalence":
-            adjacency[variant][second].append((first, relation["id"]))
-
-    def reverse_path(relation: dict) -> list[int] | None:
-        first, second = graph.relation_endpoints(relation)
-        if relation["relationship_type"] in {"log_upper", "sqrt_upper"}:
-            first, second = second, first
-        pending = deque([(second, [])])
-        seen = {second}
-        while pending:
-            node, path = pending.popleft()
-            if node == first:
-                return path
-            for neighbor, identifier in adjacency[relation.get("variant", "base")][node]:
-                if neighbor not in seen:
-                    seen.add(neighbor)
-                    pending.append((neighbor, path + [identifier]))
-        return None
+    adjacency, exact_adjacency = reverse_adjacencies(established, graph)
 
     rows = []
     conflicts = []
+    strict_conflicts = []
     counts = Counter()
     for relation in established:
         kind = relation["relationship_type"]
@@ -66,7 +97,7 @@ def audit(data_dir: Path) -> dict:
             continue
         if relation.get("witness_strength") == "unbounded":
             counts["unbounded"] += 1
-            path = reverse_path(relation)
+            path = reverse_bound_path(relation, adjacency)
             if path is not None:
                 conflicts.append({
                     "id": relation["id"],
@@ -101,17 +132,34 @@ def audit(data_dir: Path) -> dict:
                     large_exact, small_exact = literal_rational(left.get("value")), literal_rational(right.get("value"))
                     if large_exact is not None and small_exact is not None and large_exact > small_exact:
                         strict_leads.append(record)
-        path = reverse_path(relation)
+        path = reverse_bound_path(relation, adjacency)
+        exact_path = reverse_bound_path(relation, exact_adjacency)
+        if category == "strict" and exact_path is not None:
+            strict_conflicts.append({
+                "id": relation["id"],
+                "short_name": relation["short_name"],
+                "reverse_exact_path": exact_path,
+                "review": "A strict endpoint witness conflicts with this exact reverse if their scopes match.",
+            })
         rows.append({
             "id": relation["id"],
             "short_name": relation["short_name"],
             "category": category,
             "witness": relation.get("witness"),
             "reverse_affine_path": path,
+            "reverse_exact_path": exact_path,
+            "witness_search_if_scopes_match": (
+                "neither_strict_nor_unbounded" if exact_path is not None
+                else "strict_only" if path is not None
+                else "no_reverse_bound_found"
+            ),
             "unbounded_candidates": growth_leads,
             "strict_candidates": strict_leads,
             "review": (
-                "Check scope of reverse path; if compatible, unbounded gap is impossible."
+                "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. "
+                "Coefficient sharpness is a separate question, not an endpoint-separation witness."
+                if exact_path is not None else
+                "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
                 if path is not None
                 else "Check endpoint proofs and scope before promoting any candidate."
             ),
@@ -119,8 +167,9 @@ def audit(data_dir: Path) -> dict:
     return {
         "counts": dict(counts),
         "scope": "Every established direct record. Equalities and incomparabilities counted separately.",
-        "caution": "Candidate growth ranks are leads, not certificates. Reverse paths require matching scope and positive affine coefficients.",
+        "caution": "Candidate growth ranks are leads, not certificates. Reverse paths require matching scope and positive affine coefficients. Exact paths use individually sufficient bounds on nonnegative parameters; compensating affine factors are not searched. Coefficient sharpness is not endpoint separation.",
         "unbounded_reverse_conflicts": conflicts,
+        "strict_reverse_conflicts": strict_conflicts,
         "rows": sorted(rows, key=lambda row: row["id"]),
     }
 
@@ -130,7 +179,7 @@ def main() -> None:
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--output", type=Path, help="Write the complete JSON research queue.")
     parser.add_argument("--check", action="store_true",
-                        help="Fail when an unbounded witness has a reverse affine path requiring review.")
+                        help="Fail when an unbounded/strict witness has a reverse affine/exact path requiring review.")
     args = parser.parse_args()
     report = audit(args.data_dir.resolve())
     if args.output:
@@ -139,17 +188,19 @@ def main() -> None:
     print("Established relationship coverage:", json.dumps(report["counts"], sort_keys=True))
     print("Unbounded witness / reverse-affine conflicts:",
           len(report["unbounded_reverse_conflicts"]))
+    print("Strict witness / reverse-exact conflicts:", len(report["strict_reverse_conflicts"]))
     for category in ("missing", "strict", "unclassified"):
         rows = [row for row in report["rows"] if row["category"] == category]
         print(f"{category}: {len(rows)}; reverse-affine paths: "
               f"{sum(row['reverse_affine_path'] is not None for row in rows)}; "
+              f"reverse-exact paths: {sum(row['reverse_exact_path'] is not None for row in rows)}; "
               f"growth leads: {sum(bool(row['unbounded_candidates']) for row in rows)}; "
               f"strict integer leads: {sum(bool(row['strict_candidates']) for row in rows)}")
     for row in report["rows"]:
         if row["reverse_affine_path"] is not None:
             print(f"  #{row['id']} {row['short_name']}: reverse path {row['reverse_affine_path']}")
-    if args.check and report["unbounded_reverse_conflicts"]:
-        raise SystemExit("Unbounded witnesses have reverse affine paths: review scope and endpoint proofs.")
+    if args.check and (report["unbounded_reverse_conflicts"] or report["strict_reverse_conflicts"]):
+        raise SystemExit("Declared witnesses have incompatible reverse bounds: review scope and endpoint proofs.")
 
 
 if __name__ == "__main__":

@@ -8,8 +8,9 @@
     "incomparable": 99
   },
   "scope": "Every established direct record. Equalities and incomparabilities counted separately.",
-  "caution": "Candidate growth ranks are leads, not certificates. Reverse paths require matching scope and positive affine coefficients.",
+  "caution": "Candidate growth ranks are leads, not certificates. Reverse paths require matching scope and positive affine coefficients. Exact paths use individually sufficient bounds on nonnegative parameters; compensating affine factors are not searched. Coefficient sharpness is not endpoint separation.",
   "unbounded_reverse_conflicts": [],
+  "strict_reverse_conflicts": [],
   "rows": [
     {
       "id": 3,
@@ -17,6 +18,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -64,6 +67,8 @@
       "category": "strict",
       "witness": "#classes/addressing",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -111,6 +116,8 @@
       "category": "strict",
       "witness": "#classes/order_shattering_effective_vc_radius_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -131,6 +138,8 @@
       "category": "strict",
       "witness": "#classes/interpolation_effective_vc_radius_counterexample",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -151,6 +160,8 @@
       "category": "strict",
       "witness": "#classes/best_mistakes_order_shattering_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -171,6 +182,8 @@
       "category": "strict",
       "witness": "#classes/repetitionfree_teaching_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -191,6 +204,8 @@
       "category": "strict",
       "witness": "#classes/halfintervals",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -201,6 +216,8 @@
       "category": "strict",
       "witness": "#classes/projected_rtd_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -221,6 +238,8 @@
       "category": "strict",
       "witness": "#classes/halfintervals",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -268,6 +287,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -278,6 +299,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -300,9 +323,13 @@
       "reverse_affine_path": [
         113
       ],
+      "reverse_exact_path": [
+        113
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 36,
@@ -312,9 +339,13 @@
       "reverse_affine_path": [
         118
       ],
+      "reverse_exact_path": [
+        118
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 37,
@@ -324,9 +355,13 @@
       "reverse_affine_path": [
         316
       ],
+      "reverse_exact_path": [
+        316
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 38,
@@ -338,9 +373,15 @@
         88,
         89
       ],
+      "reverse_exact_path": [
+        87,
+        88,
+        89
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 42,
@@ -348,6 +389,8 @@
       "category": "strict",
       "witness": "#classes/singletons",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -404,6 +447,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -414,6 +459,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -424,6 +471,8 @@
       "category": "strict",
       "witness": "#classes/positive_teaching_triangle",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -453,6 +502,8 @@
       "category": "strict",
       "witness": "#classes/positive_teaching_triangle",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -473,6 +524,8 @@
       "category": "strict",
       "witness": "#classes/trivial_concepts",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -529,6 +582,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -539,6 +594,8 @@
       "category": "strict",
       "witness": "#classes/trivial_concepts",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -586,6 +643,8 @@
       "category": "strict",
       "witness": "#classes/positive_degree_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -606,6 +665,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -619,9 +680,14 @@
         64,
         78
       ],
+      "reverse_exact_path": [
+        64,
+        78
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 63,
@@ -629,6 +695,8 @@
       "category": "strict",
       "witness": "#classes/singletons",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -679,6 +747,8 @@
         78,
         62
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -700,7 +770,7 @@
           ]
         }
       ],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 66,
@@ -708,6 +778,8 @@
       "category": "strict",
       "witness": "#classes/repetitionfree_teaching_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -827,6 +899,8 @@
       "category": "strict",
       "witness": "#classes/trivial_concepts",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -876,6 +950,8 @@
       "reverse_affine_path": [
         69
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -969,7 +1045,7 @@
           ]
         }
       ],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 69,
@@ -979,9 +1055,13 @@
       "reverse_affine_path": [
         68
       ],
+      "reverse_exact_path": [
+        68
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 78,
@@ -992,9 +1072,11 @@
         62,
         64
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 81,
@@ -1002,6 +1084,8 @@
       "category": "strict",
       "witness": "#classes/projected_teaching_monotonicity_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1022,6 +1106,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1032,6 +1118,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1042,6 +1130,8 @@
       "category": "strict",
       "witness": "#classes/majority_gap_products",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1062,6 +1152,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1072,6 +1164,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1095,9 +1189,14 @@
         225,
         265
       ],
+      "reverse_exact_path": [
+        225,
+        265
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 96,
@@ -1107,9 +1206,13 @@
       "reverse_affine_path": [
         97
       ],
+      "reverse_exact_path": [
+        97
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 97,
@@ -1119,6 +1222,8 @@
       "reverse_affine_path": [
         96
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1140,7 +1245,7 @@
           ]
         }
       ],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 101,
@@ -1148,6 +1253,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1186,6 +1293,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1233,6 +1342,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1271,6 +1382,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1281,6 +1394,8 @@
       "category": "strict",
       "witness": "#classes/chen_neighbor_puncture",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1291,6 +1406,8 @@
       "category": "strict",
       "witness": "#classes/chen_teaching_products",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1347,6 +1464,8 @@
       "category": "strict",
       "witness": "#classes/littlestone_worst_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1367,6 +1486,8 @@
       "category": "strict",
       "witness": "#classes/best_worst_mistakes_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1387,6 +1508,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1409,9 +1532,13 @@
       "reverse_affine_path": [
         146
       ],
+      "reverse_exact_path": [
+        146
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 135,
@@ -1419,6 +1546,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1429,6 +1558,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1439,6 +1570,8 @@
       "category": "strict",
       "witness": "#classes/minimum_teaching_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1461,6 +1594,8 @@
       "reverse_affine_path": [
         124
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1518,7 +1653,7 @@
           ]
         }
       ],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 148,
@@ -1526,6 +1661,8 @@
       "category": "strict",
       "witness": "#classes/repetitionfree_teaching_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1546,6 +1683,8 @@
       "category": "strict",
       "witness": "#classes/repetitionfree_teaching_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1566,6 +1705,8 @@
       "category": "strict",
       "witness": "#classes/three_code_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1586,6 +1727,8 @@
       "category": "strict",
       "witness": "#classes/three_code_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1615,6 +1758,8 @@
       "category": "strict",
       "witness": "#classes/three_code_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1644,6 +1789,8 @@
       "category": "strict",
       "witness": "#classes/three_code_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1664,6 +1811,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1674,6 +1823,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1684,6 +1835,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1694,6 +1847,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1704,6 +1859,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -1714,6 +1871,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1770,6 +1929,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1934,6 +2095,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -1999,6 +2162,8 @@
       "category": "strict",
       "witness": "#classes/trivial_concepts",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2021,6 +2186,8 @@
       "reverse_affine_path": [
         215
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2042,7 +2209,7 @@
           ]
         }
       ],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 214,
@@ -2050,6 +2217,8 @@
       "category": "strict",
       "witness": "#classes/universal_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2062,9 +2231,13 @@
       "reverse_affine_path": [
         213
       ],
+      "reverse_exact_path": [
+        213
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 216,
@@ -2072,6 +2245,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2101,6 +2276,8 @@
       "category": "strict",
       "witness": "#classes/extremal_extension_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2121,6 +2298,8 @@
       "category": "unclassified",
       "witness": "#classes/universal_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2168,6 +2347,8 @@
       "category": "strict",
       "witness": "#classes/three_code_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2197,6 +2378,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2207,6 +2390,8 @@
       "category": "unclassified",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2236,6 +2421,8 @@
       "category": "strict",
       "witness": "#classes/anchored_torsion",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2246,6 +2433,8 @@
       "category": "strict",
       "witness": "#classes/singletons_plus_empty_set",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2284,6 +2473,8 @@
       "category": "strict",
       "witness": "#classes/trivial_concepts",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2304,6 +2495,8 @@
       "category": "strict",
       "witness": "#classes/universal_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2314,6 +2507,8 @@
       "category": "unclassified",
       "witness": "#classes/halfintervals",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2343,6 +2538,8 @@
       "category": "strict",
       "witness": "#classes/singletons_plus_empty_set",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2363,6 +2560,8 @@
       "category": "strict",
       "witness": "#classes/three_code_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2403,9 +2602,11 @@
       "reverse_affine_path": [
         285
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 285,
@@ -2415,9 +2616,13 @@
       "reverse_affine_path": [
         284
       ],
+      "reverse_exact_path": [
+        284
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 292,
@@ -2425,6 +2630,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2445,6 +2652,8 @@
       "category": "strict",
       "witness": "#classes/antipodal_six_code",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2465,6 +2674,8 @@
       "category": "strict",
       "witness": "#classes/three_code_class",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2485,6 +2696,8 @@
       "category": "strict",
       "witness": "#classes/singletons_plus_empty_set",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2523,6 +2736,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2533,6 +2748,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2543,6 +2760,8 @@
       "category": "strict",
       "witness": "#classes/repetitionfree_teaching_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2581,6 +2800,8 @@
       "category": "strict",
       "witness": "#classes/repetitionfree_teaching_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2601,6 +2822,8 @@
       "category": "strict",
       "witness": "#classes/scvc_vc_separation",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2623,6 +2846,8 @@
       "reverse_affine_path": [
         342
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2698,7 +2923,7 @@
           ]
         }
       ],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 342,
@@ -2708,9 +2933,13 @@
       "reverse_affine_path": [
         341
       ],
+      "reverse_exact_path": [
+        341
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 360,
@@ -2718,6 +2947,8 @@
       "category": "strict",
       "witness": "#classes/distinguishing_range_projection_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2738,6 +2969,8 @@
       "category": "strict",
       "witness": "#classes/trivial_concepts",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2767,6 +3000,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2777,6 +3012,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2787,6 +3024,8 @@
       "category": "strict",
       "witness": "#classes/antipodal_six_code",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2807,6 +3046,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2817,6 +3058,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -2827,6 +3070,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2851,9 +3096,15 @@
         52,
         292
       ],
+      "reverse_exact_path": [
+        173,
+        52,
+        292
+      ],
+      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
     },
     {
       "id": 453,
@@ -2861,6 +3112,8 @@
       "category": "strict",
       "witness": "#classes/projected_positive_noclashing_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2899,6 +3152,8 @@
       "category": "strict",
       "witness": "#classes/projected_positive_noclashing_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2937,6 +3192,8 @@
       "category": "strict",
       "witness": "#classes/projected_positive_noclashing_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -2975,6 +3232,8 @@
       "category": "strict",
       "witness": "#classes/projected_positive_noclashing_gap",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -3033,6 +3292,8 @@
       "reverse_affine_path": [
         440
       ],
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "strict_only",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -3045,7 +3306,7 @@
           ]
         }
       ],
-      "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
+      "review": "Check scope of reverse affine path; if compatible, only a finite strict gap is possible."
     },
     {
       "id": 492,
@@ -3053,6 +3314,8 @@
       "category": "missing",
       "witness": null,
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -3063,6 +3326,8 @@
       "category": "strict",
       "witness": "#classes/trivial_concepts",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -3209,6 +3474,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -3229,6 +3496,8 @@
       "category": "strict",
       "witness": "#classes/addressing",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -3249,6 +3518,8 @@
       "category": "strict",
       "witness": "#classes/warmuth_c5",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -3314,6 +3585,8 @@
       "category": "strict",
       "witness": "#classes/anchored_torsion",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
@@ -3334,6 +3607,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -3344,6 +3619,8 @@
       "category": "strict",
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
         {
