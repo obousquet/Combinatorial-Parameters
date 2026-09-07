@@ -1,0 +1,13 @@
+{
+  "id": 1189,
+  "name": "Proper Ordered Sample Compression of Singletons plus Empty Set",
+  "short_name": "proper_ordered_sample_compression_singletons_plus_empty_set",
+  "parameter_id": "#parameters/proper_ordered_sample_compression",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "details": "For n>=1; the zero-coordinate singleton class has value zero.",
+  "proof": "Order the empty concept first, followed by the singleton concepts in any order. A realizable sample with no positive label has the empty concept as its first consistent hypothesis and compresses to the empty sample. Otherwise its unique positive example is at some i; retaining just this labeled example makes the singleton {i} the first (and only) consistent hypothesis. The decoder depends only on that retained labeled key. Hence the scheme is proper and ordered with width one. Width zero cannot decode both full samples of the empty concept and a singleton, so the value is exactly one for n>=1.",
+  "references": "Direct proper-order construction; replayed by sync/verify_upper_branch_comparisons.py."
+}

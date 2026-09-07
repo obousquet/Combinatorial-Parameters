@@ -3,8 +3,13 @@
   "parameter_1_id": "#parameters/star_number",
   "parameter_2_id": "#parameters/proper_ordered_sample_compression",
   "relationship_type": "larger",
-  "details": "No source or proof for this universal comparison has yet been verified. The order-compression paper establishes links to recursive teaching, but does not state this star-number comparison.",
-  "status": "needs_verification",
+  "details": "For every nonempty finite binary class, $\\mathrm S\\ge\\mathrm{pOSC}$. Every proper hypothesis order admits this width bound: a minimal key preserving its first consistent hypothesis forms a star. This is a direct proof, not an attribution of this comparison to the order-compression paper.",
+  "status": "established",
+  "latex_proof_label": "prop:proper-order-star",
+  "proof_source": "Full proof in the LaTeX survey: prop:proper-order-star.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
+  "witness_verification": "On the n singletons plus the empty concept, star number is n and proper ordered sample compression is one. Thus no reverse affine bound is possible as n tends to infinity. The key-only proper order scheme is replayed by sync/verify_upper_branch_comparisons.py.",
   "short_name": "star_number_proper_ordered_sample_compression",
   "name": "Star number / Proper Ordered Sample Compression"
 }

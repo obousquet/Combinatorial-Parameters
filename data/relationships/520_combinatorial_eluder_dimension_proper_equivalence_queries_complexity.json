@@ -1,0 +1,15 @@
+{
+  "id": 520,
+  "name": "Combinatorial Eluder Dimension / Proper Equivalence Queries",
+  "short_name": "combinatorial_eluder_dimension_proper_equivalence_queries_complexity",
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/proper_equivalence_queries_complexity",
+  "relationship_type": "larger",
+  "status": "established",
+  "details": "For every nonempty finite binary class, $\\mathrm{Edim}\\ge Q_{\\mathrm{peq}}$. A learner that always proposes a currently consistent hypothesis meets this bound, including a possible successful final query; it stops once the target is uniquely identified.",
+  "latex_proof_label": "prop:proper-queries-eluder",
+  "proof_source": "Full proof in the LaTeX survey: prop:proper-queries-eluder.",
+  "witness": "#classes/singletons_plus_empty_set",
+  "witness_strength": "unbounded",
+  "witness_verification": "For n singletons plus the empty concept, combinatorial eluder dimension is n while proper equivalence queries equal one. The ratio is unbounded. See the database-owned endpoint proofs and sync/verify_upper_branch_comparisons.py."
+}

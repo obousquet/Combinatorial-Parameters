@@ -123,6 +123,10 @@ python3 -m unittest discover -s sync -p test_witness_reverse_bounds.py
 # Small-class counting and upper-bound witness-direction regression.
 python3 sync/verify_dual_littlestone_bounds.py
 
+# Proper-query/eluder and star/proper-order proofs, and opposing strict
+# projected-range witnesses. Finite gaps do not establish affine incomparability.
+python3 sync/verify_upper_branch_comparisons.py
+
 # Independent teaching-order, no-clashing-map and degree computations behind
 # the equality of the three positive projection closures.
 python3 sync/verify_positive_projection_collapse.py

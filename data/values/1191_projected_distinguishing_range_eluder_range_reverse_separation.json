@@ -1,0 +1,11 @@
+{
+  "id": 1191,
+  "name": "Projected Distinguishing Range of the Reverse Eluder--Range Separation",
+  "short_name": "projected_distinguishing_range_eluder_range_reverse_separation",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "class_id": "#classes/eluder_range_reverse_separation",
+  "value": "$2$",
+  "status": "established",
+  "proof": "On coordinates x_2,x_3 the four concepts have the distinct traces 00,01,11,10. Thus two coordinates distinguish the full class, whereas one binary coordinate cannot distinguish four concepts. Its distinguishing range is two. Every proper projection has at most two coordinates and therefore distinguishing range at most two; the full projection attains two. Maximizing over all projections proves the value.",
+  "references": "Direct projection argument; independently replayed by sync/verify_upper_branch_comparisons.py."
+}

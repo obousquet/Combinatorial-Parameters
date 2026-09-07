@@ -1,0 +1,13 @@
+{
+  "id": 521,
+  "name": "Projected Distinguishing Range / Combinatorial Eluder Dimension",
+  "short_name": "projected_distinguishing_range_combinatorial_eluder_dimension",
+  "parameter_1_id": "#parameters/projected_distinguishing_range",
+  "parameter_2_id": "#parameters/combinatorial_eluder_dimension",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The exact universal inequality $\\mathrm R^p\\ge\\mathrm{Edim}$ is false. This finite strict counterexample does not refute an affine comparison.",
+  "proof": "The database-owned values on $\\mathcal D_{\\mathrm{RE}}=\\{000,001,011,110\\}$ are $\\mathrm R^p=2$ and $\\mathrm{Edim}=3$. Their full proofs are the corresponding value records and generated survey value proofs.",
+  "witness": "#classes/eluder_range_reverse_separation",
+  "witness_strength": "strict"
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -33,11 +33,30 @@
     </script>
     
         
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
-            <h1>Combinatorial Parameters</h1>
-            <p>Measuring the Size of Families of Sets</p>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Combinatorial-Parameters/" target="_blank">About</a>
@@ -55,36 +74,33 @@
             </nav>
         </header>
         <main class="table-container">
-            
-    <div class="intro">
-        <p>A database of combinatorial parameters of finite binary concept classes.</p>
-    </div>
-    <div class="tables-grid">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-521" style="position:relative;">
         
-        <div class="table-card">
-            <h3><a href="classes/index.html">Classes</a></h3>
-            <p>Set families (possibly parameterized)</p>
-            <p class="record-count">57 records</p>
+        <h3><a href="relationships/projected_distinguishing_range_combinatorial_eluder_dimension.html" class="table-title-link">Projected Distinguishing Range / Combinatorial Eluder Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Distinguishing Range / Combinatorial Eluder Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The exact universal inequality $\mathrm R^p\ge\mathrm{Edim}$ is false. This finite strict counterexample does not refute an affine comparison.</p></div>
+<p><strong>Witness: </strong><a href="classes/eluder_range_reverse_separation.html">Reverse Eluder--Range Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+
+
+
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The database-owned values on $\mathcal D_{\mathrm{RE}}=\{000,001,011,110\}$ are $\mathrm R^p=2$ and $\mathrm{Edim}=3$. Their full proofs are the corresponding value records and generated survey value proofs.</p></div>
+
+
+
+
         </div>
-        
-        <div class="table-card">
-            <h3><a href="parameters/index.html">Parameters</a></h3>
-            <p>Parameters measuring the size of set families</p>
-            <p class="record-count">108 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="relationships/index.html">Relationships</a></h3>
-            <p>Relationships between parameters</p>
-            <p class="record-count">505 records</p>
-        </div>
-        
-        <div class="table-card">
-            <h3><a href="values/index.html">Values</a></h3>
-            <p>Values assigned to parameters for specific classes</p>
-            <p class="record-count">1122 records</p>
-        </div>
-        
     </div>
     
         </main>

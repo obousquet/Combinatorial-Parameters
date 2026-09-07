@@ -1,0 +1,11 @@
+{
+  "id": 1190,
+  "name": "Combinatorial Eluder Dimension of the Reverse Eluder--Range Separation",
+  "short_name": "combinatorial_eluder_dimension_eluder_range_reverse_separation",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "class_id": "#classes/eluder_range_reverse_separation",
+  "value": "$3$",
+  "status": "established",
+  "proof": "Anchor at 000 and query x_1,x_2,x_3 in that order, with witness concepts 110,011,001 respectively. Each witness differs at its own queried coordinate and agrees with 000 at every earlier coordinate. This is an eluder sequence of length three. No coordinate can repeat in such a sequence, so the three-coordinate domain also gives the matching upper bound.",
+  "references": "Direct sequence; independently replayed by sync/verify_upper_branch_comparisons.py."
+}

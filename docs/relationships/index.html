@@ -802,6 +802,34 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-30" style="position:relative;">
+        
+        <h3><a href="relationships/star_number_proper_ordered_sample_compression.html" class="table-title-link">Star number / Proper Ordered Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Star number / Proper Ordered Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/star_number.html">Star number</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class, $\mathrm S\ge\mathrm{pOSC}$. Every proper hypothesis order admits this width bound: a minimal key preserving its first consistent hypothesis forms a star. This is a direct proof, not an attribution of this comparison to the order-compression paper.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>On the n singletons plus the empty concept, star number is n and proper ordered sample compression is one. Thus no reverse affine bound is possible as n tends to infinity. The key-only proper order scheme is replayed by sync/verify_upper_branch_comparisons.py.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: prop:proper-order-star.</p></div>
+
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-31" style="position:relative;">
         
         <h3><a href="relationships/proper_ordered_sample_compression_order_sample_compression.html" class="table-title-link">Proper Ordered Sample Compression / Order Sample Compression</a></h3>
@@ -10574,6 +10602,34 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-520" style="position:relative;">
+        
+        <h3><a href="relationships/combinatorial_eluder_dimension_proper_equivalence_queries_complexity.html" class="table-title-link">Combinatorial Eluder Dimension / Proper Equivalence Queries</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension / Proper Equivalence Queries</p>
+<p><strong>Parameter 1: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class, $\mathrm{Edim}\ge Q_{\mathrm{peq}}$. A learner that always proposes a currently consistent hypothesis meets this bound, including a possible successful final query; it stops once the target is uniquely identified.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>For n singletons plus the empty concept, combinatorial eluder dimension is n while proper equivalence queries equal one. The ratio is unbounded. See the database-owned endpoint proofs and sync/verify_upper_branch_comparisons.py.</p></div>
+
+
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: prop:proper-queries-eluder.</p></div>
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
@@ -14174,35 +14230,27 @@
         </div>
     </div>
     
-                </div>
-            </section>
+    <div class="table-card" id="math-521" style="position:relative;">
         
-            <section class="relationship-status-section relationship-status-other">
-                <h2>Unresolved relationships</h2>
-                <p>Conjectured, open, or still-to-be-verified records.</p>
-                <div class="table-grid">
-                    
-    <div class="table-card" id="math-30" style="position:relative;">
-        
-        <h3><a href="relationships/star_number_proper_ordered_sample_compression.html" class="table-title-link">Star number / Proper Ordered Sample Compression</a></h3>
+        <h3><a href="relationships/projected_distinguishing_range_combinatorial_eluder_dimension.html" class="table-title-link">Projected Distinguishing Range / Combinatorial Eluder Dimension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Star number / Proper Ordered Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/star_number.html">Star number</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+        <p><strong>Name: </strong>Projected Distinguishing Range / Combinatorial Eluder Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
 <p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
 
 
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>No source or proof for this universal comparison has yet been verified. The order-compression paper establishes links to recursive teaching, but does not state this star-number comparison.</p></div>
+<strong>Details:</strong><div class="text-field"><p>The exact universal inequality $\mathrm R^p\ge\mathrm{Edim}$ is false. This finite strict counterexample does not refute an affine comparison.</p></div>
+<p><strong>Witness: </strong><a href="classes/eluder_range_reverse_separation.html">Reverse Eluder--Range Separation Class</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
 
-<p><strong>Witness Strength:</strong> </p>
 
 
-
-<p><strong>Status:</strong> Needs verification</p>
-
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The database-owned values on $\mathcal D_{\mathrm{RE}}=\{000,001,011,110\}$ are $\mathrm R^p=2$ and $\mathrm{Edim}=3$. Their full proofs are the corresponding value records and generated survey value proofs.</p></div>
 
 
 

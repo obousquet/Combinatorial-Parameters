@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-30" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1189" style="position:relative;">
         
-        <h3><a href="relationships/star_number_proper_ordered_sample_compression.html" class="table-title-link">Star number / Proper Ordered Sample Compression</a></h3>
+        <h3><a href="values/proper_ordered_sample_compression_singletons_plus_empty_set.html" class="table-title-link">Proper Ordered Sample Compression of Singletons plus Empty Set</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Star number / Proper Ordered Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/star_number.html">Star number</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every nonempty finite binary class, $\mathrm S\ge\mathrm{pOSC}$. Every proper hypothesis order admits this width bound: a minimal key preserving its first consistent hypothesis forms a star. This is a direct proof, not an attribution of this comparison to the order-compression paper.</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>On the n singletons plus the empty concept, star number is n and proper ordered sample compression is one. Thus no reverse affine bound is possible as n tends to infinity. The key-only proper order scheme is replayed by sync/verify_upper_branch_comparisons.py.</p></div>
-
-
+        <p><strong>Name: </strong>Proper Ordered Sample Compression of Singletons plus Empty Set</p>
+<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For n>=1; the zero-coordinate singleton class has value zero.</p>
 <p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: prop:proper-order-star.</p></div>
-
-
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Order the empty concept first, followed by the singleton concepts in any order. A realizable sample with no positive label has the empty concept as its first consistent hypothesis and compresses to the empty sample. Otherwise its unique positive example is at some i; retaining just this labeled example makes the singleton {i} the first (and only) consistent hypothesis. The decoder depends only on that retained labeled key. Hence the scheme is proper and ordered with width one. Width zero cannot decode both full samples of the empty concept and a singleton, so the value is exactly one for n&gt;=1.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct proper-order construction; replayed by sync/verify_upper_branch_comparisons.py.</p></div>
 
         </div>
     </div>

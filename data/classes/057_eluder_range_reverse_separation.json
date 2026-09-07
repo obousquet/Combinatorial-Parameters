@@ -1,0 +1,9 @@
+{
+  "id": 57,
+  "name": "Reverse Eluder--Range Separation Class",
+  "short_name": "eluder_range_reverse_separation",
+  "symbol": "\\mathcal D_{\\mathrm{RE}}",
+  "graph_label": "Reverse E/R",
+  "definition": "On the ambient domain $X=\\{x_1,x_2,x_3\\}$, let $\\mathcal D_{\\mathrm{RE}}=\\{000,001,011,110\\}\\subseteq\\{0,1\\}^{X}$, with bits written in the order $x_1,x_2,x_3$. These four binary functions are all the concepts, and there are no additional coordinates.",
+  "comments": "Combinatorial eluder dimension is three, whereas projected distinguishing range is two. Together with the existing Eluder--Range Separation Class this refutes both exact universal dominations. These two finite strict examples do not establish affine incomparability or unbounded ratios."
+}

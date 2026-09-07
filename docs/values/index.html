@@ -19128,6 +19128,57 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1189" style="position:relative;">
+        
+        <h3><a href="values/proper_ordered_sample_compression_singletons_plus_empty_set.html" class="table-title-link">Proper Ordered Sample Compression of Singletons plus Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Ordered Sample Compression of Singletons plus Empty Set</p>
+<p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_ordered_sample_compression.html">Proper Ordered Sample Compression</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Details: </strong>For n>=1; the zero-coordinate singleton class has value zero.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Order the empty concept first, followed by the singleton concepts in any order. A realizable sample with no positive label has the empty concept as its first consistent hypothesis and compresses to the empty sample. Otherwise its unique positive example is at some i; retaining just this labeled example makes the singleton {i} the first (and only) consistent hypothesis. The decoder depends only on that retained labeled key. Hence the scheme is proper and ordered with width one. Width zero cannot decode both full samples of the empty concept and a singleton, so the value is exactly one for n&gt;=1.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct proper-order construction; replayed by sync/verify_upper_branch_comparisons.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1190" style="position:relative;">
+        
+        <h3><a href="values/combinatorial_eluder_dimension_eluder_range_reverse_separation.html" class="table-title-link">Combinatorial Eluder Dimension of the Reverse Eluder--Range Separation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension of the Reverse Eluder--Range Separation</p>
+<p><strong>Class: </strong><a href="classes/eluder_range_reverse_separation.html">Reverse Eluder--Range Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Anchor at 000 and query x_1,x_2,x_3 in that order, with witness concepts 110,011,001 respectively. Each witness differs at its own queried coordinate and agrees with 000 at every earlier coordinate. This is an eluder sequence of length three. No coordinate can repeat in such a sequence, so the three-coordinate domain also gives the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct sequence; independently replayed by sync/verify_upper_branch_comparisons.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1191" style="position:relative;">
+        
+        <h3><a href="values/projected_distinguishing_range_eluder_range_reverse_separation.html" class="table-title-link">Projected Distinguishing Range of the Reverse Eluder--Range Separation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Distinguishing Range of the Reverse Eluder--Range Separation</p>
+<p><strong>Class: </strong><a href="classes/eluder_range_reverse_separation.html">Reverse Eluder--Range Separation Class</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On coordinates x_2,x_3 the four concepts have the distinct traces 00,01,11,10. Thus two coordinates distinguish the full class, whereas one binary coordinate cannot distinguish four concepts. Its distinguishing range is two. Every proper projection has at most two coordinates and therefore distinguishing range at most two; the full projection attains two. Maximizing over all projections proves the value.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct projection argument; independently replayed by sync/verify_upper_branch_comparisons.py.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>
