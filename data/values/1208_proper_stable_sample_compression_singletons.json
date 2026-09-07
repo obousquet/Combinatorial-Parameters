@@ -1,0 +1,13 @@
+{
+  "id": 1208,
+  "name": "Proper Stable Sample Compression of Singletons",
+  "short_name": "proper_stable_sample_compression_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/proper_stable_sample_compression",
+  "value": "$\\Theta(n)$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "For $n\\ge1$, $\\lceil(n-1)/2\\rceil\\le\\mathrm{psUSC}(\\mathcal S_n)\\le n-1=Q_{\\mathrm{peq}}(\\mathcal S_n)$. The value is zero at $n=1$. The upper scheme preserves the key itself. No exact formula for general $n$ is claimed. Together with ordinary proper unlabeled compression two for $n\\ge3$, this gives an unbounded cost of stability even among classes admitting a proper stable scheme.",
+  "proof": "Identify each singleton with its index in $[n]$. For $n=1$ use the empty key and the sole concept. For $n\\ge2$, fix $\\rho(\\varnothing)=1$, $\\rho(\\{i\\})=i$ for $i\\ge2$, and $\\rho([r-1])=r$ for $2\\le r\\le n$; these prescriptions do not conflict. Send unused keys to 1. If a sample contains its positive point at 1, retain nothing; if its positive point is $i\\ge2$, retain $\\{i\\}$. An all-negative realizable sample on $A\\subsetneq[n]$ has a least missing point $r$; retain $[r-1]\\subseteq A$ and reconstruct singleton $r$. Each reconstruction is proper and consistent, and the key has size at most $n-1$. In the positive case $i\\ge2$, every intermediate sample retaining the key still has positive point $i$. In the positive-at-1 case every subsample either retains that positive or has only negatives away from 1, so still selects the empty key. In the all-negative case an intermediate sample containing $[r-1]$ still omits $r$, so its least missing point remains $r$. Thus the key, and hence reconstruction, is stable on every interval. Forgetting the retained labels in a labeled decoder simulates any unlabeled scheme, so psUSC is at least psLSC; Section \\ref{val:proper_stable_labeled_sample_compression_singletons} gives the lower bound $\\lceil(n-1)/2\\rceil$. The exact query value $n-1$ is recorded in Section \\ref{val:proper_equivalence_queries_complexity_singletons}.",
+  "references": "Explicit prefix decoder; the database-owned proper stable labeled compression lower bound and proper-query value."
+}

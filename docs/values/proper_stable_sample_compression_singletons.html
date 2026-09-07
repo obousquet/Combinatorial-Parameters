@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-443" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1208" style="position:relative;">
         
-        <h3><a href="relationships/proper_stable_sample_compression_projected_noclashing_teaching_dimension.html" class="table-title-link">Proper Stable Sample Compression / Projected No-Clashing Teaching Dimension</a></h3>
+        <h3><a href="values/proper_stable_sample_compression_singletons.html" class="table-title-link">Proper Stable Sample Compression of Singletons</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Proper Stable Sample Compression / Projected No-Clashing Teaching Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The stable-compression lower bound applies directly; proper reconstruction is an additional restriction.</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>The singleton family strengthens the former strict full-cube witness: $\mathrm{psUSC}\ge\lceil(n-1)/2\rceil$ with a finite stable upper scheme, whereas $\mathrm{NCTD}^{p}=1$ for $n\ge2$. The ratio diverges. See <a href="values/proper_stable_sample_compression_singletons.html">Proper Stable Sample Compression of Singletons</a> and <a href="values/projected_noclashing_teaching_dimension_singletons.html">Projected No-Clashing Teaching Dimension of Singletons</a>.</p></div>
-
-
+        <p><strong>Name: </strong>Proper Stable Sample Compression of Singletons</p>
+<p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For $n\ge1$, $\lceil(n-1)/2\rceil\le\mathrm{psUSC}(\mathcal S_n)\le n-1=Q_{\mathrm{peq}}(\mathcal S_n)$. The value is zero at $n=1$. The upper scheme preserves the key itself. No exact formula for general $n$ is claimed. Together with ordinary proper unlabeled compression two for $n\ge3$, this gives an unbounded cost of stability even among classes admitting a proper stable scheme.</p>
 <p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Identify each singleton with its index in $[n]$. For $n=1$ use the empty key and the sole concept. For $n\ge2$, fix $\rho(\varnothing)=1$, $\rho(\{i\})=i$ for $i\ge2$, and $\rho([r-1])=r$ for $2\le r\le n$; these prescriptions do not conflict. Send unused keys to 1. If a sample contains its positive point at 1, retain nothing; if its positive point is $i\ge2$, retain $\{i\}$. An all-negative realizable sample on $A\subsetneq[n]$ has a least missing point $r$; retain $[r-1]\subseteq A$ and reconstruct singleton $r$. Each reconstruction is proper and consistent, and the key has size at most $n-1$. In the positive case $i\ge2$, every intermediate sample retaining the key still has positive point $i$. In the positive-at-1 case every subsample either retains that positive or has only negatives away from 1, so still selects the empty key. In the all-negative case an intermediate sample containing $[r-1]$ still omits $r$, so its least missing point remains $r$. Thus the key, and hence reconstruction, is stable on every interval. Forgetting the retained labels in a labeled decoder simulates any unlabeled scheme, so psUSC is at least psLSC; Section \ref{val:proper_stable_labeled_sample_compression_singletons} gives the lower bound $\lceil(n-1)/2\rceil$. The exact query value $n-1$ is recorded in Section \ref{val:proper_equivalence_queries_complexity_singletons}.</p></div>
+<strong>References:</strong><div class="text-field"><p>Explicit prefix decoder; the database-owned proper stable labeled compression lower bound and proper-query value.</p></div>
 
         </div>
     </div>

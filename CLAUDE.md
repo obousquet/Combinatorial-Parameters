@@ -208,8 +208,10 @@ python3 sync/verify_projected_nctd_compression_gap.py
 # Hollow-star/proper-compression bounds and Three-Code correction regression.
 python3 sync/verify_proper_compression_covc.py
 
-# Unlabeled singleton decoders: improper size one, proper size two for n>=3.
-# Reject omitted-sign access and exhaust all 81 proper size-one maps at n=3.
+# Unlabeled singleton decoders: improper size one, proper size two for n>=3,
+# and a proper exact-key-stable prefix scheme of width n-1. The stable value
+# is only Theta(n), not an asserted exact formula. Replays all stability
+# intervals and guards four unbounded witnesses; rejects the unstable encoder.
 python3 sync/verify_singleton_unlabeled_compression.py
 
 # Proper width-three CCT decoder: all partial samples, two independent replays.

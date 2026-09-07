@@ -2,7 +2,7 @@
 """DB-owned singleton USC/pUSC corrections; direct, bounded, solver-free replay.
 
 Unlabeled keys are integer support masks, never (support, labels) pairs.
-The general proofs live in values #477/#478, not in a saved decoder table.
+The general proofs live in values #477/#478/#1208, not in a saved decoder table.
 """
 
 from itertools import product
@@ -51,6 +51,64 @@ def proper_encode(n: int, mask: int, labels: int) -> int:
     if missing == 1:
         return 1
     return 1 | (1 << (missing - 1))
+
+
+def stable_decode(n: int, key: int) -> int:
+    if not key:
+        return 1
+    if key.bit_count() == 1 and key != 1:
+        return key
+    if key & (key + 1) == 0 and key < (1 << n) - 1:
+        return key + 1
+    return 1
+
+
+def stable_encode(n: int, mask: int, labels: int) -> int:
+    if labels:
+        return 0 if labels == 1 else labels
+    missing = next(i for i in range(n) if not mask & (1 << i))
+    return (1 << missing) - 1
+
+
+def verify_stable() -> None:
+    checked = intervals = 0
+    for n in range(1, 9):
+        words = concepts(n)
+        for mask, labels in samples(n):
+            key = stable_encode(n, mask, labels)
+            output = stable_decode(n, key)
+            assert key & mask == key and key.bit_count() <= n - 1
+            assert output in words and output & mask == labels
+            # Independent literal construction of the selected prefix.
+            observed = {i for i in range(n) if mask >> i & 1}
+            positive = {i for i in observed if labels >> i & 1}
+            expected = ((positive if positive != {0} else set()) if positive else
+                        set(range(min(set(range(n)) - observed))))
+            assert {i for i in range(n) if key >> i & 1} == expected
+            extra = mask ^ key
+            while True:
+                t = key | extra
+                assert stable_encode(n, t, labels & t) == key
+                assert stable_decode(n, stable_encode(n, t, labels & t)) == output
+                intervals += 1
+                if not extra:
+                    break
+                extra = (extra - 1) & (mask ^ key)
+            checked += 1
+    record = json.loads((DATA / 'values/1208_proper_stable_sample_compression_singletons.json').read_text())
+    assert record['value'] == r'$\Theta(n)$' and record['value_class'] == 'omega_n'
+    assert 'val:proper_stable_labeled_sample_compression_singletons' in record['proof']
+    for rid in (154, 157, 294, 443):
+        relation = json.loads(next((DATA / 'relationships').glob(f'{rid}_*.json')).read_text())
+        assert relation['status'] == 'established'
+        assert relation['witness'] == '#classes/singletons'
+        assert relation['witness_strength'] == 'unbounded'
+    # The older width-two decoder is valid but its chosen encoder is unstable.
+    assert proper_encode(4, 7, 0) == 5
+    assert proper_decode(4, proper_encode(4, 7, 0)) == 8
+    assert proper_decode(4, proper_encode(4, 5, 0)) == 2
+    print(f'Stable singleton scheme: {checked} samples, {intervals} full intervals; '
+          'four unbounded witnesses; unstable width-two negative control.')
 
 
 def three_domain_control() -> None:
@@ -110,6 +168,7 @@ def main() -> None:
     assert negative_output & 1 != 1  # Fails the positive sample on {0}.
     three_domain_control()
     verify_records()
+    verify_stable()
     print(f"PASS: {checked} sample pairs through n=8; correct zero/one/two boundaries; "
           "discarded-label corruption detected; three DB records guarded")
 

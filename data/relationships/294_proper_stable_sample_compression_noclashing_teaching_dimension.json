@@ -10,7 +10,7 @@
   "references": "\\cite{KSZ2019}",
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
   "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star.",
-  "witness": "#classes/three_code_class",
-  "witness_strength": "strict",
-  "witness_verification": "The established values on #classes/three_code_class are $2$ and $1$, respectively, so the reverse exact inequality fails. These finite values do not establish an unbounded affine gap."
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "The singleton family strengthens the former strict three-code witness: $\\mathrm{psUSC}\\ge\\lceil(n-1)/2\\rceil$ with a finite stable upper scheme, whereas $\\mathrm{NCTD}=1$ for $n\\ge2$. The ratio diverges. See #values/proper_stable_sample_compression_singletons and #values/noclashing_teaching_dimension_singletons."
 }

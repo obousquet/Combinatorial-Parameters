@@ -1,9 +1,9 @@
 {
   "counts": {
-    "unbounded": 239,
-    "strict": 85,
+    "unbounded": 243,
+    "strict": 82,
     "equivalence": 17,
-    "missing": 31,
+    "missing": 30,
     "unclassified": 7,
     "incomparable": 103
   },
@@ -1784,40 +1784,6 @@
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
-      "id": 154,
-      "short_name": "proper_stable_sample_compression_stable_unlabeled_complexity",
-      "category": "strict",
-      "witness": "#classes/three_code_class",
-      "reverse_affine_path": null,
-      "reverse_exact_path": null,
-      "witness_search_if_scopes_match": "no_reverse_bound_found",
-      "unbounded_candidates": [],
-      "strict_candidates": [
-        {
-          "class": "#classes/three_code_class",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            792,
-            791
-          ]
-        }
-      ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 157,
-      "short_name": "proper_stable_sample_compression_proper_unlabeled_sample_compression",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "reverse_exact_path": null,
-      "witness_search_if_scopes_match": "no_reverse_bound_found",
-      "unbounded_candidates": [],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
       "id": 158,
       "short_name": "stable_labeled_sample_compression_labeled_sample_compression",
       "category": "strict",
@@ -2669,28 +2635,6 @@
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
-      "id": 294,
-      "short_name": "proper_stable_sample_compression_noclashing_teaching_dimension",
-      "category": "strict",
-      "witness": "#classes/three_code_class",
-      "reverse_affine_path": null,
-      "reverse_exact_path": null,
-      "witness_search_if_scopes_match": "no_reverse_bound_found",
-      "unbounded_candidates": [],
-      "strict_candidates": [
-        {
-          "class": "#classes/three_code_class",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            792,
-            818
-          ]
-        }
-      ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
       "id": 297,
       "short_name": "sign_rank_spherical_dimension_affine",
       "category": "strict",
@@ -3038,18 +2982,6 @@
           ]
         }
       ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 443,
-      "short_name": "proper_stable_sample_compression_projected_noclashing_teaching_dimension",
-      "category": "strict",
-      "witness": "#classes/full_cube",
-      "reverse_affine_path": null,
-      "reverse_exact_path": null,
-      "witness_search_if_scopes_match": "no_reverse_bound_found",
-      "unbounded_candidates": [],
-      "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {

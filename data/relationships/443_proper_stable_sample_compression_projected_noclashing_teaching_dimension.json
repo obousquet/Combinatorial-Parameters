@@ -10,7 +10,7 @@
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
   "proof_source": "Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.",
   "references": "\\cite{KSZ2019}",
-  "witness": "#classes/full_cube",
-  "witness_strength": "strict",
-  "witness_verification": "For the full n-cube, proper stable unlabeled compression is n while \\(\\mathrm{NCTD}^{p}=\\lceil n/2\\rceil\\), so the inequality is strict for every \\(n\\ge3\\)."
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded",
+  "witness_verification": "The singleton family strengthens the former strict full-cube witness: $\\mathrm{psUSC}\\ge\\lceil(n-1)/2\\rceil$ with a finite stable upper scheme, whereas $\\mathrm{NCTD}^{p}=1$ for $n\\ge2$. The ratio diverges. See #values/proper_stable_sample_compression_singletons and #values/projected_noclashing_teaching_dimension_singletons."
 }
