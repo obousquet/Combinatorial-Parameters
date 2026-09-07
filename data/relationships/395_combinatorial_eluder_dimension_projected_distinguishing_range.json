@@ -6,7 +6,7 @@
   "parameter_2_id": "#parameters/projected_distinguishing_range",
   "relationship_type": "larger",
   "status": "refuted",
-  "details": "The candidate universal inequality $\\mathrm{Edim}\\ge\\mathrm R^p$ is false. More strongly, no absolute constants C,D give $\\mathrm R^p\\le C\\mathrm{Edim}+D$ on all finite binary classes. The paired-code family has $\\mathrm R^p=2^n$ and $\\mathrm{Edim}\\le8n+3$. The old eight-concept class with values four and five remains a valid strict finite witness. This does not settle the opposite affine comparison or exclude every nonlinear bound.",
+  "details": "The candidate universal inequality $\\mathrm{Edim}\\ge\\mathrm R^p$ is false. More strongly, no absolute constants C,D give $\\mathrm R^p\\le C\\mathrm{Edim}+D$ on all finite binary classes. The paired-code family has $\\mathrm R^p=2^n$ and $\\mathrm{Edim}\\le8n+3$. The old eight-concept class with values four and five remains a valid strict finite witness. The opposite affine direction is separately refuted by the triangular-code family; the combined affine-incomparability statement is relationship 522. Nonlinear bounds are not excluded.",
   "latex_proof_label": "cor:paired-code-range-separation",
   "proof_source": "Survey cor:paired-code-range-separation, using prop:paired-code-eluder and the database-owned paired-code values.",
   "witness": "#classes/paired_code_separation",

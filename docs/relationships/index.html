@@ -13410,6 +13410,35 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-522" style="position:relative;">
+        
+        <h3><a href="relationships/combinatorial_eluder_dimension_projected_distinguishing_range_incomparable.html" class="table-title-link">Combinatorial Eluder Dimension / Projected Distinguishing Range (Affine Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension / Projected Distinguishing Range (Affine Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal affine upper bound in terms of the other on finite binary classes. These are unbounded-ratio witnesses with both parameters growing, not bounded-versus-unbounded witnesses. In fact the established size bounds imply $\mathrm{Edim}\le2^{\mathrm R^p}-1$ and $\mathrm R^p\le2^{\mathrm{Edim}}-1$, so functional incomparability is false. These transitive exponential consequences are explained in the survey, not inserted as duplicate direct relationships.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>On <a href="classes/triangular_code_separation.html">Triangular-Code Separation Family</a>, Edim is 2^n and $n+1\le\mathrm R^p\le6n+5$. Thus Edim/Rp tends to infinity. The lower bound confirms that the smaller parameter is not bounded on this family.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>On <a href="classes/paired_code_separation.html">Paired-Code Separation Family</a>, projected distinguishing range is 2^n and $n+1\le\mathrm{Edim}\le8n+3$. Thus Rp/Edim tends to infinity. The lower bound confirms that the smaller parameter is not bounded on this family.</p></div>
+<p><strong>Incomparability Strength:</strong> Affine incomparability (unbounded ratios)</p>
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the survey: cor:eluder-range-affine-incomparable, using prop:paired-code-eluder, prop:triangular-code-range and the database-owned endpoint proofs.</p></div>
+
+
+
+        </div>
+    </div>
+    
                 </div>
             </section>
         
@@ -13963,7 +13992,7 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The candidate universal inequality $\mathrm{Edim}\ge\mathrm R^p$ is false. More strongly, no absolute constants C,D give $\mathrm R^p\le C\mathrm{Edim}+D$ on all finite binary classes. The paired-code family has $\mathrm R^p=2^n$ and $\mathrm{Edim}\le8n+3$. The old eight-concept class with values four and five remains a valid strict finite witness. This does not settle the opposite affine comparison or exclude every nonlinear bound.</p></div>
+<strong>Details:</strong><div class="text-field"><p>The candidate universal inequality $\mathrm{Edim}\ge\mathrm R^p$ is false. More strongly, no absolute constants C,D give $\mathrm R^p\le C\mathrm{Edim}+D$ on all finite binary classes. The paired-code family has $\mathrm R^p=2^n$ and $\mathrm{Edim}\le8n+3$. The old eight-concept class with values four and five remains a valid strict finite witness. The opposite affine direction is separately refuted by the triangular-code family; the combined affine-incomparability statement is relationship 522. Nonlinear bounds are not excluded.</p></div>
 <p><strong>Witness: </strong><a href="classes/paired_code_separation.html">Paired-Code Separation Family</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 <strong>Witness Verification:</strong><div class="text-field"><p>The database-owned values give Rp/Edim &gt;= 2^n/(8n+3), which tends to infinity. This is an unbounded ratio of finite values, not a nonexistence convention or merely a growing additive difference. The finite paired-word identities and probabilistic exponent are replayed by sync/verify_paired_code_separation.py.</p></div>
@@ -14243,15 +14272,15 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>The exact universal inequality $\mathrm R^p\ge\mathrm{Edim}$ is false. This finite strict counterexample does not refute an affine comparison.</p></div>
-<p><strong>Witness: </strong><a href="classes/eluder_range_reverse_separation.html">Reverse Eluder--Range Separation Class</a></p>
-<p><strong>Witness Strength:</strong> Strict separation</p>
-
+<strong>Details:</strong><div class="text-field"><p>The exact universal inequality $\mathrm R^p\ge\mathrm{Edim}$ is false. More strongly, no absolute constants C,D give $\mathrm{Edim}\le C\mathrm R^p+D$ on all finite binary classes: the triangular-code family has Edim equal to 2^n and projected distinguishing range at most 6n+5. The earlier four-concept class with values two and three remains a valid strict witness. This does not exclude all nonlinear bounds.</p></div>
+<p><strong>Witness: </strong><a href="classes/triangular_code_separation.html">Triangular-Code Separation Family</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>The database-owned values give Edim/Rp &gt;= 2^n/(6n+5), which tends to infinity. All values are finite. The exact event/prefix probabilities and essential-projection characterization are replayed by sync/verify_triangular_range_separation.py.</p></div>
 
 
 <p><strong>Status:</strong> Refuted</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The database-owned values on $\mathcal D_{\mathrm{RE}}=\{000,001,011,110\}$ are $\mathrm R^p=2$ and $\mathrm{Edim}=3$. Their full proofs are the corresponding value records and generated survey value proofs.</p></div>
 
+<strong>Full Proof:</strong><div class="text-field"><p>Survey cor:eluder-range-affine-incomparable, using prop:triangular-code-range and the database-owned triangular-code endpoint values.</p></div>
 
 
 

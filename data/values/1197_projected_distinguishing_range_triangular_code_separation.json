@@ -1,0 +1,13 @@
+{
+  "id": 1197,
+  "name": "Projected Distinguishing Range of the Triangular-Code Family",
+  "short_name": "projected_distinguishing_range_triangular_code_separation",
+  "parameter_id": "#parameters/projected_distinguishing_range",
+  "class_id": "#classes/triangular_code_separation",
+  "value": "$\\Theta(n)$",
+  "value_class": "omega_n",
+  "status": "established",
+  "details": "For every n>=1, $n+1\\le\\mathrm R^p(\\mathcal C^{\\triangle}_n)\\le6n+5$. Only the asymptotic order, not an exact formula, is asserted.",
+  "proof": "Proposition \\ref{prop:triangular-code-range} proves the upper bound 6n+5 using the absence of an essential projection of size 6n+6 and the general characterization in Lemma \\ref{lem:essential-range-projections}. For the lower bound, Section \\ref{val:size_triangular_code_separation} gives exactly 2^n+1 distinct concepts. Any d binary coordinates have at most 2^d traces, so distinguishing this full class requires d>=ceil(log_2(2^n+1))=n+1. The full projection is included in the maximum defining projected distinguishing range.",
+  "references": "Survey prop:triangular-code-range and direct binary trace counting."
+}

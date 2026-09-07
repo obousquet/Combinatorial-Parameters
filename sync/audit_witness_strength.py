@@ -152,6 +152,7 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
         if relationship.get("relationship_type") == "incomparable":
             first_witness = relationship.get("parameter_1_larger_witness")
             second_witness = relationship.get("parameter_2_larger_witness")
+            scope = relationship.get("incomparability_strength")
             report["incomparable"].append(
                 {
                     "id": relationship["id"],
@@ -159,6 +160,8 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
                     "status": relationship.get("status"),
                     "parameter_1_larger_witness": first_witness,
                     "parameter_2_larger_witness": second_witness,
+                    "incomparability_strength": scope,
+                    "verification_method": "recorded two-direction certificate; strength is not inferred from prose",
                     # These witnesses are generally literature families rather
                     # than a single finite benchmark row. Their explicit
                     # descriptions plus a citation or self-contained proof are
@@ -169,7 +172,9 @@ def audit(data_dir: Path) -> dict[str, list[dict[str, Any]]]:
                     "verified": bool(
                         first_witness
                         and second_witness
-                        and (relationship.get("references") or relationship.get("proof"))
+                        and scope in (None, "affine", "functional")
+                        and (relationship.get("references") or relationship.get("proof")
+                             or (relationship.get("latex_proof_label") and relationship.get("proof_source")))
                     ),
                 }
             )
@@ -235,6 +240,10 @@ def main() -> None:
                 print(f"Unclassified witnesses: {len(rows)} ({candidates} mechanically classifiable candidates)")
             elif category == "incomparable":
                 print(f"Declared incomparable pairs: {len(rows)} ({confirmed} with both directional witnesses recorded; {unresolved} incomplete)")
+                scopes = {scope: sum(row.get("incomparability_strength") == scope for row in rows)
+                          for scope in ("affine", "functional", None)}
+                print(f"  Explicit scopes: {scopes['affine']} affine, {scopes['functional']} functional; "
+                      f"{scopes[None]} legacy unspecified (not automatically classified)")
             else:
                 print(f"Declared {category} witnesses: {len(rows)} ({confirmed} supported by endpoint checks or recorded certificates; {unresolved} need review)")
                 for row in rows:

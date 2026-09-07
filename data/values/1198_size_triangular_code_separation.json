@@ -1,0 +1,11 @@
+{
+  "id": 1198,
+  "name": "Size of the Triangular-Code Family",
+  "short_name": "size_triangular_code_separation",
+  "parameter_id": "#parameters/size",
+  "class_id": "#classes/triangular_code_separation",
+  "value": "$2^n+1$",
+  "status": "established",
+  "proof": "There are N=2^n triangular rows and the zero word. For i<j, coordinate i separates h_i from h_j, since their values are one and zero. Each h_i also differs from the zero word at its diagonal coordinate i. Hence all N+1 displayed words are distinct.",
+  "references": "Direct triangular-matrix argument."
+}

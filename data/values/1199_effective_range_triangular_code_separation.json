@@ -1,0 +1,11 @@
+{
+  "id": 1199,
+  "name": "Effective Range of the Triangular-Code Family",
+  "short_name": "effective_range_triangular_code_separation",
+  "parameter_id": "#parameters/effective_range",
+  "class_id": "#classes/triangular_code_separation",
+  "value": "$2^n$",
+  "status": "established",
+  "proof": "The domain has N=2^n coordinates. Coordinate i takes value one on h_i and zero on the all-zero word, so every domain coordinate is varying and contributes to the effective range.",
+  "references": "Direct diagonal-coordinate argument."
+}

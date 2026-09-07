@@ -1,0 +1,11 @@
+{
+  "id": 1196,
+  "name": "Combinatorial Eluder Dimension of the Triangular-Code Family",
+  "short_name": "combinatorial_eluder_dimension_triangular_code_separation",
+  "parameter_id": "#parameters/combinatorial_eluder_dimension",
+  "class_id": "#classes/triangular_code_separation",
+  "value": "$2^n$",
+  "status": "established",
+  "proof": "Anchor at the all-zero word. Query coordinates 1,...,N in that order and use h_i as the witness at coordinate i. Its diagonal bit is one and its earlier bits are all zero, so this is an eluder sequence of length N=2^n. Coordinates cannot repeat in an eluder sequence, because a later witness must agree with the anchor at each earlier coordinate. Thus the N-coordinate domain gives the matching upper bound.",
+  "references": "Direct diagonal sequence; admissibility and existence are proved in survey prop:triangular-code-range."
+}

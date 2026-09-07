@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
+        <title>Relationships between parameters - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
+            <h1>Relationships between parameters - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,23 +74,32 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-57" style="position:relative;">
+            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
+    <div class="table-card" id="math-522" style="position:relative;">
         
-        <h3><a href="classes/eluder_range_reverse_separation.html" class="table-title-link">Reverse Eluder--Range Separation Class</a></h3>
+        <h3><a href="relationships/combinatorial_eluder_dimension_projected_distinguishing_range_incomparable.html" class="table-title-link">Combinatorial Eluder Dimension / Projected Distinguishing Range (Affine Incomparable)</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Reverse Eluder--Range Separation Class</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal D_{\mathrm{RE}}">
-            \[\mathcal D_{\mathrm{RE}}\]
-        </div>
-    </div>
-    
-<strong>Definition:</strong><div class="text-field"><p>On the ambient domain $X=\{x_1,x_2,x_3\}$, let $\mathcal D_{\mathrm{RE}}=\{000,001,011,110\}\subseteq\{0,1\}^{X}$, with bits written in the order $x_1,x_2,x_3$. These four binary functions are all the concepts, and there are no additional coordinates.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>Combinatorial eluder dimension is three, whereas projected distinguishing range is two. Together with the existing Eluder--Range Separation Class this refutes both exact universal dominations. These two finite strict examples do not establish affine incomparability or unbounded ratios.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/combinatorial_eluder_dimension_eluder_range_reverse_separation.html'>Combinatorial Eluder Dimension of the Reverse Eluder--Range Separation</a></li><li><a href='values/projected_distinguishing_range_eluder_range_reverse_separation.html'>Projected Distinguishing Range of the Reverse Eluder--Range Separation</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension / Projected Distinguishing Range (Affine Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal affine upper bound in terms of the other on finite binary classes. These are unbounded-ratio witnesses with both parameters growing, not bounded-versus-unbounded witnesses. In fact the established size bounds imply $\mathrm{Edim}\le2^{\mathrm R^p}-1$ and $\mathrm R^p\le2^{\mathrm{Edim}}-1$, so functional incomparability is false. These transitive exponential consequences are explained in the survey, not inserted as duplicate direct relationships.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>On <a href="classes/triangular_code_separation.html">Triangular-Code Separation Family</a>, Edim is 2^n and $n+1\le\mathrm R^p\le6n+5$. Thus Edim/Rp tends to infinity. The lower bound confirms that the smaller parameter is not bounded on this family.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>On <a href="classes/paired_code_separation.html">Paired-Code Separation Family</a>, projected distinguishing range is 2^n and $n+1\le\mathrm{Edim}\le8n+3$. Thus Rp/Edim tends to infinity. The lower bound confirms that the smaller parameter is not bounded on this family.</p></div>
+<p><strong>Incomparability Strength:</strong> Affine incomparability (unbounded ratios)</p>
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Full proof in the survey: cor:eluder-range-affine-incomparable, using prop:paired-code-eluder, prop:triangular-code-range and the database-owned endpoint proofs.</p></div>
+
+
 
         </div>
     </div>

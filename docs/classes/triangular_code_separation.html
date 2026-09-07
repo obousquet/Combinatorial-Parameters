@@ -75,22 +75,22 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-57" style="position:relative;">
+    <div class="table-card" id="math-59" style="position:relative;">
         
-        <h3><a href="classes/eluder_range_reverse_separation.html" class="table-title-link">Reverse Eluder--Range Separation Class</a></h3>
+        <h3><a href="classes/triangular_code_separation.html" class="table-title-link">Triangular-Code Separation Family</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Reverse Eluder--Range Separation Class</p>
+        <p><strong>Name: </strong>Triangular-Code Separation Family</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal D_{\mathrm{RE}}">
-            \[\mathcal D_{\mathrm{RE}}\]
+        <div class="latex-equation" data-latex="\mathcal C^{\triangle}_n">
+            \[\mathcal C^{\triangle}_n\]
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>On the ambient domain $X=\{x_1,x_2,x_3\}$, let $\mathcal D_{\mathrm{RE}}=\{000,001,011,110\}\subseteq\{0,1\}^{X}$, with bits written in the order $x_1,x_2,x_3$. These four binary functions are all the concepts, and there are no additional coordinates.</p></div>
-<strong>Comments:</strong><div class="text-field"><p>Combinatorial eluder dimension is three, whereas projected distinguishing range is two. Together with the existing Eluder--Range Separation Class this refutes both exact universal dominations. These two finite strict examples do not establish affine incomparability or unbounded ratios.</p></div>
-<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/combinatorial_eluder_dimension_eluder_range_reverse_separation.html'>Combinatorial Eluder Dimension of the Reverse Eluder--Range Separation</a></li><li><a href='values/projected_distinguishing_range_eluder_range_reverse_separation.html'>Projected Distinguishing Range of the Reverse Eluder--Range Separation</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Related Relationships:</strong> <em>None</em></p></div>
+<strong>Definition:</strong><div class="text-field"><p>For an integer $n\ge1$, put $N=2^n$, $k=6n+6$ and $X=[N]=\{1,\ldots,N\}$. Choose bits $b_{ij}\in\{0,1\}$ for $1\le i<j\le N$, and define words $h_i\in\{0,1\}^{X}$ by $h_i(j)=0$ for $j<i$, $h_i(i)=1$, and $h_i(j)=b_{ij}$ for $j>i$. Let $h_{N+1}$ be the all-zero word, and write $H_b=\{h_1,\ldots,h_N,h_{N+1}\}$. Call the bit array <strong>admissible</strong> if there is no set $S\subseteq X$ of size $k$ such that, for every $x\in S$, there are $f,g\in H_b$ satisfying $$f(x)\ne g(x),\qquad f(y)=g(y)\quad\text{for all }y\in S\setminus\{x\}.$$ Choose the lexicographically first admissible array, ordering its entries by increasing $i$ and then increasing $j$, with $0<1$. The <strong>triangular-code separation family</strong> is $\mathcal C^{\triangle}_n=H_b$ for this selected array. The ambient domain is exactly $X$.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Admissible arrays exist for every n by the direct probabilistic proof in survey prop:triangular-code-range. The lexicographic rule defines a deterministic family, without an efficient construction claim. Eluder dimension is 2^n, while projected distinguishing range lies between n+1 and 6n+5. This separates in the opposite direction to the Paired-Code Separation Family. Both smaller parameters grow; this does not give bounded-versus-unbounded witnesses.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/combinatorial_eluder_dimension_triangular_code_separation.html'>Combinatorial Eluder Dimension of the Triangular-Code Family</a></li><li><a href='values/projected_distinguishing_range_triangular_code_separation.html'>Projected Distinguishing Range of the Triangular-Code Family</a></li><li><a href='values/size_triangular_code_separation.html'>Size of the Triangular-Code Family</a></li><li><a href='values/effective_range_triangular_code_separation.html'>Effective Range of the Triangular-Code Family</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/projected_distinguishing_range_combinatorial_eluder_dimension.html'>Projected Distinguishing Range / Combinatorial Eluder Dimension</a></li></ul></p></div>
 
         </div>
     </div>

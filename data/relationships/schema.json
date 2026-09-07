@@ -147,7 +147,7 @@
         "name": "parameter_1_larger_witness",
         "type": "text",
         "label": "Witness: Parameter 1 Larger",
-        "description": "For an incomparable pair, an explicit family on which parameter 1 is unbounded while parameter 2 stays bounded.",
+        "description": "Explicit separating family with parameter 1 larger. Functional incomparability requires parameter 2 bounded and parameter 1 unbounded; affine incomparability only requires their ratio to be unbounded. State the precise scope in the witness text.",
         "required": false,
         "rendered": true
     },
@@ -155,9 +155,22 @@
         "name": "parameter_2_larger_witness",
         "type": "text",
         "label": "Witness: Parameter 2 Larger",
-        "description": "For an incomparable pair, an explicit family on which parameter 2 is unbounded while parameter 1 stays bounded.",
+        "description": "Explicit separating family with parameter 2 larger. Functional incomparability requires parameter 1 bounded and parameter 2 unbounded; affine incomparability only requires their ratio to be unbounded. State the precise scope in the witness text.",
         "required": false,
         "rendered": true
+    },
+    {
+        "name": "incomparability_strength",
+        "type": "enum",
+        "label": "Incomparability Strength",
+        "hide_when_empty": true,
+        "description": "Optional explicit scope of an incomparable relationship. Affine: neither parameter has a universal affine upper bound in the other. Functional: both directions have bounded-versus-unbounded witnesses. Missing values are legacy unspecified scope; inspect the proof rather than inferring a strength.",
+        "required": false,
+        "rendered": true,
+        "enum": [
+            {"value": "affine", "display_name": "Affine incomparability (unbounded ratios)"},
+            {"value": "functional", "display_name": "Functional incomparability (bounded/unbounded witnesses)"}
+        ]
     },
     {
         "name": "status",

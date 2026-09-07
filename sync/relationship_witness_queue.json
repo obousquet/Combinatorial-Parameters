@@ -5,7 +5,7 @@
     "equivalence": 17,
     "missing": 30,
     "unclassified": 7,
-    "incomparable": 99
+    "incomparable": 100
   },
   "scope": "Every established direct record. Equalities and incomparabilities counted separately.",
   "caution": "Candidate growth ranks are leads, not certificates. Reverse paths require matching scope and positive affine coefficients. Exact paths use individually sufficient bounds on nonnegative parameters; compensating affine factors are not searched. Coefficient sharpness is not endpoint separation.",

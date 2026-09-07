@@ -19247,6 +19247,74 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1196" style="position:relative;">
+        
+        <h3><a href="values/combinatorial_eluder_dimension_triangular_code_separation.html" class="table-title-link">Combinatorial Eluder Dimension of the Triangular-Code Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial Eluder Dimension of the Triangular-Code Family</p>
+<p><strong>Class: </strong><a href="classes/triangular_code_separation.html">Triangular-Code Separation Family</a></p>
+<p><strong>Parameter: </strong><a href="parameters/combinatorial_eluder_dimension.html">Combinatorial Eluder Dimension</a></p>
+<p><strong>Value: </strong>$2^n$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Anchor at the all-zero word. Query coordinates 1,...,N in that order and use h_i as the witness at coordinate i. Its diagonal bit is one and its earlier bits are all zero, so this is an eluder sequence of length N=2^n. Coordinates cannot repeat in an eluder sequence, because a later witness must agree with the anchor at each earlier coordinate. Thus the N-coordinate domain gives the matching upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct diagonal sequence; admissibility and existence are proved in survey prop:triangular-code-range.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1197" style="position:relative;">
+        
+        <h3><a href="values/projected_distinguishing_range_triangular_code_separation.html" class="table-title-link">Projected Distinguishing Range of the Triangular-Code Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projected Distinguishing Range of the Triangular-Code Family</p>
+<p><strong>Class: </strong><a href="classes/triangular_code_separation.html">Triangular-Code Separation Family</a></p>
+<p><strong>Parameter: </strong><a href="parameters/projected_distinguishing_range.html">Projected Distinguishing Range</a></p>
+<p><strong>Value: </strong>$\Theta(n)$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+<p><strong>Details: </strong>For every n>=1, $n+1\le\mathrm R^p(\mathcal C^{\triangle}_n)\le6n+5$. Only the asymptotic order, not an exact formula, is asserted.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Proposition \ref{prop:triangular-code-range} proves the upper bound 6n+5 using the absence of an essential projection of size 6n+6 and the general characterization in Lemma \ref{lem:essential-range-projections}. For the lower bound, Section \ref{val:size_triangular_code_separation} gives exactly 2^n+1 distinct concepts. Any d binary coordinates have at most 2^d traces, so distinguishing this full class requires d&gt;=ceil(log_2(2^n+1))=n+1. The full projection is included in the maximum defining projected distinguishing range.</p></div>
+<strong>References:</strong><div class="text-field"><p>Survey prop:triangular-code-range and direct binary trace counting.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1198" style="position:relative;">
+        
+        <h3><a href="values/size_triangular_code_separation.html" class="table-title-link">Size of the Triangular-Code Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size of the Triangular-Code Family</p>
+<p><strong>Class: </strong><a href="classes/triangular_code_separation.html">Triangular-Code Separation Family</a></p>
+<p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Value: </strong>$2^n+1$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There are N=2^n triangular rows and the zero word. For i&lt;j, coordinate i separates h_i from h_j, since their values are one and zero. Each h_i also differs from the zero word at its diagonal coordinate i. Hence all N+1 displayed words are distinct.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct triangular-matrix argument.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1199" style="position:relative;">
+        
+        <h3><a href="values/effective_range_triangular_code_separation.html" class="table-title-link">Effective Range of the Triangular-Code Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range of the Triangular-Code Family</p>
+<p><strong>Class: </strong><a href="classes/triangular_code_separation.html">Triangular-Code Separation Family</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Value: </strong>$2^n$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The domain has N=2^n coordinates. Coordinate i takes value one on h_i and zero on the all-zero word, so every domain coordinate is varying and contributes to the effective range.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct diagonal-coordinate argument.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

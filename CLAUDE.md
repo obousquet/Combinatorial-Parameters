@@ -33,6 +33,10 @@ parameters, assigned values, and bibliography entries.
   generator derives the survey definition catalogue directly from these fields.
 - Treat a relationship record as a stated mathematical fact. Do not introduce
   inferred transitive relationships as new records merely to improve a graph.
+- For new incomparable pairs, explicitly set `incomparability_strength`:
+  `affine` means unbounded ratios in both directions; `functional` requires
+  bounded-versus-unbounded witnesses. Missing legacy flags are unspecified,
+  not an automatic claim of either strength. Keep the precise scope in prose.
 - Keep names, definitions, relationships, values, and references aligned with
   the LaTeX counterpart whenever an edit changes mathematical content.
 - The Hasse-like graph is deliberately conservative: only compatible linear
@@ -130,6 +134,11 @@ python3 sync/verify_upper_branch_comparisons.py
 # Paired-code one-way unbounded separation: conditional probability and
 # distinct-pair extraction checks, including collisions between pair words.
 python3 sync/verify_paired_code_separation.py
+
+# Reverse triangular-code separation and affine (not functional)
+# incomparability. The optional strength field never classifies legacy records.
+python3 sync/verify_triangular_range_separation.py
+python3 -m unittest discover -s sync -p test_incomparability_strength.py
 
 # Independent teaching-order, no-clashing-map and degree computations behind
 # the equality of the three positive projection closures.

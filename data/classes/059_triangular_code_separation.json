@@ -1,0 +1,9 @@
+{
+  "id": 59,
+  "name": "Triangular-Code Separation Family",
+  "short_name": "triangular_code_separation",
+  "symbol": "\\mathcal C^{\\triangle}_n",
+  "graph_label": "Triangular code",
+  "definition": "For an integer $n\\ge1$, put $N=2^n$, $k=6n+6$ and $X=[N]=\\{1,\\ldots,N\\}$. Choose bits $b_{ij}\\in\\{0,1\\}$ for $1\\le i<j\\le N$, and define words $h_i\\in\\{0,1\\}^{X}$ by $h_i(j)=0$ for $j<i$, $h_i(i)=1$, and $h_i(j)=b_{ij}$ for $j>i$. Let $h_{N+1}$ be the all-zero word, and write $H_b=\\{h_1,\\ldots,h_N,h_{N+1}\\}$. Call the bit array **admissible** if there is no set $S\\subseteq X$ of size $k$ such that, for every $x\\in S$, there are $f,g\\in H_b$ satisfying $$f(x)\\ne g(x),\\qquad f(y)=g(y)\\quad\\text{for all }y\\in S\\setminus\\{x\\}.$$ Choose the lexicographically first admissible array, ordering its entries by increasing $i$ and then increasing $j$, with $0<1$. The **triangular-code separation family** is $\\mathcal C^{\\triangle}_n=H_b$ for this selected array. The ambient domain is exactly $X$.",
+  "comments": "Admissible arrays exist for every n by the direct probabilistic proof in survey prop:triangular-code-range. The lexicographic rule defines a deterministic family, without an efficient construction claim. Eluder dimension is 2^n, while projected distinguishing range lies between n+1 and 6n+5. This separates in the opposite direction to the Paired-Code Separation Family. Both smaller parameters grow; this does not give bounded-versus-unbounded witnesses."
+}

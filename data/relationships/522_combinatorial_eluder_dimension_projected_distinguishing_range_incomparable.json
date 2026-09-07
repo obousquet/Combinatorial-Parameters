@@ -1,0 +1,15 @@
+{
+  "id": 522,
+  "name": "Combinatorial Eluder Dimension / Projected Distinguishing Range (Affine Incomparable)",
+  "short_name": "combinatorial_eluder_dimension_projected_distinguishing_range_incomparable",
+  "parameter_1_id": "#parameters/combinatorial_eluder_dimension",
+  "parameter_2_id": "#parameters/projected_distinguishing_range",
+  "relationship_type": "incomparable",
+  "incomparability_strength": "affine",
+  "status": "established",
+  "details": "Neither parameter admits a universal affine upper bound in terms of the other on finite binary classes. These are unbounded-ratio witnesses with both parameters growing, not bounded-versus-unbounded witnesses. In fact the established size bounds imply $\\mathrm{Edim}\\le2^{\\mathrm R^p}-1$ and $\\mathrm R^p\\le2^{\\mathrm{Edim}}-1$, so functional incomparability is false. These transitive exponential consequences are explained in the survey, not inserted as duplicate direct relationships.",
+  "parameter_1_larger_witness": "On #classes/triangular_code_separation, Edim is 2^n and $n+1\\le\\mathrm R^p\\le6n+5$. Thus Edim/Rp tends to infinity. The lower bound confirms that the smaller parameter is not bounded on this family.",
+  "parameter_2_larger_witness": "On #classes/paired_code_separation, projected distinguishing range is 2^n and $n+1\\le\\mathrm{Edim}\\le8n+3$. Thus Rp/Edim tends to infinity. The lower bound confirms that the smaller parameter is not bounded on this family.",
+  "latex_proof_label": "cor:eluder-range-affine-incomparable",
+  "proof_source": "Full proof in the survey: cor:eluder-range-affine-incomparable, using prop:paired-code-eluder, prop:triangular-code-range and the database-owned endpoint proofs."
+}

@@ -6,8 +6,10 @@
   "parameter_2_id": "#parameters/combinatorial_eluder_dimension",
   "relationship_type": "larger",
   "status": "refuted",
-  "details": "The exact universal inequality $\\mathrm R^p\\ge\\mathrm{Edim}$ is false. This finite strict counterexample does not refute an affine comparison.",
-  "proof": "The database-owned values on $\\mathcal D_{\\mathrm{RE}}=\\{000,001,011,110\\}$ are $\\mathrm R^p=2$ and $\\mathrm{Edim}=3$. Their full proofs are the corresponding value records and generated survey value proofs.",
-  "witness": "#classes/eluder_range_reverse_separation",
-  "witness_strength": "strict"
+  "details": "The exact universal inequality $\\mathrm R^p\\ge\\mathrm{Edim}$ is false. More strongly, no absolute constants C,D give $\\mathrm{Edim}\\le C\\mathrm R^p+D$ on all finite binary classes: the triangular-code family has Edim equal to 2^n and projected distinguishing range at most 6n+5. The earlier four-concept class with values two and three remains a valid strict witness. This does not exclude all nonlinear bounds.",
+  "latex_proof_label": "cor:eluder-range-affine-incomparable",
+  "proof_source": "Survey cor:eluder-range-affine-incomparable, using prop:triangular-code-range and the database-owned triangular-code endpoint values.",
+  "witness": "#classes/triangular_code_separation",
+  "witness_strength": "unbounded",
+  "witness_verification": "The database-owned values give Edim/Rp >= 2^n/(6n+5), which tends to infinity. All values are finite. The exact event/prefix probabilities and essential-projection characterization are replayed by sync/verify_triangular_range_separation.py."
 }
