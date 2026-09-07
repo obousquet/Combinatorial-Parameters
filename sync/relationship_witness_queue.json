@@ -1,9 +1,9 @@
 {
   "counts": {
-    "unbounded": 230,
-    "strict": 85,
+    "unbounded": 232,
+    "strict": 84,
     "equivalence": 17,
-    "missing": 35,
+    "missing": 34,
     "unclassified": 7,
     "incomparable": 98
   },
@@ -3189,16 +3189,6 @@
       "review": "Check scope of reverse path; if compatible, unbounded gap is impossible."
     },
     {
-      "id": 490,
-      "short_name": "subset_teaching_dimension_antichain_number",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
       "id": 492,
       "short_name": "stable_labeled_sample_compression_vc_dimension",
       "category": "missing",
@@ -3499,26 +3489,6 @@
           "value_ids": [
             895,
             432
-          ]
-        }
-      ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 502,
-      "short_name": "noclashing_teaching_dimension_antichain_number",
-      "category": "strict",
-      "witness": "#classes/noclashing_antichain_gap",
-      "reverse_affine_path": null,
-      "unbounded_candidates": [],
-      "strict_candidates": [
-        {
-          "class": "#classes/noclashing_antichain_gap",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            1074,
-            1073
           ]
         }
       ],

@@ -1,0 +1,12 @@
+{
+  "id": 1168,
+  "name": "Recursive Teaching Dimension of Repeated-Coordinate Cubes",
+  "short_name": "recursive_teaching_dimension_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/recursive_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Every target of the initial class has ordinary minimum teaching size n, by Section \\ref{val:subset_teaching_dimension_repeated_coordinate_cube}. Any recursive teaching order must therefore pay n at its first removal. Conversely every remaining subclass is taught using one fixed coordinate per underlying bit, a sample of size n. Hence RTD is exactly n.",
+  "references": "Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py."
+}

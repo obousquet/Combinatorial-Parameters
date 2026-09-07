@@ -1,0 +1,9 @@
+{
+  "id": 55,
+  "name": "Repeated-Coordinate Cubes",
+  "short_name": "repeated_coordinate_cube",
+  "graph_label": "Repeated cube",
+  "symbol": "\\mathcal R_n",
+  "definition": "For each integer $n\\ge1$, let $W_n=\\{0,1\\}^{n-1}$ (containing the empty word when $n=1$). On the disjoint domain $X_n=\\{x_2,\\ldots,x_n\\}\\sqcup\\{z_w:w\\in W_n\\}$, the **repeated-coordinate cube** is $\\mathcal R_n=\\{h_v:v=(v_1,\\ldots,v_n)\\in\\{0,1\\}^n\\}$, where $h_v(x_j)=v_j$ for $2\\le j\\le n$ and $h_v(z_w)=v_1$ for every $w\\in W_n$. Thus only the first cube coordinate is repeated, in $2^{n-1}$ identical copies. Every domain coordinate takes both labels on the class.",
+  "comments": "A local active-coordinate witness separating subset and no-clashing teaching from antichain number by unbounded ratios. Repeated columns must not be quotiented out when computing antichain number; the specified domain is part of this parameter's input."
+}

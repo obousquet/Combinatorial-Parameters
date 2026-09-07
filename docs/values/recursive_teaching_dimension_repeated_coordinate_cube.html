@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-490" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1168" style="position:relative;">
         
-        <h3><a href="relationships/subset_teaching_dimension_antichain_number.html" class="table-title-link">Subset Teaching Dimension / Antichain Number</a></h3>
+        <h3><a href="values/recursive_teaching_dimension_repeated_coordinate_cube.html" class="table-title-link">Recursive Teaching Dimension of Repeated-Coordinate Cubes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Subset Teaching Dimension / Antichain Number</p>
-<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/antichain_number.html">Antichain Number</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{STD}(\mathcal H)\geq\mathrm{AN}(\mathcal H)$.</p></div>
-<p><strong>Witness: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For every n&gt;=1, Repeated-Coordinate Cubes have STD n and AN 1 (database values 1165 and 1164). The ratio is n and diverges, so no reverse affine bound is possible. Every coordinate is active; the construction uses repeated columns, not constant padding. The STD proof verifies that the family of all ordinary minimum teachers is already a fixed point of the subset-teaching recursion. See survey Corollary cor:repeated-coordinate-antichain-separation and sync/verify_noclashing_antichain_gap.py.</p></div>
-
+        <p><strong>Name: </strong>Recursive Teaching Dimension of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:subset-teaching-antichain} in the survey.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a> <a href="bibliography.html#simon2023map">[simon2023map]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every target of the initial class has ordinary minimum teaching size n, by Section \ref{val:subset_teaching_dimension_repeated_coordinate_cube}. Any recursive teaching order must therefore pay n at its first removal. Conversely every remaining subclass is taught using one fixed coordinate per underlying bit, a sample of size n. Hence RTD is exactly n.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
 
         </div>
     </div>

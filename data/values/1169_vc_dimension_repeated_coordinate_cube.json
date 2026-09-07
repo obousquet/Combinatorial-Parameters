@@ -1,0 +1,12 @@
+{
+  "id": 1169,
+  "name": "VC Dimension of Repeated-Coordinate Cubes",
+  "short_name": "vc_dimension_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "One fixed copy of the first bit together with $x_2,\\ldots,x_n$ realizes the full n-cube, so VC is at least n. The class has exactly $2^n$ distinct concepts; shattering d coordinates requires $2^d$ distinct traces, so d<=n. Thus VC equals n.",
+  "references": "Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1170,
+  "name": "Size of Repeated-Coordinate Cubes",
+  "short_name": "size_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/size",
+  "value": "$2^n$",
+  "status": "established",
+  "proof": "The map $v\\mapsto h_v$ is injective: each underlying bit is read by at least one coordinate. Its domain is the full n-cube, of cardinality $2^n$, so the class has exactly $2^n$ concepts.",
+  "references": "Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py."
+}

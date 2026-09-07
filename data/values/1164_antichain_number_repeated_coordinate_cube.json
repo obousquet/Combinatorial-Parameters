@@ -1,0 +1,12 @@
+{
+  "id": 1164,
+  "name": "Antichain Number of Repeated-Coordinate Cubes",
+  "short_name": "antichain_number_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/antichain_number",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For target $h_v$, put $w=(v_2,\\ldots,v_n)$ and assign the sample $\\{(z_w,v_1)\\}$. It is consistent since every $z_w$ reads the first bit. Distinct bit strings $v$ give distinct labeled singleton samples: either their suffixes choose different coordinate copies, or their first bits give different labels at the same copy. Hence the samples form an antichain of width one. There are $2^n\\ge2$ concepts, so width zero is impossible. This proves AN exactly one, including $n=1$.",
+  "references": "Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py."
+}

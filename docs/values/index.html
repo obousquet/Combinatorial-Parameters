@@ -18703,6 +18703,142 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1164" style="position:relative;">
+        
+        <h3><a href="values/antichain_number_repeated_coordinate_cube.html" class="table-title-link">Antichain Number of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antichain Number of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/antichain_number.html">Antichain Number</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For target $h_v$, put $w=(v_2,\ldots,v_n)$ and assign the sample $\{(z_w,v_1)\}$. It is consistent since every $z_w$ reads the first bit. Distinct bit strings $v$ give distinct labeled singleton samples: either their suffixes choose different coordinate copies, or their first bits give different labels at the same copy. Hence the samples form an antichain of width one. There are $2^n\ge2$ concepts, so width zero is impossible. This proves AN exactly one, including $n=1$.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1165" style="position:relative;">
+        
+        <h3><a href="values/subset_teaching_dimension_repeated_coordinate_cube.html" class="table-title-link">Subset Teaching Dimension of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Partition the domain into the first-bit group $\{z_w:w\in W_n\}$ and the singleton groups $\{x_j\}$ for $2\le j\le n$. Each target has independent alternatives obtained by flipping any one underlying bit. Therefore every ordinary teaching sample must meet all n groups; choosing one coordinate from each group is sufficient. Its ordinary minimum teachers are exactly all such choices with the target's labels. A sample can be contained in one of these teachers only if it selects at most one coordinate from each group. If it omits a group, both assignments of that group's underlying bit extend it to ordinary minimum teachers, so it cannot identify a unique target in the first subset-teaching iteration. If it meets every group, it is already one of the target's ordinary minimum teachers and identifies that target uniquely. Thus the first iteration has value n and exactly the same family of minimum samples as stage zero. Induction leaves every later stage unchanged, proving STD exactly n. This verifies the catalogue's iteration over all minimum teachers, not just a chosen teaching map.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1166" style="position:relative;">
+        
+        <h3><a href="values/noclashing_teaching_dimension_repeated_coordinate_cube.html" class="table-title-link">No-Clashing Teaching Dimension of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>No-Clashing Teaching Dimension of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\lceil n/2\rceil$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Map every $z_w$ to the first cube coordinate and each $x_j$ to coordinate j. Replacing the coordinates in any target-consistent sample by these images, and removing repeated labeled examples, preserves consistency and inconsistency with every concept under $h_v\leftrightarrow v$. Thus a no-clashing teacher map on $\mathcal R_n$ folds to a no-clashing map on the n-cube of no larger width. Conversely choose one fixed copy $z_w$ to lift any cube teacher; again all consistency relations are preserved and its width is unchanged. The two no-clashing dimensions are therefore equal. The database-owned cube value in Section \ref{val:noclashing_teaching_dimension_full_cube} is $\lceil n/2\rceil$, giving the assertion for every n&gt;=1.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1167" style="position:relative;">
+        
+        <h3><a href="values/teaching_dimension_repeated_coordinate_cube.html" class="table-title-link">Teaching Dimension of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Teaching Dimension of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/teaching_dimension.html">Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>As established in the database-owned subset-teaching proof for this family, every target has ordinary minimum teaching size n: each of the n independent bit groups must be represented, and one coordinate per group suffices. Taking the maximum over targets gives TD exactly n. See Section \ref{val:subset_teaching_dimension_repeated_coordinate_cube}.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1168" style="position:relative;">
+        
+        <h3><a href="values/recursive_teaching_dimension_repeated_coordinate_cube.html" class="table-title-link">Recursive Teaching Dimension of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursive Teaching Dimension of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every target of the initial class has ordinary minimum teaching size n, by Section \ref{val:subset_teaching_dimension_repeated_coordinate_cube}. Any recursive teaching order must therefore pay n at its first removal. Conversely every remaining subclass is taught using one fixed coordinate per underlying bit, a sample of size n. Hence RTD is exactly n.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1169" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_repeated_coordinate_cube.html" class="table-title-link">VC Dimension of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>One fixed copy of the first bit together with $x_2,\ldots,x_n$ realizes the full n-cube, so VC is at least n. The class has exactly $2^n$ distinct concepts; shattering d coordinates requires $2^d$ distinct traces, so d&lt;=n. Thus VC equals n.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1170" style="position:relative;">
+        
+        <h3><a href="values/size_repeated_coordinate_cube.html" class="table-title-link">Size of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Value: </strong>$2^n$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The map $v\mapsto h_v$ is injective: each underlying bit is read by at least one coordinate. Its domain is the full n-cube, of cardinality $2^n$, so the class has exactly $2^n$ concepts.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1171" style="position:relative;">
+        
+        <h3><a href="values/effective_range_repeated_coordinate_cube.html" class="table-title-link">Effective Range of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Value: </strong>$n-1+2^{n-1}$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>There are n-1 singleton coordinate groups and $2^{n-1}$ copies of the first bit. Every one of these coordinates takes both labels because its underlying bit varies freely. Thus all domain coordinates are effective, giving effective range $n-1+2^{n-1}$. Equal columns still correspond to distinct domain coordinates.</p></div>
+<strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

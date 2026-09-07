@@ -1,0 +1,12 @@
+{
+  "id": 1167,
+  "name": "Teaching Dimension of Repeated-Coordinate Cubes",
+  "short_name": "teaching_dimension_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "As established in the database-owned subset-teaching proof for this family, every target has ordinary minimum teaching size n: each of the n independent bit groups must be represented, and one coordinate per group suffices. Taking the maximum over targets gives TD exactly n. See Section \\ref{val:subset_teaching_dimension_repeated_coordinate_cube}.",
+  "references": "Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py."
+}

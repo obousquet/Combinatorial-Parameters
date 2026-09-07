@@ -68,6 +68,11 @@ After changing `data/` or any renderer used by this site:
 1. Regenerate `docs/` with the deployment command above.
 2. Inspect the generated site, especially `docs/graphs/hasse.html` after graph
    changes.
+   For popup checks, wait for the requested record's title/link, or card ID
+   where present (for example `#node-modal-content #math-55` for a class),
+   before checking MathJax. A previous card's
+   math can remain visible while the next card loads; waiting for any math
+   container alone can test stale content.
 3. Commit both source changes and generated `docs/` changes in this repository.
 4. Push `main`; GitHub Pages deploys the tracked `/docs` folder.
 

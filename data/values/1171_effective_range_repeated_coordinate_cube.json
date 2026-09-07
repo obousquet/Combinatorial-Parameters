@@ -1,0 +1,11 @@
+{
+  "id": 1171,
+  "name": "Effective Range of Repeated-Coordinate Cubes",
+  "short_name": "effective_range_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$n-1+2^{n-1}$",
+  "status": "established",
+  "proof": "There are n-1 singleton coordinate groups and $2^{n-1}$ copies of the first bit. Every one of these coordinates takes both labels because its underlying bit varies freely. Thus all domain coordinates are effective, giving effective range $n-1+2^{n-1}$. Equal columns still correspond to distinct domain coordinates.",
+  "references": "Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py."
+}

@@ -1,0 +1,12 @@
+{
+  "id": 1165,
+  "name": "Subset Teaching Dimension of Repeated-Coordinate Cubes",
+  "short_name": "subset_teaching_dimension_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Partition the domain into the first-bit group $\\{z_w:w\\in W_n\\}$ and the singleton groups $\\{x_j\\}$ for $2\\le j\\le n$. Each target has independent alternatives obtained by flipping any one underlying bit. Therefore every ordinary teaching sample must meet all n groups; choosing one coordinate from each group is sufficient. Its ordinary minimum teachers are exactly all such choices with the target's labels. A sample can be contained in one of these teachers only if it selects at most one coordinate from each group. If it omits a group, both assignments of that group's underlying bit extend it to ordinary minimum teachers, so it cannot identify a unique target in the first subset-teaching iteration. If it meets every group, it is already one of the target's ordinary minimum teachers and identifies that target uniquely. Thus the first iteration has value n and exactly the same family of minimum samples as stage zero. Induction leaves every later stage unchanged, proving STD exactly n. This verifies the catalogue's iteration over all minimum teachers, not just a chosen teaching map.",
+  "references": "Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py."
+}

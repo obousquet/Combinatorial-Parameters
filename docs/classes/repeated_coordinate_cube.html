@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Set families (possibly parameterized) - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Set families (possibly parameterized) - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-490" style="position:relative;">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-55" style="position:relative;">
         
-        <h3><a href="relationships/subset_teaching_dimension_antichain_number.html" class="table-title-link">Subset Teaching Dimension / Antichain Number</a></h3>
+        <h3><a href="classes/repeated_coordinate_cube.html" class="table-title-link">Repeated-Coordinate Cubes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Subset Teaching Dimension / Antichain Number</p>
-<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/antichain_number.html">Antichain Number</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For every finite binary concept class, $\mathrm{STD}(\mathcal H)\geq\mathrm{AN}(\mathcal H)$.</p></div>
-<p><strong>Witness: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For every n&gt;=1, Repeated-Coordinate Cubes have STD n and AN 1 (database values 1165 and 1164). The ratio is n and diverges, so no reverse affine bound is possible. Every coordinate is active; the construction uses repeated columns, not constant padding. The STD proof verifies that the family of all ordinary minimum teachers is already a fixed point of the subset-teaching recursion. See survey Corollary cor:repeated-coordinate-antichain-separation and sync/verify_noclashing_antichain_gap.py.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-
-<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:subset-teaching-antichain} in the survey.</p></div>
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a> <a href="bibliography.html#simon2023map">[simon2023map]</a></p></div>
+        <p><strong>Name: </strong>Repeated-Coordinate Cubes</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal R_n">
+            \[\mathcal R_n\]
+        </div>
+    </div>
+    
+<strong>Definition:</strong><div class="text-field"><p>For each integer $n\ge1$, let $W_n=\{0,1\}^{n-1}$ (containing the empty word when $n=1$). On the disjoint domain $X_n=\{x_2,\ldots,x_n\}\sqcup\{z_w:w\in W_n\}$, the <strong>repeated-coordinate cube</strong> is $\mathcal R_n=\{h_v:v=(v_1,\ldots,v_n)\in\{0,1\}^n\}$, where $h_v(x_j)=v_j$ for $2\le j\le n$ and $h_v(z_w)=v_1$ for every $w\in W_n$. Thus only the first cube coordinate is repeated, in $2^{n-1}$ identical copies. Every domain coordinate takes both labels on the class.</p></div>
+<strong>Comments:</strong><div class="text-field"><p>A local active-coordinate witness separating subset and no-clashing teaching from antichain number by unbounded ratios. Repeated columns must not be quotiented out when computing antichain number; the specified domain is part of this parameter's input.</p></div>
+<div class="reference-field"><p><strong>Related Values:</strong><ul class='fields-list'><li><a href='values/antichain_number_repeated_coordinate_cube.html'>Antichain Number of Repeated-Coordinate Cubes</a></li><li><a href='values/subset_teaching_dimension_repeated_coordinate_cube.html'>Subset Teaching Dimension of Repeated-Coordinate Cubes</a></li><li><a href='values/noclashing_teaching_dimension_repeated_coordinate_cube.html'>No-Clashing Teaching Dimension of Repeated-Coordinate Cubes</a></li><li><a href='values/teaching_dimension_repeated_coordinate_cube.html'>Teaching Dimension of Repeated-Coordinate Cubes</a></li><li><a href='values/recursive_teaching_dimension_repeated_coordinate_cube.html'>Recursive Teaching Dimension of Repeated-Coordinate Cubes</a></li><li><a href='values/vc_dimension_repeated_coordinate_cube.html'>VC Dimension of Repeated-Coordinate Cubes</a></li><li><a href='values/size_repeated_coordinate_cube.html'>Size of Repeated-Coordinate Cubes</a></li><li><a href='values/effective_range_repeated_coordinate_cube.html'>Effective Range of Repeated-Coordinate Cubes</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Related Relationships:</strong><ul class='fields-list'><li><a href='relationships/subset_teaching_dimension_antichain_number.html'>Subset Teaching Dimension / Antichain Number</a></li><li><a href='relationships/noclashing_teaching_dimension_antichain_number.html'>No-Clashing Teaching Dimension / Antichain Number</a></li></ul></p></div>
 
         </div>
     </div>

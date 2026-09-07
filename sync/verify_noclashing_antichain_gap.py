@@ -213,6 +213,105 @@ def verify_cube_and_monotonicity():
           'and all two-cube equal-branch controls pass.')
 
 
+def subset_teacher_iteration(previous):
+    """One actual STS step: enumerate subsets of all previous minimum samples."""
+    containing = {}
+    for h, teacher_samples in previous.items():
+        for coordinates, labels in teacher_samples:
+            for size in range(len(coordinates)+1):
+                for chosen in combinations(range(len(coordinates)), size):
+                    s = (tuple(coordinates[j] for j in chosen),
+                         tuple(labels[j] for j in chosen))
+                    containing.setdefault(s, set()).add(h)
+    result = {}
+    for h in previous:
+        identifying = [s for s, targets in containing.items() if targets == {h}]
+        width = min(len(s[0]) for s in identifying)
+        result[h] = {s for s in identifying if len(s[0]) == width}
+    return result
+
+
+def verify_repeated_cubes():
+    data = Path(__file__).resolve().parents[1] / 'data'
+    record = json.loads((data / 'classes/055_repeated_coordinate_cube.json').read_text())
+    assert record['short_name'] == 'repeated_coordinate_cube'
+    assert r'h_v(z_w)=v_1' in record['definition'] and r'2^{n-1}' in record['definition']
+    iterations = folds = pairs = 0
+    for n in range(1, 7):
+        words = tuple(''.join(v) for v in product('01', repeat=n))
+        multiplicity = 2**(n-1)
+        repeated = tuple(v[0]*multiplicity + v[1:] for v in words)
+        domain_size = multiplicity+n-1
+        assert len(set(repeated)) == 2**n
+        assert all({h[j] for h in repeated} == {'0', '1'} for j in range(domain_size))
+        teacher = {h: ((int(v[1:] or '0', 2),), (v[0],))
+                   for h, v in zip(repeated, words)}
+        assert valid_teacher(repeated, teacher)
+
+        def group(coordinate):
+            return 0 if coordinate < multiplicity else coordinate-multiplicity+1
+
+        def fold(sample):
+            coordinates, labels = sample
+            observed = {group(i): bit for i, bit in zip(coordinates, labels)}
+            indices = tuple(sorted(observed))
+            return indices, tuple(observed[j] for j in indices)
+
+        # Actual all-minimum ordinary teachers, not the advertised group formula.
+        if n <= 4:
+            initial = {}
+            for h in repeated:
+                candidates = [s for s in samples(h, n)
+                              if all(not consistent(s, g) for g in repeated if g != h)]
+                width = min(len(s[0]) for s in candidates)
+                assert width == n
+                initial[h] = {s for s in candidates if len(s[0]) == width}
+                assert len(initial[h]) == multiplicity
+            following = subset_teacher_iteration(initial)
+            assert following == initial
+            assert subset_teacher_iteration(following) == following
+            iterations += 2
+        if n <= 3:
+            for h, v in zip(repeated, words):
+                for s in samples(h, domain_size):
+                    collapsed = fold(s)
+                    assert len(collapsed[0]) <= len(s[0]) and consistent(collapsed, v)
+                    for g, w in zip(repeated, words):
+                        assert consistent(s, g) == consistent(collapsed, w)
+                        folds += 1
+
+        # Explicit optimal cube map: one signed example per consecutive bit pair.
+        lifted = {}
+        for h, v in zip(repeated, words):
+            coordinates = [i if v[i] == v[i+1] else i+1 for i in range(0, n-1, 2)]
+            if n % 2:
+                coordinates.append(n-1)
+            cube_sample = (tuple(coordinates), tuple(v[i] for i in coordinates))
+            actual = tuple(0 if i == 0 else multiplicity+i-1 for i in coordinates)
+            lifted[h] = (actual, cube_sample[1])
+            assert fold(lifted[h]) == cube_sample and consistent(lifted[h], h)
+            assert len(actual) == (n+1)//2
+        for h, g in combinations(repeated, 2):
+            assert no_clash(h, lifted[h], g, lifted[g])
+            pairs += 1
+    for identifier in (490, 502):
+        path, = (data / 'relationships').glob(f'{identifier}_*.json')
+        relation = json.loads(path.read_text())
+        assert relation['witness'] == '#classes/repeated_coordinate_cube'
+        assert relation['witness_strength'] == 'unbounded'
+    expected = {1164: '$1$', 1165: '$n$', 1166: r'$\lceil n/2\rceil$',
+                1167: '$n$', 1168: '$n$', 1169: '$n$', 1170: '$2^n$',
+                1171: '$n-1+2^{n-1}$'}
+    for path in (data / 'values').glob('*_repeated_coordinate_cube.json'):
+        value = json.loads(path.read_text())
+        assert value['value'] == expected.pop(value['id'])
+        assert value['proof'] and value['status'] == 'established'
+    assert not expected
+    print(f'Repeated cubes: six active-domain AN/NC maps, {pairs} no-clashing pairs; '
+          f'{iterations} all-minimum STS iterations on n=1..4, '
+          f'{folds} exhaustive consistency-preserving folds on n=1..3.')
+
+
 def main():
     assert feasible(
         1,
@@ -229,6 +328,7 @@ def main():
     print("C_NC/AN: AN = 1; NCTD = 2")
     verify_singleton_empty_family()
     verify_cube_and_monotonicity()
+    verify_repeated_cubes()
 
 
 if __name__ == "__main__":
