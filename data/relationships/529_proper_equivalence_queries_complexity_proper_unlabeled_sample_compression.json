@@ -1,0 +1,15 @@
+{
+  "id": 529,
+  "name": "Proper Equivalence Queries Complexity / Proper Unlabeled Sample Compression",
+  "short_name": "proper_equivalence_queries_complexity_proper_unlabeled_sample_compression",
+  "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/proper_unlabeled_sample_compression",
+  "relationship_type": "larger",
+  "status": "refuted",
+  "details": "The exact bound fails even on a class admitting a proper stable unlabeled scheme: K4 incidence with the empty set has proper queries two and proper unlabeled compression three. This is only a finite strict gap; it does not rule out an affine or functional bound under the finite-compression restriction.",
+  "latex_proof_label": "cor:finite-proper-query-counterexample",
+  "proof_source": "Survey Corollary cor:finite-proper-query-counterexample, referencing the database-owned exact value proofs.",
+  "witness": "#classes/k4_incidence_with_empty",
+  "witness_strength": "strict",
+  "witness_verification": "The established endpoint values are $Q_{\\mathrm{peq}}=2$ and $\\mathrm{pUSC}=3$. The latter has a direct all-decoder lower proof and an exact-key-stable width-three upper scheme. Both values are finite; no unbounded-ratio claim is made."
+}

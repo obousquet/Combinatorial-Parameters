@@ -1,0 +1,10 @@
+{
+  "id": 1214,
+  "name": "Stable Unlabeled Complexity of K4 Incidence with Empty Set",
+  "short_name": "stable_unlabeled_complexity_k4_incidence_with_empty",
+  "class_id": "#classes/k4_incidence_with_empty",
+  "parameter_id": "#parameters/stable_unlabeled_complexity",
+  "value": "$2$",
+  "status": "established",
+  "proof": "The one-pass stable unlabeled construction in survey Proposition \\ref{prop:one-pass-stable-unlabeled} bounds sUSC by Littlestone dimension, which is two on this class. Conversely a shattered pair has four labelings but a width-one unlabeled encoder can use only its empty and two singleton keys, so width one cannot cover all four labelings. Improper reconstruction is permitted for this parameter."
+}

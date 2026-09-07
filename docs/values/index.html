@@ -19468,6 +19468,143 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1209" style="position:relative;">
+        
+        <h3><a href="values/proper_equivalence_queries_complexity_k4_incidence_with_empty.html" class="table-title-link">Proper Equivalence Queries Complexity of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Equivalence Queries Complexity of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Query $h_0$. Acceptance finishes; a counterexample edge $uv$ leaves exactly $h_u,h_v$. One further proposal identifies the target, either by acceptance or by elimination, without a final confirmation query. One query cannot suffice: if the first proposal is $h_0$, any edge leaves two targets. If it is $h_a$, an incident edge $ab$ can be returned negatively, leaving $h_0,h_c,h_d$. Vertex symmetry covers the other proposals. Thus the optimum is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1210" style="position:relative;">
+        
+        <h3><a href="values/proper_unlabeled_sample_compression_k4_incidence_with_empty.html" class="table-title-link">Proper Unlabeled Sample Compression of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Unlabeled Sample Compression of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>The lower bound holds without stability. The matching upper construction preserves the selected key itself. This finite value exceeds the proper-query value two, but gives no unbounded-ratio separation.</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For the lower bound suppose a proper width-two decoder $\rho$ exists, and write $d_e=\rho(\{e\})$. Every pair of adjacent edges is shattered: its common endpoint supplies 11, its two other endpoints supply 10 and 01, and $h_0$ supplies 00. Consequently the four keys on this pair must decode to four distinct pair traces. If $\rho(\varnothing)=h_0$, a positive singleton forces $d_{uv}\in\{h_u,h_v\}$. Orient each edge toward this selected endpoint. Two edges cannot both point toward their common endpoint, since their singleton outputs would coincide. Six edges would therefore have to enter four vertices with indegree at most one, a contradiction. Otherwise, by vertex symmetry put $\rho(\varnothing)=h_a$. On the triangle $bc,cd,db$, singleton outputs again select endpoints with indegree at most one, so their orientations form a directed cycle. Relabel $b,c,d$ so that $d_{bc}=h_c,d_{cd}=h_d,d_{db}=h_b$. The singleton sample opposite to $h_a$ on $ab$ permits only $h_0,h_c,h_d$; comparing keys on the shattered pair $ab,bc$ excludes $h_c$. Cyclically, $d_{ab}\in\{h_0,h_d\}$, $d_{ac}\in\{h_0,h_b\}$ and $d_{ad}\in\{h_0,h_c\}$. On $ab,ac$, the empty output has trace 11 and $d_{ab}$ has trace 00; distinctness therefore forces $d_{ac}=h_b$. The pairs $ac,ad$ and $ad,ab$ similarly force $d_{ad}=h_c$ and $d_{ab}=h_d$, respectively. On each pair of the three spokes $ab,ac,ad$, these empty and singleton outputs already include trace 00. Thus its pair key cannot decode to $h_0$. Every key of size at most two within the three spokes therefore decodes to a nonzero vertex star, whereas the all-negative sample on those spokes is realizable only by $h_0$. This contradicts coverage. Hence pUSC is at least three.</p>
+<p>For a stable upper bound first remove $h_0$, leaving the four vertex stars. Flip every coordinate by its value under $h_a$, and identify the three opposite-edge pairs $\{ac,bd\}$, $\{ad,bc\}$, $\{ab,cd\}$ as coordinate types 1, 2, 3. The vertex stars become the even-parity words $000,110,011,101$. Apply the exact-key-stable cyclic parity scheme of survey Proposition \ref{prop:parity-stable-unlabeled}, pulled back by choosing the first observed copy of every selected type. Its width is two and it never selects both edges of an opposite pair. Reserve all three opposite-edge pairs and all four three-edge stars as new keys decoding to $h_0$; none is used by that parity encoder. A sample realizable by $h_0$ but by no vertex star is all-negative on an edge set covering all four vertices. Every such edge cover contains either an opposite-edge pair or a three-edge star: without disjoint edges, a pairwise-intersecting edge family covering four vertices must be a star. Each reserved key, with all-negative labels, already excludes every vertex star. The reserved-key extension lemma \ref{lem:stable-reserved-key-extension} now supplies a proper stable scheme of width three. Explicitly, use the old encoder on vertex-realizable samples, and otherwise choose the first contained reserved key in a fixed order. Intermediate samples retaining a new key still exclude every vertex star and keep that same first key. The old branch retains its exact-key stability. This proves pUSC at most three, with a stable upper scheme.</p></div>
+<strong>References:</strong><div class="text-field"><p>Direct pair-trace lower argument; survey Proposition \ref{prop:parity-stable-unlabeled} and Lemma \ref{lem:stable-reserved-key-extension}.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1211" style="position:relative;">
+        
+        <h3><a href="values/proper_stable_sample_compression_k4_incidence_with_empty.html" class="table-title-link">Proper Stable Sample Compression of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Stable Sample Compression of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Value: </strong>$3$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Section \ref{val:proper_unlabeled_sample_compression_k4_incidence_with_empty} proves that every proper unlabeled scheme has width at least three and constructs a proper width-three scheme preserving the selected key on every intermediate subsample. Its lower argument does not assume stability, while its upper scheme satisfies a stronger condition than reconstruction stability. Therefore psUSC is exactly three.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1212" style="position:relative;">
+        
+        <h3><a href="values/vc_dimension_k4_incidence_with_empty.html" class="table-title-link">VC Dimension of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Two adjacent edges $ab,ac$ realize all four patterns: $h_a$ gives 11, $h_b$ gives 10, $h_c$ gives 01, and $h_0$ gives 00. No three coordinates can be shattered because the class has only five concepts, fewer than $2^3=8$.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1213" style="position:relative;">
+        
+        <h3><a href="values/littlestone_dimension_k4_incidence_with_empty.html" class="table-title-link">Littlestone Dimension of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Dimension of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The adjacent-edge shattered pair supplies a depth-two Littlestone tree. A shattered binary tree of depth three would require at least eight distinct concepts, one for each leaf: two different paths disagree at their first split. The class has only five concepts.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1214" style="position:relative;">
+        
+        <h3><a href="values/stable_unlabeled_complexity_k4_incidence_with_empty.html" class="table-title-link">Stable Unlabeled Complexity of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stable Unlabeled Complexity of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
+<p><strong>Value: </strong>$2$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The one-pass stable unlabeled construction in survey Proposition \ref{prop:one-pass-stable-unlabeled} bounds sUSC by Littlestone dimension, which is two on this class. Conversely a shattered pair has four labelings but a width-one unlabeled encoder can use only its empty and two singleton keys, so width one cannot cover all four labelings. Improper reconstruction is permitted for this parameter.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1215" style="position:relative;">
+        
+        <h3><a href="values/effective_range_k4_incidence_with_empty.html" class="table-title-link">Effective Range of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Value: </strong>$6$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The domain contains the six edges of $K_4$. Every edge is positive in its two endpoint stars and negative in $h_0$, so all six coordinates vary.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1216" style="position:relative;">
+        
+        <h3><a href="values/size_k4_incidence_with_empty.html" class="table-title-link">Size of K4 Incidence with Empty Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Size of K4 Incidence with Empty Set</p>
+<p><strong>Class: </strong><a href="classes/k4_incidence_with_empty.html">K4 Incidence with Empty Set</a></p>
+<p><strong>Parameter: </strong><a href="parameters/size.html">Size</a></p>
+<p><strong>Value: </strong>$5$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The four vertex stars are distinct: for $u\ne v$, an edge from $u$ to a third vertex belongs to the star of $u$ but not to that of $v$. Each star is nonempty, so adjoining the empty concept gives exactly five concepts.</p></div>
+
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

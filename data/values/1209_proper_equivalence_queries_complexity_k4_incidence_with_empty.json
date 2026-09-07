@@ -1,0 +1,10 @@
+{
+  "id": 1209,
+  "name": "Proper Equivalence Queries Complexity of K4 Incidence with Empty Set",
+  "short_name": "proper_equivalence_queries_complexity_k4_incidence_with_empty",
+  "class_id": "#classes/k4_incidence_with_empty",
+  "parameter_id": "#parameters/proper_equivalence_queries_complexity",
+  "value": "$2$",
+  "status": "established",
+  "proof": "Query $h_0$. Acceptance finishes; a counterexample edge $uv$ leaves exactly $h_u,h_v$. One further proposal identifies the target, either by acceptance or by elimination, without a final confirmation query. One query cannot suffice: if the first proposal is $h_0$, any edge leaves two targets. If it is $h_a$, an incident edge $ab$ can be returned negatively, leaving $h_0,h_c,h_d$. Vertex symmetry covers the other proposals. Thus the optimum is two."
+}

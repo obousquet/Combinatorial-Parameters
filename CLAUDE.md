@@ -214,6 +214,11 @@ python3 sync/verify_proper_compression_covc.py
 # intervals and guards four unbounded witnesses; rejects the unstable encoder.
 python3 sync/verify_singleton_unlabeled_compression.py
 
+# Finite counterexample: K4 incidence plus zero has pUSC=psUSC=3 but Qpeq=2.
+# Solver-free all-decoder lower replay and reserved-key stable upper scheme.
+# Larger cliques destroy proper existence, not amplify a finite ratio.
+python3 sync/verify_k4_incidence_compression.py
+
 # Proper width-three CCT decoder: all partial samples, two independent replays.
 # The certificate and product/counting proofs are database-owned; no solver needed.
 python3 sync/verify_cct_compression.py

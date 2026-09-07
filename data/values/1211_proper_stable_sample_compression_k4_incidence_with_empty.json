@@ -1,0 +1,10 @@
+{
+  "id": 1211,
+  "name": "Proper Stable Sample Compression of K4 Incidence with Empty Set",
+  "short_name": "proper_stable_sample_compression_k4_incidence_with_empty",
+  "class_id": "#classes/k4_incidence_with_empty",
+  "parameter_id": "#parameters/proper_stable_sample_compression",
+  "value": "$3$",
+  "status": "established",
+  "proof": "Section \\ref{val:proper_unlabeled_sample_compression_k4_incidence_with_empty} proves that every proper unlabeled scheme has width at least three and constructs a proper width-three scheme preserving the selected key on every intermediate subsample. Its lower argument does not assume stability, while its upper scheme satisfies a stronger condition than reconstruction stability. Therefore psUSC is exactly three."
+}

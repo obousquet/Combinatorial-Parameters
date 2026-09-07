@@ -1,0 +1,10 @@
+{
+  "id": 1213,
+  "name": "Littlestone Dimension of K4 Incidence with Empty Set",
+  "short_name": "littlestone_dimension_k4_incidence_with_empty",
+  "class_id": "#classes/k4_incidence_with_empty",
+  "parameter_id": "#parameters/littlestone_dimension",
+  "value": "$2$",
+  "status": "established",
+  "proof": "The adjacent-edge shattered pair supplies a depth-two Littlestone tree. A shattered binary tree of depth three would require at least eight distinct concepts, one for each leaf: two different paths disagree at their first split. The class has only five concepts."
+}

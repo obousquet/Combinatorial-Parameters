@@ -1,0 +1,9 @@
+{
+  "id": 61,
+  "name": "K4 Incidence with Empty Set",
+  "short_name": "k4_incidence_with_empty",
+  "symbol": "\\mathcal I_{K_4}",
+  "graph_label": "K4 incidence",
+  "definition": "Let $V=\\{a,b,c,d\\}$ and let $X=\\binom V2$ be the six unordered edges of the complete graph $K_4$. For $v\\in V$ define $h_v:X\\to\\{0,1\\}$ by $h_v(e)=1$ exactly when $v\\in e$. Let $h_0$ be the all-zero function on $X$. The **K4 incidence class with the empty set** is $\\mathcal I_{K_4}=\\{h_0,h_a,h_b,h_c,h_d\\}$. Equivalently, its concepts are the empty edge set and the four three-edge vertex stars. This is one fixed five-concept class on six coordinates, not an asymptotic family.",
+  "comments": "Proper unlabeled compression and proper stable unlabeled compression are both three, whereas proper equivalence-query complexity is two. Thus the exact query upper bound fails even when proper stable schemes exist. This finite 3-versus-2 gap does not refute an affine or unspecified functional bound."
+}

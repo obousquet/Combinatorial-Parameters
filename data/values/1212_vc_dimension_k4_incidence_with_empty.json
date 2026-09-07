@@ -1,0 +1,10 @@
+{
+  "id": 1212,
+  "name": "VC Dimension of K4 Incidence with Empty Set",
+  "short_name": "vc_dimension_k4_incidence_with_empty",
+  "class_id": "#classes/k4_incidence_with_empty",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2$",
+  "status": "established",
+  "proof": "Two adjacent edges $ab,ac$ realize all four patterns: $h_a$ gives 11, $h_b$ gives 10, $h_c$ gives 01, and $h_0$ gives 00. No three coordinates can be shattered because the class has only five concepts, fewer than $2^3=8$."
+}

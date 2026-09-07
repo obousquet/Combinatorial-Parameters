@@ -1,0 +1,10 @@
+{
+  "id": 1215,
+  "name": "Effective Range of K4 Incidence with Empty Set",
+  "short_name": "effective_range_k4_incidence_with_empty",
+  "class_id": "#classes/k4_incidence_with_empty",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$6$",
+  "status": "established",
+  "proof": "The domain contains the six edges of $K_4$. Every edge is positive in its two endpoint stars and negative in $h_0$, so all six coordinates vary."
+}
