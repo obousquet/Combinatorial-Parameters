@@ -11,5 +11,5 @@
   "name": "Stable Labeled Sample Compression / Labeled Sample Compression",
   "witness": "#classes/full_cube",
   "witness_strength": "strict",
-  "witness_verification": "At $n=5$ the stable value is three and the ordinary value is two, by the database-owned full-cube certificates. At $n=5r$ the stable value is $\\lceil5r/2\\rceil$ while the ordinary value is at most $2r$, so the additive gap is unbounded. Both values have linear order: this is not an unbounded-ratio witness. See survey cor:compression-nctd-gap and sync/verify_full_cube_labeled_compression.py."
+  "witness_verification": "At $n=6$ the stable value is three and the ordinary value is two, by the database-owned full-cube certificates. At $n=6r$ the stable value is $3r$ while the ordinary value is at most $2r$, so the additive gap is at least $r$. Any universal reverse affine bound requires slope at least $3/2$. Both values have linear order: this is not an unbounded-ratio witness. See survey cor:compression-nctd-gap and sync/verify_six_cube_compression.py."
 }
