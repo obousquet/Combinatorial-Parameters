@@ -6,8 +6,8 @@
   "symmetric": true,
   "p_monotonic": true,
   "c_monotonic": true,
-  "definition": "The **Proper Stable Sample Compression** is the minimum size of an unlabeled sample compression scheme that is both proper, with reconstruction in $\\mathcal{H}$, and stable: removing examples outside its compression set leaves the reconstructed hypothesis unchanged.",
-  "graph_summary": "Proper stable unlabeled-compression size.",
+  "definition": "Let $\\mathcal H\\subseteq\\{0,1\\}^{X}$ be nonempty on a finite domain. A **proper reconstruction-stable unlabeled compression scheme of size $k$** consists of fixed maps $C$ and $\\rho$: for every realizable partial labeled sample $s:S\\to\\{0,1\\}$, the encoder selects an unordered key $C(s)\\subseteq S$ of size at most $k$, and the decoder, given only that coordinate set, returns $\\rho(C(s))\\in\\mathcal H$ consistent with $s$. No labels, original domain $S$, auxiliary messages, repetitions or ordering choices are transmitted. Stability requires $\\rho(C(s|_T))=\\rho(C(s))$ as functions on $X$ whenever $C(s)\\subseteq T\\subseteq S$; equality of the selected keys is not required. The **Proper Stable Sample Compression** $\\mathrm{psUSC}(\\mathcal H)$ is the least such $k$, or $+\\infty$ if no scheme exists. Nonexistence can occur even for finite classes, for the balanced six-split class.",
+  "graph_summary": "Fewest retained coordinates, with no labels or messages, for proper reconstruction unchanged by deletion of unretained examples; $+\\infty$ if no such scheme exists.",
   "origin_references": "The stability condition for sample compression schemes is used in \\cite{bousquet2020proper,hanneke2021stable}.",
   "short_name": "proper_stable_sample_compression",
   "monotonicity_evidence": {

@@ -1,0 +1,10 @@
+{
+  "id": 1183,
+  "name": "Proper Equivalence Queries Complexity of Balanced Six-Split Class",
+  "short_name": "proper_equivalence_queries_complexity_balanced_six_split",
+  "class_id": "#classes/balanced_six_split",
+  "parameter_id": "#parameters/proper_equivalence_queries_complexity",
+  "value": "$3$",
+  "status": "established",
+  "proof": "We count queries until the target is identified, with no final confirmation required. After any first rejected proper proposal, the counterexample leaves exactly three candidate vertices, since every coordinate is a balanced split. Querying candidates successively then identifies the target in at most two more queries. Conversely the adversary can reject the first query and keep three candidates $V$. A proposal outside $V$ can be answered by the split $V\\mid([6]\\setminus V)$, retaining all three. For a proposal $v\\in V$, choose a balanced split with $V\\setminus\\{v\\}$ and one vertex outside $V$ on one side; the reply leaves the other two candidates. They cannot yet be identified, so at least one further query is necessary. Thus the minimax number is three, even when all original class members are allowed as proposals."
+}

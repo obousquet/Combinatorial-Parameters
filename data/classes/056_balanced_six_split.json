@@ -1,0 +1,9 @@
+{
+  "id": 56,
+  "name": "Balanced Six-Split Class",
+  "short_name": "balanced_six_split",
+  "graph_label": "Six-split",
+  "symbol": "\\mathcal B_6",
+  "definition": "Let $[6]=\\{1,2,3,4,5,6\\}$ and let $X=\\{A\\subseteq[6]:|A|=3,\\ 1\\in A\\}$. Thus $X$ contains one representative of each unordered partition of $[6]$ into two triples and has ten coordinates. The **balanced six-split class** is $\\mathcal B_6=\\{h_v:v\\in[6]\\}\\subseteq\\{0,1\\}^{X}$, where $h_v(A)=\\mathbf1_{\\{v\\in A\\}}$. The ambient domain is exactly $X$; no other coordinates are present.",
+  "comments": "A finite obstruction to proper message-free unlabeled compression: no such scheme exists, even without stability or a size restriction. The general shattered-pair counting obstruction is proved in survey Proposition prop:proper-unlabeled-pair-obstruction. No novelty or minimality claim is made. Labeled or improper schemes are not excluded."
+}

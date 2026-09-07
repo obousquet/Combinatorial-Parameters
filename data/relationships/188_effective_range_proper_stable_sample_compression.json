@@ -5,9 +5,12 @@
   "relationship_type": "larger",
   "name": "Effective Range / Proper Stable Sample Compression",
   "short_name": "effective_range_proper_stable_sample_compression",
-  "status": "needs_verification",
-  "details": "Proposed bound for finite concept classes; not currently established here. Retaining all active-coordinate instances does not give their labels to an unlabeled decoder, so the former least-consistent-member construction does not define the claimed scheme. The corresponding labeled argument remains valid. A proper stable unlabeled replacement proof or counterexample is required; no refutation is claimed. The benchmark gap below remains valid independently of the proposed universal bound.",
-  "witness": "#classes/singletons_plus_empty_set",
+  "status": "refuted",
+  "details": "False for finite classes: #classes/balanced_six_split has effective range 10 and psUSC $+\\infty$, because no proper unlabeled scheme exists at any size. Hence no finite-valued function of effective range is a universal upper bound. Retaining all active labeled examples proves the labeled analogue only. If a proper stable unlabeled scheme does exist, discarding constant coordinates yields size at most effective range; see survey Remark rem:proper-unlabeled-existence. The failure is therefore one of existence, not a larger finite size.",
+  "latex_proof_label": "cor:balanced-six-split-nonexistence",
+  "proof_source": "Survey Corollary cor:balanced-six-split-nonexistence and Remark rem:proper-unlabeled-existence.",
+  "witness": "#classes/balanced_six_split",
   "witness_strength": "unbounded",
-  "witness_verification": "For the $n$ singletons together with the empty concept, effective range is $n$, while proper stable sample-compression size is 1."
+  "witness_verification": "Values 1181 and 1185 give $E=10$ and psUSC $+\\infty$. Nonexistence on a fixed finite class refutes every finite upper bound, not merely an affine one; this is not an asymptotic-family claim.",
+  "witness_review": "The previous singletons-plus-empty witness has E=n and psUSC=1 and remains a valid gap in the opposite direction. It did not refute this inequality; the six-split class is the counterexample to the stated relation."
 }

@@ -5,9 +5,12 @@
   "relationship_type": "larger",
   "name": "Effective Range / Proper Unlabeled Sample Compression",
   "short_name": "effective_range_proper_unlabeled_sample_compression",
-  "status": "needs_verification",
-  "details": "Proposed bound for finite concept classes; not currently established here. The former retain-all-active-examples argument passed their observed labels to the decoder and therefore proves only a proper labeled bound. An unlabeled decoder does not receive those labels. A valid replacement proof or counterexample is required; no refutation of this inequality is claimed. The benchmark gap below remains valid independently of the proposed universal bound.",
-  "witness": "#classes/singletons_plus_empty_set",
+  "status": "refuted",
+  "details": "False for finite classes under the message-free definition: #classes/balanced_six_split has E=10 but pUSC $+\\infty$. Its shattered coordinate pairs force incompatible proper decoder assignments already on empty and singleton keys. No stability assumption or bound on larger keys is used. If a proper unlabeled scheme exists, its size can be bounded by E by discarding constant coordinates; the obstruction is nonexistence.",
+  "latex_proof_label": "cor:balanced-six-split-nonexistence",
+  "proof_source": "Survey Corollary cor:balanced-six-split-nonexistence and Proposition prop:proper-unlabeled-pair-obstruction.",
+  "witness": "#classes/balanced_six_split",
   "witness_strength": "unbounded",
-  "witness_verification": "For the $n$ singletons together with the empty concept, effective range is $n$ while proper unlabeled sample compression size is 1."
+  "witness_verification": "Values 1181 and 1184 give E=10 and pUSC $+\\infty$. Nonexistence on a fixed finite class refutes every finite upper bound; this is not an asymptotic-family claim.",
+  "witness_review": "The previous singletons-plus-empty example remains a valid gap in the opposite direction, not a counterexample to the stated inequality. The six-split class now witnesses its refutation."
 }

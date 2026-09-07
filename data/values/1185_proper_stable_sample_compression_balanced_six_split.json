@@ -1,0 +1,11 @@
+{
+  "id": 1185,
+  "name": "Proper Stable Sample Compression of Balanced Six-Split Class",
+  "short_name": "proper_stable_sample_compression_balanced_six_split",
+  "class_id": "#classes/balanced_six_split",
+  "parameter_id": "#parameters/proper_stable_sample_compression",
+  "value": "$+\\infty$",
+  "status": "established",
+  "details": "Nonexistence persists even after dropping reconstruction stability.",
+  "proof": "Section \\ref{val:proper_unlabeled_sample_compression_balanced_six_split} proves that no proper message-free unlabeled scheme exists, regardless of size. A proper reconstruction-stable scheme would in particular be such a scheme. Thus psUSC is also $+\\infty$."
+}

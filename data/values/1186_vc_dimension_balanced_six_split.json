@@ -1,0 +1,10 @@
+{
+  "id": 1186,
+  "name": "VC Dimension of Balanced Six-Split Class",
+  "short_name": "vc_dimension_balanced_six_split",
+  "class_id": "#classes/balanced_six_split",
+  "parameter_id": "#parameters/vc_dimension",
+  "value": "$2$",
+  "status": "established",
+  "proof": "Every pair of coordinates is shattered, as verified in Section \\ref{val:proper_unlabeled_sample_compression_balanced_six_split}. No triple can be shattered because the class has only six concepts, fewer than the eight distinct traces required. Thus VC dimension is two."
+}

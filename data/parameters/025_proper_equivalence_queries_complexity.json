@@ -8,7 +8,7 @@
   "p_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "definition": "The **Proper Equivalence Queries Complexity** of $\\mathcal{H}$ is the minimum worst-case number of equivalence queries needed to identify an unknown target in $\\mathcal{H}$, when every proposed equivalence hypothesis must itself belong to $\\mathcal{H}$.",
+  "definition": "For a nonempty finite binary class $\\mathcal H\\subseteq\\{0,1\\}^{X}$, the **Proper Equivalence Queries Complexity** $Q_{\\mathrm{peq}}(\\mathcal H)$ is the minimum, over deterministic adaptive learners, of the worst-case number of queries needed to identify an unknown target $h\\in\\mathcal H$. Each query proposes $g\\in\\mathcal H$. The oracle either confirms $g=h$ or supplies an arbitrary coordinate $x$ with $g(x)\\ne h(x)$; the binary target label is then $1-g(x)$. The learner may stop as soon as exactly one target remains consistent with all replies; no final confirmation query is required. The worst case is over targets and valid counterexample choices. In particular a singleton class has value zero.",
   "graph_summary": "Minimum worst-case number of equivalence queries when every proposed hypothesis is in the class.",
   "origin_references": "Equivalence queries in the exact query-learning model are introduced in \\cite{angluin1988queries}; this parameter restricts the learner's equivalence hypotheses to $\\mathcal{H}$.",
   "short_name": "proper_equivalence_queries_complexity",

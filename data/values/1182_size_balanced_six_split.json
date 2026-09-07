@@ -1,0 +1,10 @@
+{
+  "id": 1182,
+  "name": "Size of Balanced Six-Split Class",
+  "short_name": "size_balanced_six_split",
+  "class_id": "#classes/balanced_six_split",
+  "parameter_id": "#parameters/size",
+  "value": "$6$",
+  "status": "established",
+  "proof": "There are six indexed concepts. Any two vertices of $[6]$ can be placed on opposite sides of a balanced split, so their concepts differ. Thus all six concepts are distinct."
+}

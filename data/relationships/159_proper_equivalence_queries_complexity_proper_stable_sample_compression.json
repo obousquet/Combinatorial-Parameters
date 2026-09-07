@@ -3,8 +3,13 @@
   "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/proper_stable_sample_compression",
   "relationship_type": "larger",
-  "details": "No source or proof for this universal comparison has yet been verified. The available stable-compression sources do not state this proper equivalence-query lower bound.",
-  "status": "needs_verification",
+  "details": "False for finite classes under the message-free definition. On #classes/balanced_six_split, proper equivalence-query complexity is 3 but no proper unlabeled compression scheme exists, even without stability. Thus psUSC is $+\\infty$, and no finite-valued function of $Q_{\\mathrm{peq}}$ universally bounds psUSC. This does not settle the comparison restricted to classes admitting proper stable unlabeled schemes.",
+  "status": "refuted",
+  "latex_proof_label": "cor:balanced-six-split-nonexistence",
+  "proof_source": "Survey Corollary cor:balanced-six-split-nonexistence, using Proposition prop:proper-unlabeled-pair-obstruction and the database-owned benchmark proofs.",
+  "witness": "#classes/balanced_six_split",
+  "witness_strength": "unbounded",
+  "witness_verification": "Values 1183 and 1185 give $Q_{\\mathrm{peq}}=3$ and $\\mathrm{psUSC}=+\\infty$. Nonexistence on this fixed finite class refutes every finite upper bound, in particular every proposed affine bound. This is stronger than a growing finite ratio and is not an asymptotic-family claim.",
   "short_name": "proper_equivalence_queries_complexity_proper_stable_sample_compression",
   "name": "Proper Equivalence Queries Complexity / Proper Stable Sample Compression"
 }

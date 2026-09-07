@@ -1,0 +1,11 @@
+{
+  "id": 1184,
+  "name": "Proper Unlabeled Sample Compression of Balanced Six-Split Class",
+  "short_name": "proper_unlabeled_sample_compression_balanced_six_split",
+  "class_id": "#classes/balanced_six_split",
+  "parameter_id": "#parameters/proper_unlabeled_sample_compression",
+  "value": "$+\\infty$",
+  "status": "established",
+  "details": "No proper message-free unlabeled scheme exists at any size. This is not an asymptotic value on an infinite family.",
+  "proof": "Apply survey Proposition \\ref{prop:proper-unlabeled-pair-obstruction}. Distinct coordinate triples $A,B$ both contain 1 and have intersection size one or two. The four cells $A\\cap B$, $A\\setminus B$, $B\\setminus A$ and $[6]\\setminus(A\\cup B)$ are all nonempty, so each coordinate pair is shattered. For two distinct vertices $u,v$, the number of unordered balanced splits separating them is $\\binom42=6$: orient such a split by its side containing $u$, exclude $v$, and choose the other two vertices. Our domain contains one representative of each such split, so every two distinct concepts have Hamming distance six. The proposition would force some distance at most $(10+1)/2=5.5$, a contradiction. Hence pUSC is $+\\infty$ under the explicit nonexistence convention."
+}

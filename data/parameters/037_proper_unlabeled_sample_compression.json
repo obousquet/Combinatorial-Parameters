@@ -6,8 +6,8 @@
   "symmetric": true,
   "p_monotonic": true,
   "c_monotonic": true,
-  "definition": "The **Proper Unlabeled Sample Compression** is the minimum size of an unlabeled sample compression scheme whose reconstruction function always returns a member of $\\mathcal{H}$.",
-  "graph_summary": "Unlabeled compression size with reconstruction constrained to the class.",
+  "definition": "Let $\\mathcal H\\subseteq\\{0,1\\}^{X}$ be nonempty on a finite domain. A **proper unlabeled compression scheme of size $k$** consists of fixed maps $C$ and $\\rho$: for every realizable partial labeled sample $s:S\\to\\{0,1\\}$, the encoder selects an unordered key $C(s)\\subseteq S$ with $|C(s)|\\le k$, and $\\rho(C(s))\\in\\mathcal H$ agrees with $s$ on $S$. The decoder receives only the coordinate key: no retained labels, original domain $S$, auxiliary messages, repetitions or ordering choices. The **Proper Unlabeled Sample Compression** $\\mathrm{pUSC}(\\mathcal H)$ is the least such $k$, or $+\\infty$ if no scheme exists. No stability is imposed. Nonexistence can occur even for finite classes, for the balanced six-split class.",
+  "graph_summary": "Fewest retained coordinates, without labels or messages, allowing reconstruction in the class; $+\\infty$ if no proper unlabeled scheme exists.",
   "short_name": "proper_unlabeled_sample_compression",
   "origin_references": "This is the proper-reconstruction restriction of the unlabeled-compression framework; see \u005ccite{kuzmin2007unlabeled,palvolgyi2021unlabeled,chalopin2022unlabeled}.",
   "monotonicity_evidence": {

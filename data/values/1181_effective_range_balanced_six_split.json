@@ -1,0 +1,10 @@
+{
+  "id": 1181,
+  "name": "Effective Range of Balanced Six-Split Class",
+  "short_name": "effective_range_balanced_six_split",
+  "class_id": "#classes/balanced_six_split",
+  "parameter_id": "#parameters/effective_range",
+  "value": "$10$",
+  "status": "established",
+  "proof": "The domain consists of the triples containing 1, so it has $\\binom52=10$ coordinates. Each triple gives label one to exactly three of the six concepts and label zero to the other three; every coordinate is active."
+}

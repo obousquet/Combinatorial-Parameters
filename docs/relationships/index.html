@@ -13614,6 +13614,34 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-159" style="position:relative;">
+        
+        <h3><a href="relationships/proper_equivalence_queries_complexity_proper_stable_sample_compression.html" class="table-title-link">Proper Equivalence Queries Complexity / Proper Stable Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Proper Stable Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>False for finite classes under the message-free definition. On <a href="classes/balanced_six_split.html">Balanced Six-Split Class</a>, proper equivalence-query complexity is 3 but no proper unlabeled compression scheme exists, even without stability. Thus psUSC is $+\infty$, and no finite-valued function of $Q_{\mathrm{peq}}$ universally bounds psUSC. This does not settle the comparison restricted to classes admitting proper stable unlabeled schemes.</p></div>
+<p><strong>Witness: </strong><a href="classes/balanced_six_split.html">Balanced Six-Split Class</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Values 1183 and 1185 give $Q_{\mathrm{peq}}=3$ and $\mathrm{psUSC}=+\infty$. Nonexistence on this fixed finite class refutes every finite upper bound, in particular every proposed affine bound. This is stronger than a growing finite ratio and is not an asymptotic-family claim.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey Corollary cor:balanced-six-split-nonexistence, using Proposition prop:proper-unlabeled-pair-obstruction and the database-owned benchmark proofs.</p></div>
+
+
+
+        </div>
+    </div>
+    
     <div class="table-card" id="math-359" style="position:relative;">
         
         <h3><a href="relationships/effective_range_positive_teaching_dimension.html" class="table-title-link">Effective Range / Positive Teaching Dimension</a></h3>
@@ -13638,6 +13666,62 @@
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-188" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_stable_sample_compression.html" class="table-title-link">Effective Range / Proper Stable Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Stable Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>False for finite classes: <a href="classes/balanced_six_split.html">Balanced Six-Split Class</a> has effective range 10 and psUSC $+\infty$, because no proper unlabeled scheme exists at any size. Hence no finite-valued function of effective range is a universal upper bound. Retaining all active labeled examples proves the labeled analogue only. If a proper stable unlabeled scheme does exist, discarding constant coordinates yields size at most effective range; see survey Remark rem:proper-unlabeled-existence. The failure is therefore one of existence, not a larger finite size.</p></div>
+<p><strong>Witness: </strong><a href="classes/balanced_six_split.html">Balanced Six-Split Class</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Values 1181 and 1185 give $E=10$ and psUSC $+\infty$. Nonexistence on a fixed finite class refutes every finite upper bound, not merely an affine one; this is not an asymptotic-family claim.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey Corollary cor:balanced-six-split-nonexistence and Remark rem:proper-unlabeled-existence.</p></div>
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-189" style="position:relative;">
+        
+        <h3><a href="relationships/effective_range_proper_unlabeled_sample_compression.html" class="table-title-link">Effective Range / Proper Unlabeled Sample Compression</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Range / Proper Unlabeled Sample Compression</p>
+<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>False for finite classes under the message-free definition: <a href="classes/balanced_six_split.html">Balanced Six-Split Class</a> has E=10 but pUSC $+\infty$. Its shattered coordinate pairs force incompatible proper decoder assignments already on empty and singleton keys. No stability assumption or bound on larger keys is used. If a proper unlabeled scheme exists, its size can be bounded by E by discarding constant coordinates; the obstruction is nonexistence.</p></div>
+<p><strong>Witness: </strong><a href="classes/balanced_six_split.html">Balanced Six-Split Class</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Values 1181 and 1184 give E=10 and pUSC $+\infty$. Nonexistence on a fixed finite class refutes every finite upper bound; this is not an asymptotic-family claim.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey Corollary cor:balanced-six-split-nonexistence and Proposition prop:proper-unlabeled-pair-obstruction.</p></div>
+
+
 
         </div>
     </div>
@@ -14115,90 +14199,6 @@
 
 <p><strong>Witness Strength:</strong> </p>
 
-
-
-<p><strong>Status:</strong> Needs verification</p>
-
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-159" style="position:relative;">
-        
-        <h3><a href="relationships/proper_equivalence_queries_complexity_proper_stable_sample_compression.html" class="table-title-link">Proper Equivalence Queries Complexity / Proper Stable Sample Compression</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Proper Equivalence Queries Complexity / Proper Stable Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/proper_equivalence_queries_complexity.html">Proper Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>No source or proof for this universal comparison has yet been verified. The available stable-compression sources do not state this proper equivalence-query lower bound.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Needs verification</p>
-
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-188" style="position:relative;">
-        
-        <h3><a href="relationships/effective_range_proper_stable_sample_compression.html" class="table-title-link">Effective Range / Proper Stable Sample Compression</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Effective Range / Proper Stable Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_stable_sample_compression.html">Proper Stable Sample Compression</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Proposed bound for finite concept classes; not currently established here. Retaining all active-coordinate instances does not give their labels to an unlabeled decoder, so the former least-consistent-member construction does not define the claimed scheme. The corresponding labeled argument remains valid. A proper stable unlabeled replacement proof or counterexample is required; no refutation is claimed. The benchmark gap below remains valid independently of the proposed universal bound.</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, effective range is $n$, while proper stable sample-compression size is 1.</p></div>
-
-
-<p><strong>Status:</strong> Needs verification</p>
-
-
-
-
-
-        </div>
-    </div>
-    
-    <div class="table-card" id="math-189" style="position:relative;">
-        
-        <h3><a href="relationships/effective_range_proper_unlabeled_sample_compression.html" class="table-title-link">Effective Range / Proper Unlabeled Sample Compression</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Effective Range / Proper Unlabeled Sample Compression</p>
-<p><strong>Parameter 1: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Proposed bound for finite concept classes; not currently established here. The former retain-all-active-examples argument passed their observed labels to the decoder and therefore proves only a proper labeled bound. An unlabeled decoder does not receive those labels. A valid replacement proof or counterexample is required; no refutation of this inequality is claimed. The benchmark gap below remains valid independently of the proposed universal bound.</p></div>
-<p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, effective range is $n$ while proper unlabeled sample compression size is 1.</p></div>
 
 
 <p><strong>Status:</strong> Needs verification</p>
