@@ -1,6 +1,7 @@
 from typing import Dict, Any, List
 import copy
 from collections import defaultdict, deque
+from fractions import Fraction
 import re
 
 
@@ -79,8 +80,8 @@ def is_homogeneous_linear(relationship: Dict[str, Any]) -> bool:
     """Whether a relation is safe for the Hasse-like dominance backbone.
 
     ``larger_c`` encompasses both homogeneous constant-factor bounds and
-    affine bounds.  A nonzero additive term cannot safely impose a vertical
-    order or participate in transitive reduction, so it remains an overlay.
+    affine bounds. Nonzero additive terms stay outside the homogeneous
+    backbone; a separate exact-constant pass can prune their overlays.
     """
     return (
         relationship["relationship_type"] in LINEAR_TYPES
@@ -202,8 +203,9 @@ def rank_adjacency(relationships: List[Dict[str, Any]]) -> Dict[str, set[str]]:
     Every established base-variant affine inequality has the same direction
     of growth as a plain ``A >= B`` relation: if ``A >= c B - d`` with
     ``c>0``, then A belongs no lower than B in the hierarchy.  Additive terms
-    prevent a relation from being safely *reduced* as a homogeneous Hasse
-    edge, but they do not change that direction.  Consequently ranks use the
+    prevent a relation from being reduced by homogeneous reachability alone,
+    but exact affine composition can prune it without changing that direction.
+    Consequently ranks use the
     transitive closure of all ``larger`` and ``larger_c`` records, including
     affine ones; exact equalities are traversable in both directions.
     """
@@ -225,6 +227,10 @@ def is_redundant_linear_relation(
     """Whether another safe linear proof establishes this direct relationship."""
     relation_type = relationship["relationship_type"]
     if not is_homogeneous_linear(relationship):
+        return False
+    # Reachability alone proves an unspecified constant-factor bound, not
+    # a specified coefficient. Defer these to the exact affine pass.
+    if relation_type == "larger_c" and affine_coefficients(relationship) is not None:
         return False
 
     source, target = relation_endpoints(relationship)
@@ -255,12 +261,14 @@ def canonical_linear_relations(
     relationships: List[Dict[str, Any]]
 ) -> List[Dict[str, Any]]:
     """Keep the strongest-evidence representative for duplicate linear facts."""
-    canonical: Dict[tuple[str, str, str], Dict[str, Any]] = {}
+    canonical: Dict[tuple, Dict[str, Any]] = {}
     for relationship in relationships:
         if not is_homogeneous_linear(relationship):
             continue
         source, target = relation_endpoints(relationship)
-        key = (source, target, relationship["relationship_type"])
+        key = (source, target, relationship["relationship_type"],
+               relationship.get("multiplicative_constant"),
+               relationship.get("additive_constant"))
         previous = canonical.get(key)
         if previous is None or reduction_representative_priority(relationship) > reduction_representative_priority(previous):
             canonical[key] = relationship
@@ -306,7 +314,7 @@ def strongest_alternate_proof_path(
                 best_target = (node, strength)
             continue
         for successor, edge in adjacency[node]:
-            next_strength = max(strength, witness_strength_level(edge))
+            next_strength = max(strength, witness_strength_level(edge) if edge.get("witness") else 0)
             state = (successor, next_strength)
             if state not in previous:
                 previous[state] = ((node, strength), edge)
@@ -347,6 +355,136 @@ def witness_protected_bypass_relations(
         if path_strength < witness_strength_level(relationship):
             protected.append((relationship, path))
     return protected
+
+
+def rational_constant(value: Any) -> Fraction | None:
+    """Read rational constants, not arbitrary TeX or parameter expressions."""
+    token = str(value).strip()
+    match = re.fullmatch(r"(-?)\\(?:tfrac|frac)(?:\{(\d+)\}\{(\d+)\}|(\d)(\d))", token)
+    if match:
+        sign, numerator, denominator, short_numerator, short_denominator = match.groups()
+        token = f"{sign}{numerator or short_numerator}/{denominator or short_denominator}"
+    try:
+        return Fraction(token)
+    except (ValueError, ZeroDivisionError):
+        return None
+
+
+def affine_coefficients(relationship: Dict[str, Any]) -> tuple[Fraction, Fraction] | None:
+    """Return (a,b) for A >= a B - b; unknown/symbolic constants stay opaque."""
+    kind = relationship["relationship_type"]
+    if kind in {"larger", "equivalence"}:
+        return Fraction(1), Fraction(0)
+    if kind != "larger_c" or not relationship.get("multiplicative_constant"):
+        return None
+    a = rational_constant(relationship["multiplicative_constant"])
+    b = rational_constant(relationship.get("additive_constant") or "0")
+    if a is None or b is None or a <= 0:
+        return None
+    return a, b
+
+
+def exact_affine_alternate_path(
+    relationship: Dict[str, Any], relationships: List[Dict[str, Any]],
+    max_states: int = 5000,
+) -> List[Dict[str, Any]] | None:
+    """Certify a replacement using exact rational arithmetic and safe witnesses.
+
+    Composing (a,b) with (c,d) gives (ac,b+ad). For nonnegative
+    parameters, a path dominates (a0,b0) if a>=a0 and b<=b0.
+    Unbounded gaps propagate through positive affine bounds. Finite strict
+    gaps are propagated only when every path edge also proves A>=B.
+    Simple paths and a work cap prevent affine cycles from making the
+    search diverge. Exhausting the cap keeps the edge; it never prunes it.
+    """
+    required = affine_coefficients(relationship)
+    if required is None or relationship["relationship_type"] == "equivalence":
+        return None
+    source, target = relation_endpoints(relationship)
+    adjacency = defaultdict(list)
+    reverse = defaultdict(set)
+    for edge in relationships:
+        if (edge["id"] == relationship["id"]
+                or variant_of(edge) != variant_of(relationship)
+                or edge.get("status") in {"refuted", "open", "conjectured", "needs_verification"}):
+            continue
+        coefficients = affine_coefficients(edge)
+        if coefficients is None:
+            continue
+        first, second = relation_endpoints(edge)
+        adjacency[first].append((second, edge, coefficients))
+        reverse[second].add(first)
+        if edge["relationship_type"] == "equivalence":
+            adjacency[second].append((first, edge, coefficients))
+            reverse[first].add(second)
+    reachable, pending = {target}, [target]
+    while pending:
+        for node in reverse[pending.pop()] - reachable:
+            reachable.add(node)
+            pending.append(node)
+    if source not in reachable:
+        return None
+    queue = deque([(source, Fraction(1), Fraction(0), 0, True, frozenset({source}), [])])
+    required_strength = witness_strength_level(relationship)
+    # A legacy witness with no classified strength must not silently vanish.
+    if relationship.get("witness") and not required_strength:
+        return None
+    states = 0
+    while queue and states < max_states:
+        node, a, b, strength, domination, visited, path = queue.popleft()
+        states += 1
+        for successor, edge, (c, d) in adjacency[node]:
+            if successor in visited or successor not in reachable:
+                continue
+            next_a, next_b = a*c, b+a*d
+            next_domination = domination and c >= 1 and d <= 0
+            next_strength = max(strength, witness_strength_level(edge) if edge.get("witness") else 0)
+            evidence = next_strength if next_strength == 2 or next_domination else 0
+            next_path = path + [edge]
+            if successor == target:
+                if next_a >= required[0] and next_b <= required[1] and evidence >= required_strength:
+                    return next_path
+            elif states + len(queue) < max_states:
+                queue.append((successor, next_a, next_b, next_strength, next_domination,
+                              visited | {successor}, next_path))
+    return None
+
+
+def prune_exact_affine_edges(displayed: list[tuple]) -> tuple[list[tuple], dict[int, list[int]]]:
+    """Prune sequentially, so mutually redundant edges cannot both disappear.
+
+    Return certificates expanded to the final surviving displayed edges.
+    Nonlinear and symbolic bounds are retained conservatively.
+    """
+    retained = list(displayed)
+    certificates = {}
+    for entry in sorted(displayed, key=lambda item: item[0]["id"]):
+        edge = entry[0]
+        path = exact_affine_alternate_path(edge, [item[0] for item in retained])
+        if path is not None:
+            retained.remove(entry)
+            certificates[edge["id"]] = [step["id"] for step in path]
+
+    def expand(identifier):
+        if identifier not in certificates:
+            return [identifier]
+        return [leaf for child in certificates[identifier] for leaf in expand(child)]
+
+    return retained, {identifier: expand(identifier) for identifier in certificates}
+
+
+def select_displayed_relationships(relationships: list[dict], exact_values: dict) -> tuple[list[tuple], dict[int, list[int]]]:
+    """Shared graph/audit selection, on already collapsed equality endpoints."""
+    by_variant = defaultdict(list)
+    for edge in relationships:
+        by_variant[variant_of(edge)].append(edge)
+    displayed = []
+    for variant, edges in by_variant.items():
+        displayed.extend((edge, variant, True) for edge in reduced_linear_relations(edges))
+        displayed.extend((edge, variant, False) for edge, _ in witness_protected_bypass_relations(edges))
+        displayed.extend((edge, variant, False) for edge in edges if not is_homogeneous_linear(edge))
+    displayed = strongest_displayed_relationships(displayed, exact_values)
+    return prune_exact_affine_edges(displayed)
 
 
 def literal_integer(value: str | None) -> int | None:
@@ -793,29 +931,6 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         node["rank"] = ranks[component_root]
         nodes.append(node)
 
-    displayed_relationships = []
-    for variant, variant_relationships in relationships_by_variant.items():
-        reduced_linear = reduced_by_variant[variant]
-        nonlinear = [
-            relationship
-            for relationship in variant_relationships
-            if not is_homogeneous_linear(relationship)
-        ]
-        displayed_relationships.extend(
-            (relationship, variant, True)
-            for relationship in reduced_linear
-        )
-        displayed_relationships.extend(
-            (relationship, variant, False)
-            for relationship, _ in witness_protected_bypass_relations(variant_relationships)
-        )
-        # Nonlinear and affine facts cannot safely take part in a homogeneous
-        # transitive reduction, so retain them as non-constraining overlays.
-        displayed_relationships.extend(
-            (relationship, variant, False)
-            for relationship in nonlinear
-        )
-
     exact_values = {}
     for value in cache.get_table_entries("values"):
         if value.get("status") != "established":
@@ -823,9 +938,11 @@ def generate(cache) -> Dict[str, List[Dict[str, Any]]]:
         integer = literal_integer(value.get("value"))
         if integer is not None:
             exact_values[(value["class_id"], value["parameter_id"])] = integer
-    displayed_relationships = strongest_displayed_relationships(
-        displayed_relationships, exact_values
+    displayed_relationships, affine_certificates = select_displayed_relationships(
+        collapsed_relationships, exact_values
     )
+    if affine_certificates:
+        print(f"Pruned {len(affine_certificates)} exact affine/dominance edges with equally strong separation evidence: {affine_certificates}")
 
     displayed_edge_keys = set()
     for r, variant, constrains_layout in displayed_relationships:

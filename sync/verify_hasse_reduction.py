@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Regression checks for the homogeneous Hasse-edge transitive reduction."""
+"""Regression checks for homogeneous and exact-affine Hasse-edge pruning."""
 
 from __future__ import annotations
 
 import importlib.util
 from pathlib import Path
+from fractions import Fraction
+import json
 
 
 def relationship(identifier: int, source: str, target: str, kind: str = "larger") -> dict[str, object]:
@@ -112,7 +114,85 @@ def main() -> None:
     assert chosen[0][0]["id"] == 11
     assert chosen[0][1] == "nonlinear"
     assert chosen[0][2] is True
-    print("Hasse transitive-reduction checks passed.")
+    def affine(identifier, source, target, a, b="0", strength=None):
+        edge = relationship(identifier, source, target, "larger_c")
+        edge.update(multiplicative_constant=a, additive_constant=b)
+        if strength:
+            edge.update(witness="#classes/C", witness_strength=strength)
+        return edge
+
+    # Exact example: E >= 2 pNCTD - 1 >= 2 NCTD - 1, including evidence.
+    target = affine(449, first, third, "2", "1", "unbounded")
+    upper = affine(450, first, second, "2", "1", "unbounded")
+    lower = relationship(439, second, third)
+    path = module.exact_affine_alternate_path(target, [target, upper, lower])
+    assert [edge["id"] for edge in path] == [450, 439]
+    # Mere domination does not prove the coefficient-two inequality.
+    weak_upper = relationship(450, first, second)
+    weak_upper.update(witness="#classes/C", witness_strength="unbounded")
+    assert module.exact_affine_alternate_path(target, [target, weak_upper, lower]) is None
+    # Composition is (a*c, b+a*d), including negative additive constants.
+    numeric = affine(20, first, third, "6", "7")
+    chain = [affine(21, first, second, "2", "1"), affine(22, second, third, "3", "3")]
+    assert module.exact_affine_alternate_path(numeric, chain)
+    assert module.exact_affine_alternate_path({**numeric, "additive_constant": "6"}, chain) is None
+    assert module.affine_coefficients(affine(23, first, second, r"\tfrac12", r"-\frac{3}{2}")) == (Fraction(1, 2), Fraction(-3, 2))
+    assert module.affine_coefficients(affine(23, first, second, r"\frac{2}{k}")) is None
+    for a in ("0", "-1", "nan", "1/0"):
+        assert module.affine_coefficients(affine(23, first, second, a)) is None
+    # A witnessless/strict path cannot discard an unbounded witness.
+    assert module.exact_affine_alternate_path(target, [{**upper, "witness_strength": "strict"}, lower]) is None
+    assert module.exact_affine_alternate_path(target, [{**upper, "variant": "k=2"}, lower]) is None
+    assert module.exact_affine_alternate_path(target, [{**upper, "status": "refuted"}, lower]) is None
+    assert module.exact_affine_alternate_path(target, [upper, lower], max_states=0) is None
+    # Finite strict evidence cannot be transported through a scaled edge.
+    strict_target = affine(24, first, third, "1/2", "0", "strict")
+    scaled = affine(25, first, second, "1/2", "0", "strict")
+    assert module.exact_affine_alternate_path(strict_target, [scaled, lower]) is None
+    # Sequential removal preserves proof paths, even in a cyclic block.
+    cycle = [affine(30, first, second, "1", "1"),
+             affine(31, first, third, "1", "1"),
+             relationship(32, second, third), relationship(33, third, second)]
+    kept, certificates = module.prune_exact_affine_edges([(e, "base", False) for e in cycle])
+    retained_ids = {entry[0]["id"] for entry in kept}
+    assert not {30, 31} <= certificates.keys()
+    assert all(set(path) <= retained_ids for path in certificates.values())
+    # Replay the real catalogue after equality collapse and display selection.
+    def records(table):
+        return [json.loads(p.read_text()) for p in (root / "data" / table).glob("*.json") if p.name != "schema.json"]
+    real = [e for e in records("relationships") if e.get("status") == "established"]
+    _, components = module.exact_equivalence_components(records("parameters"), real)
+    quotient = module.quotient_relationships(real, components)
+    kept, certificates = module.select_displayed_relationships(quotient, {})
+    retained_ids = {entry[0]["id"] for entry in kept}
+    assert 449 not in retained_ids and 449 in certificates
+    assert 450 in retained_ids
+    assert all(set(path) <= retained_ids for path in certificates.values())
+    # Independently replay every returned path on the final quotient graph.
+    by_id = {e["id"]: e for e in quotient}
+    for identifier, path in certificates.items():
+        direct = by_id[identifier]
+        node = direct["parameter_1_id"]
+        a, b = Fraction(1), Fraction(0)
+        strength, domination = 0, True
+        for step in path:
+            edge = by_id[step]
+            assert module.variant_of(edge) == module.variant_of(direct)
+            if node == edge["parameter_1_id"]:
+                node = edge["parameter_2_id"]
+            else:
+                assert edge["relationship_type"] == "equivalence" and node == edge["parameter_2_id"]
+                node = edge["parameter_1_id"]
+            c, d = module.affine_coefficients(edge)
+            b += a*d
+            a *= c
+            domination &= c >= 1 and d <= 0
+            strength = max(strength, module.witness_strength_level(edge) if edge.get("witness") else 0)
+        assert node == direct["parameter_2_id"]
+        c, d = module.affine_coefficients(direct)
+        assert a >= c and b <= d
+        assert (strength if strength == 2 or domination else 0) >= module.witness_strength_level(direct)
+    print(f"Hasse/affine transitive-reduction checks passed; #449 replaced by {certificates[449]}.")
 
 
 if __name__ == "__main__":

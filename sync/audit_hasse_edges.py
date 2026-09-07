@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Audit witness coverage and structural importance of Hasse-graph edges.
 
-The graph intentionally reduces only homogeneous compatible linear facts.
+The graph first reduces homogeneous compatible linear facts, then uses
+exact rational affine composition to prune certified display edges.
 This script uses the same quotient and reduction helpers as ``make_graph``;
 it never treats a transitive consequence as a new database relationship.
 """
@@ -188,6 +189,14 @@ def audit(data_dir: Path) -> dict[str, Any]:
     ]
     _, component_of = graph.exact_equivalence_components(parameters, relationships)
     quotient = graph.quotient_relationships(relationships, component_of)
+    exact_values = {
+        (value["class_id"], value["parameter_id"]): number
+        for value in values if value.get("status") == "established"
+        and (number := literal_integer(value.get("value"))) is not None
+    }
+    displayed, certificates = graph.select_displayed_relationships(
+        [edge for edge in quotient if edge["relationship_type"] != "incomparable"], exact_values)
+    displayed_ids = {edge["id"] for edge, _, _ in displayed}
     by_variant: dict[str, list[Record]] = defaultdict(list)
     for relationship in quotient:
         by_variant[graph.variant_of(relationship)].append(relationship)
@@ -216,7 +225,8 @@ def audit(data_dir: Path) -> dict[str, Any]:
     }
     for variant, variant_relationships in sorted(by_variant.items()):
         canonical = graph.canonical_linear_relations(variant_relationships)
-        reduced = graph.reduced_linear_relations(variant_relationships)
+        reduced = [edge for edge in graph.reduced_linear_relations(variant_relationships)
+                   if edge["id"] in displayed_ids]
         reduced_ids = {record["id"] for record in reduced}
         omitted = [record for record in canonical if record["id"] not in reduced_ids]
         adjacency: dict[str, set[str]] = defaultdict(set)
@@ -309,6 +319,8 @@ def audit(data_dir: Path) -> dict[str, Any]:
         ),
     }
     result["witness_protected_bypasses"].sort(key=lambda row: row["id"])
+    result["displayed_edges"] = len(displayed)
+    result["exact_affine_pruning"] = certificates
     return result
 
 
@@ -342,6 +354,7 @@ def main() -> None:
         print(json.dumps(report, indent=2, sort_keys=True))
         return
     print(f"Established direct relationships: {report['direct_established_relationships']}")
+    print(f"Exact affine pruning (replacement IDs refer to surviving edges): {report['exact_affine_pruning']}")
     for variant, summary in report["variants"].items():
         print(
             f"{variant}: {summary['canonical_linear_facts']} canonical linear facts, "
