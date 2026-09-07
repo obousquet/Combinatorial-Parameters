@@ -1,0 +1,12 @@
+{
+  "id": 1159,
+  "name": "Projected Recursive Teaching Dimension of Antipodal Six-Code Class",
+  "short_name": "monotone_recursive_teaching_dimension_antipodal_six_code",
+  "class_id": "#classes/antipodal_six_code",
+  "parameter_id": "#parameters/monotone_recursive_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The database-owned VC and order-compression values of this six-concept class are both two. For finite binary classes, $\\mathrm{VC}\\le\\mathrm{RTD}^{p}\\le\\mathrm{OSC}$, where the superscript denotes maximization over coordinate projections. Consequently $2\\le\\mathrm{RTD}^{p}\\le2$. The upper endpoint uses the saved full-cube order and its independent exhaustive replay; no new optimal-decoder search or general VC compression bound is asserted.",
+  "references": "Database-owned endpoint proofs in Sections \\ref{val:vc_dimension_antipodal_six_code} and \\ref{val:order_sample_compression_antipodal_six_code}. Relationships 118 and 117; survey Lemma \\ref{lem:projected-rtd-vc} and \\cite{darnstadt2016order}."
+}

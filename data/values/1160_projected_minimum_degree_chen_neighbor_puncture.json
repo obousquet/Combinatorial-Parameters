@@ -1,0 +1,12 @@
+{
+  "id": 1160,
+  "name": "Projected Minimum Degree of the Chen Neighbor Puncture",
+  "short_name": "projected_minimum_degree_chen_neighbor_puncture",
+  "class_id": "#classes/chen_neighbor_puncture",
+  "parameter_id": "#parameters/projected_minimum_degree",
+  "value": "$4$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "The database-owned endpoint proofs establish $\\mathrm{VC}=\\mathrm{RTD}^{p}=4$ on this particular 109-concept class. A shattered four-set projects to the four-cube, giving $\\mathrm d_{\\min}^{p}\\ge4$. Conversely Corollary \\ref{cor:projected-rtd-projected-min-degree} gives $\\mathrm d_{\\min}^{p}\\le\\mathrm{RTD}^{p}=4$. Thus the projected minimum degree is exactly four. The upper endpoint depends on the existing independently replayed finite teaching-plan certificate, not an unverified general equality with VC.",
+  "references": "Database-owned endpoint proofs in Sections \\ref{val:vc_dimension_chen_neighbor_puncture} and \\ref{val:monotone_recursive_teaching_dimension_chen_neighbor_puncture}. Relationships 78 and 498; survey Corollary \\ref{cor:projected-rtd-projected-min-degree}. Certificate replay: sync/verify_chen_neighbor_puncture.py."
+}

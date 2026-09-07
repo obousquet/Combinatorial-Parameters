@@ -1,0 +1,12 @@
+{
+  "id": 1158,
+  "name": "Balbach Teaching Dimension of Blockwise-Addressing",
+  "short_name": "balbach_teaching_dimension_blockwiseaddressing",
+  "class_id": "#classes/blockwiseaddressing",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every member of the Blockwise-Addressing family, the database-owned teaching and recursive teaching values are both two. The universal finite-class inequalities $\\mathrm{RTD}\\le\\mathrm{BTD}\\le\\mathrm{TD}$ therefore give $2\\le\\mathrm{BTD}\\le2$. This uses the same parameter range as the class definition; it does not require a new teaching construction.",
+  "references": "Database-owned endpoint proofs in Sections \\ref{val:recursive_teaching_dimension_blockwiseaddressing} and \\ref{val:teaching_dimension_blockwiseaddressing}. The universal comparisons are relationships 257 and 255; see \\cite{zilles2011models,balbach2008measuring}."
+}
