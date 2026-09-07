@@ -18924,6 +18924,74 @@
         </div>
     </div>
     
+    <div class="table-card" id="math-1177" style="position:relative;">
+        
+        <h3><a href="values/balbach_teaching_dimension_halfintervals.html" class="table-title-link">Balbach Teaching Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Balbach Teaching Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\min\{2,n-1\}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ the class is a singleton, with value zero. For $n=2$ both concepts have ordinary teaching size one, and this vector is fixed. For $n\ge3$, the two endpoint concepts $[1]$ and $[n]$ have ordinary teaching size one, using $(2,0)$ and $(n,1)$ respectively. Each interior $[i]$, $1<i<n$, needs two examples: $(i,1),(i+1,0)$ teach it, while any one consistent positive or negative example leaves a larger or smaller initial segment. All initial values are at least one, so at sample size one the filter deletes no competitor; no interior value can drop to one. The size-zero sample retains all concepts. Each original minimum sample retains its target under this unchanged vector. Thus the initial vector is fixed and the maximum is two.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1178" style="position:relative;">
+        
+        <h3><a href="values/balbach_teaching_dimension_common_core_cube.html" class="table-title-link">Balbach Teaching Dimension of Common-Core Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Balbach Teaching Dimension of Common-Core Cube</p>
+<p><strong>Class: </strong><a href="classes/common_core_cube.html">Common-Core Cube</a></p>
+<p><strong>Parameter: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class is a full $n$-cube with an additional constant positive coordinate. Proposition \ref{prop:balbach-monotonicity} proves invariance under adjoining constant coordinates, at every iterate and with the sample-size filter retained. The full cube has BTD $n$, giving the result. Equivalently every target has ordinary teaching size $n$: all variable bits must be specified, and the constant coordinate distinguishes none. This uniform vector is fixed by the Balbach recursion.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1179" style="position:relative;">
+        
+        <h3><a href="values/balbach_teaching_dimension_repeated_coordinate_cube.html" class="table-title-link">Balbach Teaching Dimension of Repeated-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Balbach Teaching Dimension of Repeated-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/repeated_coordinate_cube.html">Repeated-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
+<p><strong>Value: </strong>$n$</p>
+<p><strong>Order:</strong> $\Omega(n)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every $n\ge1$, an ordinary teacher must query each of the $n-1$ nonrepeated bits and at least one copy of the repeated bit. Otherwise the concept obtained by flipping an unqueried underlying bit is still consistent. Those $n$ queries suffice, so every target has ordinary minimum teaching size $n$. For any sample of size at most $n$, the initial Balbach filter retains every consistent concept, since all their thresholds equal $n$. No sample of size below $n$ can therefore teach its target, whereas its ordinary size-$n$ sample does. The uniform initial vector is fixed, proving BTD $n$ despite the repeated coordinates.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1180" style="position:relative;">
+        
+        <h3><a href="values/balbach_teaching_dimension_cube_halfinterval_product.html" class="table-title-link">Balbach Teaching Dimension of Cube–Half-interval Product</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Balbach Teaching Dimension of Cube–Half-interval Product</p>
+<p><strong>Class: </strong><a href="classes/cube_halfinterval_product.html">Cube–Half-interval Product</a></p>
+<p><strong>Parameter: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
+<p><strong>Value: </strong>$m+\min\{2,n-1\}$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $m\ge1,n\ge2$, Proposition \ref{prop:balbach-cube-product} gives BTD $m+\mathrm{BTD}(\mathcal I_n)$: every admissible sample must query all $m$ independent cube coordinates, after which the size filter is exactly that of the half-interval factor. The half-interval value proof in Section \ref{val:balbach_teaching_dimension_halfintervals} gives $\mathrm{BTD}(\mathcal I_n)=\min\{2,n-1\}$. Thus the value is $m+1$ for $n=2$ and $m+2$ for $n\ge3$. The half-interval factor consists of nonempty initial segments, retaining its constant first coordinate.</p></div>
+
+
+        </div>
+    </div>
+    
             </div>
     
         </main>

@@ -7,8 +7,9 @@
   "witness": "#classes/singletons_plus_empty_set",
   "witness_strength": "unbounded",
   "status": "established",
-  "proof": "At every Balbach iteration, an ordinary minimum teaching set for a target is still valid: it leaves no other consistent hypothesis, hence no other hypothesis surviving the size filter. Thus every iterated Balbach value is at most its ordinary teaching dimension; maximize at stabilization.",
   "references": "\\cite{zilles2011models,balbach2008measuring}",
   "short_name": "teaching_dimension_balbach_teaching_dimension",
-  "name": "Teaching Dimension / Balbach Teaching Dimension"
+  "name": "Teaching Dimension / Balbach Teaching Dimension",
+  "latex_proof_label": "prop:balbach-monotonicity",
+  "proof_source": "The nonincrease argument in Proposition \\ref{prop:balbach-monotonicity} shows that every iterated target value is at most its ordinary teaching size. Each step reuses the preceding stage's optimal sample, which still retains its target; it does not assume an original ordinary teaching sample remains admissible forever."
 }

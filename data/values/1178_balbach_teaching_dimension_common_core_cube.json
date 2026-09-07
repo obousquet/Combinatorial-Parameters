@@ -1,0 +1,11 @@
+{
+  "id": 1178,
+  "name": "Balbach Teaching Dimension of Common-Core Cube",
+  "short_name": "balbach_teaching_dimension_common_core_cube",
+  "class_id": "#classes/common_core_cube",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$n$",
+  "status": "established",
+  "proof": "The class is a full $n$-cube with an additional constant positive coordinate. Proposition \\ref{prop:balbach-monotonicity} proves invariance under adjoining constant coordinates, at every iterate and with the sample-size filter retained. The full cube has BTD $n$, giving the result. Equivalently every target has ordinary teaching size $n$: all variable bits must be specified, and the constant coordinate distinguishes none. This uniform vector is fixed by the Balbach recursion.",
+  "value_class": "omega_n"
+}

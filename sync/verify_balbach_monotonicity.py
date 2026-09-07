@@ -8,7 +8,7 @@ The universal proof is survey-owned; this is a bounded regression only.
 
 import json
 from functools import cache
-from itertools import combinations, product
+from itertools import product
 from pathlib import Path
 
 from verify_noclashing_antichain_gap import consistent, samples
@@ -63,7 +63,56 @@ def btd(concepts: tuple[str, ...]) -> int:
     return max(history(concepts)[-1], default=0)
 
 
+def cube_product_checks() -> None:
+    families = []
+    for d in range(3):
+        cube = tuple("".join(v) for v in product("01", repeat=d))
+        families.extend(tuple(h for i, h in enumerate(cube) if mask >> i & 1)
+                        for mask in range(1, 1 << len(cube)))
+    # This factor actually changes between iterations, unlike a full cube.
+    families.append(("000", "100", "010", "001"))
+    checked = 0
+    for factor in families:
+        for m in range(3):
+            cube = tuple("".join(v) for v in product("01", repeat=m))
+            combined = tuple(v+h for v in cube for h in factor)
+            expected = tuple(tuple(m+b for _ in cube for b in stage)
+                             for stage in history(factor))
+            assert history(combined) == expected
+            assert independent_history(combined) == expected
+            checked += 1
+    for n in range(1, 8):
+        intervals = tuple("1"*i+"0"*(n-i) for i in range(1, n+1))
+        assert history(intervals) == independent_history(intervals)
+        assert btd(intervals) == min(2, n-1)
+        assert len(history(intervals)) == 1
+    for m in (1, 2):
+        cube = tuple("".join(v) for v in product("01", repeat=m))
+        for n in (2, 3, 4):
+            intervals = tuple("1"*i+"0"*(n-i) for i in range(1, n+1))
+            combined = tuple(v+h for v in cube for h in intervals)
+            assert history(combined) == independent_history(combined)
+            assert btd(combined) == m+min(2, n-1)
+    for n in range(1, 4):
+        cube = tuple("".join(v) for v in product("01", repeat=n))
+        core = tuple("1"+v for v in cube)
+        repeated = tuple(v[1:]+v[0]*(2**(n-1)) for v in cube)
+        for family in (core, repeated):
+            assert history(family) == independent_history(family)
+            assert history(family) == ((n,)*len(cube),)
+    # An old ordinary sample need not remain admissible: the zero target's
+    # original size-three teacher loses its target after its value drops to 2.
+    factor = families[-1]
+    assert history(factor)[-1][0] == 2
+    filtered = [h for h, b in zip(factor, history(factor)[-1], strict=True)
+                if b >= 3 and h == "000"]
+    assert filtered == []
+    print(f"{checked} full-iterate cube products, seven interval sizes, six interval products, "
+          "six core/repeated cubes and the old-sample rejection control passed.")
+
+
 def main() -> None:
+    cube_product_checks()
     classes = paddings = fibres = subclasses = 0
     for d in range(4):
         cube = tuple("".join(v) for v in product("01", repeat=d))
@@ -119,11 +168,27 @@ def main() -> None:
     assert value["value"] == "$1$" and value["status"] == "established"
     assert value["parameter_id"] == "#parameters/balbach_teaching_dimension"
     assert value["class_id"] == "#classes/private_coordinate_cube"
+    for value_id, class_id, formula in (
+        (1177, "halfintervals", r"$\min\{2,n-1\}$"),
+        (1178, "common_core_cube", "$n$"),
+        (1179, "repeated_coordinate_cube", "$n$"),
+        (1180, "cube_halfinterval_product", r"$m+\min\{2,n-1\}$"),
+    ):
+        record = json.loads((data / "values" /
+                             f"{value_id}_balbach_teaching_dimension_{class_id}.json").read_text())
+        assert record["value"] == formula and record["status"] == "established"
+        assert record["parameter_id"] == "#parameters/balbach_teaching_dimension"
+        assert record["class_id"] == f"#classes/{class_id}"
+    relation = json.loads((data / "relationships/255_teaching_dimension_balbach_teaching_dimension.json").read_text())
+    assert relation["latex_proof_label"] == "prop:balbach-monotonicity"
+    assert "proof" not in relation and "preceding stage" in relation["proof_source"]
+    assert relation["witness_strength"] == "unbounded"
     print(f"Balbach: {classes} classes in two solvers, {paddings} constant paddings, "
           f"{fibres} coordinate fibres, {subclasses} subclass comparisons.")
     print("Four singleton-plus-empty reductions and two private-cube controls passed; "
           "equal branches 1/1 have whole value 1. No larger census.")
     print("Eight property/proof links, target-retention wording and private-cube value guarded.")
+    print("Four benchmark formulae and the repaired TD comparison proof guarded.")
 
 
 if __name__ == "__main__":

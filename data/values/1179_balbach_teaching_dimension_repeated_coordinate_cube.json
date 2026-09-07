@@ -1,0 +1,11 @@
+{
+  "id": 1179,
+  "name": "Balbach Teaching Dimension of Repeated-Coordinate Cubes",
+  "short_name": "balbach_teaching_dimension_repeated_coordinate_cube",
+  "class_id": "#classes/repeated_coordinate_cube",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$n$",
+  "status": "established",
+  "proof": "For every $n\\ge1$, an ordinary teacher must query each of the $n-1$ nonrepeated bits and at least one copy of the repeated bit. Otherwise the concept obtained by flipping an unqueried underlying bit is still consistent. Those $n$ queries suffice, so every target has ordinary minimum teaching size $n$. For any sample of size at most $n$, the initial Balbach filter retains every consistent concept, since all their thresholds equal $n$. No sample of size below $n$ can therefore teach its target, whereas its ordinary size-$n$ sample does. The uniform initial vector is fixed, proving BTD $n$ despite the repeated coordinates.",
+  "value_class": "omega_n"
+}

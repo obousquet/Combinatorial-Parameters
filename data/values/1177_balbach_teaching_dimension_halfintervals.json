@@ -1,0 +1,11 @@
+{
+  "id": 1177,
+  "name": "Balbach Teaching Dimension of Half-intervals",
+  "short_name": "balbach_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/balbach_teaching_dimension",
+  "value": "$\\min\\{2,n-1\\}$",
+  "status": "established",
+  "proof": "For $n=1$ the class is a singleton, with value zero. For $n=2$ both concepts have ordinary teaching size one, and this vector is fixed. For $n\\ge3$, the two endpoint concepts $[1]$ and $[n]$ have ordinary teaching size one, using $(2,0)$ and $(n,1)$ respectively. Each interior $[i]$, $1<i<n$, needs two examples: $(i,1),(i+1,0)$ teach it, while any one consistent positive or negative example leaves a larger or smaller initial segment. All initial values are at least one, so at sample size one the filter deletes no competitor; no interior value can drop to one. The size-zero sample retains all concepts. Each original minimum sample retains its target under this unchanged vector. Thus the initial vector is fixed and the maximum is two.",
+  "value_class": "omega_1"
+}
