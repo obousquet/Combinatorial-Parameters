@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Combinatorial-Parameters/">
-        <title>Relationships between parameters - Combinatorial Parameters</title>
+        <title>Values assigned to parameters for specific classes - Combinatorial Parameters</title>
         <link rel="stylesheet" href="styles.css">
         
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Relationships between parameters - Combinatorial Parameters</h1>
+            <h1>Values assigned to parameters for specific classes - Combinatorial Parameters</h1>
             
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relationships/index.html">&larr; Back to Relationships Table</a></div>
-    <div class="table-card" id="math-324" style="position:relative;">
+            <div class="back-link-light"><a href="values/index.html">&larr; Back to Values Table</a></div>
+    <div class="table-card" id="math-1173" style="position:relative;">
         
-        <h3><a href="relationships/subset_teaching_dimension_vc_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / VC Dimension (Incomparable)</a></h3>
+        <h3><a href="values/subset_teaching_dimension_addressing.html" class="table-title-link">Subset Teaching Dimension of Addressing</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Subset Teaching Dimension / VC Dimension (Incomparable)</p>
-<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+        <p><strong>Name: </strong>Subset Teaching Dimension of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\begin{cases}0&n=1,\\1&n\ge2.\end{cases}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
 
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal upper bound in terms of the other, even up to an affine-linear factor.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For every $u\ge3$, $\mathcal C^u_{1/2}=\{\{x_i\}:i\in[u+1]\}\cup\{\{x_i,x_j\}:i,j\in[u+1]\}$ has $\mathrm{STD}=u$ and $\mathrm{VC}=2$: pairs are shattered, while a triple cannot be because every concept has size at most two.</p></div>
-<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>The private-coordinate cubes <a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a> have STD one and VC dimension n for every n&gt;=1, by database-owned values 1174 and 1139. Thus VC is unbounded with STD fixed.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 18(2) gives $\mathrm{STD}(\mathcal C^u_{1/2})=u$, and the displayed size-two construction gives its VC dimension. In the reverse direction, the private-coordinate-cube value proofs give STD one and VC n. The previously cited monomial family from Theorem 19 also remains a valid alternative, but the displayed witness now uses an explicit catalogue family with database-owned endpoint proofs.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Each target has a private positive address coordinate, which teaches it with one ordinary example. For $n\ge2$, all ordinary minimum samples consequently have size one, and no labeled singleton sample can teach two different targets. At the next subset-teaching step these singleton families remain unchanged: an empty sample is contained in every target's family and cannot identify just one. Hence the process is fixed at value one. For $n=1$, the empty sample teaches the sole target and STD is zero.</p></div>
 
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
 
         </div>
     </div>

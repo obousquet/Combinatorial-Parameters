@@ -1,0 +1,11 @@
+{
+  "id": 1172,
+  "name": "Subset Teaching Dimension of Half-intervals",
+  "short_name": "subset_teaching_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$\\begin{cases}0&n=1,\\\\1&n\\ge2.\\end{cases}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $n=1$ there is only one target, taught by the empty sample. Let $n\\ge2$ and write $h_i=[i]$. The unique ordinary minimum sample of $h_1$ is $\\{(2,0)\\}$, that of $h_n$ is $\\{(n,1)\\}$, and for $1<i<n$ it is $\\{(i,1),(i+1,0)\\}$. Adjacent targets force these examples and they suffice to exclude every other target. The constant first coordinate cannot appear in a minimum sample. Every labeled example in this list occurs in the minimum sample of exactly one target. At the first subset-teaching iteration, each interior target therefore has both of its singleton subsamples as minimizers, while the endpoint samples remain unchanged. These pairwise distinct singleton samples form a fixed point: every proper subset is empty and belongs to all targets. Thus STD is one. This is a direct all-n calculation, not a consequence of subclass monotonicity."
+}

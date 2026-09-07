@@ -1,0 +1,11 @@
+{
+  "id": 1173,
+  "name": "Subset Teaching Dimension of Addressing",
+  "short_name": "subset_teaching_dimension_addressing",
+  "class_id": "#classes/addressing",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$\\begin{cases}0&n=1,\\\\1&n\\ge2.\\end{cases}$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "Each target has a private positive address coordinate, which teaches it with one ordinary example. For $n\\ge2$, all ordinary minimum samples consequently have size one, and no labeled singleton sample can teach two different targets. At the next subset-teaching step these singleton families remain unchanged: an empty sample is contained in every target's family and cannot identify just one. Hence the process is fixed at value one. For $n=1$, the empty sample teaches the sole target and STD is zero."
+}

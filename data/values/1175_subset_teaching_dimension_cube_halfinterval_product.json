@@ -1,0 +1,10 @@
+{
+  "id": 1175,
+  "name": "Subset Teaching Dimension of Cube–Half-interval Product",
+  "short_name": "subset_teaching_dimension_cube_halfinterval_product",
+  "class_id": "#classes/cube_halfinterval_product",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$m+1$",
+  "status": "established",
+  "proof": "For $m\\ge1,n\\ge2$, the two factors have STD $m$ and one, respectively, by the full-cube and half-interval calculations. Proposition \\ref{prop:subset-teaching-product} proves that STD is additive for nonempty finite classes on disjoint domains: at every iteration, the full family of minimum samples for a product target consists exactly of unions of factor minimizers, because their containment sets factor as a Cartesian product. Applying that identity gives $m+1$. The nonempty initial-segment convention, including its constant first coordinate, is the one used in the half-interval value proof."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1174,
+  "name": "Subset Teaching Dimension of Private-Coordinate Cubes",
+  "short_name": "subset_teaching_dimension_private_coordinate_cube",
+  "class_id": "#classes/private_coordinate_cube",
+  "parameter_id": "#parameters/subset_teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For every $n\\ge1$, the private positive example $(p_v,1)$ teaches $h_v$ among the $2^n$ concepts. Thus every ordinary minimum teacher has size one, and its singleton sample belongs to only one target's initial minimum family. These families are already a subset-teaching fixed point, since their only proper subsample is empty and occurs for every target. There are at least two targets, so value zero is impossible."
+}

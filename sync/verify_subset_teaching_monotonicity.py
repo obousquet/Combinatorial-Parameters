@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Replay STD conditioning counterexamples using every minimum teacher.
+"""Replay STD conditioning, product and benchmark proofs with all minimizers.
 
-The survey's prop:subset-teaching-conditioning owns the full finite proof.
+The survey owns the general product and conditioning/incomparability proofs;
+the database owns the individual benchmark values and their proofs.
 This solver-free regression scans actual ternary samples and cross-checks
 each step against the independently represented subset-enumeration helper.
 It deliberately does not launch the historical three-coordinate search.
 """
 
 import json
+from functools import cache
 from itertools import product
 from pathlib import Path
 
@@ -82,6 +84,77 @@ def branch(concepts: tuple[str, ...], coordinate: int, label: str) -> tuple[str,
                         for h in concepts if h[coordinate] == label))
 
 
+def verify_products_and_benchmarks() -> None:
+    @cache
+    def littlestone(concepts: tuple[str, ...]) -> int:
+        best = 0
+        for j in range(len(concepts[0])):
+            zero = tuple(h for h in concepts if h[j] == "0")
+            one = tuple(h for h in concepts if h[j] == "1")
+            if zero and one:
+                best = max(best, 1 + min(littlestone(zero), littlestone(one)))
+        return best
+
+    factors = (("",), ("0", "1"), ("10", "11"),
+               ("00", "01", "10", "11"), H, ("000", "001", "010", "111"))
+    products = stages = 0
+    for first, second in product(factors, repeat=2):
+        if len(first[0]) + len(second[0]) > 5:
+            continue
+        left, right = history(first), history(second)
+        actual = history(tuple(a+b for a in first for b in second))
+        for k in range(max(len(left), len(right), len(actual))):
+            expected = {a+b: {s+t for s in left[min(k, len(left)-1)][a]
+                             for t in right[min(k, len(right)-1)][b]}
+                        for a in first for b in second}
+            assert actual[min(k, len(actual)-1)] == expected
+            stages += 1
+        products += 1
+    for n in range(1, 8):
+        intervals = tuple("1" * i + "0" * (n-i) for i in range(1, n+1))
+        assert std(intervals) == int(n >= 2)
+        assert len(history(intervals)) <= 2
+        assert littlestone(intervals) == n.bit_length()-1
+    for n in range(3, 6):
+        levels = tuple("".join(v) for v in product("01", repeat=n)
+                       if 1 <= v.count("1") <= 2)
+        result = history(levels)
+        assert len(result) == 1 and std(levels) == n-1
+        for h, choices in result[0].items():
+            expected = "".join(("0" if b == "0" else "*") if h.count("1") == 1
+                               else ("1" if b == "1" else "*") for b in h)
+            assert choices == {expected}
+    for n in (1, 2):
+        cube = tuple("".join(h) for h in product("01", repeat=n))
+        private = tuple(h + "0" * i + "1" + "0" * (len(cube)-i-1)
+                        for i, h in enumerate(cube))
+        assert std(private) == 1
+    for n in range(1, 5):
+        bits = (n-1).bit_length()
+        addressing = tuple("0" * i + "1" + "0" * (n-i-1)
+                           + (format(i, f"0{bits}b") if bits else "") for i in range(n))
+        assert std(addressing) == int(n >= 2)
+    data = Path(__file__).resolve().parents[1] / "data"
+    expected_values = {
+        "1172_subset_teaching_dimension_halfintervals": r"$\begin{cases}0&n=1,\\1&n\ge2.\end{cases}$",
+        "1173_subset_teaching_dimension_addressing": r"$\begin{cases}0&n=1,\\1&n\ge2.\end{cases}$",
+        "1174_subset_teaching_dimension_private_coordinate_cube": "$1$",
+        "1175_subset_teaching_dimension_cube_halfinterval_product": "$m+1$",
+        "103_littlestone_dimension_halfintervals": r"$\lfloor\log_2 n\rfloor$",
+    }
+    for stem, expected in expected_values.items():
+        record = json.loads((data / "values" / f"{stem}.json").read_text())
+        assert record["value"] == expected and record["status"] == "established"
+        assert record["proof"]
+    record = json.loads((data / "relationships/519_subset_teaching_dimension_littlestone_dimension_incomparable.json").read_text())
+    assert record["relationship_type"] == "incomparable"
+    assert record["latex_proof_label"] == "prop:subset-teaching-littlestone-incomparable"
+    assert record["parameter_1_larger_witness"] and record["parameter_2_larger_witness"]
+    print(f"Products: {products} fixed pairs, {stages} complete teacher-family stages; "
+          "seven interval sizes with exact tree depths, three singleton--doubleton fixed points, "
+          "two private cubes, four addressing sizes; five value guards and one incomparability guard.")
+
+
 def main() -> None:
     assert history(H) == EXPECTED
     assert all({h[j] for h in H} == {"0", "1"} for j in range(3))
@@ -124,6 +197,7 @@ def main() -> None:
     # Signed containment must not identify opposite labels or erase coordinates.
     assert not contained("0*", "1*") and not contained("0*", "*0")
     assert contained("0*", "00")
+    verify_products_and_benchmarks()
     print("STD: complete four-stage five-concept table; conditioning 1 -> 2; "
           "equal branches 1/1 with whole value 1; projection and retained-constant controls.")
     print("Published Table 7 replayed through stabilization; four cubes, four singletons, "

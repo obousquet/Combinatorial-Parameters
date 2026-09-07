@@ -10712,9 +10712,9 @@
 <p><strong>Witness Strength:</strong> </p>
 
 <strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For every $u\ge3$, $\mathcal C^u_{1/2}=\{\{x_i\}:i\in[u+1]\}\cup\{\{x_i,x_j\}:i,j\in[u+1]\}$ has $\mathrm{STD}=u$ and $\mathrm{VC}=2$: pairs are shattered, while a triple cannot be because every concept has size at most two.</p></div>
-<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>The class of monomials over $m$ Boolean variables has $\mathrm{STD}=2$ and $\mathrm{VC}\ge m$. The $m$ assignments with exactly one zero coordinate are shattered by positive conjunctions.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>The private-coordinate cubes <a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a> have STD one and VC dimension n for every n&gt;=1, by database-owned values 1174 and 1139. Thus VC is unbounded with STD fixed.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 18(2) gives $\mathrm{STD}(\mathcal C^u_{1/2})=u$, and the displayed size-two construction gives its VC dimension. Theorem 19 gives constant STD for monomials; the stated explicit set is shattered, so their VC dimension is unbounded.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 18(2) gives $\mathrm{STD}(\mathcal C^u_{1/2})=u$, and the displayed size-two construction gives its VC dimension. In the reverse direction, the private-coordinate-cube value proofs give STD one and VC n. The previously cited monomial family from Theorem 19 also remains a valid alternative, but the displayed witness now uses an explicit catalogue family with database-owned endpoint proofs.</p></div>
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
@@ -13322,6 +13322,34 @@
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#blondal2026simplicialcovering">[blondal2026simplicialcovering]</a> <a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a> <a href="bibliography.html#alon2016sign">[alon2016sign]</a> <a href="bibliography.html#chase2024dual">[chase2024dual]</a>; database-owned value proofs.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-519" style="position:relative;">
+        
+        <h3><a href="relationships/subset_teaching_dimension_littlestone_dimension_incomparable.html" class="table-title-link">Subset Teaching Dimension / Littlestone Dimension (Incomparable)</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension / Littlestone Dimension (Incomparable)</p>
+<p><strong>Parameter 1: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1 \parallel P_2$ (incomparable)</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>Neither parameter admits a universal affine-linear upper bound in terms of the other on finite binary concept classes.</p></div>
+
+<p><strong>Witness Strength:</strong> </p>
+
+<strong>Witness: Parameter 1 Larger:</strong><div class="text-field"><p>For $n\ge4$, let $\mathcal F_n$ consist of all singleton and doubleton subsets of $[n]$. Its STD is $n-1$, while leaf counting gives Littlestone dimension at most $\lfloor\log_2(n(n+1)/2)\rfloor$. The survey proves the complete minimum-teacher fixed point. Thus STD grows linearly while Littlestone grows at most logarithmically.</p></div>
+<strong>Witness: Parameter 2 Larger:</strong><div class="text-field"><p>For the half-interval classes <a href="classes/halfintervals.html">Half-intervals</a> with $n\ge2$, STD is one and Littlestone dimension is $\lfloor\log_2n\rfloor$. The latter diverges with the former fixed.</p></div>
+<p><strong>Status:</strong> Established</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition \ref{prop:subset-teaching-littlestone-incomparable} in the survey; half-interval endpoint values are database-owned.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a> for the singleton--doubleton construction; the survey gives a direct fixed-point and tree-counting proof.</p></div>
 
         </div>
     </div>

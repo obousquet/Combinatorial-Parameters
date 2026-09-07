@@ -1839,9 +1839,9 @@
         <p><strong>Name: </strong>Littlestone Dimension of Half-intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Parameter: </strong><a href="parameters/littlestone_dimension.html">Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$\log n$</p>
+<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>More precisely, it is $\Theta(\log_2 n)$ (with endpoint-rounding depending on whether the empty and full thresholds are included).</p>
+<p><strong>Details: </strong>Exact for the catalogue convention of n nonempty initial segments; the value is zero at n=1. Balanced splits attain the leaf-counting upper bound.</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>A balanced binary-search tree on the ordered endpoints is shattered: at a queried coordinate, the target initial segment lies on exactly one side of that coordinate, and each branch retains an interval of feasible endpoints.  This gives depth $\lfloor\log_2 n\rfloor$.  Conversely, a depth-$d$ shattered Littlestone tree has $2^d$ leaves realized by distinct concepts, while the class has only $n$ initial segments.  Hence $d\le\log_2 n$ and the value is logarithmic.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
@@ -18835,6 +18835,74 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Derivation:</strong><div class="text-field"><p>There are n-1 singleton coordinate groups and $2^{n-1}$ copies of the first bit. Every one of these coordinates takes both labels because its underlying bit varies freely. Thus all domain coordinates are effective, giving effective range $n-1+2^{n-1}$. Equal columns still correspond to distinct domain coordinates.</p></div>
 <strong>References:</strong><div class="text-field"><p>Local definition-driven proof; bounded independent replay in sync/verify_noclashing_antichain_gap.py.</p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1172" style="position:relative;">
+        
+        <h3><a href="values/subset_teaching_dimension_halfintervals.html" class="table-title-link">Subset Teaching Dimension of Half-intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension of Half-intervals</p>
+<p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
+<p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\begin{cases}0&n=1,\\1&n\ge2.\end{cases}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ there is only one target, taught by the empty sample. Let $n\ge2$ and write $h_i=[i]$. The unique ordinary minimum sample of $h_1$ is $\{(2,0)\}$, that of $h_n$ is $\{(n,1)\}$, and for $1<i<n$ it is $\{(i,1),(i+1,0)\}$. Adjacent targets force these examples and they suffice to exclude every other target. The constant first coordinate cannot appear in a minimum sample. Every labeled example in this list occurs in the minimum sample of exactly one target. At the first subset-teaching iteration, each interior target therefore has both of its singleton subsamples as minimizers, while the endpoint samples remain unchanged. These pairwise distinct singleton samples form a fixed point: every proper subset is empty and belongs to all targets. Thus STD is one. This is a direct all-n calculation, not a consequence of subclass monotonicity.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1173" style="position:relative;">
+        
+        <h3><a href="values/subset_teaching_dimension_addressing.html" class="table-title-link">Subset Teaching Dimension of Addressing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension of Addressing</p>
+<p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
+<p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Value: </strong>$\begin{cases}0&n=1,\\1&n\ge2.\end{cases}$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Each target has a private positive address coordinate, which teaches it with one ordinary example. For $n\ge2$, all ordinary minimum samples consequently have size one, and no labeled singleton sample can teach two different targets. At the next subset-teaching step these singleton families remain unchanged: an empty sample is contained in every target's family and cannot identify just one. Hence the process is fixed at value one. For $n=1$, the empty sample teaches the sole target and STD is zero.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1174" style="position:relative;">
+        
+        <h3><a href="values/subset_teaching_dimension_private_coordinate_cube.html" class="table-title-link">Subset Teaching Dimension of Private-Coordinate Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension of Private-Coordinate Cubes</p>
+<p><strong>Class: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Value: </strong>$1$</p>
+<p><strong>Order:</strong> $\Omega(1)$</p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every $n\ge1$, the private positive example $(p_v,1)$ teaches $h_v$ among the $2^n$ concepts. Thus every ordinary minimum teacher has size one, and its singleton sample belongs to only one target's initial minimum family. These families are already a subset-teaching fixed point, since their only proper subsample is empty and occurs for every target. There are at least two targets, so value zero is impossible.</p></div>
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-1175" style="position:relative;">
+        
+        <h3><a href="values/subset_teaching_dimension_cube_halfinterval_product.html" class="table-title-link">Subset Teaching Dimension of Cube–Half-interval Product</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Subset Teaching Dimension of Cube–Half-interval Product</p>
+<p><strong>Class: </strong><a href="classes/cube_halfinterval_product.html">Cube–Half-interval Product</a></p>
+<p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
+<p><strong>Value: </strong>$m+1$</p>
+<p><strong>Order:</strong> </p>
+
+<p><strong>Status:</strong> Established</p>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $m\ge1,n\ge2$, the two factors have STD $m$ and one, respectively, by the full-cube and half-interval calculations. Proposition \ref{prop:subset-teaching-product} proves that STD is additive for nonempty finite classes on disjoint domains: at every iteration, the full family of minimum samples for a product target consists exactly of unions of factor minimizers, because their containment sets factor as a Cartesian product. Applying that identity gives $m+1$. The nonempty initial-segment convention, including its constant first coordinate, is the one used in the half-interval value proof.</p></div>
+
 
         </div>
     </div>

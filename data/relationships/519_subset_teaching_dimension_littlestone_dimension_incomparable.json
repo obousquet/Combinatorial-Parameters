@@ -1,0 +1,15 @@
+{
+  "id": 519,
+  "name": "Subset Teaching Dimension / Littlestone Dimension (Incomparable)",
+  "short_name": "subset_teaching_dimension_littlestone_dimension_incomparable",
+  "parameter_1_id": "#parameters/subset_teaching_dimension",
+  "parameter_2_id": "#parameters/littlestone_dimension",
+  "relationship_type": "incomparable",
+  "status": "established",
+  "details": "Neither parameter admits a universal affine-linear upper bound in terms of the other on finite binary concept classes.",
+  "parameter_1_larger_witness": "For $n\\ge4$, let $\\mathcal F_n$ consist of all singleton and doubleton subsets of $[n]$. Its STD is $n-1$, while leaf counting gives Littlestone dimension at most $\\lfloor\\log_2(n(n+1)/2)\\rfloor$. The survey proves the complete minimum-teacher fixed point. Thus STD grows linearly while Littlestone grows at most logarithmically.",
+  "parameter_2_larger_witness": "For the half-interval classes #classes/halfintervals with $n\\ge2$, STD is one and Littlestone dimension is $\\lfloor\\log_2n\\rfloor$. The latter diverges with the former fixed.",
+  "proof_source": "Proposition \\ref{prop:subset-teaching-littlestone-incomparable} in the survey; half-interval endpoint values are database-owned.",
+  "latex_proof_label": "prop:subset-teaching-littlestone-incomparable",
+  "references": "\\cite{zilles2011models} for the singleton--doubleton construction; the survey gives a direct fixed-point and tree-counting proof."
+}
