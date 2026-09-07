@@ -1,0 +1,15 @@
+{
+  "id": 524,
+  "name": "Monotonic Yang Dimension / Monotonic co-VC Dimension (affine)",
+  "short_name": "monotonic_yang_dimension_monotonic_covc_dimension_affine",
+  "parameter_1_id": "#parameters/monotonic_yang_dimension",
+  "parameter_2_id": "#parameters/monotonic_covc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "status": "established",
+  "details": "For every finite nonempty binary class, $\\mathrm Y^*\\ge\\mathrm{coVC}^*-1$. This is the max-over-subfamilies lift of the hollow-star bound, with the same additive constant. Since $\\mathrm{coVC}^*=\\max\\{\\mathrm S,\\mathrm{coVC}\\}$, it also gives $\\mathrm Y^*\\ge\\mathrm S-1$. No converse affine bound or endpoint-separation witness is claimed.",
+  "latex_proof_label": "prop:yang-hollow-star",
+  "proof_source": "Proposition \\ref{prop:yang-hollow-star} in the LaTeX survey. The proof also identifies subclass hollow stars as filled or hollow stars of the original class.",
+  "derivation": "max_subfamilies on both endpoints of #relationships/yang_dimension_covc_dimension_affine"
+}

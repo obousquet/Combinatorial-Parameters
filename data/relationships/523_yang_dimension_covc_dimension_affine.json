@@ -1,0 +1,17 @@
+{
+  "id": 523,
+  "name": "Yang Dimension / co-VC Dimension (affine)",
+  "short_name": "yang_dimension_covc_dimension_affine",
+  "parameter_1_id": "#parameters/yang_dimension",
+  "parameter_2_id": "#parameters/covc_dimension",
+  "relationship_type": "larger_c",
+  "multiplicative_constant": "1",
+  "additive_constant": "1",
+  "status": "established",
+  "details": "For every finite nonempty binary class, $\\mathrm Y\\ge\\mathrm{coVC}-1$. The proof holds over every coefficient field, including the catalogue's default $\\mathbb F_2$; a size-$t$ hollow star gives a simplex-boundary hole contributing $t-1$ to Yang dimension.",
+  "latex_proof_label": "prop:yang-hollow-star",
+  "proof_source": "Proposition \\ref{prop:yang-hollow-star} in the LaTeX survey, using the induced-literal Hochster formula with the ideal/quotient shift explicit. The hollow-star argument is also recorded in the sibling YangDim draft.",
+  "witness": "#classes/full_cube",
+  "witness_strength": "unbounded",
+  "witness_verification": "On the full cube $2^{[n]}$, Yang dimension is $n$ and co-VC is zero. These database-owned endpoint values rule out every reverse affine bound, even every finite-valued bound of Yang dimension in co-VC alone."
+}

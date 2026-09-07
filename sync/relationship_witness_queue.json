@@ -1,9 +1,9 @@
 {
   "counts": {
-    "unbounded": 237,
+    "unbounded": 238,
     "strict": 85,
     "equivalence": 17,
-    "missing": 30,
+    "missing": 31,
     "unclassified": 7,
     "incomparable": 100
   },
@@ -3633,6 +3633,18 @@
           ]
         }
       ],
+      "review": "Check endpoint proofs and scope before promoting any candidate."
+    },
+    {
+      "id": 524,
+      "short_name": "monotonic_yang_dimension_monotonic_covc_dimension_affine",
+      "category": "missing",
+      "witness": null,
+      "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
+      "unbounded_candidates": [],
+      "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     }
   ]

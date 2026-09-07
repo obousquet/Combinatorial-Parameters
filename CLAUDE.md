@@ -140,6 +140,10 @@ python3 sync/verify_paired_code_separation.py
 python3 sync/verify_triangular_range_separation.py
 python3 -m unittest discover -s sync -p test_incomparability_strength.py
 
+# Hollow-star Yang bounds, an independent induced-literal/ambiguity comparison,
+# and the bounded projective-plane deletion diagnostic (not a sign-rank solver).
+python3 sync/verify_yang_hollow_star.py
+
 # Independent teaching-order, no-clashing-map and degree computations behind
 # the equality of the three positive projection closures.
 python3 sync/verify_positive_projection_collapse.py
