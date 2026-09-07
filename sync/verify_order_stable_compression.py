@@ -113,7 +113,7 @@ def check_singleton_witness() -> None:
     """Guard the stronger singleton witness, not a ratio claim on full cubes."""
     data = Path(__file__).resolve().parents[1] / 'data'
     records = {}
-    for vid in (26, 46, 388, 1157):
+    for vid in (26, 46, 171, 388, 487, 1062, 1157):
         records[vid] = json.loads(next((data / 'values').glob(f'{vid:03d}_*.json')).read_text())
         assert records[vid]['class_id'] == '#classes/singletons'
         assert records[vid]['status'] == 'established'
@@ -122,13 +122,52 @@ def check_singleton_witness() -> None:
     assert records[388]['value'] == '$1$'
     assert records[1157]['value'] == r'$\Theta(n)$'
     assert records[1157]['value_class'] == 'omega_n'
+    for vid in (171, 487, 1062):
+        assert records[vid]['value'] == '$1$'
+        assert records[vid]['value_class'] == 'omega_1'
     assert 'prop:proper-compression-covc' in records[1157]['proof']
     assert 'prop:order-stable-installation' in records[1157]['proof']
-    relation = json.loads(next((data / 'relationships').glob('156_*.json')).read_text())
-    assert relation['status'] == 'established'
-    assert relation['witness'] == '#classes/singletons'
-    assert relation['witness_strength'] == 'unbounded'
-    print('Singleton linear-order bound and upgraded unbounded witness agree.')
+    for rid in (155, 156, 295, 444):
+        relation = json.loads(next((data / 'relationships').glob(f'{rid}_*.json')).read_text())
+        assert relation['status'] == 'established'
+        assert relation['witness'] == '#classes/singletons'
+        assert relation['witness_strength'] == 'unbounded'
+    sample_count = interval_count = projection_count = pair_count = 0
+    for n in range(2, 9):
+        words = tuple(1 << x for x in range(n))
+        partial = {(m, h & m) for h in words for m in range(1 << n)}
+        # Store a positive example if present; otherwise use the empty key.
+        # Its reconstruction is the corresponding singleton, or the all-zero
+        # (improper) hypothesis. The decoder never sees the original sample.
+        encode = lambda s: (s[1], s[1]) if s[1] else (0, 0)
+        decode = lambda key: key[1]
+        assert decode((0, 0)) not in words  # This upper scheme is not proper.
+        for s in partial:
+            key = encode(s)
+            assert below(key, s) and key[0].bit_count() <= 1
+            assert decode(key) & s[0] == s[1]
+            sample_count += 1
+            tmask = s[0]
+            while True:
+                t = (tmask, s[1] & tmask)
+                if below(key, t):
+                    assert encode(t) == key
+                    assert decode(encode(t)) == decode(key)
+                    interval_count += 1
+                if tmask == 0:
+                    break
+                tmask = (tmask-1) & s[0]
+        for mask in range(1 << n):
+            projected = {h & mask for h in words}
+            teachers = {h: (h, h) if h else (0, 0) for h in projected}
+            for a, b in combinations(projected, 2):
+                ta, tb = teachers[a], teachers[b]
+                assert b & ta[0] != ta[1] or a & tb[0] != tb[1]
+                pair_count += 1
+            projection_count += 1
+    print('Singleton linear-order bounds and four unbounded witness records agree.')
+    print(f'Singleton replay: {sample_count} samples, {interval_count} stability intervals, '
+          f'{projection_count} projections and {pair_count} no-clashing pairs.')
 
 
 def check_catalogue() -> None:

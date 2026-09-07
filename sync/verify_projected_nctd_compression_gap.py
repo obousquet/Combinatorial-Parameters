@@ -234,14 +234,14 @@ def verify() -> None:
     for value_id, expected in ((1145, '$1$'), (1146, '$1$'), (1147, '$2$'), (1148, '$2$'), (1149, '$2$'), (1152, '$2$')):
         value = json.loads(next((DATA / 'values').glob(f'{value_id}_*.json')).read_text())
         assert value['value'] == expected and value['status'] == 'established'
-    for rid in (442, 515):
+    for rid in (293, 442, 515):
         relation = json.loads(next((DATA / 'relationships').glob(f'{rid}_*.json')).read_text())
         assert relation['witness'] == '#classes/antipodal_six_code' and relation['witness_strength'] == 'strict'
-        assert relation['status'] == ('established' if rid == 442 else 'refuted')
+        assert relation['status'] == ('refuted' if rid == 515 else 'established')
     print('Domain exhaustion:', domain_stats, '; independent injection exhaustion:', injection_stats)
     print(f'Passed {projection_count} projections, {pair_checks} teacher pairs, '
           f'63 compression samples, {deletion_checks} stability deletions; '
-          'six concept-deletion compressions, six value guards, two witness guards '
+          'six concept-deletion compressions, six value guards, three witness guards '
           'and positive/negative controls.')
     print('Order certificate: 63 bit-mask/literal-set checks; key-size histogram',
           {k: order_sizes.count(k) for k in range(3)}, '; natural-order width four rejected.')

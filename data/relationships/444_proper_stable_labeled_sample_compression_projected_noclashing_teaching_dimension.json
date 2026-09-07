@@ -6,9 +6,11 @@
   "parameter_2_id": "#parameters/projected_noclashing_teaching_dimension",
   "relationship_type": "larger",
   "status": "established",
-  "details": "The stable-compression lower bound applies directly; properness and labeled reconstruction are additional restrictions.",
+  "details": "The stable-compression lower bound applies directly; properness and labeled reconstruction are additional restrictions. On the singleton class $\\mathcal S_n$, $n\\ge2$, the database-owned value proofs give $\\lceil(n-1)/2\\rceil\\le\\mathrm{psLSC}(\\mathcal S_n)\\le n-1$, while $\\mathrm{NCTD}^{p}(\\mathcal S_n)=1$ (values 1157 and 1062). Therefore no universal reverse affine bound is possible. Only linear asymptotic order, not an exact psLSC formula, is used.",
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
   "proof_source": "Full proof in the LaTeX survey: Theorem thm:stable-comp-low-NCTD-star.",
   "references": "\\cite{KSZ2019}",
-  "witness_review": "The former full-cube strict witness was withdrawn: both endpoint values are exactly $\\lceil n/2\\rceil$. No replacement strict witness is asserted."
+  "witness_review": "The former full-cube strict witness remains withdrawn because both endpoint values are $\\lceil n/2\\rceil$. It is replaced by the independently supported unbounded singleton witness; the cube equality is not changed.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded"
 }

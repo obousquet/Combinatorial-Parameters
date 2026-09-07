@@ -4,9 +4,11 @@
   "parameter_2_id": "#parameters/stable_labeled_sample_compression",
   "relationship_type": "larger",
   "references": "\\cite{hanneke2021stable,bousquet2020proper}",
-  "details": "Definition",
+  "details": "Properness is an additional restriction. On the singleton class $\\mathcal S_n$, $n\\ge2$, the database-owned value proofs give $\\lceil(n-1)/2\\rceil\\le\\mathrm{psLSC}(\\mathcal S_n)\\le n-1$, while $\\mathrm{sLSC}(\\mathcal S_n)=1$ (values 1157 and 487). Therefore no universal reverse affine bound is possible. Only linear asymptotic order, not an exact psLSC formula, is used.",
   "status": "established",
   "proof": "Proper stable labeled compression adds properness to stable labeled compression. Restricting the allowed reconstruction functions cannot decrease the minimum size.",
   "short_name": "proper_stable_labeled_sample_compression_stable_labeled_sample_compression",
-  "name": "Proper Stable Labeled Sample Compression / Stable Labeled Sample Compression"
+  "name": "Proper Stable Labeled Sample Compression / Stable Labeled Sample Compression",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded"
 }

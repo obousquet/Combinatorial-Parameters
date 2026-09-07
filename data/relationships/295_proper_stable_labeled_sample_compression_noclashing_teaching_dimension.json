@@ -5,9 +5,11 @@
   "parameter_1_id": "#parameters/proper_stable_labeled_sample_compression",
   "parameter_2_id": "#parameters/noclashing_teaching_dimension",
   "relationship_type": "larger",
-  "details": "The stable-compression theorem applies directly; properness is an additional restriction.",
+  "details": "The stable-compression theorem applies directly; properness is an additional restriction. On the singleton class $\\mathcal S_n$, $n\\ge2$, the database-owned value proofs give $\\lceil(n-1)/2\\rceil\\le\\mathrm{psLSC}(\\mathcal S_n)\\le n-1$, while $\\mathrm{NCTD}(\\mathcal S_n)=1$ (values 1157 and 171). Therefore no universal reverse affine bound is possible. Only linear asymptotic order, not an exact psLSC formula, is used.",
   "status": "established",
   "references": "\\cite{KSZ2019}",
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
-  "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star."
+  "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star.",
+  "witness": "#classes/singletons",
+  "witness_strength": "unbounded"
 }

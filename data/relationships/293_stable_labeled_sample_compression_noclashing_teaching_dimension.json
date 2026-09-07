@@ -5,9 +5,11 @@
   "parameter_1_id": "#parameters/stable_labeled_sample_compression",
   "parameter_2_id": "#parameters/noclashing_teaching_dimension",
   "relationship_type": "larger",
-  "details": "The survey's stable-compression argument applies to labeled schemes and proves the stronger projected-NCTD lower bound.",
+  "details": "The survey's stable-compression argument applies to labeled schemes and proves the stronger projected-NCTD lower bound. The antipodal six-code class is a strict witness: stable labeled compression is $2$ and NCTD is $1$ (database values 1148 and 1146, with their DB-owned proofs). This is a finite strict separation, not an unbounded-ratio claim.",
   "status": "established",
   "references": "\\cite{KSZ2019}",
   "latex_proof_label": "thm:stable-comp-low-NCTD-star",
-  "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star."
+  "proof_source": "Full proof in the LaTeX survey: theorem thm:stable-comp-low-NCTD-star.",
+  "witness": "#classes/antipodal_six_code",
+  "witness_strength": "strict"
 }

@@ -1,9 +1,9 @@
 {
   "counts": {
-    "unbounded": 232,
-    "strict": 84,
+    "unbounded": 235,
+    "strict": 85,
     "equivalence": 17,
-    "missing": 34,
+    "missing": 30,
     "unclassified": 7,
     "incomparable": 99
   },
@@ -1659,26 +1659,6 @@
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
-      "id": 155,
-      "short_name": "proper_stable_labeled_sample_compression_stable_labeled_sample_compression",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "unbounded_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$\\Theta(n)$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            1157,
-            487
-          ]
-        }
-      ],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
       "id": 157,
       "short_name": "proper_stable_sample_compression_proper_unlabeled_sample_compression",
       "category": "missing",
@@ -2462,8 +2442,8 @@
     {
       "id": 293,
       "short_name": "stable_labeled_sample_compression_noclashing_teaching_dimension",
-      "category": "missing",
-      "witness": null,
+      "category": "strict",
+      "witness": "#classes/antipodal_six_code",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
       "strict_candidates": [
@@ -2497,26 +2477,6 @@
           ]
         }
       ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 295,
-      "short_name": "proper_stable_labeled_sample_compression_noclashing_teaching_dimension",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "unbounded_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$\\Theta(n)$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            1157,
-            171
-          ]
-        }
-      ],
-      "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
@@ -2848,26 +2808,6 @@
       "witness": "#classes/full_cube",
       "reverse_affine_path": null,
       "unbounded_candidates": [],
-      "strict_candidates": [],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 444,
-      "short_name": "proper_stable_labeled_sample_compression_projected_noclashing_teaching_dimension",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "unbounded_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$\\Theta(n)$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            1157,
-            1062
-          ]
-        }
-      ],
       "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
