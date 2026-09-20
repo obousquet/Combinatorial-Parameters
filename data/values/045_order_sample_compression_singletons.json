@@ -4,10 +4,10 @@
   "short_name": "order_sample_compression_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/order_sample_compression",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
-  "details": "Singleton classes have VC dimension one.",
+  "details": "The value field includes the one-concept case. Reconstruction may be improper for $n\\ge2$.",
   "status": "established",
-  "proof": "The order-compression construction for VC-dimension-one classes gives an order sample compression scheme of size one.  Size zero is impossible for a class with two distinct concepts, since an empty compression set has one fixed reconstruction and cannot be consistent with samples distinguishing those concepts.  Hence the value is exactly one.",
+  "proof": "For $n=1$, order only the sole concept and reconstruct it from the empty key. For $n\\ge2$, order the all-zero word first, followed by the singleton concepts in any fixed order. An all-negative sample has the zero word as its first consistent output, determined by the empty key. A sample with a positive coordinate has its singleton as its unique consistent word in this order, determined by that labeled positive coordinate. Thus width one suffices. Width zero cannot reconstruct two distinct full concepts.",
   "references": "\\cite{darnstadt2016order}"
 }

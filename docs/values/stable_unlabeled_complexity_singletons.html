@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Stable Unlabeled Complexity of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For a domain with at least two points.</p>
+<p><strong>Details: </strong>The value field includes the one-concept case. Reconstruction may be improper for $n\ge2$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The stable-unlabeled construction from a conservative online learner has size at most the Littlestone dimension, which is one for singletons.  Stable unlabeled compression is at least ordinary unlabeled compression, whose value is one for this class.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, always reconstruct the sole concept from the empty key. For $n\ge2$, decode the empty key as the all-zero word and the coordinate key $\{i\}$ as singleton $\{i\}$. A realizable sample with a positive coordinate retains that coordinate; an all-negative sample retains nothing. This uses no retained label or side information. Every intermediate subsample containing the retained key still has that positive observation, or is again all-negative when the key is empty. Hence the key and reconstruction are stable. Two distinct full concepts forbid width zero. The empty-key output is improper for $n\ge2$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a> <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a></p></div>
 
         </div>

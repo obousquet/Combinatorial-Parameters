@@ -4,9 +4,9 @@
   "short_name": "minimum_teaching_set_size_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/minimum_teaching_set_size",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "For the target $\\{i\\}$, the positive label at coordinate $i$ is consistent with no other singleton. An empty sample is consistent with every singleton."
+  "proof": "For $n=1$, the empty teaching sample identifies the sole concept. For $n\\ge2$, the positive label at the unique point of a singleton identifies it, while the empty sample is consistent with all $n$ concepts. Thus every concept has minimum teaching-set size one, even when teaching samples must be positive."
 }

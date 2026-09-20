@@ -4,10 +4,10 @@
   "short_name": "stable_labeled_sample_compression_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/stable_labeled_sample_compression",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
-  "details": "For a domain with at least two points.",
+  "details": "The value field includes the one-concept case. Reconstruction may be improper for $n\\ge2$.",
   "status": "established",
-  "proof": "The established stable unlabeled scheme of size one is also a stable labeled scheme when the retained label is allowed.  Stable labeled compression is at least ordinary labeled compression, whose value for singletons is one.",
+  "proof": "Use the stable unlabeled decoder: at $n=1$, always output the sole concept from the empty key. For $n\\ge2$, retain the unique positive observation when present and otherwise retain nothing; output that singleton or the all-zero word, respectively. The decoder may ignore the retained label. Every intermediate sample containing the key makes the same choice, so the scheme is stable. Two distinct full concepts rule out width zero. Properness is not asserted.",
   "references": "\\cite{FW1995,hanneke2021stable}"
 }

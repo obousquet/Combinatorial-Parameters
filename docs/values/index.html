@@ -275,11 +275,11 @@
         <p><strong>Name: </strong>Recursive Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/recursive_teaching_dimension.html">Recursive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Each singleton is uniquely specified by one positive example. Removing singleton concepts in any order therefore has teaching-set size one at every nontrivial stage.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the sole concept has an empty teaching set. For $n\ge2$, in any nontrivial remaining subfamily, every singleton is taught by its unique positive coordinate and no empty sample identifies a concept. Remove the concepts in any order, using these positive samples until the last concept, which has an empty teaching set. The maximum size is one, and the first nontrivial stage rules out zero.</p></div>
 
 
         </div>
@@ -853,11 +853,11 @@
         <p><strong>Name: </strong>Order Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>Singleton classes have VC dimension one.</p>
+<p><strong>Details: </strong>The value field includes the one-concept case. Reconstruction may be improper for $n\ge2$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The order-compression construction for VC-dimension-one classes gives an order sample compression scheme of size one.  Size zero is impossible for a class with two distinct concepts, since an empty compression set has one fixed reconstruction and cannot be consistent with samples distinguishing those concepts.  Hence the value is exactly one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, order only the sole concept and reconstruct it from the empty key. For $n\ge2$, order the all-zero word first, followed by the singleton concepts in any fixed order. An all-negative sample has the zero word as its first consistent output, determined by the empty key. A sample with a positive coordinate has its singleton as its unique consistent word in this order, determined by that labeled positive coordinate. Thus width one suffices. Width zero cannot reconstruct two distinct full concepts.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
 
         </div>
@@ -874,7 +874,7 @@
 <p><strong>Order:</strong> $\Omega(n)$</p>
 <p><strong>Details: </strong>The proper order-compression number of the singleton class is the separating example between proper and improper order compression.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Darnstädt--Doliwa--Simon--Zilles order the singleton hypotheses.  For the sample containing negative labels on all but one coordinate, the remaining singleton is the first compatible proper hypothesis only after all $n-1$ negatives are retained; any proper subsample instead reconstructs a later singleton inconsistent with one omitted negative label.  Thus every proper order scheme needs $n-1$.  Keeping those negatives gives the matching scheme.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Fix any order of the singleton hypotheses. For the lower bound, take the last hypothesis and the all-negative sample on the other $n-1$ coordinates. Each earlier hypothesis is excluded only by the negative observation at its own coordinate. Omitting any of these observations makes an earlier hypothesis consistent, so all $n-1$ are necessary to preserve the first consistent output. For the upper bound when $n\ge2$, a sample with a positive observation retains that observation. For an all-negative sample, let $h_r$ be its first consistent singleton in the fixed order; retain the negative coordinates of the preceding $r-1$ hypotheses. Those observations belong to the sample and determine $h_r$ as its first consistent output. The largest key size is $n-1$. For $n=1$, the empty key reconstructs the sole concept.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
 
         </div>
@@ -955,11 +955,11 @@
         <p><strong>Name: </strong>Minimum Teaching Set Size of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For the target $\{i\}$, the positive label at coordinate $i$ is consistent with no other singleton. An empty sample is consistent with every singleton.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty teaching sample identifies the sole concept. For $n\ge2$, the positive label at the unique point of a singleton identifies it, while the empty sample is consistent with all $n$ concepts. Thus every concept has minimum teaching-set size one, even when teaching samples must be positive.</p></div>
 
 
         </div>
@@ -989,11 +989,11 @@
         <p><strong>Name: </strong>Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/teaching_dimension.html">Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The positive label at the unique point of a singleton identifies it. No target is identified by the empty sample.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty teaching sample identifies the sole concept. For $n\ge2$, the positive label at the unique point of a singleton identifies it, while the empty sample is consistent with all $n$ concepts. Thus every concept has minimum teaching-set size one, even when teaching samples must be positive.</p></div>
 
 
         </div>
@@ -2910,11 +2910,11 @@
         <p><strong>Name: </strong>Maximum Teaching Set Size of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>By definition $\mathrm{TS}_{\max}=\mathrm{TD}$, and each singleton is taught by its unique positive coordinate.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty teaching sample identifies the sole concept. For $n\ge2$, the positive label at the unique point of a singleton identifies it, while the empty sample is consistent with all $n$ concepts. Thus every concept has minimum teaching-set size one, even when teaching samples must be positive. Taking the maximum of these minimum sizes gives the claimed value.</p></div>
 
 
         </div>
@@ -6228,11 +6228,11 @@
         <p><strong>Name: </strong>Positive Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/positive_teaching_dimension.html">Positive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The unique positive coordinate of a singleton distinguishes it from every other singleton. A nontrivial class cannot have positive teaching dimension zero.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty teaching sample identifies the sole concept. For $n\ge2$, the positive label at the unique point of a singleton identifies it, while the empty sample is consistent with all $n$ concepts. Thus every concept has minimum teaching-set size one, even when teaching samples must be positive.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a></p></div>
 
         </div>
@@ -6364,11 +6364,11 @@
         <p><strong>Name: </strong>Positive Recursive Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/positive_recursive_teaching_dimension.html">Positive Recursive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>At every nontrivial stage, any singleton is taught by its unique positive coordinate. Thus all concepts can be removed with positive samples of size one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the sole concept has an empty teaching set. For $n\ge2$, in any nontrivial remaining subfamily, every singleton is taught by its unique positive coordinate and no empty sample identifies a concept. Remove the concepts in any order, using these positive samples until the last concept, which has an empty teaching set. The maximum size is one, and the first nontrivial stage rules out zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#fallat2023batch">[fallat2023batch]</a></p></div>
 
         </div>
@@ -8302,11 +8302,11 @@
         <p><strong>Name: </strong>Stable Unlabeled Complexity of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/stable_unlabeled_complexity.html">Stable Unlabeled Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For a domain with at least two points.</p>
+<p><strong>Details: </strong>The value field includes the one-concept case. Reconstruction may be improper for $n\ge2$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The stable-unlabeled construction from a conservative online learner has size at most the Littlestone dimension, which is one for singletons.  Stable unlabeled compression is at least ordinary unlabeled compression, whose value is one for this class.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, always reconstruct the sole concept from the empty key. For $n\ge2$, decode the empty key as the all-zero word and the coordinate key $\{i\}$ as singleton $\{i\}$. A realizable sample with a positive coordinate retains that coordinate; an all-negative sample retains nothing. This uses no retained label or side information. Every intermediate subsample containing the retained key still has that positive observation, or is again all-negative when the key is empty. Hence the key and reconstruction are stable. Two distinct full concepts forbid width zero. The empty-key output is improper for $n\ge2$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a> <a href="bibliography.html#palvolgyi2021unlabeled">[palvolgyi2021unlabeled]</a></p></div>
 
         </div>
@@ -8336,11 +8336,11 @@
         <p><strong>Name: </strong>Stable Labeled Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/stable_labeled_sample_compression.html">Stable Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For a domain with at least two points.</p>
+<p><strong>Details: </strong>The value field includes the one-concept case. Reconstruction may be improper for $n\ge2$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established stable unlabeled scheme of size one is also a stable labeled scheme when the retained label is allowed.  Stable labeled compression is at least ordinary labeled compression, whose value for singletons is one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Use the stable unlabeled decoder: at $n=1$, always output the sole concept from the empty key. For $n\ge2$, retain the unique positive observation when present and otherwise retain nothing; output that singleton or the all-zero word, respectively. The decoder may ignore the retained label. Every intermediate sample containing the key makes the same choice, so the scheme is stable. Two distinct full concepts rule out width zero. Properness is not asserted.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a> <a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a></p></div>
 
         </div>
@@ -14252,11 +14252,11 @@
         <p><strong>Name: </strong>Average Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every singleton, its unique positive coordinate is a teaching set of size one, and the empty sample identifies no target in the nontrivial class. Thus every individual value and their average equal one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty teaching sample identifies the sole concept. For $n\ge2$, the positive label at the unique point of a singleton identifies it, while the empty sample is consistent with all $n$ concepts. Thus every concept has minimum teaching-set size one, even when teaching samples must be positive. Averaging these equal individual minimum sizes gives the claimed value.</p></div>
 
 
         </div>

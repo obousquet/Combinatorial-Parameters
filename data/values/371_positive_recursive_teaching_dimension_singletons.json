@@ -4,9 +4,9 @@
   "short_name": "positive_recursive_teaching_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/positive_recursive_teaching_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "At every nontrivial stage, any singleton is taught by its unique positive coordinate. Thus all concepts can be removed with positive samples of size one.",
+  "proof": "For $n=1$, the sole concept has an empty teaching set. For $n\\ge2$, in any nontrivial remaining subfamily, every singleton is taught by its unique positive coordinate and no empty sample identifies a concept. Remove the concepts in any order, using these positive samples until the last concept, which has an empty teaching set. The maximum size is one, and the first nontrivial stage rules out zero.",
   "references": "\\cite{fallat2023batch}"
 }

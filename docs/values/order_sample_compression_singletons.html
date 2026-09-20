@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Order Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/order_sample_compression.html">Order Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>Singleton classes have VC dimension one.</p>
+<p><strong>Details: </strong>The value field includes the one-concept case. Reconstruction may be improper for $n\ge2$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The order-compression construction for VC-dimension-one classes gives an order sample compression scheme of size one.  Size zero is impossible for a class with two distinct concepts, since an empty compression set has one fixed reconstruction and cannot be consistent with samples distinguishing those concepts.  Hence the value is exactly one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, order only the sole concept and reconstruct it from the empty key. For $n\ge2$, order the all-zero word first, followed by the singleton concepts in any fixed order. An all-negative sample has the zero word as its first consistent output, determined by the empty key. A sample with a positive coordinate has its singleton as its unique consistent word in this order, determined by that labeled positive coordinate. Thus width one suffices. Width zero cannot reconstruct two distinct full concepts.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#darnstadt2016order">[darnstadt2016order]</a></p></div>
 
         </div>

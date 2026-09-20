@@ -2,10 +2,10 @@
   "id": 166,
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/maximum_teaching_set_size",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "By definition $\\mathrm{TS}_{\\max}=\\mathrm{TD}$, and each singleton is taught by its unique positive coordinate.",
+  "proof": "For $n=1$, the empty teaching sample identifies the sole concept. For $n\\ge2$, the positive label at the unique point of a singleton identifies it, while the empty sample is consistent with all $n$ concepts. Thus every concept has minimum teaching-set size one, even when teaching samples must be positive. Taking the maximum of these minimum sizes gives the claimed value.",
   "name": "Maximum Teaching Set Size of Singletons",
   "short_name": "maximum_teaching_set_size_singletons"
 }
