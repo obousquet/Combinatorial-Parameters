@@ -53,10 +53,16 @@ def verify() -> None:
 
     # Independent reverse construction: a key/output covers every intervening
     # literal-set sample. Build actual samples afresh from full class words.
+    # Share the 24 immutable literal objects across samples. Reallocating
+    # equal tuples in both full sample families needlessly dominates memory.
+    literal = tuple(((x, 0), (x, 1)) for x in range(12))
+
     def literals(mask: int, word: int) -> frozenset[tuple[int, int]]:
-        return frozenset((x, (word >> x) & 1) for x in range(12) if mask & (1 << x))
+        return frozenset(literal[x][(word >> x) & 1] for x in range(12) if mask & (1 << x))
     actual = {literals(m, h) for h in words for m in range(4096)}
-    covered = set()
+    # Keep references to the independently built samples, not a second
+    # allocation of equal frozensets for every reverse-generated sample.
+    remaining = actual.copy()
     for (m, y), h in decoder.items():
         key, full = literals(m, y), literals(4095, h)
         free = 4095 ^ m
@@ -64,11 +70,12 @@ def verify() -> None:
         while True:
             sample = literals(m | extra, h)
             assert key <= sample <= full
-            covered.add(sample)
+            assert sample in actual
+            remaining.discard(sample)
             if extra == 0:
                 break
             extra = (extra - 1) & free
-    assert covered == actual and len(actual) == 135073
+    assert not remaining and len(actual) == 135073
 
     # Properness alone is not enough: replacing the entire table by one
     # class word fails the full sample of every other class member.
