@@ -9,7 +9,7 @@
   "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "definition": "For $h\\in\\mathcal{H}$, a teaching set is a set of labeled instances on which no other member of $\\mathcal{H}$ agrees with $h$. The **Teaching Dimension** is the maximum, over $h\\in\\mathcal{H}$, of the minimum size of such a set.",
+  "definition": "For $h\\in\\mathcal{H}$, a teaching set is a set of labeled instances on which no other member of $\\mathcal{H}$ agrees with $h$. The **Teaching Dimension** is the maximum, over $h\\in\\mathcal{H}$, of the minimum size of such a set. For the empty class, set $\\mathrm{TD}(\\emptyset)=0$.",
   "graph_summary": "Largest, over concepts, of the minimum number of labeled examples that uniquely identifies the concept.",
   "short_name": "teaching_dimension",
   "origin_references": "The classical teaching-set model and teaching dimension originate in \\cite{shinohara1991teachability,goldman1995complexity}.",
