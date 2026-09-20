@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Worst Mistakes of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/worst_mistakes.html">Worst Mistakes</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Predict $0$ until a positive label appears.  It can appear only at the target singleton's unique coordinate, so this strategy makes at most one mistake and then identifies the target.  Zero mistakes are impossible because at any coordinate some singleton target has label $1$ and another has label $0$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the known target can be predicted without error. For $n\ge2$, predict zero until the first positive label appears; that label identifies the target singleton, after which all predictions are correct. Thus at most one mistake occurs, even if coordinates repeat. For the lower bound, choose a sequence consisting of one coordinate. Both labels occur among the possible singleton targets, so any prediction can be falsified by a target consistent with that label. Knowledge of the entire presented sequence cannot avoid this first mistake.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
 
         </div>

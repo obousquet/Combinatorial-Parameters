@@ -305,15 +305,15 @@ For the delta-function class, distinct nonempty subfamilies have distinct least 
 \noindent\textbf{Reference.} \cite{yang2018homological}; see the full arXiv version, Section "Delta Functions", which constructs the minimal $(n-1)$-simplex resolution of the delta-function class..
 
 \subsection{Partial Equivalence Queries Complexity of Singletons}\label{val:partial_equivalence_queries_complexity_singletons}
-\noindent\textbf{Statement.} The Partial Equivalence Queries Complexity of Singletons is $1$.
+\noindent\textbf{Statement.} The Partial Equivalence Queries Complexity of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-Ask the partial-equivalence query that labels every coordinate $0$.  Every singleton target disagrees at its unique positive coordinate, which the counterexample reveals; one query identifies the target.
+For $n=1$, the target is known without a query. For $n\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. A total labeling is an allowed partial equivalence query.
 \end{proof}
 
 \subsection{Membership and Equivalence Queries Complexity of Singletons}\label{val:membership_and_equivalence_queries_complexity_singletons}
-\noindent\textbf{Statement.} The Membership and Equivalence Queries Complexity of Singletons is $1$.
+\noindent\textbf{Statement.} The Membership and Equivalence Queries Complexity of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-The improper equivalence query for the all-zero labeling is allowed.  Its counterexample against a singleton target is that target's unique positive coordinate, so one query identifies it.
+For $n=1$, the target is known without a query. For $n\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. Arbitrary equivalence queries are allowed in the mixed model; adding membership queries cannot improve on zero or one.
 \end{proof}
 
 \subsection{Minimum Teaching Set Size of Singletons}\label{val:minimum_teaching_set_size_singletons}
@@ -323,9 +323,9 @@ For $n=1$, the empty teaching sample identifies the sole concept. For $n\ge2$, t
 \end{proof}
 
 \subsection{Projected Recursive Teaching Dimension of Singletons}\label{val:monotone_recursive_teaching_dimension_singletons}
-\noindent\textbf{Statement.} The Projected Recursive Teaching Dimension of Singletons is $1$.
+\noindent\textbf{Statement.} The Projected Recursive Teaching Dimension of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-After any projection, remove the remaining singleton concepts first, each with one positive example; the possible empty concept then remains alone. Thus every projection has recursive teaching dimension at most one.
+For $n=1$, every projection has one trace and recursive teaching dimension zero. For $n\ge2$, every projection consists of singleton traces, possibly together with the empty trace. Remove singleton traces first, using their unique positive coordinates whenever competitors remain; the final trace has an empty teaching set. This is a positive recursive plan of width at most one, hence also an ordinary one. The identity projection is nontrivial, so recursive width zero is impossible.
 \end{proof}
 
 \subsection{Teaching Dimension of Singletons}\label{val:teaching_dimension_singletons}
@@ -1027,9 +1027,9 @@ Projection to coordinates $\{1,2\}$ gives $\{01,10,11\}$, whose positive recursi
 \end{proof}
 
 \subsection{Projected Positive Recursive Teaching Dimension of Singletons}\label{val:projected_positive_recursive_teaching_dimension_singletons}
-\noindent\textbf{Statement.} The Projected Positive Recursive Teaching Dimension of Singletons is $1$.
+\noindent\textbf{Statement.} The Projected Positive Recursive Teaching Dimension of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-Every nonempty coordinate projection is a class of distinct singleton concepts, possibly together with the empty concept. Remove its singleton concepts using their unique positive coordinates, then remove the empty concept. Thus every projection has positive recursive teaching dimension at most one, and the identity projection is non-singleton.
+For $n=1$, every projection has one trace and recursive teaching dimension zero. For $n\ge2$, every projection consists of singleton traces, possibly together with the empty trace. Remove singleton traces first, using their unique positive coordinates whenever competitors remain; the final trace has an empty teaching set. This is a positive recursive plan of width at most one, hence also an ordinary one. The identity projection is nontrivial, so recursive width zero is impossible.
 \end{proof}
 
 \subsection{Maximum Positive Degree of the Projected Positive No-Clashing Teaching Separation Class}\label{val:maximum_positive_degree_projected_positive_noclashing_gap}
@@ -1063,16 +1063,16 @@ Every coordinate projection consists of singleton traces, possibly together with
 \end{proof}
 
 \subsection{Projected No-Clashing Teaching Dimension of Singletons}\label{val:projected_noclashing_teaching_dimension_singletons}
-\noindent\textbf{Statement.} The Projected No-Clashing Teaching Dimension of Singletons is $1$.
+\noindent\textbf{Statement.} The Projected No-Clashing Teaching Dimension of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-Every coordinate projection of the singleton class is a singleton class on the retained coordinates, possibly together with the empty concept after duplicate traces are identified. Map each remaining singleton to its unique positive example and the empty concept to the empty sample. This is no-clashing and has width one; the identity projection gives the matching lower bound.
+For $n=1$, every projection has one trace, taught by the empty sample. For $n\ge2$, teach each singleton trace by its positive coordinate and the possible empty trace by the empty sample. For two distinct traces, at least one is a singleton whose positive coordinate distinguishes it from the other, so the map is positive and no-clashing. Its width is at most one. On the nontrivial identity projection, width zero would assign the empty sample to every target and make two distinct targets clash. Thus both ordinary and positive projected no-clashing dimensions equal one.
 \end{proof}
 \noindent\textbf{Reference.} Direct calculation; compare \cite{KSZ2019} for no-clashing teaching on finite classes..
 
 \subsection{Projected Positive No-Clashing Teaching Dimension of Singletons}\label{val:projected_positive_noclashing_teaching_dimension_singletons}
-\noindent\textbf{Statement.} The Projected Positive No-Clashing Teaching Dimension of Singletons is $1$.
+\noindent\textbf{Statement.} The Projected Positive No-Clashing Teaching Dimension of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-Every coordinate projection is a singleton class on the retained coordinates, possibly together with the empty concept. Assign each singleton its unique positive example and the empty concept the empty sample. The map is positive and no-clashing with width one, while the identity projection is non-singleton.
+For $n=1$, every projection has one trace, taught by the empty sample. For $n\ge2$, teach each singleton trace by its positive coordinate and the possible empty trace by the empty sample. For two distinct traces, at least one is a singleton whose positive coordinate distinguishes it from the other, so the map is positive and no-clashing. Its width is at most one. On the nontrivial identity projection, width zero would assign the empty sample to every target and make two distinct targets clash. Thus both ordinary and positive projected no-clashing dimensions equal one.
 \end{proof}
 \noindent\textbf{Reference.} Direct calculation; compare \cite{KSZ2019}..
 
@@ -1115,9 +1115,9 @@ The apex is uniquely identified by its positive label at $\star$, because every 
 \end{proof}
 
 \subsection{Littlestone Dimension of Singletons}\label{val:littlestone_dimension_singletons}
-\noindent\textbf{Statement.} The Littlestone Dimension of Singletons is $1$.
+\noindent\textbf{Statement.} The Littlestone Dimension of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-Any coordinate gives a shattered tree of depth one. Its positive branch contains only one singleton, so no tree of depth two is shattered.
+For $n=1$, one fixed concept cannot realize a complete depth-one binary tree. For $n\ge2$, any coordinate takes both labels, giving depth one. At any candidate root, the positive branch has only one singleton concept and cannot split again. Hence a complete depth-two tree is impossible.
 \end{proof}
 
 \subsection{Degeneracy of Cube with Apex}\label{val:degeneracy_cube_with_apex}
@@ -3094,7 +3094,7 @@ Every nonempty projection of the two constant concepts is again two complementar
 \subsection{Minimum Projected Teaching-Set Size of Singletons}\label{val:minimum_projected_teaching_set_size_singletons}
 \noindent\textbf{Statement.} The Minimum Projected Teaching Set Size of Singletons is $n-1$.
 \begin{proof}
-For a singleton target $\{i\}$, project to the other $n-1$ coordinates. Its trace is empty, while the projected class contains the empty trace and all $n-1$ singleton traces, so all $n-1$ negative coordinates are needed to teach it. Any projection has at most $n-1$ relevant competing singleton traces after omitting the target, and projections containing $i$ teach the target with its positive coordinate. Thus every target has worst projected teaching-set size exactly $n-1$.
+Fix a target singleton in a subfamily of $m$ singleton concepts on the original domain. Project onto the $m-1$ coordinates of its competitors. The target becomes the empty trace, and each competitor becomes a different singleton trace; teaching the target requires all $m-1$ negative coordinates. Conversely, in any projection there are at most $m-1$ other distinct traces. Choose one coordinate of disagreement with each such trace to teach the target using at most $m-1$ observations. Thus every target has worst projected teaching-set size exactly $m-1$, including zero at $m=1$. Applying this to the full class with $m=n$ and minimizing over its targets gives $n-1$.
 \end{proof}
 
 \subsection{Minimum Projected Teaching-Set Size of Singletons plus Empty Set}\label{val:minimum_projected_teaching_set_size_singletons_plus_empty_set}
@@ -3151,9 +3151,9 @@ The established equality $\mathrm{Q}_{\mathrm{eq}}=\mathrm{Ldim}$ reduces this t
 \noindent\textbf{Reference.} \cite{littlestone1988learning}.
 
 \subsection{Equivalence Queries Complexity of Singletons}\label{val:equivalence_queries_complexity_singletons}
-\noindent\textbf{Statement.} The Equivalence Queries Complexity of Singletons is $1$.
+\noindent\textbf{Statement.} The Equivalence Queries Complexity of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-The established equality $\mathrm{Q}_{\mathrm{eq}}=\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Singletons.
+For $n=1$, the target is known without a query. For $n\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. This is a direct proof and does not require a general comparison with Littlestone dimension.
 \end{proof}
 \noindent\textbf{Reference.} \cite{littlestone1988learning}.
 
@@ -5000,9 +5000,9 @@ Even when the entire instance sequence is known in advance, the learner can err 
 \noindent\textbf{Reference.} \cite{ben1997online}.
 
 \subsection{Worst Mistakes of Singletons}\label{val:worst_mistakes_singletons}
-\noindent\textbf{Statement.} The Worst Mistakes of Singletons is $1$.
+\noindent\textbf{Statement.} The Worst Mistakes of Singletons is $0$ for $n=1$; $1$ for $n\ge2$.
 \begin{proof}
-Predict $0$ until a positive label appears.  It can appear only at the target singleton's unique coordinate, so this strategy makes at most one mistake and then identifies the target.  Zero mistakes are impossible because at any coordinate some singleton target has label $1$ and another has label $0$.
+For $n=1$, the known target can be predicted without error. For $n\ge2$, predict zero until the first positive label appears; that label identifies the target singleton, after which all predictions are correct. Thus at most one mistake occurs, even if coordinates repeat. For the lower bound, choose a sequence consisting of one coordinate. Both labels occur among the possible singleton targets, so any prediction can be falsified by a target consistent with that label. Knowledge of the entire presented sequence cannot avoid this first mistake.
 \end{proof}
 \noindent\textbf{Reference.} \cite{ben1997online}.
 
@@ -5485,7 +5485,7 @@ Maximum projected teaching-set size equals star number. The full cube has an n-s
 \subsection{Maximum Projected Teaching Set Size of Singletons}\label{val:maximum_projected_teaching_set_size_singletons}
 \noindent\textbf{Statement.} The Maximum Projected Teaching Set Size of Singletons is $n-1$.
 \begin{proof}
-Maximum projected teaching-set size equals star number. The established star-number value for singletons is n-1, obtained after projecting away one singleton coordinate.
+Fix a target singleton in a subfamily of $m$ singleton concepts on the original domain. Project onto the $m-1$ coordinates of its competitors. The target becomes the empty trace, and each competitor becomes a different singleton trace; teaching the target requires all $m-1$ negative coordinates. Conversely, in any projection there are at most $m-1$ other distinct traces. Choose one coordinate of disagreement with each such trace to teach the target using at most $m-1$ observations. Thus every target has worst projected teaching-set size exactly $m-1$, including zero at $m=1$. Applying this to the full class with $m=n$ and maximizing over its targets gives $n-1$.
 \end{proof}
 \noindent\textbf{Reference.} \cite{hanneke2015minimax}.
 
@@ -6054,7 +6054,7 @@ Stable unlabeled compression is at least unlabeled compression, whose establishe
 \subsection{Monotonic Projected Minimum Teaching Set Size of Singletons}\label{val:monotonic_projected_minimum_teaching_set_size_singletons}
 \noindent\textbf{Statement.} The Monotonic Projected Minimum Teaching Set Size of Singletons is $n-1$.
 \begin{proof}
-The class itself is an admissible subfamily, and its minimum projected teaching-set size is $n-1$, so the monotonic projected value is at least $n-1$. Conversely, every subfamily of the singleton class has at most $n$ concepts. For a subfamily with $m\geq2$ singleton traces, projecting away the target coordinate shows that its minimum projected teaching-set size is at most $m-1\leq n-1$; one-concept subfamilies have value zero. Taking the maximum over subfamilies gives exactly $n-1$.
+Fix a target singleton in a subfamily of $m$ singleton concepts on the original domain. Project onto the $m-1$ coordinates of its competitors. The target becomes the empty trace, and each competitor becomes a different singleton trace; teaching the target requires all $m-1$ negative coordinates. Conversely, in any projection there are at most $m-1$ other distinct traces. Choose one coordinate of disagreement with each such trace to teach the target using at most $m-1$ observations. Thus every target has worst projected teaching-set size exactly $m-1$, including zero at $m=1$. Every nonempty subfamily has $m\le n$ and minimum projected teaching size $m-1$. The full class attains $n-1$, so the maximum over subfamilies is exactly $n-1$.
 \end{proof}
 
 \subsection{Monotonic Projected Minimum Teaching Set Size of Singletons Plus Empty Set}\label{val:monotonic_projected_minimum_teaching_set_size_singletons_plus_empty_set}

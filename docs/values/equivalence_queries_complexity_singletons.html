@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Equivalence Queries Complexity of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/equivalence_queries_complexity.html">Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established equality $\mathrm{Q}_{\mathrm{eq}}=\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Singletons.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the target is known without a query. For $n\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. This is a direct proof and does not require a general comparison with Littlestone dimension.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
 
         </div>

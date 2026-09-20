@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Partial Equivalence Queries Complexity of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Ask the partial-equivalence query that labels every coordinate $0$.  Every singleton target disagrees at its unique positive coordinate, which the counterexample reveals; one query identifies the target.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the target is known without a query. For $n\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. A total labeling is an allowed partial equivalence query.</p></div>
 
 
         </div>

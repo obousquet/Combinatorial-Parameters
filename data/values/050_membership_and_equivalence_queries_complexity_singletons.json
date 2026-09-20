@@ -4,9 +4,9 @@
   "short_name": "membership_and_equivalence_queries_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/membership_and_equivalence_queries_complexity",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "The improper equivalence query for the all-zero labeling is allowed.  Its counterexample against a singleton target is that target's unique positive coordinate, so one query identifies it."
+  "proof": "For $n=1$, the target is known without a query. For $n\\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. Arbitrary equivalence queries are allowed in the mixed model; adding membership queries cannot improve on zero or one."
 }

@@ -4,10 +4,10 @@
   "short_name": "projected_noclashing_teaching_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/projected_noclashing_teaching_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
-  "details": "For $n\\ge2$.",
+  "details": "The value field includes the one-concept boundary.",
   "status": "established",
-  "proof": "Every coordinate projection of the singleton class is a singleton class on the retained coordinates, possibly together with the empty concept after duplicate traces are identified. Map each remaining singleton to its unique positive example and the empty concept to the empty sample. This is no-clashing and has width one; the identity projection gives the matching lower bound.",
+  "proof": "For $n=1$, every projection has one trace, taught by the empty sample. For $n\\ge2$, teach each singleton trace by its positive coordinate and the possible empty trace by the empty sample. For two distinct traces, at least one is a singleton whose positive coordinate distinguishes it from the other, so the map is positive and no-clashing. Its width is at most one. On the nontrivial identity projection, width zero would assign the empty sample to every target and make two distinct targets clash. Thus both ordinary and positive projected no-clashing dimensions equal one.",
   "references": "Direct calculation; compare \\cite{KSZ2019} for no-clashing teaching on finite classes."
 }

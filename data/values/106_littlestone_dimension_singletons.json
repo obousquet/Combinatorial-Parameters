@@ -4,9 +4,9 @@
   "short_name": "littlestone_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/littlestone_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "Any coordinate gives a shattered tree of depth one. Its positive branch contains only one singleton, so no tree of depth two is shattered."
+  "proof": "For $n=1$, one fixed concept cannot realize a complete depth-one binary tree. For $n\\ge2$, any coordinate takes both labels, giving depth one. At any candidate root, the positive branch has only one singleton concept and cannot split again. Hence a complete depth-two tree is impossible."
 }

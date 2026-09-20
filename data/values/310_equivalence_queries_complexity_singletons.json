@@ -4,9 +4,9 @@
   "short_name": "equivalence_queries_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/equivalence_queries_complexity",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "The established equality $\\mathrm{Q}_{\\mathrm{eq}}=\\mathrm{Ldim}$ reduces this to the Littlestone-dimension value for Singletons.",
+  "proof": "For $n=1$, the target is known without a query. For $n\\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. This is a direct proof and does not require a general comparison with Littlestone dimension.",
   "references": "\\cite{littlestone1988learning}"
 }

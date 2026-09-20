@@ -4,9 +4,9 @@
   "short_name": "partial_equivalence_queries_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/partial_equivalence_queries_complexity",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "Ask the partial-equivalence query that labels every coordinate $0$.  Every singleton target disagrees at its unique positive coordinate, which the counterexample reveals; one query identifies the target."
+  "proof": "For $n=1$, the target is known without a query. For $n\\ge2$, query the all-zero labeling. Every singleton target disagrees with it only at its unique positive coordinate, so any counterexample identifies the target. Zero queries cannot distinguish the $n$ possible targets. A total labeling is an allowed partial equivalence query."
 }

@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Projected No-Clashing Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_noclashing_teaching_dimension.html">Projected No-Clashing Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\ge2$.</p>
+<p><strong>Details: </strong>The value field includes the one-concept boundary.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate projection of the singleton class is a singleton class on the retained coordinates, possibly together with the empty concept after duplicate traces are identified. Map each remaining singleton to its unique positive example and the empty concept to the empty sample. This is no-clashing and has width one; the identity projection gives the matching lower bound.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, every projection has one trace, taught by the empty sample. For $n\ge2$, teach each singleton trace by its positive coordinate and the possible empty trace by the empty sample. For two distinct traces, at least one is a singleton whose positive coordinate distinguishes it from the other, so the map is positive and no-clashing. Its width is at most one. On the nontrivial identity projection, width zero would assign the empty sample to every target and make two distinct targets clash. Thus both ordinary and positive projected no-clashing dimensions equal one.</p></div>
 <strong>References:</strong><div class="text-field"><p>Direct calculation; compare <a href="bibliography.html#KSZ2019">[KSZ2019]</a> for no-clashing teaching on finite classes.</p></div>
 
         </div>

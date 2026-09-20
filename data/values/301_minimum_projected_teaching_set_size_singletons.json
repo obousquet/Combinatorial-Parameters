@@ -7,5 +7,5 @@
   "value": "$n-1$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "For a singleton target $\\{i\\}$, project to the other $n-1$ coordinates. Its trace is empty, while the projected class contains the empty trace and all $n-1$ singleton traces, so all $n-1$ negative coordinates are needed to teach it. Any projection has at most $n-1$ relevant competing singleton traces after omitting the target, and projections containing $i$ teach the target with its positive coordinate. Thus every target has worst projected teaching-set size exactly $n-1$."
+  "proof": "Fix a target singleton in a subfamily of $m$ singleton concepts on the original domain. Project onto the $m-1$ coordinates of its competitors. The target becomes the empty trace, and each competitor becomes a different singleton trace; teaching the target requires all $m-1$ negative coordinates. Conversely, in any projection there are at most $m-1$ other distinct traces. Choose one coordinate of disagreement with each such trace to teach the target using at most $m-1$ observations. Thus every target has worst projected teaching-set size exactly $m-1$, including zero at $m=1$. Applying this to the full class with $m=n$ and minimizing over its targets gives $n-1$."
 }
