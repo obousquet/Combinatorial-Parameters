@@ -101,6 +101,14 @@ def verify(data_dir: Path, certificate: dict) -> dict:
         pass
     else:
         raise AssertionError('Checker accepted an invalid teaching sample')
+    # VC alone does not lower-bound ordinary RTD. Certify its first-step
+    # obstruction directly; any smaller teacher could be padded to size three.
+    no_three_example_teacher = 0
+    for mask in masks(12,3):
+        counts = Counter(h & mask for h in family)
+        assert min(counts.values()) >= 2
+        no_three_example_teacher += 1
+    assert no_three_example_teacher == 220
     # Independent finite lower data: the Chen base has no four-example teacher.
     for mask in masks(12,4):
         counts = Counter(h & mask for h in base)
@@ -116,6 +124,7 @@ def verify(data_dir: Path, certificate: dict) -> dict:
     assert radius == 8
     return {'class_short_name':'chen_neighbor_puncture','size':len(family),'effective_range':12,
             'VC':4,'shattered_coordinate_mask':shattered,'RTD':4,'projected_RTD':4,
+            'ordinary_RTD_lower_bound_three_coordinate_sets':no_three_example_teacher,
             'projections':4096,'nontrivial_projection_plans':len(expected),'removals_replayed':steps,
             'radius':radius,'enclosing_center':center,'OSC_lower_bound':5,'OSC_upper_bound':radius,
             'OSC_bound_scope':'Analytic order/trace-completion argument; not an OSC solver result.',
