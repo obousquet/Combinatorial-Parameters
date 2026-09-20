@@ -2,11 +2,11 @@
   "id": 197,
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/projected_minimum_degree",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
-  "details": "For $n\\ge2$.",
+  "details": "Valid for every $n\\ge1$; the value field includes the one-concept boundary.",
   "status": "established",
-  "proof": "A nonempty projection is a star, whose leaves have degree one, so its minimum degree is one.  This is the maximum possible over projections; the empty projection has degree zero.",
+  "proof": "Every proper projection onto $k\\ge1$ coordinates is a $k$-leaf star, whose minimum degree is one. The empty projection and the full projection are edgeless. A nonempty proper projection exists exactly when $n\\ge2$. Thus the maximum of these minimum degrees is zero at $n=1$ and one otherwise.",
   "name": "Projected Minimum Degree of Singletons",
   "short_name": "projected_minimum_degree_singletons"
 }

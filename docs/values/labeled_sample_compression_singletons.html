@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Labeled Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Fix a cyclic successor map on the domain.  If the sample has a positive point, retain it and reconstruct its singleton.  Otherwise its negative coordinates form a proper subset; retain a negative point whose successor is outside that subset and reconstruct the successor singleton.  This is consistent with the full sample.  Size zero is impossible for a nontrivial class.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, always reconstruct the sole concept from the empty key. For $n\ge2$, fix a cyclic successor map. If a sample has a positive point, retain its labeled positive point and reconstruct that singleton. For a nonempty all-negative sample on a proper subset $A$ of the domain, retain a negative point of $A$ whose successor lies outside $A$, and reconstruct the successor singleton. Such a point exists because the cycle is not contained in $A$. Reconstruct any fixed singleton at the empty key, which handles the empty sample. All reconstructions are consistent. Two distinct full concepts rule out width zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
 
         </div>

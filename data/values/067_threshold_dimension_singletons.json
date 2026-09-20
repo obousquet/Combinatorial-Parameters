@@ -4,9 +4,9 @@
   "short_name": "threshold_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/threshold_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "A one-point restriction contains the two threshold traces. A restriction to two or more points contains only singleton traces and cannot contain a longer threshold chain."
+  "proof": "For $n=1$ no coordinate has both labels, so the threshold dimension is zero. For $n\\ge2$ a one-coordinate projection contains both the empty and full traces. Any threshold chain on two or more coordinates would include a doubleton trace, impossible for singleton concepts. Thus the value is one."
 }

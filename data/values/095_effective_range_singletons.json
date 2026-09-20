@@ -4,9 +4,9 @@
   "short_name": "effective_range_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/effective_range",
-  "value": "$n$",
+  "value": "$0$ for $n=1$; $n$ for $n\\ge2$",
   "value_class": "omega_n",
   "details": "",
   "status": "established",
-  "proof": "For every coordinate $i$, singleton $\\{i\\}$ differs there from any other singleton, so every coordinate belongs to the effective range."
+  "proof": "For $n=1$ there is only one concept and no varying coordinate. For $n\\ge2$, at each coordinate $i$ the concept $\\{i\\}$ and any other singleton have different labels. Hence every one of the $n$ coordinates belongs to the effective range."
 }

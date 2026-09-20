@@ -4,7 +4,7 @@
   "short_name": "unlabeled_sample_compression_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/unlabeled_sample_compression",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "For $n\\ge2$; the value is zero for $n=1$. The decoder is allowed to be improper.",
   "status": "established",

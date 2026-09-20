@@ -4,9 +4,9 @@
   "short_name": "proper_labeled_sample_compression_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/proper_labeled_sample_compression",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "In the size-one cyclic-boundary scheme, every reconstruction is a singleton and therefore belongs to the class.  It is thus proper, and size zero remains impossible.",
+  "proof": "The cyclic-boundary labeled scheme reconstructs only singleton concepts, so it is proper and has width one for $n\\ge2$. Two distinct full concepts rule out width zero. For $n=1$, the empty key always reconstructs the sole concept, giving width zero.",
   "references": "\\cite{FW1995}"
 }

@@ -4,8 +4,8 @@
   "short_name": "maximum_largest_order_shattered_set_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/maximum_largest_order_shattered_set",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Maximum Largest Order Shattered Set is, by definition, the VC dimension. Singletons have established VC dimension one."
+  "proof": "Apply downshifts in any coordinate order. The first shift replaces its coordinate singleton by the empty concept; every later shift leaves the other $n-1$ singletons unchanged because the empty concept is already present. The resulting downset is the empty concept together with $n-1$ singletons. Its largest shattered set has size zero for $n=1$ and one for $n\\ge2$, independently of the order."
 }

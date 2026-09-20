@@ -4,9 +4,9 @@
   "short_name": "oriented_diameter_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/oriented_diameter",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "On one coordinate, restrictions include both $\\emptyset$ and that singleton. No restriction contains a member of size greater than one, so no larger oriented pair occurs."
+  "proof": "For $n=1$ the sole concept has no coordinate with both labels, so the oriented diameter is zero. For $n\\ge2$, projecting to one coordinate gives both its empty and singleton traces, so the value is at least one. A trace has at most one positive coordinate, excluding a larger empty/full pair."
 }

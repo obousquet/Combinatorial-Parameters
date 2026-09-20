@@ -4,8 +4,8 @@
   "short_name": "largest_shattered_set_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/largest_shattered_set",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for singletons is one."
+  "proof": "Largest Shattered Set is the VC dimension by definition. For $n=1$ no coordinate is shattered. For $n\\ge2$ every one-coordinate set is shattered, and no pair is shattered because the pattern $11$ is absent."
 }

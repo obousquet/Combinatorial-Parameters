@@ -4,7 +4,7 @@
   "short_name": "proper_unlabeled_sample_compression_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/proper_unlabeled_sample_compression",
-  "value": "$2$",
+  "value": "$0$ for $n=1$; $1$ for $n=2$; $2$ for $n\\ge3$",
   "value_class": "omega_1",
   "details": "For $n\\ge3$. The exceptional values are zero for $n=1$ and one for $n=2$. Corrects the former size-one claim, whose decoder used untransmitted labels.",
   "status": "established",

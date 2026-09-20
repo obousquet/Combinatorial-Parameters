@@ -4,9 +4,9 @@
   "short_name": "path_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/path_dimension",
-  "value": "$1$",
+  "value": "$\\min\\{n-1,2\\}$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "Restricting to any singleton coordinate gives both empty and full one-point traces. No two-step path occurs because no restriction contains a doubleton trace."
+  "proof": "For $n=1$ there is only one concept and no nonempty path. For $n=2$, a one-coordinate projection has an edge, while the full projection consists of two nonadjacent singleton traces, so the value is one. For $n\\ge3$, project to two coordinates $i,j$, omitting another coordinate. The traces $\\{i\\},\\emptyset,\\{j\\}$ form a path obtained by flipping $i$ and then $j$, giving dimension two. Every proper projection consists of the empty trace and singleton traces; its one-inclusion graph is a star, whose longest simple path has two edges. The full projection is edgeless. Thus no longer coordinate-flip path exists."
 }

@@ -4,8 +4,8 @@
   "short_name": "dual_vc_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/dual_vc_dimension",
-  "value": "$1$",
-  "details": "For $n\u005cgeq2$.",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
+  "details": "Valid for every $n\\ge1$; the value field includes the one-concept boundary.",
   "status": "established",
-  "proof": "The dual class is again the class of singleton indicators on its $n$ hypotheses. It shatters one hypothesis, but on any two hypotheses it omits the pattern $11$."
+  "proof": "The incidence matrix of the singleton class is the identity matrix, so transposition gives the same class on its $n$ hypotheses. For $n=1$ its only concept is fixed and the dual VC dimension is zero. For $n\\ge2$, every one-coordinate set takes both labels, while no pair takes the pattern $11$. Hence the dual VC dimension is one."
 }

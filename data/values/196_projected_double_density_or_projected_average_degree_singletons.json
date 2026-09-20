@@ -2,10 +2,10 @@
   "id": 196,
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/projected_double_density_or_projected_average_degree",
-  "value": "$\\frac{2n}{n+1}$",
-  "details": "For $n\\ge2$.",
+  "value": "$\\frac{2(n-1)}{n}$",
+  "details": "Valid for every $n\\ge1$; the value field includes the one-concept boundary.",
   "status": "established",
-  "proof": "A projection onto $k$ coordinates has a $k$-leaf star as its $1$-inclusion graph, with average degree $2k/(k+1)$.  This increases with $k$, so the maximum at $k=n$ is $2n/(n+1)$.",
+  "proof": "A proper projection onto $k<n$ coordinates consists of the empty trace and its $k$ singleton traces. Its one-inclusion graph is a $k$-leaf star with average degree $2k/(k+1)$. This increases with $k$ and is maximized at $k=n-1$, giving $2(n-1)/n$. The full projection has only singleton traces and is edgeless, so cannot improve the maximum. For $n=1$ both possible projections are edgeless and the same formula gives zero.",
   "name": "Projected Double Density or Projected Average Degree of Singletons",
   "short_name": "projected_double_density_or_projected_average_degree_singletons"
 }

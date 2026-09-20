@@ -683,11 +683,11 @@
         <p><strong>Name: </strong>Oriented Diameter of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/oriented_diameter.html">Oriented Diameter</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On one coordinate, restrictions include both $\emptyset$ and that singleton. No restriction contains a member of size greater than one, so no larger oriented pair occurs.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ the sole concept has no coordinate with both labels, so the oriented diameter is zero. For $n\ge2$, projecting to one coordinate gives both its empty and singleton traces, so the value is at least one. A trace has at most one positive coordinate, excluding a larger empty/full pair.</p></div>
 
 
         </div>
@@ -836,11 +836,11 @@
         <p><strong>Name: </strong>Log Shattering of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/log_shattering.html">Log Shattering</a></p>
-<p><strong>Value: </strong>$\log(n+1)$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $\log_2(n+1)$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The empty set and every singleton subset are shattered. No two-point set is shattered, since the only available traces on it are the two singletons. Hence there are $n+1$ shattered sets.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, only the empty coordinate set is shattered, so log shattering is zero. For $n\ge2$, each coordinate takes both labels and is shattered. No pair is shattered because no concept has two positive coordinates. Thus there are exactly $n+1$ shattered sets. A proper pair projection also has the zero trace, but still lacks the doubleton.</p></div>
 
 
         </div>
@@ -1227,11 +1227,11 @@
         <p><strong>Name: </strong>Threshold Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/threshold_dimension.html">Threshold Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>A one-point restriction contains the two threshold traces. A restriction to two or more points contains only singleton traces and cannot contain a longer threshold chain.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ no coordinate has both labels, so the threshold dimension is zero. For $n\ge2$ a one-coordinate projection contains both the empty and full traces. Any threshold chain on two or more coordinates would include a doubleton trace, impossible for singleton concepts. Thus the value is one.</p></div>
 
 
         </div>
@@ -1669,11 +1669,11 @@
         <p><strong>Name: </strong>VC Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$ and $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Every one-point set is shattered. On two points, the restrictions provide only the two singleton patterns, not all four patterns.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the class consists only of the all-one concept, so no nonempty set is shattered and the VC dimension is zero. For $n\ge2$, every one-point set is shattered: its singleton labels it one, and any other singleton labels it zero. No pair is shattered, since no concept labels both coordinates one. For $n\ge3$, the zero pattern on a pair also occurs, using a singleton outside the pair.</p></div>
 
 
         </div>
@@ -1703,11 +1703,11 @@
         <p><strong>Name: </strong>Effective Range of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/effective_range.html">Effective Range</a></p>
-<p><strong>Value: </strong>$n$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $n$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every coordinate $i$, singleton $\{i\}$ differs there from any other singleton, so every coordinate belongs to the effective range.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ there is only one concept and no varying coordinate. For $n\ge2$, at each coordinate $i$ the concept $\{i\}$ and any other singleton have different labels. Hence every one of the $n$ coordinates belongs to the effective range.</p></div>
 
 
         </div>
@@ -2587,11 +2587,11 @@
         <p><strong>Name: </strong>Diameter of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/diameter.html">Diameter</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $2$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Any two distinct singleton concepts differ on exactly their two respective coordinates.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ the class has one concept, so its diameter is zero. For $n\ge2$, every pair of distinct singleton concepts differs on exactly its two respective coordinates; such a pair exists, giving diameter two.</p></div>
 
 
         </div>
@@ -2604,11 +2604,11 @@
         <p><strong>Name: </strong>Hamming Radius of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/hamming_radius.html">Hamming Radius</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The radius-one Hamming ball centred at the empty set contains every singleton. Radius zero cannot contain more than one concept.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ use the sole concept as the center of a radius-zero ball. For $n\ge2$, the empty center has distance one to every singleton, while no radius-zero ball can contain two distinct concepts. The radius is therefore one.</p></div>
 
 
         </div>
@@ -2621,11 +2621,11 @@
         <p><strong>Name: </strong>Path Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/path_dimension.html">Path Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$\min\{n-1,2\}$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Restricting to any singleton coordinate gives both empty and full one-point traces. No two-step path occurs because no restriction contains a doubleton trace.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$ there is only one concept and no nonempty path. For $n=2$, a one-coordinate projection has an edge, while the full projection consists of two nonadjacent singleton traces, so the value is one. For $n\ge3$, project to two coordinates $i,j$, omitting another coordinate. The traces $\{i\},\emptyset,\{j\}$ form a path obtained by flipping $i$ and then $j$, giving dimension two. Every proper projection consists of the empty trace and singleton traces; its one-inclusion graph is a star, whose longest simple path has two edges. The full projection is edgeless. Thus no longer coordinate-flip path exists.</p></div>
 
 
         </div>
@@ -3420,11 +3420,11 @@
         <p><strong>Name: </strong>Projected Double Density or Projected Average Degree of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_double_density_or_projected_average_degree.html">Projected Double Density or Projected Average Degree</a></p>
-<p><strong>Value: </strong>$\frac{2n}{n+1}$</p>
+<p><strong>Value: </strong>$\frac{2(n-1)}{n}$</p>
 <p><strong>Order:</strong> </p>
-<p><strong>Details: </strong>For $n\ge2$.</p>
+<p><strong>Details: </strong>Valid for every $n\ge1$; the value field includes the one-concept boundary.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>A projection onto $k$ coordinates has a $k$-leaf star as its $1$-inclusion graph, with average degree $2k/(k+1)$.  This increases with $k$, so the maximum at $k=n$ is $2n/(n+1)$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>A proper projection onto $k<n$ coordinates consists of the empty trace and its $k$ singleton traces. Its one-inclusion graph is a $k$-leaf star with average degree $2k/(k+1)$. This increases with $k$ and is maximized at $k=n-1$, giving $2(n-1)/n$. The full projection has only singleton traces and is edgeless, so cannot improve the maximum. For $n=1$ both possible projections are edgeless and the same formula gives zero.</p></div>
 
 
         </div>
@@ -3437,11 +3437,11 @@
         <p><strong>Name: </strong>Projected Minimum Degree of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_minimum_degree.html">Projected Minimum Degree</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\ge2$.</p>
+<p><strong>Details: </strong>Valid for every $n\ge1$; the value field includes the one-concept boundary.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>A nonempty projection is a star, whose leaves have degree one, so its minimum degree is one.  This is the maximum possible over projections; the empty projection has degree zero.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every proper projection onto $k\ge1$ coordinates is a $k$-leaf star, whose minimum degree is one. The empty projection and the full projection are edgeless. A nonempty proper projection exists exactly when $n\ge2$. Thus the maximum of these minimum degrees is zero at $n=1$ and one otherwise.</p></div>
 
 
         </div>
@@ -3947,11 +3947,11 @@
         <p><strong>Name: </strong>Largest Shattered Set of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/largest_shattered_set.html">Largest Shattered Set</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Largest Shattered Set is, by definition, the VC dimension. The established VC-dimension value for singletons is one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Largest Shattered Set is the VC dimension by definition. For $n=1$ no coordinate is shattered. For $n\ge2$ every one-coordinate set is shattered, and no pair is shattered because the pattern $11$ is absent.</p></div>
 
 
         </div>
@@ -4202,11 +4202,11 @@
         <p><strong>Name: </strong>Maximum Largest Order Shattered Set of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/maximum_largest_order_shattered_set.html">Maximum Largest Order Shattered Set</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Maximum Largest Order Shattered Set is, by definition, the VC dimension. Singletons have established VC dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Apply downshifts in any coordinate order. The first shift replaces its coordinate singleton by the empty concept; every later shift leaves the other $n-1$ singletons unchanged because the empty concept is already present. The resulting downset is the empty concept together with $n-1$ singletons. Its largest shattered set has size zero for $n=1$ and one for $n\ge2$, independently of the order.</p></div>
 
 
         </div>
@@ -6585,11 +6585,11 @@
         <p><strong>Name: </strong>Labeled Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/labeled_sample_compression.html">Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Fix a cyclic successor map on the domain.  If the sample has a positive point, retain it and reconstruct its singleton.  Otherwise its negative coordinates form a proper subset; retain a negative point whose successor is outside that subset and reconstruct the successor singleton.  This is consistent with the full sample.  Size zero is impossible for a nontrivial class.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, always reconstruct the sole concept from the empty key. For $n\ge2$, fix a cyclic successor map. If a sample has a positive point, retain its labeled positive point and reconstruct that singleton. For a nonempty all-negative sample on a proper subset $A$ of the domain, retain a negative point of $A$ whose successor lies outside $A$, and reconstruct the successor singleton. Such a point exists because the cycle is not contained in $A$. Reconstruct any fixed singleton at the empty key, which handles the empty sample. All reconstructions are consistent. Two distinct full concepts rule out width zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
 
         </div>
@@ -6653,11 +6653,11 @@
         <p><strong>Name: </strong>Proper Labeled Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/proper_labeled_sample_compression.html">Proper Labeled Sample Compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>In the size-one cyclic-boundary scheme, every reconstruction is a singleton and therefore belongs to the class.  It is thus proper, and size zero remains impossible.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The cyclic-boundary labeled scheme reconstructs only singleton concepts, so it is proper and has width one for $n\ge2$. Two distinct full concepts rule out width zero. For $n=1$, the empty key always reconstructs the sole concept, giving width zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FW1995">[FW1995]</a></p></div>
 
         </div>
@@ -8166,7 +8166,7 @@
         <p><strong>Name: </strong>Unlabeled Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/unlabeled_sample_compression.html">Unlabeled sample compression</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 <p><strong>Details: </strong>For $n\ge2$; the value is zero for $n=1$. The decoder is allowed to be improper.</p>
 <p><strong>Status:</strong> Established</p>
@@ -8183,7 +8183,7 @@
         <p><strong>Name: </strong>Proper Unlabeled Sample Compression of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/proper_unlabeled_sample_compression.html">Proper Unlabeled Sample Compression</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n=2$; $2$ for $n\ge3$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 <p><strong>Details: </strong>For $n\ge3$. The exceptional values are zero for $n=1$ and one for $n=2$. Corrects the former size-one claim, whose decoder used untransmitted labels.</p>
 <p><strong>Status:</strong> Established</p>
@@ -8676,11 +8676,11 @@
         <p><strong>Name: </strong>Dual VC Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/dual_vc_dimension.html">Dual VC Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> </p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+<p><strong>Details: </strong>Valid for every $n\ge1$; the value field includes the one-concept boundary.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The dual class is again the class of singleton indicators on its $n$ hypotheses. It shatters one hypothesis, but on any two hypotheses it omits the pattern $11$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The incidence matrix of the singleton class is the identity matrix, so transposition gives the same class on its $n$ hypotheses. For $n=1$ its only concept is fixed and the dual VC dimension is zero. For $n\ge2$, every one-coordinate set takes both labels, while no pair takes the pattern $11$. Hence the dual VC dimension is one.</p></div>
 
 
         </div>
@@ -16993,7 +16993,7 @@
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate trace of the n-singleton class consists of distinct singleton concepts, possibly together with the empty concept. Each singleton has at most one smaller one-coordinate neighbour, namely the empty trace. On any two-coordinate trace that empty trace and two singleton traces occur, so the maximum positive degree is exactly one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every coordinate projection consists of singleton traces, possibly together with the empty trace. Each singleton has at most one smaller one-coordinate neighbor, namely the empty trace. For $n\ge2$, a one-coordinate projection contains both its singleton and the empty trace, so maximum positive degree one is attained. At $n=1$, every projection has one concept and the projected maximum positive degree is zero.</p></div>
 
 
         </div>

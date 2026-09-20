@@ -4,9 +4,9 @@
   "short_name": "hamming_radius_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/hamming_radius",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "The radius-one Hamming ball centred at the empty set contains every singleton. Radius zero cannot contain more than one concept."
+  "proof": "For $n=1$ use the sole concept as the center of a radius-zero ball. For $n\\ge2$, the empty center has distance one to every singleton, while no radius-zero ball can contain two distinct concepts. The radius is therefore one."
 }

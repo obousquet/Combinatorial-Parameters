@@ -4,9 +4,9 @@
   "short_name": "diameter_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/diameter",
-  "value": "$2$",
+  "value": "$0$ for $n=1$; $2$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "Any two distinct singleton concepts differ on exactly their two respective coordinates."
+  "proof": "For $n=1$ the class has one concept, so its diameter is zero. For $n\\ge2$, every pair of distinct singleton concepts differs on exactly its two respective coordinates; such a pair exists, giving diameter two."
 }
