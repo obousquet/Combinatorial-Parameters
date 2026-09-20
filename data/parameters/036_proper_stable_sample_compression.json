@@ -5,7 +5,6 @@
   "category": "compression",
   "symmetric": true,
   "p_monotonic": true,
-  "c_monotonic": true,
   "definition": "Let $\\mathcal H\\subseteq\\{0,1\\}^{X}$ be nonempty on a finite domain. A **proper reconstruction-stable unlabeled compression scheme of size $k$** consists of fixed maps $C$ and $\\rho$: for every realizable partial labeled sample $s:S\\to\\{0,1\\}$, the encoder selects an unordered key $C(s)\\subseteq S$ of size at most $k$, and the decoder, given only that coordinate set, returns $\\rho(C(s))\\in\\mathcal H$ consistent with $s$. No labels, original domain $S$, auxiliary messages, repetitions or ordering choices are transmitted. Stability requires $\\rho(C(s|_T))=\\rho(C(s))$ as functions on $X$ whenever $C(s)\\subseteq T\\subseteq S$; equality of the selected keys is not required. The **Proper Stable Sample Compression** $\\mathrm{psUSC}(\\mathcal H)$ is the least such $k$, or $+\\infty$ if no scheme exists. Nonexistence can occur even for finite classes, for the balanced six-split class.",
   "graph_summary": "Fewest retained coordinates, with no labels or messages, for proper reconstruction unchanged by deletion of unretained examples; $+\\infty$ if no such scheme exists.",
   "origin_references": "The stability condition for sample compression schemes is used in \\cite{bousquet2020proper,hanneke2021stable}.",
@@ -14,10 +13,7 @@
     "p_monotonic": {
       "proof": "For a projected-realizable sample, apply the original proper stable scheme while viewing the sample on the retained coordinates as a sample on the original domain, then restrict the reconstructed member of $\\mathcal H$.  It lies in the projected class, stays consistent, and has the same stability and compression size.",
       "kind": "direct_argument"
-    },
-    "c_monotonic": {
-      "proof": "For a conditioned sample, append the fixed labeled coordinates, compress in the original class, and delete fixed coordinates from the compressed set.  Reconstruction restricted to the fibre remains proper and stable.",
-      "kind": "direct_argument"
     }
-  }
+  },
+  "comments": "Conditioning monotonicity is unverified. The former append-compress-erase argument did not supply a well-defined decoder after distinct keys lose their fixed coordinates. An explicit collision disproves that construction for an ordinary proper encoder, not monotonicity of the parameter. The stable case requires a separate collision argument. See sync/COMPRESSION_CONDITIONING_AUDIT.md in the source repository (September 20, 2026)."
 }

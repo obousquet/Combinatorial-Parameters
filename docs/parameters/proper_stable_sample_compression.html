@@ -89,13 +89,13 @@
     
 <strong>Definition:</strong><div class="text-field"><p>Let $\mathcal H\subseteq\{0,1\}^{X}$ be nonempty on a finite domain. A <strong>proper reconstruction-stable unlabeled compression scheme of size $k$</strong> consists of fixed maps $C$ and $\rho$: for every realizable partial labeled sample $s:S\to\{0,1\}$, the encoder selects an unordered key $C(s)\subseteq S$ of size at most $k$, and the decoder, given only that coordinate set, returns $\rho(C(s))\in\mathcal H$ consistent with $s$. No labels, original domain $S$, auxiliary messages, repetitions or ordering choices are transmitted. Stability requires $\rho(C(s|_T))=\rho(C(s))$ as functions on $X$ whenever $C(s)\subseteq T\subseteq S$; equality of the selected keys is not required. The <strong>Proper Stable Sample Compression</strong> $\mathrm{psUSC}(\mathcal H)$ is the least such $k$, or $+\infty$ if no scheme exists. Nonexistence can occur even for finite classes, for the balanced six-split class.</p></div>
 
-
+<strong>Comments:</strong><div class="text-field"><p>Conditioning monotonicity is unverified. The former append-compress-erase argument did not supply a well-defined decoder after distinct keys lose their fixed coordinates. An explicit collision disproves that construction for an ordinary proper encoder, not monotonicity of the parameter. The stable case requires a separate collision argument. See sync/COMPRESSION_CONDITIONING_AUDIT.md in the source repository (September 20, 2026).</p></div>
 <strong>Origin References:</strong><div class="text-field"><p>The stability condition for sample compression schemes is used in <a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a> <a href="bibliography.html#hanneke2021stable">[hanneke2021stable]</a>.</p></div>
 <p><strong>Category:</strong> Compression</p>
 <p><strong>Symmetric:</strong> Yes</p>
 <p><strong>Monotonic:</strong> Unspecified</p>
 <p><strong>P-Monotonic:</strong> Yes</p>
-<p><strong>C-Monotonic:</strong> Yes</p>
+<p><strong>C-Monotonic:</strong> Unspecified</p>
 <p><strong>Strict C-Monotonic:</strong> Unspecified</p>
 <p><strong>Tight Strict C-Monotonic:</strong> Unspecified</p>
 <p><strong>Doubly Monotonic:</strong> Unspecified</p>
