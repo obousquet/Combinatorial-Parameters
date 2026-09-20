@@ -302,11 +302,11 @@ def verify_repeated_cubes():
     expected = {1164: '$1$', 1165: '$n$', 1166: r'$\lceil n/2\rceil$',
                 1167: '$n$', 1168: '$n$', 1169: '$n$', 1170: '$2^n$',
                 1171: '$n-1+2^{n-1}$'}
-    for path in (data / 'values').glob('*_repeated_coordinate_cube.json'):
+    for identifier, formula in expected.items():
+        path, = (data / 'values').glob(f'{identifier}_*_repeated_coordinate_cube.json')
         value = json.loads(path.read_text())
-        assert value['value'] == expected.pop(value['id'])
+        assert value['id'] == identifier and value['value'] == formula
         assert value['proof'] and value['status'] == 'established'
-    assert not expected
     print(f'Repeated cubes: six active-domain AN/NC maps, {pairs} no-clashing pairs; '
           f'{iterations} all-minimum STS iterations on n=1..4, '
           f'{folds} exhaustive consistency-preserving folds on n=1..3.')
