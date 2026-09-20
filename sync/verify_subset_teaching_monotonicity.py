@@ -76,6 +76,8 @@ def history(concepts: tuple[str, ...]) -> list[Teachers]:
 
 
 def std(concepts: tuple[str, ...]) -> int:
+    if not concepts:
+        return 0
     return max(width(s) for choices in history(concepts)[-1].values() for s in choices)
 
 
@@ -156,6 +158,7 @@ def verify_products_and_benchmarks() -> None:
 
 
 def main() -> None:
+    assert std(()) == 0
     assert history(H) == EXPECTED
     assert all({h[j] for h in H} == {"0", "1"} for j in range(3))
     assert std(H) == 1
@@ -190,6 +193,7 @@ def main() -> None:
 
     data = Path(__file__).resolve().parents[1] / "data"
     record = json.loads((data / "parameters/093_subset_teaching_dimension.json").read_text())
+    assert r"\mathrm{STD}(\emptyset)=0" in record["definition"]
     for flag in ("p_monotonic", "c_monotonic", "strict_c_monotonic", "tight_strict_c_monotonic"):
         assert record[flag] is False
         evidence = record["monotonicity_evidence"][flag]
