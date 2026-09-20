@@ -119,12 +119,21 @@ def check_singleton_witness() -> None:
         assert records[vid]['status'] == 'established'
     assert records[26]['value'] == '$n$'
     assert records[46]['value'] == '$n-1$'
-    assert records[388]['value'] == '$1$'
     assert records[1157]['value'] == r'$\Theta(n)$'
     assert records[1157]['value_class'] == 'omega_n'
-    for vid in (171, 487, 1062):
-        assert records[vid]['value'] == '$1$'
+    assert records[171]['value'] == '$1$'
+    assert records[171]['value_class'] == 'omega_1'
+    assert records[171]['details'] == r'For $n\ge2$.'
+    for vid in (388, 487, 1062):
+        assert records[vid]['value'] == r'$0$ for $n=1$; $1$ for $n\ge2$'
         assert records[vid]['value_class'] == 'omega_1'
+    # At n=1 the only concept, and each projected trace, need no key.
+    sole_samples = ((0, 0), (1, 1))
+    for mask, labels in sole_samples:
+        assert 1 & mask == labels  # Empty-key reconstruction is the sole concept.
+    for domain in (0, 1):
+        traces = {1 & domain}
+        assert len(traces) == 1  # Empty teachers are non-clashing vacuously.
     assert 'prop:proper-compression-covc' in records[1157]['proof']
     assert 'prop:order-stable-installation' in records[1157]['proof']
     for rid in (155, 156, 295, 444):
