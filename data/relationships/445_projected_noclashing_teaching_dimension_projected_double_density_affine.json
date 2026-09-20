@@ -6,10 +6,10 @@
   "parameter_2_id": "#parameters/projected_double_density_or_projected_average_degree",
   "relationship_type": "larger_c",
   "multiplicative_constant": "\\tfrac12",
-  "details": "For every finite binary class, $\\mathrm{NCTD}^{p}(\\mathcal H)\\geq\\mathrm{dens}^{p}(\\mathcal H)/2$.",
+  "details": "For every nonempty finite binary class, $\\mathrm{NCTD}^{p}(\\mathcal H)\\geq\\mathrm{dens}^{p}(\\mathcal H)/2$.",
   "status": "established",
   "proof": "Apply the no-clashing lower bound by one half of the one-inclusion average degree to every coordinate projection, then maximize over the projection.",
   "latex_proof_label": "prop:projected-nctd-low-projected-density",
-  "proof_source": "Proposition prop:projected-nctd-low-projected-density in the LaTeX survey.",
+  "proof_source": "Theorem thm:stable-comp-low-NCTD-star in the LaTeX survey; prop:projected-nctd-low-projected-density is retained as an alias after consolidation.",
   "references": "\\cite{KSZ2019}"
 }
