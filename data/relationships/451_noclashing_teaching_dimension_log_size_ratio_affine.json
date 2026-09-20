@@ -10,7 +10,7 @@
   "status": "established",
   "proof": "If the effective range has size at least two, the no-clashing counting bound gives $\\mathrm{NCTD}\\geq\\log|\\mathcal H|/(2\\log\\mathrm E)$. Since $\\mathrm E\\leq n$ and $\\log(|\\mathcal H|-1)\\leq\\log|\\mathcal H|$, this dominates one half of the log size ratio. If $\\mathrm E=1$, a nontrivial binary class has two concepts and the log size ratio is zero, so the claim is immediate.",
   "latex_proof_label": "cor:nctd-low-log-size-ratio",
-  "proof_source": "Corollary cor:nctd-low-log-size-ratio in the LaTeX survey.",
+  "proof_source": "Proposition prop:nctd-low-log-size in the LaTeX survey; cor:nctd-low-log-size-ratio is retained as an alias after consolidation.",
   "references": "\\cite{KSZ2019}",
   "witness": "#classes/full_cube",
   "witness_strength": "unbounded",

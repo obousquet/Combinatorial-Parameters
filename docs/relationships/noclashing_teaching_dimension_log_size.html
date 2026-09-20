@@ -95,7 +95,7 @@
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Put $d=\mathrm{NCTD}(\mathcal H)$.  Padding a width-$d$ no-clashing teacher gives each concept a labeled sample on exactly $d$ of the $\mathrm E(\mathcal H)$ effective coordinates.  Distinct concepts receive distinct samples, so $|\mathcal H|\leq2^d\binom{\mathrm E(\mathcal H)}d\leq(2\mathrm E(\mathcal H))^d$.  Taking binary logarithms and using $1+\log_2\mathrm E\leq2\log_2\mathrm E$ gives the claim.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Put $d=\mathrm{NCTD}(\mathcal H)$ and $e=\mathrm E(\mathcal H)$. Remove constant-coordinate examples from an optimal teacher; this preserves every inconsistency between targets. Since $d\leq\lceil e/2\rceil\leq e$, pad each remaining sample to exactly $d$ effective coordinates with its target's labels. Padding cannot create a clash. Distinct targets receive distinct samples, so $|\mathcal H|\leq2^d\binom ed\leq(2e)^d$. Thus $d\geq\log_2|\mathcal H|/(1+\log_2 e)$; for $e\geq2$, using $1+\log_2 e\leq2\log_2 e$ gives the stated weaker bound.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition prop:nctd-low-log-size in the LaTeX survey.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>

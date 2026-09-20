@@ -9474,7 +9474,7 @@
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Put $d=\mathrm{NCTD}(\mathcal H)$.  Padding a width-$d$ no-clashing teacher gives each concept a labeled sample on exactly $d$ of the $\mathrm E(\mathcal H)$ effective coordinates.  Distinct concepts receive distinct samples, so $|\mathcal H|\leq2^d\binom{\mathrm E(\mathcal H)}d\leq(2\mathrm E(\mathcal H))^d$.  Taking binary logarithms and using $1+\log_2\mathrm E\leq2\log_2\mathrm E$ gives the claim.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Put $d=\mathrm{NCTD}(\mathcal H)$ and $e=\mathrm E(\mathcal H)$. Remove constant-coordinate examples from an optimal teacher; this preserves every inconsistency between targets. Since $d\leq\lceil e/2\rceil\leq e$, pad each remaining sample to exactly $d$ effective coordinates with its target's labels. Padding cannot create a clash. Distinct targets receive distinct samples, so $|\mathcal H|\leq2^d\binom ed\leq(2e)^d$. Thus $d\geq\log_2|\mathcal H|/(1+\log_2 e)$; for $e\geq2$, using $1+\log_2 e\leq2\log_2 e$ gives the stated weaker bound.</p></div>
 <strong>Full Proof:</strong><div class="text-field"><p>Proposition prop:nctd-low-log-size in the LaTeX survey.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
@@ -9531,7 +9531,7 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Each coordinate trace $\mathcal H_{\mid S}$ has effective range at most $\mathrm E(\mathcal H)$. Applying the sharp no-clashing upper bound $\mathrm{NCTD}(\mathcal H_{\mid S})\leq\lceil\mathrm E(\mathcal H)/2\rceil$ to every trace and maximizing over $S$ proves the claim.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Corollary cor:effective-range-low-projected-nctd in the LaTeX survey.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition prop:effective-range-low-nctd in the LaTeX survey; cor:effective-range-low-projected-nctd is retained as an alias after consolidation.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
 
@@ -9559,7 +9559,7 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If the effective range has size at least two, the no-clashing counting bound gives $\mathrm{NCTD}\geq\log|\mathcal H|/(2\log\mathrm E)$. Since $\mathrm E\leq n$ and $\log(|\mathcal H|-1)\leq\log|\mathcal H|$, this dominates one half of the log size ratio. If $\mathrm E=1$, a nontrivial binary class has two concepts and the log size ratio is zero, so the claim is immediate.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Corollary cor:nctd-low-log-size-ratio in the LaTeX survey.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition prop:nctd-low-log-size in the LaTeX survey; cor:nctd-low-log-size-ratio is retained as an alias after consolidation.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
 
@@ -9587,7 +9587,7 @@
 
 <p><strong>Status:</strong> Established</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every positive no-clashing teacher is in particular a no-clashing teacher. Thus $\mathrm{NCTD}^{+}(\mathcal H)\geq\mathrm{NCTD}(\mathcal H)$, and the no-clashing counting argument gives the stated log-size-ratio lower bound directly.</p></div>
-<strong>Full Proof:</strong><div class="text-field"><p>Corollary cor:positive-nctd-low-log-size-ratio in the LaTeX survey.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Proposition prop:nctd-low-log-size in the LaTeX survey; cor:positive-nctd-low-log-size-ratio is retained as an alias after consolidation.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KSZ2019">[KSZ2019]</a></p></div>
 
