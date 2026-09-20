@@ -133,8 +133,10 @@ def three_domain_control() -> None:
 
 def verify_records() -> None:
     for filename, value, fragment in [
-        ("477_unlabeled_sample_compression_singletons.json", "$1$", "all-zero word"),
-        ("478_proper_unlabeled_sample_compression_singletons.json", "$2$", "r-1"),
+        ("477_unlabeled_sample_compression_singletons.json",
+         r"$0$ for $n=1$; $1$ for $n\ge2$", "all-zero word"),
+        ("478_proper_unlabeled_sample_compression_singletons.json",
+         r"$0$ for $n=1$; $1$ for $n=2$; $2$ for $n\ge3$", "r-1"),
     ]:
         record = json.loads((DATA / "values" / filename).read_text())
         assert record["value"] == value and record["status"] == "established"
