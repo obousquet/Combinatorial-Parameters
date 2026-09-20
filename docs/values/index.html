@@ -2710,7 +2710,7 @@
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For the all-zero target, querying $n-1$ zero coordinates leaves only the singleton on the remaining coordinate; fewer queries leave at least two singletons.  Any target having a positive coordinate is specified by that coordinate, while a target with at least two positive coordinates is excluded by querying two of them.  Thus, for $n\ge2$, the maximum is $n-1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty sample already leaves at most one concept, so the value is zero. Let $n\ge2$. For the all-zero labeling, a sample of $s$ zero coordinates leaves exactly $n-s$ singleton concepts. Thus at least $n-1$ coordinates are needed to leave at most one, and $n-1$ suffice. For any labeling with a positive coordinate $i$, the single example $(i,1)$ leaves exactly the singleton $\{i\}$ consistent with the sample, even if the full labeling has other positive coordinates. This meets the definition, which asks for at most one consistent concept rather than identification of the possibly unrealizable labeling. Hence every such labeling has specifying size at most one, and the maximum is $n-1$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#hegedHus1995generalized">[hegedHus1995generalized]</a></p></div>
 
         </div>
@@ -15531,7 +15531,7 @@
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton class itself has co-VC dimension $n$, so the envelope is at least $n$. Its effective range has $n$ coordinates, which upper-bounds every co-VC value of every subfamily.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The full singleton class has a hollow $n$-star centered at the missing all-zero word, so its co-VC value is $n$ and the subfamily envelope is at least $n$. Every subfamily is still defined on the same ambient domain $[n]$, and a hollow star can use at most its $n$ coordinates. Thus the envelope is at most $n$. This includes $n=1$: the class has effective range zero but co-VC value one, so effective range cannot replace ambient domain size in this argument.</p></div>
 
 
         </div>

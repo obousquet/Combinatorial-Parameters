@@ -7,5 +7,5 @@
   "value": "$n$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "The singleton class itself has co-VC dimension $n$, so the envelope is at least $n$. Its effective range has $n$ coordinates, which upper-bounds every co-VC value of every subfamily."
+  "proof": "The full singleton class has a hollow $n$-star centered at the missing all-zero word, so its co-VC value is $n$ and the subfamily envelope is at least $n$. Every subfamily is still defined on the same ambient domain $[n]$, and a hollow star can use at most its $n$ coordinates. Thus the envelope is at most $n$. This includes $n=1$: the class has effective range zero but co-VC value one, so effective range cannot replace ambient domain size in this argument."
 }
