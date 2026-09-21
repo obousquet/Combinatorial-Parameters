@@ -7949,7 +7949,7 @@
 <p><strong>Order:</strong> $\Omega(1)$</p>
 <p><strong>Details: </strong>For $n\geq3$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The antipodal complex is the complete bipartite graph on positive and negative literals with the perfect matching removed. For $n\geq3$ it contains an antipodal six-cycle, giving a 1-sphere, and it is one-dimensional so no larger sphere occurs.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n\geq3$, write $p_i$ and $m_i$ for the positive and negative literal at coordinate $i$. A partial labeling and its label flip are both realizable by singleton concepts exactly when they contain at most one literal of each sign. Thus the antipodal complex is the bipartite graph with edges $p_i m_j$ for $i\ne j$. The cycle $p_1,m_2,p_3,m_1,p_2,m_3,p_1$ is invariant under label flip, which acts as a half-turn, so it gives an equivariant copy of $S^1$. For the upper bound, choose distinct unit vectors $v_i$ in an open semicircle and send $p_i$ to $v_i$ and $m_i$ to $-v_i$. Extend linearly on each edge and normalize: the interpolated vector never vanishes, since the endpoints of an edge are not antipodal. This gives an equivariant map to $S^1$. An equivariant map from any $S^d$ with $d\ge2$ into the complex would therefore contradict Borsuk--Ulam. Hence $\mathrm{sd}=1$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a></p></div>
 
         </div>
@@ -10903,12 +10903,12 @@
         <p><strong>Name: </strong>List Replicability Number of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/list_replicability.html">List Replicability Number</a></p>
-<p><strong>Value: </strong>$\begin{cases}2&n=3,\\2\leq\mathrm{LR}\leq3&n\geq4.\end{cases}$</p>
+<p><strong>Value: </strong>$2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 <p><strong>Details: </strong>For $n\geq3$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n\geq3$, the established spherical dimension is 1, and Theorem 10 gives $\mathrm{LR}\geq2$.  The sign rank is 2 at n=3 and 3 for $n\geq4$; the sign-rank upper bound on list replicability gives the corresponding upper bounds. Thus n=3 is exact and the displayed interval holds for larger n.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a> <a href="bibliography.html#alon2016sign">[alon2016sign]</a> <a href="bibliography.html#blondal2026simplicialcovering">[blondal2026simplicialcovering]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n\geq3$, the singleton class $S_n$ has spherical dimension one. Theorem 10 of <a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a> therefore gives $\mathrm{LR}(S_n,\epsilon)\ge2$ for every $0<\epsilon<1/2$, hence $\mathrm{LR}(S_n)\ge2$. For the upper bound, let $E_n=S_n\cup\{\varnothing\}$. Its shattered sets are the empty set and the single coordinates, and each is strongly shattered, so $E_n$ is extremal of VC dimension one. It is a proper subclass of the cube for $n\ge2$. Theorem B of <a href="bibliography.html#blondal2026simplicialcovering">[blondal2026simplicialcovering]</a> gives $\mathrm{LR}(E_n)=2$. A learner and its distribution-dependent accurate lists for $E_n$ also work for $S_n\subseteq E_n$, because each $S_n$-realizable distribution is $E_n$-realizable; outputs need not belong to the target class. Thus $\mathrm{LR}(S_n)\le2$, proving equality.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chornomaz2025spherical">[chornomaz2025spherical]</a> <a href="bibliography.html#blondal2026simplicialcovering">[blondal2026simplicialcovering]</a></p></div>
 
         </div>
     </div>

@@ -4,10 +4,10 @@
   "short_name": "list_replicability_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/list_replicability",
-  "value": "$\\begin{cases}2&n=3,\\\\2\\leq\\mathrm{LR}\\leq3&n\\geq4.\\end{cases}$",
+  "value": "$2$",
   "value_class": "omega_1",
   "details": "For $n\\geq3$.",
   "status": "established",
-  "proof": "For $n\\geq3$, the established spherical dimension is 1, and Theorem 10 gives $\\mathrm{LR}\\geq2$.  The sign rank is 2 at n=3 and 3 for $n\\geq4$; the sign-rank upper bound on list replicability gives the corresponding upper bounds. Thus n=3 is exact and the displayed interval holds for larger n.",
-  "references": "\\cite{chornomaz2025spherical,alon2016sign,blondal2026simplicialcovering}"
+  "proof": "For $n\\geq3$, the singleton class $S_n$ has spherical dimension one. Theorem 10 of \\cite{chornomaz2025spherical} therefore gives $\\mathrm{LR}(S_n,\\epsilon)\\ge2$ for every $0<\\epsilon<1/2$, hence $\\mathrm{LR}(S_n)\\ge2$. For the upper bound, let $E_n=S_n\\cup\\{\\varnothing\\}$. Its shattered sets are the empty set and the single coordinates, and each is strongly shattered, so $E_n$ is extremal of VC dimension one. It is a proper subclass of the cube for $n\\ge2$. Theorem B of \\cite{blondal2026simplicialcovering} gives $\\mathrm{LR}(E_n)=2$. A learner and its distribution-dependent accurate lists for $E_n$ also work for $S_n\\subseteq E_n$, because each $S_n$-realizable distribution is $E_n$-realizable; outputs need not belong to the target class. Thus $\\mathrm{LR}(S_n)\\le2$, proving equality.",
+  "references": "\\cite{chornomaz2025spherical,blondal2026simplicialcovering}"
 }
