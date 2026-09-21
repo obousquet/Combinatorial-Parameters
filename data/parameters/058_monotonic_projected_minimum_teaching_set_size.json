@@ -9,8 +9,8 @@
   "c_monotonic": true,
   "doubly_monotonic": true,
   "strictly_monotonic": null,
-  "definition": "The **Monotonic Projected Minimum Teaching Set Size** is $\\max_{\\mathcal{G}\\subseteq\\mathcal{H}}\\mathrm{TS}_{\\min}^p(\\mathcal{G})$, the largest minimum projected teaching-set size over all subclasses.",
-  "graph_summary": "Largest minimum projected teaching-set size over subclasses.",
+  "definition": "The **Monotonic Projected Minimum Teaching Set Size** of a nonempty finite binary class $\\mathcal{H}$ on a finite domain is $\\max_{\\emptyset\\ne\\mathcal{G}\\subseteq\\mathcal{H}}\\mathrm{TS}_{\\min}^p(\\mathcal{G})$, the largest minimum projected teaching-set size over nonempty subclasses. No minimum over the empty class is needed.",
+  "graph_summary": "Largest minimum projected teaching-set size over nonempty subclasses.",
   "short_name": "monotonic_projected_minimum_teaching_set_size",
   "monotonicity_evidence": {
     "monotonic": {
