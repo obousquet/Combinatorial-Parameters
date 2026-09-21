@@ -4,9 +4,8 @@
   "short_name": "occasional_onesided_getback_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/occasional_onesided_getback",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "O1G lower-bounds unlabeled sample compression, whose established singleton-class value is $1$. It is upper-bounded by Littlestone dimension, also $1$ for singletons. Thus the O1G value is $1$.",
-  "references": "\\cite{ben1997online,chalopin2022unlabeled}"
+  "proof": "For $n=1$ the unique concept is known, so always predict its label and receive no mistake report. For $n\\ge2$, fix any domain order and predict zero until the first mistake report. If it occurs at coordinate $i$, the target is necessarily the singleton $\\{i\\}$; thereafter predict that target exactly. Silence reveals no information and is ignored. This yields at most one reported mistake. Conversely, at the first coordinate $i$, both labels occur among singleton concepts. For either deterministic initial prediction, choose a target with the opposite label there and report that mistake. Thus every fixed order and prediction rule has worst-case cost at least one."
 }
