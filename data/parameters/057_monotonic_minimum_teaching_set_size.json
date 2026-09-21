@@ -9,8 +9,8 @@
   "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "definition": "The **Monotonic Minimum Teaching Set Size** is $\\max_{\\mathcal{G}\\subseteq\\mathcal{H}}\\mathrm{TS}_{\\min}(\\mathcal{G})$. It is equivalently the recursive teaching dimension.",
-  "graph_summary": "Largest minimum teaching-set size over subclasses; equal to recursive teaching dimension.",
+  "definition": "The **Monotonic Minimum Teaching Set Size** of a nonempty finite binary class $\\mathcal{H}$ on a finite domain is $\\max_{\\emptyset\\ne\\mathcal{G}\\subseteq\\mathcal{H}}\\mathrm{TS}_{\\min}(\\mathcal{G})$. Only nonempty subclasses enter the maximum, so no minimum teaching size of the empty class is needed. It is equivalently the recursive teaching dimension.",
+  "graph_summary": "Largest minimum teaching-set size over nonempty subclasses; equal to recursive teaching dimension.",
   "short_name": "monotonic_minimum_teaching_set_size",
   "monotonicity_evidence": {
     "c_monotonic": {
