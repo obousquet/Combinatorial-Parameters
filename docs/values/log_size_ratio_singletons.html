@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Log Size Ratio of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/log_size_ratio.html">Log Size Ratio</a></p>
-<p><strong>Value: </strong>$\frac{\log(n-1)}{\log(n+1)}$</p>
+<p><strong>Value: </strong>$\frac{\log(n-1)}{\log(n+1)}$ for $n\ge2$; undefined at $n=1$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>The value is zero at $n=2$ and tends to one as $n\to\infty$. The asymptotic classification concerns sufficiently large $n$.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton class has $n$ concepts on a domain of size $n$, hence the definition gives $\log(n-1)/\log(n+1)$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton class has $n$ concepts on an ambient domain of size $n$. For $n\ge2$, substitution in the definition gives $\log(n-1)/\log(n+1)$. At $n=1$ there is one concept, so the numerator would be $\log 0$ and the real-valued ratio is undefined. At $n=2$ the numerator is zero. Dividing numerator and denominator by $\log n$ shows that the ratio tends to one.</p></div>
 
 
         </div>

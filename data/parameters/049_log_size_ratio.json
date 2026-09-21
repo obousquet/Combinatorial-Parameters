@@ -2,9 +2,9 @@
   "id": 49,
   "name": "Log Size Ratio",
   "symbol": "\\frac{\\log (\\mathrm{H}-1)}{\\log (n+1)}",
-  "definition": "The **Log Size Ratio** of a family $\\mathcal{H}$ over a domain of size $n$ is $$\\frac{\\log(|\\mathcal{H}|-1)}{\\log(n+1)}.$$",
+  "definition": "The **Log Size Ratio** of a finite family $\\mathcal H$ with $|\\mathcal H|\\ge2$ on a domain of size $n\\ge1$ is $$\\frac{\\log(|\\mathcal H|-1)}{\\log(n+1)}.$$ Here $n$ is the displayed ambient domain size, including constant coordinates. The ratio is undefined for a one-concept class; no value for $\\log 0$ is assigned.",
   "category": "basic",
-  "graph_summary": "The logarithmic size of the class normalized by its effective range.",
+  "graph_summary": "Logarithmic class size normalized by the ambient domain size; defined only for classes with at least two concepts.",
   "symmetric": true,
   "monotonic": true,
   "p_monotonic": false,
@@ -14,7 +14,7 @@
   "short_name": "log_size_ratio",
   "monotonicity_evidence": {
     "monotonic": {
-      "proof": "For a fixed ambient domain, passing to a subfamily cannot increase $|\\mathcal H|$, and $t\\mapsto\\log(t-1)$ is increasing for $t\\geq2$.",
+      "proof": "For a fixed ambient domain, passing to a subfamily with at least two concepts cannot increase the ratio, since $t\\mapsto\\log(t-1)$ is increasing for $t\\ge2$. This is monotonicity on the stated domain of definition.",
       "kind": "direct_argument"
     },
     "p_monotonic": {
