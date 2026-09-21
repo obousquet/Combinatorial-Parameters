@@ -86,8 +86,8 @@
 <p><strong>Order:</strong> constant</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton incidence sign matrix is the signed identity matrix and is unchanged by transposition.  Therefore its dual sign rank equals its sign rank, whose exact value is the displayed piecewise formula.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#alon2016sign">[alon2016sign]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Dual sign rank uses a fixed column set that is independent in every real sign realization; it is not sign rank of the transpose. By Claim 4 of Alon--Moran--Yehudayoff, such a column set is exactly an antipodally shattered set. On $k$ chosen coordinates the singleton traces are the $k$ unit vectors, together with zero if $k<n$. A single coordinate always represents its sole complementary pair. For $n=2$, both coordinates give only the pair $\{01,10\}$, so the value is one. For $n=3$, two coordinates represent both complementary pairs, but all three miss $\{000,111\}$, so the value is two. For $n\ge4$, three coordinates give zero and the three unit vectors, representing all four complementary pairs. No $k\ge4$ works, since at most $k+1<2^{k-1}$ traces are available. Thus the displayed values hold, including $n=1$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#alon2016sign">[alon2016sign]</a>, Appendix E, Claim 4 (antipodal shattering and fixed-column universal independence).</p></div>
 
         </div>
     </div>
