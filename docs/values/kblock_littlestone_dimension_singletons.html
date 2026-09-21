@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_k\leq1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, a depth-one tree is allowed as a truncated block. It is shattered when $n\ge2$, since any coordinate has both labels. Every root has a singleton positive branch, ruling out complete depth two regardless of block constraints. Thus the value is one for $n\ge2$. At $n=1$, no coordinate splits the class and the value is zero. This agrees with Proposition \ref{prop:block-littlestone-sandwich}.</p></div>
 
 
         </div>

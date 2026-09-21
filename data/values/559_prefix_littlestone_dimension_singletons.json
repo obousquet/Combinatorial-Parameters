@@ -4,9 +4,9 @@
   "short_name": "prefix_littlestone_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/prefix_littlestone_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Any coordinate gives a prefix-$k$ shattered tree of depth one. The singleton class has Littlestone dimension one, and $\\mathrm{PL}_k\\leq\\mathrm L$, so no deeper prefix-$k$ tree exists.",
+  "proof": "For $n=1$, the class has one concept and cannot shatter a tree of positive depth. For $n\\ge2$, any coordinate has both labels, so a depth-one tree satisfies the prefix constraint for every allowed $k$. At any root, the positive branch has just one concept and cannot split again, ruling out a complete tree of depth two even without the prefix constraint. Thus the value is one.",
   "references": "Database-defined variant; the comparison $\\mathrm{PL}_k\\leq\\mathrm L$ is Proposition \\ref{prop:prefix-littlestone-order} in the survey"
 }

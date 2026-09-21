@@ -9492,11 +9492,11 @@
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Any coordinate gives a prefix-$k$ shattered tree of depth one. The singleton class has Littlestone dimension one, and $\mathrm{PL}_k\leq\mathrm L$, so no deeper prefix-$k$ tree exists.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the class has one concept and cannot shatter a tree of positive depth. For $n\ge2$, any coordinate has both labels, so a depth-one tree satisfies the prefix constraint for every allowed $k$. At any root, the positive branch has just one concept and cannot split again, ruling out a complete tree of depth two even without the prefix constraint. Thus the value is one.</p></div>
 <strong>References:</strong><div class="text-field"><p>Database-defined variant; the comparison $\mathrm{PL}_k\leq\mathrm L$ is Proposition \ref{prop:prefix-littlestone-order} in the survey</p></div>
 
         </div>
@@ -9696,11 +9696,11 @@
         <p><strong>Name: </strong>2-Block Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_2\leq1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, no coordinate splits the sole concept, so the value is zero. For $n\ge2$, any coordinate gives a depth-one tree, with a truncated final block allowed. Every root has a singleton positive branch, so no complete depth-two tree is shattered. The block constraint cannot create additional shattered trees; hence the value is one. This is also the singleton specialization of Proposition \ref{prop:block-littlestone-sandwich}.</p></div>
 
 
         </div>
@@ -9730,11 +9730,11 @@
         <p><strong>Name: </strong>$k$-Block Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/kblock_littlestone_dimension_kgt2.html">$k$-Block Littlestone Dimension ($k>2$)</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, the established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_k\leq1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed $k>2$, a depth-one tree is allowed as a truncated block. It is shattered when $n\ge2$, since any coordinate has both labels. Every root has a singleton positive branch, ruling out complete depth two regardless of block constraints. Thus the value is one for $n\ge2$. At $n=1$, no coordinate splits the class and the value is zero. This agrees with Proposition \ref{prop:block-littlestone-sandwich}.</p></div>
 
 
         </div>

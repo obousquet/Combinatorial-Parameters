@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>2-Block Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/2block_littlestone_dimension.html">2-Block Littlestone Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established VC and Littlestone dimensions of singletons are both one. Proposition \ref{prop:block-littlestone-sandwich} gives $1\leq\mathrm B_2\leq1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, no coordinate splits the sole concept, so the value is zero. For $n\ge2$, any coordinate gives a depth-one tree, with a truncated final block allowed. Every root has a singleton positive branch, so no complete depth-two tree is shattered. The block constraint cannot create additional shattered trees; hence the value is one. This is also the singleton specialization of Proposition \ref{prop:block-littlestone-sandwich}.</p></div>
 
 
         </div>

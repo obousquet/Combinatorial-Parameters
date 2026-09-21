@@ -4,7 +4,7 @@
   "short_name": "2block_littlestone_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/2block_littlestone_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "status": "established",
-  "proof": "The established VC and Littlestone dimensions of singletons are both one. Proposition \\ref{prop:block-littlestone-sandwich} gives $1\\leq\\mathrm B_2\\leq1$."
+  "proof": "For $n=1$, no coordinate splits the sole concept, so the value is zero. For $n\\ge2$, any coordinate gives a depth-one tree, with a truncated final block allowed. Every root has a singleton positive branch, so no complete depth-two tree is shattered. The block constraint cannot create additional shattered trees; hence the value is one. This is also the singleton specialization of Proposition \\ref{prop:block-littlestone-sandwich}."
 }

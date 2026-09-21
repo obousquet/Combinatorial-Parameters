@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Prefix-$k$ Littlestone Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/prefix_littlestone_dimension.html">Prefix-$k$ Littlestone Dimension ($k>1$)</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Any coordinate gives a prefix-$k$ shattered tree of depth one. The singleton class has Littlestone dimension one, and $\mathrm{PL}_k\leq\mathrm L$, so no deeper prefix-$k$ tree exists.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the class has one concept and cannot shatter a tree of positive depth. For $n\ge2$, any coordinate has both labels, so a depth-one tree satisfies the prefix constraint for every allowed $k$. At any root, the positive branch has just one concept and cannot split again, ruling out a complete tree of depth two even without the prefix constraint. Thus the value is one.</p></div>
 <strong>References:</strong><div class="text-field"><p>Database-defined variant; the comparison $\mathrm{PL}_k\leq\mathrm L$ is Proposition \ref{prop:prefix-littlestone-order} in the survey</p></div>
 
         </div>
