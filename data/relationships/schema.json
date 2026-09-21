@@ -67,7 +67,7 @@
         "name": "logarithm_base",
         "type": "string",
         "label": "Logarithm Base",
-        "description": "Optional base b for log_upper. If omitted the natural logarithm is used.",
+        "description": "Optional logarithm base for log_upper or inv_log. If omitted the natural logarithm is used.",
         "required": false,
         "rendered": true
     },
@@ -75,7 +75,7 @@
         "name": "argument_shift",
         "type": "string",
         "label": "Logarithm Argument Shift",
-        "description": "Constant s inside log_upper: P_1 <= C log_b(P_2+s). Defaults to zero; this is distinct from an additive constant outside the logarithm.",
+        "description": "Shift inside the logarithm: P_2+s for log_upper, or ambient domain size n+s for inv_log. Defaults to zero.",
         "required": false,
         "rendered": true
     },

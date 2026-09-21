@@ -5,8 +5,11 @@
   "relationship_type": "inv_log",
   "short_name": "selfdirected_queries_complexity_littlestone_dimension",
   "name": "Self-Directed Queries Complexity / Littlestone Dimension",
-  "details": "For a finite class on a domain of size $n$, $\\mathrm{M}_{\\mathrm{sd}}(\\mathcal H)\\geq\\mathrm{L}(\\mathcal H)/\\log_2 n$.",
-  "proof": "Theorem 7 of Ben-David--Kushilevitz--Mansour proves $\\mathrm L(\\mathcal H)\\leq\\mathrm M_{\\mathrm{sd}}(\\mathcal H)\\log_2 n$ for a finite domain of size $n$.  Their tree proof takes a minimum-rank self-directed strategy tree and bounds its number of leaves by the binomial sum determined by its rank; the information-theoretic proof encodes a target by the at-most-$\\mathrm M_{\\mathrm{sd}}$ mistaken queried points.  Rearranging gives the displayed inequality.",
+  "details": "For a nonempty finite binary class on a domain of size $n\\ge1$, $\\mathrm M_{\\mathrm{sd}}(\\mathcal H)\\ge \\mathrm L(\\mathcal H)/\\log_2(n+1)$. The stronger counting bound uses the whole-domain mistake cost $k$: $|\\mathcal H|\\le\\sum_{j=0}^k\\binom nj\\le(n+1)^k$. The unshifted denominator is false even for thresholds on three points.",
   "status": "established",
-  "references": "\\cite{ben1997online}"
+  "latex_proof_label": "thm:selfdirected-counting",
+  "proof_source": "Companion survey, direct target-counting injection (thm:selfdirected-counting).",
+  "multiplicative_constant": "1",
+  "logarithm_base": "2",
+  "argument_shift": "1"
 }
