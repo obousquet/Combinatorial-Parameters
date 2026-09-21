@@ -4,8 +4,8 @@
   "short_name": "repetitionfree_recursive_teaching_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/repetitionfree_recursive_teaching_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "status": "established",
-  "proof": "Remove the singleton concepts in any order.  The positive example at its unique coordinate teaches each singleton, and these one-coordinate teaching sets are pairwise distinct.  Thus this is a repetition-free recursive teaching plan of order one; order zero cannot identify a non-singleton class.",
+  "proof": "For $n=1$, the one-step plan using the empty teaching sample has width zero and is repetition-free. For $n\\ge2$, remove concepts in any order and teach each singleton with its positive example. Each sample isolates its target in the remaining class and the coordinate sets are pairwise distinct, giving a repetition-free plan of width one. A width-zero plan cannot teach its first concept while another concept remains, so the value is one.",
   "references": "\\cite{doliwa2014recursive}"
 }

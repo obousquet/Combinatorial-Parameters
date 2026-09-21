@@ -1,1 +1,12 @@
-{"id":296,"name":"Preference-Based Teaching Dimension of Singletons","short_name":"preferencebased_teaching_dimension_singletons","class_id":"#classes/singletons","parameter_id":"#parameters/preferencebased_teaching_dimension","value":"$1$","value_class":"omega_1","status":"established","proof":"Preference-based teaching dimension equals recursive teaching dimension. Singletons have established recursive teaching dimension one.","references":"\\cite{gao2017preference}"}
+{
+  "id": 296,
+  "name": "Preference-Based Teaching Dimension of Singletons",
+  "short_name": "preferencebased_teaching_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/preferencebased_teaching_dimension",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $n=1$, the unique concept is preferred without examples. For $n\\ge2$, fix any strict total preference order and teach each singleton by its unique positive example, giving an upper bound of one. A width-zero teacher would have to make every target the uniquely preferred concept in the same full version space, which is impossible for two distinct targets. Thus the value is one. This also agrees with the finite-class equality with recursive teaching dimension.",
+  "references": "\\cite{gao2017preference}"
+}

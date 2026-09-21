@@ -2,11 +2,11 @@
   "id": 172,
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/positive_noclashing_teaching_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
-  "details": "For $n\\ge2$.",
+  "details": "",
   "status": "established",
-  "proof": "The mapping $\\{i\\}\\mapsto\\{(i,1)\\}$ is positive and non-clashing.  As the class has at least two concepts, an empty teaching set for every concept would clash, giving the matching lower bound.",
+  "proof": "For $n=1$, the empty sample is allowed and contains no negative example, giving value zero. For $n\\ge2$, the positive teacher $\\{i\\}\\mapsto\\{(i,1)\\}$ is non-clashing. A width-zero teacher assigns the empty sample to every target and creates a clash, so the positive no-clashing value is one.",
   "name": "Positive No-Clashing Teaching Dimension of Singletons",
   "short_name": "positive_noclashing_teaching_dimension_singletons"
 }

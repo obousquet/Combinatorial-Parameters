@@ -2995,11 +2995,11 @@
         <p><strong>Name: </strong>No-Clashing Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/noclashing_teaching_dimension.html">No-Clashing Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\ge2$.</p>
+
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Map the singleton $\{i\}$ to its positive example $(i,1)$.  This is non-clashing, so the value is at most $1$.  A size-$0$ mapping cannot distinguish two distinct concepts, so the value is exactly $1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, assign the unique concept the empty sample; the no-clashing condition is vacuous. For $n\ge2$, assign $\{i\}$ its positive example $(i,1)$. This example is inconsistent with every other singleton, so the teacher is non-clashing and has width one. Width zero assigns the empty sample to every target and makes any two targets clash. Thus the value is zero for $n=1$ and one otherwise.</p></div>
 
 
         </div>
@@ -3012,11 +3012,11 @@
         <p><strong>Name: </strong>Positive No-Clashing Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/positive_noclashing_teaching_dimension.html">Positive No-Clashing Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\ge2$.</p>
+
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The mapping $\{i\}\mapsto\{(i,1)\}$ is positive and non-clashing.  As the class has at least two concepts, an empty teaching set for every concept would clash, giving the matching lower bound.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty sample is allowed and contains no negative example, giving value zero. For $n\ge2$, the positive teacher $\{i\}\mapsto\{(i,1)\}$ is non-clashing. A width-zero teacher assigns the empty sample to every target and creates a clash, so the positive no-clashing value is one.</p></div>
 
 
         </div>
@@ -4083,11 +4083,11 @@
         <p><strong>Name: </strong>Relative Hitting Size of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Relative hitting size is, by definition, the maximum teaching-set size. The established teaching dimension of singletons is one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For target $\{i\}$ the translated family consists of the empty set and the pairs $\{i,j\}$ with $j\ne i$. Hitting size ignores the empty member. If $n=1$ there are no nonempty members to hit, so the value is zero. If $n\ge2$, at least one pair must be hit, and the one-point set $\{i\}$ hits every pair. Maximizing over targets gives one.</p></div>
 
 
         </div>
@@ -5106,11 +5106,11 @@
         <p><strong>Name: </strong>Preference-Based Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/preferencebased_teaching_dimension.html">Preference-Based Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Preference-based teaching dimension equals recursive teaching dimension. Singletons have established recursive teaching dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the unique concept is preferred without examples. For $n\ge2$, fix any strict total preference order and teach each singleton by its unique positive example, giving an upper bound of one. A width-zero teacher would have to make every target the uniquely preferred concept in the same full version space, which is impossible for two distinct targets. Thus the value is one. This also agrees with the finite-class equality with recursive teaching dimension.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#gao2017preference">[gao2017preference]</a></p></div>
 
         </div>
@@ -9985,12 +9985,12 @@
         <p><strong>Name: </strong>Balbach Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/balbach_teaching_dimension.html">Balbach Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For the singleton class, ordinary teaching dimension and recursive teaching dimension are both one. The established sandwich $\mathrm{TD}\ge\mathrm{BTD}\ge\mathrm{RTD}$ therefore forces $\mathrm{BTD}=1$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a> <a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a>; derived using established TD and RTD values</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the ordinary minimum teaching size is zero, and the empty sample retains exactly the sole target at every Balbach step. For $n\ge2$, each ordinary minimum size is one, because the positive example isolates its singleton while the empty sample is consistent with all targets. At the all-one size vector these same positive samples survive the filter and isolate their targets; the empty sample retains all targets. Thus the all-one vector is fixed and the Balbach dimension is one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a> <a href="bibliography.html#balbach2008measuring">[balbach2008measuring]</a></p></div>
 
         </div>
     </div>
@@ -10206,11 +10206,11 @@
         <p><strong>Name: </strong>Subset Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The sole ordinary minimum teaching sample for singleton $\{i\}$ is $(i,1)$. This sample is contained in that target's teaching sample and in no other singleton's, so it remains a subset teaching sample at every iteration. The empty sample is contained in every target's sample, hence cannot identify one. Thus $\mathrm{STD}=1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the only ordinary minimum sample is empty and the subset recursion stays at value zero. For $n\ge3$, each singleton has just its positive example as an ordinary minimum sample: a single negative example leaves $n-1\ge2$ concepts consistent. For $n=2$, each target has two minimum singleton samples, its own positive example and the negative example on the other coordinate. In both cases $n\ge2$, all these samples have size one and samples assigned to distinct targets are different. A singleton sample is contained in a previous singleton sample exactly when they are equal, so each remains uniquely owned by its target. The empty sample has every target as an owner. Hence the entire families of minimum samples remain fixed, with value one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
 
         </div>
@@ -15306,11 +15306,11 @@
         <p><strong>Name: </strong>Repetition-Free Recursive Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/repetitionfree_recursive_teaching_dimension.html">Repetition-Free Recursive Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Remove the singleton concepts in any order.  The positive example at its unique coordinate teaches each singleton, and these one-coordinate teaching sets are pairwise distinct.  Thus this is a repetition-free recursive teaching plan of order one; order zero cannot identify a non-singleton class.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the one-step plan using the empty teaching sample has width zero and is repetition-free. For $n\ge2$, remove concepts in any order and teach each singleton with its positive example. Each sample isolates its target in the remaining class and the coordinate sets are pairwise distinct, giving a repetition-free plan of width one. A width-zero plan cannot teach its first concept while another concept remains, so the value is one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
 
         </div>

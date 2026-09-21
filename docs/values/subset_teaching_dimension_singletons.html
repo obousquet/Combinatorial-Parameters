@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Subset Teaching Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/subset_teaching_dimension.html">Subset Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The sole ordinary minimum teaching sample for singleton $\{i\}$ is $(i,1)$. This sample is contained in that target's teaching sample and in no other singleton's, so it remains a subset teaching sample at every iteration. The empty sample is contained in every target's sample, hence cannot identify one. Thus $\mathrm{STD}=1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the only ordinary minimum sample is empty and the subset recursion stays at value zero. For $n\ge3$, each singleton has just its positive example as an ordinary minimum sample: a single negative example leaves $n-1\ge2$ concepts consistent. For $n=2$, each target has two minimum singleton samples, its own positive example and the negative example on the other coordinate. In both cases $n\ge2$, all these samples have size one and samples assigned to distinct targets are different. A singleton sample is contained in a previous singleton sample exactly when they are equal, so each remains uniquely owned by its target. The empty sample has every target as an owner. Hence the entire families of minimum samples remain fixed, with value one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#zilles2011models">[zilles2011models]</a></p></div>
 
         </div>

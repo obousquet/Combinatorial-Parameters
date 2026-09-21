@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Relative Hitting Size of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Relative hitting size is, by definition, the maximum teaching-set size. The established teaching dimension of singletons is one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For target $\{i\}$ the translated family consists of the empty set and the pairs $\{i,j\}$ with $j\ne i$. Hitting size ignores the empty member. If $n=1$ there are no nonempty members to hit, so the value is zero. If $n\ge2$, at least one pair must be hit, and the one-point set $\{i\}$ hits every pair. Maximizing over targets gives one.</p></div>
 
 
         </div>

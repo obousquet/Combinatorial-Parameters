@@ -2,11 +2,11 @@
   "id": 171,
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/noclashing_teaching_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
-  "details": "For $n\\ge2$.",
+  "details": "",
   "status": "established",
-  "proof": "Map the singleton $\\{i\\}$ to its positive example $(i,1)$.  This is non-clashing, so the value is at most $1$.  A size-$0$ mapping cannot distinguish two distinct concepts, so the value is exactly $1$.",
+  "proof": "For $n=1$, assign the unique concept the empty sample; the no-clashing condition is vacuous. For $n\\ge2$, assign $\\{i\\}$ its positive example $(i,1)$. This example is inconsistent with every other singleton, so the teacher is non-clashing and has width one. Width zero assigns the empty sample to every target and makes any two targets clash. Thus the value is zero for $n=1$ and one otherwise.",
   "name": "No-Clashing Teaching Dimension of Singletons",
   "short_name": "noclashing_teaching_dimension_singletons"
 }
