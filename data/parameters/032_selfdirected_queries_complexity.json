@@ -6,8 +6,8 @@
   "symmetric": true,
   "monotonic": true,
   "c_monotonic": true,
-  "definition": "The **Self-Directed Queries Complexity** is the smallest worst-case number of mistakes of an online learner that adaptively chooses the next instance to be labeled, while an adversary supplies labels consistent with an unknown target in $\\mathcal H$.",
-  "graph_summary": "Online mistake bound when the learner adaptively chooses the next instance.",
+  "definition": "Let $\\mathcal H\\subseteq\\{0,1\\}^{X}$ be nonempty on a finite domain. For each $S\\subseteq X$, a deterministic learner repeatedly chooses an as-yet unqueried $x\\in S$, predicts its label, receives the true label of an unknown target $h\\in\\mathcal H$, and removes $x$ from the remaining set. It must predict every point in $S$. Let $M_{\\mathrm{sd}}(\\mathcal H,S)$ be the minimum, over such adaptive learners, of the maximum number of incorrect predictions over targets. The **Self-Directed Queries Complexity** is $M_{\\mathrm{sd}}(\\mathcal H)=\\max_{S\\subseteq X}M_{\\mathrm{sd}}(\\mathcal H,S)$; it counts mistakes, not queries. The empty set $S$ has cost zero.",
+  "graph_summary": "Worst finite-subset self-directed mistake bound: choose each next point adaptively and predict every point once.",
   "short_name": "selfdirected_queries_complexity",
   "origin_references": "The self-directed learning model is introduced in \\cite{goldman1993learning,goldman1994power}.",
   "monotonicity_evidence": {

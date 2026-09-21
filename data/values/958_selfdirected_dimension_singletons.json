@@ -4,9 +4,9 @@
   "short_name": "selfdirected_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/selfdirected_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "The established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ transfers the recorded self-directed-queries-complexity value $1$ on singletons.",
-  "references": "\\cite{devulapalli2024selfdirected}; derived from the established self-directed-queries-complexity benchmark value"
+  "proof": "At $n=1$, Player A can label the whole chosen set correctly before any Player B move, giving payoff zero; leaving a point would allow B to assign the wrong label and obtain payoff $-1$. For $n\\ge2$, on a one-coordinate set both labels are realized. A leaves it to B and guarantees one move, so the dimension is at least one. For any $S$, B can assign label one at its first available move. If this is unrealizable, the payoff is $-1$. Otherwise that positive label identifies a unique singleton. A must then finish all remaining labels before another B move, since B could assign a label contradicting that singleton. Hence B can keep the payoff at most one. The dimension is therefore one, agreeing with the general self-directed mistake-bound identity.",
+  "references": "\\cite{devulapalli2024selfdirected}, Section 3 labelling game; direct singleton calculation"
 }

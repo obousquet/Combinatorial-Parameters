@@ -4783,11 +4783,11 @@
         <p><strong>Name: </strong>Self-Directed Queries Complexity of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Self-directed query complexity lower-bounds recursive teaching dimension, whose singleton-class value is $1$. It is at most partial equivalence-query complexity, also $1$ on this class. Hence its value is $1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For any $S\subseteq[n]$, predict zero until a positive label identifies its singleton target; all subsequent labels can then be predicted correctly. If there is no positive label in $S$, no mistake occurs. Thus every finite-subset game costs at most one. For $n\ge2$, choose $S=[n]$: whichever coordinate the learner presents first, either prediction can be contradicted by a singleton target, so one mistake is necessary. At $n=1$ the sole target is known and every label is predictable without mistakes.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
 
         </div>
@@ -15425,12 +15425,12 @@
         <p><strong>Name: </strong>Self-Directed Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_dimension.html">Self-Directed Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established equality $\mathrm{SDdim}=\mathrm M_{\mathrm{sd}}$ transfers the recorded self-directed-queries-complexity value $1$ on singletons.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>; derived from the established self-directed-queries-complexity benchmark value</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>At $n=1$, Player A can label the whole chosen set correctly before any Player B move, giving payoff zero; leaving a point would allow B to assign the wrong label and obtain payoff $-1$. For $n\ge2$, on a one-coordinate set both labels are realized. A leaves it to B and guarantees one move, so the dimension is at least one. For any $S$, B can assign label one at its first available move. If this is unrealizable, the payoff is $-1$. Otherwise that positive label identifies a unique singleton. A must then finish all remaining labels before another B move, since B could assign a label contradicting that singleton. Hence B can keep the payoff at most one. The dimension is therefore one, agreeing with the general self-directed mistake-bound identity.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>, Section 3 labelling game; direct singleton calculation</p></div>
 
         </div>
     </div>

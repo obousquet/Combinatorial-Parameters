@@ -7,8 +7,8 @@
   "symmetric": true,
   "monotonic": true,
   "c_monotonic": true,
-  "definition": "For a finite labeled set $S$, play the **labelling game** on $\\mathcal H$: an adversary may first reveal any labels consistent with a member of $\\mathcal H$, then the learner chooses one remaining point and a label; the adversary continues while all revealed labels remain realizable.  The **self-directed dimension** $\\mathrm{SDdim}(\\mathcal H)$ is the largest minimax number of learner rounds, maximized over finite $S$.  Equivalently, it is the largest depth of a realizable self-directed tree.",
-  "graph_summary": "Largest depth of a realizable self-directed tree (equivalently, the labelling-game value).",
+  "definition": "Let $\\mathcal H\\subseteq\\{0,1\\}^{X}$ be nonempty on a finite domain. For each $S\\subseteq X$, play the following **labelling game** on its initially unlabelled points. In each cycle, Player A labels any subset of the remaining points, possibly empty or all of them. If points remain, Player B chooses one and assigns either binary label. Assigned points are removed. Repeat until all points are labelled, or stop immediately if the accumulated labels are unrealizable by $\\mathcal H$. The payoff is $-1$ if unrealizability occurs; otherwise it is the number of moves made by Player B. Player A maximizes and Player B minimizes this payoff. Write $D(\\mathcal H,S)$ for its value. The **Self-Directed Dimension** is $\\mathrm{SDdim}(\\mathcal H)=\\max_{S\\subseteq X}D(\\mathcal H,S)$. For $S=\\emptyset$ the value is zero. Player B is permitted to create unrealizability; its labels are not restricted to feasible ones.",
+  "graph_summary": "Value of the labelling game: A prolongs feasible play, B minimizes its rounds and may force the unrealizable payoff -1.",
   "description": "Devulapalli and Hanneke introduced $\\mathrm{SDdim}$ as a combinatorial characterization of the optimal self-directed mistake bound.  On the finite binary classes catalogued here it is exactly self-directed queries complexity.",
   "origin_references": "Introduced by Devulapalli and Hanneke \\cite{devulapalli2024selfdirected}.",
   "monotonicity_evidence": {
