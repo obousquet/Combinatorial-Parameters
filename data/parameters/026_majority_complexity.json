@@ -9,8 +9,8 @@
   "c_monotonic": false,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "definition": "The **Majority Complexity** of a finite class $\\mathcal{H}$ is the number of queries used by the halving algorithm: at each stage it proposes the pointwise majority vote of the hypotheses still consistent with the answers received.",
-  "graph_summary": "Number of queries made by the halving (pointwise-majority) algorithm.",
+  "definition": "For a nonempty finite binary class $\\mathcal H$ on a finite domain, the **Majority Complexity** is the worst-case number of arbitrary equivalence queries used by the following halving algorithm. Start with version space $V=\\mathcal H$. If $|V|=1$, output its sole member without another query. Otherwise propose the pointwise majority of $V$, predicting zero at ties. Acceptance terminates; a counterexample $(x,y)$ replaces $V$ by $\\{h\\in V:h(x)=y\\}$. Maximize the query count over targets and valid counterexample choices.",
+  "graph_summary": "Worst-case equivalence-query count of majority halving, with zero ties and no final confirmation once the target is known.",
   "origin_references": "The query-complexity notation $\\mathrm{LC}(\\mathrm{Halving})$ and its lower-bound analysis appear in \\cite{maass1992lower}.",
   "short_name": "majority_complexity",
   "monotonicity_evidence": {

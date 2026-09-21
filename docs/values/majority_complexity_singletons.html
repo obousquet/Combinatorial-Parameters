@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Majority Complexity of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/majority_complexity.html">Majority Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>With the zero tie-breaking convention, the pointwise majority of the singleton concepts is the empty hypothesis.  Its equivalence query either succeeds only in the degenerate one-concept case or returns the target's unique positive coordinate, which identifies the singleton.  For a nontrivial singleton class, zero queries cannot identify the target.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the target is already known and the halving algorithm makes no query. For $n\ge2$, each coordinate is positive in just one concept, so the majority query is the all-zero hypothesis, including at $n=2$ by zero tie-breaking. Against target singleton $\{i\}$ its only disagreement is coordinate $i$. The returned positive example therefore identifies the target in one query, after which no confirmation is needed. The nontrivial initial version space requires a query, giving value one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>

@@ -4,9 +4,10 @@
   "short_name": "random_equivalence_queries_complexity_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/random_equivalence_queries_complexity",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Random equivalence-query complexity is at least VC dimension and at most Littlestone dimension. Both established singleton-class values equal $1$, hence the random equivalence-query value is $1$.",
-  "references": "\\cite{angluin2017random,littlestone1988learning}"
+  "proof": "Fix a counterexample distribution $\\mu$ with $\\mu(i)>0$ for every $i\\in[n]$. For $n=1$, output the sole target without a query. For $n\\ge2$, query the all-zero hypothesis. Against target $\\{i\\}$ the disagreement set is exactly $\\{i\\}$, so the random counterexample is deterministically $(i,1)$ for every allowed $\\mu$. It identifies the target in one query. An exact learner cannot identify an unknown target among two or more concepts without any observation, so the worst-case expected query count is at least one. Thus the value is one, independently of $\\mu$ on the stated domain.",
+  "references": "\\cite{angluin2017random,littlestone1988learning}",
+  "details": "For every fixed counterexample distribution $\\mu$ with $\\mu(i)>0$ for all $i\\in[n]$."
 }
