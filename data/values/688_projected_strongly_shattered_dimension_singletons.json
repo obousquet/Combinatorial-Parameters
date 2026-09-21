@@ -1,1 +1,12 @@
-{"id":688,"name":"Projected Strongly Shattered Dimension of Singletons","short_name":"projected_strongly_shattered_dimension_singletons","class_id":"#classes/singletons","parameter_id":"#parameters/projected_strongly_shattered_dimension","value":"$1$","value_class":"omega_1","status":"established","proof":"Projected strongly shattered dimension equals VC dimension. The singleton class has established VC dimension one.","references":"\\cite{bollobas1995defect}"}
+{
+  "id": 688,
+  "name": "Projected Strongly Shattered Dimension of Singletons",
+  "short_name": "projected_strongly_shattered_dimension_singletons",
+  "class_id": "#classes/singletons",
+  "parameter_id": "#parameters/projected_strongly_shattered_dimension",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
+  "value_class": "omega_1",
+  "status": "established",
+  "proof": "For $n=1$, every projection has one trace, so it contains no positive-dimensional cube. For $n\\ge2$, projection onto a single coordinate has both traces and contains a one-cube. No projection shatters a pair, since two positive coordinates never occur together; a contained cube would shatter its coordinate set. Thus the maximum contained-cube dimension over projections is one.",
+  "references": "\\cite{bollobas1995defect}"
+}

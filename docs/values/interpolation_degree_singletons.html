@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Interpolation Degree of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For prescribed values $a_i$ on singleton $\{i\}$, the linear polynomial $\sum_i a_i x_i$ has exactly those values. A degree-zero polynomial cannot interpolate distinct values on two singleton concepts.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, constants interpolate every function on the sole concept. For $n\ge2$, prescribed values $a_i$ on singleton $\{i\}$ are interpolated by $\sum_i a_i x_i$. Constants cannot assign different values to two concepts, so the interpolation degree is one.</p></div>
 
 
         </div>

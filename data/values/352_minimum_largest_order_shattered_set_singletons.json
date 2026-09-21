@@ -4,8 +4,8 @@
   "short_name": "minimum_largest_order_shattered_set_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/minimum_largest_order_shattered_set",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "For every coordinate order, full downshifting produces a nontrivial downset, hence it contains the empty trace and a singleton trace, a one-cube. Downshifting preserves VC dimension one, so no two-cube can occur."
+  "proof": "Let $i$ be the first coordinate shifted downward. Its singleton moves to the empty set, while every other singleton remains. The resulting class is $\\{\\emptyset\\}\\cup\\{\\{j\\}:j\\ne i\\}$, a downset, so all later shifts leave it unchanged. For $n=1$ it has VC dimension zero. For $n\\ge2$ it shatters a coordinate but no pair, giving value one for every coordinate order and hence for their minimum."
 }

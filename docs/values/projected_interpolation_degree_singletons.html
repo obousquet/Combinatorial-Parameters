@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Projected Interpolation Degree of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Every nonempty coordinate projection is the empty concept together with singleton concepts on the retained coordinates. Affine-linear polynomials interpolate arbitrary values on that class, while a nontrivial projection is not interpolated by constants.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, every projection has one trace and interpolation degree zero. For $n\ge2$, the full projection consists of the $n$ singletons, on which $\sum_i a_i x_i$ interpolates arbitrary values $a_i$. A proper projection onto $S$ consists of the empty trace and the singletons in $S$; values $a_0,a_i$ are interpolated by $a_0+\sum_{i\in S}(a_i-a_0)x_i$, including $S=\emptyset$. Thus every projection has interpolation degree at most one, while the full class has two distinct concepts and needs degree at least one.</p></div>
 
 
         </div>

@@ -6041,11 +6041,11 @@
         <p><strong>Name: </strong>Minimum Largest Order Shattered Set of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every coordinate order, full downshifting produces a nontrivial downset, hence it contains the empty trace and a singleton trace, a one-cube. Downshifting preserves VC dimension one, so no two-cube can occur.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Let $i$ be the first coordinate shifted downward. Its singleton moves to the empty set, while every other singleton remains. The resulting class is $\{\emptyset\}\cup\{\{j\}:j\ne i\}$, a downset, so all later shifts leave it unchanged. For $n=1$ it has VC dimension zero. For $n\ge2$ it shatters a coordinate but no pair, giving value one for every coordinate order and hence for their minimum.</p></div>
 
 
         </div>
@@ -8421,11 +8421,11 @@
         <p><strong>Name: </strong>Interpolation Degree of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/interpolation_degree.html">Interpolation degree</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For prescribed values $a_i$ on singleton $\{i\}$, the linear polynomial $\sum_i a_i x_i$ has exactly those values. A degree-zero polynomial cannot interpolate distinct values on two singleton concepts.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, constants interpolate every function on the sole concept. For $n\ge2$, prescribed values $a_i$ on singleton $\{i\}$ are interpolated by $\sum_i a_i x_i$. Constants cannot assign different values to two concepts, so the interpolation degree is one.</p></div>
 
 
         </div>
@@ -8829,11 +8829,11 @@
         <p><strong>Name: </strong>Extremal-Extension VC Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/extremal_extension_vc_dimension.html">Extremal-Extension VC Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> </p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>VC dimension one is necessary. Adding the empty concept gives a class of $n+1$ concepts with exactly the empty set and the $n$ singletons shattered, hence an extremal VC-one extension.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the class itself has one concept and exactly one shattered set, the empty set; it is extremal of VC dimension zero. For $n\ge2$, the original class shatters a coordinate, so every extension has VC dimension at least one. Adding the empty concept gives $n+1$ concepts with exactly the empty set and the $n$ singletons shattered, hence an extremal extension of VC dimension one.</p></div>
 
 
         </div>
@@ -11668,11 +11668,11 @@
         <p><strong>Name: </strong>Projected Strongly Shattered Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_strongly_shattered_dimension.html">Projected Strongly Shattered Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected strongly shattered dimension equals VC dimension. The singleton class has established VC dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, every projection has one trace, so it contains no positive-dimensional cube. For $n\ge2$, projection onto a single coordinate has both traces and contains a one-cube. No projection shatters a pair, since two positive coordinates never occur together; a contained cube would shatter its coordinate set. Thus the maximum contained-cube dimension over projections is one.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bollobas1995defect">[bollobas1995defect]</a></p></div>
 
         </div>
@@ -15085,11 +15085,11 @@
         <p><strong>Name: </strong>Shattering-Cover Projection VC Dimension of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/shattering_cover_projection_vc_dimension.html">Shattering-Cover Projection VC Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Project onto any $n-1$ coordinates. The traces are the empty set and their $n-1$ singletons, so all $n$ concepts remain distinguished and exactly the empty set and the singletons are shattered. This projection is admissible and has VC dimension one. A VC-zero projection has one trace and only one shattered subset, hence cannot be admissible for a class of size $n\geq2$. This is checked by $\texttt{sync/verify\_interpolation\_conjecture.py}$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the empty-coordinate projection has one trace and one shattered set, so it is admissible with VC dimension zero. For $n\ge2$, project onto any $n-1$ coordinates. The traces are the empty set and their $n-1$ singletons, giving $n$ shattered sets and VC dimension one. A VC-zero nonempty projection has one trace and only the empty set shattered, so it cannot meet the required count $n\ge2$. Thus the minimum is one.</p></div>
 
 
         </div>
@@ -15595,11 +15595,11 @@
         <p><strong>Name: </strong>Projected Interpolation Degree of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_interpolation_degree.html">Projected Interpolation Degree</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Every nonempty coordinate projection is the empty concept together with singleton concepts on the retained coordinates. Affine-linear polynomials interpolate arbitrary values on that class, while a nontrivial projection is not interpolated by constants.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, every projection has one trace and interpolation degree zero. For $n\ge2$, the full projection consists of the $n$ singletons, on which $\sum_i a_i x_i$ interpolates arbitrary values $a_i$. A proper projection onto $S$ consists of the empty trace and the singletons in $S$; values $a_0,a_i$ are interpolated by $a_0+\sum_{i\in S}(a_i-a_0)x_i$, including $S=\emptyset$. Thus every projection has interpolation degree at most one, while the full class has two distinct concepts and needs degree at least one.</p></div>
 
 
         </div>

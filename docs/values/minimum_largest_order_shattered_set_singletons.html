@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Minimum Largest Order Shattered Set of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/minimum_largest_order_shattered_set.html">Minimum Largest Order Shattered Set</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every coordinate order, full downshifting produces a nontrivial downset, hence it contains the empty trace and a singleton trace, a one-cube. Downshifting preserves VC dimension one, so no two-cube can occur.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Let $i$ be the first coordinate shifted downward. Its singleton moves to the empty set, while every other singleton remains. The resulting class is $\{\emptyset\}\cup\{\{j\}:j\ne i\}$, a downset, so all later shifts leave it unchanged. For $n=1$ it has VC dimension zero. For $n\ge2$ it shatters a coordinate but no pair, giving value one for every coordinate order and hence for their minimum.</p></div>
 
 
         </div>

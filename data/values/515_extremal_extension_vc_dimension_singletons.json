@@ -4,8 +4,8 @@
   "short_name": "extremal_extension_vc_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/extremal_extension_vc_dimension",
-  "value": "$1$",
-  "details": "For $n\\geq2$.",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
+  "details": "",
   "status": "established",
-  "proof": "VC dimension one is necessary. Adding the empty concept gives a class of $n+1$ concepts with exactly the empty set and the $n$ singletons shattered, hence an extremal VC-one extension."
+  "proof": "For $n=1$, the class itself has one concept and exactly one shattered set, the empty set; it is extremal of VC dimension zero. For $n\\ge2$, the original class shatters a coordinate, so every extension has VC dimension at least one. Adding the empty concept gives $n+1$ concepts with exactly the empty set and the $n$ singletons shattered, hence an extremal extension of VC dimension one."
 }

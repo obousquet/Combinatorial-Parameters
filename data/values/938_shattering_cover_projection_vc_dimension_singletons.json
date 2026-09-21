@@ -4,10 +4,10 @@
   "short_name": "shattering_cover_projection_vc_dimension_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/shattering_cover_projection_vc_dimension",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
-  "details": "For $n\\geq2$.",
+  "details": "",
   "status": "established",
-  "proof": "Project onto any $n-1$ coordinates. The traces are the empty set and their $n-1$ singletons, so all $n$ concepts remain distinguished and exactly the empty set and the singletons are shattered. This projection is admissible and has VC dimension one. A VC-zero projection has one trace and only one shattered subset, hence cannot be admissible for a class of size $n\\geq2$. This is checked by $\\texttt{sync/verify\\_interpolation\\_conjecture.py}$.",
+  "proof": "For $n=1$, the empty-coordinate projection has one trace and one shattered set, so it is admissible with VC dimension zero. For $n\\ge2$, project onto any $n-1$ coordinates. The traces are the empty set and their $n-1$ singletons, giving $n$ shattered sets and VC dimension one. A VC-zero nonempty projection has one trace and only the empty set shattered, so it cannot meet the required count $n\\ge2$. Thus the minimum is one.",
   "references": ""
 }
