@@ -87,7 +87,7 @@
         </div>
     </div>
     
-<strong>Definition:</strong><div class="text-field"><p>The <strong>Worst Mistakes</strong> parameter is the smallest worst-case number of prediction mistakes achievable when the learner may use the whole presented instance sequence, but that sequence is chosen adversarially and the feedback remains consistent with one target concept in $\mathcal H$.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty binary class $\mathcal H$ on a finite domain $X$, fix a permutation $\pi$ of all of $X$, known to the learner before play. At each coordinate the deterministic learner predicts a label and receives the true label of an unknown fixed target $h\in\mathcal H$. It must predict every coordinate once. Let $b(\mathcal H,\pi)$ be the minimum over learners of the maximum number of mistakes over targets. The <strong>Worst Mistakes</strong> parameter is $\max_{\pi}b(\mathcal H,\pi)$. The empty domain has value zero.</p></div>
 
 
 <strong>Origin References:</strong><div class="text-field"><p>The adversarially ordered (worst) and favorably ordered mistake models are studied in <a href="bibliography.html#ben1997online">[ben1997online]</a>.</p></div>

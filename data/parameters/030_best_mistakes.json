@@ -6,7 +6,7 @@
   "symmetric": true,
   "monotonic": true,
   "c_monotonic": true,
-  "definition": "The **Best Mistakes** parameter is the smallest worst-case number of prediction mistakes achievable when the learner may choose a presentation sequence favorable to it, while the feedback remains consistent with one target concept in $\\mathcal H$.",
+  "definition": "For a nonempty binary class $\\mathcal H$ on a finite domain $X$, fix a permutation $\\pi$ of all of $X$, known to the learner before play. At each coordinate the deterministic learner predicts a label and receives the true label of an unknown fixed target $h\\in\\mathcal H$. It must predict every coordinate once. Let $b(\\mathcal H,\\pi)$ be the minimum over learners of the maximum number of mistakes over targets. The **Best Mistakes** parameter is $\\min_{\\pi}b(\\mathcal H,\\pi)$. The empty domain has value zero.",
   "graph_summary": "Mistake bound under a presentation sequence chosen favorably to the learner.",
   "short_name": "best_mistakes",
   "origin_references": "The favorably ordered (best) mistake model is studied in \\cite{ben1997online}.",

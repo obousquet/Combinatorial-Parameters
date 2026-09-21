@@ -2762,34 +2762,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-103" style="position:relative;">
-        
-        <h3><a href="relationships/best_mistakes_selfdirected_queries_complexity.html" class="table-title-link">Best Mistakes / Self-Directed Queries Complexity</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Best Mistakes / Self-Directed Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Self-directed learning permits adaptive choice of the next instance.</p></div>
-<p><strong>Witness: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>On the blockwise-addressing family, $\mathrm M_{\mathrm{best}}=\Theta(d)$ while $\mathrm{SDC}\leq2$; the gap therefore grows without bound with $d$.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>A self-directed learner can emulate any learner and favorable presentation sequence used for $\mathrm{M}_{\mathrm{best}}$ by choosing the same next instance itself.  It may additionally adapt that choice to earlier feedback.  Thus $\mathrm{M}_{\mathrm{sd}}(\mathcal H)\le\mathrm{M}_{\mathrm{best}}(\mathcal H)$.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a></p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-104" style="position:relative;">
         
         <h3><a href="relationships/effective_range_vc_dimension.html" class="table-title-link">Effective Range / VC Dimension</a></h3>
@@ -13780,6 +13752,34 @@
 <p><strong>Status:</strong> Refuted</p>
 <strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For the full cube, every trace is present, so no positive-dimensional hollow star exists and co-VC dimension is zero. Its entire domain is shattered, so its effective VC radius is n. Thus the asserted inequality fails on this family.</p></div>
 
+
+
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-103" style="position:relative;">
+        
+        <h3><a href="relationships/best_mistakes_selfdirected_queries_complexity.html" class="table-title-link">Best Mistakes / Self-Directed Queries Complexity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Best Mistakes / Self-Directed Queries Complexity</p>
+<p><strong>Parameter 1: </strong><a href="parameters/best_mistakes.html">Best Mistakes</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>False for the catalogue conventions: best mistakes uses a favorable order of the whole domain, whereas self-directed complexity maximizes over coordinate subsets. Private-coordinate cubes have $M_{\mathrm{best}}=1$ and $M_{\mathrm{sd}}=d$ for $d\ge2$.</p></div>
+<p><strong>Witness: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>The survey gives the all-d argument: private indicators give whole-domain mistake cost one; the cube-coordinate restriction forces d self-directed mistakes, and every subset has cost at most d. The former blockwise-addressing witness did not justify the universal inequality under the changed self-directed convention.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Companion survey, private-coordinate cube example (ex:private-cube-mistake-separation). The fixed-set simulation remains valid in lem:fixed-set-mistake-comparison.</p></div>
 
 
 
