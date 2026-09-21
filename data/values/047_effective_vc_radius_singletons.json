@@ -4,9 +4,9 @@
   "short_name": "effective_vc_radius_singletons",
   "class_id": "#classes/singletons",
   "parameter_id": "#parameters/effective_vc_radius",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "The effective range is all of $[n]$. Every singleton is shattered, while no two-point subset is shattered."
+  "proof": "For $n=1$, the sole concept has empty effective range, giving radius zero. For $n\\ge2$, every coordinate varies and is shattered. No pair is shattered, since no concept contains two coordinates. Thus the largest allowed radius is one."
 }

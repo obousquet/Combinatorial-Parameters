@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Projected VC Radius of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_vc_radius.html">Projected VC Radius</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected VC radius equals VC dimension. The singleton class has established VC dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, every projection has one trace and empty effective range, so every effective radius is zero. For $n\ge2$, a one-coordinate projection is the full one-cube and has radius one. No projection shatters a pair. A radius at least two would imply that every pair within its effective range is shattered: extend such a pair to a set of the radius size and restrict its shattered traces. This is impossible. Hence the maximum projected radius is one.</p></div>
 
 
         </div>

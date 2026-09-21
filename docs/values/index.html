@@ -887,11 +887,11 @@
         <p><strong>Name: </strong>Effective VC Radius of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/effective_vc_radius.html">Effective VC Radius</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The effective range is all of $[n]$. Every singleton is shattered, while no two-point subset is shattered.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the sole concept has empty effective range, giving radius zero. For $n\ge2$, every coordinate varies and is shattered. No pair is shattered, since no concept contains two coordinates. Thus the largest allowed radius is one.</p></div>
 
 
         </div>
@@ -10635,7 +10635,7 @@
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Example 1 of the cited paper proves that the n singleton hypotheses are Radon independent, hence the Radon number is n.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every nonempty subfamily $G$ of the singleton class is a version space: prescribe label zero on the coordinates whose singleton targets are outside $G$. Thus $G$ is convex and its convex hull equals $G$. In every nontrivial partition of the full class, the two parts have disjoint convex hulls. All $n$ concepts are therefore Radon independent. No independent subset can have more than the $n$ concepts of the class, proving the value $n$, including $n=1$ when the partition condition is vacuous.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chase2024dual">[chase2024dual]</a></p></div>
 
         </div>
@@ -11498,11 +11498,11 @@
         <p><strong>Name: </strong>Projected VC Radius of Singletons</p>
 <p><strong>Class: </strong><a href="classes/singletons.html">Singletons</a></p>
 <p><strong>Parameter: </strong><a href="parameters/projected_vc_radius.html">Projected VC Radius</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Projected VC radius equals VC dimension. The singleton class has established VC dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, every projection has one trace and empty effective range, so every effective radius is zero. For $n\ge2$, a one-coordinate projection is the full one-cube and has radius one. No projection shatters a pair. A radius at least two would imply that every pair within its effective range is shattered: extend such a pair to a set of the radius size and restrict its shattered traces. This is impossible. Hence the maximum projected radius is one.</p></div>
 
 
         </div>

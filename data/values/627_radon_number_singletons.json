@@ -7,6 +7,6 @@
   "value": "$n$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "Example 1 of the cited paper proves that the n singleton hypotheses are Radon independent, hence the Radon number is n.",
+  "proof": "Every nonempty subfamily $G$ of the singleton class is a version space: prescribe label zero on the coordinates whose singleton targets are outside $G$. Thus $G$ is convex and its convex hull equals $G$. In every nontrivial partition of the full class, the two parts have disjoint convex hulls. All $n$ concepts are therefore Radon independent. No independent subset can have more than the $n$ concepts of the class, proving the value $n$, including $n=1$ when the partition condition is vacuous.",
   "references": "\\cite{chase2024dual}"
 }
