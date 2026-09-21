@@ -7,6 +7,6 @@
   "value": "$1$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Self-directed query complexity lower-bounds recursive teaching dimension, whose established value is $1$ here. It is at most partial equivalence-query complexity, also $1$. Thus self-directed query complexity equals $1$.",
+  "proof": "On any subset of coordinates, predict zero until a positive label identifies the target singleton, then predict that target correctly. If the target is empty, or its singleton coordinate is absent, there are no mistakes. This gives at most one mistake. On a one-coordinate subset both labels are realized (for $n\\ge1$), so one mistake can be forced.",
   "references": "\\cite{doliwa2014recursive}"
 }

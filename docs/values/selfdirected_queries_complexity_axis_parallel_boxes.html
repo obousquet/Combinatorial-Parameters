@@ -82,12 +82,12 @@
         <p><strong>Name: </strong>Self-Directed Queries Complexity of Axis-Parallel Boxes</p>
 <p><strong>Class: </strong><a href="classes/axis_parallel_boxes.html">Axis-Parallel Boxes</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$2d$ for $n\ge3$; $d\leq\mathrm M_{\mathrm{sd}}\leq2d$ for $n=2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The learner approaches the target box from two opposite corners of $X_n^d$, predicting negative labels.  The first mistakes identify the two opposite target corners and hence the box.  Conversely, both corners can be forced as mistakes, so the optimum is exactly two.</p></div>
-<strong>References:</strong><div class="text-field"><p>Theorem 4 of <a href="bibliography.html#goldman1994power">[goldman1994power]</a>.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 12 of <a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a> bounds the subset-maximized self-directed mistake complexity of real axis-aligned boxes by $2d$. Every nonempty grid box is the restriction of such a real box, so the same upper bound holds here. For $n\ge3$, take the $2d$ points $c\pm e_j$ around $c=(1,\ldots,1)$. For each labeling, the smallest box containing $c$ and the positively labeled points contains exactly those positives among the selected points; the negative-only labeling is realized by $\{c\}$. Thus these points are shattered and force $2d$ mistakes. For $n=2$, the $d$ unit vectors are shattered: the box spanned by zero and any selected unit vectors realizes precisely that selection. This gives the displayed lower bound; no exact value for this boundary is asserted here. The classical two-mistake result concerns prediction on the entire grid, not the maximum over its subsets.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>, Section 2.1 and Theorem 12; <a href="bibliography.html#goldman1994power">[goldman1994power]</a>, Theorem 4, concerns only the whole grid.</p></div>
 
         </div>
     </div>

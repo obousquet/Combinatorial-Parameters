@@ -4,9 +4,9 @@
   "short_name": "selfdirected_queries_complexity_axis_parallel_boxes",
   "class_id": "#classes/axis_parallel_boxes",
   "parameter_id": "#parameters/selfdirected_queries_complexity",
-  "value": "$2$",
+  "value": "$2d$ for $n\\ge3$; $d\\leq\\mathrm M_{\\mathrm{sd}}\\leq2d$ for $n=2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "The learner approaches the target box from two opposite corners of $X_n^d$, predicting negative labels.  The first mistakes identify the two opposite target corners and hence the box.  Conversely, both corners can be forced as mistakes, so the optimum is exactly two.",
-  "references": "Theorem 4 of \\cite{goldman1994power}."
+  "proof": "Theorem 12 of \\cite{devulapalli2024selfdirected} bounds the subset-maximized self-directed mistake complexity of real axis-aligned boxes by $2d$. Every nonempty grid box is the restriction of such a real box, so the same upper bound holds here. For $n\\ge3$, take the $2d$ points $c\\pm e_j$ around $c=(1,\\ldots,1)$. For each labeling, the smallest box containing $c$ and the positively labeled points contains exactly those positives among the selected points; the negative-only labeling is realized by $\\{c\\}$. Thus these points are shattered and force $2d$ mistakes. For $n=2$, the $d$ unit vectors are shattered: the box spanned by zero and any selected unit vectors realizes precisely that selection. This gives the displayed lower bound; no exact value for this boundary is asserted here. The classical two-mistake result concerns prediction on the entire grid, not the maximum over its subsets.",
+  "references": "\\cite{devulapalli2024selfdirected}, Section 2.1 and Theorem 12; \\cite{goldman1994power}, Theorem 4, concerns only the whole grid."
 }

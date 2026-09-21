@@ -5,11 +5,10 @@
   "relationship_type": "larger",
   "short_name": "partial_equivalence_queries_complexity_selfdirected_queries_complexity",
   "name": "Partial Equivalence Queries Complexity / Self-Directed Queries Complexity",
-  "details": "For finite concept classes, $\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)\\ge\\mathrm{SDC}(\\mathcal H)$.",
-  "proof": "Corollary 8(1) of Doliwa--Fan--Simon--Zilles states the chain $\\mathrm{RTD}(\\mathcal H)\\leq\\mathrm{SDC}(\\mathcal H)\\leq\\mathrm{LC}_{\\mathrm{partial}}(\\mathcal H)$.  Its middle inequality is the simulation established by Goldman--Sloan: the partial-equivalence-query model is no more powerful than self-directed learning, so its optimal worst-case query count cannot be smaller.",
-  "status": "established",
-  "references": "\\cite{doliwa2014recursive,goldman1994power,maass1992lower}",
-  "witness": "#classes/axis_parallel_boxes",
+  "details": "False for subset-maximized self-directed complexity: private-coordinate cubes have partial-equivalence-query complexity one and self-directed complexity $d$. The classical simulation concerns whole-domain self-directed learning.",
+  "proof": "For the private-coordinate cube $\\mathcal P_d$, issue the partial query labeling all private coordinates zero and leaving cube coordinates unspecified. Every target disagrees at exactly its own private coordinate, so every legal counterexample identifies the target. At least one query is necessary for a nontrivial class. Thus $\\mathrm Q_{\\mathrm{par}}=1$. The cube-coordinate subset forces $d$ self-directed mistakes, and the survey example ex:private-cube-mistake-separation proves the matching upper bound. Therefore the claimed inequality fails for every $d\\ge2$.",
+  "status": "refuted",
+  "witness": "#classes/private_coordinate_cube",
   "witness_strength": "unbounded",
-  "witness_verification": "Fix any $d\\ge1$ and let $n$ grow.  Then $\\mathrm{SDC}(\\mathrm{BOX}_n^d)=2$ while $\\mathrm{LC}_{\\mathrm{partial}}(\\mathrm{BOX}_n^d)=\\Theta(d\\log n)$, so the gap is unbounded and rules out every reverse affine-linear bound."
+  "witness_verification": "Private indicators give a unique counterexample to the all-zero partial query; the cube restriction gives d self-directed mistakes. The box-family witness was based on the whole-grid convention and is retired from this universal comparison."
 }

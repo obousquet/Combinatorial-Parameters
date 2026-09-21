@@ -7,5 +7,5 @@
   "value": "$1$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "The established chain $\\mathrm{RTD}\\leq\\mathrm{SDC}\\leq\\mathrm{LC}_{\\mathrm{partial}}$ has both endpoint values equal to one for this class.  Therefore self-directed query complexity is exactly one."
+  "proof": "On any coordinate subset, predict a majority label among the remaining concepts. Starting from three concepts, a mistaken majority prediction leaves at most one concept, so no later mistake is needed. A one-coordinate subset with both labels realized forces one mistake. Thus the subset-maximized value is one."
 }

@@ -4,9 +4,8 @@
   "short_name": "selfdirected_dimension_blockwiseaddressing",
   "class_id": "#classes/blockwiseaddressing",
   "parameter_id": "#parameters/selfdirected_dimension",
-  "value": "$\\leq 2$",
-  "value_class": "omega_1",
+  "value": "$d\\leq\\mathrm{SDdim}\\leq d+1$",
   "status": "established",
-  "proof": "The established equality $\\mathrm{SDdim}=\\mathrm M_{\\mathrm{sd}}$ transfers the recorded upper bound $\\mathrm M_{\\mathrm{sd}}\\leq2$ for the blockwise-addressing class.",
+  "proof": "Theorem 1 of \\cite{devulapalli2024selfdirected} identifies $\\mathrm{SDdim}$ with the subset-maximized self-directed mistake bound. The blockwise-addressing value lies between $d$ and $d+1$: a repeated binary block gives the lower bound and majority prediction on the $2^{d+1}$ concepts gives the upper bound. The whole-domain two-mistake strategy does not bound this parameter.",
   "references": "\\cite{devulapalli2024selfdirected}; derived from the established self-directed-queries-complexity benchmark value"
 }

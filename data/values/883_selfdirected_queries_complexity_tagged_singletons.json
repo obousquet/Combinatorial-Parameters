@@ -7,6 +7,6 @@
   "value": "$1$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "Tagged singletons have VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles gives self-directed learning complexity one for every nontrivial VC-one class.  Thus the value is one.",
-  "references": "\\cite{doliwa2014recursive}"
+  "proof": "Tagged singletons have VC dimension one. Theorem 13 of \\cite{devulapalli2024selfdirected} proves that the subset-maximized self-directed mistake bound is one exactly for VC-one classes. Hence the value is one.",
+  "references": "\\cite{devulapalli2024selfdirected}, Theorem 13."
 }

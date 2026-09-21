@@ -4563,7 +4563,7 @@
 <p><strong>Order:</strong> $\Omega(n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Query each of the $n$ coordinates once, making an arbitrary prediction at each query. This gives at most $n$ mistakes on the full cube. Conversely, self-directed query complexity is at least recursive teaching dimension, whose established full-cube value is $n$. Therefore the value is exactly $n$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On any coordinate subset of the $n$-cube, predict each coordinate once, costing at most $n$ mistakes. On the full domain, every next coordinate can receive either label regardless of earlier answers. An adversary contradicts each prediction, and all $n$ replies form one cube concept. Hence the subset-maximized value is exactly $n$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
 
         </div>
@@ -4906,7 +4906,7 @@
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Self-directed query complexity lower-bounds recursive teaching dimension, whose established value is $1$ here. It is at most partial equivalence-query complexity, also $1$. Thus self-directed query complexity equals $1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On any subset of coordinates, predict zero until a positive label identifies the target singleton, then predict that target correctly. If the target is empty, or its singleton coordinate is absent, there are no mistakes. This gives at most one mistake. On a one-coordinate subset both labels are realized (for $n\ge1$), so one mistake can be forced.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
 
         </div>
@@ -10053,12 +10053,12 @@
         <p><strong>Name: </strong>Self-Directed Queries Complexity of Blockwise-Addressing</p>
 <p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Value: </strong>$\leq 2$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Value: </strong>$d\leq\mathrm M_{\mathrm{sd}}\leq d+1$</p>
+<p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Example 2 first queries $z$, which determines whether the target is an $f_i$ or a $g_i$. It then queries the corresponding private coordinates while predicting 0; the unique positive coordinate identifies the target. At most one mistake occurs at $z$ and at most one afterwards, so $\mathrm{SDC}\le2$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a>, Example 2</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Choose one block of $d$ $y$-coordinates. The $f_i$ realize every binary labeling on it, so an adversary can contradict all $d$ adaptive predictions on that subset while retaining a consistent target. Thus the subset-maximized self-directed value is at least $d$. There are $2^{d+1}$ concepts. On any coordinate subset, predict a majority label among the remaining concepts and use full feedback to restrict the version space. Every mistake at least halves its size, so at most $d+1$ mistakes occur. The source bound of two queries the selector and private coordinates on the whole domain; those coordinates need not be available in a prescribed subset.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a>, Example 2, for the class and whole-domain strategy; the subset distinction is explained in <a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>, Section 2.1.</p></div>
 
         </div>
     </div>
@@ -13712,7 +13712,7 @@
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established chain $\mathrm{RTD}\leq\mathrm{SDC}\leq\mathrm{LC}_{\mathrm{partial}}$ has both endpoint values equal to one for this class.  Therefore self-directed query complexity is exactly one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On any coordinate subset, predict a majority label among the remaining concepts. Starting from three concepts, a mistaken majority prediction leaves at most one concept, so no later mistake is needed. A one-coordinate subset with both labels realized forces one mistake. Thus the subset-maximized value is one.</p></div>
 
 
         </div>
@@ -14133,11 +14133,11 @@
         <p><strong>Name: </strong>Self-Directed Queries Complexity of Half-Intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0$ for $n=1$; $1$ for $n\ge2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The half-interval class has VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles states that every nontrivial VC-one class has self-directed learning complexity one.  The class is nontrivial, so the value is exactly one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>At $n=1$ the only concept is known. For $n\ge2$, on any coordinate subset present points in increasing order, predict one until the first zero label, and then predict zero. An initial-segment target makes this strategy incur at most one mistake. Coordinate 2 has both labels among targets and therefore forces one mistake on its one-point subset.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
 
         </div>
@@ -14154,8 +14154,8 @@
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Tagged singletons have VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles gives self-directed learning complexity one for every nontrivial VC-one class.  Thus the value is one.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Tagged singletons have VC dimension one. Theorem 13 of <a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a> proves that the subset-maximized self-directed mistake bound is one exactly for VC-one classes. Hence the value is one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>, Theorem 13.</p></div>
 
         </div>
     </div>
@@ -15391,11 +15391,11 @@
         <p><strong>Name: </strong>Self-Directed Dimension of Blockwise Addressing</p>
 <p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_dimension.html">Self-Directed Dimension</a></p>
-<p><strong>Value: </strong>$\leq 2$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Value: </strong>$d\leq\mathrm{SDdim}\leq d+1$</p>
+<p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established equality $\mathrm{SDdim}=\mathrm M_{\mathrm{sd}}$ transfers the recorded upper bound $\mathrm M_{\mathrm{sd}}\leq2$ for the blockwise-addressing class.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 1 of <a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a> identifies $\mathrm{SDdim}$ with the subset-maximized self-directed mistake bound. The blockwise-addressing value lies between $d$ and $d+1$: a repeated binary block gives the lower bound and majority prediction on the $2^{d+1}$ concepts gives the upper bound. The whole-domain two-mistake strategy does not bound this parameter.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>; derived from the established self-directed-queries-complexity benchmark value</p></div>
 
         </div>
@@ -16088,12 +16088,12 @@
         <p><strong>Name: </strong>Self-Directed Queries Complexity of Axis-Parallel Boxes</p>
 <p><strong>Class: </strong><a href="classes/axis_parallel_boxes.html">Axis-Parallel Boxes</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$2d$ for $n\ge3$; $d\leq\mathrm M_{\mathrm{sd}}\leq2d$ for $n=2$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The learner approaches the target box from two opposite corners of $X_n^d$, predicting negative labels.  The first mistakes identify the two opposite target corners and hence the box.  Conversely, both corners can be forced as mistakes, so the optimum is exactly two.</p></div>
-<strong>References:</strong><div class="text-field"><p>Theorem 4 of <a href="bibliography.html#goldman1994power">[goldman1994power]</a>.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Theorem 12 of <a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a> bounds the subset-maximized self-directed mistake complexity of real axis-aligned boxes by $2d$. Every nonempty grid box is the restriction of such a real box, so the same upper bound holds here. For $n\ge3$, take the $2d$ points $c\pm e_j$ around $c=(1,\ldots,1)$. For each labeling, the smallest box containing $c$ and the positively labeled points contains exactly those positives among the selected points; the negative-only labeling is realized by $\{c\}$. Thus these points are shattered and force $2d$ mistakes. For $n=2$, the $d$ unit vectors are shattered: the box spanned by zero and any selected unit vectors realizes precisely that selection. This gives the displayed lower bound; no exact value for this boundary is asserted here. The classical two-mistake result concerns prediction on the entire grid, not the maximum over its subsets.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>, Section 2.1 and Theorem 12; <a href="bibliography.html#goldman1994power">[goldman1994power]</a>, Theorem 4, concerns only the whole grid.</p></div>
 
         </div>
     </div>
@@ -16109,7 +16109,7 @@
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed dimension $d\ge1$, the partial-equivalence-query complexity of $\mathrm{BOX}_n^d$ is bounded above and below by constant multiples of $d\log n$.  In particular it diverges with $n$ whereas the self-directed complexity remains two.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For every fixed dimension $d\ge1$, the partial-equivalence-query complexity of $\mathrm{BOX}_n^d$ is bounded above and below by constant multiples of $d\log n$.  In particular it diverges with $n$ whereas the subset-maximized self-directed complexity is $2d$ for $n\ge3$. This fixed-d separation does not by itself prove a universal comparison of the two parameters.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a> <a href="bibliography.html#goldman1994power">[goldman1994power]</a>; the latter explicitly invokes the matching box bound from the former in its proof of the strict model separation.</p></div>
 
         </div>

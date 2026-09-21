@@ -82,12 +82,12 @@
         <p><strong>Name: </strong>Self-Directed Queries Complexity of Blockwise-Addressing</p>
 <p><strong>Class: </strong><a href="classes/blockwiseaddressing.html">Blockwise-Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Value: </strong>$\leq 2$</p>
-<p><strong>Order:</strong> $\Omega(1)$</p>
+<p><strong>Value: </strong>$d\leq\mathrm M_{\mathrm{sd}}\leq d+1$</p>
+<p><strong>Order:</strong> </p>
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Example 2 first queries $z$, which determines whether the target is an $f_i$ or a $g_i$. It then queries the corresponding private coordinates while predicting 0; the unique positive coordinate identifies the target. At most one mistake occurs at $z$ and at most one afterwards, so $\mathrm{SDC}\le2$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a>, Example 2</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Choose one block of $d$ $y$-coordinates. The $f_i$ realize every binary labeling on it, so an adversary can contradict all $d$ adaptive predictions on that subset while retaining a consistent target. Thus the subset-maximized self-directed value is at least $d$. There are $2^{d+1}$ concepts. On any coordinate subset, predict a majority label among the remaining concepts and use full feedback to restrict the version space. Every mistake at least halves its size, so at most $d+1$ mistakes occur. The source bound of two queries the selector and private coordinates on the whole domain; those coordinates need not be available in a prescribed subset.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ben1997online">[ben1997online]</a>, Example 2, for the class and whole-domain strategy; the subset distinction is explained in <a href="bibliography.html#devulapalli2024selfdirected">[devulapalli2024selfdirected]</a>, Section 2.1.</p></div>
 
         </div>
     </div>

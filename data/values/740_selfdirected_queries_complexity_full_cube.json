@@ -7,6 +7,6 @@
   "value": "$n$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "Query each of the $n$ coordinates once, making an arbitrary prediction at each query. This gives at most $n$ mistakes on the full cube. Conversely, self-directed query complexity is at least recursive teaching dimension, whose established full-cube value is $n$. Therefore the value is exactly $n$.",
+  "proof": "On any coordinate subset of the $n$-cube, predict each coordinate once, costing at most $n$ mistakes. On the full domain, every next coordinate can receive either label regardless of earlier answers. An adversary contradicts each prediction, and all $n$ replies form one cube concept. Hence the subset-maximized value is exactly $n$.",
   "references": "\\cite{doliwa2014recursive}"
 }

@@ -2426,34 +2426,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-89" style="position:relative;">
-        
-        <h3><a href="relationships/partial_equivalence_queries_complexity_selfdirected_queries_complexity.html" class="table-title-link">Partial Equivalence Queries Complexity / Self-Directed Queries Complexity</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Partial Equivalence Queries Complexity / Self-Directed Queries Complexity</p>
-<p><strong>Parameter 1: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes, $\mathrm{LC}_{\mathrm{partial}}(\mathcal H)\ge\mathrm{SDC}(\mathcal H)$.</p></div>
-<p><strong>Witness: </strong><a href="classes/axis_parallel_boxes.html">Axis-Parallel Boxes</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>Fix any $d\ge1$ and let $n$ grow.  Then $\mathrm{SDC}(\mathrm{BOX}_n^d)=2$ while $\mathrm{LC}_{\mathrm{partial}}(\mathrm{BOX}_n^d)=\Theta(d\log n)$, so the gap is unbounded and rules out every reverse affine-linear bound.</p></div>
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Corollary 8(1) of Doliwa--Fan--Simon--Zilles states the chain $\mathrm{RTD}(\mathcal H)\leq\mathrm{SDC}(\mathcal H)\leq\mathrm{LC}_{\mathrm{partial}}(\mathcal H)$.  Its middle inequality is the simulation established by Goldman--Sloan: the partial-equivalence-query model is no more powerful than self-directed learning, so its optimal worst-case query count cannot be smaller.</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a> <a href="bibliography.html#goldman1994power">[goldman1994power]</a> <a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-91" style="position:relative;">
         
         <h3><a href="relationships/unlabeled_sample_compression_labeled_sample_compression.html" class="table-title-link">Unlabeled sample compression / Labeled Sample Compression</a></h3>
@@ -13698,6 +13670,34 @@
 
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#doliwa2014recursive">[doliwa2014recursive]</a></p></div>
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-89" style="position:relative;">
+        
+        <h3><a href="relationships/partial_equivalence_queries_complexity_selfdirected_queries_complexity.html" class="table-title-link">Partial Equivalence Queries Complexity / Self-Directed Queries Complexity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Equivalence Queries Complexity / Self-Directed Queries Complexity</p>
+<p><strong>Parameter 1: </strong><a href="parameters/partial_equivalence_queries_complexity.html">Partial Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/selfdirected_queries_complexity.html">Self-Directed Queries Complexity</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>False for subset-maximized self-directed complexity: private-coordinate cubes have partial-equivalence-query complexity one and self-directed complexity $d$. The classical simulation concerns whole-domain self-directed learning.</p></div>
+<p><strong>Witness: </strong><a href="classes/private_coordinate_cube.html">Private-Coordinate Cubes</a></p>
+<p><strong>Witness Strength:</strong> Unbounded gap</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Private indicators give a unique counterexample to the all-zero partial query; the cube restriction gives d self-directed mistakes. The box-family witness was based on the whole-grid convention and is retired from this universal comparison.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>For the private-coordinate cube $\mathcal P_d$, issue the partial query labeling all private coordinates zero and leaving cube coordinates unspecified. Every target disagrees at exactly its own private coordinate, so every legal counterexample identifies the target. At least one query is necessary for a nontrivial class. Thus $\mathrm Q_{\mathrm{par}}=1$. The cube-coordinate subset forces $d$ self-directed mistakes, and the survey example ex:private-cube-mistake-separation proves the matching upper bound. Therefore the claimed inequality fails for every $d\ge2$.</p></div>
+
+
+
 
         </div>
     </div>

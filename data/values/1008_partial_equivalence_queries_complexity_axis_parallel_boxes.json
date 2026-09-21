@@ -7,6 +7,6 @@
   "value": "$\\Theta(d\\log n)$",
   "value_class": "omega_log_n",
   "status": "established",
-  "proof": "For every fixed dimension $d\\ge1$, the partial-equivalence-query complexity of $\\mathrm{BOX}_n^d$ is bounded above and below by constant multiples of $d\\log n$.  In particular it diverges with $n$ whereas the self-directed complexity remains two.",
+  "proof": "For every fixed dimension $d\\ge1$, the partial-equivalence-query complexity of $\\mathrm{BOX}_n^d$ is bounded above and below by constant multiples of $d\\log n$.  In particular it diverges with $n$ whereas the subset-maximized self-directed complexity is $2d$ for $n\\ge3$. This fixed-d separation does not by itself prove a universal comparison of the two parameters.",
   "references": "\\cite{maass1992lower,goldman1994power}; the latter explicitly invokes the matching box bound from the former in its proof of the strict model separation."
 }

@@ -4,9 +4,9 @@
   "short_name": "selfdirected_queries_complexity_halfintervals",
   "class_id": "#classes/halfintervals",
   "parameter_id": "#parameters/selfdirected_queries_complexity",
-  "value": "$1$",
+  "value": "$0$ for $n=1$; $1$ for $n\\ge2$",
   "value_class": "omega_1",
   "status": "established",
-  "proof": "The half-interval class has VC dimension one.  Corollary 9(1) of Doliwa--Fan--Simon--Zilles states that every nontrivial VC-one class has self-directed learning complexity one.  The class is nontrivial, so the value is exactly one.",
+  "proof": "At $n=1$ the only concept is known. For $n\\ge2$, on any coordinate subset present points in increasing order, predict one until the first zero label, and then predict zero. An initial-segment target makes this strategy incur at most one mistake. Coordinate 2 has both labels among targets and therefore forces one mistake on its one-point subset.",
   "references": "\\cite{doliwa2014recursive}"
 }
