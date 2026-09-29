@@ -7,8 +7,9 @@
   "relationship_type": "incomparable",
   "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
   "parameter_1_larger_witness": "For the full cube $2^{[n]}$, $\\mathrm P(2^{[n]})=n$ while its Radon number is $\\lfloor\\log_2(2n+2)\\rfloor$.",
-  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, the Radon number is $n$ while $\\mathrm P(\\mathcal S_n)=1$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, the Radon number is $n$ while $\\mathrm P(\\mathcal S_n)=2\\ (n\\ge3)$.",
   "status": "established",
-  "proof": "The Full Cube and Singleton value formulae yield unbounded gaps in both directions.",
-  "proof_source": "Database-owned value proofs for Path Dimension and Radon Number of the Full Cube and Singletons."
+  "proof": "In the first listed family the ratio of path dimension to the other parameter tends to infinity. In the singleton family, for n>=3 the other parameter grows linearly in n while path dimension is two. Thus neither universal affine upper bound holds. This does not assert functional incomparability.",
+  "proof_source": "Database-owned value records 144,149,628,627. Endpoint-complete path convention; the singleton path value is min{n-1,2}, not one. T2 reviewed these witness contracts; imported cube Radon input remains attributed.",
+  "incomparability_strength": "affine"
 }

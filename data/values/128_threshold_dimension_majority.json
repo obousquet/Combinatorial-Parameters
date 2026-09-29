@@ -8,6 +8,6 @@
   "value_class": "omega_n",
   "details": "",
   "status": "established",
-  "proof": "Projecting to the first $n$ coordinates gives the full cube, since every base subset occurs with its uniquely determined majority bit. Hence an arbitrary length-$n$ threshold chain is present, and no chain can use more than the $n$ projected coordinates.",
+  "proof": "Projection to the first n coordinates is the full cube, giving a threshold chain of length n. A chain of length n+1 would use the entire domain. Its successive traces differ in exactly one coordinate, so one step would change only the final majority coordinate while leaving all n base coordinates fixed. The majority coordinate is determined by the base coordinates, making that step impossible. Hence the dimension is n.",
   "references": "\\cite{maass1992lower}"
 }

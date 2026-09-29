@@ -6,9 +6,10 @@
   "parameter_2_id": "#parameters/covc_dimension",
   "relationship_type": "incomparable",
   "details": "Neither parameter has a universal affine-linear upper bound in terms of the other, even for finite classes.",
-  "parameter_1_larger_witness": "For half-intervals $\\mathcal I_n$, $\\mathrm P(\\mathcal I_n)=n-1$ while $\\operatorname{coVC}(\\mathcal I_n)=2$.",
-  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\operatorname{coVC}(\\mathcal S_n)=n$ while $\\mathrm P(\\mathcal S_n)=1$.",
+  "parameter_1_larger_witness": "For n>=3, half-intervals satisfy $\\mathrm P(\\mathcal I_n)=n-1$ and $\\operatorname{coVC}(\\mathcal I_n)=2$.",
+  "parameter_2_larger_witness": "For the singleton class $\\mathcal S_n$, $\\operatorname{coVC}(\\mathcal S_n)=n$ while $\\mathrm P(\\mathcal S_n)=2\\ (n\\ge3)$.",
   "status": "established",
-  "proof": "The canonical value calculations give the two opposite unbounded separations.",
-  "proof_source": "Database-owned value proofs for Path Dimension and co-VC Dimension of Half-intervals and Singletons."
+  "proof": "In the first listed family the ratio of path dimension to the other parameter tends to infinity. In the singleton family, for n>=3 the other parameter grows linearly in n while path dimension is two. Thus neither universal affine upper bound holds. This does not assert functional incomparability.",
+  "proof_source": "Database-owned value records 139,149,023,026. Endpoint-complete path convention; the singleton path value is min{n-1,2}, not one. T2 reviewed these witness contracts; imported cube Radon input remains attributed.",
+  "incomparability_strength": "affine"
 }

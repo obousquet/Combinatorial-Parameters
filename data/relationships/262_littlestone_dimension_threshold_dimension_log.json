@@ -4,11 +4,13 @@
   "parameter_2_id": "#parameters/threshold_dimension",
   "relationship_type": "log",
   "multiplicative_constant": "1/2",
-  "details": "Shelah--Hodges threshold/Littlestone comparison: $\\mathrm L(\\mathcal H)\\geq\\lfloor\\log_2\\mathrm T(\\mathcal H)\\rfloor$. Together with the existing reverse logarithmic relation, the two quantities are logarithmically comparable in both directions.",
+  "details": "For T>=1, endpoint-complete threshold chains give $\\mathrm L\\ge\\lfloor\\log_2(\\mathrm T+1)\\rfloor$, hence $\\mathrm L\\ge(1/2)\\log_2\\mathrm T$. Logarithms apply to positive T only.",
   "status": "established",
-  "proof": "Theorem 8 of the cited source gives $\\mathrm L(\\mathcal H)\\geq\\lfloor\\log_2\\mathrm T(\\mathcal H)\\rfloor$. For every positive integer $m$, $\\lfloor\\log_2m\\rfloor\\geq\\tfrac12\\log_2m$ (and both sides are zero for $m=1$), giving the recorded logarithmic bound.",
+  "proof": "An endpoint-complete threshold witness of dimension T supplies T+1 ordered traces. Balanced binary search using the witnessing coordinates shatters a tree of depth floor(log_2(T+1)). This is at least floor(log_2 T), hence at least (1/2)log_2 T for positive integer T. At T=0 the logarithmic expression is not used.",
   "references": "\\cite{alon2020closure}",
   "witness": "#classes/halfintervals",
   "short_name": "littlestone_dimension_threshold_dimension_log",
-  "name": "Littlestone Dimension / Threshold Dimension (logarithmic)"
+  "name": "Littlestone Dimension / Threshold Dimension (logarithmic)",
+  "proof_source": "LaTeX survey, Lemma lem:endpoint-threshold-littlestone; direct binary-search proof in the endpoint convention.",
+  "latex_proof_label": "lem:endpoint-threshold-littlestone"
 }

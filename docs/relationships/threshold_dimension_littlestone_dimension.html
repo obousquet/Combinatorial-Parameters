@@ -86,17 +86,17 @@
 
 
 
-<p><strong>Multiplicative Constant: </strong>1/2</p>
+<p><strong>Multiplicative Constant: </strong>1/3</p>
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Shelah--Hodges threshold/Littlestone comparison. More precisely, $\mathrm T(\mathcal H)\geq\lfloor\log_2\mathrm L(\mathcal H)\rfloor$, which implies the displayed positive-constant logarithmic relation.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For L&gt;=1 the endpoint convention gives $\mathrm T\ge\lfloor\log_2\mathrm L\rfloor-1$ and the safe consequence $\mathrm T\ge(1/3)\log_2\mathrm L$. The former coefficient 1/2 is not justified by the cited capped-threshold proof; this correction does not claim it false or the new constant optimal.</p></div>
 <p><strong>Witness: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Theorem 8 of the cited source gives $\mathrm T(\mathcal H)\geq\lfloor\log_2\mathrm L(\mathcal H)\rfloor$. For every positive integer $m$, $\lfloor\log_2m\rfloor\geq\tfrac12\log_2m$ (and both sides are zero for $m=1$), giving the recorded logarithmic bound.</p></div>
-
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>The cited capped-threshold theorem gives T_cap&gt;=floor(log_2 L), and deleting its constant cap column gives T&gt;=T_cap-1. Also L&gt;=1 implies two different concepts, hence T&gt;=1. For 1&lt;=L&lt;4 this implies T&gt;=(log_2 L)/3. For q=floor(log_2 L)&gt;=2, T&gt;=q-1&gt;=(q+1)/3&gt;(log_2 L)/3. This is a safe derived bound, not an optimal-constant claim. At L=0 the logarithmic relation is inapplicable.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>LaTeX survey, Lemma lem:endpoint-threshold-littlestone. Stored Alon et al. source, Theorem 3.2 in the archived version (Theorem 8 in the publication source map), uses capped thresholds. The endpoint translation loses at most one.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#alon2020closure">[alon2020closure]</a></p></div>
 

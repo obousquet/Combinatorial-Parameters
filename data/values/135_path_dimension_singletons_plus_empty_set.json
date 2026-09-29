@@ -4,9 +4,9 @@
   "short_name": "path_dimension_singletons_plus_empty_set",
   "class_id": "#classes/singletons_plus_empty_set",
   "parameter_id": "#parameters/path_dimension",
-  "value": "$2$",
+  "value": "$\\min\\{n,2\\}$",
   "value_class": "omega_1",
   "details": "",
   "status": "established",
-  "proof": "For distinct $i,j$, start at the singleton at $i$, flip $i$ to obtain the empty set, then flip $j$ to obtain its singleton: this is a path of length two. A third distinct coordinate would produce a doubleton after the next flip, which is absent from the class."
+  "proof": "For n=1 the class is a one-cube and has path dimension one. For n>=2 choose distinct i,j: the traces {i}, empty, {j} form a coordinate-flip path of length two. Every projection is a star (possibly just one edge) with centre the empty trace and singleton leaves. A simple path in a star has at most two edges, so no longer witness exists."
 }

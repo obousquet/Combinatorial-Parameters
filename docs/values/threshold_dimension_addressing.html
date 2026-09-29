@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Threshold Dimension of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/threshold_dimension.html">Threshold Dimension</a></p>
-<p><strong>Value: </strong>$\log_2 n+1\quad(n=2^r,\ r\ge1)$</p>
+<p><strong>Value: </strong>$\log_2 n\quad(n=2^r,\ r\ge1)$</p>
 <p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. Under the standard convention $n=2^d$; this corrects an off-by-one in the legacy table.</p>
+<p><strong>Details: </strong>Scope: complete-code subfamily n=2^r, r>=1; at n=1 the value is zero. No exact formula is asserted for arbitrary incomplete injective encodings. The earlier r+1 formula incorrectly reused the same all-one-address concept twice.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Projecting to the $d=\log_2 n$ address coordinates gives the full $d$-cube.  Its chain $\emptyset,\{a_1\},\ldots,\{a_1,\ldots,a_d\}$ is realized by the address concepts; adding the primary coordinate of the all-one address concept gives one further realized trace.  Hence the threshold dimension is at least $d+1$.  Conversely, the final trace of a threshold chain is contained in one addressing concept and so uses at most its $d$ address coordinates and its single primary coordinate.  Thus no chain has dimension exceeding $d+1$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Write n=2^r. Projection to all r bit coordinates is the full cube, giving threshold dimension at least r. Every concept has at most r+1 positive coordinates, so a longer witness could only have size r+1. Its full trace must come from the unique concept positive at its retained primary coordinate, and hence uses that primary coordinate and all r bit coordinates. The preceding trace in a chain deletes one coordinate. If it deletes a bit, it still contains the primary coordinate and would require the same concept with a changed bit. If it deletes the primary coordinate, it has all r bits positive, again forcing the same all-one-address concept. Both are impossible. Thus the dimension is r. At n=1 the single concept has no varying coordinate and the dimension is zero.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#maass1992lower">[maass1992lower]</a></p></div>
 
         </div>

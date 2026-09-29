@@ -10,5 +10,5 @@
   "proof": "A threshold trace on S contains concepts with different labels at every coordinate of S. Hence every coordinate of S belongs to the effective range, so \\(\\mathrm E(\\mathcal H)\\ge\\mathrm T(\\mathcal H)\\).",
   "witness": "#classes/singletons",
   "witness_strength": "unbounded",
-  "witness_verification": "For $n$ singleton concepts, effective range is $n$ while threshold dimension is 1."
+  "witness_verification": "For n>=2 singleton concepts, effective range is n while threshold dimension is1; at n=1 both are zero. The ratio is unbounded as n grows."
 }
