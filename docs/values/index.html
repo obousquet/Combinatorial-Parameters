@@ -479,11 +479,11 @@
         <p><strong>Name: </strong>co-VC dimension of Half-intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$1\ (n=1,2);\quad 2\ (n\ge3)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>Exact finite endpoint correction on the stated class domain. Original record preserved at sync/covc_endpoint_corrections/originals/023_covc_dimension_halfintervals.json.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On two ordered coordinates $a<b$, the restricted traces include the empty trace and the full two-point trace while omitting the trace containing only $b$, yielding a hollow 2-star. A chain cannot realize a hollow star of larger dimension.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class is $\{[i]:1\le i\le n\}$, so coordinate1 is constantly one; its missing zero trace gives a hollow one-star. For $n=1$ the domain has one coordinate. For $n=2$, the two full traces are $10,11$ and neither absent trace has both one-coordinate neighbours present, so coVC is one. For $n\ge3$, projection to coordinates2 and3 has traces $00,10,11$, whose absent $01$ is the centre of a hollow two-star. Every projection is a chain under inclusion, and a hollow star of size at least three has two incomparable realized neighbours (among three centre bits, two agree; flipping those two bits gives incomparable neighbours). Hence no larger hollow star occurs.</p></div>
 
 
         </div>
@@ -513,11 +513,11 @@
         <p><strong>Name: </strong>co-VC dimension of Singletons plus empty set</p>
 <p><strong>Class: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad 2\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>Exact finite endpoint correction on the stated class domain. Original record preserved at sync/covc_endpoint_corrections/originals/025_covc_dimension_singletons_plus_empty_set.json.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On any two coordinates, the restrictions contain the empty set and both singletons but omit their doubleton, a hollow 2-star. A larger hollow star would require a missing set whose one-coordinate neighbours are all in the class, which is impossible because the class contains only sets of size at most one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>At $n=1$ the class is the full one-dimensional cube, so coVC is zero. For $n\ge2$, projection to any two coordinates has the empty trace and both singletons but not their doubleton, giving a hollow two-star. In any projection every realized set has size at most one. A missing set of size at least three has no one-coordinate deletion in the class; a missing set of size two can have all its flips realized only on its two-coordinate domain. Thus there is no larger hollow star.</p></div>
 
 
         </div>
@@ -547,11 +547,11 @@
         <p><strong>Name: </strong>co-VC dimension of Trivial concepts</p>
 <p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad 2\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>Exact finite endpoint correction on the stated class domain. Original record preserved at sync/covc_endpoint_corrections/originals/027_covc_dimension_trivial_concepts.json.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On any two coordinates, the two traces are the empty and full two-point traces. Either of the other two traces is missing while both of its one-coordinate neighbours are present, giving a hollow 2-star. No larger hollow star is possible with only two traces.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>At $n=1$ the class is the full one-dimensional cube, so coVC is zero. For $n\ge2$, the two constant traces on any two coordinates form the leaves of a hollow two-star. A hollow star of size greater than two would require more than two distinct realized traces, while this class and all its projections have at most two concepts. Hence coVC is two.</p></div>
 
 
         </div>
@@ -15510,11 +15510,11 @@
         <p><strong>Name: </strong>Monotonic co-VC Dimension of Trivial Concepts</p>
 <p><strong>Class: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
 <p><strong>Parameter: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$1\ (n=1);\quad 2\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>Endpoint/proof-dependency correction; original preserved at sync/covc_endpoint_corrections/originals/963_monotonic_covc_dimension_trivial_concepts.json.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The class itself has co-VC dimension two, giving the lower bound. Its Star Number is one, and the established inequality $\mathrm{coVC}^*\le\mathrm S+1$ gives the matching upper bound.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>For $n=1$, the class is the full one-dimensional cube, with ordinary coVC zero, but either one-concept subfamily has coVC one. The ambient domain bounds every hollow star by one, so the envelope is one. For $n\ge2$, the two constant concepts themselves have coVC two. Every subfamily has at most two concepts, while a hollow star of size greater than two would require more than two distinct realized neighbours. Hence the envelope is two.</p></div>
 
 
         </div>
@@ -15546,9 +15546,9 @@
 <p><strong>Parameter: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>Endpoint/proof-dependency correction; original preserved at sync/covc_endpoint_corrections/originals/965_monotonic_covc_dimension_full_cube.json.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The full cube has Star Number $n$, so the star lower bound gives $\mathrm{coVC}^*\ge n$. Its effective range has $n$ coordinates, giving the matching upper bound. This contrasts with its ordinary co-VC dimension, which is zero.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class contains the subfamily $\{\{i\}:i\in[n]\}$ of all singleton concepts. Its absent all-zero trace and its $n$ realized one-coordinate neighbours form a hollow $n$-star, giving a lower bound of $n$ for the subfamily envelope. Every subfamily remains on the same $n$-coordinate domain, so no projected hollow star has more than $n$ coordinates. Thus the envelope is exactly $n$, including $n=1$. This upper bound uses ambient domain size, not the refuted general effective-range comparison.</p></div>
 
 
         </div>
@@ -15563,9 +15563,9 @@
 <p><strong>Parameter: </strong><a href="parameters/monotonic_covc_dimension.html">Monotonic co-VC Dimension</a></p>
 <p><strong>Value: </strong>$n$</p>
 <p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Details: </strong>Endpoint/proof-dependency correction; original preserved at sync/covc_endpoint_corrections/originals/966_monotonic_covc_dimension_singletons_plus_empty_set.json.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The singleton subfamily has co-VC dimension $n$, giving the lower bound. The effective range has $n$ coordinates, so no subfamily can have larger co-VC dimension.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class contains the subfamily $\{\{i\}:i\in[n]\}$ of all singleton concepts. Its absent all-zero trace and its $n$ realized one-coordinate neighbours form a hollow $n$-star, giving a lower bound of $n$ for the subfamily envelope. Every subfamily remains on the same $n$-coordinate domain, so no projected hollow star has more than $n$ coordinates. Thus the envelope is exactly $n$, including $n=1$. This upper bound uses ambient domain size, not the refuted general effective-range comparison.</p></div>
 
 
         </div>

@@ -1,0 +1,11 @@
+{
+  "id": 965,
+  "name": "Monotonic co-VC Dimension of Full Cube",
+  "short_name": "monotonic_covc_dimension_full_cube",
+  "class_id": "#classes/full_cube",
+  "parameter_id": "#parameters/monotonic_covc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The full cube has Star Number $n$, so the star lower bound gives $\\mathrm{coVC}^*\\ge n$. Its effective range has $n$ coordinates, giving the matching upper bound. This contrasts with its ordinary co-VC dimension, which is zero."
+}

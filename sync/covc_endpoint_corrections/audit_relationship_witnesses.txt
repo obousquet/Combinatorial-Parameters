@@ -1,0 +1,27 @@
+Established relationship coverage: {"equivalence": 17, "incomparable": 103, "missing": 29, "strict": 82, "unbounded": 237, "unclassified": 7}
+Unbounded witness / reverse-affine conflicts: 0
+Strict witness / reverse-exact conflicts: 0
+missing: 29; reverse-affine paths: 9; reverse-exact paths: 8; growth leads: 0; strict integer leads: 2
+strict: 82; reverse-affine paths: 8; reverse-exact paths: 0; growth leads: 0; strict integer leads: 69
+unclassified: 7; reverse-affine paths: 4; reverse-exact paths: 4; growth leads: 0; strict integer leads: 3
+  #35 log_shattering_effective_range: reverse path [113]
+  #36 vc_dimension_monotone_recursive_teaching_dimension: reverse path [118]
+  #37 vc_dimension_log_shattering: reverse path [316]
+  #62 vc_dimension_projected_double_density_or_projected_average_degree: reverse path [64, 78]
+  #64 projected_double_density_or_projected_average_degree_projected_minimum_degree: reverse path [78, 62]
+  #68 dual_sign_rank_vc_dimension: reverse path [69]
+  #69 vc_dimension_dual_sign_rank: reverse path [68]
+  #78 projected_minimum_degree_vc_dimension: reverse path [62, 64]
+  #93 log_size_size: reverse path [225, 265]
+  #96 threshold_dimension_path_dimension: reverse path [97]
+  #97 path_dimension_threshold_dimension: reverse path [96]
+  #124 hamming_radius_diameter: reverse path [146]
+  #146 diameter_hamming_radius: reverse path [124]
+  #213 dual_antipodal_vc_dimension_dual_vc_dimension: reverse path [215]
+  #215 dual_vc_dimension_dual_antipodal_vc_dimension_affine: reverse path [213]
+  #284 littlestone_dimension_randomized_littlestone_dimension: reverse path [285]
+  #285 randomized_littlestone_dimension_littlestone_dimension: reverse path [284]
+  #341 monotonic_covc_dimension_star_number: reverse path [342]
+  #342 star_number_monotonic_covc_dimension_affine: reverse path [341]
+  #448 noclashing_teaching_dimension_log_size: reverse path [173, 52, 292]
+  #469 vc_dimension_projected_noclashing_teaching_dimension_sqrt: reverse path [440]

@@ -1,6 +1,6 @@
 {
   "counts": {
-    "unbounded": 239,
+    "unbounded": 237,
     "strict": 82,
     "equivalence": 17,
     "unclassified": 7,
@@ -2649,42 +2649,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/trivial_concepts",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            963,
-            20
-          ]
-        },
-        {
-          "class": "#classes/trivial_concepts",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            963,
-            153
-          ]
-        },
-        {
-          "class": "#classes/trivial_concepts",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            963,
-            216
-          ]
-        },
-        {
-          "class": "#classes/trivial_concepts",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            963,
-            668
-          ]
-        },
-        {
           "class": "#classes/warmuth_c5",
           "larger_value": "$4$",
           "smaller_value": "$3$",
@@ -2771,15 +2735,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/trivial_concepts",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            963,
-            304
-          ]
-        },
         {
           "class": "#classes/warmuth_c5",
           "larger_value": "$4$",

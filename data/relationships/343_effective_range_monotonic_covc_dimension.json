@@ -5,12 +5,11 @@
   "parameter_1_id": "#parameters/effective_range",
   "parameter_2_id": "#parameters/monotonic_covc_dimension",
   "relationship_type": "larger",
-  "details": "Consequence of the max-over-subfamilies construction.",
-  "witness": "#classes/trivial_concepts",
-  "witness_strength": "unbounded",
-  "status": "established",
-  "proof": "Every subfamily $\\mathcal G$ has $\\mathrm{coVC}(\\mathcal G)\\le\\mathrm E(\\mathcal G)\\le\\mathrm E(\\mathcal H)$. Maximizing over $\\mathcal G\\subseteq\\mathcal H$ proves the bound.",
-  "derivation": "max_subfamilies from #relationships/effective_range_covc_dimension",
-  "references": "\\cite{bousquet2020proper}",
-  "witness_verification": "For #classes/trivial_concepts with n>=4, the established endpoint values or bounds, in parameter order, are $n$ and $2$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs."
+  "details": "The max-over-subfamilies consequence inherited the false unshifted comparison in relationship181. A one-concept class on a nonempty domain has effective range zero and monotonic coVC one. The corrected elementary bound is $\\mathrm{coVC}^*\\le\\max\\{1,\\mathrm E\\}$; no replacement graph edge is introduced.",
+  "witness": "#classes/singletons",
+  "witness_strength": "strict",
+  "status": "refuted",
+  "proof": "Let $\\mathcal H=\\{\\{1\\}\\}$ on the one-point domain. Its only subfamilies are itself and the empty class, with coVC values one and zero respectively. Hence $\\mathrm{coVC}^*(\\mathcal H)=1$, while $\\mathrm E(\\mathcal H)=0$. The old derivation applied the refuted inequality $\\mathrm{coVC}(\\mathcal G)\\le\\mathrm E(\\mathcal G)$ to each subfamily. Using instead $\\mathrm{coVC}(\\mathcal G)\\le\\max\\{1,\\mathrm E(\\mathcal G)\\}$ and effective-range subfamily monotonicity gives the corrected maximum bound.",
+  "witness_verification": "At n=1, effective range is zero and monotonic coVC is one. This refutes the stated inequality by a strict finite endpoint gap; no unbounded-ratio or functional separation is claimed.",
+  "proof_source": "Finite endpoint correction using parameter105 and the counterexample to relationship181. Original rejected derivation preserved at sync/covc_endpoint_corrections/originals/343_effective_range_monotonic_covc_dimension.json."
 }

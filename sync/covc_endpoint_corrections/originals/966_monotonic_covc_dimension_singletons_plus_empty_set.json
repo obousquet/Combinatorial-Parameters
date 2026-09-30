@@ -1,0 +1,11 @@
+{
+  "id": 966,
+  "name": "Monotonic co-VC Dimension of Singletons plus Empty Set",
+  "short_name": "monotonic_covc_dimension_singletons_plus_empty_set",
+  "class_id": "#classes/singletons_plus_empty_set",
+  "parameter_id": "#parameters/monotonic_covc_dimension",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "The singleton subfamily has co-VC dimension $n$, giving the lower bound. The effective range has $n$ coordinates, so no subfamily can have larger co-VC dimension."
+}

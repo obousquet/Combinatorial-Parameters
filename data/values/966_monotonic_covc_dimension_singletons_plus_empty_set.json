@@ -7,5 +7,6 @@
   "value": "$n$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "The singleton subfamily has co-VC dimension $n$, giving the lower bound. The effective range has $n$ coordinates, so no subfamily can have larger co-VC dimension."
+  "proof": "The class contains the subfamily $\\{\\{i\\}:i\\in[n]\\}$ of all singleton concepts. Its absent all-zero trace and its $n$ realized one-coordinate neighbours form a hollow $n$-star, giving a lower bound of $n$ for the subfamily envelope. Every subfamily remains on the same $n$-coordinate domain, so no projected hollow star has more than $n$ coordinates. Thus the envelope is exactly $n$, including $n=1$. This upper bound uses ambient domain size, not the refuted general effective-range comparison.",
+  "details": "Endpoint/proof-dependency correction; original preserved at sync/covc_endpoint_corrections/originals/966_monotonic_covc_dimension_singletons_plus_empty_set.json."
 }

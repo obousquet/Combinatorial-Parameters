@@ -4,9 +4,9 @@
   "short_name": "covc_dimension_trivial_concepts",
   "class_id": "#classes/trivial_concepts",
   "parameter_id": "#parameters/covc_dimension",
-  "value": "$2$",
+  "value": "$0\\ (n=1);\\quad 2\\ (n\\ge2)$",
   "value_class": "omega_1",
-  "details": "",
+  "details": "Exact finite endpoint correction on the stated class domain. Original record preserved at sync/covc_endpoint_corrections/originals/027_covc_dimension_trivial_concepts.json.",
   "status": "established",
-  "proof": "On any two coordinates, the two traces are the empty and full two-point traces. Either of the other two traces is missing while both of its one-coordinate neighbours are present, giving a hollow 2-star. No larger hollow star is possible with only two traces."
+  "proof": "At $n=1$ the class is the full one-dimensional cube, so coVC is zero. For $n\\ge2$, the two constant traces on any two coordinates form the leaves of a hollow two-star. A hollow star of size greater than two would require more than two distinct realized traces, while this class and all its projections have at most two concepts. Hence coVC is two."
 }

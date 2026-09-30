@@ -1,0 +1,1 @@
+LaTeX mapping valid: 108 mapped parameters, 0 documented placeholders, 61 mapped classes, 123 relationship proof labels.

@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>co-VC dimension of Half-intervals</p>
 <p><strong>Class: </strong><a href="classes/halfintervals.html">Half-intervals</a></p>
 <p><strong>Parameter: </strong><a href="parameters/covc_dimension.html">co-VC dimension</a></p>
-<p><strong>Value: </strong>$2$</p>
+<p><strong>Value: </strong>$1\ (n=1,2);\quad 2\ (n\ge3)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>Exact finite endpoint correction on the stated class domain. Original record preserved at sync/covc_endpoint_corrections/originals/023_covc_dimension_halfintervals.json.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>On two ordered coordinates $a<b$, the restricted traces include the empty trace and the full two-point trace while omitting the trace containing only $b$, yielding a hollow 2-star. A chain cannot realize a hollow star of larger dimension.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class is $\{[i]:1\le i\le n\}$, so coordinate1 is constantly one; its missing zero trace gives a hollow one-star. For $n=1$ the domain has one coordinate. For $n=2$, the two full traces are $10,11$ and neither absent trace has both one-coordinate neighbours present, so coVC is one. For $n\ge3$, projection to coordinates2 and3 has traces $00,10,11$, whose absent $01$ is the centre of a hollow two-star. Every projection is a chain under inclusion, and a hollow star of size at least three has two incomparable realized neighbours (among three centre bits, two agree; flipping those two bits gives incomparable neighbours). Hence no larger hollow star occurs.</p></div>
 
 
         </div>

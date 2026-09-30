@@ -1,0 +1,2 @@
+PASS: 274 nonempty classes on at most3coordinates; 144 ample classes; cube formula, coVC bound and nonempty conditioning checked.
+PASS: punctured cubes, singletons and three corrected benchmark families through6coordinates. No general theorem certified by this finite run.

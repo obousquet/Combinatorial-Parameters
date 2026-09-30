@@ -2,7 +2,7 @@
   "id": 42,
   "name": "co-VC dimension",
   "symbol": "\\mathrm{coVC}",
-  "definition": "The **coVC number** $\\mathrm{coVC}(\\mathcal H)$ is the largest $|S|$ for which some $S\\subseteq\\mathcal X$ and $T\\subseteq S$ satisfy $$T\\notin\\mathcal H_{|S}\\quad\\text{and}\\quad T\\mathbin{\\triangle}\\{x\\}\\in\\mathcal H_{|S}\\quad\\text{for every }x\\in S.$$ Such a configuration is a hollow star.",
+  "definition": "For a binary class $\\mathcal H\\subseteq2^{\\mathcal X}$, the **coVC number** $\\mathrm{coVC}(\\mathcal H)$ is the supremum of $|S|$ over finite sets $S\\subseteq\\mathcal X$ for which some $T\\subseteq S$ satisfies $$T\\notin\\mathcal H_{|S}\\quad\\text{and}\\quad T\\mathbin{\\triangle}\\{x\\}\\in\\mathcal H_{|S}\\quad\\text{for every }x\\in S.$$ Such a configuration is a hollow star. The value is zero if there is no such configuration, and $+\\infty$ if the sizes are unbounded. On a finite domain the supremum is a maximum whenever a hollow star exists. In particular, a full cube has value zero, whereas a one-concept class on a nonempty domain has value one.",
   "category": "holes",
   "description": "The maximum dimension of a hollow star in a coordinate projection. It is also called the hollow star number, dual Helly number, or consistency dimension (up to the conventional shift used for Helly numbers).",
   "graph_summary": "Largest projected hollow star: an unrealizable labeling whose every one-coordinate flip is realizable. Also called hollow star number/co-VC dimension.",
@@ -12,12 +12,12 @@
   "c_monotonic": true,
   "doubly_monotonic": false,
   "strictly_monotonic": false,
-  "comments": "Also called the **consistency dimension**: it is the least $k$ such that every nonmember admits a labeled sample of size at most $k$ inconsistent with the class. This is equivalent to the hollow-star/co-VC formulation. For intersection-closed or extremal classes (hence maximum classes), $\\mathrm{coVC}\\leq\\mathrm{VC}+1$; affine halfspaces in $\\mathbb R^d$ with both constants attain $d+2=\\mathrm{VC}+1$.",
+  "comments": "On a finite domain this is also called the **consistency dimension**: the least $k$ such that every labeling outside the class has a labeled restriction of size at most $k$ inconsistent with the class. For intersection-closed or extremal classes (hence maximum classes), $\\mathrm{coVC}\\leq\\mathrm{VC}+1$, without an exception at $\\mathrm{VC}=|\\mathcal X|-1$. Infinite-domain analogues require an explicit finite-sample/supremum and compactness convention; no equivalence for arbitrary infinite inconsistent samples is asserted by this finite-support definition. The conditioning evidence below concerns finite-coordinate conditioning, as automatically holds on a finite domain.",
   "origin_references": "Introduced as co-VC dimension in \\cite{kane2019communication}; the equivalent dual Helly number and hollow-star formulation are developed in \\cite{bousquet2020proper}. The consistency-dimension terminology appears in \\cite{hegedHus1995generalized}.",
   "short_name": "covc_dimension",
   "monotonicity_evidence": {
     "monotonic": {
-      "proof": "For $n\\ge3$, the full cube $\\{0,1\\}^{[n]}$ has $\\mathrm{coVC}=0$, whereas its singleton subfamily has $\\mathrm{coVC}=n$: the all-zero trace is missing and all of its one-coordinate neighbours occur.  Thus passage to a subfamily can increase co-VC dimension.",
+      "proof": "For $n\\ge3$, the full cube $\\{0,1\\}^{[n]}$ has $\\mathrm{coVC}=0$, whereas its subfamily $\\{\\{i\\}:i\\in[n]\\}$ of all singleton concepts has $\\mathrm{coVC}=n$: the all-zero trace is missing and all of its one-coordinate neighbours occur. Thus passage to a subfamily can increase coVC.",
       "kind": "counterexample"
     },
     "p_monotonic": {
@@ -25,7 +25,7 @@
       "kind": "direct_argument"
     },
     "c_monotonic": {
-      "proof": "A hollow star in a conditioned fibre can be lifted by adjoining the fixed labels.  It is then a hollow star in the original class, so conditioning cannot increase co-VC dimension.",
+      "proof": "Let a conditioned fibre, obtained by fixing labels on a finite coordinate set $F$, contain a hollow star on disjoint coordinates $S$ with missing centre $t$. Combine $t$ with the fixed labels on $F$; this sample is inconsistent with the original class. For every $x\\in S$, a hollow-star neighbour is realized by a concept in the fibre, so deleting the constraint at $x$ makes the combined sample consistent. A minimal inconsistent subsample therefore contains every coordinate of $S$. Its one-coordinate deletion witnesses form a hollow star of the original class of size at least $|S|$. Thus conditioning cannot increase coVC. If the conditioned class is empty its coVC is zero, so the conclusion is immediate.",
       "kind": "direct_argument"
     },
     "doubly_monotonic": {

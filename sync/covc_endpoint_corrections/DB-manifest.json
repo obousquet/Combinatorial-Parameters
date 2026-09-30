@@ -1,0 +1,42 @@
+[
+  {
+    "path": "data/parameters/042_covc_dimension.json",
+    "original_sha256": "704ebd7e38ead06cfc05e41e7571b684ccbb7dd5f797416c119eb363bf8e00ba",
+    "new_sha256": "e29aa256db307153a80712ff4eb39273d323aa155b21a4dc04df05227e219a53",
+    "staged_path": "/tmp/consolidation_q2i/db/data/parameters/042_covc_dimension.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/parameters/042_covc_dimension.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/042_covc_dimension.json"
+  },
+  {
+    "path": "data/relationships/181_effective_range_covc_dimension.json",
+    "original_sha256": "c261eeaf33eee163423a0cec5b8dbe8419a0874c0e70efdec1d982ac3a150564",
+    "new_sha256": "8b04f40cae0c332ff18c43eca1afa4b7d7559eb6f5c9f813da21b4f145a17aec",
+    "staged_path": "/tmp/consolidation_q2i/db/data/relationships/181_effective_range_covc_dimension.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/relationships/181_effective_range_covc_dimension.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/181_effective_range_covc_dimension.json"
+  },
+  {
+    "path": "data/values/023_covc_dimension_halfintervals.json",
+    "original_sha256": "8052b847e28d5d7659cd46adffd5636f4ded94007b535fb3a4d399849c679c4e",
+    "new_sha256": "5e88e7dae941406d0456c382d0b4ec366e1576af35272fddb09a82774f7d89a9",
+    "staged_path": "/tmp/consolidation_q2i/db/data/values/023_covc_dimension_halfintervals.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/values/023_covc_dimension_halfintervals.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/023_covc_dimension_halfintervals.json"
+  },
+  {
+    "path": "data/values/025_covc_dimension_singletons_plus_empty_set.json",
+    "original_sha256": "d4b9342466ae3533defcf480038709bd8b1315ef8a7a69a285dff715f89a5d10",
+    "new_sha256": "afc7c6b47bac5a7c694228586f9c2ded95f1d6497b91519de6031eddbd1bde20",
+    "staged_path": "/tmp/consolidation_q2i/db/data/values/025_covc_dimension_singletons_plus_empty_set.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/values/025_covc_dimension_singletons_plus_empty_set.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/025_covc_dimension_singletons_plus_empty_set.json"
+  },
+  {
+    "path": "data/values/027_covc_dimension_trivial_concepts.json",
+    "original_sha256": "696165ba3097aeca9409d1f2f2f0555aec84427349c3434cedaff74224d7594d",
+    "new_sha256": "ef960ec001597fa9912477039370d3165901efc927150ab5275d81b2e5e58c95",
+    "staged_path": "/tmp/consolidation_q2i/db/data/values/027_covc_dimension_trivial_concepts.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/values/027_covc_dimension_trivial_concepts.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/027_covc_dimension_trivial_concepts.json"
+  }
+]

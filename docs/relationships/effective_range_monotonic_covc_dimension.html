@@ -88,17 +88,17 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>Consequence of the max-over-subfamilies construction.</p></div>
-<p><strong>Witness: </strong><a href="classes/trivial_concepts.html">Trivial concepts</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For <a href="classes/trivial_concepts.html">Trivial concepts</a> with n&gt;=4, the established endpoint values or bounds, in parameter order, are $n$ and $2$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs.</p></div>
+<strong>Details:</strong><div class="text-field"><p>The max-over-subfamilies consequence inherited the false unshifted comparison in relationship181. A one-concept class on a nonempty domain has effective range zero and monotonic coVC one. The corrected elementary bound is $\mathrm{coVC}^*\le\max\{1,\mathrm E\}$; no replacement graph edge is introduced.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>At n=1, effective range is zero and monotonic coVC is one. This refutes the stated inequality by a strict finite endpoint gap; no unbounded-ratio or functional separation is claimed.</p></div>
 
 
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every subfamily $\mathcal G$ has $\mathrm{coVC}(\mathcal G)\le\mathrm E(\mathcal G)\le\mathrm E(\mathcal H)$. Maximizing over $\mathcal G\subseteq\mathcal H$ proves the bound.</p></div>
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Let $\mathcal H=\{\{1\}\}$ on the one-point domain. Its only subfamilies are itself and the empty class, with coVC values one and zero respectively. Hence $\mathrm{coVC}^*(\mathcal H)=1$, while $\mathrm E(\mathcal H)=0$. The old derivation applied the refuted inequality $\mathrm{coVC}(\mathcal G)\le\mathrm E(\mathcal G)$ to each subfamily. Using instead $\mathrm{coVC}(\mathcal G)\le\max\{1,\mathrm E(\mathcal G)\}$ and effective-range subfamily monotonicity gives the corrected maximum bound.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Finite endpoint correction using parameter105 and the counterexample to relationship181. Original rejected derivation preserved at sync/covc_endpoint_corrections/originals/343_effective_range_monotonic_covc_dimension.json.</p></div>
 
-<strong>Derivation:</strong><div class="text-field"><p>max_subfamilies from <a href="relationships/effective_range_covc_dimension.html">Effective Range / co-VC Dimension</a></p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
+
 
         </div>
     </div>

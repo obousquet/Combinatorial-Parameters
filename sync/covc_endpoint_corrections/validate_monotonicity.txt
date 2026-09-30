@@ -1,0 +1,2 @@
+Monotonicity metadata valid for 108 parameters.
+No forced monotonicity facts are missing from JSON.

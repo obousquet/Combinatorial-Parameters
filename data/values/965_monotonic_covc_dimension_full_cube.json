@@ -7,5 +7,6 @@
   "value": "$n$",
   "value_class": "omega_n",
   "status": "established",
-  "proof": "The full cube has Star Number $n$, so the star lower bound gives $\\mathrm{coVC}^*\\ge n$. Its effective range has $n$ coordinates, giving the matching upper bound. This contrasts with its ordinary co-VC dimension, which is zero."
+  "proof": "The class contains the subfamily $\\{\\{i\\}:i\\in[n]\\}$ of all singleton concepts. Its absent all-zero trace and its $n$ realized one-coordinate neighbours form a hollow $n$-star, giving a lower bound of $n$ for the subfamily envelope. Every subfamily remains on the same $n$-coordinate domain, so no projected hollow star has more than $n$ coordinates. Thus the envelope is exactly $n$, including $n=1$. This upper bound uses ambient domain size, not the refuted general effective-range comparison.",
+  "details": "Endpoint/proof-dependency correction; original preserved at sync/covc_endpoint_corrections/originals/965_monotonic_covc_dimension_full_cube.json."
 }

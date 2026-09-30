@@ -1,0 +1,34 @@
+[
+  {
+    "path": "data/relationships/343_effective_range_monotonic_covc_dimension.json",
+    "original_sha256": "3c0ebf1039f147ecd7b9b3d0087e59dcffe6e258bd3e39477e8eef8e0194cb1d",
+    "new_sha256": "0ec473e8204156544cf36d123fa19e130f8d9d24c4747449c64d43d10064e957",
+    "staged_path": "/tmp/consolidation_q2i/db/data/relationships/343_effective_range_monotonic_covc_dimension.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/relationships/343_effective_range_monotonic_covc_dimension.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/343_effective_range_monotonic_covc_dimension.json"
+  },
+  {
+    "path": "data/values/963_monotonic_covc_dimension_trivial_concepts.json",
+    "original_sha256": "7041c439c920dc5faf6f3d91cd1c8fe9bb1283a1d2f60f93b83f3759082f58d2",
+    "new_sha256": "9cc44cb92928cf7ea299f96af58304c915064dfa608a82d2d4f1d40d0231d62e",
+    "staged_path": "/tmp/consolidation_q2i/db/data/values/963_monotonic_covc_dimension_trivial_concepts.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/values/963_monotonic_covc_dimension_trivial_concepts.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/963_monotonic_covc_dimension_trivial_concepts.json"
+  },
+  {
+    "path": "data/values/965_monotonic_covc_dimension_full_cube.json",
+    "original_sha256": "5eb3eabd45d97d0ed14560ac732ac4a1120ac3173ecaaf857f8be753aa3603b1",
+    "new_sha256": "3c237b6e10f3fcfb0f4ad15e8be8ab03324af1a7f41fb2b340abe7ee360db0e1",
+    "staged_path": "/tmp/consolidation_q2i/db/data/values/965_monotonic_covc_dimension_full_cube.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/values/965_monotonic_covc_dimension_full_cube.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/965_monotonic_covc_dimension_full_cube.json"
+  },
+  {
+    "path": "data/values/966_monotonic_covc_dimension_singletons_plus_empty_set.json",
+    "original_sha256": "3d2895d956a40917224028ee2ec28bc5e24cbdef9e45814270a85bd635a4ec9d",
+    "new_sha256": "febabf0c23d55f6b63dadbd16a7efd130a9286f77034ec53158eece9a2d08561",
+    "staged_path": "/tmp/consolidation_q2i/db/data/values/966_monotonic_covc_dimension_singletons_plus_empty_set.json",
+    "preserved_original": "/tmp/consolidation_q2i/originals/data/values/966_monotonic_covc_dimension_singletons_plus_empty_set.json",
+    "durable_original_path": "sync/covc_endpoint_corrections/originals/966_monotonic_covc_dimension_singletons_plus_empty_set.json"
+  }
+]

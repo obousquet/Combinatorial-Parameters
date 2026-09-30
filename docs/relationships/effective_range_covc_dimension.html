@@ -88,15 +88,15 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A hollow star can use only coordinates in the effective range.</p></div>
-<p><strong>Witness: </strong><a href="classes/full_cube.html">Full Cube</a></p>
-<p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For <a href="classes/full_cube.html">Full Cube</a> with n&gt;=4, the established endpoint values or bounds, in parameter order, are $n$ and $0$. The first parameter divided by one plus the second tends to infinity. Thus no reverse affine-linear bound holds. See the database-owned endpoint value proofs.</p></div>
+<strong>Details:</strong><div class="text-field"><p>The unshifted bound $\mathrm{coVC}\le\mathrm E$ fails for one-concept classes on a nonempty stated domain: their coVC is one and their effective range is zero. The elementary corrected bound is $\mathrm{coVC}\le\max\{1,\mathrm E\}$; no new graph edge is asserted here.</p></div>
+<p><strong>Witness: </strong><a href="classes/singletons.html">Singletons</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>At $n=1$, the class contains one concept on one coordinate. The first parameter (effective range) is zero, and the second (coVC) is one. This is a strict endpoint counterexample only, not an unbounded-ratio or functional separation.</p></div>
 
 
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>If a projected class contains a hollow $d$-star on S, then for each $x\in S$ the star's realizable neighbours include labelings that differ at x.  Thus every x in S lies in the effective range, so $d\le \mathrm E(\mathcal H)$.  Maximizing d gives $\mathrm{coVC}(\mathcal H)\le\mathrm E(\mathcal H)$.</p></div>
-
+<p><strong>Status:</strong> Refuted</p>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>On the one-point domain take $\mathcal H=\{\{1\}\}$, the $n=1$ singleton class. Its absent zero labeling and present one labeling form a hollow one-star, so coVC is one. All concepts agree at every coordinate, so the effective range is zero. The old proof only works for hollow stars of size at least two: for each star coordinate, two distinct realized neighbours disagree there, so that coordinate belongs to the effective range. Separating the size-zero and size-one cases yields the corrected maximum bound.</p></div>
+<strong>Full Proof:</strong><div class="text-field"><p>Finite endpoint correction; original rejected record preserved at sync/covc_endpoint_corrections/originals/181_effective_range_covc_dimension.json.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#bousquet2020proper">[bousquet2020proper]</a></p></div>
 

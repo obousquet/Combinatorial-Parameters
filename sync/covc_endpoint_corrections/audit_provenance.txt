@@ -1,0 +1,4 @@
+Established values checked: 1147
+Established relationships checked: 475
+Declared monotonicity facts checked: 436
+Facts lacking provenance: 0

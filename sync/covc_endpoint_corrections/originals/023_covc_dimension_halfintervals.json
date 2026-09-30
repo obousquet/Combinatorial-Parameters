@@ -1,0 +1,12 @@
+{
+  "id": 23,
+  "name": "co-VC dimension of Half-intervals",
+  "short_name": "covc_dimension_halfintervals",
+  "class_id": "#classes/halfintervals",
+  "parameter_id": "#parameters/covc_dimension",
+  "value": "$2$",
+  "value_class": "omega_1",
+  "details": "",
+  "status": "established",
+  "proof": "On two ordered coordinates $a<b$, the restricted traces include the empty trace and the full two-point trace while omitting the trace containing only $b$, yielding a hollow 2-star. A chain cannot realize a hollow star of larger dimension."
+}
