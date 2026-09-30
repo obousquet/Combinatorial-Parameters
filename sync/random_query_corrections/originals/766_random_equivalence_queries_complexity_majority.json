@@ -1,0 +1,12 @@
+{
+  "id": 766,
+  "name": "Random Equivalence Queries Complexity of Majority",
+  "short_name": "random_equivalence_queries_complexity_majority",
+  "class_id": "#classes/majority",
+  "parameter_id": "#parameters/random_equivalence_queries_complexity",
+  "value": "$n$",
+  "value_class": "omega_n",
+  "status": "established",
+  "proof": "Random equivalence-query complexity lies between VC dimension and Littlestone dimension. Both established majority-class values are $n$, hence the value is $n$.",
+  "references": "\\cite{angluin2017random,littlestone1988learning}"
+}

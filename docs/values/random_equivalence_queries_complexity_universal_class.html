@@ -82,12 +82,12 @@
         <p><strong>Name: </strong>Random Equivalence Queries Complexity of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Value: </strong>$\le\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Random equivalence-query complexity is at least VC dimension and at most Littlestone dimension. Both established universal-class values equal $\lfloor\log_2 n\rfloor$, proving equality.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every adversarial equivalence-query strategy remains correct under any fixed admissible random-counterexample distribution. Thus $\mathrm Q_{\mathrm{req}}(\mathcal U_n;\mu)\le\mathrm L(\mathcal U_n)=\lfloor\log_2 n\rfloor$, using the existing universal-class Littlestone value. This gives zero for $n=1$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
 
         </div>
     </div>

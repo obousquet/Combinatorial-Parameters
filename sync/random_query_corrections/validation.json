@@ -1,0 +1,146 @@
+[
+  {
+    "command": [
+      "python3",
+      "sync/validate_latex_mapping.py",
+      "--data-dir",
+      "data",
+      "--latex-dir",
+      "/home/ec2-user/latex/CombinatorialParameters"
+    ],
+    "exit_code": 0,
+    "log": "validate_latex_mapping.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/validate_symbols.py",
+      "--data-dir",
+      "data"
+    ],
+    "exit_code": 0,
+    "log": "validate_symbols.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/audit_provenance.py",
+      "--data-dir",
+      "data"
+    ],
+    "exit_code": 0,
+    "log": "audit_provenance.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/audit_witness_strength.py",
+      "--data-dir",
+      "data"
+    ],
+    "exit_code": 0,
+    "log": "audit_witness_strength.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/audit_relationship_duplicates.py",
+      "--data-dir",
+      "data",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "audit_relationship_duplicates.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/validate_monotonicity.py",
+      "--data-dir",
+      "data",
+      "--check"
+    ],
+    "exit_code": 0,
+    "log": "validate_monotonicity.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/audit_monotonicity_evidence.py",
+      "--data-dir",
+      "data"
+    ],
+    "exit_code": 0,
+    "log": "audit_monotonicity_evidence.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/audit_benchmark_consistency.py",
+      "--data-dir",
+      "data",
+      "--fail-on-contradiction"
+    ],
+    "exit_code": 0,
+    "log": "audit_benchmark_consistency.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/verify_random_query_corrections.py"
+    ],
+    "exit_code": 0,
+    "log": "verify_random_query_corrections.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/verify_hasse_reduction.py"
+    ],
+    "exit_code": 0,
+    "log": "verify_hasse_reduction.txt"
+  },
+  {
+    "command": [
+      "python3",
+      "sync/audit_relationship_witnesses.py",
+      "--data-dir",
+      "data",
+      "--check",
+      "--output",
+      "/tmp/consolidation_q2h/relationship_witness_queue.json"
+    ],
+    "exit_code": 0,
+    "log": "audit_relationship_witnesses.txt"
+  },
+  {
+    "section": "parameter-table",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "section": "parameter-definitions",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "section": "class-definitions",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "section": "value-table",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "section": "value-proofs",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "section": "bibliography",
+    "exit_code": 0,
+    "output": ""
+  }
+]

@@ -88,15 +88,15 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes in the random-counterexample equivalence-query model.</p></div>
+<strong>Details:</strong><div class="text-field"><p>The pointwise claim $\mathrm Q_{\mathrm{req}}(\mathcal H;\mu)\ge\mathrm{VC}(\mathcal H)$ is false, even for uniform full-support $\mu$ on a finite domain. Angluin--Dohrn Theorem 25 instead gives an $\Omega(d)$ lower bound with a distribution chosen in its proof; it does not establish this coefficient-one bound for every fixed distribution.</p></div>
+<p><strong>Witness: </strong><a href="classes/coded_singletons.html">Coded Singletons</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Use the coded-singletons class with $n=3$, two code coordinates and three primary coordinates: $(00,000),(01,100),(10,010),(11,001)$. Its VC dimension is two: the two code coordinates are shattered and a class of four concepts cannot shatter three coordinates. Under uniform mass on the five coordinates, first propose the zero concept. Acceptance identifies it; a primary-coordinate counterexample identifies its singleton target, and a code-coordinate counterexample leaves at most two candidates, identifiable with one further proper query. The worst-case expected cost is at most $1+2/3=5/3<2$. Thus even proper random-query cost is below VC, and arbitrary cost is no larger. This is a strict finite gap, not an exact optimum or an unbounded-ratio witness.</p></div>
 
-<p><strong>Witness Strength:</strong> </p>
 
+<p><strong>Status:</strong> Refuted</p>
 
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Angluin and Dohrn prove that the VC dimension lower-bounds the expected number of equivalence queries when each counterexample is sampled at random from the disagreement set (their Theorem 25).</p></div>
-
+<strong>Full Proof:</strong><div class="text-field"><p>Survey Remark rem:random-query-vc-counterexample gives the explicit uniform-distribution witness. Original rejected record: sync/random_query_corrections/originals/025_random_equivalence_queries_complexity_vc_dimension.json.</p></div>
 
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
 

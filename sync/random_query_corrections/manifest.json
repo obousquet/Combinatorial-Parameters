@@ -1,0 +1,68 @@
+[
+  {
+    "path": "data/parameters/050_random_proper_equivalence_queries_complexity.json",
+    "original_sha256": "ccd00ef62eafa1e044dbf96e3576778909d5073c99d86d030e8d391c1e4d1188",
+    "new_sha256": "cbf4e6e88d7324ed5546b3a0906cb4b57b7ed44022aeb361e0e7346f74abdd42",
+    "durable_original_path": "sync/random_query_corrections/originals/050_random_proper_equivalence_queries_complexity.json"
+  },
+  {
+    "path": "data/parameters/051_random_equivalence_queries_complexity.json",
+    "original_sha256": "921019640a6d6defd73e2fbf237d1b24a1c71ba6915ef275f66558b80620bc81",
+    "new_sha256": "865231bc0a1eeff563d9cd354cc7da624d2a34a927e03ef4c1419c8e53baa50a",
+    "durable_original_path": "sync/random_query_corrections/originals/051_random_equivalence_queries_complexity.json"
+  },
+  {
+    "path": "data/relationships/025_random_equivalence_queries_complexity_vc_dimension.json",
+    "original_sha256": "fa9febf2edc3e13af75ef6ab40b3a45556b3ec62373b49d21af7c6005adc73fa",
+    "new_sha256": "3936068125ee02c4643cf7ff941457bf73ba8a9fb52eac799538c32804dcb4ef",
+    "durable_original_path": "sync/random_query_corrections/originals/025_random_equivalence_queries_complexity_vc_dimension.json"
+  },
+  {
+    "path": "data/relationships/133_log_size_random_proper_equivalence_queries_complexity.json",
+    "original_sha256": "b8d2b0a6dde2bfcca71756832f803f7773870bdc7ac131cdb9239665419c1afc",
+    "new_sha256": "145a244a8aeff538deae9cc68326c9f8e2bb51ab2bfa2884f63ef8d88c4152e1",
+    "durable_original_path": "sync/random_query_corrections/originals/133_log_size_random_proper_equivalence_queries_complexity.json"
+  },
+  {
+    "path": "data/values/738_random_equivalence_queries_complexity_full_cube.json",
+    "original_sha256": "93b7fec4719aa903bda47a2a3d0f0e8175ac2b0c298cf58d3c288e441ca04b08",
+    "new_sha256": "d6fc56e5d71650b587c35bcbc936402a37a36241e76cdcac2003990e92c32cc8",
+    "durable_original_path": "sync/random_query_corrections/originals/738_random_equivalence_queries_complexity_full_cube.json"
+  },
+  {
+    "path": "data/values/739_random_proper_equivalence_queries_complexity_full_cube.json",
+    "original_sha256": "b65aa1dec9e26b0bfe6089afd01595d6dbd8bfe4589d26fa55e05d6d97c14044",
+    "new_sha256": "760b380281b7972e7431d091c9208929c85e47d5758af494bb65e41936d8719f",
+    "durable_original_path": "sync/random_query_corrections/originals/739_random_proper_equivalence_queries_complexity_full_cube.json"
+  },
+  {
+    "path": "data/values/756_random_equivalence_queries_complexity_universal_class.json",
+    "original_sha256": "3d090a3e09902dfd27f97d50552f103cce3def4b064e93115ad511426c25dc2d",
+    "new_sha256": "787ec1ee200758491b27dc297ea79603f83c430a675903556b88b48145dcf4c4",
+    "durable_original_path": "sync/random_query_corrections/originals/756_random_equivalence_queries_complexity_universal_class.json"
+  },
+  {
+    "path": "data/values/758_random_equivalence_queries_complexity_addressing.json",
+    "original_sha256": "d2421f034fef222d91f1417e3f0d1ec2a7ef3f004b920685a633fc664ddde508",
+    "new_sha256": "7d616d013bd3b6e0de4ad8c9b428884979e73205bede39d7383fb50af3c6a0d1",
+    "durable_original_path": "sync/random_query_corrections/originals/758_random_equivalence_queries_complexity_addressing.json"
+  },
+  {
+    "path": "data/values/766_random_equivalence_queries_complexity_majority.json",
+    "original_sha256": "0cf40e384f439450210b15af472879d991fed7b2f3e19664cad3b23454b647a4",
+    "new_sha256": "95cb997f73f347b59af69879845d97fdee4093018464a042f0c7d0df70f3e6c3",
+    "durable_original_path": "sync/random_query_corrections/originals/766_random_equivalence_queries_complexity_majority.json"
+  },
+  {
+    "path": "data/values/771_random_proper_equivalence_queries_complexity_addressing.json",
+    "original_sha256": "ace32e345d9c2bdcf5ef940e8cf1ada6c503654770604351cc09506fb464220d",
+    "new_sha256": "45778dde0d2ca8c3f0a0eb724abde9beb39b56bd04dc71d05a4950129af7fb8a",
+    "durable_original_path": "sync/random_query_corrections/originals/771_random_proper_equivalence_queries_complexity_addressing.json"
+  },
+  {
+    "path": "data/values/774_random_proper_equivalence_queries_complexity_majority.json",
+    "original_sha256": "a55c3e9b8350c19f2070e66501201dffb818a1690c53fc6a3ddbca6f5b91b7a4",
+    "new_sha256": "91b4abb6bbfa2917fabb52e845257b7c2878b63ab8572bf37d374f398a2b70fe",
+    "durable_original_path": "sync/random_query_corrections/originals/774_random_proper_equivalence_queries_complexity_majority.json"
+  }
+]

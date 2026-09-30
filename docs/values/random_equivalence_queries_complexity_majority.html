@@ -82,12 +82,12 @@
         <p><strong>Name: </strong>Random Equivalence Queries Complexity of Majority</p>
 <p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Value: </strong>$\le n$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Random equivalence-query complexity lies between VC dimension and Littlestone dimension. Both established majority-class values are $n$, hence the value is $n$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly $2^n$ concepts. The deterministic proper random-counterexample bound gives $\mathrm Q_{\mathrm{rpeq}}(\mathcal H;\mu)\le\log_2|\mathcal H|=n$ for every fixed admissible $\mu$; arbitrary proposals can only improve this upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>

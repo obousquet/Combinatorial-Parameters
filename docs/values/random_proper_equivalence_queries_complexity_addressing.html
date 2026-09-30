@@ -82,12 +82,12 @@
         <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
+<p><strong>Value: </strong>$\le r=\log_2 n\quad(n=2^r,\ r\ge1)$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Random proper equivalence-query complexity is at least random equivalence-query complexity, whose established addressing value is $\lfloor\log n\rfloor$. It is at most log size, also $\lfloor\log n\rfloor$. Hence equality holds.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the stated complete-code subfamily there are exactly $n=2^r$ concepts. The deterministic proper random-counterexample bound is at most $\log_2|\mathcal H|=r$ for every fixed admissible $\mu$. The same bound holds when arbitrary proposals are allowed.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>

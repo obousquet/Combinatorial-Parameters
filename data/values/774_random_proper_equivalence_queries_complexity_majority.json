@@ -4,9 +4,10 @@
   "short_name": "random_proper_equivalence_queries_complexity_majority",
   "class_id": "#classes/majority",
   "parameter_id": "#parameters/random_proper_equivalence_queries_complexity",
-  "value": "$n$",
-  "value_class": "omega_n",
+  "value": "$\\le n$",
   "status": "established",
-  "proof": "Random proper equivalence-query complexity is at least random equivalence-query complexity, whose established majority value is $n$. The established log-size upper bound is also $n$ for this class. Hence the value is $n$.",
-  "references": "\\cite{angluin2017random}"
+  "proof": "The class has exactly $2^n$ concepts. The deterministic proper random-counterexample bound gives $\\mathrm Q_{\\mathrm{rpeq}}(\\mathcal H;\\mu)\\le\\log_2|\\mathcal H|=n$ for every fixed admissible $\\mu$; arbitrary proposals can only improve this upper bound.",
+  "references": "\\cite[Theorem~21]{angluin2017random}",
+  "details": "Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.",
+  "proof_source": "Relationship133 and survey Theorem thm:random-proper-query-log-size. Original exact-value record: sync/random_query_corrections/originals/774_random_proper_equivalence_queries_complexity_majority.json."
 }

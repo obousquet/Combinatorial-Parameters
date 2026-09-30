@@ -1,0 +1,2 @@
+PASS: exact witness costs 1,3/2,3/2,5/3; VC2; proper continuation. Weighted elimination checks: 1538
+Finite checks only; uniform-in-class bound is proved in the survey.

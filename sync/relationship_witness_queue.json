@@ -3,8 +3,8 @@
     "unbounded": 239,
     "strict": 82,
     "equivalence": 17,
-    "missing": 30,
     "unclassified": 7,
+    "missing": 29,
     "incomparable": 103
   },
   "scope": "Every established direct record. Equalities and incomparabilities counted separately.",
@@ -261,18 +261,6 @@
           ]
         }
       ],
-      "review": "Check endpoint proofs and scope before promoting any candidate."
-    },
-    {
-      "id": 25,
-      "short_name": "random_equivalence_queries_complexity_vc_dimension",
-      "category": "missing",
-      "witness": null,
-      "reverse_affine_path": null,
-      "reverse_exact_path": null,
-      "witness_search_if_scopes_match": "no_reverse_bound_found",
-      "unbounded_candidates": [],
-      "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {

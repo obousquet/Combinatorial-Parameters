@@ -4525,12 +4525,12 @@
         <p><strong>Name: </strong>Random Equivalence Queries Complexity of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Value: </strong>$\le n$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The full cube has VC dimension $n$, and the random-counterexample lower bound gives $\mathrm Q_{\mathrm{req}}\geq\mathrm{VC}$. Conversely, every equivalence-query strategy is valid against random counterexamples, so $\mathrm Q_{\mathrm{req}}\leq\mathrm L$; the full cube has Littlestone dimension $n$. Thus both bounds equal $n$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly $2^n$ concepts. The deterministic proper random-counterexample bound gives $\mathrm Q_{\mathrm{rpeq}}(\mathcal H;\mu)\le\log_2|\mathcal H|=n$ for every fixed admissible $\mu$; arbitrary proposals can only improve this upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>
@@ -4542,12 +4542,12 @@
         <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity of Full Cube</p>
 <p><strong>Class: </strong><a href="classes/full_cube.html">Full Cube</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Value: </strong>$\le n$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Proper random equivalence queries are a restriction of random equivalence queries, so $\mathrm Q_{\mathrm{rpeq}}\geq\mathrm Q_{\mathrm{req}}=n$ on the full cube. The established proper random-equivalence upper bound is $\mathrm Q_{\mathrm{rpeq}}\leq\log_2|\mathcal H|$, and the full cube has size $2^n$. Hence $\mathrm Q_{\mathrm{rpeq}}=n$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly $2^n$ concepts. The deterministic proper random-counterexample bound gives $\mathrm Q_{\mathrm{rpeq}}(\mathcal H;\mu)\le\log_2|\mathcal H|=n$ for every fixed admissible $\mu$; arbitrary proposals can only improve this upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>
@@ -4610,12 +4610,12 @@
         <p><strong>Name: </strong>Random Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
+<p><strong>Value: </strong>$\le r=\log_2 n\quad(n=2^r,\ r\ge1)$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Random equivalence-query complexity lies between VC dimension and Littlestone dimension. The established addressing-class values of both bounds are $\lfloor\log n\rfloor$, hence the random equivalence-query value is the same.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the stated complete-code subfamily there are exactly $n=2^r$ concepts. The deterministic proper random-counterexample bound is at most $\log_2|\mathcal H|=r$ for every fixed admissible $\mu$. The same bound holds when arbitrary proposals are allowed.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>
@@ -4936,12 +4936,12 @@
         <p><strong>Name: </strong>Random Equivalence Queries Complexity of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log_2 n\rfloor$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
-
+<p><strong>Value: </strong>$\le\lfloor\log_2 n\rfloor$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Random equivalence-query complexity is at least VC dimension and at most Littlestone dimension. Both established universal-class values equal $\lfloor\log_2 n\rfloor$, proving equality.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>Every adversarial equivalence-query strategy remains correct under any fixed admissible random-counterexample distribution. Thus $\mathrm Q_{\mathrm{req}}(\mathcal U_n;\mu)\le\mathrm L(\mathcal U_n)=\lfloor\log_2 n\rfloor$, using the existing universal-class Littlestone value. This gives zero for $n=1$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
 
         </div>
     </div>
@@ -12348,12 +12348,12 @@
         <p><strong>Name: </strong>Random Equivalence Queries Complexity of Majority</p>
 <p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Value: </strong>$\le n$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Random equivalence-query complexity lies between VC dimension and Littlestone dimension. Both established majority-class values are $n$, hence the value is $n$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a> <a href="bibliography.html#littlestone1988learning">[littlestone1988learning]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly $2^n$ concepts. The deterministic proper random-counterexample bound gives $\mathrm Q_{\mathrm{rpeq}}(\mathcal H;\mu)\le\log_2|\mathcal H|=n$ for every fixed admissible $\mu$; arbitrary proposals can only improve this upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>
@@ -12416,12 +12416,12 @@
         <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity of Addressing</p>
 <p><strong>Class: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$\lfloor\log n\rfloor\quad(n=2^r,\ r\ge1)$</p>
-<p><strong>Order:</strong> $\Omega(\log n)$</p>
-<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. </p>
+<p><strong>Value: </strong>$\le r=\log_2 n\quad(n=2^r,\ r\ge1)$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Scope: complete-code subfamily $n=2^r$, $r\ge1$. The displayed formula is not asserted for arbitrary injective encodings at other n. Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Restrict here to $n=2^r$ with all r-bit words present, so $\lfloor\log_2n\rfloor=\log_2n=r$. Random proper equivalence-query complexity is at least random equivalence-query complexity, whose established addressing value is $\lfloor\log n\rfloor$. It is at most log size, also $\lfloor\log n\rfloor$. Hence equality holds.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>On the stated complete-code subfamily there are exactly $n=2^r$ concepts. The deterministic proper random-counterexample bound is at most $\log_2|\mathcal H|=r$ for every fixed admissible $\mu$. The same bound holds when arbitrary proposals are allowed.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>
@@ -12467,12 +12467,12 @@
         <p><strong>Name: </strong>Random Proper Equivalence Queries Complexity of Majority</p>
 <p><strong>Class: </strong><a href="classes/majority.html">Majority</a></p>
 <p><strong>Parameter: </strong><a href="parameters/random_proper_equivalence_queries_complexity.html">Random Proper Equivalence Queries Complexity</a></p>
-<p><strong>Value: </strong>$n$</p>
-<p><strong>Order:</strong> $\Omega(n)$</p>
-
+<p><strong>Value: </strong>$\le n$</p>
+<p><strong>Order:</strong> </p>
+<p><strong>Details: </strong>Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>Random proper equivalence-query complexity is at least random equivalence-query complexity, whose established majority value is $n$. The established log-size upper bound is also $n$ for this class. Hence the value is $n$.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The class has exactly $2^n$ concepts. The deterministic proper random-counterexample bound gives $\mathrm Q_{\mathrm{rpeq}}(\mathcal H;\mu)\le\log_2|\mathcal H|=n$ for every fixed admissible $\mu$; arbitrary proposals can only improve this upper bound.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>

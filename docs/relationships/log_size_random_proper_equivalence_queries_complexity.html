@@ -88,17 +88,17 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A proper random-counterexample strategy halves the expected version-space size.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For every finite nonempty binary class and fixed known admissible distribution $\mu$, deterministic adaptive proper queries identify the target in expected cost at most $\log_2|\mathcal H|$, counting all queries and requiring no final confirmation once the target is known.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, $\log|\mathcal H|=\log(n+1)$ whereas the proper randomized equivalence-query complexity is 1.</p></div>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons and the empty concept, $\log_2|\mathcal H|=\log_2(n+1)$, whereas proper random-counterexample query complexity is one for every admissible $\mu$, by proposing the empty concept (value404). The first parameter divided by one plus the second tends to infinity.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At each stage, query a hypothesis minimizing its $L_1$ distance to the pointwise average of the current version space.  For every target, a uniformly random counterexample leaves at most half the current hypotheses in expectation.  Induction and Jensen's inequality for the concave logarithm then give expected remaining query cost at most $\log|\mathcal H|$.</p></div>
 
+<strong>Full Proof:</strong><div class="text-field"><p>Survey Theorem thm:random-proper-query-log-size gives the weighted closest-to-mean proof including acceptance and singleton cases. Angluin--Dohrn, The Power of Random Counterexamples, Theorem 21, establishes the same numerical upper bound using Max-Min.</p></div>
 
-
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>

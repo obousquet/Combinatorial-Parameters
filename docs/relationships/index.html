@@ -718,34 +718,6 @@
         </div>
     </div>
     
-    <div class="table-card" id="math-25" style="position:relative;">
-        
-        <h3><a href="relationships/random_equivalence_queries_complexity_vc_dimension.html" class="table-title-link">Random Equivalence Queries Complexity / VC Dimension</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Random Equivalence Queries Complexity / VC Dimension</p>
-<p><strong>Parameter 1: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
-<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
-<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
-
-
-
-
-<p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes in the random-counterexample equivalence-query model.</p></div>
-
-<p><strong>Witness Strength:</strong> </p>
-
-
-
-<p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Angluin and Dohrn prove that the VC dimension lower-bounds the expected number of equivalence queries when each counterexample is sampled at random from the disagreement set (their Theorem 25).</p></div>
-
-
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
-
-        </div>
-    </div>
-    
     <div class="table-card" id="math-26" style="position:relative;">
         
         <h3><a href="relationships/minimum_teaching_set_size_effective_vc_radius.html" class="table-title-link">Minimum Teaching Set Size / Effective VC Radius</a></h3>
@@ -3503,17 +3475,17 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>A proper random-counterexample strategy halves the expected version-space size.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For every finite nonempty binary class and fixed known admissible distribution $\mu$, deterministic adaptive proper queries identify the target in expected cost at most $\log_2|\mathcal H|$, counting all queries and requiring no final confirmation once the target is known.</p></div>
 <p><strong>Witness: </strong><a href="classes/singletons_plus_empty_set.html">Singletons plus empty set</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
-<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons together with the empty concept, $\log|\mathcal H|=\log(n+1)$ whereas the proper randomized equivalence-query complexity is 1.</p></div>
+<strong>Witness Verification:</strong><div class="text-field"><p>For the $n$ singletons and the empty concept, $\log_2|\mathcal H|=\log_2(n+1)$, whereas proper random-counterexample query complexity is one for every admissible $\mu$, by proposing the empty concept (value404). The first parameter divided by one plus the second tends to infinity.</p></div>
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>At each stage, query a hypothesis minimizing its $L_1$ distance to the pointwise average of the current version space.  For every target, a uniformly random counterexample leaves at most half the current hypotheses in expectation.  Induction and Jensen's inequality for the concave logarithm then give expected remaining query cost at most $\log|\mathcal H|$.</p></div>
 
+<strong>Full Proof:</strong><div class="text-field"><p>Survey Theorem thm:random-proper-query-log-size gives the weighted closest-to-mean proof including acceptance and singleton cases. Angluin--Dohrn, The Power of Random Counterexamples, Theorem 21, establishes the same numerical upper bound using Max-Min.</p></div>
 
-
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~21]{angluin2017random}</p></div>
 
         </div>
     </div>
@@ -13562,6 +13534,34 @@
 
 
 
+
+        </div>
+    </div>
+    
+    <div class="table-card" id="math-25" style="position:relative;">
+        
+        <h3><a href="relationships/random_equivalence_queries_complexity_vc_dimension.html" class="table-title-link">Random Equivalence Queries Complexity / VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Random Equivalence Queries Complexity / VC Dimension</p>
+<p><strong>Parameter 1: </strong><a href="parameters/random_equivalence_queries_complexity.html">Random Equivalence Queries Complexity</a></p>
+<p><strong>Parameter 2: </strong><a href="parameters/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Relationship Type:</strong> $P_1\ge P_2$</p>
+
+
+
+
+<p><strong>Variant:</strong> </p>
+<strong>Details:</strong><div class="text-field"><p>The pointwise claim $\mathrm Q_{\mathrm{req}}(\mathcal H;\mu)\ge\mathrm{VC}(\mathcal H)$ is false, even for uniform full-support $\mu$ on a finite domain. Angluin--Dohrn Theorem 25 instead gives an $\Omega(d)$ lower bound with a distribution chosen in its proof; it does not establish this coefficient-one bound for every fixed distribution.</p></div>
+<p><strong>Witness: </strong><a href="classes/coded_singletons.html">Coded Singletons</a></p>
+<p><strong>Witness Strength:</strong> Strict separation</p>
+<strong>Witness Verification:</strong><div class="text-field"><p>Use the coded-singletons class with $n=3$, two code coordinates and three primary coordinates: $(00,000),(01,100),(10,010),(11,001)$. Its VC dimension is two: the two code coordinates are shattered and a class of four concepts cannot shatter three coordinates. Under uniform mass on the five coordinates, first propose the zero concept. Acceptance identifies it; a primary-coordinate counterexample identifies its singleton target, and a code-coordinate counterexample leaves at most two candidates, identifiable with one further proper query. The worst-case expected cost is at most $1+2/3=5/3<2$. Thus even proper random-query cost is below VC, and arbitrary cost is no larger. This is a strict finite gap, not an exact optimum or an unbounded-ratio witness.</p></div>
+
+
+<p><strong>Status:</strong> Refuted</p>
+
+<strong>Full Proof:</strong><div class="text-field"><p>Survey Remark rem:random-query-vc-counterexample gives the explicit uniform-distribution witness. Original rejected record: sync/random_query_corrections/originals/025_random_equivalence_queries_complexity_vc_dimension.json.</p></div>
+
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#angluin2017random">[angluin2017random]</a></p></div>
 
         </div>
     </div>

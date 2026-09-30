@@ -3,10 +3,14 @@
   "parameter_1_id": "#parameters/random_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/vc_dimension",
   "relationship_type": "larger",
-  "details": "For finite concept classes in the random-counterexample equivalence-query model.",
-  "proof": "Angluin and Dohrn prove that the VC dimension lower-bounds the expected number of equivalence queries when each counterexample is sampled at random from the disagreement set (their Theorem 25).",
+  "details": "The pointwise claim $\\mathrm Q_{\\mathrm{req}}(\\mathcal H;\\mu)\\ge\\mathrm{VC}(\\mathcal H)$ is false, even for uniform full-support $\\mu$ on a finite domain. Angluin--Dohrn Theorem 25 instead gives an $\\Omega(d)$ lower bound with a distribution chosen in its proof; it does not establish this coefficient-one bound for every fixed distribution.",
   "references": "\\cite{angluin2017random}",
-  "status": "established",
+  "status": "refuted",
   "short_name": "random_equivalence_queries_complexity_vc_dimension",
-  "name": "Random Equivalence Queries Complexity / VC Dimension"
+  "name": "Random Equivalence Queries Complexity / VC Dimension",
+  "latex_proof_label": "rem:random-query-vc-counterexample",
+  "proof_source": "Survey Remark rem:random-query-vc-counterexample gives the explicit uniform-distribution witness. Original rejected record: sync/random_query_corrections/originals/025_random_equivalence_queries_complexity_vc_dimension.json.",
+  "witness": "#classes/coded_singletons",
+  "witness_strength": "strict",
+  "witness_verification": "Use the coded-singletons class with $n=3$, two code coordinates and three primary coordinates: $(00,000),(01,100),(10,010),(11,001)$. Its VC dimension is two: the two code coordinates are shattered and a class of four concepts cannot shatter three coordinates. Under uniform mass on the five coordinates, first propose the zero concept. Acceptance identifies it; a primary-coordinate counterexample identifies its singleton target, and a code-coordinate counterexample leaves at most two candidates, identifiable with one further proper query. The worst-case expected cost is at most $1+2/3=5/3<2$. Thus even proper random-query cost is below VC, and arbitrary cost is no larger. This is a strict finite gap, not an exact optimum or an unbounded-ratio witness."
 }

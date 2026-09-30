@@ -4,9 +4,10 @@
   "short_name": "random_proper_equivalence_queries_complexity_full_cube",
   "class_id": "#classes/full_cube",
   "parameter_id": "#parameters/random_proper_equivalence_queries_complexity",
-  "value": "$n$",
-  "value_class": "omega_n",
+  "value": "$\\le n$",
   "status": "established",
-  "proof": "Proper random equivalence queries are a restriction of random equivalence queries, so $\\mathrm Q_{\\mathrm{rpeq}}\\geq\\mathrm Q_{\\mathrm{req}}=n$ on the full cube. The established proper random-equivalence upper bound is $\\mathrm Q_{\\mathrm{rpeq}}\\leq\\log_2|\\mathcal H|$, and the full cube has size $2^n$. Hence $\\mathrm Q_{\\mathrm{rpeq}}=n$.",
-  "references": "\\cite{angluin2017random}"
+  "proof": "The class has exactly $2^n$ concepts. The deterministic proper random-counterexample bound gives $\\mathrm Q_{\\mathrm{rpeq}}(\\mathcal H;\\mu)\\le\\log_2|\\mathcal H|=n$ for every fixed admissible $\\mu$; arbitrary proposals can only improve this upper bound.",
+  "references": "\\cite[Theorem~21]{angluin2017random}",
+  "details": "Upper bound only, for every fixed admissible counterexample distribution. The earlier exact equality used the unsupported pointwise VC lower bound; that equality and its asymptotic lower classification are withdrawn, not asserted false for every distribution.",
+  "proof_source": "Relationship133 and survey Theorem thm:random-proper-query-log-size. Original exact-value record: sync/random_query_corrections/originals/739_random_proper_equivalence_queries_complexity_full_cube.json."
 }
