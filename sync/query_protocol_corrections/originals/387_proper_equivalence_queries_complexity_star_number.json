@@ -1,0 +1,15 @@
+{
+  "id": 387,
+  "name": "Proper Equivalence Queries Complexity / Star Number",
+  "short_name": "proper_equivalence_queries_complexity_star_number",
+  "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
+  "parameter_2_id": "#parameters/star_number",
+  "relationship_type": "larger",
+  "details": "For every finite binary concept class, $\\mathrm{Q}_{\\mathrm{peq}}(\\mathcal H)\\geq\\mathrm S(\\mathcal H)$.",
+  "status": "established",
+  "proof": "Proper equivalence-query complexity is projection-monotone: a projected learner simulates the original learner using a lift of the projected target, and any projected counterexample is a valid counterexample to the original query.  Applying $\\mathrm{Q}_{\\mathrm{peq}}\\geq\\mathrm{TD}$ to every coordinate projection gives $\\mathrm{Q}_{\\mathrm{peq}}(\\mathcal H)\\geq\\max_{T\\subseteq X}\\mathrm{TD}(\\mathcal H_{|T})=\\mathrm{TS}_{\\max}^p(\\mathcal H)$.  The latter parameter equals the star number.",
+  "proof_source": "Database-owned proper-equivalence-query/teaching argument, projection-monotonicity evidence for Proper Equivalence Queries Complexity, and the Star Number / Maximum Projected Teaching Set Size equality.",
+  "witness": "#classes/halfintervals",
+  "witness_strength": "unbounded",
+  "witness_verification": "For half-intervals, proper equivalence-query complexity is $\\log_2 n$, whereas the star number (equivalently maximum projected teaching-set size) is $2$."
+}

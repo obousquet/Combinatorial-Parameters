@@ -1,0 +1,2 @@
+Declared monotonicity facts: 436
+Facts lacking per-property evidence: 0

@@ -88,14 +88,14 @@
 
 
 <p><strong>Variant:</strong> </p>
-<strong>Details:</strong><div class="text-field"><p>For finite concept classes.</p></div>
+<strong>Details:</strong><div class="text-field"><p>For finite concept classes and every fixed admissible counterexample distribution $\mu$.</p></div>
 <p><strong>Witness: </strong><a href="classes/addressing.html">Addressing</a></p>
 <p><strong>Witness Strength:</strong> Unbounded gap</p>
 
 
 
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Every deterministic proper equivalence-query algorithm is a randomized one with degenerate randomness.  Allowing randomization cannot increase the optimum, so deterministic complexity is at least randomized complexity.</p></div>
+<strong>Proof or Proof Sketch:</strong><div class="text-field"><p>Fix $\mu$ as in the definition of random proper equivalence-query complexity. A proper equivalence-query strategy that identifies every target against every legal adversarial counterexample remains correct when each failed proposal receives a counterexample sampled from $\mu$ conditioned on its disagreement with the target. For each target, its expected query count under this law is at most its adversarial worst-case query count. Minimizing over strategies gives $\mathrm Q_{\mathrm{rpeq}}(\mathcal H;\mu)\le\mathrm Q_{\mathrm{peq}}(\mathcal H)$. This comparison concerns random counterexamples, not an enlargement of the learner by internal randomization.</p></div>
 
 
 

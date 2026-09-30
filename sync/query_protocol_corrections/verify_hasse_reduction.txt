@@ -1,0 +1,1 @@
+Hasse/affine transitive-reduction checks passed; #449 replaced by [450, 439].

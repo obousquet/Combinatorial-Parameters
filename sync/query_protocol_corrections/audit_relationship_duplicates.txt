@@ -1,0 +1,2 @@
+Direct relationship statements checked: 513
+Duplicate statements: 0

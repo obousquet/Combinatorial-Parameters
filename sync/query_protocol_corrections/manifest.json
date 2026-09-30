@@ -1,0 +1,20 @@
+[
+  {
+    "path": "data/relationships/134_proper_equivalence_queries_complexity_random_proper_equivalence_queries_complexity.json",
+    "original_sha256": "2e4785f4ae6cd6094f52ac11d38109dde9bed31506d6d2b6ea3e87066d18ed5a",
+    "new_sha256": "d7a1a32ee93e2348f476f4ca355468787cde20ad75f220557f5efae8b71a4cc7",
+    "durable_original_path": "sync/query_protocol_corrections/originals/134_proper_equivalence_queries_complexity_random_proper_equivalence_queries_complexity.json"
+  },
+  {
+    "path": "data/relationships/386_proper_equivalence_queries_complexity_teaching_dimension.json",
+    "original_sha256": "00859e45d2b8978118c4a0fcd1807de360cdb314a483fb459f2508938f464bcd",
+    "new_sha256": "4de6f74a9e5b246401cd90febfb175ba0cb7825a996e2beffd7cce3cae699f47",
+    "durable_original_path": "sync/query_protocol_corrections/originals/386_proper_equivalence_queries_complexity_teaching_dimension.json"
+  },
+  {
+    "path": "data/relationships/387_proper_equivalence_queries_complexity_star_number.json",
+    "original_sha256": "a435c1c387288b1b3ab8f4efd4b6cb01e8aa63f7963a7c5a3516261262f815b8",
+    "new_sha256": "997a5620694169664e9388fcefc35c3dbe7e3374f5eb738743efe3f181c9c04e",
+    "durable_original_path": "sync/query_protocol_corrections/originals/387_proper_equivalence_queries_complexity_star_number.json"
+  }
+]

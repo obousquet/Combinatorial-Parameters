@@ -5,11 +5,11 @@
   "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/star_number",
   "relationship_type": "larger",
-  "details": "For every finite binary concept class, $\\mathrm{Q}_{\\mathrm{peq}}(\\mathcal H)\\geq\\mathrm S(\\mathcal H)$.",
-  "status": "established",
-  "proof": "Proper equivalence-query complexity is projection-monotone: a projected learner simulates the original learner using a lift of the projected target, and any projected counterexample is a valid counterexample to the original query.  Applying $\\mathrm{Q}_{\\mathrm{peq}}\\geq\\mathrm{TD}$ to every coordinate projection gives $\\mathrm{Q}_{\\mathrm{peq}}(\\mathcal H)\\geq\\max_{T\\subseteq X}\\mathrm{TD}(\\mathcal H_{|T})=\\mathrm{TS}_{\\max}^p(\\mathcal H)$.  The latter parameter equals the star number.",
-  "proof_source": "Database-owned proper-equivalence-query/teaching argument, projection-monotonicity evidence for Proper Equivalence Queries Complexity, and the Star Number / Maximum Projected Teaching Set Size equality.",
-  "witness": "#classes/halfintervals",
+  "details": "False for finite binary classes with identification stopping and no final confirmation query. On singletons plus the empty concept on $n$ coordinates, proper equivalence-query complexity is one while star number is $n$. Thus the asserted domination fails for every $n\\ge2$, and no finite-valued function of proper equivalence-query complexity bounds star number on all finite classes.",
+  "status": "refuted",
+  "proof_source": "Survey Remark rem:proper-query-teaching-separation gives the full witness proof; database values 112 and 18 give its endpoints. Parameter 25 specifies stopping and acceptance. The original rejected record is preserved at sync/query_protocol_corrections/originals/387_proper_equivalence_queries_complexity_star_number.json.",
+  "witness": "#classes/singletons_plus_empty_set",
   "witness_strength": "unbounded",
-  "witness_verification": "For half-intervals, proper equivalence-query complexity is $\\log_2 n$, whereas the star number (equivalently maximum projected teaching-set size) is $2$."
+  "witness_verification": "For the same finite class on $n\\ge2$ coordinates, parameter 1 is $1$ and parameter 2 is $n$ (values 112 and 18). Parameter 2 divided by one plus parameter 1 tends to infinity, refuting the stated direction and every same-direction affine bound. The first parameter stays fixed, so these witnesses also refute any same-direction finite-valued functional bound.",
+  "latex_proof_label": "rem:proper-query-teaching-separation"
 }

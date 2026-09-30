@@ -1,0 +1,143 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "sync/validate_latex_mapping.py",
+        "--data-dir",
+        "data",
+        "--latex-dir",
+        "/home/ec2-user/latex/CombinatorialParameters"
+      ],
+      "exit_code": 0,
+      "log": "validate_latex_mapping.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/validate_symbols.py",
+        "--data-dir",
+        "data"
+      ],
+      "exit_code": 0,
+      "log": "validate_symbols.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/audit_provenance.py",
+        "--data-dir",
+        "data"
+      ],
+      "exit_code": 0,
+      "log": "audit_provenance.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/audit_witness_strength.py",
+        "--data-dir",
+        "data"
+      ],
+      "exit_code": 0,
+      "log": "audit_witness_strength.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/audit_relationship_duplicates.py",
+        "--data-dir",
+        "data",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "audit_relationship_duplicates.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/validate_monotonicity.py",
+        "--data-dir",
+        "data",
+        "--check"
+      ],
+      "exit_code": 0,
+      "log": "validate_monotonicity.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/audit_monotonicity_evidence.py",
+        "--data-dir",
+        "data"
+      ],
+      "exit_code": 0,
+      "log": "audit_monotonicity_evidence.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/audit_benchmark_consistency.py",
+        "--data-dir",
+        "data",
+        "--fail-on-contradiction"
+      ],
+      "exit_code": 0,
+      "log": "audit_benchmark_consistency.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/verify_query_protocol_corrections.py"
+      ],
+      "exit_code": 0,
+      "log": "verify_query_protocol_corrections.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/verify_hasse_reduction.py"
+      ],
+      "exit_code": 0,
+      "log": "verify_hasse_reduction.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "sync/audit_relationship_witnesses.py",
+        "--data-dir",
+        "data",
+        "--check",
+        "--output",
+        "/tmp/consolidation_q2g/relationship_witness_queue.json"
+      ],
+      "exit_code": 0,
+      "log": "audit_relationship_witnesses.txt"
+    }
+  ],
+  "scope_limits": "No missing provenance or property evidence; exact benchmark scan skips symbolic formulae. Existing strict-witness review item and95 unspecified incomparability scopes remain. No broad mathematical certification.",
+  "graph": {
+    "generated_files": 1844,
+    "changed_files": 19,
+    "graph_check": {
+      "edge_cards": 210,
+      "refuted_edges_absent": [
+        386,
+        387
+      ],
+      "history": "Refuted records retained in node cards and witness-class bibliographic links; these are not active edges.",
+      "headless_browser": "Graph rendered and screenshot inspected; popup interactions not exercised."
+    },
+    "ordering_only_changed_files": [
+      "classes/index.html",
+      "parameters/threshold_dimension.html",
+      "parameters/path_dimension.html",
+      "parameters/littlestone_dimension.html",
+      "parameters/hitting_size.html",
+      "parameters/covc_dimension.html",
+      "parameters/radon_number.html",
+      "values/index.html"
+    ]
+  },
+  "finite_witness": "n=2..5, membership2->3, proper subclass1->2, singleton0; not general proof"
+}

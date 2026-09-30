@@ -1,0 +1,1 @@
+PASS: center-plus-singletons n=2..5 gives Qpeq=1, TD=star=n; membership projection 2->3; proper subclass 1->2; singleton cost0. No global classification certified.

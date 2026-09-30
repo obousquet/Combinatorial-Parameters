@@ -1,0 +1,5 @@
+Declared strict witnesses: 96 (95 supported by endpoint checks or recorded certificates; 1 need review)
+Declared unbounded witnesses: 255 (255 supported by endpoint checks or recorded certificates; 0 need review)
+Declared incomparable pairs: 103 (103 with both directional witnesses recorded; 0 incomplete)
+  Explicit scopes: 8 affine, 0 functional; 95 legacy unspecified (not automatically classified)
+Unclassified witnesses: 7 (0 mechanically classifiable candidates)

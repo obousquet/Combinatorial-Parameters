@@ -1,6 +1,6 @@
 {
   "counts": {
-    "unbounded": 243,
+    "unbounded": 239,
     "strict": 82,
     "equivalence": 17,
     "missing": 30,
@@ -22,15 +22,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            352,
-            65
-          ]
-        },
         {
           "class": "#classes/three_code_class",
           "larger_value": "$1$",
@@ -71,15 +62,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            346,
-            65
-          ]
-        },
         {
           "class": "#classes/three_code_class",
           "larger_value": "$1$",
@@ -368,20 +350,12 @@
       "short_name": "selfdirected_queries_complexity_littlestone_dimension",
       "category": "missing",
       "witness": null,
-      "reverse_affine_path": [
-        87,
-        88,
-        89
-      ],
-      "reverse_exact_path": [
-        87,
-        88,
-        89
-      ],
-      "witness_search_if_scopes_match": "neither_strict_nor_unbounded",
+      "reverse_affine_path": null,
+      "reverse_exact_path": null,
+      "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [],
-      "review": "Check reverse-path scope; if compatible, even a strict endpoint gap is impossible. Coefficient sharpness is a separate question, not an endpoint-separation witness."
+      "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
       "id": 42,
@@ -400,15 +374,6 @@
           "value_ids": [
             926,
             920
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            197,
-            190
           ]
         },
         {
@@ -538,15 +503,6 @@
           ]
         },
         {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            172,
-            194
-          ]
-        },
-        {
           "class": "#classes/three_code_class",
           "larger_value": "$1$",
           "smaller_value": "$0$",
@@ -598,15 +554,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            171,
-            192
-          ]
-        },
         {
           "class": "#classes/three_code_class",
           "larger_value": "$1$",
@@ -903,15 +850,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            171,
-            193
-          ]
-        },
         {
           "class": "#classes/three_code_class",
           "larger_value": "$1$",
@@ -1227,15 +1165,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/singletons_plus_empty_set",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            135,
-            98
-          ]
-        },
-        {
           "class": "#classes/warmuth_c5",
           "larger_value": "$4$",
           "smaller_value": "$2$",
@@ -1297,15 +1226,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            147,
-            35
-          ]
-        },
         {
           "class": "#classes/singletons_plus_empty_set",
           "larger_value": "$2$",
@@ -1608,15 +1528,6 @@
           ]
         },
         {
-          "class": "#classes/singletons",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            147,
-            148
-          ]
-        },
-        {
           "class": "#classes/singletons_plus_empty_set",
           "larger_value": "$2$",
           "smaller_value": "$1$",
@@ -1732,15 +1643,6 @@
       "unbounded_candidates": [],
       "strict_candidates": [
         {
-          "class": "#classes/singletons",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            478,
-            388
-          ]
-        },
-        {
           "class": "#classes/three_code_class",
           "larger_value": "$2$",
           "smaller_value": "$1$",
@@ -1762,15 +1664,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$2$",
-          "smaller_value": "$1$",
-          "value_ids": [
-            478,
-            477
-          ]
-        },
         {
           "class": "#classes/three_code_class",
           "larger_value": "$2$",
@@ -1918,33 +1811,6 @@
           ]
         },
         {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            53,
-            42
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            166,
-            42
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            235,
-            42
-          ]
-        },
-        {
           "class": "#classes/three_code_class",
           "larger_value": "$1$",
           "smaller_value": "$0$",
@@ -2072,15 +1938,6 @@
           "value_ids": [
             917,
             920
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            51,
-            190
           ]
         },
         {
@@ -2275,6 +2132,15 @@
           "value_ids": [
             599,
             505
+          ]
+        },
+        {
+          "class": "#classes/singletons",
+          "larger_value": "$2$",
+          "smaller_value": "$1$",
+          "value_ids": [
+            643,
+            504
           ]
         },
         {
@@ -3194,24 +3060,6 @@
             1059,
             1058
           ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            1057,
-            194
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            1063,
-            194
-          ]
         }
       ],
       "review": "Check endpoint proofs and scope before promoting any candidate."
@@ -3262,33 +3110,6 @@
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
       "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            11,
-            191
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            296,
-            191
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            700,
-            191
-          ]
-        },
         {
           "class": "#classes/three_code_class",
           "larger_value": "$1$",
@@ -3431,17 +3252,7 @@
       "reverse_exact_path": null,
       "witness_search_if_scopes_match": "no_reverse_bound_found",
       "unbounded_candidates": [],
-      "strict_candidates": [
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            363,
-            194
-          ]
-        }
-      ],
+      "strict_candidates": [],
       "review": "Check endpoint proofs and scope before promoting any candidate."
     },
     {
@@ -3461,15 +3272,6 @@
           "value_ids": [
             903,
             922
-          ]
-        },
-        {
-          "class": "#classes/singletons",
-          "larger_value": "$1$",
-          "smaller_value": "$0$",
-          "value_ids": [
-            889,
-            193
           ]
         },
         {

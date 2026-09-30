@@ -5,10 +5,11 @@
   "parameter_1_id": "#parameters/proper_equivalence_queries_complexity",
   "parameter_2_id": "#parameters/teaching_dimension",
   "relationship_type": "larger",
-  "details": "For every finite binary concept class, $\\mathrm{Q}_{\\mathrm{peq}}(\\mathcal H)\\geq\\mathrm{TD}(\\mathcal H)$.",
-  "status": "established",
-  "proof": "Fix a target $h$ and run an optimal proper equivalence-query learner against any legal counterexample choices.  Record each returned counterexample as its labeled example $(x,h(x))$.  Any $g$ agreeing with all recorded labels admits exactly the same transcript: each recorded $x$ still refutes the corresponding query for $g$.  The learner therefore outputs $h$ on that transcript also when the target is $g$, so correctness forces $g=h$.  The recorded examples are a teaching set for $h$, of size at most the query bound.  Maximizing over $h$ gives $\\mathrm{TD}\\leq\\mathrm{Q}_{\\mathrm{peq}}$.",
-  "witness": "#classes/halfintervals",
+  "details": "False for finite binary classes with identification stopping and no final confirmation query. On singletons plus the empty concept on $n$ coordinates, proper equivalence-query complexity is one while teaching dimension is $n$. Thus the asserted domination fails for every $n\\ge2$, and no finite-valued function of proper equivalence-query complexity bounds teaching dimension on all finite classes.",
+  "status": "refuted",
+  "witness": "#classes/singletons_plus_empty_set",
   "witness_strength": "unbounded",
-  "witness_verification": "For half-intervals, proper equivalence-query complexity is $\\log_2 n$, while teaching dimension is $2$ for $n\\geq3$."
+  "witness_verification": "For the same finite class on $n\\ge2$ coordinates, parameter 1 is $1$ and parameter 2 is $n$ (values 112 and 160). Parameter 2 divided by one plus parameter 1 tends to infinity, refuting the stated direction and every same-direction affine bound. The first parameter stays fixed, so these witnesses also refute any same-direction finite-valued functional bound.",
+  "proof_source": "Survey Remark rem:proper-query-teaching-separation gives the full witness proof; database values 112 and 160 give its endpoints. Parameter 25 specifies stopping and acceptance. The original rejected record is preserved at sync/query_protocol_corrections/originals/386_proper_equivalence_queries_complexity_teaching_dimension.json.",
+  "latex_proof_label": "rem:proper-query-teaching-separation"
 }
