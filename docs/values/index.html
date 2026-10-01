@@ -11039,11 +11039,11 @@
         <p><strong>Name: </strong>Teaching Dimension of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/teaching_dimension.html">Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad1\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+<p><strong>Details: </strong>For every n>=1. This makes the previously stated n>=2 scope explicit in the displayed value and adds the singleton endpoint.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For each target $u_i$, the single labeled example $(\{i\},1)$ excludes every $u_j$ with j different from i. Since the class has at least two hypotheses, no empty sample identifies a target. Thus every target has minimum teaching-set size one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The universal class $\mathcal U_n=\{u_i:i\in[n]\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\ge2$, the labeled instance $(\{i\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Taking the maximum over targets gives teaching dimension.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a> <a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a></p></div>
 
         </div>
@@ -11056,11 +11056,11 @@
         <p><strong>Name: </strong>Minimum Teaching Set Size of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/minimum_teaching_set_size.html">Minimum Teaching Set Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad1\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+<p><strong>Details: </strong>For every n>=1. This makes the previously stated n>=2 scope explicit in the displayed value and adds the singleton endpoint.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The one-point positive sample $(\{i\},1)$ teaches each $u_i$, because no other $u_j$ is positive at the domain point $\{i\}$. No target can be taught by the empty sample in a non-singleton class. Hence the minimum attained teaching-set size is one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The universal class $\mathcal U_n=\{u_i:i\in[n]\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\ge2$, the labeled instance $(\{i\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Taking the minimum over targets gives minimum teaching-set size.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a> <a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a></p></div>
 
         </div>
@@ -11073,11 +11073,11 @@
         <p><strong>Name: </strong>Maximum Teaching Set Size of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/maximum_teaching_set_size.html">Maximum Teaching Set Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad1\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+<p><strong>Details: </strong>For every n>=1. This makes the previously stated n>=2 scope explicit in the displayed value and adds the singleton endpoint.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For every i, $(\{i\},1)$ is a teaching sample for $u_i$, while no empty sample distinguishes it from the other universal hypotheses. Thus every target has teaching-set size exactly one, and so does their maximum.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The universal class $\mathcal U_n=\{u_i:i\in[n]\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\ge2$, the labeled instance $(\{i\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Taking the maximum over targets gives maximum teaching-set size.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a> <a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a></p></div>
 
         </div>
@@ -11923,11 +11923,11 @@
         <p><strong>Name: </strong>Relative Hitting Size of Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/relative_hitting_size.html">Relative Hitting Size</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad1\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-<p><strong>Details: </strong>For $n\geq2$.</p>
+<p><strong>Details: </strong>For every n>=1. This makes the previously stated n>=2 scope explicit in the displayed value and adds the singleton endpoint.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>For finite concept classes, relative hitting size equals teaching dimension. The universal class has teaching dimension one: $(\{i\},1)$ uniquely identifies each target $u_i$.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The universal class $\mathcal U_n=\{u_i:i\in[n]\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\ge2$, the labeled instance $(\{i\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Relative hitting size equals ordinary teaching dimension: a teaching set for h is exactly a coordinate set meeting every nonempty symmetric difference h triangle g. Hence it has the same values.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a> <a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a></p></div>
 
         </div>
@@ -14337,11 +14337,11 @@
         <p><strong>Name: </strong>Average Teaching Dimension of the Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad1\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For every n>=1. The singleton endpoint is zero; the earlier unqualified constant-one value omitted this case.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established minimum teaching-set size and teaching dimension of the universal class are both one. Hence every individual minimum teaching-set size equals one, giving average teaching dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The universal class $\mathcal U_n=\{u_i:i\in[n]\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\ge2$, the labeled instance $(\{i\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Averaging these individual minimum teaching-set sizes gives average teaching dimension.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a> <a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a></p></div>
 
         </div>

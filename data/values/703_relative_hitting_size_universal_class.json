@@ -4,10 +4,10 @@
   "short_name": "relative_hitting_size_universal_class",
   "class_id": "#classes/universal_class",
   "parameter_id": "#parameters/relative_hitting_size",
-  "value": "$1$",
+  "value": "$0\\ (n=1);\\quad1\\ (n\\ge2)$",
   "value_class": "omega_1",
-  "details": "For $n\\geq2$.",
+  "details": "For every n>=1. This makes the previously stated n>=2 scope explicit in the displayed value and adds the singleton endpoint.",
   "status": "established",
-  "proof": "For finite concept classes, relative hitting size equals teaching dimension. The universal class has teaching dimension one: $(\\{i\\},1)$ uniquely identifies each target $u_i$.",
+  "proof": "The universal class $\\mathcal U_n=\\{u_i:i\\in[n]\\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\\ge2$, the labeled instance $(\\{i\\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Relative hitting size equals ordinary teaching dimension: a teaching set for h is exactly a coordinate set meeting every nonempty symmetric difference h triangle g. Hence it has the same values.",
   "references": "\\cite{goldman1995complexity,shinohara1991teachability}"
 }

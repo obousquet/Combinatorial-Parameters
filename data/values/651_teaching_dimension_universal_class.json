@@ -4,10 +4,10 @@
   "short_name": "teaching_dimension_universal_class",
   "class_id": "#classes/universal_class",
   "parameter_id": "#parameters/teaching_dimension",
-  "value": "$1$",
+  "value": "$0\\ (n=1);\\quad1\\ (n\\ge2)$",
   "value_class": "omega_1",
-  "details": "For $n\\geq2$.",
+  "details": "For every n>=1. This makes the previously stated n>=2 scope explicit in the displayed value and adds the singleton endpoint.",
   "status": "established",
-  "proof": "For each target $u_i$, the single labeled example $(\\{i\\},1)$ excludes every $u_j$ with j different from i. Since the class has at least two hypotheses, no empty sample identifies a target. Thus every target has minimum teaching-set size one.",
+  "proof": "The universal class $\\mathcal U_n=\\{u_i:i\\in[n]\\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\\ge2$, the labeled instance $(\\{i\\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Taking the maximum over targets gives teaching dimension.",
   "references": "\\cite{shinohara1991teachability,goldman1995complexity}"
 }

@@ -82,11 +82,11 @@
         <p><strong>Name: </strong>Average Teaching Dimension of the Universal Class</p>
 <p><strong>Class: </strong><a href="classes/universal_class.html">Universal Class</a></p>
 <p><strong>Parameter: </strong><a href="parameters/average_teaching_dimension.html">Average Teaching Dimension</a></p>
-<p><strong>Value: </strong>$1$</p>
+<p><strong>Value: </strong>$0\ (n=1);\quad1\ (n\ge2)$</p>
 <p><strong>Order:</strong> $\Omega(1)$</p>
-
+<p><strong>Details: </strong>For every n>=1. The singleton endpoint is zero; the earlier unqualified constant-one value omitted this case.</p>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof or Derivation:</strong><div class="text-field"><p>The established minimum teaching-set size and teaching dimension of the universal class are both one. Hence every individual minimum teaching-set size equals one, giving average teaching dimension one.</p></div>
+<strong>Proof or Derivation:</strong><div class="text-field"><p>The universal class $\mathcal U_n=\{u_i:i\in[n]\}$ on domain $2^{[n]}$ has $u_i(A)=1$ exactly when $i\in A$. At $n=1$ it contains one concept, which is uniquely identified by the empty sample, so every individual minimum teaching-set size is zero. For $n\ge2$, the labeled instance $(\{i\},1)$ uniquely identifies $u_i$, while the empty sample identifies no target in a class with at least two concepts. Thus every individual minimum teaching-set size is one. Averaging these individual minimum teaching-set sizes gives average teaching dimension.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#shinohara1991teachability">[shinohara1991teachability]</a> <a href="bibliography.html#goldman1995complexity">[goldman1995complexity]</a></p></div>
 
         </div>

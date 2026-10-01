@@ -1,0 +1,17 @@
+{
+  "scope": "five universal-class teaching values: four scope clarifications, one missing singleton endpoint correction",
+  "checks": {
+    "site_generation": "passed",
+    "symbols": "169 records passed",
+    "monotonicity": "108 parameters passed",
+    "monotonicity_consequences": "passed",
+    "provenance": "1147 values,475 relationships,436 properties;0 missing",
+    "benchmark": "1124 exact comparisons;0 contradictions (piecewise formulas not all numerically certified by this validator)",
+    "duplicate_relationships": "513 statements;0 duplicates",
+    "latex_mapping": "108 parameters,61 classes,123 prooflabels passed"
+  },
+  "docs_review": "Expected five value pages, five parameter pages, index rows and graph data changes; explicit0 n1/1 n>=2 and proof text checked in HTML.",
+  "visual_review": "Firefox headless screenshot failed SWGL framebuffer and was stopped; no screenshot produced or visual acceptance claimed.",
+  "mathematical_review": "INDEPENDENT_REVIEW.md pins all five new record hashes; direct proof handles all n>=1.",
+  "manifest_sha256": "7fd7174627a7233a1d60fba96a1ada2433c57b22c44d1a3097234e6b5df68420"
+}

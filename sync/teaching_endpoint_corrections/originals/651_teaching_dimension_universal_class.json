@@ -1,0 +1,13 @@
+{
+  "id": 651,
+  "name": "Teaching Dimension of Universal Class",
+  "short_name": "teaching_dimension_universal_class",
+  "class_id": "#classes/universal_class",
+  "parameter_id": "#parameters/teaching_dimension",
+  "value": "$1$",
+  "value_class": "omega_1",
+  "details": "For $n\\geq2$.",
+  "status": "established",
+  "proof": "For each target $u_i$, the single labeled example $(\\{i\\},1)$ excludes every $u_j$ with j different from i. Since the class has at least two hypotheses, no empty sample identifies a target. Thus every target has minimum teaching-set size one.",
+  "references": "\\cite{shinohara1991teachability,goldman1995complexity}"
+}

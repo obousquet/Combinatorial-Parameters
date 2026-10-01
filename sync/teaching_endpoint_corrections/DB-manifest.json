@@ -1,0 +1,47 @@
+[
+  {
+    "path": "data/values/651_teaching_dimension_universal_class.json",
+    "original_sha256": "ffb6a90e1ad7834f41f0de2de0e4109e6048dce56a198b308196afaa4879e948",
+    "new_sha256": "d5b3c646b428b0b1089659040be990faaaea6e3a26c9cadcea62146ebe83e715",
+    "staged_path": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/db/data/values/651_teaching_dimension_universal_class.json",
+    "preserved_original": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/originals/data/values/651_teaching_dimension_universal_class.json",
+    "change_kind": "scope clarification and singleton completion",
+    "durable_original_path": "sync/teaching_endpoint_corrections/originals/651_teaching_dimension_universal_class.json"
+  },
+  {
+    "path": "data/values/652_minimum_teaching_set_size_universal_class.json",
+    "original_sha256": "f57e1690652278c6b772bac00d88acca119f8160d062b54f18446bcc7baa6b73",
+    "new_sha256": "2f7d5a4e88981b9af777eb0178f295bbea5b31ddc43689cbab614e98c61498d4",
+    "staged_path": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/db/data/values/652_minimum_teaching_set_size_universal_class.json",
+    "preserved_original": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/originals/data/values/652_minimum_teaching_set_size_universal_class.json",
+    "change_kind": "scope clarification and singleton completion",
+    "durable_original_path": "sync/teaching_endpoint_corrections/originals/652_minimum_teaching_set_size_universal_class.json"
+  },
+  {
+    "path": "data/values/653_maximum_teaching_set_size_universal_class.json",
+    "original_sha256": "3f7052f44af936e7a9f352c74a98b5017196fb587161f7e10e6a9cc8526b8148",
+    "new_sha256": "4f9f423d01aba308af06a4b4f6261db3e95e18e706ee34cf0af3ad2bbf5fb7e2",
+    "staged_path": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/db/data/values/653_maximum_teaching_set_size_universal_class.json",
+    "preserved_original": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/originals/data/values/653_maximum_teaching_set_size_universal_class.json",
+    "change_kind": "scope clarification and singleton completion",
+    "durable_original_path": "sync/teaching_endpoint_corrections/originals/653_maximum_teaching_set_size_universal_class.json"
+  },
+  {
+    "path": "data/values/703_relative_hitting_size_universal_class.json",
+    "original_sha256": "01888af3243e7b72fdd914609352f4168681c8f16ebacc66d0c0fc41e0debe86",
+    "new_sha256": "6ba4cd7c5df298f8c3a97c89c7f6fe35b319465bb0c983a8eaa0fdfa8a58e5f5",
+    "staged_path": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/db/data/values/703_relative_hitting_size_universal_class.json",
+    "preserved_original": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/originals/data/values/703_relative_hitting_size_universal_class.json",
+    "change_kind": "scope clarification and singleton completion",
+    "durable_original_path": "sync/teaching_endpoint_corrections/originals/703_relative_hitting_size_universal_class.json"
+  },
+  {
+    "path": "data/values/894_average_teaching_dimension_universal_class.json",
+    "original_sha256": "7cc758dba72893c404de640657bf91ad3c26607fe0eb698ff6d97aa4e29833e5",
+    "new_sha256": "5f32cd29bf8953c8e0b5f6972b56c984330c3c11d52f2d6b97dbaf5588badee2",
+    "staged_path": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/db/data/values/894_average_teaching_dimension_universal_class.json",
+    "preserved_original": "/home/ec2-user/latex/CompressionSchemes/.cache/q2k/originals/data/values/894_average_teaching_dimension_universal_class.json",
+    "change_kind": "missing singleton endpoint correction",
+    "durable_original_path": "sync/teaching_endpoint_corrections/originals/894_average_teaching_dimension_universal_class.json"
+  }
+]
